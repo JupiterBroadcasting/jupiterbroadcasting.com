@@ -1,4 +1,4 @@
-# Website issues for jupiterbroadcasting.com, et al.
+# Website issues for JupiterBroadcasting.com, et al.
 Includes tracking for:
   * [JupiterBroadcasting.com](jupiterbroadcasting.com)
   * [LINUX Unplugged](https://linuxunplugged.com/)
