@@ -1,6 +1,6 @@
 # Website issues for JupiterBroadcasting.com, et al.
 Includes tracking for:
-  * [JupiterBroadcasting.com](jupiterbroadcasting.com)
+  * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
   * [LINUX Unplugged](https://linuxunplugged.com/)
   * [Self-Hosted](https://selfhosted.show/)
   * [Coder Radio](https://coder.show/)
