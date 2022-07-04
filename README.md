@@ -1,4 +1,21 @@
-# Jupiter Broadcasting MVP
+# JupiterBroadcasting.com, et al. Websites
+
+
+## New Jupiter Broadcasting website build project
+* [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
+* [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
+* [JB Hugo MVP site GitHub Repo](https://github.com/StefanS-O/jupiterbroadcasting-hugo-mvp)
+
+
+## Repo here includes issue tracking for:
+  * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
+  * [LINUX Unplugged](https://linuxunplugged.com/)
+  * [Self-Hosted](https://selfhosted.show/)
+  * [Coder Radio](https://coder.show/)
+  * [Linux Action News](https://linuxactionnews.com/)
+  * [Jupiter Extras](https://extras.show/)
+
+## Jupiter Broadcasting MVP
 
 Build with Hugo and deployed with Github Actions
 
@@ -6,7 +23,7 @@ Demo: https://jb.codefighters.net
 
 https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#discussioncomment-2731384
 
-## Features
+### Features
 
 * Static Site using Hugo
 * Complete publishing workflow using Github and Github Actions
@@ -21,7 +38,7 @@ https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#dis
 * Guests (via data folder and frontmatter)
 * Sponsors (via data folder and frontmatter)
 
-## ToDo
+### ToDo
 
 * RSS feed generation
 * Search Function (probably Lunr)
@@ -29,9 +46,9 @@ https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#dis
 * adding more content
 * write better docs
 
-## Setup
+### Setup
 
-### Using Hugo binary
+#### Using Hugo binary
 
 Install Hugo: https://gohugo.io/getting-started/installing/
 
@@ -39,12 +56,12 @@ Start the development Server (rebuild on every filesystem change)
 
 `hugo server -D`
 
-### Using Docker
+#### Using Docker
 
 To build and run the docker image:
 `make run`
 
-### run for different Site
+#### run for different Site
 
 `hugo server -D --config config.coderradio.toml`
 
@@ -63,52 +80,13 @@ https://github.com/gohugoio/hugo/issues/7123
 
 so for now only subdirectories work
 
-## Deployment
+#### Deployment
 
 Deployment is done with Github Actions, see workflow file in `.github/workflows/main.yml`
 At the moment it is only triggered when something in the `main` branch is changing, but it can also be set up to run at certain times.
 This would also enable scheduled publishing, since Hugo per default only build pages which have set `date` in frontmatter to <= `now`
 
-
-## Fireside Scraper
-
-The [fireside-scraper](./fireside-scraper/) is based on [JB Show Notes](https://github.com/selfhostedshow/show-notes) that was written by [ironicbadger](https://github.com/ironicbadger).
-
-It goes over all the JB firside shows and scrapes the episodes into the format that is expected by hugo for each episode (using [this template](./fireside-scraper/src/templates/episode.md.j2)).
-
-Besides the episodes it also scrapes and creates the json files for:
-
-- sponsors
-- hosts
-- guests (every host is symlinked into the [guests dir](./data/guests/) since a host of one show, could be a guest on an episode of a different show)
-
-There are makefile commands that should me used to run it.
-
-### Run the scraper
-
-The command below would build, and start up the container which would save all the data into `scraped-data` dir.
-
-```
-make scrape
-```
-
-The files are organised in the same way as the files in the root project. This makes it very trivial to just copy the contents of `scraped-data` over to the root dir of the repo to include all the scraped content. And it can be done with:
-
-```
-make scrape-copy
-```
-
-or you could just run the following to scrape and copy over the root dir all at once:
-
-```
-make scrape-full
-```
-
-### Configuring the scraper
-
-Configure the scraper by modifying this [config.yml file](./fireside-scraper/src/config.yml)
-
-## Credits
+### Credits
 
 - I took parts of the functionality from the Castanet Theme: https://github.com/mattstratton/castanet
 Mainly the RSS feed generation and managing of hosts / guests.
