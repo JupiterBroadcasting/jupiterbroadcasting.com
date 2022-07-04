@@ -4,8 +4,6 @@
 ## New Jupiter Broadcasting website build project
 * [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
 * [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
-* [JB Hugo MVP site GitHub Repo](https://github.com/StefanS-O/jupiterbroadcasting-hugo-mvp)
-
 
 ## Repo here includes issue tracking for:
   * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
@@ -15,36 +13,13 @@
   * [Linux Action News](https://linuxactionnews.com/)
   * [Jupiter Extras](https://extras.show/)
 
-## Jupiter Broadcasting MVP
+## Jupiter Broadcasting Hugo
 
 Build with Hugo and deployed with Github Actions
 
-Demo: https://jb.codefighters.net
+Demo: https://jupiterbroadcasting.net
 
 https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#discussioncomment-2731384
-
-### Features
-
-* Static Site using Hugo
-* Complete publishing workflow using Github and Github Actions
-* Template using SCSS (without node dependencies using Hugo extended)
-* only Vanilla JS is used (single files with concat workflow)
-* Highly configurable with config.toml and config folder
-* Hosts (via data folder and frontmatter)
-* Video player
-* HTML5 audio player
-* Multishow capable
-* Tags (via frontmatter)
-* Guests (via data folder and frontmatter)
-* Sponsors (via data folder and frontmatter)
-
-### ToDo
-
-* RSS feed generation
-* Search Function (probably Lunr)
-* Contact Form (?)
-* adding more content
-* write better docs
 
 ### Setup
 
@@ -93,4 +68,7 @@ Mainly the RSS feed generation and managing of hosts / guests.
 
 - [ironicbadger](https://github.com/ironicbadger) and [JB Show Notes](https://github.com/selfhostedshow/show-notes) project which was used as the base for the `fireside-scraper`
 
-Time spend so far: 13h
+## Content Migration and Scraper
+
+We moved the scraper to it's own repository here: https://github.com/JupiterBroadcasting/show-scraper
+Much love to https://github.com/kbondarev aka Kiro in Matrix <3!
