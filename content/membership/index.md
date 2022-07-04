@@ -1,7 +1,7 @@
 +++
-title = "Memberships "
+title = "Membership "
 description = "Support Jupiter Broadcasting"
-date = "2022-07-03T04:10:01-05:00"
+date = "2022-07-03T03:35:01-05:00"
 draft = false
 type="membership"
 +++
