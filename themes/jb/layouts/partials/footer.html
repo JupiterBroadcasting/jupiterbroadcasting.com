@@ -1,0 +1,43 @@
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="columns">
+          <div class="column has-text-centered-mobile">
+            <a href="{{.Site.BaseURL}}  " alt="Jupiter Broadcasting">
+              <img src="/images/logo_small.png" alt="Jupiter Broadcasting Logo" width="300" height="105"/>
+            </a>
+          </div>
+          <div class="column has-text-centered-mobile">
+            <h6 class="title is-6">Shows</h6>
+            <ul>
+              {{ range $index, $episode := first 10 (where .Site.Pages "Section" "show") }}
+                    {{ if eq $episode.Params.type "show" }}
+                      {{ if eq .Params.active true }}
+                          <li><a href="{{.RelPermalink}}" alt="{{.Title}}">{{.Title}}</a></li>
+                      {{ end }}
+                    {{ end }}
+                {{ end }}
+            </ul>
+          </div>
+          <div class="column has-text-centered-mobile">
+            <h6 class="title is-6">Content</h6>
+          </div>
+          <div class="column has-text-centered-mobile">
+            <h6 class="title is-6">Community</h6>
+          </div>
+
+      </div>
+  </div>
+  <div class="container">
+      <div class="columns is-vcentered">
+          <div class="column has-text-centered is-fullwidth">Our shows are licensed under Creative Commons BY-SA 4.0</div>
+      </div>
+  </div>
+ </footer>
+
+{{ $main := resources.Get "js/main.js" }}
+{{ $navigation := resources.Get "js/navigation.js" }}
+{{ $video := resources.Get "js/video.min.js" }}
+{{ $defaultJS := slice $main $navigation $video | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $defaultJS.Permalink }}"></script>

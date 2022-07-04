@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="container">
+  <h1 class="title">{{.Title}}</h1>
+  {{.Content}}
+</div>
+
+{{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
+{{ if eq $lastUrlElement "hosts" }}
+  <section class="section host-list">
+    <div class="container">
+       <div class="columns is-multiline">
+        {{ range $index, $host := $.Site.Data.hosts }}
+            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+              {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
+            </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ end }}

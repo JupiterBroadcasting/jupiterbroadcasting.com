@@ -1,0 +1,55 @@
+<header>
+  <nav class="navbar is-fixed-top {{ if eq .Params.hashero false  }}gradient-home{{end}}" id="mainnavigation" role="navigation" aria-label="main navigation">
+      <div class="container">
+          <div class="navbar-brand">
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                 data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+              </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.main }}
+                      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+                      {{ $active = or $active (eq .Name $currentPage.Title) }}
+                      {{ $active = or $active (and (eq (trim (path.Dir .URL) "/") $currentPage.Section) (ne $currentPage.Section "")) }}
+                      {{ if .HasChildren }}
+                          <div class="navbar-item has-dropdown is-hoverable {{ if $active }}active{{ end }}">
+
+                              <a href="{{ .URL }}" class="navbar-link">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
+
+                          <div class="navbar-dropdown">
+                              {{ range .Children }}
+                                  <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                              {{ end }}
+                          </div>
+                      </div>
+                      {{ else }}
+
+
+                              <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
+                                  {{ .Pre }}
+                                  <span>{{ .Name }}</span>
+                              </a>
+
+                      {{ end }}
+                  {{ end }}
+
+
+
+
+              </div>
+      
+          </div>
+
+      </div>
+  </nav>
+</header>

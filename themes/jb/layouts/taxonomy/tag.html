@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="container">
+      <div class="content">
+        <h1 class="title">Tag:  {{.Title}}</h1>
+    </div>
+  </div>
+  <div class="container">
+     <div class="columns is-multiline">
+        {{ range .Data.Pages }}
+              <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                  {{ partial "episode/preview.html" . }}
+              </div>
+        {{ end }}
+      </div>
+    </div>
+{{end}}

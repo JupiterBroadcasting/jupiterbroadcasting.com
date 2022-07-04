@@ -1,0 +1,5 @@
+<ul>
+  {{ range $key, $value := . }}
+    <li><a href="{{$value.url}}">{{$key}}</a></li>
+  {{ end }}
+</ul>

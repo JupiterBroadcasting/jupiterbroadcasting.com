@@ -1,0 +1,53 @@
+baseURL = 'https://jb.codefighters.net/'
+languageCode = 'en-us'
+title = 'Jupiter Broadcasting'
+
+theme = 'jb'
+
+paginate = 12
+
+# Allow HTML in Markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  host = "hosts"
+  guest = "guests"
+
+# Main Menu
+[[Menu.Main]]
+    name = "Jupiter Broadcasting"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+[[Menu.Main]]
+    name = "Shows"
+    identifier = "shows"
+    url = "/show"
+    weight =-90
+
+[[Menu.Main]]
+    name = "Hosts"
+    identifier = "hosts"
+    url = "/hosts"
+    weight =80
+
+[[Menu.Main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/archive"
+    weight =90
+
+[outputFormats]
+  [outputFormats.webplayer]
+  mediatype ="application/json"
+  baseName = "webplayer"
+
+[outputs]
+  page = ["json","html","webplayer"]
+  section = ["html","rss"]

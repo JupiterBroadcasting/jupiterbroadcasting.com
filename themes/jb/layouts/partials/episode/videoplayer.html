@@ -1,0 +1,20 @@
+<video
+    id="my-video"
+    class="video-js vjs-fluid"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="{{.Params.header_image}}"
+    data-setup="{}"
+  >
+  {{.Params.video_file}}
+    <source src="{{.Params.video_file}}" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>

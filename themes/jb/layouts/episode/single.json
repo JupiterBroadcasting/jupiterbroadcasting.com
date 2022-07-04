@@ -1,0 +1,48 @@
+{
+  "version": 5,
+      "show": {
+        "title": "{{.CurrentSection.Title}}",
+        "subtitle": "{{.CurrentSection.Description}}",
+        "summary": "{{.CurrentSection.Description}}",
+        "poster": "{{.CurrentSection.Params.header_image}}",
+        "link": "{{.CurrentSection.Permalink}}"
+      },
+  {{ $summary := index (split .Description ".") 0 }}
+  "title": "{{.Title}} {{.Params.episode}}",
+  "subtitle": "{{$summary}}.",
+  "summary": "{{.Description}} ",
+  "publicationDate": "{{ dateFormat "Mon, 2 Jan 2006 15:04:05 -0700" .Date }}",
+  "duration": "{{.Params.podcast_duration}}",
+  "poster": "{{.Params.header_image}}",
+  "link": "{{replace .RelPermalink "json" "html"}}",
+  "chapters": [
+    {
+      "start": "00:00:00.000",
+      "title": "Intro",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:00:13",
+      "title": "Nvidia OpenSource Kernel Driver",
+      "href": "",
+      "image": ""
+    }
+  ],
+  "audio": [
+    {
+      "url": "{{.Params.podcast_file}}",
+      "size": "{{.Params.podcast_bytes}}",
+      "title": "MP3 Audio (mp3)",
+      "mimeType": "audio\/mpeg"
+    }
+  ],
+  "files": [
+    {
+      "url": "{{.Params.podcast_file}}",
+      "size": "{{.Params.podcast_bytes}}",
+      "title": "MP3 Audio",
+      "mimeType": "audio\/mpeg"
+    }
+  ]
+}

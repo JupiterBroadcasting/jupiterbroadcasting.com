@@ -1,0 +1,25 @@
++++
+title = "{{ title_plain }}"
+description = """{{ blurb }}"""
+date = "{{ date_published }}"
+draft = {{ is_draft }}
+categories = [{% for cat in categories %}"{{ cat }}"{% if not loop.last %},{% endif %}{% endfor %}]
+tags = [{% for tag in tags %}"{{ tag }}"{% if not loop.last %},{% endif %}{% endfor %}]
+hosts = [{% for host in hosts %}"{{ host }}"{% if not loop.last %},{% endif %}{% endfor %}]
+guests = [{% for guest in guests %}"{{ guest }}"{% if not loop.last %},{% endif %}{% endfor %}]
+sponsors = [{% for sponsor in sponsors %}"{{ sponsor }}"{% if not loop.last %},{% endif %}{% endfor %}]
+header_image = "{{ header_image }}"
+type = "episode"
+
+episode = {{ episode_number }}
+podcast_duration = "{{ podcast_duration }}"
+podcast_file = "{{ podcast_file }}"
+podcast_bytes = "{{ podcast_bytes }}"
+
+youtube_link = "{{ youtube_link }}"
+video_file = "{{ video_file }}"
++++
+
+## Episode links
+
+{{ links }}

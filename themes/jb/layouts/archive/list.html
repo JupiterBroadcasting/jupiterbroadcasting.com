@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">{{.Title}}</h1>
+</div>
+<div class="container">
+
+    <div class="column is-full">
+      {{.Content}}
+    </div>
+
+</div>
+
+<section class="section episode-list">
+  <div class="container">
+     <div class="columns is-multiline">
+       {{ range $index, $show := where ( where .Site.Pages  "Section" "show" ) ".Params.active" "==" false }}
+        <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "episode/show.html" . }}
+        </div>    
+       {{ end }}
+      </div>
+    </div>
+</section>
+
+
+{{ end }}

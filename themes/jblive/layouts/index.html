@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{.Content}}
+
+    <div class="container">
+      {{ partial "live/twitch.html" . }}
+    </div>
+    <div class="container">
+      {{ partial "live/irc.html" . }}
+    </div>
+{{ end }}

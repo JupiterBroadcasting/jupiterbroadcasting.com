@@ -1,0 +1,77 @@
+<!-- Meta Ttitles -->
+<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+<!-- Meta Description -->
+<meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}" />
+<meta itemprop="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}" />
+<meta property="og:description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}" />
+<meta property="twitter:description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}" />
+
+<!-- Meta Keywords -->
+<meta name="keywords" content="{{ if .Params.keywords }}{{ .Params.keywords }}{{ else if .Site.Params.Keywords }}{{ .Site.Params.Keywords }}{{ end }}" />
+
+<!-- Meta Links -->
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- Meta Languages -->
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta name="language" content="{{ .Language.LanguageName }}">
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+
+<!-- Meta Images -->
+{{ with .Params.header_image }}
+<meta itemprop="image" content="{{ . | absURL }}" />
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:image" content="{{ . | absURL }}" />
+<meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ else }}
+<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+{{ end }}
+
+<!-- Meta Dates -->
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+
+<!-- Sitemap & RSS Feed Tags -->
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<!-- Meta Pages -->
+<meta property="og:type" content="website" />
+<meta name="author" content="{{ .Site.Params.author }}" />
+
+<!-- Favicons -->
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/favicon-152-precomposed.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/favicon-144-precomposed.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/favicon-120-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/favicon-114-precomposed.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon-180-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/favicon-72-precomposed.png" />
+<link rel="apple-touch-icon" href="/favicons/favicon-57.png" />
+<link rel="icon" href="/favicons/favicon-32.png" sizes="32x32" />
+<link rel="icon" sizes="192x192" href="/favicons/favicon-192.png" />
+
+<!-- Search Engine Crawler -->
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />

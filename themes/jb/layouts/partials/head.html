@@ -1,0 +1,11 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{ partial "meta.html" . }}
+
+  {{ $sass := resources.Get "css/main.sass" }}
+  {{ $style := $sass | resources.ToCSS | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+</head>

@@ -1,0 +1,24 @@
+<div class="card is-horizontal">
+  <div class="card-image">
+    <figure class="image">
+      <img src="{{ .host.avatar}}" alt="{{ .host.name}}">
+    </figure>  
+  </div>
+      <div class="card-stacked">
+      <div class="card-content">
+        <div class="media-content">
+          <p class="title is-4">{{ .host.name}}</p>
+          <p class="subtitle is-6">@{{ .host.username}}</p>
+        </div>
+
+        <div class="content">
+          {{ .host.bio}}
+        </div>
+      </div>
+      <footer class="card-footer">
+        <div class="card-footer-item has-text-left">
+          Social links here
+        </div>
+      </footer>
+    </div>
+</div>

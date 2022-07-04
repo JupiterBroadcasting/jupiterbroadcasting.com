@@ -1,0 +1,19 @@
+
+<div class="card card-episode">
+
+  <div class="card-image">
+    <figure class="image">
+      <a href="{{ .Permalink }}">
+        <img src="{{.Params.header_image }}" width="432" height="242" alt="{{.Title}} | {{.CurrentSection.Title}} {{.Params.episode}}">
+      </a>
+    </figure>
+  </div>
+  <div class="card-content">
+     <div class="content">
+      <a href="{{ .Permalink }}"><h3>{{.Title}} | {{.CurrentSection.Title}} {{.Params.episode}}</h3></a>
+      <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
+      <p>{{.Description}}</p>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="hero is-medium is-frontpage">
+  <div class="hero-body">
+    <div class="container">
+      <img src="/images/logo_narrow.png"/>
+      <p class="subtitle has-text-centered">
+        Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News.
+      </p>
+    </div>
+  </div>
+</section>
+
+{{.Content}}
+<section class="section episode-list">
+  <div class="container">
+    <h1 class="title">Latest Episodes</h1>
+     <div class="columns is-multiline">
+        {{ range $index, $episode := first 16 (where .Site.Pages "Section" "show") }}
+              {{ if eq  $episode.Params.type "episode" }}
+                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                      {{ partial "episode/preview.html" . }}
+                  </div>
+              {{ end }}
+          {{ end }}
+      </div>
+    </div>
+</section>
+
+
+{{ end }}

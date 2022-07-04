@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{.Content}}
+
+{{ with .Site.GetPage "/episodes/" }}
+  <section class="section host-list">
+    <div class="container">
+      <h1 class="title">Hosts</h1>
+       <div class="columns is-multiline">
+
+          {{ range $index, $hostname := .Params.hosts }}
+              {{ $host := index $.Site.Data.hosts $hostname }}
+                <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                  {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
+                </div>
+            {{ end }}
+
+        </div>
+      </div>
+  </section>
+{{ end }}
+
+<section class="section episode-list">
+  <div class="container">
+    <h1 class="title">Latest Episodes</h1>
+     <div class="columns is-multiline">
+        {{ range $index, $episode := first 10 (where .Site.Pages "Section" "episodes") }}
+              {{ if ne  $episode.Kind "section" }}
+                    <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                        {{ partial "episode/preview.html" . }}
+                    </div>
+              {{ end }}
+          {{ end }}
+      </div>
+    </div>
+</section>
+
+
+{{ end }}
