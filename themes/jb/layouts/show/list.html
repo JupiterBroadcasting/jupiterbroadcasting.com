@@ -15,7 +15,7 @@
         Your Hosts
 
         {{ range $index, $hostname := .Params.hosts }}
-          {{ $host := index $.Site.Data.hosts $hostname }}
+          {{ $host := index $.Site.Data.people $hostname }}
             <div>
               {{ partial "hosts/smallest.html" (dict "context" . "host" $host) }}
             </div>
