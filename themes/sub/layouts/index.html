@@ -8,7 +8,7 @@
        <div class="columns is-multiline">
 
           {{ range $index, $hostname := .Params.hosts }}
-              {{ $host := index $.Site.Data.hosts $hostname }}
+              {{ $host := index $.Site.Data.people $hostname }}
                 <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                   {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
                 </div>
