@@ -12,12 +12,11 @@
 * [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
 * [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
 
+---
 
 Built with Hugo and deployed with Github Actions
 
 Demo: https://jupiterbroadcasting.net
-
-https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#discussioncomment-2731384
 
 ### Setup
 
