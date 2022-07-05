@@ -4,7 +4,7 @@
 </div>
 <div class="container">
 
-    <div class="column is-full">
+    <div class="column is-full content">
       {{.Content}}
     </div>
 
@@ -16,7 +16,7 @@
        {{ range $index, $show := where ( where .Site.Pages  "Section" "show" ) ".Params.active" "==" false }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
             {{ partial "episode/show.html" . }}
-        </div>    
+        </div>
        {{ end }}
       </div>
     </div>
