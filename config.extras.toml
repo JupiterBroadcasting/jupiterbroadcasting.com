@@ -1,0 +1,75 @@
+baseURL = 'https://extras.jupiterbroadcasting.net/'
+languageCode = 'en-us'
+title = 'Jupiter Extras'
+
+# Theme Components, takes two themes and merge them
+# https://gohugo.io/hugo-modules/theme-components/
+# discussion: https://discourse.gohugo.io/t/sub-themes-or-theme-families/3938
+theme = ['sub','jb']
+
+# directory where the output is generated to
+publishdir = 'public_subsites/extras'
+
+# Allow HTML in Markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  host = "hosts"
+  guest = "guests"
+
+# Main Menu
+[[Menu.Main]]
+    name = "Extras"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+[[Menu.Main]]
+    name = "Episodes"
+    identifier = "episodes"
+    url = "/episodes"
+    weight =-90
+
+contentDir = "sites/extras/content"
+# Module mounts
+[module]
+#[[module.mounts]]
+#  source = 'sites/coder-radio/content'
+#  target = 'content'
+# currently it prevents us from mounting sites/coder-radio/content directly
+# https://github.com/gohugoio/hugo/issues/7123
+[[module.mounts]]
+  source = 'content/show/extras'
+  target = 'content/episodes'
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'layouts'
+  target = 'layouts'
+[[module.mounts]]
+  source = 'data'
+  target = 'data'
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'i18n'
+  target = 'i18n'
+[[module.mounts]]
+  source = 'archetypes'
+  target = 'archetypes'
+
+[outputFormats]
+  [outputFormats.webplayer]
+  mediatype ="application/json"
+  baseName = "webplayer"
+
+[outputs]
+  page = ["json","html","webplayer"]
+  section = ["html"]
