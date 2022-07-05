@@ -35,19 +35,19 @@ publishdir = 'public_subsites/coderradio'
     url = "/episodes"
     weight =-90
 
-contentDir = "sites/coderradio/content"
+contentDir = "sites/coder-radio/content"
 # Module mounts
 [module]
 #[[module.mounts]]
-#  source = 'sites/coderradio/content'
+#  source = 'sites/coder-radio/content'
 #  target = 'content'
-# currently it prevents us from mounting sites/coderradio/content directly
+# currently it prevents us from mounting sites/coder-radio/content directly
 # https://github.com/gohugoio/hugo/issues/7123
 [[module.mounts]]
-  source = 'sites/coderradio/content/community'
+  source = 'sites/coder-radio/content/community'
   target = 'content/community'
 [[module.mounts]]
-  source = 'content/show/coderradio'
+  source = 'content/show/coder-radio'
   target = 'content/episodes'
 [[module.mounts]]
   source = 'static'

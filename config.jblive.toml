@@ -39,9 +39,9 @@ contentDir = "sites/jblive/content"
 # Module mounts
 [module]
 #[[module.mounts]]
-#  source = 'sites/coderradio/content'
+#  source = 'sites/coder-radio/content'
 #  target = 'content'
-# currently it prevents us from mounting sites/coderradio/content directly
+# currently it prevents us from mounting sites/coder-radio/content directly
 # https://github.com/gohugoio/hugo/issues/7123
 [[module.mounts]]
   source = 'sites/jblive/content'
