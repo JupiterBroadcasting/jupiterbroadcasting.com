@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="container">
       <div class="content">
-        {{ $guest := index $.Site.Data.guests $.Title }}
+        {{ $guest := index $.Site.Data.people $.Title }}
 
         <h1 class="title">{{ $guest.name}}</h1>
 
