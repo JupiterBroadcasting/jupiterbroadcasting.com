@@ -4,11 +4,11 @@ description = "Your virtual Linux User Group (vLUG) with no limits, and tons of 
 date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["LINUX Unplugged"]
-show = "linuxun"
+show = "linux-unplugged"
 hosts = ["chris","wes"]
 type = "show"
 active = true
-header_image = "/images/shows/linuxun.png"
+header_image = "/images/shows/linux-unplugged.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=52946"
 

@@ -4,13 +4,13 @@ description = "Discover new software and hardware to get the best out of your ne
 date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["Self-Hosted"]
-show = "selfhosted"
+show = "self-hosted"
 hosts = ["chris","alex"]
 
 type = "show"
 active = true
 
-header_image = "/images/shows/selfhosted.png"
+header_image = "/images/shows/self-hosted.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
