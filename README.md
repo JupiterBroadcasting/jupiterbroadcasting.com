@@ -7,6 +7,7 @@
   * [Coder Radio](https://coder.show/)
   * [Linux Action News](https://linuxactionnews.com/)
   * [Jupiter Extras](https://extras.show/)
+  * [Office Hours](https://www.officehours.hair/)
 
 ## New Jupiter Broadcasting Hugo website
 * [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
