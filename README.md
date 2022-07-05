@@ -1,10 +1,5 @@
 # JupiterBroadcasting.com, et al. Websites
 
-
-## New Jupiter Broadcasting website build project
-* [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
-* [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
-
 ## Repo here includes issue tracking for:
   * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
   * [LINUX Unplugged](https://linuxunplugged.com/)
@@ -13,9 +8,12 @@
   * [Linux Action News](https://linuxactionnews.com/)
   * [Jupiter Extras](https://extras.show/)
 
-## Jupiter Broadcasting Hugo
+## New Jupiter Broadcasting Hugo website
+* [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
+* [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
 
-Build with Hugo and deployed with Github Actions
+
+Built with Hugo and deployed with Github Actions
 
 Demo: https://jupiterbroadcasting.net
 
@@ -27,7 +25,7 @@ https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8#dis
 
 Install Hugo: https://gohugo.io/getting-started/installing/
 
-Start the development Server (rebuild on every filesystem change)
+Start the development Server (rebuilds on every filesystem change)
 
 `hugo server -D`
 
@@ -44,7 +42,6 @@ to clean the module config
 
 `hugo mod clean --all`
 
-
 build
 
 `hugo -D --config config.coderradio.toml`
@@ -59,7 +56,7 @@ so for now only subdirectories work
 
 Deployment is done with Github Actions, see workflow file in `.github/workflows/main.yml`
 At the moment it is only triggered when something in the `main` branch is changing, but it can also be set up to run at certain times.
-This would also enable scheduled publishing, since Hugo per default only build pages which have set `date` in frontmatter to <= `now`
+This would also enable scheduled publishing, since Hugo per default only builds pages which have set `date` in frontmatter to <= `now`
 
 ### Credits
 
