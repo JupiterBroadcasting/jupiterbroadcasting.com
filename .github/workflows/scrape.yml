@@ -1,0 +1,45 @@
+# This workflow scrapes the latest show episodes and commits the new episode and data
+# files to the repo.
+
+name: Scrape and commit
+on:
+  schedule:
+    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout jupiterbroadcasting.com'
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        path: ./jbsite
+
+    - name: 'Checkout show-scraper'
+      uses: actions/checkout@v3
+      with:
+        repository: JupiterBroadcasting/show-scraper
+        ref: main
+        path: ./show-scraper
+
+    - name: 'Setup Python'
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.10'
+        architecture: 'x64'
+    
+    - name: 'Install Python deps'
+      run: pip install -r ./show-scraper/requirements.txt
+
+    - name: 'Scrape'
+      run: |
+        cd ./show-scraper
+        DATA_DIR=../jbsite LATEST_ONLY=true python scraper.py
+
+    - name: 'Commit'
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Automatically scraped and committed via a GitHub Action.'
+        repository: ./jbsite
