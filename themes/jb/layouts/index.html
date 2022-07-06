@@ -17,7 +17,7 @@
      <div class="columns is-multiline">
         {{ range $index, $episode := first 16 (where .Site.Pages "Section" "show") }}
               {{ if eq  $episode.Params.type "episode" }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" data-tilt style="display: flex;">
                       {{ partial "episode/preview.html" . }}
                   </div>
               {{ end }}

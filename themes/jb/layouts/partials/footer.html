@@ -39,5 +39,6 @@
 {{ $main := resources.Get "js/main.js" }}
 {{ $navigation := resources.Get "js/navigation.js" }}
 {{ $video := resources.Get "js/video.min.js" }}
-{{ $defaultJS := slice $main $navigation $video | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
+{{ $tilt := resources.Get "js/vanilla-tilt.js" }}
+{{ $defaultJS := slice $main $navigation $video $tilt | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $defaultJS.Permalink }}"></script>
