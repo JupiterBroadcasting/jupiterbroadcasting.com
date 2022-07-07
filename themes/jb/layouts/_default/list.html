@@ -2,7 +2,14 @@
 
 <div class="container">
   <h1 class="title">{{.Title}}</h1>
-  {{.Content}}
+</div>
+
+<div class="container">
+
+    <div class="column is-full content">
+      {{.Content}}
+    </div>
+
 </div>
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
