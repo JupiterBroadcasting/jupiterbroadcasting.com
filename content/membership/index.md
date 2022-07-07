@@ -28,7 +28,7 @@ Your membership keeps our production going and gives us the ability to run fewer
 * [Linux Action News]({{< ref "/show/linux-action-news" >}})
 	* ad-free version of the show
 	
-* [Jupiter Extras]({{< ref "/show/extras" >}}) 
+* [Jupiter Extras]({{< ref "/show/jupiter-extras" >}}) 
 	* ad-free version of the show
 	
 * [Office Hours]({{< ref "/show/office-hours" >}})
