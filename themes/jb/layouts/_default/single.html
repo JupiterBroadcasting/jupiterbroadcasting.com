@@ -1,8 +1,15 @@
 {{ define "main" }}
 
-  <div class="container">
-    <h1 class="title">{{.Title}}</h1>
-    {{.Content}}
-  </div>
+<div class="container">
+  <h1 class="title">{{.Title}}</h1>
+</div>
+
+<div class="container">
+
+    <div class="column is-full content">
+      {{.Content}}
+    </div>
+
+</div>
 
 {{ end }}
