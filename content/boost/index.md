@@ -9,27 +9,32 @@ draft = false
 [An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
 
 links to JB episodes?
+* [Office Hours 4](https://www.officehours.hair/4) - What really has us excited about Podcasting 2.0
 
 ## Podcasting Apps
 Podcasting Apps that support Podcasting 2.0 features can be found at [NewPodcastApps.com](https://podcastindex.org/apps?appTypes=app&elements=Value)
+
+Grab a Podcasting 2.0 compatible app with tons of new features like: Boostagrams, Chapters, Hosts info, Sat Streaming, Search, Value, and clips.
+
 We recommend:
-	* [Fountain](https://www.fountain.fm/) - Android, Web, iOS
-	* [Castamatic](https://castamatic.com/) - iOS
-	* [Breez](https://breez.technology/) - Android, iOS
-	* [Podverse](https://podverse.fm/) - Android, F-Droid, Web, iOS
+* [Fountain](https://www.fountain.fm/) - Android, Web, iOS
+* [Castamatic](https://castamatic.com/) - iOS
+* [Breez](https://breez.technology/) - Android, iOS
+* [Podverse](https://podverse.fm/) - Android, F-Droid, Web, iOS
 
 
 # Boost!
-* Send in a Boost (a.k.a Boostagram) **explain further** 
+* Send in a Boost (a.k.a Boostagram) 
+**explain further** 
 * [Value-4-Value](https://podcastindex.org/podcast/value4value) feature, 
 * sats streaming
 * Bitcoin payments in real-time over the Lightning network
 
 ## How to send a Boost
-### apps
-* Fountain
-* Breez
-* BoostCLI
+### Apps
+* [Fountain](https://www.fountain.fm/)
+* [Breez](https://breez.technology/)
+* [BoostCLI](https://github.com/valcanobacon/BoostCLI) - Command-line tool to send and review Podcasting 2.0 Value.
 
 # Much gratitude to our friends at:
 * [Podcast Index](https://podcastindex.org/)
@@ -37,7 +42,8 @@ We recommend:
 * [Podping](https://podping.org/)
 
 
-# Further Reading
+# Further Exploration
+* [The Bitcoin Dad Pod](https://bitcoindadpod.fireside.fm/) - Chris and The Bitcoin Dad explain context around the monetary revolution that is Bitcoin.
 * [Podping - Decentralized Push Notifications for Podcasting by Dave Jones](https://podcasting20.substack.com/p/podping)
 * [Podcasting 2.0 ushers in a new era for podcasting - 9to5Mac](https://9to5mac.com/2022/06/26/podcasting-2-0/)
 
