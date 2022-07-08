@@ -5,9 +5,28 @@ date = "2022-07-03T03:35:01-05:00"
 draft = false
 +++
 
-Boosts are a new way to send a bit of value into the show while including a personal message. We feature as many Boosts as we can as a thank you, and to add a bit of value to your Boost.
+Boosts are a new way to send value into the show while including a personal message. We feature as many Boosts as we can as a thank you, and to add a bit of value to your Boost.
 
 Boosts use the [Lightning Network](https://lightning.network/). Free software that makes it possible to send value to anywhere in the world instantly, for exceptionally low fees.
+
+### Ways to Boost
+
+First you'll need some [sats](https://en.bitcoin.it/wiki/Satoshi_(unit)) and there are many ways get them. If you're in the US the simplest way we know of is to use [the Strike app](https://strike.me/) and outside the US [BlueWallet](https://bluewallet.io/). See below for a privacy focused method as well.
+
+Once you have aquired your sats, you send them to a Podcasting 2.0 compatiable app.
+
+#### We recommend:
+* [Fountain](https://www.fountain.fm/) - Android, Web, iOS
+* [Castamatic](https://castamatic.com/) - iOS
+* [Breez](https://breez.technology/) - Android, iOS (Not a Podcast app, so you don't have to switch!)
+* [Podverse](https://podverse.fm/) - Android, F-Droid, Web, iOS
+* [BoostCLI](https://github.com/valcanobacon/BoostCLI) - Command-line tool to send and review Podcasting 2.0 Value (also not a podcast app).
+* [Alby](https://getalby.com/) - Lightning for your Browser. A great project, works great with Podverse too.
+
+#### Private Sats (aka advanced mode)
+
++ [RoboSats:](https://github.com/Reckless-Satoshi/robosats) - Web via TOR
+
 
 ### The "Value for Value" Model
 
@@ -18,19 +37,6 @@ The listener is asked to share the value they get from listening to the podcast.
 Some of our favorite Boosts are ones that get us thinking and talking. They often can bring something new and random to the episode we would have never planned.
 
 Alternative contributions are also welcome. Examples include participating in our Mumble room, helping out in our community, sharing an episode with friends, and many more. 
-
-### Ways to Boost
-
-First you'll need some [sats](https://en.bitcoin.it/wiki/Satoshi_(unit)) and there are many ways to do this. If you're in the US the simplest way we know of is to use [the Strike app](https://strike.me/) and outside the US [BlueWallet](https://bluewallet.io/). See below for a privacy focused method as well.
-
-Once you have aquired your sats, you send them to a Podcasting 2.0 compatiable app.
-
-We recommend:
-* [Fountain](https://www.fountain.fm/) - Android, Web, iOS
-* [Castamatic](https://castamatic.com/) - iOS
-* [Breez](https://breez.technology/) - Android, iOS (Not a Podcast app, so you don't have to switch!)
-* [Podverse](https://podverse.fm/) - Android, F-Droid, Web, iOS
-* [BoostCLI](https://github.com/valcanobacon/BoostCLI) - Command-line tool to send and review Podcasting 2.0 Value (also not a podcast app).
 
 
 ### Podcasting 2.0
