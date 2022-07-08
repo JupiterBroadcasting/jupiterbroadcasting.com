@@ -23,10 +23,6 @@ Once you have aquired your sats, you send them to a Podcasting 2.0 compatiable a
 * [BoostCLI](https://github.com/valcanobacon/BoostCLI) - Command-line tool to send and review Podcasting 2.0 Value (also not a podcast app).
 * [Alby](https://getalby.com/) - Lightning for your Browser. A great project, works great with Podverse too.
 
-#### Private Sats (aka advanced mode)
-
-+ [RoboSats:](https://github.com/Reckless-Satoshi/robosats) - Web via TOR
-
 
 ### The "Value for Value" Model
 
@@ -71,3 +67,7 @@ Grab a Podcasting 2.0 compatible app with tons of new features like: Boostagrams
 * [Podping - Decentralized Push Notifications for Podcasting by Dave Jones](https://podcasting20.substack.com/p/podping)
 * [Podcasting 2.0 ushers in a new era for podcasting - 9to5Mac](https://9to5mac.com/2022/06/26/podcasting-2-0/)
 
+#### Private Sats (aka advanced mode)
+
++ [RoboSats](https://github.com/Reckless-Satoshi/robosats) - Web via TOR
++ [Hodl Hodl](https://hodlhodl.com/) -  Outside the US, a private multisig P2P Bitcoin trading platform
