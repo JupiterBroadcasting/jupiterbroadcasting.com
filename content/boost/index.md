@@ -37,24 +37,30 @@ We recommend:
 
 Podcasting 2.0 is an umbrella term that covers a collection of initiatives to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies.
 
+The front of that effort is the [Podcast Index.[(https://podcastindex.org/)
+
+> When Dave Jones and I started this open project with an open source policy and transparency of mission, we uncorked over a decade of pent up creative energy from app developers, hosting companies and podcasters. [Podcastindex.org](https://www.podcastindex.org/) offers a rich API that 58 apps and services today are building on. Thanks to our value4value model, all participants in the ecosystem are in the value flow. This is a huge departure from the traditional app store sale. The passion is rooted in collective success that rewards each individually, with actual value that users determine. Not meager crumbs from big tech.
+> 
+> Adam Curry
+
 [An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
 
-links to JB episodes?
-* [Office Hours 4](https://www.officehours.hair/4) - What really has us excited about Podcasting 2.0
 
 ## Podcasting Apps
+
 Podcasting Apps that support Podcasting 2.0 features can be found at [NewPodcastApps.com](https://podcastindex.org/apps?appTypes=app&elements=Value)
 
 Grab a Podcasting 2.0 compatible app with tons of new features like: Boostagrams, Chapters, Hosts info, Sat Streaming, Search, Value, and clips.
 
 
-# Much gratitude to our friends at:
+## Much gratitude to our friends at:
 * [Podcast Index](https://podcastindex.org/)
 * [Podcast 2.0](https://podcastindex.org/podcast/920666)
 * [Podping](https://podping.org/)
 
 
-# Further Exploration
+## Further Exploration
+* [Office Hours 4](https://www.officehours.hair/4) - What really has us excited about Podcasting 2.0
 * [The Bitcoin Dad Pod](https://bitcoindadpod.fireside.fm/) - Chris and The Bitcoin Dad explain context around the monetary revolution that is Bitcoin.
 * [Podping - Decentralized Push Notifications for Podcasting by Dave Jones](https://podcasting20.substack.com/p/podping)
 * [Podcasting 2.0 ushers in a new era for podcasting - 9to5Mac](https://9to5mac.com/2022/06/26/podcasting-2-0/)
