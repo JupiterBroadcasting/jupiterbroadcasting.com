@@ -35,15 +35,12 @@ We recommend:
 
 ### Podcasting 2.0
 
-Podcasting 2.0 is an umbrella term that covers a collection of initiatives to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies.
+Podcasting 2.0 is an umbrella term that covers a [collection of initiatives](https://github.com/Podcastindex-org) to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies.
 
-The front of that effort is the [Podcast Index.[(https://podcastindex.org/)
+The front of that effort is the [Podcast Index.](https://podcastindex.org/) The Podcast Index is an open directory of podcasts that anyone can submit to, and that any app can search. The Podcast Index exists to preserve, protect and extend the open, independent podcasting ecosystem.
 
-> When Dave Jones and I started this open project with an open source policy and transparency of mission, we uncorked over a decade of pent up creative energy from app developers, hosting companies and podcasters. [Podcastindex.org](https://www.podcastindex.org/) offers a rich API that 58 apps and services today are building on. Thanks to our value4value model, all participants in the ecosystem are in the value flow. This is a huge departure from the traditional app store sale. The passion is rooted in collective success that rewards each individually, with actual value that users determine. Not meager crumbs from big tech.
-> 
-> Adam Curry
 
-[An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
++ [An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
 
 
 ## Podcasting Apps
