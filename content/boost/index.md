@@ -7,7 +7,7 @@ draft = false
 
 # Podcasting 2.0
 
-Podcasting 2.0 is an umbrella term that covers a collection of initiatives to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies..
+Podcasting 2.0 is an umbrella term that covers a collection of initiatives to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies.
 
 Boosts are a new way to send a bit of value into the show, while including a personal message.
 
