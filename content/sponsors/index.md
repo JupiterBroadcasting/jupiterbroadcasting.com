@@ -4,59 +4,56 @@ description = "Our Sponsors"
 date = "2022-07-03T03:35:01-05:00"
 draft = false
 +++
+#### We have many sponsors we love who support each show, and we hope you'll enjoy them too:
 
-# [Linode](https://linode.com/jupiter)
-A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. 
+## Jupiter Broadcasting
+Linode - receive a $100 60-day credit towards your new account.
+
 https://linode.com/jupiter
 
-# LINUX Unplugged
-* [Linode Cloud Hosting](https://linode.com/unplugged)
-A special offer for all Linux Unplugged Podcast listeners and new Linode customers - receive $100 towards your new account.
+## LINUX Unplugged
+Linode - receive a $100 60-day credit towards your new account.
+
 https://linode.com/unplugged
 
-* [Bitwarden](https://bitwarden.com/linux) is the easiest way for businesses and individuals to store, share, and sync sensitive data.
+Bitwarden - the easiest way for businesses and individuals to store, share, and sync sensitive data.
+
 https://bitwarden.com/linux
 
-# Self-Hosted
+## Self-Hosted
 
-* [Tailscale](http://tailscale.com/selfhosted)
+Tailscale - a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account.
 
-Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account.
 http://tailscale.com/selfhosted
 
-* [Linode](https://linode.com/ssh)
+Linode - receive a $100 60-day credit towards your new account.
 
-Receive a $100 60-day credit towards your new account.
 https://linode.com/ssh
 
-# Linux Action News
+## Linux Action News
 
-* [Kolide](https://kolide.com/lan)
-User-centered, cross-platform endpoint security for teams that Slack.
+Kolide - user-centered, cross-platform endpoint security for teams that Slack.
+
 https://kolide.com/lan
 
 
-* [Linode](http://linode.com/lan)
+Linode - receive a $100 60-day credit towards your new account.
 
-Sign up using the link on this page and receive a $100 60-day credit towards your new account.
 http://linode.com/lan
 
 
-# Coder Radio
+## Coder Radio
 
 
-* [Linode](https://linode.com/coder)
+Linode - Receive a $100 60-day credit towards your new account.
 
-Receive a $100 60-day credit towards your new account.
 https://linode.com/coder
 
-* [Tailscale](https://tailscale.com/coder)
+Tailscale - the easiest way to create a peer-to-peer network with the power of Wireguard.
 
-Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard.
 https://tailscale.com/coder
 
 
-* [System76](https://system76.com/specials)
+System76 - Receive the Tinkerer’s Toolkit which includes an iFixit Minnow with your computer purchase until the supply of Tinkerer’s Toolkits runs out!
 
-Receive the Tinkerer’s Toolkit which includes an iFixit Minnow with your computer purchase until the supply of Tinkerer’s Toolkits runs out!
 https://system76.com/specials
