@@ -1,6 +1,6 @@
 +++
-title = "Boost! "
-description = "Podcasting 2.0 Features"
+title = "Boost "
+description = "Boost with a Podcasting 2.0 App"
 date = "2022-07-03T03:35:01-05:00"
 draft = false
 +++
@@ -11,7 +11,7 @@ Boosts use the [Lightning Network](https://lightning.network/). Free software th
 
 ### The "Value for Value" Model
 
-Jupiter Broadcasting is an independent media company focusing on niche topics our community loves. We know it will not get us a million downloads an episode, and we're probably never going viral on social media. But our community finds value in our work, and your support keeps us going.
+Jupiter Broadcasting is an independent media company focusing on niche topics our community loves. We that means we won't get a million downloads an episode, and we're probably never going viral on social media. But our community finds value in our work, and your support keeps us going.
 
 The listener is asked to share the value they get from listening to the podcast. This usually means sending a boost or becoming a [member](https://jupiterbroadcasting.net/membership/). Boosts can be a quick one-off, or an ongoing way to send value into the show and get your voice heard. 
 
@@ -42,8 +42,11 @@ The front of that effort is the [Podcast Index.](https://podcastindex.org/) The 
 
 + [An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
 
+One of the areas of Podcasting 2.0 development Jupiter Broadcasting is following closley is the effort around the [podcast namespace](https://github.com/Podcastindex-org/podcast-namespace).
 
-## Podcasting Apps
+The broad goal is to create a single, compact, efficient namespace that is easily extensible, community controlled/authored and addresses the needs of the independent podcast industry now and in the future. 
+
+## Podcasting 2.0 Apps
 
 Podcasting Apps that support Podcasting 2.0 features can be found at [NewPodcastApps.com](https://podcastindex.org/apps?appTypes=app&elements=Value)
 
