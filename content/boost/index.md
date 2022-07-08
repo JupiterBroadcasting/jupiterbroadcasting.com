@@ -6,6 +6,11 @@ draft = false
 +++
 
 # Podcasting 2.0
+
+Podcasting 2.0 is an umbrella term that covers a collection of initiatives to advance podcasting technology and to decentralize podcasting, taking control of the medium out of the hands of large technology companies..
+
+Boosts are a new way to send a bit of value into the show, while including a personal message.
+
 [An Introduction to Podcasting 2.0](https://medium.com/@everywheretrip/an-introduction-to-podcasting-2-0-3c4f61ea17f4)
 
 links to JB episodes?
