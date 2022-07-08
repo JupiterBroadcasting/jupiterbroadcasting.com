@@ -13,32 +13,37 @@ Your memberships keeps our production going and gives us the ability to run fewe
 
 ### Special Features Available via Memberships
 #### [LINUX Unplugged]({{< ref "/show/linux-unplugged" >}})
-* the full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
-* ad-free version of the show
+* The LINUX Unplugged Bootleg Stream
+	* The full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
+* Ad-free version
 
 #### [Self-Hosted]({{< ref "/show/self-hosted" >}})
-* ad-free version of the show
+* The Self-Hosted Post Show
+* Ad-free version
 	
 #### [Coder Radio]({{< ref "/show/coder-radio" >}})
-* Coderly Report
-* ad-free version of the show
+* The Coderly Report
+* Ad-free version
 	
 #### [Linux Action News]({{< ref "/show/linux-action-news" >}})
-* ad-free version of the show
+* Ad-free version
 	
 
-#### [Jupiter Extras]({{< ref "/show/extras" >}}) 
-* ad-free version of the show
+#### [Jupiter Extras]({{< ref "/show/jupiter-extras" >}}) 
+* Ad-free version
 
 	
 #### [Office Hours]({{< ref "/show/office-hours" >}})
-* ad-free version of the show
+* Ad-free version
 
 ### Network Membership
-[Jupiter.party](https://www.jupiter.party/)
-* access special features of every show on the network, including ad-free versions of each.
+Access special features of every single show on the network, at a discount!
+
+* [Jupiter.party](https://www.jupiter.party/) - Join the party!
+
 
 ### A-La-Carte Show Memberships
+Access special features of an individual show only.
 * [LINUX Unplugged Core Contributor](https://jupitersignal.memberful.com/checkout?plan=52946)
 
 * [Self-Hosted SRE](https://jupitersignal.memberful.com/checkout?plan=53744)
