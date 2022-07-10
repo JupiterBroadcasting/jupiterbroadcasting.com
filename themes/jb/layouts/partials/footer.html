@@ -11,11 +11,9 @@
           <div class="column has-text-centered-mobile">
             <h6 class="title is-6">Shows</h6>
             <ul>
-              {{ range $index, $episode := first 10 (where .Site.Pages "Section" "show") }}
-                    {{ if eq $episode.Params.type "show" }}
-                      {{ if eq .Params.active true }}
-                          <li><a href="{{.RelPermalink}}" alt="{{.Title}}">{{.Title}}</a></li>
-                      {{ end }}
+              {{ range where .Pages "Section" "==" "show" }}
+                    {{ if eq .Params.active true }}
+                        <li><a href="{{.RelPermalink}}" alt="{{.Title}}">{{.Title}}</a></li>
                     {{ end }}
                 {{ end }}
             </ul>
