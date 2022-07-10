@@ -33,13 +33,10 @@
                           </div>
                       </div>
                       {{ else }}
-
-
-                              <a href="{{ .URL }}" {{ if (hasPrefix .URL "http") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
-                                  {{ .Pre }}
-                                  <span>{{ .Name }}</span>
-                              </a>
-
+                          <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
                       {{ end }}
                   {{ end }}
 
