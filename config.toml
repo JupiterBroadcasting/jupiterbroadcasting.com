@@ -6,6 +6,20 @@ theme = 'jb'
 
 paginate = 12
 
+# Footer logo and menu title config
+# footer menus are further down
+[params.footer.logo]
+  image = "/images/logo_small.png"
+  text = "Jupiter Broadcasting"
+  url = "/"
+[params.footer.left]
+  headline = "Left"
+[params.footer.center]
+  headline = "Center"
+[params.footer.right]
+  headline = "Right"
+
+
 # Allow HTML in Markdown
 [markup]
   [markup.goldmark]
@@ -66,6 +80,30 @@ paginate = 12
     identifier = "archive"
     url = "/archive"
     weight =90
+
+# Footer Menu (left)
+[[Menu.FooterLeft]]
+    name = "left"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+
+# Footer Menu (center)
+[[Menu.FooterCenter]]
+    name = "center"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+# Footer Menu (right)
+[[Menu.FooterRight]]
+    name = "right"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+# Output formats
 
 [outputFormats]
   [outputFormats.webplayer]
