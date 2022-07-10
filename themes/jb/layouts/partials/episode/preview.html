@@ -10,7 +10,11 @@
   </div>
   <div class="card-content">
      <div class="content">
-      <a href="{{ .Permalink }}"><h3>{{.Title}} | {{.CurrentSection.Title}} {{.Params.episode}}</h3></a>
+      <a href="{{ .Permalink }}"><h3>{{.Title}}
+        {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
+          | {{.CurrentSection.Title}} {{.Params.episode}}
+        {{ end }}
+      </h3></a>
       <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
       <p>{{.Description}}</p>
       </div>
