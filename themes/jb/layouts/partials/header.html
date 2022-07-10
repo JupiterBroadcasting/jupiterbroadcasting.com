@@ -35,7 +35,7 @@
                       {{ else }}
 
 
-                              <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
+                              <a href="{{ .URL }}" {{ if (hasPrefix .URL "http") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
                                   {{ .Pre }}
                                   <span>{{ .Name }}</span>
                               </a>
@@ -47,7 +47,7 @@
 
 
               </div>
-      
+
           </div>
 
       </div>
