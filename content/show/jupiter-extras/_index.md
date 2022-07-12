@@ -10,7 +10,7 @@ hosts = ["chris","brent","wes"]
 type = "show"
 active = true
 
-header_image = "/images/shows/extras.png"
+header_image = "/images/shows/jupiter-extras.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
