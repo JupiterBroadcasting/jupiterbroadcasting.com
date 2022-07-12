@@ -6,7 +6,11 @@
 {{ define "main" }}
   <div class="container">
       <div class="content">
-        <h1>{{ .Title }} | {{.CurrentSection.Title}} {{.Params.episode}}</h1>
+        <h1>{{ .Title }}
+          {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
+            | {{.CurrentSection.Title}} {{.Params.episode}}
+          {{ end }}
+        </h1>
         <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
         {{ partial "episode/videoplayer.html" . }}
 
