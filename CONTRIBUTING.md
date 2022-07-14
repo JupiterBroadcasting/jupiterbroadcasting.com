@@ -29,7 +29,7 @@ Q:
 
 A:
 > the key is to communicate enough to avoid unnecessary duplication of efforts, which has already happened unfortunately.
-
+>
 > So, if you want to tackle a particular ticket feel free to assign yourself (if that's within your ability) or otherwise comment to signal your intentions and interest. the important thing is to communicate your intention, and progress so we can help you find success. And, as we've seen already: it seems like when there's movement on a ticket we all get inspired aswell. Progress is wonderfully contagious!
 
 ### PRs, work in progress
