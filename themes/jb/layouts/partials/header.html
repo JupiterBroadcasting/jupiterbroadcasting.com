@@ -33,13 +33,10 @@
                           </div>
                       </div>
                       {{ else }}
-
-
-                              <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
-                                  {{ .Pre }}
-                                  <span>{{ .Name }}</span>
-                              </a>
-
+                          <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
                       {{ end }}
                   {{ end }}
 
@@ -47,7 +44,7 @@
 
 
               </div>
-      
+
           </div>
 
       </div>

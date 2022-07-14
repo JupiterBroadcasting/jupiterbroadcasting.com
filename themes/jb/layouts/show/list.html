@@ -13,7 +13,6 @@
       </div>
       <div class="column is-half">
         Your Hosts
-
         {{ range $index, $hostname := .Params.hosts }}
           {{ $host := index $.Site.Data.people $hostname }}
             <div>
@@ -32,20 +31,27 @@
 <section class="section episode-list">
   <div class="container">
      <div class="columns is-multiline">
+
         {{ range .Data.Pages }}
-            {{ if ne  .Kind "section" }}
-                <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                  {{ partial "episode/preview.html" . }}
-                </div>
-            {{ else }}
+            {{ if eq  .Kind "section" }}
                 {{ if eq .Params.active true }}
                   <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                       {{ partial "episode/show.html" . }}
                   </div>
                 {{ end }}
             {{ end }}
-          {{ end }}
+        {{ end }}
+
+        {{ $paginator := .Paginate (where .Pages "Type" "episode") 12 }}
+        {{ range $paginator.Pages }}
+        <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+          {{ partial "episode/preview.html" . }}
+        </div>
+        {{ end }}
       </div>
+    </div>
+    <div class="container">
+          {{ partial "helper/pagination.html" . }}
     </div>
 </section>
 
