@@ -21,8 +21,10 @@
         {{ end }}
 
         {{ .Description }}
+        
+        {{ partial "episode/podverseplayer.html" . }}
 
-        {{ partial "episode/audioplayer.html" . }}
+        {{/*  {{ partial "episode/audioplayer.html" . }}  */}}
 
         {{ partial "episode/support.html" . }}
         {{ .Content }}
