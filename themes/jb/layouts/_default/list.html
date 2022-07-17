@@ -5,22 +5,36 @@
 </div>
 
 <div class="container">
-
-    <div class="column is-full content">
-      {{.Content}}
-    </div>
-
+  <div class="column is-full content">
+    {{.Content}}
+  </div>
 </div>
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
 {{ if eq $lastUrlElement "hosts" }}
-  <section class="section host-list">
+  <section class="host-list">
     <div class="container">
        <div class="columns is-multiline">
-        {{ range $index, $host := $.Site.Data.hosts }}
+        {{ range $index, $host := $.Site.Data.people  }}
+          {{ if eq .type "host" }}
             <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
               {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
             </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ else if eq $lastUrlElement "guests" }}
+  <section class="guest-list">
+    <div class="container">
+       <div class="columns is-multiline">
+        {{ range $index, $guest := $.Site.Data.people  }}
+          {{ if eq .type "guest" }}
+            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+              {{ partial "guests/small.html" (dict "context" . "guest" $guest) }}
+            </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>
