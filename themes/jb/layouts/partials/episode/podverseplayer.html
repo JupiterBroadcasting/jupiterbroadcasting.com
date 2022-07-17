@@ -1,0 +1,9 @@
+<div class="container">
+    <iframe 
+        id="pv-embed-player" 
+        scrolling="no"
+        src='https://podverse.fm/embed/player?podcastId={{ print .CurrentSection.Params.podverse_podcast_id }}&episodeGuid={{ print .Params.episode_guid}}&episodeMediaUrl={{ .Params.podcast_file }}&episodeTitle={{ .Params.Title }}&episodePubDate={{ .Date.Unix }}'
+        >
+    </iframe>
+</div>
+

@@ -1,6 +1,5 @@
 {{ define "headcontent" }}
   <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
-  <script src="//cdn.podlove.org/web-player/5.x/embed.js"></script>
 {{end}}
 
 {{ define "main" }}
@@ -21,8 +20,8 @@
         {{ end }}
 
         {{ .Description }}
-
-        {{ partial "episode/audioplayer.html" . }}
+        
+        {{ partial "episode/podverseplayer.html" . }}
 
         {{ partial "episode/support.html" . }}
         {{ .Content }}

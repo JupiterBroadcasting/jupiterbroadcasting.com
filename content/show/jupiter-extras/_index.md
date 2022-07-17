@@ -14,6 +14,7 @@ header_image = "/images/shows/jupiter-extras.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
+podverse_podcast_id = "0vaTwihG1R"
 +++
 
 Surprise podcasts from your friends at Jupiter Broadcasting
