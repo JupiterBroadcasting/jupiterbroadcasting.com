@@ -45,6 +45,48 @@ paginate = 12
     url = "/show"
     weight =-90
 
+    [[Menu.Main]]
+        name = "Coder Radio"
+        identifier = "coder-radio"
+        url = "/show/coder-radio"
+        weight =91
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Jupiter EXTRAS"
+        identifier = "jupiter-extras"
+        url = "/show/jupiter-extras"
+        weight =92
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Linux Action News"
+        identifier = "linux-action-news"
+        url = "/show/linux-action-news"
+        weight =93
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Linux Unplugged"
+        identifier = "linux-unplugged"
+        url = "/show/linux-unplugged"
+        weight =94
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Office Hours"
+        identifier = "office-hours"
+        url = "/show/office-hours"
+        weight =95
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Self-Hosted"
+        identifier = "self-hosted"
+        url = "/show/self-hosted"
+        weight =96
+        parent = "shows"
+
 [[Menu.Main]]
     name = "Sponsors"
     identifier = "sponsors"
@@ -76,16 +118,23 @@ paginate = 12
     weight =70
 
 [[Menu.Main]]
-    name = "Hosts"
-    identifier = "hosts"
-    url = "/hosts"
+    name = "People"
+    identifier = "people"
     weight =80
 
-[[Menu.Main]]
-    name = "Guests"
-    identifier = "guests"
-    url = "/guests"
-    weight =85
+    [[Menu.Main]]
+        name = "Hosts"
+        identifier = "hosts"
+        url = "/hosts"
+        weight =81
+        parent = "people"
+
+    [[Menu.Main]]
+        name = "Guests"
+        identifier = "guests"
+        url = "/guests"
+        weight =82
+        parent = "people"
 
 [[Menu.Main]]
     name = "Archive"
