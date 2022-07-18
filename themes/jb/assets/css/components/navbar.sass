@@ -1,0 +1,79 @@
+@import "../libs/bulma/sass/utilities/mixins"
+
+$navbar-new-dropdown-background-color: $scheme-invert !default
+$navbar-new-dropdown-item-hover-color: $link !default
+$navbar-new-dropdown-item-hover-background-color: $scheme-main !default
+
+.navbar
+  @each $name, $pair in $navbar-colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      color: $color-invert
+      .navbar-brand
+        & > .navbar-item,
+        .navbar-link
+          color: $color-invert
+        & > a.navbar-item,
+        .navbar-link
+          &:focus,
+          &:hover,
+          &.is-active
+            background-color: bulmaDarken($color, 5%)
+            color: $color-invert
+        .navbar-link
+          &::after
+            border-color: $color-invert
+      .navbar-burger
+        color: $color-invert
+      +from($navbar-breakpoint)
+        .navbar-start,
+        .navbar-end
+          & > .navbar-item,
+          .navbar-link
+            color: $color-invert
+          & > a.navbar-item,
+          .navbar-link
+            &:focus,
+            &:hover,
+            &.is-active
+              background-color: bulmaDarken($color, 5%)
+              color: $color-invert
+          .navbar-link
+            &::after
+              border-color: $color-invert
+        .navbar-item.has-dropdown:focus .navbar-link,
+        .navbar-item.has-dropdown:hover .navbar-link,
+        .navbar-item.has-dropdown.is-active .navbar-link
+          background-color: bulmaDarken($color, 5%)
+          color: $color-invert
+        .navbar-dropdown
+          a.navbar-item
+            &.is-active
+              background-color: $color
+              color: $color-invert
+
++from($navbar-breakpoint)
+  .navbar
+    &.is-transparent
+      .navbar-dropdown
+        a.navbar-item
+          &:focus,
+          &:hover
+            background-color: $navbar-new-dropdown-item-hover-background-color
+            color: $navbar-new-dropdown-item-hover-color
+  .navbar-dropdown
+    background-color: $navbar-new-dropdown-background-color
+    a.navbar-item
+      &:focus,
+      &:hover
+        background-color: $navbar-new-dropdown-item-hover-background-color
+        color: $navbar-new-dropdown-item-hover-color
+  .navbar-item.has-dropdown
+    &:focus,
+    &:hover,
+    &.is-active
+      .navbar-link
+        background-color: $navbar-item-hover-background-color
+        color: $link
