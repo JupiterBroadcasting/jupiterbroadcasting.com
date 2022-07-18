@@ -23,7 +23,9 @@ A:
 > * some tickets are specifically labeled "low priority", but others are so far of fairly equal importance. Anytime there is something clearly urgent, the "urgent" tag will be used.
 
 ### Issue assignment for work in progress
-* Note: currently non-organisation members cannot self-assign.
+* Note:
+  * currently non-organisation members cannot self-assign.
+  * if you're closing a specific issue you can use [Github's closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to automatically close the issue once it's merged.
 
 Q:
 > Since I’ve not worked with a team using git/GitHub, is the etiquette to assign a issue to ourselves if we are working on it or just comment on the issue saying we are working on it?
