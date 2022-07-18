@@ -1,0 +1,14 @@
+@import "../libs/bulma/sass/utilities/mixins"
+
+$tag-new-bg-color: $dark !default
+$tag-new-color: $grey-lighter !default
+
+.tag:not(body)
+  background-color: $tag-new-bg-color
+  &:hover,
+  &:focus
+    background-color: darken($tag-background-color, 70%)
+
+.tags
+  .tag a
+    color: $tag-new-color 
