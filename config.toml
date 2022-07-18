@@ -13,7 +13,7 @@ paginate = 12
   text = "Jupiter Broadcasting"
   url = "/"
 [params.footer.left]
-  headline = "Left"
+  headline = "Get Social"
 [params.footer.center]
   headline = "Center"
 [params.footer.right]
@@ -82,6 +82,12 @@ paginate = 12
     weight =80
 
 [[Menu.Main]]
+    name = "Guests"
+    identifier = "guests"
+    url = "/guests"
+    weight =85
+
+[[Menu.Main]]
     name = "Archive"
     identifier = "archive"
     url = "/archive"
@@ -89,11 +95,40 @@ paginate = 12
 
 # Footer Menu (left)
 [[Menu.FooterLeft]]
-    name = "left"
-    identifier = "home"
-    url = "/"
-    weight =-100
+    name = "PeerTube"
+    identifier = "ext-peertube"
+    url = "https://jupiter.tube/"
+    weight = -100
 
+[[Menu.FooterLeft]]
+    name = "YouTube"
+    identifier = "ext-youtube"
+    url = "https://www.youtube.com/user/jupiterbroadcasting"
+    weight = -90
+
+[[Menu.FooterLeft]]
+    name = "Twitter"
+    identifier = "ext-twitter"
+    url = "https://twitter.com/jupitersignal"
+    weight = -80
+
+[[Menu.FooterLeft]]
+    name = "Facebook"
+    identifier = "ext-facebook"
+    url = "http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615"
+    weight = -70
+
+[[Menu.FooterLeft]]
+    name = "Telegram"
+    identifier = "ext-telegram"
+    url = "https://www.jupiterbroadcasting.com/telegram"
+    weight = -60
+
+[[Menu.FooterLeft]]
+    name = "IRC"
+    identifier = "ext-irc"
+    url = "https://kiwiirc.com/client/irc.geekshed.net/?nick=JBLive_?&theme=cli#jupiterbroadcasting"
+    weight = -50
 
 # Footer Menu (center)
 [[Menu.FooterCenter]]

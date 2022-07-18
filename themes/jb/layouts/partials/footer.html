@@ -13,7 +13,11 @@
               {{ range .Site.Menus.footerleft }}
                 <li>
                   <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }}>
-                    {{ .Name }}
+                    {{ if (hasPrefix .Identifier "ext-icon") }}
+                      <img src="/images/icons/{{ .Identifier }}.svg" alt="{{ .Name }}" width="30">
+                    {{ else }}
+                      {{ .Name }}
+                    {{ end }}
                   </a>
                 </li>
               {{ end }}
@@ -25,7 +29,11 @@
               {{ range .Site.Menus.footercenter }}
                 <li>
                   <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }}>
-                    {{ .Name }}
+                    {{ if (hasPrefix .Identifier "ext-icon") }}
+                      <img src="/images/icons/{{ .Identifier }}.svg" alt="{{ .Name }}" width="30">
+                    {{ else }}
+                      {{ .Name }}
+                    {{ end }}
                   </a>
                 </li>
               {{ end }}
@@ -37,7 +45,11 @@
               {{ range .Site.Menus.footerright }}
                 <li>
                   <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }}>
-                    {{ .Name }}
+                    {{ if (hasPrefix .Identifier "ext-icon") }}
+                      <img src="/images/icons/{{ .Identifier }}.svg" alt="{{ .Name }}" width="30">
+                    {{ else }}
+                      {{ .Name }}
+                    {{ end }}
                   </a>
                 </li>
               {{ end }}

@@ -10,10 +10,10 @@
           <h2 class="title is-3">Shows with {{ $host.name}}</h2>
           {{ range $key, $taxonomy := .Site.Taxonomies.hosts }}
            {{ if eq $key $.Title }}
-              <div class="columns">
+              <div class="columns is-multiline">
                   {{ range $taxonomy.Pages }}
                    {{ if eq  .Kind "section" }}
-                   <div class="column">
+                   <div class="column is-one-third">
                        <div class="card">
                           <div class="card-image">
                             <a href="{{ .Permalink}}">

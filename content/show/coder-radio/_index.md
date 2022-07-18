@@ -14,6 +14,8 @@ header_image = "/images/shows/coder-radio.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
+podverse_podcast_id = "ZXd_1Ojd9"
+
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
 [links.email]
