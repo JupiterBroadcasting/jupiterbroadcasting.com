@@ -15,9 +15,10 @@ Q:
 
 A:
 > so far we've been operating on the following principles:
-
+> 
 > * collect ideas and features and tasks via tickets
-> * when you feel inspired about a particular ticket or feature, have at it!
+> * the current Milestone defines our priorites for website launch - concentrate here first
+> * when you feel inspired about a particular ticket or feature, please propose your implementation idea/strategy for approval via  comments, which also indicates you are dedicated to solving this issue, thus avoiding duplication of effort.
 > * if you have a particular skillset, feel free to focus there.
 > I've also been attempting to specifically label "low priority" tasks, but others are so far of fairly equal importance. Anytime there is something clearly urgent, the "urgent" tag will be use.
 
