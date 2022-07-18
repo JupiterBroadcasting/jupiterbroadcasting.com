@@ -25,18 +25,19 @@ jobs:
         path: ./show-scraper
 
     - name: 'Setup Python'
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v3
       with:
         python-version: '3.10'
         architecture: 'x64'
+        cache: "pipenv"
     
     - name: 'Install Python deps'
-      run: pip install -r ./show-scraper/requirements.txt
+      run: pip install pipenv && cd ./show-scraper && pipenv sync --bare
 
     - name: 'Scrape'
       run: |
         cd ./show-scraper
-        DATA_DIR=../jbsite LATEST_ONLY=true python scraper.py
+        DATA_DIR=../jbsite LATEST_ONLY=true pipenv run scraper.py
 
     - name: 'Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
