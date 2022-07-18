@@ -6,26 +6,37 @@
 {{ define "main" }}
   <div class="container">
       <div class="content">
-        <h1>{{ .Title }}
-          {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
-            | {{.CurrentSection.Title}} {{.Params.episode}}
-          {{ end }}
-        </h1>
-        <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
-        {{ partial "episode/videoplayer.html" . }}
+        <div class="columns">
+          <div class="column is-8">
+            <h1 style="display: inline">{{ .Title }}  </h1><h3 style="display: inline"><i>(Ep. {{.Params.episode}})</i></h3>
+              <!--{{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
+                | {{.Params.episode}} 
+              {{ end }} 
+            </h1> -->
+            <h3> </h3>
+            <h4>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }} &nbsp; | &nbsp; <a href='{{ .Site.BaseURL }}show/{{.Params.Show_Slug}}'>{{ .CurrentSection.Title }}</a></h4>
+            <!-- {{ partial "episode/videoplayer.html" . }} -->
+            <br />
+            <p>{{ .Description }} </p>
+            <b>Direct Download: </b><a href="">MP3</a> | <a href="">Video</a> | <a href="">YouTube</a>
+          </div>
+          <div class="column is-4"><center>
+              <a href="{{ .Permalink }}">
+                <img src="{{.Params.header_image }}" width="auto" height="121" alt="{{.Title}}">
+              </a><br />
+            {{ partial "episode/support.html" . }}</center>
+          </div>
+        </div>
+        {{ partial "episode/audioplayer.html" . }}
+
+        
+        {{ .Content }}
 
         {{ with .Params.tags }}
           <div class="tags">
             {{ partial "episode/tags.html" . }}
           </div>
         {{ end }}
-
-        {{ .Description }}
-
-        {{ partial "episode/audioplayer.html" . }}
-
-        {{ partial "episode/support.html" . }}
-        {{ .Content }}
 
 
         <h2>Hosts</h2>
