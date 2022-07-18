@@ -1,0 +1,47 @@
+// WebLN-V4V
+// For reference: https://github.com/podverse/webln-v4v/blob/main/app/styles/sample-variable-overrides.scss
+// These overrides attempt to use as many Bulma variable as possible, to make it 
+// match the theme nicely.
+
+.webln-v4v-container
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+
+webln-v4v
+  --webln-background-color: #{$body-background-color};
+  --webln-text: #{$text};
+  --webln-font-family: #{$family-sans-serif};
+  --webln-max-width: 500px;
+   
+  --webln-link-color: rgba(255,255,255,.7);
+  --webln-link-color-active: rgba(255,255,255,.7);
+  --webln-link-color-visited: rgba(255,255,255,.7);
+  --webln-link-color-hover: #fff;
+  
+  --webln-text-input-background-color: #363636;
+  --webln-input-border: #2d2d2d;
+  --webln-input-placeholder: rgb(194 194 194 / 40%);
+  
+  --webln-button-border-radius: #{$radius};
+  --webln-button-font-size: #{$size-normal};
+  --webln-button-padding-v: #{$button-padding-vertical};
+  --webln-button-padding-h: #{$button-padding-horizontal};
+  
+  --webln-button-primary-background-color: #ffc300;
+  --webln-button-primary-text-color: #{$button-color};
+  --webln-button-primary-background-color-hover: #ffd44a;
+
+  --webln-button-secondary-background-color: #{$grey-dark};
+  --webln-button-secondary-text-color: #{$button-color};
+  --webln-button-secondary-background-color-hover: #{$grey};
+
+  --webln-button-focus-box-shadow: none;
+  --webln-button-focus-ouline-color: #fff;
+
+  --webln-button-disabled-background-color: #{$grey-light};
+  --webln-button-disabled-color: #{$grey-lighter};
+
+  --webln-table-border-color: #{$grey-lighter};
+  --webln-error-outline-color: #{$danger};
+  --webln-error-text-color: #{$danger};
