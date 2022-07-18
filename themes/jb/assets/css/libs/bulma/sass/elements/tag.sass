@@ -1,6 +1,6 @@
 @import "../utilities/mixins"
 
-$tag-background-color: $dark !default
+$tag-background-color: $background !default
 $tag-color: $text !default
 $tag-radius: $radius !default
 $tag-delete-margin: 1px !default
@@ -57,15 +57,12 @@ $tag-colors: $colors !default
         +rtl
           border-top-left-radius: 0
           border-bottom-left-radius: 0
-  .tag a
-    color: $border //a light gray
-    &:hover
-      text-decoration: underline
 
 .tag:not(body)
   align-items: center
   background-color: $tag-background-color
   border-radius: $tag-radius
+  color: $tag-color
   display: inline-flex
   font-size: $size-small
   height: 2em
@@ -137,3 +134,7 @@ $tag-colors: $colors !default
       background-color: darken($tag-background-color, 10%)
   &.is-rounded
     border-radius: $radius-rounded
+
+a.tag
+  &:hover
+    text-decoration: underline
