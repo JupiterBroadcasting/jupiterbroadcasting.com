@@ -37,7 +37,7 @@ jobs:
     - name: 'Scrape'
       run: |
         cd ./show-scraper
-        DATA_DIR=../jbsite LATEST_ONLY=true pipenv run scraper.py
+        DATA_DIR=../jbsite LATEST_ONLY=true pipenv run ./scraper.py
 
     - name: 'Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
