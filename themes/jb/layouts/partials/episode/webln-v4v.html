@@ -1,0 +1,34 @@
+{{/*  https://github.com/podverse/webln-v4v/blob/main/docs/quick-start.md#customize-the-webcomponent-attributes-mostly-optional  */}}
+
+
+{{/*  TODO: Maybe download this into  themes/jb/assests/js/libs */}}
+<script async="true" src="https://cdn.jsdelivr.net/npm/webln-v4v@latest/dist/webcomponent.js"></script>
+
+
+<div class="webln-v4v-container">
+    <webln-v4v
+        app_name="JupiterBroadcasting.com"
+        content_type="podcast"
+        
+        {{/* 
+            These "has_*_terms" values will make the to show by default, this way is
+            easier to handle in terms of the UI.
+            TODO: Ask if showing the terms is required? if so, will need to use cookies
+                    to save the user's answer. Can be done using the events from 
+                    webln-v4v.
+        */}}
+        has_accepted_terms="true"
+        has_rejected_terms="false"
+
+        {{/*  TODO: Podcast index id  */}}
+        podcast_podcast_index_id=""
+
+        episode_guid="{{ print .Params.episode_guid}}"
+        episode_title="{{ print .Title }}"
+        header_text="Send Bitcoin donation to support the show"
+        recipient_label="Amount"
+        v4v_tag='{ "method": "keysend", "suggested": 5e-8, "type": "lightning", "recipients": [ { "address": "03cf7e9b79a3230749db642ad690889065ec35b9ded184266d4fce424ab75470fc", "customKey": "", "customValue": "", "fee": false, "name": "Brent", "split": 50, "type": "node" }, { "address": "037d284d2d7e6cec7623adbe600450a73b42fb90800989f05a862464b05408df39", "customKey": "", "customValue": "", "fee": false, "name": "Podcaster", "split": 50, "type": "node" }, { "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a", "customKey": "", "customValue": "", "fee": true, "name": "Podcastindex.org", "split": 1, "type": "node" } ] }'
+    />
+</div>
+
+
