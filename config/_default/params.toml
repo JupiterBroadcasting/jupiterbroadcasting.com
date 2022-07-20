@@ -4,21 +4,25 @@ author = "Jupiter Broadcasting"
 ogimage = "/images/jupiter-broadcasting.png" # Open Graph default image
 
 # itunes feed info
-# feed.copyright = "Copyright 2022 Jupiter Broadcasting" #do not use markdown in this field; it is used in the feed
-# feed.itunes_subtitle = "A weekly talk show" #no markdown or HTML
-# feed.itunes_author = "Jupiter Broadcasting" #no markdown or HTML
-# feed.itunes_summary = "A weekly talk show" # Limited to 4000 characters or less, plain text, no HTML
-# feed.itunes_owner_name = "Jupiter Broadcasting"
-# feed.itunes_owner_email = "chris@jupiterbroadcasting.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on Apple Podcasts. It will not be publicly displayed on Apple Podcasts.
-# feed.itunes_image = "https://jb.codefighters.net/images/logo_narrow.png" #fqdn to the image art for your podcast
-# feed.itunes_top_category = "Education"
-# feed.itunes_first_sub_category = "How To"
-# feed.itunes_second_sub_category = "Business"
-# feed.language = "en-us"
-# feed.itunes_type = "episodic"
+feed.copyright = "Copyright 2022 Jupiter Broadcasting" #do not use markdown in this field; it is used in the feed
+feed.itunes_subtitle = "A weekly talk show" #no markdown or HTML
+feed.itunes_author = "Jupiter Broadcasting" #no markdown or HTML
+feed.itunes_summary = "A weekly talk show" # Limited to 4000 characters or less, plain text, no HTML
+feed.itunes_owner_name = "Jupiter Broadcasting"
+feed.itunes_owner_email = "chris@jupiterbroadcasting.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on Apple Podcasts. It will not be publicly displayed on Apple Podcasts.
+feed.itunes_image = "https://jb.codefighters.net/images/logo_narrow.png" #fqdn to the image art for your podcast
+feed.itunes_top_category = "Education"
+feed.itunes_first_sub_category = "How To"
+feed.itunes_second_sub_category = "Business"
+feed.language = "en-us"
+feed.itunes_type = "episodic"
+feed.rss = "https://feed.jupiter.zone/allshows"
+feed.video_rss = "https://feed.jupiter.zone/allvid"
+
 # Twitch Info
-#twitch.channel = "jupiterbroadcasting"
-#twitch.parent = "jb-live.codefighters.net"
+twitch.channel = "jupiterbroadcasting"
+twitch.parent = "jb-live.codefighters.net"
+
 # Calendar
-#calendar.rss = "https://www.google.com/calendar/ical/jalb5frk4cunnaedbfemuqbhv4@group.calendar.google.com/public/basic.ics"
-#calendar.embedd= "jalb5frk4cunnaedbfemuqbhv4@group.calendar.google.com"
+calendar.rss = "https://www.google.com/calendar/ical/jalb5frk4cunnaedbfemuqbhv4@group.calendar.google.com/public/basic.ics"
+calendar.embedd= "jalb5frk4cunnaedbfemuqbhv4@group.calendar.google.com"
