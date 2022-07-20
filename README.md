@@ -12,7 +12,7 @@
 ## Contributing
 Firstly - thank you for being here! We appreciate you.
 
-Please read our [Contributor Guidlines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) on how to contribute wisely for all to benefit.
+Please read our [Contributor Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) on how to contribute wisely for all to benefit.
 
 ### Discussions via Matrix
 
