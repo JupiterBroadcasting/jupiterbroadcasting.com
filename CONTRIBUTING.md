@@ -73,3 +73,5 @@ Our base of operations for group discussions on this project: [Jupiter Web Site 
 ---
 
 Other than that - have fun! 🐧
+
+...and don't be shy: [gitmoji.dev](https://gitmoji.dev/) 🌱
