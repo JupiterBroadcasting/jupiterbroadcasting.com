@@ -1,0 +1,15 @@
+@import "../libs/bulma/sass/utilities/mixins"
+
+$section-css-padding: 0.5rem 1.5rem !default
+$section-css-padding-medium: 9rem 1.5rem !default
+$section-css-padding-large: 18rem 1.5rem !default
+
+.section
+  padding: $section-css-padding
+  // Responsiveness
+  +desktop
+    // Sizes
+    &.is-medium
+      padding: $section-css-padding-medium
+    &.is-large
+      padding: $section-css-padding-large

@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-image">
+    <a href="/guests/{{ .guest.username }}" alt="{{ .guest.name }}">
+      <img class="image is-fullwidth" src="{{ .guest.avatar }}" alt="{{ .guest.name }}">
+    </a>
+  </div>
+  <div class="card-content">
+    <div class="content">
+      <a href="/guests/{{ .guest.username }}" alt="{{ .guest.name }}"><strong>{{ .guest.name }}</strong></a><br/>
+    </div>
+  </div>
+</div>
