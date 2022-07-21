@@ -67,7 +67,15 @@ Our base of operations for group discussions on this project: [Jupiter Web Site 
 ### How do I style my UI components?
 
 * Please try to use [Bulma](https://bulma.io/) as much as possible for all your frontend needs. It has a great documentation and is easy to grasp quickly. You can probably achieve everythin you need using the Bulma CSS classes.
-* If you end up not finding what you need there, or need to build somethin on top of Bulma, your CSS (technically SASS) would go into this [directory](themes/jb/assets/css). 
+* Try and use the color variables defined in [_variables.sass](./themes/jb/assets/css/_variables.sass)
+  * Some of the colors have multiple aliases for convineice 
+  * All of these colors have been set-up for use with [Bulma modifiers syntax](https://bulma.io/documentation/overview/modifiers/#docsNav), here are some examples:
+    ```
+    <button class="button is-primary">is-jb-pink</button>
+    <button class="button is-jb-pink">is-jb-pink</button>
+    <button class="button is-lup-blue">is-lup-blue</button>
+    ```
+* If you end up not finding what you need there, or need to build somethin on top of Bulma, your CSS (technically SASS) would go into this [directory](./themes/jb/assets/css). 
   * Please try and follow the existing structure as an example.
 
 ---

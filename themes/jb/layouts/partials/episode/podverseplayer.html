@@ -8,36 +8,23 @@
 </div>
 
 <script>
-  // JupiterBroadcasting Branding colors:
-  const JBColorsRGB = {
-    // jb-brand, linux-unplugged, coder-radio
-    blueCloud: '#6ecff5',       
-    // jb-brand, linux-unplugged
-    blueBold: '#0070bd',
-    // jb-brand
-    grayDark: '#2a2a2a',        
-    // jb-brand
-    grayCool: '#6a6a6a',  
-    // jupiter-extras      
-    graySubtle: '#cccccc',
-    // coder-radio, linux-action-news, user-error
-    redError: '#d9001a',
-    // bsd-now, linux-headlines
-    orangeBlowfish: '#f5b821',
-    // choose-linux
-    greenConsole: '#00d900',   
-    // self-hosted
-    orangeRedLeicester: '#ed7026',
-    // tech-snap
-    violetVdev: '#d417a3'
+  // Colors matching the SASS colors in _variables.sass
+  const COLORS = {
+    white: '#ffffff',
+    darker: '#181C22',
+    blue: '#6ecff5',
+    blueDark: '#0070bd',
+    greyDark: '#2a2a2a',
+    grey: '#6a6a6a',
+    greyLight: '#cccccc',
   };
 
   /**
-  * See sample code:
-  *    https://github.com/podverse/podverse-web/blob/master/pages/embed/player-demo-custom-css.tsx
-  * Demo:
-  *    https://podverse.fm/embed/player-demo-custom-css
-  **/
+   * See sample code:
+   *    https://github.com/podverse/podverse-web/blob/master/pages/embed/player-demo-custom-css.tsx
+   * Demo:
+   *    https://podverse.fm/embed/player-demo-custom-css
+   **/
   let pvEmbedHasLoadedListener;
 
   function pvHandleCSSOverrides(e) {
@@ -58,24 +45,22 @@
       return;
     }
 
-
     const messageBody = {
       eventName: 'pv-embed-load-custom-css',
       styleRules: {
-        '--pv-embed-background-color': JBColorsRGB.grayDark,
-        '--pv-embed-border-color': JBColorsRGB.grayCool + '40', // 0x40 alpha = 25%
-        '--pv-embed-divider-color': 'green',
+        '--pv-embed-background-color': COLORS.darker,
+        '--pv-embed-border-color': COLORS.grey + '60', // 0x60 alpha = 37.5%
         '--pv-embed-font-family': 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
-        '--pv-embed-text-color-primary': '#fff',
-        '--pv-embed-text-color-secondary': JBColorsRGB.blueCloud,
-        '--pv-embed-text-color-tertiary': JBColorsRGB.graySubtle,
-        '--pv-embed-play-button-background-color': JBColorsRGB.blueBold,
-        '--pv-embed-play-button-border-color': JBColorsRGB.blueCloud,
-        '--pv-embed-play-button-icon-color': '#fff',
-        '--pv-embed-slider-background-color': JBColorsRGB.blueBold + '80', // 0x80 alpha = 50%
-        '--pv-embed-slider-fill-color': '#fff',
-        '--pv-embed-slider-marker-color': JBColorsRGB.blueCloud,
-        '--pv-embed-slider-highlight-color': JBColorsRGB.blueCloud + '40', // 0x40 alpha = 25%
+        '--pv-embed-text-color-primary': COLORS.white,
+        '--pv-embed-text-color-secondary': COLORS.blue,
+        '--pv-embed-text-color-tertiary': COLORS.greyLight,
+        '--pv-embed-play-button-background-color': COLORS.blueDark,
+        '--pv-embed-play-button-border-color': COLORS.blueDark,
+        '--pv-embed-play-button-icon-color': COLORS.white,
+        '--pv-embed-slider-background-color': COLORS.blueDark + '80', // 0x80 alpha = 50%
+        '--pv-embed-slider-fill-color': COLORS.white,
+        '--pv-embed-slider-marker-color': COLORS.blue,
+        '--pv-embed-slider-highlight-color': COLORS.blue + '40', // 0x40 alpha = 25%
       },
     };
 
