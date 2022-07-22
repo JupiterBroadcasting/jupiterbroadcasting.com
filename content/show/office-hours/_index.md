@@ -1,6 +1,6 @@
 +++
 title = "Office Hours"
-description = "Office Hours with Chris"
+description = "A podcast for the community of Jupiter Broadcasting, the Open Source media powerhouse of the Internet. Get the inside scope on our projects, the future of independent media, and decentralized community."
 date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["Office Hours"]
@@ -15,4 +15,10 @@ header_image = "/images/shows/office-hours.png"
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
 podverse_podcast_id = "GLuztlxs0-"
+
+[links.twitter]
+  url="https://twitter.com/ChrisLAS"
+
 +++
+
+A podcast for the community of Jupiter Broadcasting, the Open Source media powerhouse of the Internet. Get the inside scope on our projects, the future of independent media, and decentralized community.
