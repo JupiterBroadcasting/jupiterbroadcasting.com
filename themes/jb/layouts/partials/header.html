@@ -48,7 +48,9 @@
                                   {{ else }}
                                     {{ $link = .Permalink }}
                                   {{ end }}
-                                  <a href="{{ $link }}" class="navbar-item">{{ .Title }}</a>
+                                  <a href="{{ $link }}" class="navbar-item">
+                                    {{ if ne .Params.comms_type "network" }} {{ .Params.comms_type }} {{ end }}{{ .Title }}
+                                </a>
                               {{ end }}
                           </div>
                       </div>
