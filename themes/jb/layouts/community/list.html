@@ -5,7 +5,7 @@
   <h2 class="subtitle is-size-3">Network wide communications</h2>
   <div class="columns is-multiline">
     {{ range where .Pages "Params.comms_type" "network" }}
-    <div class="column is-4 is-2-fullhd is-2-desktop is-10-mobile">
+    <div class="column is-4 is-2-fullhd is-10-mobile">
       {{ partial "community/card.html" . }}
     </div>
     {{ end }}
@@ -20,7 +20,7 @@
         <h3 class="is-size-4">{{ .Key }}</h3>
         <div class="columns is-multiline">
           {{ range .Pages }}
-          <div class="column is-4 is-2-fullhd is-2-desktop is-10-mobile">
+          <div class="column is-4 is-2-fullhd is-10-mobile">
             {{ partial "community/card.html" . }}
           </div>
           {{ end }}
