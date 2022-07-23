@@ -5,6 +5,7 @@ date = "2022-07-19T20:59:07-04:00"
 draft = false
 logo = "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble.svg"
 comms_type = "network"
+direct_link = ""
 +++
 
 # JB Mumble Server Info
