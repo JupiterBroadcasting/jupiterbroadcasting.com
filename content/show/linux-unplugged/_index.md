@@ -36,7 +36,7 @@ podverse_podcast_id = "g40Um-HP1"
   url="https://linuxunplugged.com/articles" 
 
 [links.youtube]
-  url="https://www.youtube.com/watch?v=CgTyhkI_qkE&list=PLUW3LUwQvegxVckkyK5dyyARdfjwGY-cw"
+  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxVckkyK5dyyARdfjwGY-cw"
 +++
 
 An open show powered by community LINUX Unplugged takes the best attributes of open collaboration and turns it into a weekly show about Linux.

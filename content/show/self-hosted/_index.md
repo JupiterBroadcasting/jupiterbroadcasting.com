@@ -35,7 +35,7 @@ podverse_podcast_id = "nUl1ZCL76"
   url="https://selfhosted.show"
 
 [links.youtube]
-  url="https://www.youtube.com/watch?v=bWLkoDU4OT0&list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
+  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
 +++
 
 Discover new software and hardware to get the best out of your network, control smart devices, and secure your data on cloud services. Self-Hosted is a chat show between Chris and Alex two long-time "self-hosters" who share their lessons and take you on the journey of their new ones. 

@@ -18,6 +18,9 @@ podverse_podcast_id = "0vaTwihG1R"
 
 [links.twitter]
   url="https://twitter.com/jupiterextras"
+
+[links.youtube]
+  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegzkMxcqW0dslRJmumg6WrZi"  
 +++
 
 New ideas, great interviews, events, and other content you will love. We bring you the Extras.

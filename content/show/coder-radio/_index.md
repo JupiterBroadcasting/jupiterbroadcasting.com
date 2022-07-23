@@ -25,7 +25,7 @@ podverse_podcast_id = "ZXd_1Ojd9"
 [links.shownotes]
   url = "https://coder.show/"  
 [links.youtube]
-  url="https://www.youtube.com/watch?v=QQwdoS__pss&list=PLCB9545FD2C26E547"
+  url="https://www.youtube.com/playlist?list=PLCB9545FD2C26E547"
 
 
 

@@ -20,9 +20,8 @@ podverse_podcast_id = "haAiVbD1N9"
 [links.twitter]
   url = "https://twitter.com/linuxactionnews"
 [links.email]
-  url = "https://www.jupiterbroadcasting.com/contact/"  
-[links.reddit]
-  url = "https://www.reddit.com/r/coderradio"
+  url = "https://linuxactionnews.com/contact"  
+
 
 [links.shownotes]
   url="https://linuxactionnews.com"
