@@ -1,6 +1,6 @@
 <a href="{{ with .Params.direct_link }}{{ . | safeHTML }}{{ else }}{{ .Permalink }}{{ end }}" class="custom__is-fullheight">
   <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center is-fullheight custom__is-fullheight">
-    <div class="card-image is-flex is-flex-direction-column" style="flex: 1 0 33%; justify-content: center; align-items: center; width: 100%;">
+    <div class="card-image is-flex is-flex-direction-column is-justify-content-center is-align-items-center custom__is-fullwidth" style="flex: 1 0 33%;">
       <figure class="image is-four-fifths" style="width: 65%;">
         <img src="{{ .Params.logo }}" alt="{{ .Title | lower }} logo" class="is-centered custom__is-fullwidth py-2"
           >
