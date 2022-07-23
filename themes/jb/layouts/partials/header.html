@@ -48,7 +48,7 @@
                                   {{ else }}
                                     {{ $link = .Permalink }}
                                   {{ end }}
-                                  <a href="{{ $link }}" class="navbar-item">
+                                  <a href="{{ $link }}" class="navbar-item" {{ if ne (urls.Parse .Site.BaseURL).Host (urls.Parse $link) }}target="_blank"{{ end }}>
                                     {{ if ne .Params.comms_type "network" }} {{ .Params.comms_type }} {{ end }}{{ .Title }}
                                 </a>
                               {{ end }}
