@@ -1,8 +1,3 @@
-FROM ubuntu:jammy AS builder
-RUN apt-get update && apt-get install -y hugo
-WORKDIR /build
-COPY . .
-RUN hugo -D
-
-FROM nginx:1
-COPY --from=builder /build/public /usr/share/nginx/html
+FROM registry.gitlab.com/pages/hugo/hugo_extended:latest
+CMD [ "serve", "-D", "--bind", "0.0.0.0" ]
+ENTRYPOINT [ "hugo" ]
