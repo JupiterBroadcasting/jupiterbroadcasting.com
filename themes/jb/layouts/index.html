@@ -10,7 +10,43 @@
   </div>
 </section>
 
+
 {{.Content}}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Shows</h1>
+
+    <div class="swiper show-slider">
+      <div class="swiper-wrapper">
+
+       {{ range where .Site.Sections ".Title" "Shows" }}
+          {{ range .Pages }}
+            <div class="swiper-slide">
+              <div class="card-image">
+                <figure class="image">
+                  <a href="{{ print .Permalink }}">
+                    <img
+                      src="{{ print .Params.header_image | absURL }}"
+                      alt="{{ print .Title }}"
+                      class="show-img"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+  </div>
+</section>
+
 <section class="section episode-list">
   <div class="container">
     <h1 class="title">Latest Episodes</h1>
@@ -23,6 +59,7 @@
                 </div>
             {{ end }}
         {{ end }}
+
       </div>
     </div>
     <div class="container">
@@ -31,5 +68,5 @@
 
 </section>
 
-
 {{ end }}
+
