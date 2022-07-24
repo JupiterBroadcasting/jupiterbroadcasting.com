@@ -10,14 +10,16 @@
           <div class="column has-text-centered-mobile">
             <h6 class="title is-6">{{ .Site.Params.footer.left.headline }}</h6>
             <ul>
-              {{ range .Site.Menus.footerleft }}
+              {{ range where site.RegularPages "Section" "community" }}
+                  {{ $link := "" }}
+                  {{ if .Params.direct_link }}
+                    {{ $link = .Params.direct_link }}
+                  {{ else }}
+                    {{ $link = .Permalink }}
+                  {{ end }}
                 <li>
-                  <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }}>
-                    {{ if (hasPrefix .Identifier "ext-icon") }}
-                      <img src="/images/icons/{{ .Identifier }}.svg" alt="{{ .Name }}" width="30">
-                    {{ else }}
-                      {{ .Name }}
-                    {{ end }}
+                  <a href="{{ $link }}" {{ if ne (urls.Parse .Site.BaseURL).Host (urls.Parse $link) }}target="_blank"{{ end }}>
+                  {{ if ne .Params.comms_type "network" }} {{ .Params.comms_type }} {{ end }}{{ .Title }}
                   </a>
                 </li>
               {{ end }}
