@@ -70,5 +70,7 @@
 {{ $main := resources.Get "js/main.js" }}
 {{ $navigation := resources.Get "js/navigation.js" }}
 {{ $video := resources.Get "js/video.min.js" }}
-{{ $defaultJS := slice $main $navigation $video | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
+{{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
+{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $defaultJS.Permalink }}"></script>
+
