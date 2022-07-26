@@ -12,13 +12,15 @@
         {{end}}
       </div>
       <div class="column is-half">
-        Your Hosts
+        <h2 class="subtitle has-text-centered">Your Hosts</h2>
+        <div class="is-flex is-flex-direction-row is-justify-content-space-evenly">
         {{ range $index, $hostname := .Params.hosts }}
           {{ $host := index $.Site.Data.people $hostname }}
-            <div>
+            <div class="has-text-centered">
               {{ partial "hosts/smallest.html" (dict "context" . "host" $host) }}
             </div>
         {{ end }}
+        </div>
       </div>
     {{else}}
         <div class="column is-full">

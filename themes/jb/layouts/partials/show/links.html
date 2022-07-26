@@ -1,5 +1,28 @@
-<ul>
+  <div class="is-flex is-flex-direction-row is-justify-content-space-evenly">
+
   {{ range $key, $value := . }}
-    <li><a href="{{$value.url}}">{{$key}}</a></li>
+      <div class="has-text-centered">
+
+      <a class="link" href="{{$value.url}}" title="{{$key}}">
+        {{ if eq  $key "email" }}
+          <div class="title fa fa-envelope fa-3x center" ><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "shownotes" }}
+          <div class="title fa fa-pencil-square fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "matrix" }}
+          <div class="title fa fa-matrix-org fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "mumble" }}
+          <div class="title fa fa-headphones fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "discord" }}
+          <div class="title fa fa-{{$key}} fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "wiki" }}
+          <div class="title fa fa-{{$key}}data fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "blog" }}
+          <div class="title fa fa-paragraph fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else }}
+          <div class="title fa fa-{{$key}}-square fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ end }}
+      </a>
+    </div>
   {{ end }}
-</ul>
+
+  </div>
