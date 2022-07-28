@@ -1,10 +1,12 @@
-<div class="card">
-  <div class="card-image">
+<a href="/hosts/{{ .host.username }}">
+  <div class="card">
+    <div class="card-image">
       <img class="image is-fullwidth" src="{{ .host.avatar }}" alt="{{ .host.name }}">
-  </div>
-  <div class="card-content">
-    <div class="content">
-      <a href="/hosts/{{ .host.username }}"><strong>{{ .host.name }}</strong></a><br/>
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <strong>{{ .host.name }}</strong><br />
+      </div>
     </div>
   </div>
-</div>
+</a>
