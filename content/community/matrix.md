@@ -8,8 +8,6 @@ comms_type = "network"
 direct_link = ""
 +++
 
-# Matrix
-
 ## Spaces and Rooms
 
 Jupiter Broadcasting's Rooms are organized into groups called "spaces".
