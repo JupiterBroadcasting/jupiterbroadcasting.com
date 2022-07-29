@@ -8,4 +8,37 @@ comms_type = "network"
 direct_link = ""
 +++
 
-https://element.io/images/logo-mark-primary.svg
+# Matrix
+
+## Spaces and Rooms
+
+Jupiter Broadcasting's Rooms are organized into groups called "spaces".
+
+You can find all the Jupiter Broadcasting rooms [in this space][jb-space], or join the sub-spaces for the shows you are interested in:
+
+- [Community][com-space] (this sub-space is the most active at the time of writing)
+- [Linux Unplugged][lup-space]
+- [Coder Radio][cr-space]
+- [Linux Action News][lan-space]
+- [Self-Hosted][sh-space]
+
+## Element
+
+For any of these links, you will be prompted to choose a Matrix client to proceed with.
+Element will be the top option, and is the recommended client for users new to Matrix.
+If you have not created a Matrix account, you will be guided through creation on Matrix.org's homeserver.
+
+## Other Clients
+
+Matrix.org maintains [a list of Matrix clients][mx-clients].
+
+Be warned that not all clients have support for spaces.
+You may need to log into Element, and join your desired rooms there first.
+
+[jb-space]: https://matrix.to/#/#jupiter-broadcasting-space:matrix.org
+[lup-space]: https://matrix.to/#/#linux-unplugged:matrix.org
+[cr-space]: https://matrix.to/#/#coder-radio:matrix.org
+[lan-space]: https://matrix.to/#/#linux-action-news:matrix.org
+[com-space]: https://matrix.to/#/#jb-community:matrix.org
+[sh-space]: https://matrix.to/#/#self-hosted:matrix.org
+[mx-clients]: https://matrix.org/clients/
