@@ -14,12 +14,13 @@ direct_link = ""
 
 Jupiter Broadcasting's Rooms are organized into groups called "spaces".
 
-You can find all the Jupiter Broadcasting rooms [in this space][jb-space], or join the sub-spaces for the shows you are interested in:
+You can find all the Jupiter Broadcasting rooms [in this space][jb-space], or join the sub-spaces you are interested in:
 
 - [Community][com-space] (this sub-space is the most active at the time of writing)
-- [Linux Unplugged][lup-space]
+- [Colony Meetups][meet-space]
 - [Coder Radio][cr-space]
 - [Linux Action News][lan-space]
+- [Linux Unplugged][lup-space]
 - [Self-Hosted][sh-space]
 
 ## Element
@@ -41,4 +42,5 @@ You may need to log into Element, and join your desired rooms there first.
 [lan-space]: https://matrix.to/#/#linux-action-news:matrix.org
 [com-space]: https://matrix.to/#/#jb-community:matrix.org
 [sh-space]: https://matrix.to/#/#self-hosted:matrix.org
+[meet-space]: https://matrix.to/#/#meetups:jupiterbroadcasting.com
 [mx-clients]: https://matrix.org/clients/
