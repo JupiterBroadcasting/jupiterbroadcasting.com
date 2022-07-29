@@ -18,7 +18,7 @@ You can find all the Jupiter Broadcasting rooms [in this space][jb-space], or jo
 - [Colony Meetups][meet-space]
 - [Coder Radio][cr-space]
 - [Linux Action News][lan-space]
-- [Linux Unplugged][lup-space]
+- [LINUX Unplugged][lup-space]
 - [Self-Hosted][sh-space]
 
 ## Element
