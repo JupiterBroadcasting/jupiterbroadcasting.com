@@ -16,6 +16,12 @@ support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 
 podverse_podcast_id = "0vaTwihG1R"
 
+[links.shownotes]
+  url="https://extras.show"
+
+[links.email]
+  url="https://extras.show/contact"
+
 [links.twitter]
   url="https://twitter.com/jupiterextras"
 
