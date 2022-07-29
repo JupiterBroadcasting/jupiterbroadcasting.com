@@ -42,3 +42,6 @@ You may need to log into Element, and join your desired rooms there first.
 [sh-space]: https://matrix.to/#/#self-hosted:matrix.org
 [meet-space]: https://matrix.to/#/#meetups:jupiterbroadcasting.com
 [mx-clients]: https://matrix.org/clients/
+
+## Connecting via Federation
+- Search for `jupiterbroadcasting.com` as the server name.
