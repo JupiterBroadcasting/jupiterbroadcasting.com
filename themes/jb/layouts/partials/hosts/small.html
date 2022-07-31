@@ -1,13 +1,13 @@
-<div class="card">
-  <div class="card-image">
-
+<a href="/hosts/{{ .host.username }}" class="is-flex">
+  <div class="card">
+    <div class="card-image">
       <img class="image is-fullwidth" src="{{ .host.avatar }}" alt="{{ .host.name }}">
-
-  </div>
-  <div class="card-content">
-    <div class="content">
-      <a href="/hosts/{{ .host.username }}"><strong>{{ .host.name }}</strong></a><br/>
-      {{ .host.bio }}
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <strong>{{ .host.name }}</strong><br />
+        {{ .host.bio }}
+      </div>
     </div>
   </div>
-</div>
+</a>

@@ -1,0 +1,74 @@
+<div class="container">
+  <iframe
+    id="pv-embed-player"
+    scrolling="no"
+    src="https://podverse.fm/embed/player?podcastId={{ print .CurrentSection.Params.podverse_podcast_id }}&episodeGuid={{ print .Params.episode_guid}}&episodeMediaUrl={{ .Params.podcast_file }}&episodeTitle={{ .Params.Title }}&episodePubDate={{ .Date.Unix }}"
+  >
+  </iframe>
+</div>
+
+<script>
+  // Colors matching the SASS colors in _variables.sass
+  const COLORS = {
+    white: '#ffffff',
+    darker: '#181C22',
+    blue: '#6ecff5',
+    blueDark: '#0070bd',
+    greyDark: '#2a2a2a',
+    grey: '#6a6a6a',
+    greyLight: '#cccccc',
+  };
+
+  /**
+   * See sample code:
+   *    https://github.com/podverse/podverse-web/blob/master/pages/embed/player-demo-custom-css.tsx
+   * Demo:
+   *    https://podverse.fm/embed/player-demo-custom-css
+   **/
+  let pvEmbedHasLoadedListener;
+
+  function pvHandleCSSOverrides(e) {
+    const key = e.message ? 'message' : 'data';
+    const data = e[key];
+
+    if (data != 'pv-embed-has-loaded') {
+      return;
+    }
+
+    if (pvEmbedHasLoadedListener) {
+      window.removeEventListener(pvEmbedHasLoadedListener);
+      pvEmbedHasLoadedListener = undefined;
+    }
+
+    const pvFrameNode = document.querySelector('#pv-embed-player');
+    if (!pvFrameNode) {
+      return;
+    }
+
+    const messageBody = {
+      eventName: 'pv-embed-load-custom-css',
+      styleRules: {
+        '--pv-embed-background-color': COLORS.darker,
+        '--pv-embed-border-color': COLORS.grey + '60', // 0x60 alpha = 37.5%
+        '--pv-embed-font-family': 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
+        '--pv-embed-text-color-primary': COLORS.white,
+        '--pv-embed-text-color-secondary': COLORS.blue,
+        '--pv-embed-text-color-tertiary': COLORS.greyLight,
+        '--pv-embed-play-button-background-color': COLORS.blueDark,
+        '--pv-embed-play-button-border-color': COLORS.blueDark,
+        '--pv-embed-play-button-icon-color': COLORS.white,
+        '--pv-embed-slider-background-color': COLORS.blueDark + '80', // 0x80 alpha = 50%
+        '--pv-embed-slider-fill-color': COLORS.white,
+        '--pv-embed-slider-marker-color': COLORS.blue,
+        '--pv-embed-slider-highlight-color': COLORS.blue + '40', // 0x40 alpha = 25%
+      },
+    };
+
+    pvFrameNode.contentWindow.postMessage(messageBody, 'https://podverse.fm');
+  }
+
+  pvEmbedHasLoadedListener = window.addEventListener(
+    'message',
+    pvHandleCSSOverrides
+  );
+</script>

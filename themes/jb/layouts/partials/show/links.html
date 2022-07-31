@@ -1,5 +1,24 @@
-<ul>
+<div class="level">
   {{ range $key, $value := . }}
-    <li><a href="{{$value.url}}">{{$key}}</a></li>
+    <a class="link level-item pr-3" href="{{$value.url}}" title="{{$key}}">
+      {{ if eq $key "email" }}
+        <div class="title fa fa-envelope fa-3x center"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "shownotes" }}
+        <div class="title fa fa-pencil-square fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "matrix" }}
+        <div class="title fa fa-matrix-org fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "mumble" }}
+        <div class="title fa fa-headphones fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "discord" }}
+        <div class="title fa fa-{{$key}} fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "wiki" }}
+        <div class="title fa fa-{{$key}}data fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "blog" }}
+        <div class="title fa fa-paragraph fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else }}
+        <div class="title fa fa-{{$key}}-square fa-3x"><span class="sr-only">{{$key}}</span></div>
+    {{ end }}
+  </a>
   {{ end }}
-</ul>
+
+</div>

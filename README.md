@@ -9,9 +9,14 @@
   * [Jupiter Extras](https://extras.show/)
   * [Office Hours](https://www.officehours.hair/)
 
-## New Jupiter Broadcasting Hugo website
-* [Discussion on implementation, technologies to consider, etc](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/discussions/8)
-* [Main discussion space for work underway via Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
+## Contributing
+Firstly - thank you for being here! We appreciate you.
+
+Please read our [Contributor Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) on how to contribute wisely for all to benefit.
+
+### Discussions via Matrix
+
+Our base of operations for group discussions: [Jupiter Web Site on Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
 
 ---
 

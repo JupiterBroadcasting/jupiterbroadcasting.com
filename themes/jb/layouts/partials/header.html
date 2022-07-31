@@ -32,14 +32,33 @@
                               {{ end }}
                           </div>
                       </div>
+                      {{ else if eq .Identifier "community"}}
+                          <div class="navbar-item has-dropdown is-hoverable {{ if $active }}active{{ end }}">
+
+                              <a href="{{ .URL }}" class="navbar-link">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
+
+                          <div class="navbar-dropdown">
+                              {{ range where site.RegularPages "Section" "community" }}
+                                  {{ $link := "" }}
+                                  {{ if .Params.direct_link }}
+                                    {{ $link = .Params.direct_link }}
+                                  {{ else }}
+                                    {{ $link = .Permalink }}
+                                  {{ end }}
+                                  <a href="{{ $link }}" class="navbar-item" {{ if ne (urls.Parse .Site.BaseURL).Host (urls.Parse $link) }}target="_blank"{{ end }}>
+                                    {{ if ne .Params.comms_type "network" }} {{ .Params.comms_type }} {{ end }}{{ .Title }}
+                                </a>
+                              {{ end }}
+                          </div>
+                      </div>
                       {{ else }}
-
-
-                              <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
-                                  {{ .Pre }}
-                                  <span>{{ .Name }}</span>
-                              </a>
-
+                          <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
                       {{ end }}
                   {{ end }}
 
@@ -47,7 +66,7 @@
 
 
               </div>
-      
+
           </div>
 
       </div>

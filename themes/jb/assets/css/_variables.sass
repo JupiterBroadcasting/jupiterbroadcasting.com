@@ -1,32 +1,108 @@
-// Colors
-$white: #ffffff
-$bg-color: #232323
+/*******************************************************************************
+ * Libs:
+ ******************************************************************************/
+@fa-font-path:   "/fonts"
+
+// While Bulma has to be imported after this file in order to properly override
+// the its variables, the `findColorInvert` function is required here below.
+@import "libs/bulma/sass/utilities/functions"
 
 
-// grey
-$body-background-color: #222831
+/*******************************************************************************
+ * Custom Colors:
+ ******************************************************************************/
 
-// Backgrounds
-$dark-bg: #0a0b0c
-$dark-blue: #181C22
+/*
+ * JB Brand Colors and Custom Colors:
+ ******************************************************************************/
+$jb-grey-dark: #2a2a2a // aka "DARK GRAY"
+$jb-grey: #6a6a6a // aka "COOL GRAY"
+$jb-grey-light: #cccccc // aka "SUBTLE GREY"
+$jb-orange: #ed7026 // aka "RED LEICESTER ORANGE"
+$jb-gold: #f5b821 // aka "BLOWFISH ORANGE"
+$jb-green: #00d900 // aka "CONSOLE GREEN"
+$jb-blue: #0070bd // aka "BOLD BLUE"
+$jb-blue-light: #6ecff5 // aka "CLOUD BLUE"
+$jb-pink: #d417a3 // aka "VDEV VIOLET"
+$jb-red: #d9001a // aka "ERROR RED"
 
-// Fonts
+// These are all shades of blue
+$jb-dark: #222831
+$jb-darker: #181C22
+$jb-darkest: #0a0b0c
+
+
+/*
+ * JB Show Colors (current shows only):
+ ******************************************************************************/
+$ssh-orange: $jb-orange
+$lup-blue: $jb-blue
+$lup-blue-light: $jb-blue-light
+$lan-red: $jb-red
+$je-grey: $jb-grey-light
+$extras-grey: $je-grey // aliased, because "je" isn't a commonly known acronym
+
+
+/*
+ * This `$custom-colors` map allows using the string keys as a css class.
+ * For example:
+ *      <button class="button is-jb-pink">Orange</button>
+ *
+ * All the colors under this "Custom Colors" should be included in a similar
+ * fashion.
+ */  
+$custom-colors: ( "jb-grey-dark": ($jb-grey-dark, findColorInvert($jb-grey-dark)), "jb-grey": ($jb-grey, findColorInvert($jb-grey)), "jb-grey-light": ($jb-grey-light, findColorInvert($jb-grey-light)), "jb-orange": ($jb-orange, findColorInvert($jb-orange)), "jb-gold": ($jb-gold, findColorInvert($jb-gold)), "jb-green": ($jb-green, findColorInvert($jb-green)), "jb-blue": ($jb-blue, findColorInvert($jb-blue)), "jb-blue-light": ($jb-blue-light, findColorInvert($jb-blue-light)), "jb-pink": ($jb-pink, findColorInvert($jb-pink)), "jb-red": ($jb-red, findColorInvert($jb-red)), "ssh-orange": ($ssh-orange, findColorInvert($ssh-orange)), "lup-blue": ($lup-blue, findColorInvert($lup-blue)), "lup-blue-light": ($lup-blue-light, findColorInvert($lup-blue-light)), "lan-red": ($lan-red, findColorInvert($lan-red)), "je-grey": ($je-grey, findColorInvert($je-grey)), "extras-grey": ($extras-grey, findColorInvert($extras-grey)), "jb-dark": ($jb-dark, findColorInvert($jb-dark)), "jb-darker": ($jb-darker, findColorInvert($jb-darker)), "jb-darkest": ($jb-darkest, findColorInvert($jb-darkest)) );
+
+/*******************************************************************************
+ * Bulma Customizations:
+ * https://bulma.io/documentation/customize/variables/
+ ******************************************************************************/
+
+/* Some of Bulma's default "Initial Variables" (literals):
+ * (Those are here because we use them in this file - prior to importing Bulma)
+ ******************************************************************************/
+$white: hsl(0, 0%, 100%)
+
+
+/* Derived variables (calculated) - overrides:
+ ******************************************************************************/
+$primary: $jb-blue
+$link: $jb-blue
+$link-hover: $jb-blue-light
+$link-hover-border: $jb-blue-light
+$info: $jb-blue-light
+$success: $jb-green
+$warning: $jb-orange
+$danger: $jb-red
+
 $text: $white
 $text-strong: $white
-$white-dark: rgba(255,255,255,.7)
-$title-color: $white
 
-// Navbar
-$navbar-background-color: $dark-bg
+$background: $jb-grey
+$body-background-color: $jb-dark
 
-// Cards
-$card-background-color: $dark-blue
+/* Elements:
+ ******************************************************************************/
+
+/* Componenets:
+ ******************************************************************************/
+
+// Card
+$card-background-color: $jb-darker
 $card-content-background-color: $card-background-color
 $card-color: $white
 $card-header-color: $white
 $card-radius: 12px
-  
+
+// Navbar
+$navbar-background-color: $jb-darkest
+$navbar-breakpoint: 885px
+
+/* Form:
+ ******************************************************************************/
+
+/* Layout:
+ ******************************************************************************/
 
 // Footer
-$footer-color: $white-dark
-$footer-background-color: $dark-bg
+$footer-background-color: $jb-darkest

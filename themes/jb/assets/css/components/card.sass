@@ -1,8 +1,23 @@
 .card.is-horizontal
-    display: flex
-    .card-image
+  display: flex
+  .card-image
+    width: 100%
+    height: 100%
+
+    &-background
       width: 100%
       height: 100%
+      min-height: 215px
+      background-size: cover
+      background-position: center
+
+      @include from($tablet)
+        border-top-left-radius: $card-radius
+        border-bottom-left-radius: $card-radius
+
+      @include until($tablet)
+        border-top-right-radius: $card-radius
+        border-bottom-right-radius: $card-radius
 
     .card-stacked
       flex-direction: column
@@ -11,17 +26,26 @@
       position: relative
 
     .card-content
-        background-color: green
-        flex-grow: 1
+      flex-grow: 1
+
 .card
   background-color: $card-background-color
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-  transition: all .3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px
+  transition: all .3s ease-in-out
   .content
     background-color: $card-content-background-color
     h1,h2,h3,h4,h5,h6,strong
       color: $card-header-color
-      
+
+  &-footer
+    &-item
+      &-social
+        margin: 0 0.5rem
+        font-size: 1.5rem
+
 .card:hover
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    transform: translate3d(0px, -1px, 0px);
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px
+  transform: translate3d(0px, -1px, 0px)
+
+.card-episode
+  width: 100%

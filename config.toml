@@ -6,6 +6,20 @@ theme = 'jb'
 
 paginate = 12
 
+# Footer logo and menu title config
+# footer menus are further down
+[params.footer.logo]
+  image = "/images/logo_small.png"
+  text = "Jupiter Broadcasting"
+  url = "/"
+[params.footer.left]
+  headline = "Get Social"
+[params.footer.center]
+  headline = "Center"
+[params.footer.right]
+  headline = "Right"
+
+
 # Allow HTML in Markdown
 [markup]
   [markup.goldmark]
@@ -31,9 +45,69 @@ paginate = 12
     url = "/show"
     weight =-90
 
+    [[Menu.Main]]
+        name = "Coder Radio"
+        identifier = "coder-radio"
+        url = "/show/coder-radio"
+        weight =91
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Jupiter EXTRAS"
+        identifier = "jupiter-extras"
+        url = "/show/jupiter-extras"
+        weight =92
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Linux Action News"
+        identifier = "linux-action-news"
+        url = "/show/linux-action-news"
+        weight =93
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Linux Unplugged"
+        identifier = "linux-unplugged"
+        url = "/show/linux-unplugged"
+        weight =94
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Office Hours"
+        identifier = "office-hours"
+        url = "/show/office-hours"
+        weight =95
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Self-Hosted"
+        identifier = "self-hosted"
+        url = "/show/self-hosted"
+        weight =96
+        parent = "shows"
+
+[[Menu.Main]]
+    name = "Sponsors"
+    identifier = "sponsors"
+    url = "/sponsors"
+    weight =40
+
+[[Menu.Main]]
+    name = "Calendar"
+    identifier = "calendar"
+    url = "/calendar"
+    weight =45
+
+[[Menu.Main]]
+    name = "Boost!"
+    identifier = "boost"
+    url = "/boost"
+    weight =50
+
 [[Menu.Main]]
     name = "Garage Sale"
-    identifier = "garage-sale"
+    identifier = "ext-garage-sale"
     url = "https://www.jupitergarage.com/"
     weight =60
 
@@ -44,16 +118,94 @@ paginate = 12
     weight =70
 
 [[Menu.Main]]
-    name = "Hosts"
-    identifier = "hosts"
-    url = "/hosts"
+    name = "People"
+    identifier = "people"
     weight =80
+
+    [[Menu.Main]]
+        name = "Hosts"
+        identifier = "hosts"
+        url = "/hosts"
+        weight =81
+        parent = "people"
+
+    [[Menu.Main]]
+        name = "Guests"
+        identifier = "guests"
+        url = "/guests"
+        weight =82
+        parent = "people"
 
 [[Menu.Main]]
     name = "Archive"
     identifier = "archive"
     url = "/archive"
     weight =90
+
+[[Menu.Main]]
+    name = "Community"
+    identifier = "community"
+    url = "/community"
+    weight =100
+
+[[Menu.Main]]
+    name = "Contact"
+    identifier = "contact"
+    url = "/contact"
+    weight =110
+
+# Footer Menu (left)
+[[Menu.FooterLeft]]
+    name = "PeerTube"
+    identifier = "ext-peertube"
+    url = "https://jupiter.tube/"
+    weight = -100
+
+[[Menu.FooterLeft]]
+    name = "YouTube"
+    identifier = "ext-youtube"
+    url = "https://www.youtube.com/user/jupiterbroadcasting"
+    weight = -90
+
+[[Menu.FooterLeft]]
+    name = "Twitter"
+    identifier = "ext-twitter"
+    url = "https://twitter.com/jupitersignal"
+    weight = -80
+
+[[Menu.FooterLeft]]
+    name = "Facebook"
+    identifier = "ext-facebook"
+    url = "http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615"
+    weight = -70
+
+[[Menu.FooterLeft]]
+    name = "Telegram"
+    identifier = "ext-telegram"
+    url = "https://www.jupiterbroadcasting.com/telegram"
+    weight = -60
+
+[[Menu.FooterLeft]]
+    name = "IRC"
+    identifier = "ext-irc"
+    url = "https://kiwiirc.com/client/irc.geekshed.net/?nick=JBLive_?&theme=cli#jupiterbroadcasting"
+    weight = -50
+
+# Footer Menu (center)
+[[Menu.FooterCenter]]
+    name = "center"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+# Footer Menu (right)
+[[Menu.FooterRight]]
+    name = "right"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+# Output formats
 
 [outputFormats]
   [outputFormats.webplayer]
@@ -62,4 +214,5 @@ paginate = 12
 
 [outputs]
   page = ["json","html","webplayer"]
-  section = ["html","rss"]
+  # section = ["html","rss"]
+  section = ["html"]

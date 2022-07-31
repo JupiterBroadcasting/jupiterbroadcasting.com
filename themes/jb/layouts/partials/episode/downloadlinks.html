@@ -1,0 +1,19 @@
+<b>Direct Download: </b><a href="{{.Params.podcast_file}}">MP3</a>
+{{ if (not (eq .Params.podcast_alt_file nil)) }}
+| <a href="{{.Params.podcast_alt_file}}">MP3 mirror</a>
+{{ end }}
+{{ if (not (eq  .Params.podcast_ogg_file nil)) }}
+| <a href="{{.Params.podcast_ogg_file}}">OGG</a>
+{{ end }}
+{{ if (not (eq .Params.video_file nil)) }}
+| <a href="{{.Params.video_file}}">Video</a>
+{{ end }}
+{{ if (not (eq .Params.video_hd_file nil)) }}
+| <a href="{{.Params.video_hd_file}}">HD Video</a>
+{{ end }}
+{{ if (not (eq .Params.video_mobile_file nil)) }}
+| <a href="{{.Params.video_mobile_file}}">Mobile Video</a>
+{{ end }}
+{{ if (not (eq .Params.youtube_link nil)) }}
+| <a href="{{.Params.youtube_link}}">YouTube</a>
+{{ end }}

@@ -1,90 +1,109 @@
 {{ define "headcontent" }}
   <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
-  <script src="//cdn.podlove.org/web-player/5.x/embed.js"></script>
 {{end}}
 
 {{ define "main" }}
-  <div class="container">
+  {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
+    {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .Title ) }} 
+  {{ else }}
+    {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .CurrentSection.Title) }}
+  {{ end }}
+  <div class="container p-4">
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="{{ .Section | safeURL | absURL }}">Shows</a></li>
+          <li><a href="{{ .Parent.Permalink }}">{{ .Params.show_name }}</a></li>
+          <li class="is-active"><a href="{{ .Permalink }}">{{ .Scratch.Get "fullTitle" }}</a></li>
+        </ul>
+      </nav>
       <div class="content">
-        <h1>{{ .Title }} | {{.CurrentSection.Title}} {{.Params.episode}}</h1>
-        <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
-        {{ partial "episode/videoplayer.html" . }}
-
-        {{ with .Params.tags }}
-          <div class="tags">
-            {{ partial "episode/tags.html" . }}
+        <div class="columns">
+          <div class="column is-8">
+            <h1></h1>
+            <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
+            </h1>
+            <p></p>
+            <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
+            <!-- {{ partial "episode/videoplayer.html" . }} -->
+            <br />
+            <p>{{ .Description }} </p>
           </div>
-        {{ end }}
-
-        {{ .Description }}
-
-        {{ partial "episode/audioplayer.html" . }}
-
-        {{ partial "episode/support.html" . }}
-        {{ .Content }}
-
-
-        <h2>Hosts</h2>
-
-        <section class="section host-list">
-          <div class="container">
-             <div class="columns is-multiline">
-              {{ range $index, $hostname := .Params.hosts }}
-                {{ $host := index $.Site.Data.people $hostname }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                    {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
-                  </div>
-              {{ end }}
-            </div>
+          <div class="column is-4"><center>
+              <a href="{{ .Permalink }}">
+                <img src="{{.Params.header_image }}" width="auto" height="121" alt="{{.Title}}">
+              </a><br />
+            {{ partial "episode/support.html" . }}</center>
           </div>
-        </section>
+        </div>
+        {{ partial "episode/podverseplayer.html" . }}
 
-        {{ with .Params.guests }}
+        {{ partial "episode/downloadlinks.html" . }}
 
-          <h2>Guests</h2>
-
-          <section class="section sponsor-list">
-            <div class="container">
-               <div class="columns is-multiline">
-                {{ range $index, $guestname := . }}
-                    {{ $guest := index $.Site.Data.people $guestname }}
-                    <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                      {{ if $guest }}
-                        {{ partial "guests/small.html" (dict "context" . "guest" $guest) }}
-                      {{ end }}
-                    </div>
-                {{end}}
+        <div class="columns" style="padding-top: 2em">
+          <!-- Host Section -->
+          <div class="column is-8">
+            <h2>Hosts</h2>
+            <section class="section host-list">
+              <div class="container">
+                 <div class="columns is-multiline">
+                  {{ range $index, $hostname := .Params.hosts }}
+                    {{ $host := index $.Site.Data.people $hostname }}
+                      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                        {{ partial "hosts/small-nobio.html" (dict "context" . "host" $host) }}
+                      </div>
+                  {{ end }}
+                </div>
               </div>
-            </div>
-          </section>
-
-
-        {{ end }}
-
-
-      {{ with .Params.sponsors }}
-
-        <h2>Sponsors</h2>
-
-        <section class="section sponsor-list">
-          <div class="container">
-             <div class="columns is-multiline">
-              {{ range $index, $sponsorname := . }}
-                {{ $sponsor := index $.Site.Data.sponsors $sponsorname }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                    {{ if $sponsor }}
-                      {{ partial "sponsor/small.html" (dict "context" . "sponsor" $sponsor) }}
-                    {{ end }}
+            </section>
+              {{ with .Params.guests }}
+                <h2>Guests</h2>
+                <section class="section sponsor-list">
+                  <div class="container">
+                    <div class="columns is-multiline">
+                      {{ range $index, $guestname := . }}
+                          {{ $guest := index $.Site.Data.people $guestname }}
+                          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                            {{ if $guest }}
+                              {{ partial "guests/small-nobio.html" (dict "context" . "guest" $guest) }}
+                            {{ end }}
+                          </div>
+                      {{end}}
+                    </div>
                   </div>
+                </section>
               {{ end }}
-            </div>
           </div>
-        </section>
 
+          <!-- Sponsor sections -->
+          <div class="column is-4">
+            {{ with .Params.sponsors }}
+            <h2>Sponsors</h2>
+            <section class="section sponsor-list">
+                  {{ range $index, $sponsorname := . }}
+                    {{ $sponsor := index $.Site.Data.sponsors $sponsorname }}
+                        {{ if $sponsor }}
+                          {{ partial "sponsor/small.html" (dict "context" . "sponsor" $sponsor) }}
+                          <br />
+                        {{ end }}
+                  {{ end }}
+            </section>
+            {{ end }}
+          </div>
+        </div>
 
-      {{ end }}
-
-
+        <div class="columns" style="padding-top: 2em">
+          <!-- Host Section -->
+          <div class="column is-8">
+            {{ .Content }}
+          </div>
+          <div class="column is-4">
+            <h3>Tags</h3>
+            {{ with .Params.tags }}
+              <div class="tags">
+                {{ partial "episode/tags.html" . }}
+              </div>
+            {{ end }}
+        </div>
     </div>
   </div>
 {{end}}

@@ -1,0 +1,103 @@
+@import "../libs/bulma/sass/utilities/mixins"
+
+$navbar-new-item-hover-color: $text !default
+$navbar-new-item-hover-background-color: $grey-dark !default
+
+$navbar-new-dropdown-background-color: $scheme-invert !default
+$navbar-new-dropdown-item-hover-color: $text !default
+$navbar-new-dropdown-item-hover-background-color: $grey-dark !default
+$navbar-dropdown-item-active-color: $text !default
+$navbar-dropdown-item-active-background-color: $background !default
+$navbar-new-dropdown-arrow: $text !default
+
+.navbar
+  @each $name, $pair in $navbar-colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      color: $color-invert
+      .navbar-brand
+        & > .navbar-item,
+        .navbar-link
+          color: $color-invert
+        & > a.navbar-item,
+        .navbar-link
+          &:focus,
+          &:hover,
+          &.is-active
+            background-color: bulmaDarken($color, 5%)
+            color: $color-invert
+        .navbar-link
+          &::after
+            border-color: $color-invert
+      .navbar-burger
+        color: $color-invert
+      +from($navbar-breakpoint)
+        .navbar-start,
+        .navbar-end
+          & > .navbar-item,
+          .navbar-link
+            color: $color-invert
+          & > a.navbar-item,
+          .navbar-link
+            &:focus,
+            &:hover,
+            &.is-active
+              background-color: bulmaDarken($color, 5%)
+              color: $color-invert
+          .navbar-link
+            &::after
+              border-color: $color-invert
+        .navbar-item.has-dropdown:focus .navbar-link,
+        .navbar-item.has-dropdown:hover .navbar-link,
+        .navbar-item.has-dropdown.is-active .navbar-link
+          background-color: bulmaDarken($color, 5%)
+          color: $color-invert
+        .navbar-dropdown
+          a.navbar-item
+            &.is-active
+              background-color: $color
+              color: $color-invert
+
+.navbar-link:not(.is-arrowless)
+  +ltr-property("padding", 2.5em)
+  &::after
+    @extend %arrow
+    border-color: $navbar-new-dropdown-arrow
+    margin-top: -0.375em
+    +ltr-position(1.125em)
+
+a.navbar-item,
+.navbar-link
+  cursor: pointer
+  &:focus,
+  &:focus-within,
+  &:hover,
+  &.is-active
+    background-color: $navbar-new-item-hover-background-color
+    color: $navbar-new-item-hover-color
+
++from($navbar-breakpoint)
+  .navbar
+    &.is-transparent
+      .navbar-dropdown
+        a.navbar-item
+          &:focus,
+          &:hover
+            background-color: $navbar-new-dropdown-item-hover-background-color
+            color: $navbar-new-dropdown-item-hover-color
+  .navbar-dropdown
+    background-color: $navbar-new-dropdown-background-color
+    a.navbar-item
+      &:focus,
+      &:hover
+        background-color: $navbar-new-dropdown-item-hover-background-color
+        color: $navbar-new-dropdown-item-hover-color
+  .navbar-item.has-dropdown
+    &:focus,
+    &:hover,
+    &.is-active
+      .navbar-link
+        background-color: $navbar-new-item-hover-background-color
+        color: $navbar-new-dropdown-item-hover-color

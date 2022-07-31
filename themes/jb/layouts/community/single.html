@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="section">
+  <h1 class="title">
+    {{ if ne .Params.comms_type "network" }}{{ .Params.comms_type }} | {{ end }}{{.Title}} 
+  </h1>
+</div>
+
+<div class="section">
+
+    <div class="column is-full content">
+      {{.Content}}
+    </div>
+
+</div>
+
+{{ end }}

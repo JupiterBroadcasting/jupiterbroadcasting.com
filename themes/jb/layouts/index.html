@@ -10,21 +10,63 @@
   </div>
 </section>
 
+
 {{.Content}}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Shows</h1>
+
+    <div class="swiper show-slider">
+      <div class="swiper-wrapper">
+
+       {{ range where .Site.Sections ".Title" "Shows" }}
+          {{ range .Pages }}
+            <div class="swiper-slide">
+              <div class="card-image">
+                <figure class="image">
+                  <a href="{{ print .Permalink }}">
+                    <img
+                      src="{{ print .Params.header_image | absURL }}"
+                      alt="{{ print .Title }}"
+                      class="show-img"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+  </div>
+</section>
+
 <section class="section episode-list">
   <div class="container">
     <h1 class="title">Latest Episodes</h1>
      <div class="columns is-multiline">
-        {{ range $index, $episode := first 16 (where .Site.Pages "Section" "show") }}
-              {{ if eq  $episode.Params.type "episode" }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                      {{ partial "episode/preview.html" . }}
-                  </div>
-              {{ end }}
-          {{ end }}
+       {{ $paginator := .Paginate (where .Site.Pages "Type" "episode") 15 }}
+       {{ range $paginator.Pages }}
+            {{ if eq .Params.type "episode" }}
+                <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+                    {{ partial "episode/preview.html" . }}
+                </div>
+            {{ end }}
+        {{ end }}
+
       </div>
     </div>
+    <div class="container">
+          {{ partial "helper/pagination.html" . }}
+    </div>
+
 </section>
 
-
 {{ end }}
+
