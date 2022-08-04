@@ -20,3 +20,7 @@
 .swiper-button-next {
   color: white;
 }
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+ pointer-events: initial !important;
+}
