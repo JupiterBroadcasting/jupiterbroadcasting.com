@@ -37,7 +37,7 @@ Start the development Server (rebuilds on every filesystem change)
 #### Using Docker
 
 To build and run the docker image:
-`make run`
+`make dev`
 
 #### run for different Site
 
