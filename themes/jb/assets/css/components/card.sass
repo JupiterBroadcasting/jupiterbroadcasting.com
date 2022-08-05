@@ -2,7 +2,8 @@
   display: flex
   flex-direction: column
   .card-image
-    width: 100%
+    width: auto
+    height: 100%
 
     &-background
       height: 100%
@@ -11,13 +12,18 @@
       background-position: center
       position: relative
 
-      @include from($tablet)
-        border-top-left-radius: $card-radius
-        border-bottom-left-radius: $card-radius
+    @include from($tablet)
+      border-top-left-radius: $card-radius
+      border-bottom-left-radius: $card-radius
 
-      @include until($tablet)
-        border-top-right-radius: $card-radius
-        border-bottom-right-radius: $card-radius
+    @include until($tablet)
+      border-top-right-radius: $card-radius
+      border-bottom-right-radius: $card-radius
+
+    .image
+      height: 100%
+      width: 100%
+      object-fit: cover
 
     .card-stacked
       flex-direction: column
