@@ -8,7 +8,7 @@ comms_type = "network"
 direct_link = ""
 +++
 
-[comment]: # Note: this page content is *manually* duplicated to https://linuxunplugged.com/matrixinfo
+<!-- Note: this page content is *manually* duplicated to https://linuxunplugged.com/matrixinfo -->
 
 ## Spaces and Rooms
 
