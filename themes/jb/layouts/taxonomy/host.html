@@ -1,19 +1,19 @@
 {{ define "main" }}
   <div class="container">
       <div class="columns">
-        <div class="column is-half">
+        <div class="column is-two-thirds">
           {{ $host := index $.Site.Data.people $.Title }}
           <h2 class="title is-3">Host {{ $host.name}}</h2>
           {{ partial "hosts/horizontal.html" (dict "context" . "host" $host) }}
         </div>
-        <div class="column is-half">
+        <div class="column is-one-thirds">
           <h2 class="title is-3">Shows with {{ $host.name}}</h2>
           {{ range $key, $taxonomy := .Site.Taxonomies.hosts }}
            {{ if eq $key $.Title }}
               <div class="columns is-multiline">
                   {{ range $taxonomy.Pages }}
                    {{ if eq  .Kind "section" }}
-                   <div class="column is-one-third">
+                   <div class="column is-half">
                        <div class="card">
                           <div class="card-image">
                             <a href="{{ .Permalink}}">
