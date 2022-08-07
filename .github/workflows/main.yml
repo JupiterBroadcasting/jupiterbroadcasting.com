@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
       with:
-        args: --gc --config ./config.toml --environment prod
+        args: --gc --config ./config.toml
     - uses: burnett01/rsync-deployments@4.1
       with:
        switches: -avzr --delete
@@ -35,7 +35,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
       with:
-        args: --gc --config config.coder-radio.toml --environment prod
+        args: --gc --config config.coder-radio.toml
     - uses: burnett01/rsync-deployments@4.1
       with:
        switches: -avzr --delete
@@ -51,7 +51,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
       with:
-        args: --gc --config config.jblive.toml --environment prod
+        args: --gc --config config.jblive.toml
     - uses: burnett01/rsync-deployments@4.1
       with:
        switches: -avzr --delete
