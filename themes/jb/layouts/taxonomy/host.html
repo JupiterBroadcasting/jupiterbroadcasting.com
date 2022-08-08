@@ -3,7 +3,7 @@
       <div class="columns">
         <div class="column is-two-thirds">
           {{ $host := index $.Site.Data.people $.Title }}
-          <h2 class="title is-3">Host {{ $host.name}}</h2>
+          <h2 class="title is-3">Host - {{ $host.name}}</h2>
           {{ partial "hosts/horizontal.html" (dict "context" . "host" $host) }}
         </div>
         <div class="column is-one-thirds">
