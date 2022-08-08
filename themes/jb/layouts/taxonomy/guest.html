@@ -1,24 +1,45 @@
 {{ define "main" }}
   <div class="container">
-      <div class="content">
+      <div class="columns">
+        <div class="column is-two-thirds">
         {{ $guest := index $.Site.Data.people $.Title }}
-
-        <h1 class="title">{{ $guest.name}}</h1>
-
-        <img src="{{ $guest.avatar}}"><br/>
-        {{ $guest.bio}}
+          <h2 class="title is-3">Guest - {{ $guest.name}}</h2>
+          {{ partial "guests/horizontal.html" (dict "context" . "guest" $guest) }}
+        </div>
+        <div class="column is-one-thirds">
+          <h2 class="title is-3">Shows with {{ $guest.name}}</h2>
+          {{ $shows := slice }}
+          {{ range $key, $taxonomy := .Site.Taxonomies.guests }}
+           {{ if eq $key $.Title }}
+              <div class="columns is-multiline">
+                  {{ range $taxonomy.Pages }}
+                   {{ if not (in $shows .Params.show_name) }}
+                   <div class="column is-half">
+                       <div class="card">
+                          <div class="card-image">
+                            <a href="{{ .Permalink}}">
+                            <figure class="image is-fullwidth">
+                              <img src="{{ .Params.header_image}}" alt="{{ .LinkTitle }} ">
+                            </figure>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                   {{ $shows = $shows | append .Params.show_name }}
+                   {{ end }}
+                  {{ end }}
+                  </div>
+             {{ end }}
+          {{ end }}
 
 
     </div>
   </div>
 
-  <section class="section episode-list">
-    <div class="container">
-      <h1 class="title">Latest Episodes with {{ $guest.name}}</h1>
-       <div class="columns is-multiline">
+      <h1 class="title is-3">Latest Episodes with {{ $guest.name}}</h1>
         {{ range $key, $taxonomy := .Site.Taxonomies.guests }}
         {{ if eq $key $.Title }}
-           <div class="columns is-multiline">
+          <div class="columns is-multiline">
                {{ range $taxonomy.Pages }}
                 {{ if ne  .Kind "section" }}
                   <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
@@ -29,8 +50,6 @@
            </div>
           {{ end }}
             {{ end }}
-        </div>
-      </div>
-  </section>
 
+  </div>
 {{end}}
