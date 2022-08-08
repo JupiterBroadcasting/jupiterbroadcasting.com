@@ -1,23 +1,21 @@
-
 <div class="card card-episode">
-
-  <div class="card-image">
-    <figure class="image">
-      <a href="{{ .Permalink }}">
-        <img src="{{.Params.header_image }}" width="432" height="242" alt="{{.Title}} | {{.CurrentSection.Title}} {{.Params.episode}}">
-      </a>
-    </figure>
-  </div>
-  <div class="card-content">
-     <div class="content">
-      <a href="{{ .Permalink }}"><h3>{{.Title}}
-        {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
-          | {{.CurrentSection.Title}} {{.Params.episode}}
-        {{ end }}
-      </h3></a>
-      <strong>{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</strong><br/>
-      <p>{{.Description}}</p>
+  <a href="{{ .Permalink }}">
+    <div class="card-image">
+      <figure class="image">
+        <img src="{{.Params.header_image }}" width="432" height="242"
+          alt="{{.Title}} | {{.CurrentSection.Title}} {{.Params.episode}}">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <h3>{{.Title}}
+          {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }}
+            | {{.CurrentSection.Title}} {{.Params.episode}}
+          {{ end }}
+        </h3>
+        <strong>{{ .Date.Day }} {{ .Date.Month }} {{ .Date.Year }}</strong><br />
+        <p style="color:white">{{.Description}}</p>
       </div>
-  </div>
-
+    </div>
+  </a>
 </div>

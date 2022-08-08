@@ -45,7 +45,7 @@
             <h2>Hosts</h2>
             <section class="section host-list">
               <div class="container">
-                 <div class="columns is-multiline">
+                <div class="columns is-multiline">
                   {{ range $index, $hostname := .Params.hosts }}
                     {{ $host := index $.Site.Data.people $hostname }}
                       <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
