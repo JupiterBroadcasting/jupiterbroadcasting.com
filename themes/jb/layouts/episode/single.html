@@ -79,10 +79,10 @@
             {{ with .Params.sponsors }}
             <h2>Sponsors</h2>
             <section class="section sponsor-list">
-                  {{ range $index, $sponsorname := . }}
-                    {{ $sponsor := index $.Site.Data.sponsors $sponsorname }}
+                  {{ range . }}
+                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
                         {{ if $sponsor }}
-                          {{ partial "sponsor/small.html" (dict "context" . "sponsor" $sponsor) }}
+                          {{ partial "sponsor/small.html" $sponsor }}
                           <br />
                         {{ end }}
                   {{ end }}
