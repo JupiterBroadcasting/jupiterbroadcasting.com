@@ -39,7 +39,7 @@
 
         {{ partial "episode/downloadlinks.html" . }}
 
-        {{ $people_sections := where site.Pages "Section" "people" }}
+        {{ $people_sections := where site.RegularPages "Section" "people" }}
         <div class="columns" style="padding-top: 2em">
           <!-- Host Section -->
           <div class="column is-8">
@@ -81,7 +81,7 @@
             <h2>Sponsors</h2>
             <section class="section sponsor-list">
                   {{ range . }}
-                    {{ $sponsor := index (where $people_sections "Params.shortname" .) 0 }}
+                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
                         {{ if $sponsor }}
                           {{ partial "sponsor/small.html" $sponsor }}
                           <br />

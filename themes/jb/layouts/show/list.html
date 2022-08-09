@@ -15,7 +15,7 @@
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
         {{ range .Params.hosts }}
-          {{ $host := index (where (where site.Pages "Section" "people") "Params.username" .) 0 }}
+          {{ $host := index (where (where site.RegularPages "Section" "people") "Params.username" .) 0 }}
             <div class="column is-narrow">
               {{ partial "people/smallest.html" $host }}
             </div>
