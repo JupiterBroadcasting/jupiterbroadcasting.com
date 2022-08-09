@@ -15,7 +15,7 @@
   <section class="{{ $lastUrlElement }}-list">
     <div class="container">
        <div class="columns is-multiline">
-        {{ range ( where (where site.Pages "Section" "people") ".Type" ($lastUrlElement | singularize) )  }}
+        {{ range ( where (where site.RegularPages "Section" "people") ".Type" ($lastUrlElement | singularize) )  }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
             {{ partial "people/small.html" . }}
           </div>
