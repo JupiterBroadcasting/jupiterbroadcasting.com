@@ -39,7 +39,7 @@
 
         {{ partial "episode/downloadlinks.html" . }}
 
-        {{ $people_sections := where site.Pages "Section" "people") }}
+        {{ $people_sections := where site.Pages "Section" "people" }}
         <div class="columns" style="padding-top: 2em">
           <!-- Host Section -->
           <div class="column is-8">
@@ -48,7 +48,7 @@
               <div class="container">
                  <div class="columns is-multiline">
                   {{ range .Params.hosts }}
-                    {{ $host := index (where ( $people_sections "Params.username" .) 0 }}
+                    {{ $host := index ( where $people_sections "Params.username" .) 0 }}
                       <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                         {{ partial "people/small-nobio.html" $host }}
                       </div>
