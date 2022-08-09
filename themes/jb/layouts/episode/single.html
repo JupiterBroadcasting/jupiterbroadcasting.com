@@ -39,6 +39,7 @@
 
         {{ partial "episode/downloadlinks.html" . }}
 
+        {{ $people_sections := where site.Pages "Section" "people") }}
         <div class="columns" style="padding-top: 2em">
           <!-- Host Section -->
           <div class="column is-8">
@@ -47,7 +48,7 @@
               <div class="container">
                  <div class="columns is-multiline">
                   {{ range .Params.hosts }}
-                    {{ $host := index (where (where site.Pages "Section" "people") "Params.username" .) 0 }}
+                    {{ $host := index (where ( $people_sections "Params.username" .) 0 }}
                       <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                         {{ partial "people/small-nobio.html" $host }}
                       </div>
@@ -61,7 +62,7 @@
                   <div class="container">
                     <div class="columns is-multiline">
                       {{ range . }}
-                          {{ $guest := index (where (where site.Pages "Section" "people") "Params.username" .) 0 }}
+                          {{ $guest := index (where $people_sections "Params.username" .) 0 }}
                           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                             {{ if $guest }}
                               {{ partial "people/small-nobio.html" $guest }}
@@ -80,7 +81,7 @@
             <h2>Sponsors</h2>
             <section class="section sponsor-list">
                   {{ range . }}
-                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
+                    {{ $sponsor := index (where $people_sections "Params.shortname" .) 0 }}
                         {{ if $sponsor }}
                           {{ partial "sponsor/small.html" $sponsor }}
                           <br />
