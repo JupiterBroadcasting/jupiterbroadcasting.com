@@ -7,7 +7,7 @@
         {{ range $index, $hostname := .Params.hosts }}
           {{ $host := index $.Site.Data.people $hostname }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-            {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
+            {{ partial "people/small.html" (dict "context" . "host" $host) }}
           </div>
         {{ end }}
       </div>
@@ -48,12 +48,6 @@
 <section class="section episode-list">
   <div class="container">
      <div class="columns is-multiline">
-
-        {{ range where (where .Pages "Kind" "section") "Params.active" true }}
-          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-              {{ partial "episode/show.html" . }}
-          </div>
-        {{ end }}
 
         {{ $episode_paginator := .Paginate (where .Pages "Type" "episode") }}
         {{ range $episode_paginator.Pages }}
