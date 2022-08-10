@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="container">
+  <h1 class="title">{{.Title}}</h1>
+</div>
+
+<div class="container">
+  <div class="column is-full content">
+    {{.Content}}
+  </div>
+</div>
+
+<!-- The .Reverse is because it's sorted alphbetically and guest comes before host -->
+{{ range ((where site.RegularPages "Section" "people").GroupBy "Type").Reverse }}
+
+<section class="{{ .Key | pluralize }}-list">
+  <div class="container">
+    <h2 class="title is-3 my-3">{{ .Key | pluralize | title }}</h2>
+     <div class="columns is-multiline">
+      {{ range .Pages  }}
+        <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+          {{ partial "people/small.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ end }}
