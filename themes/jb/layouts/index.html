@@ -51,7 +51,7 @@
   <div class="container">
     <h1 class="title">Latest Episodes</h1>
      <div class="columns is-multiline">
-       {{ $paginator := .Paginate (where .Site.Pages "Type" "episode") 15 }}
+       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "episode") 15 }}
        {{ range $paginator.Pages }}
             {{ if eq .Params.type "episode" }}
                 <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
