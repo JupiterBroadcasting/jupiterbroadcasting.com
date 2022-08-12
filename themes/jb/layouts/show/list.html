@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $lastUrlElement := (delimit (split .Permalink "/" | last 2 | first 1 ) "") }}
 {{ $peoplePages := where site.RegularPages "Section" "people" }}
+
 {{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
   {{ $currentPeople := slice }}
   {{ if eq $lastUrlElement "hosts" }}
@@ -14,15 +15,18 @@
     {{ end }}
     {{ $currentPeople = $currentShowGuestSlice  }}
   {{ end }}
-  <section class="{{ $lastUrlElement }}-list">
+  <section class="{{ $lastUrlElement }}-list mb-5">
     <div class="container">
        <div class="columns is-multiline">
-        {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" $currentPeople }}
-        {{ range $currentPeopleSlice }}
+        {{ $currentPeople := .Paginate (where $peoplePages "Params.username" "in" $currentPeople) }}
+        {{ range $currentPeople.Pages }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
             {{ partial "people/small.html" . }}
           </div>
         {{ end }}
+        <div class="container">
+          {{ partial "helper/pagination.html" . }}
+        </div>
       </div>
     </div>
   </section>
