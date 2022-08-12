@@ -12,4 +12,5 @@ twitter: https://twitter.com/allanjude
 type: host
 username: allanjude
 youtube: null
+is_archived: true
 ---
