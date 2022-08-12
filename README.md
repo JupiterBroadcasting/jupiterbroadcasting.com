@@ -24,41 +24,15 @@ Built with Hugo and deployed with Github Actions
 
 Demo: https://jupiterbroadcasting.net
 
-### Setup
+### Development Environment Setup
 
-#### Using Hugo binary
-You must install  the Hugo Extended Sass/SCSS version.
+The site is deployed to production as a container and therefore we recommend development is done using docker. A convenient command in the makefile is provided to help you get started. If you're new to docker [start here](https://docs.docker.com/get-docker/).
 
-Install Hugo: https://gohugo.io/getting-started/installing/
+To build and run the site run
 
-Hugo Extended Linux binary: https://github.com/gohugoio/hugo/releases
+    make dev
 
-Start the development Server (rebuilds on every filesystem change)
-
-`hugo server -D`
-
-#### Using Docker
-
-To build and run the docker image:
-`make dev`
-
-#### run for different Site
-
-`hugo server -D --config config.coderradio.toml`
-
-to clean the module config
-
-`hugo mod clean --all`
-
-build
-
-`hugo -D --config config.coderradio.toml`
-
-Hugo issue currently regarding overlapping mounts
-
-https://github.com/gohugoio/hugo/issues/7123
-
-so for now only subdirectories work
+This will build the site (all 28000+ pages) and takes anywhere from 30s - 5 minutes depending on your hardware. This is expected due to the size of the site.
 
 #### Deployment
 
