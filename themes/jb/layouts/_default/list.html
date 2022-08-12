@@ -12,15 +12,19 @@
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
 {{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
-  <section class="{{ $lastUrlElement }}-list">
+  <section class="{{ $lastUrlElement }}-list mb-5">
     <div class="container">
        <div class="columns is-multiline">
         <!-- People that are of Type "host" and aren't archived (is_archive!=true) -->
-        {{ range ( where ( where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) ".Type" ($lastUrlElement | singularize) )  }}
+        {{ $paginator := .Paginate ( where ( where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) ".Type" ($lastUrlElement | singularize) ) }}
+        {{ range $paginator.Pages  }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
             {{ partial "people/small.html" . }}
           </div>
         {{ end }}
+        <div class="container">
+          {{ partial "helper/pagination" . }}
+        </div>
       </div>
     </div>
   </section>
