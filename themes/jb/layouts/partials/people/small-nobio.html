@@ -1,4 +1,4 @@
-<a href="/hosts/{{ .Params.username }}">
+<a href="/{{ .Type | pluralize }}/{{ .Params.username }}">
   <div class="card">
     <div class="card-image">
       <img class="image is-fullwidth" src="{{ .Params.avatar }}" alt="{{ .Title }}">
