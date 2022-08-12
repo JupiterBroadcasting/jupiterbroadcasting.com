@@ -11,4 +11,5 @@ twitter: https://twitter.com/ell_o_punk
 type: host
 username: ell
 youtube: null
+is_archived: true
 ---

@@ -11,4 +11,5 @@ twitter: https://twitter.com/chzbacon
 type: host
 username: chzbacon
 youtube: null
+is_archived: true
 ---
