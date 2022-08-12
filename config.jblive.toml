@@ -35,6 +35,17 @@ publishdir = 'public_subsites/jblive'
     url = "/calendar"
     weight =-90
 
+[[Menu.Main]]
+    name = "Jupiter Broadcasting"
+    identifier = "JB"
+    url = "https://jupiterbroadcasting.net"
+    weight =-80
+
+[params.footer.logo]
+  image = "/images/logo_small.png"
+  text = "Jupiter Broadcasting"
+  url = "https://jupiterbroadcasting.net"
+
 contentDir = "sites/jblive/content"
 # Module mounts
 [module]

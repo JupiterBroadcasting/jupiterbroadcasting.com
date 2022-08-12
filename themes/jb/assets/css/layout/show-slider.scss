@@ -12,13 +12,6 @@
   margin-bottom: 2rem;
   display: block;
 }
-.swiper-button-prev.swiper-button-disabled {
-  display: none !important;
-}
-
-.swiper-button-next.swiper-button-disabled {
-  display: none !important;
-}
 
 .swiper-button-prev {
   color: white;
@@ -26,4 +19,8 @@
 
 .swiper-button-next {
   color: white;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+ pointer-events: initial !important;
 }

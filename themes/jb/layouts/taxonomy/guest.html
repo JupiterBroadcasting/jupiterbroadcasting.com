@@ -1,36 +1,62 @@
 {{ define "main" }}
-  <div class="container">
-      <div class="content">
-        {{ $guest := index $.Site.Data.people $.Title }}
+<div class="container">
+  <div class="columns">
+    <div class="column is-two-thirds">
+      {{ $current_page_type := .Data.Singular }}
+      {{
+        $person := index (
+          where (
+            where site.RegularPages "Section" "people"
+          ) ".Params.username" .Title
+        ) 0
+      }}
+      {{ $name := $person.Title }}
+      <h2 class="title is-3"> {{ $current_page_type | title }} - {{ $name }}</h2>
+      {{ partial "people/horizontal.html" $person }}
+    </div>
 
-        <h1 class="title">{{ $guest.name}}</h1>
-
-        <img src="{{ $guest.avatar}}"><br/>
-        {{ $guest.bio}}
-
-
+    <div class="column is-one-thirds">
+      <h2 class="title is-3">Shows with {{ $name }}</h2>
+      {{ $initialSections := where .Pages ".Kind" "section"}}
+      <!-- If it's empty, it's a guest page...so lookup a different way -->
+      {{ if eq 0 ($initialSections | len) }}
+        {{ range .Pages.GroupByParam "show_name" }}
+          {{
+            $initialSections = $initialSections | append (
+              where (
+                where site.Pages ".Kind" "section"
+              ) ".Title" .Key
+            )
+          }}
+        {{ end }}
+      {{ end }}
+      <div class="columns is-multiline">
+        {{ range $initialSections }}
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image">
+              <a href="{{ .Permalink}}">
+                <figure class="image is-fullwidth">
+                  <img src="{{ .Params.header_image}}" alt="{{ .LinkTitle }} ">
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
     </div>
   </div>
 
-  <section class="section episode-list">
-    <div class="container">
-      <h1 class="title">Latest Episodes with {{ $guest.name}}</h1>
-       <div class="columns is-multiline">
-        {{ range $key, $taxonomy := .Site.Taxonomies.guests }}
-        {{ if eq $key $.Title }}
-           <div class="columns is-multiline">
-               {{ range $taxonomy.Pages }}
-                {{ if ne  .Kind "section" }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                      {{ partial "episode/preview.html" . }}
-                  </div>
-                {{ end }}
-               {{ end }}
-           </div>
-          {{ end }}
-            {{ end }}
-        </div>
-      </div>
-  </section>
+  <h2 class="title is-3">Latest Episodes with {{ $name }}</h2>
 
+  <div class="columns is-multiline">
+    {{ range .RegularPages }}
+    <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
+      {{ partial "episode/preview.html" . }}
+    </div>
+
+    {{ end }}
+  </div>
+</div>
 {{end}}

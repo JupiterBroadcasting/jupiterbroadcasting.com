@@ -10,4 +10,14 @@ comms_type = "network"
 direct_link = ""
 +++
 
-https://kiwiirc.com/client/irc.geekshed.net/?nick=JBLive_?&theme=cli#jupiterbroadcasting
+<a href="https://kiwiirc.com/nextclient/irc.geekshed.net/?nick=JBLive_?#jupiterbroadcasting" class="button is-primary">Launch Web Client</a>
+
+<div class="card mt-5">
+    <div class="card-content">
+        <div class="content">
+            <p class="card-header-title">Prefer to use your own IRC client?</p>
+            Server: <strong>irc.geekshed.net</strong><br>
+            Channel: <strong>#jupiterbroadcasting</strong>
+        </div>
+    </div>
+</div>

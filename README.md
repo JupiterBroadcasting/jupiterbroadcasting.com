@@ -27,8 +27,11 @@ Demo: https://jupiterbroadcasting.net
 ### Setup
 
 #### Using Hugo binary
+You must install  the Hugo Extended Sass/SCSS version.
 
 Install Hugo: https://gohugo.io/getting-started/installing/
+
+Hugo Extended Linux binary: https://github.com/gohugoio/hugo/releases
 
 Start the development Server (rebuilds on every filesystem change)
 
@@ -37,7 +40,7 @@ Start the development Server (rebuilds on every filesystem change)
 #### Using Docker
 
 To build and run the docker image:
-`make run`
+`make dev`
 
 #### run for different Site
 

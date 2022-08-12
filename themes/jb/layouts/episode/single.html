@@ -39,6 +39,7 @@
 
         {{ partial "episode/downloadlinks.html" . }}
 
+        {{ $people_sections := where site.RegularPages "Section" "people" }}
         <div class="columns" style="padding-top: 2em">
           <!-- Host Section -->
           <div class="column is-8">
@@ -46,10 +47,10 @@
             <section class="section host-list">
               <div class="container">
                  <div class="columns is-multiline">
-                  {{ range $index, $hostname := .Params.hosts }}
-                    {{ $host := index $.Site.Data.people $hostname }}
+                  {{ range .Params.hosts }}
+                    {{ $host := index ( where $people_sections "Params.username" .) 0 }}
                       <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                        {{ partial "hosts/small-nobio.html" (dict "context" . "host" $host) }}
+                        {{ partial "people/small-nobio.html" $host }}
                       </div>
                   {{ end }}
                 </div>
@@ -60,11 +61,11 @@
                 <section class="section sponsor-list">
                   <div class="container">
                     <div class="columns is-multiline">
-                      {{ range $index, $guestname := . }}
-                          {{ $guest := index $.Site.Data.people $guestname }}
+                      {{ range . }}
+                          {{ $guest := index (where $people_sections "Params.username" .) 0 }}
                           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
                             {{ if $guest }}
-                              {{ partial "guests/small-nobio.html" (dict "context" . "guest" $guest) }}
+                              {{ partial "people/small-nobio.html" $guest }}
                             {{ end }}
                           </div>
                       {{end}}
@@ -79,10 +80,10 @@
             {{ with .Params.sponsors }}
             <h2>Sponsors</h2>
             <section class="section sponsor-list">
-                  {{ range $index, $sponsorname := . }}
-                    {{ $sponsor := index $.Site.Data.sponsors $sponsorname }}
+                  {{ range . }}
+                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
                         {{ if $sponsor }}
-                          {{ partial "sponsor/small.html" (dict "context" . "sponsor" $sponsor) }}
+                          {{ partial "sponsor/small.html" $sponsor }}
                           <br />
                         {{ end }}
                   {{ end }}
