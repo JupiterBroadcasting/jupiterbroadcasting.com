@@ -14,10 +14,10 @@
       <div class="column is-half">
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
-        {{ range $index, $hostname := .Params.hosts }}
-          {{ $host := index $.Site.Data.people $hostname }}
+        {{ range .Params.hosts }}
+          {{ $host := index (where (where site.RegularPages "Section" "people") "Params.username" .) 0 }}
             <div class="column is-narrow">
-              {{ partial "hosts/smallest.html" (dict "context" . "host" $host) }}
+              {{ partial "people/smallest.html" $host }}
             </div>
         {{ end }}
         </div>
@@ -34,18 +34,13 @@
   <div class="container">
      <div class="columns is-multiline">
 
-        {{ range .Data.Pages }}
-            {{ if eq  .Kind "section" }}
-                {{ if eq .Params.active true }}
-                  <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                      {{ partial "episode/show.html" . }}
-                  </div>
-                {{ end }}
-            {{ end }}
+        {{ range where (where .Pages "Kind" "section") "Params.active" true }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+              {{ partial "episode/show.html" . }}
+          </div>
         {{ end }}
 
-        {{ $paginator := .Paginate (where .Pages "Type" "episode") 12 }}
-        {{ range $paginator.Pages }}
+        {{ range (.Paginator 12).Pages }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
           {{ partial "episode/preview.html" . }}
         </div>

@@ -1,0 +1,9 @@
+<div class="has-text-centered">
+  <a href="/{{ .Type | pluralize }}/{{ .Params.username }}">
+    <figure class="image is-96x96" style="margin: 0 auto">
+    <!-- <figure class="image is-96x96 my-0 mx-auto"> -->
+      <img src="{{ .Params.avatar }}" alt="{{ .Title }}" class="is-rounded" />
+    </figure>
+    <strong>{{ .Title }}</strong>
+  </a>
+</div>
