@@ -2,6 +2,12 @@
   <nav class="navbar is-fixed-top {{ if eq .Params.hashero false  }}gradient-home{{end}}" id="mainnavigation" role="navigation" aria-label="main navigation">
       <div class="container">
           <div class="navbar-brand">
+            {{ range (where .Site.Menus.main "Identifier" "home")}}
+                <a href="{{ .URL }}" class="navbar-item">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            {{ end }}
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                  data-target="navbarBasicExample">
                   <span aria-hidden="true"></span>
@@ -54,6 +60,8 @@
                               {{ end }}
                           </div>
                       </div>
+                      {{ else if eq .Identifier "home"}}
+                      <!-- do nothing, home is done as "navbar-brand" class above outside of "navbar-menu" -->
                       {{ else }}
                           <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
                               {{ .Pre }}
