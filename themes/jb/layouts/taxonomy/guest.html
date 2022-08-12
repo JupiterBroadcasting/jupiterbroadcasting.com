@@ -10,7 +10,6 @@
           ) ".Params.username" .Title
         ) 0
       }}
-
       {{ $name := $person.Title }}
       <h2 class="title is-3"> {{ $current_page_type | title }} - {{ $name }}</h2>
       {{ partial "people/horizontal.html" $person }}

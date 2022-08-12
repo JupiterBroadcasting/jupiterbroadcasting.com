@@ -1,17 +1,12 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-deploy-jb:
     runs-on: ubuntu-latest
@@ -25,22 +20,6 @@ jobs:
        switches: -avzr --delete
        path: ./public/
        remote_path: /var/www/jupiterbroadcasting.net
-       remote_host: ${{ secrets.DEPLOY_HOST }}
-       remote_port: ${{ secrets.DEPLOY_PORT }}
-       remote_user: ${{ secrets.DEPLOY_USER }}
-       remote_key: ${{ secrets.DEPLOY_KEY }}
-  build-and-deploy-coderradio:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
-      with:
-        args: --gc --config config.coder-radio.toml
-    - uses: burnett01/rsync-deployments@4.1
-      with:
-       switches: -avzr --delete
-       path: ./public_subsites/coderradio/
-       remote_path: /var/www/coderradio
        remote_host: ${{ secrets.DEPLOY_HOST }}
        remote_port: ${{ secrets.DEPLOY_PORT }}
        remote_user: ${{ secrets.DEPLOY_USER }}
