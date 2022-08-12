@@ -11,10 +11,10 @@
   <section class="{{ $lastUrlElement }}-list">
     <div class="container">
        <div class="columns is-multiline">
-        {{ range $currentPeople }}
-          {{ $host := index (where $peoplePages "Params.username" .) 0 }}
+        {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" $currentPeople }}
+        {{ range $currentPeopleSlice }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-            {{ partial "people/small.html" $host }}
+            {{ partial "people/small.html" . }}
           </div>
         {{ end }}
       </div>
@@ -36,10 +36,10 @@
       <div class="column is-half">
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
-        {{ range .Params.hosts }}
-          {{ $host := index (where $peoplePages "Params.username" .) 0 }}
+        {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" .Params.hosts }}
+        {{ range $currentPeopleSlice }}
             <div class="column is-narrow">
-              {{ partial "people/smallest.html" $host }}
+              {{ partial "people/smallest.html" . }}
             </div>
         {{ end }}
         </div>
