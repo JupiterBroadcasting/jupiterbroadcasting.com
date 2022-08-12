@@ -6,7 +6,13 @@
   {{ if eq $lastUrlElement "hosts" }}
     {{ $currentPeople = .Params.hosts }}
   {{ else }}
-    {{ $currentPeople = .Params.hosts }}
+    {{ $currentShowGuestSlice := slice }}
+    {{ range where .Parent.Pages "Params.guests" "!=" nil }}
+      {{ with .Params.guests }}
+        {{ $currentShowGuestSlice = $currentShowGuestSlice | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $currentPeople = $currentShowGuestSlice  }}
   {{ end }}
   <section class="{{ $lastUrlElement }}-list">
     <div class="container">
