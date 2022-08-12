@@ -1,13 +1,19 @@
 {{ define "main" }}
 {{ $lastUrlElement := (delimit (split .Permalink "/" | last 2 | first 1 ) "") }}
-{{ if eq $lastUrlElement "hosts" }}
-  <section class="host-list">
+{{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
+  {{ $currentPeople := slice }}
+  {{ if eq $lastUrlElement "hosts" }}
+    {{ $currentPeople = .Params.hosts }}
+  {{ else }}
+    {{ $currentPeople = .Params.hosts }}
+  {{ end }}
+  <section class="{{ $lastUrlElement }}-list">
     <div class="container">
        <div class="columns is-multiline">
-        {{ range $index, $hostname := .Params.hosts }}
-          {{ $host := index $.Site.Data.people $hostname }}
+        {{ range $currentPeople }}
+          {{ $host := index (where (where site.RegularPages "Section" "people") "Params.username" .) 0 }}
           <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-            {{ partial "people/small.html" (dict "context" . "host" $host) }}
+            {{ partial "people/small.html" $host }}
           </div>
         {{ end }}
       </div>
