@@ -8,7 +8,7 @@
   {{ $jbTube := resources.Get "js/jb-live.js" }}
   <script src="{{ $jbTube.Permalink }}"></script>
   <script>
-    window.onload = function () {
+    window.onload = () => {
       jbLive().then(result => document.getElementById('liveStream').src = result);
     }
   </script>
