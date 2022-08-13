@@ -1,14 +1,15 @@
 <div class="jb-tube-wrapper">
   <div class="jb-tube">
     <div class="jb-tube-video">
-      <iframe
-        title="jblive.tv Stream"
-        src="https://jupiter.tube/videos/embed/dbec0720-5daa-4b1f-a4c1-553ad625d0f6?warningTitle=0"
-        allowfullscreen=""
-        sandbox="allow-same-origin allow-scripts allow-popups"
-        width="560"
-        height="315"
-        frameborder="0"></iframe>
+      <iframe id="liveStream" title="jblive.tv Stream" src=jbLive() allowfullscreen=""
+        sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
     </div>
   </div>
+  {{ $jbTube := resources.Get "js/jb-live.js" }}
+  <script src="{{ $jbTube.Permalink }}"></script>
+  <script>
+    window.onload = function () {
+      jbLive().then(result => document.getElementById('liveStream').src = result);
+    }
+  </script>
 </div>
