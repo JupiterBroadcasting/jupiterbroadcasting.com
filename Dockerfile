@@ -1,5 +1,4 @@
 FROM registry.gitlab.com/pages/hugo/hugo_extended:0.101.0 as builder
-RUN mkdir -p /site
 WORKDIR /site
 COPY . /site
 RUN hugo
