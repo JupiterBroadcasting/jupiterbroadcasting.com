@@ -24,7 +24,41 @@
                       {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
                       {{ $active = or $active (eq .Name $currentPage.Title) }}
                       {{ $active = or $active (and (eq (trim (path.Dir .URL) "/") $currentPage.Section) (ne $currentPage.Section "")) }}
-                      {{ if .HasChildren }}
+                      {{ if eq .Identifier "shows" }}
+                      <div class="navbar-item has-dropdown is-hoverable {{ if $active }}active{{ end }}">
+
+                              <a href="{{ .URL }}" class="navbar-link">
+                              {{ .Pre }}
+                              <span>{{ .Name }}</span>
+                          </a>
+
+                          <div class="navbar-dropdown">
+                              {{ range .Children }}
+                              <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                              {{ end }}
+                              <div class="navbar-dropdown {{ if $active }}active{{ end }}">
+                                <div class="nested dropdown">
+                                    <a class="navbar-link">
+                                        <span class="icon-text">
+                                            <span>
+                                                RSS Feeds
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <div id="rss-feeds-menu" class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <a class="dropdown-item" href="http://feeds2.feedburner.com/JupiterBroadcasting" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Audio</a>
+                                            <a class="dropdown-item" href="http://feeds2.feedburner.com/AllJupiterVideos" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Video</a>
+                                            {{ range .Children }}
+                                                <a class="dropdown-item" href="{{ (site.GetPage (string .URL)).Params.links.shownotes.url }}/rss" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      {{ else if .HasChildren }}
                           <div class="navbar-item has-dropdown is-hoverable {{ if $active }}active{{ end }}">
 
                               <a href="{{ .URL }}" class="navbar-link">
