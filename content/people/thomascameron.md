@@ -5,7 +5,6 @@ bio: Thomas Cameron has been an IT Professional since 1993. He's worked with Lin
   at multinational financial services companies, transportation companies, manufacturing,
   and more. He's a Red Hat Certified Architect, and was a regional chief architect
   at Red Hat. He's currently on the Amazon Linux team at Amazon.
-gplus: null
 homepage: null
 instagram: null
 linkedin: null

@@ -15,7 +15,6 @@ bio: 'CTO and Co-Founder at Plex, Inc.
   his time there, AetherWorks was acquired by Nx Networks.
 
   Elan holds a B.S. in Computer Science from Cornell University.'
-gplus: null
 homepage: https://github.com/elan
 instagram: null
 linkedin: null

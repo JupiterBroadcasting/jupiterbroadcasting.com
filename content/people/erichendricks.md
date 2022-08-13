@@ -7,7 +7,6 @@ bio: 'The IT Guy --- Open Source Warrior, Linux Systems Engineer, Podcaster, Con
   Maintainer - Jupiter Broadcasting Peertube
 
   Social Media Coordinator - GNOME Foundation'
-gplus: null
 homepage: null
 instagram: null
 linkedin: null

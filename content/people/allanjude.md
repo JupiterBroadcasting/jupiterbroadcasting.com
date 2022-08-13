@@ -3,7 +3,6 @@ avatar: /images/people/allanjude.jpg
 avatar_small: /images/people/allanjude_small.jpg
 bio: "FreeBSD Developer, ZFS Expert, Co-Founder of @KlaraSystems, Host of BSD Now
   (former host of https://techsnap.systems/ ) \U0001F1E8\U0001F1E6"
-gplus: null
 homepage: https://bsdnow.tv
 instagram: null
 linkedin: null

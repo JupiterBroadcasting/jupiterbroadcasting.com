@@ -5,7 +5,6 @@ bio: Heather is a Software Engineer on Canonical's Ubuntu Desktop Team, a GNOME 
   Member, and former Purism Librem 5 Documentation Engineer. She is also a former
   experimental high energy physics researcher at CERN working on the Atlas Detector
   and Higgs boson.
-gplus: null
 homepage: null
 instagram: null
 linkedin: null
