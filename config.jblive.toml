@@ -1,0 +1,80 @@
+baseURL = 'https://jb-live.jupiterbroadcasting.net/'
+languageCode = 'en-us'
+title = 'Jupiter Broadcast LIVE'
+
+# Theme Components, takes two themes and merge them
+# https://gohugo.io/hugo-modules/theme-components/
+# discussion: https://discourse.gohugo.io/t/sub-themes-or-theme-families/3938
+theme = ['jblive','jb']
+
+# directory where the output is generated to
+publishdir = 'public_subsites/jblive'
+
+# Allow HTML in Markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  host = "hosts"
+  guest = "guests"
+
+# Main Menu
+[[Menu.Main]]
+    name = "LIVE!"
+    identifier = "home"
+    url = "/"
+    weight =-100
+
+[[Menu.Main]]
+    name = "Calendar"
+    identifier = "calendar"
+    url = "/calendar"
+    weight =-90
+
+[[Menu.Main]]
+    name = "Jupiter Broadcasting"
+    identifier = "JB"
+    url = "https://jupiterbroadcasting.net"
+    weight =-80
+
+[params.footer.logo]
+  image = "/images/logo_small.png"
+  text = "Jupiter Broadcasting"
+  url = "https://jupiterbroadcasting.net"
+
+contentDir = "sites/jblive/content"
+# Module mounts
+[module]
+#[[module.mounts]]
+#  source = 'sites/coder-radio/content'
+#  target = 'content'
+# currently it prevents us from mounting sites/coder-radio/content directly
+# https://github.com/gohugoio/hugo/issues/7123
+[[module.mounts]]
+  source = 'sites/jblive/content'
+  target = 'content'
+[[module.mounts]]
+  source = 'content/calendar'
+  target = 'content/calendar'
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'layouts'
+  target = 'layouts'
+[[module.mounts]]
+  source = 'data'
+  target = 'data'
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'i18n'
+  target = 'i18n'
+[[module.mounts]]
+  source = 'archetypes'
+  target = 'archetypes'
