@@ -24,19 +24,3 @@ jobs:
        remote_port: ${{ secrets.DEPLOY_PORT }}
        remote_user: ${{ secrets.DEPLOY_USER }}
        remote_key: ${{ secrets.DEPLOY_KEY }}
-  build-and-deploy-jblive:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
-      with:
-        args: --gc --config config.jblive.toml
-    - uses: burnett01/rsync-deployments@4.1
-      with:
-       switches: -avzr --delete
-       path: ./public_subsites/jblive/
-       remote_path: /var/www/jb-live
-       remote_host: ${{ secrets.DEPLOY_HOST }}
-       remote_port: ${{ secrets.DEPLOY_PORT }}
-       remote_user: ${{ secrets.DEPLOY_USER }}
-       remote_key: ${{ secrets.DEPLOY_KEY }}
