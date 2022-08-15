@@ -3,7 +3,6 @@ avatar: /images/people/quindor.jpg
 avatar_small: /images/people/quindor_small.jpg
 bio: Most know me by my nickname Quindor, I’m a tech enthousiast living somewhere
   in the southern part of the Netherlands in Europe!
-gplus: null
 homepage: https://blog.quindorian.org
 instagram: null
 linkedin: null

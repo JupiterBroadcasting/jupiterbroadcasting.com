@@ -5,7 +5,6 @@ bio: Ryan leads the Security Operations team at Slack, creating and deploying to
   focused on monitoring, authentication, secure communication, and operational resilience.
   He is a regular contributor to open source and an active member in many security
   collaboration groups.
-gplus: null
 homepage: https://github.com/rawdigits
 instagram: null
 linkedin: null
