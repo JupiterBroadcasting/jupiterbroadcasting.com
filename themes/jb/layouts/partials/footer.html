@@ -71,5 +71,11 @@
 {{ $navigation := resources.Get "js/navigation.js" }}
 {{ $video := resources.Get "js/video.min.js" }}
 {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
-{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $defaultJS.Permalink }}"></script>
+{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" }}
+{{ if hugo.IsProduction }}
+  {{ $defaultJS = $defaultJS | resources.Minify | resources.Fingerprint }}
+  {{ $plaus_analytics := resources.GetRemote site.Params.analytics (dict "filename" "cool_stuff") | resources.Minify | resources.Fingerprint }}
+  {{ $current_domain := (urls.Parse .Site.BaseURL).Host }}
+  <script defer data-domain="{{ $current_domain }}" src="{{ $plaus_analytics.Permalink }}" integrity="{{ $plaus_analytics.Data.Integrity }}"></script>
+{{ end }}
+<script src="{{ $defaultJS.Permalink }}" integrity="{{ $defaultJS.Data.Integrity }}"></script>
