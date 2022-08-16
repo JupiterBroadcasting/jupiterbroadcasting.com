@@ -47,8 +47,8 @@
                                     </a>
                                     <div id="rss-feeds-menu" class="dropdown-menu" role="menu">
                                         <div class="dropdown-content">
-                                            <a class="dropdown-item" href="http://feeds2.feedburner.com/JupiterBroadcasting" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Audio</a>
-                                            <a class="dropdown-item" href="http://feeds2.feedburner.com/AllJupiterVideos" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Video</a>
+                                            <a class="dropdown-item" href="{{ site.Params.feed.rss }}" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Audio</a>
+                                            <a class="dropdown-item" href="{{ site.Params.feed.video_rss }}" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Video</a>
                                             {{ range .Children }}
                                                 <a class="dropdown-item" href="{{ (site.GetPage (string .URL)).Params.links.shownotes.url }}/rss" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
                                             {{ end }}
