@@ -220,6 +220,7 @@ paginate = 12
   baseName = "webplayer"
 
 [outputs]
-  page = ["json","html","webplayer"]
+  page = ["html"]
+  # page = ["json","html","webplayer"]
   # section = ["html","rss"]
   section = ["html"]
