@@ -40,7 +40,8 @@
           </div>
         {{ end }}
 
-        {{ range (.Paginator 12).Pages }}
+        {{ $episode_paginator := .Paginate (where .Pages "Type" "episode") }}
+        {{ range $episode_paginator.Pages }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
           {{ partial "episode/preview.html" . }}
         </div>

@@ -3,7 +3,6 @@ avatar: /images/people/brent.jpg
 avatar_small: /images/people/brent_small.jpg
 bio: Commercial, Editorial & Documentary Photography -- local food, sustainability,
   technology, photography on Linux + more!
-gplus: null
 homepage: http://brentgervais.com
 instagram: null
 linkedin: null
