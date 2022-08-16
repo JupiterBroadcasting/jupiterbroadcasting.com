@@ -1,14 +1,47 @@
 {{ define "main" }}
 
+{{ $lastUrlElement := (delimit (split .Permalink "/" | last 2 | first 1 ) "") }}
+{{ $show_page := .Parent }}
+{{ if eq $lastUrlElement "subscribe" }}
+<div class="container my-5">
+  <img src="{{ $show_page.Params.header_image }}" alt="{{ $show_page.Title }}'s artwork">
+
+</div>
+{{ end }}
+
 <div class="container">
   <h1 class="title">{{.Title}}</h1>
 </div>
 
 <div class="container">
 
+{{ if eq $lastUrlElement "subscribe" }}
+
+  <div class="column">
+    <p class="mb-2">Get the latest episodes of {{ $show_page.Title }} automatically using the links above, or by copying and pasting the URL below into your favorite podcast app:</p>
+    <a href="{{ .Params.rss }}" class="mb-5 button is-dark">{{ $show_page.Title }}'s RSS Feed</a>
+    {{ with .Params.direct_links }}
+      <p>You can also subscribe with your favorite app directly, using the buttons below:</p>
+      <div class="is-flex is-flex-wrap-wrap is-justify-content-flex-start is-align-content-center">
+      {{ $icons_map := $.Site.Data.podcast_player }}
+      {{ range $key, $value := . }}
+      <!-- currently 90% of images grabbed from: https://linuxunplugged.com/subscribe -->
+        <div class="p-1 is-flex subscribe-logos">
+          <a class="is-flex is-align-content-center is-justify-content-center" href="{{ $value }}">
+            <img class="is-align-self-center" src="{{ index $icons_map $key }}" alt="{{ $key }} subscription link">
+          </a>
+        </div>
+      {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ else }}
+
     <div class="column is-full content">
       {{.Content}}
     </div>
+
+{{ end }}
 
 </div>
 
