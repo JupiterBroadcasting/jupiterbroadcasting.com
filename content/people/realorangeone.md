@@ -2,6 +2,7 @@
 avatar: /images/people/realorangeone.jpg
 avatar_small: /images/people/realorangeone_small.jpg
 bio: ''
+gplus: null
 homepage: null
 instagram: null
 linkedin: null

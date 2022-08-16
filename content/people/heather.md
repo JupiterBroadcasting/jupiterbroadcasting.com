@@ -2,6 +2,7 @@
 avatar: /images/people/heather.jpg
 avatar_small: /images/people/heather_small.jpg
 bio: ''
+gplus: null
 homepage: null
 instagram: null
 linkedin: null

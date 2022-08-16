@@ -2,6 +2,7 @@
 avatar: /images/people/carl-richell.jpg
 avatar_small: /images/people/carl-richell_small.jpg
 bio: Founder and CEO of System76. Maker of Linux computers and Pop!_OS.
+gplus: null
 homepage: https://system76.com/
 instagram: null
 linkedin: null

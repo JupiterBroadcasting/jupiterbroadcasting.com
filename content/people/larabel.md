@@ -2,6 +2,7 @@
 avatar: /images/people/larabel.jpg
 avatar_small: /images/people/larabel_small.jpg
 bio: Founder of Phoronix and lead developer of Phoronix Test Suite
+gplus: null
 homepage: https://www.phoronix.com/
 instagram: null
 linkedin: null

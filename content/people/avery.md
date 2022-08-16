@@ -5,6 +5,7 @@ bio: Avery is CEO and Co-founder of Tailscale. He spent the previous 8 years at 
   where he launched Google's first P2P payments transfer for Google Wallet, spearheaded
   the development of Google Fiber, and provided strategic analysis for several high-profile
   Alphabet projects.
+gplus: null
 homepage: https://tailscale.com/
 instagram: null
 linkedin: null

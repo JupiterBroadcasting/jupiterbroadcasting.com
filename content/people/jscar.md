@@ -3,6 +3,7 @@ avatar: /images/people/jscar.jpg
 avatar_small: /images/people/jscar_small.jpg
 bio: 'Platform TAM Red Hat. Passions: Privacy, Security & Hardware, Raspberry Pi,
   Steam Deck, & 3D printing.'
+gplus: null
 homepage: null
 instagram: null
 linkedin: null

@@ -8,6 +8,7 @@ bio: Elizabeth K. Joseph is a Developer Advocate at IBM focused on IBM Z (mainfr
   of The Official Ubuntu Book, 8th and 9th Editions. At home in San Francisco, she
   sits on the Board of Directors for Partimus.org, a non-profit in the Bay Area providing
   Linux-based computers to schools in need.
+gplus: null
 homepage: https://princessleia.com/
 instagram: null
 linkedin: null

@@ -2,6 +2,7 @@
 avatar: /images/people/mariakomarova.jpg
 avatar_small: /images/people/mariakomarova_small.jpg
 bio: UX Architect at System76
+gplus: null
 homepage: null
 instagram: null
 linkedin: https://www.linkedin.com/in/maria-komarova

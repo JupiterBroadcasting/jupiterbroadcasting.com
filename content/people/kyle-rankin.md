@@ -8,6 +8,7 @@ bio: Chief Security Officer and Vice President at Purism. Former Tech Editor and
   number of other O'Reilly books. Rankin speaks frequently on security and open-source
   software including at BsidesLV, O'Reilly Security Conference, OSCON, SCALE, CactusCon,
   Linux World Expo and Penguicon.
+gplus: null
 homepage: http://kylerank.in/
 instagram: null
 linkedin: null

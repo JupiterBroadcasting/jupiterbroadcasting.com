@@ -2,6 +2,7 @@
 avatar: /images/people/dr-laura.jpg
 avatar_small: /images/people/dr-laura_small.jpg
 bio: IBM-er, Doctor of Psychology, developer advocate, Park runner and ex-Ubuntu podcast-er.
+gplus: null
 homepage: https://lauracowen.co.uk
 instagram: null
 linkedin: null

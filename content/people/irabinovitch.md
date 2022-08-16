@@ -3,6 +3,7 @@ avatar: /images/people/irabinovitch.jpg
 avatar_small: /images/people/irabinovitch_small.jpg
 bio: VP, Product & Technical Community at DataDog, recovering SysAdmin, SCALE Conference
   Chair, and other FL/OSS fun.
+gplus: null
 homepage: http://www.fonz.net/blog/
 instagram: null
 linkedin: null

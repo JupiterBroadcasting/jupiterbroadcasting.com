@@ -5,6 +5,7 @@ bio: Jacob Roecker currently holds a position as an IT project manager, is a Bro
   Star Medal recipient, a graduate of Utah State University with a Bachelor's Degree
   in Speech Communication, an Eagle Scout, and was honored as Utah State University's
   "Man of the Year" in 2008. Also a hobby author and creator of ParkingThought.
+gplus: null
 homepage: https://parkingthought.com/
 instagram: null
 linkedin: https://www.linkedin.com/in/roecker/

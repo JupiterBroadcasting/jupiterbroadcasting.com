@@ -3,6 +3,7 @@ avatar: /images/people/marius.jpg
 avatar_small: /images/people/marius_small.jpg
 bio: Living in the Ubuntu/Debian world, as a Opensource Developer! I speak c++! Lead
   developer at @UBports
+gplus: null
 homepage: https://mariogrip.com/
 instagram: null
 linkedin: null

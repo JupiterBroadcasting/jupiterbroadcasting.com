@@ -9,6 +9,7 @@ bio: 'Matt is British and grew up in the UK. He went to the University of York a
 
   Matt met his now wife while playing squash in San Francisco in 2014, just 10 days
   after Matt moved to the US.'
+gplus: null
 homepage: https://www.adventurousway.com/
 instagram: https://instagram.com/adventurousway/
 linkedin: null

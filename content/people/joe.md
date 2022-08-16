@@ -2,6 +2,7 @@
 avatar: /images/people/joe.jpg
 avatar_small: /images/people/joe_small.jpg
 bio: UK podcaster and FOSS advocate.
+gplus: https://plus.google.com/+joeressington
 homepage: https://joeress.com/
 instagram: null
 linkedin: null

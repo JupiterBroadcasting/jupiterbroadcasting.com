@@ -2,6 +2,7 @@
 avatar: /images/people/lukaszerecinski.jpg
 avatar_small: /images/people/lukaszerecinski_small.jpg
 bio: Community Manager with Pine64
+gplus: null
 homepage: null
 instagram: null
 linkedin: null

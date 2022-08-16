@@ -2,6 +2,7 @@
 avatar: /images/people/matthewmiller.jpg
 avatar_small: /images/people/matthewmiller_small.jpg
 bio: Fedora Project Leader / Tepid change for the somewhat better! — Russ Allbery
+gplus: null
 homepage: https://mattdm.org/
 instagram: null
 linkedin: null
