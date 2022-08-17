@@ -1,4 +1,36 @@
 {{ define "main" }}
+{{ $lastUrlElement := (delimit (split .Permalink "/" | last 2 | first 1 ) "") }}
+{{ $peoplePages := where site.RegularPages "Section" "people" }}
+
+{{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
+  {{ $currentPeople := slice }}
+  {{ if eq $lastUrlElement "hosts" }}
+    {{ $currentPeople = .Params.hosts }}
+  {{ else }}
+    {{ $currentShowGuestSlice := slice }}
+    {{ range where .Parent.Pages "Params.guests" "!=" nil }}
+      {{ with .Params.guests }}
+        {{ $currentShowGuestSlice = $currentShowGuestSlice | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $currentPeople = $currentShowGuestSlice  }}
+  {{ end }}
+  <section class="{{ $lastUrlElement }}-list mb-5">
+    <div class="container">
+       <div class="columns is-multiline">
+        {{ $currentPeople := .Paginate (where $peoplePages "Params.username" "in" $currentPeople) }}
+        {{ range $currentPeople.Pages }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "people/small.html" . }}
+          </div>
+        {{ end }}
+        <div class="container">
+          {{ partial "helper/pagination.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ else }}
 <div class="container">
   <h1 class="title">{{.Title}}</h1>
 </div>
@@ -14,10 +46,10 @@
       <div class="column is-half">
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
-        {{ range .Params.hosts }}
-          {{ $host := index (where (where site.RegularPages "Section" "people") "Params.username" .) 0 }}
+        {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" .Params.hosts }}
+        {{ range $currentPeopleSlice }}
             <div class="column is-narrow">
-              {{ partial "people/smallest.html" $host }}
+              {{ partial "people/smallest.html" . }}
             </div>
         {{ end }}
         </div>
@@ -34,12 +66,6 @@
   <div class="container">
      <div class="columns is-multiline">
 
-        {{ range where (where .Pages "Kind" "section") "Params.active" true }}
-          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-              {{ partial "episode/show.html" . }}
-          </div>
-        {{ end }}
-
         {{ $episode_paginator := .Paginate (where .Pages "Type" "episode") }}
         {{ range $episode_paginator.Pages }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
@@ -53,4 +79,5 @@
     </div>
 </section>
 
+{{ end }}
 {{ end }}
