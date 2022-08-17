@@ -5,7 +5,7 @@ bio: Project Lead on The Majaro ARM Project
 gplus: null
 homepage: https://www.strits.dk/
 instagram: null
-linkedin: null
+linkedin: https://www.linkedin.com/in/dan-johansen-54185190/
 title: Dan Johansen
 twitter: null
 type: guest
