@@ -1,7 +1,7 @@
 ---
 title: "Subscribe"
 date: 2022-08-16T05:32:19-04:00
-draft: true
+draft: false
 rss: "https://linuxunplugged.com/rss"
 direct_links:
     apple: https://itunes.apple.com/us/podcast/linux-unplugged-podcast/id687598126
