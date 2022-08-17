@@ -16,8 +16,9 @@ feed.itunes_first_sub_category = "How To"
 feed.itunes_second_sub_category = "Business"
 feed.language = "en-us"
 feed.itunes_type = "episodic"
-feed.rss = "https://feed.jupiter.zone/allshows"
-feed.video_rss = "https://feed.jupiter.zone/allvid"
+# based on issue 162
+feed.rss = "http://feeds2.feedburner.com/JupiterBroadcasting"
+feed.video_rss = "http://feeds2.feedburner.com/AllJupiterVideos"
 
 # Twitch Info
 twitch.channel = "jupiterbroadcasting"
