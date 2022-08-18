@@ -1,0 +1,20 @@
+{{ define "headcontent" }}
+  {{ $jbTube := resources.Get "js/jb-live.js" }}
+  {{ if hugo.IsProduction }}
+    {{ $jbTube = $jbTube | minify | fingerprint }}
+  {{ end }}
+  <script type="text/javascript" src="{{ $jbTube.Permalink }}" integrity="{{ $jbTube.Data.Integrity }}"></script>
+  <script>
+    window.onload = () => {
+      jbLive().then(result => document.getElementById('liveStream').src = result);
+    }
+  </script>
+{{ end }}
+<div class="jb-tube-wrapper">
+  <div class="jb-tube" style="text-align: center;">
+    <div class="jb-tube-video">
+      <iframe id="liveStream" title="jblive.tv Stream" src="" allowfullscreen=""
+        sandbox="allow-same-origin allow-scripts allow-popups" width="960" height="540" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>

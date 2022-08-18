@@ -11,31 +11,20 @@
 </div>
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
-{{ if eq $lastUrlElement "hosts" }}
-  <section class="host-list">
+{{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
+  <section class="{{ $lastUrlElement }}-list mb-5">
     <div class="container">
        <div class="columns is-multiline">
-        {{ range $index, $host := $.Site.Data.people  }}
-          {{ if eq .type "host" }}
-            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-              {{ partial "hosts/small.html" (dict "context" . "host" $host) }}
-            </div>
-          {{ end }}
+        <!-- People that are of Type "host" and aren't archived (is_archive!=true) -->
+        {{ $paginator := .Paginate ( where ( where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) ".Type" ($lastUrlElement | singularize) ) }}
+        {{ range $paginator.Pages  }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "people/small.html" . }}
+          </div>
         {{ end }}
-      </div>
-    </div>
-  </section>
-{{ else if eq $lastUrlElement "guests" }}
-  <section class="guest-list">
-    <div class="container">
-       <div class="columns is-multiline">
-        {{ range $index, $guest := $.Site.Data.people  }}
-          {{ if eq .type "guest" }}
-            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-              {{ partial "guests/small.html" (dict "context" . "guest" $guest) }}
-            </div>
-          {{ end }}
-        {{ end }}
+        <div class="container">
+          {{ partial "helper/pagination" . }}
+        </div>
       </div>
     </div>
   </section>

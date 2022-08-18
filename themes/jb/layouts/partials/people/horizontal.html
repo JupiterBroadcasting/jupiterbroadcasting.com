@@ -1,0 +1,50 @@
+<div class="card is-horizontal">
+  <div class="columns">
+    <div class="column is-one-third pr-0">
+      <div class="card-image">
+        <image class="image" src="{{ .Params.avatar }}"></image>
+      </div>
+    </div>
+    <div class="column is-two-thirds-tablet pl-0">
+      <div class="card-stacked">
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">{{ .Title }}</p>
+            <p class="subtitle is-6">@{{ .Params.username }}</p>
+          </div>
+
+          <div class="content">{{ .Params.bio }}</div>
+        </div>
+        <footer class="card-footer">
+          <div class="card-footer-item has-text-left">
+            {{ if .Params.homepage }}
+              <a href="{{ .Params.homepage }}" class="card-footer-item-social" target="_blank">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+            {{ if .Params.twitter }}
+              <a href="{{ .Params.twitter }}" class="card-footer-item-social" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+            {{ if .Params.linkedin }}
+              <a href="{{ .Params.linkedin }}" class="card-footer-item-social" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+            {{ if .Params.instagram }}
+              <a href="{{ .Params.instagram }}" class="card-footer-item-social" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+            {{ if .Params.youtube }}
+              <a href="{{ .Params.youtube }}" class="card-footer-item-social" target="_blank">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>

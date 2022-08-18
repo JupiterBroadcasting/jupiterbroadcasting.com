@@ -17,7 +17,7 @@ support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
 podverse_podcast_id = "GLuztlxs0-"
 
 [links.shownotes]
-  url="https://www.officehours.hair/"
+  url="https://www.officehours.hair"
 
 [links.email]
   url="https://www.officehours.hair/contact"

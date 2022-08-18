@@ -1,0 +1,7 @@
+---
+description: Visit linux.ting.com and get a $25 discount off a device, or $25 in service
+  credit if you bring one!
+link: http://linux.ting.com
+shortname: ting.com-lup
+title: Ting
+---

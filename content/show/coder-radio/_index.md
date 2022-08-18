@@ -23,7 +23,7 @@ podverse_podcast_id = "ZXd_1Ojd9"
 [links.reddit]
   url = "https://www.reddit.com/r/coderradio"  
 [links.shownotes]
-  url = "https://coder.show/"  
+  url = "https://coder.show"  
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLCB9545FD2C26E547"
 

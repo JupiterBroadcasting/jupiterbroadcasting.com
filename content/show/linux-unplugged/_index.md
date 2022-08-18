@@ -21,7 +21,7 @@ podverse_podcast_id = "g40Um-HP1"
   url = "https://linuxunplugged.com/contact"  
 
 [links.shownotes]
-  url = "https://linuxunplugged.com/"
+  url = "https://linuxunplugged.com"
 
 [links.reddit]
   url="https://www.reddit.com/r/linuxunplugged/"

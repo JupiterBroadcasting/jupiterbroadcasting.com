@@ -6,6 +6,9 @@ draft = false
 logo = "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble.svg"
 comms_type = "network"
 direct_link = ""
+aliases = [
+    "/mumble/"
+]
 +++
 
 # JB Mumble Server Info

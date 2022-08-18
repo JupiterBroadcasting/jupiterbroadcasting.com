@@ -1,0 +1,12 @@
+<a href="/{{ .Type | pluralize }}/{{ .Params.username }}">
+  <div class="card">
+    <div class="card-image">
+      <img class="image is-fullwidth" src="{{ .Params.avatar }}" alt="{{ .Title }}">
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <strong>{{ .Title }}</strong><br />
+      </div>
+    </div>
+  </div>
+</a>
