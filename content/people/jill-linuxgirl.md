@@ -1,10 +1,9 @@
 ---
 avatar: /images/people/jill-linuxgirl.jpg
 avatar_small: /images/people/jill-linuxgirl_small.jpg
-bio: Co-host on LinuxGameCast's LWDW, Co-organizer for LinuxChix LA, teacher, animator,
-  gamer and Linux all the things :-D/
+bio: ''
 gplus: null
-homepage: https://linuxgamecast.com
+homepage: https://linuxchixla.org
 instagram: null
 linkedin: null
 title: Jill Bryant Ryniker
