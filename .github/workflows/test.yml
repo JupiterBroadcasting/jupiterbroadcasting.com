@@ -8,10 +8,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: run hugo server
+      - name: run hugo build
         uses: jakejarvis/hugo-build-action@master 
         with:
           args: --gc --config ./config.toml
+      - name: start static file server
+        uses: Eun/http-server-action@v1
+        with:
+          directory: ./public
+          port: 1313
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
