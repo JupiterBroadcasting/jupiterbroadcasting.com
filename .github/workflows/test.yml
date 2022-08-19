@@ -11,7 +11,7 @@ jobs:
       - name: run hugo server
         uses: jakejarvis/hugo-build-action@master 
         with:
-          args: serve -D --bind 0.0.0.0
+          args: serve -D --bind 0.0.0.0 &
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
