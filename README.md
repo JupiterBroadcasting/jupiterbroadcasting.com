@@ -40,6 +40,14 @@ Deployment is done with Github Actions, see workflow file in `.github/workflows/
 At the moment it is only triggered when something in the `main` branch is changing, but it can also be set up to run at certain times.
 This would also enable scheduled publishing, since Hugo per default only builds pages which have set `date` in frontmatter to <= `now`
 
+When upgrading the hugo version these are the locations whicht it needs to be updated at:
+
+* `Dockerfile`
+* `Dockerfile.dev`
+* `netlify.toml`
+
+Currently we're at hugo version `0.101.0`
+
 ### Credits
 
 - Parts of the functionality are from the Castanet Theme: https://github.com/mattstratton/castanet
