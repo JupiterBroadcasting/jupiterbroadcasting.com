@@ -13,7 +13,7 @@ jobs:
         with:
           args: --gc --config ./config.toml
       - name: Setup upterm session
-      uses: lhotari/action-upterm@v1
+        uses: lhotari/action-upterm@v1
       - name: start static file server
         uses: Eun/http-server-action@v1
         with:
