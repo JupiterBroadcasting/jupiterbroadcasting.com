@@ -19,4 +19,4 @@ These tests are setup using the [playwright](https://playwright.dev/python/docs/
 
     `pytest --base-url http://localhost:1313 e2e/*`
 
-3. Add your town test to the e2e folder and get coding!
+3. Add your own test to the e2e folder and get coding!
