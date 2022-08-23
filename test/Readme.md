@@ -6,17 +6,20 @@ These tests are setup using the [playwright](https://playwright.dev/python/docs/
 ## Getting Started
 
 1. Create a python virtual environment
+    Install [pipenv](https://pipenv.pypa.io/en/latest/)
 
-    `python -m venv .jbsite`
+    `pipenv install`
 
-    `source ./.jbsite/bin/activate`
-
-    `pip install -r requirements.txt`
+    `pipenv shell`
 
     `playwright install`
 
-2. Running E2E Tests
+2. Run the hugo server
+
+    `make dev`
+
+3. Running E2E Tests
 
     `pytest --base-url http://localhost:1313 e2e/*`
 
-3. Add your own test to the e2e folder and get coding!
+4. Add your own test to the e2e folder and get coding!
