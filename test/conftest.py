@@ -1,38 +1,20 @@
-import re
-from playwright.sync_api import Page, expect
+from pathlib import Path
+from typing import Dict, List
+from pytest import fixture
+from playwright.sync_api import Page
 from urllib.parse import urlparse
 
-def get_base_url(page: Page):
+def base_url(page: Page):
     parsed_url = urlparse(page.url)
     return "{}://{}".format(parsed_url.scheme, parsed_url.netloc)
 
+@fixture
+def screenshot_dir() -> Path:
+    return Path('screenshots/')
 
-def test_homepage_screenshot(page: Page):
-    page.goto("/")
-    page.pause()
-    page.screenshot(path="screenshots/home.png", full_page=True)
-
-def test_homepage_has_logo(page: Page):
-    page.goto("/")
-    logo = page.locator(".logo")
-    expect(logo).to_be_visible()
-
-    logo_subtitle = page.locator('.subtitle')
-    expect(logo_subtitle).to_contain_text('Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News')
-
-def test_pagination(page: Page):
-    page.goto("/")
-    first_card = page.locator('.card').nth(0).text_content
-    page_2_button = page.locator('[aria-label="pagination"] >> text=2')
-    page_2_button.click()
-    page.wait_for_load_state("networkidle")
-    assert "/page/2" in page.url
-    first_card_second_page = page.locator('.card').nth(0).text_content
-    assert first_card != first_card_second_page
-
-def test_rss_feeds(page: Page):
-    page.goto("/")
-    expected_rss_feeds = [
+@fixture
+def expected_rss_feeds() -> List[Dict[str,str,]]:
+    return [
         { 'href': 'http://feeds2.feedburner.com/JupiterBroadcasting', 'title': 'All Shows Feed - Audio'},
         { 'href': 'http://feeds2.feedburner.com/AllJupiterVideos', 'title': 'All Shows Feed - Video'},
         { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
@@ -43,16 +25,9 @@ def test_rss_feeds(page: Page):
         { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'}
     ]
 
-    for rss_feed in expected_rss_feeds:
-        element = page.locator('#rss-feeds-menu > div > a[href^="{}"]'.format(rss_feed['href']))
-        expect(element).to_contain_text(rss_feed['title'])
-
-
-def test_dropdowns(page: Page):
-    page.goto("/")
-    base_url = get_base_url(page)
-
-    expected_dropdown_items = [
+@fixture
+def expected_dropdown_items(base_url) -> List[Dict[str,str]]:
+    return [
         {'href': '/hosts', 'title': 'Hosts'},
         {'href': '/guests', 'title': 'Guests'},
         {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
@@ -73,21 +48,18 @@ def test_dropdowns(page: Page):
         {'href': '/show/office-hours', 'title': 'Office Hours'},
         {'href': '/show/self-hosted', 'title': 'Self-Hosted'},
     ]
-    for dropdown_item in expected_dropdown_items:
-        selector = '.navbar-item > .navbar-dropdown > a[href^="{}"]'.format(dropdown_item['href'])
-        element = page.locator(selector)
-        expect(element).to_contain_text(dropdown_item['title'])
-    
 
-
-def test_nav(page: Page):
-    expected_dropdowns = [
+@fixture
+def expected_dropdowns() -> List[Dict[str,str]]:
+    return [
         {'title': 'Shows', 'href': '/show'},
         {'title': 'People', 'href': "/people"},
         {'title': 'Community', 'href': "/community"}
     ]
 
-    expect_nav_items = [
+@fixture
+def expect_nav_items() -> List[Dict[str,str]]:
+    return [
         {'title': 'Sponsors', 'href': '/sponsors'},
         {'title': 'Live', 'href': 'https://jb-live.jupiterbroadcasting.net/'},
         {'title': 'Calendar', 'href': '/calendar'},
@@ -97,32 +69,3 @@ def test_nav(page: Page):
         {'title': 'Archive', 'href': '/archive'},
         {'title': 'Contact', 'href': '/contact'},
     ]
-
-
-    page.goto("/")
-    nav = page.locator('#mainnavigation')
-    expect(nav).to_be_visible()
-    dropdown_nav_items = page.locator('.navbar-start > * > a')
-    count = dropdown_nav_items.count()
-    for i in range(count):
-        expect(dropdown_nav_items.nth(i)).to_contain_text(expected_dropdowns[i]['title'])
-        expect(dropdown_nav_items.nth(i)).to_have_attribute('href', expected_dropdowns[i]['href'])
-
-
-    nav_items = page.locator('.navbar-start > a')
-    count = nav_items.count()
-    for i in range(count):
-        expect(nav_items.nth(i)).to_contain_text(expect_nav_items[i]['title'])
-        expect(nav_items.nth(i)).to_have_attribute('href', expect_nav_items[i]['href'])
-    
-    nav_image = page.locator('.navbar-brand > a > img')
-
-
-    expect(nav_image.nth(0)).to_be_visible()
-
-
-
-
-
-
-    
