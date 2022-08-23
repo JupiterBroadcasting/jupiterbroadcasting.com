@@ -4,7 +4,8 @@ FROM docker.io/python:${PY_VERSION}
 
 RUN pip install pipenv
 
-CMD [ "/bin/sh", "-c", "pytest --base-url http://localhost:1313 test/e2e/*"]
+CMD [ "--base-url", "http://localhost:1313" ]
+ENTRYPOINT [ "pytest" ]
 
 RUN adduser --disabled-login --disabled-password \
     --gecos '' --uid 1000 pytest
