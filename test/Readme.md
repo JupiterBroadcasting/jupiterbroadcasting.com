@@ -1,6 +1,7 @@
 # Jupiter Broadcasting Site End to End Tests
 
 ## Testing Methodology
+These tests are setup using the [Playwright](https://playwright.dev/python/docs/writing-tests) framework. They are intended to run on each commit to verify the site is working in expected order.s
 
 These tests exist to make sure code changes to this repository do not break how the site currently function. 
 
@@ -40,10 +41,24 @@ This means we are verifying there is an element on the page that looks like this
 
 If such an element does exist, the test will passes. Otherwise the test will fail.
 
-You can checkout the playwright documentation for more extensive testing methods. 
->>>>>>> feat/e2e_tests
+You can checkout the playwright documentation for more extensive testing methods. s
 
 ## Getting Started
 
-1. Run `make tests` from the root of this repository.
-2. Add your own tests in the e2e folder
+1. Create a python virtual environment
+    Install [pipenv](https://pipenv.pypa.io/en/latest/)
+
+    `pipenv install`
+
+    `pipenv shell`
+
+    `playwright install`
+
+2. Run the hugo server
+
+    `make dev`
+
+3. Running E2E Tests (in a new terminal window)
+    `make test`
+
+4. Add your own test to the e2e folder and get coding!

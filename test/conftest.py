@@ -1,15 +1,26 @@
+<<<<<<< HEAD:test/e2e/home.py
 import re
 from playwright.sync_api import Page, expect
 <<<<<<< HEAD
+=======
+from pathlib import Path
+from typing import Dict, List
+from pytest import fixture
+from playwright.sync_api import Page
+>>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
 from urllib.parse import urlparse
 
-def get_base_url(page: Page):
+def base_url(page: Page):
     parsed_url = urlparse(page.url)
     return "{}://{}".format(parsed_url.scheme, parsed_url.netloc)
 =======
 >>>>>>> feat/e2e_tests
 
+@fixture
+def screenshot_dir() -> Path:
+    return Path('screenshots/')
 
+<<<<<<< HEAD:test/e2e/home.py
 def test_homepage_screenshot(page: Page):
     page.goto("/")
 <<<<<<< HEAD
@@ -40,6 +51,11 @@ def test_pagination(page: Page):
 def test_rss_feeds(page: Page):
     page.goto("/")
     expected_rss_feeds = [
+=======
+@fixture
+def expected_rss_feeds() -> List[Dict[str,str,]]:
+    return [
+>>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
         { 'href': 'http://feeds2.feedburner.com/JupiterBroadcasting', 'title': 'All Shows Feed - Audio'},
         { 'href': 'http://feeds2.feedburner.com/AllJupiterVideos', 'title': 'All Shows Feed - Video'},
         { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
@@ -50,16 +66,9 @@ def test_rss_feeds(page: Page):
         { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'}
     ]
 
-    for rss_feed in expected_rss_feeds:
-        element = page.locator('#rss-feeds-menu > div > a[href^="{}"]'.format(rss_feed['href']))
-        expect(element).to_contain_text(rss_feed['title'])
-
-
-def test_dropdowns(page: Page):
-    page.goto("/")
-    base_url = get_base_url(page)
-
-    expected_dropdown_items = [
+@fixture
+def expected_dropdown_items(base_url) -> List[Dict[str,str]]:
+    return [
         {'href': '/hosts', 'title': 'Hosts'},
         {'href': '/guests', 'title': 'Guests'},
         {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
@@ -80,21 +89,18 @@ def test_dropdowns(page: Page):
         {'href': '/show/office-hours', 'title': 'Office Hours'},
         {'href': '/show/self-hosted', 'title': 'Self-Hosted'},
     ]
-    for dropdown_item in expected_dropdown_items:
-        selector = '.navbar-item > .navbar-dropdown > a[href^="{}"]'.format(dropdown_item['href'])
-        element = page.locator(selector)
-        expect(element).to_contain_text(dropdown_item['title'])
-    
 
-
-def test_nav(page: Page):
-    expected_dropdowns = [
+@fixture
+def expected_dropdowns() -> List[Dict[str,str]]:
+    return [
         {'title': 'Shows', 'href': '/show'},
         {'title': 'People', 'href': "/people"},
         {'title': 'Community', 'href': "/community"}
     ]
 
-    expect_nav_items = [
+@fixture
+def expect_nav_items() -> List[Dict[str,str]]:
+    return [
         {'title': 'Sponsors', 'href': '/sponsors'},
         {'title': 'Live', 'href': 'https://jb-live.jupiterbroadcasting.net/'},
         {'title': 'Calendar', 'href': '/calendar'},
@@ -103,6 +109,7 @@ def test_nav(page: Page):
         {'title': 'Membership', 'href': '/membership'},
         {'title': 'Archive', 'href': '/archive'},
         {'title': 'Contact', 'href': '/contact'},
+<<<<<<< HEAD:test/e2e/home.py
     ]
 
 
@@ -135,3 +142,6 @@ def test_nav(page: Page):
 >>>>>>> feat/e2e_tests
 
     
+=======
+    ]
+>>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
