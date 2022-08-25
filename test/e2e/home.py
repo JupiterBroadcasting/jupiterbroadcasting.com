@@ -1,15 +1,21 @@
 import re
 from playwright.sync_api import Page, expect
+<<<<<<< HEAD
 from urllib.parse import urlparse
 
 def get_base_url(page: Page):
     parsed_url = urlparse(page.url)
     return "{}://{}".format(parsed_url.scheme, parsed_url.netloc)
+=======
+>>>>>>> feat/e2e_tests
 
 
 def test_homepage_screenshot(page: Page):
     page.goto("/")
+<<<<<<< HEAD
     page.pause()
+=======
+>>>>>>> feat/e2e_tests
     page.screenshot(path="screenshots/home.png", full_page=True)
 
 def test_homepage_has_logo(page: Page):
@@ -17,6 +23,7 @@ def test_homepage_has_logo(page: Page):
     logo = page.locator(".logo")
     expect(logo).to_be_visible()
 
+<<<<<<< HEAD
     logo_subtitle = page.locator('.subtitle')
     expect(logo_subtitle).to_contain_text('Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News')
 
@@ -124,5 +131,7 @@ def test_nav(page: Page):
 
 
 
+=======
+>>>>>>> feat/e2e_tests
 
     

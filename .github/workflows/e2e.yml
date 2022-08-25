@@ -3,7 +3,11 @@ name: E2E Tests
 on: [push]
 
 jobs:
+<<<<<<< HEAD
   e2e-tests:
+=======
+  cypress-run:
+>>>>>>> feat/e2e_tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -11,7 +15,11 @@ jobs:
       - name: run hugo build
         uses: jakejarvis/hugo-build-action@master 
         with:
+<<<<<<< HEAD
           args: --gc --config ./config.toml -b http://localhost:1313
+=======
+          args: --gc --config ./config.toml
+>>>>>>> feat/e2e_tests
       - name: run server
         run: |
           cd public && python -m http.server 1313 &
@@ -23,16 +31,26 @@ jobs:
         working-directory: ./test
         run: |
           python -m pip install --upgrade pip
+<<<<<<< HEAD
           pip install -r requirements.txt
+=======
+          pip install -r local-requirements.txt
+          pip install -e .
+>>>>>>> feat/e2e_tests
       - name: Ensure browsers are installed
         run: python -m playwright install --with-deps
       - name: Run your tests
         working-directory: ./test
+<<<<<<< HEAD
         run: pytest --base-url http://localhost:1313 -v --junitxml report.xml e2e/*
+=======
+        run: pytest --base-url http://localhost:1313 e2e/*
+>>>>>>> feat/e2e_tests
       - name: Save screenshots
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
+<<<<<<< HEAD
           path: test/screenshots/
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
@@ -41,3 +59,6 @@ jobs:
           name: E2E Tests
           path: './test/report.xml'
           reporter: java-junit
+=======
+          path: test/screenshots/
+>>>>>>> feat/e2e_tests
