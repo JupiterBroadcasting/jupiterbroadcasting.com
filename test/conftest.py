@@ -1,61 +1,15 @@
-<<<<<<< HEAD:test/e2e/home.py
-import re
-from playwright.sync_api import Page, expect
-<<<<<<< HEAD
-=======
+
 from pathlib import Path
 from typing import Dict, List
 from pytest import fixture
-from playwright.sync_api import Page
->>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
-from urllib.parse import urlparse
-
-def base_url(page: Page):
-    parsed_url = urlparse(page.url)
-    return "{}://{}".format(parsed_url.scheme, parsed_url.netloc)
-=======
->>>>>>> feat/e2e_tests
 
 @fixture
 def screenshot_dir() -> Path:
     return Path('screenshots/')
 
-<<<<<<< HEAD:test/e2e/home.py
-def test_homepage_screenshot(page: Page):
-    page.goto("/")
-<<<<<<< HEAD
-    page.pause()
-=======
->>>>>>> feat/e2e_tests
-    page.screenshot(path="screenshots/home.png", full_page=True)
-
-def test_homepage_has_logo(page: Page):
-    page.goto("/")
-    logo = page.locator(".logo")
-    expect(logo).to_be_visible()
-
-<<<<<<< HEAD
-    logo_subtitle = page.locator('.subtitle')
-    expect(logo_subtitle).to_contain_text('Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News')
-
-def test_pagination(page: Page):
-    page.goto("/")
-    first_card = page.locator('.card').nth(0).text_content
-    page_2_button = page.locator('[aria-label="pagination"] >> text=2')
-    page_2_button.click()
-    page.wait_for_load_state("networkidle")
-    assert "/page/2" in page.url
-    first_card_second_page = page.locator('.card').nth(0).text_content
-    assert first_card != first_card_second_page
-
-def test_rss_feeds(page: Page):
-    page.goto("/")
-    expected_rss_feeds = [
-=======
 @fixture
 def expected_rss_feeds() -> List[Dict[str,str,]]:
     return [
->>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
         { 'href': 'http://feeds2.feedburner.com/JupiterBroadcasting', 'title': 'All Shows Feed - Audio'},
         { 'href': 'http://feeds2.feedburner.com/AllJupiterVideos', 'title': 'All Shows Feed - Video'},
         { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
@@ -109,7 +63,6 @@ def expect_nav_items() -> List[Dict[str,str]]:
         {'title': 'Membership', 'href': '/membership'},
         {'title': 'Archive', 'href': '/archive'},
         {'title': 'Contact', 'href': '/contact'},
-<<<<<<< HEAD:test/e2e/home.py
     ]
 
 
@@ -134,14 +87,3 @@ def expect_nav_items() -> List[Dict[str,str]]:
 
     expect(nav_image.nth(0)).to_be_visible()
 
-
-
-
-
-=======
->>>>>>> feat/e2e_tests
-
-    
-=======
-    ]
->>>>>>> 1c5f94a1e172510a3f55ae85ee94ed0f86d60d1c:test/conftest.py
