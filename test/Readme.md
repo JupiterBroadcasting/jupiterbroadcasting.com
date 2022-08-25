@@ -51,6 +51,6 @@ You can checkout the playwright documentation for more extensive testing methods
     `make dev`
 
 2. Running E2E Tests (in a new terminal window)
-    `make test`
+    `make tests`
 
 3. Add your own test to the e2e folder and get coding!
