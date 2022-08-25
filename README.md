@@ -22,7 +22,7 @@ Our base of operations for group discussions: [Jupiter Web Site on Matrix](https
 
 Built with Hugo and deployed with Github Actions
 
-Demo: https://jupiterbroadcasting.net
+Demo: https://new.jupiterbroadcasting.com
 
 ### Development Environment Setup
 
