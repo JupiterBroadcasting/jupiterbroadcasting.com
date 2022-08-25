@@ -17,7 +17,7 @@ paginate = 12
 [params.footer.center]
   headline = "Center"
 [params.footer.right]
-  headline = "Right"
+  headline = "Get involved"
 
 
 # Allow HTML in Markdown
@@ -207,10 +207,22 @@ paginate = 12
 
 # Footer Menu (right)
 [[Menu.FooterRight]]
-    name = "right"
-    identifier = "home"
-    url = "/"
-    weight =-100
+    name = "Github issues"
+    identifier = "ext-github"
+    url = "https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues"
+    weight =-200
+
+[[Menu.FooterRight]]
+    name = "Jupiter.tube issues"
+    identifier = "ext-github-jupitertube"
+    url = "https://github.com/JupiterBroadcasting/jupiter.tube/issues"
+    weight =-80
+
+[[Menu.FooterRight]]
+    name = "Matrix issues"
+    identifier = "ext-github-matrix"
+    url = "https://github.com/JupiterBroadcasting/matrix/issues"
+    weight =-190
 
 # Output formats
 

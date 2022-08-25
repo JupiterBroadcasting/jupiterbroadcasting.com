@@ -5,7 +5,7 @@
 {{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
   {{ $currentPeople := slice }}
   {{ if eq $lastUrlElement "hosts" }}
-    {{ $currentPeople = .Params.hosts }}
+    {{ $currentPeople = .Parent.Params.hosts }}
   {{ else }}
     {{ $currentShowGuestSlice := slice }}
     {{ range where .Parent.Pages "Params.guests" "!=" nil }}

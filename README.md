@@ -22,7 +22,7 @@ Our base of operations for group discussions: [Jupiter Web Site on Matrix](https
 
 Built with Hugo and deployed with Github Actions
 
-Demo: https://jupiterbroadcasting.net
+Demo: https://new.jupiterbroadcasting.com
 
 ### Development Environment Setup
 
@@ -42,7 +42,7 @@ This would also enable scheduled publishing, since Hugo per default only builds 
 
 ### Credits
 
-- I took parts of the functionality from the Castanet Theme: https://github.com/mattstratton/castanet
+- Parts of the functionality are from the Castanet Theme: https://github.com/mattstratton/castanet
 Mainly the RSS feed generation and managing of hosts / guests.
 
 - [ironicbadger](https://github.com/ironicbadger) and [JB Show Notes](https://github.com/selfhostedshow/show-notes) project which was used as the base for the [show-scraper](https://github.com/JupiterBroadcasting/show-scraper)
