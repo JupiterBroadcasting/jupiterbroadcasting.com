@@ -7,7 +7,6 @@ direct_links:
     apple: https://podcasts.apple.com/us/podcast/coder-radio/id534941512
     google_podcast: https://podcasts.google.com/?feed=aHR0cHM6Ly9jb2Rlci5zaG93L3Jzcw==
     castro: https://castro.fm/itunes/534941512
-    castbox: https://castbox.fm/channel/Coder-Radio-Video-id2482150
     overcast: https://overcast.fm/itunes534941512/coder-radio-mp3
     pocket_cast: https://pca.st/BCivrU
     spotify: https://open.spotify.com/show/04WzuGq8oAcBI8GHlyvmI8?si=PHKUungkTi2SBQddVnQ8rw
