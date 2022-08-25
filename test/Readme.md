@@ -18,8 +18,7 @@ These tests are setup using the [Playwright](https://playwright.dev/python/docs/
 
     `make dev`
 
-3. Running E2E Tests
-
-    `pytest --base-url http://localhost:1313 e2e/*`
+3. Running E2E Tests (in a new terminal window)
+    `make test`
 
 4. Add your own test to the e2e folder and get coding!
