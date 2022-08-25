@@ -1,6 +1,6 @@
 # Jupiter Broadcasting Site End to End Tests
 
-These tests are setup using the [playwright](https://playwright.dev/python/docs/writing-tests) framework. They are intended to run on each commit to verify the site is working in expected order
+These tests are setup using the [Playwright](https://playwright.dev/python/docs/writing-tests) framework. They are intended to run on each commit to verify the site is working in expected order.
 
 
 ## Getting Started
