@@ -28,7 +28,8 @@ Once you have acquired your sats, you send them to a Podcasting 2.0 compatible a
 
 Jupiter Broadcasting is an independent media company focusing on niche topics our community loves. We understand that means we won't get a million downloads per episode, and we're probably never going viral on social media. But our community finds value in our work, and your support keeps us going.
 
-The listener is asked to share the value they get from listening to the podcast. This usually means sending a boost or becoming a [member](https://jupiterbroadcasting.net/membership/). Boosts can be a quick one-off, or an ongoing way to send value into the show and get your voice heard. 
+The listener is asked to share the value they get from listening to the podcast. This usually means sending a boost or becoming a 
+[Member]({{< ref "/membership" >}}). Boosts can be a quick one-off, or an ongoing way to send value into the show and get your voice heard. 
 
 Some of our favorite Boosts are ones that get us thinking and talking. They often can bring something new and random to the episode we would have never planned.
 
