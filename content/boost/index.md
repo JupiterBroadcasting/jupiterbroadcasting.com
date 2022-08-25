@@ -59,6 +59,7 @@ Grab a Podcasting 2.0 compatible app with tons of new features like: Boostagrams
 * [Podcast Index](https://podcastindex.org/)
 * [Podcast 2.0](https://podcastindex.org/podcast/920666)
 * [Podping](https://podping.org/)
+* [Podverse](https://podverse.fm/)
 
 
 ## Further Exploration
