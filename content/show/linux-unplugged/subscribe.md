@@ -5,7 +5,6 @@ draft: false
 rss: "https://linuxunplugged.com/rss"
 direct_links:
     apple: https://itunes.apple.com/us/podcast/linux-unplugged-podcast/id687598126
-    google_play: https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/I2hmp7hkpuqnu7qnbw5k46ngray?t%3DLINUX_Unplugged%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16
     google_podcast: https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5maXJlc2lkZS5mbS9saW51eHVucGx1Z2dlZC9yc3M=
     castro: https://castro.fm/podcast/82354b13-50fe-4972-a69d-7cfaab600459
     castbox: https://castbox.fm/channel/LINUX-Unplugged-id2120644?country=us
