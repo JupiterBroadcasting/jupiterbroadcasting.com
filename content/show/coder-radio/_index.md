@@ -13,6 +13,7 @@ active = true
 header_image = "/images/shows/coder-radio.png"
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
+subscribe_link = "https://new.jupiterbroadcasting.com/show/coder-radio/subscribe/"
 
 podverse_podcast_id = "ZXd_1Ojd9"
 
