@@ -10,7 +10,7 @@ type = "show"
 active = true
 header_image = "/images/shows/linux-unplugged.png"
 
-support_link = "https://jupitersignal.memberful.com/checkout?plan=52946"
+support_link = "/membership"
 
 podverse_podcast_id = "g40Um-HP1"
 
