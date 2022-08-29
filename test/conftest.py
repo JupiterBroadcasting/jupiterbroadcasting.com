@@ -86,4 +86,3 @@ def expect_nav_items() -> List[Dict[str,str]]:
 
 
     expect(nav_image.nth(0)).to_be_visible()
-
