@@ -55,6 +55,13 @@
                   </a>
                 </li>
               {{ end }}
+
+              {{ if .IsHome }}
+                <li> <a href="{{ .Site.Params.github_repo}}/blob/main/themes/jb/layouts/index.html" target="_blank" rel="nofollow">Edit this page on GitHub</a></li>
+              {{ else }}
+                <li> <a href="{{ .Site.Params.github_repo}}/tree/main/content/{{ .File.Path }}" target="_blank" rel="nofollow">Edit this page on GitHub</a></li>
+              {{ end }}
+
             </ul>
           </div>
 

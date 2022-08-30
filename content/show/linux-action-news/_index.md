@@ -12,7 +12,7 @@ active = true
 
 header_image = "/images/shows/linux-action-news.png"
 
-support_link = "https://patreon.com/jupitersignal"
+support_link = "/membership"
 
 podverse_podcast_id = "haAiVbD1N9"
 
