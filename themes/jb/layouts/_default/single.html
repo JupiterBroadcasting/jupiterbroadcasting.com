@@ -27,7 +27,7 @@
       {{ range $key, $value := . }}
       <!-- currently 90% of images grabbed from: https://linuxunplugged.com/subscribe -->
         <div class="p-1 is-flex subscribe-logos">
-          <a class="is-flex is-align-content-center is-justify-content-center" href="{{ $value }}">
+          <a class="is-flex is-align-content-center is-justify-content-center" href="{{ $value }}" target="_blank" rel="noopener noreferrer">
             <img class="is-align-self-center" src="{{ index $icons_map $key }}" alt="{{ $key }} subscription link">
           </a>
         </div>
