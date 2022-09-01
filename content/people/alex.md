@@ -1,14 +1,14 @@
 ---
-avatar: /images/people/alex.jpg
-avatar_small: /images/people/alex_small.jpg
-bio: Red Hatter. Tinkerer. Photographer. Dog lover.
+avatar: /images/hosts/alex_kretzschmar.jpeg
+avatar_small: /images/people/alex_kretzschmar.jpeg
+bio: Father. Dog lover. Podcaster. Red Hatter.
 gplus: null
 homepage: https://blog.ktz.me/
-instagram: https://instagram.com/al_ktz
-linkedin: null
+instagram: https://www.instagram.com/al_ktz/
+linkedin: https://www.linkedin.com/in/alex-kretzschmar
 title: Alex Kretzschmar
 twitter: https://twitter.com/ironicbadger
 type: host
 username: alex
-youtube: null
+youtube: https://www.youtube.com/alexkretzschmar
 ---

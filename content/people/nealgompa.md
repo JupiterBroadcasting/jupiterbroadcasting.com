@@ -4,7 +4,7 @@ avatar_small: /images/people/nealgompa_small.jpg
 bio: Software Engineer. Linux systems aficionado and developer in @Fedora, @Mageia_org,
   and @openSUSE. DevOps Engineer at @datto. Views are my own.
 gplus: null
-homepage: https://plus.google.com/+nealgompa/
+homepage: null
 instagram: null
 linkedin: null
 title: Neal Gompa

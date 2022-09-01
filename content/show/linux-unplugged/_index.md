@@ -10,7 +10,7 @@ type = "show"
 active = true
 header_image = "/images/shows/linux-unplugged.png"
 
-support_link = "https://jupitersignal.memberful.com/checkout?plan=52946"
+support_link = "/membership"
 
 podverse_podcast_id = "g40Um-HP1"
 
@@ -21,7 +21,7 @@ podverse_podcast_id = "g40Um-HP1"
   url = "https://linuxunplugged.com/contact"  
 
 [links.shownotes]
-  url = "https://linuxunplugged.com/"
+  url = "https://linuxunplugged.com"
 
 [links.reddit]
   url="https://www.reddit.com/r/linuxunplugged/"

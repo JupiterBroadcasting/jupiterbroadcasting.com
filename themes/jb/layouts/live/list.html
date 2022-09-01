@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{.Content}}
+
+    <div class="container">
+      {{ partial "live/jb-tube.html" . }}
+    </div>
+    <div class="container">
+      {{ partial "live/links.html" . }}
+    </div>
+    <div class="container">
+      {{ partial "live/irc.html" . }}
+    </div>
+{{ end }}

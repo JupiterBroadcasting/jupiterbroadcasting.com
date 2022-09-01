@@ -1,8 +1,7 @@
 ---
 avatar: /images/people/timcanham.jpg
 avatar_small: /images/people/timcanham_small.jpg
-bio: Embedded Flight Software Engineer at NASA's Jet Propulsion Laboratory and Mars
-  Helicopter Operations Lead.
+bio: Senior Software Engineer at NASA's Jet Propulsion Laboratory
 gplus: null
 homepage: https://github.com/timcanham
 instagram: null

@@ -12,15 +12,15 @@ active = true
 
 header_image = "/images/shows/office-hours.png"
 
-support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
+support_link = "/membership"
 
 podverse_podcast_id = "GLuztlxs0-"
 
 [links.shownotes]
-  url="https://www.officehours.hair/"
+  url="https://www.officehours.hair"
 
 [links.email]
-  url="https://www.officehours.hair/contact"
+  url="/contact"
 
 [links.twitter]
   url="https://twitter.com/ChrisLAS"

@@ -6,6 +6,9 @@ draft = false
 logo = "https://matrix.org/images/matrix-logo-white.svg"
 comms_type = "network"
 direct_link = ""
+aliases = [
+    "/matrix/"
+]
 +++
 
 <!-- Note: this page content is *manually* duplicated to https://linuxunplugged.com/matrixinfo -->

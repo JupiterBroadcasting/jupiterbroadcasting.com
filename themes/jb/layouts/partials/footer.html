@@ -55,6 +55,13 @@
                   </a>
                 </li>
               {{ end }}
+
+              {{ if .IsHome }}
+                <li> <a href="{{ .Site.Params.github_repo}}/blob/main/themes/jb/layouts/index.html" target="_blank" rel="nofollow">Edit this page on GitHub</a></li>
+              {{ else }}
+                <li> <a href="{{ .Site.Params.github_repo}}/tree/main/content/{{ .File.Path }}" target="_blank" rel="nofollow">Edit this page on GitHub</a></li>
+              {{ end }}
+
             </ul>
           </div>
 
@@ -71,5 +78,11 @@
 {{ $navigation := resources.Get "js/navigation.js" }}
 {{ $video := resources.Get "js/video.min.js" }}
 {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
-{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $defaultJS.Permalink }}"></script>
+{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" }}
+{{ if hugo.IsProduction }}
+  {{ $defaultJS = $defaultJS | resources.Minify | resources.Fingerprint }}
+  {{ $current_domain := (urls.Parse .Site.BaseURL).Host }}
+  <!-- FIXME: only for development purposes -->
+  <script defer data-domain="{{ $current_domain }}" src="{{ site.Params.analytics }}"></script>
+{{ end }}
+<script src="{{ $defaultJS.Permalink }}" integrity="{{ $defaultJS.Data.Integrity }}"></script>
