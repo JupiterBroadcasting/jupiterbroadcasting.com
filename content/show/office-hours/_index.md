@@ -20,7 +20,7 @@ podverse_podcast_id = "GLuztlxs0-"
   url="https://www.officehours.hair"
 
 [links.email]
-  url="https://www.officehours.hair/contact"
+  url="/contact"
 
 [links.twitter]
   url="https://twitter.com/ChrisLAS"
