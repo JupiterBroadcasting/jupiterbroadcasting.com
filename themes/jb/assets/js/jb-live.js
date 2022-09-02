@@ -83,7 +83,7 @@ async function doLiveHighlight() {
     fetch(JoopTubeQuery({ isLive: true }), requestOptions)
         .then(response => response.text())
         .then(result => JSON.parse(result))
-        .then(function(data) {if(data.total > 0) 
+        .then(data => {if(data.total > 0) 
             document.getElementById("livebutton").style.backgroundColor = "red" })
         .catch(error => console.error('Error while fetching live URL!', error));
 
