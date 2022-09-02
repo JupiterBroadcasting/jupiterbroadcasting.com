@@ -3,7 +3,6 @@ avatar: /images/people/sid.jpg
 avatar_small: /images/people/sid_small.jpg
 bio: Co-founder and CEO of GitLab. I like innovative projects and passionate people.
   Into Git, Rails, Ruby, remote work & macro economics.
-gplus: null
 homepage: http://about.gitlab.com
 instagram: null
 linkedin: null

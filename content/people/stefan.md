@@ -2,7 +2,6 @@
 avatar: /images/people/stefan.jpg
 avatar_small: /images/people/stefan_small.jpg
 bio: "Hi there \U0001F44B"
-gplus: null
 homepage: https://github.com/stefans-o
 instagram: null
 linkedin: null
