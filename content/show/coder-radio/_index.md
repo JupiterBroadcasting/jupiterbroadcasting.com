@@ -14,7 +14,7 @@ header_image = "/images/shows/coder-radio.png"
 
 
 support_link = "https://jupitersignal.memberful.com/checkout?plan=53334"
-subscribe_link = "https://new.jupiterbroadcasting.com/show/coder-radio/subscribe/"
+subscribe_link = "/show/coder-radio/subscribe/"
 
 support_link = "/membership"
 
