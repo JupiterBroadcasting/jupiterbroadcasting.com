@@ -2,7 +2,6 @@
 avatar: /images/people/antoniom.jpg
 avatar_small: /images/people/antoniom_small.jpg
 bio: ''
-gplus: null
 homepage: http://spawn.link
 instagram: null
 linkedin: null

@@ -3,7 +3,6 @@ avatar: /images/people/sri-ramkrishna.jpg
 avatar_small: /images/people/sri-ramkrishna_small.jpg
 bio: Seasoned GNOME community member, founder of Linux App Summit and Principle Ecosystems
   Engineer at ITRenew.
-gplus: null
 homepage: null
 instagram: null
 linkedin: null

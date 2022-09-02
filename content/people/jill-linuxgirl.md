@@ -2,7 +2,6 @@
 avatar: /images/people/jill-linuxgirl.jpg
 avatar_small: /images/people/jill-linuxgirl_small.jpg
 bio: ''
-gplus: null
 homepage: https://linuxchixla.org
 instagram: null
 linkedin: null

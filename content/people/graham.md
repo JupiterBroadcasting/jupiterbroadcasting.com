@@ -2,7 +2,6 @@
 avatar: /images/people/graham.jpg
 avatar_small: /images/people/graham_small.jpg
 bio: ''
-gplus: null
 homepage: https://latenightlinux.com/
 instagram: null
 linkedin: null

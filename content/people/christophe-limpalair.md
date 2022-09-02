@@ -2,7 +2,6 @@
 avatar: /images/people/christophe-limpalair.jpg
 avatar_small: /images/people/christophe-limpalair_small.jpg
 bio: ''
-gplus: null
 homepage: null
 instagram: null
 linkedin: https://www.linkedin.com/in/christophelimpalair/
