@@ -56,7 +56,7 @@ def expected_dropdowns() -> List[Dict[str,str]]:
 def expect_nav_items() -> List[Dict[str,str]]:
     return [
         {'title': 'Sponsors', 'href': '/sponsors'},
-        {'title': 'Live', 'href': 'https://jb-live.jupiterbroadcasting.net/'},
+        {'title': 'Live', 'href': '/live'},
         {'title': 'Calendar', 'href': '/calendar'},
         {'title': 'Boost!', 'href': '/boost'},
         {'title': 'Garage Sale', 'href': 'https://www.jupitergarage.com/'},
