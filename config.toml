@@ -1,4 +1,4 @@
-baseURL = 'https://new.jupiterbroadcasting.com/'
+baseURL = 'https://www.jupiterbroadcasting.com/'
 languageCode = 'en-us'
 title = 'Jupiter Broadcasting'
 
@@ -17,7 +17,7 @@ paginate = 12
 [params.footer.center]
   headline = "Center"
 [params.footer.right]
-  headline = "Get involved"
+  headline = "Get Involved"
 
 
 # Allow HTML in Markdown
@@ -207,19 +207,19 @@ paginate = 12
 
 # Footer Menu (right)
 [[Menu.FooterRight]]
-    name = "Github issues"
+    name = "GitHub Issues"
     identifier = "ext-github"
     url = "https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues"
     weight =-200
 
 [[Menu.FooterRight]]
-    name = "Jupiter.tube issues"
+    name = "Jupiter.tube Issues"
     identifier = "ext-github-jupitertube"
     url = "https://github.com/JupiterBroadcasting/jupiter.tube/issues"
     weight =-80
 
 [[Menu.FooterRight]]
-    name = "Matrix issues"
+    name = "Matrix Issues"
     identifier = "ext-github-matrix"
     url = "https://github.com/JupiterBroadcasting/matrix/issues"
     weight =-190
