@@ -1,20 +1,11 @@
-ARG PY_VERSION=3.10
-
-FROM docker.io/python:${PY_VERSION}
+FROM mcr.microsoft.com/playwright/python:v1.25.2-jammy
 
 RUN pip install pipenv
 
 CMD [ "--base-url", "http://localhost:1313" ]
 ENTRYPOINT [ "pytest" ]
 
-RUN adduser --disabled-login --disabled-password \
-    --gecos '' --uid 1000 pytest
 COPY test/Pipfile test/Pipfile.lock ./
-RUN pipenv --bare sync --system \
-    && playwright install-deps \
-    && rm -rf /var/lib/apt/lists/*
-    # since the previous command (playwright install-deps) runs an apt-get update
+RUN pipenv --bare sync --system
 
-USER pytest
-
-RUN playwright install
+USER pwuser
