@@ -12,52 +12,43 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # runs this again when there is a new tests container
+  workflow_run:
+    workflows: ["Building Tests Container"]
+    types:
+      - completed
+
 jobs:
-  e2e-tests:
+  e2e-tests_prep:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: run hugo build
-        uses: docker://registry.gitlab.com/pages/hugo/hugo_extended:0.101.0
+        uses: docker://quay.io/elrey741/prod-latest
         with:
-          args: hugo -b http://localhost:1313
+          args: cp -r /usr/share/nginx/html ./public
 
       - name: run server
+        working-directory: ./public
         run: |
-          cd public && python -m http.server 1313 &
-
-      - name: 'Setup Python'
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.10'
-          architecture: 'x64'
-          cache: "pipenv"
-
-      - name: Install dependencies
-        working-directory: ./test
-        run: |
-          pip install pipenv && pipenv sync --bare
-
-      - name: Ensure browsers are installed
-        working-directory: ./test
-        run: pipenv run playwright install --with-deps
+          python -m http.server 1313 &
 
       - name: Run your tests
-        working-directory: ./test
-        run: pipenv run pytest --base-url http://localhost:1313 -v --junitxml report.xml
+        uses: docker://quay.io/elrey741/tests-latest
+        run: --base-url http://localhost:1313 -v --junitxml report.xml
 
       - name: Save screenshots
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
-          path: test/screenshots/
+          path: screenshots/
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
         if: always()
         with:
           name: E2E Tests
-          path: './test/report.xml'
+          path: './report.xml'
           reporter: java-junit

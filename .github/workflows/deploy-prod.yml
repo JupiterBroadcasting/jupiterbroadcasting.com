@@ -12,7 +12,7 @@ on:
   #   scraper will run and not commit anything, but after #215 is solved
   #   then it should only run after castablasta pushes a new episode
   workflow_run:
-    workflows: ["Scrape and commit"]
+    workflows: ["Scrape and commit"] #, "Building Prod Container"]
     types:
       - completed
 

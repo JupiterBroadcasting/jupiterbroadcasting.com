@@ -1,0 +1,64 @@
+name: Building Prod Container
+
+# built with the following guides/examples:
+# - https://github.com/marketplace/actions/push-to-registry#examples
+# - https://github.com/marketplace/actions/buildah-build#building-using-containerfiles
+
+on:
+  pull_request:
+    # don't re-build prod when there's only test changes
+    paths-ignore:
+      - ./Dockerfile.tests
+      - "./tests/**"
+  push:
+    branches: [ main ]
+    # don't re-build prod when there's only test changes
+    paths-ignore:
+      - ./Dockerfile.tests
+      - "./tests/**"
+
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: ["Scrape and commit"]
+    types:
+      - completed
+
+jobs:
+  env_setup:
+    runs-on: ubuntu-latest
+    outputs:
+      date_output: ${{ steps.date.outputs.date_fmt }}
+      registry_user: ${{ steps.registry_user.outputs.username }}
+    steps:
+      - id: date
+        run: echo "::set-output name=date_fmt::$(date -Isec | tr ':' '_' | tr '+' '-' )"
+      - id: registry_user
+        run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+
+  prod:
+    runs-on: ubuntu-latest
+    needs: env_setup
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Image
+        id: build-image
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: jb_web_container
+          tags: prod-latest prod-${{ needs.env_setup.outputs.date_output }}
+          containerfiles: |
+            ./Dockerfile
+
+      - name: Push To quay.io
+        id: push-to-quay
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          image: ${{ steps.build-image.outputs.image }}
+          tags: ${{ steps.build-image.outputs.tags }}
+          registry: quay.io/${{ needs.env_setup.outputs.registry_user }}
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Print image url
+        run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
