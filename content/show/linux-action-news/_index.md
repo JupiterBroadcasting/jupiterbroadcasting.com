@@ -14,6 +14,8 @@ header_image = "/images/shows/linux-action-news.png"
 
 support_link = "/membership"
 
+subscribe_link = "/show/linux-action-news/subscribe/"
+
 podverse_podcast_id = "haAiVbD1N9"
 
 

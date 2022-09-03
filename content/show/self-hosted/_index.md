@@ -14,6 +14,8 @@ header_image = "/images/shows/self-hosted.png"
 
 support_link = "/membership"
 
+subscribe_link = "/show/self-hosted/subscribe/"
+
 podverse_podcast_id = "nUl1ZCL76"
 
 [links.discord]

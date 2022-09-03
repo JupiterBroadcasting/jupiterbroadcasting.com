@@ -14,6 +14,8 @@ header_image = "/images/shows/office-hours.png"
 
 support_link = "/membership"
 
+subscribe_link = "/show/office-hours/subscribe/"
+
 podverse_podcast_id = "GLuztlxs0-"
 
 [links.shownotes]
