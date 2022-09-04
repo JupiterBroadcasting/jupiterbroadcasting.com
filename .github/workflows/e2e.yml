@@ -21,24 +21,26 @@ on:
 jobs:
   e2e-tests_prep:
     runs-on: ubuntu-latest
+    services:
+      jb-com:
+        image: quay.io/elrey741/jb_web_container:prod-latest
+    container:
+      image: quay.io/elrey741/jb_web_container:tests-latest
+      options: --user 0
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # inspired from this:
-      # https://github.com/shrink/actions-docker-extract/blob/23130a485b089b4bb1e3710946034ebc90b00072/src/extract.js
-      - name: run hugo build
-        run: docker cp "$(docker create quay.io/elrey741/jb_web_container:prod-latest)":/usr/share/nginx/html ./public
-
-      - name: run server
-        working-directory: ./public
+      - name: change file ownership
         run: |
-          python -m http.server 1313 &
+          chown -R "$(id -u)":"$(id -g)" "${GITHUB_WORKSPACE}/."
 
       - name: Run your tests
-        uses: docker://quay.io/elrey741/jb_web_container:tests-latest
-        with:
-          args: --base-url http://localhost:1313 -v --junitxml report.xml
+        run: pytest --base-url http://jb-com -v --junitxml report.xml
+        # jb-com works as the base domain, because the service (jb-com) is a container
+        #   since we're using a container to run this, then we don't need to expose any ports
+        #   because they're on the same network bridge, more info here:
+        #   https://docs.github.com/en/actions/using-containerized-services/about-service-containers#running-jobs-in-a-container
 
       - name: Save screenshots
         uses: actions/upload-artifact@v2
