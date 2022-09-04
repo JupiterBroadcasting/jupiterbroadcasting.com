@@ -25,10 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      # inspired from this:
+      # https://github.com/shrink/actions-docker-extract/blob/23130a485b089b4bb1e3710946034ebc90b00072/src/extract.js
       - name: run hugo build
-        uses: docker://quay.io/elrey741/prod-latest
-        with:
-          args: cp -r /usr/share/nginx/html ./public
+        run: docker cp "$(docker create quay.io/elrey741/jb_web_container:prod-latest)":/usr/share/nginx/html ./public
 
       - name: run server
         working-directory: ./public
@@ -36,8 +36,9 @@ jobs:
           python -m http.server 1313 &
 
       - name: Run your tests
-        uses: docker://quay.io/elrey741/tests-latest
-        run: --base-url http://localhost:1313 -v --junitxml report.xml
+        uses: docker://quay.io/elrey741/jb_web_container:tests-latest
+        with:
+          args: --base-url http://localhost:1313 -v --junitxml report.xml
 
       - name: Save screenshots
         uses: actions/upload-artifact@v2
