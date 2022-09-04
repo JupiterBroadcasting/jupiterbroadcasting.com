@@ -3,7 +3,6 @@ avatar: /images/people/nuritzi-sanchez.jpg
 avatar_small: /images/people/nuritzi-sanchez_small.jpg
 bio: Senior Open Source Program Manager at GitLab, former GNOME Foundation President
   and Chairperson of the Board of Directors, and Founding Member of Endless, Inc.
-gplus: null
 homepage: null
 instagram: null
 linkedin: https://www.linkedin.com/in/nuritzis/

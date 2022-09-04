@@ -4,7 +4,6 @@ avatar_small: /images/people/jason-spisak_small.jpg
 bio: 'Award Winning Actor in Games, Film, Television, and Animation
 
   Jason Spisak has brought to life hundreds of characters across all genres and media'
-gplus: null
 homepage: http://www.jasonspisak.com/
 instagram: null
 linkedin: null

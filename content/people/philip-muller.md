@@ -2,7 +2,6 @@
 avatar: /images/people/philip-muller.jpg
 avatar_small: /images/people/philip-muller_small.jpg
 bio: Co-Founder and Lead Developer of Manjaro, and CEO at Manjaro GmbH & Co. KG
-gplus: null
 homepage: https://manjaro.org/
 instagram: null
 linkedin: null

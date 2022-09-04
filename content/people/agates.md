@@ -2,7 +2,6 @@
 avatar: /images/people/agates.jpg
 avatar_small: /images/people/agates_small.jpg
 bio: The "Official" Podcasting 2.0 consultant.
-gplus: null
 homepage: null
 instagram: null
 linkedin: null

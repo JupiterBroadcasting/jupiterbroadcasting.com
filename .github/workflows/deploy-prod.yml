@@ -6,6 +6,15 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  # source: https://stackoverflow.com/a/65698892
+  # triggers this deployment after scaper runs
+  #   for now this might have superfluous runs because the
+  #   scraper will run and not commit anything, but after #215 is solved
+  #   then it should only run after castablasta pushes a new episode
+  workflow_run:
+    workflows: ["Scrape and commit"]
+    types:
+      - completed
 
 jobs:
   deploy:

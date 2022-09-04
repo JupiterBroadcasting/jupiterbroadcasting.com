@@ -2,7 +2,6 @@
 avatar: /images/people/emma-marshall.jpg
 avatar_small: /images/people/emma-marshall_small.jpg
 bio: Happiness Manager at System76
-gplus: null
 homepage: https://system76.com
 instagram: null
 linkedin: null
