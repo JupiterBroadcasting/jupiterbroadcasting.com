@@ -39,8 +39,8 @@ jobs:
   prod:
     strategy:
       matrix:
-        base_url:
-          - '/'
+        container_env:
+          - 'TESTS_WEB'
           - 'PROD'
     runs-on: ubuntu-latest
     needs: env_setup
@@ -51,11 +51,11 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           image: jb_web_container
-          tags: prod-latest prod-${{ needs.env_setup.outputs.date_output }}
+          tags: ${{ matrix.container_env}}-latest ${{ matrix.container_env}}-${{ needs.env_setup.outputs.date_output }}
           containerfiles: |
             ./Dockerfile
           build-args: |
-            BASE_URL=${{ matrix.base_url }}
+            BASE_URL=${{ matrix.container_env }}
 
       - name: Push To quay.io
         id: push-to-quay
