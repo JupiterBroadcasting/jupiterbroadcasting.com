@@ -37,6 +37,11 @@ jobs:
         run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
 
   prod:
+    strategy:
+      matrix:
+        base_url:
+          - '/'
+          - 'PROD'
     runs-on: ubuntu-latest
     needs: env_setup
     steps:
@@ -49,6 +54,8 @@ jobs:
           tags: prod-latest prod-${{ needs.env_setup.outputs.date_output }}
           containerfiles: |
             ./Dockerfile
+          build-args: |
+            BASE_URL=${{ matrix.base_url }}
 
       - name: Push To quay.io
         id: push-to-quay
