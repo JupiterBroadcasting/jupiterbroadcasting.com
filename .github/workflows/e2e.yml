@@ -25,7 +25,7 @@ jobs:
       jb-com:
         image: quay.io/elrey741/jb_web_container:prod-latest
     container:
-      image: quay.io/elrey741/jb_web_container:tests-latest
+      image: quay.io/elrey741/jb_web_container:tests_web-latest
       options: --user 0
     steps:
       - name: Checkout
