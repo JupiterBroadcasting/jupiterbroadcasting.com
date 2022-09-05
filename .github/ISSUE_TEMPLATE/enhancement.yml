@@ -1,0 +1,17 @@
+name: Enhancment
+description: Suggest an idea to better the JB Website!
+labels:
+  - enchancement
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you would like to see implemented
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference to Feature
+      description: Have you seen this feature somewhere else?
