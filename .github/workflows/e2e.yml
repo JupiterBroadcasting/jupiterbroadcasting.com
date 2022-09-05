@@ -19,7 +19,7 @@ on:
       - completed
 
 jobs:
-  e2e-tests_prep:
+  e2e-tests:
     runs-on: ubuntu-latest
     services:
       jb-com:
