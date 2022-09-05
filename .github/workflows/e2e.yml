@@ -14,7 +14,9 @@ on:
 
   # runs this again when there is a new tests container
   workflow_run:
-    workflows: ["Building Tests Container"]
+    workflows:
+      - Building Tests Container
+      - Building Prod Container
     types:
       - completed
 
