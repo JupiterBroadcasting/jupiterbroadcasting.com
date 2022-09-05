@@ -1,13 +1,6 @@
 name: E2E Tests
 
 on:
-  # keeping this till we figure out #371, so we can at least validate the
-  #   scrapper PRs aren't breaking things
-  push:
-    branches: [ main ]
-
-  # https://frontside.com/blog/2020-05-26-github-actions-pull_request/
-  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
