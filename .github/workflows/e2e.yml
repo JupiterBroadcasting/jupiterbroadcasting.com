@@ -29,12 +29,12 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
-          path: test/screenshots/
+          path: screenshots/
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
         if: always()
         with:
           name: E2E Tests
-          path: './test/report.xml'
+          path: './report.xml'
           reporter: java-junit
