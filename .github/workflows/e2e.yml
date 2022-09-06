@@ -20,8 +20,10 @@ jobs:
       - name: starting up containers
         working-directory: ./test/
         env:
-          BUILDKIT_PROGRESS: plain
+          # https://stackoverflow.com/a/52192327
           DOCKER_BUILDKIT: 1
+          # https://stackoverflow.com/a/69500575
+          BUILDKIT_PROGRESS: plain
         run: docker-compose up -d --build
 
       - name: Run your tests
