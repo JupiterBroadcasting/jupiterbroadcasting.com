@@ -1,15 +1,18 @@
 import re
 from pathlib import Path
 from typing import Dict, List
-from playwright.sync_api import Page, expect
+from urllib.parse import urlparse
+from pytest import fixture, mark
+from playwright.sync_api import Page, expect, Locator
+
+@fixture(autouse=True)
+def setup(page: Page):
+    page.goto("/")
 
 def test_homepage_screenshot(page: Page, screenshot_dir: Path):
-    page.goto("/")
-    page.pause()
     page.screenshot(path=f"{screenshot_dir}/home.png", full_page=True)
 
 def test_homepage_has_logo(page: Page):
-    page.goto("/")
     logo = page.locator(".logo")
     expect(logo).to_be_visible()
 
@@ -17,7 +20,6 @@ def test_homepage_has_logo(page: Page):
     expect(logo_subtitle).to_contain_text('Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News')
 
 def test_pagination(page: Page):
-    page.goto("/")
     first_card = page.locator('.card').nth(0).text_content
     page_2_button = page.locator('[aria-label="pagination"] >> text=2')
     page_2_button.click()
@@ -27,26 +29,33 @@ def test_pagination(page: Page):
     assert first_card != first_card_second_page
 
 def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
-    page.goto("/")
-
     for rss_feed in expected_rss_feeds:
         element = page.locator('#rss-feeds-menu > div > a[href^="{}"]'.format(rss_feed['href']))
         expect(element).to_contain_text(rss_feed['title'])
 
 
-def test_dropdowns(page: Page, expected_dropdown_items):
-    page.goto("/")
+def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
+    for dropdown_text, child_elements in expected_dropdown_items.items():
+        parent_element: Locator = page.locator(f'a:has-text("{dropdown_text}"):visible')
+        # hover to show elements
+        parent_element.hover()
+        # this is because Shows's url is show
+        singular = dropdown_text.lower().rstrip('s')
+        expect(parent_element).to_have_attribute('href', f'/{singular}')
+        dropdown_elements: Locator = page.locator(f'a:has-text("{dropdown_text}") + .navbar-dropdown')
+        for dropdown_item in child_elements:
+            item: Locator = dropdown_elements.locator(f'a.navbar-item:has-text("{dropdown_item["title"]}")')
+            try:
+                expect(item).to_have_attribute('href', dropdown_item['href'])
+            except AssertionError:
+                # for relative links (i.e. /community/irc/)
+                assert urlparse(item.get_attribute('href')).path == dropdown_item['href']
+            expect(item).to_be_visible()
 
-    for dropdown_item in expected_dropdown_items:
-        selector = '.navbar-item > .navbar-dropdown > a[href^="{}"]'.format(dropdown_item['href'])
-        element = page.locator(selector)
-        expect(element).to_contain_text(dropdown_item['title'])
-    
 
 
 def test_nav(page: Page, expected_dropdowns, expect_nav_items):
 
-    page.goto("/")
     nav = page.locator('#mainnavigation')
     expect(nav).to_be_visible()
     dropdown_nav_items = page.locator('.navbar-start > * > a')
@@ -61,7 +70,7 @@ def test_nav(page: Page, expected_dropdowns, expect_nav_items):
     for i in range(count):
         expect(nav_items.nth(i)).to_contain_text(expect_nav_items[i]['title'])
         expect(nav_items.nth(i)).to_have_attribute('href', expect_nav_items[i]['href'])
-    
+
     nav_image = page.locator('.navbar-brand > a > img')
 
     expect(nav_image.nth(0)).to_be_visible()
