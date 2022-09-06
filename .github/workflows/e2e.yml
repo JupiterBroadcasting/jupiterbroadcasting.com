@@ -19,6 +19,9 @@ jobs:
       # using docker-compose, so we can re-use local Dockerfiles
       - name: starting up containers
         working-directory: ./test/
+        env:
+          BUILDKIT_PROGRESS: plain
+          DOCKER_BUILDKIT: 1
         run: docker-compose up -d --build
 
       - name: Run your tests
