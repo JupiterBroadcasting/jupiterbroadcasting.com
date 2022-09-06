@@ -7,5 +7,3 @@ ENTRYPOINT [ "pytest" ]
 
 COPY test/Pipfile test/Pipfile.lock ./
 RUN pipenv --bare sync --system
-
-USER pwuser
