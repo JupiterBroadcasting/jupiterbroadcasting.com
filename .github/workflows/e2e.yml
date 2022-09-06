@@ -16,6 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      # using docker-compose, so we can re-use local Dockerfiles
       - name: starting up containers
         working-directory: ./test/
         run: docker-compose up -d --build
