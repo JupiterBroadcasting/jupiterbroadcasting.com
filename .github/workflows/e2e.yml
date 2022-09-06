@@ -2,51 +2,38 @@ name: E2E Tests
 
 on:
 
+  pull_request:
+  push:
+    branches:
+      - main
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-  # runs this again when there is a new tests container
-  workflow_run:
-    workflows:
-      - Building Tests Container
-      - Building Prod Container
-    types:
-      - completed
 
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest
-    services:
-      jb-com:
-        image: quay.io/elrey741/jb_web_container:tests_web-latest
-    container:
-      image: quay.io/elrey741/jb_web_container:tests-latest
-      options: --user 0
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: change file ownership
-        run: |
-          chown -R "$(id -u)":"$(id -g)" "${GITHUB_WORKSPACE}/."
+      - name: starting up containers
+        working-directory: ./test/
+        run: docker-compose up -d --build
 
       - name: Run your tests
-        run: pytest --base-url http://jb-com -v --junitxml report.xml
-        # jb-com works as the base domain, because the service (jb-com) is a container
-        #   since we're using a container to run this, then we don't need to expose any ports
-        #   because they're on the same network bridge, more info here:
-        #   https://docs.github.com/en/actions/using-containerized-services/about-service-containers#running-jobs-in-a-container
+        working-directory: ./test/
+        run: docker-compose exec testing pytest --base-url http://jb-com --junitxml report.xml
 
       - name: Save screenshots
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
-          path: screenshots/
+          path: test/screenshots/
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
         if: always()
         with:
           name: E2E Tests
-          path: './report.xml'
+          path: './test/report.xml'
           reporter: java-junit
