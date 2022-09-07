@@ -39,7 +39,8 @@ jobs:
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
-        if: always()
+        # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
+        if: always() && github.event_name != 'pull_request'
         with:
           name: E2E Tests
           path: './report.xml'
