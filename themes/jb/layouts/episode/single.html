@@ -41,7 +41,7 @@
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
           <!-- Hosts Section -->
-          <div class="tile mb-5 columns is-multiline">
+          <div class="tile is-child mb-5 columns is-multiline">
             <div class="column">
               <h2 class="has-text-centered-mobile">Hosts</h2>
               <section class="section host-list">
@@ -74,7 +74,7 @@
             </div>
           </div>
           <!-- Episode Links -->
-          <div class="tile columns">
+          <div class="tile is-child columns">
             <div class="column">
               {{ .Content }}
             </div>
@@ -82,7 +82,7 @@
         </div>
         <div class="tile is-parent is-vertical is-4">
           <!-- Sponsors -->
-          <div class="tile columns">
+          <div class="tile is-child columns">
             <div class="column">
               {{ with .Params.sponsors }}
                 <h2>Sponsors</h2>
@@ -99,15 +99,13 @@
             </div>
             <!-- Tags -->
           </div>
-          <div class="tile columns">
-            <div class="column">
-              <h3>Tags</h3>
-              {{ with .Params.tags }}
-                <div class="tags">
-                  {{ partial "episode/tags.html" . }}
-                </div>
-              {{ end }}
-            </div>
+          <div class="tile is-child">
+            <h3>Tags</h3>
+            {{ with .Params.tags }}
+              <div class="tags">
+                {{ partial "episode/tags.html" . }}
+              </div>
+            {{ end }}
           </div>
         </div>
       </div>
