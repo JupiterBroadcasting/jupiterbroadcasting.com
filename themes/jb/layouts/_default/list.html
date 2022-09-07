@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container px-4">
   <h1 class="title">{{.Title}}</h1>
 </div>
 
-<div class="container">
+<div class="container px-4">
   <div class="column is-full content">
     {{.Content}}
   </div>
@@ -13,7 +13,7 @@
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
 {{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
   <section class="{{ $lastUrlElement }}-list mb-5">
-    <div class="container">
+    <div class="container px-4">
        <div class="columns is-multiline">
         <!-- People that are of Type "host" and aren't archived (is_archive!=true) -->
         {{ $paginator := .Paginate ( where ( where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) ".Type" ($lastUrlElement | singularize) ) }}
@@ -22,7 +22,7 @@
             {{ partial "people/small.html" . }}
           </div>
         {{ end }}
-        <div class="container">
+        <div class="container px-4">
           {{ partial "helper/pagination" . }}
         </div>
       </div>
