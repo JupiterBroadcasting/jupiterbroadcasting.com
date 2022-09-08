@@ -74,6 +74,7 @@ def expect_nav_items() -> List[Dict[str,str]]:
     ]
 
 # https://playwright.dev/python/docs/api-testing#configure
+# used for doing similar requests to API calls
 @fixture(scope="session")
 def api_request_context(
     # base playwright context/object

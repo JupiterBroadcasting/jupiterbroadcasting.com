@@ -1,6 +1,6 @@
 # Containers Docs
 
-This is the documentation for how the build_containers.yml file works, and the needed permissions/setup around it.
+This is the documentation for how the build_container-*.yml files works, and the needed permissions/setup around it.
 
 ## Registry
 
@@ -22,7 +22,7 @@ We're using quay.io for the container registry, reasons why are outlined in [thi
 12. Click "Add permissions"
 13. Click on the gear on the far right side of the screen for your new robot account
 14. Click "View Credentials"
-15. Create an environment called `main` here: `https://github.com/<your_GH_username>/jupiterbroadcasting.com/settings/environments`
+15. Create an environment variables based on [this guide](https://blog.elreydetoda.site/github-action-security/), and have the environment name called production_containers.
 16. Click "Add Secret" under Environment secrets, and add the following secrets
     * `REGISTRY_USER` = your robot account username
     * `REGISTRY_PASSWORD` = your robot account token (long string of random characters)

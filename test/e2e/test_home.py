@@ -5,6 +5,8 @@ from urllib.parse import urlparse
 from pytest import fixture, mark
 from playwright.sync_api import Page, expect, Locator
 
+# allows this to be run for every test in this file,
+#   without it needing to specify it
 @fixture(autouse=True)
 def setup(page: Page):
     page.goto("/")
@@ -36,19 +38,29 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
 
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
     for dropdown_text, child_elements in expected_dropdown_items.items():
+        
+        # dropdown item to hover over in menu
         parent_element: Locator = page.locator(f'a:has-text("{dropdown_text}"):visible')
+
         # hover to show elements
         parent_element.hover()
+
         # this is because Shows's url is show
         singular = dropdown_text.lower().rstrip('s')
+        # test to make sure menu items hyperlink
         expect(parent_element).to_have_attribute('href', f'/{singular}')
+
+        # finds sibling element, which contains all the dropdown elements
         dropdown_elements: Locator = page.locator(f'a:has-text("{dropdown_text}") + .navbar-dropdown')
+
         for dropdown_item in child_elements:
             item: Locator = dropdown_elements.locator(f'a.navbar-item:has-text("{dropdown_item["title"]}")')
             try:
+                # check if the path matches exactly what's in our expected output
                 expect(item).to_have_attribute('href', dropdown_item['href'])
             except AssertionError:
-                # for relative links (i.e. /community/irc/)
+                # if not, then it's a relative links (i.e. /community/irc/)
+                #   so just comparing the path of the item
                 assert urlparse(item.get_attribute('href')).path == dropdown_item['href']
             expect(item).to_be_visible()
 
