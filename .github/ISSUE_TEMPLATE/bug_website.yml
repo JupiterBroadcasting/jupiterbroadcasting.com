@@ -1,8 +1,14 @@
-name: Bug Report
-description: File a bug report
+name: Website Bug Report
+description: Found something weird on the website? Report it here
 labels:
   - "bug"
+  - "design"
 body:
+  - type: markdown
+    attributes:
+      value: |
+      ## Thank you for reporting a bug! Please provide any information you think can help. Screenshots are a great help as well!
+      ### Please check to see if someone else has already reported this bug!
   - type: input
     id: address
     attributes:
@@ -37,8 +43,8 @@ body:
       required: true
   - type: checkboxes
     attributes:
-      label: contributing
-      description: We require everyone to read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
+      label: Contributing
+      description: Please read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines before submitting an issue.
       options:
         - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
           required: true
