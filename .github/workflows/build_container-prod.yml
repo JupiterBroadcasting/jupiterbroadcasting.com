@@ -5,11 +5,6 @@ name: Building Prod Container
 # - https://github.com/marketplace/actions/buildah-build#building-using-containerfiles
 
 on:
-  pull_request:
-    # don't re-build prod when there's only test changes
-    paths-ignore:
-      - ./Dockerfile.tests
-      - "./tests/**"
   push:
     branches: [ main ]
     # don't re-build prod when there's only test changes
