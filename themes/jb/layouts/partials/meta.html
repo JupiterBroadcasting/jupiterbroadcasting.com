@@ -1,9 +1,9 @@
 <!-- Meta Ttitles -->
-<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<title itemprop="name">{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Meta Description -->
