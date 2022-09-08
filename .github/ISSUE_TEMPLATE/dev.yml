@@ -1,43 +1,26 @@
-name: Bug Report
-description: File a bug report
+name: Development
+description: You are encountering an issue with the dev environment
 labels:
-  - "bug"
+  - "dev"
 body:
+  - type: markdown
+    attributes:
+      value: "## Please be as specific as possible so we can help you as best we can."
   - type: input
-    id: address
     attributes:
-      label: URL
-      description: URL where the bug was found
-      placeholder: https://jupiterbroadcasting.com/
-  - type: dropdown
-    id: devices
-    attributes:
-      label: What devices did you see this bug on?
-      multiple: true
-      options:
-        - Phone
-        - Tablet
-        - Desktop
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Tools
+      description: What tool(s) are affected?
+      placeholder: Docker, GH Actions, etc.
   - type: textarea
     id: summary
     attributes:
       label: Summary
-      description: Describe the bug you encountered
+      description: Describe the issue you encountered. Feel free to throw in screenshots
     validations:
       required: true
   - type: checkboxes
     attributes:
-      label: contributing
+      label: Guidlines
       description: We require everyone to read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
       options:
         - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
