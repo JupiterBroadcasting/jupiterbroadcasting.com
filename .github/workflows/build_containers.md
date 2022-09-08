@@ -24,5 +24,7 @@ We're using quay.io for the container registry, reasons why are outlined in [thi
 14. Click "View Credentials"
 15. Create an environment variables based on [this guide](https://blog.elreydetoda.site/github-action-security/), and have the environment name called production_containers.
 16. Click "Add Secret" under Environment secrets, and add the following secrets
-    * `REGISTRY_USER` = your robot account username
     * `REGISTRY_PASSWORD` = your robot account token (long string of random characters)
+17. Then go to this link (replace `GH_user_name` with your GitHub username): `https://github.com/jupiterbroadcasting/jupiterbroadcasting.com/settings/secrets/actions/new`, to create a repo secret
+    * `REGISTRY_USER` = your robot account username
+      * This isn't necessarily that sensative, so creating a repo secret instead of an environment secret is ok
