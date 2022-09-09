@@ -1,10 +1,10 @@
-<div class="card">
-  <div class="card-content">
-    <div class="content">
-      <a href="{{ .Params.link }}">
+<a href="{{ .Params.link }}" target="_blank">
+  <div class="card">
+    <div class="card-content">
+      <div class="content">
         <strong>{{ .Title }}</strong><br />
-        {{ .Params.description }}
-      </a>
+        <p >{{ .Params.description }}</p>
+      </div>
     </div>
   </div>
-</div>
+</a>
