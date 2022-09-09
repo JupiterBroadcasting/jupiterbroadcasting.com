@@ -1,0 +1,20 @@
+name: Show Errors
+description: I found a dead link or typo in an episode
+labels:
+  - bug
+  - show notes
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Please check to see if someone else has already reported this bug!
+  - type: input
+    id: address
+    attributes:
+      label: URL
+      description: URL where this was found
+      placeholder: https://jupiterbroadcasting.com/
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
