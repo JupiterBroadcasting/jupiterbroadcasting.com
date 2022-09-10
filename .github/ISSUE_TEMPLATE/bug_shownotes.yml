@@ -3,6 +3,8 @@ description: I found a dead link or typo in an episode
 labels:
   - bug
   - show notes
+  - "piece of :cake:"
+  - good first issue
 body:
   - type: markdown
     attributes:
@@ -18,3 +20,6 @@ body:
     id: summary
     attributes:
       label: Summary
+      placeholder: |
+        For dead links, if you find a working link, please add it in! This can help us get the link updated faster.
+        For typos, feel free to include the correction and a screenshot.
