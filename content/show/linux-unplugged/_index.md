@@ -22,7 +22,7 @@ podverse_podcast_id = "g40Um-HP1"
   url = "https://twitter.com/LINUXUnplugged"
 
 [links.email]
-  url = "https://linuxunplugged.com/contact"  
+  url = "https://linuxunplugged.com/contact"
 
 [links.shownotes]
   url = "https://linuxunplugged.com"
@@ -31,13 +31,13 @@ podverse_podcast_id = "g40Um-HP1"
   url="https://www.reddit.com/r/linuxunplugged/"
 
 [links.matrix]
-  url="https://matrix.to/#/+lup:jupiterbroadcasting.com"
+  url="https://matrix.to/#/#linux-unplugged:matrix.org"
 
 [links.mumble]
   url="https://linuxunplugged.com/mumble"
 
 [links.blog]
-  url="https://linuxunplugged.com/articles" 
+  url="https://linuxunplugged.com/articles"
 
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxVckkyK5dyyARdfjwGY-cw"

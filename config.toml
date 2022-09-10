@@ -15,7 +15,7 @@ paginate = 12
 [params.footer.left]
   headline = "Get Social"
 [params.footer.center]
-  headline = "Center"
+  headline = "" # blank to temporarily "hide"
 [params.footer.right]
   headline = "Get Involved"
 
@@ -143,11 +143,11 @@ paginate = 12
         weight =82
         parent = "people"
 
-[[Menu.Main]]
-    name = "Archive"
-    identifier = "archive"
-    url = "/archive"
-    weight =90
+#[[Menu.Main]]
+    #name = "Archive"
+    #identifier = "archive"
+    #url = "/archive"
+    #weight =90
 
 [[Menu.Main]]
     name = "Community"
@@ -200,7 +200,7 @@ paginate = 12
 
 # Footer Menu (center)
 [[Menu.FooterCenter]]
-    name = "center"
+    name = "" # blank to temporarily "hide"
     identifier = "home"
     url = "/"
     weight =-100
