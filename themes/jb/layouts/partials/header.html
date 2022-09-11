@@ -102,7 +102,7 @@
                               <span>{{ .Name }}</span>
                           </a>
                       {{ else }}
-                          <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
+                          <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
                               {{ .Pre }}
                               <span>{{ .Name }}</span>
                           </a>
