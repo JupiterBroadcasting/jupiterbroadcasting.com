@@ -1,5 +1,5 @@
 name: Show Errors
-description: I found a dead link or typo in an episode
+description: This type of issue is for problems with the episode itself (links, sponsors, typos, etc)
 labels:
   - bug
   - show notes
@@ -14,8 +14,8 @@ body:
     id: address
     attributes:
       label: URL
-      description: URL where this was found
-      placeholder: https://jupiterbroadcasting.com/
+      description: Link to the episode
+      placeholder: https://jupiterbroadcasting.com/show/
   - type: textarea
     id: summary
     attributes:
@@ -23,3 +23,13 @@ body:
       placeholder: |
         For dead links, if you find a working link, please add it in! This can help us get the link updated faster.
         For typos, feel free to include the correction and a screenshot.
+  - type: checkboxes
+    attributes:
+      label: Contributing
+      description: Please read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines before submitting an issue.
+      options:
+        - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
+          required: true
+#         - label: I have read and accept the [Code of Conduct](https://docs.github.com/articles/github-community-guidelines)
+#           required: true
+
