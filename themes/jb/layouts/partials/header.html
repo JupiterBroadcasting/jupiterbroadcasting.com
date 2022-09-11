@@ -97,12 +97,12 @@
                       {{ else if eq .Identifier "home"}}
                       <!-- do nothing, home is done as "navbar-brand" class above outside of "navbar-menu" -->
                       {{ else if eq .Identifier "live"}}
-                          <a id="livebutton" href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
+                          <a id="livebutton" href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
                               {{ .Pre }}
                               <span>{{ .Name }}</span>
                           </a>
                       {{ else }}
-                          <a href="{{ .URL }}" class="navbar-item {{ if $active }}active{{ end }}">
+                          <a href="{{ .URL }}" {{ if (hasPrefix .Identifier "ext-") }}target="_blank"{{ end }} class="navbar-item {{ if $active }}active{{ end }}">
                               {{ .Pre }}
                               <span>{{ .Name }}</span>
                           </a>
