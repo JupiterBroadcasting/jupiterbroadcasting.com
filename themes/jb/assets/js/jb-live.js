@@ -64,7 +64,7 @@ async function jbLive() {
 
     return getEmbedLink(liveShow)?.toString() ?? getEmbedLink(archivedShow)?.toString();
 }
-**
+/**
  * Queries the 'live' channel at jupiter.tube for live
  * show status and sets the CSS style background-color red for #livebutton
  */
