@@ -14,8 +14,6 @@ header_image = "/images/shows/coder-radio.png"
 
 support_link = "/membership"
 
-subscribe_link = "/show/coder-radio/subscribe/"
-
 podverse_podcast_id = "ZXd_1Ojd9"
 
 [links.twitter]
