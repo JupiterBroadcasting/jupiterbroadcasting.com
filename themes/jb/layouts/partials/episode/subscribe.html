@@ -1,1 +1,3 @@
-<a href="{{.CurrentSection.Params.subscribe_link}}" class="button is-info" style="margin-top:5px">Subscribe to {{.CurrentSection.Title}}</a>
+{{ with .Parent.GetPage "subscribe.md" }}
+<a href="{{ .Permalink }}" class="button is-info" style="margin-top:5px">Subscribe to {{.Parent.Title}}</a>
+{{ end }}
