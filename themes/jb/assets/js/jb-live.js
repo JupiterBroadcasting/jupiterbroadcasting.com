@@ -7,6 +7,11 @@ const JoopTubeQuery =
         `&count=1` +
         `&sort=-createdAt`,
         JoopTubeURL);
+const liveRequestOptions = { 
+    method: 'GET', 
+    headers: new Headers({ "Accept": "application/json" }), 
+    redirect: 'follow' 
+}
 
 /**
  * Gets the embedable link from a PeerTube Video object passed via Promise
@@ -40,22 +45,12 @@ const getEmbedLink = show => {
  * @returns {string} The embedable URL
  */
 async function jbLive() {
-    const headers = new Headers({
-        "Accept": "application/json"
-    });
-
-    const requestOptions = {
-        method: 'GET',
-        headers: headers,
-        redirect: 'follow'
-    };
-
-    const liveShowQuery = fetch(JoopTubeQuery({ isLive: true }), requestOptions)
+    const liveShowQuery = fetch(JoopTubeQuery({ isLive: true }), liveRequestOptions)
         .then(response => response.text())
         .then(result => JSON.parse(result))
         .catch(error => console.error('Error while fetching live URL!', error));
 
-    const archivedShowQuery = fetch(JoopTubeQuery({ isLive: false }), requestOptions)
+    const archivedShowQuery = fetch(JoopTubeQuery({ isLive: false }), liveRequestOptions)
         .then(response => response.text())
         .then(result => JSON.parse(result))
         .catch(error => console.error(('Error while fetching live URL!', error)));
@@ -69,17 +64,7 @@ async function jbLive() {
  * show status and sets the CSS style background-color red for #livebutton
  */
 async function doLiveHighlight() {
-    const headers = new Headers({
-        "Accept": "application/json"
-    });
-
-    const requestOptions = {
-        method: 'GET',
-        headers: headers,
-        redirect: 'follow'
-    };
-
-    fetch(JoopTubeQuery({ isLive: true }), requestOptions)
+    fetch(JoopTubeQuery({ isLive: true }), liveRequestOptions)
         .then(response => response.text())
         .then(result => JSON.parse(result))
         .then(data => {if(data.total > 0) 
