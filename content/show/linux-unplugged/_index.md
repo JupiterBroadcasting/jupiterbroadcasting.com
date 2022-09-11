@@ -14,8 +14,6 @@ header_image = "/images/shows/linux-unplugged.png"
 
 support_link = "/membership"
 
-subscribe_link = "/show/linux-unplugged/subscribe/"
-
 podverse_podcast_id = "g40Um-HP1"
 
 [links.twitter]
