@@ -38,7 +38,7 @@ jobs:
       - id: registry_user
         run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
       - id: current_branch
-        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_BASE_REF:-}" )"
+        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_REF_NAME:-}" )"
 
   prod:
     strategy:
