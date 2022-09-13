@@ -38,7 +38,7 @@ jobs:
       - id: registry_user
         run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
       - id: current_branch
-        run: echo "::set-output name=current_branch::$( [ -n "${GITHUB_BASE_REF:-}" ] && echo "-${GITHUB_BASE_REF:-}" )"
+        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_BASE_REF:-}" )"
 
   prod:
     strategy:
@@ -70,7 +70,7 @@ jobs:
           # example location as to where to change that in prod's ansible IaC
           # https://github.com/JupiterBroadcasting/infra/blob/3b9490a46119ffdc70018b2ac8315346d947a06d/ansible/group_vars/core.yaml#L517
           # tag example: prod-latest, prod-develop-latest, prod-develop-2022-09-12t23_15_22-04_00, or prod-2022-09-12t23_15_22-04_00
-          tags: ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-latest ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}${{ needs.env_setup.outputs.date_output }}
+          tags: ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-latest ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-${{ needs.env_setup.outputs.date_output }}
           # prod docker container docker file
           containerfiles: |
             ./Dockerfile
