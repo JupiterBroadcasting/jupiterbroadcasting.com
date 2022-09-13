@@ -14,4 +14,4 @@ deploy-prod:
 
 tests:
 	docker build --rm -f Dockerfile.tests -t jb_tests:latest .
-	docker run --rm --net=host --volume "$${PWD}":/app -w /app jb_tests:latest
+	docker run --rm --net=host --user 1000:1000 --volume "$${PWD}":/app -w /app jb_tests:latest

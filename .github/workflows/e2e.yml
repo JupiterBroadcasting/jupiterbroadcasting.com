@@ -1,14 +1,12 @@
 name: E2E Tests
 
 on:
-  # keeping this till we figure out #371, so we can at least validate the
-  #   scrapper PRs aren't breaking things
-  push:
-    branches: [ main ]
 
-  # https://frontside.com/blog/2020-05-26-github-actions-pull_request/
   pull_request:
-
+  push:
+    branches:
+      - main
+      - develop
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,36 +16,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: run hugo build
-        uses: jakejarvis/hugo-build-action@master 
-        with:
-          args: --gc --config ./config.toml -b http://localhost:1313
-      - name: run server
-        run: |
-          cd public && python -m http.server 1313 &
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Install dependencies
-        working-directory: ./test
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Ensure browsers are installed
-        run: python -m playwright install --with-deps
+
+      # using docker-compose, so we can re-use local Dockerfiles
+      - name: starting up containers
+        working-directory: ./test/
+        env:
+          # https://stackoverflow.com/a/52192327
+          DOCKER_BUILDKIT: 1
+          # https://stackoverflow.com/a/69500575
+          BUILDKIT_PROGRESS: plain
+        run: docker-compose up -d --build
+
       - name: Run your tests
-        working-directory: ./test
-        run: pytest --base-url http://localhost:1313 -v --junitxml report.xml e2e/*
+        working-directory: ./test/
+        # https://github.com/actions/runner/issues/241#issuecomment-577360161
+        run: script -e -c "docker-compose exec testing pytest --base-url http://jb-com --junitxml report.xml"
+
       - name: Save screenshots
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
-          path: test/screenshots/
+          path: screenshots/
+
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
-        if: always()
+        # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
+        if: always() && github.event_name != 'pull_request'
         with:
           name: E2E Tests
-          path: './test/report.xml'
+          path: './report.xml'
           reporter: java-junit

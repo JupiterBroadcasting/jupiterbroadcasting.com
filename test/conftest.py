@@ -1,7 +1,9 @@
 
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, Generator, List
 from pytest import fixture
+from pytest_base_url.plugin import base_url
+from playwright.sync_api import Playwright, APIRequestContext
 
 @fixture
 def screenshot_dir() -> Path:
@@ -21,28 +23,34 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
     ]
 
 @fixture
-def expected_dropdown_items(base_url) -> List[Dict[str,str]]:
-    return [
-        {'href': '/hosts', 'title': 'Hosts'},
-        {'href': '/guests', 'title': 'Guests'},
-        {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
-        {'href': 'https://jupiter.tube', 'title': 'Peertube'},
-        {'href': 'https://www.meetup.com/jupiterbroadcasting', 'title': 'Meetup'},
-        {'href': 'https://www.youtube.com/user/jupiterbroadcasting', 'title': 'YouTube'},
-        {'href': 'https://twitter.com/jupitersignal', 'title': 'Twitter'},
-        {'href': '{}/community/irc'.format(base_url), 'title': 'IRC'},
-        {'href': 'http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615', 'title': 'Facebook'},
-        {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
-        {'href': '{}/community/matrix'.format(base_url), 'title': 'Matrix'},
-        {'href': '{}/community/mumble'.format(base_url), 'title': 'Mumble'},
-        {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
-        {'href': '/show/coder-radio', 'title': 'Coder Radio'},
-        {'href': '/show/jupiter-extras', 'title': 'Jupiter EXTRAS'},
-        {'href': '/show/linux-action-news', 'title': 'Linux Action News'},
-        {'href': '/show/linux-unplugged', 'title': 'LINUX Unplugged'},
-        {'href': '/show/office-hours', 'title': 'Office Hours'},
-        {'href': '/show/self-hosted', 'title': 'Self-Hosted'},
-    ]
+def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
+    return {
+        "Shows": [
+            {'href': '/show/coder-radio', 'title': 'Coder Radio'},
+            {'href': '/show/jupiter-extras', 'title': 'Jupiter EXTRAS'},
+            {'href': '/show/linux-action-news', 'title': 'Linux Action News'},
+            {'href': '/show/linux-unplugged', 'title': 'LINUX Unplugged'},
+            {'href': '/show/office-hours', 'title': 'Office Hours'},
+            {'href': '/show/self-hosted', 'title': 'Self-Hosted'},
+        ],
+        "People": [
+            {'href': '/hosts', 'title': 'Hosts'},
+            {'href': '/guests', 'title': 'Guests'},
+        ],
+        "Community": [
+            {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
+            {'href': 'https://jupiter.tube', 'title': 'Peertube'},
+            {'href': 'https://www.meetup.com/jupiterbroadcasting/', 'title': 'Meetup'},
+            {'href': 'https://www.youtube.com/user/jupiterbroadcasting', 'title': 'YouTube'},
+            {'href': 'https://twitter.com/jupitersignal', 'title': 'Twitter'},
+            {'href': '/community/irc/', 'title': 'IRC'},
+            {'href': 'http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615', 'title': 'Facebook'},
+            {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
+            {'href': '/community/matrix/', 'title': 'Matrix'},
+            {'href': '/community/mumble/', 'title': 'Mumble'},
+            {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
+        ]
+    }
 
 @fixture
 def expected_dropdowns() -> List[Dict[str,str]]:
@@ -67,25 +75,24 @@ def expect_nav_items() -> List[Dict[str,str]]:
         {'title': 'Contact', 'href': '/contact'},
     ]
 
-
-    page.goto("/")
-    nav = page.locator('#mainnavigation')
-    expect(nav).to_be_visible()
-    dropdown_nav_items = page.locator('.navbar-start > * > a')
-    count = dropdown_nav_items.count()
-    for i in range(count):
-        expect(dropdown_nav_items.nth(i)).to_contain_text(expected_dropdowns[i]['title'])
-        expect(dropdown_nav_items.nth(i)).to_have_attribute('href', expected_dropdowns[i]['href'])
-
-
-    nav_items = page.locator('.navbar-start > a')
-    count = nav_items.count()
-    for i in range(count):
-        expect(nav_items.nth(i)).to_contain_text(expect_nav_items[i]['title'])
-        expect(nav_items.nth(i)).to_have_attribute('href', expect_nav_items[i]['href'])
-    
-    nav_image = page.locator('.navbar-brand > a > img')
-
-
-    expect(nav_image.nth(0)).to_be_visible()
-
+# https://playwright.dev/python/docs/api-testing#configure
+# used for doing similar requests to API calls
+@fixture(scope="session")
+def api_request_context(
+    # base playwright context/object
+    playwright: Playwright,
+    # from the pytest-base-url plugin Playwright installs (automatically)
+    #   so we're not having to hard-code the URL
+    base_url: base_url,
+    # Generator is returned based on Playwright docs
+) -> Generator[APIRequestContext, None, None]:
+    # creates APIRequestContext to allow requests to be made
+    #   using the base_url variable (from the plugin) to define
+    #   the base_url which'll allow requests relative to that base_url
+    request_context = playwright.request.new_context(base_url=base_url)
+    # essentially a "return", but used with generators
+    yield request_context
+    # supposed to get rid of coookies/other stored info after generator is done
+    # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
+    # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
+    request_context.dispose()
