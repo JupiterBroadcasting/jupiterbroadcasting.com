@@ -11,10 +11,10 @@
 {{ end }}
 <a href="{{ $link }}"  {{ if ne (urls.Parse .Site.BaseURL).Host (urls.Parse $link).Host }}target="_blank"{{ end }}>
   <div class="card is-fullheight" style="height: 100%;">
-    <div class="card-image is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 250px;">
+    <figure class="card-image is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 250px;">
 
-        <img src="{{ .Params.logo }}" alt="{{ .Title | lower }} logo" class="is-centered py-2" style="height: 175px; padding-left:75px; padding-right: 75px; margin-top:25px; width: 100%; object-fit: contain;">
-    </div>
+        <img src="{{ .Params.logo }}" alt="{{ .Title | lower }} logo" style="height: 175px; padding-left:75px; padding-right: 75px; margin-top:25px; width: 100%; object-fit: contain;">
+    </figure>
     <div>
       <div class="card-header">
         <h3 class="card-header-title is-centered">{{ .Title }}</h2>
