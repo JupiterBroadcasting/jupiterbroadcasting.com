@@ -6,7 +6,9 @@ name: Building Tests Container
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - develop
     paths:
       - ./Dockerfile.tests
       - ./tests/Pipfile.lock
@@ -20,6 +22,7 @@ jobs:
     outputs:
       date_output: ${{ steps.date.outputs.date_fmt }}
       registry_user: ${{ steps.registry_user.outputs.username }}
+      current_branch: ${{ steps.current_branch.outputs.current_branch }}
     steps:
       # used for tagging the container with the current date down to the seconds
       #   since we have so many changes down to the seconds was required. Example: 2022-09-08T05_42_23-04_00
@@ -28,6 +31,8 @@ jobs:
       # the username for the quay registry, since it can be derived from the quay secret's robot username
       - id: registry_user
         run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+      - id: current_branch
+        run: echo "::set-output name=current_branch::$( [ -n "${GITHUB_BASE_REF:-}" ] && echo "-${GITHUB_BASE_REF:-}" )"
 
   tests:
     runs-on: ubuntu-latest
@@ -44,7 +49,7 @@ jobs:
           # tagging with 2 different tags, this will let us have a consistent target of prod-latest or tests_web-latest,
           #   but still allow us to properly version each build of the containers (with the current time). This double
           #   tagging strategy will allow us to rollback changes on the prod environment if something goes awry
-          tags: tests-latest tests-${{ needs.env_setup.outputs.date_output }}
+          tags: tests${{ needs.env_setup.outputs.current_branch }}-latest tests${{ needs.env_setup.outputs.current_branch }}-${{ needs.env_setup.outputs.date_output }}
           containerfiles: |
             ./Dockerfile.tests
 

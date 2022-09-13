@@ -6,7 +6,9 @@ name: Building Prod Container
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - develop
     # don't re-build prod when there's only test changes
     paths-ignore:
       - ./Dockerfile.tests
@@ -26,6 +28,7 @@ jobs:
     outputs:
       date_output: ${{ steps.date.outputs.date_fmt }}
       registry_user: ${{ steps.registry_user.outputs.username }}
+      current_branch: ${{ steps.current_branch.outputs.current_branch }}
     steps:
       # used for tagging the container with the current date down to the seconds
       #   since we have so many changes down to the seconds was required. Example: 2022-09-08T05_42_23-04_00
@@ -34,6 +37,8 @@ jobs:
       # the username for the quay registry, since it can be derived from the quay secret's robot username
       - id: registry_user
         run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+      - id: current_branch
+        run: echo "::set-output name=current_branch::$( [ -n "${GITHUB_BASE_REF:-}" ] && echo "-${GITHUB_BASE_REF:-}" )"
 
   prod:
     strategy:
@@ -64,7 +69,8 @@ jobs:
           #   tagging strategy will allow us to rollback changes on the prod environment if something goes awry
           # example location as to where to change that in prod's ansible IaC
           # https://github.com/JupiterBroadcasting/infra/blob/3b9490a46119ffdc70018b2ac8315346d947a06d/ansible/group_vars/core.yaml#L517
-          tags: ${{ matrix.container_env}}-latest ${{ matrix.container_env}}-${{ needs.env_setup.outputs.date_output }}
+          # tag example: prod-latest, prod-develop-latest, prod-develop-2022-09-12t23_15_22-04_00, or prod-2022-09-12t23_15_22-04_00
+          tags: ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-latest ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}${{ needs.env_setup.outputs.date_output }}
           # prod docker container docker file
           containerfiles: |
             ./Dockerfile
