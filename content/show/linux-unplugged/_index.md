@@ -6,8 +6,10 @@ draft = false
 categories = ["LINUX Unplugged"]
 show = "linux-unplugged"
 hosts = ["chris","brent","wes"]
+
 type = "show"
 active = true
+
 header_image = "/images/shows/linux-unplugged.png"
 
 support_link = "/membership"
