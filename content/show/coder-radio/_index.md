@@ -19,13 +19,15 @@ podverse_podcast_id = "ZXd_1Ojd9"
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
 [links.email]
-  url = "https://coder.show/contact"  
+  url = "https://coder.show/contact"
 [links.reddit]
-  url = "https://www.reddit.com/r/coderradio"  
+  url = "https://www.reddit.com/r/coderradio"
 [links.shownotes]
-  url = "https://coder.show"  
+  url = "https://coder.show"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLCB9545FD2C26E547"
+[links.matrix]
+  url="https://matrix.to/#/#coder-radio:matrix.org"
 
 
 
