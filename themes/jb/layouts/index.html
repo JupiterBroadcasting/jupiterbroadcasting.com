@@ -20,18 +20,18 @@
     <div class="swiper show-slider">
       <div class="swiper-wrapper">
 
-       {{ range where .Site.Sections ".Title" "Shows" }}
-        {{ $showScratch := newScratch}}
-          {{ range .Pages }}
+       {{- range where .Site.Sections ".Title" "Shows" -}}
+        {{ $showScratch := newScratch }}
+          {{- range .Pages -}}
             {{ $show := . }}
-            {{ range first 1 (where .Pages "Type" "episode") }}
-              {{ $showScratch.SetInMap "episode-activity" (string (time .Date).Unix) $show}}
-            {{end}}
+            {{- range first 1 (where .Pages "Type" "episode") -}}
+              {{ $showScratch.SetInMap "episode-activity" (string (time .Date).Unix) $show }}
+            {{- end -}}
 
-          {{ end }}
-          {{ $pages := $showScratch.GetSortedMapValues "episode-activity" }}
-            {{ range seq (sub (len $pages) 1) 0 }}
-              {{ with index $pages . }}
+          {{- end -}}
+          {{ $shows := $showScratch.GetSortedMapValues "episode-activity" }}
+            {{- range seq (sub (len $shows) 1) 0 -}}
+              {{- with index $shows . }}
               <div class="swiper-slide">
                 <div class="card-image">
                   <figure class="image">
@@ -45,8 +45,9 @@
                   </figure>
                 </div>
               </div>
-            {{ end }}
-          {{ end }}
+            {{- end -}}
+            {{ $showScratch.Delete "episode-activity" }}
+          {{- end -}}
         {{ end }}
       </div>
 
