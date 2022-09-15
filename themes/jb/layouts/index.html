@@ -21,20 +21,31 @@
       <div class="swiper-wrapper">
 
        {{ range where .Site.Sections ".Title" "Shows" }}
+        {{ $showScratch := newScratch}}
           {{ range .Pages }}
-            <div class="swiper-slide">
-              <div class="card-image">
-                <figure class="image">
-                  <a href="{{ print .Permalink }}">
-                    <img
+            {{ $show := . }}
+            {{ range first 1 (where .Pages "Type" "episode") }}
+              {{ $showScratch.SetInMap "episode-activity" (string (time .Date).Unix) $show}}
+            {{end}}
+
+          {{ end }}
+          {{ $pages := $showScratch.GetSortedMapValues "episode-activity" }}
+            {{ range seq (sub (len $pages) 1) 0 }}
+              {{ with index $pages . }}
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <figure class="image">
+                    <a href="{{ print .Permalink }}">
+                      <img
                       src="{{ print .Params.header_image | absURL }}"
                       alt="{{ print .Title }}"
                       class="show-img"
-                    />
-                  </a>
-                </figure>
+                      />
+                    </a>
+                  </figure>
+                </div>
               </div>
-            </div>
+            {{ end }}
           {{ end }}
         {{ end }}
       </div>
