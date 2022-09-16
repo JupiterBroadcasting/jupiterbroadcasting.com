@@ -1,0 +1,7 @@
+<p style="max-width: 75ch;"><strong>{{- .Title }}</strong> - {{ .Params.description -}}
+</p>
+<p>
+    {{ $url := urls.Parse .Params.link -}}
+    <a href="{{ .Params.link }}">{{ $url.Host | title }}{{ if ne $url.Path "/" }}{{- $url.Path -}}{{- end -}}</a>
+</p>
+  
