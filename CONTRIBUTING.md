@@ -37,9 +37,10 @@ Our base of operations for group discussions on this project is our Matrix chat 
 
 ### I want to help, what should I work on?
 
+**❗ Note:** _Please do a quick search prior to opening an issue - maybe a relevant issue already exists._ 😉
+
 * 🚀 The current focus and priority is on [Milestone 1.0](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/milestone/1)
 * 📝 You can submit an idea or a feature by opening an [issue](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues).
-* _Please do a quick search prior top opening an issue - maybe a relevant issue already exists_ 😉
 * 💡 When you feel inspired about a particular issue or feature, please propose your implementation idea/strategy for approval via the issue comments, which indicates you are dedicated to solving this issue, thus avoiding duplication of effort.
 * 💪 If you have a particular skillset, feel free to focus there.
 * 🚩 Some tickets are specifically [labeled](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/labels) _"low priority"_, but others are so far of fairly equal importance. Any time there is something clearly urgent, the _"urgent"_ tag will be used.
