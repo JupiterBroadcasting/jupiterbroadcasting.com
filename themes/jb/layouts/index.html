@@ -19,36 +19,29 @@
 
     <div class="swiper show-slider">
       <div class="swiper-wrapper">
-
-       {{- range where .Site.Sections ".Title" "Shows" -}}
-        {{ $showScratch := newScratch }}
-          {{- range .Pages -}}
-            {{ $show := . }}
-            {{- range first 1 (where .Pages "Type" "episode") -}}
-              {{ $showScratch.SetInMap "episode-activity" (string (time .Date).Unix) $show }}
-            {{- end -}}
-
-          {{- end -}}
-          {{ $shows := $showScratch.GetSortedMapValues "episode-activity" }}
-            {{- range seq (sub (len $shows) 1) 0 -}}
-              {{- with index $shows . }}
-              <div class="swiper-slide">
-                <div class="card-image">
-                  <figure class="image">
-                    <a href="{{ print .Permalink }}">
-                      <img
-                      src="{{ print .Params.header_image | absURL }}"
-                      alt="{{ print .Title }}"
-                      class="show-img"
-                      />
-                    </a>
-                  </figure>
-                </div>
-              </div>
-            {{- end -}}
-            {{ $showScratch.Delete "episode-activity" }}
-          {{- end -}}
-        {{ end }}
+        {{- $all_most_recent := slice -}}
+        {{- range where .Site.Sections ".Title" "Shows" -}}
+         {{- range .Pages -}}
+          {{ $all_most_recent = $all_most_recent | append ((where .Pages "Type" "episode").ByDate.Reverse | first 1)  }}
+         {{- end -}}
+        {{- end -}}
+        {{- range $all_most_recent.ByDate.Reverse -}}
+         {{ with .Parent }}
+               <div class="swiper-slide">
+                 <div class="card-image">
+                   <figure class="image">
+                     <a href="{{ .Permalink }}">
+                       <img
+                       src="{{ .Params.header_image | absURL }}"
+                       alt="{{ .Title }}"
+                       class="show-img"
+                       />
+                     </a>
+                   </figure>
+                 </div>
+               </div>
+           {{- end -}}
+         {{ end }}
       </div>
 
       <div class="swiper-button-prev"></div>
