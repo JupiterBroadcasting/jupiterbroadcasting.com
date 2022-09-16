@@ -49,12 +49,12 @@ Our base of operations for group discussions on this project is our Matrix chat 
 ### How do I assign an issue to myself?
 
 * 🔑 The key is to communicate enough to avoid unnecessary duplication of effort, which has already happened, unfortunately.
-* 🗨 Comment on an issue to signal your intentions and interest. The important thing is to communicate your intention and progress so we can help you find success. And, as we've seen already: it seems like when there's movement on a ticket we all get inspired. Progress is wonderfully contagious! ✨
+* 🗨 Comment on an issue to signal your intentions and interest. The important thing is to communicate your intention and progress so we can help you find success. And, as we've seen already, it seems like when there's movement on a ticket we all get inspired. Progress is wonderfully contagious! ✨
 
 ### What is the Pull-Request (PR) etiquette?
 
-* 💻 Don't be shy to create a Work-In-Progress (WIP) PR. This is a great way to get some feedback and maybe some direction for your work.
-* ✅ Create a markdown checklist to indicate what's done and what's still missing ([see this example](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/112))
+* 💻 Don't be shy, creating a Work-In-Progress (WIP) PR is a great way to get some feedback and maybe some direction for your work.
+* ✅ Create a markdown checklist to indicate what's done and what's still missing ([see this example](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/112)).
 * ⚙ If you are closing a specific issue we encourage you to use [Github's closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to automatically close the issue once the PR is merged.
 * 🚮 Feel free to delete your feature branch after it has been merged via the PR. There’s a handy button on the GitHub interface, and in the worst case they can be reverted easily.
 
