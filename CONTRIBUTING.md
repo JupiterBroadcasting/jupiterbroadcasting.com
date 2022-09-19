@@ -16,39 +16,47 @@
 
 ---
 
-## Lets Be Efficient!
+## Let's Be Efficient!
 
-Top priority is to hopefully avoid using anyone's time/effort - including yours! - on items that may eventually not be used. We want to spend time/effort on things that get implemented! 
-Thus it's good practice to get consult first on a new grand idea you may have, and obtain context on the greater vision before beginning work to make sure you can implement in the way that ends up best for all the moving pieces. Often these discussion end up very, very fascinating and land us in elegant solutions we could not have predicted.
+Our top priority is to hopefully avoid wasting anyone's time/effort (including yours!) on items that may eventually not be used. We want to spend time/effort on things that get implemented! 
+
+Here are three steps to being efficient:
+
+* 1️⃣ Obtain context on the **greater vision 🔭** before beginning work to make sure you contribution will be accepted;
+* 2️⃣ Get a consultation on that **grand new idea you may have 🤔** before implementing anything to see if it is something that is wanted;
+* 3️⃣ Use the advice we give you to ensure that anything you contribute **works well with all the moving pieces🏗**. 
+
+Often these discussions end up very, very fascinating and land us in elegant solutions we could not have predicted.
 
 ## Discussions via Matrix
 
-Our base of operations for group discussions on this project: [Jupiter Web Site on Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
+Our base of operations for group discussions on this project is our Matrix chat room: [Jupiter Web Site on Matrix](https://matrix.to/#/#jupiterweb:jupiterbroadcasting.com)
 
 
 ## FAQ:
 
 ### I want to help, what should I work on?
 
+**❗ Note:** _Please do a quick search prior to opening an issue - maybe a relevant issue already exists._ 😉
+
 * 🚀 The current focus and priority is on [Milestone 1.0](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/milestone/1)
 * 📝 You can submit an idea or a feature by opening an [issue](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues).
-  * _Please do a quick search prior - maybe a relevant issue already exists_ 😉
-* 💡 When you feel inspired about a particular issue or feature, please propose your implementation idea/strategy for approval via  comments, which indicates you are dedicated to solving this issue, thus avoiding duplication of effort.
+* 💡 When you feel inspired about a particular issue or feature, please propose your implementation idea/strategy for approval via the issue comments, which indicates you are dedicated to solving this issue, thus avoiding duplication of effort.
 * 💪 If you have a particular skillset, feel free to focus there.
-* 🚩 Some tickets are specifically [labeled](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/labels) _"low priority"_, but others are so far of fairly equal importance. Anytime there is something clearly urgent, the _"urgent"_ tag will be used.
+* 🚩 Some tickets are specifically [labeled](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/labels) _"low priority"_, but others are so far of fairly equal importance. Any time there is something clearly urgent, the _"urgent"_ tag will be used.
 
 
 ### How do I assign an issue to myself?
 
-* 🔑 The key is to communicate enough to avoid unnecessary duplication of efforts, which has already happened unfortunately
-* 🗨 Comment on an issue to signal your intentions and interest. The important thing is to communicate your intention and progress so we can help you find success. And, as we've seen already: it seems like when there's movement on a ticket we all get inspired aswell. Progress is wonderfully contagious! ✨
+* 🔑 The key is to communicate enough to avoid unnecessary duplication of effort, which has already happened, unfortunately.
+* 🗨 Comment on an issue to signal your intentions and interest. The important thing is to communicate your intention and progress so we can help you find success. And, as we've seen already, it seems like when there's movement on a ticket we all get inspired. Progress is wonderfully contagious! ✨
 
 ### What is the Pull-Request (PR) etiquette?
 
-* 💻 Don't be shy of creating a Work-In-Progress (WIP) PR. This is a great way to geat some feedback and maybe some direction on your work.
-  * ✅ Create a markdown checklist to indicate what's done and what's still missing ([see this example](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/112))
-* ⚙ If you're closing a specific issue I encourage you to use [Github's closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to automatically close the issue once it the PR is merged.
-* 🚮 Feel free to delete your feature branch after it has been merged via the PR. There’s a button handy on the GitHub interface, and worst case they can be reverted easily.
+* 💻 Don't be shy, creating a Work-In-Progress (WIP) PR is a great way to get some feedback and maybe some direction for your work.
+* ✅ Create a markdown checklist to indicate what's done and what's still missing ([see this example](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/112)).
+* ⚙ If you are closing a specific issue we encourage you to use [Github's closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to automatically close the issue once the PR is merged.
+* 🚮 Feel free to delete your feature branch after it has been merged via the PR. There’s a handy button on the GitHub interface, and in the worst case they can be reverted easily.
 
 
 ### What is the stack used for the site?
@@ -60,22 +68,22 @@ Our base of operations for group discussions on this project: [Jupiter Web Site 
 
 * There was a deliberate choice not to integrate npm/yarn.
 * It makes it easier to start contributing - all that's required is the Hugo binary.
-* The goal is to clean the site simple and fast - this means having as little dependecies as possible.
+* The goal is to keep the site simple and fast - this means having as few dependecies as possible.
 * The third-party libraries are saved directly into the repo.
-* All this is subject to change if there would be a good reason for it.
+* All of this is subject to change if there is a good reason for it.
 
 ### How do I style my UI components?
 
-* Please try to use [Bulma](https://bulma.io/) as much as possible for all your frontend needs. It has a great documentation and is easy to grasp quickly. You can probably achieve everythin you need using the Bulma CSS classes.
+* Please try to use [Bulma](https://bulma.io/) as much as possible for all your frontend needs. It has a great documentation and is easy to grasp quickly. You can probably achieve everything you need using the Bulma CSS classes.
 * Try and use the color variables defined in [_variables.sass](./themes/jb/assets/css/_variables.sass)
-  * Some of the colors have multiple aliases for convineice 
+  * Some of the colors have multiple aliases for convenience.
   * All of these colors have been set-up for use with [Bulma modifiers syntax](https://bulma.io/documentation/overview/modifiers/#docsNav), here are some examples:
     ```
     <button class="button is-primary">is-jb-pink</button>
     <button class="button is-jb-pink">is-jb-pink</button>
     <button class="button is-lup-blue">is-lup-blue</button>
     ```
-* If you end up not finding what you need there, or need to build somethin on top of Bulma, your CSS (technically SASS) would go into this [directory](./themes/jb/assets/css). 
+* If you end up not finding what you need there, or need to build something on top of Bulma, your CSS (technically SASS) would go into this [directory](./themes/jb/assets/css). 
   * Please try and follow the existing structure as an example.
 
 ---
