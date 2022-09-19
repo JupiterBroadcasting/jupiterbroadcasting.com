@@ -19,24 +19,29 @@
 
     <div class="swiper show-slider">
       <div class="swiper-wrapper">
-
-       {{ range where .Site.Sections ".Title" "Shows" }}
-          {{ range .Pages }}
-            <div class="swiper-slide">
-              <div class="card-image">
-                <figure class="image">
-                  <a href="{{ print .Permalink }}">
-                    <img
-                      src="{{ print .Params.header_image | absURL }}"
-                      alt="{{ print .Title }}"
-                      class="show-img"
-                    />
-                  </a>
-                </figure>
-              </div>
-            </div>
-          {{ end }}
-        {{ end }}
+        {{- $all_most_recent := slice -}}
+        {{- range where .Site.Sections ".Title" "Shows" -}}
+         {{- range .Pages -}}
+          {{ $all_most_recent = $all_most_recent | append ((where .Pages "Type" "episode").ByDate.Reverse | first 1)  }}
+         {{- end -}}
+        {{- end -}}
+        {{- range $all_most_recent.ByDate.Reverse -}}
+         {{ with .Parent }}
+               <div class="swiper-slide">
+                 <div class="card-image">
+                   <figure class="image">
+                     <a href="{{ .Permalink }}">
+                       <img
+                       src="{{ .Params.header_image | absURL }}"
+                       alt="{{ .Title }}"
+                       class="show-img"
+                       />
+                     </a>
+                   </figure>
+                 </div>
+               </div>
+           {{- end -}}
+         {{ end }}
       </div>
 
       <div class="swiper-button-prev"></div>
@@ -48,22 +53,22 @@
 </section>
 
 <section class="section episode-list">
-  <div class="container">
+  <div class="container p-4">
     <h1 class="title">Latest Episodes</h1>
      <div class="columns is-multiline">
-       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "episode") 9 }}
-       
-       {{ range $paginator.Pages }}
-            {{ if eq .Params.type "episode" }}
-                <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                    {{ partial "episode/preview.html" . }}
-                </div>
-            {{ end }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "episode") 9 }}
+
+        {{ range $paginator.Pages }}
+          {{ if eq .Params.type "episode" }}
+            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+              {{ partial "episode/preview.html" . }}
+            </div>
+          {{ end }}
         {{ end }}
 
       </div>
     </div>
-    <div class="container">
+    <div class="container p-4">
           {{ partial "helper/pagination.html" . }}
     </div>
 </section>
