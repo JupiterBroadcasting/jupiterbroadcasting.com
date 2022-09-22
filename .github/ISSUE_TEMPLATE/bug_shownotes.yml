@@ -1,0 +1,47 @@
+name: Show Errors
+description: This type of issue is for problems with the episode itself (links, sponsors, typos, etc)
+labels:
+  - bug
+  - show notes
+  - "piece of :cake:"
+  - good first issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Please check to see if someone else has already reported this bug.
+  - type: input
+    id: address
+    attributes:
+      label: URL
+      description: URL where this was found
+      placeholder: https://jupiterbroadcasting.com/
+  - type: checkboxes
+    attributes:
+      label: Type(s) of Problems
+      description: Which of these problems did you come across
+      options:
+        - label: Typo
+          required: false
+        - label: Broken Link
+          required: false
+        - label: Sponsor
+          required: false
+        - label: Other
+          required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: |
+        For dead links, if you find a working link, please add it in! This can help us get the link updated faster.
+        For typos, feel free to include the correction and a screenshot.
+  - type: checkboxes
+    attributes:
+      label: Contributing
+      description: Please read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines before submitting an issue.
+      options:
+        - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidlines
+          required: true
+#         - label: I have read and accept the [Code of Conduct](https://docs.github.com/articles/github-community-guidelines)
+#           required: true
