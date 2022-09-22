@@ -10,7 +10,7 @@ body:
     id: description
     attributes:
       label: Feature Description
-      description: Describe the feature you would like to see implemented
+      description: Describe the feature you would like to see implemented.
     validations:
       required: true
   - type: textarea
@@ -18,13 +18,13 @@ body:
     attributes:
       label: Reference to Feature
       description: Have you seen this feature somewhere else?
-      placeholder: Please include links to references if you have them
+      placeholder: Please include links to references if you have them.
   - type: checkboxes
     attributes:
       label: Contributing
-      description: Please read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidelines before submitting an issue.
+      description: Please read our [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) before submitting an issue.
       options:
-        - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidelines
+        - label: I have read through the [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md)
           required: true
 #         - label: I have read and accept the [Code of Conduct](https://docs.github.com/articles/github-community-guidelines)
 #           required: true

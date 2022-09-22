@@ -1,5 +1,5 @@
 name: Show Errors
-description: This type of issue is for problems with the episode itself (links, sponsors, typos, etc)
+description: For problems with an episode itself (links, sponsors, typos, etc)
 labels:
   - bug
   - show notes
@@ -19,7 +19,7 @@ body:
   - type: checkboxes
     attributes:
       label: Type(s) of Problems
-      description: Which of these problems did you come across
+      description: Which of these problems did you encounter?
       options:
         - label: Typo
           required: false
@@ -34,14 +34,14 @@ body:
     attributes:
       label: Summary
       placeholder: |
-        For dead links, if you find a working link, please add it in! This can help us get the link updated faster.
+        For dead links: If you find a working link please add it in! This can help us get the link updated faster.
         For typos, feel free to include the correction and a screenshot.
   - type: checkboxes
     attributes:
       label: Contributing
-      description: Please read our [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidelines before submitting an issue.
+      description: Please read our [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) before submitting an issue.
       options:
-        - label: I have read through the [Contributing](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) Guidelines
+        - label: I have read through the [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md)
           required: true
 #         - label: I have read and accept the [Code of Conduct](https://docs.github.com/articles/github-community-guidelines)
 #           required: true
