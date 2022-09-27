@@ -3,30 +3,27 @@
 {{end}}
 
 {{ define "main" }}
-  {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }} 
-    {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .Title ) }} 
+  {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }}
+    {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .Title ) }}
   {{ else }}
     {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .CurrentSection.Title) }}
   {{ end }}
   <div class="container p-4">
-      <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="{{ .Section | safeURL | absURL }}">Shows</a></li>
-          <li><a href="{{ .Parent.Permalink }}">{{ .Params.show_name }}</a></li>
-          <li class="is-active"><a href="{{ .Permalink }}">{{ .Scratch.Get "fullTitle" }}</a></li>
-        </ul>
-      </nav>
-      <div class="content">
-        <div class="columns">
-          <div class="column is-8">
-            <h1></h1>
-            <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
-            </h1>
-            <p></p>
-            <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
-            <!-- {{ partial "episode/videoplayer.html" . }} -->
-            <br />
-            <p>{{ .Description }} </p>
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ .Section | safeURL | absURL }}">Shows</a></li>
+        <li><a href="{{ .Parent.Permalink }}">{{ .Params.show_name }}</a></li>
+        <li class="is-active"><a href="{{ .Permalink }}">{{ .Scratch.Get "fullTitle" }}</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="columns">
+        <div class="column is-8">
+          <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
+          <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
+          <!-- {{ partial "episode/videoplayer.html" . }} -->
+          <br />
+          <p>{{ .Description }} </p>
           </div>
           <div class="column is-4">
             <center>
@@ -39,76 +36,82 @@
           </center>
           </div>
         </div>
-        {{ partial "episode/podverseplayer.html" . }}
+      {{ partial "episode/podverseplayer.html" . }}
 
-        {{ partial "episode/downloadlinks.html" . }}
+      {{ partial "episode/downloadlinks.html" . }}
 
-        {{ $people_sections := where site.RegularPages "Section" "people" }}
-        <div class="columns" style="padding-top: 2em">
-          <!-- Host Section -->
-          <div class="column is-8">
-            <h2>Hosts</h2>
-            <section class="section host-list">
-              <div class="container">
-                 <div class="columns is-multiline">
+      {{ $people_sections := where site.RegularPages "Section" "people" }}
+      <div class="tile is-ancestor mt-5">
+        <div class="tile is-parent is-vertical is-8">
+          <!-- Hosts Section -->
+          <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0">
+            <div class="column">
+              <h2 class="has-text-centered-mobile">Hosts</h2>
+              <section class="section host-list">
+                <div class="columns is-narrow">
                   {{ range .Params.hosts }}
                     {{ $host := index ( where $people_sections "Params.username" .) 0 }}
-                      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                        {{ partial "people/small-nobio.html" $host }}
-                      </div>
+                    <div class="column is-narrow">
+                      {{ partial "people/smallest.html" $host }}
+                    </div>
                   {{ end }}
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
+            <div class="column">
               {{ with .Params.guests }}
-                <h2>Guests</h2>
-                <section class="section sponsor-list">
-                  <div class="container">
-                    <div class="columns is-multiline">
-                      {{ range . }}
-                          {{ $guest := index (where $people_sections "Params.username" .) 0 }}
-                          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-                            {{ if $guest }}
-                              {{ partial "people/small-nobio.html" $guest }}
-                            {{ end }}
-                          </div>
-                      {{end}}
-                    </div>
-                  </div>
-                </section>
-              {{ end }}
-          </div>
-
-          <!-- Sponsor sections -->
-          <div class="column is-4">
-            {{ with .Params.sponsors }}
-            <h2>Sponsors</h2>
-            <section class="section sponsor-list">
-                  {{ range . }}
-                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
-                        {{ if $sponsor }}
-                          {{ partial "sponsor/small.html" $sponsor }}
-                          <br />
+              <h2 class="has-text-centered-mobile">Guests</h2>
+              <section class="section host-list">
+                  <div class="columns is-narrow">
+                    {{ range . }}
+                      {{ $guest := index (where $people_sections "Params.username" .) 0 }}
+                      <div class="column is-narrow">
+                        {{ if $guest }}
+                          {{ partial "people/smallest.html" $guest }}
                         {{ end }}
-                  {{ end }}
-            </section>
+                      </div>
+                    {{end}}
+                  </div>
+              </section>
             {{ end }}
+            </div>
+          </div>
+          <!-- Episode Links -->
+          <div class="tile is-child columns is-flex-grow-0">
+            <div class="column">
+              {{ .Content }}
+            </div>
           </div>
         </div>
-
-        <div class="columns" style="padding-top: 2em">
-          <!-- Host Section -->
-          <div class="column is-8">
-            {{ .Content }}
+        <div class="tile is-parent is-vertical is-4">
+          <!-- Sponsors -->
+          <div class="tile is-child columns is-flex-grow-0">
+            <div class="column">
+              {{ with .Params.sponsors }}
+                <h2>Sponsors</h2>
+                <section class="section sponsor-list">
+                  {{ range . }}
+                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
+                    {{ if $sponsor }}
+                      {{ partial "sponsor/small.html" $sponsor }}
+                      <br />
+                    {{ end }}
+                  {{ end }}
+                </section>
+              {{ end }}
+            </div>
+            <!-- Tags -->
           </div>
-          <div class="column is-4">
+          <div class="tile is-child is-flex-grow-0">
             <h3>Tags</h3>
             {{ with .Params.tags }}
               <div class="tags">
                 {{ partial "episode/tags.html" . }}
               </div>
             {{ end }}
+          </div>
         </div>
+      </div>
     </div>
   </div>
 {{end}}
