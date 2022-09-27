@@ -36,14 +36,6 @@
           </center>
           </div>
         </div>
-        <div class="column is-4"><center>
-          <a href="{{ .Permalink }}">
-            <img src="{{.Params.header_image }}" width="auto" height="121" alt="{{.Title}}">
-          </a>
-          <br/>
-          {{ partial "episode/support.html" . }}</center>
-        </div>
-      </div>
       {{ partial "episode/podverseplayer.html" . }}
 
       {{ partial "episode/downloadlinks.html" . }}
