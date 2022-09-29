@@ -42,7 +42,6 @@ def test_dropdowns(page: Page, expected_dropdown_items):
         element = page.locator(selector)
         expect(element).to_contain_text(dropdown_item['title'])
     
-blah blah
 
 
 def test_nav(page: Page, expected_dropdowns, expect_nav_items):
