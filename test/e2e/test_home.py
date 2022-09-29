@@ -36,11 +36,12 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
         expect(element).to_contain_text(rss_feed['title'])
 
 
+@mark.dev
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
     for dropdown_text, child_elements in expected_dropdown_items.items():
         
         # dropdown item to hover over in menu
-        parent_element: Locator = page.locator(f'a:has-text("{dropdown_text}"):visible')
+        parent_element: Locator = page.locator(f'.navbar-start >> a:has-text("{dropdown_text}"):visible')
 
         # hover to show elements
         parent_element.hover()
