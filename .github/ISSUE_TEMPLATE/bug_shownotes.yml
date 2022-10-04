@@ -16,19 +16,17 @@ body:
       label: URL
       description: URL where this was found
       placeholder: https://jupiterbroadcasting.com/
-  - type: checkboxes
+  - type: dropdown
+    id: issues
     attributes:
       label: Type(s) of Problems
       description: Which of these problems did you encounter?
+      multiple: true
       options:
-        - label: Typo
-          required: false
-        - label: Broken Link
-          required: false
-        - label: Sponsor
-          required: false
-        - label: Other
-          required: false
+        - Typo
+        - Broken Link
+        - Sponsor
+        - Other
   - type: textarea
     id: summary
     attributes:
