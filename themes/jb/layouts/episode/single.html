@@ -1,7 +1,3 @@
-{{ define "headcontent" }}
-  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
-{{end}}
-
 {{ define "main" }}
   {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }}
     {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .Title ) }}
