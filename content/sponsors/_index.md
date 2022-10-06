@@ -54,6 +54,6 @@ Tailscale - the easiest way to create a peer-to-peer network with the power of W
 [Tailscale.com/coder](https://tailscale.com/coder)
 
 
-System76 - Receive the Tinkerer’s Toolkit which includes an iFixit Minnow with your computer purchase until the supply of Tinkerer’s Toolkits runs out!
+System76 - The new Oryx Pro has a beautiful Samsung OLED 4k display and an insanely fast RAM upgrade from DDR4 to DDR5.
 
-[System76.com/specials](https://system76.com/specials)
+[System76.com/laptops/oryx](https://system76.com/laptops/oryx)
