@@ -63,7 +63,7 @@ draft = false
 
 [Tailscale.com/coder](https://tailscale.com/coder)
 
+**System76** - The new Oryx Pro has a beautiful Samsung OLED 4k display and an insanely fast RAM upgrade from DDR4 to DDR5.
 
 [System76.com/laptops/oryx](https://system76.com/laptops/oryx)
 
-**System76** - The new Oryx Pro has a beautiful Samsung OLED 4k display and an insanely fast RAM upgrade from DDR4 to DDR5.
