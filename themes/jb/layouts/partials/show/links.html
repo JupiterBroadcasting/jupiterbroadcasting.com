@@ -1,4 +1,11 @@
 <div class="level">
+
+  <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `subscribe.md`).Permalink }}" title="subscribe">
+    <div class="title fa fa-bell-ringing-o fa-3x"><span class="sr-only">subscribe</span></div>
+  </a>
+  <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `/membership`).Permalink }}" title="support">
+    <div class="title fa fa-usd fa-3x"><span class="sr-only">support</span></div>
+  </a>
   {{with .Params.links}}
     {{ range $key, $value := . }}
       <a class="link level-item pr-3" target="_blank" href="{{$value.url}}" title="{{$key}}">
@@ -22,10 +29,4 @@
       </a>
     {{ end }}
   {{end}}
-  <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `subscribe.md`).Permalink }}" title="subscribe">
-      <div class="title fa fa-bell-ringing-o fa-3x"><span class="sr-only">subscribe</span></div>
-  </a>
-  <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `/membership`).Permalink }}" title="support">
-      <div class="title fa fa-usd fa-3x"><span class="sr-only">support</span></div>
-  </a>
 </div>
