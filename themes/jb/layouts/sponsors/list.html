@@ -7,7 +7,7 @@
                 {{range where .Site.Sections "Title" "Shows" -}}
                     {{- range .Pages -}}
                         {{- $show_sponsors := slice -}}
-                        {{- range (where (where .Pages "Type" "episode") "Date" "ge" (now.AddDate 0 0 -30)) -}}
+                        {{- range (where (where .Pages "Type" "episode") "Date" "ge" (now.AddDate 0 0 (int $.Site.Params.Sponsors.lookbackdays) )) -}}
                             {{- $show_sponsors = $show_sponsors | append .Params.Sponsors -}}
                         {{- end -}}
                         {{ if $show_sponsors -}}
@@ -21,27 +21,5 @@
                 {{- end -}}
             </div>  
         </div>
-        <hr>
-        <div class="container">
-            <div class="column is-full content">
-                <h1 class="title">Sponsors</h1>
-                <h4>We have many sponsors we love who support each show, and we hope you’ll enjoy them too:</h4>
-                {{range where .Site.Sections "Title" "Shows" -}}
-                    {{- range .Pages -}}
-                        {{- $show_sponsors := slice -}}
-                        {{- range where .Pages "Type" "episode" | first 5 -}}
-                            {{- $show_sponsors = $show_sponsors | append .Params.Sponsors -}}
-                        {{- end -}}
-                        {{ if $show_sponsors -}}
-                            <h2>{{ .Title }}</h2>
-                        {{ end }}
-                        {{- range uniq ($show_sponsors) -}}
-                            {{- $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 -}}
-                                {{ partial "sponsor/medium.html" $sponsor }}
-                        {{- end -}}
-                    {{- end -}}
-                {{- end -}}
-            </div>  
-        </div>  
     </section>  
 {{ end }}
