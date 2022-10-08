@@ -12,8 +12,6 @@ active = true
 
 header_image = "/images/shows/linux-unplugged.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "g40Um-HP1"
 
 [links.twitter]
@@ -32,10 +30,6 @@ podverse_podcast_id = "g40Um-HP1"
   url="https://linuxunplugged.com/articles"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxVckkyK5dyyARdfjwGY-cw"
-[links.subscribe]
-  url="/show/linux-unplugged/subscribe/"
-[links.support]
-  url="/membership/"
 
 +++
 

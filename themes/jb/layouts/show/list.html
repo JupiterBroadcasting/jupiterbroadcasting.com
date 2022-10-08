@@ -39,9 +39,7 @@
     {{ if isset .Params "hosts" }}
       <div class="column is-half">
         {{.Content}}
-        {{with .Params.links}}
-            {{ partial "show/links.html" . }}
-        {{end}}
+        {{ partial "show/links.html" . }}
       </div>
       <div class="column is-half">
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>

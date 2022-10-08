@@ -12,8 +12,6 @@ active = true
 
 header_image = "/images/shows/linux-action-news.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "haAiVbD1N9"
 
 
@@ -27,10 +25,6 @@ podverse_podcast_id = "haAiVbD1N9"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxyaQeHQuMrDq94CT2ZZm9F"
 [links.matrix]
   url="https://matrix.to/#/#linux-action-news:matrix.org"
-[links.subscribe]
-  url="/show/linux-action-news/subscribe/"
-[links.support]
-  url="/membership/"
 
 +++
 

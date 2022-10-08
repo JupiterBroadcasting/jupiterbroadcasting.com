@@ -12,8 +12,6 @@ active = true
 
 header_image = "/images/shows/self-hosted.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "nUl1ZCL76"
 
 [links.discord]
@@ -32,10 +30,6 @@ podverse_podcast_id = "nUl1ZCL76"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
 [links.matrix]
   url="https://matrix.to/#/#self-hosted:matrix.org"
-[links.subscribe]
-  url="/show/self-hosted/subscribe/"
-[links.support]
-  url="/membership/"
 
 +++
 

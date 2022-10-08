@@ -12,8 +12,6 @@ active = true
 
 header_image = "/images/shows/jupiter-extras.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "0vaTwihG1R"
 
 [links.shownotes]
@@ -24,10 +22,6 @@ podverse_podcast_id = "0vaTwihG1R"
   url="https://twitter.com/jupiterextras"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegzkMxcqW0dslRJmumg6WrZi"
-[links.subscribe]
-  url="/show/jupiter-extras/subscribe/"
-[links.support]
-  url="/membership/"
 
 +++
 
