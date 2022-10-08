@@ -12,8 +12,6 @@ active = true
 
 header_image = "/images/shows/office-hours.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "GLuztlxs0-"
 
 [links.shownotes]
@@ -24,10 +22,6 @@ podverse_podcast_id = "GLuztlxs0-"
   url="https://twitter.com/ChrisLAS"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxr9-RTGmzRcDs7bqsI1rSP"
-[links.subscribe]
-  url="/show/office-hours/subscribe/"
-[links.support]
-  url="/membership/"
 
 +++
 
