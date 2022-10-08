@@ -28,8 +28,10 @@ podverse_podcast_id = "ZXd_1Ojd9"
   url="https://www.youtube.com/playlist?list=PLCB9545FD2C26E547"
 [links.matrix]
   url="https://matrix.to/#/#coder-radio:matrix.org"
-
-
+[links.subscribe]
+  url="/show/coder-radio/subscribe/"
+[links.support]
+  url="/membership/"
 
 +++
 

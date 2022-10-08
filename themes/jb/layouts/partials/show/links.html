@@ -15,6 +15,10 @@
         <div class="title fa fa-book fa-3x"><span class="sr-only">{{$key}}</span></div>
       {{ else if eq $key "blog" }}
         <div class="title fa fa-paragraph fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "subscribe" }}
+        <div class="title fa fa-bell-ringing-o fa-3x"><span class="sr-only">{{$key}}</span></div>
+      {{ else if eq $key "support" }}
+        <div class="title fa fa-usd fa-3x"><span class="sr-only">{{$key}}</span></div>
       {{ else }}
         <div class="title fa fa-{{$key}}-square fa-3x"><span class="sr-only">{{$key}}</span></div>
     {{ end }}

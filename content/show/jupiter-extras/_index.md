@@ -18,15 +18,17 @@ podverse_podcast_id = "0vaTwihG1R"
 
 [links.shownotes]
   url="https://extras.show"
-
 [links.email]
   url="https://extras.show/contact"
-
 [links.twitter]
   url="https://twitter.com/jupiterextras"
-
 [links.youtube]
-  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegzkMxcqW0dslRJmumg6WrZi"  
+  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegzkMxcqW0dslRJmumg6WrZi"
+[links.subscribe]
+  url="/show/jupiter-extras/subscribe/"
+[links.support]
+  url="/membership/"
+
 +++
 
 New ideas, great interviews, events, and other content you will love. We bring you the Extras.
