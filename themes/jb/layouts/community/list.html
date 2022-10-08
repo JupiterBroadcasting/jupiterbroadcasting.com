@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<h1 class="title is-size-2 pl-4">{{.Title}}</h1>
-<div class="section">
+<h1 class="title is-size-2 px-5">{{.Title}}</h1>
+<div class="section py-5">
   <div class="columns is-multiline">
     {{ range .Pages }}
-    <div class="column is-4 is-2-fullhd is-10-mobile">
+    <div class="column is-4 is-2-fullhd is-12-mobile">
       {{ partial "community/card.html" . }}
     </div>
     {{ end }}
