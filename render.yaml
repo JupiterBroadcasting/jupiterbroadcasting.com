@@ -1,6 +1,7 @@
 services:
 # A static site
   - type: web
+    plan: free
     name: jb-deploy-prv
     env: static
     buildCommand: hugo --minify --gc --baseURL '/'
