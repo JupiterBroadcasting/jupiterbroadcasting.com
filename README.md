@@ -44,7 +44,6 @@ When upgrading the hugo version these are the locations whicht it needs to be up
 
 * `Dockerfile`
 * `Dockerfile.dev`
-* `netlify.toml`
 
 Currently we're at hugo version `0.101.0`
 
