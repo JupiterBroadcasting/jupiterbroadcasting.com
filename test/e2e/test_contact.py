@@ -1,11 +1,9 @@
-import time
 from pathlib import Path
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page, FrameLocator, Locator
 
 
 def test_contact_screenshot(page: Page, screenshot_dir: Path):
-    page.goto("/contact")
-    page.pause()
+    page.goto("/contact", wait_until="networkidle")
     page.screenshot(path=f"{screenshot_dir}/contact.png", full_page=True)
 
 def test_submit_button_visible(page: Page, screenshot_dir: Path):
@@ -17,10 +15,9 @@ def test_submit_button_visible(page: Page, screenshot_dir: Path):
     page.wait_for_load_state("networkidle")
 
     # Scroll to the top (Page is current about 1400px)
-    page.mouse.wheel(0.0, -1500.0)
-    time.sleep(1) # Give time to scroll to the top
+    page.locator("h1").scroll_into_view_if_needed()
 
-    frame_height: float = float(page.get_attribute(selector="#contact-frame", name="height")) + page.locator(selector="#contact-frame").bounding_box().get("y")
+    frame_height: float = float(page.locator("#contact-frame").get_attribute("height")) + page.locator(selector="#contact-frame").bounding_box().get("y")
 
     button_location: dict = submit_button.bounding_box()
     if button_location is None:
