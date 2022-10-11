@@ -1,4 +1,5 @@
 <p style="max-width: 75ch;">
+    <!-- TODO: remove after ads are more mindful about website and no longer include the name of the sponsor as the first word of the description -->
     <strong>{{- .Title }}</strong> - {{ replaceRE (print "^" .Title "(?: is)? (.*)") "$1" .Params.description -}}
 </p>
 <p>
