@@ -4,6 +4,13 @@
             <div class="column is-full content">
                 <h1 class="title">Sponsors</h1>
                 <h4>We have many sponsors we love who support each show, and we hope you'll enjoy them too:</h4>
+                {{ if .Params.Sponsors -}}
+                    <h2>Jupiter Broadcasting</h2>
+                    {{- range .Params.Sponsors -}}
+                        {{- $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 -}}
+                            {{ partial "sponsor/medium.html" $sponsor }}
+                    {{- end -}}
+                {{ end }}
                 {{range where .Site.Sections "Title" "Shows" -}}
                     {{- range .Pages -}}
                         {{- $show_sponsors := slice -}}
