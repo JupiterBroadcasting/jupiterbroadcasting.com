@@ -6,7 +6,7 @@ draft = false
 categories = ["Self-Hosted"]
 show = "self-hosted"
 hosts = ["chris","alex"]
-
+sponsors = ["cloudfree.shop-ssh"]
 type = "show"
 active = true
 

@@ -14,12 +14,18 @@
                 {{range where .Site.Sections "Title" "Shows" -}}
                     {{- range .Pages -}}
                         {{- $show_sponsors := slice -}}
+                        {{- $show_sponsors_list := slice -}}
+                        {{- with . -}}
+                            {{- if .Params.Sponsors -}}
+                                {{- $show_sponsors_list = $show_sponsors_list | append .Params.Sponsors -}}
+                            {{- end -}}
+                        {{- end -}}
                         {{- range (where (where .Pages "Type" "episode") "Date" "ge" (now.AddDate 0 0 (int $.Site.Params.Sponsors.lookbackdays) )) -}}
-                            {{- $show_sponsors = $show_sponsors | append .Params.Sponsors -}}
+                            {{- $show_sponsors = $show_sponsors | append .Params.Sponsors  -}}
                         {{- end -}}
                         {{ if $show_sponsors -}}
                             <h2>{{ .Title }}</h2>
-                            {{- range uniq ($show_sponsors) -}}
+                            {{- range uniq ($show_sponsors | append $show_sponsors_list) -}}
                                 {{- $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 -}}
                                     {{ partial "sponsor/medium.html" $sponsor }}
                             {{- end -}}
