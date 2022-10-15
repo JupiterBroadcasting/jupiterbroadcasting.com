@@ -12,21 +12,17 @@ active = true
 
 header_image = "/images/shows/office-hours.png"
 
-support_link = "/membership"
-
 podverse_podcast_id = "GLuztlxs0-"
 
 [links.shownotes]
   url="https://www.officehours.hair"
-
 [links.email]
   url="/contact"
-
 [links.twitter]
   url="https://twitter.com/ChrisLAS"
-
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxr9-RTGmzRcDs7bqsI1rSP"
+
 +++
 
 A podcast for the community of Jupiter Broadcasting, the Open Source media powerhouse of the Internet. Get the inside scope on our projects, the future of independent media, and decentralized community.
