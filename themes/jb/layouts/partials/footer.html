@@ -8,7 +8,7 @@
             </a>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.left.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.left.headline }}</h4>
             <ul>
               {{ range where site.RegularPages "Section" "community" }}
                   {{ $link := "" }}
@@ -26,7 +26,7 @@
             </ul>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.center.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.center.headline }}</h4>
             <ul>
               {{ range .Site.Menus.footercenter }}
                 <li>
@@ -42,7 +42,7 @@
             </ul>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.right.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.right.headline }}</h4>
             <ul>
               {{ range .Site.Menus.footerright }}
                 <li>
