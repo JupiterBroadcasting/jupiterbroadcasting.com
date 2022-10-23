@@ -18,10 +18,10 @@
 {{ if eq $lastUrlElement "subscribe" }}
 
   <div class="column">
-    <p class="mb-2">Get the latest episodes of {{ $show_page.Title }} automatically using the links above, or by copying and pasting the URL below into your favorite podcast app:</p>
+    <p class="mb-2">Get the latest episodes of {{ $show_page.Title }} automatically by copying and pasting the URL below into your favorite podcast app:</p>
     <a href="{{ .Params.rss }}" class="mb-5 button is-dark">{{ $show_page.Title }}'s RSS Feed</a>
     {{ with .Params.direct_links }}
-      <p>You can also subscribe with your favorite app directly, using the buttons below:</p>
+      <p>You can also subscribe with your favorite app directly using the buttons below:</p>
       <div class="is-flex is-flex-wrap-wrap is-justify-content-flex-start is-align-content-center">
       {{ $icons_map := $.Site.Data.podcast_player }}
       {{ range $key, $value := . }}

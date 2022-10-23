@@ -20,12 +20,3 @@ body:
       description: Describe the issue you encountered. Feel free to throw in screenshots and/or screencasts if helpful (they always are!)
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Contributing
-      description: Please read our [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md) before submitting an issue.
-      options:
-        - label: I have read through the [Contributing Guidelines](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/blob/main/CONTRIBUTING.md)
-          required: true
-#         - label: I have read and accept the [Code of Conduct](https://docs.github.com/articles/github-community-guidelines)
-#           required: true
