@@ -30,7 +30,7 @@ jobs:
       - name: Run your tests
         working-directory: ./test/
         # https://github.com/actions/runner/issues/241#issuecomment-577360161
-        run: script -e -c "docker-compose exec testing pytest -m "not periodic" --base-url http://jb-com --junitxml report.xml"
+        run: script -e -c "docker-compose exec testing pytest -m 'not periodic' --base-url http://jb-com --junitxml report.xml"
 
       - name: Save screenshots
         uses: actions/upload-artifact@v2
