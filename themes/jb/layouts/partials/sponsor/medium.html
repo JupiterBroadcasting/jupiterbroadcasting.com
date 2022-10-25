@@ -1,0 +1,8 @@
+<p>
+    <!-- TODO: remove after ads are more mindful about website and no longer include the name of the sponsor as the first word of the description -->
+    <strong>{{- .Title }}</strong> - {{ replaceRE (print "^" .Title "(?: is)? (.*)") "$1" .Params.description -}}
+</p>
+<p>
+    {{- $url := urls.Parse .Params.link -}}
+    <a href="{{ .Params.link }}">{{ if findRE "^www\\.(.*)" $url.Host }}{{ $url.Host }}{{else}}{{ $url.Host | title }}{{ end }}{{ if ne $url.Path "/" }}{{- $url.Path -}}{{- end -}}</a>
+</p>

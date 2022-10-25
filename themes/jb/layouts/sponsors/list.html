@@ -1,0 +1,39 @@
+{{ define "main" }}
+    <section class="spnosor-list px-4 mb-5">
+        <div class="container">
+            <div class="column is-full content">
+                <h1 class="title">Sponsors</h1>
+                <h4>We have many sponsors we love who support each show, and we hope you'll enjoy them too:</h4>
+                {{- $sponsor_pages := where site.Pages "Section" "sponsors" -}}
+                {{ if .Params.Sponsors -}}
+                    <h2>Jupiter Broadcasting</h2>
+                    {{- range .Params.Sponsors -}}
+                        {{- $sponsor := index (where $sponsor_pages "Params.shortname" .) 0 -}}
+                            {{ partial "sponsor/medium.html" $sponsor }}
+                    {{- end -}}
+                {{ end }}
+                {{range where .Site.Sections "Title" "Shows" -}}
+                    {{- range .Pages -}}
+                        {{- $show_sponsors := slice -}}
+                        {{- $show_sponsors_list := slice -}}
+                        {{- with . -}}
+                            {{- if .Params.Sponsors -}}
+                                {{- $show_sponsors_list = $show_sponsors_list | append .Params.Sponsors -}}
+                            {{- end -}}
+                        {{- end -}}
+                        {{- range (where (where .Pages "Type" "episode") "Date" "ge" (now.AddDate 0 0 (int $.Site.Params.Sponsors.lookbackdays) )) -}}
+                            {{- $show_sponsors = $show_sponsors | append .Params.Sponsors  -}}
+                        {{- end -}}
+                        {{ if $show_sponsors -}}
+                            <h2>{{ .Title }}</h2>
+                            {{- range uniq ($show_sponsors | append $show_sponsors_list) -}}
+                                {{- $sponsor := index (where $sponsor_pages "Params.shortname" .) 0 -}}
+                                    {{ partial "sponsor/medium.html" $sponsor }}
+                            {{- end -}}
+                        {{ end }}
+                    {{- end -}}
+                {{- end -}}
+            </div>
+        </div>
+    </section>
+{{ end }}
