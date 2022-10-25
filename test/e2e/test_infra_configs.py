@@ -1,16 +1,20 @@
-from json import loads as j_loads
-from pytest import mark
-from playwright.sync_api import Page
+from playwright.sync_api import APIRequestContext
 
-@mark.skip(reason="currently failing, and troubleshooting in #383")
-def test_matrix_well_known(page: Page):
-    contents = page.goto("/.well-known/matrix/server").text()
-    
-    well_known_structure = {
-        "m.server": "colony.jupiterbroadcasting.com:443"
+
+def test_matrix_well_known(
+    api_request_context: APIRequestContext,
+):
+    well_known_folder = "/.well-known/matrix"
+    well_known_types = {
+        "client": {
+            "m.homeserver": {"base_url": "https://colony.jupiterbroadcasting.com"}
+        },
+        "server": {"m.server": "colony.jupiterbroadcasting.com:443"},
     }
 
-    if j_loads(contents) == well_known_structure:
-        assert True
-    else:
-        assert False
+    for well_known_key, well_known_data in well_known_types.items():
+        response = api_request_context.get(f"{well_known_folder}/{well_known_key}")
+
+        assert response.ok, "200-299 status code"
+        assert response.body() != "", "response is not empty"
+        assert response.json() == well_known_data, "expected reponse for JB matrix"

@@ -1,0 +1,92 @@
+name: Building Prod Container
+
+# built with the following guides/examples:
+# - https://github.com/marketplace/actions/push-to-registry#examples
+# - https://github.com/marketplace/actions/buildah-build#building-using-containerfiles
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    # don't re-build prod when there's only test changes
+    paths-ignore:
+      - ./Dockerfile.tests
+      - "./tests/**"
+
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: ["Scrape and commit"]
+    types:
+      - completed
+
+jobs:
+  # this sets up some variables so the next job can use them for tags
+  env_setup:
+    runs-on: ubuntu-latest
+    outputs:
+      date_output: ${{ steps.date.outputs.date_fmt }}
+      registry_user: ${{ steps.registry_user.outputs.username }}
+      current_branch: ${{ steps.current_branch.outputs.current_branch }}
+    steps:
+      # used for tagging the container with the current date down to the seconds
+      #   since we have so many changes down to the seconds was required. Example: 2022-09-08T05_42_23-04_00
+      - id: date
+        run: echo "::set-output name=date_fmt::$(date -Isec | tr ':' '_' | tr '+' '-' )"
+      # the username for the quay registry, since it can be derived from the quay secret's robot username
+      - id: registry_user
+        run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+      - id: current_branch
+        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_REF_NAME:-}" )"
+
+  prod:
+    strategy:
+      # this causes containers to be built at the same time
+      matrix:
+        # these 2 containers are being built seperately because they need to have different --baseURL parameters
+        container_env:
+          # the tests_web one needs to have --baseURL='/', this allows the tests to run from any domain and allows
+          #   it to be relative off of that domain. i.e. http://jb.io is the base domain, and they'll all be off of it's root path
+          - 'TESTS_WEB'
+          # this is the normal production site being built and versioned
+          - 'PROD'
+    runs-on: ubuntu-latest
+    # requires the previous job to complete before attempting to run this job
+    needs: env_setup
+    # location where the credentials are stored for quay
+    environment: production_containers
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Building container image
+        id: build-image
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: jb_web_container
+          # tagging with 2 different tags, this will let us have a consistent target of prod-latest or tests_web-latest,
+          #   but still allow us to properly version each build of the containers (with the current time). This double
+          #   tagging strategy will allow us to rollback changes on the prod environment if something goes awry
+          # example location as to where to change that in prod's ansible IaC
+          # https://github.com/JupiterBroadcasting/infra/blob/3b9490a46119ffdc70018b2ac8315346d947a06d/ansible/group_vars/core.yaml#L517
+          # tag example: prod-latest, prod-develop-latest, prod-develop-2022-09-12t23_15_22-04_00, or prod-2022-09-12t23_15_22-04_00
+          tags: ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-latest ${{ matrix.container_env }}${{ needs.env_setup.outputs.current_branch }}-${{ needs.env_setup.outputs.date_output }}
+          # prod docker container docker file
+          containerfiles: |
+            ./Dockerfile
+          # changes the build base URL based on the name passed into this build arguement
+          build-args: |
+            BASE_URL=${{ matrix.container_env }}
+
+      - name: Push To quay.io
+        id: push-to-quay
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          image: ${{ steps.build-image.outputs.image }}
+          tags: ${{ steps.build-image.outputs.tags }}
+          registry: quay.io/${{ needs.env_setup.outputs.registry_user }}
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Print image url
+        run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
