@@ -5,15 +5,25 @@ from urllib.parse import urlparse
 from pytest import fixture, mark
 from playwright.sync_api import Page, expect, Locator
 
-# allows this to be run for every test in this file,
-#   without it needing to specify it
+
+"""
+Code here will run for every test in this file
+"""
 @fixture(autouse=True)
 def setup(page: Page):
     page.goto("/")
 
+
+"""
+Take a screenshot of the home page for manual review
+"""
 def test_homepage_screenshot(page: Page, screenshot_dir: Path):
     page.screenshot(path=f"{screenshot_dir}/home.png", full_page=True)
 
+
+"""
+Ensure the large logo and text underneath it is visible on the screen
+"""
 def test_homepage_has_logo(page: Page):
     logo = page.locator(".logo")
     expect(logo).to_be_visible()
@@ -21,6 +31,10 @@ def test_homepage_has_logo(page: Page):
     logo_subtitle = page.locator('.subtitle')
     expect(logo_subtitle).to_contain_text('Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News')
 
+
+"""
+Ensure the pagination loads different episodes
+"""
 def test_pagination(page: Page):
     first_card = page.locator('.card').nth(0).text_content
     page_2_button = page.locator('[aria-label="pagination"] >> text=2')
@@ -30,15 +44,23 @@ def test_pagination(page: Page):
     first_card_second_page = page.locator('.card').nth(0).text_content
     assert first_card != first_card_second_page
 
+
+"""
+Ensure the RSS feeds menu contains all the fields specified in the conftest file
+"""
 def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
     for rss_feed in expected_rss_feeds:
         element = page.locator('#rss-feeds-menu > div > a[href^="{}"]'.format(rss_feed['href']))
         expect(element).to_contain_text(rss_feed['title'])
 
 
+"""
+Tests dropdowns to make sure the dropdown items have links, and all items specified in conftest are present
+"""
+@mark.dev
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
     for dropdown_text, child_elements in expected_dropdown_items.items():
-        
+
         # dropdown item to hover over in menu
         parent_element: Locator = page.locator(f'.navbar-start >> a:has-text("{dropdown_text}"):visible')
 
@@ -65,7 +87,9 @@ def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,s
             expect(item).to_be_visible()
 
 
-
+"""
+Test main navigation items
+"""
 def test_nav(page: Page, expected_dropdowns, expect_nav_items):
 
     nav = page.locator('#mainnavigation')

@@ -1,6 +1,10 @@
 from playwright.sync_api import APIRequestContext
 
 
+"""
+Check to make sure the files required for matrix federation and name resolution
+are present and contain necessary details
+"""
 def test_matrix_well_known(
     api_request_context: APIRequestContext,
 ):

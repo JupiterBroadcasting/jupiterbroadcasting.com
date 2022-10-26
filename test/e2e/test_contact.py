@@ -1,11 +1,20 @@
 from pathlib import Path
+from pytest import fixture
 from playwright.sync_api import Page, FrameLocator, Locator
+
+
+"""
+Code here will run for every test in this file
+"""
+@fixture(autouse=True)
+def setup(page: Page):
+    page.goto("/contact")
+
 
 """
 Take a screenshot of the contact page for manual review
 """
 def test_contact_screenshot(page: Page, screenshot_dir: Path):
-    page.goto("/contact", wait_until="networkidle")
     page.screenshot(path=f"{screenshot_dir}/contact.png", full_page=True)
 
 """
@@ -20,7 +29,6 @@ Steps:
   5. Pass if the distance from the bottom of the iframe is greater than the distance to the bottom of the button in the iframe (ie. the button can be seen)
 """
 def test_submit_button_visible(page: Page, screenshot_dir: Path):
-    page.goto("/contact")
     contact_form: FrameLocator = page.frame_locator('#contact-frame')
     submit_button: Locator = contact_form.locator("#saveForm")
 
