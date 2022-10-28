@@ -1,5 +1,7 @@
 # JupiterBroadcasting.com, et al. Websites
 
+![Test Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/e2e.yml/badge.svg) ![Deploy Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/deploy-prod.yml/badge.svg) ![Scraping Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/scrape.yml/badge.svg) 
+
 ## Repo here includes issue tracking for:
   * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
   * [LINUX Unplugged](https://linuxunplugged.com/)
@@ -36,9 +38,9 @@ This will build the site (all 28000+ pages) and takes anywhere from 30s - 5 minu
 
 #### Deployment
 
-Deployment is done with Github Actions, see workflow file in `.github/workflows/main.yml`
+Deployment is done with Github Actions, see workflow file in `.github/workflows/deploy-prod.yml`
 At the moment it is only triggered when something in the `main` branch is changing, but it can also be set up to run at certain times.
-This would also enable scheduled publishing, since Hugo per default only builds pages which have set `date` in frontmatter to <= `now`
+This would also enable scheduled publishing, since Hugo per default only builds pages which have set `date` in frontmatter to <= `now`.
 
 When upgrading the hugo version these are the locations whicht it needs to be updated at:
 
