@@ -1,9 +1,22 @@
-<!-- Meta Ttitles -->
-<title itemprop="name">{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
+<!-- Meta Titles -->
+{{- $titleMeta := .Site.Title -}}
+{{- if .Title -}}
+    {{ if and 
+        (and (isset .Params `show_name`) (isset .Params `episode`)) 
+        (ne .Title (print .CurrentSection.Title ` ` .Params.episode))
+    -}}
+        {{/* for all other shows */ -}}
+        {{- $titleMeta = (printf `%s | %s %v | %s` .Title .Params.show_name .Params.episode .Site.Title) -}}
+    {{ else -}}
+        {{/* covers LAN and any page that does not have a show name or episode */ -}}
+        {{- $titleMeta = (printf `%s | %s` .Title .Site.Title) -}}
+    {{ end -}}
+{{ end -}}
+<title itemprop="name">{{ $titleMeta }}</title>
+<meta property="og:title" content="{{ $titleMeta }}" />
+<meta name="twitter:title" content="{{ $titleMeta }}" />
+<meta itemprop="name" content="{{ $titleMeta }}" />
+<meta name="application-name" content="{{ $titleMeta }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Meta Description -->
