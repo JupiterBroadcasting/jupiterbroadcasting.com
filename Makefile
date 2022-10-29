@@ -21,6 +21,7 @@ dev-metrics: dev-build ## Run the development hugo container with metrics
 deploy-prod: ## Deploy everything to production
 	docker build -t jb-jbcom .
 	docker-compose -f ~/docker-compose.yml up -d jb-jbcom
+	# docker-compose.yml located on the production host, not within this repo.
 	docker image prune -af
 
 tests: ## Run the test suite
