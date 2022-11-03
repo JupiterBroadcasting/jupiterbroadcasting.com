@@ -2,7 +2,7 @@ name: Periodic Tests
 
 on:
   schedule:
-    - 0 0 * * 0 # Weekly (At 00:00 on Sunday)
+      - 0 12 * * 0 # Noon on Sunday UTC
   workflow_dispatch:
 
 jobs:
@@ -29,7 +29,6 @@ jobs:
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
-        # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
         with:
           name: Periodic Tests
           path: './report.xml'
