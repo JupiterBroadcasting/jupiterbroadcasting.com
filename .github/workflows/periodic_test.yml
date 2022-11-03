@@ -1,17 +1,12 @@
-name: E2E Tests
+name: Periodic Tests
 
 on:
-
-  pull_request:
-  push:
-    branches:
-      - main
-      - develop
-  # Allows you to run this workflow manually from the Actions tab
+  schedule:
+      - 0 12 * * 0 # Noon on Sunday UTC
   workflow_dispatch:
 
 jobs:
-  e2e-tests:
+  periodic-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,19 +25,11 @@ jobs:
       - name: Run your tests
         working-directory: ./test/
         # https://github.com/actions/runner/issues/241#issuecomment-577360161
-        run: script -e -c "docker-compose exec testing pytest -m 'not periodic' --base-url http://jb-com --junitxml report.xml"
-
-      - name: Save screenshots
-        uses: actions/upload-artifact@v2
-        with:
-          name: screenshots
-          path: screenshots/
+        run: script -e -c "docker-compose exec testing pytest -m periodic --base-url http://jb-com --junitxml report.xml"
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
-        # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
-        if: always() && github.event_name != 'pull_request'
         with:
-          name: E2E Tests
+          name: Periodic Tests
           path: './report.xml'
           reporter: java-junit

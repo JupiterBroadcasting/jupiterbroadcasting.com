@@ -1,6 +1,6 @@
 # JupiterBroadcasting.com, et al. Websites
 
-![Test Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/e2e.yml/badge.svg) ![Deploy Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/deploy-prod.yml/badge.svg) ![Scraping Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/scrape.yml/badge.svg) 
+![E2E Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/e2e.yml/badge.svg) ![Periodic Test Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/periodic_test.yml/badge.svg) ![Deploy Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/deploy-prod.yml/badge.svg) ![Scraping Status](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/actions/workflows/scrape.yml/badge.svg) 
 
 ## Repo here includes issue tracking for:
   * [JupiterBroadcasting.com](https://jupiterbroadcasting.com)
