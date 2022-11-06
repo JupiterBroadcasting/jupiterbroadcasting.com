@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/pages/hugo/hugo_extended:0.101.0 as builder
+FROM registry.gitlab.com/pages/hugo/hugo_extended:0.105.0 as builder
 # this defaults to an empty variable
 ARG BASE_URL
 WORKDIR /site
