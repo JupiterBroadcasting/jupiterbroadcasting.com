@@ -1,3 +1,4 @@
+from typing import Dict
 from pathlib import Path
 from pytest import fixture
 from playwright.sync_api import Page, FrameLocator, Locator
@@ -42,7 +43,7 @@ def test_submit_button_visible(page: Page, screenshot_dir: Path):
 
     # This is just a precautionary measure to ensure the submit button is on the screen it'll return None if it's not, and since here are more places that
     # use the value from the bounding_box's return ensuring it's not None
-    button_location: dict = submit_button.bounding_box()
+    button_location: Dict = submit_button.bounding_box()
     if button_location is None:
         assert False, "Submit Button is hidden"
     button_bottom: float = button_location.get("y") + button_location.get("height")
