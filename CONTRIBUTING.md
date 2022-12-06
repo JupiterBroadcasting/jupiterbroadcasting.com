@@ -57,6 +57,8 @@ Our base of operations for group discussions on this project is our Matrix chat 
 * ✅ Create a markdown checklist to indicate what's done and what's still missing ([see this example](https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/112)).
 * ⚙ If you are closing a specific issue we encourage you to use [Github's closing keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to automatically close the issue once the PR is merged.
 * 🚮 Feel free to delete your feature branch after it has been merged via the PR. There’s a handy button on the GitHub interface, and in the worst case they can be reverted easily.
+* 🎯 We currently use a `develop` branch as our default, so expect your PRs to target `develop` and not the otherwise standard `main` branch
+* 🚀 We've also integrate PR deploy previews for the current `develop` branch - see the Environment section of the repo's main page sidebar. All PRs also get their own unique deploy previews found as a comment under the respective PR.
 
 
 ### What is the stack used for the site?

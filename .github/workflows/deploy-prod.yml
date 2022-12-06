@@ -12,7 +12,8 @@ on:
   #   scraper will run and not commit anything, but after #215 is solved
   #   then it should only run after castablasta pushes a new episode
   workflow_run:
-    workflows: ["Scrape and commit"]
+    # putting the comment here to enable prod changes in the future to leverage the created containers
+    workflows: ["Scrape and commit"] #, "Building Prod Container"]
     types:
       - completed
 

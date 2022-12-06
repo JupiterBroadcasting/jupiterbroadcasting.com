@@ -3,3 +3,11 @@ public/
 .git/
 fireside-scraper
 scraped-data
+# ignoring when dockerfiles themselves
+Dockerfile*
+# ignoring all of tests directory
+#   container only needs dependencies, and tests are run during it's execution
+test/
+# allowing Pipfiles, since used in Dockerfile.tests
+!/test/Pipfile
+!/test/Pipfile.lock

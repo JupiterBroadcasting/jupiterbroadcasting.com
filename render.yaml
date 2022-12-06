@@ -1,0 +1,17 @@
+services:
+# A static site
+  - type: web
+    plan: starter
+    name: jb-deploy-prv
+    env: static
+    buildCommand: hugo --minify --gc --baseURL '/'
+    staticPublishPath: public/
+    pullRequestPreviewsEnabled: true
+    # should have auto deploy enabled by default
+    # autoDeploy: true
+    # might be something we look into for the future (i.e. GH actions don't need to trigger rebuild for deploy-preview)
+    # buildFilter:
+    #   paths:
+    #   - src/**/*.js
+    #   ignoredPaths:
+    #   - src/**/*.test.js
