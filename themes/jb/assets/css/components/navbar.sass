@@ -11,6 +11,18 @@ $navbar-dropdown-item-active-background-color: $background !default
 $navbar-new-dropdown-arrow: $text !default
 
 .navbar
+  &.isLive .navbar-burger:before
+    content: ''
+    height: 10px
+    width: 10px
+    background: red
+    border-radius: 100%
+    display: block
+    position: absolute
+    top: 14px
+    right: 14px
+    z-index: 99
+    pointer-events: none
   @each $name, $pair in $navbar-colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
