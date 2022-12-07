@@ -68,8 +68,7 @@ async function doLiveHighlight() {
         .then(response => response.text())
         .then(result => JSON.parse(result))
         .then(data => {if(data.total > 0)
-            document.getElementById("livebutton").style.backgroundColor = "red"
-            document.getElementById("mainnavigation").classList.add("isLive")
+            document.getElementById("mainnavigation").classList.add("is-live")
         })
         .catch(error => console.error('Error while fetching live URL!', error));
 }
