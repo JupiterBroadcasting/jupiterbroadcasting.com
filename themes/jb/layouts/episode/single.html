@@ -11,7 +11,7 @@
   <div class="container p-4">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
-        <li><a href="{{ .Section | safeURL | absURL }}">Shows</a></li>
+        <li><a href="{{ .Section | safeURL | absURL }}/">Shows</a></li>
         <li><a href="{{ .Parent.Permalink }}">{{ .Params.show_name }}</a></li>
         <li class="is-active"><a href="{{ .Permalink }}">{{ .Scratch.Get "fullTitle" }}</a></li>
       </ul>
