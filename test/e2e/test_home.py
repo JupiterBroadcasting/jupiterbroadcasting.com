@@ -49,7 +49,7 @@ def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,s
         # this is because Shows's url is show
         singular = dropdown_text.lower().rstrip('s')
         # test to make sure menu items hyperlink
-        expect(parent_element).to_have_attribute('href', f'/{singular}')
+        expect(parent_element).to_have_attribute('href', f'/{singular}/')
 
         # finds sibling element, which contains all the dropdown elements
         dropdown_elements: Locator = page.locator(f'a:has-text("{dropdown_text}") + .navbar-dropdown')
