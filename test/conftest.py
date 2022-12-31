@@ -1,9 +1,13 @@
 
 from pathlib import Path
-from typing import Dict, Generator, List
+from typing import Dict, Generator, List, Tuple, Callable
 from pytest import fixture
 from pytest_base_url.plugin import base_url
-from playwright.sync_api import Playwright, APIRequestContext
+from playwright.sync_api import Playwright, APIRequestContext, Route, Page
+
+@fixture
+def get_test_dir() -> Path:
+    return Path(__file__).parent.absolute()
 
 @fixture
 def screenshot_dir() -> Path:
@@ -96,3 +100,30 @@ def api_request_context(
     # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
     # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
     request_context.dispose()
+
+@fixture
+def get_live_event(get_test_dir: Path) -> str:
+    return Path(get_test_dir / 'fixture_files/jb-live_sample-live-event.json').read_text()
+
+@fixture
+def set_live(get_live_event: str) -> Tuple[Callable, str]:
+    return (replace_live_event,get_live_event)
+    # return replace_live_event
+
+@staticmethod
+def replace_live_event(page: Page, live_event: str) -> None:
+    def handle_route(route: Route) -> None:
+        # fetch original response
+        response = page.request.fetch(route.request)
+
+        # setting live event
+        route.fulfill(
+            # Pass all fields from the response
+            response=response,
+            # override body
+            body=live_event.strip()
+        )
+    page.route(
+        "https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt",
+        handle_route
+    )
