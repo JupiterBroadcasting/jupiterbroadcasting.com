@@ -21,7 +21,6 @@ def test_live_indicator(
         value="rgb(255, 0, 0)",  # red
     )
 
-@mark.dev
 def test_mobile_live_indicator(
     mobile_device: Page,
     set_live: Tuple[Callable, str],
