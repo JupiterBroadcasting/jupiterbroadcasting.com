@@ -2,8 +2,9 @@
 from pathlib import Path
 from typing import Dict, Generator, List, Tuple, Callable
 from pytest import fixture
+from _pytest.fixtures import SubRequest
 from pytest_base_url.plugin import base_url
-from playwright.sync_api import Playwright, APIRequestContext, Route, Page
+from playwright.sync_api import Playwright, APIRequestContext, Route, Page, Browser
 
 @fixture
 def get_test_dir() -> Path:
@@ -12,6 +13,53 @@ def get_test_dir() -> Path:
 @fixture
 def screenshot_dir() -> Path:
     return Path('screenshots/')
+
+# identified all possible device types by running the following in a
+#   python interpreter + shell commands
+"""
+# python interpreter
+with sync_playwright() as playwright:
+    Path('./devices.json').write_text(j_dumps(playwright.devices, indent=2))
+
+# shell cmd
+jq '. | keys' devices.json| less
+"""
+# also should be able to view them here:
+# https://github.com/microsoft/playwright/blob/v1.25.2/packages/playwright-core/src/server/deviceDescriptorsSource.json
+@fixture(
+    # doing session so it doesn't have to be re-created for each usage
+    scope="session",
+    # some example phone sizes to use
+    params=[
+        "iPhone 13",
+        # "Pixel 5",
+        # "Galaxy S9+",
+    ]
+)
+def mobile_device(
+    # how to access the params
+    request: SubRequest,
+    # browser object given by playwright built-in fixture
+    browser: Browser,
+    # Playwright object given by playwright built-in fixture
+    playwright: Playwright,
+    # from the pytest-base-url plugin Playwright installs (automatically)
+    #   so we're not having to hard-code the URL
+    base_url: base_url,
+) -> Page:
+    
+    # based on here: https://playwright.dev/python/docs/emulation#devices
+    context = browser.new_context(
+        base_url=base_url,
+        # based on this info: https://playwright.dev/python/docs/emulation#devices
+        **playwright.devices[request.param]
+    )
+    # essentially a "return", but used with generators
+    yield context.new_page()
+    # supposed to get rid of coookies/other stored info after generator is done
+    # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
+    # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
+    context.close()
 
 @fixture
 def expected_rss_feeds() -> List[Dict[str,str,]]:

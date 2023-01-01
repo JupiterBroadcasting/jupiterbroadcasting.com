@@ -20,3 +20,19 @@ def test_live_indicator(
         name="background-color",
         value="rgb(255, 0, 0)",  # red
     )
+
+@mark.dev
+def test_mobile_live_indicator(
+    mobile_device: Page,
+    set_live: Tuple[Callable, str],
+):
+    # explicitly defining tuple objects for clarity
+    replace_live_event: Callable = set_live[0]
+    live_event: str = set_live[1]
+
+    # intercepting reponses for live event
+    replace_live_event(mobile_device, live_event)
+
+    mobile_device.goto("/live")
+
+    assert False
