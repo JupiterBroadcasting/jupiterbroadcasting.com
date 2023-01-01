@@ -54,12 +54,16 @@ def mobile_device(
         # based on this info: https://playwright.dev/python/docs/emulation#devices
         **playwright.devices[request.param]
     )
-    # essentially a "return", but used with generators
-    yield context.new_page()
-    # supposed to get rid of coookies/other stored info after generator is done
-    # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
-    # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
-    context.close()
+    try:
+        # essentially a "return", but used with generators
+        yield context.new_page()
+    except Exception as excpt:
+        raise excpt
+    finally:
+        # supposed to get rid of coookies/other stored info after generator is done
+        # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
+        # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
+        context.close()
 
 @fixture
 def expected_rss_feeds() -> List[Dict[str,str,]]:
