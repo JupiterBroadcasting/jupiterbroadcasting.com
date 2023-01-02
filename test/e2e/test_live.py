@@ -1,36 +1,56 @@
+from pathlib import Path
 from typing import Tuple, Callable
-from pytest import mark
-from playwright.sync_api import Page, expect, Locator
+from playwright.sync_api import Page, expect, Locator, FrameLocator
 
 
 def test_live_indicator(
     page: Page,
     set_live: Tuple[Callable, str],
+    screenshot_dir: Path,
 ):
     # explicitly defining tuple objects for clarity
     replace_live_event: Callable = set_live[0]
     live_event: str = set_live[1]
 
-    # intercepting reponses for live event
+    # intercepting reponses for live event, and make live
     replace_live_event(page, live_event)
 
+    # go to the live page
     page.goto("/live")
 
+    # validate live button is red
     expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
         name="background-color",
         value="rgb(255, 0, 0)",  # red
     )
 
+    # waiting for peertube iframe to load
+    jbtube_video: FrameLocator = page.frame_locator("#liveStream")
+    video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
+    expect(video_player_peertube_icon).to_be_visible()
+
+    page.evaluate("window.scrollTo(0, 0)")
+
+    page.screenshot(path=f"{screenshot_dir}/live.png", full_page=True)
+
 
 def test_mobile_live_indicator(
-    mobile_device: Page,
+    mobile_device_tuple: Tuple[Page, str],
     set_live: Tuple[Callable, str],
+    screenshot_dir: Path,
 ):
     # explicitly defining tuple objects for clarity
     replace_live_event: Callable = set_live[0]
     live_event: str = set_live[1]
 
-    # intercepting reponses for live event
+    # set mobile page to variable
+    mobile_device = mobile_device_tuple[0]
+    # set screenshot dir for mobile device
+    screenshot_dir = Path(
+        screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
+    )
+
+    # intercepting reponses for live event, and make live
     replace_live_event(mobile_device, live_event)
 
     mobile_device.goto("/live")
@@ -53,6 +73,16 @@ def test_mobile_live_indicator(
         == "rgb(255, 0, 0)"
     )
 
+    # waiting for peertube iframe to load
+    jbtube_video: FrameLocator = mobile_device.frame_locator("#liveStream")
+    video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
+    expect(video_player_peertube_icon).to_be_visible()
+
+    mobile_device.evaluate("window.scrollTo(0, 0)")
+
+    mobile_device.screenshot(path=f"{screenshot_dir}/live-mobile.png", full_page=True)
+
+    # click navbar to expand
     navbar.click()
 
     # repeat test_live_indicator for mobile device
@@ -64,3 +94,7 @@ def test_mobile_live_indicator(
         name="background-color",
         value="rgb(255, 0, 0)",  # red
     )
+
+    mobile_device.locator("#mainnavigation").locator(
+        ".navbar-menu.is-active"
+    ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")

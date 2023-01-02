@@ -32,11 +32,11 @@ jq '. | keys' devices.json| less
     # some example phone sizes to use
     params=[
         "iPhone 13",
-        # "Pixel 5",
-        # "Galaxy S9+",
+        "Pixel 5",
+        "Galaxy S9+",
     ]
 )
-def mobile_device(
+def mobile_device_tuple(
     # how to access the params
     request: SubRequest,
     # browser object given by playwright built-in fixture
@@ -46,7 +46,7 @@ def mobile_device(
     # from the pytest-base-url plugin Playwright installs (automatically)
     #   so we're not having to hard-code the URL
     base_url: base_url,
-) -> Page:
+) -> Tuple[Page,str]:
     
     # based on here: https://playwright.dev/python/docs/emulation#devices
     context = browser.new_context(
@@ -56,7 +56,7 @@ def mobile_device(
     )
     try:
         # essentially a "return", but used with generators
-        yield context.new_page()
+        yield (context.new_page(), request.param)
     except Exception as excpt:
         raise excpt
     finally:
