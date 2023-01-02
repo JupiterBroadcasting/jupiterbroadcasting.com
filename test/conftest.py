@@ -65,6 +65,28 @@ def mobile_device_tuple(
         # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
         context.close()
 
+# https://playwright.dev/python/docs/api-testing#configure
+# used for doing similar requests to API calls
+@fixture(scope="session")
+def api_request_context(
+    # base playwright context/object
+    playwright: Playwright,
+    # from the pytest-base-url plugin Playwright installs (automatically)
+    #   so we're not having to hard-code the URL
+    base_url: base_url,
+    # Generator is returned based on Playwright docs
+) -> Generator[APIRequestContext, None, None]:
+    # creates APIRequestContext to allow requests to be made
+    #   using the base_url variable (from the plugin) to define
+    #   the base_url which'll allow requests relative to that base_url
+    request_context = playwright.request.new_context(base_url=base_url)
+    # essentially a "return", but used with generators
+    yield request_context
+    # supposed to get rid of coookies/other stored info after generator is done
+    # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
+    # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
+    request_context.dispose()
+
 @fixture
 def expected_rss_feeds() -> List[Dict[str,str,]]:
     return [
@@ -131,39 +153,17 @@ def expect_nav_items() -> List[Dict[str,str]]:
         {'title': 'Contact', 'href': '/contact'},
     ]
 
-# https://playwright.dev/python/docs/api-testing#configure
-# used for doing similar requests to API calls
-@fixture(scope="session")
-def api_request_context(
-    # base playwright context/object
-    playwright: Playwright,
-    # from the pytest-base-url plugin Playwright installs (automatically)
-    #   so we're not having to hard-code the URL
-    base_url: base_url,
-    # Generator is returned based on Playwright docs
-) -> Generator[APIRequestContext, None, None]:
-    # creates APIRequestContext to allow requests to be made
-    #   using the base_url variable (from the plugin) to define
-    #   the base_url which'll allow requests relative to that base_url
-    request_context = playwright.request.new_context(base_url=base_url)
-    # essentially a "return", but used with generators
-    yield request_context
-    # supposed to get rid of coookies/other stored info after generator is done
-    # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
-    # https://github.com/microsoft/playwright.dev/blob/d9b4a2f3bd0510ea89c87ed230b8241eb33b6688/python/docs/api-testing.mdx#writing-api-test
-    request_context.dispose()
-
 @fixture
 def get_live_event(get_test_dir: Path) -> str:
     return Path(get_test_dir / 'fixture_files/jb-live_sample-live-event.json').read_text()
 
 @fixture
 def set_live(get_live_event: str) -> Tuple[Callable, str]:
-    return (replace_live_event,get_live_event)
+    return (_replace_live_event,get_live_event)
     # return replace_live_event
 
 @staticmethod
-def replace_live_event(page: Page, live_event: str) -> None:
+def _replace_live_event(page: Page, live_event: str) -> None:
     def handle_route(route: Route) -> None:
         # fetch original response
         response = page.request.fetch(route.request)
