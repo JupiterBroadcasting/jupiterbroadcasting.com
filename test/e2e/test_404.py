@@ -8,7 +8,7 @@ Code here will run for every test in this file
 """
 @fixture(autouse=True)
 def setup(page: Page):
-    page.goto("/404.html")
+    page.goto("/404.html")  # TODO: Change to random address once #483 is merged
 
 
 """
