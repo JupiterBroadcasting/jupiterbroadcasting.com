@@ -1,0 +1,3297 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 500,
+        "text": " So, I wonder if anybody has any advice for me. I cannot open new Firefox windows."
+      },
+      {
+        "start": 500,
+        "stop": 800,
+        "text": " I'm allowed one Firefox window and that's it."
+      },
+      {
+        "start": 800,
+        "stop": 1100,
+        "text": " What? When did this happen?"
+      },
+      {
+        "start": 1100,
+        "stop": 1400,
+        "text": " It's been happening on the OBS machine for the last three days."
+      },
+      {
+        "start": 1400,
+        "stop": 1900,
+        "text": " And I've come up with this really crazy work around. But, for example, I'll just try to do it right now."
+      },
+      {
+        "start": 1900,
+        "stop": 2500,
+        "text": " When I try to run and open up a new Firefox window, I get the following error message."
+      },
+      {
+        "start": 2600,
+        "stop": 3600,
+        "text": " \"Maximum number of clients reached unable to init server. Could not connect. Connection refused. Error. Cannot open display colon zero.\""
+      },
+      {
+        "start": 3600,
+        "stop": 4200,
+        "text": " You know, I believe I could open up other windows, right? So, I can...oh, actually, no, I can't. Yeah, that's right."
+      },
+      {
+        "start": 4200,
+        "stop": 4800,
+        "text": " So, I can't open up anything. It's like I've reached my maximum number of windows and I cannot open them unless I reboot."
+      },
+      {
+        "start": 4900,
+        "stop": 5900,
+        "text": " But here's the thing that's weird is that if I go into Firefox and I do a new tab and I drag that tab off, essentially creating a new window, that works just fine."
+      },
+      {
+        "start": 5900,
+        "stop": 6200,
+        "text": " But I cannot open any new applications. I get that error message."
+      },
+      {
+        "start": 6200,
+        "stop": 6600,
+        "text": " I would have done that test exactly. That is interesting."
+      },
+      {
+        "start": 6600,
+        "stop": 7400,
+        "text": " This machine is...I don't know, I think it's based on...I think it might be an 18.04 install. We may have done a dist upgrade."
+      },
+      {
+        "start": 7500,
+        "stop": 8100,
+        "text": " If it's an 18.04, it would still be the Debian package, not the Snap one. That would have been my second guess."
+      },
+      {
+        "start": 8100,
+        "stop": 8800,
+        "text": " We're still full Bionic Beaver over here. We are pure, genuine Bionic Beaver 18.04."
+      },
+      {
+        "start": 8800,
+        "stop": 9400,
+        "text": " Just...you know, and I haven't actually even done any updates for the last couple of months because the thing's kind of been a little wonky."
+      },
+      {
+        "start": 9400,
+        "stop": 10100,
+        "text": " And it just started happening this Sunday. I came in to do LUP and it took me a half hour to get everything working."
+      },
+      {
+        "start": 10200,
+        "stop": 10800,
+        "text": " And I haven't rebooted since I got it working because I finally had it working after several reboots and a power off."
+      },
+      {
+        "start": 10800,
+        "stop": 11200,
+        "text": " But now...now...and I can't...see like if I try to launch K8."
+      },
+      {
+        "start": 11200,
+        "stop": 12000,
+        "text": " And I'm doing this at the terminal so that way I can see the error message because as an end user what you see is you click an icon, it looks like it's launching and then nothing happens."
+      },
+      {
+        "start": 12000,
+        "stop": 12600,
+        "text": " But if you actually run the command on the command line, you get that same output. I tried to run K8 just now."
+      },
+      {
+        "start": 12700,
+        "stop": 13500,
+        "text": " Maximum number of clients reached qpa.screen qxdbconnection could not connect to display colon zero. Could not connect to any X display."
+      },
+      {
+        "start": 13500,
+        "stop": 13900,
+        "text": " I mean obviously you can see the screen. X is working. I'm typing this in an X window."
+      },
+      {
+        "start": 13900,
+        "stop": 14600,
+        "text": " Have you once done a kill all on Firefox to have all processes killed of that Firefox?"
+      },
+      {
+        "start": 14600,
+        "stop": 15200,
+        "text": " No. My concern there would be that it would never come back. That I wouldn't be able to launch Firefox after that."
+      },
+      {
+        "start": 15300,
+        "stop": 15700,
+        "text": " And it sounds like a non Firefox specific issue since you're trying to launch K8 you're getting something similar."
+      },
+      {
+        "start": 15700,
+        "stop": 16200,
+        "text": " Right because it's K8 or anything. Yeah. I think if I tried to launch Dolphin..."
+      },
+      {
+        "start": 16200,
+        "stop": 16700,
+        "text": " This sounds like bad news Chris. Just in time maybe?"
+      },
+      {
+        "start": 16700,
+        "stop": 17500,
+        "text": " Maybe. We do have the new Thalia but it's in box and it's the holidays. I mean you know how busy things are. There's just...who has the time?"
+      },
+      {
+        "start": 17500,
+        "stop": 18000,
+        "text": " I would bet you a new OBS build because we're going to do it on Nyx too so it'll be the first time."
+      },
+      {
+        "start": 18100,
+        "stop": 19100,
+        "text": " Oh yes. If we're lucky a six hour project with probably two or three days of fine tuning little details in a mad dash during a live stream."
+      },
+      {
+        "start": 19100,
+        "stop": 19400,
+        "text": " And it'd just be so nice to just get through the holidays."
+      },
+      {
+        "start": 19400,
+        "stop": 19800,
+        "text": " Yeah right. It wouldn't be that simple. Come on."
+      },
+      {
+        "start": 19800,
+        "stop": 20300,
+        "text": " It's Office Hours with me Chris."
+      },
+      {
+        "start": 20700,
+        "stop": 21500,
+        "text": " Oh hello everybody. Welcome in dude. Episode 17 of the show I thought I'd kill by episode 10. And I thought I'd rename it by 16."
+      },
+      {
+        "start": 21500,
+        "stop": 21700,
+        "text": " We're happy you're here. Hello Brantley."
+      },
+      {
+        "start": 21700,
+        "stop": 22000,
+        "text": " Hello Chris. Hi. Wonderful intro. I love that."
+      },
+      {
+        "start": 22000,
+        "stop": 22200,
+        "text": " You doing good this week Brant?"
+      },
+      {
+        "start": 22200,
+        "stop": 22600,
+        "text": " I think I'm doing good. It's getting better. I mean you have this way of cheering me up."
+      },
+      {
+        "start": 22600,
+        "stop": 23100,
+        "text": " Oh okay. Well that's true. We do get in better moods when we hang out. That's probably a good sign."
+      },
+      {
+        "start": 23100,
+        "stop": 23400,
+        "text": " I think so. It seems to persist as well."
+      },
+      {
+        "start": 23500,
+        "stop": 23700,
+        "text": " I think we're social creatures. You and I even if we hate to admit it."
+      },
+      {
+        "start": 23700,
+        "stop": 24300,
+        "text": " I think more and more Americans are social creatures too. We'll get to that. I got some good news for podcasters out there."
+      },
+      {
+        "start": 24300,
+        "stop": 25000,
+        "text": " But first I want to say hello to our local buddies, our virtual lug. Hello Mumble Room time appropriate greetings."
+      },
+      {
+        "start": 25000,
+        "stop": 25200,
+        "text": " Hey guys."
+      },
+      {
+        "start": 25200,
+        "stop": 26000,
+        "text": " I'm curious. What would you all guess the percentage of Americans above the age of 13 that listen to podcasts is?"
+      },
+      {
+        "start": 26100,
+        "stop": 26500,
+        "text": " So Brant get a number in your head and if anybody in the Mumble Room has a guess, what is the percentage?"
+      },
+      {
+        "start": 26500,
+        "stop": 27300,
+        "text": " You know, keep expectations reasonable, right? Because there's probably not even 30% of Americans that watch football. Maybe. Maybe it's higher than that. I don't know."
+      },
+      {
+        "start": 27300,
+        "stop": 27500,
+        "text": " You mean soccer?"
+      },
+      {
+        "start": 27500,
+        "stop": 27700,
+        "text": " Yeah, right. Which one are you talking about?"
+      },
+      {
+        "start": 27700,
+        "stop": 27900,
+        "text": " And what is it like 60% of Americans go to church? Something like that? I don't know."
+      },
+      {
+        "start": 27900,
+        "stop": 28400,
+        "text": " And there's something like 30% of Americans have never flown. So, something like that."
+      },
+      {
+        "start": 28400,
+        "stop": 28600,
+        "text": " I feel like you're making these up."
+      },
+      {
+        "start": 28700,
+        "stop": 29100,
+        "text": " I know the flight one might be real. I don't know what all of them are. But these numbers, you can find them online. They're crazy."
+      },
+      {
+        "start": 29100,
+        "stop": 30100,
+        "text": " Anyways, what do you suppose, according to Edison Research, the average percentage of people listening to podcasts above the age of 13 every single day?"
+      },
+      {
+        "start": 30100,
+        "stop": 30300,
+        "text": " Minimak, do you have a guess?"
+      },
+      {
+        "start": 30300,
+        "stop": 30500,
+        "text": " Every single day you say?"
+      },
+      {
+        "start": 30500,
+        "stop": 30700,
+        "text": " Yeah, every single day."
+      },
+      {
+        "start": 30700,
+        "stop": 30900,
+        "text": " Oh, that's difficult."
+      },
+      {
+        "start": 31000,
+        "stop": 31900,
+        "text": " I would say quite high because everyone has a smartphone and they are aware now that these podcasts exist. But every single day, 40%."
+      },
+      {
+        "start": 31900,
+        "stop": 32100,
+        "text": " Oh, to me that feels high."
+      },
+      {
+        "start": 32100,
+        "stop": 32300,
+        "text": " That feels very high to me."
+      },
+      {
+        "start": 32300,
+        "stop": 32500,
+        "text": " I'm more in the couple of 20s."
+      },
+      {
+        "start": 32500,
+        "stop": 32700,
+        "text": " You'd say 20s, Dan?"
+      },
+      {
+        "start": 32700,
+        "stop": 32900,
+        "text": " Yeah, a couple of 20s."
+      },
+      {
+        "start": 32900,
+        "stop": 33900,
+        "text": " Okay, all right. Low 20s. All right, Brantley, what is your guess? If you're going to say the above age 13 average person in America listening to every single day, what is that percentage?"
+      },
+      {
+        "start": 33900,
+        "stop": 34000,
+        "text": " What is that chunk?"
+      },
+      {
+        "start": 34000,
+        "stop": 35200,
+        "text": " You know, I would have given a different percentage had you not said every day, but I feel like every day is quite the pattern. So I'm going to put it at, I'm going with 13%."
+      },
+      {
+        "start": 35200,
+        "stop": 36200,
+        "text": " Well, you're pretty dang close. It is 18% of people in the US above the age of 13. And it's been climbing, according to Edison Research, pretty consistently."
+      },
+      {
+        "start": 36300,
+        "stop": 37400,
+        "text": " In 2014, it was 5%. In 2018, it was 9%. And in Q3 of 2022, it's trending to 18% of people. How about that?"
+      },
+      {
+        "start": 37400,
+        "stop": 38000,
+        "text": " More people than ever are listening to podcasts, which means maybe there's not too many podcasts."
+      },
+      {
+        "start": 38000,
+        "stop": 39100,
+        "text": " I would be interested in seeing the diversity. Is like 10% of that listening to the same 30 podcasts?"
+      },
+      {
+        "start": 39200,
+        "stop": 39300,
+        "text": " I would be super curious to see that."
+      },
+      {
+        "start": 39300,
+        "stop": 39800,
+        "text": " Yeah, probably 10% of those are listening to NPR. No, I'm sure that's just a state's phenomenon."
+      },
+      {
+        "start": 39800,
+        "stop": 40000,
+        "text": " At least 5% to Rogan, right?"
+      },
+      {
+        "start": 40000,
+        "stop": 40200,
+        "text": " Right, probably. Yeah."
+      },
+      {
+        "start": 40200,
+        "stop": 40400,
+        "text": " Are there weekly stats too?"
+      },
+      {
+        "start": 40400,
+        "stop": 40900,
+        "text": " You know, I don't know. This was something that, so I follow PodNews and this is something PodNews reported on."
+      },
+      {
+        "start": 40900,
+        "stop": 41600,
+        "text": " But you know what I'll do is I did see here that they linked to the actual Edison Research paper. So I'll go through that and I'll put a link in the show notes as well."
+      },
+      {
+        "start": 41700,
+        "stop": 42600,
+        "text": " That was the Edison Research like poll thing is they saw a 20% increase in the past year and over three times the reach since 2014."
+      },
+      {
+        "start": 42600,
+        "stop": 43200,
+        "text": " And that was like their big headline and that's what everybody ran with. But I'll put a link to the full thing in the notes."
+      },
+      {
+        "start": 43200,
+        "stop": 44000,
+        "text": " That included stories. I was so wrong. I pay you a beer if you come to Falls Center Bell. Is that a good? That would be cool, right?"
+      },
+      {
+        "start": 44100,
+        "stop": 44700,
+        "text": " That would be. Why do they got to do it in the winter though? I want to go over there like in the spring or the fall. The winter?"
+      },
+      {
+        "start": 44700,
+        "stop": 45000,
+        "text": " I mean the venues are cheaper, right? Aren't they?"
+      },
+      {
+        "start": 45000,
+        "stop": 45200,
+        "text": " That might be a factor."
+      },
+      {
+        "start": 45200,
+        "stop": 45500,
+        "text": " Yeah, it's a university so it's probably because school is out."
+      },
+      {
+        "start": 45500,
+        "stop": 46100,
+        "text": " Ah, yeah. Yeah. Yeah, I'm going to have to at some point and I think I'm going to have to replace Linux Fest Northwest."
+      },
+      {
+        "start": 46100,
+        "stop": 46900,
+        "text": " I just have a sinking feeling. I sent them email weeks ago. Other events like scale are already beginning to do their call for papers."
+      },
+      {
+        "start": 47000,
+        "stop": 47800,
+        "text": " And there's just nothing happening at a Linux Fest. Real shame. You know, because there hasn't been a Linux Fest since we went independent again."
+      },
+      {
+        "start": 47800,
+        "stop": 48700,
+        "text": " I would imagine the momentum that you build over years of putting an event on and the knowledge and expertise that comes with the people who stay involved year after year."
+      },
+      {
+        "start": 48700,
+        "stop": 49500,
+        "text": " If you take a break of like, what has it been, three years now? Then that just necessarily gets atrophied, I would imagine."
+      },
+      {
+        "start": 49600,
+        "stop": 50300,
+        "text": " Yeah, and maybe people move on in that time, you know, that we're responsible for organizing it or, heaven forbid, have passed on. Who knows?"
+      },
+      {
+        "start": 50300,
+        "stop": 51100,
+        "text": " I should really be thinking more near-term anyways. The Tuxes are coming up on Linux Unplugged and people have been asking about that."
+      },
+      {
+        "start": 51100,
+        "stop": 51700,
+        "text": " I wanted to have this like really dialed in before Halloween. And now here we are, it's almost Thanksgiving."
+      },
+      {
+        "start": 51700,
+        "stop": 52100,
+        "text": " I remember you talking about this in the summer. And then look at us now."
+      },
+      {
+        "start": 52200,
+        "stop": 53200,
+        "text": " And it's, you know, it's like there's just never really time for that. But I really would love, what I want, because I was thinking about this last night as I was taking a brief little walk."
+      },
+      {
+        "start": 53200,
+        "stop": 53900,
+        "text": " I thought, \"God, you know the way I could do the Tuxes the best possible way?\" Because these are like open source awards that we try to give out on Linux Unplugged."
+      },
+      {
+        "start": 53900,
+        "stop": 54500,
+        "text": " I would take a month off from all the shows and only work on the Tuxes."
+      },
+      {
+        "start": 54500,
+        "stop": 54700,
+        "text": " What? Really?"
+      },
+      {
+        "start": 54800,
+        "stop": 55400,
+        "text": " I would really like to do it. I'd really like to take it to the next level. I'd have to have somebody fill in for me and it's just not really possible."
+      },
+      {
+        "start": 55400,
+        "stop": 56000,
+        "text": " So then I thought, \"Well, really what I need is I need somebody out there who wants to just run the Tuxes or something that could really organize it.\""
+      },
+      {
+        "start": 56000,
+        "stop": 56900,
+        "text": " Because what we need, Wes and I, is we need to sit down with a show that's ready to go because what we're really trying to accomplish is a series of end-of-year shows."
+      },
+      {
+        "start": 56900,
+        "stop": 57400,
+        "text": " And ideally we want them as streamlined as possible because they're all getting produced around the same time."
+      },
+      {
+        "start": 57500,
+        "stop": 58000,
+        "text": " And so as modular as we could make that, so like somebody takes on this, somebody takes on that, somebody else."
+      },
+      {
+        "start": 58000,
+        "stop": 58800,
+        "text": " Imagine if we just sat down and the Tuxes were ready to go, the projects had been contacted, the votes had been tallied, the questions had been taken."
+      },
+      {
+        "start": 58800,
+        "stop": 59000,
+        "text": " I don't think it's going to happen though."
+      },
+      {
+        "start": 59000,
+        "stop": 60400,
+        "text": " Well, okay, let's just say hypothetically a magical fairy or person that we trust comes up and says, \"Hey, I got a month. I could do this. What do you need them to be doing?\""
+      },
+      {
+        "start": 60400,
+        "stop": 61300,
+        "text": " Job one is we've got to get the Q&A out to the audience as fast as possible for them to nominate their projects of the year and their distros of the year and all those things."
+      },
+      {
+        "start": 61300,
+        "stop": 61600,
+        "text": " We've got to review last year's results too, so we're ready to go with that. That's job one."
+      },
+      {
+        "start": 61600,
+        "stop": 62200,
+        "text": " And then job two would be to update the form, make any modifications, and then collate the results from that."
+      },
+      {
+        "start": 62200,
+        "stop": 62700,
+        "text": " Then whoever the winners are, that's the next job is they can contact the projects and let them know."
+      },
+      {
+        "start": 62800,
+        "stop": 64100,
+        "text": " So if we put it all together, a summation in a doc that says, \"The best desktop environment this year with runner-up, runner-up winner, number of votes,\" those kinds of details that we always do, it's a lot."
+      },
+      {
+        "start": 64100,
+        "stop": 64300,
+        "text": " It's actually quite a bit of work."
+      },
+      {
+        "start": 64300,
+        "stop": 64900,
+        "text": " So I stress out about it for six months and it always gets crammed into just a couple of weeks worth of time."
+      },
+      {
+        "start": 64900,
+        "stop": 65100,
+        "text": " Why do we do this to ourselves?"
+      },
+      {
+        "start": 65200,
+        "stop": 65800,
+        "text": " I'll have to get the Q&A out, or I'll have to get the new form out as fast as possible. I could really do with less holidays. I hate to say it."
+      },
+      {
+        "start": 65800,
+        "stop": 66800,
+        "text": " But if we could just cut everything down to one holiday a year, that'd be a lot better for me because it's already a busy week trying to squeeze in all this stuff and turkey day."
+      },
+      {
+        "start": 66800,
+        "stop": 67200,
+        "text": " We need just one less day. And this year too, last year we got lucky."
+      },
+      {
+        "start": 67200,
+        "stop": 67400,
+        "text": " We got very lucky."
+      },
+      {
+        "start": 67500,
+        "stop": 68200,
+        "text": " All the lup stuff at least didn't land on any holidays, so we could just skate right through. But this year, it's a holiday landmine!"
+      },
+      {
+        "start": 68200,
+        "stop": 68700,
+        "text": " Now, why don't we do things on holidays? I mean, come on, we are family, right?"
+      },
+      {
+        "start": 68700,
+        "stop": 69100,
+        "text": " Yeah, maybe one day when we're old and nobody wants to associate with us anymore."
+      },
+      {
+        "start": 69100,
+        "stop": 69200,
+        "text": " Right."
+      },
+      {
+        "start": 69200,
+        "stop": 69700,
+        "text": " We'll just get together. All we'll have left is each other and a few sats, you know?"
+      },
+      {
+        "start": 69700,
+        "stop": 70000,
+        "text": " Hey Brent, how's it going?"
+      },
+      {
+        "start": 70000,
+        "stop": 70100,
+        "text": " Hey Chris."
+      },
+      {
+        "start": 70100,
+        "stop": 70300,
+        "text": " Yeah, that kind of..."
+      },
+      {
+        "start": 70400,
+        "stop": 70500,
+        "text": " Maybe."
+      },
+      {
+        "start": 70500,
+        "stop": 70600,
+        "text": " Be like the fireside chat."
+      },
+      {
+        "start": 70600,
+        "stop": 71100,
+        "text": " Maybe. Yeah, I don't know what we'll do, but we'll figure it out I suppose."
+      },
+      {
+        "start": 71100,
+        "stop": 71700,
+        "text": " The tuxies are a lot of fun. I just feel like they could be their own thing, like they could really use their own person."
+      },
+      {
+        "start": 71700,
+        "stop": 72300,
+        "text": " And you know what I should have done is I should have figured this out in January or February."
+      },
+      {
+        "start": 72300,
+        "stop": 73300,
+        "text": " This is so classic me. I'm a really good problem solver once I'm in the middle of a problem, but I'm not a great problem solver before something's a problem."
+      },
+      {
+        "start": 73300,
+        "stop": 73900,
+        "text": " So I have to live the mistake, like maybe sometimes it's a road trip decision."
+      },
+      {
+        "start": 73900,
+        "stop": 75000,
+        "text": " Like I have to be living in the mistake, steeped in the misery, the funk of disappointment, the absolute pits of just torture of a bad decision."
+      },
+      {
+        "start": 75000,
+        "stop": 75700,
+        "text": " Before I'm like, oh well clearly I should be doing A, B, C, and D and we need to make sure X, Y, Z is taken care of and next time we'll do it this way."
+      },
+      {
+        "start": 75700,
+        "stop": 76200,
+        "text": " And you've probably seen me do this before, like I did it with the last road trip. I'm like, oh we're never doing this again."
+      },
+      {
+        "start": 76200,
+        "stop": 77000,
+        "text": " But we could do this. And it's like I could have seen that idea from the beginning, but for some reason I didn't."
+      },
+      {
+        "start": 77000,
+        "stop": 77600,
+        "text": " And I had to learn the hard way and I have to get burned. It's like I gotta keep touching the stove over and over again. I guess I got ten fingers."
+      },
+      {
+        "start": 77600,
+        "stop": 78500,
+        "text": " So this time with the Tuxes is here I am, you know, a couple of days before Turkey Day in the States, and we haven't gotten the Tuxes rolled out yet."
+      },
+      {
+        "start": 78500,
+        "stop": 78900,
+        "text": " We don't have anything going on with it. And I just feel absolutely horrible about it."
+      },
+      {
+        "start": 79000,
+        "stop": 79200,
+        "text": " And I really want to give it more than that. I want to have some fun with it."
+      },
+      {
+        "start": 79200,
+        "stop": 80000,
+        "text": " But the first couple of times we did it I felt like it got better. And this year I feel like we don't really have anything new to bring to it."
+      },
+      {
+        "start": 80000,
+        "stop": 80700,
+        "text": " Well is it because you feel like this year's been a bit bland? Is that what you're suggesting?"
+      },
+      {
+        "start": 80700,
+        "stop": 81000,
+        "text": " No! No! Oh, okay. Well that's good news."
+      },
+      {
+        "start": 81100,
+        "stop": 82000,
+        "text": " There's some real standout stuff this year, I think. I think it's been, without spoiling it, an incredible year for hardware, for Linux users and our audience."
+      },
+      {
+        "start": 82000,
+        "stop": 82600,
+        "text": " I think it's been a blowout year for software. I think there's some new stuff that's come out just in the last few months."
+      },
+      {
+        "start": 82600,
+        "stop": 83600,
+        "text": " You know, you look back at the Dev1 and we look back at the Odroid and we look back at a lot of projects that are hardware based that even though during a tight supply chain they still produced."
+      },
+      {
+        "start": 83700,
+        "stop": 84200,
+        "text": " Remarkably so. So there's so much there. No, there's a spoil of riches in terms of that stuff."
+      },
+      {
+        "start": 84200,
+        "stop": 85000,
+        "text": " And there's been some really remarkable things. Plus there's been some big things for us, you know, technology wise and stack wise that have happened this year that we couldn't reflect on."
+      },
+      {
+        "start": 85000,
+        "stop": 85600,
+        "text": " So there's plenty there. It's just a matter of, I guess, capturing it all."
+      },
+      {
+        "start": 85600,
+        "stop": 85800,
+        "text": " Just got to put it all together."
+      },
+      {
+        "start": 85900,
+        "stop": 87300,
+        "text": " The holidays are tricky, right? Because you got several shows you're trying to batch together at the same time and then there's also the holidays, which is a full time thing sometimes as well, especially with three kids and multiple families and all that kind of stuff."
+      },
+      {
+        "start": 87300,
+        "stop": 88500,
+        "text": " So we attempt to do a pre-record. So as we get into the holidays, you'll notice this, is some of our shows will be recorded ahead of time, especially the ones that overlap with specific holidays."
+      },
+      {
+        "start": 88600,
+        "stop": 89200,
+        "text": " And ideally we would love to pre-record everything so that way everybody can take some time off, including Drew."
+      },
+      {
+        "start": 89200,
+        "stop": 89700,
+        "text": " And we're trying to work towards that, but it is just exponentially harder the more shows you have."
+      },
+      {
+        "start": 89700,
+        "stop": 90800,
+        "text": " That's just the reality of it. Because there's so many more dynamics between host scheduling and topics and honestly the pipeline availability to just prep for all of that and actually produce high signal content."
+      },
+      {
+        "start": 90800,
+        "stop": 91400,
+        "text": " It begins to diminish when you're pushing on all of those at the same time and maybe you're trying to do a couple at a time."
+      },
+      {
+        "start": 91500,
+        "stop": 92100,
+        "text": " And we're thinking about it or we try to start thinking about it basically in October. And we do kind of think about it."
+      },
+      {
+        "start": 92100,
+        "stop": 93500,
+        "text": " I mean, that's the thing. I feel like we're all pushing ourselves quite a bit every week, you especially. I mean, you're on how many shows every week and you've got it balanced in such a way that you kind of have a regular schedule going."
+      },
+      {
+        "start": 93600,
+        "stop": 94600,
+        "text": " I mean, this week for you has been a really good example of a somewhat extraordinary week where all of the shows are being recorded on the same week, you know, and you're not getting any breaks."
+      },
+      {
+        "start": 94600,
+        "stop": 95400,
+        "text": " So I feel like that's what that's a hint of what the holidays feels like, because actually it's worse because all of our routines change as well."
+      },
+      {
+        "start": 95400,
+        "stop": 96300,
+        "text": " Right. We sometimes do double records on a day or we have to do, you know, a Linux unplugged on a Thursday evening or something."
+      },
+      {
+        "start": 96400,
+        "stop": 97300,
+        "text": " Yeah. That's just like taking everything that we've worked so hard to get to be very efficient and just throwing in our bag and throwing the routine out the window."
+      },
+      {
+        "start": 97300,
+        "stop": 97600,
+        "text": " Yeah. Marathon in it nonstop."
+      },
+      {
+        "start": 97600,
+        "stop": 97800,
+        "text": " Crazy."
+      },
+      {
+        "start": 97800,
+        "stop": 98500,
+        "text": " 14 hour days. Let's go. Yeah. So if we could just do less holidays, that'd be great. That'd be really great."
+      },
+      {
+        "start": 98500,
+        "stop": 98900,
+        "text": " Not less content. That's not what we're asking for. We just want less holidays."
+      },
+      {
+        "start": 99000,
+        "stop": 99900,
+        "text": " Yeah. And, you know, there's probably I hate to even go, look, there may be a data argument to suggest downloads go down during the holidays as well."
+      },
+      {
+        "start": 99900,
+        "stop": 100400,
+        "text": " So if you're a holiday listener, if you listen during the holidays, send us a boost in to let us know you're out there."
+      },
+      {
+        "start": 100400,
+        "stop": 100900,
+        "text": " Because, you know, thinking about it, like, what will we do for office hours? I don't know where office hours lands."
+      },
+      {
+        "start": 100900,
+        "stop": 101700,
+        "text": " You know, if we're only going to get a handful thousand, you know, four or five thousand downloads on the holidays, that's not worth getting out of bed."
+      },
+      {
+        "start": 101800,
+        "stop": 103000,
+        "text": " Yeah. I will also say, though, that, you know, just just on the crest of the holiday season, just when it kind of comes to an end and we hit January, I have found that that's typically when we get some of our best ideas for the rest of the year."
+      },
+      {
+        "start": 103000,
+        "stop": 103200,
+        "text": " Oh, yeah, for sure."
+      },
+      {
+        "start": 103200,
+        "stop": 103400,
+        "text": " There's something there."
+      },
+      {
+        "start": 103400,
+        "stop": 103800,
+        "text": " And there is also something to the people who do listen through the holidays. Like they're some of the most dedicated listeners to."
+      },
+      {
+        "start": 103800,
+        "stop": 104000,
+        "text": " For sure."
+      },
+      {
+        "start": 104100,
+        "stop": 104900,
+        "text": " And so I think that I mean, we have a pretty great community in general, so I think they'd understand regardless of what we decided to do for office hours or whatever we call it."
+      },
+      {
+        "start": 104900,
+        "stop": 105400,
+        "text": " I've been using stable diffusion. You remember that AI image generator?"
+      },
+      {
+        "start": 105400,
+        "stop": 106200,
+        "text": " I've been using stable diffusion for the last couple of weeks to generate some concept ideas for new artwork for office hours rebirth."
+      },
+      {
+        "start": 106200,
+        "stop": 106400,
+        "text": " Oh, cool."
+      },
+      {
+        "start": 106400,
+        "stop": 106700,
+        "text": " So it's really hung up and stuck and having a hard time communicating to an artist what we want."
+      },
+      {
+        "start": 106800,
+        "stop": 107500,
+        "text": " So I took to Deep Fusion and generated a few concepts. And I think that's improved the situation. We'll see."
+      },
+      {
+        "start": 107500,
+        "stop": 107900,
+        "text": " Are you ready to show us anything yet or is that to come?"
+      },
+      {
+        "start": 107900,
+        "stop": 108800,
+        "text": " I mean, I am very tempted to just do it rough and cheap and just throw something together and go, I don't I don't like waiting weeks for stuff like."
+      },
+      {
+        "start": 108800,
+        "stop": 109000,
+        "text": " Mm hmm."
+      },
+      {
+        "start": 109000,
+        "stop": 109700,
+        "text": " It's an external dependency. And it's like, I just I want to move forward. I want to get the rename thing done. I want to get the RSS feed stuff moving."
+      },
+      {
+        "start": 109700,
+        "stop": 110100,
+        "text": " I don't want to wait anymore. And it's like I have all this technical stuff I want to do."
+      },
+      {
+        "start": 110100,
+        "stop": 111000,
+        "text": " And all this big picture goals that I want to accomplish. And it's waiting on artwork and stuff right now."
+      },
+      {
+        "start": 111000,
+        "stop": 111600,
+        "text": " And it makes me miss when she's worked with us full time."
+      },
+      {
+        "start": 111600,
+        "stop": 111800,
+        "text": " So great."
+      },
+      {
+        "start": 111800,
+        "stop": 112000,
+        "text": " That was peak luxury right there."
+      },
+      {
+        "start": 112000,
+        "stop": 112200,
+        "text": " Hey, cheese, can you just do this real quick?"
+      },
+      {
+        "start": 112200,
+        "stop": 112500,
+        "text": " Yeah, I miss those days."
+      },
+      {
+        "start": 112600,
+        "stop": 113100,
+        "text": " That was pretty great. So that's all kind of, you know, in the holidays again, these dang holidays are so pesky."
+      },
+      {
+        "start": 113100,
+        "stop": 113900,
+        "text": " They don't really they don't make things like like artwork get done faster. You know, they don't really help in that regard."
+      },
+      {
+        "start": 113900,
+        "stop": 115000,
+        "text": " Well, yeah. And to that point, when I was like deep into the photography industry, we would just kind of write off December because most people are busy and they're doing stuff and no one's starting new projects or anything like that."
+      },
+      {
+        "start": 115100,
+        "stop": 115600,
+        "text": " So as in the design field, like everything just slows right down. Nobody's available. Nobody wants to work that much."
+      },
+      {
+        "start": 115600,
+        "stop": 115900,
+        "text": " And it's an interesting thing for a couple of years in a row."
+      },
+      {
+        "start": 115900,
+        "stop": 116300,
+        "text": " I've I've noticed that we've had a couple of sponsors that kind of wind things down around the holidays."
+      },
+      {
+        "start": 116300,
+        "stop": 116600,
+        "text": " It's like you got to talk to him beforehand. You got to talk to him beforehand."
+      },
+      {
+        "start": 116600,
+        "stop": 117000,
+        "text": " Are you a former photographer now or do you still consider yourself a photographer?"
+      },
+      {
+        "start": 117000,
+        "stop": 117200,
+        "text": " Oh, so you did catch up on that."
+      },
+      {
+        "start": 117200,
+        "stop": 117700,
+        "text": " I caught that. I'm just curious because you still have you still have the skills, right?"
+      },
+      {
+        "start": 117800,
+        "stop": 118700,
+        "text": " Yeah. Yeah. There there may be slightly rusty or atrophied, perhaps. It's taken me a long time to kind of wrap my head around this because I've been a photographer."
+      },
+      {
+        "start": 118700,
+        "stop": 119500,
+        "text": " Basically owning my own business since I was like 16, 15, 16 around there."
+      },
+      {
+        "start": 119500,
+        "stop": 120600,
+        "text": " And when the pandemic hit, my photography business clearly stopped doing things because photography necessarily requires other people to be around."
+      },
+      {
+        "start": 120700,
+        "stop": 121700,
+        "text": " So that was a tricky time. And then it turns out I also decided to move across the country and around that time, mostly because my business wasn't doing anything and seemed like a golden opportunity."
+      },
+      {
+        "start": 121700,
+        "stop": 123000,
+        "text": " So I did move and it seems, hmm, seems at about the same time I concentrated more on doing other things and learning other skills and being involved in other communities."
+      },
+      {
+        "start": 123100,
+        "stop": 123700,
+        "text": " So I have found photography to be less a part of my life. And it's been a weird."
+      },
+      {
+        "start": 123700,
+        "stop": 124400,
+        "text": " It's been weird to kind of suggest that to myself, that maybe I can't say I'm a photographer anymore."
+      },
+      {
+        "start": 124400,
+        "stop": 124700,
+        "text": " And that makes me sad in some ways, but I think I've come to terms with it."
+      },
+      {
+        "start": 124700,
+        "stop": 125700,
+        "text": " It's like I'm really excited for what's coming next. And I have to be OK with, you know, change and being doing other stuff on a daily basis."
+      },
+      {
+        "start": 125800,
+        "stop": 126400,
+        "text": " Yeah, you're here to hear first. I don't I can't say that I'm actually a photographer anymore and I don't know how to feel about that."
+      },
+      {
+        "start": 126400,
+        "stop": 127200,
+        "text": " If I were you, when people ask when they say, what do you do? I'd say something like, I make brunch, you know, something like that."
+      },
+      {
+        "start": 127200,
+        "stop": 127400,
+        "text": " This is really weird."
+      },
+      {
+        "start": 127500,
+        "stop": 128800,
+        "text": " I get asked that on occasion because, as you know, Chris, my brother broke his hand recently, and so I've been helping him out with his construction business and so meeting a bunch of new people and they're like, oh, what do you usually do?"
+      },
+      {
+        "start": 128800,
+        "stop": 129600,
+        "text": " Like, you're here today. And I always pause and I think, oh, God, where do I start was trying to explain what I do."
+      },
+      {
+        "start": 129700,
+        "stop": 130700,
+        "text": " On OK, if you understand podcasts, I could like maybe start to explain, OK, I'm a podcast host, right, for the most part, you know, and part of the network."
+      },
+      {
+        "start": 130700,
+        "stop": 130900,
+        "text": " Oh, what's your podcast about?"
+      },
+      {
+        "start": 130900,
+        "stop": 131400,
+        "text": " Yeah. Oh, this line of questioning I am very familiar with."
+      },
+      {
+        "start": 131500,
+        "stop": 132800,
+        "text": " So I've hesitated even to mention that. And so I caught myself yesterday. I met a few new people and I just said, I do a host of various things from, you know, time throughout the week."
+      },
+      {
+        "start": 132800,
+        "stop": 133800,
+        "text": " I have been asked this question more times than I can count. If I had 10 sats for every time I've been asked that question, Brent."
+      },
+      {
+        "start": 133900,
+        "stop": 134800,
+        "text": " The thing is, I've experimented with a range because, you know, at first I was very awkward about it, especially early on. I mean, early on, nobody knew what a podcast was."
+      },
+      {
+        "start": 134800,
+        "stop": 135100,
+        "text": " Right. Yeah. You had to even explain the technology."
+      },
+      {
+        "start": 135100,
+        "stop": 135400,
+        "text": " So my answer was generally online radio."
+      },
+      {
+        "start": 135400,
+        "stop": 135500,
+        "text": " OK."
+      },
+      {
+        "start": 135500,
+        "stop": 136500,
+        "text": " Which didn't really ever very go never really went over very well. People always look at me like my guy was doing porn or something. I don't know. They gave me this weird look pretty consistently."
+      },
+      {
+        "start": 136600,
+        "stop": 136900,
+        "text": " I don't know why. Maybe they thought pirate radio. I really never really explored it."
+      },
+      {
+        "start": 136900,
+        "stop": 138100,
+        "text": " So for a very short period of time when I was vlogging, I experimented in a couple of conversations just intentionally, like saying YouTuber because it was a younger audience and they got that."
+      },
+      {
+        "start": 138100,
+        "stop": 138400,
+        "text": " These days, though, that's a very different thing."
+      },
+      {
+        "start": 138500,
+        "stop": 139600,
+        "text": " For a while did podcaster, but that's that that feels that feels like saying intern. I'm an intern for a living, you know, because people just look like, oh, a podcaster. That's cute, honey."
+      },
+      {
+        "start": 139600,
+        "stop": 140100,
+        "text": " Do you have do you have opinions about things? You know, that's what it feels like when you say podcaster."
+      },
+      {
+        "start": 140100,
+        "stop": 141100,
+        "text": " And God forbid, I said like, you know, I've been podcasting for 15 years and for 12 to 13 of those years, I've owned my own business and worked independently in a very competitive medium."
+      },
+      {
+        "start": 141200,
+        "stop": 141500,
+        "text": " But, you know, that's not how you introduce yourself, right? You're not going to you're not going to say something like that."
+      },
+      {
+        "start": 141500,
+        "stop": 142000,
+        "text": " So sometimes I'll go for something like, well, I run my own podcasting business or something like that. Right."
+      },
+      {
+        "start": 142000,
+        "stop": 142400,
+        "text": " Like try to like add something to it, but it still falls pretty flat."
+      },
+      {
+        "start": 142400,
+        "stop": 143500,
+        "text": " So now for fun, I just I just introduce myself as the editor in chief of Jupiter Broadcasting, which is a podcast network that covers a series of technology podcasts that focus on Linux security and development."
+      },
+      {
+        "start": 143500,
+        "stop": 144000,
+        "text": " It sounds like you have this nailed down as well as I have my allergies."
+      },
+      {
+        "start": 144100,
+        "stop": 144800,
+        "text": " Yes, very much. That is a very good analogy. Yes. Yeah. I have some podcasts I'd like to tell you about."
+      },
+      {
+        "start": 144800,
+        "stop": 145500,
+        "text": " I'd like you to be aware of. Yeah. No, it is very much that because it's like because I'm trying to avoid the oh, what's Linux?"
+      },
+      {
+        "start": 145500,
+        "stop": 146800,
+        "text": " And so sometimes, you know, what I'll do is like, well, you know, that's the that's the you know what? That's what runs Amazon and Netflix and, you know, are you whatever you just name a few companies that you think they'd be familiar with, whatever it might be, because everybody runs Linux now."
+      },
+      {
+        "start": 146900,
+        "stop": 147800,
+        "text": " And so that's helped. And so I'll often say we do podcasts about the technologies that make the cloud possible or, you know, that kind of stuff, make infrastructure possible."
+      },
+      {
+        "start": 147800,
+        "stop": 148200,
+        "text": " You know, something that I feel like they'll wrap their heads around, but it's never an easy answer."
+      },
+      {
+        "start": 148200,
+        "stop": 149500,
+        "text": " I also feel like people don't people, regular folks like family, like, you know, parents and my extended family, they don't know what it means."
+      },
+      {
+        "start": 149600,
+        "stop": 150800,
+        "text": " And so I feel like if I go to an office and I had an office job and I had a job that's been around for 20, 30 years, they wrap their heads around that and they understand what the requirements are of that job and the expectations of that job."
+      },
+      {
+        "start": 150800,
+        "stop": 151500,
+        "text": " But not only do they not understand what a podcast is, but a lot of them, almost none of them own their own business."
+      },
+      {
+        "start": 151500,
+        "stop": 151700,
+        "text": " So they don't really understand what it's like to be a business owner either."
+      },
+      {
+        "start": 151800,
+        "stop": 152700,
+        "text": " And so it's like it's an interesting disconnect. I almost always there's always a family member contacting me on Sunday that forgets. Oh, yeah, I forget that you do a podcast on Sunday."
+      },
+      {
+        "start": 152700,
+        "stop": 153100,
+        "text": " Yeah, yeah. I've been doing it for about 13 years on a Sunday. Yeah."
+      },
+      {
+        "start": 153100,
+        "stop": 153600,
+        "text": " Yeah. It's just weird. Why would you work on a Sunday? It's the day of rest. What are you working for?"
+      },
+      {
+        "start": 153600,
+        "stop": 154200,
+        "text": " Well, it turns out it's a great day for media production. People are home. You can get things up for the Monday morning drive. Like there's a lot of reasons to work on a Sunday."
+      },
+      {
+        "start": 154300,
+        "stop": 155200,
+        "text": " It sucks. That's part of owning this business. Right. And they just that kind of stuff is never really. So I just have given up and I just have fun with it. Oh, yeah. I'm the editor in chief. Yep."
+      },
+      {
+        "start": 155200,
+        "stop": 156000,
+        "text": " That's what I put down on my paperwork, too, is I don't care. I used to put like CEO or whatever, but that sounds pretentious."
+      },
+      {
+        "start": 156000,
+        "stop": 156500,
+        "text": " I thought you were going to start like making up professions like Shark Hunter."
+      },
+      {
+        "start": 156600,
+        "stop": 157300,
+        "text": " Oh, I tried. Oh, yeah. For a while, I just kind of got kind of spicy with it, for sure. Yeah. But, you know, yeah."
+      },
+      {
+        "start": 157300,
+        "stop": 158400,
+        "text": " Eventually, by the time I'm retiring, it'll probably be such a well-established profession that it won't be weird at all. You know, by the time I'm done doing it, it'll be normalized."
+      },
+      {
+        "start": 158400,
+        "stop": 159000,
+        "text": " Tough being a trailblazer. Yeah, it's rough. I feel like they would get it right away when they see your Bitcoin shirt."
+      },
+      {
+        "start": 159100,
+        "stop": 159800,
+        "text": " Or what about this mixer? Right. You show them this mixer here. That's how you know. Oh, you carry that around every day?"
+      },
+      {
+        "start": 159800,
+        "stop": 160700,
+        "text": " Yeah, well, I carry a picture of it, of course. Yeah. In my wallet. Yeah. Next to my pictures of my Bitcoin that I also carry in there."
+      },
+      {
+        "start": 160700,
+        "stop": 161700,
+        "text": " I definitely can empathize with your sense of people not really knowing how it is to run your own business. You know, I just mentioned that I've run my own for basically ever."
+      },
+      {
+        "start": 161800,
+        "stop": 162800,
+        "text": " And so I consider myself somewhat unemployable in that sense. It's like people don't realize, hmm, okay, let's just put it this way."
+      },
+      {
+        "start": 162800,
+        "stop": 164200,
+        "text": " I've had several romantic partners not understand in any way how my money workflow works and how strange it is that I'm okay with the uncertainty of it all."
+      },
+      {
+        "start": 164200,
+        "stop": 164500,
+        "text": " You have to be, yeah. Well, it doesn't just stream in regularly."
+      },
+      {
+        "start": 164600,
+        "stop": 165500,
+        "text": " It's not like the sats do when people listen to our shows. It's just like some months are really good. Some weeks are really good. Other weeks, you got to live on what you got, right?"
+      },
+      {
+        "start": 165500,
+        "stop": 166600,
+        "text": " Sometimes people pay on time. Most of the time they don't. Oh, tell me about it. I have a long list of those. And so anyways, those have been tricky conversations at times."
+      },
+      {
+        "start": 166700,
+        "stop": 168100,
+        "text": " Yeah, yeah. As a small business owner, it's pretty normal for your, you know, sometimes you're feeling cash flush for a very short period of time, and then sometimes for longer periods of time, you're feeling extremely tight and you just kind of have to ebb and flow with it."
+      },
+      {
+        "start": 168200,
+        "stop": 169700,
+        "text": " And we were talking about seasonality earlier with December changing and stuff, and that was always true with cash flow in my business and life is like, January, you got to take what you can in January because nobody's really spending money, you know?"
+      },
+      {
+        "start": 169800,
+        "stop": 171600,
+        "text": " So we have two problems here. What we need is a well-to-do JB patron of some form to come around and sponsor a summer of, or I'm sorry, a winter of Brent. You come down here and you run the tuxies, right, for like the next month and help the pre-show production, and it'll be the winter of Brent."
+      },
+      {
+        "start": 171600,
+        "stop": 172100,
+        "text": " Of course, I don't know if we could actually get you down here physically. I don't know if anybody out there would ever do something crazy like sponsor that."
+      },
+      {
+        "start": 172100,
+        "stop": 172600,
+        "text": " I mean, we can figure out a lot of stuff. Imagine what we can get into."
+      },
+      {
+        "start": 172700,
+        "stop": 173000,
+        "text": " Google can do the summer of code. We could do the winter of Brent, I figure."
+      },
+      {
+        "start": 173000,
+        "stop": 173400,
+        "text": " Yeah, yeah. I mean, I'd be strangely all into that."
+      },
+      {
+        "start": 173400,
+        "stop": 173900,
+        "text": " Oh, I bet. I don't know how you stay up there to begin with for the winter, you maniac."
+      },
+      {
+        "start": 173900,
+        "stop": 175300,
+        "text": " Well, you know, last Sunday when we recorded Linux Unplugged, I froze in this room. I called my studio because I, like an idiot, took the heater out and I was like, \"Oh, the fire's going to be okay. It's just in the next room.\" That was not true."
+      },
+      {
+        "start": 175300,
+        "stop": 175600,
+        "text": " Is that the heater I see, though, back in the corner right there of your frame?"
+      },
+      {
+        "start": 175600,
+        "stop": 176600,
+        "text": " Yeah, probably. Oh yeah, there it is. I put it back in. I'm doing much better. And I also did a lot of weather sealing in the last two days in this room to help my situation."
+      },
+      {
+        "start": 176600,
+        "stop": 177000,
+        "text": " Do you ever cover the windows with styrofoil or silicone or whatever it is or anything like that?"
+      },
+      {
+        "start": 177000,
+        "stop": 177600,
+        "text": " Oh, that's what I did. So I had the window covered last week, but I took it a step further, Chris."
+      },
+      {
+        "start": 177600,
+        "stop": 178100,
+        "text": " And there's a door on this room, and whoever made this addition did a terrible job on the whole thing."
+      },
+      {
+        "start": 178200,
+        "stop": 179400,
+        "text": " I thought I put the cellophane over the door because it turns out that was the worst leak. And I did a bunch of weather sealing and stuff on that door. I think it was last year, but it just wasn't good enough. So, getting there."
+      },
+      {
+        "start": 179400,
+        "stop": 179600,
+        "text": " That'll make a difference, though. That's good."
+      },
+      {
+        "start": 179600,
+        "stop": 180200,
+        "text": " I think so. And you were asking, \"How the heck do I live up here?\" And I think, \"Well, one step at a time.\""
+      },
+      {
+        "start": 180300,
+        "stop": 181300,
+        "text": " It could be worse. You could be like, \"No, over in Grand Forks. I can't even with that right now.\" What is the temperature right there? Do you know what it is in King Units over there?"
+      },
+      {
+        "start": 181300,
+        "stop": 181500,
+        "text": " King Units?"
+      },
+      {
+        "start": 181500,
+        "stop": 181900,
+        "text": " Yeah, in Imperial. Do you know what your temperature is?"
+      },
+      {
+        "start": 181900,
+        "stop": 182300,
+        "text": " How many different names do you have for that system?"
+      },
+      {
+        "start": 182400,
+        "stop": 183900,
+        "text": " It is presently 29 degrees Fahrenheit in Grand Forks, North Dakota. It'll get down to 18 degrees tonight. This just sounds like absolute murder. It's going to have a high of 32 tomorrow in Grand Forks, North Dakota."
+      },
+      {
+        "start": 183900,
+        "stop": 184600,
+        "text": " What an awful place to live, I have to say. That just sounds horrible. I mean, I'm sure it's a lovely place to live the rest of the year."
+      },
+      {
+        "start": 184700,
+        "stop": 185400,
+        "text": " On Tuesday, a high of 25 degrees. Multiple days in the 20s."
+      },
+      {
+        "start": 185400,
+        "stop": 186500,
+        "text": " You know, it's actually not that different here. It looks like currently, as we're recording, 30 Fahrenheit here, which is, for those of us who are civilized, about minus 1 C."
+      },
+      {
+        "start": 186500,
+        "stop": 187300,
+        "text": " And so I feel like if you dress for it, you're good. It is gorgeous and all of that, so I gotta say. It's been--"
+      },
+      {
+        "start": 187400,
+        "stop": 188300,
+        "text": " I feel like my line is multiple days below freezing sucks. Like a few days, a couple of days a year below freezing, that happens in Washington."
+      },
+      {
+        "start": 188300,
+        "stop": 189300,
+        "text": " We'll probably have a week where we're kind of like a low of the 20s and the 19s Fahrenheit and maybe a high of, you know, 30, 32."
+      },
+      {
+        "start": 189300,
+        "stop": 189700,
+        "text": " And that'll happen for a couple of days, maybe a week if we're unlucky."
+      },
+      {
+        "start": 189800,
+        "stop": 190400,
+        "text": " The only way that you could live most of season below freezing is bonkers to me because so many things break."
+      },
+      {
+        "start": 190400,
+        "stop": 191000,
+        "text": " Like you leave a soda can in your car, that's gonna blow up. Your car battery's gonna die. Your oil's gonna freeze."
+      },
+      {
+        "start": 191000,
+        "stop": 191400,
+        "text": " Your heater's gonna be working like crazy. Your AC unit's gonna get all gunked up."
+      },
+      {
+        "start": 191400,
+        "stop": 191900,
+        "text": " If you got any farm animals, all their water's gonna freeze. All their feed's gonna clump up."
+      },
+      {
+        "start": 191900,
+        "stop": 192600,
+        "text": " Like, I could go on and on. It's just absolute lunacy 'cause you don't have to live that way. You don't understand it."
+      },
+      {
+        "start": 192700,
+        "stop": 192900,
+        "text": " You know?"
+      },
+      {
+        "start": 192900,
+        "stop": 193400,
+        "text": " I mean, it's human resilience. Once you do that, the summers look pretty sweet."
+      },
+      {
+        "start": 193400,
+        "stop": 194600,
+        "text": " You tiny little life bones. You precious little life bones. Where are you?"
+      },
+      {
+        "start": 194700,
+        "stop": 196100,
+        "text": " Linode.com/Jupiter. Go check out Linode and get a hundred dollar credit. And while you're over there, I'll have a link in the show notes. You can also dig around in their documentation for the Docker Security Essentials free ebook."
+      },
+      {
+        "start": 196100,
+        "stop": 196500,
+        "text": " No email required. Just a PDF download. You click the link and you get it."
+      },
+      {
+        "start": 196600,
+        "stop": 197900,
+        "text": " You'll get the fundamental knowledge of Docker and Docker CLI commands. You'll get functional knowledge of Linux terminal commands. Hey-o. And fundamental knowledge of systemd and Linux init systems. Do you see what they did there? Fundamental, functional, and fundamental."
+      },
+      {
+        "start": 197900,
+        "stop": 198100,
+        "text": " That's, uh..."
+      },
+      {
+        "start": 198100,
+        "stop": 198300,
+        "text": " They make it easy for you."
+      },
+      {
+        "start": 198400,
+        "stop": 200200,
+        "text": " That's what that sounds like. It actually sounds really nice. With visuals in there as well. Including ways to audit and secure Docker. Von-dribilities the scannings and the buildings of the secure Docker images. Why do they do this? Why? Because their infrastructure is a great place to run Docker."
+      },
+      {
+        "start": 200300,
+        "stop": 201500,
+        "text": " It makes sense for them to want you to do it securely. But nothing in here is really necessarily Linode specific. It's just great knowledge. It's part of their support platform. It's fantastic. Linode is the best place to run your application on Linux in the cloud."
+      },
+      {
+        "start": 201500,
+        "stop": 202400,
+        "text": " It's about to get even better with a dozen new data centers opening up over 2023. They are their own ISP. So the connections are ludicrous. Like 40 gigabytes to your hypervisor."
+      },
+      {
+        "start": 202500,
+        "stop": 203700,
+        "text": " MVME disks and prices from like... Yeah, I could just run my personal blog. No bigs. All the way up to like a matrix server with 4000 users and 48 CPU cores and 96 gigs of RAM."
+      },
+      {
+        "start": 203700,
+        "stop": 204600,
+        "text": " I think you get my point. Go try it. Support the show. Linode.com/Jupiter."
+      },
+      {
+        "start": 204600,
+        "stop": 205200,
+        "text": " And thank you to Linode for sponsoring this crazy thing we call Office Hours."
+      },
+      {
+        "start": 205300,
+        "stop": 205800,
+        "text": " We got some mail, Brent Lee. Would you like to read this message we got from Joe S.?"
+      },
+      {
+        "start": 205800,
+        "stop": 207600,
+        "text": " Oh, Joe, thanks for the message. It reads, \"Chris, Wes, Brent and the team, please come visit Spokane. I'm sending this on behalf of myself and a few other nerds in Pullman, south of Spokane by a few hours. We work for an engineering company specializing in power systems protection and automation.\""
+      },
+      {
+        "start": 207600,
+        "stop": 207900,
+        "text": " Ooh, Chris, I want you to take this name, though."
+      },
+      {
+        "start": 208000,
+        "stop": 209000,
+        "text": " Can you take the name of the company? Let's see. I got this. Yeah, why couldn't I say this? It's a... it's a Schweitzer? Schweitzer?"
+      },
+      {
+        "start": 209000,
+        "stop": 209600,
+        "text": " I think that's close. I think it's Schweitzer? Schweitzer Engineering Laboratories."
+      },
+      {
+        "start": 209600,
+        "stop": 209900,
+        "text": " Yeah, or SEL for those who know."
+      },
+      {
+        "start": 210000,
+        "stop": 212300,
+        "text": " And we geek out on Linux open source and home automation, too. We'd love to visit with you guys and others and talk about all the things nerdy. We use Linux on our embedded controllers, and we very much enjoy exploring the new and exciting while maintaining products with 20 to 50 year lifespans. So lots of fun. Hope that you guys can find time to make it over here. By the way, love the new site. Congrats to all."
+      },
+      {
+        "start": 212400,
+        "stop": 213900,
+        "text": " Oh, thank you. Thank you, Joe. I've never been to Pullman. What Joe did in there that's really got my brain chewing on this is he told me about a business that's got some people. Like, we know there's actual peeps there. You can chat about stuff. We may be able to get a couple of clips."
+      },
+      {
+        "start": 213900,
+        "stop": 214600,
+        "text": " So that's just south of Spokane, right on the border with Idaho, Idaho, right next to Moscow, Idaho."
+      },
+      {
+        "start": 214600,
+        "stop": 214900,
+        "text": " Wow. I thought Moscow was a little further than that."
+      },
+      {
+        "start": 214900,
+        "stop": 215100,
+        "text": " You know, there's a couple of them Moscow's."
+      },
+      {
+        "start": 215200,
+        "stop": 215600,
+        "text": " Lots of Arlington's I hear. Yeah. Yeah. Yeah."
+      },
+      {
+        "start": 215600,
+        "stop": 216400,
+        "text": " Not far from Yakima, where listener John A was from, and also not far from Walla Walla, famous for delicious onions, Walla Walla onions."
+      },
+      {
+        "start": 216400,
+        "stop": 217000,
+        "text": " And near a place called Kennewick, which is just awesome to say. Kennewick."
+      },
+      {
+        "start": 217100,
+        "stop": 218600,
+        "text": " You know what I really enjoyed while I drove from the studio home last time I was there, which was not too long ago, is all those little towns along the way. And they've got great names, but also tons of personality. And so that whole area has me intrigued now. So I really want to go."
+      },
+      {
+        "start": 218600,
+        "stop": 219500,
+        "text": " Washington is a great road trip town. Such a great road trip town. We have the Cascade Loop, which I think is just a fantastic little family two day road trip, if you like."
+      },
+      {
+        "start": 219600,
+        "stop": 220700,
+        "text": " But then we have the Yakima Valley, we have the Ellensburg area, we have Pullman and Spokane. It's really great. I would really like to get over there to John's question."
+      },
+      {
+        "start": 220700,
+        "stop": 222200,
+        "text": " I think the problem is the roads are going to be just horrendous for a few months. So it's probably got to be now like a spring thing. But maybe, maybe in lieu of Linux Fest Northwest in April."
+      },
+      {
+        "start": 222200,
+        "stop": 222400,
+        "text": " Oh, now you're talking."
+      },
+      {
+        "start": 222500,
+        "stop": 224200,
+        "text": " I was going to meet up in that area. I wanted to get there during our fall road trip, but we were all the way over on the I-5 corridor and the math just didn't work out to get over there. And I was going to get some work done on Jupes over there, but that didn't work out. So I still want to get that work done. So that may end up happening one day."
+      },
+      {
+        "start": 224300,
+        "stop": 226000,
+        "text": " I have looked up train routes through there because you know, Alex and trains and I wonder if it might be a possibility for you to take a train through to Spokane. I think there's a big station there if I remember, but someone might correct me. But wouldn't that be a nice way to do it?"
+      },
+      {
+        "start": 226000,
+        "stop": 227100,
+        "text": " That would be awesome. I'd love to do a train ride. I think, you know, just get somewhere and maybe Lyft or Uber to where we need to go for short trips and that kind of thing."
+      },
+      {
+        "start": 227200,
+        "stop": 227800,
+        "text": " Yeah, not every trip has to be a Jupes trip. You know, that's what I learned this last time."
+      },
+      {
+        "start": 227800,
+        "stop": 228000,
+        "text": " Give her a break."
+      },
+      {
+        "start": 228000,
+        "stop": 228600,
+        "text": " Before we get to the booths, just because we're getting to the end of the year, I wanted to do a state of the booths real quick here in the show."
+      },
+      {
+        "start": 228600,
+        "stop": 228900,
+        "text": " Four score and seven booths to go."
+      },
+      {
+        "start": 228900,
+        "stop": 229700,
+        "text": " So we have a couple of things we're doing on the back end. Plus I just want to talk about them as a content and the shows and balance still that we're working on and all that."
+      },
+      {
+        "start": 229800,
+        "stop": 230500,
+        "text": " So let's start with the technology side. On the technology side, we use a tool called Helipad to read the incoming booths."
+      },
+      {
+        "start": 230500,
+        "stop": 231300,
+        "text": " This is a dashboard that has been developed by the pod sage, Dave Jones. He works on the podcast index with Adam Curry and others."
+      },
+      {
+        "start": 231300,
+        "stop": 232100,
+        "text": " And he created Helipad as a way to view the incoming booths. It reads from the lightning network and it gets the messages in there."
+      },
+      {
+        "start": 232200,
+        "stop": 233300,
+        "text": " And it actually has a database with an API and all this. So it's actually got a little rust in there. It looks like it's tooling that we could leverage to automatically pull information out of."
+      },
+      {
+        "start": 233300,
+        "stop": 233700,
+        "text": " Or we could actually just read it directly like Helipad is too. We're considering that as well."
+      },
+      {
+        "start": 233700,
+        "stop": 234100,
+        "text": " And read that information out and then blast it into channels that are related to the individual hosts."
+      },
+      {
+        "start": 234100,
+        "stop": 234500,
+        "text": " And it doesn't seem like it's going to be a big complicated job to actually get that done."
+      },
+      {
+        "start": 234600,
+        "stop": 235400,
+        "text": " So we're going to move from having Helipad dashboards up like we have here in the studio and I have upstairs to Helipad dashboards."
+      },
+      {
+        "start": 235400,
+        "stop": 236300,
+        "text": " Plus, you know, like there'll be a self hosted channel for the self hosted booths and there'll be a, you know, for each one office hours each show will have its own channel."
+      },
+      {
+        "start": 236300,
+        "stop": 236700,
+        "text": " And the hosts will be in those channels and be able to receive those messages instantly as well now."
+      },
+      {
+        "start": 236700,
+        "stop": 237100,
+        "text": " They won't just be coming to me and then I send them out or put them in a show."
+      },
+      {
+        "start": 237200,
+        "stop": 238100,
+        "text": " So that's going to be nice. It'll give more exposure to the booths and we continue to think and work on also like channels for the members that we'll probably have something soon for."
+      },
+      {
+        "start": 238100,
+        "stop": 238800,
+        "text": " That would be really useful like on days like today when a new Coderly went out. It might be really nice because I'd like to have a two way channel for the members."
+      },
+      {
+        "start": 238800,
+        "stop": 239000,
+        "text": " But the booths really are a one way channel."
+      },
+      {
+        "start": 239000,
+        "stop": 239500,
+        "text": " And then of course we've had a ton of really just great booths recently."
+      },
+      {
+        "start": 239600,
+        "stop": 240400,
+        "text": " The one thing that really continues to stand out with the booths, I actually wrote some of my thoughts down, but I didn't bring it with me."
+      },
+      {
+        "start": 240400,
+        "stop": 241400,
+        "text": " But the one thing out of everything I wrote down is we continue to touch on micro conversations in our shows that we never would have had in the doc."
+      },
+      {
+        "start": 241400,
+        "stop": 241900,
+        "text": " We never would have put in there. And they keep us honest, like they make us follow up on things."
+      },
+      {
+        "start": 242000,
+        "stop": 242900,
+        "text": " So that has been really great. And we're still working out how many booths to include and some weeks it works out that we get a lot of really great booths."
+      },
+      {
+        "start": 242900,
+        "stop": 243500,
+        "text": " And that's kind of what we want to focus on that week because there's not something newsworthy that's breaking that we want to talk about."
+      },
+      {
+        "start": 243500,
+        "stop": 244100,
+        "text": " And sometimes it's more of a balance. An example of that is with this last self-hosted."
+      },
+      {
+        "start": 244200,
+        "stop": 245300,
+        "text": " We're trying to keep self-hosted around 40 minutes and so we got a batch of those booths that they're in the doc so that way Alex can see them and Joe can see them and I can see them."
+      },
+      {
+        "start": 245300,
+        "stop": 246200,
+        "text": " But they didn't make it on air. And I think like four or five did, but not all of them did. But we still read all of them."
+      },
+      {
+        "start": 246200,
+        "stop": 246900,
+        "text": " And so that's happening from time to time. We're experimenting with where that line is at because it's an ongoing process as we figure it out."
+      },
+      {
+        "start": 247000,
+        "stop": 248000,
+        "text": " I like to err more on reading the booths because A) I think they're generally very motivational for us and B) I want to return that value to the listener who's boosted it in."
+      },
+      {
+        "start": 248000,
+        "stop": 249000,
+        "text": " But we do try to kind of select now. So we've kind of gone into across all the shows, it's more selecting for content a little bit. It's a balance to walk."
+      },
+      {
+        "start": 249000,
+        "stop": 249700,
+        "text": " It's kind of still, I think, an art that we're working out. What do you think, Brent? What are your thoughts so far on my ramble?"
+      },
+      {
+        "start": 249800,
+        "stop": 250800,
+        "text": " Yeah, it gets me thinking a lot about feedback in general. You know, the stuff we get by that old method of email that we still really appreciate is that we read all of it."
+      },
+      {
+        "start": 250800,
+        "stop": 251900,
+        "text": " And sometimes there's some really deep thoughts in there that don't always make it to the next show or whatever, but it always gets us thinking about some pretty deep topics."
+      },
+      {
+        "start": 252000,
+        "stop": 253100,
+        "text": " And I think the boosts are not, it's pretty much the exact same thing for what I've seen is sometimes they're bang, right on topic or an update that we always get to a topic that we just visited."
+      },
+      {
+        "start": 253100,
+        "stop": 253900,
+        "text": " And often corrections because, you know, we're wrong lots. But I feel like it's always like really super useful stuff."
+      },
+      {
+        "start": 254000,
+        "stop": 255300,
+        "text": " And where am I going with this? I think what I'm trying to say is just because you didn't hear your boost or your feedback via email in any one of the shows doesn't mean it wasn't extremely valuable for us. So please keep that in mind."
+      },
+      {
+        "start": 255300,
+        "stop": 255700,
+        "text": " Yeah, it's the same problem with emails, right? That's a good point."
+      },
+      {
+        "start": 255800,
+        "stop": 257300,
+        "text": " I think the advantage to email is I try to respond and I sometimes fail at that too, but we try to respond to email as much as we can, even just to say, \"Yep, thanks, we got it.\" The nice thing about the boosts is you know that they got it because you get a confirmation immediately, which is always really nice."
+      },
+      {
+        "start": 257400,
+        "stop": 258600,
+        "text": " Yeah, that's true. You know if our note didn't receive it, you get notified. That's true. And we can process a lot more boosts because there isn't actually a reply mechanism, which is actually I think a non-obvious technology of the boost."
+      },
+      {
+        "start": 258600,
+        "stop": 260000,
+        "text": " Because when you think of a feedback mechanism, everything always has a reply mechanism, Telegram, matrix, comments, email, tweets. There's, you know, YouTube comment even. There's always a reply mechanism."
+      },
+      {
+        "start": 260100,
+        "stop": 262100,
+        "text": " And so it adds like a burden to reply in a way. And not that that's necessarily a bad thing, but it fundamentally limits the amount of stuff you can get through. Because I can tell you, I can get through three or four or five, maybe on a good day a dozen listener emails a day, and I could do a hundred boosts in a day."
+      },
+      {
+        "start": 262100,
+        "stop": 262600,
+        "text": " It's really just because the boost just comes streaming in on a dashboard. There's no reply mechanism."
+      },
+      {
+        "start": 262700,
+        "stop": 264200,
+        "text": " I've got a question for you, Chris. How do you feel about the quasi anonymity of boosts? Because email, for instance, typically you have to give an actual email. I mean, some people are smart enough and they give us bogus stuff whenever they feel like they're given a **** for something."
+      },
+      {
+        "start": 264200,
+        "stop": 265200,
+        "text": " But for, you know, the boost just tends to be usernames and stuff like that. Things you've just made up. Do you think that makes a difference in the quality of feedback at all that we've seen?"
+      },
+      {
+        "start": 265300,
+        "stop": 266500,
+        "text": " I don't know if it changes the quality. That's a good question. I've always preferred handles. I'm an old school internet guy. You may have noticed even when I meet our listeners in person, I generally still call them by their online handle."
+      },
+      {
+        "start": 266500,
+        "stop": 267600,
+        "text": " Just to me, that's who they want to be. That's like their online handle is who they want to be online. I don't know. I don't have a problem with that. You're that person to me. That's who you are. That's fine."
+      },
+      {
+        "start": 267700,
+        "stop": 268300,
+        "text": " So when I say optimist, you get the exact person in your mind when you last saw them?"
+      },
+      {
+        "start": 268300,
+        "stop": 268500,
+        "text": " Yeah, I can picture it right now, actually."
+      },
+      {
+        "start": 268500,
+        "stop": 268700,
+        "text": " Same."
+      },
+      {
+        "start": 268700,
+        "stop": 269300,
+        "text": " Where is optimist, Greg? I haven't seen him for a couple of days. Is he all right? Let us know, optimist. Hope you're all right."
+      },
+      {
+        "start": 269300,
+        "stop": 270200,
+        "text": " So I guess that's just my way of generally addressing and talking about it a bit, just because we haven't mentioned it on Office Hours. That's a topic we've been tracking here."
+      },
+      {
+        "start": 270300,
+        "stop": 271400,
+        "text": " I think adoption has been phenomenal. It continues to be my absolute favorite way to receive feedback. And it's one of these things where it's hard to explain it until you experience it as a content creator. I don't mean to be that guy."
+      },
+      {
+        "start": 271400,
+        "stop": 272500,
+        "text": " But there's something about a message that comes in while you're listening that, A, tells me you're more than just a download. You're actually listening. You're not just a number. You're actually listening."
+      },
+      {
+        "start": 272600,
+        "stop": 273300,
+        "text": " That's like, I think maybe a fear that's in the back of a podcaster's mind that I wasn't aware of is that maybe people are downloading but they're not actually listening."
+      },
+      {
+        "start": 273300,
+        "stop": 274200,
+        "text": " But no, you're actually listening. Here's the episode number you were listening to. But then those sats required work on your part."
+      },
+      {
+        "start": 274300,
+        "stop": 275900,
+        "text": " It's not just that you're sending value in, but your time is valuable too. And you took effort, and those sats are a real thing. They're like mathematically approvable, quantifiable thing that you're sending."
+      },
+      {
+        "start": 276000,
+        "stop": 277500,
+        "text": " It takes it from this abstract concept of a person to a real human being, went to the effort to acquire these sats and attach them to this message and send them to me. There is a connection there."
+      },
+      {
+        "start": 277600,
+        "stop": 279000,
+        "text": " You see the people who boost in. They kind of become cast members of the show. They often will boost back in. They enjoy it too. And then we end up having a dialogue with these people through the shows and they become names in the community."
+      },
+      {
+        "start": 279000,
+        "stop": 279900,
+        "text": " Elray's at a meetup and he says, \"Oh yeah, I'm Elray from the website and from the boost.\" People are like, \"Oh, Elray!\" They're going to know who he is."
+      },
+      {
+        "start": 280000,
+        "stop": 281000,
+        "text": " Or Rusticasta. We even name some of them. You're welcome! No, that's just me. I'm a horrible pronunciator. Is that it? Pronunstiator."
+      },
+      {
+        "start": 281000,
+        "stop": 282000,
+        "text": " I think you can say pronunciate several ways actually. I'm a bad pronun-fi-ca-ta-tor. So, yeah. Why don't we actually get into some boosts?"
+      },
+      {
+        "start": 282000,
+        "stop": 282500,
+        "text": " We have boosts? Yeah, Flash Gordon boosted in with 2,550 sats."
+      },
+      {
+        "start": 282600,
+        "stop": 283400,
+        "text": " Well, Fountain Farming is a bit of a bust. It's taken me weeks just to earn 2,600 sats. I'll keep on going. It'll be a lot slower."
+      },
+      {
+        "start": 283400,
+        "stop": 284300,
+        "text": " Yeah, they're still adjusting that earn thing. It's like the first hour or something that you listen, you get the most sats. I don't know, it's complicated."
+      },
+      {
+        "start": 284300,
+        "stop": 285300,
+        "text": " I had a chat with the co-founder of Fountain last week during the time where we normally record office hours in the off week. I had a chat with Nick from Fountain."
+      },
+      {
+        "start": 285400,
+        "stop": 286300,
+        "text": " There are several things they're working on that are going to make the acquisition of sats much simpler and much more direct. That's going to be a lot smoother."
+      },
+      {
+        "start": 286300,
+        "stop": 287100,
+        "text": " They've got big plans for their 1.0. They're also extremely humble about the state of the app and where they want to take it."
+      },
+      {
+        "start": 287100,
+        "stop": 287800,
+        "text": " It's not even to their minimum acceptable standards yet. I'm actually really enjoying Fountain these days, but it's not even to their minimum acceptable standards yet."
+      },
+      {
+        "start": 287900,
+        "stop": 288700,
+        "text": " They have a lot of ideas there, and they're very aware of where they're at competitively to the rest of the market and where they need to get to."
+      },
+      {
+        "start": 288700,
+        "stop": 289800,
+        "text": " They've got some really solid ideas. It's going to be a matter of execution. It's a small team. They admit that as well. It's not like it's an easy money time where just any old idea can get funding at the moment."
+      },
+      {
+        "start": 289900,
+        "stop": 291200,
+        "text": " So they may have to grind it for a bit, but there are things that are working. I'm really pleased. They've done some really solid bug fix releases in the last couple of Fountain updates, so if you haven't tried it in a minute, it's worth giving it a go."
+      },
+      {
+        "start": 291200,
+        "stop": 292200,
+        "text": " I did ask them about battery life and data usage, and Nick pointed out they can optimize the playback engine. They have more optimizations to do. He says it's a trickier job than you might expect."
+      },
+      {
+        "start": 292300,
+        "stop": 293900,
+        "text": " Basically, it requires them to write their own sound engine, but there is an element that I've been wondering about with these podcasting 2.0 apps is there could be more battery life usage because it's streaming SATs or it's syncing or whatever."
+      },
+      {
+        "start": 294000,
+        "stop": 295300,
+        "text": " Other apps like Podverse don't really have this feature, so it's really only Fountain, I should say. But the streaming SATs feature, because when you're listening in Fountain, you can actually earn SATs. It's not just streaming to the podcaster, but you can actually receive SATs yourself."
+      },
+      {
+        "start": 295300,
+        "stop": 296800,
+        "text": " If you think about that, that process is going to require a little bit of background processing and some data. I think Fountain kind of gets a hard time for some of that, but that's just sort of the cost of having SATs stream to you while you listen or if you're streaming SATs out."
+      },
+      {
+        "start": 296900,
+        "stop": 298800,
+        "text": " They're aware of that. They got some ideas for that as well. I was really impressed. Nick took me through a demo of the new UI that they're working on. It's real clean. It's got some familiar elements, so you'll recognize what is what, but things are going to look also a little bit nicer there."
+      },
+      {
+        "start": 298900,
+        "stop": 300200,
+        "text": " I know our friends over at Podverse are working on a lot of stuff right now, and they just recently had a few updates that are really solid too, so things are really shaping up. I think by the end of next year, these apps are going to be an absolutely totally competitive place."
+      },
+      {
+        "start": 300200,
+        "stop": 300700,
+        "text": " If you're an early adopter and you can navigate this stuff now, I think they're ready now. I've really been enjoying it."
+      },
+      {
+        "start": 300800,
+        "stop": 303200,
+        "text": " L. Ray boosted in with a row of handsome ducks. Now, how about I get a handheld recorder, like how some people leave notes to themselves so you don't even have to worry about writing things down? You just say your note into the recorder. Oh, you're saying this to us. How about we get a handheld recorder? By the way, chapter markers for podcasting to know if it makes it easier for people to spot afterwards. I do sometimes take voice notes. Do you ever do that?"
+      },
+      {
+        "start": 303300,
+        "stop": 304300,
+        "text": " I experimented with that. I think I use an app on my phone. Simple recorder. But then I found I just never ever ever ever ever came back to them."
+      },
+      {
+        "start": 304300,
+        "stop": 304800,
+        "text": " I don't like listening to myself in playback either. When I'm in that mode, I sound like an idiot."
+      },
+      {
+        "start": 304800,
+        "stop": 305300,
+        "text": " Well, why don't you send your voice notes to me and I'll just record them for you back in my voice?"
+      },
+      {
+        "start": 305300,
+        "stop": 305500,
+        "text": " That could work."
+      },
+      {
+        "start": 305500,
+        "stop": 305800,
+        "text": " We might have a business idea."
+      },
+      {
+        "start": 305800,
+        "stop": 306200,
+        "text": " Brent just reads your notes back to you. That could be pretty great."
+      },
+      {
+        "start": 306200,
+        "stop": 306400,
+        "text": " Notes with Brent."
+      },
+      {
+        "start": 306400,
+        "stop": 307500,
+        "text": " Gene Bean boosted in with a row of sticks. So it's a big row of sticks, too. It's 11,000 sets, 111 total, which is fantastic. Thank you, sir."
+      },
+      {
+        "start": 307500,
+        "stop": 307700,
+        "text": " Coming in hot with the boost!"
+      },
+      {
+        "start": 307700,
+        "stop": 308100,
+        "text": " Possibly contentious question. Oh, Gene Bean's going to stir it up. Are you ready for this?"
+      },
+      {
+        "start": 308100,
+        "stop": 308300,
+        "text": " I think I am."
+      },
+      {
+        "start": 308400,
+        "stop": 309200,
+        "text": " I think it's a very contentious question for you guys. What are your feels about the Hive blockchain on which Podping is built?"
+      },
+      {
+        "start": 309200,
+        "stop": 310600,
+        "text": " Podping is obviously a good thing. But this episode, which is where we just happen to talk about how all crypto tokens that are built on nothing are going to go to zero and collapse just two days before the FTT token collapsed and then FTX collapsed."
+      },
+      {
+        "start": 310700,
+        "stop": 311600,
+        "text": " It's very good timing. He says, well, Podping has a Hive coin, is what he's referring to. Podping uses the Hive blockchain. I'm wondering how its future might be impacted by what you talked about."
+      },
+      {
+        "start": 311600,
+        "stop": 312500,
+        "text": " This is a great question, Gene Bean. And I think it's one that actually trips up Adam and Dave sometimes as well. They don't seem to really navigate it in a way that I find to be sufficient."
+      },
+      {
+        "start": 312600,
+        "stop": 314200,
+        "text": " And it's, to me, not a wholesome one winner takes all game out there. I don't like any of the ship coins that are out there right now. I think they're all scams and junk and I would avoid them like the plague and I think they're all going to zero."
+      },
+      {
+        "start": 314200,
+        "stop": 315200,
+        "text": " And any cryptocurrency that has a CEO should be avoided. That's it right there. That's the math. If there's a team and a leader behind it, avoid it."
+      },
+      {
+        "start": 315300,
+        "stop": 317300,
+        "text": " I don't actually think that's always going to be the case forever. I think it's just with this current crop of, you know, when the money printer was going brr, the investments were going crazy, any idea got funding, lots of dumb stuff got created, the public got dumped on."
+      },
+      {
+        "start": 317400,
+        "stop": 318400,
+        "text": " However, there is obviously going to be some uses for blockchain probably just outside of Bitcoin. There will probably be other uses for these types of things. And here's where Podping kind of makes sense."
+      },
+      {
+        "start": 318400,
+        "stop": 319900,
+        "text": " Podping is essentially a JSON message bus. And the brilliant idea there is that when a podcaster has a new episode, you can inform the Hive blockchain, Podping, about this new episode with that information."
+      },
+      {
+        "start": 320000,
+        "stop": 321200,
+        "text": " So instead of every podcast client in the world hitting your XML file on your HTTP endpoint and doing a refresh every few minutes to see if you've published a new episode, you publish that information to Podping."
+      },
+      {
+        "start": 321200,
+        "stop": 322100,
+        "text": " And then the podcast clients, they subscribe as a Podping listener and they get notifications and then they go pull the file because they know that things have been updated."
+      },
+      {
+        "start": 322100,
+        "stop": 322600,
+        "text": " And they can at that point go check the XML feed, the RSS feed directly, or they could just go grab the file perhaps."
+      },
+      {
+        "start": 322700,
+        "stop": 323700,
+        "text": " And there are Podping watchers, websites where you can actually go and in real time you can see podcasts getting released and the Podping network getting updated."
+      },
+      {
+        "start": 323700,
+        "stop": 324900,
+        "text": " And I think when you have real work specific tasks like this and you need something that's decentralized, because when you look at podcasting, you want some of this to be really decentralized."
+      },
+      {
+        "start": 325000,
+        "stop": 325700,
+        "text": " The payment system, you want that to be decentralized. You don't want a single company to own that or influence that. So that's the boost."
+      },
+      {
+        "start": 325700,
+        "stop": 326500,
+        "text": " And the system that handles the index of when a new podcast comes out and what those feeds are, you want that to be decentralized."
+      },
+      {
+        "start": 326500,
+        "stop": 327800,
+        "text": " Now you can build interfaces on top of that. Like you could have a podcast index clone that only features Linux's podcasts, or only features political podcasts, or never features a political podcast."
+      },
+      {
+        "start": 327900,
+        "stop": 328900,
+        "text": " You can build clients on top of Podping and the Hive blockchain. But the idea is that core information of when a new shows out and the payload information, that JSON blob, that's decentralized."
+      },
+      {
+        "start": 328900,
+        "stop": 329700,
+        "text": " And now how well Hive does it that I don't know, but I am not opposed to a reasonable idea for something like that."
+      },
+      {
+        "start": 329700,
+        "stop": 330300,
+        "text": " And honestly you could even argue proof of stake might make sense for that setup. I'm not opposed to it."
+      },
+      {
+        "start": 330400,
+        "stop": 331000,
+        "text": " But I've looked at the books, checked the receipts, read the white papers, and the current crop has got to go."
+      },
+      {
+        "start": 331000,
+        "stop": 331700,
+        "text": " We've got to go. And I don't necessarily include things like Monero or Hive or maybe even Litecoin."
+      },
+      {
+        "start": 331700,
+        "stop": 332600,
+        "text": " I don't bother getting into the nitty gritty of it, because the reality is for this period of time, stack sats, avoid everything else, or just play with sats. Don't even stack them."
+      },
+      {
+        "start": 332600,
+        "stop": 333200,
+        "text": " Buy them while they're cheap, send them around, see what the network, see if you think there's anything there. It's a good time to dork around while everything's cheap."
+      },
+      {
+        "start": 333300,
+        "stop": 333900,
+        "text": " And if you decide it's not for you, that's fine. But I do think it's a good question, because I do see Adam and Dave struggle with this."
+      },
+      {
+        "start": 333900,
+        "stop": 334900,
+        "text": " Because then the next obvious question that comes up is, well, if you're willing to use Hive for Podping, then why aren't you willing to send a different crypto for boosts?"
+      },
+      {
+        "start": 334900,
+        "stop": 335400,
+        "text": " And there's two answers to that. First answer is, it's the Lightning Network."
+      },
+      {
+        "start": 335400,
+        "stop": 335900,
+        "text": " The Lightning Network is the core fundamental technology, and there's a massive network effect there way beyond just podcasting."
+      },
+      {
+        "start": 336000,
+        "stop": 336600,
+        "text": " There are now 10,000 podcasts on the Lightning Network. When we first started doing boosts on JB shows, there were 4,000."
+      },
+      {
+        "start": 336600,
+        "stop": 337300,
+        "text": " There's now 10,000 podcasts that accept boosts. That's amazing. That's incredible."
+      },
+      {
+        "start": 337300,
+        "stop": 338000,
+        "text": " But that's just a small fraction, just a tiny, tiny, tiny fraction of the Lightning Network's growth over the last year."
+      },
+      {
+        "start": 338000,
+        "stop": 338900,
+        "text": " There is a huge network effect that is happening, and the Lightning technology may be one of the most important platforms going forward."
+      },
+      {
+        "start": 338900,
+        "stop": 339600,
+        "text": " Bitcoin is an implementation detail of what I believe is a very significant Visa and MasterCard competitor."
+      },
+      {
+        "start": 339600,
+        "stop": 340200,
+        "text": " And once people start wrapping around their heads that there's essentially SMTP for payments, it's going to take off, right?"
+      },
+      {
+        "start": 340200,
+        "stop": 340800,
+        "text": " That's just kind of obvious, especially it's cryptographically secure. There's a solid asset underneath it that underpins it."
+      },
+      {
+        "start": 340800,
+        "stop": 341300,
+        "text": " That's a no-brainer. People just don't really understand what it is yet, but it's happening."
+      },
+      {
+        "start": 341400,
+        "stop": 342700,
+        "text": " And I think it's really important that we just focus on that, and podcasting sticks with that, because there will be a prestige associated with that development as people begin to wrap their heads around the implications of the Lightning Network."
+      },
+      {
+        "start": 342700,
+        "stop": 343700,
+        "text": " When you go to all these other coins, there's so many other things you have to do. You have to support a different blockchain. You have to support a different underlying technology, a different protocol. The apps have to support that."
+      },
+      {
+        "start": 343800,
+        "stop": 344400,
+        "text": " It is a technical, massive amount of work, and it just should be avoided. We don't need to be splitting our efforts like that. So that's argument number one."
+      },
+      {
+        "start": 344400,
+        "stop": 345600,
+        "text": " Argument number two is none of these other cryptocurrencies are worth anything. They're all going to go to zero. Maybe Ethereum sticks around, maybe it doesn't. I don't want to bet on it, and as a podcaster, as a business to run, I don't want to fool around with that stuff."
+      },
+      {
+        "start": 345600,
+        "stop": 346100,
+        "text": " Not interested. You guys got me when it was SATS. If it's anything else, I'm out."
+      },
+      {
+        "start": 346200,
+        "stop": 347200,
+        "text": " Maybe stablecoins one day, if we develop something that people can rely on, that people believe in, and if it can be transported over the Lightning Network, and there is development to make that possible happening."
+      },
+      {
+        "start": 347200,
+        "stop": 348100,
+        "text": " If we ever got there years down the road, I'd be open to a stablecoin that is reliable, trustworthy, and backed by an appropriate organization that's been regulated."
+      },
+      {
+        "start": 348200,
+        "stop": 349300,
+        "text": " But we're not there right now. We're very far from that right now. SATS are a SAT, and when a SAT is sent, I don't care if the USD price at the exchange is 16,000 or 20,000."
+      },
+      {
+        "start": 349300,
+        "stop": 350200,
+        "text": " I care that you sent a SAT. I want the SAT. I don't care what its exchange rate pegged to the dollar is. I also don't care what it is pegged to the yen, and they're very different things."
+      },
+      {
+        "start": 350300,
+        "stop": 351200,
+        "text": " I don't care. I don't follow any of it. It's a detail. I like the SAT because it's a real quantifiable asset that's verifiably provable."
+      },
+      {
+        "start": 351200,
+        "stop": 351700,
+        "text": " It's a limited scarce asset that you had to collect, package up, and send into the show."
+      },
+      {
+        "start": 351700,
+        "stop": 352400,
+        "text": " As far as I'm concerned, it's a magic internet token, but it's a representation of the value that you see in the show, and that means something to me."
+      },
+      {
+        "start": 352500,
+        "stop": 353300,
+        "text": " I don't really care if they use Hive to distribute the update of a podcast, but I definitely care when it comes to how you distribute that value."
+      },
+      {
+        "start": 353300,
+        "stop": 353900,
+        "text": " It's a totally different technology stack, and I don't think it's a one-winner game for the technology aspect."
+      },
+      {
+        "start": 353900,
+        "stop": 354300,
+        "text": " These blockchains, in some cases, may actually be application stack one day."
+      },
+      {
+        "start": 354300,
+        "stop": 354800,
+        "text": " Alright, moving on. Sorry about that, Brent. Thank you for letting me go."
+      },
+      {
+        "start": 354800,
+        "stop": 355000,
+        "text": " No, there's a lot of education in there."
+      },
+      {
+        "start": 355100,
+        "stop": 355600,
+        "text": " Oof! I got feels and opinions. We also got a row of Grandpa ducks from Gene Bean."
+      },
+      {
+        "start": 355600,
+        "stop": 355800,
+        "text": " This old duck still got it!"
+      },
+      {
+        "start": 355800,
+        "stop": 356700,
+        "text": " He wanted to reward the efforts not to swear. He says, \"My four-year-old likes listening to the JB shows with me, and I appreciate you refraining from words I don't want them parodying. Many thanks.\""
+      },
+      {
+        "start": 356700,
+        "stop": 357300,
+        "text": " Yeah, that's probably the number one reason why we don't swear. I have kids, too. I want them to listen, stay informed on this kind of stuff."
+      },
+      {
+        "start": 357400,
+        "stop": 358100,
+        "text": " I'm not a hard-nosed about any of that, but I get it, and it's not a costly adjustment for us to make."
+      },
+      {
+        "start": 358100,
+        "stop": 358800,
+        "text": " I think we slip in some here and there, and we never really mean to or mean for that to be the focus."
+      },
+      {
+        "start": 358800,
+        "stop": 359600,
+        "text": " And I know from time to time, maybe once every six months, we just say, \"Chris, we get a note like this,\" and it gets us thinking."
+      },
+      {
+        "start": 359700,
+        "stop": 360400,
+        "text": " Usually if we throw it in, it's probably the name of a project, or we didn't really mean to. Oops. Or Joe is on. There's that."
+      },
+      {
+        "start": 360400,
+        "stop": 360800,
+        "text": " There has been that, too. Yeah. Or sometimes I get fired up about scams."
+      },
+      {
+        "start": 360800,
+        "stop": 361200,
+        "text": " Well, that's reasonable, I think. There's a time and place."
+      },
+      {
+        "start": 361200,
+        "stop": 361600,
+        "text": " The rage flows. The MuSo boosting with 3,000 SATs."
+      },
+      {
+        "start": 361600,
+        "stop": 361800,
+        "text": " B-O-O-S-T!"
+      },
+      {
+        "start": 361900,
+        "stop": 363500,
+        "text": " I don't see more FLOSS projects except SATs. However, if I were in the shoes of a Bitcoin enthusiast and a FLOSS project maintainer, I couldn't help but worry about scaring potential users away from my project, because there is a reference to any cryptocurrencies, if there is a reference to any of these cryptocurrencies in their user interface, even if it's Bitcoin only."
+      },
+      {
+        "start": 363500,
+        "stop": 364500,
+        "text": " I think he means it's a bad association. And I think this is a difficult problem to solve. Yeah, and Brent's buddy Sam Bankman fraud over there didn't make it any easier on us."
+      },
+      {
+        "start": 364600,
+        "stop": 365700,
+        "text": " Nope. And we saw this with Mozilla, that got totally chewed out for even suggesting that they might accept donations via Bitcoin. That was what, earlier this year?"
+      },
+      {
+        "start": 365700,
+        "stop": 366500,
+        "text": " Yeah, that was also sort of peak, like the hysterical class on Twitter that was socially shaming everybody for everything."
+      },
+      {
+        "start": 366500,
+        "stop": 366800,
+        "text": " Yeah, that's true. Hey, do you remember Twitter?"
+      },
+      {
+        "start": 366900,
+        "stop": 368300,
+        "text": " There is the OpenSats project, which is really awesome, and has helped in some legal defenses and helped fund some really great free software projects, and I have put in our splits from time to time to donate to their cause."
+      },
+      {
+        "start": 368400,
+        "stop": 369700,
+        "text": " But historically speaking, if you look at things like currencies, assets, and all that stuff from the little bit that I understand, and again, if anybody knows differently, you can always reach out and tell me what you know."
+      },
+      {
+        "start": 369700,
+        "stop": 370700,
+        "text": " But you don't really see gold, for example, being like exchange stores, right? I don't think regular people even know how to go buy a little bit of gold."
+      },
+      {
+        "start": 370800,
+        "stop": 371700,
+        "text": " So something can kind of become very valuable to the market and become considered a store of value that is really abstract from the day-to-day consumer."
+      },
+      {
+        "start": 371700,
+        "stop": 372600,
+        "text": " I don't know if we'll get there with Bitcoin, because this is a technology solution, so we can always just build front-end apps, so we may take things further than we ever could with gold."
+      },
+      {
+        "start": 372700,
+        "stop": 374100,
+        "text": " But when we go through the monetization phase of an early asset like this, the early phase is really a lot of holding. Historically, people collect and hold, and they sit on it, and that kind of begins to give the thing value."
+      },
+      {
+        "start": 374100,
+        "stop": 375000,
+        "text": " It's sort of the first stage in society recognizing value in an asset, is the first wave of adopters do what Bitcoiners call \"hoddle.\""
+      },
+      {
+        "start": 375100,
+        "stop": 375800,
+        "text": " And they don't really care what the public perception is, they don't really care what the media is saying, they don't care what average, uninformed consumers who haven't done research think."
+      },
+      {
+        "start": 375800,
+        "stop": 377100,
+        "text": " They've done the research on the asset, they have their conviction, and they hold. And then as time goes on, it becomes worth more and more, it becomes, in some cases solutions get built around it, it becomes adopted, and then it actually becomes a medium of exchange."
+      },
+      {
+        "start": 377200,
+        "stop": 378400,
+        "text": " We'll see if we ever get there, but I think we're going to go through a process where digital assets and crypto will become different things, essentially, in the eye of investors and regulators."
+      },
+      {
+        "start": 378400,
+        "stop": 378900,
+        "text": " A digital asset is something you invest in, it's something you respect, it's something that's regulated."
+      },
+      {
+        "start": 379000,
+        "stop": 380600,
+        "text": " Crypto is going to be like the wild west, the new VC upstart stuff, totally risk on, heavily regulated, likely treated as securities, they'll constantly have to be evaluating if they're at the line where they need to register as a security or not, it's going to be an ongoing discussion."
+      },
+      {
+        "start": 380600,
+        "stop": 381000,
+        "text": " And then you're going to have solid, pristine digital assets."
+      },
+      {
+        "start": 381100,
+        "stop": 382300,
+        "text": " And if you look at the communications from the White House and from Janet Yellen, the Treasury Secretary, and Gary Gensler, the chair of the SEC, what you see is they've already adopted this style of language."
+      },
+      {
+        "start": 382300,
+        "stop": 383800,
+        "text": " Going back to Biden's executive order at the beginning of the year, but even to more recently the stuff that came out about FTX, they verbally are making a distinction between crypto, which is like all the ship coins, and digital assets."
+      },
+      {
+        "start": 383900,
+        "stop": 384500,
+        "text": " And I think that's the beginning of the market separating into two different buckets."
+      },
+      {
+        "start": 384500,
+        "stop": 386300,
+        "text": " And perhaps as Wall Street and regulators and politicians begin referring to these things as digital assets and they assign some kind of social credibility to them, you might see the sheep at all these other projects who can't be bothered to do their own research before we get to that point, begin to reevaluate this stuff,"
+      },
+      {
+        "start": 386400,
+        "stop": 387000,
+        "text": " and then silently just pretend like they never talked crap about Bitcoin and just start accepting it because numbers go up."
+      },
+      {
+        "start": 387000,
+        "stop": 388000,
+        "text": " And we just have to get through a horrendous macro-global environment that will likely last until at least the middle of 2024 if we're lucky,"
+      },
+      {
+        "start": 388000,
+        "stop": 388800,
+        "text": " where all assets, prices, including real estate, pretty much anything that's not energy and food, are going to get smashed."
+      },
+      {
+        "start": 388900,
+        "stop": 389900,
+        "text": " Once we get through that, hopefully, you'll start to see asset prices on things like real estate and on Bitcoin and stocks and tech stocks and whatnot begin to go up."
+      },
+      {
+        "start": 389900,
+        "stop": 391000,
+        "text": " And as that number begins to go up, it sells itself. And if by that point, because it's going to be mid-24, maybe it's 2025, it's post-presidential election perhaps before all the regulation is finished, who knows?"
+      },
+      {
+        "start": 391100,
+        "stop": 391900,
+        "text": " But once it's all in place, you're basically going to see a regulatory outline that makes it clear what's a security and makes it clear what's property."
+      },
+      {
+        "start": 391900,
+        "stop": 392600,
+        "text": " And I think the biggest risk to Bitcoin in that scenario is some sort of crackdown on mining, but even in that case, it's not going to take Bitcoin out."
+      },
+      {
+        "start": 392600,
+        "stop": 393400,
+        "text": " And so the overall long-term picture is quite bullish. And so because of that, when the number does go back up, you'll begin to see adoption."
+      },
+      {
+        "start": 393500,
+        "stop": 394700,
+        "text": " History teaches us that when numbers go down, you see adoption slow. You don't see people implementing it. But when numbers go up, you see everybody trying to attach themselves to the hype and to the name and to the number, and so they begin implementing support for it."
+      },
+      {
+        "start": 394700,
+        "stop": 395300,
+        "text": " So you build for that during the bear market, and you join it during the bull market, apparently."
+      },
+      {
+        "start": 395300,
+        "stop": 396000,
+        "text": " 2006 stats from Smash have been listening since the beginning, but this is my first time boosting."
+      },
+      {
+        "start": 396100,
+        "stop": 396900,
+        "text": " Oh, Smash! I'm boosting 2006 sets since I've been listening to you since 2006 back in the Lunduke days."
+      },
+      {
+        "start": 396900,
+        "stop": 397100,
+        "text": " That's impressive."
+      },
+      {
+        "start": 397100,
+        "stop": 397600,
+        "text": " Thank you for all the great years of education and entertainment. Still waiting on my response to my BitMessages."
+      },
+      {
+        "start": 397600,
+        "stop": 398200,
+        "text": " Keep up the great work, and let's go, Manjaro. Smash!"
+      },
+      {
+        "start": 398300,
+        "stop": 399300,
+        "text": " So BitMessage was an email killer that used a blockchain. Early on, every stupid idea that you could possibly put on the blockchain was thought of."
+      },
+      {
+        "start": 399300,
+        "stop": 400300,
+        "text": " And the beauty around BitMessage was A, it was encrypted. But B, you didn't need a mail server. You just needed the client, so the client would download the blockchain and read it."
+      },
+      {
+        "start": 400300,
+        "stop": 400900,
+        "text": " And so you would send messages by submitting them to the blockchain, and then your client would read that message and show it to you."
+      },
+      {
+        "start": 400900,
+        "stop": 401000,
+        "text": " Wow."
+      },
+      {
+        "start": 401100,
+        "stop": 402000,
+        "text": " So that makes the blockchain grow really fast, and if you haven't opened up BitMessage in a while, you had to download gigs of a blockchain just to get your one or two messages."
+      },
+      {
+        "start": 402000,
+        "stop": 402400,
+        "text": " That's a good idea. Bad implementation, perhaps."
+      },
+      {
+        "start": 402400,
+        "stop": 403400,
+        "text": " You know, a few listeners like Smash there jumped on it. I was having a good dialogue, but I think I lost that machine, or Drive died, or something happened."
+      },
+      {
+        "start": 403400,
+        "stop": 403800,
+        "text": " And I couldn't get back to my original BitMessage messages."
+      },
+      {
+        "start": 403900,
+        "stop": 404800,
+        "text": " So I think it's lost to Time Smash. If you could find it, if you actually still have BitMessage, if it actually still works, pull it up and send it in as a boost, man."
+      },
+      {
+        "start": 404800,
+        "stop": 405100,
+        "text": " But thanks for boosting in. That is really great."
+      },
+      {
+        "start": 405100,
+        "stop": 405500,
+        "text": " And TruGrits boosted in with some enterprise SAT 1701."
+      },
+      {
+        "start": 405500,
+        "stop": 405600,
+        "text": " Make it so."
+      },
+      {
+        "start": 405600,
+        "stop": 406300,
+        "text": " Honestly, out of all the app and messengers that have attempted stories in the past, Signal seems like the least offensive to me."
+      },
+      {
+        "start": 406400,
+        "stop": 407500,
+        "text": " It's the first app to attempt stories that actually respects user privacy. All the others in the past, Facebook, Twitter, Instagram, just seem like they were trying to copy Snapchat and hobble user data."
+      },
+      {
+        "start": 407500,
+        "stop": 408100,
+        "text": " At least with Signal, there's a privacy aspect to it. I just don't see the user base adopting it."
+      },
+      {
+        "start": 408100,
+        "stop": 408400,
+        "text": " What would you make a story out of in your day-to-day life?"
+      },
+      {
+        "start": 408400,
+        "stop": 409100,
+        "text": " Like, I've had a goal for Office Hours for three episodes in a row, and it has not panned out."
+      },
+      {
+        "start": 409200,
+        "stop": 410200,
+        "text": " That is, I want to capture something just in the day of. Like, something for JB or something at home. I just want to bring up, I thought I'd break out the phone and just record something like a behind-the-scenes moment."
+      },
+      {
+        "start": 410200,
+        "stop": 411000,
+        "text": " But I never, I never, I guess I never in the moment think this is the thing I should capture, or nothing interesting enough ever happens. It could be that, too."
+      },
+      {
+        "start": 411000,
+        "stop": 411800,
+        "text": " Or maybe it's that all of the stuff we should cover in Office Hours is just an everyday for us, so we don't think it's special. But actually, it really is."
+      },
+      {
+        "start": 411900,
+        "stop": 412500,
+        "text": " Yeah, I struggle, because I don't know what I would make a story out of. I don't know."
+      },
+      {
+        "start": 412500,
+        "stop": 413400,
+        "text": " I couldn't imagine if I was still trying to vlog today. I couldn't imagine, well, it's another day of me going to the studio and working from before sunset till after sunset."
+      },
+      {
+        "start": 413400,
+        "stop": 413700,
+        "text": " Let's do a time lapse of Chris sitting at his desk."
+      },
+      {
+        "start": 413700,
+        "stop": 414200,
+        "text": " Yesterday morning, my car battery died, and I had to deal with that before going somewhere."
+      },
+      {
+        "start": 414200,
+        "stop": 414600,
+        "text": " That could be a story. I'd watch that story, to be honest with you. I actually would watch that."
+      },
+      {
+        "start": 414700,
+        "stop": 414900,
+        "text": " Well, I missed a good opportunity, then."
+      },
+      {
+        "start": 414900,
+        "stop": 415300,
+        "text": " Always be content. That's ABC."
+      },
+      {
+        "start": 415300,
+        "stop": 416300,
+        "text": " But it does sound quite a bit like you're vlogging, just in a smaller format, right? So I could see, you know, with the experience that you had there, and the emotions you probably still have from it."
+      },
+      {
+        "start": 416300,
+        "stop": 416600,
+        "text": " I don't know. It takes a certain kind of person to use it, perhaps."
+      },
+      {
+        "start": 416600,
+        "stop": 416800,
+        "text": " As long as I can work in drone shots, then I can see it working out."
+      },
+      {
+        "start": 416800,
+        "stop": 417000,
+        "text": " Now you're talking."
+      },
+      {
+        "start": 417000,
+        "stop": 417300,
+        "text": " Rusta, casta, versa, boosting with a thousand sats."
+      },
+      {
+        "start": 417300,
+        "stop": 418400,
+        "text": " Yes, God yes, clipping does need some love. Side note, I gotta say, Rusta."
+      },
+      {
+        "start": 418400,
+        "stop": 418900,
+        "text": " I see clips from Rusta all the time in Fountains, so Rusta has been busting up the clips."
+      },
+      {
+        "start": 418900,
+        "stop": 419500,
+        "text": " Since the bookmark idea Chris had is a great one, I've been suggesting something similar to them in the beta group."
+      },
+      {
+        "start": 419500,
+        "stop": 420100,
+        "text": " When you hit the clip button, it gives you a six-minute spread, three minutes to either side of your current playback time in Fountain."
+      },
+      {
+        "start": 420200,
+        "stop": 420900,
+        "text": " It would be nice to have the prompt after I hit clip to say if the position I hit is at the end of where I want or mid-clip."
+      },
+      {
+        "start": 420900,
+        "stop": 421400,
+        "text": " Right now it's a balancing act to try to get a good chunk of audio. A bit of refinement would go a long way."
+      },
+      {
+        "start": 421400,
+        "stop": 421900,
+        "text": " You're right. When I hit the clip button, it's usually after I've heard the thing I want to clip, not in the middle of it."
+      },
+      {
+        "start": 421900,
+        "stop": 422600,
+        "text": " Yeah, because you're kind of putting an idea together and listening to everything, and then it all comes to fruition in your mind."
+      },
+      {
+        "start": 422600,
+        "stop": 422900,
+        "text": " You're like, boom, that's the thing I want to capture, but it's gone already, right?"
+      },
+      {
+        "start": 423000,
+        "stop": 423200,
+        "text": " That'd be a great way to think of a reminder too."
+      },
+      {
+        "start": 423200,
+        "stop": 423800,
+        "text": " Nomadic Coder came in with a couple of boosts, a series of boosts. The first one, 1,555 sats."
+      },
+      {
+        "start": 423800,
+        "stop": 424400,
+        "text": " You know what, I find it so much easier to contribute sats than dollars through PayPal or Patreon."
+      },
+      {
+        "start": 424400,
+        "stop": 425200,
+        "text": " And with my own lightning node, I have more control of what I contribute, and my contribution is between the recipient and me directly."
+      },
+      {
+        "start": 425200,
+        "stop": 425500,
+        "text": " Not PayPal, not Patreon, Visa, MasterCard, or the bank."
+      },
+      {
+        "start": 425600,
+        "stop": 426300,
+        "text": " Yeah, there's a lot of hands. I think somebody said there's six parties involved in every debit card transaction."
+      },
+      {
+        "start": 426300,
+        "stop": 426500,
+        "text": " I believe it."
+      },
+      {
+        "start": 426500,
+        "stop": 427000,
+        "text": " If you include the merchant and your bank. That's a lot, and a lot of them are taking a cut."
+      },
+      {
+        "start": 427000,
+        "stop": 427400,
+        "text": " Merchants usually on the losing end of that deal."
+      },
+      {
+        "start": 427400,
+        "stop": 428400,
+        "text": " Nomadic Coder continued with another series of 1,555 sats just because, and then a message with another set of 1,555 sats, so two additional sets."
+      },
+      {
+        "start": 428500,
+        "stop": 429100,
+        "text": " I passed my ham radio exam when knowing Morse code was required. I still know how to send."
+      },
+      {
+        "start": 429100,
+        "stop": 429500,
+        "text": " Working the paddles on a code keyer only takes a thumb and an index finger."
+      },
+      {
+        "start": 429500,
+        "stop": 430500,
+        "text": " You could drive and take notes with the keyer on the center console, but still need a way to transcribe the dits and dashes onto a mobile taking app."
+      },
+      {
+        "start": 430500,
+        "stop": 430800,
+        "text": " You know, you just need an app that could receive those and translate them."
+      },
+      {
+        "start": 430900,
+        "stop": 431600,
+        "text": " Okay, I never thought it would come to this, Chris. I hadn't considered Morse code as a note taking solution in the car."
+      },
+      {
+        "start": 431600,
+        "stop": 431900,
+        "text": " This is fascinating. Keep them coming."
+      },
+      {
+        "start": 431900,
+        "stop": 432600,
+        "text": " Alright, and then rounding out our last boost for the show, we got 1,001 sats from rpilling."
+      },
+      {
+        "start": 432600,
+        "stop": 433200,
+        "text": " Show name suggestion. The Jupiter shuttle orbiting Jupiter. Jupiter's eye."
+      },
+      {
+        "start": 433200,
+        "stop": 433600,
+        "text": " My first boost. Been listening since 2018. Thanks for all your efforts, Rick."
+      },
+      {
+        "start": 433700,
+        "stop": 434100,
+        "text": " Rick, thank you very much for another first booster from the old days."
+      },
+      {
+        "start": 434100,
+        "stop": 434900,
+        "text": " That's amazing. I love it. I'm glad FTX didn't scare people away because I could see a less discerning audience getting freaked out by that."
+      },
+      {
+        "start": 434900,
+        "stop": 435200,
+        "text": " Because the FTX thing had nothing to do with Bitcoin, you know?"
+      },
+      {
+        "start": 435200,
+        "stop": 436100,
+        "text": " In fact, they held very little Bitcoin. They were essentially lying and they were selling paper Bitcoin, which I think you could argue was probably suppressing the price of Bitcoin."
+      },
+      {
+        "start": 436200,
+        "stop": 437000,
+        "text": " They artificially increased the inventory of Bitcoin by overselling the one they actually had on their balance sheets. Sucks."
+      },
+      {
+        "start": 437000,
+        "stop": 437700,
+        "text": " And our last boost for this week's episode comes in from the Mere Mortals podcast with 3,333 sats."
+      },
+      {
+        "start": 437700,
+        "stop": 437900,
+        "text": " You're doing a good job."
+      },
+      {
+        "start": 437900,
+        "stop": 438200,
+        "text": " It says, \"Thanks for the kind words, Chris, regarding Fountain and trying to trap you.\""
+      },
+      {
+        "start": 438200,
+        "stop": 438800,
+        "text": " I wouldn't be too concerned about that as there does need to be an incentive to work as hard as he can to make an awesome app."
+      },
+      {
+        "start": 438800,
+        "stop": 439000,
+        "text": " That's talking about Oscar and Nick."
+      },
+      {
+        "start": 439100,
+        "stop": 439800,
+        "text": " \"I believe him and Nick have shown their bonafides to the P.2.0 mission, the podcasting 2.0 mission. I like what Adam Curry has said before.\""
+      },
+      {
+        "start": 439800,
+        "stop": 440300,
+        "text": " \"If anyone comes out of this podcasting 2.0 a billionaire, then something has gone wrong.\""
+      },
+      {
+        "start": 440300,
+        "stop": 440800,
+        "text": " I don't get the impression Oscar's trying to be a billionaire."
+      },
+      {
+        "start": 440800,
+        "stop": 441000,
+        "text": " Yeah, that's right."
+      },
+      {
+        "start": 441000,
+        "stop": 441300,
+        "text": " If you're in podcasting to become a billionaire, you're doing something wrong."
+      },
+      {
+        "start": 441300,
+        "stop": 441600,
+        "text": " And if you happen to become a billionaire, there's definitely something wrong."
+      },
+      {
+        "start": 441600,
+        "stop": 441900,
+        "text": " That's a great quote from Adam."
+      },
+      {
+        "start": 442000,
+        "stop": 442200,
+        "text": " Thank you, Mere Mortals podcast. Great show."
+      },
+      {
+        "start": 442200,
+        "stop": 442600,
+        "text": " Go check out the Mere Mortals pod. You can find it on podcastindex.org as well."
+      },
+      {
+        "start": 442600,
+        "stop": 443400,
+        "text": " Also, Mitch, the developer of Podverse, sent in 10,000 sats to say, \"Go podcasting.\" Heck yeah."
+      },
+      {
+        "start": 443400,
+        "stop": 443600,
+        "text": " And how about..."
+      },
+      {
+        "start": 443600,
+        "stop": 444200,
+        "text": " We'll give old Mitch the baller boost this week, too."
+      },
+      {
+        "start": 444200,
+        "stop": 444400,
+        "text": " Very much appreciated."
+      },
+      {
+        "start": 444400,
+        "stop": 444900,
+        "text": " I think Gene Bean technically was our biggest booster because there was a couple extra boosts that Gene sent in that didn't make it on air."
+      },
+      {
+        "start": 444900,
+        "stop": 445200,
+        "text": " And I think if you add it all up, Gene Bean was technically the baller booster."
+      },
+      {
+        "start": 445200,
+        "stop": 445600,
+        "text": " I think I want to point something out, Chris, that hit me this week that I thought was really amazing."
+      },
+      {
+        "start": 445600,
+        "stop": 446300,
+        "text": " When we were recording Linux Unplugged this Sunday, we got something like seven live boosts."
+      },
+      {
+        "start": 446300,
+        "stop": 446700,
+        "text": " And I understand we're on air for quite a long time."
+      },
+      {
+        "start": 446700,
+        "stop": 446900,
+        "text": " Yeah, we were."
+      },
+      {
+        "start": 446900,
+        "stop": 447500,
+        "text": " But, you know, John was in the house in the studio and he was boosting, presumably from his phone."
+      },
+      {
+        "start": 447600,
+        "stop": 447900,
+        "text": " Or maybe he has, I don't know, some kind of implant or something."
+      },
+      {
+        "start": 447900,
+        "stop": 448100,
+        "text": " I'm sure it's from his podcast app."
+      },
+      {
+        "start": 448100,
+        "stop": 448600,
+        "text": " But a number of others as well. And it really hit me, like, that is super special."
+      },
+      {
+        "start": 448600,
+        "stop": 449200,
+        "text": " And every time you had the boost sound just come up in the middle of when Wes or I or you are talking,"
+      },
+      {
+        "start": 449200,
+        "stop": 449700,
+        "text": " it actually wasn't disruptive because we all just kind of started smiling a little bit more."
+      },
+      {
+        "start": 449700,
+        "stop": 449900,
+        "text": " It's like, \"Ooh, I wonder what's in there.\""
+      },
+      {
+        "start": 449900,
+        "stop": 450300,
+        "text": " And so I just want to say that it was super special and I really appreciated that."
+      },
+      {
+        "start": 450400,
+        "stop": 450800,
+        "text": " That was. And you know what? Circus Freak just sent in 15,000 sats live!"
+      },
+      {
+        "start": 450800,
+        "stop": 451000,
+        "text": " You can change, you filthy animal!"
+      },
+      {
+        "start": 451000,
+        "stop": 451200,
+        "text": " How about that? That is so great."
+      },
+      {
+        "start": 451200,
+        "stop": 451400,
+        "text": " Perfect timing."
+      },
+      {
+        "start": 451400,
+        "stop": 451800,
+        "text": " Thank you, Circus Freak. Yeah, he says it's TuckSats, so he's got two penguins in there."
+      },
+      {
+        "start": 451800,
+        "stop": 452000,
+        "text": " Ooh."
+      },
+      {
+        "start": 452000,
+        "stop": 452200,
+        "text": " That's pretty good. That's pretty good."
+      },
+      {
+        "start": 452200,
+        "stop": 452600,
+        "text": " Yeah, eventually, one of the reasons we want to do our own RSS feeds is so we can actually be live in the podcast apps"
+      },
+      {
+        "start": 452600,
+        "stop": 453300,
+        "text": " to make live boosting easier, but also just so people can catch the live shows as just part of their regular podcast mix, if they will."
+      },
+      {
+        "start": 453300,
+        "stop": 453700,
+        "text": " So there's a lot to do there, and Podverse is one of the apps that makes that possible."
+      },
+      {
+        "start": 453700,
+        "stop": 454000,
+        "text": " So if you haven't checked out Podverse, podverse.f them."
+      },
+      {
+        "start": 454000,
+        "stop": 454200,
+        "text": " A lot of good stuff out there."
+      },
+      {
+        "start": 454200,
+        "stop": 454400,
+        "text": " So many different projects we're working on."
+      },
+      {
+        "start": 454400,
+        "stop": 454700,
+        "text": " If we talked about something today that you'd like to pick our brain,"
+      },
+      {
+        "start": 454700,
+        "stop": 454900,
+        "text": " maybe you've got an idea, maybe you want to take it over to TuckSats,"
+      },
+      {
+        "start": 454900,
+        "stop": 455300,
+        "text": " maybe you want to sponsor the winter of Brent, you can reach out in our matrix room,"
+      },
+      {
+        "start": 455300,
+        "stop": 455700,
+        "text": " or of course you can always email me directly, chris@trupiderbroadcasting.com."
+      },
+      {
+        "start": 455700,
+        "stop": 456100,
+        "text": " There's lots of ways to get in front of us. You can send a boost as well. We see all of those."
+      },
+      {
+        "start": 456200,
+        "stop": 456600,
+        "text": " It's always a challenge out there because when you actually go to do it, there's like a dozen different ways."
+      },
+      {
+        "start": 456600,
+        "stop": 456900,
+        "text": " Pick the way that works best for you. We'd just love to hear from you."
+      },
+      {
+        "start": 456900,
+        "stop": 457300,
+        "text": " Brent, is there anything else we ought to talk about before we close up, get out of here?"
+      },
+      {
+        "start": 457300,
+        "stop": 457600,
+        "text": " I can't think of anything. I think we did a pretty good job."
+      },
+      {
+        "start": 457600,
+        "stop": 457900,
+        "text": " I think we got a lighty candle this week, if you know what I mean."
+      },
+      {
+        "start": 457900,
+        "stop": 458100,
+        "text": " Because the office hours are over, everybody!"
+      },
+      {
+        "start": 458100,
+        "stop": 458400,
+        "text": " I've got to get back to work. These holidays!"
+      },
+      {
+        "start": 458400,
+        "stop": 458900,
+        "text": " I just can't even. We'll see you next time. Thanks for joining us."
+      },
+      {
+        "start": 458900,
+        "stop": 459100,
+        "text": " Thanks for joining us."
+      }
+    ],
+    "processing_time": {
+      "secs": 1637,
+      "nanos": 232482670
+    }
+  },
+  "metadata": {
+    "title": "Office Hours 17: And What Do You Do?",
+    "pictures": [],
+    "duration": {
+      "secs": 4571,
+      "nanos": 762000000
+    },
+    "unique_id": "http://www.officehours.hair/17"
+  },
+  "episode": {
+    "title": "And What Do You Do? | Office Hours 17",
+    "description": "The worst part about being a Podcaster; our pitch to eliminate nearly all holidays and some hard questions.",
+    "content": "<p><p>The worst part about being a Podcaster; our pitch to eliminate nearly all holidays and some hard questions.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/jupiter\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/jupiter\" rel=\"nofollow\">Get $100 to check out a rocking Linode system, and support the show!</a></li><li><a href=\"https://www.jupiter.party/\" rel=\"nofollow\">Join the Party! The Jupiter Membership Party</a>: <a href=\"https://www.jupiter.party/\" rel=\"nofollow\">Join the party and get exclusive content. </a></li></ul><p>Links:</p><ul><li><a href=\"https://podnews.net/update/daily-podcast-reach\" title=\"Podcasting listening up in the US\" rel=\"nofollow\">Podcasting listening up in the US</a> &mdash; Podcasting’s daily reach continues to rise: Edison Research posts a 20% y-on-y increase</li><li><a href=\"https://www.edisonresearch.com/weekly-insights-11-10-22-the-steady-climb-of-podcastings-reach-in-the-u-s/?utm_source=podnews.net&utm_medium=web&utm_campaign=podnews.net:2022-11-14\" title=\"Weekly Insights 11.10.22 The Steady Climb of Podcasting's Reach in the U.S. - Edison Research\" rel=\"nofollow\">Weekly Insights 11.10.22 The Steady Climb of Podcasting's Reach in the U.S. - Edison Research</a></li><li><a href=\"https://twitter.com/fountain_app/status/1592938299282554880\" title=\"Fountain on Twitter\" rel=\"nofollow\">Fountain on Twitter</a> &mdash; In the latest version (0.5.6) your playback speed no longer affects your rate - so make sure you update</li><li><a href=\"https://www.jupiterbroadcasting.com/community/matrix/\" title=\"Join us in the Matrix\" rel=\"nofollow\">Join us in the Matrix</a> &mdash; Jupiter Broadcasting’s Rooms are organized into groups called “spaces”.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost into the Show\" rel=\"nofollow\">Send a Boost into the Show</a> &mdash; Upgrade to a Podcast 2.0 compatible app and send a Boost into the show :)</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9086",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15808588/be8549de-3058-4e7e-a2e1-90f642d62ad1.mp3",
+      "length": "64671399",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-25T03:05:00+01:00"
+  },
+  "speedup": 2.7923722
+}

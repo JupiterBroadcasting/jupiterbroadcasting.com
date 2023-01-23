@@ -1,0 +1,5147 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 176,
+        "text": " Microsoft's done it again."
+      },
+      {
+        "start": 176,
+        "stop": 436,
+        "text": " They've open sourced another project."
+      },
+      {
+        "start": 436,
+        "stop": 544,
+        "text": " Oh, is it big this time?"
+      },
+      {
+        "start": 544,
+        "stop": 668,
+        "text": " I think so."
+      },
+      {
+        "start": 668,
+        "stop": 872,
+        "text": " OK, let's see if we can figure it out."
+      },
+      {
+        "start": 872,
+        "stop": 976,
+        "text": " Don't tell us what it is."
+      },
+      {
+        "start": 976,
+        "stop": 1100,
+        "text": " I got one hint for you."
+      },
+      {
+        "start": 1100,
+        "stop": 1136,
+        "text": " OK."
+      },
+      {
+        "start": 1136,
+        "stop": 1748,
+        "text": " Part of the reason Microsoft says it's open sourcing X is the changing state of work."
+      },
+      {
+        "start": 1748,
+        "stop": 2068,
+        "text": " Oh, it's probably something to do with teams then."
+      },
+      {
+        "start": 2068,
+        "stop": 2188,
+        "text": " That sounds very teamsy."
+      },
+      {
+        "start": 2188,
+        "stop": 2344,
+        "text": " There may be a teams connection."
+      },
+      {
+        "start": 2344,
+        "stop": 2696,
+        "text": " Have they open source something with Skype that wasn't open source before?"
+      },
+      {
+        "start": 2696,
+        "stop": 2864,
+        "text": " That's my guess."
+      },
+      {
+        "start": 2864,
+        "stop": 2960,
+        "text": " You boys have a guess?"
+      },
+      {
+        "start": 2960,
+        "stop": 3016,
+        "text": " You got anything?"
+      },
+      {
+        "start": 3016,
+        "stop": 3172,
+        "text": " I think it's an open cookbook."
+      },
+      {
+        "start": 3172,
+        "stop": 3448,
+        "text": " It sounds like maybe that's the state of work that's changing."
+      },
+      {
+        "start": 3448,
+        "stop": 3848,
+        "text": " I'm going to go with open sourcing the Windows kernel."
+      },
+      {
+        "start": 3848,
+        "stop": 4100,
+        "text": " Whoa, that's bold."
+      },
+      {
+        "start": 4100,
+        "stop": 4288,
+        "text": " That would really change the face of work."
+      },
+      {
+        "start": 4288,
+        "stop": 4448,
+        "text": " That would really change the industry."
+      },
+      {
+        "start": 4448,
+        "stop": 4576,
+        "text": " That would be history right now."
+      },
+      {
+        "start": 4576,
+        "stop": 4624,
+        "text": " I wish."
+      },
+      {
+        "start": 4624,
+        "stop": 4656,
+        "text": " All right."
+      },
+      {
+        "start": 4656,
+        "stop": 4708,
+        "text": " So what is it?"
+      },
+      {
+        "start": 4708,
+        "stop": 5044,
+        "text": " I had a fifteen hundred 3D emoji sound."
+      },
+      {
+        "start": 5044,
+        "stop": 5256,
+        "text": " Emojis?"
+      },
+      {
+        "start": 5256,
+        "stop": 5356,
+        "text": " Stop!"
+      },
+      {
+        "start": 5356,
+        "stop": 6972,
+        "text": " Hello, friends, and welcome back to your weekly Linux talk show."
+      },
+      {
+        "start": 6972,
+        "stop": 7072,
+        "text": " My name is Chris."
+      },
+      {
+        "start": 7072,
+        "stop": 7160,
+        "text": " My name is Wes."
+      },
+      {
+        "start": 7160,
+        "stop": 7252,
+        "text": " My name is Brent."
+      },
+      {
+        "start": 7252,
+        "stop": 7412,
+        "text": " My name is Alex."
+      },
+      {
+        "start": 7412,
+        "stop": 7736,
+        "text": " Hello, you handsome devils coming up on the show this week."
+      },
+      {
+        "start": 7736,
+        "stop": 7968,
+        "text": " Well, we blew it."
+      },
+      {
+        "start": 7968,
+        "stop": 8112,
+        "text": " We knew it was going to happen."
+      },
+      {
+        "start": 8112,
+        "stop": 8284,
+        "text": " We warned you this was going to happen."
+      },
+      {
+        "start": 8284,
+        "stop": 8516,
+        "text": " This is your chance to say told you so."
+      },
+      {
+        "start": 8516,
+        "stop": 9088,
+        "text": " Our little server, our humble garage box has died again."
+      },
+      {
+        "start": 9088,
+        "stop": 9460,
+        "text": " Join us this week as we attempt to save our little zombie server,"
+      },
+      {
+        "start": 9460,
+        "stop": 9660,
+        "text": " bring it back from the death."
+      },
+      {
+        "start": 9660,
+        "stop": 9960,
+        "text": " And this time we may be looking at data loss."
+      },
+      {
+        "start": 9960,
+        "stop": 10364,
+        "text": " So we'll lay out what we're going to do in the future and our plans going forward."
+      },
+      {
+        "start": 10364,
+        "stop": 10868,
+        "text": " Then we'll round out the show with some great JB news, some boost, some picks and more."
+      },
+      {
+        "start": 10880,
+        "stop": 11128,
+        "text": " So before we go any further, let's bring in our virtual lug."
+      },
+      {
+        "start": 11128,
+        "stop": 11360,
+        "text": " Time appropriate greetings, Mumble Room."
+      },
+      {
+        "start": 11360,
+        "stop": 11456,
+        "text": " Hello, friends."
+      },
+      {
+        "start": 11456,
+        "stop": 11496,
+        "text": " Hello."
+      },
+      {
+        "start": 11496,
+        "stop": 11548,
+        "text": " Hello."
+      },
+      {
+        "start": 11548,
+        "stop": 11604,
+        "text": " Hello, Chris."
+      },
+      {
+        "start": 11604,
+        "stop": 11696,
+        "text": " Hello, Wes."
+      },
+      {
+        "start": 11696,
+        "stop": 11848,
+        "text": " Hello, Alex and Brent."
+      },
+      {
+        "start": 11848,
+        "stop": 11976,
+        "text": " Hello."
+      },
+      {
+        "start": 11976,
+        "stop": 12044,
+        "text": " Hello."
+      },
+      {
+        "start": 12044,
+        "stop": 12140,
+        "text": " Hello, on air."
+      },
+      {
+        "start": 12140,
+        "stop": 12244,
+        "text": " Hello, quiet listening."
+      },
+      {
+        "start": 12244,
+        "stop": 12456,
+        "text": " We offer both to our Mumble Room."
+      },
+      {
+        "start": 12456,
+        "stop": 12808,
+        "text": " If you'd like to just join and get a low latency open stream, you absolutely can."
+      },
+      {
+        "start": 12808,
+        "stop": 13348,
+        "text": " And of course, you're always welcome to get in that on listening and share your thoughts with us as we go live."
+      },
+      {
+        "start": 13348,
+        "stop": 13700,
+        "text": " The only thing we do is we just kind of like check to make sure you got a mic that works for us."
+      },
+      {
+        "start": 13700,
+        "stop": 14308,
+        "text": " And as long as it passes the sniff test, which is actually a listen test, we'll put you on air and you can get in that virtual lug."
+      },
+      {
+        "start": 14308,
+        "stop": 14460,
+        "text": " And of course, you can always jump in."
+      },
+      {
+        "start": 14460,
+        "stop": 14804,
+        "text": " Just tag me in the chat room and I'll try to work into the conversation."
+      },
+      {
+        "start": 14804,
+        "stop": 15244,
+        "text": " Some time, you know, eventually Mumble will get those smells via wire, but we're not there yet."
+      },
+      {
+        "start": 15244,
+        "stop": 15584,
+        "text": " I have been using the heck out of Tailscale this weekend."
+      },
+      {
+        "start": 15584,
+        "stop": 15952,
+        "text": " So go over to Tailscale.com and say good morning from Linux Unplugged, would you?"
+      },
+      {
+        "start": 15952,
+        "stop": 16276,
+        "text": " Tailscale is a mesh VPN protected by WireGuard."
+      },
+      {
+        "start": 16276,
+        "stop": 16456,
+        "text": " Get it on any device in seconds."
+      },
+      {
+        "start": 16456,
+        "stop": 16876,
+        "text": " And I mean it mobile, arm device, x86 box, VM, VPS."
+      },
+      {
+        "start": 16876,
+        "stop": 16904,
+        "text": " Do it."
+      },
+      {
+        "start": 16904,
+        "stop": 17124,
+        "text": " Build yourself a mesh network with WireGuard."
+      },
+      {
+        "start": 17124,
+        "stop": 17176,
+        "text": " We love it."
+      },
+      {
+        "start": 17176,
+        "stop": 17272,
+        "text": " It'll change your game."
+      },
+      {
+        "start": 17272,
+        "stop": 17404,
+        "text": " Go say good morning."
+      },
+      {
+        "start": 17404,
+        "stop": 17624,
+        "text": " Try it out for 20 devices for free at Tailscale.com."
+      },
+      {
+        "start": 17624,
+        "stop": 18032,
+        "text": " Yeah, I wish you'd stop making me time you setting up Tailscale."
+      },
+      {
+        "start": 18032,
+        "stop": 18088,
+        "text": " It's getting old."
+      },
+      {
+        "start": 18088,
+        "stop": 18180,
+        "text": " You're fast."
+      },
+      {
+        "start": 18180,
+        "stop": 18220,
+        "text": " I get it."
+      },
+      {
+        "start": 18220,
+        "stop": 18272,
+        "text": " It's fun."
+      },
+      {
+        "start": 18272,
+        "stop": 18360,
+        "text": " It's fun."
+      },
+      {
+        "start": 18360,
+        "stop": 18444,
+        "text": " All right."
+      },
+      {
+        "start": 18444,
+        "stop": 18724,
+        "text": " So let me take you all back in time a little bit."
+      },
+      {
+        "start": 18972,
+        "stop": 19476,
+        "text": " Years ago, we identified that sometimes there are just certain jobs that work"
+      },
+      {
+        "start": 19476,
+        "stop": 19836,
+        "text": " better locally, perhaps it's an old archive of your past productions."
+      },
+      {
+        "start": 19836,
+        "stop": 20220,
+        "text": " You want to save the raw files, maybe it's movies you've backed up via the"
+      },
+      {
+        "start": 20220,
+        "stop": 20340,
+        "text": " DVD or the Blu-ray."
+      },
+      {
+        "start": 20340,
+        "stop": 20376,
+        "text": " Love you."
+      },
+      {
+        "start": 20376,
+        "stop": 20512,
+        "text": " Make MKV."
+      },
+      {
+        "start": 20512,
+        "stop": 20948,
+        "text": " Oh, or maybe it's just something that's really not something that your team"
+      },
+      {
+        "start": 20948,
+        "stop": 21080,
+        "text": " needs access to very often."
+      },
+      {
+        "start": 21080,
+        "stop": 21296,
+        "text": " So it just doesn't make sense to store it in the cloud."
+      },
+      {
+        "start": 21296,
+        "stop": 21884,
+        "text": " My friends enter in our legacy server hardware, which we have been running out"
+      },
+      {
+        "start": 21884,
+        "stop": 22364,
+        "text": " of the garage here at the studio since about 2014 ish."
+      },
+      {
+        "start": 22364,
+        "stop": 22864,
+        "text": " We bought the box used at the time, and it's been serving a lot of great"
+      },
+      {
+        "start": 22864,
+        "stop": 22964,
+        "text": " little duties for us."
+      },
+      {
+        "start": 22964,
+        "stop": 23372,
+        "text": " Then within the last year, we had a couple of very generous audience members"
+      },
+      {
+        "start": 23372,
+        "stop": 23708,
+        "text": " donate us brand new used server hardware new to us."
+      },
+      {
+        "start": 23708,
+        "stop": 24492,
+        "text": " And we jumped into action and moved some of the services over."
+      },
+      {
+        "start": 24492,
+        "stop": 24800,
+        "text": " It's been a process, an ongoing process."
+      },
+      {
+        "start": 24800,
+        "stop": 24860,
+        "text": " You might say."
+      },
+      {
+        "start": 24860,
+        "stop": 24896,
+        "text": " Yeah."
+      },
+      {
+        "start": 24896,
+        "stop": 25316,
+        "text": " And we've gone through several summers where this box gets really hot and we've"
+      },
+      {
+        "start": 25316,
+        "stop": 25796,
+        "text": " tried to come up with various solutions because it is a garage that the afternoon"
+      },
+      {
+        "start": 25796,
+        "stop": 25852,
+        "text": " sun hits."
+      },
+      {
+        "start": 25852,
+        "stop": 26068,
+        "text": " And every now and then I pull in there with my hot car too."
+      },
+      {
+        "start": 26068,
+        "stop": 26492,
+        "text": " And so sometimes the ambient temperature can be 95 degrees."
+      },
+      {
+        "start": 26492,
+        "stop": 26980,
+        "text": " So we've come up with various strategies over the years to try to accommodate for"
+      },
+      {
+        "start": 26980,
+        "stop": 27248,
+        "text": " this high temperature, less than ideal production environment."
+      },
+      {
+        "start": 27248,
+        "stop": 27488,
+        "text": " We get the palm leaves, we take turns in there."
+      },
+      {
+        "start": 27488,
+        "stop": 27536,
+        "text": " It's rough."
+      },
+      {
+        "start": 27608,
+        "stop": 27784,
+        "text": " So I've set up this year."
+      },
+      {
+        "start": 27784,
+        "stop": 28076,
+        "text": " What I did was like a whole air cooling system."
+      },
+      {
+        "start": 28076,
+        "stop": 28420,
+        "text": " I created a holistic approach to my temperature management."
+      },
+      {
+        "start": 28420,
+        "stop": 28804,
+        "text": " Wes, I cracked the garage door."
+      },
+      {
+        "start": 28804,
+        "stop": 28860,
+        "text": " Right."
+      },
+      {
+        "start": 28860,
+        "stop": 28888,
+        "text": " Okay."
+      },
+      {
+        "start": 28888,
+        "stop": 28932,
+        "text": " All right."
+      },
+      {
+        "start": 28932,
+        "stop": 29172,
+        "text": " And then I set a box fan in the doorway."
+      },
+      {
+        "start": 29172,
+        "stop": 29292,
+        "text": " Oh, now we've got some."
+      },
+      {
+        "start": 29292,
+        "stop": 29600,
+        "text": " We've got, you know, outside airflow."
+      },
+      {
+        "start": 29600,
+        "stop": 29724,
+        "text": " These are good ingredients."
+      },
+      {
+        "start": 29724,
+        "stop": 30188,
+        "text": " Then further down the hallway, I set up a second box fan."
+      },
+      {
+        "start": 30228,
+        "stop": 30820,
+        "text": " And then for like the real like cooling, like finality piece, I open the back door."
+      },
+      {
+        "start": 30820,
+        "stop": 31152,
+        "text": " So I create a cross breeze through the entire house."
+      },
+      {
+        "start": 31152,
+        "stop": 31612,
+        "text": " It creates a wind tunnel that sucks the hot air out of the garage and vents it out"
+      },
+      {
+        "start": 31612,
+        "stop": 31708,
+        "text": " the back of the studio."
+      },
+      {
+        "start": 31708,
+        "stop": 31976,
+        "text": " And it actually does work to a degree."
+      },
+      {
+        "start": 31976,
+        "stop": 32468,
+        "text": " And it's ridiculous because a cat came in and pissed in the garage."
+      },
+      {
+        "start": 33028,
+        "stop": 33428,
+        "text": " It's not the traditional hazards that most servers encounter."
+      },
+      {
+        "start": 33428,
+        "stop": 33468,
+        "text": " No."
+      },
+      {
+        "start": 33468,
+        "stop": 33892,
+        "text": " And, and this will come into play later."
+      },
+      {
+        "start": 33892,
+        "stop": 34472,
+        "text": " Um, also there was a lot of, you know, when cotton trees bloom and there's like this"
+      },
+      {
+        "start": 34472,
+        "stop": 34780,
+        "text": " cotton that goes in the air and the Pacific, it's like, it's snowing for a day."
+      },
+      {
+        "start": 34780,
+        "stop": 35148,
+        "text": " Well, a lot of that came into the wind tunnel."
+      },
+      {
+        "start": 35396,
+        "stop": 36188,
+        "text": " And so the entire garage got covered in cotton flowers, rolling around in the cat"
+      },
+      {
+        "start": 36188,
+        "stop": 36668,
+        "text": " piss, getting in the server, getting stuck in the cat piss has really happened."
+      },
+      {
+        "start": 36668,
+        "stop": 36912,
+        "text": " So it's coming in."
+      },
+      {
+        "start": 36912,
+        "stop": 37504,
+        "text": " I'm picturing this cartoon with, you know, the chicken that falls into tar or something"
+      },
+      {
+        "start": 37504,
+        "stop": 37632,
+        "text": " and then people throw feathers at it."
+      },
+      {
+        "start": 37632,
+        "stop": 37660,
+        "text": " Yeah."
+      },
+      {
+        "start": 37660,
+        "stop": 37708,
+        "text": " Yeah."
+      },
+      {
+        "start": 37708,
+        "stop": 37880,
+        "text": " Then Levi got in there."
+      },
+      {
+        "start": 37880,
+        "stop": 38172,
+        "text": " Fast forward to last week, Thursday."
+      },
+      {
+        "start": 38172,
+        "stop": 38384,
+        "text": " I realized it's getting hot again."
+      },
+      {
+        "start": 38400,
+        "stop": 38800,
+        "text": " And even that particularly hot, just kind of back to hot, hot enough that the garage"
+      },
+      {
+        "start": 38800,
+        "stop": 38864,
+        "text": " is getting warm."
+      },
+      {
+        "start": 38864,
+        "stop": 39260,
+        "text": " And so my protocol is around one, two o'clock right about now, actually, as we"
+      },
+      {
+        "start": 39260,
+        "stop": 39620,
+        "text": " record, I would shut the server down because the temperatures are just getting"
+      },
+      {
+        "start": 39620,
+        "stop": 39996,
+        "text": " too high and we don't have a better solution than that with what I've done."
+      },
+      {
+        "start": 39996,
+        "stop": 40332,
+        "text": " And I would shut it down and then we wouldn't use it for a bit."
+      },
+      {
+        "start": 40332,
+        "stop": 40752,
+        "text": " So I migrated a couple of, uh, of more essential services off each individual"
+      },
+      {
+        "start": 40752,
+        "stop": 40888,
+        "text": " server up on the Linode."
+      },
+      {
+        "start": 40888,
+        "stop": 41108,
+        "text": " And I kind of kind of spread things out."
+      },
+      {
+        "start": 41108,
+        "stop": 41484,
+        "text": " So like certain batch jobs are happening on one server, like the Plex and the"
+      },
+      {
+        "start": 41484,
+        "stop": 41672,
+        "text": " Jellyfin media has happened on one server."
+      },
+      {
+        "start": 41672,
+        "stop": 41848,
+        "text": " Like I've kind of spread the load out a little bit."
+      },
+      {
+        "start": 41848,
+        "stop": 42036,
+        "text": " So if one box dies, not everything goes."
+      },
+      {
+        "start": 42036,
+        "stop": 42384,
+        "text": " And then I would shut them down in like right about now."
+      },
+      {
+        "start": 42384,
+        "stop": 42664,
+        "text": " And then the next day in the morning, I get in about seven a.m."
+      },
+      {
+        "start": 42664,
+        "stop": 42860,
+        "text": " and I turn them on and run them till about one p.m."
+      },
+      {
+        "start": 42860,
+        "stop": 43208,
+        "text": " You know, let them get caught up on their work and whatnot, do their backups."
+      },
+      {
+        "start": 43208,
+        "stop": 43456,
+        "text": " And so Thursday evening."
+      },
+      {
+        "start": 43456,
+        "stop": 43924,
+        "text": " It was a busy day and I didn't make it out there till like four o'clock."
+      },
+      {
+        "start": 44108,
+        "stop": 44528,
+        "text": " And I get out there and it's 92 degrees in the garage and all the servers are going."
+      },
+      {
+        "start": 44528,
+        "stop": 45080,
+        "text": " So I go to each one, I shut them all down and I go to our oldest server, the one"
+      },
+      {
+        "start": 45080,
+        "stop": 45440,
+        "text": " that has like our historic projects on it, the ones that go back from the very"
+      },
+      {
+        "start": 45440,
+        "stop": 45892,
+        "text": " beginning of time and the one that has all of my media library, which Chris's"
+      },
+      {
+        "start": 45892,
+        "stop": 46276,
+        "text": " private selection, 70, 80 percent I've hand ripped, right?"
+      },
+      {
+        "start": 46276,
+        "stop": 46560,
+        "text": " Like Pride has gone into creating these rips."
+      },
+      {
+        "start": 46588,
+        "stop": 47212,
+        "text": " Funny enough, almost like a weird like movie foreshadow the day before, I'm not"
+      },
+      {
+        "start": 47212,
+        "stop": 47512,
+        "text": " even kidding you. Hadid was like, should we just throw away all this physical"
+      },
+      {
+        "start": 47512,
+        "stop": 47876,
+        "text": " media? Because I've got like crates of it under the server of physical media."
+      },
+      {
+        "start": 47876,
+        "stop": 48168,
+        "text": " And she's like, we don't watch DVDs or Blu-ray."
+      },
+      {
+        "start": 48168,
+        "stop": 48372,
+        "text": " Should I just like sell this or get rid of it?"
+      },
+      {
+        "start": 48372,
+        "stop": 48472,
+        "text": " Like, what do you want me? I'm like."
+      },
+      {
+        "start": 48472,
+        "stop": 48784,
+        "text": " I don't know, let's hold on to it for a little bit longer."
+      },
+      {
+        "start": 48784,
+        "stop": 49080,
+        "text": " I like having the source copies, let's hold on to it for a little bit longer."
+      },
+      {
+        "start": 49080,
+        "stop": 49216,
+        "text": " That was the previous day."
+      },
+      {
+        "start": 49216,
+        "stop": 49528,
+        "text": " The next day I go out there."
+      },
+      {
+        "start": 49624,
+        "stop": 49904,
+        "text": " I go to do a halt, you know, like a pseudo shutdown kind of thing."
+      },
+      {
+        "start": 49904,
+        "stop": 50324,
+        "text": " And it tells me the binary cannot be executed."
+      },
+      {
+        "start": 50324,
+        "stop": 50804,
+        "text": " That's a good sign, just always a great sign that your systems work in normally."
+      },
+      {
+        "start": 50804,
+        "stop": 51280,
+        "text": " So then I have my laptop, so I fire my laptop, I go to SSH connection refused."
+      },
+      {
+        "start": 51280,
+        "stop": 51456,
+        "text": " Well, the box is up. I'm standing right here."
+      },
+      {
+        "start": 51456,
+        "stop": 52004,
+        "text": " So I do the control delete, you know, the six times and it starts to reboot and I"
+      },
+      {
+        "start": 52004,
+        "stop": 52488,
+        "text": " get cannot unmount and it's this CFS path, cannot unmount this CFS path, cannot"
+      },
+      {
+        "start": 52488,
+        "stop": 53020,
+        "text": " unmount this CFS and it's all screen after screen ZFS, ZFS, ZFS, ZFS, ZFS, ZFS,"
+      },
+      {
+        "start": 53020,
+        "stop": 53256,
+        "text": " air and then cannot execute shutdown."
+      },
+      {
+        "start": 53256,
+        "stop": 53928,
+        "text": " So I shut it off and it's too hot and I'm like, I'm not going to stand out here in"
+      },
+      {
+        "start": 53928,
+        "stop": 54224,
+        "text": " 90 plus degree weather and troubleshoot this thing and I'm not going to run it in"
+      },
+      {
+        "start": 54224,
+        "stop": 54332,
+        "text": " 90 plus degree weather."
+      },
+      {
+        "start": 54332,
+        "stop": 54784,
+        "text": " So I shut it down Thursday night, I got in my car and I left and I went home and I"
+      },
+      {
+        "start": 54784,
+        "stop": 55276,
+        "text": " was like in a bad place. I was like, oh, just mostly because even if I could re rip"
+      },
+      {
+        "start": 55276,
+        "stop": 55688,
+        "text": " all of that stuff and even if I could reset up the server, like how many days of"
+      },
+      {
+        "start": 55688,
+        "stop": 56036,
+        "text": " work am I looking at? Right. Just that. Right. I was sitting with like, oh, my"
+      },
+      {
+        "start": 56036,
+        "stop": 56404,
+        "text": " God, this is going to be weeks of work. Right."
+      },
+      {
+        "start": 56404,
+        "stop": 56932,
+        "text": " And I so I get over it, I get home and I think, well, I'll go down there tomorrow"
+      },
+      {
+        "start": 56932,
+        "stop": 57460,
+        "text": " Friday and boot it up, get like get it going off a USB disk to the lay of the"
+      },
+      {
+        "start": 57460,
+        "stop": 57560,
+        "text": " land. Yeah."
+      },
+      {
+        "start": 57560,
+        "stop": 58076,
+        "text": " So that was sort of my mindset. I was like, maybe it'll be all right. I'll get"
+      },
+      {
+        "start": 58076,
+        "stop": 58444,
+        "text": " in there, see if the ZFS array is fine. Maybe it's just a boot disk that failed"
+      },
+      {
+        "start": 58444,
+        "stop": 58932,
+        "text": " because that is its own separate disk that is super jank outside the case."
+      },
+      {
+        "start": 58932,
+        "stop": 59536,
+        "text": " Not properly cooled. Oh, this keeps getting better. It was like not a great"
+      },
+      {
+        "start": 59536,
+        "stop": 59824,
+        "text": " setup, so I figured if there was going to be a point of failure, that's where it"
+      },
+      {
+        "start": 59824,
+        "stop": 60308,
+        "text": " was going to fail. So Friday morning, I come out really kind of early, like seven"
+      },
+      {
+        "start": 60308,
+        "stop": 60776,
+        "text": " a.m. because I had an eight a.m. call and then I had a nine a.m. recording and"
+      },
+      {
+        "start": 60776,
+        "stop": 61064,
+        "text": " like I knew like I did not have much time to look at this, but I thought I'll"
+      },
+      {
+        "start": 61064,
+        "stop": 61444,
+        "text": " get out there while it's still like sixty five degrees in the garage and get"
+      },
+      {
+        "start": 61444,
+        "stop": 61812,
+        "text": " this thing booted. It's the next morning. I've been standing here for a little bit."
+      },
+      {
+        "start": 61812,
+        "stop": 62172,
+        "text": " It's still pretty early. I want to do this while it's cold out, but I've been"
+      },
+      {
+        "start": 62172,
+        "stop": 62540,
+        "text": " just trying to strategize and honestly kind of reflect on what I'm going to do"
+      },
+      {
+        "start": 62540,
+        "stop": 62984,
+        "text": " if this thing doesn't work. Like after I press this power button, I'm either going"
+      },
+      {
+        "start": 62984,
+        "stop": 63460,
+        "text": " to have a massive pain in my butt or everything's going to be fine with some"
+      },
+      {
+        "start": 63460,
+        "stop": 63824,
+        "text": " logs I need to review. So what I'm going to do is I'm going to turn it on and"
+      },
+      {
+        "start": 63824,
+        "stop": 64380,
+        "text": " then I'm just going to listen. I suspect maybe the OS drive has died, but we'll"
+      },
+      {
+        "start": 64380,
+        "stop": 64700,
+        "text": " see. Here we go."
+      },
+      {
+        "start": 64700,
+        "stop": 66032,
+        "text": " All right, everything's coming on. Monitor's powering up."
+      },
+      {
+        "start": 66032,
+        "stop": 66564,
+        "text": " Drives have lit up. No red lights yet."
+      },
+      {
+        "start": 66564,
+        "stop": 67460,
+        "text": " I'll be closely watching the both the post boot screen and also of course once"
+      },
+      {
+        "start": 67460,
+        "stop": 68224,
+        "text": " the OS starts to load. Just kind of in that window right now. I just have to"
+      },
+      {
+        "start": 68224,
+        "stop": 68804,
+        "text": " wait. The screen hasn't turned up. I just have to wait. Come on screen! Show me a"
+      },
+      {
+        "start": 68804,
+        "stop": 69204,
+        "text": " post! Show me a post!"
+      },
+      {
+        "start": 69256,
+        "stop": 70264,
+        "text": " Ah, here we go. Okay, no BIOS errors or IPMI module error or USB controller error."
+      },
+      {
+        "start": 70264,
+        "stop": 70672,
+        "text": " The disks are all passed through so there's no -- I wouldn't expect any kind of"
+      },
+      {
+        "start": 70672,
+        "stop": 71248,
+        "text": " controller error, but we'll see. Oh, there we go. Oh, that moment."
+      },
+      {
+        "start": 71724,
+        "stop": 72260,
+        "text": " Okay, we're getting to grub now. Oh no."
+      },
+      {
+        "start": 72260,
+        "stop": 72872,
+        "text": " Reboot and select a proper boot device or install boot media in the selected"
+      },
+      {
+        "start": 72872,
+        "stop": 73720,
+        "text": " boot device and press a key. I think our OS drive is indeed dead. I'm touching"
+      },
+      {
+        "start": 73720,
+        "stop": 74168,
+        "text": " what -- which I think this is the OS drive. It's hard to tell, but I don't think"
+      },
+      {
+        "start": 74168,
+        "stop": 75184,
+        "text": " it's spinning. Better than the array, but man what a pain in the butt. So at this"
+      },
+      {
+        "start": 75184,
+        "stop": 75572,
+        "text": " point I'm pretty sure the data is probably good and what I'm thinking is"
+      },
+      {
+        "start": 75572,
+        "stop": 76092,
+        "text": " I'll go grab Ventoy. I'll boot Ubuntu 2204 because it's got built-in ZFS"
+      },
+      {
+        "start": 76092,
+        "stop": 76596,
+        "text": " support. I'll get SSH going on this thing and then we'll get it restored,"
+      },
+      {
+        "start": 76596,
+        "stop": 77032,
+        "text": " right? It's like not ideal, but this seems like something we could actually recover"
+      },
+      {
+        "start": 77032,
+        "stop": 77760,
+        "text": " from. And of course I run out of time and I had to go to record and do a"
+      },
+      {
+        "start": 77760,
+        "stop": 78140,
+        "text": " call, which was -- I was totally down for doing because we're working on some great"
+      },
+      {
+        "start": 78140,
+        "stop": 78484,
+        "text": " swag for the West Coast road trip. So I was like I had to go to take care of"
+      },
+      {
+        "start": 78484,
+        "stop": 78904,
+        "text": " that. Tote's worth it, but job, you know, the job demands I move on. I'm not a"
+      },
+      {
+        "start": 78904,
+        "stop": 79264,
+        "text": " server admin by my day trade anymore. Just a nice little hobby you have"
+      },
+      {
+        "start": 79264,
+        "stop": 79672,
+        "text": " sometimes. So in the back of my mind, right, I'm thinking -- I'm strategizing"
+      },
+      {
+        "start": 79672,
+        "stop": 79972,
+        "text": " without really realizing I'm doing it. I'm thinking, all right, I'm gonna get"
+      },
+      {
+        "start": 79972,
+        "stop": 80296,
+        "text": " that Ventoy, I'm gonna do this, I'm gonna do that. So I sneak out there in the"
+      },
+      {
+        "start": 80296,
+        "stop": 80628,
+        "text": " middle of the day and I pop the Ventoy in the back because for whatever reason"
+      },
+      {
+        "start": 80628,
+        "stop": 80996,
+        "text": " the Super Micro, it doesn't have any USB ports in the front and man is that"
+      },
+      {
+        "start": 80996,
+        "stop": 81532,
+        "text": " annoying. Like come on. So I'm doing this thing where I'm trying to get it way"
+      },
+      {
+        "start": 81532,
+        "stop": 81888,
+        "text": " back in there, but of course I have the MVME and this big housing that has C and"
+      },
+      {
+        "start": 81888,
+        "stop": 82244,
+        "text": " A on both ends of the connector for USB. So it's like it's this big fat mother"
+      },
+      {
+        "start": 82244,
+        "stop": 82676,
+        "text": " and I'm trying to get it in there and it's only got two USB -- anyways it was"
+      },
+      {
+        "start": 82676,
+        "stop": 83036,
+        "text": " super annoying. You really need to be looking at it and rotate the whole thing. I get the"
+      },
+      {
+        "start": 83036,
+        "stop": 83612,
+        "text": " Ventoy attached, I reboot it, and I get this strange, strange boot error. Like"
+      },
+      {
+        "start": 83612,
+        "stop": 84056,
+        "text": " it's totally -- obviously the Ventoy is completely incompatible. This is like"
+      },
+      {
+        "start": 84056,
+        "stop": 84340,
+        "text": " three releases ago of Ventoy. It's obviously totally incompatible with the"
+      },
+      {
+        "start": 84340,
+        "stop": 84796,
+        "text": " Super Micro BIOS. Well okay, so I got to go flash this Ubuntu image directly to"
+      },
+      {
+        "start": 84796,
+        "stop": 85148,
+        "text": " a USB thumb drive. Sure, okay, fine, fine. Well I don't got time for that right now."
+      },
+      {
+        "start": 85148,
+        "stop": 85620,
+        "text": " So I was like, okay, well there goes my 15 minutes to try to solve this. So I move"
+      },
+      {
+        "start": 85620,
+        "stop": 86044,
+        "text": " on and I keep working to finish off my Friday. I record a Bitcoin Dad pod and"
+      },
+      {
+        "start": 86044,
+        "stop": 86504,
+        "text": " I go home because I got the kids, kids are over, we got stuff going on. It's weekend time."
+      },
+      {
+        "start": 86504,
+        "stop": 86880,
+        "text": " Saturday, same thing, it's too hot. I can't really go down there and work on it"
+      },
+      {
+        "start": 86880,
+        "stop": 87392,
+        "text": " Saturday. Take the kids out for a hike, which was also brutal, and then get home."
+      },
+      {
+        "start": 87392,
+        "stop": 87716,
+        "text": " It's like the evening I think, I could go down to the studio and get it going now"
+      },
+      {
+        "start": 87716,
+        "stop": 88026,
+        "text": " because I want to make it ready for us to get it up right now and get it repaired. My"
+      },
+      {
+        "start": 88026,
+        "stop": 88350,
+        "text": " thought is I could do the whole USB boot thing. I got the ISO image, I've got a"
+      },
+      {
+        "start": 88350,
+        "stop": 89016,
+        "text": " USB thumb drive, good to go. Screw it, I'll come in Sunday morning. So I get in early"
+      },
+      {
+        "start": 89016,
+        "stop": 89500,
+        "text": " this morning before the show while the server room is still nice and cool. And"
+      },
+      {
+        "start": 89500,
+        "stop": 89952,
+        "text": " I'm looking at the other servers that are off, the other new servers that have"
+      },
+      {
+        "start": 89952,
+        "stop": 90414,
+        "text": " been contributed by audience members, and I just thought while they're off maybe I"
+      },
+      {
+        "start": 90414,
+        "stop": 90742,
+        "text": " should just do a health check on these things too before these things end up"
+      },
+      {
+        "start": 90742,
+        "stop": 91724,
+        "text": " dying on me. I open it up and it is covered in cottonwood. I open up the"
+      },
+      {
+        "start": 91724,
+        "stop": 92252,
+        "text": " other server covered in cottonwood. I pull out the drive trays, all of the air"
+      },
+      {
+        "start": 92252,
+        "stop": 92740,
+        "text": " intakes, totally covered. So I kid you not, I spent an hour and 45 minutes this"
+      },
+      {
+        "start": 92740,
+        "stop": 93144,
+        "text": " morning cleaning servers with cotton vacuuming. I'm pulling out every single"
+      },
+      {
+        "start": 93144,
+        "stop": 93568,
+        "text": " disk, vacuuming them, putting them back in while it, because everything's down so"
+      },
+      {
+        "start": 93568,
+        "stop": 93990,
+        "text": " might as well do it now, right? Hey, I have a top tip for that. If you have a leaf"
+      },
+      {
+        "start": 93990,
+        "stop": 94408,
+        "text": " blower or some compressed air, that's the best way because you don't need to touch"
+      },
+      {
+        "start": 94408,
+        "stop": 94886,
+        "text": " things that way, rather than vacuum. Well, you know, the whole thing was all I had"
+      },
+      {
+        "start": 94886,
+        "stop": 95156,
+        "text": " out there was a shop vac. I wasn't expecting this, right? But then I thought"
+      },
+      {
+        "start": 95156,
+        "stop": 95650,
+        "text": " I should check this. Yeah. So then I think, well, I should probably go look how old"
+      },
+      {
+        "start": 95650,
+        "stop": 96280,
+        "text": " Fake NAS is doing, right? How's old Fake NAS doing? And I didn't expect any of"
+      },
+      {
+        "start": 96280,
+        "stop": 96816,
+        "text": " this. I didn't, I didn't even get the USB disk inserted before I started"
+      },
+      {
+        "start": 96816,
+        "stop": 97300,
+        "text": " discovering something was a little strange. This is a pretty old box and one"
+      },
+      {
+        "start": 97300,
+        "stop": 97600,
+        "text": " of the things I just want to double check before I write this hard drive off"
+      },
+      {
+        "start": 97600,
+        "stop": 98288,
+        "text": " completely is that the power is good and the data is good because the power is"
+      },
+      {
+        "start": 98288,
+        "stop": 98702,
+        "text": " actually, I just noticed, coming off a little splitter here. So I'm gonna get rid"
+      },
+      {
+        "start": 98702,
+        "stop": 99248,
+        "text": " of this splitter and then run it directly to the hard drive. Now the hard"
+      },
+      {
+        "start": 99248,
+        "stop": 99688,
+        "text": " drive itself is a Western Digital. It's one of those velociraptor drives, so it's"
+      },
+      {
+        "start": 99688,
+        "stop": 100096,
+        "text": " like 10,000 rpm. Honestly, I would actually expect this thing to die, right?"
+      },
+      {
+        "start": 100096,
+        "stop": 100436,
+        "text": " The other ones are all 7200, but this thing, not only was it not getting the"
+      },
+      {
+        "start": 100436,
+        "stop": 100904,
+        "text": " proper cooling because the case was cracked, but it's also a 10,000 rpm disk."
+      },
+      {
+        "start": 100904,
+        "stop": 101516,
+        "text": " But we'll see. Running, I'm running different power and I'm running slightly"
+      },
+      {
+        "start": 101516,
+        "stop": 102136,
+        "text": " better spot here in terms of hopefully it would get better cooling. I doubt it."
+      },
+      {
+        "start": 102136,
+        "stop": 102608,
+        "text": " I'm actually just more kind of banking on the power situation. That adapter"
+      },
+      {
+        "start": 102608,
+        "stop": 103404,
+        "text": " looked a little sketch. I'm sure that had nothing to do with it. Okay, here we go."
+      },
+      {
+        "start": 103404,
+        "stop": 104284,
+        "text": " It's actually a decent box. It has two L5640 Xeon CPUs in it at 2.27 GHz"
+      },
+      {
+        "start": 104284,
+        "stop": 104812,
+        "text": " each and I don't know something like 48 gigs of RAM, 64 gigs of RAM, quite a bit"
+      },
+      {
+        "start": 104812,
+        "stop": 105304,
+        "text": " of RAM. So it, you know, it's lasted quite a way long time for us. It's"
+      },
+      {
+        "start": 105304,
+        "stop": 105592,
+        "text": " definitely served its purpose, I should say. I could just use a couple of more"
+      },
+      {
+        "start": 105592,
+        "stop": 106292,
+        "text": " months. Come on, come on, keep going. Show me grub, show me that grub."
+      },
+      {
+        "start": 106292,
+        "stop": 107256,
+        "text": " Boot, baby, boot! No, come on, come on! It's booting. System D version 249.5-3-arch."
+      },
+      {
+        "start": 107256,
+        "stop": 108092,
+        "text": " Yes, this box is still running arch. I can't believe it. That is gonna be the"
+      },
+      {
+        "start": 108092,
+        "stop": 108568,
+        "text": " luckiest play ever because I had a ton of errors when I shut this thing down. So"
+      },
+      {
+        "start": 108568,
+        "stop": 109060,
+        "text": " maybe that thing just got hot. I don't know, maybe that adapter got hot. It's"
+      },
+      {
+        "start": 109060,
+        "stop": 109564,
+        "text": " booting right now. Drives are flashing. Okay, I got a snapshot failure here but"
+      },
+      {
+        "start": 109564,
+        "stop": 109980,
+        "text": " that's not a big deal. Come on."
+      },
+      {
+        "start": 110152,
+        "stop": 110812,
+        "text": " I can hear the hard drive clicking. Come on, please boot. I do not need this"
+      },
+      {
+        "start": 110812,
+        "stop": 111736,
+        "text": " project right now. Uh-oh. Oh no, there we go! Okay, so one network interface didn't start but"
+      },
+      {
+        "start": 111736,
+        "stop": 112256,
+        "text": " that's not even the primary network interface. We're up, we're up. I'm gonna go"
+      },
+      {
+        "start": 112256,
+        "stop": 112732,
+        "text": " check services. But the disks are flashing away. They look so happy. They look like a"
+      },
+      {
+        "start": 112732,
+        "stop": 113344,
+        "text": " data Christmas tree."
+      },
+      {
+        "start": 113344,
+        "stop": 113910,
+        "text": " I don't remember why we did it but when we hooked up that extra OS boot drive we"
+      },
+      {
+        "start": 113910,
+        "stop": 114220,
+        "text": " added last minute. We hooked it up to a splitter and I think that splitter was"
+      },
+      {
+        "start": 114220,
+        "stop": 114922,
+        "text": " just done. It was dead. Now obviously clearly this is like the third time we"
+      },
+      {
+        "start": 114922,
+        "stop": 115304,
+        "text": " have pulled the server back from the absolute brink of death and this time I"
+      },
+      {
+        "start": 115304,
+        "stop": 115984,
+        "text": " really got a lesson learned. I never want this to happen again so we'll get to"
+      },
+      {
+        "start": 115984,
+        "stop": 116388,
+        "text": " that here in a second. But what I was thinking Wes is what we ought to do is"
+      },
+      {
+        "start": 116388,
+        "stop": 116820,
+        "text": " log into that thing and let's get it up to date. We better get it up to date."
+      },
+      {
+        "start": 116820,
+        "stop": 117116,
+        "text": " While we can, while we're working on it because I don't think it's"
+      },
+      {
+        "start": 117116,
+        "stop": 117444,
+        "text": " been since we've done it on the show and you know these ArchBoxes they tend to"
+      },
+      {
+        "start": 117444,
+        "stop": 117856,
+        "text": " break when you go months without updating them so why don't we do it now"
+      },
+      {
+        "start": 117856,
+        "stop": 118592,
+        "text": " live on the show. If you wouldn't mind SSHing into there I checked earlier I"
+      },
+      {
+        "start": 118592,
+        "stop": 119300,
+        "text": " believe we have about a gigabyte worth of packages to download with a net"
+      },
+      {
+        "start": 119300,
+        "stop": 119974,
+        "text": " upgrade size of 152 megabytes. It's essentially every system package. Every"
+      },
+      {
+        "start": 119974,
+        "stop": 120412,
+        "text": " app, every package on there. You love updates. So let's do it. Let's get it all up to"
+      },
+      {
+        "start": 120412,
+        "stop": 120908,
+        "text": " date. Let's get this thing done and make sure it's in a good spot for the rest of"
+      },
+      {
+        "start": 120908,
+        "stop": 121392,
+        "text": " the road trip and then I'll tell you what I'm thinking about. You're gonna"
+      },
+      {
+        "start": 121392,
+        "stop": 121904,
+        "text": " make me help you rip these blu-rays if this doesn't work. We'll come back to"
+      },
+      {
+        "start": 121904,
+        "stop": 122120,
+        "text": " that. We'll see how you do Wes. You let us know okay?"
+      },
+      {
+        "start": 122120,
+        "stop": 122650,
+        "text": " Oh net upgrade size 150 megabytes. Yeah isn't that great? Just what a thing. It is"
+      },
+      {
+        "start": 122650,
+        "stop": 123304,
+        "text": " pretty great. I've realized we should colo these. These probably shouldn't be"
+      },
+      {
+        "start": 123304,
+        "stop": 123748,
+        "text": " in my garage anymore. It's been fun and I've got away with it for years but when"
+      },
+      {
+        "start": 123748,
+        "stop": 124492,
+        "text": " the cottonwood came in and it made me realize that this is just not a"
+      },
+      {
+        "start": 124492,
+        "stop": 124944,
+        "text": " doable thing anymore and so if anyone out there in the audience in the Pacific"
+      },
+      {
+        "start": 124944,
+        "stop": 125380,
+        "text": " Northwest area happens to work at a data center or a colo location where we could"
+      },
+      {
+        "start": 125380,
+        "stop": 125776,
+        "text": " take two or three boxes and put them in a rack where they could be properly"
+      },
+      {
+        "start": 125776,
+        "stop": 126188,
+        "text": " taken care of please reach out chris@jupiterbroadcasting.com or"
+      },
+      {
+        "start": 126188,
+        "stop": 126596,
+        "text": " linuxunplugged.com/contact we'd be willing to work out a deal. I need to"
+      },
+      {
+        "start": 126596,
+        "stop": 126924,
+        "text": " get him out of this garage. It's just time you know like I thought we'd get"
+      },
+      {
+        "start": 126924,
+        "stop": 127256,
+        "text": " air conditioning but we didn't and I figured we'd that shutting them down"
+      },
+      {
+        "start": 127256,
+        "stop": 127716,
+        "text": " would be enough but it clearly wasn't because there was just some time when"
+      },
+      {
+        "start": 127716,
+        "stop": 128200,
+        "text": " just things happened and when I went out there and I touched that box that"
+      },
+      {
+        "start": 128200,
+        "stop": 128740,
+        "text": " Thursday night that evening it was so hot I could barely keep my hands on it."
+      },
+      {
+        "start": 128740,
+        "stop": 129204,
+        "text": " It's like how can this system last right it just it possibly could"
+      },
+      {
+        "start": 129204,
+        "stop": 129556,
+        "text": " make it a little bit longer but eventually this box is gonna die and"
+      },
+      {
+        "start": 129556,
+        "stop": 129940,
+        "text": " those boxes that have been given to us by the audience are gonna die and it's"
+      },
+      {
+        "start": 129940,
+        "stop": 130316,
+        "text": " not like they're you know especially that box it's not in the show path we"
+      },
+      {
+        "start": 130316,
+        "stop": 130692,
+        "text": " don't need it to to do our recording so yeah we just got to get it we got to get"
+      },
+      {
+        "start": 130692,
+        "stop": 131100,
+        "text": " it hosted and co-load. It's been a fun experiment but if anybody out there has"
+      },
+      {
+        "start": 131100,
+        "stop": 131720,
+        "text": " any ideas or hook us up let us know. I just like the idea"
+      },
+      {
+        "start": 131720,
+        "stop": 132200,
+        "text": " you know you sort of taking care of these things trundling out to the at the"
+      },
+      {
+        "start": 132200,
+        "stop": 132632,
+        "text": " garage you know checking on them touching them, logging in the old-fashioned way"
+      },
+      {
+        "start": 132632,
+        "stop": 133192,
+        "text": " with the little the ancient LED LCD monitor. My first LCD screen I bought ever 100 years ago."
+      },
+      {
+        "start": 133192,
+        "stop": 133796,
+        "text": " 4/3 ratio right? Yep of course I think it's a 14 inch screen which it's a KDS"
+      },
+      {
+        "start": 133796,
+        "stop": 134108,
+        "text": " which I don't even think that brand is around anymore I think they died long"
+      },
+      {
+        "start": 134108,
+        "stop": 134656,
+        "text": " long time ago. And just think now you get credentials to go into a data center"
+      },
+      {
+        "start": 134656,
+        "stop": 135192,
+        "text": " that could potentially lock you out if there's a BGP error. How much fun would that be?"
+      },
+      {
+        "start": 135192,
+        "stop": 135804,
+        "text": " I know this is where I'm not really a big fan of this idea is the whole idea"
+      },
+      {
+        "start": 135804,
+        "stop": 136280,
+        "text": " with these is it's like large data stuff that you really only want to transfer"
+      },
+      {
+        "start": 136280,
+        "stop": 136800,
+        "text": " over a gigabit LAN anyways like source files or media files or things that we"
+      },
+      {
+        "start": 136800,
+        "stop": 137324,
+        "text": " want to do like we want to take 15 mp3 files convert them or flac files convert"
+      },
+      {
+        "start": 137324,
+        "stop": 137672,
+        "text": " them to mp3 and upload them to our radio stream like you don't want to do that"
+      },
+      {
+        "start": 137672,
+        "stop": 138088,
+        "text": " necessarily on a cloud box but. Maybe we just gotta accept we don't have servers in the"
+      },
+      {
+        "start": 138088,
+        "stop": 138524,
+        "text": " summer it's just a wintertime thing that we do. Yeah maybe you know one thing"
+      },
+      {
+        "start": 138524,
+        "stop": 138936,
+        "text": " that's been really handy is I've broken the tasks up a little bit so Jupes has"
+      },
+      {
+        "start": 138936,
+        "stop": 139316,
+        "text": " its own network so I like my immediate media files and whatnot and my home"
+      },
+      {
+        "start": 139316,
+        "stop": 139708,
+        "text": " assistant I'll run on a local network on a Raspberry Pi and then here I have a"
+      },
+      {
+        "start": 139708,
+        "stop": 140076,
+        "text": " home assistant blue that runs the home assistant animations for the studio"
+      },
+      {
+        "start": 140076,
+        "stop": 140412,
+        "text": " right and then we have one of the Dell systems that we've set up that's running"
+      },
+      {
+        "start": 140412,
+        "stop": 140676,
+        "text": " a lot of the automated tasks that's good to go and another system that's running"
+      },
+      {
+        "start": 140676,
+        "stop": 140984,
+        "text": " a lot of data storage and that's been fine and those don't even need to be on"
+      },
+      {
+        "start": 140984,
+        "stop": 141424,
+        "text": " 24/7 so I can just leave them off for days at a time but fake NAS was like I"
+      },
+      {
+        "start": 141424,
+        "stop": 141888,
+        "text": " needed to turn it on like once a day you know it's not always great to turn a"
+      },
+      {
+        "start": 141888,
+        "stop": 142286,
+        "text": " server on and off all the time either you know they tend to just like to stay"
+      },
+      {
+        "start": 142286,
+        "stop": 142868,
+        "text": " on at a good even temperature I feel bad it's like they're my garden you know and"
+      },
+      {
+        "start": 142868,
+        "stop": 143368,
+        "text": " I'm not being some weird fruit yeah I got weeds in my garden I'm not watering"
+      },
+      {
+        "start": 143368,
+        "stop": 143920,
+        "text": " them properly you know that's Chris you were gonna touch on lessons learned I I"
+      },
+      {
+        "start": 143920,
+        "stop": 144400,
+        "text": " feel like we can make quite a list out of that story do you think that's a nice"
+      },
+      {
+        "start": 144400,
+        "stop": 145112,
+        "text": " idea yeah my lesson is colo that's my lesson that's that's all I said but I"
+      },
+      {
+        "start": 145112,
+        "stop": 145658,
+        "text": " feel like try not to get cottonwood in your servers that's a good lesson right"
+      },
+      {
+        "start": 145658,
+        "stop": 146168,
+        "text": " rule number one maybe the wind tunnel wasn't the best idea get some filters"
+      },
+      {
+        "start": 146168,
+        "stop": 146616,
+        "text": " for your wind tunnel yeah and then um pull the trigger on setting up that"
+      },
+      {
+        "start": 146616,
+        "stop": 146972,
+        "text": " whole temperature sensor thing with the smart plugs that you were gonna do last"
+      },
+      {
+        "start": 146972,
+        "stop": 147446,
+        "text": " year like a year ago yeah it would also be good like maybe we shouldn't put"
+      },
+      {
+        "start": 147446,
+        "stop": 147794,
+        "text": " everything into production until we have the cooling and the rack solution done"
+      },
+      {
+        "start": 147794,
+        "stop": 148156,
+        "text": " because I thought we would get that that's my fault I'm gonna take that one"
+      },
+      {
+        "start": 148156,
+        "stop": 148620,
+        "text": " Alex you have any advice nothing that hasn't already been said I mean it's"
+      },
+      {
+        "start": 148620,
+        "stop": 149310,
+        "text": " it's all it's all obvious isn't it back up your configs kids this is uh this is"
+      },
+      {
+        "start": 149310,
+        "stop": 149700,
+        "text": " uncle Chris telling you right now I just had a brush with death and my first"
+      },
+      {
+        "start": 149700,
+        "stop": 150094,
+        "text": " thought was I don't know if I backed up the configs"
+      },
+      {
+        "start": 150094,
+        "stop": 150874,
+        "text": " Linode comm slash unplugged go there to get a hundred dollars and sixty day"
+      },
+      {
+        "start": 150874,
+        "stop": 151148,
+        "text": " credit on a new account and it's just a great way to support the show and check"
+      },
+      {
+        "start": 151148,
+        "stop": 151498,
+        "text": " something great out Linode is fast reliable cloud hosting with the best"
+      },
+      {
+        "start": 151498,
+        "stop": 151924,
+        "text": " support in the business underscore that real humans all the time take out your"
+      },
+      {
+        "start": 151924,
+        "stop": 152320,
+        "text": " highlighter even though sometimes it makes the ink blur a little bit"
+      },
+      {
+        "start": 152320,
+        "stop": 152744,
+        "text": " highlight this the best support in the business man does that matter when it"
+      },
+      {
+        "start": 152744,
+        "stop": 153200,
+        "text": " really matters you're thinking about it I've been getting notes from audience"
+      },
+      {
+        "start": 153200,
+        "stop": 153550,
+        "text": " members who were maybe on a different cloud provider who's been changing"
+      },
+      {
+        "start": 153550,
+        "stop": 153910,
+        "text": " things recently and they're just not very happy anymore and they're looking"
+      },
+      {
+        "start": 153910,
+        "stop": 154276,
+        "text": " to migrate I've also heard from some of you out there who have looked for like"
+      },
+      {
+        "start": 154276,
+        "stop": 154612,
+        "text": " the ultimate budget provider because you just got a cheap machine you're throwing"
+      },
+      {
+        "start": 154612,
+        "stop": 154972,
+        "text": " together and the next thing you know it's been running for three months it's"
+      },
+      {
+        "start": 154972,
+        "stop": 155394,
+        "text": " kind of important to you and now you want it somewhere better well that"
+      },
+      {
+        "start": 155394,
+        "stop": 155740,
+        "text": " credit works for you to go to linode comm slash unplugged and just try it out"
+      },
+      {
+        "start": 155740,
+        "stop": 156064,
+        "text": " for a bit it could also be a great way to try out something like a multi cloud"
+      },
+      {
+        "start": 156064,
+        "stop": 156736,
+        "text": " strategy this summer our garage slash server room in air quotes to the extreme"
+      },
+      {
+        "start": 156736,
+        "stop": 157232,
+        "text": " it's getting up to like 90 degrees 92 degrees 93 degrees some days especially"
+      },
+      {
+        "start": 157232,
+        "stop": 157764,
+        "text": " if I parked the hot car in there and the reality is it's been a peace of mind"
+      },
+      {
+        "start": 157764,
+        "stop": 158144,
+        "text": " knowing on during summer I just moved some of this stuff over to Linode and I"
+      },
+      {
+        "start": 158144,
+        "stop": 158524,
+        "text": " don't I don't really need it here in the garage sure I'd like to have access on"
+      },
+      {
+        "start": 158524,
+        "stop": 158954,
+        "text": " my land but the reality is Linode's infrastructure is so fast that it's"
+      },
+      {
+        "start": 158954,
+        "stop": 159332,
+        "text": " typically faster than my own gear anyways like even locally it's crazy"
+      },
+      {
+        "start": 159332,
+        "stop": 159740,
+        "text": " because they are their own ISP and they have 11 data centers around the world so"
+      },
+      {
+        "start": 159740,
+        "stop": 160016,
+        "text": " for this kind of stuff I'll just pick the one on the on the west coast right"
+      },
+      {
+        "start": 160016,
+        "stop": 160448,
+        "text": " you pick the one closest to you and then they have MV me discs in there they have"
+      },
+      {
+        "start": 160448,
+        "stop": 160836,
+        "text": " AMD epic processors for the dedicated GPU machines in fact if you want physical"
+      },
+      {
+        "start": 160836,
+        "stop": 161212,
+        "text": " hardware to they can work with you on that Linode's constantly adding new"
+      },
+      {
+        "start": 161212,
+        "stop": 161560,
+        "text": " features like database as a service so that we've you just want Linode to run"
+      },
+      {
+        "start": 161560,
+        "stop": 161912,
+        "text": " your Postgres or my SQL your Mongo they'll do it for you they'll bring"
+      },
+      {
+        "start": 161912,
+        "stop": 162232,
+        "text": " their expertise that they've collected for the last 19 years and they'll bring"
+      },
+      {
+        "start": 162232,
+        "stop": 162664,
+        "text": " it to something like a hosted database service nobody else has this combination"
+      },
+      {
+        "start": 162664,
+        "stop": 163056,
+        "text": " of features and this is the place you go to support the show too it's a win-win"
+      },
+      {
+        "start": 163056,
+        "stop": 163432,
+        "text": " so go check it out I think you're really gonna like it if you've been considering"
+      },
+      {
+        "start": 163432,
+        "stop": 163860,
+        "text": " it maybe migrating from one of those other providers maybe you're just done"
+      },
+      {
+        "start": 163860,
+        "stop": 164344,
+        "text": " with the hyperscalers crap go try out Linode you know what's up Linode comm"
+      },
+      {
+        "start": 164344,
+        "stop": 165308,
+        "text": " slash unplugged one more time just go to Linode comm slash unplugged with some"
+      },
+      {
+        "start": 165308,
+        "stop": 165772,
+        "text": " small website updates on the new website we have something like I think it's"
+      },
+      {
+        "start": 165772,
+        "stop": 166236,
+        "text": " something like 60 people now in our matrix chat room that are keeping"
+      },
+      {
+        "start": 166236,
+        "stop": 166620,
+        "text": " updated on the new website which is pretty amazing and I was able to"
+      },
+      {
+        "start": 166620,
+        "stop": 167092,
+        "text": " recently convince Alex to jump into the project and I think that was a good"
+      },
+      {
+        "start": 167092,
+        "stop": 167484,
+        "text": " thing hello what have you been up to this week what haven't I been up to"
+      },
+      {
+        "start": 167484,
+        "stop": 167888,
+        "text": " we've been doing a lot of infrastructure work a lot of basic plumbing and stuff"
+      },
+      {
+        "start": 167888,
+        "stop": 168368,
+        "text": " like that that actually just needs the JB crew I suppose to do it really"
+      },
+      {
+        "start": 168368,
+        "stop": 168760,
+        "text": " because you know we you know there are servers at the end of the day we're"
+      },
+      {
+        "start": 168760,
+        "stop": 169376,
+        "text": " using github actions to fully automate the deployment of the building of the"
+      },
+      {
+        "start": 169376,
+        "stop": 170028,
+        "text": " Hugo site and then deploying that to a Linode node I never know what to call"
+      },
+      {
+        "start": 170028,
+        "stop": 170480,
+        "text": " them I live to call them droplets back in the day but you know Linode nodes we"
+      },
+      {
+        "start": 170480,
+        "stop": 170964,
+        "text": " changed the URL of the website and you did some fancy DNS stuff didn't you ah"
+      },
+      {
+        "start": 170964,
+        "stop": 171476,
+        "text": " yes this this was a long time ago actually the orange one and I wrote some"
+      },
+      {
+        "start": 171476,
+        "stop": 172160,
+        "text": " pretty ninja level which probably means hacky as F ansible code which"
+      },
+      {
+        "start": 172160,
+        "stop": 172712,
+        "text": " automatically scans the docker compose file for the relevant traffic labels and"
+      },
+      {
+        "start": 172712,
+        "stop": 173188,
+        "text": " then automatically updates the cloud flare DNS records using ansible under"
+      },
+      {
+        "start": 173188,
+        "stop": 173660,
+        "text": " the hood so you could for example spin up a new container have the correct"
+      },
+      {
+        "start": 173660,
+        "stop": 174096,
+        "text": " traffic label against that container and not need to open cloud flare and type it"
+      },
+      {
+        "start": 174096,
+        "stop": 174472,
+        "text": " all in and all that kind of stuff now you could argue you could do that using"
+      },
+      {
+        "start": 174472,
+        "stop": 174946,
+        "text": " terraform but the advantage of doing it this way with ansible is it's just one"
+      },
+      {
+        "start": 174946,
+        "stop": 175384,
+        "text": " command it's all in one place and it's all automated that's awesome and we do"
+      },
+      {
+        "start": 175384,
+        "stop": 175848,
+        "text": " have a new URL that we want everybody to use and also please we need some people"
+      },
+      {
+        "start": 175848,
+        "stop": 176300,
+        "text": " to test the new website so Alex what did you make the new URL we thought long and"
+      },
+      {
+        "start": 176300,
+        "stop": 176808,
+        "text": " hard deep into the night about how to name this thing new dot Jupiter"
+      },
+      {
+        "start": 176808,
+        "stop": 177456,
+        "text": " broadcasting dot-com so that's where the new website is being sort of tested for"
+      },
+      {
+        "start": 177456,
+        "stop": 177864,
+        "text": " now if you just go to do Jupiter broadcasting comm it's currently the old"
+      },
+      {
+        "start": 177864,
+        "stop": 178164,
+        "text": " WordPress website that's still functional and still up to date and"
+      },
+      {
+        "start": 178164,
+        "stop": 178636,
+        "text": " everything but the new website that we're building is at new dot Jupiter"
+      },
+      {
+        "start": 178636,
+        "stop": 179056,
+        "text": " broadcasting comm and if you want to get more involved please join our matrix"
+      },
+      {
+        "start": 179056,
+        "stop": 179580,
+        "text": " room and also check out our github don't forget also coming up in this week's"
+      },
+      {
+        "start": 179580,
+        "stop": 179942,
+        "text": " office hours we're going to do a deep dive into a lot more of the"
+      },
+      {
+        "start": 179942,
+        "stop": 180348,
+        "text": " configuration and the plans for you know continuous integration and feature"
+      },
+      {
+        "start": 180348,
+        "stop": 180840,
+        "text": " branches and all that kind of stuff I'm looking forward to that a lot of good"
+      },
+      {
+        "start": 180840,
+        "stop": 181104,
+        "text": " stuff yeah so if you're coming in and you're going new website what are you"
+      },
+      {
+        "start": 181104,
+        "stop": 181392,
+        "text": " guys talking about yeah we've been covering this in office hours dot hair"
+      },
+      {
+        "start": 181392,
+        "stop": 181840,
+        "text": " this is a new community project that's just absolutely incredible and it's"
+      },
+      {
+        "start": 181840,
+        "stop": 182324,
+        "text": " coming along Brent says small updates huge updates it's a whole brand new"
+      },
+      {
+        "start": 182324,
+        "stop": 182780,
+        "text": " website statically generated on demand when we publish a new episode and it's"
+      },
+      {
+        "start": 182780,
+        "stop": 183080,
+        "text": " coming together and we're kind of in the final stretch and we'd love your"
+      },
+      {
+        "start": 183080,
+        "stop": 183432,
+        "text": " feedback so we do have our github page where you can give us some feedback but"
+      },
+      {
+        "start": 183432,
+        "stop": 183788,
+        "text": " just go check it out at new dot Jupiter broadcasting Chris you got a nice new"
+      },
+      {
+        "start": 183788,
+        "stop": 184312,
+        "text": " feature as well this week didn't you this is so cool so oh man this is a"
+      },
+      {
+        "start": 184312,
+        "stop": 184740,
+        "text": " great time to be building this website because we're kind of embracing new"
+      },
+      {
+        "start": 184740,
+        "stop": 185352,
+        "text": " ideas and new ways of doing stuff and one of them is peer tube yeah we're back"
+      },
+      {
+        "start": 185352,
+        "stop": 185806,
+        "text": " on the pier to bandwagon baby at Jupiter tube and we want to start using that for"
+      },
+      {
+        "start": 185806,
+        "stop": 186204,
+        "text": " our live stream in bed because you know just today as we were getting ready to"
+      },
+      {
+        "start": 186204,
+        "stop": 186548,
+        "text": " start the show we started playing a song and we realized oh no this might actually"
+      },
+      {
+        "start": 186548,
+        "stop": 186924,
+        "text": " get us kicked off of YouTube just playing this and so as we move forward"
+      },
+      {
+        "start": 186924,
+        "stop": 187304,
+        "text": " it's like why do we want to keep promoting Google's platform or Amazon's"
+      },
+      {
+        "start": 187304,
+        "stop": 187744,
+        "text": " platform with twitch like why not promote our own free software platform"
+      },
+      {
+        "start": 187744,
+        "stop": 188132,
+        "text": " that's not going to take us down and so then the next question was well shouldn't"
+      },
+      {
+        "start": 188132,
+        "stop": 188520,
+        "text": " we be using that as our in bed but how are we gonna do that are we gonna like"
+      },
+      {
+        "start": 188520,
+        "stop": 188960,
+        "text": " do a new in bed for pier tube every single time we want to do a live stream"
+      },
+      {
+        "start": 188960,
+        "stop": 189316,
+        "text": " how's that gonna work and we've been kicking that around and this is a great"
+      },
+      {
+        "start": 189316,
+        "stop": 189972,
+        "text": " example of our community came in with a solution that is so slick so elegant and"
+      },
+      {
+        "start": 189972,
+        "stop": 190380,
+        "text": " they're using a lot of like native technologies that we're just now"
+      },
+      {
+        "start": 190380,
+        "stop": 190676,
+        "text": " implementing like pier tube and they're looking at the pier tube API and they're"
+      },
+      {
+        "start": 190676,
+        "stop": 191144,
+        "text": " saying how can we use this to properly embed a live stream on the new website"
+      },
+      {
+        "start": 191144,
+        "stop": 191556,
+        "text": " and the guys dug through it and they found a way where when we go live on"
+      },
+      {
+        "start": 191556,
+        "stop": 191916,
+        "text": " pier tube it can automatically update the website and I don't know if it's"
+      },
+      {
+        "start": 191916,
+        "stop": 192392,
+        "text": " changing the embed at the website or if the embed is just somehow auto updating"
+      },
+      {
+        "start": 192392,
+        "stop": 192916,
+        "text": " but it is so I don't do anything but go live and the website automatically gets"
+      },
+      {
+        "start": 192916,
+        "stop": 193364,
+        "text": " the new embedded live stream from pier tube just how it should be it's so cool"
+      },
+      {
+        "start": 193364,
+        "stop": 193836,
+        "text": " it's so cool like we're building and we're building a page that talks about"
+      },
+      {
+        "start": 193836,
+        "stop": 194236,
+        "text": " how to do boosts so that way we have all that explained in one place and in the"
+      },
+      {
+        "start": 194236,
+        "stop": 194568,
+        "text": " future I imagine you'll actually be able to boost from there we've got a page for"
+      },
+      {
+        "start": 194568,
+        "stop": 195012,
+        "text": " the memberships we've got a page for all of the hosts our swag store the calendar"
+      },
+      {
+        "start": 195012,
+        "stop": 195660,
+        "text": " and of course the new player is so slick it supports chapters it supports a lot"
+      },
+      {
+        "start": 195660,
+        "stop": 196068,
+        "text": " of the new podcasting to know spec it's an open source player itself pod verse"
+      },
+      {
+        "start": 196068,
+        "stop": 196524,
+        "text": " I'll talk about that more in the show it's all coming together and in one"
+      },
+      {
+        "start": 196524,
+        "stop": 196968,
+        "text": " statically generated website that's gonna just load beautifully and fast for"
+      },
+      {
+        "start": 196968,
+        "stop": 197338,
+        "text": " everybody hopefully and the neat thing is like you know you mentioned the"
+      },
+      {
+        "start": 197338,
+        "stop": 197734,
+        "text": " player well the pod verse player Mitch over there was happy to collaborate with"
+      },
+      {
+        "start": 197734,
+        "stop": 198090,
+        "text": " us and we went back and forth for I don't know something like two weeks"
+      },
+      {
+        "start": 198090,
+        "stop": 198460,
+        "text": " sending some requests for certain features and they built it in and then"
+      },
+      {
+        "start": 198460,
+        "stop": 198762,
+        "text": " they'd send a request from us to do something a little differently it's been"
+      },
+      {
+        "start": 198762,
+        "stop": 199168,
+        "text": " really cool to interact with other open source projects as well in our efforts"
+      },
+      {
+        "start": 199168,
+        "stop": 199640,
+        "text": " so I think everyone over at the website creation team I think big applause and"
+      },
+      {
+        "start": 199640,
+        "stop": 200016,
+        "text": " thank you for making this so much fun yeah I think that actually is worth just"
+      },
+      {
+        "start": 200016,
+        "stop": 200376,
+        "text": " talking about a little bit more is we didn't intend for this to happen but"
+      },
+      {
+        "start": 200376,
+        "stop": 200778,
+        "text": " there's been some other projects that have gotten bug fixes and they've made"
+      },
+      {
+        "start": 200778,
+        "stop": 201240,
+        "text": " some improvements and changes as we've been building this website it really has"
+      },
+      {
+        "start": 201240,
+        "stop": 201538,
+        "text": " been a collaborative open source project which is just really awesome we didn't"
+      },
+      {
+        "start": 201538,
+        "stop": 201920,
+        "text": " necessarily intend for that to happen but freaking open source yep and all of"
+      },
+      {
+        "start": 201920,
+        "stop": 202220,
+        "text": " this that we're doing it's all up on our github it's all there while we're"
+      },
+      {
+        "start": 202220,
+        "stop": 202758,
+        "text": " talking about pod verse I might as well mention that the Android and iOS clients"
+      },
+      {
+        "start": 202758,
+        "stop": 203344,
+        "text": " are getting boost support it's in f droid right now as we record I believe this"
+      },
+      {
+        "start": 203344,
+        "stop": 203826,
+        "text": " morning it's landing in the Play Store and it is currently in review on the"
+      },
+      {
+        "start": 203826,
+        "stop": 204432,
+        "text": " Apple iOS store but version 4.6 Oh has boosting in the mobile client as well so"
+      },
+      {
+        "start": 204432,
+        "stop": 204970,
+        "text": " pod verse is one of these podcasting 2.0 clients we like a lot because they have"
+      },
+      {
+        "start": 204970,
+        "stop": 205518,
+        "text": " an iOS Android and web player it's all GPL it's available in f droid if you'd"
+      },
+      {
+        "start": 205518,
+        "stop": 206160,
+        "text": " likes it and it's embeddable too as a player so you as a listener could create"
+      },
+      {
+        "start": 206160,
+        "stop": 206512,
+        "text": " a pod verse FM account with the online player and then when you go to our"
+      },
+      {
+        "start": 206512,
+        "stop": 206764,
+        "text": " website you can play it in there you could click a little button and bring it"
+      },
+      {
+        "start": 206764,
+        "stop": 207260,
+        "text": " into your overall pod verse lists of podcasts it's it's gonna be very slick"
+      },
+      {
+        "start": 207260,
+        "stop": 207726,
+        "text": " so do check out pod verse they are iterating quickly and it'll be landing"
+      },
+      {
+        "start": 207726,
+        "stop": 208166,
+        "text": " in play and the App Store this week and it's already an f droid a brand new"
+      },
+      {
+        "start": 208166,
+        "stop": 208584,
+        "text": " version with lots of fancy features and they're just it's they're just a great"
+      },
+      {
+        "start": 208584,
+        "stop": 209044,
+        "text": " team like Brent said we we worked with him on the website it's been awesome so"
+      },
+      {
+        "start": 209044,
+        "stop": 209556,
+        "text": " pod verse FM for that I think Brent's found a new calling I don't know as he"
+      },
+      {
+        "start": 209556,
+        "stop": 210068,
+        "text": " realizes it quite yet but a new calling as being a scrum master or some kind of"
+      },
+      {
+        "start": 210068,
+        "stop": 210502,
+        "text": " a project manager because he wakes up and I know the first thing he does is he"
+      },
+      {
+        "start": 210502,
+        "stop": 210926,
+        "text": " looks at his phone and checks just how many pull requests have been opened that"
+      },
+      {
+        "start": 210926,
+        "stop": 211268,
+        "text": " night how many issues but the other thing I think that we need to just"
+      },
+      {
+        "start": 211268,
+        "stop": 211684,
+        "text": " underscore is how Brent's really driven this community engagement I know that"
+      },
+      {
+        "start": 211684,
+        "stop": 211958,
+        "text": " you're my friend and everything but I think you've done a great job with it"
+      },
+      {
+        "start": 211958,
+        "stop": 212528,
+        "text": " well done well thank you round of applause and we're just and really not"
+      },
+      {
+        "start": 212528,
+        "stop": 212858,
+        "text": " to really celebrate but we're really close to the finish line right like we're"
+      },
+      {
+        "start": 212858,
+        "stop": 213144,
+        "text": " so close and I don't think we'd be there for wasn't for Brent's work so"
+      },
+      {
+        "start": 213144,
+        "stop": 213504,
+        "text": " absolutely of course Stefan and really there is an entire team of people if you"
+      },
+      {
+        "start": 213504,
+        "stop": 213852,
+        "text": " go to github there's a huge team go to github look at the Jupiter broadcasting"
+      },
+      {
+        "start": 213852,
+        "stop": 214276,
+        "text": " calm insights and look at the last 30 days it's gonna blow your mind it's it's"
+      },
+      {
+        "start": 214276,
+        "stop": 214938,
+        "text": " so awesome isn't it it's incredible it's really amazing yeah I think it outpaced"
+      },
+      {
+        "start": 214938,
+        "stop": 215304,
+        "text": " what we were expecting and I think that's really exciting I you know in"
+      },
+      {
+        "start": 215304,
+        "stop": 215660,
+        "text": " like 14 15 years I think it's the most successful community project JB's ever"
+      },
+      {
+        "start": 215660,
+        "stop": 216024,
+        "text": " done so and a big part of that is thanks to Brent big part of that thanks is to"
+      },
+      {
+        "start": 216024,
+        "stop": 216292,
+        "text": " fun and really just the incredible community we've built and the"
+      },
+      {
+        "start": 216292,
+        "stop": 216660,
+        "text": " philosophy of value for value because it's not always just sats and dollars"
+      },
+      {
+        "start": 216660,
+        "stop": 217092,
+        "text": " it's time and talent as well absolutely"
+      },
+      {
+        "start": 217092,
+        "stop": 217596,
+        "text": " bitwarden.com slash Linux go there to get started with a free trial for an"
+      },
+      {
+        "start": 217596,
+        "stop": 218020,
+        "text": " individual or a business it's bitwarden.com slash Linux it's just the easiest"
+      },
+      {
+        "start": 218020,
+        "stop": 218580,
+        "text": " way for you or a team of people to manage secrets and pass phrases things"
+      },
+      {
+        "start": 218580,
+        "stop": 218952,
+        "text": " that really are important and bitwarden is open source so you know that their"
+      },
+      {
+        "start": 218952,
+        "stop": 219312,
+        "text": " security is audible it's open it's transparent and it's trusted by millions"
+      },
+      {
+        "start": 219312,
+        "stop": 219680,
+        "text": " of individuals and teams in their community it's what we use to manage our"
+      },
+      {
+        "start": 219680,
+        "stop": 220084,
+        "text": " passwords our two-factor codes and other sensitive recovery keys for the"
+      },
+      {
+        "start": 220084,
+        "stop": 220500,
+        "text": " applications that require that and then it's also how I managed to have complex"
+      },
+      {
+        "start": 220500,
+        "stop": 220828,
+        "text": " secure passwords on my mobile device because I also have bitwarden installed"
+      },
+      {
+        "start": 220828,
+        "stop": 221376,
+        "text": " on my mobile devices I put in my browser I grab the app from flat hub because"
+      },
+      {
+        "start": 221376,
+        "stop": 221632,
+        "text": " they've got a flat pack of bitwarden which is great for getting a new system"
+      },
+      {
+        "start": 221632,
+        "stop": 222108,
+        "text": " set up and I put it on my mobile devices and I always appreciate the little"
+      },
+      {
+        "start": 222108,
+        "stop": 222412,
+        "text": " changes that come down the pipe from bitwarden the little improvements the"
+      },
+      {
+        "start": 222412,
+        "stop": 222772,
+        "text": " tweaks the iteration on the UI that things that just make the workflow"
+      },
+      {
+        "start": 222772,
+        "stop": 223312,
+        "text": " smoother like account switching and and recently I mean like just last week they"
+      },
+      {
+        "start": 223312,
+        "stop": 223712,
+        "text": " got support for cross-domain identity management right there in bitwarden so"
+      },
+      {
+        "start": 223712,
+        "stop": 224308,
+        "text": " like for enterprises it makes it so much easier now to provision bitwarden for"
+      },
+      {
+        "start": 224308,
+        "stop": 224700,
+        "text": " your users they also recently added a username generator so that way you can"
+      },
+      {
+        "start": 224700,
+        "stop": 225132,
+        "text": " have a unique username and a unique password for every website and service"
+      },
+      {
+        "start": 225132,
+        "stop": 225548,
+        "text": " that you sign up for but not just username and password they also have an"
+      },
+      {
+        "start": 225548,
+        "stop": 225920,
+        "text": " option to create an email alias for each service or website that you sign up for"
+      },
+      {
+        "start": 225920,
+        "stop": 226332,
+        "text": " you know it just routes it through simple logon or Firefox relay and then"
+      },
+      {
+        "start": 226332,
+        "stop": 226696,
+        "text": " the service doesn't doesn't know really anything about you and if they get a"
+      },
+      {
+        "start": 226696,
+        "stop": 227304,
+        "text": " breach which a service I use just had a breach last week then it doesn't share"
+      },
+      {
+        "start": 227304,
+        "stop": 227692,
+        "text": " your identifying information something that you might use on another site or"
+      },
+      {
+        "start": 227692,
+        "stop": 228272,
+        "text": " service right it's just that site and services information so it's limited in"
+      },
+      {
+        "start": 228272,
+        "stop": 228688,
+        "text": " its damage it's going to do just small things like that using a password"
+      },
+      {
+        "start": 228688,
+        "stop": 229168,
+        "text": " manager using a unique password using a unique username and even a unique email"
+      },
+      {
+        "start": 229168,
+        "stop": 229576,
+        "text": " address for every website and service you use is going to greatly enhance your"
+      },
+      {
+        "start": 229576,
+        "stop": 229960,
+        "text": " online privacy and security it might just be the number one thing you can do"
+      },
+      {
+        "start": 229960,
+        "stop": 230576,
+        "text": " and bitwarden is the tool that makes this actually doable and manageable so"
+      },
+      {
+        "start": 230576,
+        "stop": 231112,
+        "text": " go try it out for yourself or your business go try it for free at bitwarden.com/linux"
+      },
+      {
+        "start": 231112,
+        "stop": 231436,
+        "text": " it's also a great way to support the show and maybe you already know all this"
+      },
+      {
+        "start": 231436,
+        "stop": 231824,
+        "text": " but maybe somebody you know maybe a teammate at work needs to hear this"
+      },
+      {
+        "start": 231824,
+        "stop": 232174,
+        "text": " maybe a friend ish I mean if they're a friend you've already had them switch to"
+      },
+      {
+        "start": 232174,
+        "stop": 232436,
+        "text": " bitwarden but I'm not gonna make judgments maybe a family member you"
+      },
+      {
+        "start": 232436,
+        "stop": 232752,
+        "text": " don't talk to very often we'll frame it that way maybe they need to know about"
+      },
+      {
+        "start": 232752,
+        "stop": 233140,
+        "text": " bitwarden send them over to bitwarden.com/linux one more time to support"
+      },
+      {
+        "start": 233140,
+        "stop": 233680,
+        "text": " the show it's bitwarden.com/linux"
+      },
+      {
+        "start": 233680,
+        "stop": 234512,
+        "text": " now you know we have some meetups to talk about here let's get a little bit"
+      },
+      {
+        "start": 234512,
+        "stop": 234952,
+        "text": " of meetup going here we have not one not two but maybe like four or five coming"
+      },
+      {
+        "start": 234952,
+        "stop": 235396,
+        "text": " up September 20th southern Oregon September 23rd Northern California"
+      },
+      {
+        "start": 235396,
+        "stop": 235904,
+        "text": " September 29th the jet propulsion laboratory September 30th Southern"
+      },
+      {
+        "start": 235904,
+        "stop": 236580,
+        "text": " California October 7th Northern Oregon all of them meetup.com/tupiterbroadcasting"
+      },
+      {
+        "start": 236580,
+        "stop": 237224,
+        "text": " if you're in the area let's meet up we're gonna also have some swag"
+      },
+      {
+        "start": 237224,
+        "stop": 237656,
+        "text": " on board but we'll also even if you can't make it to the meetup have"
+      },
+      {
+        "start": 237656,
+        "stop": 238424,
+        "text": " something for you brand new idea we're gonna stash little geocaches along the"
+      },
+      {
+        "start": 238424,
+        "stop": 238856,
+        "text": " way and then we'll give you hints in the show where you can find them so even if"
+      },
+      {
+        "start": 238856,
+        "stop": 239140,
+        "text": " you can't make it to the meetup maybe you can still get some swag we're leaving"
+      },
+      {
+        "start": 239140,
+        "stop": 239426,
+        "text": " something behind for you I got to pick up like some Tupperware containers I'm"
+      },
+      {
+        "start": 239426,
+        "stop": 239824,
+        "text": " thinking don't give it all away no I'll put them in I'm gonna put some swag you"
+      },
+      {
+        "start": 239824,
+        "stop": 240116,
+        "text": " know like shirt stickers some stuff in there can we do and then we'll show both"
+      },
+      {
+        "start": 240116,
+        "stop": 240572,
+        "text": " food items that's probably a single hair in each probably shouldn't do like a"
+      },
+      {
+        "start": 240572,
+        "stop": 241060,
+        "text": " banana probably shouldn't okay all right although how tell you how long it's been"
+      },
+      {
+        "start": 241060,
+        "stop": 241486,
+        "text": " right like if they say what if somebody found it and then took a picture with"
+      },
+      {
+        "start": 241486,
+        "stop": 241900,
+        "text": " like a like a still edible banana that'd be very impressive right hey maybe we"
+      },
+      {
+        "start": 241900,
+        "stop": 242488,
+        "text": " should put a banana in there argument for a banana now get finding y'all yeah"
+      },
+      {
+        "start": 242488,
+        "stop": 242968,
+        "text": " so we'll let you know as we hit the road we'll hide them along the way and I give"
+      },
+      {
+        "start": 242968,
+        "stop": 243468,
+        "text": " you hints here in the show but come say hi to us meetup.com slash Jupiter"
+      },
+      {
+        "start": 243468,
+        "stop": 244224,
+        "text": " broadcasting you know what it is I think it's time for some feedback yeah up"
+      },
+      {
+        "start": 244224,
+        "stop": 244698,
+        "text": " first is a actually a listener who found their way here after you were a guest"
+      },
+      {
+        "start": 244698,
+        "stop": 245292,
+        "text": " over on the podcasting 2.0 show oh cool yeah Arno writes in and has got some"
+      },
+      {
+        "start": 245292,
+        "stop": 245610,
+        "text": " questions about their has very pie maybe you can help us out here Chris all right"
+      },
+      {
+        "start": 245610,
+        "stop": 246042,
+        "text": " do you know of any solution for using the pie on battery power now"
+      },
+      {
+        "start": 246042,
+        "stop": 246462,
+        "text": " specifically with the smart pie touch - which I guess is like a fancy case that"
+      },
+      {
+        "start": 246462,
+        "stop": 246970,
+        "text": " includes a screen unfortunately pie juice does not work I guess the"
+      },
+      {
+        "start": 246970,
+        "stop": 247380,
+        "text": " developer says that the pie and the screen draws too much power using a"
+      },
+      {
+        "start": 247380,
+        "stop": 247926,
+        "text": " power bank with extra cable isn't very portable oh well okay I was gonna say"
+      },
+      {
+        "start": 247926,
+        "stop": 248174,
+        "text": " that's really how you do it right because then you can size it to how you"
+      },
+      {
+        "start": 248174,
+        "stop": 248616,
+        "text": " needs it but of course I'm thinking not so portable how would you do that"
+      },
+      {
+        "start": 248616,
+        "stop": 249022,
+        "text": " portably the only thing I could really think of is like something like the moto"
+      },
+      {
+        "start": 249022,
+        "stop": 249382,
+        "text": " dock but I don't know if that's gonna be really easy to get your hands on these"
+      },
+      {
+        "start": 249382,
+        "stop": 250078,
+        "text": " days I think you got to build yourself essentially a Tupperware container with a"
+      },
+      {
+        "start": 250078,
+        "stop": 250854,
+        "text": " banana you put all that in the Tupperware container and then you just"
+      },
+      {
+        "start": 250854,
+        "stop": 251358,
+        "text": " make the Tupperware container portable okay okay well a swing and a miss maybe"
+      },
+      {
+        "start": 251358,
+        "stop": 251658,
+        "text": " but maybe here's maybe somebody listening has a better idea here's a"
+      },
+      {
+        "start": 251658,
+        "stop": 251890,
+        "text": " second chance over here okay all right all right do you have any advice for"
+      },
+      {
+        "start": 251890,
+        "stop": 252358,
+        "text": " like a good microphone or audio setup to use with the pie I think Arno's tried a"
+      },
+      {
+        "start": 252358,
+        "stop": 252918,
+        "text": " USB stick with PCM 2902 and a three and a half millimeter jack playback was fine"
+      },
+      {
+        "start": 252918,
+        "stop": 253250,
+        "text": " but input does not seem to work now I don't know how you're doing your storage"
+      },
+      {
+        "start": 253250,
+        "stop": 253756,
+        "text": " so this is gonna be the problem but you absolutely got to go USB audio interface"
+      },
+      {
+        "start": 253756,
+        "stop": 254250,
+        "text": " I think something like the audio technica ATR could possibly do in this"
+      },
+      {
+        "start": 254250,
+        "stop": 254674,
+        "text": " scenario I don't know if the blue icicle is still easily available too but that'll"
+      },
+      {
+        "start": 254674,
+        "stop": 255100,
+        "text": " take any XLR mic and make it into a USB mic with just one device it's kind of a"
+      },
+      {
+        "start": 255100,
+        "stop": 255510,
+        "text": " big device bigger than the Raspberry Pi but it's a thing that's probably how I"
+      },
+      {
+        "start": 255510,
+        "stop": 255872,
+        "text": " would do it Wes the other thing although we had limited success with it is you"
+      },
+      {
+        "start": 255872,
+        "stop": 256200,
+        "text": " could look at that Raspberry Pi ninja project maybe they'd have more success"
+      },
+      {
+        "start": 256200,
+        "stop": 256744,
+        "text": " than we did if so write back in and let us know another feedback item today from"
+      },
+      {
+        "start": 256744,
+        "stop": 257366,
+        "text": " Paul responding to Linux unplugged 468 the read-only scenario before listening"
+      },
+      {
+        "start": 257366,
+        "stop": 257792,
+        "text": " if you'd asked me what distros I'd recommend to a new or long-term Linux"
+      },
+      {
+        "start": 257792,
+        "stop": 258514,
+        "text": " user I would not have even thought about suggesting endless but after love 468 I"
+      },
+      {
+        "start": 258514,
+        "stop": 259078,
+        "text": " think I have to say it's an awesome and no-nonsense distro years ago I heard"
+      },
+      {
+        "start": 259078,
+        "stop": 259390,
+        "text": " about endless and the endless computer and I thought it'd be a great idea for"
+      },
+      {
+        "start": 259390,
+        "stop": 259818,
+        "text": " my children you know encourage them to start learn coding that kind of thing"
+      },
+      {
+        "start": 259818,
+        "stop": 260342,
+        "text": " anyway long story short the laptop was not really used much my by children but"
+      },
+      {
+        "start": 260342,
+        "stop": 260886,
+        "text": " since my Mac was aging already no longer receiving updates I started using the"
+      },
+      {
+        "start": 260886,
+        "stop": 261304,
+        "text": " endless computer while my use case is really just web browsing email word"
+      },
+      {
+        "start": 261304,
+        "stop": 261796,
+        "text": " processing in the occasional spreadsheet it performs perfectly especially as this"
+      },
+      {
+        "start": 261796,
+        "stop": 262250,
+        "text": " is a pretty low-cost machine and the time we've had this laptop have never"
+      },
+      {
+        "start": 262250,
+        "stop": 262630,
+        "text": " had any issue with updates or day-to-day use and we've never had to open the"
+      },
+      {
+        "start": 262630,
+        "stop": 263034,
+        "text": " command line to fix or rectify anything now this could be attributed to our basic"
+      },
+      {
+        "start": 263034,
+        "stop": 263522,
+        "text": " use case the well-thought-out operating system or a combination of both I"
+      },
+      {
+        "start": 263522,
+        "stop": 263942,
+        "text": " propose we do have a bit of an endless blind spot I think that it is true I"
+      },
+      {
+        "start": 263942,
+        "stop": 264166,
+        "text": " think we don't think about endless very much because I think they haven't"
+      },
+      {
+        "start": 264166,
+        "stop": 264682,
+        "text": " targeted our user base very much yeah but then as we start talking about these"
+      },
+      {
+        "start": 264682,
+        "stop": 265010,
+        "text": " immutable systems that we want to just work out of the box for workstations I"
+      },
+      {
+        "start": 265010,
+        "stop": 265354,
+        "text": " start thinking maybe we should have been looking at endless more so that's great"
+      },
+      {
+        "start": 265354,
+        "stop": 265950,
+        "text": " feedback thank you for that I will put that into like my you know the back of"
+      },
+      {
+        "start": 265950,
+        "stop": 266358,
+        "text": " my mind I feel like we've we've done the immutable thing quite a bit do we need to"
+      },
+      {
+        "start": 266358,
+        "stop": 266706,
+        "text": " do another one but endless is kind of its own thing when was the last time we"
+      },
+      {
+        "start": 266706,
+        "stop": 267026,
+        "text": " really gave it a go we've never I don't think we've ever looked at him"
+      },
+      {
+        "start": 267026,
+        "stop": 267706,
+        "text": " infinity got it really you know the endless computer kind of piques my"
+      },
+      {
+        "start": 267706,
+        "stop": 267998,
+        "text": " interest from what we've been talking about lately with these low-end"
+      },
+      {
+        "start": 267998,
+        "stop": 268450,
+        "text": " computers as well so it's almost like a two episode hit here I was gonna say we"
+      },
+      {
+        "start": 268450,
+        "stop": 268814,
+        "text": " could send Brent off for a field report I I'm not sure I follow the logic it's"
+      },
+      {
+        "start": 268814,
+        "stop": 269246,
+        "text": " not like we wouldn't cover arch if we just covered Ubuntu though is it so not"
+      },
+      {
+        "start": 269246,
+        "stop": 269622,
+        "text": " covering it because we already just covered nix like they're different"
+      },
+      {
+        "start": 269622,
+        "stop": 270030,
+        "text": " things yeah you're right no you're right you're right I feel like to where where"
+      },
+      {
+        "start": 270030,
+        "stop": 270590,
+        "text": " it fits is I think it could be a solid competitor to pop or elementary or mint"
+      },
+      {
+        "start": 270590,
+        "stop": 271314,
+        "text": " I think if you're one of those users and one of those users one of those pop"
+      },
+      {
+        "start": 271314,
+        "stop": 271846,
+        "text": " users wait don't we sometimes I just like a lot of punctuation of my next"
+      },
+      {
+        "start": 271846,
+        "stop": 272186,
+        "text": " iteration okay man I think sometimes wait a minute that's us sometimes wait"
+      },
+      {
+        "start": 272186,
+        "stop": 272818,
+        "text": " yeah all right all right all right you guys are probably right I imagine I mean"
+      },
+      {
+        "start": 272818,
+        "stop": 273218,
+        "text": " we should probably look at it I don't know okay you know I don't mind trying"
+      },
+      {
+        "start": 273218,
+        "stop": 273638,
+        "text": " it I think I've had fedora on this laptop for a little bit it's been a mixed"
+      },
+      {
+        "start": 273638,
+        "stop": 274214,
+        "text": " bag that maybe we'll talk about I don't mind jumping on unless he says so"
+      },
+      {
+        "start": 274214,
+        "stop": 274562,
+        "text": " casually over there these little nuggets I would like a long I would like a"
+      },
+      {
+        "start": 274562,
+        "stop": 274930,
+        "text": " long-term review and then maybe we should do this next week now the more we"
+      },
+      {
+        "start": 274930,
+        "stop": 275418,
+        "text": " talk about it the more I'm kind of wanting to do it all right okay well"
+      },
+      {
+        "start": 275418,
+        "stop": 275966,
+        "text": " we'll we'll put it up to for discussion in the committee after the show and now"
+      },
+      {
+        "start": 275966,
+        "stop": 276850,
+        "text": " it is time for boost wooden 501 wrote in with 3,000 sats have to be link mini s"
+      },
+      {
+        "start": 276850,
+        "stop": 277406,
+        "text": " systems and an aces pn41 that I'll be using to learn kubernetes on an actual"
+      },
+      {
+        "start": 277406,
+        "stop": 277770,
+        "text": " tiny cluster of systems they're all running nyx OS with gnome wonderfully"
+      },
+      {
+        "start": 277770,
+        "stop": 278422,
+        "text": " with a combined TDP what's TDP I'm out of the loop here Oh total total Alex"
+      },
+      {
+        "start": 278422,
+        "stop": 278962,
+        "text": " total power I think power draw draw power total draw power that's my best"
+      },
+      {
+        "start": 278962,
+        "stop": 279414,
+        "text": " guess of only 36 watts which was definitely a major consideration when my"
+      },
+      {
+        "start": 279414,
+        "stop": 279966,
+        "text": " electric supply cost more than doubled this year all three Iran windows 11 fine"
+      },
+      {
+        "start": 279966,
+        "stop": 280426,
+        "text": " for all the five minutes each it took to get the windows license registered with"
+      },
+      {
+        "start": 280426,
+        "stop": 280894,
+        "text": " the account not that I'm ever likely to use those licenses not related to the"
+      },
+      {
+        "start": 280894,
+        "stop": 281534,
+        "text": " question but TDP is thermal design power yeah that's why I said definitely"
+      },
+      {
+        "start": 281534,
+        "stop": 281950,
+        "text": " definitely definitely definitely close yeah and 501 also sent in an off-air"
+      },
+      {
+        "start": 281950,
+        "stop": 282390,
+        "text": " boost now Chris what's an off-air boost so one of the things we've decided to do"
+      },
+      {
+        "start": 282390,
+        "stop": 282750,
+        "text": " is I think we're I think I can't remember honestly cuz we're kind of"
+      },
+      {
+        "start": 282750,
+        "stop": 283150,
+        "text": " flying by the seat of our parents here don't reveal our secrets man I think"
+      },
+      {
+        "start": 283150,
+        "stop": 283458,
+        "text": " it's a 2,000 sat limit to get on air it might have been a thousand I can't"
+      },
+      {
+        "start": 283458,
+        "stop": 283794,
+        "text": " remember think you said a thousand left all right but I miss remember you should"
+      },
+      {
+        "start": 283794,
+        "stop": 284118,
+        "text": " have just said a row of this here's the thing Chris you said a thousand in lop"
+      },
+      {
+        "start": 284118,
+        "stop": 284578,
+        "text": " and then it said two thousand is yeah hosted a fan and coder right because I'm"
+      },
+      {
+        "start": 284578,
+        "stop": 284970,
+        "text": " trying to realize because I'm just I we want to keep it tight but we we also"
+      },
+      {
+        "start": 284970,
+        "stop": 285302,
+        "text": " will read every single boost that sent in and every now that will pull one"
+      },
+      {
+        "start": 285302,
+        "stop": 285738,
+        "text": " forward and so wouldn't had a thousand boost here and I thought you know we"
+      },
+      {
+        "start": 285738,
+        "stop": 286154,
+        "text": " should read this one because he says that E Ink display tablet you got could"
+      },
+      {
+        "start": 286154,
+        "stop": 286664,
+        "text": " be a good boost board and I agree Brent's got a node you know that's a good"
+      },
+      {
+        "start": 286664,
+        "stop": 286994,
+        "text": " idea you'd basically need to get like Firefox or something working that's all"
+      },
+      {
+        "start": 286994,
+        "stop": 287338,
+        "text": " you'd really need to display it so it seems a little heavy on that but we'll"
+      },
+      {
+        "start": 287338,
+        "stop": 287666,
+        "text": " see yeah we'll see everything's possible I think going forward to keep the"
+      },
+      {
+        "start": 287666,
+        "stop": 288122,
+        "text": " segment tight we're going to set the minimum at 2,000 boost for an on-air read"
+      },
+      {
+        "start": 288122,
+        "stop": 288806,
+        "text": " but 2,000 stats but we'll read 100% all of them sent into the show and maybe"
+      },
+      {
+        "start": 288806,
+        "stop": 289306,
+        "text": " every now than pull one or two of my head Rasta Calavera aka rustic"
+      },
+      {
+        "start": 289306,
+        "stop": 289866,
+        "text": " casta versa give that man a banana wrote in with a row of ducks thank you kindly"
+      },
+      {
+        "start": 289866,
+        "stop": 290418,
+        "text": " apparently Chris really butchered his name so pause there yeah apologies I"
+      },
+      {
+        "start": 290418,
+        "stop": 290978,
+        "text": " like rustic casta versa I think that's a great name so rustic class to call it"
+      },
+      {
+        "start": 290978,
+        "stop": 291706,
+        "text": " Vera wrote in suggesting that again supercalifragilisticexpialidocious"
+      },
+      {
+        "start": 291706,
+        "stop": 292710,
+        "text": " okay I am now rustic casta versa and expect the rust audio clip when I boost"
+      },
+      {
+        "start": 292710,
+        "stop": 293830,
+        "text": " they write Brent you should start a Calibre web instance and send cool"
+      },
+      {
+        "start": 293830,
+        "stop": 294418,
+        "text": " things to that ink display or use it as a GPS navigator when you drive that's"
+      },
+      {
+        "start": 294418,
+        "stop": 294842,
+        "text": " not a bad idea I'm thinking a Mario like map that shows you moving around the"
+      },
+      {
+        "start": 294842,
+        "stop": 295474,
+        "text": " country meetups are all the bonus levels hey that's a fun idea what's the castle"
+      },
+      {
+        "start": 295474,
+        "stop": 295910,
+        "text": " is my real question hmm the studio and your place and Alex's place like you"
+      },
+      {
+        "start": 295910,
+        "stop": 296354,
+        "text": " know major landmarks could be castles don't you think I should we do I think"
+      },
+      {
+        "start": 296354,
+        "stop": 296662,
+        "text": " maybe we'll do the live tracker again for this road trip if we can get all our"
+      },
+      {
+        "start": 296662,
+        "stop": 297074,
+        "text": " ducks in a row mm-hmm I think we should do the live tracker again because that"
+      },
+      {
+        "start": 297074,
+        "stop": 297454,
+        "text": " the nice thing about that is it did lead to a few micro meetups one two three"
+      },
+      {
+        "start": 297454,
+        "stop": 297874,
+        "text": " four people very true yeah that was fun it's fun following you along yeah so"
+      },
+      {
+        "start": 297874,
+        "stop": 298198,
+        "text": " justice we might set up the tracker again well they got a few creeps it was"
+      },
+      {
+        "start": 298198,
+        "stop": 299260,
+        "text": " totally good all right next boost comes in from DF J to 25 with 16,000 sats hey"
+      },
+      {
+        "start": 299260,
+        "stop": 299680,
+        "text": " folks I've been itching to use rust for a project and I've got a few Raspberry"
+      },
+      {
+        "start": 299680,
+        "stop": 300174,
+        "text": " Pi's laying around wondering if you've got any recommendations for a useful or"
+      },
+      {
+        "start": 300174,
+        "stop": 300880,
+        "text": " fun project idea thanks and Wes you just tossed a link here in the notes yeah I"
+      },
+      {
+        "start": 300880,
+        "stop": 301222,
+        "text": " mean it can be a little tricky a because you can do so much on the Raspberry Pi"
+      },
+      {
+        "start": 301222,
+        "stop": 301558,
+        "text": " and then be of course you know you can do a lot of things with rust so it kind"
+      },
+      {
+        "start": 301558,
+        "stop": 302054,
+        "text": " of depends on what areas you're interested in but it looks like there's a"
+      },
+      {
+        "start": 302054,
+        "stop": 302612,
+        "text": " Raspberry Pi operating system like writing an embedded OS in rust targeting"
+      },
+      {
+        "start": 302612,
+        "stop": 303040,
+        "text": " the Pi and I mean I might have to try that because that sounds fun interesting"
+      },
+      {
+        "start": 303040,
+        "stop": 303454,
+        "text": " well that's pretty great I was just gonna suggest put Linux on there and get"
+      },
+      {
+        "start": 303454,
+        "stop": 303780,
+        "text": " the rust tools installed and just play around with some different projects and"
+      },
+      {
+        "start": 303780,
+        "stop": 304108,
+        "text": " it's fun just to be on an ARM system at all yeah I mean there is a little bit of"
+      },
+      {
+        "start": 304108,
+        "stop": 304564,
+        "text": " like getting used to that as well all right for 12 Linux boosts in with 2048"
+      },
+      {
+        "start": 304564,
+        "stop": 305470,
+        "text": " sats which I think is actually a gigabyte boost is this live audio from"
+      },
+      {
+        "start": 305470,
+        "stop": 306234,
+        "text": " the server room it's almost that old it is almost that old he says I agree that"
+      },
+      {
+        "start": 306234,
+        "stop": 306554,
+        "text": " the boost do provide an easy way to get feedback into the show I've been"
+      },
+      {
+        "start": 306554,
+        "stop": 306966,
+        "text": " listening to the podcast I've been listening to your podcast since 2005 and"
+      },
+      {
+        "start": 306966,
+        "stop": 307426,
+        "text": " many things have gotten easier regarding podcasts it used to take effort to get"
+      },
+      {
+        "start": 307426,
+        "stop": 307798,
+        "text": " podcasts onto mobile devices I mean remember having to use juice now it just"
+      },
+      {
+        "start": 307798,
+        "stop": 308240,
+        "text": " happens automatically on our pocket computers boosts are the next evolution"
+      },
+      {
+        "start": 308240,
+        "stop": 308766,
+        "text": " for easy feedback straight up from the app I listen right there and I can send"
+      },
+      {
+        "start": 308766,
+        "stop": 309120,
+        "text": " it from my pocket computer while I listen great content as usual thanks"
+      },
+      {
+        "start": 309120,
+        "stop": 309586,
+        "text": " everyone great job well thank you very much for 12 that's incredible I mean"
+      },
+      {
+        "start": 309586,
+        "stop": 310142,
+        "text": " you're a podcast og so I I respect your opinion on that"
+      },
+      {
+        "start": 310142,
+        "stop": 310650,
+        "text": " dev writes in before really I was firm on the 1000 or 2000 sat thing so he's"
+      },
+      {
+        "start": 310650,
+        "stop": 310990,
+        "text": " making it under the wire so you mean before like five minutes ago yeah like"
+      },
+      {
+        "start": 310990,
+        "stop": 311342,
+        "text": " five minutes ago gotcha yeah also and that's like such a long timer that I"
+      },
+      {
+        "start": 311342,
+        "stop": 312106,
+        "text": " feel like you know never boosts in with a hot 1877 1877 sats is the year Ernst"
+      },
+      {
+        "start": 312106,
+        "stop": 312710,
+        "text": " Warner von Siemens invented the first ever moving coil microphone how about"
+      },
+      {
+        "start": 312710,
+        "stop": 313342,
+        "text": " that that's great to know now also PSA Ohio Linux fest will be soon coming up"
+      },
+      {
+        "start": 313342,
+        "stop": 313854,
+        "text": " soon at the Hamilton Hotel in Columbus Ohio December 2nd to the 3rd that's not"
+      },
+      {
+        "start": 313854,
+        "stop": 314342,
+        "text": " that soon it's a good amount of notice to get your plans and get your plans in"
+      },
+      {
+        "start": 314342,
+        "stop": 314778,
+        "text": " order with the price of tickets it's a good idea of course nav is gonna be"
+      },
+      {
+        "start": 314778,
+        "stop": 315078,
+        "text": " there would love to hear if the community wants to put a meetup together"
+      },
+      {
+        "start": 315078,
+        "stop": 315558,
+        "text": " I know a couple of decent spots in Columbus nice all right we got to figure"
+      },
+      {
+        "start": 315558,
+        "stop": 315958,
+        "text": " this out maybe we should create a Columbus matrix room so let's make a"
+      },
+      {
+        "start": 315958,
+        "stop": 316322,
+        "text": " note we'll make a Columbus matrix room and we'll link to it in the show notes"
+      },
+      {
+        "start": 316322,
+        "stop": 316626,
+        "text": " it'll also be listed in the overall space we got to remember to do this"
+      },
+      {
+        "start": 316626,
+        "stop": 317058,
+        "text": " Christmas in Columbus yeah Christmas in Columbus I don't know if we'll be there"
+      },
+      {
+        "start": 317058,
+        "stop": 317398,
+        "text": " but I really don't feel like that should be a reason these meetups shouldn't"
+      },
+      {
+        "start": 317398,
+        "stop": 317734,
+        "text": " happen we're starting to see these self-organized and why the hell not"
+      },
+      {
+        "start": 317734,
+        "stop": 318082,
+        "text": " because the audience is full of awesome people think about it think about what"
+      },
+      {
+        "start": 318082,
+        "stop": 318470,
+        "text": " the chances are if somebody else is also a listener to this show it's likely"
+      },
+      {
+        "start": 318470,
+        "stop": 318808,
+        "text": " you're gonna get along such great day it's crazy how well it works all right"
+      },
+      {
+        "start": 318808,
+        "stop": 319414,
+        "text": " Marcel Boosan with some dirty 30 sets 30 30 yeah that's the Kool-Aid man by the"
+      },
+      {
+        "start": 319414,
+        "stop": 319938,
+        "text": " way if you didn't know yeah because if you are in your 30s you know who the"
+      },
+      {
+        "start": 319938,
+        "stop": 320272,
+        "text": " Kool-Aid man is is this the original Kool-Aid man or is this the family guy"
+      },
+      {
+        "start": 320272,
+        "stop": 320950,
+        "text": " pastiche of Kool-Aid man to stay true to the medium I looked up how many years"
+      },
+      {
+        "start": 320950,
+        "stop": 321386,
+        "text": " ago was 30 years ago which is like the early 90s of course obviously I think"
+      },
+      {
+        "start": 321386,
+        "stop": 321734,
+        "text": " you'll find it was exactly 30 years ago yeah it turns out and I went and found"
+      },
+      {
+        "start": 321734,
+        "stop": 322270,
+        "text": " commercials on YouTube from that time and then I grabbed the Kool-Aid man from"
+      },
+      {
+        "start": 322270,
+        "stop": 322638,
+        "text": " the summer commercials of that era and that's why this show is technically"
+      },
+      {
+        "start": 322638,
+        "stop": 323040,
+        "text": " historical fiction that's right and I'm I'm just putting it out there like if"
+      },
+      {
+        "start": 323040,
+        "stop": 323358,
+        "text": " you wanted to help with the booth sound clips you want to get some variety into"
+      },
+      {
+        "start": 323358,
+        "stop": 323738,
+        "text": " the show this is my process you know I was like okay 30 years ago all right"
+      },
+      {
+        "start": 323738,
+        "stop": 324106,
+        "text": " let's go to what was on TV and I just went got something and we'll never talk"
+      },
+      {
+        "start": 324106,
+        "stop": 324398,
+        "text": " about it again and you'll only know if you've listened to this episode what"
+      },
+      {
+        "start": 324398,
+        "stop": 325082,
+        "text": " that's a reference to and that's just how it works this is a crazy episode"
+      },
+      {
+        "start": 325082,
+        "stop": 325530,
+        "text": " Marcelle writes for the member bat line we were talking in the post show about"
+      },
+      {
+        "start": 325530,
+        "stop": 325918,
+        "text": " how to create a system for the members of unplugged core to get a hold of us if"
+      },
+      {
+        "start": 325918,
+        "stop": 326194,
+        "text": " you want to build it into the app the only thing you can really do these days"
+      },
+      {
+        "start": 326194,
+        "stop": 326632,
+        "text": " is boosting the member feed you'd need to set up a wallet and you'd need to"
+      },
+      {
+        "start": 326632,
+        "stop": 327014,
+        "text": " have like maybe some expectations on your end of lower amounts but I know"
+      },
+      {
+        "start": 327014,
+        "stop": 327318,
+        "text": " some people don't like the boosts or they don't want to get into it so maybe"
+      },
+      {
+        "start": 327318,
+        "stop": 327890,
+        "text": " a secret web form could work it's a bit high friction maybe a secret matrix"
+      },
+      {
+        "start": 327890,
+        "stop": 328478,
+        "text": " channel yeah we're thinking about a bat line for the members matrix channel came"
+      },
+      {
+        "start": 328478,
+        "stop": 328854,
+        "text": " in a couple of times as a suggestion I don't I wonder how feasible that is"
+      },
+      {
+        "start": 328854,
+        "stop": 329386,
+        "text": " would it stay secret would it huh I don't know but we're gonna figure"
+      },
+      {
+        "start": 329386,
+        "stop": 329678,
+        "text": " something out yeah there's a lot of good options let us know if you have any"
+      },
+      {
+        "start": 329678,
+        "stop": 330226,
+        "text": " thoughts next up in the boost apartment from the PMO fam will a row of ducks"
+      },
+      {
+        "start": 330226,
+        "stop": 330742,
+        "text": " this old duck still got it giving fountain a try on Android sending a row"
+      },
+      {
+        "start": 330742,
+        "stop": 331292,
+        "text": " of ducks for Brent's gas tank oh thank you thanks ma'am do thanks it runs on"
+      },
+      {
+        "start": 331292,
+        "stop": 331774,
+        "text": " fuel but ducks will work team oh and you know the PMO fan did not stop there"
+      },
+      {
+        "start": 331774,
+        "stop": 332738,
+        "text": " another row of ducks and you know I guess tossing them talent of agreement"
+      },
+      {
+        "start": 332738,
+        "stop": 333050,
+        "text": " here the package manager debate is annoying as hell"
+      },
+      {
+        "start": 333050,
+        "stop": 333822,
+        "text": " boy to all the vase can I just say this week alone there was at least two"
+      },
+      {
+        "start": 333822,
+        "stop": 334290,
+        "text": " different threads in our Linux about package managers again can we just like"
+      },
+      {
+        "start": 334290,
+        "stop": 334882,
+        "text": " here's here's a wild proposal could we just get some sort of group consensus to"
+      },
+      {
+        "start": 334882,
+        "stop": 335302,
+        "text": " stop talking about it and just let the market decide and whichever end users"
+      },
+      {
+        "start": 335302,
+        "stop": 335858,
+        "text": " end up using we just go with and we stop debating it endlessly hey but what if it"
+      },
+      {
+        "start": 335858,
+        "stop": 336706,
+        "text": " snaps yeah that's true what if it is that's a good point space ninja wrote in"
+      },
+      {
+        "start": 336706,
+        "stop": 338074,
+        "text": " as well with 15,000 703 sats I've been running mint on an HP Pro book from 2011"
+      },
+      {
+        "start": 338074,
+        "stop": 338610,
+        "text": " that has a dual core i5 and 8 gigs of RAM since about mint 18 I love it as a"
+      },
+      {
+        "start": 338610,
+        "stop": 339034,
+        "text": " mobile just hop in and write some code device it's been really stable and I"
+      },
+      {
+        "start": 339034,
+        "stop": 339738,
+        "text": " just upgrade only every couple of years oh that sounds dangerous but apparently"
+      },
+      {
+        "start": 339738,
+        "stop": 340234,
+        "text": " works fine I don't know if it works how nice would that be sounds hassle-free to"
+      },
+      {
+        "start": 340234,
+        "stop": 340878,
+        "text": " me you know they continue my custom main rig has had just about every distro on"
+      },
+      {
+        "start": 340878,
+        "stop": 341274,
+        "text": " it but I recently circled back to mint because I'm done fiddling because of"
+      },
+      {
+        "start": 341274,
+        "stop": 341970,
+        "text": " lack of time so it's VM only for testing and mint 7365 every day of the year I've"
+      },
+      {
+        "start": 341970,
+        "stop": 342370,
+        "text": " only loved watching this little distro since about version 15 hey that's way"
+      },
+      {
+        "start": 342370,
+        "stop": 342766,
+        "text": " better than going back to the Mac or Windows am i right mm-hmm yeah if it"
+      },
+      {
+        "start": 342766,
+        "stop": 343082,
+        "text": " works for you and in fact I really appreciate that it does give us good"
+      },
+      {
+        "start": 343082,
+        "stop": 343398,
+        "text": " perspective that's a really good use case to keep in mind well and I feel"
+      },
+      {
+        "start": 343398,
+        "stop": 343894,
+        "text": " like maybe mint hasn't really changed that months much since back then I used"
+      },
+      {
+        "start": 343894,
+        "stop": 344434,
+        "text": " to use it I think it was around 17 17 is when I first got in right up to 19 and"
+      },
+      {
+        "start": 344434,
+        "stop": 344810,
+        "text": " the way that it doesn't like totally change the paradigm is also I think"
+      },
+      {
+        "start": 344810,
+        "stop": 345438,
+        "text": " maybe an advantage yeah it's a feature sure for certain workloads yeah and Vaughn"
+      },
+      {
+        "start": 345438,
+        "stop": 345942,
+        "text": " also wrote in with 2000 sats thanks for the weekly episodes plenty of material"
+      },
+      {
+        "start": 345942,
+        "stop": 346502,
+        "text": " to get me through 30 hours of driving out to the East Coast 30 hours 30 hours"
+      },
+      {
+        "start": 346502,
+        "stop": 346946,
+        "text": " you know when you say something like that that's such a tease and you got a"
+      },
+      {
+        "start": 346946,
+        "stop": 347230,
+        "text": " you got a boost it and tell us like where are you driving give us more"
+      },
+      {
+        "start": 347230,
+        "stop": 347686,
+        "text": " commuter is the original podcasters friend and there's less and less and now"
+      },
+      {
+        "start": 347686,
+        "stop": 348002,
+        "text": " we're hearing about new ways people are finding to listen to podcasts I'm always"
+      },
+      {
+        "start": 348002,
+        "stop": 348386,
+        "text": " curious like if you were a commuter and you transition to like listening to the"
+      },
+      {
+        "start": 348386,
+        "stop": 348806,
+        "text": " show during a different routine what was it and how did it go and are you able to"
+      },
+      {
+        "start": 348806,
+        "stop": 349382,
+        "text": " stay current I guess I'll find out who's gonna let us know but also MV what are"
+      },
+      {
+        "start": 349382,
+        "stop": 349826,
+        "text": " you doing what are you driving 30 hours of driving is that per day are you"
+      },
+      {
+        "start": 349826,
+        "stop": 350202,
+        "text": " driving more than there are hours in the day are you a time traveler you got to"
+      },
+      {
+        "start": 350202,
+        "stop": 350480,
+        "text": " give us more details man is that there and back or just one way well it's"
+      },
+      {
+        "start": 350480,
+        "stop": 350858,
+        "text": " clearly just got to be it's one way right I mean it's got to be there's no"
+      },
+      {
+        "start": 350858,
+        "stop": 351608,
+        "text": " details I assume I assume Robin Webb 74 also wrote in with 3000 cents hello from"
+      },
+      {
+        "start": 351608,
+        "stop": 352138,
+        "text": " Slovenia how many listeners do we have from my country I like your shows thank"
+      },
+      {
+        "start": 352138,
+        "stop": 352518,
+        "text": " you I'll be first to say Slovenia isn't like the top of our list but a lovely"
+      },
+      {
+        "start": 352518,
+        "stop": 352928,
+        "text": " place I'd love to visit mm-hmm you know interesting factoid about Slovenia is"
+      },
+      {
+        "start": 352928,
+        "stop": 353318,
+        "text": " that they have a reciprocal arrangement with Slovakia that they actually return"
+      },
+      {
+        "start": 353318,
+        "stop": 353688,
+        "text": " each other's posts with the wrong address on it because they get confused"
+      },
+      {
+        "start": 353688,
+        "stop": 354572,
+        "text": " so well I did look up the numbers before the show we have just over 10,000"
+      },
+      {
+        "start": 354572,
+        "stop": 355138,
+        "text": " listeners as of this morning in that area that is impressive which is just"
+      },
+      {
+        "start": 355138,
+        "stop": 355504,
+        "text": " beating out the Republic of Lithuania where we have nine point two thousand"
+      },
+      {
+        "start": 355504,
+        "stop": 356138,
+        "text": " listeners and just above Slovenia is Croatia with ten point six thousand"
+      },
+      {
+        "start": 356138,
+        "stop": 356522,
+        "text": " well we love all of you and it's not a contest no worry but it might kind of be"
+      },
+      {
+        "start": 356522,
+        "stop": 356806,
+        "text": " a cut yeah it might be it might be but that's the isn't that neat though that's"
+      },
+      {
+        "start": 356806,
+        "stop": 357254,
+        "text": " amazing yeah and of course in that same region is Turkey and Saudi Arabia kind"
+      },
+      {
+        "start": 357254,
+        "stop": 357596,
+        "text": " of in those same numbers a little bit more about 12,000 in Turkey I was blown"
+      },
+      {
+        "start": 357596,
+        "stop": 357968,
+        "text": " away when I saw that absolutely blown away and a little a little humble"
+      },
+      {
+        "start": 357968,
+        "stop": 358476,
+        "text": " reminder that this is your world's largest Linux podcast and the numbers"
+      },
+      {
+        "start": 358476,
+        "stop": 358894,
+        "text": " show it and those are to the hundreds I mean like right down I'm telling you"
+      },
+      {
+        "start": 358894,
+        "stop": 359250,
+        "text": " Republic of Lithuania I can tell you nine thousand two hundred and seventeen"
+      },
+      {
+        "start": 359250,
+        "stop": 359714,
+        "text": " right like it's beautiful this old duck still got it lower third rights in"
+      },
+      {
+        "start": 359714,
+        "stop": 360226,
+        "text": " longtime listener first time booster it's a real Mario and Luigi situation"
+      },
+      {
+        "start": 360226,
+        "stop": 360574,
+        "text": " when it comes to Linux hardware on the cheap but it's good to know that mate"
+      },
+      {
+        "start": 360574,
+        "stop": 361218,
+        "text": " mint and XFC have us covered great show where's the more of a Wario and Waluigi"
+      },
+      {
+        "start": 361218,
+        "stop": 361778,
+        "text": " type situation I don't know I love it we get a longtime listener first time"
+      },
+      {
+        "start": 361778,
+        "stop": 362250,
+        "text": " booster that's growing the lightning network and the lightning network is a"
+      },
+      {
+        "start": 362250,
+        "stop": 362654,
+        "text": " peer-to-peer free software network and we are seeing more and more free"
+      },
+      {
+        "start": 362654,
+        "stop": 363240,
+        "text": " software projects come on and that means imagine the day when your favorite free"
+      },
+      {
+        "start": 363240,
+        "stop": 363586,
+        "text": " software project maybe it's VLC maybe it's nano if you're a gentleman you know"
+      },
+      {
+        "start": 363586,
+        "stop": 363968,
+        "text": " your for it your favorite free software project comes online to the lightning"
+      },
+      {
+        "start": 363968,
+        "stop": 364302,
+        "text": " network and you've got a wallet full of satoshis because you've been listening"
+      },
+      {
+        "start": 364302,
+        "stop": 364694,
+        "text": " to our podcast that's how you start to monetize free software is we're building"
+      },
+      {
+        "start": 364694,
+        "stop": 365166,
+        "text": " a network right now it's gonna make a difference and so when we get kyron aka"
+      },
+      {
+        "start": 365166,
+        "stop": 365468,
+        "text": " lower third coming on for the first time after listening we're building to that"
+      },
+      {
+        "start": 365468,
+        "stop": 366006,
+        "text": " network and there are now over 7,000 almost 8,000 podcasts on the lightning"
+      },
+      {
+        "start": 366006,
+        "stop": 367210,
+        "text": " network so that is pretty gosh darn exciting mr. quackers comes mr. quackers"
+      },
+      {
+        "start": 367210,
+        "stop": 367846,
+        "text": " comes in 2222 that's another road ducks quacka-quacka it's a treasure yippee"
+      },
+      {
+        "start": 367846,
+        "stop": 368770,
+        "text": " they say the Asus vivobook l2 0 3 ma 175 bones on Amazon it's small not very"
+      },
+      {
+        "start": 368770,
+        "stop": 369238,
+        "text": " powerful but fedora and kd works just fine on there it's not necessarily"
+      },
+      {
+        "start": 369238,
+        "stop": 369658,
+        "text": " compatible with a flap manager you know you know for your LVF"
+      },
+      {
+        "start": 369658,
+        "stop": 370206,
+        "text": " old-swap D yeah but you still can't update the BIOS from the USB old-school"
+      },
+      {
+        "start": 370206,
+        "stop": 370654,
+        "text": " style I use it if I'm going somewhere and I don't really care if it gets lost"
+      },
+      {
+        "start": 370654,
+        "stop": 371038,
+        "text": " or stolen it's just not a big deal I haven't used it in a while but you know"
+      },
+      {
+        "start": 371038,
+        "stop": 371486,
+        "text": " what the battery when I did use it lasted eight to ten hours I also have an"
+      },
+      {
+        "start": 371486,
+        "stop": 371898,
+        "text": " x1 carbon fedora edition I think the recent BIOS update or maybe use a"
+      },
+      {
+        "start": 371898,
+        "stop": 372250,
+        "text": " kernel version increased my battery life to an extra hour have you experienced"
+      },
+      {
+        "start": 372250,
+        "stop": 372686,
+        "text": " that so my x1 carbon has gotten better with time on fedora as as well quackers"
+      },
+      {
+        "start": 372686,
+        "stop": 373086,
+        "text": " and and nyx as well it is better now it's still not the battery life where"
+      },
+      {
+        "start": 373086,
+        "stop": 373458,
+        "text": " I'd like it to be but I swear it is better than aware it was when I first"
+      },
+      {
+        "start": 373458,
+        "stop": 373888,
+        "text": " got it which when does that happen and you know Wes and I follow the kernel"
+      },
+      {
+        "start": 373888,
+        "stop": 374406,
+        "text": " updates pretty closely for the Linux action news over there and we have"
+      },
+      {
+        "start": 374406,
+        "stop": 374794,
+        "text": " definitely seen a stream of Intel driver updates and improvements for power"
+      },
+      {
+        "start": 374794,
+        "stop": 375178,
+        "text": " management from both AMD and Intel in the last year so I I think it's"
+      },
+      {
+        "start": 375178,
+        "stop": 375534,
+        "text": " absolutely the case that when you get a newer kernel when people say why do you"
+      },
+      {
+        "start": 375534,
+        "stop": 375898,
+        "text": " want a new kernel in your Linux well because it's usually faster and it has"
+      },
+      {
+        "start": 375898,
+        "stop": 376254,
+        "text": " more hardware support and improvements that's why obviously but yeah I think a"
+      },
+      {
+        "start": 376254,
+        "stop": 376562,
+        "text": " kernel update does improve your battery life because I've seen it happen"
+      },
+      {
+        "start": 376562,
+        "stop": 377024,
+        "text": " quackers came in with a dubs boost with a row of ducks looking up for all my"
+      },
+      {
+        "start": 377024,
+        "stop": 377750,
+        "text": " duck just to clarify I did mean the Asus VivoBook L203MA ultra thin edition it"
+      },
+      {
+        "start": 377750,
+        "stop": 378082,
+        "text": " does look pretty nice you know it's got the one of those 180 degree like fold"
+      },
+      {
+        "start": 378082,
+        "stop": 378598,
+        "text": " flat screen kind of things pretty light it's got USB C really not bad for like"
+      },
+      {
+        "start": 378598,
+        "stop": 379246,
+        "text": " 175 100 what 184 at the time okay all right even still but you know you could"
+      },
+      {
+        "start": 379246,
+        "stop": 379732,
+        "text": " get it by Friday I mean that's not bad right that's not bad a machine by Friday"
+      },
+      {
+        "start": 379732,
+        "stop": 380266,
+        "text": " during these days not so bad source D just comes in with nothing but a row of"
+      },
+      {
+        "start": 380266,
+        "stop": 380870,
+        "text": " ducks thank you for the Ducks we also got some thank you boost that I wanted"
+      },
+      {
+        "start": 380870,
+        "stop": 381178,
+        "text": " to cover on the show I'll just do a selection of these under the 2000 mark"
+      },
+      {
+        "start": 381178,
+        "stop": 381714,
+        "text": " 1701 sats from true grits also doubling down on the idea of an unplugged core"
+      },
+      {
+        "start": 381714,
+        "stop": 382094,
+        "text": " members matrix exclusive chat room I don't know how the heck we do it maybe"
+      },
+      {
+        "start": 382094,
+        "stop": 382546,
+        "text": " just a private URL but all right we got a few we got a few plus ones for that"
+      },
+      {
+        "start": 382546,
+        "stop": 383122,
+        "text": " mega strike 3 sent in 2000 sats just gas money for Brent thank you thank you and"
+      },
+      {
+        "start": 383122,
+        "stop": 383498,
+        "text": " we got a thousand sats from my bookie with a question that I wanted to cover"
+      },
+      {
+        "start": 383498,
+        "stop": 383950,
+        "text": " so what happens if I send a boost in and I think you guys missed it what should"
+      },
+      {
+        "start": 383950,
+        "stop": 384406,
+        "text": " you do so the the easiest resolution is if you're when you boost in if your"
+      },
+      {
+        "start": 384406,
+        "stop": 384746,
+        "text": " username matches your matrix username a lot of times I'll just coordinate with"
+      },
+      {
+        "start": 384746,
+        "stop": 385146,
+        "text": " you on matrix like we'll get boosts in under 2000 sats and I will follow up"
+      },
+      {
+        "start": 385146,
+        "stop": 385602,
+        "text": " with them on matrix like the golden dragon boosted in just under 2000 sats"
+      },
+      {
+        "start": 385602,
+        "stop": 385938,
+        "text": " and so we were talking about a new board that he has that I think it'd be good"
+      },
+      {
+        "start": 385938,
+        "stop": 386290,
+        "text": " for home assistant because he uses the same username in the boosts that he uses"
+      },
+      {
+        "start": 386290,
+        "stop": 386618,
+        "text": " on the matrix right so I can track them down that way but otherwise just if"
+      },
+      {
+        "start": 386618,
+        "stop": 386862,
+        "text": " you're not on matrix you can always send me an email Chris at Jupiter"
+      },
+      {
+        "start": 386862,
+        "stop": 387258,
+        "text": " broadcasting calm just give me you know like a screenshot or like a copy of it"
+      },
+      {
+        "start": 387258,
+        "stop": 387794,
+        "text": " and we'll get it all sorted out I try to read 100% of them but I am but one man"
+      },
+      {
+        "start": 387794,
+        "stop": 388210,
+        "text": " however West pain is concocted a few ideas on how we'll be able to actually"
+      },
+      {
+        "start": 388210,
+        "stop": 388608,
+        "text": " just import those messages into our various channels as appropriate down the"
+      },
+      {
+        "start": 388608,
+        "stop": 389026,
+        "text": " road in the future which is gonna be really cool because it's all turns out"
+      },
+      {
+        "start": 389026,
+        "stop": 389702,
+        "text": " I'm not even kidding all of these boosts live in a database that has a rust front"
+      },
+      {
+        "start": 389702,
+        "stop": 390106,
+        "text": " end with an API well you just don't you won't even install non-rust software"
+      },
+      {
+        "start": 390106,
+        "stop": 390380,
+        "text": " anymore I keep trying to get you to consider some fun pics but you just"
+      },
+      {
+        "start": 390380,
+        "stop": 390842,
+        "text": " won't that Dave Jones he did it right so yeah we'll have that coming soon if"
+      },
+      {
+        "start": 390842,
+        "stop": 391206,
+        "text": " you'd like to send a boost into the show go grab a new podcast app a new podcast"
+      },
+      {
+        "start": 391206,
+        "stop": 391614,
+        "text": " apps calm you can also check out pod verse we mentioned that earlier that's"
+      },
+      {
+        "start": 391614,
+        "stop": 392038,
+        "text": " gonna now have boosts on your mobile clients and then if you really want to"
+      },
+      {
+        "start": 392038,
+        "stop": 392386,
+        "text": " make it nerdy boost CLI although I think you're gonna have your own node and you"
+      },
+      {
+        "start": 392386,
+        "stop": 392774,
+        "text": " gotta have a command line client so it's like don't think of those as bad things"
+      },
+      {
+        "start": 392774,
+        "stop": 393014,
+        "text": " just think of them as additional challenges to get your boost to the next"
+      },
+      {
+        "start": 393014,
+        "stop": 393470,
+        "text": " level Chris I wonder will you commit to reading all the boost CLI all right for"
+      },
+      {
+        "start": 393470,
+        "stop": 393862,
+        "text": " next week yeah yeah all right next week we'll do it we'll do it we'll do it"
+      },
+      {
+        "start": 393862,
+        "stop": 394234,
+        "text": " because I think it's so cool because you got to get like a bunch of free"
+      },
+      {
+        "start": 394234,
+        "stop": 394806,
+        "text": " software going to make it happen got a couple of pics for you this week I have"
+      },
+      {
+        "start": 394806,
+        "stop": 395234,
+        "text": " been trying out fluffy chat you guys familiar with fluffy chat it's one of"
+      },
+      {
+        "start": 395234,
+        "stop": 395582,
+        "text": " the ones that have come up when we rattled off alternative matrix clients"
+      },
+      {
+        "start": 395582,
+        "stop": 396210,
+        "text": " to element and I thought let's give it a go they've got a desktop version they've"
+      },
+      {
+        "start": 396210,
+        "stop": 396666,
+        "text": " got a mobile version it's even an f droid it's in the App Store for Apple it's in"
+      },
+      {
+        "start": 396666,
+        "stop": 397082,
+        "text": " the Play Store for googs you can run it in your browser it's also available as a"
+      },
+      {
+        "start": 397082,
+        "stop": 397610,
+        "text": " flat pack and a snap all right so all of the bases are covered and it looks like"
+      },
+      {
+        "start": 397610,
+        "stop": 398134,
+        "text": " a telegram UI on top of matrix or or maybe a more traditional chat client and"
+      },
+      {
+        "start": 398134,
+        "stop": 398582,
+        "text": " so the idea is something other than element to kind of make the matrix chat"
+      },
+      {
+        "start": 398582,
+        "stop": 399038,
+        "text": " experience a little more palatable it's early but I like it and I think it's"
+      },
+      {
+        "start": 399038,
+        "stop": 399730,
+        "text": " really really good for one or two matrix instances you're on maybe for friends"
+      },
+      {
+        "start": 399730,
+        "stop": 400298,
+        "text": " and family I can see a really useful for that does it does it do threads yeah I"
+      },
+      {
+        "start": 400298,
+        "stop": 400650,
+        "text": " think so I actually don't know if I've engaged in any threads but I think so"
+      },
+      {
+        "start": 400650,
+        "stop": 401206,
+        "text": " does it do encrypted DMS yeah yeah it does do that and it supports spaces and"
+      },
+      {
+        "start": 401206,
+        "stop": 401582,
+        "text": " that kind of stuff it's actually really it's got it's got most of the chat"
+      },
+      {
+        "start": 401582,
+        "stop": 402070,
+        "text": " experience you want and it is open source as well so it's up on gitlab and"
+      },
+      {
+        "start": 402070,
+        "stop": 402530,
+        "text": " there is an f droid repo for it how fluffy is it it's pretty fluffy I miss"
+      },
+      {
+        "start": 402530,
+        "stop": 402926,
+        "text": " element when I use it I have to be honest it really does get that like base"
+      },
+      {
+        "start": 402926,
+        "stop": 403270,
+        "text": " experience with I gave I set my wife up with element so that way she could"
+      },
+      {
+        "start": 403270,
+        "stop": 403734,
+        "text": " participate in our West Coast crew matrix room for the road trip and I gave"
+      },
+      {
+        "start": 403734,
+        "stop": 404062,
+        "text": " her element and it's been fine but I realized afterwards maybe that would"
+      },
+      {
+        "start": 404062,
+        "stop": 404522,
+        "text": " have been a good opportunity for fluffy chat because it just operates and looks"
+      },
+      {
+        "start": 404522,
+        "stop": 404990,
+        "text": " more like a traditional chat client I don't know how else to put it and so if"
+      },
+      {
+        "start": 404990,
+        "stop": 405338,
+        "text": " element has been the sticky point for you and adopting matrix I think fluffy"
+      },
+      {
+        "start": 405338,
+        "stop": 405926,
+        "text": " chat is worth looking at for myself after using element for a while I am no"
+      },
+      {
+        "start": 405926,
+        "stop": 406306,
+        "text": " longer really suffering from those pain points that I was I my brain has made"
+      },
+      {
+        "start": 406306,
+        "stop": 406682,
+        "text": " the adaptations necessary and the element team has made the some of the"
+      },
+      {
+        "start": 406682,
+        "stop": 407006,
+        "text": " improvements and we just kind of met halfway so you said pretty fluffy but I"
+      },
+      {
+        "start": 407006,
+        "stop": 407358,
+        "text": " think it's more of like a zero to cottonwood in your server scale today"
+      },
+      {
+        "start": 407358,
+        "stop": 407754,
+        "text": " yeah I'd say it's cottonwood I'd say it's cottonwood but not like you're not"
+      },
+      {
+        "start": 407754,
+        "stop": 408066,
+        "text": " like jammed up your air vents so your hard drives are overheating cottonwood"
+      },
+      {
+        "start": 408066,
+        "stop": 408478,
+        "text": " or plugging up your power splitters kind of cottonwood it's just like fluffy nice"
+      },
+      {
+        "start": 408478,
+        "stop": 408778,
+        "text": " to see cottonwood going through the air and you're like oh it's like it's"
+      },
+      {
+        "start": 408778,
+        "stop": 409338,
+        "text": " snowing in August Wes you found us a little command line tool for the learning"
+      },
+      {
+        "start": 409338,
+        "stop": 409754,
+        "text": " and the educationals yeah that's right maybe you're trying to do some kind of"
+      },
+      {
+        "start": 409754,
+        "stop": 410118,
+        "text": " spaced repetition you've got something you're studying for now there is the"
+      },
+      {
+        "start": 410118,
+        "stop": 410614,
+        "text": " great Anki program that maybe folks have used open-source great little"
+      },
+      {
+        "start": 410614,
+        "stop": 411038,
+        "text": " powerful intelligent flashcard system but it can be kind of a lot sometimes if"
+      },
+      {
+        "start": 411038,
+        "stop": 411454,
+        "text": " you you know you're the kind of person that might procrastinate by fiddling"
+      },
+      {
+        "start": 411454,
+        "stop": 411762,
+        "text": " with things and trying to set up their new tool more than just using that tool"
+      },
+      {
+        "start": 411762,
+        "stop": 412322,
+        "text": " which has happened to me before so try learn LRN it's just a simple little"
+      },
+      {
+        "start": 412322,
+        "stop": 412702,
+        "text": " terminal app you can pre fill it with a bunch of self-prepared questions or"
+      },
+      {
+        "start": 412702,
+        "stop": 413062,
+        "text": " flashcards and then you've got two modes in the match mode you type an answer to"
+      },
+      {
+        "start": 413062,
+        "stop": 413422,
+        "text": " a question otherwise you can do like a cards mode that's more like just a"
+      },
+      {
+        "start": 413422,
+        "stop": 413726,
+        "text": " traditional little flashcard where you get to see the question and then flip"
+      },
+      {
+        "start": 413726,
+        "stop": 413998,
+        "text": " the answer and you kind of decide if you knew it or not and it's on the command"
+      },
+      {
+        "start": 413998,
+        "stop": 414306,
+        "text": " line I'm sure you said that but it's all on the command line so you can just"
+      },
+      {
+        "start": 414306,
+        "stop": 414798,
+        "text": " bring it up in your terminal and get to learning that's pretty great"
+      },
+      {
+        "start": 414798,
+        "stop": 415222,
+        "text": " LRN we'll put a link to that in the show notes too you can find all that at"
+      },
+      {
+        "start": 415222,
+        "stop": 415894,
+        "text": " Linux unplugged comm slash four seven two one and I'd love some suggestions"
+      },
+      {
+        "start": 415894,
+        "stop": 416318,
+        "text": " for pics as well you can send them in via the contact page Linux unplugged comm"
+      },
+      {
+        "start": 416318,
+        "stop": 416690,
+        "text": " slash contact or you can boost them in with your new podcast app as you do and"
+      },
+      {
+        "start": 416690,
+        "stop": 417418,
+        "text": " of course I want to invite you live get in here join us it's it's an experience"
+      },
+      {
+        "start": 417418,
+        "stop": 417848,
+        "text": " to watch us live I mean kind of take some of the shine off I have to say"
+      },
+      {
+        "start": 417848,
+        "stop": 418214,
+        "text": " because you know it's like you can really enjoy a hot dog but then when you"
+      },
+      {
+        "start": 418214,
+        "stop": 418722,
+        "text": " go to the factory and see how they make the hot dog yeah Brent won't put he just"
+      },
+      {
+        "start": 418722,
+        "stop": 419444,
+        "text": " won't put on a shirt yeah so I mean you could take the factory tour if you like"
+      },
+      {
+        "start": 419444,
+        "stop": 419960,
+        "text": " over at Jupiter dot tube we do the show live every Sunday at noon Pacific which"
+      },
+      {
+        "start": 419960,
+        "stop": 420464,
+        "text": " is like 3 p.m. East Coast time 3 p.m. Alex time over at Jupiter dot tube see"
+      },
+      {
+        "start": 420464,
+        "stop": 421038,
+        "text": " you next week same bad time same bad station and a big very hearty thank you"
+      },
+      {
+        "start": 421038,
+        "stop": 421388,
+        "text": " to our members who helped give us the runway to talk to the sponsors we feel"
+      },
+      {
+        "start": 421388,
+        "stop": 421842,
+        "text": " are appropriate for our audience they give us the flexibility to say no to"
+      },
+      {
+        "start": 421842,
+        "stop": 422198,
+        "text": " those weird emails that come in and of course they help orient us from a"
+      },
+      {
+        "start": 422198,
+        "stop": 422582,
+        "text": " business perspective towards our audience you can become an unplugged"
+      },
+      {
+        "start": 422582,
+        "stop": 423074,
+        "text": " core member over at unplugged core calm or a support the entire network of shows"
+      },
+      {
+        "start": 423074,
+        "stop": 423648,
+        "text": " over at Jupiter dot party and last but not least if you'd like to contribute a"
+      },
+      {
+        "start": 423648,
+        "stop": 424234,
+        "text": " bit of value in the time and Talon sense go check out new dot Jupiter broadcasting"
+      },
+      {
+        "start": 424234,
+        "stop": 424758,
+        "text": " calm you'll get a look see on hook your peepers on the new website and then head"
+      },
+      {
+        "start": 424758,
+        "stop": 425202,
+        "text": " over to our github you'll find our Jupiter broadcasting calm github project"
+      },
+      {
+        "start": 425202,
+        "stop": 425678,
+        "text": " and give us your feedbacks and maybe contribute your time for your fixings"
+      },
+      {
+        "start": 425678,
+        "stop": 426042,
+        "text": " and your codes that's the thing right who knows you might just see a while"
+      },
+      {
+        "start": 426042,
+        "stop": 426462,
+        "text": " Brent you never know and then last but not least if you want more news you want"
+      },
+      {
+        "start": 426462,
+        "stop": 426774,
+        "text": " more Linux you want to know what's going on in the world of open source the next"
+      },
+      {
+        "start": 426774,
+        "stop": 427254,
+        "text": " action news calm thanks so much for joining us see you right back here next"
+      },
+      {
+        "start": 427254,
+        "stop": 427498,
+        "text": " Sunday"
+      },
+      {
+        "start": 427498,
+        "stop": 427704,
+        "text": " you"
+      },
+      {
+        "start": 427704,
+        "stop": 427910,
+        "text": " you"
+      },
+      {
+        "start": 427910,
+        "stop": 428116,
+        "text": " you"
+      },
+      {
+        "start": 428116,
+        "stop": 428322,
+        "text": " you"
+      },
+      {
+        "start": 430836,
+        "stop": 431408,
+        "text": " hey breakin breakin news here I bitch but I've just been informed by Kenji"
+      },
+      {
+        "start": 431408,
+        "stop": 431796,
+        "text": " over in the chat room that turns out me accidentally mentioning on keep a little"
+      },
+      {
+        "start": 431796,
+        "stop": 432112,
+        "text": " you know flashcard app they're converting their Python code base to"
+      },
+      {
+        "start": 432112,
+        "stop": 432700,
+        "text": " rest sneaky last-minute rust pick can't escape it today that's that's it that's"
+      },
+      {
+        "start": 432700,
+        "stop": 433208,
+        "text": " three different rust drops in one show and Linux 6.0 isn't even here yet we"
+      },
+      {
+        "start": 433208,
+        "stop": 433604,
+        "text": " need to follow in we need to follow up on that server update Wes you got your"
+      },
+      {
+        "start": 433604,
+        "stop": 434528,
+        "text": " SSH session still going over there oh I do know we've been because because"
+      },
+      {
+        "start": 434528,
+        "stop": 434972,
+        "text": " arch is like running genteau we've been building our aur helper you know oh good"
+      },
+      {
+        "start": 434972,
+        "stop": 435236,
+        "text": " you got it that's what I'm glad we're doing there you are updates to wouldn't"
+      },
+      {
+        "start": 435236,
+        "stop": 435916,
+        "text": " want to miss any of our updates I mean hey DFS huh that's actually true yeah"
+      },
+      {
+        "start": 435916,
+        "stop": 436420,
+        "text": " all right that is a problem with way we do it on arch is the DK MS module for CFS"
+      },
+      {
+        "start": 436420,
+        "stop": 437340,
+        "text": " isn't it it's is it the only problem so where is it out right now still building"
+      },
+      {
+        "start": 437340,
+        "stop": 437960,
+        "text": " but you know all the main aur update we did have a whole lot of GPG signatures"
+      },
+      {
+        "start": 437960,
+        "stop": 438308,
+        "text": " to update so I just ended up doing that in a separate step yeah before because"
+      },
+      {
+        "start": 438308,
+        "stop": 438592,
+        "text": " that was gonna be simpler that is the biggest problem when you don't update an"
+      },
+      {
+        "start": 438592,
+        "stop": 439096,
+        "text": " arch box in a while is all the GPG but after that main upgrade went totally"
+      },
+      {
+        "start": 439096,
+        "stop": 439484,
+        "text": " smooth all right so our main upgrades done we're gonna kernel and stuff we're"
+      },
+      {
+        "start": 439484,
+        "stop": 440200,
+        "text": " gonna get some updated ZFS I'm gonna make sure that that's gonna build find"
+      },
+      {
+        "start": 440200,
+        "stop": 440492,
+        "text": " out next week I guess"
+      }
+    ],
+    "processing_time": {
+      "secs": 2561,
+      "nanos": 886868066
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 471: The Cottonwood Disaster",
+    "pictures": [],
+    "duration": {
+      "secs": 4383,
+      "nanos": 574000000
+    },
+    "unique_id": "http://linuxunplugged.com/471"
+  },
+  "episode": {
+    "title": "The Cottonwood Disaster | LINUX Unplugged 471",
+    "description": "Our garage Linux server has died, and this time we’re looking at data loss. We attempt to revive our zombie box and reflect on what went wrong. Special Guest: Alex Kretzschmar.",
+    "content": "<p><p>Our garage Linux server has died, and this time we’re looking at data loss. We attempt to revive our zombie box and reflect on what went wrong.</p><p>Special Guest: Alex Kretzschmar.</p><p>Sponsored By:</p><ul><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://arstechnica.com/gadgets/2022/08/microsoft-open-sources-its-cute-3d-emoji-albeit-without-clippy/\" title=\"Microsoft open-sources over 1,500 of its cute 3D emoji designs for anyone to use\" rel=\"nofollow\">Microsoft open-sources over 1,500 of its cute 3D emoji designs for anyone to use</a></li><li><a href=\"https://new.jupiterbroadcasting.com/\" title=\"The NEW Jupiter Broadcasting Website\" rel=\"nofollow\">The NEW Jupiter Broadcasting Website</a></li><li><a href=\"https://www.meetup.com/jupiterbroadcasting/events/\" title=\"Upcoming Jupiter Broadcasting Meetups\" rel=\"nofollow\">Upcoming Jupiter Broadcasting Meetups</a></li><li><a href=\"https://linuxunplugged.com/jpl\" title=\"Get your name in the hat for our JPL tour\" rel=\"nofollow\">Get your name in the hat for our JPL tour</a></li><li><a href=\"https://linuxunplugged.com/468\" title=\"LINUX Unplugged 468: The Read Only Scenario\" rel=\"nofollow\">LINUX Unplugged 468: The Read Only Scenario</a></li><li><a href=\"https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials\" title=\"Operating System development tutorials in Rust on the Raspberry Pi\" rel=\"nofollow\">Operating System development tutorials in Rust on the Raspberry Pi</a> &mdash; Learn to write an embedded OS in Rust.</li><li><a href=\"https://podcastindex.social/@podverse/108817339610652234\" title=\"Podverse\" rel=\"nofollow\">Podverse</a> &mdash; V4V is now available in Podverse F-Droid beta 🥳</li><li><a href=\"https://fluffychat.im/\" title=\"FluffyChat\" rel=\"nofollow\">FluffyChat</a> &mdash; Open. Nonprofit. Cute. Easy to use (matrix) messenger. Secure and decentralized.</li><li><a href=\"https://flathub.org/apps/details/im.fluffychat.Fluffychat\" title=\"FluffyChat on Flathub\" rel=\"nofollow\">FluffyChat on Flathub</a></li><li><a href=\"https://gitlab.com/famedly/fluffychat/-/blob/main/docs/fdroid_repo.md\" title=\"FluffyChat in F-Droid\" rel=\"nofollow\">FluffyChat in F-Droid</a></li><li><a href=\"https://github.com/krychu/lrn\" title=\"lrn\" rel=\"nofollow\">lrn</a> &mdash; Command-line tool for learning by repetition.</li><li><a href=\"https://bit.ly/columbusclub\" title=\"Columbus Club Ohio LinuxFest Matrix Meetup Room\" rel=\"nofollow\">Columbus Club Ohio LinuxFest Matrix Meetup Room</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8704",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15571258/96a69d7f-1d46-4f32-9185-81871fb6c32b.mp3",
+      "length": "62339041",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-14T18:50:00+02:00"
+  },
+  "speedup": 1.7110724
+}

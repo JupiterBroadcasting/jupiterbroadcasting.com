@@ -1,0 +1,3342 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 728,
+        "text": " this is coda radio episode 489 for october 24th 2022"
+      },
+      {
+        "start": 728,
+        "stop": 1936,
+        "text": " well hey good buddy welcome back to jupiter broadcasting's weekly talk show taking a"
+      },
+      {
+        "start": 1936,
+        "stop": 2504,
+        "text": " pragmatic look at the art and the business of software development and the world of technology"
+      },
+      {
+        "start": 2504,
+        "stop": 3232,
+        "text": " my name is chris and freshly celebrated it's our host mr dominic hello mike hello hello hello"
+      },
+      {
+        "start": 3232,
+        "stop": 3840,
+        "text": " you still got that party glow feeling good i'm feeling good yeah i i've already been coding of"
+      },
+      {
+        "start": 3840,
+        "stop": 4312,
+        "text": " course because you can't uh you can't stop so uh for those that weren't listening carefully last"
+      },
+      {
+        "start": 4312,
+        "stop": 4912,
+        "text": " week mike snuck off and got married this weekend i did congratulations thank you thank you that's"
+      },
+      {
+        "start": 4912,
+        "stop": 5600,
+        "text": " pretty exciting yeah good stuff you know i mean i i said to myself after my first divorce i'm never"
+      },
+      {
+        "start": 5600,
+        "stop": 6200,
+        "text": " doing this again you know amen never doing this again i'm a bachelor for the rest of my life"
+      },
+      {
+        "start": 6200,
+        "stop": 6688,
+        "text": " and then you know you find the right lady and you change your mind then you do it again yeah yeah"
+      },
+      {
+        "start": 6688,
+        "stop": 7064,
+        "text": " yeah yeah yeah so in a few more years we'll be here we'll be doing it all over again but we'll"
+      },
+      {
+        "start": 7064,
+        "stop": 7752,
+        "text": " do it together no i'm super happy for you guys hopefully not but yes it's certainly possible"
+      },
+      {
+        "start": 7752,
+        "stop": 8336,
+        "text": " i hope you gifted her like a coder robe she she already had a coder rope okay she was she was of"
+      },
+      {
+        "start": 8336,
+        "stop": 8832,
+        "text": " course right well prepared yeah that's how you knew she was the right lady your wardrobe choices"
+      },
+      {
+        "start": 8832,
+        "stop": 9400,
+        "text": " particularly your robe choices are super important oh yeah they say a lot about a person and i did"
+      },
+      {
+        "start": 9400,
+        "stop": 9936,
+        "text": " see on the twitters this morning that there isn't quite a lot of wardrobe conversation sir i know"
+      },
+      {
+        "start": 9936,
+        "stop": 10376,
+        "text": " you know it's interesting that it strikes a note with people you know we got we get both ends of"
+      },
+      {
+        "start": 10376,
+        "stop": 10960,
+        "text": " the spectrum on the uh on the uniform stuff and on the wardrobe stuff uh i will tell you that"
+      },
+      {
+        "start": 10960,
+        "stop": 11512,
+        "text": " behind the scenes i took a stab at putting together like a mock uniform online and i just hated it"
+      },
+      {
+        "start": 11512,
+        "stop": 12056,
+        "text": " i hated it i'll talk about that more in the future though i thought maybe we'd talk about something"
+      },
+      {
+        "start": 12056,
+        "stop": 12448,
+        "text": " that really has our chat room fired up this morning they were talking about it on the entire"
+      },
+      {
+        "start": 12448,
+        "stop": 12880,
+        "text": " pre-show it's a story from a few years ago but it's been getting shared around this week quite"
+      },
+      {
+        "start": 12880,
+        "stop": 13312,
+        "text": " a bit and it kind of hits our wheelhouse but before we get there why don't we back up a little bit"
+      },
+      {
+        "start": 13312,
+        "stop": 13768,
+        "text": " some follow-up on our discussion about software developers calling themselves engineers and how"
+      },
+      {
+        "start": 13768,
+        "stop": 14408,
+        "text": " up in canada they were getting fined for that and in quebec they even sued microsoft for their"
+      },
+      {
+        "start": 14408,
+        "stop": 14968,
+        "text": " microsoft certified engineers program and made microsoft change the name well hank tweeted at us"
+      },
+      {
+        "start": 14968,
+        "stop": 15448,
+        "text": " he says the software engineer title here's some background engineers in the u.s can actually take"
+      },
+      {
+        "start": 15448,
+        "stop": 15976,
+        "text": " the exam and provide some other bona fides that entitle them to that title and license of a"
+      },
+      {
+        "start": 15976,
+        "stop": 16512,
+        "text": " professional engineer which is you know usually just shortened to engineer as hank points out"
+      },
+      {
+        "start": 16512,
+        "stop": 17096,
+        "text": " the title among other things provides some benefits such as being an expert witness in"
+      },
+      {
+        "start": 17096,
+        "stop": 17696,
+        "text": " the court of law my fishing buddy on the other hand is in pollution control and the engineering"
+      },
+      {
+        "start": 17696,
+        "stop": 18216,
+        "text": " title is required in order to submit permit applications calling someone a software network"
+      },
+      {
+        "start": 18216,
+        "stop": 18688,
+        "text": " audio etc engineer is technically not correct if they're not certified and the benefits of doing so"
+      },
+      {
+        "start": 18688,
+        "stop": 19336,
+        "text": " in those fields would be slim but it is common use and language uh we really got we really got"
+      },
+      {
+        "start": 19336,
+        "stop": 19720,
+        "text": " a lot of feedback about this engineering title thing but the thing that really got people riled"
+      },
+      {
+        "start": 19720,
+        "stop": 20744,
+        "text": " up is a few years ago in the state of oregon a man wrote in about a bad algorithm essentially they"
+      },
+      {
+        "start": 20744,
+        "stop": 21416,
+        "text": " were using to run the stop lights and do the uh stop light camera yes i remember this yes he got"
+      },
+      {
+        "start": 21416,
+        "stop": 21960,
+        "text": " fined for using the term engineer so we wrote in in uh that's like back in 2014 or something like"
+      },
+      {
+        "start": 21960,
+        "stop": 22400,
+        "text": " that but he writes into the electronic to the whatever in beverton oregon i don't know you know"
+      },
+      {
+        "start": 22400,
+        "stop": 22912,
+        "text": " that i triple e i think yeah whoever it was and he says hey i've noticed that there's a flaw with"
+      },
+      {
+        "start": 22912,
+        "stop": 23496,
+        "text": " the way the math was done here essentially you guys are doing the math as if this was a straightaway"
+      },
+      {
+        "start": 23496,
+        "stop": 24024,
+        "text": " for a stop light but it's a turning lane so people have to slow down he says quote they only looked"
+      },
+      {
+        "start": 24024,
+        "stop": 24552,
+        "text": " at the vehicle traveling safely directly through an intersection however the equation they developed"
+      },
+      {
+        "start": 24552,
+        "stop": 25096,
+        "text": " is not used for turning lanes when you make a turn you slow down but that's not accounted for"
+      },
+      {
+        "start": 25096,
+        "stop": 25608,
+        "text": " in their solution so people are getting caught in red light cameras for making safe turns so he"
+      },
+      {
+        "start": 25608,
+        "stop": 26144,
+        "text": " reached out to the engineering board his local sheriff and 60 minutes he wrote them a letter and"
+      },
+      {
+        "start": 26144,
+        "stop": 26600,
+        "text": " it was actually you know he shared it with vice it seemed like a totally reasonable letter he says"
+      },
+      {
+        "start": 26600,
+        "stop": 27072,
+        "text": " you know i am concerned it puts the public at risk i'd like to present these facts for your review"
+      },
+      {
+        "start": 27072,
+        "stop": 27632,
+        "text": " and your comments the response he got back was a fine from the oregon state board of examiners for"
+      },
+      {
+        "start": 27632,
+        "stop": 28208,
+        "text": " engineering and land surveying they responded back with quote their law prohibits the practice of"
+      },
+      {
+        "start": 28208,
+        "stop": 28752,
+        "text": " engineering in oregon without registration at a minimum the use of the title electronics engineer"
+      },
+      {
+        "start": 28752,
+        "stop": 29280,
+        "text": " and the statement i am an engineer creates violations in january of that year they fined him"
+      },
+      {
+        "start": 29280,
+        "stop": 30080,
+        "text": " 500 for practicing engineering without being registered so to be clear his job title is"
+      },
+      {
+        "start": 30080,
+        "stop": 30520,
+        "text": " electronics engineer he wrote a letter saying hey i think you made a boo-boo with the way you're"
+      },
+      {
+        "start": 30520,
+        "stop": 31040,
+        "text": " doing the calculation so people are getting red light fined and their response was a 500"
+      },
+      {
+        "start": 31040,
+        "stop": 31552,
+        "text": " fine and tell him to stop using the title engineer and it turns out he was right he says i'm not a"
+      },
+      {
+        "start": 31552,
+        "stop": 32112,
+        "text": " practicing engineer it's just basic mathematics newtonian laws of motion to make calculations"
+      },
+      {
+        "start": 32112,
+        "stop": 32648,
+        "text": " that talk about what i found the engineering board however said he is not free to publish or present"
+      },
+      {
+        "start": 32648,
+        "stop": 33136,
+        "text": " his ideas he says when i first got the letter i felt like i was being violated and shocked that"
+      },
+      {
+        "start": 33136,
+        "stop": 33624,
+        "text": " i could be treated like this in the usa and they don't want they've they're trying to restrict him"
+      },
+      {
+        "start": 33624,
+        "stop": 33976,
+        "text": " from sharing this information i don't know how because this has been years ago so i don't know"
+      },
+      {
+        "start": 33976,
+        "stop": 34400,
+        "text": " where it really led to and the guys of you know why he can't share it is because well you're not"
+      },
+      {
+        "start": 34400,
+        "stop": 34824,
+        "text": " a certified engineer so this might be wrong for public safety you can't go around talking about"
+      },
+      {
+        "start": 34824,
+        "stop": 35248,
+        "text": " this when in reality they just wanted to cover up their screw up no doubt yeah we got a bunch"
+      },
+      {
+        "start": 35248,
+        "stop": 35880,
+        "text": " of feedback about this and the emails i didn't read till this morning also attest to it licensing"
+      },
+      {
+        "start": 35880,
+        "stop": 36552,
+        "text": " is often used to keep people out of a field right you can listen to i think uh was it ezra klein"
+      },
+      {
+        "start": 36552,
+        "stop": 37088,
+        "text": " years ago or matt glazier has had a great and they're very very progressive guys but they had a"
+      },
+      {
+        "start": 37088,
+        "stop": 37664,
+        "text": " great thing about how certain more jerky organizations will use licensing to actually like"
+      },
+      {
+        "start": 37664,
+        "stop": 38248,
+        "text": " racially uh segregate fields it's like you can't attain a certain level of license if they if like"
+      },
+      {
+        "start": 38248,
+        "stop": 38744,
+        "text": " your name codes as like black or spanish or whatever in this case i guessed it like you're"
+      },
+      {
+        "start": 38744,
+        "stop": 39128,
+        "text": " saying they're they just wanted this i remember this story when it first came out and we it was"
+      },
+      {
+        "start": 39128,
+        "stop": 39664,
+        "text": " kind of like a coder success story right this dude like because the the other part of it if i recall"
+      },
+      {
+        "start": 39664,
+        "stop": 40280,
+        "text": " correctly wasn't the county or the municipality making money because the traffic light was overly"
+      },
+      {
+        "start": 40280,
+        "stop": 40720,
+        "text": " aggressive yes that's got to be part of why they don't want them talking about it right and by the"
+      },
+      {
+        "start": 40720,
+        "stop": 41360,
+        "text": " way uh i will damn not buy this organization's definition engineer but i was for many years a"
+      },
+      {
+        "start": 41360,
+        "stop": 42064,
+        "text": " member of i triple e the uh institute of electronic electrical engineering so i'm not sure how that"
+      },
+      {
+        "start": 42064,
+        "stop": 42704,
+        "text": " works they were happy you know just just saying i feel like i'm reverting to 2014 mike if you give"
+      },
+      {
+        "start": 42704,
+        "stop": 43408,
+        "text": " this kind of gatekeeping power someone's going to use it to be an ass and maybe the the risk of some"
+      },
+      {
+        "start": 43408,
+        "stop": 44008,
+        "text": " idiot doing something in javascript and screwing something up is worth it you know that where they"
+      },
+      {
+        "start": 44008,
+        "stop": 44616,
+        "text": " shouldn't be using javascript or something like that right is worth it to prevent this kind of"
+      },
+      {
+        "start": 44616,
+        "stop": 45376,
+        "text": " draconian gatekeeping in this case i think sort of ass covering right nonsense you see i think"
+      },
+      {
+        "start": 45376,
+        "stop": 45896,
+        "text": " maybe what you're touching on is kind of a fundamental way that conservatives versus"
+      },
+      {
+        "start": 45896,
+        "stop": 46432,
+        "text": " progressives view the world i think the liberal progressive take remember this is oregon would be"
+      },
+      {
+        "start": 46432,
+        "stop": 47176,
+        "text": " well the idea of this institution and what it's trying to accomplish is sound the problem is the"
+      },
+      {
+        "start": 47176,
+        "stop": 47616,
+        "text": " execution and the corruption that inevitably sneaks in and so we just need a way of renewing"
+      },
+      {
+        "start": 47616,
+        "stop": 48208,
+        "text": " these institutions and and washing up this corruption yeah okay sure i don't know right"
+      },
+      {
+        "start": 48208,
+        "stop": 48792,
+        "text": " it's never so what you're saying is okay thomas jefferson let's burn it down every couple"
+      },
+      {
+        "start": 48792,
+        "stop": 49200,
+        "text": " generations and start over four score my friend that's what i'm saying it'll never happen though"
+      },
+      {
+        "start": 49200,
+        "stop": 49712,
+        "text": " right like it's i am sure someone from my triple e is going to write in and say hey dick you can"
+      },
+      {
+        "start": 49712,
+        "stop": 50312,
+        "text": " pay for the membership but it doesn't make you an engineer i just i i don't know i i guess i"
+      },
+      {
+        "start": 50312,
+        "stop": 50824,
+        "text": " i've completely reversed myself in a week i think we should aggressively fight against this because"
+      },
+      {
+        "start": 50824,
+        "stop": 51432,
+        "text": " you know why you know i i've been on some really scummy bidding processes and i know for a fact"
+      },
+      {
+        "start": 51432,
+        "stop": 51968,
+        "text": " that what will happen is once there is some sort of licensure and who's to say there won't be"
+      },
+      {
+        "start": 51968,
+        "stop": 52648,
+        "text": " different ones right like five different 10 different 20 where someone will lobby i could"
+      },
+      {
+        "start": 52648,
+        "stop": 53296,
+        "text": " particularly see government agencies falling for this oh well you know to really hit this standard"
+      },
+      {
+        "start": 53296,
+        "stop": 54264,
+        "text": " of quality you need to be a uh a martian software certified engineer and only the martian engineering"
+      },
+      {
+        "start": 54264,
+        "stop": 54800,
+        "text": " institute can give you that where it just becomes like a puppy mill right you just have to pay isn't"
+      },
+      {
+        "start": 54800,
+        "stop": 55408,
+        "text": " that what the tech industry does now the microsoft certifications the rel certifications most people"
+      },
+      {
+        "start": 55408,
+        "stop": 55952,
+        "text": " don't care that much about them and they're they're open enough no one at rel no one at red"
+      },
+      {
+        "start": 55952,
+        "stop": 56464,
+        "text": " hat is trying to stop people from getting it in fact they're encouraging it right microsoft would"
+      },
+      {
+        "start": 56464,
+        "stop": 56912,
+        "text": " love for and we know this for a fact they would love for me to come on and tell everyone to take"
+      },
+      {
+        "start": 56912,
+        "stop": 57640,
+        "text": " a microsoft uh software engineering class you basically should not but it's uh sun used to push"
+      },
+      {
+        "start": 57640,
+        "stop": 58160,
+        "text": " this right and oracle tried for a while with the uh what was it the java java they had like a whole"
+      },
+      {
+        "start": 58160,
+        "stop": 58632,
+        "text": " weird journeyman master like they had a whole duke crew the duke crew that's what it was they had"
+      },
+      {
+        "start": 58632,
+        "stop": 59368,
+        "text": " like yeah they had a whole thing it's it's basically nonsense i mean i i i don't know i"
+      },
+      {
+        "start": 59368,
+        "stop": 60256,
+        "text": " i i guess if i look at the fact that it takes our country sorry europeans but it takes our country"
+      },
+      {
+        "start": 60256,
+        "stop": 60960,
+        "text": " what is it like 40 times the amount to build anything as it does anywhere else and twice as"
+      },
+      {
+        "start": 60960,
+        "stop": 61472,
+        "text": " long as somebody can correct the statistics but it's huge and if you're asking me that we should"
+      },
+      {
+        "start": 61472,
+        "stop": 62064,
+        "text": " turn software into that by adding more more hurdles to jump i'm just gonna say no if that's"
+      },
+      {
+        "start": 62064,
+        "stop": 62640,
+        "text": " true though how badass must we be if people still want to build here after all that we must be the"
+      },
+      {
+        "start": 62640,
+        "stop": 63296,
+        "text": " best if you've been to like a airport recently or i don't know driven on any road in florida"
+      },
+      {
+        "start": 63296,
+        "stop": 63912,
+        "text": " i can tell you that we we need to honestly we need to get some dudes over from china to teach"
+      },
+      {
+        "start": 63912,
+        "stop": 64376,
+        "text": " us how to build things again i don't hey oh there is a chinese airports chinese trans stations"
+      },
+      {
+        "start": 64464,
+        "stop": 65096,
+        "text": " i'm not even going to mention japan's bullet trains hell european train stations right the metro much"
+      },
+      {
+        "start": 65096,
+        "stop": 65664,
+        "text": " better can i tell you what bothers me about this story about this uh gentleman who wrote in and"
+      },
+      {
+        "start": 65664,
+        "stop": 66120,
+        "text": " then got fined for uh larping as an engineer that the cops obviously knocked him out to the"
+      },
+      {
+        "start": 66120,
+        "stop": 66840,
+        "text": " engineering board yeah i actually like what is that process right right yeah somebody got somebody got"
+      },
+      {
+        "start": 66840,
+        "stop": 67408,
+        "text": " pissed and like all right let's forward this on yeah that's that that also crossed my mind i think"
+      },
+      {
+        "start": 67408,
+        "stop": 67968,
+        "text": " what what disturbs me if i really kind of think about my reaction to the story and i dig down"
+      },
+      {
+        "start": 67968,
+        "stop": 68632,
+        "text": " what's underneath that reaction it's that these institutions that we've kind of pegged as our"
+      },
+      {
+        "start": 68632,
+        "stop": 69160,
+        "text": " guiding signal of what's good what's accurate what we can trust you know this guy is an engineer i"
+      },
+      {
+        "start": 69160,
+        "stop": 69800,
+        "text": " can trust him so he can build this thing for me they seem petulant and petty and corrupt and the"
+      },
+      {
+        "start": 69800,
+        "stop": 70496,
+        "text": " fact that a complaint about a totally legit issue with how the red light cameras are being triggered"
+      },
+      {
+        "start": 70496,
+        "stop": 71048,
+        "text": " ends up getting forwarded to this organization who not only finds him but then actively attempts to"
+      },
+      {
+        "start": 71048,
+        "stop": 71560,
+        "text": " suppress the information when he tries to share it publicly they find him but they find him with the"
+      },
+      {
+        "start": 71560,
+        "stop": 72072,
+        "text": " force of law behind them so presumably were he to refuse to pay the sheriff will just come collect"
+      },
+      {
+        "start": 72072,
+        "stop": 72704,
+        "text": " the 500 right i guess it makes it makes it feel like the rule makers aren't playing by the rules"
+      },
+      {
+        "start": 72704,
+        "stop": 73336,
+        "text": " and yet we have to follow the rules but i i i disagree a little it's they're making rules"
+      },
+      {
+        "start": 73336,
+        "stop": 73984,
+        "text": " that favor their club right they favors their organization they made the rule right it's the"
+      },
+      {
+        "start": 73984,
+        "stop": 74624,
+        "text": " this engineering organization made the rule and got that local municipality or state to to make"
+      },
+      {
+        "start": 74624,
+        "stop": 75088,
+        "text": " their rule the law that you can't even say i'm an engineer what if you wear a t-shirt i'm an"
+      },
+      {
+        "start": 75088,
+        "stop": 75672,
+        "text": " engineer fine fine you're gonna get it fine fine there's 500 bucks i guess it just it's um chilling"
+      },
+      {
+        "start": 75672,
+        "stop": 76056,
+        "text": " it's chilling as a small business owner that's what it is honestly when i get down to it when"
+      },
+      {
+        "start": 76056,
+        "stop": 76392,
+        "text": " it gets it's to me and when i think about trying to run a business and i try to think about the"
+      },
+      {
+        "start": 76392,
+        "stop": 77000,
+        "text": " next few years and the challenges that are coming oh man and i think the the goalies and the rule"
+      },
+      {
+        "start": 77000,
+        "stop": 77616,
+        "text": " keepers aren't even aren't even really following the rules it's just so frustrating but let's move"
+      },
+      {
+        "start": 77616,
+        "stop": 78032,
+        "text": " on to actually making that money so if you ever get into independent software development or"
+      },
+      {
+        "start": 78096,
+        "stop": 78944,
+        "text": " it contracting like i did or advertising sales you often have to enter the realm of estimations"
+      },
+      {
+        "start": 78944,
+        "stop": 79688,
+        "text": " and you know how much our dear mr dominic loves doing estimates on projects in fact if it wasn't"
+      },
+      {
+        "start": 79688,
+        "stop": 80160,
+        "text": " for his outlandish estimate when i first started talking to him we probably wouldn't be doing this"
+      },
+      {
+        "start": 80160,
+        "stop": 81088,
+        "text": " podcast today because the estimate was too damn high so you found this great medium piece"
+      },
+      {
+        "start": 81192,
+        "stop": 81728,
+        "text": " seven estimation anti-patterns and i have a feeling there's some inspiration in here"
+      },
+      {
+        "start": 81728,
+        "stop": 82160,
+        "text": " where do you want to start so there's some good stuff right we covered this a couple years ago"
+      },
+      {
+        "start": 82160,
+        "stop": 82952,
+        "text": " not this piece but one of the many predecessors to it and basic premise i'm sure everybody listens"
+      },
+      {
+        "start": 82952,
+        "stop": 84088,
+        "text": " this probably knows estimates are hard and yeah that's it so all right yeah here we go this guy"
+      },
+      {
+        "start": 84088,
+        "stop": 84880,
+        "text": " who is a relatively prominent typescript developer will just will forgive him has seven"
+      },
+      {
+        "start": 84880,
+        "stop": 85432,
+        "text": " anti-patterns now some of them are like ladoy so i'm just gonna burn through estimates because"
+      },
+      {
+        "start": 85432,
+        "stop": 86096,
+        "text": " we have to yes following order sucks but hey that's life he said i strongly disagree with"
+      },
+      {
+        "start": 86096,
+        "stop": 86920,
+        "text": " that being an anti-pattern and i think anti-pattern might be more better phrased mistakes in this case"
+      },
+      {
+        "start": 86920,
+        "stop": 87432,
+        "text": " but i i'm all right we're going to talk about the hashtag no estimates at the end here"
+      },
+      {
+        "start": 87432,
+        "stop": 88000,
+        "text": " i am just going to assert for my evaluation of his seven anti-patterns that just throwing your"
+      },
+      {
+        "start": 88000,
+        "stop": 88592,
+        "text": " hands up stamping your feet and saying i refuse to estimate over anything is a pink slip inducing"
+      },
+      {
+        "start": 88592,
+        "stop": 89120,
+        "text": " moment for you no kidding that only works for doctors nobody else gets away with that right"
+      },
+      {
+        "start": 89120,
+        "stop": 89624,
+        "text": " we'll talk about it at the end but i'm gonna totally table that his second anti-pattern is"
+      },
+      {
+        "start": 89624,
+        "stop": 90056,
+        "text": " neglecting different estimation opinions he's got a point right so there's like powerful"
+      },
+      {
+        "start": 90056,
+        "stop": 90528,
+        "text": " personalities that can be on a team people who see things differently it is good to get most"
+      },
+      {
+        "start": 90528,
+        "stop": 91184,
+        "text": " people's feedback but the dude who just came out of boot camp a week ago and the guy who was like"
+      },
+      {
+        "start": 91184,
+        "stop": 91792,
+        "text": " an engineer at bell labs for 20 years i i might consider awaiting their opinion slightly differently"
+      },
+      {
+        "start": 91792,
+        "stop": 92384,
+        "text": " i don't know one estimator to rule them all a little weird i've never actually seen this in"
+      },
+      {
+        "start": 92384,
+        "stop": 92968,
+        "text": " the real world but i guess having like one uh lead developer she just estimates everything"
+      },
+      {
+        "start": 93040,
+        "stop": 93736,
+        "text": " i i i guess the span has seen that if he has that does seem crazy to me that seems bizarre uh i"
+      },
+      {
+        "start": 93736,
+        "stop": 94328,
+        "text": " could tell you what we do at tmb is we just be just double or triple blind everything so you know"
+      },
+      {
+        "start": 94328,
+        "stop": 94752,
+        "text": " more senior people go and we estimate and then we come back to each other and you know why did you"
+      },
+      {
+        "start": 94752,
+        "stop": 95248,
+        "text": " think this and why did you think that and then we usually yeah i could definitely see someone that"
+      },
+      {
+        "start": 95248,
+        "stop": 95736,
+        "text": " reviews them you know reviews an estimate like yeah absolutely yeah estimating taking forever"
+      },
+      {
+        "start": 95800,
+        "stop": 96176,
+        "text": " this is the one i thought was pretty laid away yeah you can't spend three weeks estimating"
+      },
+      {
+        "start": 96176,
+        "stop": 96680,
+        "text": " something in today's world did we just don't live in that world right yeah the deal will be closed"
+      },
+      {
+        "start": 96680,
+        "stop": 97232,
+        "text": " by the time you get them your estimates right close by by somebody by chris fisher llc right"
+      },
+      {
+        "start": 97232,
+        "stop": 97840,
+        "text": " i mean and i gotta say this is an area i actually did struggle with a lot is i could get really"
+      },
+      {
+        "start": 97840,
+        "stop": 98192,
+        "text": " bogged down and try to make sure i thought of all of the hardware components and all of the time we"
+      },
+      {
+        "start": 98192,
+        "stop": 98664,
+        "text": " would need to configure things and i could spend days and that was something i had to train out of"
+      },
+      {
+        "start": 98664,
+        "stop": 99136,
+        "text": " myself is more high level you know explain more so they understand there could be some price"
+      },
+      {
+        "start": 99136,
+        "stop": 99544,
+        "text": " variation here you know you don't have to actually get all of the details right then right you could"
+      },
+      {
+        "start": 99544,
+        "stop": 100024,
+        "text": " spend hours on ollie express searching for all the different raspberry pi dongles and attachments"
+      },
+      {
+        "start": 100024,
+        "stop": 100576,
+        "text": " and components you can buy but maybe just find one that you can get in decent quantities yeah"
+      },
+      {
+        "start": 100576,
+        "stop": 101624,
+        "text": " estimates need to be correct this one again i was tempted to say ladoy but he's got a point so i'm"
+      },
+      {
+        "start": 101624,
+        "stop": 102048,
+        "text": " going to quote him a little bit the urge to have correct estimates is an anti-pattern that is based"
+      },
+      {
+        "start": 102048,
+        "stop": 102504,
+        "text": " on the misunderstanding that through knowledge or analysis will result in a clear path towards doing"
+      },
+      {
+        "start": 102504,
+        "stop": 103072,
+        "text": " the work and whenever something took longer or shorter it shows a lack of knowledge or"
+      },
+      {
+        "start": 103072,
+        "stop": 103856,
+        "text": " insufficient analysis it came off of kind of mean to me but the more i thought of it he's right"
+      },
+      {
+        "start": 103856,
+        "stop": 104616,
+        "text": " estimates can be wrong because customers exist and change their mind right or mary sue wasn't"
+      },
+      {
+        "start": 104616,
+        "stop": 105160,
+        "text": " at the original meetings because she wasn't there for vacation or whatever and now she's back and"
+      },
+      {
+        "start": 105160,
+        "stop": 105640,
+        "text": " it turns out she's like the director of brand or whatever at that company and she actually really"
+      },
+      {
+        "start": 105640,
+        "stop": 105952,
+        "text": " really needs this animation and you guys didn't estimate it in it's a pain in the butt because"
+      },
+      {
+        "start": 105952,
+        "stop": 106592,
+        "text": " it's not built into ios this is maybe a real world story uh moving on wait wait before you do"
+      },
+      {
+        "start": 106592,
+        "stop": 107264,
+        "text": " i took it another way i took that as from the client's perspective from the customer's"
+      },
+      {
+        "start": 107264,
+        "stop": 107992,
+        "text": " perspective if you estimate fifteen thousand dollars and it comes in at forty three thousand"
+      },
+      {
+        "start": 107992,
+        "stop": 108768,
+        "text": " dollars or twenty two thousand dollars or even eighteen they will think you didn't estimate"
+      },
+      {
+        "start": 108768,
+        "stop": 109240,
+        "text": " correctly even even if they are actually the ones that caused the scope creep they're the ones that"
+      },
+      {
+        "start": 109240,
+        "stop": 109840,
+        "text": " had to you know send you back three times to change the colors they will still at their first"
+      },
+      {
+        "start": 109840,
+        "stop": 110216,
+        "text": " their first reaction is going to be it's your fault because you're the person selling to them"
+      },
+      {
+        "start": 110216,
+        "stop": 110736,
+        "text": " you told me is going to be 15 now you're telling me it's 18 you must have estimated wrong what did"
+      },
+      {
+        "start": 110736,
+        "stop": 111320,
+        "text": " you get wrong that is a very good point i i could definitely see reading it that way the other sad"
+      },
+      {
+        "start": 111320,
+        "stop": 111816,
+        "text": " truth with that is unfortunately it's almost always your fault even when it's not right if"
+      },
+      {
+        "start": 111816,
+        "stop": 112344,
+        "text": " you want to keep the relationship keep them as a customer you're gonna have to not eat the money"
+      },
+      {
+        "start": 112344,
+        "stop": 112768,
+        "text": " definitely don't eat thirty thousand dollars but find a way to change the conversation from"
+      },
+      {
+        "start": 112824,
+        "stop": 113328,
+        "text": " well mary sue was you know was on vacation in maui when this decision was made and"
+      },
+      {
+        "start": 113328,
+        "stop": 114024,
+        "text": " we didn't bid that into okay obviously we need to change course here and try to it's an uncomfortable"
+      },
+      {
+        "start": 114024,
+        "stop": 114464,
+        "text": " conversation but you basically gotta get more money out of them right and i think the only way"
+      },
+      {
+        "start": 114464,
+        "stop": 115192,
+        "text": " to really do that in my experience successfully is constant expectation setting letting them know"
+      },
+      {
+        "start": 115192,
+        "stop": 115656,
+        "text": " hey uh the way this is going right now this is kind of in cost just just like immediately as soon"
+      },
+      {
+        "start": 115656,
+        "stop": 116112,
+        "text": " as the conversation comes up you start bringing up how that could increase that could increase the"
+      },
+      {
+        "start": 116112,
+        "stop": 116712,
+        "text": " cost and if you don't it just gets harder and more awkward to mention it as time goes on well it's"
+      },
+      {
+        "start": 116712,
+        "stop": 117552,
+        "text": " like any relationship right uh the the deeper into unhappiness you are with each other the harder even"
+      },
+      {
+        "start": 117552,
+        "stop": 118064,
+        "text": " little rightly chris and i are both divorced right i won't speak for chris but when everybody's"
+      },
+      {
+        "start": 118064,
+        "stop": 118640,
+        "text": " getting along forgetting to turn on the dishwasher is nothing when everybody's been fighting for six"
+      },
+      {
+        "start": 118640,
+        "stop": 119360,
+        "text": " months that you will go to war for that yeah right that's so well put all right his last one one of"
+      },
+      {
+        "start": 119360,
+        "stop": 119904,
+        "text": " the most harmful anti-patterns of of estimates is how they are misused as commitments by people"
+      },
+      {
+        "start": 119904,
+        "stop": 120488,
+        "text": " outside the team people with power over the team and after everything i discussed already it is"
+      },
+      {
+        "start": 120488,
+        "stop": 120904,
+        "text": " probably clear that this is dumb still many developers are in this position i actually"
+      },
+      {
+        "start": 120904,
+        "stop": 121472,
+        "text": " totally reject this one um and his headline for his estimates are turned into commitments"
+      },
+      {
+        "start": 121552,
+        "stop": 122112,
+        "text": " i'm curious what you feel about this chris my take is the end client the end customer the business"
+      },
+      {
+        "start": 122112,
+        "stop": 122864,
+        "text": " stakeholders the product managers your fellow developers the dbas the qc people uh your dog"
+      },
+      {
+        "start": 122864,
+        "stop": 123376,
+        "text": " right people need to know when things are gonna roughly gonna be done they need to know what"
+      },
+      {
+        "start": 123376,
+        "stop": 123936,
+        "text": " things are gonna roughly cost within reason even if it's not like this is what the entire project"
+      },
+      {
+        "start": 123936,
+        "stop": 124424,
+        "text": " costs forever and ever never this is like what your monthly run rate is going to be or something"
+      },
+      {
+        "start": 124424,
+        "stop": 125208,
+        "text": " in that ballpark i just don't agree that they're not some form of maybe not you know firm in stone"
+      },
+      {
+        "start": 125208,
+        "stop": 125696,
+        "text": " like mosas's 10 commandments but they're like a soft guideline right they're a soft commitment"
+      },
+      {
+        "start": 125696,
+        "stop": 126176,
+        "text": " they have to be they have right unfortunately right i mean i i guess if you had some sort of"
+      },
+      {
+        "start": 126176,
+        "stop": 126784,
+        "text": " super awesome modern hipster tooling that everybody could go and check the status"
+      },
+      {
+        "start": 126784,
+        "stop": 127392,
+        "text": " of the of the project and get real-time updates that could substitute some kind of estimate that"
+      },
+      {
+        "start": 127392,
+        "stop": 128040,
+        "text": " gets circulated but so it's funny you bring that up i did some searching there is a cottage industry"
+      },
+      {
+        "start": 128040,
+        "stop": 128712,
+        "text": " of sas companies who want to sell you their whizbang we will estimate for you tool huh is it"
+      },
+      {
+        "start": 128712,
+        "stop": 129096,
+        "text": " like based on like hookah to your trello and we'll figure out your velocity or hookah to your jira a"
+      },
+      {
+        "start": 129096,
+        "stop": 130032,
+        "text": " lot of it yeah i see huh yeah of course of course there is yeah kind of you when you say it now you"
+      },
+      {
+        "start": 130032,
+        "stop": 130712,
+        "text": " say it's like sounds like a good idea it feels like one of those ideas that's like super seductive"
+      },
+      {
+        "start": 130712,
+        "stop": 131280,
+        "text": " but always that's like the fourth part it sounds like a good idea definitely won't be tomorrow"
+      },
+      {
+        "start": 131280,
+        "stop": 131816,
+        "text": " until some sort of tooling is adopted probably in the metaverse yeah it's always going to act as"
+      },
+      {
+        "start": 131816,
+        "stop": 132344,
+        "text": " a way to at least set rough milestones so wait wait in the metaverse when you're doing estimating"
+      },
+      {
+        "start": 132344,
+        "stop": 132880,
+        "text": " you will you'll pop right in it'll just be this giant trello board right there'll be this floating"
+      },
+      {
+        "start": 132880,
+        "stop": 133248,
+        "text": " trello board right there in the middle of the room right you've described a nightmare i keep having"
+      },
+      {
+        "start": 133248,
+        "stop": 133800,
+        "text": " actually where trello cards are just like spinning at me like uh ninja stars right you gotta dodge"
+      },
+      {
+        "start": 133800,
+        "stop": 134264,
+        "text": " them there's so many you open up a door they just come piling down on top of you it's the most"
+      },
+      {
+        "start": 134264,
+        "stop": 134776,
+        "text": " horrific game of beat saver ever played every card is marked high priority"
+      },
+      {
+        "start": 134776,
+        "stop": 135448,
+        "text": " uh so but in the metaverse i like this if the sales guy gives an estimate can you walk in the"
+      },
+      {
+        "start": 135448,
+        "stop": 135944,
+        "text": " metaverse and smack him in the back of the head you could you'll have actually a virtual martini"
+      },
+      {
+        "start": 135944,
+        "stop": 136408,
+        "text": " you could just uh you know toss on his face well you know we could get the ferengi to hook us up"
+      },
+      {
+        "start": 136408,
+        "stop": 137024,
+        "text": " with some synthol haul with his port on them so the last one is others do the estimation this is"
+      },
+      {
+        "start": 137024,
+        "stop": 137600,
+        "text": " my slap the sales guy in the back of the head one i agree that's a bad idea sales guy their job"
+      },
+      {
+        "start": 137600,
+        "stop": 138144,
+        "text": " collects sale make commission their job usually a lot of them don't care about actually like managing"
+      },
+      {
+        "start": 138144,
+        "stop": 138672,
+        "text": " the customer relationship the good ones do but they're very expensive so yeah you gotta watch"
+      },
+      {
+        "start": 138672,
+        "stop": 139360,
+        "text": " that that's kind of like burying the lead this is the number i in my experience the number one issue"
+      },
+      {
+        "start": 139360,
+        "stop": 139896,
+        "text": " can be in this situation sales will promise the moon for the to get to close the sale and they'll"
+      },
+      {
+        "start": 139896,
+        "stop": 140392,
+        "text": " say that engineering can do anything i mean they really will it's been uh i i know it's a cliche"
+      },
+      {
+        "start": 140392,
+        "stop": 141096,
+        "text": " but i have witnessed it happen over and over again and it's unbelievable what they and then"
+      },
+      {
+        "start": 141096,
+        "stop": 141560,
+        "text": " now that's what the customer expects and that was the very at the very beginning of the relationship"
+      },
+      {
+        "start": 141560,
+        "stop": 141936,
+        "text": " they have that expectation and you're constantly trying to live up to that sorry i was having"
+      },
+      {
+        "start": 141936,
+        "stop": 143024,
+        "text": " flashbacks um yeah so okay let's talk about the very vocal very angry twitter no estimates guys"
+      },
+      {
+        "start": 143024,
+        "stop": 143888,
+        "text": " i still don't buy it i just don't buy it i talked about it years ago we got a lot of spicy emails"
+      },
+      {
+        "start": 143888,
+        "stop": 144520,
+        "text": " about it i don't know where you're working i don't know what you're doing even like internal product"
+      },
+      {
+        "start": 144520,
+        "stop": 145032,
+        "text": " products or projects there's absolutely no why no way you don't need to know what things cost"
+      },
+      {
+        "start": 145032,
+        "stop": 145744,
+        "text": " well maybe they are doing government contracts okay raytheon you don't count i i agree it seems"
+      },
+      {
+        "start": 145744,
+        "stop": 146272,
+        "text": " impossible the only way it could possibly work is if it was like internal proposals and somebody"
+      },
+      {
+        "start": 146272,
+        "stop": 146768,
+        "text": " else just dealt with budget well i i've had it explained to me several times and it's just so"
+      },
+      {
+        "start": 146856,
+        "stop": 147408,
+        "text": " foreign from anything i've ever seen how would how would it even work like the customer i mean"
+      },
+      {
+        "start": 147408,
+        "stop": 147896,
+        "text": " the part of opening the door to the relationship is the estimate process and the emails that come"
+      },
+      {
+        "start": 147896,
+        "stop": 148320,
+        "text": " back and forth like that's part of the courting part process i don't even understand how you land"
+      },
+      {
+        "start": 148320,
+        "stop": 148816,
+        "text": " the sale without an estimate at some point eventually so so let me let me try to steelman"
+      },
+      {
+        "start": 148816,
+        "stop": 149280,
+        "text": " their argument and i'll tell you why i reject it out of hand so the best version of their argument"
+      },
+      {
+        "start": 149280,
+        "stop": 149816,
+        "text": " is the estimates are effectively lies you're troubling the relationship by starting it off"
+      },
+      {
+        "start": 149872,
+        "stop": 150216,
+        "text": " you know you're always gonna they basically believe you're always going to underestimate"
+      },
+      {
+        "start": 150216,
+        "stop": 150768,
+        "text": " which i think is actually like as a premise probably true right it's i would say you know"
+      },
+      {
+        "start": 150768,
+        "stop": 151168,
+        "text": " on average it's more true than that it's one of those things i think we would all agree on on its"
+      },
+      {
+        "start": 151168,
+        "stop": 151824,
+        "text": " face but we don't have the numbers you know you want to keep a it's very like super duper agile"
+      },
+      {
+        "start": 151824,
+        "stop": 152120,
+        "text": " you want to keep a tight connection with the customer and you want to keep things flowing"
+      },
+      {
+        "start": 152184,
+        "stop": 152848,
+        "text": " but where i don't what they don't talk about is that sales process that you were just talking about"
+      },
+      {
+        "start": 152848,
+        "stop": 153664,
+        "text": " because i don't know what niche they're in but there are other vendors who would be more than"
+      },
+      {
+        "start": 153664,
+        "stop": 154120,
+        "text": " happy to snake a contract from you he doesn't want to do an estimation no problem we will"
+      },
+      {
+        "start": 154120,
+        "stop": 154592,
+        "text": " you know entities have processes right so businesses have processes and a lot of that"
+      },
+      {
+        "start": 154592,
+        "stop": 155248,
+        "text": " processes they have revolved around rfps for press for proposals and writing proposals is a thing"
+      },
+      {
+        "start": 155248,
+        "stop": 155896,
+        "text": " that happens now i i definitely have adopted a little bit of the no estimate attitude is i'm not"
+      },
+      {
+        "start": 155896,
+        "stop": 156472,
+        "text": " going to do like a 14-page proposal i usually try to do a one or two-pager broad strokes you know"
+      },
+      {
+        "start": 156472,
+        "stop": 156920,
+        "text": " this would be like an hourly or a weekly or whatever however kind of arrangement we're doing"
+      },
+      {
+        "start": 156920,
+        "stop": 157856,
+        "text": " run rate but the idea to just do nothing to just say hey you'll find out later seems a little"
+      },
+      {
+        "start": 157856,
+        "stop": 158744,
+        "text": " hardcore i am happy to hear from you all again perhaps i have misunderstood something i would"
+      },
+      {
+        "start": 158744,
+        "stop": 159304,
+        "text": " love to know some real world cases even if it was you know in confidence where this has actually"
+      },
+      {
+        "start": 159304,
+        "stop": 159968,
+        "text": " worked because i have never in my very very long time of doing this started a conversation where"
+      },
+      {
+        "start": 159968,
+        "stop": 160592,
+        "text": " someone didn't ask me at least how long something was going to take right if not you know directly"
+      },
+      {
+        "start": 160592,
+        "stop": 161272,
+        "text": " opening the money conversation in the first first uh meeting so i don't know the other the other"
+      },
+      {
+        "start": 161272,
+        "stop": 162088,
+        "text": " i guess elephant in the room here is agile xp which i get it's called beast now which is insane"
+      },
+      {
+        "start": 162088,
+        "stop": 162736,
+        "text": " oh yeah i don't know twitter we got to rebrand everything so we can be gurus right and and sell"
+      },
+      {
+        "start": 162736,
+        "stop": 163272,
+        "text": " consulting services yeah and plus if you give it a newer cooler name you know maybe you can bring in"
+      },
+      {
+        "start": 163272,
+        "stop": 163784,
+        "text": " some more people because it's not that old weird agile thing this is beast this is beast mode baby"
+      },
+      {
+        "start": 163784,
+        "stop": 164640,
+        "text": " tiger's blood tiger's blood if anybody gets that reference good work that is one way to avoid the"
+      },
+      {
+        "start": 164640,
+        "stop": 165304,
+        "text": " big overarching estimate and that is basically what i do but you're still giving an estimate of"
+      },
+      {
+        "start": 165304,
+        "stop": 165944,
+        "text": " some sort you're giving a whether it's monthly weekly bi-weekly a sprint you probably have a"
+      },
+      {
+        "start": 165944,
+        "stop": 166512,
+        "text": " very stable run run rate you definitely have to tell the customer if that run rate is going to go"
+      },
+      {
+        "start": 166512,
+        "stop": 167000,
+        "text": " up and get their approval for that right let's say you're adding someone or removing someone"
+      },
+      {
+        "start": 167112,
+        "stop": 167768,
+        "text": " and i think the the dirty little thing behind agile is it really assumes a time and materials"
+      },
+      {
+        "start": 167768,
+        "stop": 168432,
+        "text": " billing structure where you're de-risking really the project for everybody but definitely for you"
+      },
+      {
+        "start": 168432,
+        "stop": 169072,
+        "text": " because you're not doing a ton of design up front right you're not doing bduff you're not doing"
+      },
+      {
+        "start": 169072,
+        "stop": 169616,
+        "text": " waterfall sometimes problems last over a decade or in this case 30 something years"
+      },
+      {
+        "start": 169736,
+        "stop": 170168,
+        "text": " because there are in fact hard"
+      },
+      {
+        "start": 170168,
+        "stop": 170624,
+        "text": " linode.com slash coder go there to get a hundred dollars in 60-day credit it's a great way to"
+      },
+      {
+        "start": 170624,
+        "stop": 171304,
+        "text": " support the show and try out linode so it's linode.com slash coder linode is just simply fast"
+      },
+      {
+        "start": 171304,
+        "stop": 171768,
+        "text": " reliable cloud hosting you've got to try it for your next project maybe for your personal site"
+      },
+      {
+        "start": 171768,
+        "stop": 172176,
+        "text": " it's what i use personally is what we use for the business too especially now that linode has"
+      },
+      {
+        "start": 172176,
+        "stop": 172728,
+        "text": " been rolling out these mvme upgrades systems just got mvme disks and all of a sudden my existing"
+      },
+      {
+        "start": 172728,
+        "stop": 173152,
+        "text": " linode systems were getting faster and now of course you can deploy systems with mvme from the"
+      },
+      {
+        "start": 173152,
+        "stop": 173632,
+        "text": " get-go and linode has recently announced they're going to open a dozen new data centers over next"
+      },
+      {
+        "start": 173632,
+        "stop": 174264,
+        "text": " year and you know linode is their own isp too so the connections are super fast oh man i meant to"
+      },
+      {
+        "start": 174264,
+        "stop": 174912,
+        "text": " pull up this gpu rig i wonder if i can get logged in fast enough so over the weekend we set up a gpu"
+      },
+      {
+        "start": 174912,
+        "stop": 175384,
+        "text": " rig for linux unplugged because we were playing around with stable diffusion and until that point"
+      },
+      {
+        "start": 175384,
+        "stop": 176256,
+        "text": " i had been using it on my m1 ultra max diffusion b but then we threw stable diffusion on a linode"
+      },
+      {
+        "start": 176256,
+        "stop": 177272,
+        "text": " with an rtx 66000 gpu and 32 gigabytes of ram and eight cpu cores and i believe although i was trying"
+      },
+      {
+        "start": 177272,
+        "stop": 177784,
+        "text": " to verify this but i'm pretty sure i saw this too i believe it has a 40 gigabit connection to the"
+      },
+      {
+        "start": 177784,
+        "stop": 178752,
+        "text": " internet it's so crazy and um i mean surprise surprise right but it smokes my macbook max ultra"
+      },
+      {
+        "start": 178752,
+        "stop": 179280,
+        "text": " machine on the stable diffusion stuff i mean stuff that the macbook would take like a couple of"
+      },
+      {
+        "start": 179280,
+        "stop": 179808,
+        "text": " minutes to do this thing does in like 10 20 seconds the linode infrastructure is so fast and powerful"
+      },
+      {
+        "start": 179808,
+        "stop": 180336,
+        "text": " because on the other end right i've got these little itty bitty linodes too i've got what they"
+      },
+      {
+        "start": 180336,
+        "stop": 180848,
+        "text": " call a nanode which is just this tiny little box that we use just to do status checking of our"
+      },
+      {
+        "start": 180848,
+        "stop": 181360,
+        "text": " systems you know just to do health checks and make sure everything's online and the scale there is"
+      },
+      {
+        "start": 181360,
+        "stop": 182024,
+        "text": " incredible i've got i've got systems with one gig of ram and i've got systems on linode with 96"
+      },
+      {
+        "start": 182024,
+        "stop": 182784,
+        "text": " gigs of ram and 48 cpu cores on that one too i mean the range is it's so great and the pricing"
+      },
+      {
+        "start": 182784,
+        "stop": 183352,
+        "text": " is still 30 to 50 percent cheaper than anything at the hyperscalers and you get the full machine like"
+      },
+      {
+        "start": 183352,
+        "stop": 183888,
+        "text": " i get this whole linode is mine i have root access i log and i set everything up it's screaming"
+      },
+      {
+        "start": 183888,
+        "stop": 184320,
+        "text": " fast they also have dedicated physical boxes available now of course they have s3 compatible"
+      },
+      {
+        "start": 184320,
+        "stop": 184784,
+        "text": " object storage totally compatible with kubernetes and your other infrastructure management tools"
+      },
+      {
+        "start": 184784,
+        "stop": 185480,
+        "text": " great dns tools firewalls node balancers you name it linode has got it and the pricing's right plus"
+      },
+      {
+        "start": 185480,
+        "stop": 185864,
+        "text": " you're gonna get 100 bucks if you support the show and go to linode.com slash coder you can really try"
+      },
+      {
+        "start": 185864,
+        "stop": 186424,
+        "text": " just to buy anything out with that hundred dollar credit so go try it out see why we love it linode.com"
+      },
+      {
+        "start": 186424,
+        "stop": 187200,
+        "text": " slash coder you know a lot of people are listening thinking if he just got married what's he doing on"
+      },
+      {
+        "start": 187200,
+        "stop": 187648,
+        "text": " the show because that's what people said to me on on sunday when i said yeah join us it's gonna be"
+      },
+      {
+        "start": 187648,
+        "stop": 187960,
+        "text": " a great coder because mike just got married you know give him a congrats come into the chat room"
+      },
+      {
+        "start": 187960,
+        "stop": 188600,
+        "text": " say hi to him uh and people are like what he's coming to work on monday after he just got married"
+      },
+      {
+        "start": 188600,
+        "stop": 189264,
+        "text": " which uh i did something very similar what are we just a glutton for punishment well you're up there"
+      },
+      {
+        "start": 189264,
+        "stop": 189664,
+        "text": " in seattle and i i didn't want you to you know i was a little afraid you were feeling those microsoft"
+      },
+      {
+        "start": 189664,
+        "stop": 190448,
+        "text": " vibes oh yeah i got you i got you yeah you know that's true it's it's dark days up here so you"
+      },
+      {
+        "start": 190448,
+        "stop": 190936,
+        "text": " and i we got a band together and stay strong because uh i you asked me over the weekend and i"
+      },
+      {
+        "start": 190936,
+        "stop": 191632,
+        "text": " have heard from a couple listeners uh who worked at microsoft i say worked the although they were"
+      },
+      {
+        "start": 191632,
+        "stop": 192168,
+        "text": " laid off a bit ago actually july i think yeah not with this recent most recent round but microsoft"
+      },
+      {
+        "start": 192168,
+        "stop": 193008,
+        "text": " is laying off quote under 1 000 workers 999 baby yeah but that's after there's also been some low"
+      },
+      {
+        "start": 193008,
+        "stop": 193552,
+        "text": " key layoffs uh for the last few months and then of course i thought brad sam's on twitter had"
+      },
+      {
+        "start": 193552,
+        "stop": 193984,
+        "text": " an interesting point he says i get the companies have to make priorities and cuts happen but it's"
+      },
+      {
+        "start": 193984,
+        "stop": 194680,
+        "text": " odd when that same company is trying to spend 70 billion dollars on an acquisition it feels odd"
+      },
+      {
+        "start": 194680,
+        "stop": 195456,
+        "text": " that is a hard like 70 billion dollars feels like a lot of money right now to basically control the"
+      },
+      {
+        "start": 195456,
+        "stop": 195912,
+        "text": " console video game market i don't think that's too bad yeah i mean to be to be the disney of"
+      },
+      {
+        "start": 195912,
+        "stop": 196456,
+        "text": " video games ultimately it's probably not too bad but it does seem hard when you're laying off people"
+      },
+      {
+        "start": 196456,
+        "stop": 197144,
+        "text": " but still spending 70 bill to bring in you know a company that's riddled with issues however i had"
+      },
+      {
+        "start": 197144,
+        "stop": 197840,
+        "text": " to think about this microsoft apple and google have been doing this layoff thing and they're"
+      },
+      {
+        "start": 197840,
+        "stop": 198424,
+        "text": " doing it low-key but they are occasionally making announcements now why would a company make an"
+      },
+      {
+        "start": 198424,
+        "stop": 199008,
+        "text": " announcement why would they do some that are low-key on the dl and then announce some"
+      },
+      {
+        "start": 199008,
+        "stop": 199720,
+        "text": " via a press release and when a company releases something like a mic when a public company like"
+      },
+      {
+        "start": 199720,
+        "stop": 200216,
+        "text": " microsoft or apple release something via a press release in part they're signaling to the market"
+      },
+      {
+        "start": 200216,
+        "stop": 200864,
+        "text": " they're signaling to wall street and what microsoft and apple and google are signaling is"
+      },
+      {
+        "start": 200920,
+        "stop": 201480,
+        "text": " we're taking leadership on this issue we recognize that the last 10 years of loose money"
+      },
+      {
+        "start": 201480,
+        "stop": 202152,
+        "text": " zero interest rates everybody's been at a party with free alcohol think of it that way that's"
+      },
+      {
+        "start": 202152,
+        "stop": 202600,
+        "text": " actually what's been going on in the financial markets the fed's been throwing a banger of a"
+      },
+      {
+        "start": 202600,
+        "stop": 203416,
+        "text": " party for a decade and the bar has been free and so companies have been sucking up billions of"
+      },
+      {
+        "start": 203416,
+        "stop": 204160,
+        "text": " dollars they've been hiring like crazy in the in the name of what investors call chasing beta"
+      },
+      {
+        "start": 204160,
+        "stop": 204704,
+        "text": " and what that roughly means is they're chasing something that doesn't return value today"
+      },
+      {
+        "start": 204704,
+        "stop": 205408,
+        "text": " but will likely one of these bets will pay off big in the next decade and so you're chasing"
+      },
+      {
+        "start": 205408,
+        "stop": 206056,
+        "text": " future return and what's happened because rates have gone up what 65 70 percent i mean the rates"
+      },
+      {
+        "start": 206056,
+        "stop": 206432,
+        "text": " are and they're continuing to go up the interest rate month the price of money is continuing to go"
+      },
+      {
+        "start": 206432,
+        "stop": 207312,
+        "text": " up the bar is now charging and the price is going up monthly and so now what investors are seeking"
+      },
+      {
+        "start": 207312,
+        "stop": 207888,
+        "text": " and they're looking for it really bad right now really hard is what they call alpha that's returned"
+      },
+      {
+        "start": 207888,
+        "stop": 208408,
+        "text": " today that's value return this is your warren buffett type investor your value investor you"
+      },
+      {
+        "start": 208408,
+        "stop": 209000,
+        "text": " invest in things that are making money today and the view and by investors has become it's time"
+      },
+      {
+        "start": 209088,
+        "stop": 209632,
+        "text": " you've just had a decade of free money if you didn't produce something that returns money at"
+      },
+      {
+        "start": 209632,
+        "stop": 210240,
+        "text": " this point it's time for you to die and so you're seeing the very large companies take a leadership"
+      },
+      {
+        "start": 210240,
+        "stop": 210976,
+        "text": " role in pivoting to value apple has paused production of the iphone 14 pro because demand"
+      },
+      {
+        "start": 210976,
+        "stop": 211696,
+        "text": " is soft and they want to keep revenues up they're doing layoffs google microsoft apple layoffs"
+      },
+      {
+        "start": 211800,
+        "stop": 212232,
+        "text": " and then you have your mid to small tech companies that have just getting been pumped"
+      },
+      {
+        "start": 212232,
+        "stop": 212888,
+        "text": " with series a b c d even f rounds of funding which is we're going to look back at that as ludicrous"
+      },
+      {
+        "start": 212888,
+        "stop": 213344,
+        "text": " and they're dying off and they're going to be laying off saved by acquisition some of them"
+      },
+      {
+        "start": 213344,
+        "stop": 213896,
+        "text": " right right yeah well or the i should say the investors the uh vcs will be saved by acquisition"
+      },
+      {
+        "start": 213896,
+        "stop": 214384,
+        "text": " yeah the companies will be strip mined for ip and the most valuable right one might think of twitter"
+      },
+      {
+        "start": 214384,
+        "stop": 215192,
+        "text": " in this case who i mean elon musk has to be their best friend right now somehow supposed 75 layoffs"
+      },
+      {
+        "start": 215192,
+        "stop": 215584,
+        "text": " he's how could how is that could that be real that he's really thinking that yeah because the"
+      },
+      {
+        "start": 215584,
+        "stop": 216056,
+        "text": " company's not worth 50 i mean wouldn't everybody else has covered it it's the math is stupid right"
+      },
+      {
+        "start": 216056,
+        "stop": 216568,
+        "text": " that's something don't tweet drunk or high that's all i gotta say and don't send letters to the sec"
+      },
+      {
+        "start": 216568,
+        "stop": 217536,
+        "text": " drunk or high either i feel bad for the people big laid off but like every bender this one had to end"
+      },
+      {
+        "start": 217536,
+        "stop": 217992,
+        "text": " yeah but the hangover could be pretty significant it's well it's gonna be full-on withdrawals right"
+      },
+      {
+        "start": 217992,
+        "stop": 218360,
+        "text": " until the bar goes free again which i imagine it will at some point i'm hoping it doesn't"
+      },
+      {
+        "start": 218360,
+        "stop": 218816,
+        "text": " earlier episodes of the show i used to rail against these companies that don't in fact"
+      },
+      {
+        "start": 218816,
+        "stop": 219448,
+        "text": " make money right they don't turn a profit these startups they just you know they they burn through"
+      },
+      {
+        "start": 219448,
+        "stop": 220072,
+        "text": " money and they just get acquired as an aqua hire or they get acquired and they get acquired based"
+      },
+      {
+        "start": 220072,
+        "stop": 220560,
+        "text": " on their potential future revenue and then everybody who's in a leadership role or on the"
+      },
+      {
+        "start": 220560,
+        "stop": 221096,
+        "text": " board i may or may not have first-hand experience with this gets a payout based on the theoretical"
+      },
+      {
+        "start": 221096,
+        "stop": 221544,
+        "text": " stocks that they own that are going to be worth something at some point in the future and so"
+      },
+      {
+        "start": 221544,
+        "stop": 222016,
+        "text": " there's this massive exchange of money even though the company never necessarily got profitable"
+      },
+      {
+        "start": 222080,
+        "stop": 222608,
+        "text": " and sustainable but they had a future potential value and that's what they get some of that is"
+      },
+      {
+        "start": 222608,
+        "stop": 223024,
+        "text": " there's a ratio of that that they get bought for and then everybody gets paid out yeah absolutely"
+      },
+      {
+        "start": 223024,
+        "stop": 223480,
+        "text": " or i mean i shouldn't name the company but there was a company i did not work there i did not"
+      },
+      {
+        "start": 223480,
+        "stop": 224024,
+        "text": " contract there but i knew some of the developers there in new york that did basically a netflix"
+      },
+      {
+        "start": 224024,
+        "stop": 224760,
+        "text": " for book style thing a large tech company bought them simply to kill them that was it"
+      },
+      {
+        "start": 224912,
+        "stop": 225632,
+        "text": " that is so common oh yeah and zapier can you just buy us we'll go away hey oh but that is like"
+      },
+      {
+        "start": 225632,
+        "stop": 226720,
+        "text": " what's up that's so it's just it was such a a a roman-esque bacchanalia that it had to stop"
+      },
+      {
+        "start": 226720,
+        "stop": 227280,
+        "text": " if you watch the show we crashed a lot of people think well that's insane that's a joke"
+      },
+      {
+        "start": 227280,
+        "stop": 228152,
+        "text": " i've seen like that i've seen literal penis statues i've seen parties that can only be"
+      },
+      {
+        "start": 228152,
+        "stop": 228848,
+        "text": " described as like dante-esque some circle of hell that no one's coming out of there happy right"
+      },
+      {
+        "start": 228848,
+        "stop": 229392,
+        "text": " there's no way the money printer doesn't turn back on oh come on there's no way because there"
+      },
+      {
+        "start": 229392,
+        "stop": 229904,
+        "text": " are just things on the books that the government is committed to paying that there's somebody"
+      },
+      {
+        "start": 229904,
+        "stop": 230432,
+        "text": " somebody has to buy that debt and the issue is is that that debt is getting less and less"
+      },
+      {
+        "start": 230432,
+        "stop": 230880,
+        "text": " attractive to buyers right now and so inevitably the buyer of last resort will be the federal"
+      },
+      {
+        "start": 230880,
+        "stop": 231264,
+        "text": " reserve they'll step in they'll start buying the government's debt again yeah it'll have it'll have"
+      },
+      {
+        "start": 231264,
+        "stop": 231800,
+        "text": " to happen if that happens then in the particularly in whatever sector is hot right now but this last"
+      },
+      {
+        "start": 231800,
+        "stop": 232344,
+        "text": " round it was tech uh and in particular like consumer software you're gonna have these boom"
+      },
+      {
+        "start": 232344,
+        "stop": 232936,
+        "text": " and bust cycles whatever they want whether there's b2b software or something else you're gonna have"
+      },
+      {
+        "start": 232936,
+        "stop": 233616,
+        "text": " these crazy i honestly if that's true now's the time to start your business get some foundations"
+      },
+      {
+        "start": 233616,
+        "stop": 234280,
+        "text": " and when the bar says happy hour take that vc money baby get out get out in five years i mean"
+      },
+      {
+        "start": 234280,
+        "stop": 234848,
+        "text": " look what happened is instead of instead of chasing traditional investments like bonds and"
+      },
+      {
+        "start": 234848,
+        "stop": 235416,
+        "text": " things like that investors went after tech that's what they went after and they stopped they stopped"
+      },
+      {
+        "start": 235416,
+        "stop": 235832,
+        "text": " caring about the fundamentals and so a company didn't necessarily have to make profit in order"
+      },
+      {
+        "start": 235832,
+        "stop": 236544,
+        "text": " for everybody to get paid out and what ended up happening is we have a massive glut of under"
+      },
+      {
+        "start": 236544,
+        "stop": 237096,
+        "text": " skilled tech leadership out there the whole leadership team for so many of these companies"
+      },
+      {
+        "start": 237096,
+        "stop": 237720,
+        "text": " and you guys know this is true are totally mediocre because they didn't have to be great"
+      },
+      {
+        "start": 237784,
+        "stop": 238464,
+        "text": " they weren't fighting for absolute survival there wasn't this natural selection where the absolute"
+      },
+      {
+        "start": 238464,
+        "stop": 239048,
+        "text": " rock stars of the companies are the ones that get promoted because the profit came from the"
+      },
+      {
+        "start": 239048,
+        "stop": 240096,
+        "text": " investments not from the product and so it created a culture of extremely weak leadership and some of"
+      },
+      {
+        "start": 240096,
+        "stop": 240576,
+        "text": " that has to be rained out as well i mean i would like the money printer to stay off for a while"
+      },
+      {
+        "start": 240576,
+        "stop": 241200,
+        "text": " because the longer we keep raising rates the longer the money printer stays off the more of"
+      },
+      {
+        "start": 241200,
+        "stop": 241808,
+        "text": " this gets cleaned out of the system unfortunately the worse it gets the more jobs the more of the"
+      },
+      {
+        "start": 241808,
+        "stop": 242288,
+        "text": " supply chain gets damaged the more long-term damage that gets done to the economy so part"
+      },
+      {
+        "start": 242288,
+        "stop": 242768,
+        "text": " of me doesn't want it to keep going but i would love to see some of this get cleaned up okay but"
+      },
+      {
+        "start": 242768,
+        "stop": 243432,
+        "text": " isn't this kind of okay i i see what you're saying the supply chain but isn't part of that because of"
+      },
+      {
+        "start": 243432,
+        "stop": 243960,
+        "text": " just how easy it was for these companies when the when the ale was flowing freely so to speak"
+      },
+      {
+        "start": 243960,
+        "stop": 244520,
+        "text": " yeah that they didn't build up the muscles right these are like these are like i have a tibetan"
+      },
+      {
+        "start": 244520,
+        "stop": 245232,
+        "text": " spaniel these dogs would never survive in nature ever exactly or but a wolf could right hell a"
+      },
+      {
+        "start": 245232,
+        "stop": 245760,
+        "text": " husky could a beagle could we need to i don't know be better breeders that someone's gonna hashtag"
+      },
+      {
+        "start": 245760,
+        "stop": 246608,
+        "text": " that's gonna be bad but my gets married extols uh young tech entrepreneurs be better breeders"
+      },
+      {
+        "start": 246608,
+        "stop": 247288,
+        "text": " gets cancelled by glad just i'm thinking of like startups i've seen that were so stupid on their"
+      },
+      {
+        "start": 247288,
+        "stop": 248048,
+        "text": " face i don't know how those guys survived the call home to mom let alone a board meeting right i mean"
+      },
+      {
+        "start": 248048,
+        "stop": 248592,
+        "text": " you're probably right though since if unemployment hits what like eight percent the government will"
+      },
+      {
+        "start": 248592,
+        "stop": 249440,
+        "text": " freak out and it'll be absent and and jen for everybody there's already no supposedly it was"
+      },
+      {
+        "start": 249440,
+        "stop": 249872,
+        "text": " leaked to the wall street journal that the federal reserve is considering making changes to their"
+      },
+      {
+        "start": 249872,
+        "stop": 250416,
+        "text": " current strategy janet yelen just earlier this week came out and said we think it's getting a"
+      },
+      {
+        "start": 250416,
+        "stop": 250872,
+        "text": " little dicey it might be time for a policy change so i i don't know i think we're already starting"
+      },
+      {
+        "start": 250872,
+        "stop": 251272,
+        "text": " to actually see it unfortunately it doesn't it doesn't it chap your ass though like businesses"
+      },
+      {
+        "start": 251272,
+        "stop": 251832,
+        "text": " like ours and like our friends at system 76 and other places that actually just like manage to"
+      },
+      {
+        "start": 251832,
+        "stop": 252576,
+        "text": " survive and you know actually make money we kind of missed out on this but if they keep the pressure"
+      },
+      {
+        "start": 252576,
+        "stop": 253088,
+        "text": " up for long all our customers could be gone well yeah but i so how do you see so there's no way to"
+      },
+      {
+        "start": 253088,
+        "stop": 253736,
+        "text": " solve the problem basically we go into another drunken vendor or we or what it's the ice age"
+      },
+      {
+        "start": 253736,
+        "stop": 254176,
+        "text": " i don't know i mean that's above our pay grade i think what a lot of people that are listening"
+      },
+      {
+        "start": 254176,
+        "stop": 254736,
+        "text": " are probably thinking well that's you know once we we go through one more bender and you know"
+      },
+      {
+        "start": 254736,
+        "stop": 255248,
+        "text": " maybe we make it a few more years and by the time that bender's wrapped up maybe a cbdc is ready"
+      },
+      {
+        "start": 255248,
+        "stop": 255640,
+        "text": " that's what i think probably a lot of people would speculate i i don't know i really have no idea what"
+      },
+      {
+        "start": 255640,
+        "stop": 255968,
+        "text": " you know the one thing that's remarkable is they always manage to pull a trick out of their hat"
+      },
+      {
+        "start": 255968,
+        "stop": 256624,
+        "text": " and keep things going you know so it's almost safe to bet on that i suppose i think it's it's"
+      },
+      {
+        "start": 256624,
+        "stop": 257232,
+        "text": " interesting our sponsor tail scale i noticed was super savvy about the way they raised funds"
+      },
+      {
+        "start": 257232,
+        "stop": 257880,
+        "text": " recently in december of last year or somewhere around there like i think their leadership clearly"
+      },
+      {
+        "start": 257880,
+        "stop": 258352,
+        "text": " saw this downturn coming and made some really clever moves to invest long term in their"
+      },
+      {
+        "start": 258352,
+        "stop": 258784,
+        "text": " infrastructure because i think they suspected that you know the money printers were stopping as well"
+      },
+      {
+        "start": 258784,
+        "stop": 259088,
+        "text": " and there's so there's tech companies out there that will thrive in this environment"
+      },
+      {
+        "start": 259144,
+        "stop": 259752,
+        "text": " i'm legitimately a little nervous about it you know it's sort of like i'm just a monkey in a zoo"
+      },
+      {
+        "start": 259752,
+        "stop": 260248,
+        "text": " i don't really have any say over what the zookeepers do so i should just sit back and try"
+      },
+      {
+        "start": 260248,
+        "stop": 260920,
+        "text": " to enjoy my cage and swing from the branches and see what happens i mean i think actually in some"
+      },
+      {
+        "start": 260920,
+        "stop": 261736,
+        "text": " ways you and i are our better position if we had a staff of 30 40 or 100 i think you and i would"
+      },
+      {
+        "start": 261736,
+        "stop": 262320,
+        "text": " probably be in more of a panic mode right now oh yeah oh yeah so we'll see batten down the"
+      },
+      {
+        "start": 262320,
+        "stop": 263136,
+        "text": " hatches another storm approaches always an uplifting show for you guys tailscale.com"
+      },
+      {
+        "start": 263136,
+        "stop": 263696,
+        "text": " slash coder go there to get a free personal account for up to 20 devices you can build"
+      },
+      {
+        "start": 263696,
+        "stop": 264408,
+        "text": " a mesh vpn with zero config all powered by wireguards noise protocol that's tailscale the"
+      },
+      {
+        "start": 264408,
+        "stop": 264976,
+        "text": " magic though is all the tooling around it you can quickly set up any machine any device in this"
+      },
+      {
+        "start": 264976,
+        "stop": 265536,
+        "text": " tailscale network in seconds it allows you to manage ssh connections between your boxes it has"
+      },
+      {
+        "start": 265536,
+        "stop": 266016,
+        "text": " airdrop like functionality so you can send files between all of your tailscale networked machines"
+      },
+      {
+        "start": 266016,
+        "stop": 266720,
+        "text": " your devices your linux boxes windows mac android you name it i use it on a raspberry pi i use it on"
+      },
+      {
+        "start": 266720,
+        "stop": 267208,
+        "text": " my vms i use it on my physical systems i even install on my home assistant instance using the"
+      },
+      {
+        "start": 267208,
+        "stop": 267776,
+        "text": " home assistant add-on it's just super powerful and it puts all of my devices on a flat network with"
+      },
+      {
+        "start": 267776,
+        "stop": 268200,
+        "text": " static ip's and you can throw dns in there now you're doing name resolution doesn't matter"
+      },
+      {
+        "start": 268200,
+        "stop": 268800,
+        "text": " if you're at home the coffee shop you're at work it's all the same ip all protected by wirecard"
+      },
+      {
+        "start": 268800,
+        "stop": 269216,
+        "text": " it's a mesh network that gets up and running in under two minutes and they've got so many great"
+      },
+      {
+        "start": 269216,
+        "stop": 269560,
+        "text": " features that just take it to the next level that once you start using those different things like"
+      },
+      {
+        "start": 269560,
+        "stop": 270168,
+        "text": " subnet routing or like i mentioned this tailscale send like these tools you start combining them and"
+      },
+      {
+        "start": 270168,
+        "stop": 270664,
+        "text": " it really improves your workflow it makes it possible to get access to files and services"
+      },
+      {
+        "start": 270664,
+        "stop": 271232,
+        "text": " regardless of where you're at without ever having to open up a firewall port i've closed all my"
+      },
+      {
+        "start": 271232,
+        "stop": 271768,
+        "text": " firewall ports no more inbound traffic from the internet that's great so go see for yourself go"
+      },
+      {
+        "start": 271768,
+        "stop": 272288,
+        "text": " see why i love it so much why everybody here at jb uses it and try it for free for up to 20 devices"
+      },
+      {
+        "start": 272288,
+        "stop": 272952,
+        "text": " at tailscale.com slash coder one more time to support the show you go to tailscale.com slash coder"
+      },
+      {
+        "start": 272992,
+        "stop": 273408,
+        "text": " you know the reason why i've been wanting to talk about this with you is because i think"
+      },
+      {
+        "start": 273408,
+        "stop": 274296,
+        "text": " one undeniable kind of interesting retrospective aspect of this show is we have stumbled into"
+      },
+      {
+        "start": 274296,
+        "stop": 274936,
+        "text": " documenting really interesting trends apple's pivot to services microsoft's pivot to embracing"
+      },
+      {
+        "start": 274936,
+        "stop": 275408,
+        "text": " open source buying github like that whole trajectory where they went our show has covered"
+      },
+      {
+        "start": 275408,
+        "stop": 276032,
+        "text": " the span of microsoft hates linux to microsoft loves linux and now they're you know now let's"
+      },
+      {
+        "start": 276032,
+        "stop": 276384,
+        "text": " we know where they're at like we've covered a lot of interesting trends docker obviously we'd love"
+      },
+      {
+        "start": 276384,
+        "stop": 277064,
+        "text": " to mention and i think the one that we're stumbling into now only because we're older and we've seen"
+      },
+      {
+        "start": 277064,
+        "stop": 277672,
+        "text": " a few things now we kind of see it coming i think we're watching a reshaping of our tech industry"
+      },
+      {
+        "start": 277672,
+        "stop": 278232,
+        "text": " a reshaping of the very industry that you and i have watched develop over the last decade while"
+      },
+      {
+        "start": 278232,
+        "stop": 278952,
+        "text": " the money printer go burr we're watching it now rebuild itself and the question at this point is"
+      },
+      {
+        "start": 278952,
+        "stop": 279592,
+        "text": " is how far does it go is it surface level does it end up being more structural time will tell and i"
+      },
+      {
+        "start": 279592,
+        "stop": 280112,
+        "text": " suspect the real action actually happens next year but i think people that listen to this show"
+      },
+      {
+        "start": 280112,
+        "stop": 280712,
+        "text": " are going to have hopefully a better understanding of what's going on in real time and the great"
+      },
+      {
+        "start": 280712,
+        "stop": 281104,
+        "text": " thing about this show is it's two-way street people send in emails and emails and they're"
+      },
+      {
+        "start": 281104,
+        "stop": 281552,
+        "text": " sending emails and boosts and we start the conversation and i think we actually inevitably"
+      },
+      {
+        "start": 281552,
+        "stop": 282008,
+        "text": " work out what's really going on well before most people get there and it's been a really fascinating"
+      },
+      {
+        "start": 282008,
+        "stop": 282576,
+        "text": " thing to kind of watch over the years of this show and another one of these things it's i am"
+      },
+      {
+        "start": 282576,
+        "stop": 283256,
+        "text": " convinced is happening i'm kind of here for it but it's absolutely happening is it is open zuck"
+      },
+      {
+        "start": 283256,
+        "stop": 283856,
+        "text": " hunting season i was sitting on the couch last night after linux unplugged with wes and i was"
+      },
+      {
+        "start": 283856,
+        "stop": 284400,
+        "text": " just telling wes i was like wes like every sunday i see these pieces come out from fortune business"
+      },
+      {
+        "start": 284400,
+        "stop": 284984,
+        "text": " insider and wall street journal and they're always like these hit pieces on zuckerberg and meta"
+      },
+      {
+        "start": 284984,
+        "stop": 285448,
+        "text": " sometimes they're good and juicy and sometimes they're really just weak sauce but man they crank"
+      },
+      {
+        "start": 285448,
+        "stop": 286016,
+        "text": " them out one of them at least cranks them out on the regular and i refreshed my feeds literally as"
+      },
+      {
+        "start": 286016,
+        "stop": 286664,
+        "text": " i was saying that and i saw a couple of these land that's incredible i have links in the show notes"
+      },
+      {
+        "start": 286664,
+        "stop": 287208,
+        "text": " one is quote this is the headline quote mark zuckerberg's 10 billion plan to make it impossible"
+      },
+      {
+        "start": 287208,
+        "stop": 287992,
+        "text": " for remote workers to hide from bosses done done done you know and what it really comes down to is"
+      },
+      {
+        "start": 287992,
+        "stop": 288416,
+        "text": " well if you're in the metaverse they'll know when you're logged in and we don't even know what the"
+      },
+      {
+        "start": 288416,
+        "stop": 288856,
+        "text": " physical implications are of being in the metaverse all day so that could be bad that's like the the"
+      },
+      {
+        "start": 288856,
+        "stop": 289448,
+        "text": " route damn it suck 1984 wasn't a how-to guide yeah right and then here's the other one that landed"
+      },
+      {
+        "start": 289448,
+        "stop": 290008,
+        "text": " mark zuckerberg should make facebook facebook again the meta ceo should prioritize growing"
+      },
+      {
+        "start": 290008,
+        "stop": 290768,
+        "text": " engagement and revenue on the company's core apps and drop this meta crap and then very quietly"
+      },
+      {
+        "start": 290768,
+        "stop": 291424,
+        "text": " the wire published a retraction they retracted two recent stories about meta's x check program"
+      },
+      {
+        "start": 291424,
+        "stop": 291984,
+        "text": " and says that it's using quote independent external experts to investigate its coverage"
+      },
+      {
+        "start": 291984,
+        "stop": 292552,
+        "text": " overall i think something's going on there and they've discovered a little insider bias now i'm"
+      },
+      {
+        "start": 292552,
+        "stop": 293248,
+        "text": " no uh mark zuckerberg fan but i definitely recognize a sustained media campaign when i see"
+      },
+      {
+        "start": 293248,
+        "stop": 293864,
+        "text": " one there is clearly just people just trying to take mark and meta down it's always either about"
+      },
+      {
+        "start": 293864,
+        "stop": 294520,
+        "text": " mark zuckerberg or how meta is crap every single time and i don't know maybe it gets clicks or"
+      },
+      {
+        "start": 294520,
+        "stop": 294976,
+        "text": " maybe there's just something else at play what do you think is my uh is my bacon tasty uh i think"
+      },
+      {
+        "start": 294976,
+        "stop": 295536,
+        "text": " your bacon's tasty but but it well what kind of bacon though i need i need before i you know well"
+      },
+      {
+        "start": 295536,
+        "stop": 296088,
+        "text": " actually mark zuckerberg hunted this bacon himself and he's smoking oh jesus that's right yeah you"
+      },
+      {
+        "start": 296088,
+        "stop": 296720,
+        "text": " know how he likes to hunt his own meat he's a strange man um the problem is as you were talking"
+      },
+      {
+        "start": 296720,
+        "stop": 297248,
+        "text": " about the zuck i kept picturing the bad guy in batman versus superman the kid who plays lex luther"
+      },
+      {
+        "start": 297360,
+        "stop": 297896,
+        "text": " and i'm honestly i think that's a better you know the facebook movie than the actual the facebook"
+      },
+      {
+        "start": 297896,
+        "stop": 298536,
+        "text": " movie it's it's kind of who he is right like he's i don't know it's it's i'm sure it's a caricature"
+      },
+      {
+        "start": 298536,
+        "stop": 299344,
+        "text": " but have you have you watched him like some of his earlier talks yeah he's gotten better he's"
+      },
+      {
+        "start": 299344,
+        "stop": 299784,
+        "text": " been coached clearly oh yeah his last one with uh who was it wasn't carris for sure it was um"
+      },
+      {
+        "start": 299784,
+        "stop": 300376,
+        "text": " lex friedman lex friedman thank you was was pretty good but like i wouldn't say he is lex luther but"
+      },
+      {
+        "start": 300376,
+        "stop": 300936,
+        "text": " he's definitely luther curious right he's luthera jason the man comes out and says he he wants to"
+      },
+      {
+        "start": 300936,
+        "stop": 301536,
+        "text": " be like octavius caesar that's that's just a big statement right that's just those whose history"
+      },
+      {
+        "start": 301536,
+        "stop": 302192,
+        "text": " is not quite as nerdy as mine that would be the emperor augustus it's just a lot right it's i"
+      },
+      {
+        "start": 302192,
+        "stop": 302936,
+        "text": " don't know i mean he's a rich guy his company has done some uh ethically questionable stuff we could"
+      },
+      {
+        "start": 302936,
+        "stop": 303664,
+        "text": " say and i i do think like all these big companies are kind of evil in their own way in that they are"
+      },
+      {
+        "start": 303664,
+        "stop": 304336,
+        "text": " amoral constructs that are designed to extract as much labor and capital out of the world as possible"
+      },
+      {
+        "start": 304336,
+        "stop": 305024,
+        "text": " while contributing as little as possible but damn they just need a better front man like"
+      },
+      {
+        "start": 305024,
+        "stop": 305728,
+        "text": " i don't know what to say like yeah yeah you can't convince me that like apple's not evil but tim"
+      },
+      {
+        "start": 305728,
+        "stop": 306184,
+        "text": " cook like knows to be like i love alabama football and let's go help out some kids over here and"
+      },
+      {
+        "start": 306184,
+        "stop": 306632,
+        "text": " whatever wherever right did you did you see the video of him at the formula one racing"
+      },
+      {
+        "start": 306632,
+        "stop": 307208,
+        "text": " way waving the no i didn't say oh god he could not look more disinterested i think he was probably"
+      },
+      {
+        "start": 307208,
+        "stop": 307824,
+        "text": " just nervous and focused but with the sunglasses and his overall resting grump face he just could"
+      },
+      {
+        "start": 307824,
+        "stop": 308504,
+        "text": " not look more disinterested in waving the finish flag and the it's so funny you should find it it's"
+      },
+      {
+        "start": 308504,
+        "stop": 308904,
+        "text": " floating around on twitter uh i see i'd rather i don't i don't watch racing but yeah i would"
+      },
+      {
+        "start": 308904,
+        "stop": 309376,
+        "text": " definitely like to see that it's it's i don't know i'm thinking like satya nadella even better example"
+      },
+      {
+        "start": 309376,
+        "stop": 310160,
+        "text": " he seems like a genuinely nice guy but his job is to maximize the amount of capital and labor"
+      },
+      {
+        "start": 310160,
+        "stop": 310784,
+        "text": " microsoft can extract and minimize the amount of contributes that is why they all have this double"
+      },
+      {
+        "start": 310784,
+        "stop": 311328,
+        "text": " irish dutch tax going on with these inversions which by the way no one's talking about now that"
+      },
+      {
+        "start": 311328,
+        "stop": 311712,
+        "text": " we're potentially going to war just throwing that out there yeah we what happened to all like that"
+      },
+      {
+        "start": 311712,
+        "stop": 312104,
+        "text": " was really heating up there for a minute yeah elizabeth warren was up in arms you know they"
+      },
+      {
+        "start": 312104,
+        "stop": 312616,
+        "text": " were gonna go but now oh no the ridiculous tax structures of these companies are okay"
+      },
+      {
+        "start": 312616,
+        "stop": 313232,
+        "text": " cool maybe suck should take more coaching i mean i you can't convince me he's more evil than than"
+      },
+      {
+        "start": 313232,
+        "stop": 313952,
+        "text": " most of the rest i don't maybe he is right i don't know it's like on the tech ceo scale i'm not sure"
+      },
+      {
+        "start": 313952,
+        "stop": 314472,
+        "text": " on the ceos of all of the world's companies definitely not there's some nasty characters"
+      },
+      {
+        "start": 314472,
+        "stop": 314928,
+        "text": " well like let's take a jaunt over to the fossil fuel industry and meet those gentlemen right like"
+      },
+      {
+        "start": 314928,
+        "stop": 315472,
+        "text": " it's i don't know or the military industrial contracting complex perhaps i think they're"
+      },
+      {
+        "start": 315472,
+        "stop": 315984,
+        "text": " great and they should hire me what's that what's that mr chaney excellent thank you mr vice"
+      },
+      {
+        "start": 315984,
+        "stop": 316792,
+        "text": " president see i didn't get shot ask not what your podcast can boost for you but what you can boost"
+      },
+      {
+        "start": 316792,
+        "stop": 317464,
+        "text": " for your podcast trev dev boosted in with 2000 sats all right the uniform crap is just another"
+      },
+      {
+        "start": 317464,
+        "stop": 317872,
+        "text": " expensive distraction i have two drawers in the house a shirt drawer in a bottom store buy"
+      },
+      {
+        "start": 317872,
+        "stop": 318400,
+        "text": " whatever t-shirts or jeans that you like and worry less about the tomato sauce damn you know he's"
+      },
+      {
+        "start": 318400,
+        "stop": 318864,
+        "text": " coming in hot there i should say really i i probably should have played coming in hot with"
+      },
+      {
+        "start": 318864,
+        "stop": 319672,
+        "text": " the booth yeah that's hot i feel like it's a lot of upfront thought and and figuring out but then"
+      },
+      {
+        "start": 319672,
+        "stop": 320088,
+        "text": " years of not having to think about it you're paying your taxes early is that that's what you're saying"
+      },
+      {
+        "start": 320088,
+        "stop": 320648,
+        "text": " i kinda yeah yeah it's like i'm buying a lifetime membership to like easy clothing but i i gotta pay"
+      },
+      {
+        "start": 320648,
+        "stop": 321112,
+        "text": " the fee up front uh that's kind of my thought although we'll see because i i am worried that"
+      },
+      {
+        "start": 321112,
+        "stop": 321512,
+        "text": " i get a uniform and then like i'm bored with it in a month what happens if you get a uniform"
+      },
+      {
+        "start": 321512,
+        "stop": 322184,
+        "text": " in like four years one piece is discontinued yeah i i don't know because that seems super possible"
+      },
+      {
+        "start": 322184,
+        "stop": 322656,
+        "text": " i've thought about do i like i mean if i really liked it i would probably every now and then try"
+      },
+      {
+        "start": 322656,
+        "stop": 323216,
+        "text": " to buy a couple of extra just so i'd have i mean you know and then i suppose if it if it if it"
+      },
+      {
+        "start": 323216,
+        "stop": 323624,
+        "text": " if it ran out i could always do a uniform update yeah it seems like a lot of work though i mean"
+      },
+      {
+        "start": 323624,
+        "stop": 324064,
+        "text": " that's like a distro update i'm not sure i won't even touch that anonymous pleb boosted in with a"
+      },
+      {
+        "start": 324064,
+        "stop": 324824,
+        "text": " row of ducks this old duck still got it 2222 sats corporatism is doomed capitalism is innate to"
+      },
+      {
+        "start": 324824,
+        "stop": 325504,
+        "text": " humans and critical for civilization fyi i'm using bitcoin and lightning to send anonymous messages"
+      },
+      {
+        "start": 325504,
+        "stop": 326160,
+        "text": " and tips right now anonymity with bitcoin is possible with the right tools yeah fair enough"
+      },
+      {
+        "start": 326160,
+        "stop": 326760,
+        "text": " fair enough i suppose there there are ways you can also do coin joins and whatnot to uh hide"
+      },
+      {
+        "start": 326760,
+        "stop": 327656,
+        "text": " your coins but it's not perfect i would be careful marcel boosted in with 1701 enterprise sats make"
+      },
+      {
+        "start": 327656,
+        "stop": 328240,
+        "text": " it so in america does the first amendment protect you if you say you're a medical doctor or a"
+      },
+      {
+        "start": 328240,
+        "stop": 328784,
+        "text": " financial advisor if you're not i'm actually curious i didn't think of the freedom of speech"
+      },
+      {
+        "start": 328784,
+        "stop": 329336,
+        "text": " angle but i'm a canadian and we don't have that per se that's totally a thing in canada i have"
+      },
+      {
+        "start": 329336,
+        "stop": 329808,
+        "text": " a master's in electrical engineering but i'm not quote an engineer because i didn't do an exam"
+      },
+      {
+        "start": 329808,
+        "stop": 330272,
+        "text": " and pay my fees wow how about that so he has a master's in electrical engineering but he's not"
+      },
+      {
+        "start": 330272,
+        "stop": 330720,
+        "text": " considered an engineer i think if you went around and said you're a doctor or a financial advisor"
+      },
+      {
+        "start": 330720,
+        "stop": 331136,
+        "text": " you might have the right to say that but you also have the right to get your ass sued"
+      },
+      {
+        "start": 331136,
+        "stop": 331408,
+        "text": " well wouldn't well yeah we might get your ass kicked but wouldn't it be"
+      },
+      {
+        "start": 331408,
+        "stop": 332040,
+        "text": " i mean we're not lawyers right but until you actually commit fraud you're just a jackass"
+      },
+      {
+        "start": 332040,
+        "stop": 332720,
+        "text": " like if every untrue statement that you heard was a crime i encourage our canadian listeners to come"
+      },
+      {
+        "start": 332720,
+        "stop": 333392,
+        "text": " to a bar in the american south they're they call them tall tales they're just bullsh*t yeah uh"
+      },
+      {
+        "start": 333392,
+        "stop": 333768,
+        "text": " everybody be in jail yeah or if you think about like all the influencers who exaggerate their"
+      },
+      {
+        "start": 333768,
+        "stop": 334272,
+        "text": " credentials on you know the social media sites all of instagram just gone yeah right yeah"
+      },
+      {
+        "start": 334272,
+        "stop": 334960,
+        "text": " i don't think it would work yeah so you could say dumb stuff generally it's if you like rob somebody"
+      },
+      {
+        "start": 334960,
+        "stop": 335448,
+        "text": " or attempt to commit fraud you're you're probably guilty of a crime again not attorneys but isn't"
+      },
+      {
+        "start": 335448,
+        "stop": 335864,
+        "text": " that why that kid who threw that stupid party got in trouble i forgot his name but you can like"
+      },
+      {
+        "start": 335864,
+        "stop": 336256,
+        "text": " pretend to be this rich party planner it's when you actually take people's money that you've"
+      },
+      {
+        "start": 336256,
+        "stop": 336800,
+        "text": " the guy who got them all fema had to go help the rappers and the hip-hop folks remember"
+      },
+      {
+        "start": 336800,
+        "stop": 337440,
+        "text": " oh is it not the fire island thing are you yeah it wasn't it was something yeah fire it was fire"
+      },
+      {
+        "start": 337440,
+        "stop": 337976,
+        "text": " festival or something that was yeah okay all right right the crime wasn't his instagram feed"
+      },
+      {
+        "start": 337976,
+        "stop": 338400,
+        "text": " and he was lying the whole time the crime was that he actually took their money it's an interesting"
+      },
+      {
+        "start": 338400,
+        "stop": 338760,
+        "text": " point that there's a bit there isn't quite a distinction there between canadians and the"
+      },
+      {
+        "start": 338760,
+        "stop": 339288,
+        "text": " states as well which also i gotta say i think triggered optimus gray last week he came in with"
+      },
+      {
+        "start": 339288,
+        "stop": 340040,
+        "text": " 2048 sats b-o-o-s-t mike i was triggered canada mexico brazil are in america what you call america"
+      },
+      {
+        "start": 340040,
+        "stop": 340624,
+        "text": " is the usa the united states of america oh god we do use america in place of usa here but canadians"
+      },
+      {
+        "start": 340624,
+        "stop": 341160,
+        "text": " are also americans canadians are not united states citizens though sorry i had to i just"
+      },
+      {
+        "start": 341160,
+        "stop": 341920,
+        "text": " got triggered you know i had this from family up in canada when i referred to the states as america"
+      },
+      {
+        "start": 341920,
+        "stop": 342664,
+        "text": " i got pulled aside and i got a talking to like you need to understand something this is all america"
+      },
+      {
+        "start": 342664,
+        "stop": 343320,
+        "text": " the continent is america and they are very annoyed by this this is something that they take quite"
+      },
+      {
+        "start": 343320,
+        "stop": 343896,
+        "text": " seriously and you know what that's fair i just wonder is optimus is he is is he a sneaky hidden"
+      },
+      {
+        "start": 343896,
+        "stop": 344528,
+        "text": " canadian uh i'm not sure why he got upset enjoying his tim hortons and not sharing it yes i wonder"
+      },
+      {
+        "start": 344528,
+        "stop": 345096,
+        "text": " all right uh we're gonna round out our last couple of boosts this one is also a row of ducks"
+      },
+      {
+        "start": 345096,
+        "stop": 345720,
+        "text": " things are looking up for all my duck this row of decks came in from purple dog my car is eight years"
+      },
+      {
+        "start": 345720,
+        "stop": 346280,
+        "text": " old my phone gets updates three to five years at best i just want open standards in any device that"
+      },
+      {
+        "start": 346280,
+        "stop": 346880,
+        "text": " can implement it so this is something i wonder if there's going to become a diy community around"
+      },
+      {
+        "start": 346880,
+        "stop": 347328,
+        "text": " electric cars you already kind of see it there's youtube channels that build their own electric"
+      },
+      {
+        "start": 347328,
+        "stop": 348032,
+        "text": " cars but electric cars are a lot less complicated than a gas or diesel vehicle you know you can get"
+      },
+      {
+        "start": 348032,
+        "stop": 348712,
+        "text": " a couple electric motors a battery pack that can be platforms that get sold as kits it really feels"
+      },
+      {
+        "start": 348712,
+        "stop": 349544,
+        "text": " like cars are turning into the next geeky tech landscape my buddy alex on self-hosted bought"
+      },
+      {
+        "start": 349544,
+        "stop": 350240,
+        "text": " this equipment that he hooks up to the odb2 port on his golf and now he can adjust things like the"
+      },
+      {
+        "start": 350240,
+        "stop": 350896,
+        "text": " noise and sounds that his exhaust makes he can tweak things he was able to get astronomical"
+      },
+      {
+        "start": 350896,
+        "stop": 351312,
+        "text": " increase in horsepower just by adjusting things in software and then you eventually need to replace"
+      },
+      {
+        "start": 351312,
+        "stop": 351936,
+        "text": " components to accommodate for it but all of it is just tunable as different software profiles because"
+      },
+      {
+        "start": 351936,
+        "stop": 352752,
+        "text": " the platform that that gulf r is built on is also used in outies and they have that same engine in a"
+      },
+      {
+        "start": 352752,
+        "stop": 353240,
+        "text": " van and they have that same engine in a passat and they just use it in these different vehicles"
+      },
+      {
+        "start": 353240,
+        "stop": 353696,
+        "text": " with they swap out some of the components maybe some things are a little more robust than other"
+      },
+      {
+        "start": 353696,
+        "stop": 354168,
+        "text": " parts and they put a different software stack on there and he got that software stack and he put"
+      },
+      {
+        "start": 354168,
+        "stop": 354872,
+        "text": " it on his gulf r and he got a huge increase in horsepower and it's just you know it's a tinkerers"
+      },
+      {
+        "start": 354872,
+        "stop": 355376,
+        "text": " thing it's a whole community around tinkering and messing with this stuff i find that interesting"
+      },
+      {
+        "start": 355376,
+        "stop": 355760,
+        "text": " yeah i think that could happen right there's always been a kind of a car enthusiast community"
+      },
+      {
+        "start": 355760,
+        "stop": 356544,
+        "text": " so why not i like it yeah i hope it sticks nev boost in with 2008 sats boost in 2008 did you"
+      },
+      {
+        "start": 356544,
+        "stop": 357312,
+        "text": " know that the number three search term on google was what is java behind financial crisis and then"
+      },
+      {
+        "start": 357312,
+        "stop": 358256,
+        "text": " who is obama oh how far the world has come always mike is a guy's uh eos e host what's e host is that"
+      },
+      {
+        "start": 358256,
+        "stop": 359120,
+        "text": " a magic thing oh god is this e h o s that's a guy useful no maybe just means that as a guy your ethos"
+      },
+      {
+        "start": 359120,
+        "stop": 359744,
+        "text": " has fallen in love with common lisp and lua oh no oh my god nev says he has a dedicated emacs machine"
+      },
+      {
+        "start": 359744,
+        "stop": 360536,
+        "text": " could you think about that a computer in your room that only runs emacs is this a thing people"
+      },
+      {
+        "start": 360536,
+        "stop": 361072,
+        "text": " are doing does anybody else out there have a computer that only does one thing and is it a"
+      },
+      {
+        "start": 361072,
+        "stop": 361624,
+        "text": " full computer did you just ask emma and emacs people how they're running emacs no no i'm"
+      },
+      {
+        "start": 361624,
+        "stop": 362032,
+        "text": " wondering like do some people have like a machine that does something else like a dedicated computer"
+      },
+      {
+        "start": 362032,
+        "stop": 362552,
+        "text": " that just runs a single application oh yeah dude what about all the all the uh all the plex people"
+      },
+      {
+        "start": 362552,
+        "stop": 363048,
+        "text": " right yeah well maybe a media server or something but i'm talking like a pc or something maybe i"
+      },
+      {
+        "start": 363048,
+        "stop": 363520,
+        "text": " mean maybe nev's doing a tablet but i'm just trying to picture like a desktop pc with a mouse"
+      },
+      {
+        "start": 363520,
+        "stop": 364184,
+        "text": " and a keyboard and a screen a tower pc that's just running all the time but nothing but emacs"
+      },
+      {
+        "start": 364184,
+        "stop": 364872,
+        "text": " you can live in emacs i i i'm just nev is blowing my mind and also you should square out your neck"
+      },
+      {
+        "start": 364872,
+        "stop": 365600,
+        "text": " beard yeah absolutely yeah yeah just thank you we got 20 000 sats for mitch that's the developer of"
+      },
+      {
+        "start": 365600,
+        "stop": 366184,
+        "text": " the podverse app podverse is an open source gpl podcasting tododo compatible app for android mac"
+      },
+      {
+        "start": 366184,
+        "stop": 367192,
+        "text": " linux ios well i say mac i'm in i'm in ios and the web try it out it's great we also got 2048 sats"
+      },
+      {
+        "start": 367192,
+        "stop": 367736,
+        "text": " from r30s and uh thank everybody else who boosted in or streamed in we didn't make it on the show"
+      },
+      {
+        "start": 367736,
+        "stop": 368168,
+        "text": " we do just select some of them but we read all of them and i'm working eventually we have a"
+      },
+      {
+        "start": 368168,
+        "stop": 368696,
+        "text": " couple of projects in the pipeline but we will eventually probably pipe in the boost for coder"
+      },
+      {
+        "start": 368696,
+        "stop": 369176,
+        "text": " like into a slack channel or something so they're even easier for everybody to see but we'll work on"
+      },
+      {
+        "start": 369176,
+        "stop": 369696,
+        "text": " that it's actually pretty awesome dave jones is a is a master i love the system he built like i"
+      },
+      {
+        "start": 369696,
+        "stop": 370336,
+        "text": " don't know if he intended to build the perfect system for us but he created like a a rust back"
+      },
+      {
+        "start": 370336,
+        "stop": 370944,
+        "text": " end for these boosts they get stored in a database and there's an api it's oh it's really quite choice"
+      },
+      {
+        "start": 370944,
+        "stop": 371648,
+        "text": " so we're going to leverage that to uh send the boost promatically to different team members based"
+      },
+      {
+        "start": 371648,
+        "stop": 372152,
+        "text": " on like what show they participate in and all that kind of stuff it's it's coming one day down"
+      },
+      {
+        "start": 372152,
+        "stop": 372768,
+        "text": " the road we're also working on a special members channel for our coder qa team so they'll have a"
+      },
+      {
+        "start": 372768,
+        "stop": 373256,
+        "text": " way to send in special messages and we're working on although this is all really early so you're"
+      },
+      {
+        "start": 373256,
+        "stop": 373648,
+        "text": " going to hear me talk about this stuff for a while but we're working on ways to upgrade the member"
+      },
+      {
+        "start": 373648,
+        "stop": 374256,
+        "text": " feeds with new podcasting 2.0 features as well it's very exciting it's a lot of work it's some"
+      },
+      {
+        "start": 374256,
+        "stop": 374832,
+        "text": " big changes for us but uh it's all in the pipeline so you can become a member at coderqa.co you'll"
+      },
+      {
+        "start": 374832,
+        "stop": 375296,
+        "text": " get the coderly report when we record it soon it'll be slightly delayed this quarter but we"
+      },
+      {
+        "start": 375296,
+        "stop": 375760,
+        "text": " will get it out to you i've been trying to brainstorm on a topic too so i'll chat with"
+      },
+      {
+        "start": 375760,
+        "stop": 376184,
+        "text": " you about that offline i got an idea oh but mr dominic is there anywhere you want to send the"
+      },
+      {
+        "start": 376184,
+        "stop": 376976,
+        "text": " people this week i'm at twitter at dominico and go to alice.dev if you need any automation or data"
+      },
+      {
+        "start": 376976,
+        "stop": 377568,
+        "text": " conversion goodness absolutely you can join the show live we do it on mondays at 9 a.m pacific"
+      },
+      {
+        "start": 377568,
+        "stop": 378256,
+        "text": " noon eastern over at jupiter.to links to what we talked about today are coder.show/489 you find our"
+      },
+      {
+        "start": 378256,
+        "stop": 378632,
+        "text": " feed over there that's also our contact page if you want to send an email into the show we do"
+      },
+      {
+        "start": 378632,
+        "stop": 379232,
+        "text": " appreciate and read all of those as well and then last but not least i suppose you could follow the"
+      },
+      {
+        "start": 379232,
+        "stop": 379736,
+        "text": " show on the twitter or something i don't know you could then you know when it's out at coder radio"
+      },
+      {
+        "start": 379736,
+        "stop": 380184,
+        "text": " show what i would do is i'd just subscribe in a podcast now then you don't need to follow us on"
+      },
+      {
+        "start": 380184,
+        "stop": 380784,
+        "text": " twitter and you still know when it's out that's i'm a podcast pro so that's a pro tip all right"
+      },
+      {
+        "start": 380784,
+        "stop": 381136,
+        "text": " everyone thank you so much for joining us on this week's episode of the coder radio program"
+      },
+      {
+        "start": 381136,
+        "stop": 382312,
+        "text": " and we'll see you right back here next week"
+      },
+      {
+        "start": 382312,
+        "stop": 382362,
+        "text": " you"
+      },
+      {
+        "start": 382362,
+        "stop": 382412,
+        "text": " you"
+      },
+      {
+        "start": 382412,
+        "stop": 382462,
+        "text": " you"
+      },
+      {
+        "start": 382462,
+        "stop": 382512,
+        "text": " you"
+      },
+      {
+        "start": 382512,
+        "stop": 382562,
+        "text": " you"
+      },
+      {
+        "start": 382762,
+        "stop": 382812,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 2495,
+      "nanos": 59705898
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 489: Luther Curious",
+    "pictures": [],
+    "duration": {
+      "secs": 3810,
+      "nanos": 820000000
+    },
+    "unique_id": "http://coder.show/489"
+  },
+  "episode": {
+    "title": "Luther Curious | Coder Radio 489",
+    "description": "One of the most challenging aspects of being an independent developer, and our thoughts on Microsoft's recent bad news.",
+    "content": "<p><p>One of the most challenging aspects of being an independent developer, and our thoughts on Microsoft&#39;s recent bad news.</p><p>Sponsored By:</p><ul><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://twitter.com/dominucco/status/1583883671819681792\" title=\"Michael Dominick on Twitter\" rel=\"nofollow\">Michael Dominick on Twitter</a> &mdash; Been offline but meet the Dominicks!</li><li><a href=\"https://www.vice.com/en/article/vvapy4/man-fined-dollar500-for-crime-of-writing-i-am-an-engineer-in-an-email-to-the-government\" title=\"Man Fined $500 for Crime of Writing 'I Am An Engineer'\" rel=\"nofollow\">Man Fined $500 for Crime of Writing 'I Am An Engineer'</a> &mdash; An electronics engineer says he found a flaw in traffic lights. The Oregon engineering board fined him for it.</li><li><a href=\"https://medium.com/awesome-agile/7-estimation-anti-patterns-448cc81f7301\" title=\"7 Estimation Anti-Patterns\" rel=\"nofollow\">7 Estimation Anti-Patterns</a> &mdash; Here are 7 estimation anti-patterns and also how you could fix them. Fair warning: in most cases, there are no easy answers.</li><li><a href=\"https://mashable.com/article/microsoft-more-tech-layoffs\" title=\"Microsoft employees are the latest casualties amid the tech world's layoffs trend\" rel=\"nofollow\">Microsoft employees are the latest casualties amid the tech world's layoffs trend</a> &mdash; Precisely how many people are being put out of work is unclear. Axios’s source said the newly unemployed will number \"under 1,000,\" which is an odd phrasing, since it could mean just about anything, but it’s pretty clear that the total is significant. </li><li><a href=\"https://twitter.com/bdsams/status/1582194267141074944\" title=\"Brad Sams on Twitter\" rel=\"nofollow\">Brad Sams on Twitter</a> &mdash; I get that companies have to make priorities and cuts happen but when that same company is trying to spend $70b on an acquisition…it feels odd</li><li><a href=\"http://web.archive.org/web/20221018203512/https://fortune.com/2022/10/18/mark-zuckerberg-meta-avatars-video-chat-zoom-fatigue/\" title=\"Mark Zuckerberg has a $10 billion plan to make it impossible for remote workers to hide from their bosses\" rel=\"nofollow\">Mark Zuckerberg has a $10 billion plan to make it impossible for remote workers to hide from their bosses</a> &mdash; But some experts are wary of a full-scale pivot to the metaverse. “We would have to carefully attend to the physical implications of headsets,” Roshni Raveendhran, assistant professor at the University of Virginia’s Darden School of Business, told Fortune last year. “Like if it harms our eyesight or implicates our brain functions; we don’t know any of these things now, and we won’t know until there’s more of a continual usage pattern. We need to pay attention to some of those before we go into full-scale adoption.”</li><li><a href=\"https://www.businessinsider.com/mark-zuckerberg-should-dial-down-metaverse-grow-facebook-instagram-whatsapp-2022-10\" title=\"Mark Zuckerberg Should Make Facebook 'Facebook' Again\" rel=\"nofollow\">Mark Zuckerberg Should Make Facebook 'Facebook' Again</a> &mdash; The Meta CEO should prioritize growing engagement and revenue on the company's core apps.</li><li><a href=\"https://www.techmeme.com/221023/p3#a221023p3\" title=\"he Wire retracts two recent stories about Meta's XCheck\" rel=\"nofollow\">he Wire retracts two recent stories about Meta's XCheck</a> &mdash; Earlier this week, The Wire announced its decision to conduct an internal review of its recent coverage of Meta, especially the sources and materials involved in our reporting.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send in a Boost\" rel=\"nofollow\">Send in a Boost</a> &mdash; Upgrade to a Podcasting 2.0 compatible app, send a Boost and get new features.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8968",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15741711/51c79922-1355-4e27-bc8a-57da8cff53b4.mp3",
+      "length": "54093070",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-26T03:05:00+02:00"
+  },
+  "speedup": 1.5273461
+}

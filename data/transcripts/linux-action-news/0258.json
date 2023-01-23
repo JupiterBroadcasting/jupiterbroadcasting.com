@@ -1,0 +1,1427 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 184,
+        "stop": 384,
+        "text": " you"
+      },
+      {
+        "start": 384,
+        "stop": 1104,
+        "text": " action news episode 258 recorded on September 14 2022 I'm Chris and I'm Wes"
+      },
+      {
+        "start": 1104,
+        "stop": 1776,
+        "text": " hello Wes let's do the news we start this week with the malware story that's"
+      },
+      {
+        "start": 1776,
+        "stop": 2344,
+        "text": " leading headlines around the world of Linux dubbed Shiki Taga by the AT&T"
+      },
+      {
+        "start": 2344,
+        "stop": 2880,
+        "text": " alien labs researchers who discovered it it got that name for its extensive use"
+      },
+      {
+        "start": 2880,
+        "stop": 3368,
+        "text": " of the popular she cut a ganai polymorphic encoder which allows the"
+      },
+      {
+        "start": 3368,
+        "stop": 3856,
+        "text": " malware to adapt its code and avoid detection yeah so the report says that"
+      },
+      {
+        "start": 3856,
+        "stop": 4392,
+        "text": " using this encoder the malware runs through several decode loops each loop"
+      },
+      {
+        "start": 4392,
+        "stop": 4848,
+        "text": " kind of like an onion decodes the next layer until the final shellcode payload"
+      },
+      {
+        "start": 4848,
+        "stop": 5376,
+        "text": " is decoded and executed once the malware is on the system and executed also"
+      },
+      {
+        "start": 5376,
+        "stop": 5808,
+        "text": " downloads something called metal which is a meta sploit interpreter that gives"
+      },
+      {
+        "start": 5808,
+        "stop": 6280,
+        "text": " the attacker the ability to control the affected system now the AT&T researchers"
+      },
+      {
+        "start": 6280,
+        "stop": 6608,
+        "text": " who discovered all this didn't say exactly how the initial infection occurs"
+      },
+      {
+        "start": 6608,
+        "stop": 7176,
+        "text": " but did say that she could take it exploits two known vulnerabilities in"
+      },
+      {
+        "start": 7176,
+        "stop": 7816,
+        "text": " Linux they were disclosed back in 2021 a great reminder to keep those systems"
+      },
+      {
+        "start": 7816,
+        "stop": 8368,
+        "text": " patched now the most common use of systems that do get exploited well of"
+      },
+      {
+        "start": 8368,
+        "stop": 8800,
+        "text": " course it's to run the open source multi cryptocurrency minor applications"
+      },
+      {
+        "start": 8800,
+        "stop": 9440,
+        "text": " known as XM rig but as you mentioned there Chris they also install a powerful"
+      },
+      {
+        "start": 9440,
+        "stop": 9904,
+        "text": " meta sploit package that gives the attackers a few different capabilities"
+      },
+      {
+        "start": 9904,
+        "stop": 10424,
+        "text": " including controlling a webcam stealing credentials firing up reverse shells or"
+      },
+      {
+        "start": 10424,
+        "stop": 10848,
+        "text": " just installing whatever additional packages they feel like yeah that point"
+      },
+      {
+        "start": 10848,
+        "stop": 11216,
+        "text": " the box is basically theirs and to further reduce the chances of getting"
+      },
+      {
+        "start": 11216,
+        "stop": 11560,
+        "text": " caught and to avoid the detection by a lot of different network security"
+      },
+      {
+        "start": 11560,
+        "stop": 12040,
+        "text": " products the attackers behind cheeky tagga use the legitimate cloud hosting"
+      },
+      {
+        "start": 12040,
+        "stop": 12560,
+        "text": " service infrastructure out there as their command and control systems"
+      },
+      {
+        "start": 12560,
+        "stop": 13176,
+        "text": " sneaky sneaky now that choice does cost more money and puts the operators of the"
+      },
+      {
+        "start": 13176,
+        "stop": 13632,
+        "text": " malware at risk of being traced and identified by law enforcement but it"
+      },
+      {
+        "start": 13632,
+        "stop": 14024,
+        "text": " offers better stealthiness and compromised systems I mean most"
+      },
+      {
+        "start": 14024,
+        "stop": 14384,
+        "text": " enterprises these days already have a lot of traffic to cloud systems just"
+      },
+      {
+        "start": 14384,
+        "stop": 14800,
+        "text": " makes it a lot harder to identify yeah and you're not likely to just block all"
+      },
+      {
+        "start": 14800,
+        "stop": 15360,
+        "text": " of AWS or something like that the AT&T researchers report a sharp rise in Linux"
+      },
+      {
+        "start": 15360,
+        "stop": 15776,
+        "text": " malware this year in general and they've been advising system admins to just get"
+      },
+      {
+        "start": 15776,
+        "stop": 16352,
+        "text": " your patches get your security updates use endpoint detection and take regular"
+      },
+      {
+        "start": 16352,
+        "stop": 16784,
+        "text": " backups of your most important data seems like good advice to us to hear"
+      },
+      {
+        "start": 16784,
+        "stop": 17376,
+        "text": " more of our thoughts on the matter go check out episode 474 of Linux"
+      },
+      {
+        "start": 17376,
+        "stop": 17632,
+        "text": " unplugged"
+      },
+      {
+        "start": 17632,
+        "stop": 18768,
+        "text": " after 3,800 commits and nearly a year in development open wrt 2203 has been"
+      },
+      {
+        "start": 18768,
+        "stop": 19232,
+        "text": " released for those of you who don't know the open wrt project is a Linux"
+      },
+      {
+        "start": 19232,
+        "stop": 19736,
+        "text": " operating system that targets embedded devices it can be a complete replacement"
+      },
+      {
+        "start": 19736,
+        "stop": 20196,
+        "text": " for vendor supplied firmware on a wide range of wireless routers and non"
+      },
+      {
+        "start": 20196,
+        "stop": 20712,
+        "text": " network devices as well one of the highlights this time around is firewall"
+      },
+      {
+        "start": 20712,
+        "stop": 21372,
+        "text": " 4 that's the new default firewall and it's based on NF tables finally retiring"
+      },
+      {
+        "start": 21372,
+        "stop": 22156,
+        "text": " their old IP tables based firewall 3 system open wrt 2203 also had support"
+      },
+      {
+        "start": 22156,
+        "stop": 22644,
+        "text": " for more than 180 new devices that brings the total number of supported"
+      },
+      {
+        "start": 22644,
+        "stop": 23212,
+        "text": " devices to more than 1500 it also includes some shiny new Wi-Fi 6 gear"
+      },
+      {
+        "start": 23212,
+        "stop": 23932,
+        "text": " that is really nice to see so under the hood of 2203 you got Linux 510 busy box"
+      },
+      {
+        "start": 23932,
+        "stop": 24476,
+        "text": " 1.35 and they're happy to report that the 2038 problem has been handled"
+      },
+      {
+        "start": 24476,
+        "stop": 24784,
+        "text": " there's also just some other great features in this release like the new"
+      },
+      {
+        "start": 24784,
+        "stop": 25144,
+        "text": " kernel subsystem for network switches that could be really interesting and"
+      },
+      {
+        "start": 25144,
+        "stop": 25624,
+        "text": " obviously the most important new update the Lucy bootstrap design now supports"
+      },
+      {
+        "start": 25624,
+        "stop": 26272,
+        "text": " dark mode finally maybe that means I won't have to do everything on the"
+      },
+      {
+        "start": 26272,
+        "stop": 26748,
+        "text": " command line anymore but jokes aside there's a lot of good stuff that came"
+      },
+      {
+        "start": 26748,
+        "stop": 27260,
+        "text": " together to make this a solid release that 2038 problem in particular well"
+      },
+      {
+        "start": 27260,
+        "stop": 27824,
+        "text": " that impacted 32-bit systems and it was actually solved upstream in the muscle"
+      },
+      {
+        "start": 27824,
+        "stop": 28416,
+        "text": " C library but being at the base of most packages that meant getting the fix in"
+      },
+      {
+        "start": 28416,
+        "stop": 28976,
+        "text": " place required a rebuild of nearly all user space applications"
+      },
+      {
+        "start": 28976,
+        "stop": 29500,
+        "text": " that work done though if you've deployed a past release of open wrt you can"
+      },
+      {
+        "start": 29500,
+        "stop": 29992,
+        "text": " upgrade your system using sysupgrade they say your configuration should be"
+      },
+      {
+        "start": 29992,
+        "stop": 30944,
+        "text": " preserved in quote-unquote most cases so maybe to a backup first do you know"
+      },
+      {
+        "start": 30944,
+        "stop": 31364,
+        "text": " what's in your digital wallet well maybe like most of us you don't even have a"
+      },
+      {
+        "start": 31364,
+        "stop": 31900,
+        "text": " digital wallet but the Linux Foundation aims to change that with the newly"
+      },
+      {
+        "start": 31900,
+        "stop": 32496,
+        "text": " announced open wallet foundation the Linux Foundation writes quote the open"
+      },
+      {
+        "start": 32496,
+        "stop": 33012,
+        "text": " wallet foundation or owf will help to develop open source software to increase"
+      },
+      {
+        "start": 33012,
+        "stop": 33496,
+        "text": " interoperability between digital wallets now this is a pretty nebulous"
+      },
+      {
+        "start": 33496,
+        "stop": 33960,
+        "text": " announcement we couldn't get some of the details we wanted for you guys I don't"
+      },
+      {
+        "start": 33960,
+        "stop": 34332,
+        "text": " know of a ton of these digital wallets out there let alone needing to make them"
+      },
+      {
+        "start": 34332,
+        "stop": 34668,
+        "text": " interoperate it doesn't seem that the Linux Foundation has any intention to"
+      },
+      {
+        "start": 34668,
+        "stop": 35200,
+        "text": " create a new standard and the owf will not publish a wallet of its own rather"
+      },
+      {
+        "start": 35200,
+        "stop": 35644,
+        "text": " their goal is to just bring the community together to build an open"
+      },
+      {
+        "start": 35644,
+        "stop": 36116,
+        "text": " source software engine they say that can be used by anyone to create digital"
+      },
+      {
+        "start": 36116,
+        "stop": 36700,
+        "text": " wallets the Linux Foundation's executive director Jim Zimlin said this quote we"
+      },
+      {
+        "start": 36700,
+        "stop": 37044,
+        "text": " are convinced that digital wallets will play a critical role for digital"
+      },
+      {
+        "start": 37044,
+        "stop": 37540,
+        "text": " societies open software is the key to interoperability and security we are"
+      },
+      {
+        "start": 37540,
+        "stop": 37920,
+        "text": " delighted to host the open wallet foundation and excited for its potential"
+      },
+      {
+        "start": 37920,
+        "stop": 38564,
+        "text": " the owf is a brainchild of Daniel Goldschieder CEO of open banking"
+      },
+      {
+        "start": 38564,
+        "stop": 39016,
+        "text": " startup yes calm though today's announcement reveals there's actually a"
+      },
+      {
+        "start": 39016,
+        "stop": 39524,
+        "text": " broad array of buy-in from multiple different industry players including"
+      },
+      {
+        "start": 39524,
+        "stop": 40204,
+        "text": " Okta, Ping Identity, Accenture, CVS Health, and the OpenID Foundation among a few"
+      },
+      {
+        "start": 40204,
+        "stop": 40648,
+        "text": " other different public and private entities well if you want to know more"
+      },
+      {
+        "start": 40648,
+        "stop": 41052,
+        "text": " about the open wallet foundation it was featured in a keynote presentation at"
+      },
+      {
+        "start": 41052,
+        "stop": 41584,
+        "text": " the open source summit in Europe which in theory will have a video released to"
+      },
+      {
+        "start": 41584,
+        "stop": 42148,
+        "text": " the public sometime maybe when they get to it"
+      },
+      {
+        "start": 42296,
+        "stop": 42908,
+        "text": " also announced at the open source summit Europe the Linux Foundation is launching"
+      },
+      {
+        "start": 42908,
+        "stop": 43644,
+        "text": " Linux Foundation Europe and today we're announcing a new structure at the Linux"
+      },
+      {
+        "start": 43644,
+        "stop": 44456,
+        "text": " Foundation our Linux Foundation Europe entity this is a organization based in"
+      },
+      {
+        "start": 44456,
+        "stop": 45020,
+        "text": " Europe of European incorporation that will allow European organizations to"
+      },
+      {
+        "start": 45020,
+        "stop": 45624,
+        "text": " participate regionally here and have reciprocity with the Linux Foundation"
+      },
+      {
+        "start": 45624,
+        "stop": 46144,
+        "text": " globally around the world the Linux Foundation also announced the results of"
+      },
+      {
+        "start": 46144,
+        "stop": 46572,
+        "text": " their first ever survey of the European open source community they report that"
+      },
+      {
+        "start": 46572,
+        "stop": 47072,
+        "text": " nearly half 47% of respondents said the value of open source software to their"
+      },
+      {
+        "start": 47072,
+        "stop": 47696,
+        "text": " organization has increased over the previous 12 months however only 29% of"
+      },
+      {
+        "start": 47696,
+        "stop": 48084,
+        "text": " survey participants said they have seen an increase in contribution efforts at"
+      },
+      {
+        "start": 48084,
+        "stop": 48608,
+        "text": " their organization over the past 12 months closing this gap however will be"
+      },
+      {
+        "start": 48608,
+        "stop": 49028,
+        "text": " part of the Linux Foundation Europe's mission according to them with messaging"
+      },
+      {
+        "start": 49028,
+        "stop": 49476,
+        "text": " aimed at not only about how to contribute to open source but why an"
+      },
+      {
+        "start": 49476,
+        "stop": 49940,
+        "text": " organization should contribute to open source"
+      },
+      {
+        "start": 49940,
+        "stop": 50652,
+        "text": " well the Linux Foundation racked up yet another win this week when the company"
+      },
+      {
+        "start": 50652,
+        "stop": 51052,
+        "text": " formerly known as Facebook announced that they'd be transferring the PyTorch"
+      },
+      {
+        "start": 51052,
+        "stop": 51808,
+        "text": " project to the Linux Foundation for a bit of context as of August 2022 PyTorch"
+      },
+      {
+        "start": 51808,
+        "stop": 52200,
+        "text": " was one of the world's five fastest growing open source software communities"
+      },
+      {
+        "start": 52200,
+        "stop": 52760,
+        "text": " alongside big names like the Linux kernel and kubernetes so you're probably"
+      },
+      {
+        "start": 52760,
+        "stop": 53144,
+        "text": " not surprised to hear that PyTorch is by far one of the world's most important"
+      },
+      {
+        "start": 53144,
+        "stop": 53624,
+        "text": " and successful machine learning software projects today and so it's become"
+      },
+      {
+        "start": 53624,
+        "stop": 54104,
+        "text": " pretty clear that it's outgrowing its place of origin in many ways and the"
+      },
+      {
+        "start": 54104,
+        "stop": 54508,
+        "text": " project noted in the announcement quote we are excited to work with project"
+      },
+      {
+        "start": 54508,
+        "stop": 54956,
+        "text": " maintainers contributors and the community to transition PyTorch to a"
+      },
+      {
+        "start": 54956,
+        "stop": 55412,
+        "text": " neutral home where it can continue to enjoy strong growth and rapid innovation"
+      },
+      {
+        "start": 55412,
+        "stop": 55984,
+        "text": " the announcement made by Mark Zuckerberg himself on Facebook makes it clear that"
+      },
+      {
+        "start": 55984,
+        "stop": 56408,
+        "text": " the new board and members small come from the commercial community including"
+      },
+      {
+        "start": 56408,
+        "stop": 57000,
+        "text": " representatives from Google Amazon Nvidia AMD and Microsoft meaning they've"
+      },
+      {
+        "start": 57000,
+        "stop": 57512,
+        "text": " made the official transition from the project that is seen as belonging to one"
+      },
+      {
+        "start": 57512,
+        "stop": 58032,
+        "text": " company to now it's a project owned by all the big companies and there's really"
+      },
+      {
+        "start": 58032,
+        "stop": 58384,
+        "text": " a lot of big foundation energy coming off the Linux Foundation folks over all"
+      },
+      {
+        "start": 58384,
+        "stop": 58980,
+        "text": " of this they are stressing that this move makes PyTorch more industry neutral"
+      },
+      {
+        "start": 58980,
+        "stop": 59428,
+        "text": " and they believe that it's vital for future growth writing quote by creating"
+      },
+      {
+        "start": 59428,
+        "stop": 59888,
+        "text": " a neutral home the PyTorch foundation we are collectively locking in a future of"
+      },
+      {
+        "start": 59888,
+        "stop": 60864,
+        "text": " transparency communal governance and unprecedented scale for all we've got"
+      },
+      {
+        "start": 60864,
+        "stop": 61308,
+        "text": " some bad news for you chromebook enthusiasts out there and looks like the"
+      },
+      {
+        "start": 61308,
+        "stop": 61794,
+        "text": " Google pixel book is no more with reports surfacing that not only has"
+      },
+      {
+        "start": 61794,
+        "stop": 62280,
+        "text": " Google canceled the upcoming Chromebook but it's also disbanded the team who"
+      },
+      {
+        "start": 62280,
+        "stop": 62706,
+        "text": " are working on it this might be a bit of a surprise there were some hints that"
+      },
+      {
+        "start": 62706,
+        "stop": 63166,
+        "text": " Google was working on a new pixel book as recently as last year's Google hi-oh"
+      },
+      {
+        "start": 63166,
+        "stop": 63936,
+        "text": " but like so many Google products the main problem here was the high price add"
+      },
+      {
+        "start": 63936,
+        "stop": 64360,
+        "text": " to that the lack of sales and just generally not a lot of interest for an"
+      },
+      {
+        "start": 64360,
+        "stop": 64936,
+        "text": " expensive Chromebook and I don't think this really is that surprising it's kind"
+      },
+      {
+        "start": 64936,
+        "stop": 65384,
+        "text": " of a repeat of a story we've seen a few too many times Google makes something"
+      },
+      {
+        "start": 65384,
+        "stop": 65862,
+        "text": " that's actually pretty good but it doesn't really commit and no one buys it"
+      },
+      {
+        "start": 65862,
+        "stop": 66962,
+        "text": " and it eventually gets canceled same old same old news at 11 Linode com slash"
+      },
+      {
+        "start": 66962,
+        "stop": 67344,
+        "text": " land go there to get a hundred dollars in 60-day credit on a new account that's"
+      },
+      {
+        "start": 67344,
+        "stop": 67636,
+        "text": " a great way to support the show while you're getting yourself something Linode"
+      },
+      {
+        "start": 67636,
+        "stop": 68072,
+        "text": " is fast and reliable cloud hosting with the absolute best support in the business"
+      },
+      {
+        "start": 68072,
+        "stop": 68588,
+        "text": " real humans every day all day long Linodes architected in a way where they"
+      },
+      {
+        "start": 68588,
+        "stop": 68972,
+        "text": " had to compete on the merits of their business the quality of their service"
+      },
+      {
+        "start": 68972,
+        "stop": 69420,
+        "text": " and their customer service and that's probably why we run everything on the"
+      },
+      {
+        "start": 69420,
+        "stop": 69868,
+        "text": " node because that culture has permeated deep into Linode and it makes everything"
+      },
+      {
+        "start": 69868,
+        "stop": 70608,
+        "text": " stable reliable fast easy dashboard great API good documentation when you"
+      },
+      {
+        "start": 70608,
+        "stop": 71116,
+        "text": " start at the point of we have to compete on the merits of our product it really"
+      },
+      {
+        "start": 71116,
+        "stop": 71468,
+        "text": " makes the whole thing great I mean I just really connect with that they've"
+      },
+      {
+        "start": 71468,
+        "stop": 71920,
+        "text": " been doing this for nearly 19 years they're not a big player in this market"
+      },
+      {
+        "start": 71920,
+        "stop": 72332,
+        "text": " because they got a bunch of crazy funding and so they just built something"
+      },
+      {
+        "start": 72332,
+        "stop": 72672,
+        "text": " overnight and just tried to get as much users as possible to then make it"
+      },
+      {
+        "start": 72672,
+        "stop": 73308,
+        "text": " profitable that's not why Linode's big Linode isn't my favorite place to host"
+      },
+      {
+        "start": 73308,
+        "stop": 73732,
+        "text": " services because they built a book business first that needed a lot of"
+      },
+      {
+        "start": 73732,
+        "stop": 74200,
+        "text": " infrastructure and so then they started reselling their excess capacity and you"
+      },
+      {
+        "start": 74200,
+        "stop": 74640,
+        "text": " know that's not how they did it you know what I'm gonna say they did it by"
+      },
+      {
+        "start": 74640,
+        "stop": 74868,
+        "text": " building something great that's why they're willing to give you a hundred"
+      },
+      {
+        "start": 74868,
+        "stop": 75280,
+        "text": " dollars to go try it out to kick the tires and see what Linode can do for you"
+      },
+      {
+        "start": 75280,
+        "stop": 75648,
+        "text": " and they're 30 to 50 percent cheaper than those hyperscalers out there they"
+      },
+      {
+        "start": 75648,
+        "stop": 76020,
+        "text": " have 11 data centers around the world for you to choose from great features"
+      },
+      {
+        "start": 76020,
+        "stop": 76464,
+        "text": " such as s3 compatible object storage cloud firewall simple clear backups"
+      },
+      {
+        "start": 76464,
+        "stop": 76884,
+        "text": " kubernetes support terraform support ansible support I could go on and on"
+      },
+      {
+        "start": 76884,
+        "stop": 77256,
+        "text": " they've got a price to performance ratio that's gonna work for you you're really"
+      },
+      {
+        "start": 77256,
+        "stop": 77724,
+        "text": " gonna like it so go build something go learn something and try it for yourself"
+      },
+      {
+        "start": 77724,
+        "stop": 78196,
+        "text": " while you support the show go to linode.com/lan get that $100 in 60 day"
+      },
+      {
+        "start": 78196,
+        "stop": 78612,
+        "text": " credit and kick the tires for yourself see what we've been talking about"
+      },
+      {
+        "start": 78612,
+        "stop": 78912,
+        "text": " linode.com/lan"
+      },
+      {
+        "start": 78912,
+        "stop": 79712,
+        "text": " And a big thank you to collide for making this episode possible collide.com/lan"
+      },
+      {
+        "start": 79712,
+        "stop": 80252,
+        "text": " collide is endpoint security that uses the most powerful untapped resource in"
+      },
+      {
+        "start": 80252,
+        "stop": 80712,
+        "text": " IT the end users if you're trying to achieve security goals maybe it's for"
+      },
+      {
+        "start": 80712,
+        "stop": 81092,
+        "text": " yourself maybe it's for a third-party audit maybe it's for a boss the"
+      },
+      {
+        "start": 81092,
+        "stop": 81524,
+        "text": " conventional wisdom is you got to treat every device like it's Fort Knox"
+      },
+      {
+        "start": 81524,
+        "stop": 82052,
+        "text": " old-school device management tools like MDM's they force disruptive agents onto"
+      },
+      {
+        "start": 82052,
+        "stop": 82500,
+        "text": " your devices they make the computers run slower they often are restrictive and"
+      },
+      {
+        "start": 82500,
+        "stop": 82932,
+        "text": " sometimes if not always they seem to bring their own vulnerabilities with"
+      },
+      {
+        "start": 82932,
+        "stop": 83808,
+        "text": " them it just has a way of pitting the users against IT I don't like that vibe"
+      },
+      {
+        "start": 83808,
+        "stop": 84248,
+        "text": " it's not good you don't want the two camps to be enemies you don't want to"
+      },
+      {
+        "start": 84248,
+        "stop": 84604,
+        "text": " bring in something that creates its own security problems and then users"
+      },
+      {
+        "start": 84604,
+        "stop": 85136,
+        "text": " perform their own shadow IT to get around it that always breaks down"
+      },
+      {
+        "start": 85136,
+        "stop": 85796,
+        "text": " collide does things differently instead of forcing changes on users collide"
+      },
+      {
+        "start": 85796,
+        "stop": 86300,
+        "text": " sends them security recommendations via slack collide will automatically notify"
+      },
+      {
+        "start": 86300,
+        "stop": 86624,
+        "text": " your team when their devices are insecure and give them step-by-step"
+      },
+      {
+        "start": 86624,
+        "stop": 87120,
+        "text": " instructions on how to solve the problem by reaching out to employees via"
+      },
+      {
+        "start": 87120,
+        "stop": 87556,
+        "text": " friendly slack DM and then educating about company policies collide can help"
+      },
+      {
+        "start": 87556,
+        "stop": 87956,
+        "text": " you build a culture in which everyone contributes to security because everyone"
+      },
+      {
+        "start": 87956,
+        "stop": 88592,
+        "text": " understands how and why to do it and for IT admins collide provides a single"
+      },
+      {
+        "start": 88592,
+        "stop": 88908,
+        "text": " dashboard that lets you monitor the security of your entire fleet maybe"
+      },
+      {
+        "start": 88908,
+        "stop": 89352,
+        "text": " they're on a Mac Windows or yeah of course Linux you can see at a glance"
+      },
+      {
+        "start": 89352,
+        "stop": 89768,
+        "text": " which employees have their disks encrypted their OS up-to-date and a"
+      },
+      {
+        "start": 89768,
+        "stop": 90100,
+        "text": " password manager installed make it easy to prove compliance to your auditors"
+      },
+      {
+        "start": 90100,
+        "stop": 90648,
+        "text": " your customers or leadership so that's collide user centered cross-platform and"
+      },
+      {
+        "start": 90648,
+        "stop": 91096,
+        "text": " security for teams that slack you can meet your compliance goals by putting"
+      },
+      {
+        "start": 91096,
+        "stop": 91804,
+        "text": " users first visit collide.com slash land to find out how and when you go there"
+      },
+      {
+        "start": 91804,
+        "stop": 92160,
+        "text": " they're gonna hook you up with a free goodie bag that includes a t-shirt just"
+      },
+      {
+        "start": 92160,
+        "stop": 92680,
+        "text": " for activating a free trial that's right free swag for a free trial so that's k"
+      },
+      {
+        "start": 92680,
+        "stop": 93632,
+        "text": " o l i de dot-com slash l a n collide.com slash land"
+      },
+      {
+        "start": 93632,
+        "stop": 94380,
+        "text": " as we record the Linux plumbers conference is underway it's built as the"
+      },
+      {
+        "start": 94380,
+        "stop": 94812,
+        "text": " premier event for developers working at all levels of the Linux plumbing layers"
+      },
+      {
+        "start": 94812,
+        "stop": 95448,
+        "text": " and often focuses on new features and systems being built for Linux this year"
+      },
+      {
+        "start": 95448,
+        "stop": 96116,
+        "text": " it's taking place in person and remote in Dublin Ireland and as you might"
+      },
+      {
+        "start": 96116,
+        "stop": 96636,
+        "text": " expect an event like this is very technical the information density in the"
+      },
+      {
+        "start": 96636,
+        "stop": 97132,
+        "text": " videos that we have linked in the notes is extreme and something else that won't"
+      },
+      {
+        "start": 97132,
+        "stop": 97608,
+        "text": " surprise you I bet is rust in the kernel is one of the more popular topics this"
+      },
+      {
+        "start": 97608,
+        "stop": 98224,
+        "text": " year and specifically a talk that was given by a Western Digital staffer so my"
+      },
+      {
+        "start": 98224,
+        "stop": 98664,
+        "text": " name is Andreas and I'm with Western Digital and I'm going to talk about work"
+      },
+      {
+        "start": 98664,
+        "stop": 99192,
+        "text": " I've been doing on an NVMe driver written in Rust. Now you might ask"
+      },
+      {
+        "start": 99192,
+        "stop": 99680,
+        "text": " yourself why are they working on a Rust based NVMe kernel driver when the"
+      },
+      {
+        "start": 99680,
+        "stop": 100244,
+        "text": " existing C based driver is in pretty good shape well there are actually a few"
+      },
+      {
+        "start": 100244,
+        "stop": 100688,
+        "text": " pretty good reasons to start it's just a relatively straightforward job without a"
+      },
+      {
+        "start": 100688,
+        "stop": 101188,
+        "text": " lot of weird complicated corner cases it's also a good test because this is a"
+      },
+      {
+        "start": 101188,
+        "stop": 101712,
+        "text": " high-performance code path so it can kind of put Rust to the test it's also"
+      },
+      {
+        "start": 101712,
+        "stop": 102300,
+        "text": " pretty widely deployed and easy to test and that existing C implementation well"
+      },
+      {
+        "start": 102300,
+        "stop": 102672,
+        "text": " it can function as a mature reference implementation to compare the new guy to"
+      },
+      {
+        "start": 102672,
+        "stop": 103456,
+        "text": " and very impressively the early Rust code that was on demo at the talk it's"
+      },
+      {
+        "start": 103456,
+        "stop": 104136,
+        "text": " keeping up with the tried and true C based driver and we see that for the SN840"
+      },
+      {
+        "start": 104136,
+        "stop": 104960,
+        "text": " drive we do like around 700 IOPS and for the up-chain drive we do twice that"
+      },
+      {
+        "start": 104960,
+        "stop": 105448,
+        "text": " number and you can see the C and the Rust driver perform quite similarly"
+      },
+      {
+        "start": 105448,
+        "stop": 105984,
+        "text": " and in what seems like a great indication of just how fast the progress"
+      },
+      {
+        "start": 105984,
+        "stop": 106452,
+        "text": " has been here that new Rust driver can actually achieve the maximum throughput"
+      },
+      {
+        "start": 106452,
+        "stop": 107172,
+        "text": " possible on the drive in the unloaded system the both drivers are able to push"
+      },
+      {
+        "start": 107172,
+        "stop": 108084,
+        "text": " the the drives to their rated specification thank you thank you there"
+      },
+      {
+        "start": 108084,
+        "stop": 108532,
+        "text": " were also other Rust goodies demonstrated including a file 9 server"
+      },
+      {
+        "start": 108532,
+        "stop": 109132,
+        "text": " modern open CL features using Rust but the conference itself the Linux plumbers"
+      },
+      {
+        "start": 109132,
+        "stop": 109616,
+        "text": " conference it spans all aspects of Linux plumbing it's not just a Rust event and"
+      },
+      {
+        "start": 109616,
+        "stop": 110180,
+        "text": " it has been live streaming the entire time yeah just right over on their"
+      },
+      {
+        "start": 110180,
+        "stop": 110664,
+        "text": " YouTube channel it's pretty easy to find and if you do take a look you'll find a"
+      },
+      {
+        "start": 110664,
+        "stop": 111336,
+        "text": " treasure trove of technical videos talks debates and a whole lot more one thing"
+      },
+      {
+        "start": 111336,
+        "stop": 111884,
+        "text": " that caught my eye was a new development with IO U-ring now if you've forgotten"
+      },
+      {
+        "start": 111884,
+        "stop": 112400,
+        "text": " IO U-ring is a mechanism for quickly performing a batch of operations within"
+      },
+      {
+        "start": 112400,
+        "stop": 112900,
+        "text": " the kernel on behalf of a user space process you can kind of think of it as"
+      },
+      {
+        "start": 112900,
+        "stop": 113324,
+        "text": " something of the new default mechanism if you need to perform multiple syscalls"
+      },
+      {
+        "start": 113324,
+        "stop": 114092,
+        "text": " all at once now early on as the name might suggest the main use case for IO"
+      },
+      {
+        "start": 114092,
+        "stop": 114644,
+        "text": " U-ring has been asynchronous IO where expensive context switches between user"
+      },
+      {
+        "start": 114644,
+        "stop": 115228,
+        "text": " space and kernel space can be a real limitation and add to your latency but"
+      },
+      {
+        "start": 115228,
+        "stop": 115868,
+        "text": " much like friend of the show eBPF IO U-ring has started to find a myriad of"
+      },
+      {
+        "start": 115868,
+        "stop": 116352,
+        "text": " different use cases in the kernel including a fascinating recent attempt at"
+      },
+      {
+        "start": 116352,
+        "stop": 116840,
+        "text": " implementing block devices in user space and at the plumbers conference this week"
+      },
+      {
+        "start": 116840,
+        "stop": 117356,
+        "text": " we learned of yet another potential use area that the kernel could benefit from"
+      },
+      {
+        "start": 117356,
+        "stop": 117884,
+        "text": " this model spawning new processes this new work comes from Josh triplet a"
+      },
+      {
+        "start": 117884,
+        "stop": 118404,
+        "text": " former notable Intel Linux engineer and co-lead of the rust language team he's"
+      },
+      {
+        "start": 118404,
+        "stop": 118792,
+        "text": " been focused on build systems recently and if you've ever worked in that space"
+      },
+      {
+        "start": 118792,
+        "stop": 119264,
+        "text": " you know these build systems spawn a huge number of processes so as it stands"
+      },
+      {
+        "start": 119264,
+        "stop": 119804,
+        "text": " now spawning a process consists of basically three steps you create the new"
+      },
+      {
+        "start": 119804,
+        "stop": 120188,
+        "text": " process you twiddle the attributes of the new process and then you load the"
+      },
+      {
+        "start": 120188,
+        "stop": 120592,
+        "text": " new process image and for this well we presently have three choices you can fork"
+      },
+      {
+        "start": 120592,
+        "stop": 121220,
+        "text": " v fork you can pause expand fork is by far the most common of those methods"
+      },
+      {
+        "start": 121220,
+        "stop": 121712,
+        "text": " going back to the early days of Unix but it comes with a fair bit of complexity"
+      },
+      {
+        "start": 121712,
+        "stop": 122256,
+        "text": " and overhead that's where those other two mechanisms come in v fork and posix"
+      },
+      {
+        "start": 122256,
+        "stop": 122768,
+        "text": " spawn they do allow you to avoid some of those downsides but that too comes at a"
+      },
+      {
+        "start": 122768,
+        "stop": 123288,
+        "text": " price posix spawn for instance only permits a very limited set of twiddling"
+      },
+      {
+        "start": 123288,
+        "stop": 123916,
+        "text": " and well v fork is considered so unsafe that it's difficult to recommend to"
+      },
+      {
+        "start": 123916,
+        "stop": 124868,
+        "text": " anyone but an expert and so thus was born I owe you ring spawn a mechanism for"
+      },
+      {
+        "start": 124868,
+        "stop": 125460,
+        "text": " launching empty new processes with an associated I owe you ring the goal here"
+      },
+      {
+        "start": 125460,
+        "stop": 125916,
+        "text": " is to handle the pre exec steps when you're launching a new process entirely"
+      },
+      {
+        "start": 125916,
+        "stop": 126516,
+        "text": " in the kernel with no user space required eliminating the need for calling"
+      },
+      {
+        "start": 126516,
+        "stop": 127012,
+        "text": " fork or even v fork and eliminating some of the overhead that comes from having"
+      },
+      {
+        "start": 127012,
+        "stop": 127536,
+        "text": " a copy page table information now we should probably stress here that this"
+      },
+      {
+        "start": 127536,
+        "stop": 128092,
+        "text": " work is really just getting started but early benchmarks show that I owe you"
+      },
+      {
+        "start": 128092,
+        "stop": 128672,
+        "text": " ring spawn is much faster than fork or posix spawn and it's even up to 10%"
+      },
+      {
+        "start": 128672,
+        "stop": 129368,
+        "text": " faster than v fork while being a whole lot safer and more flexible and according"
+      },
+      {
+        "start": 129368,
+        "stop": 129920,
+        "text": " to Josh he and Ian's expo the IOU ring and block device subsistent maintainer"
+      },
+      {
+        "start": 129920,
+        "stop": 130340,
+        "text": " and as we've mentioned here on the show something of a performance optimization"
+      },
+      {
+        "start": 130340,
+        "stop": 131004,
+        "text": " wizard himself well they have plans in the works to speed things up even more I"
+      },
+      {
+        "start": 131004,
+        "stop": 131634,
+        "text": " love that you get a real sense that there are some performance hounds on the"
+      },
+      {
+        "start": 131634,
+        "stop": 132132,
+        "text": " job these days and they are laying the foundation for massive optimizations that"
+      },
+      {
+        "start": 132132,
+        "stop": 132604,
+        "text": " no doubt will benefit the enterprise but are absolutely going to benefit everyday"
+      },
+      {
+        "start": 132604,
+        "stop": 133148,
+        "text": " Linux users as well you really see the work of the future getting started today"
+      },
+      {
+        "start": 133148,
+        "stop": 133568,
+        "text": " at the plumbers conference and this is just one of those chances we have as"
+      },
+      {
+        "start": 133568,
+        "stop": 134040,
+        "text": " free software users to watch this stuff get made and discussed and demonstrated"
+      },
+      {
+        "start": 134040,
+        "stop": 134568,
+        "text": " and debated in real time you can really follow the leading edge of development"
+      },
+      {
+        "start": 134568,
+        "stop": 134924,
+        "text": " so check out the links in the show notes and of course we'll keep an eye on all"
+      },
+      {
+        "start": 134924,
+        "stop": 135256,
+        "text": " of it and everything in the world of Linux and open source so don't miss a"
+      },
+      {
+        "start": 135256,
+        "stop": 135720,
+        "text": " single episode of Linux action news over to Linux action news comm slash subscribe"
+      },
+      {
+        "start": 135720,
+        "stop": 136316,
+        "text": " for all the ways to get new episodes and Linux action news comm slash contact to"
+      },
+      {
+        "start": 136316,
+        "stop": 136748,
+        "text": " let us know about exciting new use cases for IOU ring that you're considering and"
+      },
+      {
+        "start": 136748,
+        "stop": 137224,
+        "text": " we are hitting the road for our West Coast tour if you're up and down the i5"
+      },
+      {
+        "start": 137224,
+        "stop": 137614,
+        "text": " corridor check out meetup comm slash Jupiter broadcasting and sign up for one"
+      },
+      {
+        "start": 137614,
+        "stop": 138024,
+        "text": " of our meetups we'd love to see it but don't worry even if you can't make it"
+      },
+      {
+        "start": 138024,
+        "stop": 138536,
+        "text": " this show will be back next week with our take on the latest Linux and open"
+      },
+      {
+        "start": 138536,
+        "stop": 139196,
+        "text": " source news thanks for joining us and that's all the news for this week"
+      },
+      {
+        "start": 139196,
+        "stop": 139402,
+        "text": " you"
+      },
+      {
+        "start": 139402,
+        "stop": 139608,
+        "text": " you"
+      },
+      {
+        "start": 139608,
+        "stop": 139814,
+        "text": " you"
+      },
+      {
+        "start": 139814,
+        "stop": 140020,
+        "text": " you"
+      },
+      {
+        "start": 140020,
+        "stop": 140226,
+        "text": " you"
+      },
+      {
+        "start": 140226,
+        "stop": 140432,
+        "text": " you"
+      },
+      {
+        "start": 140432,
+        "stop": 140638,
+        "text": " you"
+      },
+      {
+        "start": 140704,
+        "stop": 140910,
+        "text": " you"
+      },
+      {
+        "start": 140910,
+        "stop": 141116,
+        "text": " you"
+      },
+      {
+        "start": 141116,
+        "stop": 141322,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 856,
+      "nanos": 304409284
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 258",
+    "pictures": [],
+    "duration": {
+      "secs": 1406,
+      "nanos": 2000000
+    },
+    "unique_id": "http://linuxactionnews.com/258"
+  },
+  "episode": {
+    "title": "Linux Action News 258",
+    "description": "The Linux Foundation takes a victory lap, Google kills another community-loved project, and key moments from the Linux Plumbers Conference.",
+    "content": "<p><p>The Linux Foundation takes a victory lap, Google kills another community-loved project, and key moments from the Linux Plumbers Conference.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://cybersecurity.att.com/blogs/labs-research/shikitega-new-stealthy-malware-targeting-linux\" title=\"Shikitega -  AT&T Alien Labs\" rel=\"nofollow\">Shikitega -  AT&amp;T Alien Labs</a> &mdash; New stealthy malware targeting Linux </li><li><a href=\"https://linuxunplugged.com/474\" title=\"LINUX Unplugged 474: Linux’s Malware Inevitability\" rel=\"nofollow\">LINUX Unplugged 474: Linux’s Malware Inevitability</a></li><li><a href=\"https://arstechnica.com/information-technology/2022/09/new-linux-malware-combines-unusual-stealth-with-a-full-suite-of-capabilities/\" title=\"New Linux malware combines unusual stealth with a full suite of capabilities\" rel=\"nofollow\">New Linux malware combines unusual stealth with a full suite of capabilities</a> &mdash; \"Threat actors continue to search for ways to deliver malware in new ways to stay under the radar and avoid detection,\" AT&amp;T Alien Labs researcher Ofer Caspi wrote.</li><li><a href=\"https://www.bleepingcomputer.com/news/security/new-linux-malware-evades-detection-using-multi-stage-deployment/\" title=\"New Linux malware evades detection using multi-stage deployment\" rel=\"nofollow\">New Linux malware evades detection using multi-stage deployment</a></li><li><a href=\"https://www.theregister.com/2022/09/10/in_brief_security/\" title=\"Shape-shifting cryptominer savaging Linux endpoints and IoT\" rel=\"nofollow\">Shape-shifting cryptominer savaging Linux endpoints and IoT</a> &mdash; The malware was dubbed \"Shikitega\" for its extensive use of the popular Shikata Ga Nai polymorphic encoder, which allows the malware to \"mutate\" its code to avoid detection. Shikitega alters its code each time it runs through one of several decoding loops that AT&amp;T said each deliver multiple attacks, beginning with an ELF file that's just 370 bytes. </li><li><a href=\"https://www.darkreading.com/vulnerabilities-threats/next-gen-linux-malware-takes-over-devices-unique-toolset\" title=\"Next-Gen Linux Malware Takes Over Devices With Unique Tool Set\" rel=\"nofollow\">Next-Gen Linux Malware Takes Over Devices With Unique Tool Set</a></li><li><a href=\"https://www.phoronix.com/news/OpenWrt-22.03-Released\" title=\"OpenWrt 22.03 Released With Updated Firewall, Support For 180+ New Devices - Phoronix\" rel=\"nofollow\">OpenWrt 22.03 Released With Updated Firewall, Support For 180+ New Devices - Phoronix</a></li><li><a href=\"https://openwrt.org/releases/22.03/notes-22.03.0\" title=\"[OpenWrt Wiki] OpenWrt 22.03.0 - First Stable Release - 6 September 2022\" rel=\"nofollow\">[OpenWrt Wiki] OpenWrt 22.03.0 - First Stable Release - 6 September 2022</a></li><li><a href=\"https://www.linuxfoundation.org/press/linux-foundation-announces-an-intent-to-form-the-openwallet-foundation\" title=\"Linux Foundation Announces Open Wallet Foundation\" rel=\"nofollow\">Linux Foundation Announces Open Wallet Foundation</a> &mdash; The Linux Foundation, a global nonprofit organization enabling innovation through open source, today announced the intention to form the OpenWallet Foundation (OWF), a new collaborative effort to develop open source software to support interoperability for a wide range of wallet use cases.</li><li><a href=\"https://techcrunch.com/2022/09/13/linux-foundation-announces-the-openwallet-foundation-to-develop-interoperable-digital-wallets/\" title=\"Linux Foundation announces the OpenWallet Foundation to develop interoperable digital wallets\" rel=\"nofollow\">Linux Foundation announces the OpenWallet Foundation to develop interoperable digital wallets</a></li><li><a href=\"https://www.linuxfoundation.org/blog/blog/welcoming-pytorch-to-the-linux-foundation\" title=\"Welcoming PyTorch to the Linux Foundation\" rel=\"nofollow\">Welcoming PyTorch to the Linux Foundation</a></li><li><a href=\"https://debugpointnews.com/meta-pytorch-linux/\" title=\"Facebook Transfers PyTorch AI Framework to Linux Foundation for Governance\" rel=\"nofollow\">Facebook Transfers PyTorch AI Framework to Linux Foundation for Governance</a> &mdash; Today we are more than thrilled to welcome PyTorch to the Linux Foundation. Honestly, it’s hard to capture how big a deal this is for us in a single post but I’ll try. </li><li><a href=\"https://pytorch.org/blog/PyTorchfoundation/\" title=\"PyTorch strengthens its governance by joining the Linux Foundation\" rel=\"nofollow\">PyTorch strengthens its governance by joining the Linux Foundation</a></li><li><a href=\"https://www.techradar.com/news/google-pixelbook-is-no-more-proving-the-world-wasnt-ready-for-premium-chromebooks\" title=\"Google Pixelbook is no more, proving the world wasn’t ready for premium Chromebooks | TechRadar\" rel=\"nofollow\">Google Pixelbook is no more, proving the world wasn’t ready for premium Chromebooks | TechRadar</a></li><li><a href=\"https://www.youtube.com/c/LinuxPlumbersConference/videos?app=desktop&view=2&flow=list&live_view=501&cbrd=1\" title=\"Linux Plumbers Conference - YouTube\" rel=\"nofollow\">Linux Plumbers Conference - YouTube</a></li><li><a href=\"https://www.phoronix.com/news/LPC-2022-Rust-Linux\" title=\"LPC 2022: Rust Linux Drivers Capable Of Achieving Performance Comparable To C Code - Phoronix\" rel=\"nofollow\">LPC 2022: Rust Linux Drivers Capable Of Achieving Performance Comparable To C Code - Phoronix</a></li><li><a href=\"https://www.phoronix.com/news/Linux-LPC2022-io_uring_spawn\" title=\"IO_uring Continues To Prove Very Exciting: Promising io_uring_spawn Announced\" rel=\"nofollow\">IO<em>uring Continues To Prove Very Exciting: Promising io</em>uring<em>spawn Announced</a> &mdash; It also continues to be relentlessly optimized by Jens Axboe and others for maximum performance potential. The latest innovation around IO</em>uring that was announced this week at Linux Plumbers Conference 2022 in Dublin is io<em>uring</em>spawn.</li><li><a href=\"https://lwn.net/Articles/903855/\" title=\"An io_uring-based user-space block driver\" rel=\"nofollow\">An io_uring-based user-space block driver</a></li><li><a href=\"https://lwn.net/Articles/907685/\" title=\"A pair of Rust kernel modules\" rel=\"nofollow\">A pair of Rust kernel modules</a></li><li><a href=\"https://lwn.net/Articles/907405/\" title=\"Compiling Rust with GCC: an update\" rel=\"nofollow\">Compiling Rust with GCC: an update</a></li><li><a href=\"https://www.phoronix.com/news/Mesa-Rust-OpenCL-Merging-Soon\" title=\"Mesa’s Rust OpenCL Implementation Merged\" rel=\"nofollow\">Mesa’s Rust OpenCL Implementation Merged</a></li><li><a href=\"https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/15439\" title=\"Adding rusticl (!15439) · Merge requests · Mesa / mesa · GitLab\" rel=\"nofollow\">Adding rusticl (!15439) · Merge requests · Mesa / mesa · GitLab</a></li><li><a href=\"https://www.youtube.com/watch?v=e2SZoUPhDRg\" title=\"LPC 2022 - Kernel Summit - Lansdowne - YouTube\" rel=\"nofollow\">LPC 2022 - Kernel Summit - Lansdowne - YouTube</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8818",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15642381/c5c0ebc1-87cf-4e39-9d90-7718590f28bc.mp3",
+      "length": "20139500",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-15T03:05:00+02:00"
+  },
+  "speedup": 1.6419418
+}

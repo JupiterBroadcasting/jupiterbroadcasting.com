@@ -1,0 +1,2597 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 400,
+        "text": " Well unfortunately, Alex is out sick this week, but the show"
+      },
+      {
+        "start": 400,
+        "stop": 800,
+        "text": " must go on. We send him our best wishes. But our buddy Joe"
+      },
+      {
+        "start": 800,
+        "stop": 1200,
+        "text": " Resington's here from Late Night Linux and Two and a Half Admins. Joe,"
+      },
+      {
+        "start": 1200,
+        "stop": 1600,
+        "text": " welcome to Self Hosted. Hey Chris, good to be here. I've never been on this"
+      },
+      {
+        "start": 1600,
+        "stop": 2000,
+        "text": " show before. I was just thinking that when I was introducing you. I was thinking"
+      },
+      {
+        "start": 2000,
+        "stop": 2400,
+        "text": " this must be his first time. It's good timing because I know you're"
+      },
+      {
+        "start": 2400,
+        "stop": 2800,
+        "text": " kind of thinking about building a new NAS, so I think that's one of the things we'll get into."
+      },
+      {
+        "start": 2800,
+        "stop": 3200,
+        "text": " It is, but we should address a weird situation that's come up."
+      },
+      {
+        "start": 3200,
+        "stop": 3600,
+        "text": " Alex helped me out by coming on Two and a Half Admins. We recorded that"
+      },
+      {
+        "start": 3600,
+        "stop": 4000,
+        "text": " weeks ago now, so as you're listening to this, that came out yesterday"
+      },
+      {
+        "start": 4000,
+        "stop": 4400,
+        "text": " with Alex, even though he's sick now. It's crazy time math, don't worry"
+      },
+      {
+        "start": 4400,
+        "stop": 4800,
+        "text": " about it, but that explains why he's on Two and a Half Admins, but not this"
+      },
+      {
+        "start": 4800,
+        "stop": 5200,
+        "text": " show, and I'm kind of paying him back by coming here. It worked out,"
+      },
+      {
+        "start": 5200,
+        "stop": 5600,
+        "text": " you know, and when you record ahead it means you have time to"
+      },
+      {
+        "start": 5600,
+        "stop": 6000,
+        "text": " get sick apparently, I should think about that. So I've been rebuilding"
+      },
+      {
+        "start": 6000,
+        "stop": 6400,
+        "text": " my home setup, it's been crazy, the short version is like weeks ago"
+      },
+      {
+        "start": 6400,
+        "stop": 6800,
+        "text": " during my road trip, my Raspberry Pi 4 died, totally unplanned."
+      },
+      {
+        "start": 6800,
+        "stop": 7200,
+        "text": " I had backups, but didn't have any replacement hardware. I tried"
+      },
+      {
+        "start": 7200,
+        "stop": 7600,
+        "text": " doing like a swap where I swapped everything over to my backup Pi. It still"
+      },
+      {
+        "start": 7600,
+        "stop": 8000,
+        "text": " didn't boot, and so I had to make the trip home in the last couple"
+      },
+      {
+        "start": 8000,
+        "stop": 8400,
+        "text": " of weeks while I was waiting for hardware without any of my gear, and it"
+      },
+      {
+        "start": 8400,
+        "stop": 8800,
+        "text": " was horrible. It was absolutely horrible, but I've been steadily rebuilding"
+      },
+      {
+        "start": 8800,
+        "stop": 9200,
+        "text": " and it's at a pretty good spot now. So I feel like I'm on the end of a journey, and you're just"
+      },
+      {
+        "start": 9200,
+        "stop": 9600,
+        "text": " at the beginning of a journey. I know you need a new NAS box, but it sounds like you've got some hardware"
+      },
+      {
+        "start": 9600,
+        "stop": 10000,
+        "text": " so tell us what your quandary is. Right, so I have"
+      },
+      {
+        "start": 10000,
+        "stop": 10400,
+        "text": " currently got a Celeron J1800 box, passively cooled, totally"
+      },
+      {
+        "start": 10400,
+        "stop": 10800,
+        "text": " silent, apart from the disks that's been in it, and that has been doing"
+      },
+      {
+        "start": 10800,
+        "stop": 11200,
+        "text": " the job for me for a couple of years at this point."
+      },
+      {
+        "start": 11200,
+        "stop": 11600,
+        "text": " It was actually kindly donated to me by a late night Linux listener, so"
+      },
+      {
+        "start": 11600,
+        "stop": 12000,
+        "text": " that was really appreciated. It's got only 4GB of RAM in it,"
+      },
+      {
+        "start": 12000,
+        "stop": 12400,
+        "text": " just a few disks, ZFS, with a bit of replication,"
+      },
+      {
+        "start": 12400,
+        "stop": 12800,
+        "text": " and it's working totally fine, except when I have to reboot it. So get this,"
+      },
+      {
+        "start": 12800,
+        "stop": 13200,
+        "text": " I have no idea why, but the only way I can reboot that box"
+      },
+      {
+        "start": 13200,
+        "stop": 13600,
+        "text": " is by hooking a monitor up, turning the monitor on, rebooting it."
+      },
+      {
+        "start": 13600,
+        "stop": 14000,
+        "text": " I can reboot it via SSH no problem, but the monitor has to be there, plugged in"
+      },
+      {
+        "start": 14000,
+        "stop": 14400,
+        "text": " and on, I have to wait for the AMI BIOS thing to come up, and then it"
+      },
+      {
+        "start": 14400,
+        "stop": 14800,
+        "text": " boots and no problem. Oh man, there is like a"
+      },
+      {
+        "start": 14800,
+        "stop": 15200,
+        "text": " dummy video adapter you can get that make it look like a monitor"
+      },
+      {
+        "start": 15200,
+        "stop": 15600,
+        "text": " signal is there, and that sometimes will let them boot without actually"
+      },
+      {
+        "start": 15600,
+        "stop": 16000,
+        "text": " having a monitor connected, but that must not be the only reason you want to replace it,"
+      },
+      {
+        "start": 16000,
+        "stop": 16400,
+        "text": " I mean it's probably getting a little long in the tooth. Well yeah, and it makes me wonder"
+      },
+      {
+        "start": 16400,
+        "stop": 16800,
+        "text": " well, should I replace it with something a bit more powerful? It doesn't use"
+      },
+      {
+        "start": 16800,
+        "stop": 17200,
+        "text": " much power in terms of electricity, we're talking about"
+      },
+      {
+        "start": 17200,
+        "stop": 17600,
+        "text": " 30 something watts I think idle, and only a couple more"
+      },
+      {
+        "start": 17600,
+        "stop": 18000,
+        "text": " under load, because it's so underpowered that it's basically always under load I think."
+      },
+      {
+        "start": 18000,
+        "stop": 18400,
+        "text": " I've got an i5-9600K box, which is"
+      },
+      {
+        "start": 18400,
+        "stop": 18800,
+        "text": " kind of my backup workstation box, because my main workstation is the i9-9900K,"
+      },
+      {
+        "start": 18800,
+        "stop": 19200,
+        "text": " and so it's almost a hot spare for me, I can just take the SSD out,"
+      },
+      {
+        "start": 19200,
+        "stop": 19600,
+        "text": " stick it in the i5 box, and just get going again if anything goes wrong."
+      },
+      {
+        "start": 19600,
+        "stop": 20000,
+        "text": " And it also means that I've got a relatively powerful box to do"
+      },
+      {
+        "start": 20000,
+        "stop": 20400,
+        "text": " just testing of distros and software, and you know I can just do"
+      },
+      {
+        "start": 20400,
+        "stop": 20800,
+        "text": " anything I want on that and just not worry about it. That is nice."
+      },
+      {
+        "start": 20800,
+        "stop": 21200,
+        "text": " I miss having a really good test system, because I've ended up putting all of my machines"
+      },
+      {
+        "start": 21200,
+        "stop": 21600,
+        "text": " into some kind of use now, and I just don't have a machine to just throw a random"
+      },
+      {
+        "start": 21600,
+        "stop": 22000,
+        "text": " distro on and play around. I think my question would be, because you've been living with"
+      },
+      {
+        "start": 22000,
+        "stop": 22400,
+        "text": " this Celeron box for so long, do you plan to run applications"
+      },
+      {
+        "start": 22400,
+        "stop": 22800,
+        "text": " like server-side applications on that machine?"
+      },
+      {
+        "start": 22800,
+        "stop": 23200,
+        "text": " Do you want it to do more than it's currently doing? Well, maybe."
+      },
+      {
+        "start": 23200,
+        "stop": 23600,
+        "text": " Maybe. That's what I'm thinking. At the moment it's not really that feasible to do it,"
+      },
+      {
+        "start": 23600,
+        "stop": 24000,
+        "text": " but if I had more power then maybe I could start thinking about stuff that"
+      },
+      {
+        "start": 24000,
+        "stop": 24400,
+        "text": " I want to do with it. And so this ties into the next situation, right?"
+      },
+      {
+        "start": 24400,
+        "stop": 24800,
+        "text": " So I'm going to be moving, and I'm going to have more space, so I'm going to actually have a TV"
+      },
+      {
+        "start": 24800,
+        "stop": 25200,
+        "text": " finally, instead of just a 27-inch monitor, which is effectively my TV"
+      },
+      {
+        "start": 25200,
+        "stop": 25600,
+        "text": " at the moment. That's just 1080p. So I bought a dirt-cheap"
+      },
+      {
+        "start": 25600,
+        "stop": 26000,
+        "text": " 4K TV that's 58 inches, 400 pounds from"
+      },
+      {
+        "start": 26000,
+        "stop": 26400,
+        "text": " Costco in the UK. I don't know how they make it so cheap."
+      },
+      {
+        "start": 26400,
+        "stop": 26800,
+        "text": " Well, I do know how they make it so cheap, by selling your data, because it's a smart TV."
+      },
+      {
+        "start": 26800,
+        "stop": 27200,
+        "text": " But this thing is not getting connected to my network. Not even a VLAN,"
+      },
+      {
+        "start": 27200,
+        "stop": 27600,
+        "text": " no way. I'm thinking I can kind of kill two birds"
+      },
+      {
+        "start": 27600,
+        "stop": 28000,
+        "text": " with one stone. There's no reason why I can't install a GUI, XFCE,"
+      },
+      {
+        "start": 28000,
+        "stop": 28400,
+        "text": " let's say, on top of my server, and have a NAS"
+      },
+      {
+        "start": 28400,
+        "stop": 28800,
+        "text": " come TV box. But I've been testing"
+      },
+      {
+        "start": 28800,
+        "stop": 29200,
+        "text": " the i5 box, and it's kind of OK for most"
+      },
+      {
+        "start": 29200,
+        "stop": 29600,
+        "text": " stuff at 4K. But trying to play actual"
+      },
+      {
+        "start": 29600,
+        "stop": 30000,
+        "text": " 4K content, it kind of skips a few"
+      },
+      {
+        "start": 30000,
+        "stop": 30400,
+        "text": " ways. It's just a bit laggy here and there, and I think it's too annoying to play 4K"
+      },
+      {
+        "start": 30400,
+        "stop": 30800,
+        "text": " content. And so do I double them up and use that"
+      },
+      {
+        "start": 30800,
+        "stop": 31200,
+        "text": " one, or do I just have a separate NAS and a"
+      },
+      {
+        "start": 31200,
+        "stop": 31600,
+        "text": " separate TV box? I know you have got way more experience with TV stuff."
+      },
+      {
+        "start": 31600,
+        "stop": 32000,
+        "text": " Are you still using the shields for TV? I do have one left."
+      },
+      {
+        "start": 32000,
+        "stop": 32400,
+        "text": " Yeah, they're getting a little long in the tooth, because I have a second gen shield,"
+      },
+      {
+        "start": 32400,
+        "stop": 32800,
+        "text": " and to Nvidia's credit, they continue to update"
+      },
+      {
+        "start": 32800,
+        "stop": 33200,
+        "text": " that thing. Really? I want to say it's been like four or five years, maybe?"
+      },
+      {
+        "start": 33200,
+        "stop": 33600,
+        "text": " Wow. Yeah. The only issue is, is that it's now"
+      },
+      {
+        "start": 33600,
+        "stop": 34000,
+        "text": " running multiple versions of Android since it shipped,"
+      },
+      {
+        "start": 34000,
+        "stop": 34400,
+        "text": " and so it's slow now. It used to be my fastest set top box, and"
+      },
+      {
+        "start": 34400,
+        "stop": 34800,
+        "text": " now it feels kind of slow. But it is really"
+      },
+      {
+        "start": 34800,
+        "stop": 35200,
+        "text": " overall been a solid device. The latest updates added ads"
+      },
+      {
+        "start": 35200,
+        "stop": 35600,
+        "text": " to the Android UI, which I'm not a fan of. So"
+      },
+      {
+        "start": 35600,
+        "stop": 36000,
+        "text": " it's sort of like, you know, like you're saying, you disable the smart TV tracking, but"
+      },
+      {
+        "start": 36000,
+        "stop": 36400,
+        "text": " is the situation much better on Android? Yeah, whereas"
+      },
+      {
+        "start": 36400,
+        "stop": 36800,
+        "text": " a good old GNU/Linux box, I know I'm in complete control of it."
+      },
+      {
+        "start": 36800,
+        "stop": 37200,
+        "text": " Yeah, I mean, Kodi is a good solution too. You know, you could do something"
+      },
+      {
+        "start": 37200,
+        "stop": 37600,
+        "text": " like that and you don't have to worry about it. Where it really is nice is if you have multiple"
+      },
+      {
+        "start": 37600,
+        "stop": 38000,
+        "text": " televisions, because then all of a sudden, you know, you're into some kind of show with"
+      },
+      {
+        "start": 38000,
+        "stop": 38400,
+        "text": " your significant other, you're into episode seven in season three"
+      },
+      {
+        "start": 38400,
+        "stop": 38800,
+        "text": " or whatever, and you watch in the one room, and then you want to pick up some other night"
+      },
+      {
+        "start": 38800,
+        "stop": 39200,
+        "text": " in another room, and you want to be right where you left off. You want the metadata, you"
+      },
+      {
+        "start": 39200,
+        "stop": 39600,
+        "text": " want it all organized by season. That's where it just becomes really nice"
+      },
+      {
+        "start": 39600,
+        "stop": 40000,
+        "text": " to just do a jellyfinner, a Plex, and then, you know, you just throw it all on the server,"
+      },
+      {
+        "start": 40000,
+        "stop": 40400,
+        "text": " you load the app on the NVIDIA shield or whatever, and it really"
+      },
+      {
+        "start": 40400,
+        "stop": 40800,
+        "text": " works pretty well. So that's the direction I chose to go"
+      },
+      {
+        "start": 40800,
+        "stop": 41200,
+        "text": " in this latest build. I actually ended up with Plex again, just"
+      },
+      {
+        "start": 41200,
+        "stop": 41600,
+        "text": " because it's just a little bit smoother, the intro skipping"
+      },
+      {
+        "start": 41600,
+        "stop": 42000,
+        "text": " is better, the hardware decoding works better for me. It's simpler to get the"
+      },
+      {
+        "start": 42000,
+        "stop": 42400,
+        "text": " hardware decoding to work. I just could not get it working with Jellyfoon. And if you"
+      },
+      {
+        "start": 42400,
+        "stop": 42800,
+        "text": " have Intel Quick Sync, it makes a big difference on the performance. It takes"
+      },
+      {
+        "start": 42800,
+        "stop": 43200,
+        "text": " the load off of the CPU. I don't know, I didn't check to see if your CPU has that."
+      },
+      {
+        "start": 43200,
+        "stop": 43600,
+        "text": " I think it does, because it's a 9th gen i5. Yeah, there's"
+      },
+      {
+        "start": 43600,
+        "stop": 44000,
+        "text": " probably a good chance it does, then. Yeah. Can I get that to work locally, though?"
+      },
+      {
+        "start": 44000,
+        "stop": 44400,
+        "text": " Yeah. Oh, sure. Yeah, yeah. Yeah, so it would run either, like,"
+      },
+      {
+        "start": 44400,
+        "stop": 44800,
+        "text": " just with an installed application or through a container, and then it would"
+      },
+      {
+        "start": 44800,
+        "stop": 45200,
+        "text": " do the Quick Sync, it would re-encode the video and send it to wherever you're watching it."
+      },
+      {
+        "start": 45200,
+        "stop": 45600,
+        "text": " Right, because I don't have multiple TVs and multiple"
+      },
+      {
+        "start": 45600,
+        "stop": 46000,
+        "text": " rooms where I want a TV. I just kind of want to do it all in one"
+      },
+      {
+        "start": 46000,
+        "stop": 46400,
+        "text": " box, if possible. You could have, you know, one set up, I definitely"
+      },
+      {
+        "start": 46400,
+        "stop": 46800,
+        "text": " have seen this, one box, it's a NAS, it's also the Kodi box, it's connected"
+      },
+      {
+        "start": 46800,
+        "stop": 47200,
+        "text": " directly to the television, and you just have a keyboard, and you know one of those, like,"
+      },
+      {
+        "start": 47200,
+        "stop": 47600,
+        "text": " RF keyboards, it also has a built-in trackpad. I've seen it, it works."
+      },
+      {
+        "start": 47600,
+        "stop": 48000,
+        "text": " And there's plenty of machine there, because there's no, like, if you have a whole"
+      },
+      {
+        "start": 48000,
+        "stop": 48400,
+        "text": " i5 sitting there doing your NAS, you might as well have it also doing other things."
+      },
+      {
+        "start": 48400,
+        "stop": 48800,
+        "text": " It just seems like, yeah, you totally could. And the only problem is, do you want a PC next to"
+      },
+      {
+        "start": 48800,
+        "stop": 49200,
+        "text": " your television? Well, it's going to go on a sideboard thing,"
+      },
+      {
+        "start": 49200,
+        "stop": 49600,
+        "text": " the TV, and there's room in this IKEA sideboard that we've bought"
+      },
+      {
+        "start": 49600,
+        "stop": 50000,
+        "text": " to put the PC, and what I was thinking is, I can drill"
+      },
+      {
+        "start": 50000,
+        "stop": 50400,
+        "text": " out the back of it and put a fan there, and one in the bottom of it, one"
+      },
+      {
+        "start": 50400,
+        "stop": 50800,
+        "text": " in the back of it, and get enough airflow to keep it cool, and it's"
+      },
+      {
+        "start": 50800,
+        "stop": 51200,
+        "text": " otherwise just closed into a cupboard, so you won't even see it."
+      },
+      {
+        "start": 51200,
+        "stop": 51600,
+        "text": " Yeah, that, now you're talking. Now I'm on board. I like that idea."
+      },
+      {
+        "start": 51600,
+        "stop": 52000,
+        "text": " If it was me, I'd throw a little Odroid H3 in there, because I love that Odroid."
+      },
+      {
+        "start": 52000,
+        "stop": 52400,
+        "text": " I think that thing's the ultimate home PC, and it's got HDMI out,"
+      },
+      {
+        "start": 52400,
+        "stop": 52800,
+        "text": " it's got a pretty good little processor on there, make a good NAS."
+      },
+      {
+        "start": 52800,
+        "stop": 53200,
+        "text": " Yeah, but I've got this box already that is kind of a luxury, because I've got a ton of laptops"
+      },
+      {
+        "start": 53200,
+        "stop": 53600,
+        "text": " as well. I've got an Intraware Apollo, which is kind of my secondary laptop."
+      },
+      {
+        "start": 53600,
+        "stop": 54000,
+        "text": " You could use that as a test machine. Well, yeah, that's what I'm thinking, yeah."
+      },
+      {
+        "start": 54000,
+        "stop": 54400,
+        "text": " Yeah, then I would do it. You know, listener Jeff, who let us"
+      },
+      {
+        "start": 54400,
+        "stop": 54800,
+        "text": " very graciously stay at his place in Sacramento, he has"
+      },
+      {
+        "start": 54800,
+        "stop": 55200,
+        "text": " that set up. He's using Plasma Desktop, if he needs"
+      },
+      {
+        "start": 55200,
+        "stop": 55600,
+        "text": " to drop down to the desktop. You could fire up Kodi"
+      },
+      {
+        "start": 55600,
+        "stop": 56000,
+        "text": " directly on it. It's running Samba file services and NFS"
+      },
+      {
+        "start": 56000,
+        "stop": 56400,
+        "text": " and running a couple of containers for him, and works great."
+      },
+      {
+        "start": 56400,
+        "stop": 56800,
+        "text": " And it's got a couple of disks in there to act as the NAS. It's one PC"
+      },
+      {
+        "start": 56800,
+        "stop": 57200,
+        "text": " doing all those things, and I think that's pretty easy to justify a power draw for in"
+      },
+      {
+        "start": 57200,
+        "stop": 57600,
+        "text": " utility. Yeah, that's exactly what I'm thinking. The only thing is smooth"
+      },
+      {
+        "start": 57600,
+        "stop": 58000,
+        "text": " 4K playback. So if anyone out there has got a suggestion"
+      },
+      {
+        "start": 58000,
+        "stop": 58400,
+        "text": " for software I can run on top of Zobuntu, the LTS,"
+      },
+      {
+        "start": 58400,
+        "stop": 58800,
+        "text": " then let me know. Either email the show, or you can just tweet at me, @joe_risington."
+      },
+      {
+        "start": 59000,
+        "stop": 59400,
+        "text": " Linode.com/ssh. That's where you go to get $100 in"
+      },
+      {
+        "start": 59400,
+        "stop": 59800,
+        "text": " 60-day credit on a new account, and it's a great way to support the show while you're checking out some fast,"
+      },
+      {
+        "start": 59800,
+        "stop": 60200,
+        "text": " reliable cloud hosting. Linode's the best in the best."
+      },
+      {
+        "start": 60200,
+        "stop": 60600,
+        "text": " That's why we picked them for everything we've deployed in the last three years, all of our"
+      },
+      {
+        "start": 60600,
+        "stop": 61000,
+        "text": " new projects. Back into infrastructure we use for our tooling, the stuff that's facing"
+      },
+      {
+        "start": 61000,
+        "stop": 61400,
+        "text": " towards the audience. It's Linode. They've got the best support in the business, real humans,"
+      },
+      {
+        "start": 61400,
+        "stop": 61800,
+        "text": " all day, every single day, so you'll get the help"
+      },
+      {
+        "start": 61800,
+        "stop": 62200,
+        "text": " you need if you ever get stuck. They've built up some great tooling and a great support department"
+      },
+      {
+        "start": 62200,
+        "stop": 62600,
+        "text": " because they've been doing this for nearly 19 years, and they've had to just survive on"
+      },
+      {
+        "start": 62600,
+        "stop": 63000,
+        "text": " the merits of the product. Nobody has it matched, nobody! And they're 30-50%"
+      },
+      {
+        "start": 63000,
+        "stop": 63600,
+        "text": " cheaper than the hyperscalers out there that you really don't want, that don't let you have the full control and"
+      },
+      {
+        "start": 63600,
+        "stop": 64000,
+        "text": " customizability and access to the system that you really want."
+      },
+      {
+        "start": 64000,
+        "stop": 64400,
+        "text": " Linode is going to give you that. They've got a great dashboard, a slick"
+      },
+      {
+        "start": 64400,
+        "stop": 64800,
+        "text": " API, and lots of ways like Ansible and Terraform and Kubernetes to interact"
+      },
+      {
+        "start": 64800,
+        "stop": 65200,
+        "text": " with the overall system. And on top of that, they've got 11 data centers you can choose from"
+      },
+      {
+        "start": 65200,
+        "stop": 65600,
+        "text": " today, a dozen more coming online next year, and features like object storage,"
+      },
+      {
+        "start": 65600,
+        "stop": 66000,
+        "text": " cloud firewall, backups, Kubernetes support, you know, all that stuff."
+      },
+      {
+        "start": 66000,
+        "stop": 66400,
+        "text": " So I don't know, you can either start from the very first principles"
+      },
+      {
+        "start": 66400,
+        "stop": 66800,
+        "text": " and just do a bare box and build up from there, you could deploy one of their"
+      },
+      {
+        "start": 66800,
+        "stop": 67200,
+        "text": " one clicks, or you could use some infrastructure management tools. Maybe it's a great chance to learn some of that stuff."
+      },
+      {
+        "start": 67200,
+        "stop": 67600,
+        "text": " I mean, I don't know. I don't know you. But I have a suspicion"
+      },
+      {
+        "start": 67600,
+        "stop": 68000,
+        "text": " that might be true. So go build something. Go learn something."
+      },
+      {
+        "start": 68000,
+        "stop": 68400,
+        "text": " Try for yourself and support the show and get that $100 by going to Linode.com/ssh"
+      },
+      {
+        "start": 68400,
+        "stop": 68800,
+        "text": " That's Linode.com/ssh"
+      },
+      {
+        "start": 68800,
+        "stop": 69200,
+        "text": " Well, Joe, I've been"
+      },
+      {
+        "start": 69200,
+        "stop": 69600,
+        "text": " re-gearing a lot of sensors and small little edge devices for my"
+      },
+      {
+        "start": 69600,
+        "stop": 70000,
+        "text": " home network. Had to throw some of the old ones out, wanted to replace"
+      },
+      {
+        "start": 70000,
+        "stop": 70400,
+        "text": " a few, and I decided this time around, I'm going to give Zigbee a"
+      },
+      {
+        "start": 70400,
+        "stop": 70800,
+        "text": " try, because Zigbee is an open source wireless and communication standard."
+      },
+      {
+        "start": 70800,
+        "stop": 71200,
+        "text": " It's pretty popular, actually, and it's going to be part of the new Matter standard"
+      },
+      {
+        "start": 71200,
+        "stop": 71600,
+        "text": " as well. So I thought, all right, let's get on the Zigbee train."
+      },
+      {
+        "start": 71600,
+        "stop": 72000,
+        "text": " And I deployed sensors. You know, I probably spent a little more than I should."
+      },
+      {
+        "start": 72000,
+        "stop": 72400,
+        "text": " I do this sometimes. And I got everything all set up, got it all connected into"
+      },
+      {
+        "start": 72400,
+        "stop": 72800,
+        "text": " my home assistant, and now I've discovered about"
+      },
+      {
+        "start": 72800,
+        "stop": 73200,
+        "text": " once every couple of days, several of the devices just drop off my Zigbee"
+      },
+      {
+        "start": 73200,
+        "stop": 73600,
+        "text": " network. They just disappear. Right. Any idea why?"
+      },
+      {
+        "start": 73600,
+        "stop": 74000,
+        "text": " I have a couple of theories. I think in part, a couple of them are pretty low-power devices."
+      },
+      {
+        "start": 74000,
+        "stop": 74400,
+        "text": " And what I've learned is Zigbee uses"
+      },
+      {
+        "start": 74400,
+        "stop": 74800,
+        "text": " 2.4 gigahertz. And, you know, there's a lot of stuff in that thing."
+      },
+      {
+        "start": 74800,
+        "stop": 75200,
+        "text": " Microwaves, Wi-Fi. Yeah, I was going to say, does it drop out when you turn the"
+      },
+      {
+        "start": 75200,
+        "stop": 75600,
+        "text": " microwave on it by any chance? I don't know. Maybe that is it."
+      },
+      {
+        "start": 75600,
+        "stop": 76000,
+        "text": " Actually, one of them going out is an LED light strip in the kitchen."
+      },
+      {
+        "start": 76000,
+        "stop": 76400,
+        "text": " Now that I think about it. The audience has kind of warned me"
+      },
+      {
+        "start": 76400,
+        "stop": 76800,
+        "text": " about this. I've gotten hints that you've got to get the right Zigbee"
+      },
+      {
+        "start": 76800,
+        "stop": 77200,
+        "text": " adapter that has a really good antenna that is sticking out from the box"
+      },
+      {
+        "start": 77200,
+        "stop": 77600,
+        "text": " or something. I've seen some hints about that, and I just ignored all that."
+      },
+      {
+        "start": 77600,
+        "stop": 78000,
+        "text": " And I have a Zigbee antenna that hangs off of a USB hub that is"
+      },
+      {
+        "start": 78000,
+        "stop": 78400,
+        "text": " actually mounted away from the Home Assistant"
+      },
+      {
+        "start": 78400,
+        "stop": 78800,
+        "text": " Yellow, but it seems to be not strong enough. And I think I, you know,"
+      },
+      {
+        "start": 78800,
+        "stop": 79200,
+        "text": " now I think about it, it's in the cabinet with my Wi-Fi router."
+      },
+      {
+        "start": 79200,
+        "stop": 79600,
+        "text": " And I didn't even expect this problem, because"
+      },
+      {
+        "start": 79600,
+        "stop": 80000,
+        "text": " previously I've been using Z-Wave. Z-Wave is a proprietary"
+      },
+      {
+        "start": 80000,
+        "stop": 80400,
+        "text": " standard. Z-Wave operates at"
+      },
+      {
+        "start": 80400,
+        "stop": 80800,
+        "text": " 915 megahertz in the United States."
+      },
+      {
+        "start": 80800,
+        "stop": 81200,
+        "text": " And while it is lower bit rate, I think anybody that's familiar"
+      },
+      {
+        "start": 81200,
+        "stop": 81600,
+        "text": " with the old wireless phones knows that 900 megahertz"
+      },
+      {
+        "start": 81600,
+        "stop": 82000,
+        "text": " just goes farther and goes through walls more, and"
+      },
+      {
+        "start": 82000,
+        "stop": 82400,
+        "text": " 900 megahertz is just less crowded. There's less going on at 900 megahertz"
+      },
+      {
+        "start": 82400,
+        "stop": 82800,
+        "text": " these days. And so I just took for granted how well my Z-Wave"
+      },
+      {
+        "start": 82800,
+        "stop": 83200,
+        "text": " network worked. I mean, rock solid. I'm talking devices way outside."
+      },
+      {
+        "start": 83200,
+        "stop": 83600,
+        "text": " You know, 100 feet outside. Still connected and still reporting in."
+      },
+      {
+        "start": 83600,
+        "stop": 84000,
+        "text": " Run for a year off a battery. I kind of expected the same"
+      },
+      {
+        "start": 84000,
+        "stop": 84400,
+        "text": " thing for Zigbee. And that has not been"
+      },
+      {
+        "start": 84400,
+        "stop": 84800,
+        "text": " my experience. And man, it sucks, because it's several devices, so it's a"
+      },
+      {
+        "start": 84800,
+        "stop": 85200,
+        "text": " temperature sensor that's failing, it's supposed to be monitoring my water bay, and it's the"
+      },
+      {
+        "start": 85200,
+        "stop": 85600,
+        "text": " light strip that's failing, so sometimes we do the nighttime"
+      },
+      {
+        "start": 85600,
+        "stop": 86000,
+        "text": " shutdown stuff, and I go to check on the kids and I realize, oh crap,"
+      },
+      {
+        "start": 86000,
+        "stop": 86400,
+        "text": " this light strip's still on. Like, the lights didn't turn off. Oh, it's disconnected."
+      },
+      {
+        "start": 86400,
+        "stop": 86800,
+        "text": " It's embarrassing. It destroys the family acceptance factor."
+      },
+      {
+        "start": 86800,
+        "stop": 87200,
+        "text": " So what I ended up kind of piecing together, and I'm still"
+      },
+      {
+        "start": 87200,
+        "stop": 87600,
+        "text": " kind of figuring it out, is if you get, this is true of Z-Wave,"
+      },
+      {
+        "start": 87600,
+        "stop": 88000,
+        "text": " too, if you get like a smart plug"
+      },
+      {
+        "start": 88000,
+        "stop": 88400,
+        "text": " that's constantly powered, they will most often act as a"
+      },
+      {
+        "start": 88400,
+        "stop": 88800,
+        "text": " network repeater, and they will rebroadcast the network and"
+      },
+      {
+        "start": 88800,
+        "stop": 89200,
+        "text": " kind of make up for these gaps. But I think you have to have a fair amount"
+      },
+      {
+        "start": 89200,
+        "stop": 89600,
+        "text": " of them, like quite a bit. It has to be a pretty dense network of these."
+      },
+      {
+        "start": 89600,
+        "stop": 90000,
+        "text": " In Z-Wave, that also wasn't the case, but I think it's because the transmitters"
+      },
+      {
+        "start": 90000,
+        "stop": 90400,
+        "text": " and some of these low-power devices are just really weak, and so you have to"
+      },
+      {
+        "start": 90400,
+        "stop": 90800,
+        "text": " compensate by having a lot of mesh coverage."
+      },
+      {
+        "start": 90800,
+        "stop": 91200,
+        "text": " But your house for a bus or an RV is big,"
+      },
+      {
+        "start": 91200,
+        "stop": 91600,
+        "text": " but for a home, it's pretty small, right? So you shouldn't be"
+      },
+      {
+        "start": 91600,
+        "stop": 92000,
+        "text": " having this problem with it. I mean, we do have a lot of Wi-Fi in the area,"
+      },
+      {
+        "start": 92000,
+        "stop": 92400,
+        "text": " so maybe it's just a lot of radio noise, maybe it's because"
+      },
+      {
+        "start": 92400,
+        "stop": 92800,
+        "text": " it's in the booth with my Wi-Fi access point."
+      },
+      {
+        "start": 92800,
+        "stop": 93200,
+        "text": " Do you have 2.4? I have a lot of my IoT devices that are on Wi-Fi"
+      },
+      {
+        "start": 93200,
+        "stop": 93600,
+        "text": " on the 2.4 network. Ah, right. But"
+      },
+      {
+        "start": 93600,
+        "stop": 94000,
+        "text": " Zigbee can use another frequency, right? Yeah, I think there is,"
+      },
+      {
+        "start": 94000,
+        "stop": 94400,
+        "text": " and I think there's also something with Thread that is going to be part of the new Matter standard that's going to help."
+      },
+      {
+        "start": 94400,
+        "stop": 94800,
+        "text": " So I feel like there is solutions coming,"
+      },
+      {
+        "start": 94800,
+        "stop": 95200,
+        "text": " but nothing that's here right now that I can use, so I'm just kind of going back to"
+      },
+      {
+        "start": 95200,
+        "stop": 95600,
+        "text": " Z-Wave devices for now. For the most part, the Z-Wave stuff just works."
+      },
+      {
+        "start": 95600,
+        "stop": 96000,
+        "text": " There's more Zigbee things than ever. I've been noticing just an increase in Zigbee"
+      },
+      {
+        "start": 96000,
+        "stop": 96400,
+        "text": " devices. I think it's probably because of Matter. So I just picked up a new multi-sensor."
+      },
+      {
+        "start": 96400,
+        "stop": 96800,
+        "text": " I love these Z-Wave multi-sensors, and they have a brand new version."
+      },
+      {
+        "start": 96800,
+        "stop": 97200,
+        "text": " And here's something else I've noticed, is you really get what you pay for with these little"
+      },
+      {
+        "start": 97200,
+        "stop": 97600,
+        "text": " Edge IoT sensor devices. And I'll admit, this AOTech multi-sensor 7,"
+      },
+      {
+        "start": 97600,
+        "stop": 98000,
+        "text": " it's 70 bucks. And if you really think about it, you want one for every room."
+      },
+      {
+        "start": 98000,
+        "stop": 98400,
+        "text": " And this is expensive. But I have also been comparing these to"
+      },
+      {
+        "start": 98400,
+        "stop": 98800,
+        "text": " $19 sensors and $30 sensors, $40 sensors,"
+      },
+      {
+        "start": 98800,
+        "stop": 99200,
+        "text": " and none of them are as good. And none of them are as flexible."
+      },
+      {
+        "start": 99200,
+        "stop": 99600,
+        "text": " So it's just a solid, AOTech just made some solid Z-Wave devices."
+      },
+      {
+        "start": 99600,
+        "stop": 100000,
+        "text": " Are you sure that if you crack them all open, they're not going to look exactly the same? They do,"
+      },
+      {
+        "start": 100000,
+        "stop": 100400,
+        "text": " yeah. They probably do. Except for this one. I have cracked a couple of them open."
+      },
+      {
+        "start": 100400,
+        "stop": 100800,
+        "text": " And this one is actually pretty neat."
+      },
+      {
+        "start": 100800,
+        "stop": 101200,
+        "text": " The problem is, I feel like Z-Wave's going away because Matter"
+      },
+      {
+        "start": 101200,
+        "stop": 101600,
+        "text": " is becoming more and more of a thing. It uses Zigbee. I feel like"
+      },
+      {
+        "start": 101600,
+        "stop": 102000,
+        "text": " Z-Wave's just getting abandoned. But I think 900 MHz is the superior"
+      },
+      {
+        "start": 102000,
+        "stop": 102400,
+        "text": " radio for this kind of stuff. Because you want it to be reliable, like a rock, right? You flip"
+      },
+      {
+        "start": 102400,
+        "stop": 102800,
+        "text": " a switch, and you want it to immediately turn that light on."
+      },
+      {
+        "start": 102800,
+        "stop": 103200,
+        "text": " That's what you get with Z-Wave. Because it"
+      },
+      {
+        "start": 103200,
+        "stop": 103600,
+        "text": " takes it off your TCP/IP network, takes it off of the WiFi,"
+      },
+      {
+        "start": 103600,
+        "stop": 104000,
+        "text": " moves it off of 2.4 GHz, and puts it down on this super efficient"
+      },
+      {
+        "start": 104000,
+        "stop": 104400,
+        "text": " 915 MHz radio network. Just a gosh darn thing of beauty."
+      },
+      {
+        "start": 104400,
+        "stop": 104800,
+        "text": " So anyways, I'll put a link to my multi-sensor that I really like"
+      },
+      {
+        "start": 104800,
+        "stop": 105200,
+        "text": " in the show notes. Now you weren't ever an Evernote user by any chance, were you?"
+      },
+      {
+        "start": 105200,
+        "stop": 105600,
+        "text": " No. You lucked out? I'm more of a kind of"
+      },
+      {
+        "start": 105600,
+        "stop": 106000,
+        "text": " SSH into my server and just nano-text file kind of guy, to be honest."
+      },
+      {
+        "start": 106000,
+        "stop": 106400,
+        "text": " I started using Evernote way a long time ago when the"
+      },
+      {
+        "start": 106400,
+        "stop": 106800,
+        "text": " iPhone was new, and then kind of faded on it. Because it just"
+      },
+      {
+        "start": 106800,
+        "stop": 107200,
+        "text": " did all these different permutations of UI and technology. But"
+      },
+      {
+        "start": 107200,
+        "stop": 107600,
+        "text": " my wife stuck with it. She really likes it. It's one of the few"
+      },
+      {
+        "start": 107600,
+        "stop": 108000,
+        "text": " apps where you can throw a bunch of different kinds of data from pictures"
+      },
+      {
+        "start": 108000,
+        "stop": 108400,
+        "text": " to PDFs to website clippings to notes, and"
+      },
+      {
+        "start": 108400,
+        "stop": 108800,
+        "text": " it will index an OCR and tag it for you. And then"
+      },
+      {
+        "start": 108800,
+        "stop": 109200,
+        "text": " years later you can search for RV exhaust, right? It will show the"
+      },
+      {
+        "start": 109200,
+        "stop": 109600,
+        "text": " PDF from the manufacturer that we put in there that talks about our exhaust system."
+      },
+      {
+        "start": 109600,
+        "stop": 110000,
+        "text": " It's really handy for that kind of stuff. Or you can take a picture of a business card"
+      },
+      {
+        "start": 110000,
+        "stop": 110400,
+        "text": " and search that person's name, and it will find it, right? Because it"
+      },
+      {
+        "start": 110400,
+        "stop": 110800,
+        "text": " does the optical character recognition stuff. But they"
+      },
+      {
+        "start": 110800,
+        "stop": 111200,
+        "text": " have been sold to a company called Bending Spoons, and Evernote"
+      },
+      {
+        "start": 111200,
+        "stop": 111600,
+        "text": " says the acquisition should be completed in early 2023. And you'll love this"
+      },
+      {
+        "start": 111600,
+        "stop": 112000,
+        "text": " one, Joe. They say nothing's going to change. It's going to be a good investment."
+      },
+      {
+        "start": 112000,
+        "stop": 112400,
+        "text": " That's always what happens with acquisitions, right? Yeah, it's usually"
+      },
+      {
+        "start": 112400,
+        "stop": 112800,
+        "text": " actually a warning sign these days when they say that. I start to worry."
+      },
+      {
+        "start": 112800,
+        "stop": 113200,
+        "text": " Uh oh, they say nothing's going to change. Uh oh."
+      },
+      {
+        "start": 113200,
+        "stop": 113600,
+        "text": " Yeah, so I feel like this is, this is probably"
+      },
+      {
+        "start": 113600,
+        "stop": 114000,
+        "text": " something we should look into on the show, so I kind of wanted to put a call out there."
+      },
+      {
+        "start": 114000,
+        "stop": 114400,
+        "text": " I'm curious if anybody has a self-hosted solution"
+      },
+      {
+        "start": 114400,
+        "stop": 114800,
+        "text": " for something that kind of worked like Evernote. You know, a textual data store, you can index"
+      },
+      {
+        "start": 114800,
+        "stop": 115200,
+        "text": " it, you can search it, it'll do the OCR of a PDF or a picture you throw in"
+      },
+      {
+        "start": 115200,
+        "stop": 115600,
+        "text": " there. You know, maybe it'll even have an app on the phone that takes a picture of something and throws"
+      },
+      {
+        "start": 115600,
+        "stop": 116000,
+        "text": " it in there. Ideally it has a phone app and a desktop app, and ideally it has sync and"
+      },
+      {
+        "start": 116000,
+        "stop": 116400,
+        "text": " offline support. Also ideally multi-user or some kind"
+      },
+      {
+        "start": 116400,
+        "stop": 116800,
+        "text": " of sharing, so the wife could create a note and then share it with me and vice-versa."
+      },
+      {
+        "start": 116800,
+        "stop": 117200,
+        "text": " And I know I hear Obsidian already. People are writing Obsidian."
+      },
+      {
+        "start": 117200,
+        "stop": 117600,
+        "text": " But I just don't think that's going to have high wife approval factor."
+      },
+      {
+        "start": 117600,
+        "stop": 118000,
+        "text": " It sounds like you're looking for a unicorn here. That does not sound like"
+      },
+      {
+        "start": 118000,
+        "stop": 118400,
+        "text": " it's even possible without a huge company behind it"
+      },
+      {
+        "start": 118400,
+        "stop": 118800,
+        "text": " to have all those features. Yeah, I know Notion's an idea that"
+      },
+      {
+        "start": 118800,
+        "stop": 119200,
+        "text": " you know, it's again, but you're right, company behind that. There's a couple of other ones I've looked at"
+      },
+      {
+        "start": 119200,
+        "stop": 119600,
+        "text": " recently, but yeah. Now what you want to do is, right, you want to have a"
+      },
+      {
+        "start": 119600,
+        "stop": 120000,
+        "text": " horrible mess of Telegram messages that you send to yourself"
+      },
+      {
+        "start": 120000,
+        "stop": 120400,
+        "text": " and some Google Docs and some,"
+      },
+      {
+        "start": 120400,
+        "stop": 120800,
+        "text": " like I said, just text files on a server somewhere"
+      },
+      {
+        "start": 120800,
+        "stop": 121200,
+        "text": " maybe on your NAS that you can't even remember which directory you put it in."
+      },
+      {
+        "start": 121200,
+        "stop": 121600,
+        "text": " That's the best way to do it. And then you just force yourself to remember"
+      },
+      {
+        "start": 121600,
+        "stop": 122000,
+        "text": " things the hard way. Yeah, there is a little bit of that"
+      },
+      {
+        "start": 122000,
+        "stop": 122400,
+        "text": " approach currently for myself. The random documents"
+      },
+      {
+        "start": 122400,
+        "stop": 122800,
+        "text": " on my server thing kind of hits home because I haven't restored, like"
+      },
+      {
+        "start": 122800,
+        "stop": 123200,
+        "text": " I had this little web UI that would render the markdown files into like this web browser"
+      },
+      {
+        "start": 123200,
+        "stop": 123600,
+        "text": " thing so I could view my notes, but I haven't reinstalled that since my new server"
+      },
+      {
+        "start": 123600,
+        "stop": 124000,
+        "text": " setup because I just don't use it that much. But when I do need the notes, I got"
+      },
+      {
+        "start": 124000,
+        "stop": 124400,
+        "text": " SSH in. I got to look it up in nano."
+      },
+      {
+        "start": 124400,
+        "stop": 124800,
+        "text": " Yeah, and then you can really top it off with some LibreOffice docs and some text"
+      },
+      {
+        "start": 124800,
+        "stop": 125200,
+        "text": " files. So depending on whether you're actually at your desktop or SSH"
+      },
+      {
+        "start": 125200,
+        "stop": 125600,
+        "text": " somewhere. Well, maybe somebody out there can save me. I do not want"
+      },
+      {
+        "start": 125600,
+        "stop": 126000,
+        "text": " to do OneNote. I have heard that one quite a bit as well, but"
+      },
+      {
+        "start": 126000,
+        "stop": 126400,
+        "text": " just not particularly interested in that ecosystem. And it would really be nice"
+      },
+      {
+        "start": 126400,
+        "stop": 126800,
+        "text": " if it's something that I could self host. I actually kind of feel like that's a requirement"
+      },
+      {
+        "start": 126800,
+        "stop": 127200,
+        "text": " because otherwise why not just stick with Evernote for a little bit longer until they really crash that ship."
+      },
+      {
+        "start": 127200,
+        "stop": 127600,
+        "text": " So let us know. selfhosted.show/contact"
+      },
+      {
+        "start": 127600,
+        "stop": 128000,
+        "text": " Visit crowdstrike.com/lce"
+      },
+      {
+        "start": 128000,
+        "stop": 128400,
+        "text": " to ingest and view all of your logs in one place."
+      },
+      {
+        "start": 128400,
+        "stop": 128800,
+        "text": " Yeah, CrowdStrike Falcon Log Scale is CrowdStrike's new centralized log management"
+      },
+      {
+        "start": 128800,
+        "stop": 129200,
+        "text": " and observability tool, formerly known as Humio. Log Scale was developed"
+      },
+      {
+        "start": 129200,
+        "stop": 129600,
+        "text": " as an alternative to legacy logging solutions that made it cost prohibitive to ingest"
+      },
+      {
+        "start": 129600,
+        "stop": 130000,
+        "text": " and search the data that you just see in today's IT infrastructures. And the"
+      },
+      {
+        "start": 130000,
+        "stop": 130400,
+        "text": " real beauty of Log Scale is that it can take logs from any source and make them usable."
+      },
+      {
+        "start": 130400,
+        "stop": 130800,
+        "text": " You don't need to constantly massage the formats and tweak it. It doesn't need a"
+      },
+      {
+        "start": 130800,
+        "stop": 131200,
+        "text": " schema. You just pump it all in there and you have it when you need it. And the dashboard,"
+      },
+      {
+        "start": 131200,
+        "stop": 131600,
+        "text": " it's great. This platform is crazy."
+      },
+      {
+        "start": 131600,
+        "stop": 132000,
+        "text": " Log Scale's index-free architecture means you can ingest over a petabyte of data per day"
+      },
+      {
+        "start": 132000,
+        "stop": 132400,
+        "text": " and then search that with sub-second latency. Not hours, not seconds."
+      },
+      {
+        "start": 132400,
+        "stop": 132800,
+        "text": " And Log Scale is up to 80% cheaper than competing platforms like Splunk or Elastic"
+      },
+      {
+        "start": 132800,
+        "stop": 133200,
+        "text": " thanks to its reduced hardware and computational footprint. I realized"
+      },
+      {
+        "start": 133200,
+        "stop": 133600,
+        "text": " I probably could have used Log Scale to get an alert and analyze when my original"
+      },
+      {
+        "start": 133600,
+        "stop": 134000,
+        "text": " Home Assistant incident went down. So now I think I'm going to hook up my current Home Assistant"
+      },
+      {
+        "start": 134000,
+        "stop": 134400,
+        "text": " mailbox to it. Then I can help troubleshoot when these Zigbee errors occur."
+      },
+      {
+        "start": 134400,
+        "stop": 134800,
+        "text": " I think probably the best way to get going is with Log Scale's Community Edition."
+      },
+      {
+        "start": 134800,
+        "stop": 135200,
+        "text": " It is the largest no-cost data ingestion offering on the market. Log Scale"
+      },
+      {
+        "start": 135200,
+        "stop": 135600,
+        "text": " Community Edition allows you to ingest up to 16 gigabytes per day with 7-day"
+      },
+      {
+        "start": 135600,
+        "stop": 136000,
+        "text": " retention. No credit card required. No trial period."
+      },
+      {
+        "start": 136000,
+        "stop": 136400,
+        "text": " You've got it for the long haul. This is perfect for self-hosters who just want to"
+      },
+      {
+        "start": 136400,
+        "stop": 136800,
+        "text": " ingest some home logs and get a single view of everything going on in your environment."
+      },
+      {
+        "start": 136800,
+        "stop": 137200,
+        "text": " It's way better than having separate places to go look at everything. Log Scale gives you"
+      },
+      {
+        "start": 137200,
+        "stop": 137600,
+        "text": " the ability to bring it all together and correlate it in one place for easier troubleshooting."
+      },
+      {
+        "start": 137600,
+        "stop": 138000,
+        "text": " And that's nice when it's your hobby. You want it easy. You want it usable and quick."
+      },
+      {
+        "start": 138000,
+        "stop": 138400,
+        "text": " You don't want it to be a job. So go get started with Log Scale Community"
+      },
+      {
+        "start": 138400,
+        "stop": 138800,
+        "text": " Edition for free at crowdstrike.com/lce."
+      },
+      {
+        "start": 138800,
+        "stop": 139200,
+        "text": " That's crowdstrike.com/lce."
+      },
+      {
+        "start": 139200,
+        "stop": 139600,
+        "text": " Alright, Joe, how about we wrap it up"
+      },
+      {
+        "start": 139600,
+        "stop": 140000,
+        "text": " with some feedback. I want to give a shout out for our Matrix rooms out there."
+      },
+      {
+        "start": 140000,
+        "stop": 140400,
+        "text": " We've been seeing some growth in the Meetup rooms. We have some dedicated rooms like a"
+      },
+      {
+        "start": 140400,
+        "stop": 140800,
+        "text": " London Colony Meetup room in honor of Joe being here. There's a Mumble Colony"
+      },
+      {
+        "start": 140800,
+        "stop": 141200,
+        "text": " in there. There's one for Ohio, for folks going to Ohio Linux Fest."
+      },
+      {
+        "start": 141200,
+        "stop": 141600,
+        "text": " Matrix lets us create all kinds of rooms, so we do it. And you can find them all."
+      },
+      {
+        "start": 141600,
+        "stop": 142000,
+        "text": " Just go to jupiterbroadcasting.com/matrix for the deets on that."
+      },
+      {
+        "start": 142000,
+        "stop": 142400,
+        "text": " Every now and then you'll see a wild Joe in there, too. Rumor has it he's"
+      },
+      {
+        "start": 142400,
+        "stop": 142800,
+        "text": " in the Fetaverse. Rumor has it, yeah, if you look carefully."
+      },
+      {
+        "start": 142800,
+        "stop": 143200,
+        "text": " We got an email into the show from Belgium. Brain"
+      },
+      {
+        "start": 143200,
+        "stop": 143600,
+        "text": " Damage writes in. Dear Chris and Alex and also Joe, I've been"
+      },
+      {
+        "start": 143600,
+        "stop": 144000,
+        "text": " listening to Self-hosted since the start. Looking forward to it every release day."
+      },
+      {
+        "start": 144000,
+        "stop": 144400,
+        "text": " So I monitor my stuff and I've tried monitoring software like Nagios, Prometheos,"
+      },
+      {
+        "start": 144400,
+        "stop": 144800,
+        "text": " currently trying out Zabbix, but none of them seem to just click with me."
+      },
+      {
+        "start": 144800,
+        "stop": 145200,
+        "text": " I'm wondering what you're using and why, and if you've ever considered"
+      },
+      {
+        "start": 145200,
+        "stop": 145600,
+        "text": " switching to another option. And also for your European listeners,"
+      },
+      {
+        "start": 145600,
+        "stop": 146000,
+        "text": " the German website, itsco.de, most"
+      },
+      {
+        "start": 146000,
+        "stop": 146400,
+        "text": " of the time has second-hand small form factor systems on sale. Yeah, I took a look and"
+      },
+      {
+        "start": 146400,
+        "stop": 146800,
+        "text": " there's a bunch on there. We'll put a link to that in the show notes, too. This is a good option for people just"
+      },
+      {
+        "start": 146800,
+        "stop": 147200,
+        "text": " starting their self-hosted journey. Greetings from Belgium."
+      },
+      {
+        "start": 147200,
+        "stop": 147600,
+        "text": " So my answer is boring. It's just Uptime, Kuma. And I wonder, do you have a favorite"
+      },
+      {
+        "start": 147600,
+        "stop": 148000,
+        "text": " Uptime tool, Joe? Yeah, I use Uptime Robot, which is"
+      },
+      {
+        "start": 148000,
+        "stop": 148400,
+        "text": " free for as many domains as I've ever thrown at it. And I think"
+      },
+      {
+        "start": 148400,
+        "stop": 148800,
+        "text": " it monitors every five minutes and sends you an email and then sends you an email"
+      },
+      {
+        "start": 148800,
+        "stop": 149200,
+        "text": " when it's back up and tells you how long it was down for. It is very handy"
+      },
+      {
+        "start": 149200,
+        "stop": 149600,
+        "text": " sometimes for my own sites, but really it's more handy for just"
+      },
+      {
+        "start": 149600,
+        "stop": 150000,
+        "text": " watching some other sites and laughing at people who can't keep them up for"
+      },
+      {
+        "start": 150000,
+        "stop": 150400,
+        "text": " very long a time. So that's good. So it gives you a report of their"
+      },
+      {
+        "start": 150400,
+        "stop": 150800,
+        "text": " downtime. Yeah, yeah, and you can see the percentage"
+      },
+      {
+        "start": 150800,
+        "stop": 151200,
+        "text": " uptime that each domain has, and you can just stick any domain you want into it. Nice."
+      },
+      {
+        "start": 151200,
+        "stop": 151600,
+        "text": " All right, we'll put a link to Uptime Robot in the show notes"
+      },
+      {
+        "start": 151600,
+        "stop": 152000,
+        "text": " as well, and I'll give a shout out to Uptime Kuma, which we have running"
+      },
+      {
+        "start": 152000,
+        "stop": 152400,
+        "text": " here. There's a few other good ones out there, but those ones are just simple enough."
+      },
+      {
+        "start": 152400,
+        "stop": 152800,
+        "text": " They're easy to set up. They're kind of nice for the hobby level. Yeah, and Uptime Robot"
+      },
+      {
+        "start": 152800,
+        "stop": 153200,
+        "text": " does have a paid tier. I've never needed to try it, but presumably it's better."
+      },
+      {
+        "start": 153200,
+        "stop": 153600,
+        "text": " I don't know. We got some big boosts this week and we got a whole bunch, so we're going to read just a few"
+      },
+      {
+        "start": 153600,
+        "stop": 154000,
+        "text": " on the show this week. The first one comes in from TheHelpfulIdiot."
+      },
+      {
+        "start": 154000,
+        "stop": 154400,
+        "text": " 320,001 sats says, \"Longtime listener, first time caller.\""
+      },
+      {
+        "start": 154400,
+        "stop": 154800,
+        "text": " Well, thank you, HelpfulIdiot. Very generous boost. He says, \"Love the shows."
+      },
+      {
+        "start": 154800,
+        "stop": 155200,
+        "text": " I want to share my blog with you guys, TheHelpfulIdiot.com. It's nothing special,"
+      },
+      {
+        "start": 155200,
+        "stop": 155600,
+        "text": " but it has a few examples of some of my Homelab projects which were inspired by your"
+      },
+      {
+        "start": 155600,
+        "stop": 156000,
+        "text": " shows.\" My day job is an eye doctor, and he sent a"
+      },
+      {
+        "start": 156000,
+        "stop": 156400,
+        "text": " video behind his wire guard, like,"
+      },
+      {
+        "start": 156400,
+        "stop": 156800,
+        "text": " an xCloud VM box, which might be in this picture on his website at HelpfulIdiot.com."
+      },
+      {
+        "start": 156800,
+        "stop": 157200,
+        "text": " There's some good stuff on here, including one that actually was very"
+      },
+      {
+        "start": 157200,
+        "stop": 157600,
+        "text": " exist--which was actually kind of really up my alley, which are these big outdoor"
+      },
+      {
+        "start": 157600,
+        "stop": 158000,
+        "text": " decoration lights that he's integrated with Home Assistant. It's funny that he's an eye doctor"
+      },
+      {
+        "start": 158000,
+        "stop": 158400,
+        "text": " and his cable management is an eyesore. Oh, calling him out."
+      },
+      {
+        "start": 158400,
+        "stop": 158800,
+        "text": " Calling him out. Well, at least it makes me feel better about mine."
+      },
+      {
+        "start": 158800,
+        "stop": 159200,
+        "text": " Cdubs boosted him with 40,404 sats"
+      },
+      {
+        "start": 159200,
+        "stop": 159600,
+        "text": " using Boost CLI. So that was a series of boosts. I think I put it all in one"
+      },
+      {
+        "start": 159600,
+        "stop": 160000,
+        "text": " big baller boost. He says, \"I put together a little 1U Nix OS"
+      },
+      {
+        "start": 160000,
+        "stop": 160400,
+        "text": " router. It's got multiple LANs and Wi-Fi set up with DHCP"
+      },
+      {
+        "start": 160400,
+        "stop": 160800,
+        "text": " and NF tables. The Wi-Fi is wonky. Client connections"
+      },
+      {
+        "start": 160800,
+        "stop": 161200,
+        "text": " just stop randomly. I wire guard proxy all of my traffic,"
+      },
+      {
+        "start": 161200,
+        "stop": 161600,
+        "text": " but when I turn it on, nothing routes. It's probably my firewall. Not sure"
+      },
+      {
+        "start": 161600,
+        "stop": 162000,
+        "text": " how to debug. I could use some tips.\" Well, Cdubs,"
+      },
+      {
+        "start": 162000,
+        "stop": 162400,
+        "text": " you got a lot going on on that one box. And so I"
+      },
+      {
+        "start": 162400,
+        "stop": 162800,
+        "text": " feel like Wi-Fi wonky, that's one issue."
+      },
+      {
+        "start": 162800,
+        "stop": 163200,
+        "text": " Client connection stopping randomly could be related to the Wi-Fi. That could be a third"
+      },
+      {
+        "start": 163200,
+        "stop": 163600,
+        "text": " or I'm sorry, a second issue. And then wire guard not properly routing"
+      },
+      {
+        "start": 163600,
+        "stop": 164000,
+        "text": " your traffic, that's at least your third issue, if not your"
+      },
+      {
+        "start": 164000,
+        "stop": 164400,
+        "text": " fourth issue. I feel like where I would start is I would probably"
+      },
+      {
+        "start": 164400,
+        "stop": 164800,
+        "text": " try to break down each one of those into its own separate problem."
+      },
+      {
+        "start": 164800,
+        "stop": 165200,
+        "text": " Like I'd start with the Wi-Fi. Like what's the point of even fixing the routing?"
+      },
+      {
+        "start": 165200,
+        "stop": 165600,
+        "text": " And the firewall issue, if your Wi-Fi isn't working."
+      },
+      {
+        "start": 165600,
+        "stop": 166000,
+        "text": " So I'd probably start with the Wi-Fi, figure out what's going on there,"
+      },
+      {
+        "start": 166000,
+        "stop": 166400,
+        "text": " you know, check d message, run journalctl -f, watch your log for a"
+      },
+      {
+        "start": 166400,
+        "stop": 166800,
+        "text": " bit, see if you can catch it happening. I don't know, you got any thoughts, Joe?"
+      },
+      {
+        "start": 166800,
+        "stop": 167200,
+        "text": " I think just what you said really, try and break it down into systematic"
+      },
+      {
+        "start": 167200,
+        "stop": 167600,
+        "text": " chunks that you can work on. Don't try and work on the"
+      },
+      {
+        "start": 167600,
+        "stop": 168000,
+        "text": " whole thing at once because there's too much going on to do that. There's too many moving"
+      },
+      {
+        "start": 168000,
+        "stop": 168400,
+        "text": " parts. Try one of the moving parts at a time and just"
+      },
+      {
+        "start": 168400,
+        "stop": 168800,
+        "text": " work through it logically until you solve each problem and then the whole thing will work."
+      },
+      {
+        "start": 168800,
+        "stop": 169200,
+        "text": " I wonder, 2CDubs, if you're on a"
+      },
+      {
+        "start": 169200,
+        "stop": 169600,
+        "text": " later Linux kernel, like a 6.0, 2 or later,"
+      },
+      {
+        "start": 169600,
+        "stop": 170000,
+        "text": " because I swear, man, I've been having wonky Wi-Fi issues"
+      },
+      {
+        "start": 170000,
+        "stop": 170400,
+        "text": " on the later, more recent 6 series kernels. I don't know how long you've had that"
+      },
+      {
+        "start": 170400,
+        "stop": 170800,
+        "text": " Linux system installed, but if you could roll back to like"
+      },
+      {
+        "start": 170800,
+        "stop": 171200,
+        "text": " 5.18, I would give that a try and see what happens too for your"
+      },
+      {
+        "start": 171200,
+        "stop": 171600,
+        "text": " Wi-Fi issues because I have a machine that"
+      },
+      {
+        "start": 171600,
+        "stop": 172000,
+        "text": " is actually, I have two laptops that are having really"
+      },
+      {
+        "start": 172000,
+        "stop": 172400,
+        "text": " wonky Wi-Fi. One's not connecting reliably and the other is"
+      },
+      {
+        "start": 172400,
+        "stop": 172800,
+        "text": " experiencing really long latency at different parts of the network"
+      },
+      {
+        "start": 172800,
+        "stop": 173200,
+        "text": " that just doesn't really make sense. Like sometimes several hops outside my direct LAN,"
+      },
+      {
+        "start": 173200,
+        "stop": 173600,
+        "text": " one laptop that's having Wi-Fi issues will have 4, 5, 600"
+      },
+      {
+        "start": 173600,
+        "stop": 174000,
+        "text": " milliseconds on a route and all of the other machines on the LAN"
+      },
+      {
+        "start": 174000,
+        "stop": 174400,
+        "text": " have no problem with that one hop. I'm having the weirdest problems"
+      },
+      {
+        "start": 174400,
+        "stop": 174800,
+        "text": " and it's been since the later 6 series kernels. Yeah, or you could just try Ubuntu or something"
+      },
+      {
+        "start": 174800,
+        "stop": 175200,
+        "text": " rather than a fancy OS like Nix OS. Could always try a live session, that's"
+      },
+      {
+        "start": 175200,
+        "stop": 175600,
+        "text": " actually a pretty good tip. Try a live session. See if you have some of the"
+      },
+      {
+        "start": 175600,
+        "stop": 176000,
+        "text": " same routing or some of the same Wi-Fi issues in the live session."
+      },
+      {
+        "start": 176000,
+        "stop": 176400,
+        "text": " With a different OS, maybe an older kernel. Yeah, or dig out an old SSD"
+      },
+      {
+        "start": 176400,
+        "stop": 176800,
+        "text": " or something, install it on that and just boot off that temporarily."
+      },
+      {
+        "start": 176800,
+        "stop": 177200,
+        "text": " Optimus Grey boosted in with some Grandpa Ducks 22222 sats, he says"
+      },
+      {
+        "start": 177200,
+        "stop": 177600,
+        "text": " \"I need your help. I'm an anti-Googler. I just don't like"
+      },
+      {
+        "start": 177600,
+        "stop": 178000,
+        "text": " being the product of a company that's like the thing that's being sold. So when I hear this"
+      },
+      {
+        "start": 178000,
+        "stop": 178400,
+        "text": " great tool is free to use and it makes everyone's life better, my radar gets"
+      },
+      {
+        "start": 178400,
+        "stop": 178800,
+        "text": " lit up.\" Tailscale, a great tool, but a company that's not looking to"
+      },
+      {
+        "start": 178800,
+        "stop": 179200,
+        "text": " make money, I don't understand. P2P connects are very cheap so they don't need much"
+      },
+      {
+        "start": 179200,
+        "stop": 179600,
+        "text": " but my radar is up for something am I not seeing. I just don't like"
+      },
+      {
+        "start": 179600,
+        "stop": 180000,
+        "text": " connections to everything on my network so my radar is going off. I know they sponsored"
+      },
+      {
+        "start": 180000,
+        "stop": 180400,
+        "text": " JB but I wanted your input. That's a fair question and I"
+      },
+      {
+        "start": 180400,
+        "stop": 180800,
+        "text": " think it's one that Tailscale gets enough that they did a"
+      },
+      {
+        "start": 180800,
+        "stop": 181200,
+        "text": " blog post about how they make money and, you know,"
+      },
+      {
+        "start": 181200,
+        "stop": 181600,
+        "text": " how they built their network to make it sustainable because I think that's a common"
+      },
+      {
+        "start": 181600,
+        "stop": 182000,
+        "text": " question. So the short version is where they make money is if you want to have more"
+      },
+      {
+        "start": 182000,
+        "stop": 182400,
+        "text": " than 20 devices that get connected to that LAN you've got to pay."
+      },
+      {
+        "start": 182400,
+        "stop": 182800,
+        "text": " Which is a pretty good business model. I mean they sponsor my shows as well so I'm"
+      },
+      {
+        "start": 182800,
+        "stop": 183200,
+        "text": " somewhat biased here but it seems like your classic business model"
+      },
+      {
+        "start": 183200,
+        "stop": 183600,
+        "text": " give away just enough to get people hooked and then you're using it"
+      },
+      {
+        "start": 183600,
+        "stop": 184000,
+        "text": " on 5, 6, 10 devices on your LAN and then you go into work"
+      },
+      {
+        "start": 184000,
+        "stop": 184400,
+        "text": " and talk about how great it is and then suddenly on 200 or 300"
+      },
+      {
+        "start": 184400,
+        "stop": 184800,
+        "text": " devices. Yeah it's kind of the Dropbox idea too right? Dropbox used to give away like"
+      },
+      {
+        "start": 184800,
+        "stop": 185200,
+        "text": " 5 gigs for free so everybody could just start sharing files with up to 5 gigs and they would spread it"
+      },
+      {
+        "start": 185200,
+        "stop": 185600,
+        "text": " around. Yeah but the advantage here is that if you are just a hobbyist"
+      },
+      {
+        "start": 185600,
+        "stop": 186000,
+        "text": " you can just take advantage of it for free and let all the corporate customers pay for you."
+      },
+      {
+        "start": 186000,
+        "stop": 186400,
+        "text": " Yeah and he really nailed it there. The reason for that is because they are peer to peer"
+      },
+      {
+        "start": 186400,
+        "stop": 186800,
+        "text": " so when you're communicating with another machine on the Tailscale network you're talking"
+      },
+      {
+        "start": 186800,
+        "stop": 187200,
+        "text": " directly through it. You're not routing through the Tailscale servers."
+      },
+      {
+        "start": 187200,
+        "stop": 187600,
+        "text": " The Tailscale servers come in for the authentication backplane that kind of authorizes"
+      },
+      {
+        "start": 187600,
+        "stop": 188000,
+        "text": " your single sign on provider to get access to that network"
+      },
+      {
+        "start": 188000,
+        "stop": 188400,
+        "text": " and then like basically then authorizes the machine to have a"
+      },
+      {
+        "start": 188400,
+        "stop": 188800,
+        "text": " key and then it gets access to the network. That key expires from time to time and you have to"
+      },
+      {
+        "start": 188800,
+        "stop": 189200,
+        "text": " re-authenticate or you can set some not to expire as well and if you ever have to do that with more"
+      },
+      {
+        "start": 189200,
+        "stop": 189600,
+        "text": " than 20 machines then you end up becoming a paid"
+      },
+      {
+        "start": 189600,
+        "stop": 190000,
+        "text": " Tailscale user. Rapid Mustang also boosted in with a"
+      },
+      {
+        "start": 190000,
+        "stop": 190400,
+        "text": " McDuck row of Grandpa Ducks, 22,222 sats."
+      },
+      {
+        "start": 190400,
+        "stop": 190800,
+        "text": " I learned about you guys from when you were on level 1 techs. Started listening and really"
+      },
+      {
+        "start": 190800,
+        "stop": 191200,
+        "text": " enjoyed it. Now I listen to all the JB shows. Glad to give back now. Keep up"
+      },
+      {
+        "start": 191200,
+        "stop": 191600,
+        "text": " the great work. Well thank you. You know I think we got to have Wendell on again."
+      },
+      {
+        "start": 191600,
+        "stop": 192000,
+        "text": " I've gotten a few notes about that. Check in with Wendell and see what he's been up to. See how"
+      },
+      {
+        "start": 192000,
+        "stop": 192400,
+        "text": " his self hosting setup is going. See what's changed about it. Maybe find out what he's doing differently"
+      },
+      {
+        "start": 192400,
+        "stop": 192800,
+        "text": " in 2023. Thank you Rapid Mustang and thank you also"
+      },
+      {
+        "start": 192800,
+        "stop": 193200,
+        "text": " we got a lot more boosts in. So just a couple random call outs. We got"
+      },
+      {
+        "start": 193200,
+        "stop": 193600,
+        "text": " 67,000 sats from"
+      },
+      {
+        "start": 193600,
+        "stop": 194000,
+        "text": " Mooten's Corel. I think I put that in there just to see if"
+      },
+      {
+        "start": 194000,
+        "stop": 194400,
+        "text": " I could pronounce it. Now I'm realizing"
+      },
+      {
+        "start": 194400,
+        "stop": 194800,
+        "text": " I could not. They just say hi. 911 sats from"
+      },
+      {
+        "start": 194800,
+        "stop": 195200,
+        "text": " Noob. This is his very first boost ever. We got a couple of double"
+      },
+      {
+        "start": 195200,
+        "stop": 195600,
+        "text": " boosts. Came together double elite sats, 2,674 sats from"
+      },
+      {
+        "start": 195600,
+        "stop": 196000,
+        "text": " Sir Lurks a lot. Was listening live last week and wanted to send some support"
+      },
+      {
+        "start": 196000,
+        "stop": 196400,
+        "text": " in. We got 9,709 sats from Zerno. Just trying"
+      },
+      {
+        "start": 196400,
+        "stop": 196800,
+        "text": " to out breeze for the first time. 50,000 sats from Enutech. Throwing some love our way."
+      },
+      {
+        "start": 196800,
+        "stop": 197200,
+        "text": " He's a 14 year self hosting vet he said as well. Thank you Enutech. Your support"
+      },
+      {
+        "start": 197200,
+        "stop": 197600,
+        "text": " across the shows has been appreciated. And we got 119,999"
+      },
+      {
+        "start": 197600,
+        "stop": 198000,
+        "text": " sats from WM. He was on a series of boosts across all the"
+      },
+      {
+        "start": 198000,
+        "stop": 198400,
+        "text": " shows spraying some sats and he wanted to spray some love."
+      },
+      {
+        "start": 198400,
+        "stop": 198800,
+        "text": " Over itself hosted. Thank you everybody else who boosted in. We'll"
+      },
+      {
+        "start": 198800,
+        "stop": 199200,
+        "text": " read some of those in the post show I suspect. If you'd like to boost into the show, go"
+      },
+      {
+        "start": 199200,
+        "stop": 199600,
+        "text": " get a new podcast app at newpodcastapps.com and special Geek Cred"
+      },
+      {
+        "start": 199600,
+        "stop": 200000,
+        "text": " if you figure out how to do it with Boost CLI. That is a frickin' setup."
+      },
+      {
+        "start": 200000,
+        "stop": 200400,
+        "text": " Joe, tell people where they can find you after they get done listening to this year's show."
+      },
+      {
+        "start": 200400,
+        "stop": 200800,
+        "text": " So either latenightlinux.com or 2.5admins.com."
+      },
+      {
+        "start": 200800,
+        "stop": 201200,
+        "text": " There you go. And you can catch Alex on"
+      },
+      {
+        "start": 201200,
+        "stop": 201600,
+        "text": " 2.5admins.com and then get all caught up."
+      },
+      {
+        "start": 201600,
+        "stop": 202000,
+        "text": " Then join us over in our Discord at selfhosted.show/discord."
+      },
+      {
+        "start": 202000,
+        "stop": 202400,
+        "text": " You can become a member and support the ongoing production. You get an ad free version."
+      },
+      {
+        "start": 202400,
+        "stop": 202800,
+        "text": " And you get the post show by becoming one of our site reliability engineers at selfhosted.show/sre"
+      },
+      {
+        "start": 202800,
+        "stop": 203200,
+        "text": " with some"
+      },
+      {
+        "start": 203200,
+        "stop": 203600,
+        "text": " hinted at but yet to be fully disclosed features coming to the members feed."
+      },
+      {
+        "start": 203600,
+        "stop": 204000,
+        "text": " Hopefully in early 2023. I don't know. Depends on when"
+      },
+      {
+        "start": 204000,
+        "stop": 204400,
+        "text": " Santa, Wes and I are done working on things."
+      },
+      {
+        "start": 204400,
+        "stop": 204800,
+        "text": " Joe, it was good to catch up with you. Good to hear from you. Thanks for filming for Alex."
+      },
+      {
+        "start": 204800,
+        "stop": 205200,
+        "text": " Yeah, it's been great. And thank you everybody for listening. That was selfhosted.show/84."
+      },
+      {
+        "start": 205400,
+        "stop": 205800,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 981,
+      "nanos": 568062162
+    }
+  },
+  "metadata": {
+    "title": "Self-Hosted 84: Hidden NAS",
+    "pictures": [],
+    "duration": {
+      "secs": 2046,
+      "nanos": 616000000
+    },
+    "unique_id": "http://selfhosted.show/84"
+  },
+  "episode": {
+    "title": "Hidden NAS | Self-Hosted 84",
+    "description": "We're chatting about workstation builds for a home NAS with Joe Ressington this week. Chris chews on the news of the Evernote buyout and his challenges with Zigbee. Special Guest: Joe Resington.",
+    "content": "<p><p>We&#39;re chatting about workstation builds for a home NAS with Joe Ressington this week. Chris chews on the news of the Evernote buyout and his challenges with Zigbee.</p><p>Special Guest: Joe Resington.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/ssh\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/ssh\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/ssh</li><li><a href=\"https://crowdstrike.com/lce\" rel=\"nofollow\">LogScale</a>: <a href=\"https://crowdstrike.com/lce\" rel=\"nofollow\">Take logs from any source and make them usable. Get started with LogScale Community Edition for free.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53744\" rel=\"payment\">Support Self-Hosted</a></p><p>Links:</p><ul><li><a href=\"https://latenightlinux.com/\" title=\"Late Night Linux\" rel=\"nofollow\">Late Night Linux</a> &mdash; Late Night Linux is a podcast that takes a look at what’s happening with Linux and the wider tech industry. </li><li><a href=\"https://2.5admins.com/\" title=\"2.5 Admins\" rel=\"nofollow\">2.5 Admins</a> &mdash; 2.5 Admins is a podcast featuring two sysadmins called Allan Jude and Jim Salter, and a producer/editor who can just about configure a Samba share called Joe Ressington.</li><li><a href=\"https://home-assistant-guide.com/guide/choose-your-zigbee-channel-wisely/\" title=\"Choose your Zigbee channel wisely\" rel=\"nofollow\">Choose your Zigbee channel wisely</a> &mdash; </p>\n\n<p>Before optimizing your channels, it’s best to reduce the amount of traffic on the 2.4 GHz band. There are a few different ways of doing that. But it all boils down to removing as many devices from the 2.4 GHz Wi-Fi band as possible. As Zigbee devices can only use the 2.4 GHz band, there isn’t much you can do with them except minimizing the number of commands sent using Zigbee Groups.</li><li><a href=\"https://goodhomeautomation.com/z-wave-vs-zigbee-smart-home-protocols/\" title=\"Z Wave vs Zigbee\" rel=\"nofollow\">Z Wave vs Zigbee</a> &mdash; While Z Wave has a better track record of compatibility between products and never interferes with your Wi-Fi network, Zigbee is faster,has a greater range of signal, boasts on open protocol standard, and owns a significantly larger marketshare of the smart home product space.</li><li><a href=\"https://www.amazon.com/dp/B08XHZP7NV\" title=\"Aeotec MultiSensor 7, 6-in-1 Zwave Sensors\" rel=\"nofollow\">Aeotec MultiSensor 7, 6-in-1 Zwave Sensors</a> &mdash; Contains Monitor Motion, Temperature, Light, Humidity, UV, and Vibration, Z-Wave Plus, Gen7, S2, SmartStart Enabled, Compatible with Zwave</li><li><a href=\"https://evernote.com/blog/evernote-next-move-joining-bending-spoons/\" title=\"Evernote’s Next Move: Joining the Bending Spoons Suite of Apps\" rel=\"nofollow\">Evernote’s Next Move: Joining the Bending Spoons Suite of Apps</a> &mdash; In the deal signed between Bending Spoons and Evernote, Bending Spoons agrees to take ownership of Evernote in a transaction expected to complete early in 2023.</li><li><a href=\"https://www.jupiterbroadcasting.com/community/matrix/\" title=\"Jupiter Broadcasting Matrix Info\" rel=\"nofollow\">Jupiter Broadcasting Matrix Info</a> &mdash; Jupiter Broadcasting’s Rooms are organized into groups called “spaces”.</li><li><a href=\"https://uptimerobot.com/\" title=\"UptimeRobot: Free Website Monitoring Service\" rel=\"nofollow\">UptimeRobot: Free Website Monitoring Service</a> &mdash; The world's leading uptime monitoring service.</li><li><a href=\"https://thehelpfulidiot.com/\" title=\"The Helpful Idiot\" rel=\"nofollow\">The Helpful Idiot</a> &mdash; Idiots don't have time for cable management.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost into the Show\" rel=\"nofollow\">Send a Boost into the Show</a> &mdash; Upgrade to a Podcast 2.0 compatible app, and send a Boost into the show.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9059",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15796162/e72eed57-64fb-44a4-a59d-6d962ed98c26.mp3",
+      "length": "29081716",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-18T03:01:00+01:00"
+  },
+  "speedup": 2.0850475
+}

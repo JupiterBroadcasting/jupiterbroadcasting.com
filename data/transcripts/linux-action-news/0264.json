@@ -1,0 +1,787 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 948,
+        "text": " hello and welcome to Linux action news episode 264 recorded on October 26 2022"
+      },
+      {
+        "start": 948,
+        "stop": 1400,
+        "text": " I'm Chris and I'm Wes hello Wes let's do the news"
+      },
+      {
+        "start": 1400,
+        "stop": 2088,
+        "text": " canonical announced Ubuntu 22 10 this week codenamed kinetic kudu this interim"
+      },
+      {
+        "start": 2088,
+        "stop": 2578,
+        "text": " release seems to have a particular focus on the Raspberry Pi I don't mind that at"
+      },
+      {
+        "start": 2578,
+        "stop": 3062,
+        "text": " all Ubuntu 22 10 now supports a micro Python goodness on various micro"
+      },
+      {
+        "start": 3062,
+        "stop": 3738,
+        "text": " controllers including the Raspberry Pi Pico W also the Ubuntu graphic stack has"
+      },
+      {
+        "start": 3738,
+        "stop": 4180,
+        "text": " transitioned to KMS meaning developers can run pi based graphical applications"
+      },
+      {
+        "start": 4180,
+        "stop": 4614,
+        "text": " say using something like cute without a desktop session and without PI specific"
+      },
+      {
+        "start": 4614,
+        "stop": 5010,
+        "text": " drivers could see that it's great for a lot of hardware installations this"
+      },
+      {
+        "start": 5010,
+        "stop": 5374,
+        "text": " complements also expanded support in this release of Ubuntu for all kinds of"
+      },
+      {
+        "start": 5374,
+        "stop": 5826,
+        "text": " displays like ink hat series the hyper pixel range and even the Raspberry Pi"
+      },
+      {
+        "start": 5826,
+        "stop": 6430,
+        "text": " official touchscreen the gnome desktop was updated to version 43 which includes"
+      },
+      {
+        "start": 6430,
+        "stop": 7038,
+        "text": " GTK for theming for improved performance and pipe wire also becomes the default"
+      },
+      {
+        "start": 7038,
+        "stop": 7638,
+        "text": " audio system with 22 10 along with wire plumber as the session manager making"
+      },
+      {
+        "start": 7638,
+        "stop": 8194,
+        "text": " this now a common stack across modern Linux desktops and finally an area that"
+      },
+      {
+        "start": 8194,
+        "stop": 8630,
+        "text": " canonical was drawing special attention to is their new steam snap they noted"
+      },
+      {
+        "start": 8630,
+        "stop": 8986,
+        "text": " that it includes the latest Mesa presumably with the ability to decode"
+      },
+      {
+        "start": 8986,
+        "stop": 9414,
+        "text": " video and gamers can now be confident they'll always be up to date regardless"
+      },
+      {
+        "start": 9414,
+        "stop": 9822,
+        "text": " of their host OS without needing to configure any of those gross PPAs that"
+      },
+      {
+        "start": 9822,
+        "stop": 10214,
+        "text": " somebody came up with and you know maybe this isn't absolutely necessary on an"
+      },
+      {
+        "start": 10214,
+        "stop": 10674,
+        "text": " interim release like this particular one but you could see how this snap is going"
+      },
+      {
+        "start": 10674,
+        "stop": 11118,
+        "text": " to be very useful on future LTS releases but you can hear more of our thoughts on"
+      },
+      {
+        "start": 11118,
+        "stop": 11674,
+        "text": " the overall release in Linux unplugged episode 481"
+      },
+      {
+        "start": 11674,
+        "stop": 12378,
+        "text": " get tea a lightweight self-hostable github alternative written and go hit"
+      },
+      {
+        "start": 12378,
+        "stop": 12938,
+        "text": " six years old this week and for their birthday well they've had a few"
+      },
+      {
+        "start": 12938,
+        "stop": 13466,
+        "text": " announcements the biggest of which is the formation of a company called get tea"
+      },
+      {
+        "start": 13466,
+        "stop": 14034,
+        "text": " limited okay they say of course quote unquote that get tea will remain open"
+      },
+      {
+        "start": 14034,
+        "stop": 14446,
+        "text": " source and they say a community project it seems the primary goal of forming the"
+      },
+      {
+        "start": 14446,
+        "stop": 14962,
+        "text": " company is around engaging in commercial support contracts instance hosting"
+      },
+      {
+        "start": 14962,
+        "stop": 15362,
+        "text": " managing trademarks and offering part-time employment to some"
+      },
+      {
+        "start": 15362,
+        "stop": 15930,
+        "text": " maintainers perhaps expanding that to full-time employment in the future one"
+      },
+      {
+        "start": 15930,
+        "stop": 16368,
+        "text": " rather surprising aspect of this announcement though is that it seems get"
+      },
+      {
+        "start": 16368,
+        "stop": 16870,
+        "text": " tea is considering creating a decentralized autonomous organization or"
+      },
+      {
+        "start": 16870,
+        "stop": 17334,
+        "text": " a Dow now they say that's to preserve the community aspect of the project and"
+      },
+      {
+        "start": 17334,
+        "stop": 17726,
+        "text": " contributors would receive benefits based on their participation such as"
+      },
+      {
+        "start": 17726,
+        "stop": 18230,
+        "text": " from code documentation translations and perhaps even assisting individual"
+      },
+      {
+        "start": 18230,
+        "stop": 18774,
+        "text": " community members with support questions not a structure we see commonly adopted"
+      },
+      {
+        "start": 18774,
+        "stop": 19234,
+        "text": " in open source but possibly could be done well and of course could also be"
+      },
+      {
+        "start": 19234,
+        "stop": 19854,
+        "text": " done very poorly but it is something we'll be keeping an eye on"
+      },
+      {
+        "start": 19994,
+        "stop": 20532,
+        "text": " the Asahi Linux team shared some big updates on their path to getting Apple"
+      },
+      {
+        "start": 20532,
+        "stop": 21146,
+        "text": " m-series SOC support in the Linux kernel the Apple m-series CPU frequency driver"
+      },
+      {
+        "start": 21146,
+        "stop": 21632,
+        "text": " is finally looking like it's in good shape which definitely helped the system"
+      },
+      {
+        "start": 21632,
+        "stop": 22158,
+        "text": " manage performance thermals and power efficiency yeah that is really good"
+      },
+      {
+        "start": 22158,
+        "stop": 22434,
+        "text": " because these laptops and some of these systems are famous for their good"
+      },
+      {
+        "start": 22434,
+        "stop": 22870,
+        "text": " battery life and this is gonna help accomplish that under Linux - it also"
+      },
+      {
+        "start": 22870,
+        "stop": 23394,
+        "text": " seems that the GPU driver is getting a lot closer originally they were really"
+      },
+      {
+        "start": 23394,
+        "stop": 23782,
+        "text": " banging on this thing under Mac OS and trying to pass all the compliance tests"
+      },
+      {
+        "start": 23782,
+        "stop": 24246,
+        "text": " in theory under Mac OS and then move it over to Linux well that's been done now"
+      },
+      {
+        "start": 24246,
+        "stop": 24686,
+        "text": " and now it's passing 99% of the compliance tests under Linux which means"
+      },
+      {
+        "start": 24686,
+        "stop": 25202,
+        "text": " the driver is getting to a really good state"
+      },
+      {
+        "start": 25358,
+        "stop": 25814,
+        "text": " well it might be a little hard to hear for those of us who still remember the"
+      },
+      {
+        "start": 25814,
+        "stop": 26442,
+        "text": " excitement of the 486 CPU the discussion around maintaining support for that"
+      },
+      {
+        "start": 26442,
+        "stop": 27090,
+        "text": " classic architecture in the Linux kernel came up again this week after reviewing"
+      },
+      {
+        "start": 27090,
+        "stop": 27434,
+        "text": " code that mostly just seemed to be a series of workarounds for various older"
+      },
+      {
+        "start": 27434,
+        "stop": 28202,
+        "text": " CPUs Linus mused quote we got rid of I 386 support back in 2012 maybe it's time"
+      },
+      {
+        "start": 28202,
+        "stop": 29018,
+        "text": " to get rid of I 486 support in 2022 he later went on to say quote so I really"
+      },
+      {
+        "start": 29018,
+        "stop": 29610,
+        "text": " don't think I 46 class hardware is relevant anymore yes I'm sure it exists"
+      },
+      {
+        "start": 29610,
+        "stop": 30094,
+        "text": " but from a kernel development standpoint I don't think they are really relevant"
+      },
+      {
+        "start": 30094,
+        "stop": 30710,
+        "text": " at some point people have them as museum pieces they might as well run museum"
+      },
+      {
+        "start": 30710,
+        "stop": 31222,
+        "text": " kernels and perhaps what really matters and was pointed out later in the thread"
+      },
+      {
+        "start": 31222,
+        "stop": 31710,
+        "text": " it seems no one really wants to stand up and offer to do the work to maintain"
+      },
+      {
+        "start": 31710,
+        "stop": 32550,
+        "text": " that support the I 486 architecture debuted in 1989 and was succeeded by"
+      },
+      {
+        "start": 32550,
+        "stop": 33350,
+        "text": " Intel's Pentium in 1993 Linode comm slash land go there to get a hundred"
+      },
+      {
+        "start": 33350,
+        "stop": 33666,
+        "text": " dollars in sixty day credit on a new account it's a great way to support the"
+      },
+      {
+        "start": 33666,
+        "stop": 34158,
+        "text": " show to let out as fast reliable cloud hosting it's simple affordable and"
+      },
+      {
+        "start": 34158,
+        "stop": 34502,
+        "text": " accessible to whatever your skill level is and they have the best support in the"
+      },
+      {
+        "start": 34502,
+        "stop": 34858,
+        "text": " business because they're architected like nobody else in the business Linod"
+      },
+      {
+        "start": 34858,
+        "stop": 35192,
+        "text": " how we run everything whatever we've built in the last couple of years we"
+      },
+      {
+        "start": 35192,
+        "stop": 35724,
+        "text": " deploy it on Linode my personal site my family stuff game servers I run it"
+      },
+      {
+        "start": 35724,
+        "stop": 36126,
+        "text": " personally on Linode - they have a Linux culture that runs deep they've got"
+      },
+      {
+        "start": 36126,
+        "stop": 36498,
+        "text": " fantastic support and they're 30 to 50 percent cheaper than the hyperscalers"
+      },
+      {
+        "start": 36498,
+        "stop": 36814,
+        "text": " out there they'll want to lock you into their crazy platforms but I also think"
+      },
+      {
+        "start": 36814,
+        "stop": 37138,
+        "text": " Linode truly has the best performance and today they got 11 data centers"
+      },
+      {
+        "start": 37138,
+        "stop": 37514,
+        "text": " around the world with a dozen more coming online next year and they have a"
+      },
+      {
+        "start": 37514,
+        "stop": 37862,
+        "text": " bunch of great features besides just running your applications really well s"
+      },
+      {
+        "start": 37862,
+        "stop": 38406,
+        "text": " 3 object storage cloud firewalls easy to understand backups kubernetes support"
+      },
+      {
+        "start": 38406,
+        "stop": 38990,
+        "text": " and a dashboard for days so go build something go learn something try it for"
+      },
+      {
+        "start": 38990,
+        "stop": 39602,
+        "text": " yourself for real $100 means you can really try it linode.com slash LAN go"
+      },
+      {
+        "start": 39602,
+        "stop": 40258,
+        "text": " there to support the show and try it out linode.com slash lamp"
+      },
+      {
+        "start": 40258,
+        "stop": 40790,
+        "text": " collide.com slash LAN and a big thank you to collide collide is endpoint"
+      },
+      {
+        "start": 40790,
+        "stop": 41236,
+        "text": " security that uses the most powerful untapped resource in IT your end users"
+      },
+      {
+        "start": 41236,
+        "stop": 41618,
+        "text": " they do things differently instead of treating every device like Fort Knox it"
+      },
+      {
+        "start": 41618,
+        "stop": 42106,
+        "text": " locks it down and makes it slow they work with your users collide will"
+      },
+      {
+        "start": 42106,
+        "stop": 42476,
+        "text": " automatically notify your team when their devices are insecure and give them"
+      },
+      {
+        "start": 42476,
+        "stop": 42834,
+        "text": " step-by-step instructions on how to solve the problem they reach out with a"
+      },
+      {
+        "start": 42834,
+        "stop": 43262,
+        "text": " friendly slack DM and educate them and for IT admins you get a brilliant"
+      },
+      {
+        "start": 43262,
+        "stop": 43714,
+        "text": " dashboard that lets you monitor the security of your entire fleet maybe it's"
+      },
+      {
+        "start": 43714,
+        "stop": 43994,
+        "text": " a Mac maybe it's Windows or maybe it's Linux"
+      },
+      {
+        "start": 43994,
+        "stop": 44510,
+        "text": " collide supports it all in fact just a couple of days ago their official Mac OS"
+      },
+      {
+        "start": 44510,
+        "stop": 44910,
+        "text": " Ventura support dropped they're right on top of that kind of stuff it's truly"
+      },
+      {
+        "start": 44910,
+        "stop": 45190,
+        "text": " great because in a snapshot you can see if they have a password manager if they"
+      },
+      {
+        "start": 45190,
+        "stop": 45590,
+        "text": " have their OS up-to-date if they've been following the guidelines and the"
+      },
+      {
+        "start": 45590,
+        "stop": 46166,
+        "text": " requirements of IT and it's perfect for generating a report for yourself for"
+      },
+      {
+        "start": 46166,
+        "stop": 46574,
+        "text": " leadership maybe an audit that's collide really it's user centered cross-platform"
+      },
+      {
+        "start": 46574,
+        "stop": 46994,
+        "text": " endpoint security for teams that slack you can really meet your compliance"
+      },
+      {
+        "start": 46994,
+        "stop": 47542,
+        "text": " goals by putting users first you visit collide comm slash land to find out how"
+      },
+      {
+        "start": 47542,
+        "stop": 47818,
+        "text": " when you go there and activate a free trial they're gonna hook you up with a"
+      },
+      {
+        "start": 47818,
+        "stop": 48394,
+        "text": " goodie bag too that includes a free t-shirt so that's k o l i de comm slash"
+      },
+      {
+        "start": 48394,
+        "stop": 49314,
+        "text": " land collide comm slash land we end this week on the roundup of recent red hat"
+      },
+      {
+        "start": 49314,
+        "stop": 49978,
+        "text": " news now Linux in the clouds that's nothing new but an on-demand remote red"
+      },
+      {
+        "start": 49978,
+        "stop": 50514,
+        "text": " head enterprise desktop is rather noteworthy red hat announced the general"
+      },
+      {
+        "start": 50514,
+        "stop": 51134,
+        "text": " availability of rel workstation on AWS joining Ubuntu and Windows which both"
+      },
+      {
+        "start": 51134,
+        "stop": 51698,
+        "text": " already offer remote virtual desktops on Amazon's cloud the product is basically"
+      },
+      {
+        "start": 51698,
+        "stop": 52114,
+        "text": " just a virtual Linux workstation that can be accessed using a thin client or"
+      },
+      {
+        "start": 52114,
+        "stop": 52610,
+        "text": " just a web browser it's a cheaper alternative for some specific types of"
+      },
+      {
+        "start": 52610,
+        "stop": 53146,
+        "text": " workloads and includes dedicated GPU options and other G family accelerated"
+      },
+      {
+        "start": 53146,
+        "stop": 53550,
+        "text": " instance types that are suitable for remote workstations yeah that makes"
+      },
+      {
+        "start": 53550,
+        "stop": 53966,
+        "text": " sense and hopefully gives red hat a solid business reason to invest more in"
+      },
+      {
+        "start": 53966,
+        "stop": 54498,
+        "text": " desktop technologies I note that customers with red hats cloud access can"
+      },
+      {
+        "start": 54498,
+        "stop": 54958,
+        "text": " use their existing subscription to rel workstation to deploy on AWS with no"
+      },
+      {
+        "start": 54958,
+        "stop": 55306,
+        "text": " additional license required I mean yeah of course you still got to pay for your"
+      },
+      {
+        "start": 55306,
+        "stop": 55822,
+        "text": " machine time on AWS but that's nice to see and keeping things in a red hat"
+      },
+      {
+        "start": 55822,
+        "stop": 56302,
+        "text": " theme here stratus 3.3.0 was released this week they say it includes one"
+      },
+      {
+        "start": 56302,
+        "stop": 56746,
+        "text": " significant enhancement and several more minor enhancements as well as more than"
+      },
+      {
+        "start": 56746,
+        "stop": 57138,
+        "text": " just a couple of stability and efficiency improvements just a reminder"
+      },
+      {
+        "start": 57138,
+        "stop": 57634,
+        "text": " for some of you out there stratus is a storage tooling solution from red hat"
+      },
+      {
+        "start": 57634,
+        "stop": 58174,
+        "text": " that leverages XFS and LVM to manage Linux storage devices and provides"
+      },
+      {
+        "start": 58174,
+        "stop": 58910,
+        "text": " features similar to ZFS and butter FS and in 3.3.0 it's become easier to use"
+      },
+      {
+        "start": 58910,
+        "stop": 59426,
+        "text": " additional space on devices and behind the scenes stratus is a bit more"
+      },
+      {
+        "start": 59426,
+        "stop": 59974,
+        "text": " conservative now when allocating space for the thin pool metadata device that's"
+      },
+      {
+        "start": 59974,
+        "stop": 60378,
+        "text": " also really nice to see there is some good tech in stratus and some really"
+      },
+      {
+        "start": 60378,
+        "stop": 60758,
+        "text": " good work going into it it's sort of a shame that it just doesn't seem to be"
+      },
+      {
+        "start": 60758,
+        "stop": 61214,
+        "text": " the solution the industry wants right now thankfully fedora has butter FS and"
+      },
+      {
+        "start": 61214,
+        "stop": 61618,
+        "text": " that seems to be going great however this week we did get an update that"
+      },
+      {
+        "start": 61618,
+        "stop": 62266,
+        "text": " fedora 37s release will probably slip again yeah you know this happens"
+      },
+      {
+        "start": 62266,
+        "stop": 62774,
+        "text": " sometimes as we record the decision has not yet been finalized but the team is"
+      },
+      {
+        "start": 62774,
+        "stop": 63298,
+        "text": " trying to decide how to deal with an impending critical open SSL update that"
+      },
+      {
+        "start": 63298,
+        "stop": 63882,
+        "text": " was only just recently announced understandable and the patch won't ship"
+      },
+      {
+        "start": 63882,
+        "stop": 64366,
+        "text": " until next Tuesday November 1st it's going to be version 3.0.7 and it"
+      },
+      {
+        "start": 64366,
+        "stop": 64894,
+        "text": " includes a fix for potentially multiple issues one of which has been marked as"
+      },
+      {
+        "start": 64894,
+        "stop": 65482,
+        "text": " critical so as we record like Wes said the team is debating the best move you"
+      },
+      {
+        "start": 65482,
+        "stop": 65874,
+        "text": " can follow Matthew Miller on Twitter directly for the latest he'll have that"
+      },
+      {
+        "start": 65874,
+        "stop": 66298,
+        "text": " I'm sure or you know tune in here because we'll keep an eye on fedora 37"
+      },
+      {
+        "start": 66298,
+        "stop": 66614,
+        "text": " that open SSL vulnerability and everything else going on in the world of"
+      },
+      {
+        "start": 66614,
+        "stop": 67162,
+        "text": " Linux and open source so head over to Linux action news.com slash subscribe for"
+      },
+      {
+        "start": 67162,
+        "stop": 67662,
+        "text": " all the ways to get every single episode and one exception news.com slash contact"
+      },
+      {
+        "start": 67662,
+        "stop": 68118,
+        "text": " to take a guess at when you think fedora 37 will actually ship did we miss a"
+      },
+      {
+        "start": 68118,
+        "stop": 68470,
+        "text": " story boost in with a new podcast app and tell us which story you would have"
+      },
+      {
+        "start": 68470,
+        "stop": 68830,
+        "text": " liked to have seen us cover we'll be back next week with our take on the"
+      },
+      {
+        "start": 68830,
+        "stop": 69322,
+        "text": " latest Linux and open source news thanks for joining us and that's all the news"
+      },
+      {
+        "start": 69322,
+        "stop": 69626,
+        "text": " for this week"
+      },
+      {
+        "start": 69626,
+        "stop": 69832,
+        "text": " you"
+      },
+      {
+        "start": 69832,
+        "stop": 70038,
+        "text": " you"
+      },
+      {
+        "start": 70038,
+        "stop": 70244,
+        "text": " you"
+      },
+      {
+        "start": 70244,
+        "stop": 70450,
+        "text": " you"
+      },
+      {
+        "start": 70450,
+        "stop": 70656,
+        "text": " you"
+      },
+      {
+        "start": 70656,
+        "stop": 70862,
+        "text": " you"
+      },
+      {
+        "start": 70862,
+        "stop": 71068,
+        "text": " you"
+      },
+      {
+        "start": 71176,
+        "stop": 71382,
+        "text": " you"
+      },
+      {
+        "start": 71382,
+        "stop": 71588,
+        "text": " you"
+      },
+      {
+        "start": 71588,
+        "stop": 71794,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 531,
+      "nanos": 563604708
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 264",
+    "pictures": [],
+    "duration": {
+      "secs": 713,
+      "nanos": 700000000
+    },
+    "unique_id": "http://linuxactionnews.com/264"
+  },
+  "episode": {
+    "title": "Linux Action News 264",
+    "description": "The focus of the new Ubuntu release, Gitea's surprising announcement, and Linux prepares to drop another architecture.",
+    "content": "<p><p>The focus of the new Ubuntu release, Gitea&#39;s surprising announcement, and Linux prepares to drop another architecture.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://ubuntu.com/blog/canonical-releases-ubuntu-22-10-kinetic-kudu\" title=\"Ubuntu 22.10 Released\" rel=\"nofollow\">Ubuntu 22.10 Released</a> &mdash; Codenamed “Kinetic Kudu”, this interim release improves the experience of enterprise developers and IT administrators. It also includes the latest toolchains and applications with a particular focus on the IoT ecosystem.</li><li><a href=\"https://linuxunplugged.com/481\" title=\"LINUX Unplugged 481: Just a Prompt Away\" rel=\"nofollow\">LINUX Unplugged 481: Just a Prompt Away</a> &mdash; We take a look at Ubuntu 22.10 on a ODRID H3+</li><li><a href=\"https://ubuntu.com//blog/ubuntu-22-10-on-the-raspberry-pi-delivers-new-display-support-and-the-full-micropython-stack\" title=\"Ubuntu 22.10 Pi Focused Features\" rel=\"nofollow\">Ubuntu 22.10 Pi Focused Features</a></li><li><a href=\"https://9to5linux.com/ubuntu-22-10-kinetic-kudu-is-now-available-for-download-this-is-whats-new\" title=\"Ubuntu 22.10 (Kinetic Kudu) Is Now Available for Download\" rel=\"nofollow\">Ubuntu 22.10 (Kinetic Kudu) Is Now Available for Download</a></li><li><a href=\"https://blog.gitea.io/2022/10/open-source-sustainment-and-the-future-of-gitea/\" title=\"Open source sustainment and the future of Gitea\" rel=\"nofollow\">Open source sustainment and the future of Gitea</a> &mdash; We’d like to announce that we have formed a company, Gitea Limited, to ensure the goals are met. </li><li><a href=\"https://www.phoronix.com/news/Apple-CPUFreq-Linux-v3\" title=\"Apple CPUFreq Driver Updated For Linux - Initial M2 Support Added\" rel=\"nofollow\">Apple CPUFreq Driver Updated For Linux - Initial M2 Support Added</a> &mdash; The new v3 patches have addressed feedback raised during prior review. One notable addition with the new patches is adding initial support for the Apple M2 SoC (T8112).</li><li><a href=\"https://twitter.com/linaasahi/status/1583444549648543744\" title=\"Asahi Lina on Twitter\" rel=\"nofollow\">Asahi Lina on Twitter</a> &mdash;  My Linux M1 GPU driver passes >99% of the dEQP-GLES2 compliance tests!</li><li><a href=\"https://twitter.com/marcan42/status/1582364276052078593\" title=\"Hector Martin on Twitter\" rel=\"nofollow\">Hector Martin on Twitter</a></li><li><a href=\"https://www.theregister.com/2022/10/25/486_support_linux_kernel_ending/\" title=\"Linus Torvalds may pull '486 support from Linux kernel\" rel=\"nofollow\">Linus Torvalds may pull '486 support from Linux kernel</a> &mdash; As Torvalds surveyed contributors' code, he appears to have been frustrated by the need to include workarounds that cater to older CPUs. He therefore suggested ending support for old kit could be an easier way to solve memory matters.</li><li><a href=\"https://siliconangle.com/2022/10/20/red-hats-virtual-linux-workstation-now-available-aws/\" title=\"Red Hat releases a virtual Red Hat Enterprise Linux desktop on AWS\" rel=\"nofollow\">Red Hat releases a virtual Red Hat Enterprise Linux desktop on AWS</a> &mdash; Red Hat is positioning the service as suitable for processing-intensive workloads like animation rendering or data visualization but without the associated hardware costs.</li><li><a href=\"https://www.phoronix.com/news/Stratis-Storage-3.3\" title=\"Stratis Storage 3.3 Released\" rel=\"nofollow\">Stratis Storage 3.3 Released</a> &mdash; Stratis 3.3.0 includes one significant enhancement and several smaller enhancements as well as number of stability and efficiency improvements.</li><li><a href=\"https://stratis-storage.github.io/stratis-release-notes-3-3-0/\" title=\"Stratis Storage\" rel=\"nofollow\">Stratis Storage</a></li><li><a href=\"https://twitter.com/mattdm/status/1585285318265262081\" title=\"Matthew Miller on Twitter\" rel=\"nofollow\">Matthew Miller on Twitter</a> &mdash; Heads up: we are very likely to slip the official Fedora Linux 37 release in order to integrate fixes for the upcoming critical openssl vulnerability. Official decision on this tomorrow.</li><li><a href=\"https://mta.openssl.org/pipermail/openssl-announce/2022-October/000238.html\" title=\"Forthcoming OpenSSL Releases\" rel=\"nofollow\">Forthcoming OpenSSL Releases</a> &mdash; OpenSSL 3.0.7 is a security-fix release. The highest severity issue fixed in this release is CRITICAL</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8974",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15745245/55bb5263-04be-43a3-8b92-678072a9cfc8.mp3",
+      "length": "10401408",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-27T05:35:00+02:00"
+  },
+  "speedup": 1.3426428
+}

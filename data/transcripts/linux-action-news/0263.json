@@ -1,0 +1,882 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 2600,
+        "text": " so"
+      },
+      {
+        "start": 2736,
+        "stop": 3440,
+        "text": " running ambient machine learning workloads i think i dig their jive here though it's it's a"
+      },
+      {
+        "start": 3440,
+        "stop": 4056,
+        "text": " new os for a new type of workload with a different focus we'll get into this they want something that"
+      },
+      {
+        "start": 4056,
+        "stop": 4624,
+        "text": " is hyper focused on the embedded hardware that is doing what they call this ambient machine learning"
+      },
+      {
+        "start": 4624,
+        "stop": 5216,
+        "text": " kind of always monitoring the environment taking in data constantly sensors galore and on top of"
+      },
+      {
+        "start": 5216,
+        "stop": 5704,
+        "text": " that they want to build it with some modern technologies that are a little more verifiable"
+      },
+      {
+        "start": 5704,
+        "stop": 6184,
+        "text": " and a little more hip and their announcement they write coda os provides a verifiably secure"
+      },
+      {
+        "start": 6184,
+        "stop": 6840,
+        "text": " platform that protects users privacy because it's logically impossible for applications to breach"
+      },
+      {
+        "start": 6840,
+        "stop": 7496,
+        "text": " the kernel's hardware security protections and the system components are verifiably secured"
+      },
+      {
+        "start": 7496,
+        "stop": 8056,
+        "text": " coda os is also implemented almost entirely in rust which provides a strong starting point"
+      },
+      {
+        "start": 8056,
+        "stop": 8648,
+        "text": " for software security since it eliminates an entire class of bugs such as off by one errors"
+      },
+      {
+        "start": 8648,
+        "stop": 9528,
+        "text": " and buffer overflows i guess that means fuchsia is old and busted now or maybe just destined for"
+      },
+      {
+        "start": 9528,
+        "stop": 10288,
+        "text": " smart speakers coda os on the other hand well it's part of google's project sparrow which is something"
+      },
+      {
+        "start": 10288,
+        "stop": 11016,
+        "text": " of a demonstration project which combines coda os with a secured hardware platform built on top of"
+      },
+      {
+        "start": 11016,
+        "stop": 11712,
+        "text": " risk five the github repo for coda os well it's been extant for a couple of months now but as we"
+      },
+      {
+        "start": 11712,
+        "stop": 12456,
+        "text": " record just two days ago it was updated with a full readme and a lot more details we'll have a"
+      },
+      {
+        "start": 12456,
+        "stop": 13104,
+        "text": " link for the curious in the show notes the current github release well it includes most of the coda os"
+      },
+      {
+        "start": 13104,
+        "stop": 13664,
+        "text": " core pieces to hear it from google including the frameworks they use for rust and an alternate root"
+      },
+      {
+        "start": 13664,
+        "stop": 14392,
+        "text": " server written in rust and more google also says their goal is to open source all of project sparrow"
+      },
+      {
+        "start": 14392,
+        "stop": 15000,
+        "text": " when the time is right but in the meantime they're focusing a lot on coda os and how it's built and"
+      },
+      {
+        "start": 15000,
+        "stop": 15472,
+        "text": " how what they say it's critical for this new generation of embedded devices that are going"
+      },
+      {
+        "start": 15472,
+        "stop": 16056,
+        "text": " to collect this data constantly they must be what google says quote mathematically proven to keep"
+      },
+      {
+        "start": 16056,
+        "stop": 16936,
+        "text": " data secure in this case google's trying to meet those lofty goals by building on top of sel4 which"
+      },
+      {
+        "start": 16936,
+        "stop": 17664,
+        "text": " is an advanced microkernel that's been notable for having comprehensive formal verification way beyond"
+      },
+      {
+        "start": 17664,
+        "stop": 18288,
+        "text": " what any popular commercial operating system is really using these days and doing so without"
+      },
+      {
+        "start": 18288,
+        "stop": 18896,
+        "text": " compromising performance at least to hear the project talk about it then on top of your small"
+      },
+      {
+        "start": 18896,
+        "stop": 19552,
+        "text": " verifiable microkernel use a framework called camkiz to build all of your system components"
+      },
+      {
+        "start": 19552,
+        "stop": 20048,
+        "text": " that's because camkiz well it's a software development and runtime framework designed to"
+      },
+      {
+        "start": 20048,
+        "stop": 20808,
+        "text": " build secure microkernel based operating systems they might be onto something here and some of that"
+      },
+      {
+        "start": 20808,
+        "stop": 21480,
+        "text": " is really what draws i think a bright distinction line between say fuchsia and coda os or what exists"
+      },
+      {
+        "start": 21480,
+        "stop": 22136,
+        "text": " out there today is they're really bringing all of this together all the exciting technology aside"
+      },
+      {
+        "start": 22136,
+        "stop": 22848,
+        "text": " the real question here with any google platform or operating system how much adoption will this see"
+      },
+      {
+        "start": 22848,
+        "stop": 23488,
+        "text": " outside of google and how much support will it get once it's no longer a fun new research project"
+      },
+      {
+        "start": 23592,
+        "stop": 24560,
+        "text": " well of course only time can tell on that one but uh why not send us a boost with your best guess"
+      },
+      {
+        "start": 24560,
+        "stop": 24976,
+        "text": " security researchers in germany alerted the sus development team to buffer"
+      },
+      {
+        "start": 24976,
+        "stop": 25560,
+        "text": " overwrite issues they found in the linux kernel that they could trigger just with wi-fi packets"
+      },
+      {
+        "start": 25560,
+        "stop": 26064,
+        "text": " the susa team quickly then informed the linux kernel security team who jumped into action"
+      },
+      {
+        "start": 26144,
+        "stop": 26792,
+        "text": " during the team's research aided by intel they found multiple problems in the wlan stack also"
+      },
+      {
+        "start": 26792,
+        "stop": 27448,
+        "text": " exploitable over the air now we don't have all the details just yet but looking at the commit series"
+      },
+      {
+        "start": 27448,
+        "stop": 28056,
+        "text": " it seems the code that got fixed all came from the first quarter of 2019 with the bulk of the"
+      },
+      {
+        "start": 28056,
+        "stop": 28776,
+        "text": " issues being introduced in the 5.1 or 5.2 kernel so unfortunately i think that means these flaws"
+      },
+      {
+        "start": 28776,
+        "stop": 29424,
+        "text": " have likely shipped and plenty of distributions by now yeah we've got five separate cves related"
+      },
+      {
+        "start": 29424,
+        "stop": 30048,
+        "text": " to this by my account the good news is linus has already merged the patches in the linux 6.1"
+      },
+      {
+        "start": 30048,
+        "stop": 30624,
+        "text": " which just hit rc this weekend we'll have more details on that in a few minutes but also you're"
+      },
+      {
+        "start": 30624,
+        "stop": 31064,
+        "text": " going to have to wait for distro makers who will need to backport those fixes to their kernels that"
+      },
+      {
+        "start": 31064,
+        "stop": 31688,
+        "text": " aren't based on 6.1 at least not yet and well i just have a terrible feeling for all those android"
+      },
+      {
+        "start": 31688,
+        "stop": 32336,
+        "text": " users out there who are maybe lucky enough to get android based on linux 5 i just doubt they're"
+      },
+      {
+        "start": 32336,
+        "stop": 32832,
+        "text": " going to see any updates for this and they're walking around scanning for wi-fi all the time"
+      },
+      {
+        "start": 32832,
+        "stop": 33472,
+        "text": " really all linux users will need to be vigilant when using wi-fi these days a buffer overwrite"
+      },
+      {
+        "start": 33472,
+        "stop": 34064,
+        "text": " triggered remotely by a malicious wi-fi packet yeah that's no fun the most serious flaw here"
+      },
+      {
+        "start": 34064,
+        "stop": 34704,
+        "text": " it seems to be triggered when just scanning for open ap's now as for public exploits that people"
+      },
+      {
+        "start": 34704,
+        "stop": 35368,
+        "text": " have seen actually in the wild none have been spotted so far but it won't take long there are"
+      },
+      {
+        "start": 35368,
+        "stop": 35864,
+        "text": " several proofs of concepts that are posted online on github in various places shared in security"
+      },
+      {
+        "start": 35864,
+        "stop": 36504,
+        "text": " threads they're getting linked around already i was able to find a fully working tool rather"
+      },
+      {
+        "start": 36504,
+        "stop": 36976,
+        "text": " quickly this morning when doing a little research for this story so that's what's been happening"
+      },
+      {
+        "start": 36976,
+        "stop": 37672,
+        "text": " with my laptop darn it chris now on the plus side we do expect patches to get backported pretty"
+      },
+      {
+        "start": 37672,
+        "stop": 38728,
+        "text": " quickly so good time to keep an eye on your updates mozilla has given us a reason to cover firefox this"
+      },
+      {
+        "start": 38728,
+        "stop": 39336,
+        "text": " week a brand new version 106 is getting a lot of attention by most people for its much improved pdf"
+      },
+      {
+        "start": 39336,
+        "stop": 39904,
+        "text": " viewer and it does have support now for text writing drawing and signatures and i'll be honest"
+      },
+      {
+        "start": 39904,
+        "stop": 40568,
+        "text": " that sounds pretty nice but what we think is fantastic are the improvements to the fox's web"
+      },
+      {
+        "start": 40568,
+        "stop": 41392,
+        "text": " rtc capabilities firefox is now using libwebrtc 103 with better screen sharing support for wayland"
+      },
+      {
+        "start": 41392,
+        "stop": 42208,
+        "text": " users and lower cpu usage also on wayland firefox 106 now has gesture support for swiping right or"
+      },
+      {
+        "start": 42208,
+        "stop": 42896,
+        "text": " left to go back and forwards in the browser you know if we're honest firefox is lagging web rtc"
+      },
+      {
+        "start": 42896,
+        "stop": 43472,
+        "text": " has been a bit of a challenge for us here jupiter broadcasting and i've got to imagine for all of"
+      },
+      {
+        "start": 43472,
+        "stop": 44096,
+        "text": " you out there also living the virtual meeting lifestyle yeah seeing them get up to date on that"
+      },
+      {
+        "start": 44096,
+        "stop": 44704,
+        "text": " libwebrtc library i think is great that was an area where i felt like firefox was lagging behind"
+      },
+      {
+        "start": 44704,
+        "stop": 45328,
+        "text": " the chromium based browsers and otherwise has been crushing it recently also in web browser news this"
+      },
+      {
+        "start": 45328,
+        "stop": 45968,
+        "text": " week the impervious browsers public alpha was released and as of now it's only available for"
+      },
+      {
+        "start": 45968,
+        "stop": 46608,
+        "text": " mac and linux platforms this new browser bills itself as a suite of peer-to-peer tools for"
+      },
+      {
+        "start": 46608,
+        "stop": 47184,
+        "text": " various things like communication data transport payments that sort of stuff it's all built directly"
+      },
+      {
+        "start": 47184,
+        "stop": 47856,
+        "text": " into the web browser along with a secure messenger support for group video calls live collab doc"
+      },
+      {
+        "start": 47856,
+        "stop": 48528,
+        "text": " editing decentralized identities and even bitcoin lightning support i'm not sure really where this"
+      },
+      {
+        "start": 48528,
+        "stop": 49040,
+        "text": " one's going but they're offering an awful lot you can find out more at impervious.ai and we'll have"
+      },
+      {
+        "start": 49040,
+        "stop": 50224,
+        "text": " a link to the project's github in the notes if all goes as planned fedora 37 is scheduled to release"
+      },
+      {
+        "start": 50224,
+        "stop": 51168,
+        "text": " mid next week and the project is doing a virtual release party good news you're invited the project"
+      },
+      {
+        "start": 51168,
+        "stop": 51704,
+        "text": " says that the virtual release party is a great way to learn more about the latest fedora linux release"
+      },
+      {
+        "start": 51704,
+        "stop": 52392,
+        "text": " but more importantly it's your chance to spend time with a wonderful fedora community they hope"
+      },
+      {
+        "start": 52392,
+        "stop": 52848,
+        "text": " to include informational sessions that will feature updates about things like fedora core os"
+      },
+      {
+        "start": 52848,
+        "stop": 53544,
+        "text": " the new installer interface preview and let you meet some new project members the event takes"
+      },
+      {
+        "start": 53544,
+        "stop": 54152,
+        "text": " place on november 4th and 5th registration is free and of course we'll have a link in the notes"
+      },
+      {
+        "start": 54152,
+        "stop": 54952,
+        "text": " linode.com slash land go there to get a hundred dollars in 60-day credit on a new account"
+      },
+      {
+        "start": 54952,
+        "stop": 55448,
+        "text": " and it's a great way to support the show linode is fast reliable cloud hosting and they've been"
+      },
+      {
+        "start": 55448,
+        "stop": 55960,
+        "text": " a long time sponsor of linux action news because our audience loves linode they become passionate"
+      },
+      {
+        "start": 55960,
+        "stop": 56376,
+        "text": " customers once they sign up it's why we run everything over there because we love it too"
+      },
+      {
+        "start": 56376,
+        "stop": 56840,
+        "text": " everything we've built in the last couple of years that runs in the cloud it runs on linode i think"
+      },
+      {
+        "start": 56840,
+        "stop": 57256,
+        "text": " the best part is how they've built their business up over 19 years nearly they've had to just build"
+      },
+      {
+        "start": 57256,
+        "stop": 57672,
+        "text": " a really good competitive business that means things like their support department have real"
+      },
+      {
+        "start": 57672,
+        "stop": 58312,
+        "text": " humans all day every day that means their system performs right all their systems their network"
+      },
+      {
+        "start": 58312,
+        "stop": 58832,
+        "text": " connections the hard drives the cpu's even their gpu rigs which i just recently had the fortune to"
+      },
+      {
+        "start": 58832,
+        "stop": 59304,
+        "text": " actually try one out and they're 30 to 50 percent cheaper than the hyperscalers out there that want"
+      },
+      {
+        "start": 59304,
+        "stop": 59840,
+        "text": " to lock into their crazy esoteric platforms with their crazy names for everything and i think they"
+      },
+      {
+        "start": 59840,
+        "stop": 60304,
+        "text": " outperform all of those hyperscalers and independent studies have shown that as well with that hundred"
+      },
+      {
+        "start": 60304,
+        "stop": 60832,
+        "text": " dollars you can go find out for yourself today linode has 11 data centers and a dozen more coming"
+      },
+      {
+        "start": 60832,
+        "stop": 61344,
+        "text": " next year with great features such as object storage and cloud firewalls backups and"
+      },
+      {
+        "start": 61344,
+        "stop": 61920,
+        "text": " kubernetes and terraform support and so much more as well as one-click deployments for things like"
+      },
+      {
+        "start": 61920,
+        "stop": 62408,
+        "text": " next cloud game servers blog servers web servers control panels their marketplace is packed full"
+      },
+      {
+        "start": 62408,
+        "stop": 62856,
+        "text": " of good stuff so go try something go learn something go build something and try it out"
+      },
+      {
+        "start": 62856,
+        "stop": 63440,
+        "text": " while you support the show linode.com slash lan that's linode.com slash lan"
+      },
+      {
+        "start": 63800,
+        "stop": 64456,
+        "text": " and a thank you to collide collide.com slash lan collide is endpoint security that uses the most"
+      },
+      {
+        "start": 64456,
+        "stop": 65056,
+        "text": " important powerful untapped resource in it the end users when you're trying to achieve security goals"
+      },
+      {
+        "start": 65056,
+        "stop": 65640,
+        "text": " for yourself for a new boss for an auditor been there the conventional wisdom has been to lock"
+      },
+      {
+        "start": 65640,
+        "stop": 66208,
+        "text": " every single device down old school style like mdms that force disruptive agents onto employees"
+      },
+      {
+        "start": 66208,
+        "stop": 66656,
+        "text": " devices that make them run slow or sometimes incompatible with apps and often introduce"
+      },
+      {
+        "start": 66656,
+        "stop": 67408,
+        "text": " security issues of their own you know it's true it's like the old way of doing it and it puts it"
+      },
+      {
+        "start": 67408,
+        "stop": 68048,
+        "text": " and end users kind of at odds collide does things differently instead of forcing changes on users"
+      },
+      {
+        "start": 68048,
+        "stop": 68544,
+        "text": " collide sends them security recommendations via slack collide will automatically notify your team"
+      },
+      {
+        "start": 68544,
+        "stop": 68976,
+        "text": " when their devices are insecure and then give them step-by-step instructions on how to solve that"
+      },
+      {
+        "start": 68976,
+        "stop": 69448,
+        "text": " problem and by reaching out to employees via a friendly slack dm and educating them about company"
+      },
+      {
+        "start": 69448,
+        "stop": 69976,
+        "text": " policies collide helps you build a culture in which everyone contributes to security because"
+      },
+      {
+        "start": 69976,
+        "stop": 70688,
+        "text": " everyone understands how and why to do it and for it admins collide gives you a dashboard for days"
+      },
+      {
+        "start": 70688,
+        "stop": 71216,
+        "text": " you can monitor the security of your entire fleet it can be on macs windows and of course beautiful"
+      },
+      {
+        "start": 71216,
+        "stop": 71696,
+        "text": " linux you can see at a glance which employees have their disk encrypted if they have their os updates"
+      },
+      {
+        "start": 71696,
+        "stop": 72168,
+        "text": " installed a password manager etc just making it easy to run reports improve compliance to your"
+      },
+      {
+        "start": 72168,
+        "stop": 72800,
+        "text": " auditors customers leadership and yourself so that's collide user-centered cross-platform"
+      },
+      {
+        "start": 72800,
+        "stop": 73400,
+        "text": " endpoint security for teams that slack you can meet your compliance goals by putting users first"
+      },
+      {
+        "start": 73400,
+        "stop": 73968,
+        "text": " just visit collide.com slash land to find out how you go there you sign up for a free trial they're"
+      },
+      {
+        "start": 73968,
+        "stop": 74424,
+        "text": " going to hook you up with a goodie bag that includes a t-shirt i don't know if that t-shirt"
+      },
+      {
+        "start": 74424,
+        "stop": 74864,
+        "text": " has a picture of my face on it i wouldn't expect that i don't know why you thought it would but"
+      },
+      {
+        "start": 74864,
+        "stop": 75480,
+        "text": " you get one when you go to collide.com slash land and you activate a free trial that's k-o-l-i-d-e.com"
+      },
+      {
+        "start": 75480,
+        "stop": 75624,
+        "text": " slash l-a-n"
+      },
+      {
+        "start": 75624,
+        "stop": 76672,
+        "text": " we wrap up today by looking ahead a bit at the linux 6.1 release and the path to get there"
+      },
+      {
+        "start": 76672,
+        "stop": 77288,
+        "text": " it seems linus has been getting just a bit frustrated with all the last minute commits"
+      },
+      {
+        "start": 77288,
+        "stop": 77976,
+        "text": " coming in this time around writing quote let me just say and after i got my machine sorted out"
+      },
+      {
+        "start": 77976,
+        "stop": 78648,
+        "text": " caught up with the merge window i was somewhat frustrated with various late pull requests i've"
+      },
+      {
+        "start": 78648,
+        "stop": 79192,
+        "text": " mentioned this before but it's really quite annoying to get quite a few pull requests in"
+      },
+      {
+        "start": 79192,
+        "stop": 79784,
+        "text": " the last few days of the merge window he then continued with a bit more insight into why he"
+      },
+      {
+        "start": 79784,
+        "stop": 80544,
+        "text": " can find it just so annoying he says quote yes the merge window is two weeks but that's very much to"
+      },
+      {
+        "start": 80544,
+        "stop": 81152,
+        "text": " allow me time to look things over not two weeks to hurriedly put together a branch that you send to"
+      },
+      {
+        "start": 81152,
+        "stop": 81680,
+        "text": " linus on friday of the second week the whole do an all-nighter to get the paper in the day before"
+      },
+      {
+        "start": 81680,
+        "stop": 82272,
+        "text": " the deadline is something that should have gone out the window after high school not for kernel"
+      },
+      {
+        "start": 82272,
+        "stop": 83096,
+        "text": " development well we do want our kernel developers to be healthy happy and well-rested linus also"
+      },
+      {
+        "start": 83096,
+        "stop": 83776,
+        "text": " seems to be trying to manage expectations a little around rust while true 6.1 will feature initial"
+      },
+      {
+        "start": 83776,
+        "stop": 84584,
+        "text": " rust support he describes that support as quote the initial rust scaffolding no actual real rust"
+      },
+      {
+        "start": 84584,
+        "stop": 85216,
+        "text": " code in the kernel yet but the infrastructure is there yeah and that seems fair and probably a good"
+      },
+      {
+        "start": 85216,
+        "stop": 85912,
+        "text": " idea we saw things get really crazy with the 6.0 cycle when it sounded like maybe the initial rust"
+      },
+      {
+        "start": 85912,
+        "stop": 86448,
+        "text": " support would get in there and then they pulled way back when we discovered it wouldn't land in"
+      },
+      {
+        "start": 86448,
+        "stop": 87120,
+        "text": " there and i think we need to set the expectations here this is just the beginning of rust support"
+      },
+      {
+        "start": 87120,
+        "stop": 87624,
+        "text": " but we really will probably get pretty excited when something is actually written in rust shipping"
+      },
+      {
+        "start": 87624,
+        "stop": 88176,
+        "text": " inside the kernel that's probably the moment to really celebrate you know once we can use a driver"
+      },
+      {
+        "start": 88176,
+        "stop": 88736,
+        "text": " say that's written in rust on some real hardware we have in front of us perhaps yeah exactly so"
+      },
+      {
+        "start": 88736,
+        "stop": 89232,
+        "text": " the stuff in 6.1 that we're going to dig into will probably be the things that we suspect will impact"
+      },
+      {
+        "start": 89232,
+        "stop": 89816,
+        "text": " day-to-day linux users the most there's a lot of work going in to improve AMD platforms on linux"
+      },
+      {
+        "start": 89816,
+        "stop": 90520,
+        "text": " specifically the zen 4 processors and of course one of the big ones for us is the improvements to"
+      },
+      {
+        "start": 90520,
+        "stop": 91176,
+        "text": " butter fs kernel 6.1 introduces async buffer rights with more than twice the throughput for"
+      },
+      {
+        "start": 91176,
+        "stop": 91912,
+        "text": " file operations we've also seen some chatter that 6.1 might just end up as the next lts release of"
+      },
+      {
+        "start": 91912,
+        "stop": 92544,
+        "text": " the kernel which could be just in time for a future debian stable release among others after"
+      },
+      {
+        "start": 92544,
+        "stop": 93064,
+        "text": " being prompted on the kernel mailing list linux stable maintainer greg groh hartman commented"
+      },
+      {
+        "start": 93120,
+        "stop": 93864,
+        "text": " i usually pick the quote last kernel of the year and based on the regular release cycle yes 6.1"
+      },
+      {
+        "start": 93864,
+        "stop": 94552,
+        "text": " will be that kernel but i can't promise anything until it's released for obvious reasons fair"
+      },
+      {
+        "start": 94552,
+        "stop": 95168,
+        "text": " enough linux 5 15 lts is last year's long-term kernel version that is currently set to be"
+      },
+      {
+        "start": 95168,
+        "stop": 95792,
+        "text": " maintained through october 2023 now that can be extended if there's enough interest and people"
+      },
+      {
+        "start": 95792,
+        "stop": 96576,
+        "text": " that are willing to help greg maintain that and if linux 6.1 did become the next lts that would be"
+      },
+      {
+        "start": 96576,
+        "stop": 97176,
+        "text": " supported at least through december 2025 so if everything stays on course with the current"
+      },
+      {
+        "start": 97176,
+        "stop": 97904,
+        "text": " development cycle for 6.1 we will likely see the final version ship either december 4th or 11th of"
+      },
+      {
+        "start": 97904,
+        "stop": 98384,
+        "text": " 2022 so we'll just keep an eye on all of this because it's moving fast and there's a lot still"
+      },
+      {
+        "start": 98384,
+        "stop": 98824,
+        "text": " to be worked out and we'll share the relevant updates on the kernel and everything else going"
+      },
+      {
+        "start": 98824,
+        "stop": 99472,
+        "text": " on in the world of linux and open source so check out linuxactionnews.com subscribe for all the ways"
+      },
+      {
+        "start": 99472,
+        "stop": 100128,
+        "text": " to get every episode and linuxactionnews.com contact for ways to get in touch and we just"
+      },
+      {
+        "start": 100128,
+        "stop": 100696,
+        "text": " recently reviewed the newly updated thalio workstation from system 76 go check out our"
+      },
+      {
+        "start": 100696,
+        "stop": 101296,
+        "text": " review in linux unplugged 480 we'll be back next week with our take on the latest linux and open"
+      },
+      {
+        "start": 101296,
+        "stop": 102456,
+        "text": " source news thanks for joining us and that's all the news for this week"
+      },
+      {
+        "start": 102456,
+        "stop": 103216,
+        "text": " so"
+      },
+      {
+        "start": 103216,
+        "stop": 103266,
+        "text": " you"
+      },
+      {
+        "start": 103450,
+        "stop": 103500,
+        "text": " you"
+      },
+      {
+        "start": 103500,
+        "stop": 103550,
+        "text": " you"
+      },
+      {
+        "start": 103550,
+        "stop": 103600,
+        "text": " you"
+      },
+      {
+        "start": 103600,
+        "stop": 103650,
+        "text": " you"
+      },
+      {
+        "start": 103650,
+        "stop": 103700,
+        "text": " you"
+      },
+      {
+        "start": 103700,
+        "stop": 103750,
+        "text": " you"
+      },
+      {
+        "start": 103750,
+        "stop": 103800,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 681,
+      "nanos": 800660351
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 263",
+    "pictures": [],
+    "duration": {
+      "secs": 1035,
+      "nanos": 346000000
+    },
+    "unique_id": "http://linuxactionnews.com/263"
+  },
+  "episode": {
+    "title": "Linux Action News 263",
+    "description": "What makes Google's new OS so secure, a critical WiFi vulnerability in the Kernel, and why Linus is tapping the hype breaks for Linux 6.1.",
+    "content": "<p><p>What makes Google&#39;s new OS so secure, a critical WiFi vulnerability in the Kernel, and why Linus is tapping the hype breaks for Linux 6.1.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://opensource.googleblog.com/2022/10/announcing-kataos-and-sparrow.html?m=1\" title=\"Announcing KataOS and Sparrow\" rel=\"nofollow\">Announcing KataOS and Sparrow</a> &mdash; Our team in Google Research has set out to solve this problem by building a provably secure platform that's optimized for embedded devices that run ML applications.</li><li><a href=\"https://lwn.net/Articles/911332/#Comments\" title=\"Google launches KataOS\" rel=\"nofollow\">Google launches KataOS</a></li><li><a href=\"https://www.phoronix.com/news/Google-KataOS\" title=\"Google Announces KataOS As Security-Focused OS, Leveraging Rust & seL4 Microkernel\" rel=\"nofollow\">Google Announces KataOS As Security-Focused OS, Leveraging Rust &amp; seL4 Microkernel</a></li><li><a href=\"https://lwn.net/Articles/911062/\" title=\"Some remotely exploitable kernel WiFi vulnerabilities\" rel=\"nofollow\">Some remotely exploitable kernel WiFi vulnerabilities</a> &mdash; It would appear that there is a set of memory-related vulnerabilities in the kernel's WiFi stack that can be exploited over the air via malicious packets; five CVE numbers have been assigned to the set.</li><li><a href=\"https://www.phoronix.com/news/Linux-WiFi-Malicious-Packets\" title=\"Linux Gets Patched For WiFi Vulnerabilities That Can Be Exploited By Malicious Packets - Phoronix\" rel=\"nofollow\">Linux Gets Patched For WiFi Vulnerabilities That Can Be Exploited By Malicious Packets - Phoronix</a></li><li><a href=\"https://www.phoronix.com/news/Firefox-106-Available\" title=\"Firefox 106 Brings Improved WebRTC - Better Screen Sharing On Wayland\" rel=\"nofollow\">Firefox 106 Brings Improved WebRTC - Better Screen Sharing On Wayland</a> &mdash; Firefox 106 upgrades its WebRTC capabilities to now make use of libwebrtc 103.</li><li><a href=\"http://impervious.ai/\" title=\"impervious.ai\" rel=\"nofollow\">impervious.ai</a> &mdash; A Suite of Peer-to-Peer Tools for Communications, Data Transport, and Payments, Built Directly Into the Web Browser</li><li><a href=\"https://github.com/imperviousai\" title=\"Impervious Ai GitHub\" rel=\"nofollow\">Impervious Ai GitHub</a></li><li><a href=\"https://fedoramagazine.org/youre-invited-to-the-fedora-linux-37-release-party/\" title=\"You’re invited to the Fedora Linux 37 Release Party!\" rel=\"nofollow\">You’re invited to the Fedora Linux 37 Release Party!</a> &mdash; Please register on Hopin and join us on November 4th and 5th for a short program of informational sessions and social activities.</li><li><a href=\"https://hopin.com/events/fedora-linux-37-release-party/registration\" title=\"Fedora Linux 37 Release Party Registration\" rel=\"nofollow\">Fedora Linux 37 Release Party Registration</a></li><li><a href=\"https://www.theregister.com/2022/10/17/linux_6_1_rc1/\" title=\"Linus Torvalds to Linux devs: Stop pulling all-nighters\" rel=\"nofollow\">Linus Torvalds to Linux devs: Stop pulling all-nighters</a> &mdash; \"Let me just say that after I got my machine sorted out and caught up with the merge window, I was somewhat frustrated with various late pull requests. I've mentioned this before, but it's <em>really</em> quite annoying to get quite a few pull requests in the last few days of the merge window\"</li><li><a href=\"https://www.phoronix.com/review/linux-61-features\" title=\"Linux 6.1 Features Include Initial Rust Code, MGLRU, New AMD CPU Features, More Security\" rel=\"nofollow\">Linux 6.1 Features Include Initial Rust Code, MGLRU, New AMD CPU Features, More Security</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.1-Likely-LTS\" title=\"Linux 6.1 Will Likely Be This Year’s LTS Kernel Release\" rel=\"nofollow\">Linux 6.1 Will Likely Be This Year’s LTS Kernel Release</a></li><li><a href=\"https://www.jupiterbroadcasting.com/show/linux-unplugged/480/\" title=\"Taming the Beast - LUP 480\" rel=\"nofollow\">Taming the Beast - LUP 480</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost\" rel=\"nofollow\">Send a Boost</a> &mdash; Upgrade to a Podcasting 2.0 compatible app, and send a Boost and enjoy other improvements to your podcasts.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8951",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15729456/bbf85579-c916-4b02-add3-bf150f9cf650.mp3",
+      "length": "14925675",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-20T11:05:00+02:00"
+  },
+  "speedup": 1.5185465
+}

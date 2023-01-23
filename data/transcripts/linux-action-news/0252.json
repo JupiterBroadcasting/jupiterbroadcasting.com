@@ -1,0 +1,1182 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 1072,
+        "text": " Hello, and welcome to Linux Action News, episode 252, recorded on August 3, 2022. I'm Chris."
+      },
+      {
+        "start": 1072,
+        "stop": 1172,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1172,
+        "stop": 1496,
+        "text": " Hello, Wes. Let's do the news."
+      },
+      {
+        "start": 1496,
+        "stop": 2152,
+        "text": " There has been a lot of chatter as we record about a \"massive widespread malware attack\""
+      },
+      {
+        "start": 2152,
+        "stop": 2348,
+        "text": " on GitHub."
+      },
+      {
+        "start": 2348,
+        "stop": 3132,
+        "text": " Steven Lacy on Twitter reported finding \"over 35,000 infected code hits\" on GitHub."
+      },
+      {
+        "start": 3132,
+        "stop": 3688,
+        "text": " But it turns out things might not be as bad as the internet seemed to initially think."
+      },
+      {
+        "start": 3688,
+        "stop": 4264,
+        "text": " A false alarm of sorts. There is a problem, but maybe not as bad as originally thought."
+      },
+      {
+        "start": 4264,
+        "stop": 4872,
+        "text": " The infected repositories were just simply forks and clones of projects. And GitHub seemed"
+      },
+      {
+        "start": 4872,
+        "stop": 5336,
+        "text": " to be really quick to clean it up faster than I've ever seen any service provider clean"
+      },
+      {
+        "start": 5336,
+        "stop": 5436,
+        "text": " things up."
+      },
+      {
+        "start": 5436,
+        "stop": 5914,
+        "text": " Yeah, they definitely deserve some props on this one. I saw the reporting tweet floating"
+      },
+      {
+        "start": 5914,
+        "stop": 6368,
+        "text": " around last night, but by the time I saw it and tried to click a few links, I was already"
+      },
+      {
+        "start": 6368,
+        "stop": 6500,
+        "text": " getting 404s."
+      },
+      {
+        "start": 6500,
+        "stop": 7096,
+        "text": " We're not entirely sure of the motivation of these malware actors, but this attack vector"
+      },
+      {
+        "start": 7096,
+        "stop": 7630,
+        "text": " seems like it might be trying to target users who type in related code snippets into their"
+      },
+      {
+        "start": 7630,
+        "stop": 8284,
+        "text": " favorite search engine and then happen to land on these malicious random GitHub repositories,"
+      },
+      {
+        "start": 8284,
+        "stop": 8780,
+        "text": " as discovered by Steven Lacy when accidentally browsing through one of these infected fake"
+      },
+      {
+        "start": 8780,
+        "stop": 8984,
+        "text": " clones himself."
+      },
+      {
+        "start": 8984,
+        "stop": 9460,
+        "text": " The attacker amended the most recent commit and modified it with malicious code. It's"
+      },
+      {
+        "start": 9460,
+        "stop": 9940,
+        "text": " possible they planned to then inject that code into the original forked project, but"
+      },
+      {
+        "start": 9940,
+        "stop": 10464,
+        "text": " that's just an educated guess based on what the researchers have found."
+      },
+      {
+        "start": 10464,
+        "stop": 11118,
+        "text": " This kind of confusion is possible by amending or committing changes in just the right manner,"
+      },
+      {
+        "start": 11118,
+        "stop": 11584,
+        "text": " letting attackers impersonate another GitHub user and make it look like the commit came"
+      },
+      {
+        "start": 11584,
+        "stop": 12206,
+        "text": " from them, at least in an attacker-controlled repository. Behind the scenes, this is done"
+      },
+      {
+        "start": 12206,
+        "stop": 12656,
+        "text": " by locally changing certain environment variables to obtain the username and email address of"
+      },
+      {
+        "start": 12656,
+        "stop": 13220,
+        "text": " the user the attacker would like to impersonate and then push those phony commits up to their"
+      },
+      {
+        "start": 13220,
+        "stop": 13320,
+        "text": " repo."
+      },
+      {
+        "start": 13320,
+        "stop": 13728,
+        "text": " Yeah, actually a similar trick was used back in January to make it appear as though Linus"
+      },
+      {
+        "start": 13728,
+        "stop": 14412,
+        "text": " Torvalds was claiming to be Satoshi Nakamoto, the creator of Bitcoin. But the researchers"
+      },
+      {
+        "start": 14412,
+        "stop": 14872,
+        "text": " who dug into this say this is actually kind of becoming more and more of a problem. They"
+      },
+      {
+        "start": 14872,
+        "stop": 15296,
+        "text": " end their report with the following, quote, \"We are seeing more and more large-scale"
+      },
+      {
+        "start": 15296,
+        "stop": 15920,
+        "text": " attacks on the open source ecosystem. Those attacks can easily fool an unsuspecting developer.\""
+      },
+      {
+        "start": 15920,
+        "stop": 17048,
+        "text": " It's time for a Steam Deck update, and there's plenty to talk about this week,"
+      },
+      {
+        "start": 17048,
+        "stop": 17572,
+        "text": " starting with the release of SteamOS 3.3, which has your typical array of bug fixes"
+      },
+      {
+        "start": 17572,
+        "stop": 18272,
+        "text": " and other minor enhancements, but also solves user experience issues with the Deck."
+      },
+      {
+        "start": 18272,
+        "stop": 18756,
+        "text": " Indeed, audio and Bluetooth fixes probably being the biggest quality of life improvements"
+      },
+      {
+        "start": 18756,
+        "stop": 19336,
+        "text": " for the Deck owners out there, but for me personally, it's tweaks to the virtual keyboard."
+      },
+      {
+        "start": 19336,
+        "stop": 19988,
+        "text": " Bring it, Valve, bring it. Firefox is also now available as a flat pack, and as always,"
+      },
+      {
+        "start": 19988,
+        "stop": 20468,
+        "text": " you'll love to see some nice updated Radeon graphics drivers making the update, and 3.3"
+      },
+      {
+        "start": 20468,
+        "stop": 20982,
+        "text": " has that. But perhaps most importantly, it seems that Valve is just shipping more of"
+      },
+      {
+        "start": 20982,
+        "stop": 21160,
+        "text": " these things than ever."
+      },
+      {
+        "start": 21160,
+        "stop": 21566,
+        "text": " Of course, we've also been keeping an eye on the Deck's impacts to Linux's overall"
+      },
+      {
+        "start": 21566,
+        "stop": 22128,
+        "text": " Steam market share. Michael Arbel over at Phoronix reports that during June, Steam on"
+      },
+      {
+        "start": 22128,
+        "stop": 22880,
+        "text": " Linux usage hit a multi-year high point of 1.18 percent, and that growth continued in"
+      },
+      {
+        "start": 22880,
+        "stop": 23490,
+        "text": " July, with Linux gaming reaching a market share of 1.23 percent. That's an increase"
+      },
+      {
+        "start": 23490,
+        "stop": 24624,
+        "text": " of 0.05 percent over just a month. Meanwhile, Windows is at 97 percent and macOS at 1.74."
+      },
+      {
+        "start": 24624,
+        "stop": 25172,
+        "text": " The reason why those relatively small numbers for Linux are actually impressive is you have"
+      },
+      {
+        "start": 25172,
+        "stop": 25690,
+        "text": " to take into account the rest of Steam's market share continues to grow. So that Linux"
+      },
+      {
+        "start": 25690,
+        "stop": 26204,
+        "text": " growth is in despite of the Windows growth, but also the speed at which we are seeing"
+      },
+      {
+        "start": 26204,
+        "stop": 26860,
+        "text": " that number tick up is increasing, and it seems in no small part thanks to the Deck."
+      },
+      {
+        "start": 26860,
+        "stop": 27438,
+        "text": " And the software side of things, that's coming together to meet that new demand. DXVK"
+      },
+      {
+        "start": 27438,
+        "stop": 28030,
+        "text": " 1.10.3 has been released, which is part of the latest version of Proton, which of course"
+      },
+      {
+        "start": 28030,
+        "stop": 28590,
+        "text": " powers Steam Play, letting you play those shiny Windows games under our beloved Linux."
+      },
+      {
+        "start": 28590,
+        "stop": 29028,
+        "text": " I think the most notable thing though with the updates to DXVK for us, at least in our"
+      },
+      {
+        "start": 29028,
+        "stop": 29408,
+        "text": " opinion, is the implementation of shared fences, which is required for getting videos to work"
+      },
+      {
+        "start": 29408,
+        "stop": 29888,
+        "text": " within the Halo-imminent Windows game, which is very popular right now. But Halo isn't"
+      },
+      {
+        "start": 29888,
+        "stop": 30316,
+        "text": " the only game that's going to benefit from the updates. It is getting all of the tension"
+      },
+      {
+        "start": 30316,
+        "stop": 30848,
+        "text": " in the headlines right now because it's like the big title, but DXVK 1.10.3 also fixes"
+      },
+      {
+        "start": 30848,
+        "stop": 31392,
+        "text": " a regression that caused rendering issues in all Direct3D11 games, such as Wes' beloved"
+      },
+      {
+        "start": 31392,
+        "stop": 32116,
+        "text": " Ninja Blade and Need for Speed 3. You can find my review of the Steam Deck in episode"
+      },
+      {
+        "start": 32116,
+        "stop": 33136,
+        "text": " 467 of Linux Unplugged. Yeah, we got them links in the notes."
+      },
+      {
+        "start": 33136,
+        "stop": 33780,
+        "text": " Debconf22 in Kosovo recently wrapped up, and Lenovo's Mark Pearson, who leads the company's"
+      },
+      {
+        "start": 33780,
+        "stop": 34324,
+        "text": " Linux initiatives, talked in person about their 2022 platform support for Linux and"
+      },
+      {
+        "start": 34324,
+        "stop": 34612,
+        "text": " their progress over the past year."
+      },
+      {
+        "start": 34612,
+        "stop": 35224,
+        "text": " And kind of right off the bat, Mark kind of makes it clear that 2021 was a rough year"
+      },
+      {
+        "start": 35224,
+        "stop": 35844,
+        "text": " for Lenovo's Linux team, with multiple problems hitting them kind of all at once. He said"
+      },
+      {
+        "start": 35844,
+        "stop": 36274,
+        "text": " Lenovo's Linux engineers were just challenged with one problem after another, like refresh"
+      },
+      {
+        "start": 36274,
+        "stop": 36832,
+        "text": " problems with the OLED displays, Wi-Fi changes, Intel networking driver issues, AMD power"
+      },
+      {
+        "start": 36832,
+        "stop": 37372,
+        "text": " problems that had to be sorted out, and of course Nvidia driver issues that caused laptops"
+      },
+      {
+        "start": 37372,
+        "stop": 37968,
+        "text": " to fail, energy certifications, and then on top of all of that, the dreaded supply chain"
+      },
+      {
+        "start": 37968,
+        "stop": 38652,
+        "text": " shortages that hit everybody. But it seems like their luck may be turning around in 2022,"
+      },
+      {
+        "start": 38652,
+        "stop": 39340,
+        "text": " and Mark pointed out that there are now over 36 Lenovo systems certified to run Linux in"
+      },
+      {
+        "start": 39340,
+        "stop": 39540,
+        "text": " 2022."
+      },
+      {
+        "start": 39540,
+        "stop": 39920,
+        "text": " I listened to quite a few Linux podcasts and talked to a lot of people, and there was quite"
+      },
+      {
+        "start": 39920,
+        "stop": 40332,
+        "text": " a bit of sort of like, Lenovo's giving up on Linux with some of the comments that I"
+      },
+      {
+        "start": 40332,
+        "stop": 40724,
+        "text": " heard last year. That really isn't true, and if you're interested I can explain what happened"
+      },
+      {
+        "start": 40724,
+        "stop": 41344,
+        "text": " last year, and last year was rough. But yeah, we are still, the Lenovo Linux team is very"
+      },
+      {
+        "start": 41344,
+        "stop": 41692,
+        "text": " busy, so I actually thought, I hope I'm not going to get into trouble for this, but I"
+      },
+      {
+        "start": 41692,
+        "stop": 42032,
+        "text": " thought I'd actually put up some of what we do, just so you can sit there and go, \"Ah,"
+      },
+      {
+        "start": 42032,
+        "stop": 42636,
+        "text": " no, they do not.\" So we actually have 36+ platforms, and I put them on the side there."
+      },
+      {
+        "start": 42636,
+        "stop": 43236,
+        "text": " They're roughly, so Intel ones, AMD, and Workstation, a mix of them, but I put them separately."
+      },
+      {
+        "start": 43236,
+        "stop": 43744,
+        "text": " Not in the list is we also have ThinkCentre platforms. Previously, I've never really talked"
+      },
+      {
+        "start": 43744,
+        "stop": 44132,
+        "text": " about ThinkCentre because they were not doing Linux properly, but they are now. They are"
+      },
+      {
+        "start": 44132,
+        "stop": 44544,
+        "text": " putting firmware on LVFS, doing all the right things."
+      },
+      {
+        "start": 44544,
+        "stop": 45084,
+        "text": " And that is excellent news indeed. He also told the conference attendees that Lenovo"
+      },
+      {
+        "start": 45084,
+        "stop": 45628,
+        "text": " continues building closer relationships with the OEM hardware vendors, with aims to improve"
+      },
+      {
+        "start": 45628,
+        "stop": 46248,
+        "text": " Linux support and compatibility. Which, thankfully, was one thing that did not seem to slow down"
+      },
+      {
+        "start": 46248,
+        "stop": 46348,
+        "text": " in 2021."
+      },
+      {
+        "start": 46348,
+        "stop": 46938,
+        "text": " You know, I think the entire talk is worth a listen. It's about 45-ish minutes long,"
+      },
+      {
+        "start": 46938,
+        "stop": 47434,
+        "text": " and in there it gives you insights into just how hard it is to make hardware. That's always"
+      },
+      {
+        "start": 47434,
+        "stop": 47574,
+        "text": " worth kind of reminding ourselves."
+      },
+      {
+        "start": 47574,
+        "stop": 48112,
+        "text": " But also, I feel like you get insights into what is really different about building hardware"
+      },
+      {
+        "start": 48112,
+        "stop": 48716,
+        "text": " to run Linux versus building hardware to run Windows, and the different processes involved"
+      },
+      {
+        "start": 48716,
+        "stop": 49204,
+        "text": " for drivers and hardware fixes. I found that to be particularly fascinating, and yes, we"
+      },
+      {
+        "start": 49204,
+        "stop": 49440,
+        "text": " got a link in the show notes."
+      },
+      {
+        "start": 49440,
+        "stop": 50246,
+        "text": " Recently, we told you about a Fedora change proposal to officially support the Raspberry"
+      },
+      {
+        "start": 50246,
+        "stop": 51080,
+        "text": " Pi 4, including full accelerated graphics. Well, this week, the Fedora Engineering and"
+      },
+      {
+        "start": 51080,
+        "stop": 51844,
+        "text": " Steering Committee signed off on this now official support for the Pi 4."
+      },
+      {
+        "start": 51844,
+        "stop": 52346,
+        "text": " For a bit of background, up to now the Raspberry Pi 4 really hasn't been a significant focus"
+      },
+      {
+        "start": 52346,
+        "stop": 52940,
+        "text": " of the Fedora workstation, due to various patches not being upstreamed. Most notably,"
+      },
+      {
+        "start": 52940,
+        "stop": 53570,
+        "text": " of course, waiting on the open source 3D graphics bits to make it upstream in the kernel."
+      },
+      {
+        "start": 53570,
+        "stop": 54174,
+        "text": " But now that those bits are finally coming together, work begins on Fedora 37 to support"
+      },
+      {
+        "start": 54174,
+        "stop": 55396,
+        "text": " the Raspberry Pi 4 model B, the Raspberry Pi 400, and the Raspberry Pi CM4 compute module."
+      },
+      {
+        "start": 55396,
+        "stop": 56692,
+        "text": " Linode is fast, reliable cloud hosting with the best support in the business. Real humans,"
+      },
+      {
+        "start": 56692,
+        "stop": 57144,
+        "text": " all day, every day that can help you. Linode is how we run everything that we've built"
+      },
+      {
+        "start": 57144,
+        "stop": 57760,
+        "text": " in the last few years in the cloud. And like us, Linode loves Linux. They use it every"
+      },
+      {
+        "start": 57760,
+        "stop": 58116,
+        "text": " day throughout the company, throughout their environment, and they build it into their"
+      },
+      {
+        "start": 58116,
+        "stop": 58708,
+        "text": " tools. You can really tell as a Linux user, it's a company that gets Linux. That was"
+      },
+      {
+        "start": 58708,
+        "stop": 59464,
+        "text": " the base that they used to build Linode nearly 19 years ago, and today nobody has them matched."
+      },
+      {
+        "start": 59464,
+        "stop": 59888,
+        "text": " And the great thing is, they're 30 to 50 percent cheaper than the hyperscalers that"
+      },
+      {
+        "start": 59888,
+        "stop": 60232,
+        "text": " just want to lock you into their platforms and are always trying to upsell you on their"
+      },
+      {
+        "start": 60232,
+        "stop": 60744,
+        "text": " next thing. They've always got a fancy name for all those crazy things, too. But on top"
+      },
+      {
+        "start": 60744,
+        "stop": 61260,
+        "text": " of all of that, Linode has the best performance. They've got 11 data centers for you to choose"
+      },
+      {
+        "start": 61260,
+        "stop": 61796,
+        "text": " from with great features like object storage, cloud firewall backups, Kubernetes and Terraform"
+      },
+      {
+        "start": 61796,
+        "stop": 62394,
+        "text": " support and a lot more. But really, I think the best way to see it is to try it yourself."
+      },
+      {
+        "start": 62394,
+        "stop": 62868,
+        "text": " As they used to say, go kick the tires, go build something, go learn something, try it"
+      },
+      {
+        "start": 62868,
+        "stop": 63476,
+        "text": " yourself and see what I've been talking about. So go to Linode.com/lan, get that $100 for"
+      },
+      {
+        "start": 63476,
+        "stop": 64532,
+        "text": " 60 days on a new account and really try it. That's Linode.com/lan."
+      },
+      {
+        "start": 64532,
+        "stop": 65104,
+        "text": " And a big thank you to Collide for making this episode possible. Collide.com/lan. Collide"
+      },
+      {
+        "start": 65104,
+        "stop": 65676,
+        "text": " is an endpoint security solution that uses the most powerful untapped resource in IT"
+      },
+      {
+        "start": 65676,
+        "stop": 66136,
+        "text": " and users. When you're trying to achieve security goals, maybe for a third party audit"
+      },
+      {
+        "start": 66136,
+        "stop": 66652,
+        "text": " or your own compliance standards, the conventional wisdom has been to treat every device like"
+      },
+      {
+        "start": 66652,
+        "stop": 67428,
+        "text": " Fort Knox, loaded up with software and policies. Old school device management tools like MDMs,"
+      },
+      {
+        "start": 67428,
+        "stop": 68104,
+        "text": " they force disruptive agents onto your machines, onto your devices. They slow down performance"
+      },
+      {
+        "start": 68104,
+        "stop": 68804,
+        "text": " and they treat privacy as a bolted on afterthought. And it really tends to drive users nuts. It"
+      },
+      {
+        "start": 68804,
+        "stop": 69400,
+        "text": " turns IT admins and users into enemies. Plus they really create their own security problems"
+      },
+      {
+        "start": 69400,
+        "stop": 69876,
+        "text": " often and you kind of almost have like shadow IT people in the organization trying to make"
+      },
+      {
+        "start": 69876,
+        "stop": 70458,
+        "text": " it all work. It's just a mess. Collide does things differently. Instead of forcing changes"
+      },
+      {
+        "start": 70458,
+        "stop": 71024,
+        "text": " on users, Collide sends them security recommendations via Slack. Collide will automatically notify"
+      },
+      {
+        "start": 71024,
+        "stop": 71584,
+        "text": " your team when their device might be insecure and it will give them step by step instructions"
+      },
+      {
+        "start": 71584,
+        "stop": 72052,
+        "text": " on how to solve whatever the problem might be. And by reaching out to employees via friendly"
+      },
+      {
+        "start": 72052,
+        "stop": 72500,
+        "text": " Slack DM and then educating them about the company policies, well Collide can help you"
+      },
+      {
+        "start": 72500,
+        "stop": 73168,
+        "text": " build a culture where everyone is contributing to security because everyone understands how"
+      },
+      {
+        "start": 73168,
+        "stop": 73900,
+        "text": " and why to do it. They get the reasons for the policies. And for IT admins, well Collide"
+      },
+      {
+        "start": 73900,
+        "stop": 74416,
+        "text": " provides a single dashboard that lets you monitor the security of your entire fleet,"
+      },
+      {
+        "start": 74416,
+        "stop": 74866,
+        "text": " whether they're running on a Mac, Windows or you bet, Linux as well. You can see at"
+      },
+      {
+        "start": 74866,
+        "stop": 75336,
+        "text": " a glance which employees have their disks encrypted, their OS up to date and a password"
+      },
+      {
+        "start": 75336,
+        "stop": 75956,
+        "text": " manager installed. That makes it easy to prove compliance to auditors, customers or leadership."
+      },
+      {
+        "start": 75956,
+        "stop": 76388,
+        "text": " So that's Collide. User centered, cross platform, endpoint security for teams that"
+      },
+      {
+        "start": 76388,
+        "stop": 77040,
+        "text": " Slack. You can meet your compliance goals by putting users first. Visit Collide.com/land"
+      },
+      {
+        "start": 77040,
+        "stop": 77434,
+        "text": " to find out how. And if you go there, they'll hook you up with a goodie bag which includes"
+      },
+      {
+        "start": 77434,
+        "stop": 78276,
+        "text": " a free t-shirt just for activating a free trial. So it's Collide.com/land. That's"
+      },
+      {
+        "start": 78276,
+        "stop": 78456,
+        "text": " K-O-L-I-D-E.com/lan."
+      },
+      {
+        "start": 78456,
+        "stop": 79416,
+        "text": " Linux 5.19 was released this week after a one week delay to deal with the fallout from"
+      },
+      {
+        "start": 79416,
+        "stop": 80248,
+        "text": " the ret bleed medications. Work on 5.19 was contributed to by 2086 developers. That's"
+      },
+      {
+        "start": 80248,
+        "stop": 80972,
+        "text": " a new record, beating the 2062 developers who contributed to the 5.13 cycle. Of those"
+      },
+      {
+        "start": 80972,
+        "stop": 81628,
+        "text": " developers, 278 made their very first kernel contribution, which is always wonderful to"
+      },
+      {
+        "start": 81628,
+        "stop": 81768,
+        "text": " see."
+      },
+      {
+        "start": 81768,
+        "stop": 82480,
+        "text": " As for the release in its totality, Linus referred to it lovingly, we assume, as \"a"
+      },
+      {
+        "start": 82480,
+        "stop": 82852,
+        "text": " mixed bag of various odds and ends.\""
+      },
+      {
+        "start": 82852,
+        "stop": 83424,
+        "text": " An odds and sods release it truly, truly was. But there's some interesting data in here"
+      },
+      {
+        "start": 83424,
+        "stop": 83900,
+        "text": " that LWN pulled out. We'll link to it. The top contributors for this release has been"
+      },
+      {
+        "start": 83900,
+        "stop": 84576,
+        "text": " changing over the last few releases. And AMD's growing Linux team is really coming in at"
+      },
+      {
+        "start": 84576,
+        "stop": 85388,
+        "text": " the top of the list now by a pretty big margin. AMD accounted for 37.9% of the lines of code"
+      },
+      {
+        "start": 85388,
+        "stop": 86068,
+        "text": " changed in this release of the Linux kernel, followed by Intel and then Linaro at 6.5%"
+      },
+      {
+        "start": 86068,
+        "stop": 86716,
+        "text": " and 4.9% respectively, and then META coming in at third place with 4.3% of the lines of"
+      },
+      {
+        "start": 86716,
+        "stop": 87036,
+        "text": " code changed in Linux 5.19."
+      },
+      {
+        "start": 87036,
+        "stop": 87476,
+        "text": " There is some odds and sods notable features in here. Z-standard compression for firmware"
+      },
+      {
+        "start": 87476,
+        "stop": 87872,
+        "text": " is here. That seems to be spreading everywhere throughout Linux these days. And it just offers"
+      },
+      {
+        "start": 87872,
+        "stop": 88312,
+        "text": " space savings when you're trying to get the most you can out of a firmware, perhaps"
+      },
+      {
+        "start": 88312,
+        "stop": 88760,
+        "text": " on an IoT device. Laptops equipped with Intel's Skylake through Comet Lake chips are going"
+      },
+      {
+        "start": 88760,
+        "stop": 89108,
+        "text": " to run cooler. You're going to have better battery life after this update. That's always"
+      },
+      {
+        "start": 89108,
+        "stop": 89264,
+        "text": " nice."
+      },
+      {
+        "start": 89264,
+        "stop": 89860,
+        "text": " And then the Apple M1 NVMe controller and Apple E-Fuses driver have also been merged"
+      },
+      {
+        "start": 89860,
+        "stop": 90084,
+        "text": " into 5.19."
+      },
+      {
+        "start": 90084,
+        "stop": 90608,
+        "text": " And speaking of that shiny new Apple hardware, perhaps one of the more notable things about"
+      },
+      {
+        "start": 90608,
+        "stop": 91296,
+        "text": " this latest release is that Linus released it from an ARM MacBook, writing in the announcement,"
+      },
+      {
+        "start": 91296,
+        "stop": 91872,
+        "text": " quote, \"On a personal note, the most interesting part here is that I did the release and am"
+      },
+      {
+        "start": 91872,
+        "stop": 92176,
+        "text": " writing this on an ARM64 laptop.\""
+      },
+      {
+        "start": 92176,
+        "stop": 92946,
+        "text": " It's something I've been waiting for for a long time, and it's finally reality, thanks"
+      },
+      {
+        "start": 92946,
+        "stop": 93540,
+        "text": " to the Asahi team. We've had ARM64 hardware around running Linux for a long time, but"
+      },
+      {
+        "start": 93540,
+        "stop": 94160,
+        "text": " none of it has really been usable as a development platform until now. It's the third time"
+      },
+      {
+        "start": 94160,
+        "stop": 94792,
+        "text": " I'm using Apple hardware for Linux development. I did it many years ago for PowerPC development"
+      },
+      {
+        "start": 94792,
+        "stop": 95472,
+        "text": " on a PPC 970 machine, and then a decade-plus ago, when the MacBook Air was the only real"
+      },
+      {
+        "start": 95472,
+        "stop": 95700,
+        "text": " thin and light around."
+      },
+      {
+        "start": 95700,
+        "stop": 96524,
+        "text": " And now, as an ARM64 platform. Not that I've used it for any real work. I literally have"
+      },
+      {
+        "start": 96524,
+        "stop": 97130,
+        "text": " only been doing test builds and boots and now the actual release tagging. But I'm"
+      },
+      {
+        "start": 97130,
+        "stop": 97704,
+        "text": " trying to make sure the next time I travel, I can travel with this as a laptop, and finally"
+      },
+      {
+        "start": 97704,
+        "stop": 98082,
+        "text": " dogfooding the ARM64 side, too."
+      },
+      {
+        "start": 98082,
+        "stop": 98640,
+        "text": " And the ARM64 Linux community celebrated around the world with that news, and the Asahi project"
+      },
+      {
+        "start": 98640,
+        "stop": 99304,
+        "text": " on Twitter confirmed that Linus is using an M2 MacBook Air running the ARM64 build of"
+      },
+      {
+        "start": 99304,
+        "stop": 99892,
+        "text": " Fedora. Linus, of course, uses his own kernel builds with the Asahi branch merged in. If"
+      },
+      {
+        "start": 99892,
+        "stop": 100452,
+        "text": " you're curious how he did that, Asahi Linux documentation actually has a list of guides"
+      },
+      {
+        "start": 100452,
+        "stop": 100886,
+        "text": " for most likely your favorite distro. We'll have a link to that in the notes. But I should"
+      },
+      {
+        "start": 100886,
+        "stop": 101436,
+        "text": " probably make it clear. It's still not Daily Driver. It's at a stage where it's totally"
+      },
+      {
+        "start": 101436,
+        "stop": 101880,
+        "text": " worth investing your time and energy into make things work and make them better. And"
+      },
+      {
+        "start": 101880,
+        "stop": 102592,
+        "text": " if you are up for that, I say go for it. But just be aware, it's not quite Daily Driver"
+      },
+      {
+        "start": 102592,
+        "stop": 102792,
+        "text": " for the rest of us."
+      },
+      {
+        "start": 102792,
+        "stop": 103236,
+        "text": " Don't worry, though. We'll be keeping our eye on it, testing it, playing with it,"
+      },
+      {
+        "start": 103236,
+        "stop": 103696,
+        "text": " and let you know when it seems ready to use. At least, to us."
+      },
+      {
+        "start": 103696,
+        "stop": 104152,
+        "text": " Also interesting, for those of us who follow these kinds of nerdy things, Linus stated"
+      },
+      {
+        "start": 104152,
+        "stop": 104832,
+        "text": " that 5.19 might be the end of the 5 series kernel, writing, quote, \"I'll likely call"
+      },
+      {
+        "start": 104832,
+        "stop": 105512,
+        "text": " it 6.0, since I'm starting to worry about getting confused by big numbers again.\""
+      },
+      {
+        "start": 105512,
+        "stop": 106222,
+        "text": " He always does this. I swear from like the early Linux 2 years, he was just kind of,"
+      },
+      {
+        "start": 106222,
+        "stop": 106786,
+        "text": " I think, shocked by the big reaction to big changes. And I don't know, maybe I'm making"
+      },
+      {
+        "start": 106786,
+        "stop": 107148,
+        "text": " something out of nothing here, but it seems like he always does this, \"Oh, it's no"
+      },
+      {
+        "start": 107148,
+        "stop": 107544,
+        "text": " big deal. I'm just changing the version number because it's a big number.\""
+      },
+      {
+        "start": 107544,
+        "stop": 107942,
+        "text": " I kind of love that he always claims that because I bet it is partially true. I kind"
+      },
+      {
+        "start": 107942,
+        "stop": 108648,
+        "text": " of believe it to a degree. But it also just happens that the next version of the Linux"
+      },
+      {
+        "start": 108648,
+        "stop": 109148,
+        "text": " kernel, whatever version number you give it, is going to be a whopper of a new release."
+      },
+      {
+        "start": 109148,
+        "stop": 109588,
+        "text": " I mean, we've got new IOU ring features in there that the enterprise is clamoring"
+      },
+      {
+        "start": 109588,
+        "stop": 109970,
+        "text": " for. There's more improvements to the Apple SoC support that's going to make it even"
+      },
+      {
+        "start": 109970,
+        "stop": 110482,
+        "text": " better for Linus himself. There's a really good chance the real-time preempt RT patches"
+      },
+      {
+        "start": 110482,
+        "stop": 110978,
+        "text": " land in this next release. And there's been significant plumbing for RISC-V improvements"
+      },
+      {
+        "start": 110978,
+        "stop": 111442,
+        "text": " for Docker workloads, as well as those XFS improvements we told you about recently are"
+      },
+      {
+        "start": 111442,
+        "stop": 111926,
+        "text": " going to land. And then quite possibly the most notable thing is that Rust support we've"
+      },
+      {
+        "start": 111926,
+        "stop": 112526,
+        "text": " been talking about for what seems like 100 years might actually land in this next release."
+      },
+      {
+        "start": 112526,
+        "stop": 113116,
+        "text": " So all of that might actually warrant a bigger than normal version number bump. I don't"
+      },
+      {
+        "start": 113116,
+        "stop": 113588,
+        "text": " know. Just my opinion, though. We'll see, because he said \"likely\" and Linus gets"
+      },
+      {
+        "start": 113588,
+        "stop": 114016,
+        "text": " to do whatever he wants. So as always, we'll keep an eye on that kernel team and we'll"
+      },
+      {
+        "start": 114016,
+        "stop": 114392,
+        "text": " keep you posted on what actually ships. So don't miss a single episode. Be sure you"
+      },
+      {
+        "start": 114392,
+        "stop": 114928,
+        "text": " go to LinuxActionNews.com/subscribe for all the ways to get new episodes."
+      },
+      {
+        "start": 114928,
+        "stop": 115388,
+        "text": " And LinuxActionNews.com/contact to let us know what nickname you think Linus should"
+      },
+      {
+        "start": 115388,
+        "stop": 115588,
+        "text": " give to this next release."
+      },
+      {
+        "start": 115588,
+        "stop": 116244,
+        "text": " And don't miss this Friday's Office Hours. It's a spicy one that we want you to hear,"
+      },
+      {
+        "start": 116244,
+        "stop": 116710,
+        "text": " or you can go catch it right now unedited on Jupiter.Tube."
+      },
+      {
+        "start": 116710,
+        "stop": 117226,
+        "text": " As for this show, well, we'll be back next week with our take on the latest Linux and"
+      },
+      {
+        "start": 117226,
+        "stop": 117420,
+        "text": " open source news."
+      },
+      {
+        "start": 117420,
+        "stop": 117680,
+        "text": " Thanks for joining us. That's all the news for this week."
+      },
+      {
+        "start": 117680,
+        "stop": 117880,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 117880,
+        "stop": 118080,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 118080,
+        "stop": 118280,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 118280,
+        "stop": 118480,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 118480,
+        "stop": 118680,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 118680,
+        "stop": 118880,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 118880,
+        "stop": 119080,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 119080,
+        "stop": 119280,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 119280,
+        "stop": 119480,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 119480,
+        "stop": 119680,
+        "text": " [MUSIC PLAYING]"
+      }
+    ],
+    "processing_time": {
+      "secs": 851,
+      "nanos": 44616883
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 252",
+    "pictures": [],
+    "duration": {
+      "secs": 1193,
+      "nanos": 920000000
+    },
+    "unique_id": "http://linuxactionnews.com/252"
+  },
+  "episode": {
+    "title": "Linux Action News 252",
+    "description": "The real story behind the \"Massive GitHub Malware attack,\" significant updates for the Steam Deck, and the inside scoop on Lenovo's big Linux ambitions.",
+    "content": "<p><p>The real story behind the &quot;Massive GitHub Malware attack,&quot; significant updates for the Steam Deck, and the inside scoop on Lenovo&#39;s big Linux ambitions.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://checkmarx.com/blog/large-scale-campaign-created-fake-github-projects-clones-with-fake-commit-added-malware/\" title=\"Massive GitHub Malware Attack?\" rel=\"nofollow\">Massive GitHub Malware Attack?</a> &mdash; It was revealed by Stephen Lacy in his tweet, he shared his findings of a large-scale campaign targeting random GitHub repositories with project clones containing credential stealing malware and remote shell execution on top of the original code.</li><li><a href=\"https://nitter.it/stephenlacy/status/1554697077430505473\" title=\"Stephen Lacy on Twitter\" rel=\"nofollow\">Stephen Lacy on Twitter</a> &mdash;  “I am uncovering what seems to be a massive widespread malware attack on @github. - Currently over 35k repositories are infected - So far found in projects including: crypto, golang, python, js, bash, docker, k8s - It is added to npm scripts, docker images and install docs”</li><li><a href=\"https://twitter.com/Checkmarx/status/1554795289256419330\" title=\"Checkmarx on Twitter\" rel=\"nofollow\">Checkmarx on Twitter</a> &mdash; “A recent tweet uncovered a widespread malware attack on @github. This turned out to be a false alarm of sorts, as the infected repositories are simply forks and clones of the original ones - which were mostly deleted by Github by now. Stay safe!\"</li><li><a href=\"https://www.zdnet.com/finance/linus-torvalds-is-not-bitcoins-legendary-creator-satoshi-nakamoto/\" title=\"No, Linus Torvalds is not Bitcoin’s legendary creator Satoshi Nakamoto\" rel=\"nofollow\">No, Linus Torvalds is not Bitcoin’s legendary creator Satoshi Nakamoto</a></li><li><a href=\"https://steamcommunity.com/games/1675200/announcements/detail/3401924854795478415\" title=\"Steam Deck Client Update and SteamOS 3.3\" rel=\"nofollow\">Steam Deck Client Update and SteamOS 3.3</a> &mdash; We have just shipped SteamOS 3.3 and an updated Steam Client to the Stable channel. This update includes all the changes and improvements that have been undergoing testing in the Beta and Preview channels.</li><li><a href=\"https://www.phoronix.com/news/Steam-OS-3.3-Steam-Deck\" title=\"SteamOS 3.3 Now Available With Many Improvements For The Steam Deck\" rel=\"nofollow\">SteamOS 3.3 Now Available With Many Improvements For The Steam Deck</a></li><li><a href=\"https://www.phoronix.com/news/Steam-Linux-July-2022\" title=\"Steam For Linux In July Shows A 1.23% Marketshare\" rel=\"nofollow\">Steam For Linux In July Shows A 1.23% Marketshare</a> &mdash; AMD CPUs Now More Common Than Intel On Linux</li><li><a href=\"https://www.phoronix.com/news/DXVK-1.10.3-Released\" title=\"DXVK 1.10.3 Released With Shared Fences\" rel=\"nofollow\">DXVK 1.10.3 Released With Shared Fences</a></li><li><a href=\"https://linuxunplugged.com/467\" title=\"Chris’ Steam Deck Review LINUX Unplugged 467\" rel=\"nofollow\">Chris’ Steam Deck Review LINUX Unplugged 467</a></li><li><a href=\"https://www.phoronix.com/news/Lenovo-Linux-2022-State\" title=\"Lenovo Expects 30+ Platforms With Linux Support This Year, Both AMD & Intel Systems\" rel=\"nofollow\">Lenovo Expects 30+ Platforms With Linux Support This Year, Both AMD &amp; Intel Systems</a> &mdash; Lenovo's Mark Pearson provided an update on Linux for their laptops/PCs, including 30+ platforms for 2022 with Linux support. </li><li><a href=\"https://debconf22.debconf.org/talks/10-lenovo-linux-2022/\" title=\"Lenovo Linux 2022 - DebConf 22\" rel=\"nofollow\">Lenovo Linux 2022 - DebConf 22</a></li><li><a href=\"https://fedoraproject.org/wiki/Changes/RaspberryPi4\" title=\"Fedora Pi Support Gets Real\" rel=\"nofollow\">Fedora Pi Support Gets Real</a> &mdash; The work around Raspberry Pi 4 has been on going for a number of years, but we've never officially supported it due to lack of accelerated graphics and other key features. With Fedora 37, Raspberry Pi 4 is now officially supported, including accelerated graphics using the V3D GPU.</li><li><a href=\"https://www.phoronix.com/news/Raspberry-Pi-4-Fedora-37\" title=\"Fedora 37 To Offer Official Support On Raspberry Pi 4 Devices\" rel=\"nofollow\">Fedora 37 To Offer Official Support On Raspberry Pi 4 Devices</a></li><li><a href=\"https://lwn.net/Articles/903033/\" title=\"Linux 5.19 Released\" rel=\"nofollow\">Linux 5.19 Released</a></li><li><a href=\"https://lwn.net/Articles/902854/\" title=\"Some 5.19 development statistics\" rel=\"nofollow\">Some 5.19 development statistics</a></li><li><a href=\"https://www.omgubuntu.co.uk/2022/07/linux-kernel-5-19-new-features\" title=\"Linux Kernel 5.19 Released with Major Networking Tweaks\" rel=\"nofollow\">Linux Kernel 5.19 Released with Major Networking Tweaks</a></li><li><a href=\"https://www.phoronix.com/news/Rust-v8-For-Linux-Kernel\" title=\"Rust Code For The Linux Kernel Updated With More Features\" rel=\"nofollow\">Rust Code For The Linux Kernel Updated With More Features</a></li><li><a href=\"https://twitter.com/AsahiLinux/status/1554282555045969921\" title=\"Asahi Linux Confirms M2 MBA on Twitter\" rel=\"nofollow\">Asahi Linux Confirms M2 MBA on Twitter</a> &mdash; Linus is using an M2 MacBook Air, running ARM64 Fedora. He does his own kernel builds, of course, with our Asahi kernel branch merged in, and he's been building and testing kernels on it. </li><li><a href=\"https://github.com/AsahiLinux/docs/wiki/SW%3AAlternative-Distros\" title=\"Asahi Alternative Distros docs\" rel=\"nofollow\">Asahi Alternative Distros docs</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8667",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15543124/eeac4578-1649-4b1c-914c-a4c3bba5dbf5.mp3",
+      "length": "17156209",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-04T06:55:00+02:00"
+  },
+  "speedup": 1.4028877
+}

@@ -1,0 +1,597 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 1000,
+        "text": " Hello and welcome to Linux Action News, Episode 259 recorded on September 21st, 2022. I'm Chris."
+      },
+      {
+        "start": 1000,
+        "stop": 1200,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1200,
+        "stop": 1500,
+        "text": " Hello Wes from Southern Oregon. Let's do the news."
+      },
+      {
+        "start": 1500,
+        "stop": 2300,
+        "text": " We start this week with some great news for Gnome users. Version 43 has been released."
+      },
+      {
+        "start": 2400,
+        "stop": 3600,
+        "text": " Among the at this point typical but always great to see improvements include work on Wayland plus more apps making the migration from GTK3 to GTK4."
+      },
+      {
+        "start": 3600,
+        "stop": 4700,
+        "text": " But Gnome 43 also has some new privacy settings, including a screen that provides information about the security of your physical hardware, its configuration and the firmware."
+      },
+      {
+        "start": 4800,
+        "stop": 5400,
+        "text": " Yeah, we've covered some of that work that made that possible a few weeks back in Linux Action News."
+      },
+      {
+        "start": 5400,
+        "stop": 6500,
+        "text": " And it's an area I think we'll see some significant future development as well. So it's definitely worth keeping an eye on as different hardware vendors get on board and the Gnome team works further on the UI."
+      },
+      {
+        "start": 6500,
+        "stop": 7400,
+        "text": " I think the biggest user facing feature has got to be that new quick settings menu. The new design will undoubtedly work well on mobile devices if those exist for Gnome."
+      },
+      {
+        "start": 7500,
+        "stop": 8500,
+        "text": " And should be easy to use by most new users. And Wes, you mentioned that steady march towards GTK4. Yeah, well, I mean that really was a big focus this cycle."
+      },
+      {
+        "start": 8500,
+        "stop": 9700,
+        "text": " Here's just kind of an example of some of the apps that got migrated to GTK4 this cycle. Files, Maps, Logs, Builder, Console and the Initial Setup Wizard amongst others."
+      },
+      {
+        "start": 9800,
+        "stop": 11400,
+        "text": " It wasn't just users scoring some updates this time around though. No, developers also get a lot out of 43, including a huge builder update, a range of enhancements to developer libraries, including GTK, GLib, lib and WADA, and a whole lot more."
+      },
+      {
+        "start": 11400,
+        "stop": 12500,
+        "text": " In light of all these updates, well, the Gnome project has put together a special page to cover the updates developers in particular need to know. We'll have a link to that in the notes."
+      },
+      {
+        "start": 12500,
+        "stop": 14300,
+        "text": " System 76 has launched a significant redesign to their Thalio desktop this week. This update includes an overhaul of the internals of course, but also the most significant chassis design change since the original launch of the Thalio four years ago."
+      },
+      {
+        "start": 14400,
+        "stop": 15600,
+        "text": " The biggest change appearance wise for the Colorado built Linux desktop, well, it's the removal of its famous wood veneer, replaced now by a sleek user replaceable accent panel."
+      },
+      {
+        "start": 15600,
+        "stop": 17000,
+        "text": " True, and that could be a wood panel or it could be a custom design. We have a fully loaded unit in the studio and we've had it for a few weeks running a series of tests and different workloads on it to get an idea of what this kind of system is capable of."
+      },
+      {
+        "start": 17100,
+        "stop": 17600,
+        "text": " We have a ton of data and notes that we'll share in an upcoming Coda Radio and Linux Unplugged episode."
+      },
+      {
+        "start": 17600,
+        "stop": 19000,
+        "text": " In the meantime, though, you can check out the lineup for yourself and get more details over at System76.com. And hey, while you're at it, check out our buddy Michael Dominic's review that just went live over on his blog."
+      },
+      {
+        "start": 19500,
+        "stop": 21100,
+        "text": " Rust in the Linux kernel dominated the local headlines again this week. And well that's because at the 2022 Linux kernel maintainer summit, Miguel Oyeda updated the attendees on when we could expect to actually see Rust land in the Linux kernel."
+      },
+      {
+        "start": 21200,
+        "stop": 23000,
+        "text": " And it seems the answer to that question is soon. Soon indeed. Linus Torvald spoke up at the beginning of the session to say that he plans to accept Rust patches for the 6.1 kernel, which should be released sometime mid-December. At least unless Linus hears some strong objections."
+      },
+      {
+        "start": 23100,
+        "stop": 25300,
+        "text": " It's funny because everyone was expecting the 6.0 kernel to be the big release, but it's kind of looking like it's really going to be 6.1 that is the real barn burner kernel release. And maybe just kind of a bit awkwardly, the subject of older kernel developers who don't want to learn Rust and what to do about them came up once again."
+      },
+      {
+        "start": 25400,
+        "stop": 27000,
+        "text": " Linus repeated that for now maintainers would be able to say they don't want to deal with Rust and not have to. But others suggested that like it or not, they might at least need to learn how to do some Rust traces to debug problems when they come up after they touch their projects."
+      },
+      {
+        "start": 27000,
+        "stop": 27800,
+        "text": " But it seems the reality is, and Linus underscored this himself, all of this is going to take years. People will have time to adapt."
+      },
+      {
+        "start": 27900,
+        "stop": 28800,
+        "text": " As for when Rust will become mandatory for the kernel to build, Linus' answer to that one was, quote, \"When the hardware he has requires it.\""
+      },
+      {
+        "start": 28900,
+        "stop": 31100,
+        "text": " I guess that's fair. He said that that would kind of indicate that Rust has been a success for kernel development. And you know what? It might just happen sooner than later. There's already talk of Asahi Linux using Rust for their new GPU driver, and efforts are currently underway to port Intel's E1000 Linux network driver over to Rust."
+      },
+      {
+        "start": 31200,
+        "stop": 32100,
+        "text": " So sure, it will take some time, but don't worry. Linus wants everyone to be reassured, and he joked that Rust wasn't so bad because, quote, \"It's not Perl.\""
+      },
+      {
+        "start": 32100,
+        "stop": 33400,
+        "text": " A few days ago, Canonical announced a new partnership with Asus IoT to certify Ubuntu Linux for their devices."
+      },
+      {
+        "start": 33500,
+        "stop": 34300,
+        "text": " Now that sounds like a pretty good partnership, and like that name suggests, this is Asus' division focused on Internet of Things hardware."
+      },
+      {
+        "start": 34300,
+        "stop": 35300,
+        "text": " The hardware will be certified for Ubuntu 20.04 LTS. That's the previous Ubuntu LTS, as the current one is 22.04."
+      },
+      {
+        "start": 35400,
+        "stop": 36700,
+        "text": " Using the previous major release, well, seems to be pretty standard in the IoT space at this point. Often that's because development lead times at hardware partners aren't always as fast as we might like."
+      },
+      {
+        "start": 36700,
+        "stop": 37400,
+        "text": " Yeah, that seems kind of fair. It does take a lot of time and a lot of work to create hardware. It just moves slower."
+      },
+      {
+        "start": 37500,
+        "stop": 38600,
+        "text": " So we know the first device. It's going to be the Asus PE100A, which they call an Intelligent Edge Computer. It's powered by an NXP iMX8M SoC."
+      },
+      {
+        "start": 38600,
+        "stop": 39500,
+        "text": " It's got 4GB of RAM and 16GB of eMMC storage. Well, that should be just enough for that Firefox snap."
+      },
+      {
+        "start": 39900,
+        "stop": 40900,
+        "text": " After six months of development, Java 19 is here. Now technically, Java 19 doesn't actually ship any major new features."
+      },
+      {
+        "start": 40900,
+        "stop": 41500,
+        "text": " That's because everything that is arriving is either still a preview or an incubator."
+      },
+      {
+        "start": 41500,
+        "stop": 42100,
+        "text": " But let's ignore those technicalities for the moment because there's a lot of fascinating work that deserves to be talked about."
+      },
+      {
+        "start": 42200,
+        "stop": 42900,
+        "text": " That includes some fancy pattern matching that's been added, as well as a method for more efficient and convenient access to non-Java libraries."
+      },
+      {
+        "start": 42900,
+        "stop": 43600,
+        "text": " But above those, hidden away in the list are what I think are two real gems."
+      },
+      {
+        "start": 43600,
+        "stop": 44100,
+        "text": " First of all, of course, the JDK has been ported to Linux on RISC-V."
+      },
+      {
+        "start": 44100,
+        "stop": 45100,
+        "text": " So I think we all know a huge feature of the JVM is that, well, minus the architecture specific system API concerns, you get a write once, run anywhere platform."
+      },
+      {
+        "start": 45100,
+        "stop": 45600,
+        "text": " And now with 19, they've extended that to the RISC-V world."
+      },
+      {
+        "start": 45600,
+        "stop": 46400,
+        "text": " And the second item, well, it might just be ushering in a new world of concurrency for JVM-based languages."
+      },
+      {
+        "start": 46400,
+        "stop": 47900,
+        "text": " And that's the introduction of virtual threads, which are lightweight threads that hopefully will dramatically reduce the effort of writing, maintaining, and crucially observing high-throughput concurrent applications."
+      },
+      {
+        "start": 48000,
+        "stop": 48900,
+        "text": " Now, just a little background context. Before virtual threads were added, each thread in a Java app was mapped directly to a regular operating system thread."
+      },
+      {
+        "start": 48900,
+        "stop": 49900,
+        "text": " Now, this usually isn't a problem. JVM doesn't necessarily need to be concerned with things like direct scheduling and managing context switching and different threads on different cores."
+      },
+      {
+        "start": 50000,
+        "stop": 51700,
+        "text": " But if you have a really high-throughput application, or an application with a lot of complicated IO that maybe depends on other systems that can take a variable time to respond to you, well, in that case, you can end up blocking the underlying OS thread, and that can really hurt the scalability of your application."
+      },
+      {
+        "start": 51700,
+        "stop": 52600,
+        "text": " Over the years, there's been a few different techniques that have evolved to handle this, all of them implementing some kind of asynchronous programming abstraction."
+      },
+      {
+        "start": 52700,
+        "stop": 53500,
+        "text": " And yeah, there are some libraries and frameworks to do that on Java already, but they come with some downsides, especially around observability."
+      },
+      {
+        "start": 53500,
+        "stop": 54500,
+        "text": " There's also some languages that have taken the approach of just sort of directly labeling a new segment of the world as async. That's the style adopted by Python and JavaScript."
+      },
+      {
+        "start": 54600,
+        "stop": 55800,
+        "text": " This can work quite well, but does sometimes leave the developer living in two worlds at once, where you've got the code implemented in a synchronous style, and then you've got this other code over here that's implemented in the asynchronous style."
+      },
+      {
+        "start": 55800,
+        "stop": 56500,
+        "text": " Virtual threads are taking the approach already used by languages like Golang and Erlang or Elixir."
+      },
+      {
+        "start": 56600,
+        "stop": 57800,
+        "text": " In this case, the underlying virtual machine, the JVM, it handles figuring out if you're calling a function that's going to block on some IO, and it can figure out that should be made async all on its own."
+      },
+      {
+        "start": 57800,
+        "stop": 58900,
+        "text": " What that means for an application developer is they can just go back to writing code that looks just like synchronous code, but under the hood, the JVM makes it scale."
+      },
+      {
+        "start": 59000,
+        "stop": 59900,
+        "text": " Now, virtual threads are still in preview. This is early days. It'll probably take a while for a lot of underlying frameworks and libraries to get updated to take full advantage."
+      },
+      {
+        "start": 59900,
+        "stop": 61300,
+        "text": " But this is a new approach to concurrency for Java, and there's a real hope here that this should make writing high-performance applications a lot simpler, both on the engineering side up front and when you have to debug it in production later."
+      },
+      {
+        "start": 61300,
+        "stop": 61600,
+        "text": " I think we could all use a little improvement there."
+      },
+      {
+        "start": 61800,
+        "stop": 62600,
+        "text": " Linode.com/lan. Go there to get $100 and 60-day credit on a new account, and it's a great way to support this show."
+      },
+      {
+        "start": 62600,
+        "stop": 63200,
+        "text": " Linode is fast, reliable cloud hosting. Developers trust Linode, and Linux geeks love it."
+      },
+      {
+        "start": 63200,
+        "stop": 63600,
+        "text": " That's really how we've built and run everything that we deploy in the cloud for the last couple of years."
+      },
+      {
+        "start": 63600,
+        "stop": 64400,
+        "text": " Linode is even a huge part of the infrastructure that we use when I go on the road, and of course, Linode makes it possible for us to go on the road."
+      },
+      {
+        "start": 64500,
+        "stop": 65600,
+        "text": " When I first discovered Linode at a Texas Linux Fest, they were like one of the few vendors that took this really early event serious and made it possible with both their support and just throwing bodies at it and being there."
+      },
+      {
+        "start": 65600,
+        "stop": 66200,
+        "text": " And I thought, you know, they're not getting a lot from this, but they are investing in the community. I thought that's worth checking out."
+      },
+      {
+        "start": 66200,
+        "stop": 66700,
+        "text": " I put them on the back of my mind. Next time I'm building something, I'm going to try them out. And sure enough, I did just that."
+      },
+      {
+        "start": 66700,
+        "stop": 67100,
+        "text": " I tried out Linode for myself, for my own personal stuff that I was building, and I loved it."
+      },
+      {
+        "start": 67200,
+        "stop": 67800,
+        "text": " And when Jupiter Broadcasting went independent, Linode was one of the first names I called because I was such a happy customer."
+      },
+      {
+        "start": 67800,
+        "stop": 68300,
+        "text": " And now, you know what? It's been over three years. Wow. Wow. That's incredible."
+      },
+      {
+        "start": 68300,
+        "stop": 69300,
+        "text": " And Linode's been a big part of that story. Linode's been a big part of the story of us going independent, and really the infrastructure we've built that has really been competitive is thanks to Linode."
+      },
+      {
+        "start": 69300,
+        "stop": 70100,
+        "text": " And they're 30 to 50 percent cheaper than the big hyperscalers that want to lock you into their crazy platforms where they've got weird names for everything."
+      },
+      {
+        "start": 70100,
+        "stop": 70800,
+        "text": " And Linode has the best performance. This is shown over and over again by third-party reports. You can find them online."
+      },
+      {
+        "start": 70800,
+        "stop": 72200,
+        "text": " I've done some testing myself, and they have 11 data centers for you to choose from with great features like object storage, Cloud Firewall, and VLAN support that lets you span a private network across multiple regions with Linode."
+      },
+      {
+        "start": 72200,
+        "stop": 73000,
+        "text": " Some powerful stuff there. And of course, if you ever need help with support, if you ever need to do any data recovery, they have clear, easy-to-understand backups."
+      },
+      {
+        "start": 73000,
+        "stop": 73500,
+        "text": " And your infrastructure management tools are going to work great with Linode. It just does. We do it already."
+      },
+      {
+        "start": 73500,
+        "stop": 74200,
+        "text": " So go build something, go learn something, and try it for yourself. And it's a great way to support the show while you're getting 100 bucks at linode.com/lan."
+      },
+      {
+        "start": 74200,
+        "stop": 74900,
+        "text": " Go get that 60-day credit, kick the tires for yourself, and support the show. It's linode.com/lan."
+      },
+      {
+        "start": 75000,
+        "stop": 76000,
+        "text": " Collide.com/lan. Collide is endpoint security that just uses the most powerful untapped resource in IT, the end user."
+      },
+      {
+        "start": 76000,
+        "stop": 76700,
+        "text": " When you're trying to achieve security goals, whether it's for yourself or a third-party audit, maybe it's new leadership. I have been there."
+      },
+      {
+        "start": 76700,
+        "stop": 77200,
+        "text": " The conventional wisdom is to treat every device like Fort Knox. You know what I'm talking about."
+      },
+      {
+        "start": 77300,
+        "stop": 78700,
+        "text": " Old-school device management tools like MDMs that force disruptive, awful agents onto employees' devices that slows down performance and treats privacy as an afterthought and, let's be honest, sometimes introduces their own security vulnerabilities."
+      },
+      {
+        "start": 78700,
+        "stop": 79500,
+        "text": " That's the way things have always been done. And it turns IT admins and end users into enemies. It creates this weird energy. It's not good."
+      },
+      {
+        "start": 79600,
+        "stop": 80500,
+        "text": " And often, it'll result in sort of like these shadow IT projects where somebody who knows just enough to be dangerous will help everybody get set up on Dropbox or something like that."
+      },
+      {
+        "start": 80500,
+        "stop": 81200,
+        "text": " And then you walk in one day and discover your users are all violating your policy. Collide does things differently."
+      },
+      {
+        "start": 81200,
+        "stop": 82500,
+        "text": " Instead of forcing changes on users, Collide sends them security recommendations via Slack. Collide will automatically notify your team when their devices are insecure and then give them a step-by-step instruction on how to solve the problem."
+      },
+      {
+        "start": 82500,
+        "stop": 83900,
+        "text": " And by reaching out to employees via a friendly Slack DM and educating them about company policies, Collide can help you build a culture in which everyone contributes to security because everyone understands how and why to do it."
+      },
+      {
+        "start": 83900,
+        "stop": 84800,
+        "text": " And for IT admins, Collide provides a single dashboard that lets you monitor the security of your entire fleet. Maybe they're on a Mac. Maybe they're on Windows. Or maybe they're on Linux."
+      },
+      {
+        "start": 84900,
+        "stop": 86100,
+        "text": " Yep, you can manage it all and see at a glance which employees have their disk encrypted, their OS up to date, a password manager installed, and it just makes it easy to prove compliance to yourself, your auditors, leadership, customers, whoever it be."
+      },
+      {
+        "start": 86100,
+        "stop": 87200,
+        "text": " So that's Collide. User-centered, cross-platform, and security for teams that Slack. You can meet your compliance goals by putting users first. So visit collide.com/lan to find out how."
+      },
+      {
+        "start": 87300,
+        "stop": 88200,
+        "text": " And if you follow that link and you sign up, even for just the old free activated trial there, they're going to give you a goodie bag that includes a free t-shirt."
+      },
+      {
+        "start": 88200,
+        "stop": 89200,
+        "text": " So you don't even have to bump into us on the meetup to get some free swag. You just go to collide.com/lan. That's k-o-l-i-d-e dot com slash lan."
+      },
+      {
+        "start": 89300,
+        "stop": 90800,
+        "text": " Just as we are sitting down to record today, Framework, the famously user-upgradable laptop manufacturer, they've announced the new Framework Laptop Chromebook Edition."
+      },
+      {
+        "start": 90800,
+        "stop": 91500,
+        "text": " And as you might suspect, this is the Framework team's spin on a fully blessed Google Chromebook."
+      },
+      {
+        "start": 91600,
+        "stop": 92800,
+        "text": " The Framework Chromebook will get up to eight years of Chrome OS updates. You can download Android apps from Google Play, access Linux apps with Cristini, and even use Steam on Chrome OS Alpha."
+      },
+      {
+        "start": 92900,
+        "stop": 94800,
+        "text": " Yeah, and in terms of specs, you're going to find a 12th Gen Intel i5-1240p processor with four physical cores, eight virtual CPU cores, and the capability of a 30-watt sustained performance load. And like other Chrome OS devices, it includes the Titan C security chip that's responsible for verified boot."
+      },
+      {
+        "start": 94800,
+        "stop": 95400,
+        "text": " It seems there's also the open source embedded controller and firmware with core boot that we've come to expect from Framework."
+      },
+      {
+        "start": 95500,
+        "stop": 96600,
+        "text": " Something you don't see on many Chromebooks, though, this system will support those Framework modules. So users can add USB-C, A, HDMI, DisplayPort, or even Ethernet."
+      },
+      {
+        "start": 96700,
+        "stop": 98500,
+        "text": " There's no doubt this thing's going to be like the ultimate Chromebook. It's got that nice high resolution screen too, but the cost, it just seems like it's a bit too high for a Chromebook. It starts at 1,000 US greenbacks, and that's before you've done any upgrades or you've added any of those fancy modules."
+      },
+      {
+        "start": 98500,
+        "stop": 99100,
+        "text": " And I gotta say, the early feedback in their community forum, it's a bit mixed on that price point."
+      },
+      {
+        "start": 99200,
+        "stop": 100700,
+        "text": " It also appears that the existing Framework laptops, well, they can't be reflashed to support Chrome OS. And that Titan security chip, well, it's only available on the motherboard that ships in the Framework Chromebook."
+      },
+      {
+        "start": 100800,
+        "stop": 103400,
+        "text": " Yeah, okay, alright, that's a bit unfortunate. And that's at least it seems to be the way it is right now. And the Chromebook motherboard, you just can't go buy it on its own. Like you can all of the other Framework laptop motherboards. So you couldn't just assemble it or maybe even do some kind of swap if you have an existing Framework and you wanted to turn it into a Chromebook. That option is just not available to you, even though you might have expected it from this company."
+      },
+      {
+        "start": 103500,
+        "stop": 105000,
+        "text": " Yeah, it all makes it seem that maybe Framework is saying they're trying to enter a new market with this one. That might make sense. I mean, we just covered that Google is killing their Pixelbook. Maybe there is a hole in this market that Framework is aiming to fill."
+      },
+      {
+        "start": 105100,
+        "stop": 107100,
+        "text": " Yeah, I could see that. And it does seem that Google engineers worked very closely with Framework to get this thing certified to make sure it meets all of the requirements that every Chromebook meets. So I could see the logic in that. Instead of doing their own hardware, Google decides to partner with a few hardware experts and build Pixelbook-like devices."
+      },
+      {
+        "start": 107200,
+        "stop": 108800,
+        "text": " However, I don't know if Framework is the one that I would have picked because this to me seems a lot more like a Google product than a Framework product. It just sort of seems like on day one they just had to jump through all these hoops to make this a Google-blessed device."
+      },
+      {
+        "start": 108800,
+        "stop": 109900,
+        "text": " And so the result is, as a customer, I'm kind of disappointed that you can't just swap out the motherboard like you can with all the other Framework stuff or you can't just get this BIOS or those types of things."
+      },
+      {
+        "start": 110000,
+        "stop": 111800,
+        "text": " And also it just seems a bit odd and kind of frustrating that Framework can manage to sell laptops preloaded with Windows, one of the trickiest operating systems in the world, and now Chrome OS. But they still struggle to ship a laptop preinstalled with Linux? What's that about?"
+      },
+      {
+        "start": 111900,
+        "stop": 113100,
+        "text": " I just can't shake the feeling like this is just not the future direction any of us expected Framework to go. Google and Chromebooks don't really strike me as an ally to the right to repair."
+      },
+      {
+        "start": 113200,
+        "stop": 115000,
+        "text": " It feels akin to selling self-assembled cigarettes to kids and then celebrating the fact that, well, the kids can take the cigarettes apart and learn how they work. Well, great. Okay. But you're still selling them something that is toxic and going to get them hooked on something we don't want them hooked on."
+      },
+      {
+        "start": 115100,
+        "stop": 116600,
+        "text": " I don't know. Like I said, it's early days. Maybe these details get worked out as Framework hears customer feedback. I don't know. I guess sometimes you just have to learn things the hard way. And maybe this is one of those moments. Hardware is hard."
+      },
+      {
+        "start": 116600,
+        "stop": 118000,
+        "text": " And I think if you were to look at the upshot on this, at least now there is a somewhat very kind of customizable laptop that you can run Chrome OS on, and you're going to get eight years of support."
+      },
+      {
+        "start": 118000,
+        "stop": 119700,
+        "text": " That's not so bad at all. So there's that. We'll keep an eye on this, kind of see where this goes, see if it develops into something a little more appealing, and we'll let you know about that and everything else going on in the world of Linux from the road or not. Check out LinuxActionNews.com/subscribe for all the ways to get new episodes."
+      },
+      {
+        "start": 119700,
+        "stop": 120200,
+        "text": " And LinuxActionNews.com/contact for ways to keep in touch."
+      },
+      {
+        "start": 120300,
+        "stop": 121100,
+        "text": " Our West Coast meetups are happening right now. I'm on the road to come see you. So join meetup.com/JupiterBroadcasting for one of our events and let us know you're going to be there."
+      },
+      {
+        "start": 121100,
+        "stop": 121900,
+        "text": " If you can't make a meetup, just meet us back here next week for our take on the latest Linux and open source news."
+      },
+      {
+        "start": 121900,
+        "stop": 122300,
+        "text": " Thanks for joining us. That's all the news for this week."
+      },
+      {
+        "start": 122300,
+        "stop": 124300,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 804,
+      "nanos": 357797465
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 259",
+    "pictures": [],
+    "duration": {
+      "secs": 1239,
+      "nanos": 810000000
+    },
+    "unique_id": "http://linuxactionnews.com/259"
+  },
+  "episode": {
+    "title": "Linux Action News 259",
+    "description": "GNOME 43 highlights, Canonical's new hardware partner, and why we're disappointed in the Framework Chromebook.",
+    "content": "<p><p>GNOME 43 highlights, Canonical&#39;s new hardware partner, and why we&#39;re disappointed in the Framework Chromebook.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://release.gnome.org/43/\" title=\"GNOME 43 Release Notes\" rel=\"nofollow\">GNOME 43 Release Notes</a> &mdash; After 6 months of hard work, the GNOME project is proud to present version 43. This latest GNOME release comes with improvements across the board, ranging from a new quick settings menu, a redesigned Files app, and hardware security integration. GNOME 43 continues the trend of GNOME apps migrating from GTK 3 to GTK 4, and includes many other smaller enhancements.</li><li><a href=\"https://www.phoronix.com/news/GNOME-43-Released\" title=\"GNOME 43 Released With More Apps Ported To GTK4, Wayland Enhancements \" rel=\"nofollow\">GNOME 43 Released With More Apps Ported To GTK4, Wayland Enhancements </a></li><li><a href=\"https://release.gnome.org/43/developers/index.html\" title=\"GNOME 43 Notes for Developers \" rel=\"nofollow\">GNOME 43 Notes for Developers </a></li><li><a href=\"https://www.phoronix.com/news/System76-Thelio-Overhaul\" title=\"System76 Launches Redesigned Thelio Desktop\" rel=\"nofollow\">System76 Launches Redesigned Thelio Desktop</a> &mdash; System76 today is announcing the Thelio, Thelio Mira, and Thelio Major with a full-chassis redesign.</li><li><a href=\"https://system76.com/desktops\" title=\"system76\" rel=\"nofollow\">system76</a></li><li><a href=\"https://lwn.net/SubscriberLink/908347/da67a5162d1bc4a3/\" title=\"Next steps for Rust in the kernel\" rel=\"nofollow\">Next steps for Rust in the kernel</a> &mdash; At the 2022 Linux Kernel Maintainers Summit, Miguel Ojeda updated the group on the status of the project with the goal of reaching a conclusion on when this merge might happen. The answer that came back was clear enough: Rust in the kernel will be happening soon indeed.</li><li><a href=\"https://www.phoronix.com/news/Intel-e1000-Rust-Driver-WIP\" title=\"Rust Porting Begins For Intel’s “e1000” Linux Network Driver \" rel=\"nofollow\">Rust Porting Begins For Intel’s “e1000” Linux Network Driver </a> &mdash; Adding to the growing examples and early drivers being worked on for the Linux kernel to showcase the possibilities of using the Rust programming language within the kernel, an early port of Intel's e1000 wired networking driver has started.</li><li><a href=\"https://www.theregister.com/2022/09/14/linux_ebpf/\" title=\"Linux kernel’s eBPF feature put to unexpected new uses \" rel=\"nofollow\">Linux kernel’s eBPF feature put to unexpected new uses </a></li><li><a href=\"https://www.phoronix.com/news/ASUS-Canonical-IoT-Ubuntu\" title=\"ASUS & Canonical Partner On The IoT\" rel=\"nofollow\">ASUS &amp; Canonical Partner On The IoT</a> &mdash; Adding to the growing examples and early drivers being worked on for the Linux kernel to showcase the possibilities of using the Rust programming language within the kernel, an early port of Intel's e1000 wired networking driver has started.</li><li><a href=\"https://www.phoronix.com/news/OpenJDK-Java-19-Released\" title=\"OpenJDK Java 19 Released With RISC-V Linux Port, Foreign Function API \" rel=\"nofollow\">OpenJDK Java 19 Released With RISC-V Linux Port, Foreign Function API </a> &mdash;  OpenJDK Java 19 in its general availability form while adding a number of new features.</li><li><a href=\"https://frame.work/fr/en/blog/introducing-the-framework-laptop-chromebook-edition\" title=\"Introducing the Framework Laptop Chromebook Edition\" rel=\"nofollow\">Introducing the Framework Laptop Chromebook Edition</a> &mdash; Today, we are excited to announce that we have partnered with Google to create the Framework Laptop Chromebook Edition. We’ve taken the best parts of the Framework Laptop and merged those with the powerful simplicity of ChromeOS to create a high-performance, upgradeable, repairable, customizable Chromebook. </p>\n\n<p></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8844",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15658265/77590cf7-9787-498c-a7e9-fb74cf169ba1.mp3",
+      "length": "17801677",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-22T09:40:00+02:00"
+  },
+  "speedup": 1.5413663
+}

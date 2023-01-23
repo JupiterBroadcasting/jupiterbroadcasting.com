@@ -1,0 +1,537 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 900,
+        "text": " Hello, and welcome to Linux Action News, Episode 261, recorded on October 5, 2022. I'm Chris."
+      },
+      {
+        "start": 900,
+        "stop": 1100,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1100,
+        "stop": 1300,
+        "text": " Hello, Wes. Let's do the news."
+      },
+      {
+        "start": 1300,
+        "stop": 2600,
+        "text": " This week, IBM announced it was slicing off another part of Red Hat, loosely known as the Red Hat Storage Team, and transferring it to the IBM Storage Team."
+      },
+      {
+        "start": 2700,
+        "stop": 4000,
+        "text": " Stating in their announcement, quote, \"With the move, IBM will integrate the storage technologies from Red Hat OpenShift Data Foundation, or ODF, as the foundation for IBM Spectrum Fusion."
+      },
+      {
+        "start": 4000,
+        "stop": 5200,
+        "text": " This combines IBM and Red Hat's container storage technologies for data services and helps accelerate IBM's capabilities in the burgeoning Kubernetes platform market.\""
+      },
+      {
+        "start": 5300,
+        "stop": 6600,
+        "text": " Well, I can't speak to names like Spectrum Fusion and if Kubernetes is still a burgeoning platform, but in my opinion, IBM's focus on storage here, it's probably a savvy one, even if it's a bit alarming to some of us long-timers."
+      },
+      {
+        "start": 6600,
+        "stop": 8200,
+        "text": " Storage really seems like an area that IBM still holds a lot of credibility in the industry, and it's been clear to some of us that OpenShift and the technologies around it, well, they were a significant motivating factor for that $34 billion acquisition of Red Hat a couple of years ago."
+      },
+      {
+        "start": 8200,
+        "stop": 9200,
+        "text": " And it truly is part of their whole hybrid cloud strategy that they're just so on about, and storage is obviously a big part of that."
+      },
+      {
+        "start": 9200,
+        "stop": 10200,
+        "text": " Ceph also, widely deployed, is part of this as well, but IBM says Ceph will remain 100% open source, and IBM will assume the premier sponsorship of the Ceph Foundation."
+      },
+      {
+        "start": 10300,
+        "stop": 11800,
+        "text": " But, somewhat ironically, IBM made a big deal about Red Hat being a neutral vendor that would remain independent to eliminate any vendor lock-in concerns while they're building out that bold hybrid cloud future."
+      },
+      {
+        "start": 11900,
+        "stop": 13800,
+        "text": " Those might have just been things you say during an acquisition, because we've got a new CEO now, and those concerns are out the window. I mean, I recall right after the acquisition for a while, Jim Whitehurst must have been quoted a dozen times. He became famous for saying, \"Red Hat will still be Red Hat.\" How many times did we hear that?"
+      },
+      {
+        "start": 13900,
+        "stop": 15200,
+        "text": " I guess the thing he just left off was there was an expiration date on that statement. And even more recently, on July 13, 2022, IBM's CEO was asked about Red Hat, the CEO transition, and the future changes coming to Red Hat."
+      },
+      {
+        "start": 15200,
+        "stop": 15700,
+        "text": " Speaking of Red Hat, new CEO, just named, what changes will this bring?"
+      },
+      {
+        "start": 15800,
+        "stop": 17200,
+        "text": " This doesn't really bring any change. This has been planned for a while. Look, Paul Cormier gave us four years since we announced the acquisition. He's not gone, by the way. He's still here as chairman. And Matt has been in his wings for a long time."
+      },
+      {
+        "start": 17200,
+        "stop": 18400,
+        "text": " Matt has worked for Paul for almost 16 years, so we shouldn't expect any significant change. And Matt was the leader behind our OpenShift strategy, behind containers for the last three years."
+      },
+      {
+        "start": 18500,
+        "stop": 19300,
+        "text": " He's been leading products inside Red Hat, so you should expect more of the same, more intensity, more of a doubling down on the winners, but not a significant change."
+      },
+      {
+        "start": 19300,
+        "stop": 20100,
+        "text": " Now, it seems perhaps those winners are being divided amongst the strongest departments within IBM."
+      },
+      {
+        "start": 20200,
+        "stop": 21900,
+        "text": " And with a tone that almost reads a bit like rewriting history in the announcement materials provided in advance by IBM, they now state that, quote, \"IBM acquired Red Hat to become the world's number one hybrid cloud provider.\""
+      },
+      {
+        "start": 21900,
+        "stop": 22900,
+        "text": " Going on to say, \"IBM now offers the only open hybrid cloud solution to unlock the full value of cloud for our customers.\""
+      },
+      {
+        "start": 23000,
+        "stop": 24000,
+        "text": " Well, I think it's also notable that this, quote, \"acquisition\" wasn't announced maybe just a few days ago at Mobile World Congress Las Vegas, where Red Hat announced OpenStack Platform 17."
+      },
+      {
+        "start": 24000,
+        "stop": 25000,
+        "text": " Staffers were there exulting the virtues of integration of the OpenStack platform with OpenShift platform and seemed to really be all about the integration of the two."
+      },
+      {
+        "start": 25000,
+        "stop": 25900,
+        "text": " In fact, it's been suggested that the staff didn't even know about the news about essentially becoming IBM employees until hours before the public did."
+      },
+      {
+        "start": 25900,
+        "stop": 27300,
+        "text": " NextCloud Hub 3 was announced this week with three significant areas of development and a whole lot of performance improvements."
+      },
+      {
+        "start": 27300,
+        "stop": 28200,
+        "text": " But the change you might notice the most is what they're calling a fresh, accessible, and personalized interface."
+      },
+      {
+        "start": 28300,
+        "stop": 29800,
+        "text": " Yeah, there's a lot of work that has gone in there, and also to that end, a lot of work went into mouseless options, assistive software such as screen readers, light and dark modes, keyboard shortcuts, and a font for people with dyslexia."
+      },
+      {
+        "start": 29800,
+        "stop": 30400,
+        "text": " I suspect, though, the headline feature for many of our listeners who use NextCloud at home will be Photos 2.0."
+      },
+      {
+        "start": 30500,
+        "stop": 31600,
+        "text": " It's got a new UI for viewing and editing your photos. NextCloud Photos can also now automatically tag photos, recognizing things like cars, trees, food, faces, and a whole lot more."
+      },
+      {
+        "start": 31600,
+        "stop": 32500,
+        "text": " Plus, it's going to group those in the People tab, allowing you to name them and, naturally, search for them based on those tags."
+      },
+      {
+        "start": 32600,
+        "stop": 33500,
+        "text": " And I suspect the headline feature for those using NextCloud in an organization will probably be the improvements to NextCloud Talk."
+      },
+      {
+        "start": 33500,
+        "stop": 34600,
+        "text": " It's looking very slack these days, and I mean that in a good way. NextCloud is touting its improved widgets that expand in chat for website links, videos, tasks, other things that are integrated in with NextCloud."
+      },
+      {
+        "start": 34600,
+        "stop": 35500,
+        "text": " And Just Talk seems, overall, extremely integrated into many aspects of NextCloud now, making it a genuine collaboration suite for a group or a business."
+      },
+      {
+        "start": 35500,
+        "stop": 37100,
+        "text": " And to kind of round out what's seeming like a Teams and Office 365 killer all-in-one vibe, Mail 2.0 debuted with much improved performance, a whole new user interface, and streamlined account setup."
+      },
+      {
+        "start": 37100,
+        "stop": 37700,
+        "text": " The NextCloud team made special effort to highlight a range of performance and security improvements."
+      },
+      {
+        "start": 37800,
+        "stop": 38800,
+        "text": " And a couple of highlights for you are now end-to-end encryption performance impact was reduced by 75 percent, and also key management for users was introduced into the user settings."
+      },
+      {
+        "start": 38800,
+        "stop": 39800,
+        "text": " And server-side encryption's data usage was reduced by 33 percent in this release, and it introduces support for S3 primary storage and group folders."
+      },
+      {
+        "start": 39900,
+        "stop": 40800,
+        "text": " I also think that there's some new integrations that are worth a quick mention here, including Zimbra and Open Project integrations that will probably be handy for some users."
+      },
+      {
+        "start": 40800,
+        "stop": 41900,
+        "text": " But I could really see our crew digging the new Google Drive integration that lets you import your Google calendars, contacts, photos, and files directly into NextCloud."
+      },
+      {
+        "start": 41900,
+        "stop": 42600,
+        "text": " If you're interested, we'll have a link to the full announcements in the show notes with screenshots of that shiny new UI."
+      },
+      {
+        "start": 42600,
+        "stop": 44600,
+        "text": " With NVIDIA recently open-sourcing their kernel module, Jason Ekstrand over at Collabrub, along with help from Carol Herbst and Dave Erlai at Red Hat, believe right now might be the ideal time to reboot the NuVu driver stack."
+      },
+      {
+        "start": 44600,
+        "stop": 44900,
+        "text": " And Jason is calling this project NVK."
+      },
+      {
+        "start": 45000,
+        "stop": 45800,
+        "text": " So, what is NVK exactly? Well, it's a new open-source Vulkan driver for NVIDIA hardware in Mesa."
+      },
+      {
+        "start": 45800,
+        "stop": 46500,
+        "text": " It's been written almost entirely from scratch using those new official headers provided by NVIDIA."
+      },
+      {
+        "start": 46500,
+        "stop": 47400,
+        "text": " And one of Jason's personal goals for this project is to become the new reference Vulkan driver within the Mesa codebase."
+      },
+      {
+        "start": 47500,
+        "stop": 48300,
+        "text": " This mad lad, I love it. Jason says he's trying to build NVK to be as modern as possible. He's building it with Vulkan in mind."
+      },
+      {
+        "start": 48300,
+        "stop": 49500,
+        "text": " He says in the announcement, quote, \"I'm building NVK with all the best practices we've developed for Vulkan drivers over the last 7.5 years, and I'm trying to keep the codebase clean and well organized.\""
+      },
+      {
+        "start": 49600,
+        "stop": 50500,
+        "text": " That sounds pretty great to me. He then goes on to say, quote, \"Long term, the hope is for NVK to be for NVIDIA hardware what RADv is to AMD hardware."
+      },
+      {
+        "start": 50500,
+        "stop": 51300,
+        "text": " However, that's a pretty high bar. RADv is quite a mature driver with a lot of features and fantastic runtime performance."
+      },
+      {
+        "start": 51300,
+        "stop": 52100,
+        "text": " There's a lot of work between where we are now and RADv level driver quality, but it gives us a goal.\""
+      },
+      {
+        "start": 52200,
+        "stop": 53500,
+        "text": " And it seems like things are actually moving pretty darn quickly, considering NVK has only been in development for just a few months, and it's already passing 98% of the Vulkan testing suite."
+      },
+      {
+        "start": 53500,
+        "stop": 54500,
+        "text": " As for supported hardware, well, Jason says that currently they're targeting Turing Plus, and he's using an RTX 2060 for testing."
+      },
+      {
+        "start": 54600,
+        "stop": 55200,
+        "text": " But with the Lovelace cards coming out soon, he'll likely upgrade to one of those for development before too long."
+      },
+      {
+        "start": 55200,
+        "stop": 57000,
+        "text": " The results are in on Debian's general resolution vote regarding including non-free firmware in the installer image, and the winning option does indeed allow the installer image to include firmware necessary to use your system."
+      },
+      {
+        "start": 57100,
+        "stop": 57800,
+        "text": " The vote also changes the Debian social contract to make it clear that including non-free firmware in this manner is allowed."
+      },
+      {
+        "start": 57800,
+        "stop": 58700,
+        "text": " As one commentator on LWN said, quote, \"Nobody is excited about binary blobs, but this is a huge step forward for usability.\""
+      },
+      {
+        "start": 59200,
+        "stop": 60200,
+        "text": " An alarming bug has been discovered in the Linux kernel version 5.19.12, and as a result, Intel laptop users are being advised to avoid that version."
+      },
+      {
+        "start": 60200,
+        "stop": 61800,
+        "text": " Intel Linux laptop users on Linux 5.19.12 have begun reporting white flashing display issues, with one user describing it as, quote, \"The laptop display starts to blink like lights in a 90s rave party.\""
+      },
+      {
+        "start": 62000,
+        "stop": 63300,
+        "text": " An Intel Linux kernel engineer posted on the kernel mailing list, quote, \"After looking at some logs, we do end up with potentially bogus panel power sequencing delays, which may harm the LCD panel.\""
+      },
+      {
+        "start": 63300,
+        "stop": 64400,
+        "text": " As a result, Greg H. has immediately released Linux 5.19.13, with the problematic Intel graphics driver patches reverted."
+      },
+      {
+        "start": 64500,
+        "stop": 65700,
+        "text": " Greg commented, quote, \"This release missed a resolver regression on some Intel graphics systems that had problems with 5.19.12. If you do not have this problem, there's no need to upgrade.\""
+      },
+      {
+        "start": 65900,
+        "stop": 66700,
+        "text": " Linode.com/lan. Go there to get $100 in 60-day credit on a new account, and it's a great way to support this show."
+      },
+      {
+        "start": 66700,
+        "stop": 67800,
+        "text": " Linode is fast, reliable cloud hosting. Developers trust Linode, and Linux geeks love it. That's really how we've built and run everything that we deploy in the cloud for the last couple of years."
+      },
+      {
+        "start": 67800,
+        "stop": 68500,
+        "text": " Linode is even a huge part of the infrastructure that we use when I go on the road, and of course Linode makes it possible for us to go on the road."
+      },
+      {
+        "start": 68600,
+        "stop": 69800,
+        "text": " I first discovered Linode at a Texas Linux Fest. They were like one of the few vendors that took this really early event serious and made it possible with both their support and just throwing bodies at it and being there."
+      },
+      {
+        "start": 69800,
+        "stop": 70700,
+        "text": " And I thought, you know, they're not getting a lot from this, but they are investing in the community. I thought, that's worth checking out. I put them on the back of my mind. Next time I'm building something, I'm going to try them out."
+      },
+      {
+        "start": 70800,
+        "stop": 71900,
+        "text": " And sure enough, I did just that. I tried out Linode for myself, for my own personal stuff that I was building, and I loved it. And when Jupyter Broadcasting went independent, Linode was one of the first names I called because I was such a happy customer."
+      },
+      {
+        "start": 71900,
+        "stop": 73500,
+        "text": " And now it's, you know what, it's been over three years. Wow. Wow. That's incredible. And Linode's been a big part of that story. Linode's been a big part of the story of us going independent, and really the infrastructure we've built that has really been competitive is thanks to Linode."
+      },
+      {
+        "start": 73600,
+        "stop": 74300,
+        "text": " And they're 30 to 50 percent cheaper than the big hyperscalers that want to lock you into their crazy platforms where they got weird names for everything."
+      },
+      {
+        "start": 74300,
+        "stop": 75700,
+        "text": " Linode has the best performance. This is shown over and over again by third-party reports. You can find them online. I've done some testing myself, and they have 11 data centers for you to choose from with great features like object storage,"
+      },
+      {
+        "start": 75800,
+        "stop": 77200,
+        "text": " and VLAN support that lets you span a private network across multiple regions with Linode. Some powerful stuff there. And of course, if you ever need help with support, if you ever need to do any data recovery, they have clear, easy-to-understand backups,"
+      },
+      {
+        "start": 77200,
+        "stop": 78000,
+        "text": " and your infrastructure management tools are going to work great with Linode. Just us. We do it already. So go build something, go learn something, and try it for yourself."
+      },
+      {
+        "start": 78100,
+        "stop": 79100,
+        "text": " And it's a great way to support the show while you're getting 100 bucks at linode.com/lan. Go get that 60-day credit, kick the tires for yourself, and support the show. It's linode.com/lan."
+      },
+      {
+        "start": 79100,
+        "stop": 80400,
+        "text": " Collide.com/lan. Collide is endpoint security that just uses the most powerful untapped resource in IT, the end user."
+      },
+      {
+        "start": 80500,
+        "stop": 81400,
+        "text": " And it's a great way to achieve security goals, whether it's for yourself or a third-party audit. Maybe it's new leadership. I have been there. The conventional wisdom is to treat every device like Fort Knox."
+      },
+      {
+        "start": 81400,
+        "stop": 83000,
+        "text": " You know what I'm talking about. Old-school device management tools like MDMs that force disruptive, awful agents onto employees' devices that slows down performance and treats privacy as an afterthought and, let's be honest, sometimes introduces their own security vulnerabilities."
+      },
+      {
+        "start": 83100,
+        "stop": 83800,
+        "text": " That's the way things have always been done, and it turns IT admins and end users into enemies. It creates this weird energy. It's not good."
+      },
+      {
+        "start": 83800,
+        "stop": 84800,
+        "text": " And often, it'll result in sort of like these shadow IT projects where somebody who knows just enough to be dangerous will help everybody get set up on Dropbox or something like that."
+      },
+      {
+        "start": 84800,
+        "stop": 85500,
+        "text": " And then you walk in one day and discover your users are all violating your policy. Collide does things differently."
+      },
+      {
+        "start": 85600,
+        "stop": 86800,
+        "text": " Instead of forcing changes on users, Collide sends them security recommendations via Slack. Collide will automatically notify your team when their devices are insecure and then give them a step-by-step instruction on how to solve the problem."
+      },
+      {
+        "start": 86800,
+        "stop": 88200,
+        "text": " And by reaching out to employees via a friendly Slack DM and educating them about company policies, Collide can help you build a culture in which everyone contributes to security because everyone understands how and why to do it."
+      },
+      {
+        "start": 88300,
+        "stop": 89100,
+        "text": " And for IT admins, Collide provides a single dashboard that lets you monitor the security of your entire fleet. Maybe they're on a Mac, maybe they're on Windows, or maybe they're on Linux."
+      },
+      {
+        "start": 89100,
+        "stop": 90400,
+        "text": " Yep, you can manage it all and see at a glance which employees have their disks encrypted, their OS up to date, a password manager installed, and it just makes it easy to prove compliance to yourself, your auditors, leadership, customers, whoever it be."
+      },
+      {
+        "start": 90500,
+        "stop": 91500,
+        "text": " So that's Collide. User-centered, cross-platform, and security for teams at Slack. You can meet your compliance goals by putting users first. So visit Collide.com/lan to find out how."
+      },
+      {
+        "start": 91500,
+        "stop": 92400,
+        "text": " And if you follow that link and you sign up, even for just the old free activated trial there, they're going to give you a goodie bag that includes a free t-shirt."
+      },
+      {
+        "start": 92400,
+        "stop": 93400,
+        "text": " So you don't even have to bump into us on the meetup to get some free swag. You just go to Collide.com/lan. That's K-O-L-I-D-E dot com slash lan."
+      },
+      {
+        "start": 93400,
+        "stop": 95100,
+        "text": " Well, it's finally here. Linux 6.0 has been released after a rather funny back and forth debating if this latest version should be called 5.20 or just 6.0."
+      },
+      {
+        "start": 95200,
+        "stop": 96500,
+        "text": " And while it's not quite as ambitious as it once looked, 6.0 does bring many new features from hardware to software. AMD and Intel hardware in particular have seen many additions."
+      },
+      {
+        "start": 96600,
+        "stop": 98600,
+        "text": " Boy, have they. That is impressive. But there was another really big \"finally\" in this release. The Raspberry Pi v3d kernel driver is in version 6.0. Thank you, Linus! It's also fantastic to see some improvements to XFS's scalability. Love that file system."
+      },
+      {
+        "start": 98700,
+        "stop": 100300,
+        "text": " We're also seeing a batch of new IOU ring optimizations and a new IOU ring block driver for user space. And just in time for Fedora to take us away, we now have an H.264 and HVAC media user space API that's been promoted to stable."
+      },
+      {
+        "start": 100400,
+        "stop": 102400,
+        "text": " Oh, don't worry though, Chris. With the many VirtIO improvements that landed in 6.0, I'm sure you'll be able to emulate some desktop that can play back basic media files. And hey, maybe you're doing it on a Clevo machine, in which case your issues with touchpad and keyboard being messed up after suspending, well, that's now fixed."
+      },
+      {
+        "start": 102500,
+        "stop": 104100,
+        "text": " Also in 6.0, ButterFS users get the Send protocol v2. If you're not familiar, ButterFS send and receive functionality generates a stream of changes between two sub-volume snapshots, something that's super handy for taking incremental backups."
+      },
+      {
+        "start": 104200,
+        "stop": 105500,
+        "text": " The v2 protocol update adds support for directly reading and writing compressed data, which means no decompression on the send side and no compression needed on the receive side, at least if there's support on both ends."
+      },
+      {
+        "start": 105500,
+        "stop": 106900,
+        "text": " ButterFS with Linux 6.0 also now shows commit stats via sysfs. It's got various patches for zoned storage. And another big finally here, fixes for RAID 5 and 6."
+      },
+      {
+        "start": 107000,
+        "stop": 108600,
+        "text": " That's great to see. And we are just scratching the surface of what is new in 6.0. It's impressive. To say this is a banner hardware release is putting like a mild tone on how much updates are in here."
+      },
+      {
+        "start": 108700,
+        "stop": 110300,
+        "text": " And don't worry, because we're not done. We already are following 6.1, which includes even more ButterFS improvements and amongst a whole bunch of other things, the one that's going to get all the headlines, initial Rust support is confirmed for version 6.1."
+      },
+      {
+        "start": 110300,
+        "stop": 111400,
+        "text": " So yeah, we'll be keeping an eye on all of that and everything else in the world of Linux and open source. So go to LinuxActionNews.com/subscribe for all the ways to get every single episode."
+      },
+      {
+        "start": 111500,
+        "stop": 112200,
+        "text": " And LinuxActionNews.com/contact for ways to keep in touch and send us your ButterFS snapshots."
+      },
+      {
+        "start": 112200,
+        "stop": 113300,
+        "text": " And this is the last Linux Action News from the road. If you're curious what we've been up to and how our trip to NASA's JPL went, well don't miss Linux Unplugged 4.78."
+      },
+      {
+        "start": 113300,
+        "stop": 114000,
+        "text": " And we'll be back next week with an in-studio Chris and all the latest Linux and open source news."
+      },
+      {
+        "start": 114000,
+        "stop": 114300,
+        "text": " Thanks for joining us. And that's all the news for this week."
+      },
+      {
+        "start": 114300,
+        "stop": 116500,
+        "text": " Music"
+      }
+    ],
+    "processing_time": {
+      "secs": 742,
+      "nanos": 20685826
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 261",
+    "pictures": [],
+    "duration": {
+      "secs": 1160,
+      "nanos": 926000000
+    },
+    "unique_id": "http://linuxactionnews.com/261"
+  },
+  "episode": {
+    "title": "Linux Action News 261",
+    "description": "Our thoughts on IBM slicing up more of Red Hat, what stands out in Nextcloud Hub 3, and a few essential fixes finally landing in the Linux kernel.",
+    "content": "<p><p>Our thoughts on IBM slicing up more of Red Hat, what stands out in Nextcloud Hub 3, and a few essential fixes finally landing in the Linux kernel.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://newsroom.ibm.com/2022-10-04-IBM-Redefines-Hybrid-Cloud-Application-and-Data-Storage-Adding-Red-Hat-Storage-to-IBM-Offerings\" title=\"IBM Takes Over Red Hat Storage to IBM Offerings\" rel=\"nofollow\">IBM Takes Over Red Hat Storage to IBM Offerings</a> &mdash; IBM announced today it will add Red Hat storage product roadmaps and Red Hat associate teams to the IBM Storage business unit, bringing consistent application and data storage across on-premises infrastructure and cloud.</li><li><a href=\"https://www.zdnet.com/article/why-whitehurst-is-stepping-away-from-ibm/\" title=\"Why Whitehurst is stepping away from IBM\" rel=\"nofollow\">Why Whitehurst is stepping away from IBM</a></li><li><a href=\"https://www.phoronix.com/news/IBM-Red-Hat-Storage\" title=\"IBM Does A “Quasi-Acquisition” Of Red Hat Storage\" rel=\"nofollow\">IBM Does A “Quasi-Acquisition” Of Red Hat Storage</a> &mdash; Red Hat OpenShift Data Foundation is also being absorbed into IBM Spectrum Fusion. IBM is assuming the Premier Sponsorship role of the Ceph Foundation from Red Hat.</li><li><a href=\"https://nextcloud.com/blog/announcing-nextcloud-hub-3-brand-new-design-and-photos-2-0-with-editor-and-ai/\" title=\"Announcing Nextcloud Hub 3\" rel=\"nofollow\">Announcing Nextcloud Hub 3</a> &mdash; Our design always followed three principles. Focus on content, ease of use, and great accessibility. For this refresh, we added a fourth: make it your own.</li><li><a href=\"https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html\" title=\"Introducing NVK\" rel=\"nofollow\">Introducing NVK</a> &mdash; NVK is a new open-source Vulkan driver for NVIDIA hardware in Mesa. </li><li><a href=\"https://lwn.net/Articles/910065\" title=\"Debian’s firmware vote results\" rel=\"nofollow\">Debian’s firmware vote results</a> &mdash; The winning option allows the installer image to include firmware necessary to use the system.</li><li><a href=\"https://lore.kernel.org/all/YzwooNdMECzuI5+h@intel.com/\" title=\"Intel Laptop Users Should Avoid Linux 5.19.12\" rel=\"nofollow\">Intel Laptop Users Should Avoid Linux 5.19.12</a> &mdash; After looking at some logs we do end up with potentially bogus\npanel power sequencing delays, which may harm the LCD panel.</li><li><a href=\"https://www.phoronix.com/news/Intel-iGPU-Avoid-Linux-5.19.12\" title=\"Intel Laptop Users Should Avoid Linux 5.19.12 To Avoid Potentially Damaging The Display - Phoronix\" rel=\"nofollow\">Intel Laptop Users Should Avoid Linux 5.19.12 To Avoid Potentially Damaging The Display - Phoronix</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.0-Released\" title=\"Linux 6.0 Released With Many Intel & AMD Driver Additions\" rel=\"nofollow\">Linux 6.0 Released With Many Intel &amp; AMD Driver Additions</a> &mdash; Linus Torvalds just promoted Linux 6.0 to stable on-schedule and thereby now ushering in the Linux 6.1 merge window to officially get underway tomorrow.</li><li><a href=\"https://lwn.net/Articles/909625/\" title=\"Some 6.0 development statistics\" rel=\"nofollow\">Some 6.0 development statistics</a> &mdash; A total of 2,034 developers contributed to the 6.0 release; of those, 236 made their first contribution during this cycle. The total number of developers is just short of the record (2,086) set for 5.19, but the number of first-time contributors is the lowest seen since the 5.6 release (216) in 2020.</li><li><a href=\"https://www.phoronix.com/review/linux-60-features/2\" title=\"Linux 6.0 Supporting New Intel/AMD Hardware\" rel=\"nofollow\">Linux 6.0 Supporting New Intel/AMD Hardware</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.1-Btrfs\" title=\"Btrfs Brings Some Great Performance Improvements With Linux 6.1\" rel=\"nofollow\">Btrfs Brings Some Great Performance Improvements With Linux 6.1</a></li><li><a href=\"https://www.phoronix.com/news/Rust-Is-Merged-Linux-6.1\" title=\"The Initial Rust Infrastructure Has Been Merged Into Linux 6.1\" rel=\"nofollow\">The Initial Rust Infrastructure Has Been Merged Into Linux 6.1</a> &mdash; As a follow-up to the Rust infrastructure pull request for Linux 6.1, Linus Torvalds pulled the initial Rust code into the mainline Linux kernel this evening.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8894",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15686896/82dba103-bfae-4fc6-a718-247feb4038d9.mp3",
+      "length": "16692186",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-06T09:35:00+02:00"
+  },
+  "speedup": 1.5645467
+}

@@ -1,0 +1,6967 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 2032,
+        "text": " This is Linux Unplugged, episode 491, our 2023 predictions episode."
+      },
+      {
+        "start": 2032,
+        "stop": 2396,
+        "text": " Hello friends and welcome back to your weekly Linux talk show."
+      },
+      {
+        "start": 2396,
+        "stop": 2496,
+        "text": " My name is Chris."
+      },
+      {
+        "start": 2496,
+        "stop": 2596,
+        "text": " My name is Wes."
+      },
+      {
+        "start": 2596,
+        "stop": 2756,
+        "text": " And my name is Brent."
+      },
+      {
+        "start": 2756,
+        "stop": 2856,
+        "text": " Hello gentlemen."
+      },
+      {
+        "start": 2856,
+        "stop": 2956,
+        "text": " Hello."
+      },
+      {
+        "start": 2956,
+        "stop": 3056,
+        "text": " Hi."
+      },
+      {
+        "start": 3056,
+        "stop": 3516,
+        "text": " Coming up, we're about to own up to our 2022 predictions, see how we scored."
+      },
+      {
+        "start": 3516,
+        "stop": 3664,
+        "text": " And then we'll get into 2023."
+      },
+      {
+        "start": 3664,
+        "stop": 3916,
+        "text": " We're going to tell you what's going to happen before it even happens."
+      },
+      {
+        "start": 3916,
+        "stop": 4052,
+        "text": " We're never wrong about these things."
+      },
+      {
+        "start": 4052,
+        "stop": 4152,
+        "text": " No, never."
+      },
+      {
+        "start": 4152,
+        "stop": 4528,
+        "text": " This is a special episode where you could just listen to this episode and skip next"
+      },
+      {
+        "start": 4528,
+        "stop": 4628,
+        "text": " year."
+      },
+      {
+        "start": 4628,
+        "stop": 4908,
+        "text": " I always tell you, you just follow up with the next predictions episode, see what happened,"
+      },
+      {
+        "start": 4908,
+        "stop": 5008,
+        "text": " see what didn't."
+      },
+      {
+        "start": 5008,
+        "stop": 5232,
+        "text": " Do still download the MP3 stuff for us."
+      },
+      {
+        "start": 5232,
+        "stop": 5360,
+        "text": " Yeah, that'd be good."
+      },
+      {
+        "start": 5360,
+        "stop": 5752,
+        "text": " Also, I want to say good morning to our friends over at Tailscale."
+      },
+      {
+        "start": 5752,
+        "stop": 6088,
+        "text": " It's a mesh VPN protected by WarGuard."
+      },
+      {
+        "start": 6088,
+        "stop": 6188,
+        "text": " We love it."
+      },
+      {
+        "start": 6188,
+        "stop": 6360,
+        "text": " It'll build a mesh network of all your machines."
+      },
+      {
+        "start": 6360,
+        "stop": 6816,
+        "text": " Go say good morning and try it for free up to 20 devices at Tailscale.com."
+      },
+      {
+        "start": 6816,
+        "stop": 7284,
+        "text": " So before we get into the show, let's say time appropriate greetings to our mumble room."
+      },
+      {
+        "start": 7284,
+        "stop": 7384,
+        "text": " Good morning, mumble."
+      },
+      {
+        "start": 7384,
+        "stop": 7484,
+        "text": " Hello."
+      },
+      {
+        "start": 7484,
+        "stop": 7584,
+        "text": " Hello guys."
+      },
+      {
+        "start": 7584,
+        "stop": 7684,
+        "text": " Aloha."
+      },
+      {
+        "start": 7684,
+        "stop": 7784,
+        "text": " Aloha."
+      },
+      {
+        "start": 7784,
+        "stop": 8140,
+        "text": " You know what?"
+      },
+      {
+        "start": 8140,
+        "stop": 8552,
+        "text": " We've got a decent little showing in there considering the fact that this is an off schedule"
+      },
+      {
+        "start": 8552,
+        "stop": 8652,
+        "text": " episode."
+      },
+      {
+        "start": 8652,
+        "stop": 9156,
+        "text": " Yeah, a little weird recording at a time for the holidays as it were."
+      },
+      {
+        "start": 9156,
+        "stop": 9560,
+        "text": " And what we like to do for the new listeners out there is once a year, we like to kind"
+      },
+      {
+        "start": 9560,
+        "stop": 10040,
+        "text": " of take a look ahead and see where the trends may be leading and try to guess at how that's"
+      },
+      {
+        "start": 10040,
+        "stop": 10380,
+        "text": " going to impact Linux and the free software world."
+      },
+      {
+        "start": 10380,
+        "stop": 10952,
+        "text": " And to kind of keep us honest, we also start with a review of how we did for our last year,"
+      },
+      {
+        "start": 10952,
+        "stop": 11052,
+        "text": " current year predictions."
+      },
+      {
+        "start": 11052,
+        "stop": 11200,
+        "text": " I'm nervous already."
+      },
+      {
+        "start": 11200,
+        "stop": 11300,
+        "text": " Yeah."
+      },
+      {
+        "start": 11300,
+        "stop": 11900,
+        "text": " So, Wes, why don't we start with you because I really liked your predictions actually in"
+      },
+      {
+        "start": 11900,
+        "stop": 12000,
+        "text": " retrospect."
+      },
+      {
+        "start": 12000,
+        "stop": 12498,
+        "text": " I was looking at the rest of ours and all of ours were kind of like required research"
+      },
+      {
+        "start": 12498,
+        "stop": 12598,
+        "text": " and verification."
+      },
+      {
+        "start": 12598,
+        "stop": 12932,
+        "text": " Like we're a little too loose and nebulous."
+      },
+      {
+        "start": 12932,
+        "stop": 13336,
+        "text": " And you just swung like all the way up as hard as you could."
+      },
+      {
+        "start": 13336,
+        "stop": 13734,
+        "text": " And you just, you took a crack at that ball and they were really obvious."
+      },
+      {
+        "start": 13734,
+        "stop": 13980,
+        "text": " And I like where you're going, but they were clear and distinct."
+      },
+      {
+        "start": 13980,
+        "stop": 14496,
+        "text": " So your first prediction last year, I'll replay from 2021."
+      },
+      {
+        "start": 14496,
+        "stop": 15072,
+        "text": " I predict that in 2022, Canonical will announce a Flutter based desktop environment."
+      },
+      {
+        "start": 15072,
+        "stop": 15172,
+        "text": " Nope."
+      },
+      {
+        "start": 15172,
+        "stop": 15272,
+        "text": " No."
+      },
+      {
+        "start": 15272,
+        "stop": 15372,
+        "text": " No."
+      },
+      {
+        "start": 15372,
+        "stop": 15624,
+        "text": " I mean, they've made good progress on that installer, right?"
+      },
+      {
+        "start": 15624,
+        "stop": 15968,
+        "text": " They've got the store, but no desktop."
+      },
+      {
+        "start": 15968,
+        "stop": 16112,
+        "text": " I feel like there's still time."
+      },
+      {
+        "start": 16112,
+        "stop": 16360,
+        "text": " They've got what, three, four days?"
+      },
+      {
+        "start": 16360,
+        "stop": 16460,
+        "text": " It could happen."
+      },
+      {
+        "start": 16460,
+        "stop": 16648,
+        "text": " I guess he could do it on New Year's Eve."
+      },
+      {
+        "start": 16648,
+        "stop": 16748,
+        "text": " Let's be honest though."
+      },
+      {
+        "start": 16748,
+        "stop": 17016,
+        "text": " If you're going to release a Flutter based desktop, the best time to release that would"
+      },
+      {
+        "start": 17016,
+        "stop": 17116,
+        "text": " be April Fools."
+      },
+      {
+        "start": 17116,
+        "stop": 17276,
+        "text": " I could see it coming through in a couple of years."
+      },
+      {
+        "start": 17276,
+        "stop": 17432,
+        "text": " I think that does tend to happen."
+      },
+      {
+        "start": 17432,
+        "stop": 17836,
+        "text": " We set these with the one year time horizon just to make it, you know, have it be fair."
+      },
+      {
+        "start": 17836,
+        "stop": 18252,
+        "text": " But you go back and listen a couple of years ago and I think more of our predictions start"
+      },
+      {
+        "start": 18252,
+        "stop": 18352,
+        "text": " coming true."
+      },
+      {
+        "start": 18352,
+        "stop": 18452,
+        "text": " That's true."
+      },
+      {
+        "start": 18452,
+        "stop": 18680,
+        "text": " We're often early because to us it seems like it could happen any day now."
+      },
+      {
+        "start": 18680,
+        "stop": 18904,
+        "text": " We get a little over excited maybe."
+      },
+      {
+        "start": 18904,
+        "stop": 19336,
+        "text": " I don't think this one necessarily starts playing out until Genome starts failing to"
+      },
+      {
+        "start": 19336,
+        "stop": 19436,
+        "text": " deliver."
+      },
+      {
+        "start": 19436,
+        "stop": 19960,
+        "text": " But when they as a project are no longer meeting what Canonical needs out of a desktop, then"
+      },
+      {
+        "start": 19960,
+        "stop": 20096,
+        "text": " they have to move on."
+      },
+      {
+        "start": 20096,
+        "stop": 20556,
+        "text": " And what they have right now is a nice situation where they've sort of defocused the desktop"
+      },
+      {
+        "start": 20556,
+        "stop": 20656,
+        "text": " a bit."
+      },
+      {
+        "start": 20656,
+        "stop": 21048,
+        "text": " They can kind of just let the Genome project run all of that and they can kind of take"
+      },
+      {
+        "start": 21048,
+        "stop": 21472,
+        "text": " a step back and just package it, package it up for their customers, meet some of their"
+      },
+      {
+        "start": 21472,
+        "stop": 21846,
+        "text": " customers requirements and not really have to have the huge scale of team that might"
+      },
+      {
+        "start": 21846,
+        "stop": 22088,
+        "text": " be required to build their own desktop environment."
+      },
+      {
+        "start": 22088,
+        "stop": 22188,
+        "text": " Yeah."
+      },
+      {
+        "start": 22188,
+        "stop": 22680,
+        "text": " Because in that case, here's hoping this prediction doesn't come true, except, you know me, I"
+      },
+      {
+        "start": 22680,
+        "stop": 22784,
+        "text": " like a little chaos."
+      },
+      {
+        "start": 22784,
+        "stop": 22884,
+        "text": " All right."
+      },
+      {
+        "start": 22884,
+        "stop": 23222,
+        "text": " Well, we'll see where you end up for next year, but let's review your last prediction."
+      },
+      {
+        "start": 23222,
+        "stop": 23448,
+        "text": " So we'll go back in time one more time."
+      },
+      {
+        "start": 23448,
+        "stop": 23840,
+        "text": " So in December of 2021, you had a prediction about my laptop."
+      },
+      {
+        "start": 23840,
+        "stop": 24600,
+        "text": " I predict that in 2022, Chris will be using OpenSUSE Tumbleweed on his laptop."
+      },
+      {
+        "start": 24600,
+        "stop": 24700,
+        "text": " Okay."
+      },
+      {
+        "start": 24700,
+        "stop": 25104,
+        "text": " So this is tricky because I think you could look at it in two ways."
+      },
+      {
+        "start": 25104,
+        "stop": 25576,
+        "text": " You could look at total time spent on my laptop, which would go to Nick's or you could look"
+      },
+      {
+        "start": 25576,
+        "stop": 26020,
+        "text": " at what's on my dev one right now, which is Tumbleweed."
+      },
+      {
+        "start": 26020,
+        "stop": 26360,
+        "text": " So like, I kind of feel like you should get it."
+      },
+      {
+        "start": 26360,
+        "stop": 26872,
+        "text": " If only because of how I think, you know, we had that early year Tumbleweed energy and"
+      },
+      {
+        "start": 26872,
+        "stop": 27420,
+        "text": " then how like, I think relatively impressed we were once again, just recently."
+      },
+      {
+        "start": 27420,
+        "stop": 27524,
+        "text": " That's true."
+      },
+      {
+        "start": 27524,
+        "stop": 27624,
+        "text": " That's true."
+      },
+      {
+        "start": 27624,
+        "stop": 27724,
+        "text": " We looked at it again and we were like, yep, still good."
+      },
+      {
+        "start": 27724,
+        "stop": 28024,
+        "text": " In fact, gotten better even since you could tell it's gotten even better since we looked"
+      },
+      {
+        "start": 28024,
+        "stop": 28144,
+        "text": " at it."
+      },
+      {
+        "start": 28144,
+        "stop": 28384,
+        "text": " So I think you got a weeder right there, Wes."
+      },
+      {
+        "start": 28384,
+        "stop": 28520,
+        "text": " Congratulations, sir."
+      },
+      {
+        "start": 28520,
+        "stop": 28620,
+        "text": " You got one."
+      },
+      {
+        "start": 28620,
+        "stop": 28740,
+        "text": " It's been a while."
+      },
+      {
+        "start": 28740,
+        "stop": 29276,
+        "text": " I feel like this prediction is also distinctly astute considering he like predicted that"
+      },
+      {
+        "start": 29276,
+        "stop": 29984,
+        "text": " at this very moment you would have it on your laptop, which is quite the prediction, I think."
+      },
+      {
+        "start": 29984,
+        "stop": 30160,
+        "text": " None of us had Nick's on the radar though."
+      },
+      {
+        "start": 30160,
+        "stop": 30460,
+        "text": " No, I think it's artificially set in stone."
+      },
+      {
+        "start": 30460,
+        "stop": 30708,
+        "text": " He forced OpenSUSE upon you."
+      },
+      {
+        "start": 30708,
+        "stop": 31180,
+        "text": " No, Nev is proposing that this was all part of a master Westpane plan."
+      },
+      {
+        "start": 31180,
+        "stop": 31420,
+        "text": " I believe all is fair in predictions."
+      },
+      {
+        "start": 31420,
+        "stop": 31692,
+        "text": " I guess either way it turned out."
+      },
+      {
+        "start": 31692,
+        "stop": 31792,
+        "text": " That's right."
+      },
+      {
+        "start": 31792,
+        "stop": 32160,
+        "text": " Okay, Brent Lee, you had an interesting prediction."
+      },
+      {
+        "start": 32160,
+        "stop": 32468,
+        "text": " I think maybe we felt like it was a lock at the time."
+      },
+      {
+        "start": 32468,
+        "stop": 32656,
+        "text": " You had one for the Ubuntu desktop."
+      },
+      {
+        "start": 32656,
+        "stop": 33372,
+        "text": " In 2022, Ubuntu will snap by default another major Linux desktop application, either LibreOffice"
+      },
+      {
+        "start": 33372,
+        "stop": 33472,
+        "text": " or Thunderbird."
+      },
+      {
+        "start": 33472,
+        "stop": 33680,
+        "text": " I don't think that's happened."
+      },
+      {
+        "start": 33680,
+        "stop": 34108,
+        "text": " You know, I had to look into it this morning and luckily they make that very, very clear"
+      },
+      {
+        "start": 34108,
+        "stop": 34400,
+        "text": " on packages.ubuntu.com when you search for it."
+      },
+      {
+        "start": 34400,
+        "stop": 34920,
+        "text": " Firefox has a big banner that says transition package and they make it clear that it's a"
+      },
+      {
+        "start": 34920,
+        "stop": 35212,
+        "text": " snap package by default."
+      },
+      {
+        "start": 35212,
+        "stop": 35790,
+        "text": " And it turns out neither Thunderbird nor LibreOffice have that note and we haven't heard very much"
+      },
+      {
+        "start": 35790,
+        "stop": 35900,
+        "text": " in that direction at all."
+      },
+      {
+        "start": 35900,
+        "stop": 36160,
+        "text": " So I feel like wamp wamp."
+      },
+      {
+        "start": 36160,
+        "stop": 36310,
+        "text": " I didn't do very well on this one."
+      },
+      {
+        "start": 36310,
+        "stop": 36870,
+        "text": " They spent most of this year attempting to improve the performance of a cold start of"
+      },
+      {
+        "start": 36870,
+        "stop": 36990,
+        "text": " applications for snap."
+      },
+      {
+        "start": 36990,
+        "stop": 37290,
+        "text": " And they made what, two or three blog posts this year about it?"
+      },
+      {
+        "start": 37290,
+        "stop": 37694,
+        "text": " Yeah, the interesting thing there is once they ship a major application that has a lot"
+      },
+      {
+        "start": 37694,
+        "stop": 38082,
+        "text": " of users, all of a sudden there's a lot of work that needs to go into snap."
+      },
+      {
+        "start": 38082,
+        "stop": 38228,
+        "text": " Isn't that interesting?"
+      },
+      {
+        "start": 38228,
+        "stop": 38728,
+        "text": " And so I think if that hadn't happened, your prediction may have had a good shot."
+      },
+      {
+        "start": 38728,
+        "stop": 38870,
+        "text": " It seemed likely at the time."
+      },
+      {
+        "start": 38870,
+        "stop": 39420,
+        "text": " And if you were to make this prediction again later today, I wouldn't give you a hard time"
+      },
+      {
+        "start": 39420,
+        "stop": 39520,
+        "text": " at all."
+      },
+      {
+        "start": 39520,
+        "stop": 39620,
+        "text": " I could still see it happening."
+      },
+      {
+        "start": 39620,
+        "stop": 39720,
+        "text": " So unfortunately it just was a miss."
+      },
+      {
+        "start": 39720,
+        "stop": 40120,
+        "text": " Yeah, it did feel to me like they were trending in that direction, but I can't predict the"
+      },
+      {
+        "start": 40120,
+        "stop": 40220,
+        "text": " future."
+      },
+      {
+        "start": 40220,
+        "stop": 40710,
+        "text": " All right, well, the deck was hot on everyone's mind when we recorded last year's episode"
+      },
+      {
+        "start": 40710,
+        "stop": 40896,
+        "text": " and you made this prediction."
+      },
+      {
+        "start": 40896,
+        "stop": 41558,
+        "text": " Steam's Linux monthly usage stats from gaming on Linux will double to 2.32% at some point"
+      },
+      {
+        "start": 41558,
+        "stop": 41658,
+        "text": " throughout 2022."
+      },
+      {
+        "start": 41658,
+        "stop": 41758,
+        "text": " Now, how did this do, Brentley?"
+      },
+      {
+        "start": 41758,
+        "stop": 41946,
+        "text": " I know you had to look this one up too."
+      },
+      {
+        "start": 41946,
+        "stop": 42410,
+        "text": " Again, like your and my predictions all required pretty much research."
+      },
+      {
+        "start": 42410,
+        "stop": 42740,
+        "text": " But I think that's actually nice because you could prove whether or not it happened."
+      },
+      {
+        "start": 42740,
+        "stop": 43198,
+        "text": " And I remember specifically we chose gaming on Linux as the source for these things because"
+      },
+      {
+        "start": 43198,
+        "stop": 43504,
+        "text": " they can waiver from one source to the other."
+      },
+      {
+        "start": 43504,
+        "stop": 43826,
+        "text": " I did do some research and I don't think I got there."
+      },
+      {
+        "start": 43826,
+        "stop": 44366,
+        "text": " Currently the best data we have, which is the same as last year's November's data, currently"
+      },
+      {
+        "start": 44366,
+        "stop": 44926,
+        "text": " 1.44%, so not the 2.32% I was looking for."
+      },
+      {
+        "start": 44926,
+        "stop": 45062,
+        "text": " Still up a bit."
+      },
+      {
+        "start": 45062,
+        "stop": 45162,
+        "text": " Yeah."
+      },
+      {
+        "start": 45162,
+        "stop": 45450,
+        "text": " Yeah, and now the deck's really just getting more generally available too."
+      },
+      {
+        "start": 45450,
+        "stop": 45738,
+        "text": " You can actually order one and receive it within a reasonable amount of time now."
+      },
+      {
+        "start": 45738,
+        "stop": 46266,
+        "text": " Yeah, you know, I did notice that on the last data point, so from October to November, there"
+      },
+      {
+        "start": 46266,
+        "stop": 47194,
+        "text": " was a quite a large spike in usage from 1.28 in October to 1.44."
+      },
+      {
+        "start": 47194,
+        "stop": 47476,
+        "text": " So that's like a 12.5% increase, which is something."
+      },
+      {
+        "start": 47476,
+        "stop": 48014,
+        "text": " So I feel like, you know, just maybe it's trending up in the direction of my prediction."
+      },
+      {
+        "start": 48014,
+        "stop": 48602,
+        "text": " But I think since the data's there, we don't have the data for December, I gotta say I"
+      },
+      {
+        "start": 48602,
+        "stop": 48726,
+        "text": " think I failed this one too."
+      },
+      {
+        "start": 48726,
+        "stop": 48966,
+        "text": " Yeah, it was tough to say."
+      },
+      {
+        "start": 48966,
+        "stop": 49102,
+        "text": " It could have been a ludicrous prediction."
+      },
+      {
+        "start": 49102,
+        "stop": 49630,
+        "text": " It could have been a undershoot, depending on how the deck sales ramped up."
+      },
+      {
+        "start": 49630,
+        "stop": 50074,
+        "text": " And imagine if we hadn't had supply chain issues and they could have produced the deck"
+      },
+      {
+        "start": 50074,
+        "stop": 50570,
+        "text": " in quantities they're doing just now, maybe even six months ago, these numbers could have"
+      },
+      {
+        "start": 50570,
+        "stop": 50738,
+        "text": " been in a different place."
+      },
+      {
+        "start": 50738,
+        "stop": 50906,
+        "text": " And that's just sort of outside our control."
+      },
+      {
+        "start": 50906,
+        "stop": 51446,
+        "text": " So again, if you were to make this prediction again this year, I'd kind of find that reasonable."
+      },
+      {
+        "start": 51446,
+        "stop": 51546,
+        "text": " All right."
+      },
+      {
+        "start": 51546,
+        "stop": 51862,
+        "text": " I sort of feel that way about my next prediction."
+      },
+      {
+        "start": 51862,
+        "stop": 52218,
+        "text": " So my turn here, I think I blew this one in a couple of ways."
+      },
+      {
+        "start": 52218,
+        "stop": 52374,
+        "text": " I'm just going to say that up front."
+      },
+      {
+        "start": 52374,
+        "stop": 52760,
+        "text": " I got the language wrong, and I got the timing wrong on this one."
+      },
+      {
+        "start": 52760,
+        "stop": 53436,
+        "text": " But I thought by this point, towards the end of the year, it would be possible for a pay"
+      },
+      {
+        "start": 53436,
+        "stop": 53852,
+        "text": " for what you want or donate model for apps on Flathub."
+      },
+      {
+        "start": 53852,
+        "stop": 54286,
+        "text": " All right, I'm going to lock that in then I'm going to say that in 2022, Flathub will"
+      },
+      {
+        "start": 54286,
+        "stop": 54542,
+        "text": " feature sponsored applications."
+      },
+      {
+        "start": 54542,
+        "stop": 54826,
+        "text": " I shouldn't have said sponsored because that wasn't my intention, but I was trying to make"
+      },
+      {
+        "start": 54826,
+        "stop": 54998,
+        "text": " it quick and snappy there."
+      },
+      {
+        "start": 54998,
+        "stop": 55274,
+        "text": " We do have a lot of progress towards this."
+      },
+      {
+        "start": 55274,
+        "stop": 55552,
+        "text": " I got so damn close on this one."
+      },
+      {
+        "start": 55552,
+        "stop": 56162,
+        "text": " So just a couple of weeks after that episode aired on the Flathub discourse, a post went"
+      },
+      {
+        "start": 56162,
+        "stop": 56262,
+        "text": " live."
+      },
+      {
+        "start": 56262,
+        "stop": 56654,
+        "text": " The title was ideas on growing the Flathub community in 2022."
+      },
+      {
+        "start": 56654,
+        "stop": 57290,
+        "text": " And in there they talk about hiring contractors to build, amongst many things, payments rails"
+      },
+      {
+        "start": 57290,
+        "stop": 57434,
+        "text": " for Flathub."
+      },
+      {
+        "start": 57434,
+        "stop": 57850,
+        "text": " Just a couple of weeks after that episode."
+      },
+      {
+        "start": 57850,
+        "stop": 58622,
+        "text": " Then as time went on, we saw a mockup from a GNOME community member Tobias who showed"
+      },
+      {
+        "start": 58622,
+        "stop": 59166,
+        "text": " what the payments might look like for a Flathub application in line of GNOME software."
+      },
+      {
+        "start": 59166,
+        "stop": 59372,
+        "text": " We just saw this just a few weeks ago."
+      },
+      {
+        "start": 59372,
+        "stop": 59610,
+        "text": " This is as of like 19 days ago."
+      },
+      {
+        "start": 59610,
+        "stop": 59710,
+        "text": " This is getting shared around."
+      },
+      {
+        "start": 59710,
+        "stop": 59964,
+        "text": " This is a little bit older than that, but it was being shared around just as recently"
+      },
+      {
+        "start": 59964,
+        "stop": 60122,
+        "text": " as 19 days ago."
+      },
+      {
+        "start": 60122,
+        "stop": 60654,
+        "text": " So my hopes were high because I was seeing these things get shared."
+      },
+      {
+        "start": 60654,
+        "stop": 61678,
+        "text": " I knew they'd hired contractors and in fact, my friends, if you go to beta.flathub.org"
+      },
+      {
+        "start": 61678,
+        "stop": 62186,
+        "text": " and you look at certain applications, there is now along the install button, a donate"
+      },
+      {
+        "start": 62186,
+        "stop": 62332,
+        "text": " button."
+      },
+      {
+        "start": 62332,
+        "stop": 62732,
+        "text": " And this donate button depends on like what implementation the vendor has."
+      },
+      {
+        "start": 62732,
+        "stop": 63090,
+        "text": " And sometimes it's like to their existing crowdfunding campaign."
+      },
+      {
+        "start": 63090,
+        "stop": 63190,
+        "text": " Sometimes it's just integrating Stripe."
+      },
+      {
+        "start": 63190,
+        "stop": 63606,
+        "text": " It seems to be there's more experimentation happening there."
+      },
+      {
+        "start": 63606,
+        "stop": 64562,
+        "text": " However, as it stands right now, that version of GNOME software with those mockups showing"
+      },
+      {
+        "start": 64562,
+        "stop": 64900,
+        "text": " the ability to buy applications isn't shipped."
+      },
+      {
+        "start": 64900,
+        "stop": 65458,
+        "text": " And on the production Flathub site, you cannot contribute to the individual applications"
+      },
+      {
+        "start": 65458,
+        "stop": 65558,
+        "text": " at this point in time."
+      },
+      {
+        "start": 65558,
+        "stop": 65946,
+        "text": " You can if you go to beta.flathub.org, but not a regular old Flathub.org."
+      },
+      {
+        "start": 65946,
+        "stop": 66474,
+        "text": " I like this because this prediction, I mean, okay, yeah, you didn't get it, but it's"
+      },
+      {
+        "start": 66474,
+        "stop": 66638,
+        "text": " making me excited for 2023."
+      },
+      {
+        "start": 66638,
+        "stop": 67002,
+        "text": " I know you're so just within like a stone's throw guys."
+      },
+      {
+        "start": 67002,
+        "stop": 67406,
+        "text": " Like it could be like literally next month they flipped the switch on this or something."
+      },
+      {
+        "start": 67406,
+        "stop": 67826,
+        "text": " I thought you were going to have this one because I remember that like three weeks later,"
+      },
+      {
+        "start": 67826,
+        "stop": 68230,
+        "text": " this was starting to come true and I was sure the rest of the year was going to be enough"
+      },
+      {
+        "start": 68230,
+        "stop": 68542,
+        "text": " time to, to well test that and have it out in production."
+      },
+      {
+        "start": 68542,
+        "stop": 68834,
+        "text": " But geez, some things we just can't control."
+      },
+      {
+        "start": 68834,
+        "stop": 68934,
+        "text": " I know."
+      },
+      {
+        "start": 68934,
+        "stop": 69068,
+        "text": " And I'm excited for it."
+      },
+      {
+        "start": 69068,
+        "stop": 69458,
+        "text": " And I'd love to see a pay what you like model as well for some of these applications."
+      },
+      {
+        "start": 69458,
+        "stop": 69558,
+        "text": " I know that's a lot."
+      },
+      {
+        "start": 69558,
+        "stop": 69714,
+        "text": " There's a lot of things they're trying to support."
+      },
+      {
+        "start": 69714,
+        "stop": 70090,
+        "text": " I'll be happy with anything, but if I could shoot for the stars, it'd be also some of"
+      },
+      {
+        "start": 70090,
+        "stop": 70410,
+        "text": " these apps are pay for what you want up to the developer, I think would be perfect."
+      },
+      {
+        "start": 70410,
+        "stop": 70510,
+        "text": " Okay."
+      },
+      {
+        "start": 70510,
+        "stop": 70742,
+        "text": " So my next prediction, I think this one's up for debate."
+      },
+      {
+        "start": 70742,
+        "stop": 71306,
+        "text": " You guys again, totally different place last year than we are right now."
+      },
+      {
+        "start": 71306,
+        "stop": 71858,
+        "text": " And this prediction definitely feels a little old in 2022, an open source project will use"
+      },
+      {
+        "start": 71858,
+        "stop": 72282,
+        "text": " NFTs or an NFT alone to raise funds."
+      },
+      {
+        "start": 72282,
+        "stop": 72490,
+        "text": " I think this is debatable."
+      },
+      {
+        "start": 72490,
+        "stop": 72730,
+        "text": " There were a couple of different goes at this."
+      },
+      {
+        "start": 72730,
+        "stop": 73166,
+        "text": " What, what I didn't say is that they'd raise a lot of money."
+      },
+      {
+        "start": 73166,
+        "stop": 73350,
+        "text": " I just said they'd try."
+      },
+      {
+        "start": 73350,
+        "stop": 73612,
+        "text": " Alberto Redora, I think is how you say it."
+      },
+      {
+        "start": 73612,
+        "stop": 73810,
+        "text": " He's from Spain and he tried it."
+      },
+      {
+        "start": 73810,
+        "stop": 74434,
+        "text": " He minted 314 NFTs and donated the proceeds to open source projects."
+      },
+      {
+        "start": 74434,
+        "stop": 75160,
+        "text": " And the idea was you can fund open source by buying geeky open source related images"
+      },
+      {
+        "start": 75160,
+        "stop": 75594,
+        "text": " that you could use for your profiles on Mastodon and on Twitter and things like that."
+      },
+      {
+        "start": 75594,
+        "stop": 75932,
+        "text": " And he, his whole premise was you get, this is actually from his blog."
+      },
+      {
+        "start": 75932,
+        "stop": 76294,
+        "text": " He says, you get a cute profile picture to use in the metaverse."
+      },
+      {
+        "start": 76294,
+        "stop": 76804,
+        "text": " The community you like gets donations and I am able to contribute more on open source"
+      },
+      {
+        "start": 76804,
+        "stop": 76904,
+        "text": " projects."
+      },
+      {
+        "start": 76904,
+        "stop": 77054,
+        "text": " It is a win, win, win."
+      },
+      {
+        "start": 77054,
+        "stop": 77178,
+        "text": " Others have tried this as well."
+      },
+      {
+        "start": 77178,
+        "stop": 77530,
+        "text": " I don't think anybody raised a lot of money."
+      },
+      {
+        "start": 77530,
+        "stop": 77902,
+        "text": " And now at the end of 2022, it looks ridiculous."
+      },
+      {
+        "start": 77902,
+        "stop": 78254,
+        "text": " And I don't even want the association with NFTs."
+      },
+      {
+        "start": 78254,
+        "stop": 78628,
+        "text": " I do kind of think that there is a little bit of something to this model of you contribute"
+      },
+      {
+        "start": 78628,
+        "stop": 78968,
+        "text": " to an open source project and you get something back."
+      },
+      {
+        "start": 78968,
+        "stop": 79300,
+        "text": " You know, you could go to the matrix.org site and you could buy a matrix hoodie and they"
+      },
+      {
+        "start": 79300,
+        "stop": 79556,
+        "text": " get a couple of bucks in theory and you get a hoodie."
+      },
+      {
+        "start": 79556,
+        "stop": 79668,
+        "text": " I don't like that model."
+      },
+      {
+        "start": 79668,
+        "stop": 80128,
+        "text": " See that the nice thing about the NFT, and by the way, I don't like NFTs, but I'm just"
+      },
+      {
+        "start": 80128,
+        "stop": 80542,
+        "text": " saying the nice thing is it doesn't say the matrix.org, right?"
+      },
+      {
+        "start": 80542,
+        "stop": 80950,
+        "text": " If I could donate something to me, if I could, as a membership, like a $10 a month membership"
+      },
+      {
+        "start": 80950,
+        "stop": 81478,
+        "text": " to matrix.org and as a result, I had a profile picture that had like a, you know, a dot on"
+      },
+      {
+        "start": 81478,
+        "stop": 81648,
+        "text": " it that said contributor."
+      },
+      {
+        "start": 81648,
+        "stop": 81888,
+        "text": " That might be an incentive to contribute, right?"
+      },
+      {
+        "start": 81888,
+        "stop": 82270,
+        "text": " There is a way to incentivize contributions to open source projects where the community"
+      },
+      {
+        "start": 82270,
+        "stop": 82538,
+        "text": " members get something in return that's digital."
+      },
+      {
+        "start": 82538,
+        "stop": 82922,
+        "text": " Then that doesn't cost the project a whole bunch of production to do like a hoodie."
+      },
+      {
+        "start": 82922,
+        "stop": 83224,
+        "text": " That that there's a large expense associated with that, right?"
+      },
+      {
+        "start": 83224,
+        "stop": 83740,
+        "text": " But a digital good of some kind doesn't cost the project anything necessarily, at least"
+      },
+      {
+        "start": 83740,
+        "stop": 84312,
+        "text": " once it's been created and could in theory be produced in a pretty automated way."
+      },
+      {
+        "start": 84312,
+        "stop": 84412,
+        "text": " Right?"
+      },
+      {
+        "start": 84412,
+        "stop": 84600,
+        "text": " I mean, you already see stuff like a special promotions."
+      },
+      {
+        "start": 84600,
+        "stop": 84700,
+        "text": " You get, Oh, a limit time."
+      },
+      {
+        "start": 84700,
+        "stop": 85052,
+        "text": " Well, we'll have this sort of swag that you can get, but only if you donate now or whatever."
+      },
+      {
+        "start": 85052,
+        "stop": 85528,
+        "text": " And yeah, but if you did it, if you just have to want some sort of little clever digital"
+      },
+      {
+        "start": 85528,
+        "stop": 85892,
+        "text": " item that actually has, you know, some sort of meaning to you, even if it's not value"
+      },
+      {
+        "start": 85892,
+        "stop": 86184,
+        "text": " per se, it doesn't have to be an NFT to make that work."
+      },
+      {
+        "start": 86184,
+        "stop": 86284,
+        "text": " Right?"
+      },
+      {
+        "start": 86284,
+        "stop": 86856,
+        "text": " Like in the eons gone by, like I used to donate and get like little artwork badges or emblems"
+      },
+      {
+        "start": 86856,
+        "stop": 87108,
+        "text": " or whatever that I could use on stuff."
+      },
+      {
+        "start": 87108,
+        "stop": 87304,
+        "text": " It didn't have to boil the ocean to do it."
+      },
+      {
+        "start": 87304,
+        "stop": 87794,
+        "text": " Or the example we've talked about before on the show, the butter FS tester badge for Fedora."
+      },
+      {
+        "start": 87794,
+        "stop": 87910,
+        "text": " And that works."
+      },
+      {
+        "start": 87910,
+        "stop": 88316,
+        "text": " And the thing is like one of the dumb things about NFTs is that you generally just are"
+      },
+      {
+        "start": 88316,
+        "stop": 88828,
+        "text": " buying a URL to a JPEG that sits on a HTP endpoint that could eventually go away."
+      },
+      {
+        "start": 88828,
+        "stop": 89304,
+        "text": " And we, in this bear market, we've seen several endpoints just disappear and the JPEGs are"
+      },
+      {
+        "start": 89304,
+        "stop": 89404,
+        "text": " no longer loadable."
+      },
+      {
+        "start": 89404,
+        "stop": 89504,
+        "text": " They 404."
+      },
+      {
+        "start": 89504,
+        "stop": 89692,
+        "text": " So that's silly."
+      },
+      {
+        "start": 89692,
+        "stop": 90240,
+        "text": " But if what you're investing is a project and you know, you want a badge for that project"
+      },
+      {
+        "start": 90240,
+        "stop": 90632,
+        "text": " or something like that, if that's what motivates you to donate, it's worth it because like"
+      },
+      {
+        "start": 90632,
+        "stop": 91118,
+        "text": " we were talking on the pre-show for the members, matrix.org is having a really tough go at"
+      },
+      {
+        "start": 91118,
+        "stop": 91218,
+        "text": " it right now."
+      },
+      {
+        "start": 91218,
+        "stop": 91502,
+        "text": " And they've just had to announce layoffs because they're not getting enough funding."
+      },
+      {
+        "start": 91502,
+        "stop": 91864,
+        "text": " And I'm just trying to think, what could they do to get average users who are just in there"
+      },
+      {
+        "start": 91864,
+        "stop": 92172,
+        "text": " using as a chat app that don't need their EMS service?"
+      },
+      {
+        "start": 92172,
+        "stop": 92326,
+        "text": " What could you get them to do to pay?"
+      },
+      {
+        "start": 92326,
+        "stop": 92680,
+        "text": " I don't know if it's an NFT, but something like that."
+      },
+      {
+        "start": 92680,
+        "stop": 92800,
+        "text": " So what do we think?"
+      },
+      {
+        "start": 92800,
+        "stop": 92900,
+        "text": " People tried it."
+      },
+      {
+        "start": 92900,
+        "stop": 93192,
+        "text": " Don't think it necessarily moved the needle, but it was attempted."
+      },
+      {
+        "start": 93192,
+        "stop": 93676,
+        "text": " Now the prediction didn't necessarily state an amount of money that had to be raised."
+      },
+      {
+        "start": 93676,
+        "stop": 94018,
+        "text": " But I think the spirit of the prediction was some money would be raised with an NFT."
+      },
+      {
+        "start": 94018,
+        "stop": 94118,
+        "text": " Yeah."
+      },
+      {
+        "start": 94118,
+        "stop": 94450,
+        "text": " Based on the open sea here, it doesn't look like the one you cited, for instance."
+      },
+      {
+        "start": 94450,
+        "stop": 94628,
+        "text": " I don't think any of them sold."
+      },
+      {
+        "start": 94628,
+        "stop": 94728,
+        "text": " All right."
+      },
+      {
+        "start": 94728,
+        "stop": 94828,
+        "text": " All right."
+      },
+      {
+        "start": 94828,
+        "stop": 94928,
+        "text": " I wouldn't think so."
+      },
+      {
+        "start": 94928,
+        "stop": 95036,
+        "text": " You know, because who's this guy, right?"
+      },
+      {
+        "start": 95036,
+        "stop": 95202,
+        "text": " It needs to be from the project."
+      },
+      {
+        "start": 95202,
+        "stop": 95356,
+        "text": " It needs to be associated with the project."
+      },
+      {
+        "start": 95356,
+        "stop": 95456,
+        "text": " It needs to be initiative."
+      },
+      {
+        "start": 95456,
+        "stop": 95904,
+        "text": " And it probably needs to be not an NFT because that's done, I think."
+      },
+      {
+        "start": 95904,
+        "stop": 96040,
+        "text": " Feels feels a little tainted."
+      },
+      {
+        "start": 96040,
+        "stop": 96488,
+        "text": " Well, Chris, I feel like had you worded this just a little differently, you might have"
+      },
+      {
+        "start": 96488,
+        "stop": 96588,
+        "text": " totally nailed it."
+      },
+      {
+        "start": 96588,
+        "stop": 97288,
+        "text": " Like if it was just not NFTs, which now we know was a bit of a phase and just maybe cryptocurrency"
+      },
+      {
+        "start": 97288,
+        "stop": 97722,
+        "text": " in general, I think you would have nailed it because that actually is happening quite"
+      },
+      {
+        "start": 97722,
+        "stop": 97822,
+        "text": " a bit."
+      },
+      {
+        "start": 97822,
+        "stop": 97922,
+        "text": " Yeah."
+      },
+      {
+        "start": 97922,
+        "stop": 98182,
+        "text": " One of the most interesting initiatives I think is OpenSats."
+      },
+      {
+        "start": 98182,
+        "stop": 98282,
+        "text": " That's fascinating."
+      },
+      {
+        "start": 98282,
+        "stop": 98474,
+        "text": " It's funding multiple open source projects."
+      },
+      {
+        "start": 98474,
+        "stop": 98902,
+        "text": " Speaking of that, the ref couldn't join us because I didn't tell him until the last minute,"
+      },
+      {
+        "start": 98902,
+        "stop": 99502,
+        "text": " but Joe is going to be here to referee and make amends for his prediction."
+      },
+      {
+        "start": 99502,
+        "stop": 99694,
+        "text": " But since he's not here, I'll play it and we'll chat about it."
+      },
+      {
+        "start": 99694,
+        "stop": 100386,
+        "text": " I predict that at some point in 2022 Bitcoin will be worth more than $1 million."
+      },
+      {
+        "start": 100386,
+        "stop": 100644,
+        "text": " Well, that didn't happen."
+      },
+      {
+        "start": 100644,
+        "stop": 100848,
+        "text": " That is a that's that's a good example of one you don't."
+      },
+      {
+        "start": 100848,
+        "stop": 101106,
+        "text": " It does not very hard to figure out."
+      },
+      {
+        "start": 101106,
+        "stop": 101294,
+        "text": " People are keeping records for us of that already."
+      },
+      {
+        "start": 101294,
+        "stop": 101776,
+        "text": " I think if you look back, the signs were there."
+      },
+      {
+        "start": 101776,
+        "stop": 102404,
+        "text": " So the Fed began tightening policy in November of last year after 14 years of pretty easy"
+      },
+      {
+        "start": 102404,
+        "stop": 102602,
+        "text": " money for Wall Street."
+      },
+      {
+        "start": 102602,
+        "stop": 102896,
+        "text": " And as soon as that began to happen and the price of money went up, as interest rates"
+      },
+      {
+        "start": 102896,
+        "stop": 103140,
+        "text": " went up, everybody went risk off."
+      },
+      {
+        "start": 103140,
+        "stop": 103280,
+        "text": " And so tech stocks went down."
+      },
+      {
+        "start": 103280,
+        "stop": 103590,
+        "text": " In fact, this is unbelievable."
+      },
+      {
+        "start": 103590,
+        "stop": 104346,
+        "text": " Tech lost so far in the last 12 months, $7.4 trillion in value in the market."
+      },
+      {
+        "start": 104346,
+        "stop": 104518,
+        "text": " We just didn't see that coming."
+      },
+      {
+        "start": 104518,
+        "stop": 104746,
+        "text": " That's unbelievable."
+      },
+      {
+        "start": 104746,
+        "stop": 105022,
+        "text": " That's seven times like the size of the crypto market."
+      },
+      {
+        "start": 105022,
+        "stop": 105436,
+        "text": " The crypto market was like $1.2 trillion or something like that when the market began"
+      },
+      {
+        "start": 105436,
+        "stop": 105538,
+        "text": " to turn."
+      },
+      {
+        "start": 105538,
+        "stop": 105990,
+        "text": " And so Bitcoin, as the price of everything else went down and especially risk assets,"
+      },
+      {
+        "start": 105990,
+        "stop": 106152,
+        "text": " Bitcoin went down."
+      },
+      {
+        "start": 106152,
+        "stop": 106610,
+        "text": " Greater macro conditions sort of dictate that because if there's no flow, if all of a sudden"
+      },
+      {
+        "start": 106610,
+        "stop": 107138,
+        "text": " money goes from flowing fast and easy to slow, then there's just not money to go into these"
+      },
+      {
+        "start": 107138,
+        "stop": 107238,
+        "text": " things."
+      },
+      {
+        "start": 107238,
+        "stop": 107762,
+        "text": " But in that time, to your point, Brent, the Lightning Network grew exponentially."
+      },
+      {
+        "start": 107762,
+        "stop": 107956,
+        "text": " Boosts have seen major adoption in the down market."
+      },
+      {
+        "start": 107956,
+        "stop": 108414,
+        "text": " When we started taking boosts at the beginning of last year, there was 4000 podcasts."
+      },
+      {
+        "start": 108414,
+        "stop": 108930,
+        "text": " As we wrap up this year, there's now 10,000 podcasts that are doing the boost."
+      },
+      {
+        "start": 108930,
+        "stop": 109030,
+        "text": " It's incredible."
+      },
+      {
+        "start": 109030,
+        "stop": 109130,
+        "text": " Absolutely incredible."
+      },
+      {
+        "start": 109130,
+        "stop": 109694,
+        "text": " And of course, to be at the top of that list several weeks has been very humbling."
+      },
+      {
+        "start": 109694,
+        "stop": 109938,
+        "text": " But really good sign to see that."
+      },
+      {
+        "start": 109938,
+        "stop": 110094,
+        "text": " Really nice to see that continue to grow out."
+      },
+      {
+        "start": 110094,
+        "stop": 110194,
+        "text": " That kind of tooling."
+      },
+      {
+        "start": 110194,
+        "stop": 110366,
+        "text": " Yeah, even during this downturn."
+      },
+      {
+        "start": 110366,
+        "stop": 110466,
+        "text": " Absolutely."
+      },
+      {
+        "start": 110466,
+        "stop": 110698,
+        "text": " But I would say nay on that one."
+      },
+      {
+        "start": 110698,
+        "stop": 111238,
+        "text": " And then our editor in chief, Mr. Drew, had a couple of predictions."
+      },
+      {
+        "start": 111238,
+        "stop": 111772,
+        "text": " And this one, I really feel like could have been a possibility."
+      },
+      {
+        "start": 111772,
+        "stop": 112178,
+        "text": " This one feels like this one was, again, going to happen or just totally wasn't going to"
+      },
+      {
+        "start": 112178,
+        "stop": 112278,
+        "text": " be a thing."
+      },
+      {
+        "start": 112278,
+        "stop": 112922,
+        "text": " I predict that in 2022, an attack against the Log4j exploit will result in greater than"
+      },
+      {
+        "start": 112922,
+        "stop": 113338,
+        "text": " $100 million in damages against a single business."
+      },
+      {
+        "start": 113338,
+        "stop": 113462,
+        "text": " It seems possible, right?"
+      },
+      {
+        "start": 113462,
+        "stop": 113954,
+        "text": " As we were recording on December 16th, 2021, CNN ran the following headline."
+      },
+      {
+        "start": 113954,
+        "stop": 114282,
+        "text": " The Log4j security flaw could impact the entire internet."
+      },
+      {
+        "start": 114282,
+        "stop": 114462,
+        "text": " Here's what you need to know."
+      },
+      {
+        "start": 114462,
+        "stop": 115166,
+        "text": " But looking into it, I found an article that summarizes the last year of Log4j news."
+      },
+      {
+        "start": 115166,
+        "stop": 115494,
+        "text": " And this went out on December 8th of this year."
+      },
+      {
+        "start": 115494,
+        "stop": 115714,
+        "text": " And it doesn't really seem to have been a big issue."
+      },
+      {
+        "start": 115714,
+        "stop": 116164,
+        "text": " In fact, the thing that they touch on is that most companies have been struggling to just"
+      },
+      {
+        "start": 116164,
+        "stop": 116630,
+        "text": " figure out where in their stack they were using the software that was impacted by this."
+      },
+      {
+        "start": 116630,
+        "stop": 117034,
+        "text": " Like they didn't have a good accounting of the different libraries and stuff that they"
+      },
+      {
+        "start": 117034,
+        "stop": 117162,
+        "text": " were just using."
+      },
+      {
+        "start": 117162,
+        "stop": 117832,
+        "text": " So Equifax was forced to pay $700 million to settle actions with the FTC, the CFPB,"
+      },
+      {
+        "start": 117832,
+        "stop": 118270,
+        "text": " and all 50 states related to the Log4j security vulnerability."
+      },
+      {
+        "start": 118270,
+        "stop": 118542,
+        "text": " That happened in January of this year."
+      },
+      {
+        "start": 118542,
+        "stop": 118798,
+        "text": " Oh, so do we have a potential..."
+      },
+      {
+        "start": 118798,
+        "stop": 118898,
+        "text": " I'll throw a link."
+      },
+      {
+        "start": 118898,
+        "stop": 118998,
+        "text": " Yeah, link it up."
+      },
+      {
+        "start": 118998,
+        "stop": 119098,
+        "text": " Let's link it up."
+      },
+      {
+        "start": 119098,
+        "stop": 119198,
+        "text": " We'll double check it."
+      },
+      {
+        "start": 119198,
+        "stop": 119298,
+        "text": " We got to make sure we get it right."
+      },
+      {
+        "start": 119298,
+        "stop": 119398,
+        "text": " Here, I see."
+      },
+      {
+        "start": 119398,
+        "stop": 119498,
+        "text": " Let's see."
+      },
+      {
+        "start": 119498,
+        "stop": 119598,
+        "text": " Wes is on it."
+      },
+      {
+        "start": 119598,
+        "stop": 119978,
+        "text": " Let's consider January dollars versus December dollars to inflation adjusted, right?"
+      },
+      {
+        "start": 119978,
+        "stop": 120182,
+        "text": " I think you still got it though."
+      },
+      {
+        "start": 120182,
+        "stop": 120342,
+        "text": " If it was $700 million."
+      },
+      {
+        "start": 120342,
+        "stop": 120790,
+        "text": " Drew had one more prediction while we looked that up, which is an easy didn't happen one."
+      },
+      {
+        "start": 120790,
+        "stop": 121446,
+        "text": " I predict that in 2022, System76 will release keycap sets in different colorways and profiles"
+      },
+      {
+        "start": 121446,
+        "stop": 121566,
+        "text": " for the launch keyboard."
+      },
+      {
+        "start": 121566,
+        "stop": 121866,
+        "text": " I feel like I thought this one was going to happen because I thought he had inside information"
+      },
+      {
+        "start": 121866,
+        "stop": 121966,
+        "text": " on this one."
+      },
+      {
+        "start": 121966,
+        "stop": 122066,
+        "text": " I think we all suspected that."
+      },
+      {
+        "start": 122066,
+        "stop": 122166,
+        "text": " Yeah."
+      },
+      {
+        "start": 122166,
+        "stop": 122546,
+        "text": " I think this is more of a hope prediction than a prediction prediction."
+      },
+      {
+        "start": 122546,
+        "stop": 122834,
+        "text": " What we did get were multiple launches."
+      },
+      {
+        "start": 122834,
+        "stop": 123196,
+        "text": " I have here in my hands as a record right now, the launch heavy, which includes the"
+      },
+      {
+        "start": 123196,
+        "stop": 123410,
+        "text": " num key pad and the big USB-C."
+      },
+      {
+        "start": 123410,
+        "stop": 123602,
+        "text": " And they also have the smaller launch now."
+      },
+      {
+        "start": 123602,
+        "stop": 124134,
+        "text": " So we did get multiple launches, but we didn't get any keycap, different colored keycaps and"
+      },
+      {
+        "start": 124134,
+        "stop": 124234,
+        "text": " stuff."
+      },
+      {
+        "start": 124234,
+        "stop": 124334,
+        "text": " Yeah, we did."
+      },
+      {
+        "start": 124334,
+        "stop": 124434,
+        "text": " Just not a complete set."
+      },
+      {
+        "start": 124434,
+        "stop": 124534,
+        "text": " We got some."
+      },
+      {
+        "start": 124534,
+        "stop": 124634,
+        "text": " Yeah, there's blue, but that's not..."
+      },
+      {
+        "start": 124634,
+        "stop": 124946,
+        "text": " He was thinking like pink and different colors and stuff like that."
+      },
+      {
+        "start": 124946,
+        "stop": 125046,
+        "text": " We did get..."
+      },
+      {
+        "start": 125046,
+        "stop": 125258,
+        "text": " There's like red, blue for a couple of buttons."
+      },
+      {
+        "start": 125258,
+        "stop": 125642,
+        "text": " I've got them here in the box, but it's like for just a certain couple of keys."
+      },
+      {
+        "start": 125642,
+        "stop": 125858,
+        "text": " All right, Wes, did you get a chance to double check on that?"
+      },
+      {
+        "start": 125858,
+        "stop": 126130,
+        "text": " Can we give this win to Drew on the Log4J vulnerability?"
+      },
+      {
+        "start": 126130,
+        "stop": 126302,
+        "text": " This could be a nice one."
+      },
+      {
+        "start": 126302,
+        "stop": 126654,
+        "text": " Unfortunately, at least not from this FTC article."
+      },
+      {
+        "start": 126654,
+        "stop": 127118,
+        "text": " This seems to be a warning reminding folks that the FTC has and will find people that"
+      },
+      {
+        "start": 127118,
+        "stop": 127244,
+        "text": " don't patch."
+      },
+      {
+        "start": 127244,
+        "stop": 127630,
+        "text": " And so after Log4J came out, this is them sort of saying, \"Hey, remember how much we"
+      },
+      {
+        "start": 127630,
+        "stop": 127730,
+        "text": " find Equifax?"
+      },
+      {
+        "start": 127730,
+        "stop": 127930,
+        "text": " Well, better patch your ass.\""
+      },
+      {
+        "start": 127930,
+        "stop": 128030,
+        "text": " Sorry, Drew."
+      },
+      {
+        "start": 128030,
+        "stop": 128458,
+        "text": " It's a close one, though."
+      },
+      {
+        "start": 128458,
+        "stop": 128634,
+        "text": " Linode.com/unplugged."
+      },
+      {
+        "start": 128634,
+        "stop": 128946,
+        "text": " That's where you go to get $100 in 60-day credit on a new account."
+      },
+      {
+        "start": 128946,
+        "stop": 129390,
+        "text": " And it's a great way to support the show while you're checking out fast, reliable cloud hosting"
+      },
+      {
+        "start": 129390,
+        "stop": 129558,
+        "text": " with the best support in the business."
+      },
+      {
+        "start": 129558,
+        "stop": 129942,
+        "text": " Real humans all day, every day, even the holidays."
+      },
+      {
+        "start": 129942,
+        "stop": 130358,
+        "text": " And of course, I have to acknowledge they're also really well-priced."
+      },
+      {
+        "start": 130358,
+        "stop": 130806,
+        "text": " 30 to 50% cheaper than the hyperscalers out there that want to lock into those crazy platforms."
+      },
+      {
+        "start": 130806,
+        "stop": 130994,
+        "text": " You guys know what I'm talking about."
+      },
+      {
+        "start": 130994,
+        "stop": 131382,
+        "text": " And I think I might have a new platform for 2023."
+      },
+      {
+        "start": 131382,
+        "stop": 131582,
+        "text": " So tell me what you think about it."
+      },
+      {
+        "start": 131582,
+        "stop": 131974,
+        "text": " Go spin up a Linode and try a little Nextcloud."
+      },
+      {
+        "start": 131974,
+        "stop": 132298,
+        "text": " Everyone should at least try a little Nextcloud once."
+      },
+      {
+        "start": 132298,
+        "stop": 132466,
+        "text": " Maybe it doesn't work for you."
+      },
+      {
+        "start": 132466,
+        "stop": 132566,
+        "text": " Maybe it does."
+      },
+      {
+        "start": 132566,
+        "stop": 132984,
+        "text": " But when you go to Linode.com/unplugged, you got 100 big ones right there you can play with."
+      },
+      {
+        "start": 132984,
+        "stop": 133374,
+        "text": " You can set something up and really actually kick the tires and see if Nextcloud's for"
+      },
+      {
+        "start": 133374,
+        "stop": 133474,
+        "text": " you."
+      },
+      {
+        "start": 133474,
+        "stop": 133574,
+        "text": " And I'm going to give you a pro tip."
+      },
+      {
+        "start": 133574,
+        "stop": 133674,
+        "text": " Do what I do now."
+      },
+      {
+        "start": 133674,
+        "stop": 133822,
+        "text": " I'll tell you when not to do what I do."
+      },
+      {
+        "start": 133822,
+        "stop": 134006,
+        "text": " But do like I do on this one."
+      },
+      {
+        "start": 134006,
+        "stop": 134438,
+        "text": " Just put your Nextcloud like on a tail scale or a WireGuard VPN or a Nebula VPN."
+      },
+      {
+        "start": 134438,
+        "stop": 134696,
+        "text": " Just put it somewhere private like that."
+      },
+      {
+        "start": 134696,
+        "stop": 135006,
+        "text": " And you're just going to incredibly improve your security profile."
+      },
+      {
+        "start": 135006,
+        "stop": 135342,
+        "text": " Linode makes it super fast and easy to play Nextcloud to."
+      },
+      {
+        "start": 135342,
+        "stop": 135442,
+        "text": " One click."
+      },
+      {
+        "start": 135442,
+        "stop": 135708,
+        "text": " Well, actually it's one click and then you answer all the basics that you need to have"
+      },
+      {
+        "start": 135708,
+        "stop": 135914,
+        "text": " a good Nextcloud instance and then you deploy it."
+      },
+      {
+        "start": 135914,
+        "stop": 136014,
+        "text": " Same with Mastodon."
+      },
+      {
+        "start": 136014,
+        "stop": 136178,
+        "text": " They just recently added Mastodon."
+      },
+      {
+        "start": 136178,
+        "stop": 136480,
+        "text": " Refreshed it, worked with the upstream project, got that thing dialed in."
+      },
+      {
+        "start": 136480,
+        "stop": 136746,
+        "text": " Now it's just click, fill out a few questions, deploy."
+      },
+      {
+        "start": 136870,
+        "stop": 137026,
+        "text": " And with $100 you can actually try that."
+      },
+      {
+        "start": 137026,
+        "stop": 137250,
+        "text": " And on top of all of that, great performance."
+      },
+      {
+        "start": 137250,
+        "stop": 137434,
+        "text": " 11 data centers to choose from."
+      },
+      {
+        "start": 137434,
+        "stop": 137678,
+        "text": " A dozen more going on next year."
+      },
+      {
+        "start": 137678,
+        "stop": 137806,
+        "text": " They are their own ISP."
+      },
+      {
+        "start": 137806,
+        "stop": 138138,
+        "text": " So they got like 40 gigabit connections coming to the hypervisors."
+      },
+      {
+        "start": 138138,
+        "stop": 138566,
+        "text": " The way I explain how fast it is is updates will slam down on your rig faster than your"
+      },
+      {
+        "start": 138566,
+        "stop": 138834,
+        "text": " SSH terminal can probably stream the information to you."
+      },
+      {
+        "start": 138834,
+        "stop": 139020,
+        "text": " That's how fast their connection is."
+      },
+      {
+        "start": 139020,
+        "stop": 139120,
+        "text": " And their disks."
+      },
+      {
+        "start": 139120,
+        "stop": 139220,
+        "text": " MVME, super fast disks."
+      },
+      {
+        "start": 139220,
+        "stop": 139354,
+        "text": " They got AMD Epic CPUs."
+      },
+      {
+        "start": 139354,
+        "stop": 139706,
+        "text": " They also have really lean, mean fighting machines."
+      },
+      {
+        "start": 139706,
+        "stop": 140122,
+        "text": " If you just want something simple for yourself, a family, maybe a little gaming server, a"
+      },
+      {
+        "start": 140122,
+        "stop": 140462,
+        "text": " little portfolio, maybe you took some family pictures, you want to throw them online on"
+      },
+      {
+        "start": 140462,
+        "stop": 140846,
+        "text": " an open source gallery, you can throw up a little nano for that."
+      },
+      {
+        "start": 140846,
+        "stop": 140946,
+        "text": " It works really well."
+      },
+      {
+        "start": 140946,
+        "stop": 141178,
+        "text": " It's what we use for everything we've deployed in the last three years."
+      },
+      {
+        "start": 141178,
+        "stop": 141414,
+        "text": " It's what we put our new website on."
+      },
+      {
+        "start": 141414,
+        "stop": 141650,
+        "text": " Anything that's going to be public facing."
+      },
+      {
+        "start": 141650,
+        "stop": 141750,
+        "text": " All that kind of stuff."
+      },
+      {
+        "start": 141750,
+        "stop": 141882,
+        "text": " Back end services for the guys that are all remote."
+      },
+      {
+        "start": 141882,
+        "stop": 142058,
+        "text": " Put it all on Linode."
+      },
+      {
+        "start": 142058,
+        "stop": 142214,
+        "text": " Front end end, back end."
+      },
+      {
+        "start": 142214,
+        "stop": 142314,
+        "text": " Top to bottom."
+      },
+      {
+        "start": 142314,
+        "stop": 142450,
+        "text": " The full maneuver over at Linode."
+      },
+      {
+        "start": 142450,
+        "stop": 142550,
+        "text": " And you can try it too."
+      },
+      {
+        "start": 142550,
+        "stop": 142650,
+        "text": " Get that $100."
+      },
+      {
+        "start": 142650,
+        "stop": 143082,
+        "text": " Go give them a little holiday cheer."
+      },
+      {
+        "start": 143082,
+        "stop": 143210,
+        "text": " Everybody who listens just loves Linode."
+      },
+      {
+        "start": 143210,
+        "stop": 143310,
+        "text": " That's why they keep coming back."
+      },
+      {
+        "start": 143310,
+        "stop": 143410,
+        "text": " I think you're going to like it too."
+      },
+      {
+        "start": 143410,
+        "stop": 143678,
+        "text": " I have a pretty good sense you're going to really like it."
+      },
+      {
+        "start": 143678,
+        "stop": 143778,
+        "text": " Linode.com/unplugged."
+      },
+      {
+        "start": 143778,
+        "stop": 144266,
+        "text": " We have one baller boost this week."
+      },
+      {
+        "start": 144266,
+        "stop": 144430,
+        "text": " And we're kind of doing things out of order."
+      },
+      {
+        "start": 144430,
+        "stop": 144606,
+        "text": " So not all the boosts are in this episode."
+      },
+      {
+        "start": 144606,
+        "stop": 144706,
+        "text": " Not everything's in here."
+      },
+      {
+        "start": 144706,
+        "stop": 145138,
+        "text": " But we had one really fantastic boost that came into the show from George."
+      },
+      {
+        "start": 145138,
+        "stop": 145802,
+        "text": " And he sent in 150,000 sats."
+      },
+      {
+        "start": 145802,
+        "stop": 146266,
+        "text": " Hey guys, longtime listener, first time booster and brand new Jupiter.party member."
+      },
+      {
+        "start": 146266,
+        "stop": 146502,
+        "text": " I'm also somewhat of a crypto enthusiast."
+      },
+      {
+        "start": 146502,
+        "stop": 146786,
+        "text": " And Chris, this boost is for you."
+      },
+      {
+        "start": 146786,
+        "stop": 147406,
+        "text": " These sats are actually started life as Ethereum and then were swapped through a decentralized"
+      },
+      {
+        "start": 147406,
+        "stop": 147678,
+        "text": " Thor chain into native Bitcoin."
+      },
+      {
+        "start": 147678,
+        "stop": 148042,
+        "text": " Think of this as an olive branch from the Ethereum and DeFi community to you."
+      },
+      {
+        "start": 148042,
+        "stop": 148314,
+        "text": " I promise it's not all scams and crap coins."
+      },
+      {
+        "start": 148314,
+        "stop": 148506,
+        "text": " All the best to the whole Jupiter broadcasting team."
+      },
+      {
+        "start": 148506,
+        "stop": 148798,
+        "text": " I can't wait for more great content in 2023."
+      },
+      {
+        "start": 148798,
+        "stop": 149026,
+        "text": " Oh, yeah, I agree."
+      },
+      {
+        "start": 149026,
+        "stop": 149318,
+        "text": " There is something great about decentralized financing."
+      },
+      {
+        "start": 149318,
+        "stop": 149818,
+        "text": " The trick is you start talking about, you know, Ethereum through the Thor chain to the"
+      },
+      {
+        "start": 149818,
+        "stop": 149918,
+        "text": " Bitcoin."
+      },
+      {
+        "start": 149918,
+        "stop": 150046,
+        "text": " Like it's just I think people glaze over a little bit."
+      },
+      {
+        "start": 150046,
+        "stop": 150450,
+        "text": " So I think once all that stuff is just implementation details and it's you go into a UI and you"
+      },
+      {
+        "start": 150450,
+        "stop": 150934,
+        "text": " say this to this and maybe, you know, in some cases that this is really the case, you still"
+      },
+      {
+        "start": 150934,
+        "stop": 151062,
+        "text": " have to kind of be hip to the language."
+      },
+      {
+        "start": 151062,
+        "stop": 151326,
+        "text": " But once you no longer have to be hip to the language, I could see that being available"
+      },
+      {
+        "start": 151326,
+        "stop": 151426,
+        "text": " to the masses, George."
+      },
+      {
+        "start": 151426,
+        "stop": 151526,
+        "text": " Thank you."
+      },
+      {
+        "start": 151526,
+        "stop": 151874,
+        "text": " I wasn't sure we were going to have a baller boost this episode because we're on a Tuesday."
+      },
+      {
+        "start": 151874,
+        "stop": 152074,
+        "text": " We still like way out of whack."
+      },
+      {
+        "start": 152074,
+        "stop": 152326,
+        "text": " It's been a couple of days since the episode just came out."
+      },
+      {
+        "start": 152326,
+        "stop": 152894,
+        "text": " And so we'll have I think I'm tempted to say, guys, when we when we restart, we should"
+      },
+      {
+        "start": 152894,
+        "stop": 153118,
+        "text": " probably consider a feedback heavy episode again."
+      },
+      {
+        "start": 153118,
+        "stop": 153442,
+        "text": " I know we just did one kind of recently, but because we've been recording out of order,"
+      },
+      {
+        "start": 153442,
+        "stop": 153798,
+        "text": " stuff has been coming to the show like email and boost and comments."
+      },
+      {
+        "start": 153798,
+        "stop": 154018,
+        "text": " And we're not recording orders."
+      },
+      {
+        "start": 154018,
+        "stop": 154118,
+        "text": " They're not getting covered on the show."
+      },
+      {
+        "start": 154118,
+        "stop": 154506,
+        "text": " So I was thinking maybe we might might do that soon."
+      },
+      {
+        "start": 154506,
+        "stop": 154786,
+        "text": " I'd like people's thoughts on that because I enjoy those feedback episodes, too."
+      },
+      {
+        "start": 154786,
+        "stop": 154936,
+        "text": " Seems better to address them now than later."
+      },
+      {
+        "start": 154936,
+        "stop": 155036,
+        "text": " That's true."
+      },
+      {
+        "start": 155036,
+        "stop": 155186,
+        "text": " Good point there, Wes."
+      },
+      {
+        "start": 155186,
+        "stop": 155482,
+        "text": " Let's get into our predictions this year."
+      },
+      {
+        "start": 155482,
+        "stop": 155926,
+        "text": " So gentlemen, you know the format we can talk about a little bit, but then you eventually"
+      },
+      {
+        "start": 155926,
+        "stop": 156234,
+        "text": " got to lock it in and that's what's going to be held accountable."
+      },
+      {
+        "start": 156234,
+        "stop": 156342,
+        "text": " So we could talk it out."
+      },
+      {
+        "start": 156342,
+        "stop": 156782,
+        "text": " But ultimately, you're going to have to give me a concise lock in and we'll do that."
+      },
+      {
+        "start": 156782,
+        "stop": 156926,
+        "text": " And then we'll move on to the next prediction."
+      },
+      {
+        "start": 156926,
+        "stop": 157394,
+        "text": " And Brent, since you had to go first last round, you get to start this round with your"
+      },
+      {
+        "start": 157394,
+        "stop": 157610,
+        "text": " first prediction, sir."
+      },
+      {
+        "start": 157610,
+        "stop": 157774,
+        "text": " Let's call this a JB prediction."
+      },
+      {
+        "start": 157774,
+        "stop": 158638,
+        "text": " I predict that Chris, you will find a tiling manager to fulfill your wish of having."
+      },
+      {
+        "start": 158638,
+        "stop": 159220,
+        "text": " Not a full tiling manager, but tiling only on specific desktops, virtual desktops or specific"
+      },
+      {
+        "start": 159220,
+        "stop": 159370,
+        "text": " monitors."
+      },
+      {
+        "start": 159370,
+        "stop": 159656,
+        "text": " I'm thinking maybe Katie's been working on this."
+      },
+      {
+        "start": 159656,
+        "stop": 160234,
+        "text": " So you might find it in plasma as a home for you or maybe as a stretch."
+      },
+      {
+        "start": 160234,
+        "stop": 160558,
+        "text": " Maybe new cosmic might come out and have something like this for you."
+      },
+      {
+        "start": 160558,
+        "stop": 160862,
+        "text": " I hope you're right on this one."
+      },
+      {
+        "start": 160862,
+        "stop": 160970,
+        "text": " And so you're not saying I run it."
+      },
+      {
+        "start": 160970,
+        "stop": 161070,
+        "text": " It's not my primary."
+      },
+      {
+        "start": 161070,
+        "stop": 161266,
+        "text": " You're just saying at some point it comes out and I get to try it out."
+      },
+      {
+        "start": 161266,
+        "stop": 161470,
+        "text": " Well, there's the measurable part, isn't it?"
+      },
+      {
+        "start": 161470,
+        "stop": 162130,
+        "text": " So I have to come up with a way that we can assert or measure your your usage there."
+      },
+      {
+        "start": 162130,
+        "stop": 162534,
+        "text": " So I think the thing that's easy to measure is that did it ship or not?"
+      },
+      {
+        "start": 162534,
+        "stop": 162732,
+        "text": " Regardless if any of us ended up using it."
+      },
+      {
+        "start": 162732,
+        "stop": 163076,
+        "text": " But is the plasma stuff I know that they're toying with some of that."
+      },
+      {
+        "start": 163076,
+        "stop": 163176,
+        "text": " Has it shipped yet?"
+      },
+      {
+        "start": 163176,
+        "stop": 163548,
+        "text": " I mean, you could do with K win scripts already kind of sorta."
+      },
+      {
+        "start": 163548,
+        "stop": 163712,
+        "text": " And I do know they're thinking about building that in."
+      },
+      {
+        "start": 163712,
+        "stop": 163812,
+        "text": " I don't know, though."
+      },
+      {
+        "start": 163812,
+        "stop": 164060,
+        "text": " I think this would need to be a feature that you might actually use."
+      },
+      {
+        "start": 164060,
+        "stop": 164160,
+        "text": " Right."
+      },
+      {
+        "start": 164160,
+        "stop": 164260,
+        "text": " Isn't that part of Brent's thing here?"
+      },
+      {
+        "start": 164260,
+        "stop": 164360,
+        "text": " Right."
+      },
+      {
+        "start": 164360,
+        "stop": 164700,
+        "text": " It's talking about like, OK, yeah, you've had a wish to find this for the last few years."
+      },
+      {
+        "start": 164700,
+        "stop": 165128,
+        "text": " And I think that wish will be fulfilled is really the essence of this prediction because"
+      },
+      {
+        "start": 165128,
+        "stop": 165380,
+        "text": " you're clearly not using K win scripts that right."
+      },
+      {
+        "start": 165380,
+        "stop": 165570,
+        "text": " Yeah, yeah, a little bit."
+      },
+      {
+        "start": 165570,
+        "stop": 165974,
+        "text": " You know, maybe it's something you install on your workstation upstairs."
+      },
+      {
+        "start": 165974,
+        "stop": 166074,
+        "text": " OK."
+      },
+      {
+        "start": 166074,
+        "stop": 166456,
+        "text": " X-Men ad and DWM can both do this already."
+      },
+      {
+        "start": 166456,
+        "stop": 166556,
+        "text": " This is a little hairy."
+      },
+      {
+        "start": 166556,
+        "stop": 166762,
+        "text": " We got to we got to we got to make this a little simpler, don't we?"
+      },
+      {
+        "start": 166762,
+        "stop": 166978,
+        "text": " I think I think I think you're now I think you're on to something."
+      },
+      {
+        "start": 166978,
+        "stop": 167098,
+        "text": " It's something I try and use."
+      },
+      {
+        "start": 167098,
+        "stop": 167294,
+        "text": " I was going to give it two weeks."
+      },
+      {
+        "start": 167294,
+        "stop": 167710,
+        "text": " Two weeks is like, hey, I tried it, but I liked it enough to keep trying it."
+      },
+      {
+        "start": 167710,
+        "stop": 167810,
+        "text": " I don't know."
+      },
+      {
+        "start": 167810,
+        "stop": 167910,
+        "text": " I don't know."
+      },
+      {
+        "start": 167910,
+        "stop": 168090,
+        "text": " This is where you and I went wrong before."
+      },
+      {
+        "start": 168090,
+        "stop": 168532,
+        "text": " Because if you just if you just drop the two weeks off and they say it's just one, I try"
+      },
+      {
+        "start": 168532,
+        "stop": 168678,
+        "text": " predictions easy to measure."
+      },
+      {
+        "start": 168678,
+        "stop": 168778,
+        "text": " It's one."
+      },
+      {
+        "start": 168778,
+        "stop": 169138,
+        "text": " But if we want to measure how long I use it, then we have to find a way at the end of next"
+      },
+      {
+        "start": 169138,
+        "stop": 169476,
+        "text": " year to account for how long I use that desktop environment."
+      },
+      {
+        "start": 169476,
+        "stop": 169940,
+        "text": " I also worry that like that could just mean because because he has so many machines, right?"
+      },
+      {
+        "start": 169940,
+        "stop": 170428,
+        "text": " Like he can he might install it and play with it for a bit for the show and then he just"
+      },
+      {
+        "start": 170428,
+        "stop": 170772,
+        "text": " doesn't get to it to remove it until a couple of weeks later, even if he wasn't using it."
+      },
+      {
+        "start": 170772,
+        "stop": 170872,
+        "text": " Yeah."
+      },
+      {
+        "start": 170872,
+        "stop": 171056,
+        "text": " So I say if you drop off the time thing, but say I try it."
+      },
+      {
+        "start": 171056,
+        "stop": 171244,
+        "text": " I think that's a good enough qualifier that we can measure."
+      },
+      {
+        "start": 171244,
+        "stop": 171394,
+        "text": " Is that not too easy?"
+      },
+      {
+        "start": 171394,
+        "stop": 171494,
+        "text": " How could it be too easy?"
+      },
+      {
+        "start": 171494,
+        "stop": 171594,
+        "text": " How could it be?"
+      },
+      {
+        "start": 171594,
+        "stop": 172028,
+        "text": " How can it be too easy if it literally does not even exist right now?"
+      },
+      {
+        "start": 172028,
+        "stop": 172360,
+        "text": " OK, how can that make it easy?"
+      },
+      {
+        "start": 172360,
+        "stop": 172464,
+        "text": " It doesn't exist."
+      },
+      {
+        "start": 172464,
+        "stop": 172772,
+        "text": " And even if it lands in plasma, I may not end up using it."
+      },
+      {
+        "start": 172772,
+        "stop": 173152,
+        "text": " And it may or may not end in cosmic like we really have no idea at this point."
+      },
+      {
+        "start": 173152,
+        "stop": 173288,
+        "text": " It's not easy."
+      },
+      {
+        "start": 173288,
+        "stop": 173600,
+        "text": " Here's the way to make it measure how to make this actually work."
+      },
+      {
+        "start": 173600,
+        "stop": 173840,
+        "text": " Chris keeps it on his computer."
+      },
+      {
+        "start": 173840,
+        "stop": 173940,
+        "text": " Oh."
+      },
+      {
+        "start": 173940,
+        "stop": 174444,
+        "text": " Because that's the only qualifier we can use to measure that it was successful."
+      },
+      {
+        "start": 174444,
+        "stop": 174544,
+        "text": " Does he have?"
+      },
+      {
+        "start": 174544,
+        "stop": 174644,
+        "text": " Yeah, that's true."
+      },
+      {
+        "start": 174644,
+        "stop": 175096,
+        "text": " And if it was successful, I would always leave it on on Workspace two and probably three."
+      },
+      {
+        "start": 175096,
+        "stop": 175196,
+        "text": " That's very true."
+      },
+      {
+        "start": 175196,
+        "stop": 175296,
+        "text": " Well, hey, Chris, I have a proposition."
+      },
+      {
+        "start": 175296,
+        "stop": 175528,
+        "text": " OK, what is it now?"
+      },
+      {
+        "start": 175528,
+        "stop": 176114,
+        "text": " I generate a NixOS configuration with with a pre configured desktop environment using"
+      },
+      {
+        "start": 176114,
+        "stop": 176540,
+        "text": " exponent database and then just give it to you."
+      },
+      {
+        "start": 176540,
+        "stop": 176936,
+        "text": " I mean, that seems like by far the closest to something he actually tried that has been"
+      },
+      {
+        "start": 176936,
+        "stop": 177036,
+        "text": " there."
+      },
+      {
+        "start": 177036,
+        "stop": 177136,
+        "text": " Yeah."
+      },
+      {
+        "start": 177136,
+        "stop": 177236,
+        "text": " There's an easy way for me to then deploy that on a machine and try it."
+      },
+      {
+        "start": 177236,
+        "stop": 177336,
+        "text": " Give that a go."
+      },
+      {
+        "start": 177336,
+        "stop": 177536,
+        "text": " But that would be cheating."
+      },
+      {
+        "start": 177536,
+        "stop": 177768,
+        "text": " Well, I've got time to fool around with that shenanigans."
+      },
+      {
+        "start": 177768,
+        "stop": 177868,
+        "text": " I'm not using an accent."
+      },
+      {
+        "start": 177868,
+        "stop": 177968,
+        "text": " Oh, man."
+      },
+      {
+        "start": 177968,
+        "stop": 178068,
+        "text": " All right."
+      },
+      {
+        "start": 178068,
+        "stop": 178168,
+        "text": " You got to lock this thing and we got to move on."
+      },
+      {
+        "start": 178168,
+        "stop": 178288,
+        "text": " We can't take an hour on one prediction."
+      },
+      {
+        "start": 178288,
+        "stop": 178496,
+        "text": " So you ready to lock it in?"
+      },
+      {
+        "start": 178496,
+        "stop": 178688,
+        "text": " Well, I think you should help me pare it down first."
+      },
+      {
+        "start": 178688,
+        "stop": 178892,
+        "text": " There's a lot of like what ifs here."
+      },
+      {
+        "start": 178892,
+        "stop": 179168,
+        "text": " You know, I think what you have here in the doc kind of works if you just tweak a little"
+      },
+      {
+        "start": 179168,
+        "stop": 179268,
+        "text": " bit."
+      },
+      {
+        "start": 179268,
+        "stop": 179718,
+        "text": " So Chris is going to find a tiling desktop manager that does per virtual desktop tiling"
+      },
+      {
+        "start": 179718,
+        "stop": 179900,
+        "text": " that he ends up sticking with."
+      },
+      {
+        "start": 179900,
+        "stop": 180244,
+        "text": " And sticking with how do you measure sticking with as you were reviewing before?"
+      },
+      {
+        "start": 180244,
+        "stop": 180344,
+        "text": " Like, what about it?"
+      },
+      {
+        "start": 180344,
+        "stop": 180656,
+        "text": " But, you know, when we review the predictions next year, he might use it."
+      },
+      {
+        "start": 180656,
+        "stop": 180756,
+        "text": " Yeah, that's it."
+      },
+      {
+        "start": 180756,
+        "stop": 180856,
+        "text": " That's okay."
+      },
+      {
+        "start": 180856,
+        "stop": 180956,
+        "text": " Okay."
+      },
+      {
+        "start": 180956,
+        "stop": 181056,
+        "text": " Okay."
+      },
+      {
+        "start": 181056,
+        "stop": 181156,
+        "text": " Oh, I like that."
+      },
+      {
+        "start": 181156,
+        "stop": 181444,
+        "text": " Should probably make it clear that we're that I'm still using it by next year by next year's"
+      },
+      {
+        "start": 181444,
+        "stop": 181544,
+        "text": " prediction episode."
+      },
+      {
+        "start": 181544,
+        "stop": 181644,
+        "text": " Yeah."
+      },
+      {
+        "start": 181644,
+        "stop": 181768,
+        "text": " You ready to give it a go?"
+      },
+      {
+        "start": 181768,
+        "stop": 181868,
+        "text": " Let's do it."
+      },
+      {
+        "start": 181868,
+        "stop": 181968,
+        "text": " Okay."
+      },
+      {
+        "start": 181968,
+        "stop": 182068,
+        "text": " Lock it in."
+      },
+      {
+        "start": 182068,
+        "stop": 182168,
+        "text": " Brett."
+      },
+      {
+        "start": 182168,
+        "stop": 182624,
+        "text": " Chris will find a tiling desktop manager that does per monitor or his favorite per virtual"
+      },
+      {
+        "start": 182624,
+        "stop": 183496,
+        "text": " desktop tiling and have it installed at the time of next year's predictions episode."
+      },
+      {
+        "start": 183496,
+        "stop": 183628,
+        "text": " That's our first one locked."
+      },
+      {
+        "start": 183628,
+        "stop": 183812,
+        "text": " I'm excited to find out what happens."
+      },
+      {
+        "start": 183812,
+        "stop": 183968,
+        "text": " I love your next prediction."
+      },
+      {
+        "start": 183968,
+        "stop": 184188,
+        "text": " I really hope this comes true."
+      },
+      {
+        "start": 184188,
+        "stop": 184342,
+        "text": " Go ahead and give it give us your pitch."
+      },
+      {
+        "start": 184342,
+        "stop": 184442,
+        "text": " See if anybody has any issues."
+      },
+      {
+        "start": 184442,
+        "stop": 184542,
+        "text": " All right."
+      },
+      {
+        "start": 184542,
+        "stop": 184922,
+        "text": " Yes, I find it hard to distinguish between predictions and hopes and dreams."
+      },
+      {
+        "start": 184922,
+        "stop": 185096,
+        "text": " So here we go."
+      },
+      {
+        "start": 185096,
+        "stop": 185900,
+        "text": " I believe system 76 or I predict system 76 will begin development of an in house laptop"
+      },
+      {
+        "start": 185900,
+        "stop": 186000,
+        "text": " hardware."
+      },
+      {
+        "start": 186000,
+        "stop": 186468,
+        "text": " And the evidence of that will be some CAD designs that are committed to their public"
+      },
+      {
+        "start": 186468,
+        "stop": 186836,
+        "text": " repositories similar to what they do with a Thalia."
+      },
+      {
+        "start": 186836,
+        "stop": 187012,
+        "text": " Oh, this is a spicy one."
+      },
+      {
+        "start": 187012,
+        "stop": 187112,
+        "text": " Brent."
+      },
+      {
+        "start": 187112,
+        "stop": 188028,
+        "text": " I like this because I feel like when you and I and Wes were last at the system 76 factory"
+      },
+      {
+        "start": 188028,
+        "stop": 188408,
+        "text": " things were maybe the time before things were a kind of like it was launch and then on the"
+      },
+      {
+        "start": 188408,
+        "stop": 188550,
+        "text": " laptop."
+      },
+      {
+        "start": 188550,
+        "stop": 188752,
+        "text": " But then the whole supply chain thing happened."
+      },
+      {
+        "start": 188752,
+        "stop": 189024,
+        "text": " And I think they kind of went into survival mode."
+      },
+      {
+        "start": 189024,
+        "stop": 189176,
+        "text": " Parts became less available."
+      },
+      {
+        "start": 189176,
+        "stop": 189444,
+        "text": " Not only that, but like availability kept changing from out underneath them."
+      },
+      {
+        "start": 189444,
+        "stop": 189748,
+        "text": " And I think I would guess the laptop just went on hold."
+      },
+      {
+        "start": 189748,
+        "stop": 189888,
+        "text": " But maybe that's clearing up now."
+      },
+      {
+        "start": 189888,
+        "stop": 190336,
+        "text": " Well, I found it hard to when I was authoring this prediction and pondering it for the last"
+      },
+      {
+        "start": 190336,
+        "stop": 190878,
+        "text": " few days, I found it hard to say that they would release it because that feels just super"
+      },
+      {
+        "start": 190878,
+        "stop": 191216,
+        "text": " tight considering the environment we've been in in the last year."
+      },
+      {
+        "start": 191216,
+        "stop": 191912,
+        "text": " But to start and really make it at least some public development in that direction, I feel"
+      },
+      {
+        "start": 191912,
+        "stop": 192168,
+        "text": " like maybe is realistic."
+      },
+      {
+        "start": 192168,
+        "stop": 192290,
+        "text": " All right."
+      },
+      {
+        "start": 192290,
+        "stop": 192830,
+        "text": " What about they make driver code for it?"
+      },
+      {
+        "start": 192830,
+        "stop": 193162,
+        "text": " We always we always do overshoot this stuff."
+      },
+      {
+        "start": 193162,
+        "stop": 193624,
+        "text": " So what if we did something like that, like software related to the laptop is either upstreamed"
+      },
+      {
+        "start": 193624,
+        "stop": 193792,
+        "text": " or published on their GitHub?"
+      },
+      {
+        "start": 193792,
+        "stop": 194204,
+        "text": " Well, how do you distinguish that from what they're currently doing?"
+      },
+      {
+        "start": 194204,
+        "stop": 194522,
+        "text": " They'd have to be transparent that it is for the laptop hardware, right?"
+      },
+      {
+        "start": 194522,
+        "stop": 194622,
+        "text": " Yeah."
+      },
+      {
+        "start": 194622,
+        "stop": 194722,
+        "text": " Okay."
+      },
+      {
+        "start": 194722,
+        "stop": 194822,
+        "text": " There's a distinction to be had here."
+      },
+      {
+        "start": 194822,
+        "stop": 195650,
+        "text": " My initial prediction had to do with in-house case designs based on, you know, the things"
+      },
+      {
+        "start": 195650,
+        "stop": 196106,
+        "text": " they've learned around the launch keyboard, you know, some of the aluminum work that they've"
+      },
+      {
+        "start": 196106,
+        "stop": 196206,
+        "text": " done."
+      },
+      {
+        "start": 196206,
+        "stop": 196844,
+        "text": " So I was thinking more physical hardware that you touch in terms of like case designs, not"
+      },
+      {
+        "start": 196844,
+        "stop": 197224,
+        "text": " necessarily a from the ground up sort of laptop."
+      },
+      {
+        "start": 197224,
+        "stop": 197750,
+        "text": " Yeah, but I think this has legs to doesn't it the software in relation to that, that"
+      },
+      {
+        "start": 197750,
+        "stop": 197882,
+        "text": " new development."
+      },
+      {
+        "start": 197882,
+        "stop": 198398,
+        "text": " The drivers are probably more likely than the schematics, because the drivers don't"
+      },
+      {
+        "start": 198398,
+        "stop": 198890,
+        "text": " necessarily quote unquote, have to be associated with a particular model."
+      },
+      {
+        "start": 198890,
+        "stop": 199448,
+        "text": " But they are indicative of them actually doing something that requires code to be changed"
+      },
+      {
+        "start": 199448,
+        "stop": 199636,
+        "text": " to support the product."
+      },
+      {
+        "start": 199636,
+        "stop": 199838,
+        "text": " So what about code?"
+      },
+      {
+        "start": 199838,
+        "stop": 200282,
+        "text": " Code related to a system 76 laptop development goes public in 2022."
+      },
+      {
+        "start": 200282,
+        "stop": 200490,
+        "text": " It's pretty concise, pretty easy to measure."
+      },
+      {
+        "start": 200490,
+        "stop": 200744,
+        "text": " Just got to check their GitHub."
+      },
+      {
+        "start": 200744,
+        "stop": 200844,
+        "text": " Let's do it."
+      },
+      {
+        "start": 200844,
+        "stop": 200944,
+        "text": " All right."
+      },
+      {
+        "start": 200944,
+        "stop": 201226,
+        "text": " I bet we'll find, you know, if it does happen, I bet we'll there'll be some sort of news"
+      },
+      {
+        "start": 201226,
+        "stop": 201326,
+        "text": " about it."
+      },
+      {
+        "start": 201326,
+        "stop": 201502,
+        "text": " Perhaps on a related show to this one."
+      },
+      {
+        "start": 201502,
+        "stop": 201602,
+        "text": " Hmm."
+      },
+      {
+        "start": 201602,
+        "stop": 201702,
+        "text": " Hmm."
+      },
+      {
+        "start": 201702,
+        "stop": 201802,
+        "text": " All right, Brent, lock it in."
+      },
+      {
+        "start": 201802,
+        "stop": 202354,
+        "text": " I hope you'll believe that in 2023 code related to a new system 76 laptop will be"
+      },
+      {
+        "start": 202354,
+        "stop": 202566,
+        "text": " released on their public GitHub."
+      },
+      {
+        "start": 202566,
+        "stop": 202974,
+        "text": " All right, I would love to see that I really would."
+      },
+      {
+        "start": 202974,
+        "stop": 203142,
+        "text": " I'd love to see that enter the market."
+      },
+      {
+        "start": 203142,
+        "stop": 203538,
+        "text": " Okay, Mr. Payne, I was curious to see what you're gonna come up with."
+      },
+      {
+        "start": 203538,
+        "stop": 203816,
+        "text": " What is your first 2023 prediction?"
+      },
+      {
+        "start": 203816,
+        "stop": 204154,
+        "text": " I thought it was time to recycle an oldie, but a goodie."
+      },
+      {
+        "start": 204154,
+        "stop": 204254,
+        "text": " All right."
+      },
+      {
+        "start": 204254,
+        "stop": 204938,
+        "text": " I predict that B cache FS will be merged into mainline Linux sometime during 2022."
+      },
+      {
+        "start": 204938,
+        "stop": 205178,
+        "text": " Oh, God, I hope so."
+      },
+      {
+        "start": 205178,
+        "stop": 205582,
+        "text": " Because it's just like, it's been so many years now and it's getting really close."
+      },
+      {
+        "start": 205582,
+        "stop": 205714,
+        "text": " We're at the final bits."
+      },
+      {
+        "start": 205714,
+        "stop": 205950,
+        "text": " You know, you and I've been following the development pretty closely."
+      },
+      {
+        "start": 205950,
+        "stop": 206050,
+        "text": " You mean 23, right?"
+      },
+      {
+        "start": 206050,
+        "stop": 206150,
+        "text": " Yeah."
+      },
+      {
+        "start": 206150,
+        "stop": 206250,
+        "text": " Oh, yeah, I totally do."
+      },
+      {
+        "start": 206250,
+        "stop": 206406,
+        "text": " I've got to go in the brain still."
+      },
+      {
+        "start": 206406,
+        "stop": 206714,
+        "text": " And I think that's, that's pretty doable."
+      },
+      {
+        "start": 206714,
+        "stop": 207050,
+        "text": " Seems like just based on Kent's most recent updates, that seems pretty doable."
+      },
+      {
+        "start": 207050,
+        "stop": 207150,
+        "text": " God, I hope so."
+      },
+      {
+        "start": 207150,
+        "stop": 207340,
+        "text": " I think he's still the only person working on it."
+      },
+      {
+        "start": 207340,
+        "stop": 207870,
+        "text": " And I know that one of the things he mentioned in his latest status report is that his main"
+      },
+      {
+        "start": 207870,
+        "stop": 208346,
+        "text": " condition for being able to upstream it is to get more contributors working on the code"
+      },
+      {
+        "start": 208346,
+        "stop": 208446,
+        "text": " first."
+      },
+      {
+        "start": 208446,
+        "stop": 208546,
+        "text": " Here's open that happens."
+      },
+      {
+        "start": 208546,
+        "stop": 208646,
+        "text": " All right."
+      },
+      {
+        "start": 208646,
+        "stop": 208746,
+        "text": " I think you could lock that in."
+      },
+      {
+        "start": 208746,
+        "stop": 208846,
+        "text": " All right."
+      },
+      {
+        "start": 208846,
+        "stop": 208946,
+        "text": " Go for it."
+      },
+      {
+        "start": 208946,
+        "stop": 209046,
+        "text": " West pain."
+      },
+      {
+        "start": 209046,
+        "stop": 209766,
+        "text": " I predict that B cache FS will be merged into mainline Linux sometime during 2023."
+      },
+      {
+        "start": 209766,
+        "stop": 209962,
+        "text": " I hope you're right."
+      },
+      {
+        "start": 209962,
+        "stop": 210458,
+        "text": " I'd love to run that on like a Raspberry Pi, maybe a laptop SSD."
+      },
+      {
+        "start": 210458,
+        "stop": 210782,
+        "text": " Okay, so you got another one in there for us?"
+      },
+      {
+        "start": 210782,
+        "stop": 211126,
+        "text": " Yeah, here's one I hope doesn't come true."
+      },
+      {
+        "start": 211126,
+        "stop": 211226,
+        "text": " Okay."
+      },
+      {
+        "start": 211226,
+        "stop": 212010,
+        "text": " I predict a vulnerability related to eBPF or IO U-ring will be announced that has a"
+      },
+      {
+        "start": 212010,
+        "stop": 212318,
+        "text": " CVSS score of seven or higher."
+      },
+      {
+        "start": 212318,
+        "stop": 212558,
+        "text": " Oh, I love this prediction."
+      },
+      {
+        "start": 212558,
+        "stop": 212658,
+        "text": " Wow."
+      },
+      {
+        "start": 212658,
+        "stop": 213082,
+        "text": " Because this is the new hotness in the kernel ripe for people to bang on."
+      },
+      {
+        "start": 213082,
+        "stop": 213744,
+        "text": " And with a CVS score, we can just go check."
+      },
+      {
+        "start": 213744,
+        "stop": 214194,
+        "text": " Like we can go check the numbers and see if they ever issued anything related to eBPF."
+      },
+      {
+        "start": 214194,
+        "stop": 214514,
+        "text": " And IO U-ring was two different categories, but I think it's good to lump them together"
+      },
+      {
+        "start": 214514,
+        "stop": 214614,
+        "text": " because they are the new hotness."
+      },
+      {
+        "start": 214614,
+        "stop": 214978,
+        "text": " No more surface area that, you know, maybe catch something here."
+      },
+      {
+        "start": 214978,
+        "stop": 215078,
+        "text": " Yeah."
+      },
+      {
+        "start": 215078,
+        "stop": 215236,
+        "text": " And they can do incredible things."
+      },
+      {
+        "start": 215236,
+        "stop": 215502,
+        "text": " So if you could exploit that, you could do incredible things."
+      },
+      {
+        "start": 215502,
+        "stop": 215602,
+        "text": " All right."
+      },
+      {
+        "start": 215602,
+        "stop": 215702,
+        "text": " So, yeah, I have no contentions."
+      },
+      {
+        "start": 215702,
+        "stop": 215802,
+        "text": " You want to lock it in?"
+      },
+      {
+        "start": 215802,
+        "stop": 215902,
+        "text": " All right."
+      },
+      {
+        "start": 215902,
+        "stop": 216002,
+        "text": " Go for it."
+      },
+      {
+        "start": 216002,
+        "stop": 216526,
+        "text": " I predict that a vulnerability related to eBPF or IO U-ring will be announced sometime"
+      },
+      {
+        "start": 216526,
+        "stop": 217102,
+        "text": " in 2023 and it will have a CVSS score of seven or higher."
+      },
+      {
+        "start": 217102,
+        "stop": 217266,
+        "text": " I hope not."
+      },
+      {
+        "start": 217266,
+        "stop": 217366,
+        "text": " Yeah."
+      },
+      {
+        "start": 217366,
+        "stop": 217466,
+        "text": " Right."
+      },
+      {
+        "start": 217466,
+        "stop": 217566,
+        "text": " I hope you're wrong on that one."
+      },
+      {
+        "start": 217566,
+        "stop": 217666,
+        "text": " I hope you're wrong on that."
+      },
+      {
+        "start": 217666,
+        "stop": 217766,
+        "text": " You got a bonus prediction in there."
+      },
+      {
+        "start": 217766,
+        "stop": 217866,
+        "text": " Yeah, just a fun little prediction."
+      },
+      {
+        "start": 217866,
+        "stop": 218194,
+        "text": " I thought I'd throw in because this way we get to check next year and it'll be fun to"
+      },
+      {
+        "start": 218194,
+        "stop": 218294,
+        "text": " talk about."
+      },
+      {
+        "start": 218294,
+        "stop": 218940,
+        "text": " I predict that over the course of 2023, the Linux Foundation will announce at least 20"
+      },
+      {
+        "start": 218940,
+        "stop": 219040,
+        "text": " new foundations."
+      },
+      {
+        "start": 219040,
+        "stop": 219182,
+        "text": " I'm going to lock that one right in."
+      },
+      {
+        "start": 219182,
+        "stop": 219382,
+        "text": " I think that's an easy one."
+      },
+      {
+        "start": 219382,
+        "stop": 219482,
+        "text": " Excellent."
+      },
+      {
+        "start": 219482,
+        "stop": 219614,
+        "text": " You got to have a foundation."
+      },
+      {
+        "start": 219614,
+        "stop": 219714,
+        "text": " Oh, my gosh."
+      },
+      {
+        "start": 219714,
+        "stop": 219906,
+        "text": " They'll probably actually do it, too."
+      },
+      {
+        "start": 219906,
+        "stop": 220250,
+        "text": " Like, I think they did like three or four this year."
+      },
+      {
+        "start": 220250,
+        "stop": 220526,
+        "text": " Three or four a quarter, I think is what they did."
+      },
+      {
+        "start": 220526,
+        "stop": 220626,
+        "text": " It's really something."
+      },
+      {
+        "start": 220626,
+        "stop": 220726,
+        "text": " It's quite impressive."
+      },
+      {
+        "start": 220726,
+        "stop": 220826,
+        "text": " All right."
+      },
+      {
+        "start": 220826,
+        "stop": 221010,
+        "text": " Well, for my first prediction, pretty easy to measure."
+      },
+      {
+        "start": 221010,
+        "stop": 221404,
+        "text": " I'm going to be really disappointed if it doesn't happen, boys."
+      },
+      {
+        "start": 221404,
+        "stop": 221610,
+        "text": " Steam OS is available for download."
+      },
+      {
+        "start": 221610,
+        "stop": 221894,
+        "text": " The official genuine Steam OS from Valve."
+      },
+      {
+        "start": 221894,
+        "stop": 221994,
+        "text": " OK."
+      },
+      {
+        "start": 221994,
+        "stop": 222282,
+        "text": " And like, is there any matter of like, whoops, you got to go through?"
+      },
+      {
+        "start": 222282,
+        "stop": 222524,
+        "text": " Do you have to like have an account or is it just like a website's there?"
+      },
+      {
+        "start": 222524,
+        "stop": 222798,
+        "text": " I can go get an ISO like we're used to for most distros."
+      },
+      {
+        "start": 222798,
+        "stop": 223210,
+        "text": " You know, I wouldn't be surprised if they make you like log into your steam account"
+      },
+      {
+        "start": 223210,
+        "stop": 223542,
+        "text": " or something, but I don't know if I want to include that because once the ISO is out there,"
+      },
+      {
+        "start": 223542,
+        "stop": 223642,
+        "text": " it's out there."
+      },
+      {
+        "start": 223642,
+        "stop": 223890,
+        "text": " Well, you're assuming it's going to be an ISO."
+      },
+      {
+        "start": 223890,
+        "stop": 224288,
+        "text": " It might not be because the way that they've designed Steam OS, I don't think it's particularly"
+      },
+      {
+        "start": 224288,
+        "stop": 224450,
+        "text": " amenable to being an install."
+      },
+      {
+        "start": 224450,
+        "stop": 224550,
+        "text": " Maybe, maybe, maybe."
+      },
+      {
+        "start": 224550,
+        "stop": 225002,
+        "text": " So like an ISO or ISO or just like a release image?"
+      },
+      {
+        "start": 225002,
+        "stop": 225218,
+        "text": " A way to get it is what I'm thinking."
+      },
+      {
+        "start": 225218,
+        "stop": 225318,
+        "text": " They have to."
+      },
+      {
+        "start": 225318,
+        "stop": 225594,
+        "text": " Otherwise, there's just going to be more community spins."
+      },
+      {
+        "start": 225594,
+        "stop": 225786,
+        "text": " We already know a couple that are out there."
+      },
+      {
+        "start": 225786,
+        "stop": 226172,
+        "text": " And if they don't release it officially, the community is just going to take matters into"
+      },
+      {
+        "start": 226172,
+        "stop": 226358,
+        "text": " their own hands and it's just going to grow."
+      },
+      {
+        "start": 226358,
+        "stop": 226514,
+        "text": " Is that a bad thing?"
+      },
+      {
+        "start": 226514,
+        "stop": 226614,
+        "text": " No."
+      },
+      {
+        "start": 226614,
+        "stop": 227014,
+        "text": " But if you put your corporate strategy hat on, I don't think it is a good thing."
+      },
+      {
+        "start": 227014,
+        "stop": 227322,
+        "text": " I think the reason why you create Steam OS is because you want to create a reliable,"
+      },
+      {
+        "start": 227322,
+        "stop": 227658,
+        "text": " common platform that game developers can know and trust."
+      },
+      {
+        "start": 227658,
+        "stop": 228086,
+        "text": " And the best case scenario is that as many people are using that target platform as possible."
+      },
+      {
+        "start": 228086,
+        "stop": 228482,
+        "text": " And if you start having a whole bunch of fragmented different versions with slight differences"
+      },
+      {
+        "start": 228482,
+        "stop": 228798,
+        "text": " in implementations, I think that's bad for Valve and what they're trying to accomplish"
+      },
+      {
+        "start": 228798,
+        "stop": 228898,
+        "text": " here."
+      },
+      {
+        "start": 228898,
+        "stop": 229278,
+        "text": " And the only way to get ahead of that is to release Steam OS in time to prevent that from"
+      },
+      {
+        "start": 229278,
+        "stop": 229378,
+        "text": " happening."
+      },
+      {
+        "start": 229378,
+        "stop": 229536,
+        "text": " And they've already are a year behind."
+      },
+      {
+        "start": 229536,
+        "stop": 229752,
+        "text": " There's only one way to find out, I think."
+      },
+      {
+        "start": 229752,
+        "stop": 229852,
+        "text": " So yeah."
+      },
+      {
+        "start": 229852,
+        "stop": 229952,
+        "text": " Should I lock it in?"
+      },
+      {
+        "start": 229952,
+        "stop": 230052,
+        "text": " Steam OS is available for download, you think?"
+      },
+      {
+        "start": 230052,
+        "stop": 230610,
+        "text": " You will have to define Steam OS 3 because Steam OS 2 is available for download, but"
+      },
+      {
+        "start": 230610,
+        "stop": 230782,
+        "text": " it's the Debian based version."
+      },
+      {
+        "start": 230782,
+        "stop": 230882,
+        "text": " All right."
+      },
+      {
+        "start": 230882,
+        "stop": 231018,
+        "text": " I will make that clear right now."
+      },
+      {
+        "start": 231018,
+        "stop": 232104,
+        "text": " I predict in 2023, Valve will make their Arch-based Steam OS monster available for general download."
+      },
+      {
+        "start": 232104,
+        "stop": 232204,
+        "text": " I hope."
+      },
+      {
+        "start": 232204,
+        "stop": 232304,
+        "text": " I love to get my hands on that."
+      },
+      {
+        "start": 232304,
+        "stop": 232404,
+        "text": " Yeah."
+      },
+      {
+        "start": 232404,
+        "stop": 232504,
+        "text": " Yeah."
+      },
+      {
+        "start": 232504,
+        "stop": 232862,
+        "text": " So the next one just seems like it's kind of, you know, I'm looking at the trends."
+      },
+      {
+        "start": 232862,
+        "stop": 233304,
+        "text": " This is where maybe Drew went sideways with the log for J vulnerability, but I'm looking"
+      },
+      {
+        "start": 233304,
+        "stop": 234030,
+        "text": " at the trends as we round out the new year or this year, whatever the hell it is."
+      },
+      {
+        "start": 234030,
+        "stop": 234626,
+        "text": " And it seems like some sort of GPT inspired command line is going to get released."
+      },
+      {
+        "start": 234626,
+        "stop": 235274,
+        "text": " Some sort of CLI tooling or using the GPT-3 or GPT-4, I don't know what it'll be at the"
+      },
+      {
+        "start": 235274,
+        "stop": 235890,
+        "text": " backend to try and make your command line experience better and easier than ever."
+      },
+      {
+        "start": 235890,
+        "stop": 236314,
+        "text": " And guess what you're trying to write and help you auto complete your bash."
+      },
+      {
+        "start": 236314,
+        "stop": 236612,
+        "text": " And it's just going to be the best thing ever."
+      },
+      {
+        "start": 236612,
+        "stop": 236990,
+        "text": " And it'll be generally available, start probably as a beta and then you'll install this and"
+      },
+      {
+        "start": 236990,
+        "stop": 237178,
+        "text": " it'll become like a shell or something."
+      },
+      {
+        "start": 237178,
+        "stop": 237764,
+        "text": " It'll be some sort of CLI tooling to help aid your command line adventures."
+      },
+      {
+        "start": 237764,
+        "stop": 238188,
+        "text": " And it's going to be powered by GPT-3 to have kind of a conversational thing."
+      },
+      {
+        "start": 238188,
+        "stop": 238864,
+        "text": " So instead of saying, you know, a PS-AUX, you'll just say, what am I running processes?"
+      },
+      {
+        "start": 238864,
+        "stop": 239308,
+        "text": " And it'll come back with a PS of your running processes."
+      },
+      {
+        "start": 239308,
+        "stop": 239468,
+        "text": " I think, I don't know if it's going to take off."
+      },
+      {
+        "start": 239468,
+        "stop": 239802,
+        "text": " I don't know if it's going to get more than 10 users, but I think somebody is going to"
+      },
+      {
+        "start": 239802,
+        "stop": 240132,
+        "text": " give it a go because there's going to be a lot of stabs at trying to integrate this into"
+      },
+      {
+        "start": 240132,
+        "stop": 240312,
+        "text": " our tooling, I think."
+      },
+      {
+        "start": 240312,
+        "stop": 240686,
+        "text": " So you mean like Houston, the GPT-3 based AI terminal assistant?"
+      },
+      {
+        "start": 240686,
+        "stop": 241006,
+        "text": " Is there really a thing already?"
+      },
+      {
+        "start": 241006,
+        "stop": 241198,
+        "text": " I think it's going to be post-diction."
+      },
+      {
+        "start": 241198,
+        "stop": 241614,
+        "text": " So it's a category, obviously, for 2023."
+      },
+      {
+        "start": 241614,
+        "stop": 241874,
+        "text": " It's clearly going to be a category."
+      },
+      {
+        "start": 241874,
+        "stop": 241974,
+        "text": " I wonder."
+      },
+      {
+        "start": 241974,
+        "stop": 242222,
+        "text": " It got a commit two hours ago."
+      },
+      {
+        "start": 242222,
+        "stop": 242322,
+        "text": " I got an alternative."
+      },
+      {
+        "start": 242322,
+        "stop": 242422,
+        "text": " Really?"
+      },
+      {
+        "start": 242422,
+        "stop": 242728,
+        "text": " OK, so I think it's going to be called the conversational interface for the command line"
+      },
+      {
+        "start": 242728,
+        "stop": 242828,
+        "text": " or something like that."
+      },
+      {
+        "start": 242828,
+        "stop": 243006,
+        "text": " What do they call it?"
+      },
+      {
+        "start": 243006,
+        "stop": 243138,
+        "text": " I did not know about Houston."
+      },
+      {
+        "start": 243138,
+        "stop": 243472,
+        "text": " Does that disqualify my prediction or could we see more?"
+      },
+      {
+        "start": 243472,
+        "stop": 243654,
+        "text": " And if we see others develop, then the prediction still helps."
+      },
+      {
+        "start": 243654,
+        "stop": 244170,
+        "text": " I think you need to refine your prediction into something a little bit more over the"
+      },
+      {
+        "start": 244170,
+        "stop": 244270,
+        "text": " moon."
+      },
+      {
+        "start": 244270,
+        "stop": 244382,
+        "text": " It's a little tricky."
+      },
+      {
+        "start": 244382,
+        "stop": 244834,
+        "text": " This does seem to be quite, Houston does seem to be quite similar to what you've predicted."
+      },
+      {
+        "start": 244834,
+        "stop": 245198,
+        "text": " And there has been a lot of other sort of, I could see where Neil's coming from."
+      },
+      {
+        "start": 245198,
+        "stop": 245610,
+        "text": " If you got something designed around that and ships a whole application package, it's"
+      },
+      {
+        "start": 245610,
+        "stop": 245966,
+        "text": " not just something you, yeah, it's not just a little additional thing that you run in"
+      },
+      {
+        "start": 245966,
+        "stop": 246066,
+        "text": " your bash shell."
+      },
+      {
+        "start": 246066,
+        "stop": 246282,
+        "text": " It's a whole new interface that you're using."
+      },
+      {
+        "start": 246282,
+        "stop": 246756,
+        "text": " Like I know there's been stuff like warp and it has its own terminal, something like that,"
+      },
+      {
+        "start": 246756,
+        "stop": 246924,
+        "text": " but designed around it."
+      },
+      {
+        "start": 246924,
+        "stop": 247024,
+        "text": " And that could be it."
+      },
+      {
+        "start": 247024,
+        "stop": 247570,
+        "text": " Is it, it seems like the reason why I didn't want to make it a standalone application,"
+      },
+      {
+        "start": 247570,
+        "stop": 247942,
+        "text": " but maybe I'm wrong looking at Houston's a thing, so maybe this is fine, is my thought"
+      },
+      {
+        "start": 247942,
+        "stop": 248348,
+        "text": " was it's a lot of the models."
+      },
+      {
+        "start": 248348,
+        "stop": 248640,
+        "text": " It's a lot to download and install locally."
+      },
+      {
+        "start": 248640,
+        "stop": 249132,
+        "text": " Whereas if it was something you installed on your box that connected to a cloud instance,"
+      },
+      {
+        "start": 249132,
+        "stop": 249302,
+        "text": " it's actually running all the modeling."
+      },
+      {
+        "start": 249302,
+        "stop": 249690,
+        "text": " Sort of like when you do voice dictation on your phone, how sometimes it does some of"
+      },
+      {
+        "start": 249690,
+        "stop": 250072,
+        "text": " that locally and sometimes it's actually uploading to the cloud and doing the dictation in the"
+      },
+      {
+        "start": 250072,
+        "stop": 250326,
+        "text": " cloud and then sending the results back to the phone."
+      },
+      {
+        "start": 250326,
+        "stop": 250636,
+        "text": " That's what I would imagine something on the command line to do tooling would be like."
+      },
+      {
+        "start": 250636,
+        "stop": 250790,
+        "text": " Yeah, I think that's what these are doing."
+      },
+      {
+        "start": 250790,
+        "stop": 250890,
+        "text": " Okay."
+      },
+      {
+        "start": 250890,
+        "stop": 251190,
+        "text": " Yeah, because you got to have like an open AI key."
+      },
+      {
+        "start": 251190,
+        "stop": 251352,
+        "text": " Here's one that you'll like this."
+      },
+      {
+        "start": 251352,
+        "stop": 251982,
+        "text": " Please CLI PLZ uses GPT-3 and it's written in Rust."
+      },
+      {
+        "start": 251982,
+        "stop": 252082,
+        "text": " Really?"
+      },
+      {
+        "start": 252082,
+        "stop": 252362,
+        "text": " Oh, well, now we got it."
+      },
+      {
+        "start": 252362,
+        "stop": 252614,
+        "text": " Now we have to try these in a future episode."
+      },
+      {
+        "start": 252614,
+        "stop": 252776,
+        "text": " Yeah, that would be interesting."
+      },
+      {
+        "start": 252776,
+        "stop": 252988,
+        "text": " So I could just kick this prediction to the curb."
+      },
+      {
+        "start": 252988,
+        "stop": 253342,
+        "text": " I don't mind getting rid of this one either because it seems like it's already happening."
+      },
+      {
+        "start": 253342,
+        "stop": 254010,
+        "text": " I, you know what, by the way, my workflow for this, which is all offline, which is really"
+      },
+      {
+        "start": 254010,
+        "stop": 254542,
+        "text": " great is I installed the next cloud notes app on my Pizel seven."
+      },
+      {
+        "start": 254542,
+        "stop": 254918,
+        "text": " And then just when I thought of something, I opened it up, took the note in there."
+      },
+      {
+        "start": 254918,
+        "stop": 255312,
+        "text": " And then when it came time to put them in the doc, I went and opened up the text file"
+      },
+      {
+        "start": 255312,
+        "stop": 255706,
+        "text": " on the next cloud web instance and just copied it right over."
+      },
+      {
+        "start": 255706,
+        "stop": 255806,
+        "text": " Yeah."
+      },
+      {
+        "start": 255806,
+        "stop": 255906,
+        "text": " Super nice."
+      },
+      {
+        "start": 255906,
+        "stop": 256006,
+        "text": " That is nice."
+      },
+      {
+        "start": 256006,
+        "stop": 256106,
+        "text": " Worked real good for capturing my notes and my thoughts."
+      },
+      {
+        "start": 256106,
+        "stop": 256206,
+        "text": " Okay."
+      },
+      {
+        "start": 256206,
+        "stop": 256306,
+        "text": " How about this one?"
+      },
+      {
+        "start": 256306,
+        "stop": 256454,
+        "text": " How about I take a different track?"
+      },
+      {
+        "start": 256454,
+        "stop": 256742,
+        "text": " Cause I do have an alternative prediction in here."
+      },
+      {
+        "start": 256742,
+        "stop": 257258,
+        "text": " And that is that we'll have an open AI search engine to compete with Google that's available"
+      },
+      {
+        "start": 257258,
+        "stop": 257440,
+        "text": " to anyone, no account required."
+      },
+      {
+        "start": 257440,
+        "stop": 257820,
+        "text": " You go to something that's like a short word.com or whatever."
+      },
+      {
+        "start": 257820,
+        "stop": 258110,
+        "text": " And you just do your search there."
+      },
+      {
+        "start": 258110,
+        "stop": 258388,
+        "text": " No API key, no account required."
+      },
+      {
+        "start": 258388,
+        "stop": 258902,
+        "text": " It's just a general open to the public, perhaps labeled beta open AI search engine."
+      },
+      {
+        "start": 258902,
+        "stop": 259518,
+        "text": " So something that could function as a competitor, even if in beta to Google being, et cetera."
+      },
+      {
+        "start": 259518,
+        "stop": 259618,
+        "text": " Yeah."
+      },
+      {
+        "start": 259618,
+        "stop": 260096,
+        "text": " If you went over to chat GPT right now and, and said, who makes the best brand of motor"
+      },
+      {
+        "start": 260096,
+        "stop": 260232,
+        "text": " oil?"
+      },
+      {
+        "start": 260232,
+        "stop": 260572,
+        "text": " It would tell you who makes the best brand of motor oil."
+      },
+      {
+        "start": 260572,
+        "stop": 260902,
+        "text": " If you go over to Google right now and ask it, who makes the best brand of motor oil"
+      },
+      {
+        "start": 260902,
+        "stop": 261408,
+        "text": " at best is going to give you a list of five or six, maybe some, some advertisements and"
+      },
+      {
+        "start": 261408,
+        "stop": 261570,
+        "text": " some blog spam."
+      },
+      {
+        "start": 261570,
+        "stop": 261730,
+        "text": " And people want the actual answer."
+      },
+      {
+        "start": 261730,
+        "stop": 262298,
+        "text": " And people that are not computer users already ask Google things in conversational prompts."
+      },
+      {
+        "start": 262298,
+        "stop": 262544,
+        "text": " So they're already doing it that way."
+      },
+      {
+        "start": 262544,
+        "stop": 262936,
+        "text": " And if you ask chat GPT a question, generally, I don't know if it's right or not, it'll give"
+      },
+      {
+        "start": 262936,
+        "stop": 263050,
+        "text": " you the answer."
+      },
+      {
+        "start": 263050,
+        "stop": 263248,
+        "text": " And you can ask it about brand information."
+      },
+      {
+        "start": 263248,
+        "stop": 263438,
+        "text": " You can ask it about best reviewed."
+      },
+      {
+        "start": 263438,
+        "stop": 263860,
+        "text": " You can get specific and it correlates all those different reviews."
+      },
+      {
+        "start": 263860,
+        "stop": 264246,
+        "text": " It looks at the stuff and it gives you an answer in a way that Google just simply can't."
+      },
+      {
+        "start": 264246,
+        "stop": 264346,
+        "text": " Are you trying it right now?"
+      },
+      {
+        "start": 264346,
+        "stop": 264446,
+        "text": " Okay."
+      },
+      {
+        "start": 264446,
+        "stop": 264546,
+        "text": " Let's try it right now."
+      },
+      {
+        "start": 264546,
+        "stop": 264790,
+        "text": " Are you asking if what's the best brand of motor oil is?"
+      },
+      {
+        "start": 264790,
+        "stop": 265018,
+        "text": " I've never tried that search, but."
+      },
+      {
+        "start": 265018,
+        "stop": 265320,
+        "text": " Chris, I asked it who from alpha."
+      },
+      {
+        "start": 265320,
+        "stop": 266204,
+        "text": " Assuming motor oil is a material, input interpretation, Texaco, Eco SAE, brand name, blah, blah, blah."
+      },
+      {
+        "start": 266204,
+        "stop": 266360,
+        "text": " Trade name is Eco."
+      },
+      {
+        "start": 266360,
+        "stop": 266508,
+        "text": " Mine is motor oil."
+      },
+      {
+        "start": 266508,
+        "stop": 267156,
+        "text": " It gives you all the information, not specifically in a text result, but it doesn't."
+      },
+      {
+        "start": 267156,
+        "stop": 268024,
+        "text": " A competitive alternative, preferably open source search engine product that uses this"
+      },
+      {
+        "start": 268024,
+        "stop": 268768,
+        "text": " kind of technology to give human comprehensible answers to human comprehensible questions."
+      },
+      {
+        "start": 268768,
+        "stop": 268954,
+        "text": " I do that, but it's just not going to win."
+      },
+      {
+        "start": 268954,
+        "stop": 269054,
+        "text": " I'm here to win."
+      },
+      {
+        "start": 269054,
+        "stop": 269154,
+        "text": " I'm bringing my egg in."
+      },
+      {
+        "start": 269154,
+        "stop": 269354,
+        "text": " No, you're here to shoot the moon."
+      },
+      {
+        "start": 269354,
+        "stop": 269454,
+        "text": " No, no, no."
+      },
+      {
+        "start": 269454,
+        "stop": 269554,
+        "text": " I got to win this one."
+      },
+      {
+        "start": 269554,
+        "stop": 269694,
+        "text": " He's got vision and drive."
+      },
+      {
+        "start": 269694,
+        "stop": 270022,
+        "text": " Listen, I could take a couple of years of losses, but I want to win."
+      },
+      {
+        "start": 270022,
+        "stop": 270186,
+        "text": " I want to win next year."
+      },
+      {
+        "start": 270186,
+        "stop": 270506,
+        "text": " And I think an open AI search engine is going to happen."
+      },
+      {
+        "start": 270506,
+        "stop": 270702,
+        "text": " I just think it's not going to be open source."
+      },
+      {
+        "start": 270702,
+        "stop": 271238,
+        "text": " In fact, I think, I don't, this is not my prediction, but I expect looking at the trends"
+      },
+      {
+        "start": 271238,
+        "stop": 271780,
+        "text": " over next year, the license of a lot of this technology and the backend license in particular"
+      },
+      {
+        "start": 271780,
+        "stop": 272230,
+        "text": " is going to become more and more of a hot topic because they call themselves open AI."
+      },
+      {
+        "start": 272230,
+        "stop": 272426,
+        "text": " How do I get the models?"
+      },
+      {
+        "start": 272426,
+        "stop": 272626,
+        "text": " Anyways, what do you think Wes?"
+      },
+      {
+        "start": 272626,
+        "stop": 273122,
+        "text": " An open AI search engine open to the general public, perhaps under beta, but available"
+      },
+      {
+        "start": 273122,
+        "stop": 273222,
+        "text": " to the general public."
+      },
+      {
+        "start": 273222,
+        "stop": 273442,
+        "text": " Should that be my prediction instead since we killed my other baby?"
+      },
+      {
+        "start": 273442,
+        "stop": 273618,
+        "text": " I mean, that works for me."
+      },
+      {
+        "start": 273618,
+        "stop": 273942,
+        "text": " Geez, the things that guys got to do around here."
+      },
+      {
+        "start": 273942,
+        "stop": 274058,
+        "text": " All right."
+      },
+      {
+        "start": 274058,
+        "stop": 274826,
+        "text": " I predicted 2023 an open AI search engine will be available to the general public."
+      },
+      {
+        "start": 274826,
+        "stop": 274926,
+        "text": " We'll see."
+      },
+      {
+        "start": 274926,
+        "stop": 275026,
+        "text": " We'll see."
+      },
+      {
+        "start": 275026,
+        "stop": 275226,
+        "text": " I'm exhausted."
+      },
+      {
+        "start": 275226,
+        "stop": 275598,
+        "text": " It's, you know, making good predictions."
+      },
+      {
+        "start": 275598,
+        "stop": 275766,
+        "text": " It's a lot of darn work."
+      },
+      {
+        "start": 275766,
+        "stop": 275866,
+        "text": " Yeah."
+      },
+      {
+        "start": 275866,
+        "stop": 275966,
+        "text": " All right."
+      },
+      {
+        "start": 275966,
+        "stop": 276274,
+        "text": " So Neil, I want to give everybody the chance to get one prediction in because we could"
+      },
+      {
+        "start": 276274,
+        "stop": 276374,
+        "text": " otherwise go forever."
+      },
+      {
+        "start": 276374,
+        "stop": 276766,
+        "text": " So do you have a top prediction for 2023 that you'd like to slip into the show?"
+      },
+      {
+        "start": 276766,
+        "stop": 277198,
+        "text": " Yeah, I'm going to shoot for the moon and it might or might not happen, but let's go"
+      },
+      {
+        "start": 277198,
+        "stop": 277442,
+        "text": " for it anyway."
+      },
+      {
+        "start": 277442,
+        "stop": 278478,
+        "text": " I predict that in 2023, Canonical will announce that Ubuntu will use ButterFS by default after"
+      },
+      {
+        "start": 278478,
+        "stop": 278978,
+        "text": " choosing to deprecate and retire the ZFS integration that they did this year."
+      },
+      {
+        "start": 278978,
+        "stop": 279178,
+        "text": " That's a good one."
+      },
+      {
+        "start": 279178,
+        "stop": 279278,
+        "text": " All right."
+      },
+      {
+        "start": 279278,
+        "stop": 279378,
+        "text": " Yeah."
+      },
+      {
+        "start": 279378,
+        "stop": 279558,
+        "text": " I think all three of us wish we would have called that one."
+      },
+      {
+        "start": 279558,
+        "stop": 279658,
+        "text": " That's a good one."
+      },
+      {
+        "start": 279658,
+        "stop": 279758,
+        "text": " Dang it."
+      },
+      {
+        "start": 279758,
+        "stop": 279858,
+        "text": " Yeah, you're right."
+      },
+      {
+        "start": 279858,
+        "stop": 280178,
+        "text": " They've got to be right because they've been slowly, quietly backing away from their ZFS"
+      },
+      {
+        "start": 280178,
+        "stop": 280278,
+        "text": " tooling."
+      },
+      {
+        "start": 280278,
+        "stop": 280436,
+        "text": " They don't seem to be investing in that anymore."
+      },
+      {
+        "start": 280436,
+        "stop": 281258,
+        "text": " They just filed a launchpad bug in the spring just before 2204 launch to remove ZSIS from"
+      },
+      {
+        "start": 281258,
+        "stop": 281650,
+        "text": " the system and remove the integration from Subiquity and Ubiquity."
+      },
+      {
+        "start": 281650,
+        "stop": 282282,
+        "text": " So my thought is that, well, you know, we talked about like, I will be a happy camper"
+      },
+      {
+        "start": 282282,
+        "stop": 282514,
+        "text": " when Ubuntu adopts ButterFS."
+      },
+      {
+        "start": 282514,
+        "stop": 282862,
+        "text": " I really do think that maybe next year they might actually do it."
+      },
+      {
+        "start": 282862,
+        "stop": 282962,
+        "text": " That'd be nice."
+      },
+      {
+        "start": 282962,
+        "stop": 283062,
+        "text": " Let's hope so."
+      },
+      {
+        "start": 283062,
+        "stop": 283162,
+        "text": " Yeah."
+      },
+      {
+        "start": 283162,
+        "stop": 283262,
+        "text": " I mean, we've seen it before."
+      },
+      {
+        "start": 283262,
+        "stop": 283504,
+        "text": " They, you know, they pivoted to Wayland."
+      },
+      {
+        "start": 283504,
+        "stop": 283898,
+        "text": " They jumped from Upstart to System D. It's possible."
+      },
+      {
+        "start": 283898,
+        "stop": 283998,
+        "text": " It's totally possible."
+      },
+      {
+        "start": 283998,
+        "stop": 284204,
+        "text": " All right, Dev, give us your prediction."
+      },
+      {
+        "start": 284204,
+        "stop": 284978,
+        "text": " OK, so in 2023, JB will deploy on a server somewhere, whether it be a physical server"
+      },
+      {
+        "start": 284978,
+        "stop": 285272,
+        "text": " or VPS, free BSD."
+      },
+      {
+        "start": 285272,
+        "stop": 285464,
+        "text": " I like it."
+      },
+      {
+        "start": 285464,
+        "stop": 285576,
+        "text": " I like it."
+      },
+      {
+        "start": 285576,
+        "stop": 285700,
+        "text": " That is shooting for the moon right there."
+      },
+      {
+        "start": 285700,
+        "stop": 285800,
+        "text": " I tell you what."
+      },
+      {
+        "start": 285800,
+        "stop": 286200,
+        "text": " I wonder what the, I guess, you know what?"
+      },
+      {
+        "start": 286200,
+        "stop": 286614,
+        "text": " If we did it in the course of content to do a comparison or something like that in a show,"
+      },
+      {
+        "start": 286614,
+        "stop": 286714,
+        "text": " that would count."
+      },
+      {
+        "start": 286714,
+        "stop": 286814,
+        "text": " That would count."
+      },
+      {
+        "start": 286814,
+        "stop": 286914,
+        "text": " And I could see that happening."
+      },
+      {
+        "start": 286914,
+        "stop": 287078,
+        "text": " Yeah, sounds fun, actually."
+      },
+      {
+        "start": 287078,
+        "stop": 287254,
+        "text": " That's a super easy one to win."
+      },
+      {
+        "start": 287254,
+        "stop": 287354,
+        "text": " Dang it."
+      },
+      {
+        "start": 287354,
+        "stop": 287454,
+        "text": " Dang it."
+      },
+      {
+        "start": 287454,
+        "stop": 287554,
+        "text": " Dang it."
+      },
+      {
+        "start": 287554,
+        "stop": 287654,
+        "text": " Bybitten, you have a prediction."
+      },
+      {
+        "start": 287654,
+        "stop": 287754,
+        "text": " Give it to us."
+      },
+      {
+        "start": 287754,
+        "stop": 288630,
+        "text": " In 2023, an AI text prompt engine will be used to configure Linux systems."
+      },
+      {
+        "start": 288630,
+        "stop": 288810,
+        "text": " I think you could see that."
+      },
+      {
+        "start": 288810,
+        "stop": 289376,
+        "text": " People are already almost writing entire automations in Home Assistant using chat GPT, which I really"
+      },
+      {
+        "start": 289376,
+        "stop": 289612,
+        "text": " want to play with that, because that could be a great way to get started with writing"
+      },
+      {
+        "start": 289612,
+        "stop": 289748,
+        "text": " automations."
+      },
+      {
+        "start": 289748,
+        "stop": 289848,
+        "text": " And that's all just YAML, right?"
+      },
+      {
+        "start": 289848,
+        "stop": 290316,
+        "text": " It's just kicking out YAML, and I guess it's just read probably thousands of examples online."
+      },
+      {
+        "start": 290316,
+        "stop": 290744,
+        "text": " Oh, God, we've made YAML so bad that now we need the machines to write the YAML for us."
+      },
+      {
+        "start": 290744,
+        "stop": 290844,
+        "text": " Yeah."
+      },
+      {
+        "start": 290844,
+        "stop": 291224,
+        "text": " Well, before I was just copping in pasta from Stack Overflow, so maybe this is better."
+      },
+      {
+        "start": 291224,
+        "stop": 291568,
+        "text": " So I wanted to cover a couple of trends that we kind of have our eye on that didn't really"
+      },
+      {
+        "start": 291568,
+        "stop": 291894,
+        "text": " make it into a prediction, but I think are just interesting to talk about and I would"
+      },
+      {
+        "start": 291894,
+        "stop": 292192,
+        "text": " imagine will continue over 2023."
+      },
+      {
+        "start": 292192,
+        "stop": 292450,
+        "text": " NoStir clients may be showing up for the Linux desktop."
+      },
+      {
+        "start": 292450,
+        "stop": 293182,
+        "text": " NoStir just got 14 Bitcoin from Jack Dorsey, and it's a decentralized social media protocol,"
+      },
+      {
+        "start": 293182,
+        "stop": 293282,
+        "text": " I guess."
+      },
+      {
+        "start": 293282,
+        "stop": 293842,
+        "text": " I think that NoStir basically stands for notes that are relayed, something to that effect."
+      },
+      {
+        "start": 293842,
+        "stop": 294382,
+        "text": " I think the other trend you're going to see is just a continuation of decentralized front"
+      },
+      {
+        "start": 294382,
+        "stop": 294596,
+        "text": " ends to centralized services."
+      },
+      {
+        "start": 294596,
+        "stop": 295204,
+        "text": " An interesting example of this is Knitter, which are self-implemented Twitter front ends"
+      },
+      {
+        "start": 295204,
+        "stop": 295724,
+        "text": " that allow you to view Twitter threads logged out, and when one gets shut down, four more"
+      },
+      {
+        "start": 295724,
+        "stop": 295880,
+        "text": " pop up."
+      },
+      {
+        "start": 295880,
+        "stop": 296414,
+        "text": " And that's, it allows you to kind of jump into maybe a topical discussion that you're"
+      },
+      {
+        "start": 296414,
+        "stop": 296810,
+        "text": " interested in without having to participate directly in the Twitter ecosystem."
+      },
+      {
+        "start": 296810,
+        "stop": 297570,
+        "text": " Another example, Google Search, W-H-O-O-G-L-E, is a self-hosted, I want to cover it on the"
+      },
+      {
+        "start": 297570,
+        "stop": 298082,
+        "text": " show in the future, a self-hosted Google front end that anonymizes your Google searches."
+      },
+      {
+        "start": 298082,
+        "stop": 298542,
+        "text": " So you run this on your LAN, you go to that web page to do your search, it's kind of doing"
+      },
+      {
+        "start": 298542,
+        "stop": 298914,
+        "text": " like this backend Google search for you and then delivering you the results."
+      },
+      {
+        "start": 298914,
+        "stop": 299130,
+        "text": " Another example is libreddit."
+      },
+      {
+        "start": 299130,
+        "stop": 299230,
+        "text": " Same idea."
+      },
+      {
+        "start": 299230,
+        "stop": 299674,
+        "text": " It is a web hosted front end that you run on your LAN, then on the backend is going"
+      },
+      {
+        "start": 299674,
+        "stop": 300034,
+        "text": " and retrieving the actual subreddits you want to view and displaying them to you."
+      },
+      {
+        "start": 300034,
+        "stop": 300514,
+        "text": " And so it's a way to kind of gain a little bit of privacy and reduce the tracking and"
+      },
+      {
+        "start": 300514,
+        "stop": 300912,
+        "text": " reduce all the crap that are running on your machine while still participating in these"
+      },
+      {
+        "start": 300912,
+        "stop": 301078,
+        "text": " really popular centralized services."
+      },
+      {
+        "start": 301078,
+        "stop": 301514,
+        "text": " Right, but get a little bit more control over the delivery and how you interact with that,"
+      },
+      {
+        "start": 301514,
+        "stop": 301722,
+        "text": " which is important."
+      },
+      {
+        "start": 301722,
+        "stop": 301942,
+        "text": " Another service we've seen a lot is Invidious."
+      },
+      {
+        "start": 301942,
+        "stop": 302418,
+        "text": " It's been around for a while, but Chris, you challenged me to trying this lib redirect"
+      },
+      {
+        "start": 302418,
+        "stop": 302794,
+        "text": " plugin for Firefox and I'm sure it's available for other browsers."
+      },
+      {
+        "start": 302794,
+        "stop": 303238,
+        "text": " And it's been fascinating to sort of browse the internet with this thing."
+      },
+      {
+        "start": 303238,
+        "stop": 303694,
+        "text": " It broke a few little things, but for the most part, Chris, it's been pretty good."
+      },
+      {
+        "start": 303694,
+        "stop": 303926,
+        "text": " Yeah, that's a good example too."
+      },
+      {
+        "start": 303926,
+        "stop": 304282,
+        "text": " That shows you a whole litany of services that have kind of been stood up as alternatives"
+      },
+      {
+        "start": 304282,
+        "stop": 304444,
+        "text": " or redirects."
+      },
+      {
+        "start": 304444,
+        "stop": 304822,
+        "text": " And I think decentralization in general is going to continue to be a big term that we"
+      },
+      {
+        "start": 304822,
+        "stop": 305288,
+        "text": " just see kicked around by people that were never saying decentralization before."
+      },
+      {
+        "start": 305288,
+        "stop": 305642,
+        "text": " And I think you're going to see it manifest, of course, in social media."
+      },
+      {
+        "start": 305642,
+        "stop": 306156,
+        "text": " But I think the logic around social media and the issues with centralized platforms"
+      },
+      {
+        "start": 306156,
+        "stop": 306266,
+        "text": " will begin to take hold."
+      },
+      {
+        "start": 306266,
+        "stop": 306834,
+        "text": " People are going to realize that Twitter is a 1.0 of social media."
+      },
+      {
+        "start": 306834,
+        "stop": 307330,
+        "text": " Anything centralized like Twitter is always going to inherently have flaws and biases."
+      },
+      {
+        "start": 307330,
+        "stop": 307786,
+        "text": " Could be for some periods of time in one direction and then it radically flips to another direction."
+      },
+      {
+        "start": 307786,
+        "stop": 308190,
+        "text": " There's always going to be a constant source of friction there because it's controlled"
+      },
+      {
+        "start": 308190,
+        "stop": 308372,
+        "text": " by a central group of people."
+      },
+      {
+        "start": 308372,
+        "stop": 308918,
+        "text": " And it's trying to reflect the world of decentralized opinions and ideas and cultures."
+      },
+      {
+        "start": 308918,
+        "stop": 309084,
+        "text": " It's just never going to work."
+      },
+      {
+        "start": 309084,
+        "stop": 309244,
+        "text": " It's a flawed design."
+      },
+      {
+        "start": 309244,
+        "stop": 309746,
+        "text": " And I think as people begin to realize that, more and more people will understand and appreciate"
+      },
+      {
+        "start": 309746,
+        "stop": 310266,
+        "text": " the value of decentralizing these services and having decentralized communities."
+      },
+      {
+        "start": 310266,
+        "stop": 310534,
+        "text": " And they'll start advocating for decentralization more."
+      },
+      {
+        "start": 310534,
+        "stop": 310704,
+        "text": " And I think that's going to be a great thing."
+      },
+      {
+        "start": 310704,
+        "stop": 311068,
+        "text": " And we'll be sitting here the entire time going, \"That's what we've been saying the"
+      },
+      {
+        "start": 311068,
+        "stop": 311168,
+        "text": " whole time?\""
+      },
+      {
+        "start": 311168,
+        "stop": 311700,
+        "text": " Yeah, that seems like a prediction that will definitely come true."
+      },
+      {
+        "start": 311700,
+        "stop": 311872,
+        "text": " bitwarden.com/linux."
+      },
+      {
+        "start": 311872,
+        "stop": 312296,
+        "text": " Go there to get started with a free trial for a team or as an individual, try it for"
+      },
+      {
+        "start": 312296,
+        "stop": 312396,
+        "text": " free."
+      },
+      {
+        "start": 312396,
+        "stop": 312496,
+        "text": " bitwarden.com/linux."
+      },
+      {
+        "start": 312496,
+        "stop": 312972,
+        "text": " Bitwarden is the easiest way for yourself or a business, maybe an open source team,"
+      },
+      {
+        "start": 312972,
+        "stop": 313196,
+        "text": " to store, share, and sync sensitive data."
+      },
+      {
+        "start": 313196,
+        "stop": 313348,
+        "text": " And Bitwarden is open source."
+      },
+      {
+        "start": 313348,
+        "stop": 313672,
+        "text": " It's trusted by millions of individuals, teams, organizations."
+      },
+      {
+        "start": 313672,
+        "stop": 313954,
+        "text": " It's what Wes and I use."
+      },
+      {
+        "start": 313954,
+        "stop": 314216,
+        "text": " It's a step above all of the other password managers out there."
+      },
+      {
+        "start": 314216,
+        "stop": 314692,
+        "text": " And some of the other password managers out there recently had some really, really, really"
+      },
+      {
+        "start": 314692,
+        "stop": 314880,
+        "text": " bad news."
+      },
+      {
+        "start": 314880,
+        "stop": 315396,
+        "text": " I was a user years ago of that particular one, but I realized it's just, it's too"
+      },
+      {
+        "start": 315396,
+        "stop": 315708,
+        "text": " risky and I think it's really unfortunate that people will use a non-open source password"
+      },
+      {
+        "start": 315708,
+        "stop": 315828,
+        "text": " manager."
+      },
+      {
+        "start": 315828,
+        "stop": 316316,
+        "text": " For something this important, you need to be able to trust that there's many eyes."
+      },
+      {
+        "start": 316316,
+        "stop": 316650,
+        "text": " And Bitwarden has had people audit the code multiple times."
+      },
+      {
+        "start": 316650,
+        "stop": 316904,
+        "text": " The open source community is always checking it out."
+      },
+      {
+        "start": 316904,
+        "stop": 317122,
+        "text": " Bitwarden also is continually improving."
+      },
+      {
+        "start": 317122,
+        "stop": 317274,
+        "text": " They're always adding new features."
+      },
+      {
+        "start": 317274,
+        "stop": 317702,
+        "text": " They've got standardized, great, solid local encryption done locally before it uploads"
+      },
+      {
+        "start": 317702,
+        "stop": 317874,
+        "text": " to the Bitwarden cloud."
+      },
+      {
+        "start": 317874,
+        "stop": 318180,
+        "text": " You could also deploy your own Bitwarden sync server if you like."
+      },
+      {
+        "start": 318180,
+        "stop": 318328,
+        "text": " There is some self-hosted options."
+      },
+      {
+        "start": 318328,
+        "stop": 318582,
+        "text": " You're on your own there, but it's actually available."
+      },
+      {
+        "start": 318582,
+        "stop": 318906,
+        "text": " And there's a decent sized community that can support that."
+      },
+      {
+        "start": 318906,
+        "stop": 319046,
+        "text": " That's a nice option."
+      },
+      {
+        "start": 319046,
+        "stop": 319314,
+        "text": " Bitwarden offers that, the competitors don't."
+      },
+      {
+        "start": 319314,
+        "stop": 319686,
+        "text": " Bitwarden also is continually improving the mobile client, so the experience on mobile"
+      },
+      {
+        "start": 319686,
+        "stop": 319896,
+        "text": " is a notch above everybody else."
+      },
+      {
+        "start": 319896,
+        "stop": 320302,
+        "text": " It makes it really simple and easy to use a complicated username and password and a"
+      },
+      {
+        "start": 320302,
+        "stop": 320772,
+        "text": " unique email address for every site, service, and app that I use."
+      },
+      {
+        "start": 320772,
+        "stop": 321230,
+        "text": " And it integrates with any bio ID stuff you might use, like for me fingerprint reader"
+      },
+      {
+        "start": 321230,
+        "stop": 321622,
+        "text": " on the iPhone, it was face ID, and it just makes autofilling that even faster."
+      },
+      {
+        "start": 321622,
+        "stop": 322202,
+        "text": " Now with quick users switching, I can switch between my JB profile and my home profile."
+      },
+      {
+        "start": 322202,
+        "stop": 322418,
+        "text": " I mean, it's just like super smooth."
+      },
+      {
+        "start": 322418,
+        "stop": 322554,
+        "text": " It's butter smooth, you might say."
+      },
+      {
+        "start": 322554,
+        "stop": 322754,
+        "text": " It's butter FS smooth."
+      },
+      {
+        "start": 322754,
+        "stop": 322862,
+        "text": " That's what I say."
+      },
+      {
+        "start": 322862,
+        "stop": 322962,
+        "text": " It's worth a try."
+      },
+      {
+        "start": 322962,
+        "stop": 323104,
+        "text": " They're constantly getting better."
+      },
+      {
+        "start": 323104,
+        "stop": 323652,
+        "text": " And they just recently did a little review of the privacy rankings for the five top music"
+      },
+      {
+        "start": 323652,
+        "stop": 324076,
+        "text": " streaming services, you know, top five ranked by total users."
+      },
+      {
+        "start": 324076,
+        "stop": 324466,
+        "text": " And they wanted to get an idea of like how privacy respecting, how good at their security"
+      },
+      {
+        "start": 324466,
+        "stop": 324590,
+        "text": " practices are they."
+      },
+      {
+        "start": 324590,
+        "stop": 324900,
+        "text": " That's up on the Bitwarden blog, if you're curious about that."
+      },
+      {
+        "start": 324900,
+        "stop": 325090,
+        "text": " I'll put a link in the show notes if you'd like to read that."
+      },
+      {
+        "start": 325090,
+        "stop": 325430,
+        "text": " Because if you're going to use these things, that's a good thing to consider."
+      },
+      {
+        "start": 325430,
+        "stop": 325546,
+        "text": " Bitwarden's got their eye on the ball here."
+      },
+      {
+        "start": 325546,
+        "stop": 325726,
+        "text": " I think you're really going to like it."
+      },
+      {
+        "start": 325726,
+        "stop": 325866,
+        "text": " Go try it out, support the show."
+      },
+      {
+        "start": 325866,
+        "stop": 326190,
+        "text": " And if you've got something like this, or you're already using Bitwarden, you know,"
+      },
+      {
+        "start": 326190,
+        "stop": 326590,
+        "text": " you know, somebody either needs to move off the other options out there that are having"
+      },
+      {
+        "start": 326590,
+        "stop": 326914,
+        "text": " a bad week, or they just need something in general."
+      },
+      {
+        "start": 326914,
+        "stop": 327158,
+        "text": " Send them to bitwarden.com/linux."
+      },
+      {
+        "start": 327158,
+        "stop": 327686,
+        "text": " Support the show by going to bitwarden.com/linux."
+      },
+      {
+        "start": 327686,
+        "stop": 327830,
+        "text": " We did get a little bit of feedback in here."
+      },
+      {
+        "start": 327830,
+        "stop": 327950,
+        "text": " Hey there, Brent."
+      },
+      {
+        "start": 327950,
+        "stop": 328062,
+        "text": " We sure did."
+      },
+      {
+        "start": 328062,
+        "stop": 328534,
+        "text": " Tux Gear Jammer sent in a little note saying, \"Never have I ever used anything other than"
+      },
+      {
+        "start": 328534,
+        "stop": 328634,
+        "text": " OpenSUSE."
+      },
+      {
+        "start": 328634,
+        "stop": 329034,
+        "text": " I went from Windows NT4 to OpenSUSE 9 or 10."
+      },
+      {
+        "start": 329034,
+        "stop": 329322,
+        "text": " Can't remember exactly, but it's been a while.\""
+      },
+      {
+        "start": 329322,
+        "stop": 329766,
+        "text": " And they also added, \"I would send a boost in, but I haven't quite figured that out"
+      },
+      {
+        "start": 329766,
+        "stop": 330122,
+        "text": " yet as truck driving is a 24-hour job.\""
+      },
+      {
+        "start": 330122,
+        "stop": 330222,
+        "text": " It sure is."
+      },
+      {
+        "start": 330222,
+        "stop": 330322,
+        "text": " It sure is."
+      },
+      {
+        "start": 330322,
+        "stop": 330574,
+        "text": " Well, thanks for the feedback, Tux Gear Jammer."
+      },
+      {
+        "start": 330574,
+        "stop": 330786,
+        "text": " Wow, only ever using one distro?"
+      },
+      {
+        "start": 330786,
+        "stop": 330926,
+        "text": " That sounds like paradise in a while."
+      },
+      {
+        "start": 330926,
+        "stop": 331194,
+        "text": " So simple, so clean."
+      },
+      {
+        "start": 331194,
+        "stop": 331440,
+        "text": " Everything's just an OpenSUSE-like world."
+      },
+      {
+        "start": 331440,
+        "stop": 331554,
+        "text": " It's all in that world."
+      },
+      {
+        "start": 331554,
+        "stop": 332070,
+        "text": " Joss wrote in, \"I heard recently that you were looking for an alternative to Meetup.com."
+      },
+      {
+        "start": 332070,
+        "stop": 332526,
+        "text": " For about three years now, my lug in upstate South Carolina Linux users group has been"
+      },
+      {
+        "start": 332526,
+        "stop": 332690,
+        "text": " using Get-Together."
+      },
+      {
+        "start": 332690,
+        "stop": 333086,
+        "text": " That's gettogether.community, and we really enjoy it.\""
+      },
+      {
+        "start": 333086,
+        "stop": 333526,
+        "text": " On their website, they say, \"Get-Together is an open source event manager for local"
+      },
+      {
+        "start": 333526,
+        "stop": 333626,
+        "text": " communities.\""
+      },
+      {
+        "start": 333626,
+        "stop": 334118,
+        "text": " They host their service for free, and their BSD license Python code is available on GitHub."
+      },
+      {
+        "start": 334118,
+        "stop": 334390,
+        "text": " And in the about link, you can find all the information there."
+      },
+      {
+        "start": 334390,
+        "stop": 334786,
+        "text": " I especially like that the meeting descriptions can be written in Markdown."
+      },
+      {
+        "start": 334786,
+        "stop": 334966,
+        "text": " Oh, that's nice."
+      },
+      {
+        "start": 334966,
+        "stop": 335114,
+        "text": " We did try it."
+      },
+      {
+        "start": 335114,
+        "stop": 335558,
+        "text": " We tried it at the barbecue that we did last year in January."
+      },
+      {
+        "start": 335558,
+        "stop": 335686,
+        "text": " Ah, right."
+      },
+      {
+        "start": 335686,
+        "stop": 336150,
+        "text": " We used Get-Together as a test, and there was a lot of complaints, so we didn't use"
+      },
+      {
+        "start": 336150,
+        "stop": 336250,
+        "text": " it again."
+      },
+      {
+        "start": 336250,
+        "stop": 336506,
+        "text": " Yeah, I wouldn't mind looking at it again, especially if we could self-host it, because"
+      },
+      {
+        "start": 336506,
+        "stop": 336950,
+        "text": " one of the key things we'd like to see is a way for community members to self-organize"
+      },
+      {
+        "start": 336950,
+        "stop": 337050,
+        "text": " their own meetups."
+      },
+      {
+        "start": 337050,
+        "stop": 337306,
+        "text": " Yeah, maybe we can't go, but that doesn't mean you all can't get together."
+      },
+      {
+        "start": 337306,
+        "stop": 337706,
+        "text": " Every single meetup we go to, this following series of events happen."
+      },
+      {
+        "start": 337706,
+        "stop": 338126,
+        "text": " A group of the people at the meetup decide, \"We need to do this all the time."
+      },
+      {
+        "start": 338126,
+        "stop": 338366,
+        "text": " Let's meet up all the time, even if the JB crew isn't here.\""
+      },
+      {
+        "start": 338366,
+        "stop": 338530,
+        "text": " And they're like, \"Oh, yeah, oh, yeah, we should do that."
+      },
+      {
+        "start": 338530,
+        "stop": 338630,
+        "text": " Oh, yeah, yeah, let's do that."
+      },
+      {
+        "start": 338630,
+        "stop": 338730,
+        "text": " Oh, yeah, let's do that.\""
+      },
+      {
+        "start": 338730,
+        "stop": 339176,
+        "text": " If at that point in time in the conversation, we could say, \"Go here to this URL and organize"
+      },
+      {
+        "start": 339176,
+        "stop": 339276,
+        "text": " it right now.\""
+      },
+      {
+        "start": 339276,
+        "stop": 339386,
+        "text": " Yeah, that would just be the best."
+      },
+      {
+        "start": 339386,
+        "stop": 339744,
+        "text": " It would happen, but what ends up happening is four out of five times, they all just kind"
+      },
+      {
+        "start": 339744,
+        "stop": 339910,
+        "text": " of drift, and it doesn't happen."
+      },
+      {
+        "start": 339910,
+        "stop": 340200,
+        "text": " You go back to your lives, you know, the moment of the magic is lost."
+      },
+      {
+        "start": 340200,
+        "stop": 340766,
+        "text": " To some credit, though, I was just peeking in at the West Coast crew in the Matrix chat"
+      },
+      {
+        "start": 340766,
+        "stop": 341170,
+        "text": " room, and there has been some self-organizing meetups going on in there."
+      },
+      {
+        "start": 341170,
+        "stop": 341306,
+        "text": " So that is actually happening."
+      },
+      {
+        "start": 341306,
+        "stop": 341470,
+        "text": " It's pretty great to see."
+      },
+      {
+        "start": 341470,
+        "stop": 341854,
+        "text": " Yeah, we'll look at it again, I think, you know, because otherwise we're going to have"
+      },
+      {
+        "start": 341854,
+        "stop": 342234,
+        "text": " to build our own damn thing."
+      },
+      {
+        "start": 342234,
+        "stop": 342478,
+        "text": " And now it is time for the Boost."
+      },
+      {
+        "start": 342478,
+        "stop": 342858,
+        "text": " All right, so this is a limited set of the Boost because this prediction's a particular"
+      },
+      {
+        "start": 342858,
+        "stop": 343388,
+        "text": " episode recorded at a time, and we said if you boosted in with 2023 sats, that would"
+      },
+      {
+        "start": 343388,
+        "stop": 343824,
+        "text": " be a key to us to like, \"Oh, this is for a prediction.\""
+      },
+      {
+        "start": 343824,
+        "stop": 343942,
+        "text": " Or you just got to make it clear in your Boost."
+      },
+      {
+        "start": 343942,
+        "stop": 344464,
+        "text": " And Magnolia Mayhem, amongst many Boost this week, but boosted in with 2023 sats and said,"
+      },
+      {
+        "start": 344464,
+        "stop": 344926,
+        "text": " \"Certain political events over the last couple of years will have a bump on the number of"
+      },
+      {
+        "start": 344926,
+        "stop": 345480,
+        "text": " VPN commercials I'm seeing have had a bump, and I'm putting my 2023 sats on an increase"
+      },
+      {
+        "start": 345480,
+        "stop": 346224,
+        "text": " in privacy considerations for normies to quantify, I'm guessing, a healthy 20% increase in password"
+      },
+      {
+        "start": 346224,
+        "stop": 346498,
+        "text": " managers, VPNs, and related company revenue.\""
+      },
+      {
+        "start": 346498,
+        "stop": 346598,
+        "text": " Interesting."
+      },
+      {
+        "start": 346598,
+        "stop": 347034,
+        "text": " Yeah, I don't know if any company is going to have 20% increase in revenue over 2023."
+      },
+      {
+        "start": 347034,
+        "stop": 347506,
+        "text": " I have to be honest with you, that would be a remarkable year for 2023."
+      },
+      {
+        "start": 347506,
+        "stop": 348126,
+        "text": " But I do get your general gist, which is as we have these major breaches, we get a whole"
+      },
+      {
+        "start": 348126,
+        "stop": 348422,
+        "text": " new round of users that all of a sudden care about their privacy."
+      },
+      {
+        "start": 348422,
+        "stop": 348842,
+        "text": " Like for me, even though I've talked about it for years, that New York Times article"
+      },
+      {
+        "start": 348842,
+        "stop": 349314,
+        "text": " about the dad taking the pictures of the kid crotch for the telemedicine changed their"
+      },
+      {
+        "start": 349314,
+        "stop": 349414,
+        "text": " life."
+      },
+      {
+        "start": 349414,
+        "stop": 349588,
+        "text": " I could take a picture of a kid crotch, who knows?"
+      },
+      {
+        "start": 349588,
+        "stop": 349872,
+        "text": " Haven't yet in 13 years, but you never know."
+      },
+      {
+        "start": 349872,
+        "stop": 350158,
+        "text": " And I don't want to get my old Google account shut down, so now I'm off."
+      },
+      {
+        "start": 350158,
+        "stop": 350262,
+        "text": " I'm off."
+      },
+      {
+        "start": 350262,
+        "stop": 350490,
+        "text": " So that everybody has their moment."
+      },
+      {
+        "start": 350490,
+        "stop": 350820,
+        "text": " Soul Trust came in with 2023 sats."
+      },
+      {
+        "start": 350820,
+        "stop": 351322,
+        "text": " I predict YouTube will begin charging for 4K videos."
+      },
+      {
+        "start": 351322,
+        "stop": 351490,
+        "text": " Oh, spicy."
+      },
+      {
+        "start": 351490,
+        "stop": 351630,
+        "text": " This is a good one."
+      },
+      {
+        "start": 351630,
+        "stop": 352026,
+        "text": " I've heard from multiple providers that their bandwidth costs are going up."
+      },
+      {
+        "start": 352026,
+        "stop": 352572,
+        "text": " That like somewhere in the stack, low in the bowels of the internet, somehow switches that"
+      },
+      {
+        "start": 352572,
+        "stop": 353118,
+        "text": " they've owned for 15 years are all of a sudden costing them more than they ever have before."
+      },
+      {
+        "start": 353118,
+        "stop": 353354,
+        "text": " Have you seen this kind of in the world that you work in?"
+      },
+      {
+        "start": 353354,
+        "stop": 353730,
+        "text": " Have you seen an increase in like costs for like hosting providers and bandwidth providers"
+      },
+      {
+        "start": 353730,
+        "stop": 353830,
+        "text": " and CDNs?"
+      },
+      {
+        "start": 353830,
+        "stop": 354046,
+        "text": " Because I sure am seeing it for the stuff we do for JB."
+      },
+      {
+        "start": 354046,
+        "stop": 354474,
+        "text": " Yeah, I suppose so, although it's a little hard to tell with the general rising prices,"
+      },
+      {
+        "start": 354474,
+        "stop": 354574,
+        "text": " I suppose."
+      },
+      {
+        "start": 354574,
+        "stop": 354674,
+        "text": " Yeah."
+      },
+      {
+        "start": 354674,
+        "stop": 355018,
+        "text": " YouTube has already announced that they're blocking it behind a premium paywall."
+      },
+      {
+        "start": 355018,
+        "stop": 355298,
+        "text": " Wow, so it is happening."
+      },
+      {
+        "start": 355298,
+        "stop": 355416,
+        "text": " Now I don't know when this boost came in."
+      },
+      {
+        "start": 355416,
+        "stop": 355802,
+        "text": " I didn't grab the date, but maybe they work for YouTube."
+      },
+      {
+        "start": 355802,
+        "stop": 356198,
+        "text": " They sent it in before YouTube announced it."
+      },
+      {
+        "start": 356198,
+        "stop": 356410,
+        "text": " NorCal Geek boosted in with 2023 sats."
+      },
+      {
+        "start": 356410,
+        "stop": 356978,
+        "text": " I predict another major Linux distribution besides OpenSUSE or Fedora will release an"
+      },
+      {
+        "start": 356978,
+        "stop": 357210,
+        "text": " immutable based desktop OS."
+      },
+      {
+        "start": 357210,
+        "stop": 357310,
+        "text": " Oh."
+      },
+      {
+        "start": 357310,
+        "stop": 357474,
+        "text": " That would be pretty cool."
+      },
+      {
+        "start": 357474,
+        "stop": 357626,
+        "text": " I'd love it to be an arch based."
+      },
+      {
+        "start": 357626,
+        "stop": 357810,
+        "text": " Does SteamOS count here?"
+      },
+      {
+        "start": 357810,
+        "stop": 358358,
+        "text": " I was going to say, NorCal, you and I could both win here if SteamOS comes out."
+      },
+      {
+        "start": 358358,
+        "stop": 358534,
+        "text": " Yeah, let's hope."
+      },
+      {
+        "start": 358534,
+        "stop": 358722,
+        "text": " Sammy boosted with 42023 sats."
+      },
+      {
+        "start": 358722,
+        "stop": 359022,
+        "text": " Keep the change, you filthy animal."
+      },
+      {
+        "start": 359022,
+        "stop": 359242,
+        "text": " It's a big one."
+      },
+      {
+        "start": 359242,
+        "stop": 359350,
+        "text": " Thank you, Sammy."
+      },
+      {
+        "start": 359350,
+        "stop": 359646,
+        "text": " Greetings, LEP crew, longtime listener, first time booster."
+      },
+      {
+        "start": 359646,
+        "stop": 359790,
+        "text": " Here's my prediction."
+      },
+      {
+        "start": 359790,
+        "stop": 360486,
+        "text": " With continued reduced Raspberry Pi supply, a new SBC takes the helm as the MVP."
+      },
+      {
+        "start": 360486,
+        "stop": 361062,
+        "text": " The LattePanda and Odyssey designs with coprocessor microcontrollers are really good candidates"
+      },
+      {
+        "start": 361062,
+        "stop": 361162,
+        "text": " for this."
+      },
+      {
+        "start": 361162,
+        "stop": 361474,
+        "text": " I'll tell you what I've been telling people at the family meetups, at the family events"
+      },
+      {
+        "start": 361474,
+        "stop": 361574,
+        "text": " over the holidays."
+      },
+      {
+        "start": 361574,
+        "stop": 361758,
+        "text": " Odroid3, baby."
+      },
+      {
+        "start": 361758,
+        "stop": 361910,
+        "text": " This actually happened."
+      },
+      {
+        "start": 361910,
+        "stop": 362130,
+        "text": " Multiple people came up to me and said, Chris, I can't get a Raspberry Pi."
+      },
+      {
+        "start": 362130,
+        "stop": 362238,
+        "text": " They're like over a hundred bucks."
+      },
+      {
+        "start": 362238,
+        "stop": 362418,
+        "text": " What's going on?"
+      },
+      {
+        "start": 362418,
+        "stop": 363066,
+        "text": " And I said to them, write it off, give them another nine months, go get an Odroid."
+      },
+      {
+        "start": 363066,
+        "stop": 363594,
+        "text": " Intel based processor, modern enough Adam CPU, got QuickSync in there."
+      },
+      {
+        "start": 363594,
+        "stop": 363700,
+        "text": " And you ready for this one?"
+      },
+      {
+        "start": 363700,
+        "stop": 363818,
+        "text": " And they say, what?"
+      },
+      {
+        "start": 363818,
+        "stop": 364154,
+        "text": " And I say to them, two SATA ports."
+      },
+      {
+        "start": 364154,
+        "stop": 364494,
+        "text": " And they say, no, and I say, not only that, NVMe slot."
+      },
+      {
+        "start": 364494,
+        "stop": 364594,
+        "text": " And they say, what?"
+      },
+      {
+        "start": 364594,
+        "stop": 365014,
+        "text": " And I say, two SATA ports and an NVMe slot."
+      },
+      {
+        "start": 365014,
+        "stop": 365242,
+        "text": " No SD card."
+      },
+      {
+        "start": 365242,
+        "stop": 365534,
+        "text": " And they're sold every time."
+      },
+      {
+        "start": 365534,
+        "stop": 365718,
+        "text": " You've come a long way on your journey."
+      },
+      {
+        "start": 365718,
+        "stop": 365866,
+        "text": " It's like you've rediscovered ports."
+      },
+      {
+        "start": 365866,
+        "stop": 365966,
+        "text": " I know, I know."
+      },
+      {
+        "start": 365966,
+        "stop": 366166,
+        "text": " And Intel processors and Adams."
+      },
+      {
+        "start": 366166,
+        "stop": 366266,
+        "text": " I know, I know."
+      },
+      {
+        "start": 366266,
+        "stop": 366586,
+        "text": " At this point, you're going to need an Odroid like promo code."
+      },
+      {
+        "start": 366586,
+        "stop": 366822,
+        "text": " That's a great idea because I'd love to have a couple more myself."
+      },
+      {
+        "start": 366822,
+        "stop": 366942,
+        "text": " I'd love to get it on a discount."
+      },
+      {
+        "start": 366942,
+        "stop": 367190,
+        "text": " Marshall Miller boosted in with 2023 cents."
+      },
+      {
+        "start": 367190,
+        "stop": 367798,
+        "text": " I predict there will be a new fork created for each of these project mispronunciations."
+      },
+      {
+        "start": 367798,
+        "stop": 368110,
+        "text": " What I like about this is if Marshall's real serious about this prediction, they could"
+      },
+      {
+        "start": 368110,
+        "stop": 368210,
+        "text": " go fork themselves."
+      },
+      {
+        "start": 368210,
+        "stop": 368310,
+        "text": " It could."
+      },
+      {
+        "start": 368310,
+        "stop": 368830,
+        "text": " I'd like to see a Genome repo that just mirrors the upstream one and just changes notes on"
+      },
+      {
+        "start": 368830,
+        "stop": 368930,
+        "text": " pronunciation and spelling."
+      },
+      {
+        "start": 368930,
+        "stop": 369258,
+        "text": " I have a proposal for you boys for the new year."
+      },
+      {
+        "start": 369258,
+        "stop": 369822,
+        "text": " What do you say we knock all the shenanigans off and we just stick to the basics, the goodies?"
+      },
+      {
+        "start": 369822,
+        "stop": 370202,
+        "text": " Debian, Genome, and the Dave file format."
+      },
+      {
+        "start": 370202,
+        "stop": 370326,
+        "text": " I feel like those are our strongest."
+      },
+      {
+        "start": 370326,
+        "stop": 370682,
+        "text": " It's getting a little out of hand."
+      },
+      {
+        "start": 370682,
+        "stop": 370852,
+        "text": " And you know what?"
+      },
+      {
+        "start": 370852,
+        "stop": 371416,
+        "text": " I got a respect to Genome and Debian because we all know the story of Debian is the founder"
+      },
+      {
+        "start": 371416,
+        "stop": 372270,
+        "text": " loved bees and the founder's wife loved bees and his name started with a D."
+      },
+      {
+        "start": 372270,
+        "stop": 372792,
+        "text": " So next you're going to tell me it's Debian new Linux."
+      },
+      {
+        "start": 372792,
+        "stop": 372940,
+        "text": " No, Linux."
+      },
+      {
+        "start": 372940,
+        "stop": 373116,
+        "text": " Everybody knows that."
+      },
+      {
+        "start": 373116,
+        "stop": 373216,
+        "text": " Debian stable."
+      },
+      {
+        "start": 373216,
+        "stop": 373352,
+        "text": " How do you feel though?"
+      },
+      {
+        "start": 373352,
+        "stop": 373620,
+        "text": " Like can we just keep it down to the essentials, keep it straight."
+      },
+      {
+        "start": 373620,
+        "stop": 373902,
+        "text": " You got your Dave file format, everybody knows what a Dave file is."
+      },
+      {
+        "start": 373902,
+        "stop": 374062,
+        "text": " We don't need to explain that."
+      },
+      {
+        "start": 374062,
+        "stop": 374322,
+        "text": " Clearly Genome, we don't want to mispronounce that, and Debian."
+      },
+      {
+        "start": 374322,
+        "stop": 374582,
+        "text": " And we just keep it simple for 2023."
+      },
+      {
+        "start": 374582,
+        "stop": 374850,
+        "text": " I could accept this if we also do giraffe-ing OS."
+      },
+      {
+        "start": 374850,
+        "stop": 374950,
+        "text": " I'd be okay with that."
+      },
+      {
+        "start": 374950,
+        "stop": 375050,
+        "text": " Okay."
+      },
+      {
+        "start": 375050,
+        "stop": 375150,
+        "text": " All right."
+      },
+      {
+        "start": 375150,
+        "stop": 375250,
+        "text": " That's a good negotiation."
+      },
+      {
+        "start": 375250,
+        "stop": 375350,
+        "text": " I'll accept it."
+      },
+      {
+        "start": 375350,
+        "stop": 375450,
+        "text": " All right."
+      },
+      {
+        "start": 375450,
+        "stop": 375550,
+        "text": " Moving on."
+      },
+      {
+        "start": 375550,
+        "stop": 376230,
+        "text": " I thought we'd round out the prediction boost with a couple of messages from the show mascot."
+      },
+      {
+        "start": 376230,
+        "stop": 376632,
+        "text": " The golden dragon comes in with 10,000 sats."
+      },
+      {
+        "start": 376632,
+        "stop": 377344,
+        "text": " In 2023, I predict that immutable distros will gain a ton of popularity."
+      },
+      {
+        "start": 377344,
+        "stop": 377444,
+        "text": " Another immutable distro."
+      },
+      {
+        "start": 377444,
+        "stop": 377544,
+        "text": " All right."
+      },
+      {
+        "start": 377544,
+        "stop": 377892,
+        "text": " I could see it because, you know, we've been talking about my kid's computer and what I"
+      },
+      {
+        "start": 377892,
+        "stop": 378272,
+        "text": " want to do there, and I'm really tempted just to put an old Amoots on there."
+      },
+      {
+        "start": 378272,
+        "stop": 378492,
+        "text": " Hit them up with the Amoots, you know."
+      },
+      {
+        "start": 378492,
+        "stop": 378870,
+        "text": " I did manage to get Fedora sleeping and shutting down."
+      },
+      {
+        "start": 378870,
+        "stop": 379370,
+        "text": " That took about two hours of pulling out different software and disabling virtualization and"
+      },
+      {
+        "start": 379370,
+        "stop": 379654,
+        "text": " fixing all kinds of things, but it's there now."
+      },
+      {
+        "start": 379654,
+        "stop": 379922,
+        "text": " So the Fedora install continues."
+      },
+      {
+        "start": 379922,
+        "stop": 380408,
+        "text": " The golden dragon took a dark turn, though, with what he calls his small dark prediction."
+      },
+      {
+        "start": 380408,
+        "stop": 380754,
+        "text": " He says Matrix will abandon the FOSS model soon."
+      },
+      {
+        "start": 380754,
+        "stop": 380854,
+        "text": " Oh, boy."
+      },
+      {
+        "start": 380854,
+        "stop": 380954,
+        "text": " I hope not."
+      },
+      {
+        "start": 380954,
+        "stop": 381054,
+        "text": " I know."
+      },
+      {
+        "start": 381054,
+        "stop": 381154,
+        "text": " And you know what?"
+      },
+      {
+        "start": 381154,
+        "stop": 381428,
+        "text": " When I saw that boost, I hadn't seen the blog post from the Matrix Foundation where they're"
+      },
+      {
+        "start": 381428,
+        "stop": 381694,
+        "text": " talking about the layoffs and not making enough money."
+      },
+      {
+        "start": 381694,
+        "stop": 382262,
+        "text": " And you know, I hope they come up with something that's palatable for regulars because we are"
+      },
+      {
+        "start": 382262,
+        "stop": 382774,
+        "text": " just not the right customers for any of the element hosted services, and I don't want"
+      },
+      {
+        "start": 382774,
+        "stop": 383280,
+        "text": " my support for something like that to be through Patreon, and I don't want to spend $100,000"
+      },
+      {
+        "start": 383280,
+        "stop": 383514,
+        "text": " to become a member of the Matrix Foundation."
+      },
+      {
+        "start": 383514,
+        "stop": 383846,
+        "text": " But I like what they're making, and I want them to continue."
+      },
+      {
+        "start": 383846,
+        "stop": 383946,
+        "text": " Yeah."
+      },
+      {
+        "start": 383946,
+        "stop": 384402,
+        "text": " Then the golden dragon rounded it out with a good old classic row of ducks."
+      },
+      {
+        "start": 384402,
+        "stop": 384730,
+        "text": " He says, I'm really glad I joined this community."
+      },
+      {
+        "start": 384730,
+        "stop": 385014,
+        "text": " This has been the most welcoming community that I've ever been a part of."
+      },
+      {
+        "start": 385014,
+        "stop": 385382,
+        "text": " To me, boosting is a small way that I can make a contribution to a podcast that's made"
+      },
+      {
+        "start": 385382,
+        "stop": 385622,
+        "text": " a great impact on my day to day."
+      },
+      {
+        "start": 385622,
+        "stop": 385950,
+        "text": " Thanks for another great year of podcasting, and here's to another year."
+      },
+      {
+        "start": 385950,
+        "stop": 386122,
+        "text": " Well, thank you, dragon."
+      },
+      {
+        "start": 386122,
+        "stop": 386222,
+        "text": " Thank you."
+      },
+      {
+        "start": 386222,
+        "stop": 386322,
+        "text": " Thank you."
+      },
+      {
+        "start": 386322,
+        "stop": 386422,
+        "text": " We look forward to many more years with you."
+      },
+      {
+        "start": 386422,
+        "stop": 386522,
+        "text": " Yeah."
+      },
+      {
+        "start": 386522,
+        "stop": 386662,
+        "text": " Thanks for kicking off the duck meme and the boost, too."
+      },
+      {
+        "start": 386662,
+        "stop": 386762,
+        "text": " That's been a lot of fun."
+      },
+      {
+        "start": 386762,
+        "stop": 386862,
+        "text": " All right."
+      },
+      {
+        "start": 386862,
+        "stop": 387026,
+        "text": " So that's the end of our predictions episode."
+      },
+      {
+        "start": 387026,
+        "stop": 387262,
+        "text": " We'll revisit this in a year."
+      },
+      {
+        "start": 387262,
+        "stop": 387542,
+        "text": " Seal them up, put them somewhere safe."
+      },
+      {
+        "start": 387542,
+        "stop": 387642,
+        "text": " See how we did?"
+      },
+      {
+        "start": 387642,
+        "stop": 387926,
+        "text": " Put them up on the shelf, and then we have to hold ourselves accountable."
+      },
+      {
+        "start": 387926,
+        "stop": 388082,
+        "text": " That's part of the deal here."
+      },
+      {
+        "start": 388082,
+        "stop": 388422,
+        "text": " Yeah, we don't want anyone sneaking in mid-year predictions or anything."
+      },
+      {
+        "start": 388422,
+        "stop": 388522,
+        "text": " Yeah."
+      },
+      {
+        "start": 388522,
+        "stop": 388922,
+        "text": " Although I have thought sometimes it would be kind of fun to do a mid-year checkup or"
+      },
+      {
+        "start": 388922,
+        "stop": 389042,
+        "text": " like renew them."
+      },
+      {
+        "start": 389042,
+        "stop": 389142,
+        "text": " Oh, okay."
+      },
+      {
+        "start": 389142,
+        "stop": 389242,
+        "text": " Because things have changed."
+      },
+      {
+        "start": 389242,
+        "stop": 389342,
+        "text": " Right."
+      },
+      {
+        "start": 389342,
+        "stop": 389442,
+        "text": " See if I have a hit already."
+      },
+      {
+        "start": 389442,
+        "stop": 389834,
+        "text": " I feel like I should have predicted flat hub goes with paid apps because that seems like"
+      },
+      {
+        "start": 389834,
+        "stop": 389970,
+        "text": " it's a lock now."
+      },
+      {
+        "start": 389970,
+        "stop": 390198,
+        "text": " Anyways, we'll see about that."
+      },
+      {
+        "start": 390198,
+        "stop": 390298,
+        "text": " Join us next week."
+      },
+      {
+        "start": 390298,
+        "stop": 390774,
+        "text": " We're back on our regular Sunday time over at Jupiter.Tube at noon Pacific, 3 p.m. Eastern."
+      },
+      {
+        "start": 390774,
+        "stop": 390966,
+        "text": " LinuxUnplugged.com for the links and subscriptions."
+      },
+      {
+        "start": 390966,
+        "stop": 391070,
+        "text": " Thanks for joining us."
+      },
+      {
+        "start": 391070,
+        "stop": 391770,
+        "text": " [music]"
+      },
+      {
+        "start": 391770,
+        "stop": 392770,
+        "text": " [music]"
+      },
+      {
+        "start": 392770,
+        "stop": 393770,
+        "text": " [music]"
+      },
+      {
+        "start": 393770,
+        "stop": 394770,
+        "text": " [music]"
+      },
+      {
+        "start": 394770,
+        "stop": 395770,
+        "text": " [music]"
+      },
+      {
+        "start": 395770,
+        "stop": 396370,
+        "text": " [music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 2033,
+      "nanos": 863892436
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 491: 2023 Spoilers",
+    "pictures": [],
+    "duration": {
+      "secs": 3946,
+      "nanos": 878000000
+    },
+    "unique_id": "http://linuxunplugged.com/491"
+  },
+  "episode": {
+    "title": "2023 Spoilers | LINUX Unplugged 491",
+    "description": "We assemble to predict what will happen in 2023 and score how our 2022 predictions turned out.",
+    "content": "<p><p>We assemble to predict what will happen in 2023 and score how our 2022 predictions turned out.</p><p>Sponsored By:</p><ul><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://matrix.org/blog/2022/12/25/the-matrix-holiday-update-2022\" title=\"The Matrix Holiday Update 2022\" rel=\"nofollow\">The Matrix Holiday Update 2022</a></li><li><a href=\"https://www.gamingonlinux.com/steam-tracker/\" title=\"Steam Linux Market Share\" rel=\"nofollow\">Steam Linux Market Share</a></li><li><a href=\"https://discourse.flathub.org/t/ideas-on-growing-the-flathub-community-in-2022/2053\" title=\"Ideas on growing the Flathub Community in 2022\" rel=\"nofollow\">Ideas on growing the Flathub Community in 2022</a></li><li><a href=\"https://beta.flathub.org/apps/details/com.heroicgameslauncher.hgl\" title=\"Heroic Games Launcher | Flathub Beta Site\" rel=\"nofollow\">Heroic Games Launcher | Flathub Beta Site</a></li><li><a href=\"https://www.codethink.co.uk/articles/2022/flathub-codethink-collaboration/\" title=\"Flathub-Codethink Collaboration\" rel=\"nofollow\">Flathub-Codethink Collaboration</a></li><li><a href=\"https://www.reddit.com/r/gnome/comments/zg3dbz/gnome_software_mockup_patronage_by_tobias_bernard/\" title=\"[GNOME Software Mock-up] Patronage by Tobias Bernard\" rel=\"nofollow\">[GNOME Software Mock-up] Patronage by Tobias Bernard</a></li><li><a href=\"https://albertoroura.com/how-and-why-i-minted-314-nfts-to-support-open-source-projects/\" title=\"How (and why) I minted 314 NFTs To Support Open Source Projects\" rel=\"nofollow\">How (and why) I minted 314 NFTs To Support Open Source Projects</a></li><li><a href=\"https://www.cnn.com/2021/12/15/tech/log4j-vulnerability/index.html\" title=\"The Log4j security flaw could impact the entire internet. Here’s what you should know\" rel=\"nofollow\">The Log4j security flaw could impact the entire internet. Here’s what you should know</a></li><li><a href=\"https://securityboulevard.com/2022/12/log4j-vulnerability-detection-one-year-after-log4shell-firms-still-struggle-to-hunt-down-log4j-contrast-security/\" title=\"Log4j Vulnerability Detection: One year after Log4Shell\" rel=\"nofollow\">Log4j Vulnerability Detection: One year after Log4Shell</a></li><li><a href=\"https://libredirect.github.io/\" title=\"LibRedirect\" rel=\"nofollow\">LibRedirect</a></li><li><a href=\"https://gettogether.community/\" title=\"Get Together\" rel=\"nofollow\">Get Together</a> &mdash; Get Together is an open source event manager for local communities.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9205",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15878113/d845500c-65da-4804-8aa4-d5b2a5bb88ac.mp3",
+      "length": "56195103",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2023-01-01T12:05:00+01:00"
+  },
+  "speedup": 1.9405812
+}

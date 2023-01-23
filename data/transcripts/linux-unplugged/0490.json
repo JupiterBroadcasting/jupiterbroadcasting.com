@@ -1,0 +1,3567 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 1590,
+        "text": " [Music]"
+      },
+      {
+        "start": 1590,
+        "stop": 2490,
+        "text": " Hello, friends, and welcome back to your weekly Linux talk show. It is a special edition of the Unplugged program. It is our third annual Tuxes episode. My name is Chris."
+      },
+      {
+        "start": 2490,
+        "stop": 2590,
+        "text": " My name is Wes."
+      },
+      {
+        "start": 2590,
+        "stop": 2790,
+        "text": " And my name is Brent."
+      },
+      {
+        "start": 2800,
+        "stop": 3890,
+        "text": " Hello, gentlemen. Thank you for joining me on this special edition. All looking very stunning. Love the nice tuxedos. I was wondering what that budget expense line item was for. Now I know."
+      },
+      {
+        "start": 3890,
+        "stop": 4590,
+        "text": " I want to say good morning to our friends at Tailscale. Tailscale is a mesh VPN protected by WireGuard. We love it. It's going to change your game."
+      },
+      {
+        "start": 4590,
+        "stop": 4990,
+        "text": " Go say good morning at tailscale.com and try it for free on 20 devices."
+      },
+      {
+        "start": 5000,
+        "stop": 5890,
+        "text": " So, yeah, today is the 2022 Tuxes. We're really excited about it. And, of course, we're joined by our virtual lug. Hello, Mumble Room. Thank you for joining us."
+      },
+      {
+        "start": 5890,
+        "stop": 5990,
+        "text": " Hello, friends."
+      },
+      {
+        "start": 5990,
+        "stop": 6090,
+        "text": " Hello, Chris."
+      },
+      {
+        "start": 6090,
+        "stop": 6190,
+        "text": " Aloha."
+      },
+      {
+        "start": 6190,
+        "stop": 6790,
+        "text": " Hello. Hello. Thank you, guys."
+      },
+      {
+        "start": 6800,
+        "stop": 8290,
+        "text": " I think on this special day, it's appropriate we take a moment before we get too far and before we get into the celebration. There's a lot to come to maybe think a little on why we're here and why the Tuxes exist at all."
+      },
+      {
+        "start": 8300,
+        "stop": 10690,
+        "text": " We were talking about this in the pre-show that we thought, you know, we've got thousands of new listeners that have never even heard of the Tuxes before. So maybe we should explain, you know, and this is our moment to look back at 2022 in a really fun way to look at what the audience thought was some of the most significant contributions to the free software space from desktop environments to text editors to self-hosted applications and services."
+      },
+      {
+        "start": 10700,
+        "stop": 11590,
+        "text": " And what we like to do is kind of have a rundown of the top three of those services that we put out. We surveyed the audience for about a month-ish. We were a little late on it."
+      },
+      {
+        "start": 11590,
+        "stop": 11690,
+        "text": " Rounding up."
+      },
+      {
+        "start": 11690,
+        "stop": 12790,
+        "text": " Yeah. And then we iterate on this idea every year. So this is the third year we've done it. And each time we try to tweak it a little bit and make it more representative of what the audience thinks and what the audience is voting on."
+      },
+      {
+        "start": 12800,
+        "stop": 14190,
+        "text": " And I think we've got a good iteration this year. So I hope people will join us because it is something we've been looking forward to all week. The third annual 2022 Linux Unplugged Tuxes starts right now."
+      },
+      {
+        "start": 14200,
+        "stop": 15790,
+        "text": " And once again, we've put it to a vote with our audience to determine the very best of the best. Your favorite Linux distro, your best desktop environment, the server distro that beat them all. And of course, the best self-hosted app."
+      },
+      {
+        "start": 15790,
+        "stop": 16790,
+        "text": " It is the 2022 Tuxes from the world's largest Linux podcast, as voted on by our community. And year three begins right now."
+      },
+      {
+        "start": 16800,
+        "stop": 18590,
+        "text": " And we're going to start with the best text editor of the year. This is always one that gets a surprising amount of votes, contention and feedback."
+      },
+      {
+        "start": 18600,
+        "stop": 20090,
+        "text": " So last year we had three clear winners. Well, two clear winners and a tie we had to break. And it kind of worked out similar this year. In third place in 2021 was Nano, followed up by Vim and Vi."
+      },
+      {
+        "start": 20090,
+        "stop": 21490,
+        "text": " And then in first place, a controversial tie win was VS Code. And I remember the discussion. We weren't really clear what direction we wanted to go with that one. And so I was particularly interested in what way the votes would go this year."
+      },
+      {
+        "start": 21500,
+        "stop": 21990,
+        "text": " I mean, can you even call an electron app a text editor?"
+      },
+      {
+        "start": 21990,
+        "stop": 22890,
+        "text": " Yeah, right. You can't even run that on the terminal. What the heck? And then, of course, I remember, Brent, you were kind of like Miff that your favorite didn't get a mention, Kate."
+      },
+      {
+        "start": 22890,
+        "stop": 22990,
+        "text": " It's true."
+      },
+      {
+        "start": 22990,
+        "stop": 24190,
+        "text": " So you know what? Things turned out a little different this year. In fact, in third place this year, Kate came in narrowly beating out Emacs."
+      },
+      {
+        "start": 24190,
+        "stop": 24290,
+        "text": " Really?"
+      },
+      {
+        "start": 24290,
+        "stop": 24390,
+        "text": " Yeah."
+      },
+      {
+        "start": 24400,
+        "stop": 25190,
+        "text": " We got seven percent of the vote. Seven percent of the vote to Kate. Nano came in at number two with an 18 percent."
+      },
+      {
+        "start": 25190,
+        "stop": 25390,
+        "text": " It really pained me to copy that into the doc today."
+      },
+      {
+        "start": 25390,
+        "stop": 26990,
+        "text": " I bet. And number one, once again, once again, guys, is a tie between Vi Vim and VS Code VS Codeium. And last year we gave this tie to VS Code."
+      },
+      {
+        "start": 27000,
+        "stop": 27690,
+        "text": " And here's the this is something we got to address. We might as well just address it right now in the show. We might as well just do it right here in the first category."
+      },
+      {
+        "start": 27690,
+        "stop": 28590,
+        "text": " What we have is a Hall of Fame system. And so when an app or a desktop environment or whatever it is wins two years in a row, we Hall of Fame it."
+      },
+      {
+        "start": 28590,
+        "stop": 28990,
+        "text": " A sign of respect, but also a way to try to keep things a little more competitive."
+      },
+      {
+        "start": 28990,
+        "stop": 29690,
+        "text": " And we were thinking, though, we want this to be truly representative of what the audience is enjoying and liking. So what if we made an amendment to that this year?"
+      },
+      {
+        "start": 29700,
+        "stop": 30090,
+        "text": " We're always tweaking. And so the Hall of Fame is a one year Hall of Fame."
+      },
+      {
+        "start": 30090,
+        "stop": 30390,
+        "text": " This is like when we pass like a pay increase for ourselves, right?"
+      },
+      {
+        "start": 30390,
+        "stop": 31290,
+        "text": " Yes. So if we Hall of Famed something this year, it's out for the 2023 Tuxes, but it can be back in the 2024 Tuxes."
+      },
+      {
+        "start": 31290,
+        "stop": 31890,
+        "text": " And if we picked VS Code, we could Hall of Fame it and take it off the board."
+      },
+      {
+        "start": 31900,
+        "stop": 33190,
+        "text": " But if we picked Vim, it would be the first win for Vim in first place. And it would leave VS Code open for another round next year to see which one pulls ahead, which I actually think could be kind of interesting."
+      },
+      {
+        "start": 33190,
+        "stop": 34290,
+        "text": " One question I have, are we including sort of things like NeoVim and some of the broader projects like LunarVim seems to be gaining a lot of popularity these days."
+      },
+      {
+        "start": 34290,
+        "stop": 34790,
+        "text": " So it does seem like a good year for, you know, VI aligned systems."
+      },
+      {
+        "start": 34800,
+        "stop": 34990,
+        "text": " I think that's another argument to give it the win."
+      },
+      {
+        "start": 34990,
+        "stop": 35590,
+        "text": " Yeah. Right. Because I bet you if we would have included LunarVim into that category, I bet you a bite of edge to head."
+      },
+      {
+        "start": 35590,
+        "stop": 36190,
+        "text": " That's a good point. Brent, you have any objections to giving the win for the best text editor of the year to VI Vim?"
+      },
+      {
+        "start": 36190,
+        "stop": 36690,
+        "text": " I mean, only that I don't know how to get out of it. But other than that, I think we should go for it."
+      },
+      {
+        "start": 36690,
+        "stop": 36890,
+        "text": " You'll find out in 2023."
+      },
+      {
+        "start": 36890,
+        "stop": 37590,
+        "text": " All right. So our best text editor of the year is VI or Vim, which leaves VS Code up for voting next year."
+      },
+      {
+        "start": 37600,
+        "stop": 38090,
+        "text": " And I think it's nice. It's nice to see a classic win one. Right."
+      },
+      {
+        "start": 38090,
+        "stop": 38590,
+        "text": " Especially the highly, surprisingly highly contentious text editor."
+      },
+      {
+        "start": 38590,
+        "stop": 39190,
+        "text": " Maybe I'm just hoping 2023 Tuxys Nano can maybe drop out of the relay race. So let's see."
+      },
+      {
+        "start": 39190,
+        "stop": 39590,
+        "text": " You know what? I call on the Nano Army. We got it right. We got to get up there."
+      },
+      {
+        "start": 39590,
+        "stop": 40090,
+        "text": " Come on. I know you guys, but we don't tie any identifying information to these surveys."
+      },
+      {
+        "start": 40090,
+        "stop": 40490,
+        "text": " So you can vote Nano and we won't know who it is. So you don't have to worry about judgment."
+      },
+      {
+        "start": 40500,
+        "stop": 40690,
+        "text": " It's totally, totally fine."
+      },
+      {
+        "start": 40690,
+        "stop": 41090,
+        "text": " I have to say, I'm very happy about the whole Kate being third."
+      },
+      {
+        "start": 41090,
+        "stop": 41190,
+        "text": " I bet."
+      },
+      {
+        "start": 41190,
+        "stop": 41890,
+        "text": " Last year, it wasn't even on the list. Everybody forgot about it. I think the Asahi team has been using it."
+      },
+      {
+        "start": 41890,
+        "stop": 42390,
+        "text": " We mentioned that last year. And I've been plugging it to every person that I meet in the world."
+      },
+      {
+        "start": 42390,
+        "stop": 42590,
+        "text": " So I think that's really had an impact."
+      },
+      {
+        "start": 42590,
+        "stop": 42790,
+        "text": " It is available for Windows, too."
+      },
+      {
+        "start": 42790,
+        "stop": 43290,
+        "text": " Oh, yeah. Great point. Great point. All right. So our best text editor of the year goes to VI,"
+      },
+      {
+        "start": 43300,
+        "stop": 43790,
+        "text": " but it is nice to see Kate on the contenders list."
+      },
+      {
+        "start": 43790,
+        "stop": 44290,
+        "text": " Boys, it is now time for one of my absolute favorite categories of the Tuxes."
+      },
+      {
+        "start": 44290,
+        "stop": 44790,
+        "text": " It is time for the best test op Linux distro of the year."
+      },
+      {
+        "start": 44790,
+        "stop": 45490,
+        "text": " Last year, Pop came in at third, OpenSUSE came in at second, and Fedora came in at first and was Hall of Fame."
+      },
+      {
+        "start": 45490,
+        "stop": 45990,
+        "text": " This year, the third category is a tie."
+      },
+      {
+        "start": 46000,
+        "stop": 46790,
+        "text": " Manjaro, Endeavor, and Garuda tied at 13 percent with Arch, Vanilla Arch."
+      },
+      {
+        "start": 46790,
+        "stop": 47390,
+        "text": " Now, technically, Manjaro, Garuda, and Endeavor got two more votes."
+      },
+      {
+        "start": 47390,
+        "stop": 47990,
+        "text": " But it is interesting to see that 13 percent of the audience said the best desktop distro of the year is an Arch-based distro."
+      },
+      {
+        "start": 47990,
+        "stop": 48390,
+        "text": " And if you combine that spread, that's a decent showing."
+      },
+      {
+        "start": 48390,
+        "stop": 48790,
+        "text": " And I wonder if we should consider combining all of the Arch distros next year."
+      },
+      {
+        "start": 48800,
+        "stop": 49090,
+        "text": " Does that include SteamOS?"
+      },
+      {
+        "start": 49090,
+        "stop": 49190,
+        "text": " No, I don't think so."
+      },
+      {
+        "start": 49190,
+        "stop": 49690,
+        "text": " SteamOS is explicitly not treated like an Arch platform."
+      },
+      {
+        "start": 49690,
+        "stop": 49890,
+        "text": " You're not supposed to access Pac-Man."
+      },
+      {
+        "start": 49890,
+        "stop": 50090,
+        "text": " It doesn't roll."
+      },
+      {
+        "start": 50090,
+        "stop": 50890,
+        "text": " And all these other things that you tend to identify with an Arch Linux platform just aren't really characteristics of SteamOS."
+      },
+      {
+        "start": 50890,
+        "stop": 50990,
+        "text": " Yeah, I agree."
+      },
+      {
+        "start": 50990,
+        "stop": 51390,
+        "text": " All right. Well, in the number two spot is a first timer."
+      },
+      {
+        "start": 51400,
+        "stop": 51790,
+        "text": " It didn't even make it into the Tuxes last year."
+      },
+      {
+        "start": 51790,
+        "stop": 52590,
+        "text": " At 16 percent of the vote for the best Linux desktop of 2022, NixOS."
+      },
+      {
+        "start": 52590,
+        "stop": 52790,
+        "text": " NixOS, the number two spot."
+      },
+      {
+        "start": 52790,
+        "stop": 52990,
+        "text": " Not rigged by Chris at all, right?"
+      },
+      {
+        "start": 52990,
+        "stop": 53290,
+        "text": " No, no, no, no, no, no, of course not."
+      },
+      {
+        "start": 53290,
+        "stop": 53890,
+        "text": " And then, in the number one spot, now remember, Fedora was Hall of Fame this year."
+      },
+      {
+        "start": 53890,
+        "stop": 54190,
+        "text": " So I actually expected Ubuntu to pull ahead."
+      },
+      {
+        "start": 54200,
+        "stop": 54690,
+        "text": " But we opened it up with taking Fedora into the Hall of Fame for one year. It'll be back next year."
+      },
+      {
+        "start": 54690,
+        "stop": 55190,
+        "text": " You know, thinking back, we've tried a lot of good desktops over the year. We really have."
+      },
+      {
+        "start": 55190,
+        "stop": 55290,
+        "text": " Mm-hmm. Mm-hmm."
+      },
+      {
+        "start": 55290,
+        "stop": 55590,
+        "text": " It's felt like a good year in general to be a Linux desktop user."
+      },
+      {
+        "start": 55590,
+        "stop": 56190,
+        "text": " And I think sometimes we impact the categories a little bit. Like, I think maybe NixOS is, you know, we've drawn in some-"
+      },
+      {
+        "start": 56190,
+        "stop": 56590,
+        "text": " You think our weird obsession with NixOS may have influenced the results of the Tuxes?"
+      },
+      {
+        "start": 56590,
+        "stop": 56990,
+        "text": " But I don't think we've influenced this number one, especially with Brent's recent journey."
+      },
+      {
+        "start": 57000,
+        "stop": 58090,
+        "text": " Coming in at number one for the best Linux desktop distro of the year, as voted on by our audience at 19%, is Pop!OS."
+      },
+      {
+        "start": 58090,
+        "stop": 58290,
+        "text": " Wow. Wow."
+      },
+      {
+        "start": 58290,
+        "stop": 58490,
+        "text": " Congratulations, System76."
+      },
+      {
+        "start": 58490,
+        "stop": 58690,
+        "text": " You earned this one."
+      },
+      {
+        "start": 58690,
+        "stop": 58890,
+        "text": " Yeah, that's pretty remarkable."
+      },
+      {
+        "start": 58890,
+        "stop": 59390,
+        "text": " Well, this was the year that launched Pop!OS on a non-System76 platform."
+      },
+      {
+        "start": 59390,
+        "stop": 59790,
+        "text": " True, the dev won. They also wear on Linus Tech Tips, which probably did bring some new folks in."
+      },
+      {
+        "start": 59800,
+        "stop": 60290,
+        "text": " And they announced Cosmic, which probably brought some new eyeballs in, and they're doing some interesting things there."
+      },
+      {
+        "start": 60290,
+        "stop": 60690,
+        "text": " And because it's available for all hardware, I can see it taking off."
+      },
+      {
+        "start": 60690,
+        "stop": 61590,
+        "text": " It's neat to see now, the question is, will they remain number one next year when Fedora enters into the fray?"
+      },
+      {
+        "start": 61590,
+        "stop": 62090,
+        "text": " Interesting, though, that with our audience at least, Ubuntu isn't even in the top three."
+      },
+      {
+        "start": 62090,
+        "stop": 62490,
+        "text": " Isn't even in the top four, if you consider the tie."
+      },
+      {
+        "start": 62500,
+        "stop": 62790,
+        "text": " Yeah, and if we would have had Fedora in there, it would have looked even different."
+      },
+      {
+        "start": 62790,
+        "stop": 63590,
+        "text": " This has consistently been a trend for the Tuxes for three years, and every year Ubuntu just gets more and more distance from that top slot."
+      },
+      {
+        "start": 63590,
+        "stop": 64290,
+        "text": " But that means we have to move right along, because you don't really have a desktop distro without a desktop environment."
+      },
+      {
+        "start": 64290,
+        "stop": 64990,
+        "text": " So, what did the Unplugged audience vote for the best desktop environment of the year in 2022?"
+      },
+      {
+        "start": 64990,
+        "stop": 65290,
+        "text": " Last year, Cosmic on Pop!"
+      },
+      {
+        "start": 65300,
+        "stop": 66090,
+        "text": " Number two was KDE Plasma, and at number one was Genome, which was Hall of Fame."
+      },
+      {
+        "start": 66090,
+        "stop": 66690,
+        "text": " This year, however, things are looking a little different, with Genome now in the Hall of Fame and opened up the Tuxes a little bit."
+      },
+      {
+        "start": 66690,
+        "stop": 66890,
+        "text": " It sure does, wow."
+      },
+      {
+        "start": 66890,
+        "stop": 67290,
+        "text": " And we got a tie in the third place spot."
+      },
+      {
+        "start": 67290,
+        "stop": 67590,
+        "text": " Sway and XFCE, guys."
+      },
+      {
+        "start": 67590,
+        "stop": 67790,
+        "text": " Wow."
+      },
+      {
+        "start": 67790,
+        "stop": 68090,
+        "text": " Those are two very different models."
+      },
+      {
+        "start": 68100,
+        "stop": 68590,
+        "text": " I know, I know. So Sway gets 8%, XFCE by the numbers gets around 8% too."
+      },
+      {
+        "start": 68590,
+        "stop": 68990,
+        "text": " Yeah, technically Sway has a slight lead here, but just that these were so close."
+      },
+      {
+        "start": 68990,
+        "stop": 69790,
+        "text": " Yeah, it's really something. It's really something. And was Sway even in the Tuxes last year? I don't think it was."
+      },
+      {
+        "start": 69790,
+        "stop": 70790,
+        "text": " I think it was mentioned as needing to be on the list, because a lot of people were interested in it, but that was from one, maybe two pieces of feedback that we got."
+      },
+      {
+        "start": 70800,
+        "stop": 71690,
+        "text": " I think I remember mentioning about like, since you put i3 on it last time and you didn't have Sway, like, because Sway is essentially the spiritual successor to it."
+      },
+      {
+        "start": 71690,
+        "stop": 72390,
+        "text": " I agree. Now, I don't think too surprising is in the number two spot, Cosmic Desktop, considering how Pop!OS ranked, right?"
+      },
+      {
+        "start": 72390,
+        "stop": 72990,
+        "text": " So 13% came in at the Cosmic Desktop, which didn't surprise me at all."
+      },
+      {
+        "start": 72990,
+        "stop": 73390,
+        "text": " But we have a new entrance for the top spot."
+      },
+      {
+        "start": 73400,
+        "stop": 73990,
+        "text": " And it was in the Hall of Fame. And there's one desktop environment you have not heard us mention yet, but you know it's a popular one."
+      },
+      {
+        "start": 73990,
+        "stop": 74090,
+        "text": " It is, of course..."
+      },
+      {
+        "start": 74090,
+        "stop": 74190,
+        "text": " Enlightenment!"
+      },
+      {
+        "start": 74190,
+        "stop": 74390,
+        "text": " [Laughter]"
+      },
+      {
+        "start": 74390,
+        "stop": 74790,
+        "text": " No, no. It is, of course, KDE Plasma."
+      },
+      {
+        "start": 74790,
+        "stop": 74890,
+        "text": " [Music]"
+      },
+      {
+        "start": 74890,
+        "stop": 75590,
+        "text": " KDE Plasma came in at number one. Now, the question is, of course, will it hold that number one spot when Genome is brought out of the Hall of Fame for next year?"
+      },
+      {
+        "start": 75590,
+        "stop": 75990,
+        "text": " But I love to see it here because Plasma has made remarkable strides."
+      },
+      {
+        "start": 76000,
+        "stop": 76390,
+        "text": " I upgraded my Neon installation right before the show. It's gone fantastically."
+      },
+      {
+        "start": 76390,
+        "stop": 76990,
+        "text": " And 44% of the audience voted for KDE Plasma. That is a substantially strong vote."
+      },
+      {
+        "start": 76990,
+        "stop": 77090,
+        "text": " Wow."
+      },
+      {
+        "start": 77090,
+        "stop": 77690,
+        "text": " Mate! Coming in at the bottom, though, Mate actually got more votes than no responses."
+      },
+      {
+        "start": 77690,
+        "stop": 77890,
+        "text": " People who just chose not to vote in that category."
+      },
+      {
+        "start": 77890,
+        "stop": 78290,
+        "text": " More people chose not to vote in that category than chose Mate."
+      },
+      {
+        "start": 78290,
+        "stop": 78390,
+        "text": " [Laughter]"
+      },
+      {
+        "start": 78390,
+        "stop": 78490,
+        "text": " Aww."
+      },
+      {
+        "start": 78490,
+        "stop": 78890,
+        "text": " I know. I don't know what's going on there. It's great. Mate's great."
+      },
+      {
+        "start": 78900,
+        "stop": 79490,
+        "text": " You know, when I look at it, I think to myself, maybe it's because they call it Mate and not Mate, and maybe they just lost everyone there."
+      },
+      {
+        "start": 79490,
+        "stop": 79590,
+        "text": " [Laughter]"
+      },
+      {
+        "start": 79590,
+        "stop": 79990,
+        "text": " You know, maybe that's what it is. But either way, I think maybe the Mate or the Mate people just didn't show up."
+      },
+      {
+        "start": 79990,
+        "stop": 80190,
+        "text": " Boost in to let us know how we should say it."
+      },
+      {
+        "start": 80190,
+        "stop": 80490,
+        "text": " Yeah, maybe we're wrong, right? Maybe. Yeah, Boost in. Maybe we got it wrong."
+      },
+      {
+        "start": 80490,
+        "stop": 80590,
+        "text": " Okay, going up!"
+      },
+      {
+        "start": 80590,
+        "stop": 80990,
+        "text": " Next! Best Server Distro."
+      },
+      {
+        "start": 80990,
+        "stop": 81590,
+        "text": " The best server distro of the year for 2022. Last year was Debian in third place, second place."
+      },
+      {
+        "start": 81600,
+        "stop": 82190,
+        "text": " Alma Linux, which is impressive because it was Alma Linux's first year, and Ubuntu in the first place position."
+      },
+      {
+        "start": 82190,
+        "stop": 82490,
+        "text": " And this is where Ubuntu did really strong last year."
+      },
+      {
+        "start": 82490,
+        "stop": 82890,
+        "text": " I remember that clearly. Ubuntu really had a good representation in the server voting."
+      },
+      {
+        "start": 82890,
+        "stop": 83190,
+        "text": " So we Hall of Famed Ubuntu because it did win two years in a row."
+      },
+      {
+        "start": 83190,
+        "stop": 83590,
+        "text": " And so it was in the Hall of Fame for this year."
+      },
+      {
+        "start": 83590,
+        "stop": 83790,
+        "text": " But last year it was in the first place."
+      },
+      {
+        "start": 83790,
+        "stop": 84290,
+        "text": " Alma launched March 30th, 2021, and still managed to come in at second place last year."
+      },
+      {
+        "start": 84290,
+        "stop": 84490,
+        "text": " That is really impressive."
+      },
+      {
+        "start": 84500,
+        "stop": 84990,
+        "text": " Really impressive. So this year, Alma fell back slightly."
+      },
+      {
+        "start": 84990,
+        "stop": 85390,
+        "text": " Alma fell back slightly to the fourth position with only 9% of the votes."
+      },
+      {
+        "start": 85390,
+        "stop": 85590,
+        "text": " Were you surprised to see that?"
+      },
+      {
+        "start": 85590,
+        "stop": 85790,
+        "text": " It seems like it's otherwise been a good year, right?"
+      },
+      {
+        "start": 85790,
+        "stop": 86390,
+        "text": " I mean, they keep hitting targets, you hear a lot of good things, you hear about more adoption."
+      },
+      {
+        "start": 86390,
+        "stop": 86590,
+        "text": " Mm-hmm. Mm-hmm."
+      },
+      {
+        "start": 86590,
+        "stop": 86690,
+        "text": " Do we?"
+      },
+      {
+        "start": 86690,
+        "stop": 86890,
+        "text": " Well, we just heard CERN. CERN just, uh, yep."
+      },
+      {
+        "start": 86890,
+        "stop": 87290,
+        "text": " But that happened, ugh, I guess that happened pretty recently."
+      },
+      {
+        "start": 87300,
+        "stop": 87790,
+        "text": " Would that have been long enough for it to have influenced the Tuxes?"
+      },
+      {
+        "start": 87790,
+        "stop": 87990,
+        "text": " No, I don't think so. No."
+      },
+      {
+        "start": 87990,
+        "stop": 88190,
+        "text": " And the migrations have probably slowed down, right?"
+      },
+      {
+        "start": 88190,
+        "stop": 88590,
+        "text": " The drama of CentOS is a year removed and all of that as well."
+      },
+      {
+        "start": 88590,
+        "stop": 88890,
+        "text": " Tiny in our matrix chat has a good reminder here."
+      },
+      {
+        "start": 88890,
+        "stop": 89290,
+        "text": " Alma and Monte have just been doing what they're supposed to, not doing anything wild, good or bad."
+      },
+      {
+        "start": 89290,
+        "stop": 89690,
+        "text": " And yeah, you know, like, you can be a great distro who's having a good year,"
+      },
+      {
+        "start": 89690,
+        "stop": 90190,
+        "text": " and it doesn't mean that you might not win the Tuxes, because we can only pick one in these categories."
+      },
+      {
+        "start": 90200,
+        "stop": 90390,
+        "text": " There's a lot of good stuff going on in the Linux community."
+      },
+      {
+        "start": 90390,
+        "stop": 90790,
+        "text": " That's true. All right. Then, moving right along."
+      },
+      {
+        "start": 90790,
+        "stop": 91590,
+        "text": " In the third position is a newcomer, NixOS, with 13% of the votes."
+      },
+      {
+        "start": 91590,
+        "stop": 92090,
+        "text": " I think it makes a great server OS, and 13% of the unplugged audience agreed."
+      },
+      {
+        "start": 92090,
+        "stop": 92590,
+        "text": " Coming in at number two this year, at 16%, just a bit over NixOS,"
+      },
+      {
+        "start": 92590,
+        "stop": 92990,
+        "text": " Debian came in at number two, a solid 16%."
+      },
+      {
+        "start": 93000,
+        "stop": 93390,
+        "text": " Maybe, you know, if we can't get Brent off that tumbleweed,"
+      },
+      {
+        "start": 93390,
+        "stop": 93790,
+        "text": " maybe we can get him to run a Debian server. That might count."
+      },
+      {
+        "start": 93790,
+        "stop": 93990,
+        "text": " And then because we allowed, I don't remember why,"
+      },
+      {
+        "start": 93990,
+        "stop": 94290,
+        "text": " but this year we allowed the Ubuntu entry for the server platform,"
+      },
+      {
+        "start": 94290,
+        "stop": 94490,
+        "text": " I think this would be their Hall of Fame year, actually, if they win."
+      },
+      {
+        "start": 94490,
+        "stop": 94790,
+        "text": " So the question was, would Ubuntu return in the number one spot?"
+      },
+      {
+        "start": 94790,
+        "stop": 95190,
+        "text": " Because if it wins again this year, it does enter into the Hall of Fame."
+      },
+      {
+        "start": 95190,
+        "stop": 95490,
+        "text": " And, ladies and gentlemen, wonder no longer. It is indeed."
+      },
+      {
+        "start": 95490,
+        "stop": 95690,
+        "text": " Ubuntu is!"
+      },
+      {
+        "start": 95700,
+        "stop": 96090,
+        "text": " The number one voted best server distro for 2022 by our audience,"
+      },
+      {
+        "start": 96090,
+        "stop": 96690,
+        "text": " with 31% of the votes, which, Wes, I believe that's a pretty big margin of lead, right, for that category?"
+      },
+      {
+        "start": 96690,
+        "stop": 96990,
+        "text": " So, again, super strong showing for Ubuntu this year."
+      },
+      {
+        "start": 96990,
+        "stop": 97390,
+        "text": " Clearly a popular server distro, which, yeah, I mean, I get it."
+      },
+      {
+        "start": 97390,
+        "stop": 97590,
+        "text": " It's kind of been the default for a long time,"
+      },
+      {
+        "start": 97590,
+        "stop": 97890,
+        "text": " especially if you're just spinning up a random cloud instance, right?"
+      },
+      {
+        "start": 97890,
+        "stop": 97990,
+        "text": " All right, boys, do we Hall of Fame it?"
+      },
+      {
+        "start": 97990,
+        "stop": 98290,
+        "text": " Is this it, then, since it's two years in a row? I think..."
+      },
+      {
+        "start": 98290,
+        "stop": 98490,
+        "text": " It feels like we have to."
+      },
+      {
+        "start": 98500,
+        "stop": 98690,
+        "text": " All right, it's officially..."
+      },
+      {
+        "start": 98690,
+        "stop": 99190,
+        "text": " I think the community's recognized that, yeah, right, you're probably just going to use Ubuntu,"
+      },
+      {
+        "start": 99190,
+        "stop": 99690,
+        "text": " and then that leaves a little space next year to find out, well, if you're not making that choice,"
+      },
+      {
+        "start": 99690,
+        "stop": 99790,
+        "text": " where are you going next?"
+      },
+      {
+        "start": 99790,
+        "stop": 100090,
+        "text": " For 2023, think of it that way. Where are you going next?"
+      },
+      {
+        "start": 100090,
+        "stop": 100390,
+        "text": " And then Ubuntu will be back for the 2024 survey."
+      },
+      {
+        "start": 100390,
+        "stop": 100590,
+        "text": " Which is in time for its next LTS."
+      },
+      {
+        "start": 100590,
+        "stop": 100690,
+        "text": " Hmm."
+      },
+      {
+        "start": 100690,
+        "stop": 100790,
+        "text": " Hmm."
+      },
+      {
+        "start": 100790,
+        "stop": 101090,
+        "text": " Yeah, I could say, of course, it would surge."
+      },
+      {
+        "start": 101400,
+        "stop": 101690,
+        "text": " I'd like to thank Linode for sponsoring the Tuxes."
+      },
+      {
+        "start": 101690,
+        "stop": 102290,
+        "text": " Linode.com/unplugged. Go over there to get a $100 credit for 60 days and support the show."
+      },
+      {
+        "start": 102290,
+        "stop": 102590,
+        "text": " One of the things that I really appreciate about Linode is we dipped our toes in the matrix."
+      },
+      {
+        "start": 102590,
+        "stop": 102990,
+        "text": " We started with a really small box, got a handful of users on there, and it worked great."
+      },
+      {
+        "start": 102990,
+        "stop": 103290,
+        "text": " And then as it got a little bit slower, we just turned it up."
+      },
+      {
+        "start": 103290,
+        "stop": 103790,
+        "text": " We turned up the knob a little bit, added more RAM, added more CPU, and then scaled it up again."
+      },
+      {
+        "start": 103800,
+        "stop": 104690,
+        "text": " And then earlier this year, we scaled it up to a massive, massive, something like 48 cores, 96 gigs of RAM Linode."
+      },
+      {
+        "start": 104690,
+        "stop": 104890,
+        "text": " And at every step of the way, we could just turn it up as we needed."
+      },
+      {
+        "start": 104890,
+        "stop": 105290,
+        "text": " And if it were to decline in popularity, just notch it back down again."
+      },
+      {
+        "start": 105290,
+        "stop": 105690,
+        "text": " It's also great for workloads that don't need that crazy power."
+      },
+      {
+        "start": 105690,
+        "stop": 105890,
+        "text": " Like, you know, it's hosting the Tuxes."
+      },
+      {
+        "start": 105890,
+        "stop": 105990,
+        "text": " That's right."
+      },
+      {
+        "start": 105990,
+        "stop": 106090,
+        "text": " That's how this is happening."
+      },
+      {
+        "start": 106090,
+        "stop": 106590,
+        "text": " But we can put that on a kind of low-end box, because Nextcloud doesn't need a ton of resources."
+      },
+      {
+        "start": 106590,
+        "stop": 106690,
+        "text": " Just a few web forms."
+      },
+      {
+        "start": 106700,
+        "stop": 106790,
+        "text": " Not a big deal."
+      },
+      {
+        "start": 106790,
+        "stop": 106890,
+        "text": " And you have a whole range there."
+      },
+      {
+        "start": 106890,
+        "stop": 107390,
+        "text": " 30 to 50 percent cheaper than your big hyperscalers that got these crazy platforms."
+      },
+      {
+        "start": 107390,
+        "stop": 107790,
+        "text": " And Linode has this one-click app, quote-unquote, \"marketplace.\""
+      },
+      {
+        "start": 107790,
+        "stop": 107890,
+        "text": " I mean, everything's free."
+      },
+      {
+        "start": 107890,
+        "stop": 108390,
+        "text": " But they make it really easy to get going with some of our favorite open source projects."
+      },
+      {
+        "start": 108390,
+        "stop": 108790,
+        "text": " One of them that's on here, just recently updated, Old Mastodon."
+      },
+      {
+        "start": 108790,
+        "stop": 108890,
+        "text": " And Brent, you're going to love this."
+      },
+      {
+        "start": 108890,
+        "stop": 109190,
+        "text": " It's based on Debian 11 under the hood."
+      },
+      {
+        "start": 109190,
+        "stop": 109290,
+        "text": " Oh, my favorite."
+      },
+      {
+        "start": 109300,
+        "stop": 109790,
+        "text": " Yeah, so you can still deploy this and still get your Debian fix, as you might need."
+      },
+      {
+        "start": 109790,
+        "stop": 109890,
+        "text": " I just think this is great."
+      },
+      {
+        "start": 109890,
+        "stop": 110290,
+        "text": " If you're thinking about spinning up your own little local Mastodon instance, that's a great way to use the LUP $100 credit."
+      },
+      {
+        "start": 110290,
+        "stop": 110590,
+        "text": " They get all kinds of great one-click applications."
+      },
+      {
+        "start": 110590,
+        "stop": 110890,
+        "text": " Or you could be like Crazy Wes and build it up from source all the time."
+      },
+      {
+        "start": 110890,
+        "stop": 111090,
+        "text": " Like, you just nuke and pave and nix them now."
+      },
+      {
+        "start": 111090,
+        "stop": 111190,
+        "text": " That's what you do."
+      },
+      {
+        "start": 111190,
+        "stop": 111290,
+        "text": " Of course."
+      },
+      {
+        "start": 111290,
+        "stop": 111390,
+        "text": " You nixie dog."
+      },
+      {
+        "start": 111390,
+        "stop": 111590,
+        "text": " And it works great on Linode."
+      },
+      {
+        "start": 111590,
+        "stop": 111690,
+        "text": " So go check it out."
+      },
+      {
+        "start": 111690,
+        "stop": 111890,
+        "text": " Get the $100 credit and support the show."
+      },
+      {
+        "start": 111890,
+        "stop": 112190,
+        "text": " Linode.com/unplugged."
+      },
+      {
+        "start": 112200,
+        "stop": 112490,
+        "text": " And a big thank you, Linode, for supporting the show for the whole year."
+      },
+      {
+        "start": 112490,
+        "stop": 112690,
+        "text": " And of course, the Tuxys."
+      },
+      {
+        "start": 112690,
+        "stop": 113090,
+        "text": " All right."
+      },
+      {
+        "start": 113090,
+        "stop": 113490,
+        "text": " And that brings us to the best self-hosted app of the year."
+      },
+      {
+        "start": 113490,
+        "stop": 113590,
+        "text": " This is a fun one."
+      },
+      {
+        "start": 113590,
+        "stop": 113690,
+        "text": " I love these ones."
+      },
+      {
+        "start": 113690,
+        "stop": 113890,
+        "text": " Last year, GitLab came in at number three."
+      },
+      {
+        "start": 113890,
+        "stop": 114090,
+        "text": " Solid number three."
+      },
+      {
+        "start": 114090,
+        "stop": 114190,
+        "text": " Solid."
+      },
+      {
+        "start": 114190,
+        "stop": 114690,
+        "text": " The matrix ecosystem, along with the element chat app, came in at number two."
+      },
+      {
+        "start": 114690,
+        "stop": 114990,
+        "text": " And flat hub, which is a little odd for the categories."
+      },
+      {
+        "start": 114990,
+        "stop": 115090,
+        "text": " We refined it this year."
+      },
+      {
+        "start": 115100,
+        "stop": 115590,
+        "text": " But people wanted to love on flat hub, so we put it in there and flat hub won the category."
+      },
+      {
+        "start": 115590,
+        "stop": 115990,
+        "text": " Unfortunately, even though our adoption has gone the opposite direction,"
+      },
+      {
+        "start": 115990,
+        "stop": 116390,
+        "text": " this year the votes didn't trend in the way I expected."
+      },
+      {
+        "start": 116390,
+        "stop": 116790,
+        "text": " The matrix ecosystem fell down in the ranking."
+      },
+      {
+        "start": 116790,
+        "stop": 116990,
+        "text": " I don't like to see that."
+      },
+      {
+        "start": 116990,
+        "stop": 117390,
+        "text": " I mean, our matrix chat rooms are doing well, but 9%."
+      },
+      {
+        "start": 117390,
+        "stop": 117990,
+        "text": " A number four spot, but a distant, distant fourth place for the matrix ecosystem."
+      },
+      {
+        "start": 118000,
+        "stop": 118290,
+        "text": " We still love you, matrix ecosystem. Don't feel bad."
+      },
+      {
+        "start": 118290,
+        "stop": 118590,
+        "text": " What's going on there? What's going on there? What happened?"
+      },
+      {
+        "start": 118590,
+        "stop": 118890,
+        "text": " Is it working too well? We're taking it for granted now?"
+      },
+      {
+        "start": 118890,
+        "stop": 119190,
+        "text": " Could be that. Could be the new hotness is something else."
+      },
+      {
+        "start": 119190,
+        "stop": 119490,
+        "text": " Home Assistant also, great year for Home Assistant."
+      },
+      {
+        "start": 119490,
+        "stop": 119690,
+        "text": " The project got better and faster than ever."
+      },
+      {
+        "start": 119690,
+        "stop": 120190,
+        "text": " Home Assistant came in at number three with 19% of the votes."
+      },
+      {
+        "start": 120190,
+        "stop": 120290,
+        "text": " Home Assistant."
+      },
+      {
+        "start": 120290,
+        "stop": 120790,
+        "text": " Number three. I just, man, Home Assistant's like one of my top five open source projects."
+      },
+      {
+        "start": 120800,
+        "stop": 121090,
+        "text": " It's 80% of what you talk about."
+      },
+      {
+        "start": 121090,
+        "stop": 121590,
+        "text": " Especially, especially just to you. I'm always trying to, you know,"
+      },
+      {
+        "start": 121590,
+        "stop": 121890,
+        "text": " Jellyfin, though. Let's talk about Jellyfin, because this is what you're always talking about."
+      },
+      {
+        "start": 121890,
+        "stop": 122490,
+        "text": " Jellyfin. Jellyfin came in at an even, Steven, 19%, but with a handful of more votes,"
+      },
+      {
+        "start": 122490,
+        "stop": 122790,
+        "text": " so we're giving it the second number two spot."
+      },
+      {
+        "start": 122790,
+        "stop": 122990,
+        "text": " So Jellyfin at number two. Really good to see that."
+      },
+      {
+        "start": 122990,
+        "stop": 123290,
+        "text": " Jellyfin, I think, deserves it. Jellyfin should be up there on that list."
+      },
+      {
+        "start": 123300,
+        "stop": 123890,
+        "text": " And in the number one spot, a project that's been absolutely quintessential for me this year."
+      },
+      {
+        "start": 123890,
+        "stop": 124290,
+        "text": " It's just hummed along for Jupiter Broadcasting out on production end."
+      },
+      {
+        "start": 124290,
+        "stop": 124490,
+        "text": " I don't think we've had any major issues this year."
+      },
+      {
+        "start": 124490,
+        "stop": 125190,
+        "text": " It's been super solid. They've just recently had a brand new update that has a whole bunch of features."
+      },
+      {
+        "start": 125190,
+        "stop": 126290,
+        "text": " Why, yes, my friends, of course, our number one self-hosted project for 2022 with 28% of the votes is NextCloud."
+      },
+      {
+        "start": 126290,
+        "stop": 126580,
+        "text": " I think they earned it. Congratulations, NextCloud."
+      },
+      {
+        "start": 126580,
+        "stop": 127080,
+        "text": " You know, Chris, I got to say, I love this new way that you've been running NextCloud through Tailscale."
+      },
+      {
+        "start": 127080,
+        "stop": 127780,
+        "text": " I think that is going to change my infrastructure that's been kind of stagnant and working really well for the last four years,"
+      },
+      {
+        "start": 127780,
+        "stop": 128280,
+        "text": " but it's fun to see new ways of deploying software that you've loved for a long time."
+      },
+      {
+        "start": 128280,
+        "stop": 128480,
+        "text": " So even I'm excited about NextCloud this year."
+      },
+      {
+        "start": 128480,
+        "stop": 128980,
+        "text": " I feel like everybody should run a NextCloud once, even if you don't stick with it. Just give it a go."
+      },
+      {
+        "start": 128990,
+        "stop": 129780,
+        "text": " Well, I've got a question for you, Chris. How many NextClouds are you running concurrently, both personally and in the business?"
+      },
+      {
+        "start": 129780,
+        "stop": 130180,
+        "text": " I feel like it's, I think three. Is it only three? Well, the Tuxes, right?"
+      },
+      {
+        "start": 130180,
+        "stop": 130380,
+        "text": " Oh, okay, four."
+      },
+      {
+        "start": 130380,
+        "stop": 130580,
+        "text": " We could do this for a while, I think."
+      },
+      {
+        "start": 130580,
+        "stop": 130780,
+        "text": " Yeah, but I don't know that you're running."
+      },
+      {
+        "start": 130780,
+        "stop": 131180,
+        "text": " Yeah, Wes is running that one, let's be honest. That's a Wes thing, yeah, for sure."
+      },
+      {
+        "start": 131180,
+        "stop": 131480,
+        "text": " I don't know of any one now, just kidding."
+      },
+      {
+        "start": 131480,
+        "stop": 131780,
+        "text": " Yeah, so I'm really glad to see NextCloud get this recognition."
+      },
+      {
+        "start": 131790,
+        "stop": 132280,
+        "text": " I'll be interested to see if they can hold that and if they get Hall of Fame next year."
+      },
+      {
+        "start": 132280,
+        "stop": 132680,
+        "text": " I'm already looking forward to the next Tuxes because that's a real contentious spot."
+      },
+      {
+        "start": 132680,
+        "stop": 133280,
+        "text": " The best self-hosted app. We got some really strong recommendations for Prism, PhotoPrism."
+      },
+      {
+        "start": 133280,
+        "stop": 133380,
+        "text": " Of course."
+      },
+      {
+        "start": 133380,
+        "stop": 133880,
+        "text": " That's a really good one. A couple other obvious suggestions that just didn't make it onto the survey."
+      },
+      {
+        "start": 133880,
+        "stop": 134280,
+        "text": " So we'll have our Tuxes board review this episode after the fact,"
+      },
+      {
+        "start": 134280,
+        "stop": 134680,
+        "text": " and we'll make up for it next year by adding some of those categories and adding some of those possible options."
+      },
+      {
+        "start": 134690,
+        "stop": 135180,
+        "text": " Yeah, our shareholders pointed out a real lack of oversight, but we've corrected that."
+      },
+      {
+        "start": 135180,
+        "stop": 135780,
+        "text": " There's now the Tuxes board, as Chris mentioned, and they'll be making sure that the survey is well constructed for next year."
+      },
+      {
+        "start": 135780,
+        "stop": 136080,
+        "text": " Of course, you've got to. You know what, we take it seriously."
+      },
+      {
+        "start": 136080,
+        "stop": 136580,
+        "text": " And with that, how about the best Linux hardware of the year?"
+      },
+      {
+        "start": 136580,
+        "stop": 137080,
+        "text": " A new entrance, something that's powerful, you know, like a machine that really impressed everybody."
+      },
+      {
+        "start": 137080,
+        "stop": 137480,
+        "text": " Last year, we decided to do a slight tweak to this category."
+      },
+      {
+        "start": 137490,
+        "stop": 137780,
+        "text": " So this is kind of like a fresh start."
+      },
+      {
+        "start": 137780,
+        "stop": 138080,
+        "text": " So we're starting with just the votes that came in this year."
+      },
+      {
+        "start": 138080,
+        "stop": 138580,
+        "text": " And then the number three position is the Framework laptop with 13% of the votes."
+      },
+      {
+        "start": 138580,
+        "stop": 139080,
+        "text": " Nice to see. I don't know if, you know, the Framework laptop had a good upgrade this year that was motherboard compatible,"
+      },
+      {
+        "start": 139080,
+        "stop": 139380,
+        "text": " so you could just get the new MOBO and snap it into the old machine."
+      },
+      {
+        "start": 139380,
+        "stop": 139980,
+        "text": " That's nice to see. And then they released that separate deal where you could run the MOBOs on their own, which is kind of fun."
+      },
+      {
+        "start": 139980,
+        "stop": 140180,
+        "text": " They got that whole Chromebook thing going."
+      },
+      {
+        "start": 140180,
+        "stop": 140380,
+        "text": " Right. Right."
+      },
+      {
+        "start": 140390,
+        "stop": 140880,
+        "text": " Number two, at 14%, the HP Dev 1."
+      },
+      {
+        "start": 140880,
+        "stop": 141080,
+        "text": " Now, Brent, how many times did you vote?"
+      },
+      {
+        "start": 141080,
+        "stop": 141380,
+        "text": " You know, I tried to only vote once, which last year I didn't vote at all."
+      },
+      {
+        "start": 141380,
+        "stop": 141580,
+        "text": " Tried?"
+      },
+      {
+        "start": 141580,
+        "stop": 141780,
+        "text": " Well, who's to say?"
+      },
+      {
+        "start": 141780,
+        "stop": 142280,
+        "text": " Yeah. Yeah, the Dev 1 has been a machine of the year for you, I bet."
+      },
+      {
+        "start": 142280,
+        "stop": 142880,
+        "text": " Yeah, I mean, it came into my life later than I thought because you held on to it for, what, two months?"
+      },
+      {
+        "start": 142880,
+        "stop": 143180,
+        "text": " Well done, sir. Well done."
+      },
+      {
+        "start": 143190,
+        "stop": 143680,
+        "text": " But I have to say, thank you for getting me this machine."
+      },
+      {
+        "start": 143680,
+        "stop": 144080,
+        "text": " It's changed my perspective of what hardware can do for me this year."
+      },
+      {
+        "start": 144080,
+        "stop": 144980,
+        "text": " And so I've got to say, the HP Dev 1 has been super solid for me this year, so I've got to say, it deserves that position."
+      },
+      {
+        "start": 144980,
+        "stop": 145480,
+        "text": " Yeah, number two feels right. I mean, I think it was a contender for number one,"
+      },
+      {
+        "start": 145480,
+        "stop": 145980,
+        "text": " but I think number two, it feels like a really solid, we recognize the hard work,"
+      },
+      {
+        "start": 145990,
+        "stop": 146180,
+        "text": " we can't wait for the next version of the product."
+      },
+      {
+        "start": 146180,
+        "stop": 146780,
+        "text": " And it may have been, to be honest with you guys, it may have been in the number one spot,"
+      },
+      {
+        "start": 146780,
+        "stop": 146980,
+        "text": " if not for our top winner."
+      },
+      {
+        "start": 146980,
+        "stop": 147280,
+        "text": " It was just, how could anybody compete against this?"
+      },
+      {
+        "start": 147280,
+        "stop": 148180,
+        "text": " In the very top spot for 2022 is very obviously Valve's Steam Deck with 59% of the votes."
+      },
+      {
+        "start": 148180,
+        "stop": 148580,
+        "text": " That's a no-brainer. It's Steam Deck year. That was a huge deal."
+      },
+      {
+        "start": 148580,
+        "stop": 148780,
+        "text": " It's been a massive success."
+      },
+      {
+        "start": 148790,
+        "stop": 149080,
+        "text": " Now Valve has ramped up the production at the end of the year, just like they said they would,"
+      },
+      {
+        "start": 149080,
+        "stop": 149380,
+        "text": " even though it's a supply chain challenging year."
+      },
+      {
+        "start": 149380,
+        "stop": 149980,
+        "text": " And for me personally, one of the devices that's had the greatest impact on my personal day-to-day life is the Steam Deck."
+      },
+      {
+        "start": 149980,
+        "stop": 150480,
+        "text": " It's, as far as Linux devices go, a game changer for me."
+      },
+      {
+        "start": 150480,
+        "stop": 150680,
+        "text": " And I really love it."
+      },
+      {
+        "start": 150680,
+        "stop": 150880,
+        "text": " So I think it absolutely deserves this resounding win."
+      },
+      {
+        "start": 150880,
+        "stop": 151480,
+        "text": " The Dev 1 got 14% and the Steam Deck got 59%."
+      },
+      {
+        "start": 151480,
+        "stop": 151580,
+        "text": " Whoa!"
+      },
+      {
+        "start": 151590,
+        "stop": 151780,
+        "text": " That's a big gap, but the Steam Deck deserves it."
+      },
+      {
+        "start": 151780,
+        "stop": 152080,
+        "text": " I don't know what's going to be in that spot next year."
+      },
+      {
+        "start": 152080,
+        "stop": 152480,
+        "text": " You know, we try to watch the new hardware releases throughout the year and throw them into that category,"
+      },
+      {
+        "start": 152480,
+        "stop": 152880,
+        "text": " but I just absolutely, I absolutely agree 100% with the Steam Deck."
+      },
+      {
+        "start": 152880,
+        "stop": 152980,
+        "text": " That just seems like a real solid choice."
+      },
+      {
+        "start": 152980,
+        "stop": 153480,
+        "text": " So I can, I think this is one where I'm the most alignment with the JB audience."
+      },
+      {
+        "start": 153480,
+        "stop": 153580,
+        "text": " Very much like that one."
+      },
+      {
+        "start": 153580,
+        "stop": 153680,
+        "text": " All right, gentlemen."
+      },
+      {
+        "start": 153680,
+        "stop": 154180,
+        "text": " How about the overall best open source project for 2022?"
+      },
+      {
+        "start": 154180,
+        "stop": 154580,
+        "text": " Last year, everybody was loving Wireguard."
+      },
+      {
+        "start": 154580,
+        "stop": 154770,
+        "text": " It got the number three spot."
+      },
+      {
+        "start": 154770,
+        "stop": 155170,
+        "text": " Coming in at number two, Proton, one of the things that made the deck possible."
+      },
+      {
+        "start": 155170,
+        "stop": 155470,
+        "text": " And coming in at number one last year was Pipewire."
+      },
+      {
+        "start": 155470,
+        "stop": 156170,
+        "text": " Okay, so this year we have an interesting kind of realignment."
+      },
+      {
+        "start": 156170,
+        "stop": 156570,
+        "text": " Proton's still on the list, but in the third spot."
+      },
+      {
+        "start": 156570,
+        "stop": 156770,
+        "text": " So it drops down from number two to the third spot."
+      },
+      {
+        "start": 156770,
+        "stop": 156970,
+        "text": " Coming in now at number two..."
+      },
+      {
+        "start": 156970,
+        "stop": 157370,
+        "text": " I should note there, so these next two, last two here,"
+      },
+      {
+        "start": 157380,
+        "stop": 157570,
+        "text": " there are the open-ended responses."
+      },
+      {
+        "start": 157570,
+        "stop": 157670,
+        "text": " Right, yes."
+      },
+      {
+        "start": 157670,
+        "stop": 157970,
+        "text": " So I went through and tried to consolidate, you know,"
+      },
+      {
+        "start": 157970,
+        "stop": 158370,
+        "text": " and I looked and see like, well, out of the gate, what do we got at the top?"
+      },
+      {
+        "start": 158370,
+        "stop": 158670,
+        "text": " Or at least the top 10, 15, and then sort of consolidated."
+      },
+      {
+        "start": 158670,
+        "stop": 158870,
+        "text": " So there was a few stragglers for like Wine."
+      },
+      {
+        "start": 158870,
+        "stop": 159070,
+        "text": " I included that in Proton."
+      },
+      {
+        "start": 159070,
+        "stop": 159270,
+        "text": " There was a few things that were a little more general than that,"
+      },
+      {
+        "start": 159270,
+        "stop": 159370,
+        "text": " like Linux gaming."
+      },
+      {
+        "start": 159370,
+        "stop": 159570,
+        "text": " That all rolls up to Proton."
+      },
+      {
+        "start": 159570,
+        "stop": 159770,
+        "text": " All right, so a little bit of Wes interpretation is what you're saying."
+      },
+      {
+        "start": 159770,
+        "stop": 160170,
+        "text": " I think that's fair though, because we wanted to have a few free form just in case we missed anything."
+      },
+      {
+        "start": 160180,
+        "stop": 160670,
+        "text": " And so this year, ActivityPub did get some mentions."
+      },
+      {
+        "start": 160670,
+        "stop": 160870,
+        "text": " Like, it's nice to see that, right?"
+      },
+      {
+        "start": 160870,
+        "stop": 161170,
+        "text": " But we're talking about the best open source project this year."
+      },
+      {
+        "start": 161170,
+        "stop": 161570,
+        "text": " So number three was went to Proton when you include some of the Wine stuff."
+      },
+      {
+        "start": 161570,
+        "stop": 161970,
+        "text": " Number two is Mastodon, and probably even better if you add in some of the ActivityPub stuff, right?"
+      },
+      {
+        "start": 161970,
+        "stop": 162570,
+        "text": " If you counted ActivityPub and Mastodon as one category, it would become number one."
+      },
+      {
+        "start": 162570,
+        "stop": 162670,
+        "text": " Oh, really?"
+      },
+      {
+        "start": 162670,
+        "stop": 162770,
+        "text": " Yeah."
+      },
+      {
+        "start": 162770,
+        "stop": 162970,
+        "text": " I'm not surprised, actually."
+      },
+      {
+        "start": 162970,
+        "stop": 163070,
+        "text": " Well, I guess I'm slightly surprised."
+      },
+      {
+        "start": 163080,
+        "stop": 163270,
+        "text": " I mean, Mastodon's been around forever."
+      },
+      {
+        "start": 163270,
+        "stop": 163570,
+        "text": " You know, I've been a Mastodon user since 2017, so..."
+      },
+      {
+        "start": 163570,
+        "stop": 163870,
+        "text": " But in number one, I did not expect this."
+      },
+      {
+        "start": 163870,
+        "stop": 164070,
+        "text": " I would vote this way."
+      },
+      {
+        "start": 164070,
+        "stop": 164570,
+        "text": " If you were just not to read the list right now, you'd have no idea what's coming in at the number one spot for 2022."
+      },
+      {
+        "start": 164570,
+        "stop": 164770,
+        "text": " And it was a relatively clear signal."
+      },
+      {
+        "start": 164770,
+        "stop": 164870,
+        "text": " Really?"
+      },
+      {
+        "start": 164870,
+        "stop": 165070,
+        "text": " Again, free form. So, it's a little lower signal."
+      },
+      {
+        "start": 165070,
+        "stop": 165170,
+        "text": " But yeah, I think it stood out."
+      },
+      {
+        "start": 165170,
+        "stop": 165970,
+        "text": " All right, well, coming in as the best open source project of 2022, it is Home Assistant."
+      },
+      {
+        "start": 166170,
+        "stop": 166460,
+        "text": " Home Assistant! It is Home Assistant. Home Assistant guys."
+      },
+      {
+        "start": 166460,
+        "stop": 166560,
+        "text": " Wow."
+      },
+      {
+        "start": 166560,
+        "stop": 166860,
+        "text": " Like, they did have a really good year."
+      },
+      {
+        "start": 166860,
+        "stop": 167060,
+        "text": " That didn't even show up on the list last year, though."
+      },
+      {
+        "start": 167060,
+        "stop": 167560,
+        "text": " With the launch of Matter, they are like the predominant implementation of Matter right now."
+      },
+      {
+        "start": 167560,
+        "stop": 168260,
+        "text": " They had a good year for hiring. They hired several individuals from the community that are responsible for some of the best community integrations."
+      },
+      {
+        "start": 168260,
+        "stop": 168660,
+        "text": " They just went out and gave them a full-time job to work for Home Assistant now."
+      },
+      {
+        "start": 168670,
+        "stop": 169360,
+        "text": " So, they just went from win to win to win, and they did a bunch of database optimizations in the most recent releases."
+      },
+      {
+        "start": 169360,
+        "stop": 169860,
+        "text": " So, like, performance is even better on the Raspberry Pi, so your existing installation got faster this year."
+      },
+      {
+        "start": 169860,
+        "stop": 170060,
+        "text": " Good year for Home Assistant."
+      },
+      {
+        "start": 170060,
+        "stop": 170160,
+        "text": " How often do you get to say that?"
+      },
+      {
+        "start": 170160,
+        "stop": 170260,
+        "text": " Yeah."
+      },
+      {
+        "start": 170260,
+        "stop": 170960,
+        "text": " You know, and the great thing about Home Assistant is it brings all these various vendors together, and it eliminates the cloud whenever possible."
+      },
+      {
+        "start": 170960,
+        "stop": 171260,
+        "text": " And you've got to love to see that, right? You've got to."
+      },
+      {
+        "start": 171270,
+        "stop": 172060,
+        "text": " All right, well, now it's time for the best newcomer project of 2022. Last year, Gerudo Linux was getting some love."
+      },
+      {
+        "start": 172060,
+        "stop": 172360,
+        "text": " QuickMU was number two, and Pipewire was number one."
+      },
+      {
+        "start": 172360,
+        "stop": 172760,
+        "text": " Pipewire was number one for best newcomer project."
+      },
+      {
+        "start": 172760,
+        "stop": 173160,
+        "text": " Umbral came in at number three this year for 2022."
+      },
+      {
+        "start": 173160,
+        "stop": 173260,
+        "text": " Umbral getting some love in there."
+      },
+      {
+        "start": 173260,
+        "stop": 174260,
+        "text": " Pipewire isn't on the list anymore because it's no longer a newcomer, so coming in in the second place position was a tie for stable diffusion and image."
+      },
+      {
+        "start": 174260,
+        "stop": 174650,
+        "text": " Now, image is that Google Photos replacement that has an app and a server side command."
+      },
+      {
+        "start": 174650,
+        "stop": 174850,
+        "text": " Right, like an all-in-one solution."
+      },
+      {
+        "start": 174850,
+        "stop": 175450,
+        "text": " Yeah, and that is something I think people are really interested in, and the nice thing about image is that client-side app handles the uploads."
+      },
+      {
+        "start": 175450,
+        "stop": 175850,
+        "text": " It's also the gallery browser. It's early. It's still a lot of work."
+      },
+      {
+        "start": 175850,
+        "stop": 176250,
+        "text": " But I think as a newcomer, it deserves this. I think this is a good entry."
+      },
+      {
+        "start": 176250,
+        "stop": 176950,
+        "text": " It seems very appropriate, yeah, right? Like, so much promise, a lot going right already, but still being adopted and still being developed."
+      },
+      {
+        "start": 176960,
+        "stop": 177350,
+        "text": " And I think that stable diffusion could have a larger impact on the overall industry."
+      },
+      {
+        "start": 177350,
+        "stop": 177950,
+        "text": " And it's very important. It's historic in some ways. Very historic, as Brent might say."
+      },
+      {
+        "start": 177950,
+        "stop": 178850,
+        "text": " If anything, I'd say that's impressive for image considering the kind of news and how just about seems everybody knows about stable diffusion."
+      },
+      {
+        "start": 178850,
+        "stop": 179250,
+        "text": " So image pulling into this tie for second place is darn impressive."
+      },
+      {
+        "start": 179250,
+        "stop": 179850,
+        "text": " Yeah, so we kind of need to pick a winner, though. We can't have a tie for second place. That's not how this works."
+      },
+      {
+        "start": 179860,
+        "stop": 180650,
+        "text": " We can't have a tie between stable diffusion and image. And I honestly, for some reason, I want to give it to image, but I cannot justify that."
+      },
+      {
+        "start": 180650,
+        "stop": 181350,
+        "text": " See, I was going to say maybe we give it to stable diffusion because I bet stable diffusion fades because they'll be new. They'll be new models."
+      },
+      {
+        "start": 181350,
+        "stop": 182150,
+        "text": " But image, I bet image shows up on the Tuxes again next year. You know, if development goes well in 2023, it'll be back."
+      },
+      {
+        "start": 182150,
+        "stop": 182350,
+        "text": " Brent, do you have any objections to that thinking?"
+      },
+      {
+        "start": 182360,
+        "stop": 183050,
+        "text": " Well, I was wondering, as a newcomer project, how easy is each of them to get launched as a newcomer?"
+      },
+      {
+        "start": 183050,
+        "stop": 183650,
+        "text": " You know, let's say you want to get these running in your own infrastructure. Which one's easiest? I would lean towards image."
+      },
+      {
+        "start": 183650,
+        "stop": 184450,
+        "text": " Yes, that's true. That's true. But that's not necessarily a requirement for the newcomer project. It's anything in the world of open source."
+      },
+      {
+        "start": 184450,
+        "stop": 185050,
+        "text": " Yeah, I'm going to lean towards Wes's idea, then. Stable diffusion likely won't be around."
+      },
+      {
+        "start": 185060,
+        "stop": 185450,
+        "text": " Hmm. That's a bold prediction. I think you guys should have saved that for the predictions episode, but I'll go with you."
+      },
+      {
+        "start": 185450,
+        "stop": 186250,
+        "text": " We'll give it to stable diffusion this year with hopes that image makes it on the list next year. So number two for this year, we're giving it to stable diffusion."
+      },
+      {
+        "start": 186250,
+        "stop": 186950,
+        "text": " All right, I can live with that, which means we now have the number one spot, which doesn't really require any debate."
+      },
+      {
+        "start": 186950,
+        "stop": 187750,
+        "text": " It was clearly number one by the numbers, and it's a project that hasn't been mentioned yet on the Tuxes. And I'm kind of surprised it hasn't come up yet."
+      },
+      {
+        "start": 187760,
+        "stop": 188150,
+        "text": " It was close on a few other categories, but not quite. Not quite."
+      },
+      {
+        "start": 188150,
+        "stop": 189250,
+        "text": " All right. Well, I don't think you'll be too surprised to hear that the winner for the 2022 best newcomer project of the year is in fact..."
+      },
+      {
+        "start": 189250,
+        "stop": 189650,
+        "text": " Get ready for it. Yes, my friends, Asahi Linux."
+      },
+      {
+        "start": 189650,
+        "stop": 190250,
+        "text": " Asahi Linux. Of course, getting Linux running on the M1, it's been a big news source."
+      },
+      {
+        "start": 190250,
+        "stop": 190450,
+        "text": " Huge strides this year."
+      },
+      {
+        "start": 190460,
+        "stop": 191150,
+        "text": " Lots of stuff done. It's actually you're seeing more and more people that are writing blog posts about how I run all day on an M1 running Linux."
+      },
+      {
+        "start": 191150,
+        "stop": 191650,
+        "text": " Not quite there for me yet, but it's so close. It's so close that I think this makes a lot of sense."
+      },
+      {
+        "start": 191650,
+        "stop": 192050,
+        "text": " I have no problem giving Asahi Linux the number one spot. I think they totally earned it."
+      },
+      {
+        "start": 192050,
+        "stop": 192250,
+        "text": " And it was a clear signal as well."
+      },
+      {
+        "start": 192250,
+        "stop": 193050,
+        "text": " Maybe by this time next year, it'll be really a solid thing. Could be, right? I mean, the progress they're making. You never know."
+      },
+      {
+        "start": 193050,
+        "stop": 193250,
+        "text": " Perhaps you'll have a prediction or two."
+      },
+      {
+        "start": 193250,
+        "stop": 194240,
+        "text": " Bitwarden.com/Linux. That's where you go to get started with a free trial for a team or an enterprise plan."
+      },
+      {
+        "start": 194240,
+        "stop": 194740,
+        "text": " Or if you're an individual, you get to try it out for free. Just go to bitwarden.com/Linux."
+      },
+      {
+        "start": 194740,
+        "stop": 195340,
+        "text": " It's really the easiest way to just securely store, share and sync your sensitive data."
+      },
+      {
+        "start": 195340,
+        "stop": 195640,
+        "text": " But on top of that, it's really a platform to protect your identity online."
+      },
+      {
+        "start": 195640,
+        "stop": 196140,
+        "text": " That's, I think, one of the easiest things you could do to protect yourself is to get Bitwarden."
+      },
+      {
+        "start": 196150,
+        "stop": 196440,
+        "text": " Because there's all kinds of information that sites have about you."
+      },
+      {
+        "start": 196440,
+        "stop": 197140,
+        "text": " And when you use the same credentials and information across multiple sites, that increases your exposure to data breaches."
+      },
+      {
+        "start": 197140,
+        "stop": 197640,
+        "text": " And data breaches happen all the time. It's like the whole thing's automated now. It's ridiculous."
+      },
+      {
+        "start": 197640,
+        "stop": 197940,
+        "text": " Bitwarden is a solution for this problem."
+      },
+      {
+        "start": 197940,
+        "stop": 198840,
+        "text": " It attacks the problem at its root by identifying that the core issue is sharing these credentials and tracking them back to yourself, linking them back to yourself."
+      },
+      {
+        "start": 198850,
+        "stop": 200040,
+        "text": " That's the problem it solves. It allows you to generate a unique username, a unique email address and a unique, complicated password for every site, service and app you use."
+      },
+      {
+        "start": 200040,
+        "stop": 200640,
+        "text": " Across your mobile devices, across all your devices, because it does the syncing and it does the encryption locally."
+      },
+      {
+        "start": 200640,
+        "stop": 201240,
+        "text": " So you're moving things that are completely secured by each of your machines. And it's so transparent in the background."
+      },
+      {
+        "start": 201240,
+        "stop": 201840,
+        "text": " Bitwarden also has things like account switching support. So it's super easy to switch between, like your personal account."
+      },
+      {
+        "start": 201840,
+        "stop": 202830,
+        "text": " And a business account. And here on this show, we always recommend too, if you're participating in an open source project, put those credentials in their own separate vault."
+      },
+      {
+        "start": 202830,
+        "stop": 203430,
+        "text": " Treat that as almost like a side job, right? So you have a separate account for the open source projects that you're participating in."
+      },
+      {
+        "start": 203430,
+        "stop": 203830,
+        "text": " So you can switch between those identities. You can easily share those types of things with Bitwarden."
+      },
+      {
+        "start": 203830,
+        "stop": 204430,
+        "text": " And of course, Bitwarden itself is open source. That's why it's used and trusted by millions in our community out there."
+      },
+      {
+        "start": 204440,
+        "stop": 204830,
+        "text": " You're going to love it too. And I think if you've already got something like Bitwarden, hopefully it's Bitwarden,"
+      },
+      {
+        "start": 204830,
+        "stop": 205230,
+        "text": " but maybe you know somebody out there that needs something like Bitwarden in their life."
+      },
+      {
+        "start": 205230,
+        "stop": 205730,
+        "text": " Or maybe it's the place you work or the group that you participate with. Send them to bitwarden.com/linux too."
+      },
+      {
+        "start": 205730,
+        "stop": 206430,
+        "text": " I think it's just low hanging fruit. And unfortunately, we just don't have enough people using tools like this."
+      },
+      {
+        "start": 206430,
+        "stop": 206830,
+        "text": " And this is something that we can attack as the people. This is a problem we can address."
+      },
+      {
+        "start": 206830,
+        "stop": 207430,
+        "text": " A lot of us are influencers in regards to technology in our own little social circle."
+      },
+      {
+        "start": 207430,
+        "stop": 208120,
+        "text": " Yeah, I just called you an influencer, but it's true, right? Like people come to you for technical advice, for a lot of us, or you're getting there."
+      },
+      {
+        "start": 208120,
+        "stop": 208520,
+        "text": " And I think Bitwarden is one of the things that you can recommend to even normies, right?"
+      },
+      {
+        "start": 208520,
+        "stop": 208820,
+        "text": " You can recommend it to family members that aren't even technical."
+      },
+      {
+        "start": 208820,
+        "stop": 209320,
+        "text": " And it's going to just significantly improve or upgrade their security online."
+      },
+      {
+        "start": 209320,
+        "stop": 209720,
+        "text": " That's a pretty significant thing, and it's not too hard to do."
+      },
+      {
+        "start": 209720,
+        "stop": 210120,
+        "text": " So go to bitwarden.com/linux or send them there as well."
+      },
+      {
+        "start": 210120,
+        "stop": 210420,
+        "text": " Bitwarden.com/linux."
+      },
+      {
+        "start": 210420,
+        "stop": 210810,
+        "text": " [Music]"
+      },
+      {
+        "start": 210810,
+        "stop": 211210,
+        "text": " And that brings us to the honorable mentions this week."
+      },
+      {
+        "start": 211210,
+        "stop": 211710,
+        "text": " Ones that didn't quite get enough votes or were submitted independently by the audience."
+      },
+      {
+        "start": 211710,
+        "stop": 211910,
+        "text": " Had a passionate advocate."
+      },
+      {
+        "start": 211910,
+        "stop": 212310,
+        "text": " Yes, of course. Like the text editors always do, right, Brent Lee?"
+      },
+      {
+        "start": 212310,
+        "stop": 212710,
+        "text": " Well, last year it was overwhelming that the honorable mentions were all text editors."
+      },
+      {
+        "start": 212720,
+        "stop": 214110,
+        "text": " I think we had all but one be a text editor. This year that has shifted. From what I could tell, we only got one piece of mail-in suggesting a text editor, and it was micro."
+      },
+      {
+        "start": 214110,
+        "stop": 214610,
+        "text": " And micro got mentioned last year. I remember us chatting about it and being impressed that it had come so far."
+      },
+      {
+        "start": 214610,
+        "stop": 215110,
+        "text": " And it's a little small editor that runs like nano, but more modern."
+      },
+      {
+        "start": 215110,
+        "stop": 215510,
+        "text": " So I think if, Chris, you're a nano fan, you might just want to check this out."
+      },
+      {
+        "start": 215520,
+        "stop": 215910,
+        "text": " I might be a micro guy. Maybe I'm a micro guy and I don't even know it."
+      },
+      {
+        "start": 215910,
+        "stop": 216610,
+        "text": " Oh, hey, hey. So I think before you were probably limited because you didn't go install it, but it's packaged next."
+      },
+      {
+        "start": 216610,
+        "stop": 216810,
+        "text": " Oh, well, there you go."
+      },
+      {
+        "start": 216810,
+        "stop": 216910,
+        "text": " You might have a chance now."
+      },
+      {
+        "start": 216910,
+        "stop": 217710,
+        "text": " Now I can. Yeah, now I definitely can. All right. Micro the text editor. When you want something smaller than nano, but you still don't know how to quit them."
+      },
+      {
+        "start": 217720,
+        "stop": 218610,
+        "text": " In the desktop distro category, we got a few mentions or more people gently screaming at us for forgetting something."
+      },
+      {
+        "start": 218610,
+        "stop": 219210,
+        "text": " And one of them was, \"Hey, y'all forgot SteamOS for desktop distro of the year,\" says Kevin."
+      },
+      {
+        "start": 219210,
+        "stop": 219610,
+        "text": " Does that count? Because I don't know."
+      },
+      {
+        "start": 219610,
+        "stop": 220010,
+        "text": " I think for some people, we heard mentions of it being used as a daily driver."
+      },
+      {
+        "start": 220010,
+        "stop": 220510,
+        "text": " I mean, that's likely a small exception, but it's somewhere in the category."
+      },
+      {
+        "start": 220520,
+        "stop": 221010,
+        "text": " So this is a vote for SteamOS as desktop distro of the year."
+      },
+      {
+        "start": 221010,
+        "stop": 221510,
+        "text": " Spoiler alert. I hope it's a legitimate one to actually vote on next year, but we'll save that for the predictions episode."
+      },
+      {
+        "start": 221510,
+        "stop": 221610,
+        "text": " All right."
+      },
+      {
+        "start": 221610,
+        "stop": 222210,
+        "text": " We also got a little bit of question. No elementary OS in the lineup this year?"
+      },
+      {
+        "start": 222210,
+        "stop": 222810,
+        "text": " I think a couple of distros were removed based on the votes from last year, but I don't know which ones. That might have been one of them."
+      },
+      {
+        "start": 222820,
+        "stop": 223710,
+        "text": " I feel like this year we didn't hear much about elementary. They had a big kerfuffle earlier in the year and haven't really heard much since then."
+      },
+      {
+        "start": 223710,
+        "stop": 224010,
+        "text": " Well, maybe the results will be different next year."
+      },
+      {
+        "start": 224010,
+        "stop": 224110,
+        "text": " Could be."
+      },
+      {
+        "start": 224110,
+        "stop": 224410,
+        "text": " There's only one way to find out. Build a time travel machine."
+      },
+      {
+        "start": 224410,
+        "stop": 225110,
+        "text": " Yeah, that's right. It's the only way. The Tuxes are the people's votes, and we'll have the board review that issue."
+      },
+      {
+        "start": 225120,
+        "stop": 226010,
+        "text": " We also got many recommendations for additional best self-hosted app of the year, which I think this year was a quite a popular category."
+      },
+      {
+        "start": 226010,
+        "stop": 226610,
+        "text": " Marcel suggested Get Tea, which I think is probably a great idea."
+      },
+      {
+        "start": 226610,
+        "stop": 226710,
+        "text": " That is a great one."
+      },
+      {
+        "start": 226710,
+        "stop": 226910,
+        "text": " So we should tell the committee to add that to the list."
+      },
+      {
+        "start": 226910,
+        "stop": 227210,
+        "text": " Yes, Get Tea indeed needs to go on the list. I agree."
+      },
+      {
+        "start": 227210,
+        "stop": 227710,
+        "text": " Veeharm also suggested Firefly 3, which Chris, you and I didn't know about this one."
+      },
+      {
+        "start": 227720,
+        "stop": 228310,
+        "text": " But Firefly 3 is a free and open source personal finance manager, and I think I might just check this one out."
+      },
+      {
+        "start": 228310,
+        "stop": 228710,
+        "text": " Yeah, cool. Double entry bookkeeping system. Nice."
+      },
+      {
+        "start": 228710,
+        "stop": 229010,
+        "text": " Advanced rule engine and import data from any source."
+      },
+      {
+        "start": 229010,
+        "stop": 229110,
+        "text": " All right."
+      },
+      {
+        "start": 229110,
+        "stop": 229210,
+        "text": " That's a big claim."
+      },
+      {
+        "start": 229210,
+        "stop": 229910,
+        "text": " Do we know? The thing is, we've got to figure out where the line is. You've got to have more than a handful of people that are using it, because you need hundreds of votes."
+      },
+      {
+        "start": 229910,
+        "stop": 230210,
+        "text": " I think this is one of our inputs for Signal."
+      },
+      {
+        "start": 230220,
+        "stop": 231110,
+        "text": " I feel like if we get many pieces of mail-in saying that we should include this in next year's category, then we lean that way."
+      },
+      {
+        "start": 231110,
+        "stop": 231410,
+        "text": " If only one, then we can say, hey, maybe it's a good pick."
+      },
+      {
+        "start": 231410,
+        "stop": 232110,
+        "text": " Continue on the list for self-hosted app of the year, Mastodon got mentioned by Caleb."
+      },
+      {
+        "start": 232110,
+        "stop": 232410,
+        "text": " I feel like that was a big miss on our part, wasn't it?"
+      },
+      {
+        "start": 232410,
+        "stop": 232510,
+        "text": " Yeah."
+      },
+      {
+        "start": 232510,
+        "stop": 232810,
+        "text": " But not so much as this next one."
+      },
+      {
+        "start": 232810,
+        "stop": 233110,
+        "text": " Casey suggested Photo Prism should be on the list."
+      },
+      {
+        "start": 233120,
+        "stop": 233710,
+        "text": " We did get that one on the free form submission, but I actually think it should have been on the standard voting list."
+      },
+      {
+        "start": 233710,
+        "stop": 233910,
+        "text": " I bet it shows up in the 2023s."
+      },
+      {
+        "start": 233910,
+        "stop": 234110,
+        "text": " Yeah, good prediction."
+      },
+      {
+        "start": 234110,
+        "stop": 234910,
+        "text": " Alain also shares that, hey, we should include tail scale on this list, because it makes so much of self-hosting possible."
+      },
+      {
+        "start": 234910,
+        "stop": 235510,
+        "text": " Before tail scale, I never considered it safe enough nor simple enough to self-host much of anything."
+      },
+      {
+        "start": 235520,
+        "stop": 236110,
+        "text": " Since then, 85% of Alain's life lives on his tail scale network."
+      },
+      {
+        "start": 236110,
+        "stop": 236210,
+        "text": " Word."
+      },
+      {
+        "start": 236210,
+        "stop": 236610,
+        "text": " Hey, shout out to head scale too for just keeping on rocking there."
+      },
+      {
+        "start": 236610,
+        "stop": 236910,
+        "text": " And the Nebula folks got some interesting stuff they're working on too."
+      },
+      {
+        "start": 236910,
+        "stop": 237010,
+        "text": " Oh, yeah."
+      },
+      {
+        "start": 237010,
+        "stop": 237110,
+        "text": " We might have more on that soon."
+      },
+      {
+        "start": 237110,
+        "stop": 237610,
+        "text": " Yeah, you're right. Those are good ones. We'll submit those to the board for review as well."
+      },
+      {
+        "start": 237610,
+        "stop": 237910,
+        "text": " Thank you everybody who submitted that stuff in."
+      },
+      {
+        "start": 237920,
+        "stop": 238510,
+        "text": " The Tuxedo results are in, and before we get out of here, I just want to take a moment and thank our community."
+      },
+      {
+        "start": 238510,
+        "stop": 239110,
+        "text": " So this was a really, really special year for Jupyter Broadcasting."
+      },
+      {
+        "start": 239110,
+        "stop": 239710,
+        "text": " And you've caught some of it if you've been listening to Linux Unplugged, but the complete story is also in office hours."
+      },
+      {
+        "start": 239710,
+        "stop": 240410,
+        "text": " But I just want to take a moment in our holiday episode, and I want to thank our community who worked on our new website."
+      },
+      {
+        "start": 240420,
+        "stop": 241410,
+        "text": " We went from a decade-old WordPress install that was duct taped together, and the hosting provider needed to move on from running PHP applications."
+      },
+      {
+        "start": 241410,
+        "stop": 241510,
+        "text": " And we went from this..."
+      },
+      {
+        "start": 241510,
+        "stop": 241710,
+        "text": " Oh, that wasn't duct tape."
+      },
+      {
+        "start": 241710,
+        "stop": 241810,
+        "text": " Oh, no?"
+      },
+      {
+        "start": 241810,
+        "stop": 242010,
+        "text": " It was worse? Okay, I don't even want to know."
+      },
+      {
+        "start": 242010,
+        "stop": 243010,
+        "text": " And we went from that worse than I even realized situation into this beautifully built Hugo-based community website that is fully automated."
+      },
+      {
+        "start": 243010,
+        "stop": 243210,
+        "text": " Fully automated."
+      },
+      {
+        "start": 243220,
+        "stop": 243510,
+        "text": " And it is full of resources for our community."
+      },
+      {
+        "start": 243510,
+        "stop": 243910,
+        "text": " It has so much more information than our old website ever had."
+      },
+      {
+        "start": 243910,
+        "stop": 244110,
+        "text": " And it's so much nicer in the mobile browser."
+      },
+      {
+        "start": 244110,
+        "stop": 244410,
+        "text": " It's just... it's such a treat."
+      },
+      {
+        "start": 244410,
+        "stop": 244810,
+        "text": " It's one of the most incredible open source experiences I've ever been involved in."
+      },
+      {
+        "start": 244810,
+        "stop": 245110,
+        "text": " And as a result, there's kind of been a halo impact from that."
+      },
+      {
+        "start": 245110,
+        "stop": 245910,
+        "text": " And other projects that are involved with our website have also seen an uptick in their open source contributions from Jupyter Broadcasting community members."
+      },
+      {
+        "start": 245920,
+        "stop": 246410,
+        "text": " And that is really just, you know, I mean, pretty incredible for us."
+      },
+      {
+        "start": 246410,
+        "stop": 246710,
+        "text": " So I had to take a moment and thank our website crew."
+      },
+      {
+        "start": 246710,
+        "stop": 246910,
+        "text": " I'm sure you were feeling the same, Brent."
+      },
+      {
+        "start": 246910,
+        "stop": 247310,
+        "text": " Yeah, for me, that was, I think, the highlight of my year, if I can put it that way."
+      },
+      {
+        "start": 247310,
+        "stop": 247910,
+        "text": " I learned a ton from the 30-plus contributors that helped on the website this year."
+      },
+      {
+        "start": 247910,
+        "stop": 248110,
+        "text": " And I think it came a long way."
+      },
+      {
+        "start": 248110,
+        "stop": 248710,
+        "text": " Chris, you had a vision of what it could be when we first started, and it was, you know, just a few scratches on a napkin."
+      },
+      {
+        "start": 248720,
+        "stop": 249310,
+        "text": " But the community really came together and implemented a bunch of features that we didn't even think we would get."
+      },
+      {
+        "start": 249310,
+        "stop": 249810,
+        "text": " And now I think the website is something we can be proud of."
+      },
+      {
+        "start": 249810,
+        "stop": 250310,
+        "text": " I know before you were loath to recommend the website to some listeners."
+      },
+      {
+        "start": 250310,
+        "stop": 250510,
+        "text": " Yep, it's true. As embarrassed."
+      },
+      {
+        "start": 250510,
+        "stop": 250710,
+        "text": " And look at us now, it's something that we really love and that works really well."
+      },
+      {
+        "start": 250710,
+        "stop": 250910,
+        "text": " Like, I've been busy the last few weeks."
+      },
+      {
+        "start": 250910,
+        "stop": 251110,
+        "text": " It just takes care of itself."
+      },
+      {
+        "start": 251110,
+        "stop": 251310,
+        "text": " It just does everything we need it to."
+      },
+      {
+        "start": 251310,
+        "stop": 251610,
+        "text": " And the community around it has been just amazing."
+      },
+      {
+        "start": 251620,
+        "stop": 251710,
+        "text": " So thank you, everyone."
+      },
+      {
+        "start": 251710,
+        "stop": 251910,
+        "text": " In retrospect, it makes a lot of sense."
+      },
+      {
+        "start": 251910,
+        "stop": 252310,
+        "text": " And it's such an incredible demonstration of value for value as well."
+      },
+      {
+        "start": 252310,
+        "stop": 252710,
+        "text": " Because it's not a monetary exchange, but it's a skill set exchange."
+      },
+      {
+        "start": 252710,
+        "stop": 253410,
+        "text": " And in retrospect, who better to build a website than the very audience that consumes it?"
+      },
+      {
+        "start": 253410,
+        "stop": 254010,
+        "text": " Because they thought of stuff, like Brent was just saying, that we hadn't even considered because we are always interfacing with the backend."
+      },
+      {
+        "start": 254010,
+        "stop": 254510,
+        "text": " That's, even when we want to listen to a segment on an episode, we generally just pull it up on the backend."
+      },
+      {
+        "start": 254520,
+        "stop": 254810,
+        "text": " Because that's what we already have up on our tabs and all that kind of stuff."
+      },
+      {
+        "start": 254810,
+        "stop": 255210,
+        "text": " And so we very rarely are front end consumers of what we produce."
+      },
+      {
+        "start": 255210,
+        "stop": 255510,
+        "text": " And that's what the people making this website were."
+      },
+      {
+        "start": 255510,
+        "stop": 255810,
+        "text": " So they were able to produce it from their perspective for the features they want."
+      },
+      {
+        "start": 255810,
+        "stop": 256310,
+        "text": " And it was better than what we could have even done if we had hired somebody."
+      },
+      {
+        "start": 256310,
+        "stop": 256510,
+        "text": " It's just absolutely incredible."
+      },
+      {
+        "start": 256510,
+        "stop": 256710,
+        "text": " So big thank you to everybody who got involved in there."
+      },
+      {
+        "start": 256710,
+        "stop": 257010,
+        "text": " We will have ongoing things over next year. Things are slowed down for the holidays."
+      },
+      {
+        "start": 257010,
+        "stop": 257410,
+        "text": " But we have several projects and features we want to roll out to the website."
+      },
+      {
+        "start": 257420,
+        "stop": 257610,
+        "text": " Things like the geocache stuff."
+      },
+      {
+        "start": 257610,
+        "stop": 258010,
+        "text": " And some ideas for perhaps how the community can help us with some of our other ongoing projects."
+      },
+      {
+        "start": 258010,
+        "stop": 258210,
+        "text": " Yes, we have a few."
+      },
+      {
+        "start": 258210,
+        "stop": 258610,
+        "text": " Wes and I have a couple of mine specifically that we'll be talking more about in 2023."
+      },
+      {
+        "start": 258610,
+        "stop": 258810,
+        "text": " I also want to take a moment and thank our members."
+      },
+      {
+        "start": 258810,
+        "stop": 259310,
+        "text": " The people who subscribe directly as an Unplugged Core contributor or as a Jupyter party member."
+      },
+      {
+        "start": 259320,
+        "stop": 260610,
+        "text": " This has been the last four or five months, really since the beginning of probably spring, have been a very tricky time in podcast advertising."
+      },
+      {
+        "start": 260610,
+        "stop": 261410,
+        "text": " And we are seeing some really gross trends that are taking off in the general podcast scene, kind of outside our niche."
+      },
+      {
+        "start": 261410,
+        "stop": 261710,
+        "text": " And they're definitely for the worse."
+      },
+      {
+        "start": 261710,
+        "stop": 262010,
+        "text": " And another thing we've covered on Office Hours."
+      },
+      {
+        "start": 262020,
+        "stop": 262510,
+        "text": " And I want to thank our members for giving us that foundation, for always keeping us audience oriented,"
+      },
+      {
+        "start": 262510,
+        "stop": 263110,
+        "text": " for being one of the primary revenue generators for the business, so the business is oriented towards the audience."
+      },
+      {
+        "start": 263110,
+        "stop": 263310,
+        "text": " And the members have been a key role in that."
+      },
+      {
+        "start": 263310,
+        "stop": 263510,
+        "text": " And also a thank you to the boosters."
+      },
+      {
+        "start": 263510,
+        "stop": 263910,
+        "text": " That is something we kicked off early this year and it has become an incredible thing."
+      },
+      {
+        "start": 263910,
+        "stop": 264610,
+        "text": " And now between the members and the boosts, I could actually, I could see a scenario where if on the current trend line, who knows,"
+      },
+      {
+        "start": 264620,
+        "stop": 265110,
+        "text": " maybe not, but if people continue to support these avenues and they give us this runway to learn how to do this,"
+      },
+      {
+        "start": 265110,
+        "stop": 265710,
+        "text": " I mean, I could see a scenario where we stop dropping, where we start dropping, dropping sponsors from shows."
+      },
+      {
+        "start": 265710,
+        "stop": 265810,
+        "text": " It's getting there."
+      },
+      {
+        "start": 265810,
+        "stop": 266310,
+        "text": " And that's amazing, especially with the headwinds that are facing the advertising industry right now."
+      },
+      {
+        "start": 266310,
+        "stop": 266810,
+        "text": " So our members and the boosters, the people that have contributed in some other form of value,"
+      },
+      {
+        "start": 266810,
+        "stop": 267110,
+        "text": " maybe by showing up in the mumble or participating in our communities in a way that contributes."
+      },
+      {
+        "start": 267120,
+        "stop": 267610,
+        "text": " Thank you everybody, because it's a small team here, right?"
+      },
+      {
+        "start": 267610,
+        "stop": 268010,
+        "text": " And we got big worldwide ambitions and we just want to do the best by you."
+      },
+      {
+        "start": 268010,
+        "stop": 268410,
+        "text": " So our members and our boosters have made that very possible this year"
+      },
+      {
+        "start": 268410,
+        "stop": 268710,
+        "text": " and given us the confidence to be relaxed and run away."
+      },
+      {
+        "start": 268710,
+        "stop": 269210,
+        "text": " For me, on the day to day, it means personally that I just live a less anxious life"
+      },
+      {
+        "start": 269210,
+        "stop": 269710,
+        "text": " because I'm not constantly scrambling to make sure I have just enough to cover our run and our nut"
+      },
+      {
+        "start": 269710,
+        "stop": 269910,
+        "text": " and make sure I can put gas in my tank."
+      },
+      {
+        "start": 269920,
+        "stop": 270410,
+        "text": " There have been periods in JB's history where I was running on tires that were about to explode"
+      },
+      {
+        "start": 270410,
+        "stop": 270810,
+        "text": " and I was not driving to work some days because I didn't have enough money to buy the gas"
+      },
+      {
+        "start": 270810,
+        "stop": 271010,
+        "text": " and we're not in that era anymore."
+      },
+      {
+        "start": 271010,
+        "stop": 271610,
+        "text": " I mean, I'm not, you know, not like living rich, you know, with Leo Laporte bucks or anything like that,"
+      },
+      {
+        "start": 271610,
+        "stop": 272010,
+        "text": " but we're like not, we say no more than we say yes."
+      },
+      {
+        "start": 272010,
+        "stop": 272610,
+        "text": " And I think having that superpower is what's going to keep us oriented and honest with our audience."
+      },
+      {
+        "start": 272610,
+        "stop": 272810,
+        "text": " And I wouldn't want to do this any other way."
+      },
+      {
+        "start": 272820,
+        "stop": 273110,
+        "text": " And then also I want to thank our Matrix community."
+      },
+      {
+        "start": 273110,
+        "stop": 273410,
+        "text": " There's probably so many people I could thank, you know, but they're giving me the hook."
+      },
+      {
+        "start": 273410,
+        "stop": 273610,
+        "text": " I got to get off. They're about to play me off."
+      },
+      {
+        "start": 273610,
+        "stop": 274110,
+        "text": " But Matrix was a bet we kind of took on a year or two ago."
+      },
+      {
+        "start": 274110,
+        "stop": 274710,
+        "text": " And in December, around this time last year, I was thinking about pulling the plug."
+      },
+      {
+        "start": 274710,
+        "stop": 274910,
+        "text": " It was becoming too much to manage."
+      },
+      {
+        "start": 274910,
+        "stop": 275310,
+        "text": " It was going down whenever Wes and I would take a step away from the, you know, screen for a few minutes."
+      },
+      {
+        "start": 275310,
+        "stop": 275510,
+        "text": " That's when Matrix would go down."
+      },
+      {
+        "start": 275510,
+        "stop": 275710,
+        "text": " We're having constant connectivity issues."
+      },
+      {
+        "start": 275720,
+        "stop": 276310,
+        "text": " And instead of pulling the plug, we decided let's double down and try to fix it up a little bit."
+      },
+      {
+        "start": 276310,
+        "stop": 276710,
+        "text": " Let's give it some more resources. Let's set up some workers, give it some more storage."
+      },
+      {
+        "start": 276710,
+        "stop": 277110,
+        "text": " When we doubled down on Matrix, a lot of our community members did too."
+      },
+      {
+        "start": 277110,
+        "stop": 277410,
+        "text": " And we have had meetup specific chat rooms."
+      },
+      {
+        "start": 277410,
+        "stop": 277710,
+        "text": " We have had general chat rooms that have been super successful."
+      },
+      {
+        "start": 277710,
+        "stop": 278010,
+        "text": " We have niche communities. We have broader communities."
+      },
+      {
+        "start": 278010,
+        "stop": 278210,
+        "text": " And it's been really awesome."
+      },
+      {
+        "start": 278210,
+        "stop": 278610,
+        "text": " And I've seen members that have popped into Matrix, you know, they'll DM me because they know"
+      },
+      {
+        "start": 278620,
+        "stop": 278810,
+        "text": " that's one of the places they can find me."
+      },
+      {
+        "start": 278810,
+        "stop": 279310,
+        "text": " And we've had our little bit, our little dent in the decentralized Fediverse with Matrix."
+      },
+      {
+        "start": 279310,
+        "stop": 279810,
+        "text": " And it's been a really big success when we were almost ready to pull the plug just a year ago."
+      },
+      {
+        "start": 279810,
+        "stop": 280210,
+        "text": " And now I find it to be one of my absolute favorite communication platforms."
+      },
+      {
+        "start": 280210,
+        "stop": 280710,
+        "text": " Right? I mean, it's a great place to interact with the community, to keep up on what's going on."
+      },
+      {
+        "start": 280710,
+        "stop": 281010,
+        "text": " I mean, yeah, it's been a success for website coordination."
+      },
+      {
+        "start": 281010,
+        "stop": 281210,
+        "text": " It's been a success for Tuxes coordination."
+      },
+      {
+        "start": 281220,
+        "stop": 281710,
+        "text": " It's just a super useful tool for both inside and out."
+      },
+      {
+        "start": 281710,
+        "stop": 282110,
+        "text": " The West Coast road trip that we did this summer, or late summer,"
+      },
+      {
+        "start": 282110,
+        "stop": 282610,
+        "text": " not only was all of that organized in the Matrix, but every brewery we stopped at"
+      },
+      {
+        "start": 282610,
+        "stop": 283110,
+        "text": " was recommended by our community via the Matrix, coordinated via the Matrix."
+      },
+      {
+        "start": 283110,
+        "stop": 283310,
+        "text": " Every single stop, every place we had a location meetup."
+      },
+      {
+        "start": 283310,
+        "stop": 283710,
+        "text": " And people can, right, I mean, like they self-host in it, using other instances,"
+      },
+      {
+        "start": 283710,
+        "stop": 284110,
+        "text": " using whatever clients they want, all chatting together."
+      },
+      {
+        "start": 284120,
+        "stop": 284610,
+        "text": " Yeah, I want to say in that vein, thank you for everyone who helped us with that JPL trip."
+      },
+      {
+        "start": 284610,
+        "stop": 285010,
+        "text": " Jeff helped us, well, he lodged us for a long time and let us park jukes there."
+      },
+      {
+        "start": 285010,
+        "stop": 285510,
+        "text": " Like it was bigger than his house, basically, and that somehow fit in his backyard."
+      },
+      {
+        "start": 285510,
+        "stop": 285710,
+        "text": " So huge thanks there."
+      },
+      {
+        "start": 285710,
+        "stop": 286210,
+        "text": " But just everyone who helped, you know, organize the breweries, but also to Tim for inviting us in the first place."
+      },
+      {
+        "start": 286210,
+        "stop": 286610,
+        "text": " And everyone who met us along the way and just made it super memorable."
+      },
+      {
+        "start": 286610,
+        "stop": 287010,
+        "text": " And also those who boosted in for Zoom gas for our gas tank."
+      },
+      {
+        "start": 287020,
+        "stop": 287410,
+        "text": " That was just amazing all around and really, really memorable for this year."
+      },
+      {
+        "start": 287410,
+        "stop": 287610,
+        "text": " And steaks for our steak tank."
+      },
+      {
+        "start": 287610,
+        "stop": 287910,
+        "text": " Oh yeah, don't forget the steak, the sat steaks."
+      },
+      {
+        "start": 287910,
+        "stop": 288110,
+        "text": " The sat steaks, of course."
+      },
+      {
+        "start": 288110,
+        "stop": 288210,
+        "text": " Yes."
+      },
+      {
+        "start": 288210,
+        "stop": 288810,
+        "text": " I'm also going to share in the show notes a gallery of the photos that I took on our JPL tour for those to take in."
+      },
+      {
+        "start": 288810,
+        "stop": 289510,
+        "text": " That JPL tour was like, when I look back, years from now, I'm going to look back at the JPL tour as one of my highlights."
+      },
+      {
+        "start": 289520,
+        "stop": 290010,
+        "text": " So great. I feel like I could do that every ten years or so."
+      },
+      {
+        "start": 290010,
+        "stop": 290210,
+        "text": " Just go down there and get a refresher."
+      },
+      {
+        "start": 290210,
+        "stop": 290410,
+        "text": " I saw you steal that, Moonrock."
+      },
+      {
+        "start": 290410,
+        "stop": 290610,
+        "text": " I just want an excuse to visit Jeff."
+      },
+      {
+        "start": 290610,
+        "stop": 291010,
+        "text": " I feel like the number of missions they're doing recently, I think you might have to go every five years."
+      },
+      {
+        "start": 291010,
+        "stop": 291110,
+        "text": " Yeah, maybe."
+      },
+      {
+        "start": 291110,
+        "stop": 291610,
+        "text": " You know, all we've got to do is like a scale JPL, just like, ooh, do that seven hour drive."
+      },
+      {
+        "start": 291610,
+        "stop": 291710,
+        "text": " It's a bit of a drive."
+      },
+      {
+        "start": 291710,
+        "stop": 291910,
+        "text": " It is, but you can do it."
+      },
+      {
+        "start": 291910,
+        "stop": 292110,
+        "text": " It's just all down by five."
+      },
+      {
+        "start": 292120,
+        "stop": 292510,
+        "text": " All right. Well, we hope everyone enjoyed the Tuxes. We will kick it off again next year."
+      },
+      {
+        "start": 292510,
+        "stop": 293110,
+        "text": " And if you would like to give your input on how we could do it better, like Wes and I said, we do have that Tuxes Matrix Chat room."
+      },
+      {
+        "start": 293110,
+        "stop": 293310,
+        "text": " We should put a link to that in the show notes, too."
+      },
+      {
+        "start": 293310,
+        "stop": 293610,
+        "text": " And you can go in there. Be cool. Be cool."
+      },
+      {
+        "start": 293610,
+        "stop": 294410,
+        "text": " But help us make the fourth annual Tuxes even better, because we're going to try to get that started now to kind of make the notes and capture it while it's fresh."
+      },
+      {
+        "start": 294410,
+        "stop": 294810,
+        "text": " And then when we go to pull the trigger next year, we'll kind of know everything ahead of time."
+      },
+      {
+        "start": 294810,
+        "stop": 295010,
+        "text": " But thank you for joining us."
+      },
+      {
+        "start": 295020,
+        "stop": 295610,
+        "text": " We hope you have had a great year. We have one more live show on the 27th of December where we'll do our predictions."
+      },
+      {
+        "start": 295610,
+        "stop": 296010,
+        "text": " Of course, you can boost in with your 2023 sats with your predictions."
+      },
+      {
+        "start": 296010,
+        "stop": 296710,
+        "text": " You can go to LinuxUnplugged.com for links and our contact page and check out that community built website at jupiterbroadcasting.com."
+      },
+      {
+        "start": 296710,
+        "stop": 296910,
+        "text": " It really is something."
+      },
+      {
+        "start": 296910,
+        "stop": 297510,
+        "text": " And then we do these live shows generally on Sunday over at jupiter.tube at around noon Pacific, 3 p.m. Eastern."
+      },
+      {
+        "start": 297510,
+        "stop": 297710,
+        "text": " And you can join us there."
+      },
+      {
+        "start": 297710,
+        "stop": 298010,
+        "text": " Thank you for joining us on this week. See you soon."
+      },
+      {
+        "start": 298010,
+        "stop": 301000,
+        "text": " [Music]"
+      },
+      {
+        "start": 301000,
+        "stop": 301690,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 1830,
+      "nanos": 15074626
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 490: 2022 Tuxies",
+    "pictures": [],
+    "duration": {
+      "secs": 3003,
+      "nanos": 234000000
+    },
+    "unique_id": "http://linuxunplugged.com/490"
+  },
+  "episode": {
+    "title": "2022 Tuxies | LINUX Unplugged 490",
+    "description": "It's the third annual Unplugged Tuxies; our community votes on the best projects, distros, desktops, and services of 2022.",
+    "content": "<p><p>It&#39;s the third annual Unplugged Tuxies; our community votes on the best projects, distros, desktops, and services of 2022.</p><p>Sponsored By:</p><ul><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://www.vim.org/\" title=\"VIM Homepage\" rel=\"nofollow\">VIM Homepage</a></li><li><a href=\"https://code.visualstudio.com/\" title=\"Visual Studio Cod\" rel=\"nofollow\">Visual Studio Cod</a> &mdash; Code Editing. Redefined.</li><li><a href=\"https://kate-editor.org/\" title=\"Kate\" rel=\"nofollow\">Kate</a> &mdash; Get an Edge in Editing.</li><li><a href=\"https://pop.system76.com/\" title=\"Pop!_OS by System76\" rel=\"nofollow\">Pop!<em>OS by System76</a> &mdash; Pop!</em>OS is an operating system for STEM and creative professionals who use their computer as a tool to discover and create.</li><li><a href=\"https://nixos.org/\" title=\"NixOS\" rel=\"nofollow\">NixOS</a> &mdash; Reproducible builds and deployments.</li><li><a href=\"https://github.com/pop-os/cosmic\" title=\"COSMIC by System76\" rel=\"nofollow\">COSMIC by System76</a> &mdash; Computer Operating System Main Interface Components</li><li><a href=\"https://kde.org/plasma-desktop/\" title=\"KDE Plasma\" rel=\"nofollow\">KDE Plasma</a> &mdash; Do it all in a beautiful environment that adapts to your needs, and with the safety, privacy-protection and peace of mind that the best Free Open Source Software has to offer.</li><li><a href=\"https://ubuntu.com/server\" title=\"Ubuntu Server\" rel=\"nofollow\">Ubuntu Server</a></li><li><a href=\"https://www.debian.org/\" title=\"Debian\" rel=\"nofollow\">Debian</a> &mdash; The Universal Operating System</li><li><a href=\"https://jellyfin.org/\" title=\"Jellyfin\" rel=\"nofollow\">Jellyfin</a> &mdash; The Free Software Media System</li><li><a href=\"https://nextcloud.com/\" title=\"Nextcloud\" rel=\"nofollow\">Nextcloud</a> &mdash; Online collaboration platform</li><li><a href=\"https://store.steampowered.com/steamdeck\" title=\"Steam Deck\" rel=\"nofollow\">Steam Deck</a></li><li><a href=\"https://hpdevone.com/\" title=\"HP Dev One\" rel=\"nofollow\">HP Dev One</a></li><li><a href=\"https://www.home-assistant.io/\" title=\"Home Assistant\" rel=\"nofollow\">Home Assistant</a> &mdash; Open source home automation that puts local control and privacy first.</li><li><a href=\"https://github.com/mastodon/mastodon\" title=\"mastodon\" rel=\"nofollow\">mastodon</a> &mdash; Your self-hosted, globally interconnected microblogging community.</li><li><a href=\"https://asahilinux.org/\" title=\"Asahi Linux\" rel=\"nofollow\">Asahi Linux</a> &mdash; Asahi Linux aims to bring you a polished Linux® experience on Apple Silicon Macs.</li><li><a href=\"https://github.com/AbdBarho/stable-diffusion-webui-docker\" title=\"AbdBarho/stable-diffusion-webui-docker\" rel=\"nofollow\">AbdBarho/stable-diffusion-webui-docker</a> &mdash; Easy Docker setup for Stable Diffusion with user-friendly UI</li><li><a href=\"https://umbrel.com/\" title=\"Umbrel\" rel=\"nofollow\">Umbrel</a> &mdash; A personal server OS for self-hosting.</li><li><a href=\"https://github.com/immich-app/immich\" title=\"immich\" rel=\"nofollow\">immich</a> &mdash; Self-hosted photo and video backup solution directly from your mobile phone.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9184",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15866737/81a66395-585d-41b2-9569-2678b5b998f9.mp3",
+      "length": "42922379",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-12-25T12:05:00+01:00"
+  },
+  "speedup": 1.6410979
+}

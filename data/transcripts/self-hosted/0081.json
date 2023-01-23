@@ -1,0 +1,2317 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 800,
+        "text": " is there some sort of universal law that states that your infrastructure is going to fail whenever you're not around? Because I seem to always be subject to it."
+      },
+      {
+        "start": 800,
+        "stop": 1800,
+        "text": " There I was, down at NASA's Jet Propulsion Laboratory, actually the night before, dreaming about what we might discover, thinking about what we might learn."
+      },
+      {
+        "start": 1900,
+        "stop": 3100,
+        "text": " I decide to check in on my Intrepid RV about seven hours north of where I was. I pull up the Home Assistant app and it just isn't quite loading. And I think, hmm, that's strange."
+      },
+      {
+        "start": 3100,
+        "stop": 4300,
+        "text": " So I fire up Tailscale and I pull up the web interface, because the web interface always works when the app doesn't work. And it still doesn't load. And I think, huh, I wonder if something's wrong with Home Assistant."
+      },
+      {
+        "start": 4400,
+        "stop": 6400,
+        "text": " And a few days go by and I finally make it back to the RV and I discover that my Raspberry Pi home server that runs more than just Home Assistant, I mean, it runs my Plex instance, my SyncThing instance, my Duplicati instance, my Smokeping instance, my Markdown Notes instance and Home Assistant."
+      },
+      {
+        "start": 6500,
+        "stop": 7800,
+        "text": " Dead. Just dead. Dead as a doornail. Just totally dead. Uh oh. And you know the worst part? I don't even know why it's dead. What do you mean you don't know why it's dead? I don't even know what happened."
+      },
+      {
+        "start": 7800,
+        "stop": 8700,
+        "text": " I mean, we've been on the road and I've been trying to figure it out, but I just haven't had a chance. I haven't even hooked up an HDMI screen to it. Oh, I see. I did the hardware swap thing, you know."
+      },
+      {
+        "start": 8700,
+        "stop": 9100,
+        "text": " Yeah, so what was your plan with that hardware swap? Because it seemed like a brilliant plan at the time. Well, thank you."
+      },
+      {
+        "start": 9200,
+        "stop": 10000,
+        "text": " I mean, I brought it. I bought a duplicate Raspberry Pi, same thing, Raspberry Pi for eight gigs in the same case forever ago. Just ready to go."
+      },
+      {
+        "start": 10000,
+        "stop": 11100,
+        "text": " I swapped everything over, hit the power button and nothing. And I looked at my dead Raspberry Pi and I realized, oh, there's an SD card in here."
+      },
+      {
+        "start": 11200,
+        "stop": 12600,
+        "text": " Chris. I think it might, this is like the first one I ever set up. I think maybe it was using that SD card for like slash boot. I can't remember anymore, but when I first did this, there was kind of a workaround to get Ubuntu running on the Raspberry Pi 4."
+      },
+      {
+        "start": 12600,
+        "stop": 13500,
+        "text": " It was before official support had landed. And I think maybe the SD card was used for grub or something like that. But I don't know why it would have died while it was running."
+      },
+      {
+        "start": 13500,
+        "stop": 14100,
+        "text": " So I'm wondering if something more significant happened, but I just don't know at this point. Maybe there was an unattended upgrade."
+      },
+      {
+        "start": 14100,
+        "stop": 15200,
+        "text": " Yeah, maybe. Maybe a live patch. You know, I did the whole reboot thing and of course I'm trying to SSH into it. I can't ping it. I can't ping it on the tail scale IP either. It seems gone."
+      },
+      {
+        "start": 15200,
+        "stop": 16200,
+        "text": " And the worst part of that is it runs a lot of automations in the RV. Like all of the lighting, the heating, of course the cooling, a lot of the outdoor stuff."
+      },
+      {
+        "start": 16300,
+        "stop": 17100,
+        "text": " It's all managed by Home Assistant on this stupid Raspberry Pi. And so it's like we're running things like animals with switches."
+      },
+      {
+        "start": 17100,
+        "stop": 17500,
+        "text": " Yeah, this place went from a five star to about a three and a half."
+      },
+      {
+        "start": 17500,
+        "stop": 18200,
+        "text": " Wow! You let this guy into your home, Alex, you know?"
+      },
+      {
+        "start": 18200,
+        "stop": 18900,
+        "text": " Indeed. Well, this seems like an appropriate moment to introduce Brent again. Hello Brent, how are you? Welcome back."
+      },
+      {
+        "start": 18900,
+        "stop": 19200,
+        "text": " Thank you very much. And what about you gentlemen?"
+      },
+      {
+        "start": 19200,
+        "stop": 20400,
+        "text": " Well actually we had some feedback at the meetup in Pasadena that we don't introduce ourselves anymore. So let's just take a moment for anybody that hasn't worked out that I'm Alex and the other guy is Chris. Hey Chris."
+      },
+      {
+        "start": 20400,
+        "stop": 20700,
+        "text": " Hello everybody. Thank you for being here."
+      },
+      {
+        "start": 20700,
+        "stop": 20900,
+        "text": " Okay, good. Now that's out of the way."
+      },
+      {
+        "start": 20900,
+        "stop": 21100,
+        "text": " Welcome into episode 81."
+      },
+      {
+        "start": 21200,
+        "stop": 22200,
+        "text": " By the way, I want to ask you if this has got you thinking about deploying some real hardware in a production system?"
+      },
+      {
+        "start": 22200,
+        "stop": 24000,
+        "text": " Ooh, throwing shade. Fair enough. You know, listener Jeff was really the MVP of our West Coast road trip and he sent me home with an atom-based unit that only draws five watts and it's got two cores, four gigs of RAM."
+      },
+      {
+        "start": 24100,
+        "stop": 24300,
+        "text": " Did you build a dedicated home assistant system out of that?"
+      },
+      {
+        "start": 24300,
+        "stop": 24400,
+        "text": " Why not?"
+      },
+      {
+        "start": 24400,
+        "stop": 24900,
+        "text": " Well, I just got shipment notification about my home assistant yellow. I should be receiving it the Friday of this week."
+      },
+      {
+        "start": 24900,
+        "stop": 25000,
+        "text": " Shut up."
+      },
+      {
+        "start": 25000,
+        "stop": 25100,
+        "text": " I did."
+      },
+      {
+        "start": 25100,
+        "stop": 25200,
+        "text": " No you didn't."
+      },
+      {
+        "start": 25200,
+        "stop": 25600,
+        "text": " I have the UPS. I've got a UPS tracking number and everything."
+      },
+      {
+        "start": 25600,
+        "stop": 25800,
+        "text": " Where's it coming from? Guam?"
+      },
+      {
+        "start": 25900,
+        "stop": 27500,
+        "text": " I think they landed in Texas and then some, some distribution place in Texas is sending them out from there. It's so exciting because this marks the second crowd supply thing that I've ever backed that I'm actually going to receive. Very excited."
+      },
+      {
+        "start": 27500,
+        "stop": 28200,
+        "text": " And so the home assistant yellow is supposed to arrive this Friday. The only thing was I kind of wanted to go with something more powerful."
+      },
+      {
+        "start": 28300,
+        "stop": 28900,
+        "text": " Yeah. Well, I'll tell you what's got me thinking is you, you often run into these issues when you're on the road remotely and that kind of thing."
+      },
+      {
+        "start": 28900,
+        "stop": 29100,
+        "text": " Yeah. Almost exclusively."
+      },
+      {
+        "start": 29100,
+        "stop": 29300,
+        "text": " Oh, it's so annoying."
+      },
+      {
+        "start": 29300,
+        "stop": 29900,
+        "text": " I think you need to embrace IPMI of some description. I think that needs to be a requirement for you."
+      },
+      {
+        "start": 29900,
+        "stop": 30500,
+        "text": " Oh, interesting. Oh, you know, I thought about that for the studio and I agree, but I had not thought about it for the RV."
+      },
+      {
+        "start": 30600,
+        "stop": 32000,
+        "text": " And of course there's the Pi KVM project for x86 boards that don't come with a BMC chip built in, but you know, you could probably build a server that does everything. How many Pis do you have deployed in dupes right now?"
+      },
+      {
+        "start": 32000,
+        "stop": 32400,
+        "text": " Well, no, no, come on. I paired it down. I paired it down to only two."
+      },
+      {
+        "start": 32400,
+        "stop": 33200,
+        "text": " I'm not, I'm not saying this to be a, to be a, uh, you know, a phallic object. I'm just saying this out of love, like genuine question."
+      },
+      {
+        "start": 33300,
+        "stop": 33600,
+        "text": " It was four, it was four in production and over time I paired it down to two."
+      },
+      {
+        "start": 33600,
+        "stop": 34600,
+        "text": " Okay. So if we allow a 10 watt budget per Pi, give or take, right? That's now it was 40 Watts. It's now 20 Watts."
+      },
+      {
+        "start": 34600,
+        "stop": 35500,
+        "text": " You could build a very capable x86 system that does everything all of those Pis do and has BMC built into it."
+      },
+      {
+        "start": 35500,
+        "stop": 36100,
+        "text": " Uh, you know, given that power is, it's not, you're not quite as limited on power as the Mars Rover is, but you're not far off."
+      },
+      {
+        "start": 36200,
+        "stop": 36600,
+        "text": " It's true. We, every watt does count, especially Watts that run continuously."
+      },
+      {
+        "start": 36600,
+        "stop": 36800,
+        "text": " What about heat consideration?"
+      },
+      {
+        "start": 36800,
+        "stop": 37800,
+        "text": " That is a thing. That's a big thing. I've been really trying to do the math on that too. When I build the next one, I'm trying to think, do I want to build it in a booth or do I want to go somewhere else and just drill holes?"
+      },
+      {
+        "start": 37800,
+        "stop": 38800,
+        "text": " The raspberry Pi, and maybe that's what finally killed it was heat. I don't know, but the raspberry Pi has done a remarkable job of holding up to intense temperatures over long periods of time."
+      },
+      {
+        "start": 38900,
+        "stop": 39800,
+        "text": " My bet really is what happened is there was some kind of a power brown out that was enough to make the Pi reboot and the SD card was toast in that time since it last rebooted."
+      },
+      {
+        "start": 39800,
+        "stop": 40300,
+        "text": " I don't obviously have any data to back that up, but that's what I suspect probably happened."
+      },
+      {
+        "start": 40400,
+        "stop": 41900,
+        "text": " Well, in total, I spent $169 on the Home Assistant yellow and I was watching their live stream today as we record and I don't think they're going to make many more of these because they can't get their hands on the compute module."
+      },
+      {
+        "start": 41900,
+        "stop": 43300,
+        "text": " So they finally got this thing shipping. In fact, they don't even have the PoE one sorted out yet. They have the non PoE one shipping and they may not make many more just because you can't get them."
+      },
+      {
+        "start": 43300,
+        "stop": 44500,
+        "text": " That's a real shame. But on the flip side, it's not a good look for the project, is it? Charge people money for something and then not ship it for a year or two. I know it's not their fault, but..."
+      },
+      {
+        "start": 44500,
+        "stop": 45100,
+        "text": " Yeah, I ordered it mid-September and now we're here in early October, so it's just over a year ago that I ordered it."
+      },
+      {
+        "start": 45200,
+        "stop": 47000,
+        "text": " That's a long time. It's a very long time. I mean, if you look at what Valve did with the Steam Deck, I know that Valve are orders of magnitude got more buying power than Home Assistant, Nebu Casa as a company, but I paid Valve five bucks to sit in a queue, essentially."
+      },
+      {
+        "start": 47000,
+        "stop": 47900,
+        "text": " And then when the time came to actually ship my hardware, that's when my credit card got charged. Maybe something like that could work for Home Assistant."
+      },
+      {
+        "start": 48000,
+        "stop": 49200,
+        "text": " Yeah, I think too, the tricky thing here is they based it on the Pi compute module and that became one of the hardest things to get your hands on in bulk right now. The Raspberry Pi stuff is still impossible to find."
+      },
+      {
+        "start": 49200,
+        "stop": 49800,
+        "text": " I was just doing a check recently and the most common thing you can find at the moment is the Pi 3."
+      },
+      {
+        "start": 49800,
+        "stop": 50100,
+        "text": " Which, from what I'm learning, isn't that useful for anything."
+      },
+      {
+        "start": 50200,
+        "stop": 52200,
+        "text": " Did you see that Jeff Geerling did a video just last few days where he talked with the founder of the Raspberry Pi project about availability and things like that and how there's no end in sight. They're making 400,000 of these things a month and something like 95% is going into industrial use cases."
+      },
+      {
+        "start": 52300,
+        "stop": 54100,
+        "text": " Wow, 95%? Is it even really meant for industrial use cases? I noticed, because Jeff also does an accompanying blog post, and I noticed that one of the comments on Jeff's blog post was sort of giving a different version of this story."
+      },
+      {
+        "start": 54200,
+        "stop": 55300,
+        "text": " They claim, I don't know how they would know, but they claim having inside knowledge and that Broadcom is actually a bit pissed at the Raspberry Pi folks because they're going commercial."
+      },
+      {
+        "start": 55300,
+        "stop": 56000,
+        "text": " And essentially, the whole deal for getting a super cheap chip from Broadcom was that you were creating this educational device for kids."
+      },
+      {
+        "start": 56000,
+        "stop": 56900,
+        "text": " And now you've announced your intentions to IPO and make a commercial company out of all this and now you need to pay the commercial rates and you're going to be lumped in with our commercial clients and not our educational clients."
+      },
+      {
+        "start": 57000,
+        "stop": 57600,
+        "text": " And so they're also getting slower supply from Broadcom, according to this commenter, but I have to say it kind of seems like it checks out."
+      },
+      {
+        "start": 57600,
+        "stop": 58400,
+        "text": " I think the Raspberry Pi Foundation, much like all of us, are kind of being caught off guard by just how ubiquitous it's become."
+      },
+      {
+        "start": 58400,
+        "stop": 59800,
+        "text": " And I think it's a perfect example of how if you influence the right people, the nerds, the engineers, the people tinkering, if you influence them, they will then go into work and say, \"Hey, well, why don't we just use a Pi?\""
+      },
+      {
+        "start": 59900,
+        "stop": 60900,
+        "text": " I remember my last job we had on the wall, we had TV screens showing build statuses of all the different CI processes and each one of them had a Raspberry Pi running."
+      },
+      {
+        "start": 60900,
+        "stop": 62100,
+        "text": " Because one of the development team in that Sprint team was like, \"Well, we need to monitor the status. Why don't we just get a Pi because it's only £35, stick it behind the TV and the job's a good'un.\""
+      },
+      {
+        "start": 62200,
+        "stop": 62900,
+        "text": " And I think not only has the Pi Foundation been caught out by the success of their product, but so it sounds like has Broadcom."
+      },
+      {
+        "start": 62900,
+        "stop": 64200,
+        "text": " Perhaps. That would make a lot of sense. It's tricky because I actually think if they don't figure something out, the M1 platform is going to make a pretty worthy successor for home labbers."
+      },
+      {
+        "start": 64300,
+        "stop": 65400,
+        "text": " If you would, Alex, there was decent Linux support for the M1, which we may be only nine months, ten months away from, and that includes Thunderbolt support."
+      },
+      {
+        "start": 65400,
+        "stop": 66300,
+        "text": " Because right now I'm hanging USB disks off a Raspberry Pi. But if I had Thunderbolt support, I could have real actual PCI attached storage."
+      },
+      {
+        "start": 66400,
+        "stop": 67600,
+        "text": " And if I had an M1 CPU, I would have something that has built-in HD64 decoding encoding like a Banshee. And if somehow Plex could come along and get support for that, then we'd really be cooking with gas."
+      },
+      {
+        "start": 67600,
+        "stop": 68000,
+        "text": " Don't you just wish that Mac OS server wasn't terrible?"
+      },
+      {
+        "start": 68000,
+        "stop": 68400,
+        "text": " Is Mac OS server even a thing anymore? I think they might be."
+      },
+      {
+        "start": 68400,
+        "stop": 68600,
+        "text": " No."
+      },
+      {
+        "start": 68600,
+        "stop": 69400,
+        "text": " No, it's really sad. And honestly, I feel like Docker desktop isn't good enough on the Mac for production use the way I would want. I want something headless. I want it to be Linux."
+      },
+      {
+        "start": 69400,
+        "stop": 70500,
+        "text": " Asahi, the last couple of weeks, released preliminary support for GPU acceleration under Linux with the M1 chip, which is a huge, huge milestone."
+      },
+      {
+        "start": 70600,
+        "stop": 71600,
+        "text": " Yeah, using a Rust driver. A Rust driver? I mean, that's amazing. So maybe, I mean, maybe it's not too far off, but it's not going to be within the time that I need to build my next home server."
+      },
+      {
+        "start": 71600,
+        "stop": 72600,
+        "text": " I think I'm going to have to just out of practicality base it around this yellow. It would seem crazy not to. You know, showing up on my doorstep as I'm returning back in town and I need a new server."
+      },
+      {
+        "start": 72600,
+        "stop": 73500,
+        "text": " Yeah, if you need an appliance, it sounds like that might be it. But let me ask you this. If money was no object, what would you do in dupes?"
+      },
+      {
+        "start": 73500,
+        "stop": 74200,
+        "text": " The trickiest thing is storage. If money was no object, I'd spend a lot on storage and it'd be solid state storage because I have to go down the road."
+      },
+      {
+        "start": 74200,
+        "stop": 75100,
+        "text": " So that's where I'd probably blow a lot of money. You're not going to believe this, but I mean, for 90% of the time I have found the Raspberry Pi 4 has been fast enough."
+      },
+      {
+        "start": 75100,
+        "stop": 75700,
+        "text": " The pages could have always loaded faster in Home Assistant and I'm on a couple of versions behind now. Home Assistant could have always been faster."
+      },
+      {
+        "start": 75800,
+        "stop": 76700,
+        "text": " But Plex and SyncThing and like my Markdown docs, I forget the name of the Markdown docs website thing. Those all always ran totally fine. I was surprised."
+      },
+      {
+        "start": 76700,
+        "stop": 77600,
+        "text": " I was shocked that I got by with a Raspberry Pi. It was just Home Assistant that could be a little bit faster. But you know, a lot of that might have come down to storage technology."
+      },
+      {
+        "start": 77600,
+        "stop": 78500,
+        "text": " That's why I think the M1 would be perfect. You know, 10, 20 watts, a lot of horsepower, fast storage. Just don't want Mac OS."
+      },
+      {
+        "start": 78600,
+        "stop": 79300,
+        "text": " Well, if power was no object, I know we made money no object just then, but I think power is probably your biggest limiting factor as well as maybe space."
+      },
+      {
+        "start": 79300,
+        "stop": 79900,
+        "text": " You can't have a big 42-year rack in there, can you? If power was no object, would you do the same thing?"
+      },
+      {
+        "start": 79900,
+        "stop": 80700,
+        "text": " If power was no object, I think I'd be tempted to build a rack unit into one of the storage bays, you know, and go with like a big x86 box."
+      },
+      {
+        "start": 80800,
+        "stop": 81900,
+        "text": " And probably do a lot of hosting in Jupes just because that's, I like the idea of something, it's truly decentralized. I can move it, I can take it with me."
+      },
+      {
+        "start": 81900,
+        "stop": 82600,
+        "text": " And I'd rather have the source of truth here as long as I had a good backup. Right now I hold the source of truth in everything at the studio."
+      },
+      {
+        "start": 82600,
+        "stop": 83400,
+        "text": " So I'd probably build a rack unit if I could go crazy, but I don't need it. You know, I didn't lose any data. My server's down, but I didn't lose any data."
+      },
+      {
+        "start": 83500,
+        "stop": 84600,
+        "text": " So the setup is working as I need it to. Well, the obvious thing that comes to mind for me is the Intel NUC, that kind of tiny mini micro thing."
+      },
+      {
+        "start": 84600,
+        "stop": 86400,
+        "text": " I don't know if you've been following Serve the Home at all over the last few months. They've been doing a series called Tiny Mini Micro where they get these four, five, six, ten liter micro, essentially thin client machines designed for business applications."
+      },
+      {
+        "start": 86400,
+        "stop": 87700,
+        "text": " And they've got powerful chips in them and 32 gigs of RAM and, you know, all the rest of it. And they are the size of two or three CD cases stacked on top of each other. What about something like that?"
+      },
+      {
+        "start": 87700,
+        "stop": 89000,
+        "text": " That is pretty tempting, especially if it's got, you know, reasonable horsepower and it can do decent video decoding. That would be, and networking and connectivity, because I always need to add more storage."
+      },
+      {
+        "start": 89100,
+        "stop": 90600,
+        "text": " I think what you'd be looking for there as your silver bullet for video decoding would be Quick Sync support, which does limit you to Intel. But, you know, speaking from experience, Quick Sync uses anywhere from four to six, maybe eight watts to transcode a 4K stream."
+      },
+      {
+        "start": 90700,
+        "stop": 92100,
+        "text": " And it's hard limited at eight watts. Like, I've never been able to get it to go above eight. Eight to ten watts is about the maximum I've ever seen. So, even if you're doing multiple transcodes at once, which in an RV I find very unlikely, Quick Sync is the way to go."
+      },
+      {
+        "start": 92100,
+        "stop": 93100,
+        "text": " That is the nice thing. I only really need to build for like two televisions. Three is the max. Well, I guess there's always tablets, but very unlikely that we'd have three TVs and a tablet going in the RV."
+      },
+      {
+        "start": 93200,
+        "stop": 94400,
+        "text": " So you could negate the transcoding requirement entirely just simply by using something like TDAR or Handbrake to pre-encode the media. And you can automate all that stuff, you know, into the correct formats for the TV."
+      },
+      {
+        "start": 94400,
+        "stop": 96100,
+        "text": " You know, actually, I think for the most part, I mean, for the most part, most of my stuff doesn't need transcoding because it's either an Apple TV or an Nvidia Shield and it's H.264 and AAC, MP3 or AC3 audio for the most part. Not 100%, but I'd say 85, 90%."
+      },
+      {
+        "start": 96100,
+        "stop": 96300,
+        "text": " How many terabytes do you need?"
+      },
+      {
+        "start": 96300,
+        "stop": 97200,
+        "text": " Here in Jupes, I'd love four. I'm getting by with two. I would love to do more even. I mean, ideally I'd love 14. Let's be honest."
+      },
+      {
+        "start": 97200,
+        "stop": 98500,
+        "text": " But what I do is I batch over just the stuff we're watching. Like a couple of series for the kids, a couple of movies that are for Hadiya and I, a couple of movies that are for the kids, and a couple of movies that are for the family, and just a few TV shows."
+      },
+      {
+        "start": 98600,
+        "stop": 99300,
+        "text": " And I just kind of keep like what the current season is that we're watching of a show on there. And I don't need to keep everything because I have a larger storage at the studio."
+      },
+      {
+        "start": 99300,
+        "stop": 100100,
+        "text": " I have no idea how reliable this is, but I just looked on Amazon just to sort of see how much a two terabyte SSD costs these days."
+      },
+      {
+        "start": 100100,
+        "stop": 101000,
+        "text": " The brands you've heard of, Samsung, Crucial, etc., they're all in the 160 to 200 range per two terabytes."
+      },
+      {
+        "start": 101100,
+        "stop": 102200,
+        "text": " There's a brand here I've never heard of called Levan, and these guys make a two terabyte 3D NAND SATA 3 internal SSD for $99."
+      },
+      {
+        "start": 102200,
+        "stop": 102500,
+        "text": " I mean, you throw a few of those in a raid, what could go wrong?"
+      },
+      {
+        "start": 102500,
+        "stop": 103900,
+        "text": " You throw a few of those in merger FS, and what I'm thinking is before a trip, right, you take one or two of these into the studio, sync across what you need through a USB interface that's much faster than a network interface."
+      },
+      {
+        "start": 104000,
+        "stop": 104500,
+        "text": " And then you throw it back into your hotswap bay in Jupes and you're good to go."
+      },
+      {
+        "start": 104500,
+        "stop": 104900,
+        "text": " Yeah, and then you just keep it topped off with a little sync thing action, you know?"
+      },
+      {
+        "start": 104900,
+        "stop": 106400,
+        "text": " Yeah, that could totally work. What I'm kind of picturing is like a board, right, like a removable, almost like a piece of plywood that has the yellow mounted to it, and the discs mounted to it, and the Zigbee and Z-Wave antennas mounted to it."
+      },
+      {
+        "start": 106500,
+        "stop": 107500,
+        "text": " And I can just insert this board into Jupes and I can pull this board out of Jupes. And if I need to work on it, I just remove the whole componentry, all of it put together as one piece."
+      },
+      {
+        "start": 107500,
+        "stop": 108000,
+        "text": " I take it to the studio and I work on it, and then I bring it back into Jupes and I just reinstall it and reconnect things."
+      },
+      {
+        "start": 108000,
+        "stop": 108200,
+        "text": " I love that modular approach."
+      },
+      {
+        "start": 108200,
+        "stop": 108800,
+        "text": " I'd love to add into that mix your new mixer plans too. That would be kind of fun, huh?"
+      },
+      {
+        "start": 108900,
+        "stop": 109700,
+        "text": " Oh, imagine the ultimate setup, right? Like server capacity, media capacity, and production capacity. And just slide them all in."
+      },
+      {
+        "start": 109700,
+        "stop": 110700,
+        "text": " You have, you know, like eight XLR inputs on the front of this thing for all your mics and what have you. And then on the back you've got a couple of network jacks and a power cord going in and that's it."
+      },
+      {
+        "start": 110700,
+        "stop": 110900,
+        "text": " That would be pretty cool."
+      },
+      {
+        "start": 110900,
+        "stop": 111100,
+        "text": " That sounds really sweet, actually."
+      },
+      {
+        "start": 111100,
+        "stop": 111300,
+        "text": " That would be pretty, pretty, pretty great. Pretty, pretty great."
+      },
+      {
+        "start": 111400,
+        "stop": 112600,
+        "text": " I'm going to get on that then. But speaking of upgrades and stuff like that, I assume you saw that Powerless from the Home Assistant project has been very, very excited that Matter finally hit 1.0 this week."
+      },
+      {
+        "start": 112600,
+        "stop": 113300,
+        "text": " Damn it. Can you believe this? You know what that means, is that they're beginning to pull it into Home Assistant."
+      },
+      {
+        "start": 113300,
+        "stop": 114100,
+        "text": " They're beginning to build in Matter support into Home Assistant and an actual device shipped in the last week, a light bulb with Matter."
+      },
+      {
+        "start": 114200,
+        "stop": 115000,
+        "text": " It's actually happening. But you know, it's really still like probably six months to a year out before just general devices are available."
+      },
+      {
+        "start": 115000,
+        "stop": 115800,
+        "text": " And of course, of course I'm doing this rebuild right now. Of course my server died. I couldn't hold out. You know I was holding out for Matter."
+      },
+      {
+        "start": 115800,
+        "stop": 116500,
+        "text": " You know that was what I did. That was my entire intention all along, was to hold out and just replace my devices with Matter devices."
+      },
+      {
+        "start": 116600,
+        "stop": 117300,
+        "text": " Just as it becomes official, just as the first device ships, my system dies and I'm going to have to either go all in on Z-Wave or Zigbee."
+      },
+      {
+        "start": 117300,
+        "stop": 118300,
+        "text": " Zigbee is very well tested though. I wouldn't imagine Matter is going to be stable, properly stable for another, I want to say five years."
+      },
+      {
+        "start": 118300,
+        "stop": 119100,
+        "text": " That might be a bit pessimistic, but you know, at least two or three before we've got the ubiquitous level of devices we have now in Zigbee land."
+      },
+      {
+        "start": 119200,
+        "stop": 119900,
+        "text": " I pulled the trigger and I preordered the Home Assistant, I think they call it, iLink? What do they call it Alex?"
+      },
+      {
+        "start": 119900,
+        "stop": 120900,
+        "text": " SkyConnect I think. Yeah, SkyConnect. It is a Zigbee radio. It has Zigbee and Thread and they promise they'll do a firmware upgrade and add Matter to it."
+      },
+      {
+        "start": 120900,
+        "stop": 121400,
+        "text": " So Home Assistant SkyConnect is their own hardware Zigbee radio."
+      },
+      {
+        "start": 121600,
+        "stop": 122500,
+        "text": " Which seems like, okay, so Home Assistant's clearly going all in on Zigbee, this is a clear signal from the project, Zigbee is the future of Home Assistant and Matter."
+      },
+      {
+        "start": 122500,
+        "stop": 123100,
+        "text": " But then they made the announcement that they just full time hired the Z-Wave integration guy."
+      },
+      {
+        "start": 123100,
+        "stop": 123500,
+        "text": " And now the Z-Wave integration guy is a Nebu Casa employee."
+      },
+      {
+        "start": 123500,
+        "stop": 123700,
+        "text": " Mixed messages it sounds like."
+      },
+      {
+        "start": 123700,
+        "stop": 124000,
+        "text": " I'm so confused as to what direction to go right now."
+      },
+      {
+        "start": 124100,
+        "stop": 124600,
+        "text": " I think what they're saying is whatever you want to use we're going to support and we're going to try to support it really well."
+      },
+      {
+        "start": 124600,
+        "stop": 125300,
+        "text": " But they haven't like just clearly articulated that to me. So I'm trying to figure out like, well, if I'm going to buy one device, should I buy Zigbee or should I be buying Z-Wave or what?"
+      },
+      {
+        "start": 125300,
+        "stop": 126000,
+        "text": " It's like, I'm probably going to have to replace some of these devices because some of these things are probably not going to unpair very easily with my dead system."
+      },
+      {
+        "start": 126000,
+        "stop": 126800,
+        "text": " Or are they saying that when you buy this in a year from now, when it actually lands on your door, then they'll be supporting it full time?"
+      },
+      {
+        "start": 126900,
+        "stop": 127600,
+        "text": " It is a pre-order and it is quote \"available soon.\" So just as I'm finally receiving my yellow, we'll see how long it takes me to get my Sky Connect."
+      },
+      {
+        "start": 127800,
+        "stop": 128600,
+        "text": " Linode.com/SSH. Go there to get $100 and 60 day credit on a new account. It's just a great way to support the show while you're checking out something awesome."
+      },
+      {
+        "start": 128600,
+        "stop": 129200,
+        "text": " Linode is fast, reliable cloud hosting with the best support in the business. Real humans every day."
+      },
+      {
+        "start": 129200,
+        "stop": 129700,
+        "text": " It's how we run everything we've built in the last few years in the cloud, like our brand new website."
+      },
+      {
+        "start": 129700,
+        "stop": 129900,
+        "text": " You've got to go check it out, jupitabroadcasting.com."
+      },
+      {
+        "start": 130000,
+        "stop": 130800,
+        "text": " We use it in our personal environments, we use it in our testing environments, and we use it in our production environments because Linode's tooling makes it really straightforward to do all of that."
+      },
+      {
+        "start": 130800,
+        "stop": 131600,
+        "text": " And Linode was built nearly 19 years ago and they've just added better and better things. They've improved. They've refined the service over the years."
+      },
+      {
+        "start": 131600,
+        "stop": 132300,
+        "text": " So now, like, we're riding on top of years and years and years of investment. We get all of that as just part of the product."
+      },
+      {
+        "start": 132400,
+        "stop": 133100,
+        "text": " And Linode is still 30 to 50 percent cheaper than the hyperscalers that want to lock you into their crazy platforms that are just secondary to their main business."
+      },
+      {
+        "start": 133100,
+        "stop": 133600,
+        "text": " And on top of that, I think Linode has the best performance out there. And independent testing is also showing that."
+      },
+      {
+        "start": 133600,
+        "stop": 134100,
+        "text": " And right now, today, Linode has 11 data centers for you to choose from. And that's a whole bunch all over the world."
+      },
+      {
+        "start": 134100,
+        "stop": 134800,
+        "text": " But coming soon, there's going to be more than a dozen new Linode data centers firing up across the world."
+      },
+      {
+        "start": 134800,
+        "stop": 135100,
+        "text": " That's just going to be insane. You're going to have so much choice."
+      },
+      {
+        "start": 135200,
+        "stop": 135700,
+        "text": " Linode really is just the perfect balance of support, performance, and price."
+      },
+      {
+        "start": 135700,
+        "stop": 136300,
+        "text": " So with that $100, you get a chance to see it for yourself. That really is an opportunity to kick the tires and try it."
+      },
+      {
+        "start": 136300,
+        "stop": 136800,
+        "text": " So go build something, go learn something, go experiment with something, and support the show."
+      },
+      {
+        "start": 136800,
+        "stop": 137700,
+        "text": " Try it for yourself. Get that $100 at linode.com/ssh. One more time, that's linode.com/ssh."
+      },
+      {
+        "start": 137900,
+        "stop": 138500,
+        "text": " Time to review an app that I've actually put in the show notes more times than I can actually remember. We just never quite seem to get to it."
+      },
+      {
+        "start": 138500,
+        "stop": 139800,
+        "text": " This time, finally, Invoice Ninja has made the cut into the show. So I thought it would be good, because I know, Brent, you do quite a lot of freelancing stuff with your photography and other things, podcast-related stuff."
+      },
+      {
+        "start": 139800,
+        "stop": 140500,
+        "text": " So you're always sending invoices to people. So I thought whilst we had you on the show, it would be a good time to discuss Invoice Ninja."
+      },
+      {
+        "start": 140600,
+        "stop": 141200,
+        "text": " Now this is a piece of software that allows you to create customizable and nicely designed invoices and quotes."
+      },
+      {
+        "start": 141200,
+        "stop": 142600,
+        "text": " So essentially, whenever I do a piece of freelance work for somebody, I create a customer in the Invoice Ninja software, and then I create a product, like a podcast episode for example, or something like that."
+      },
+      {
+        "start": 142700,
+        "stop": 144100,
+        "text": " And then I put in there what the product is. It could be a physical thing, it could be a service, whatever, and it has a rate attached to it, a standard rate, which I can go in and customize if I want to, but typically it doesn't change that much between clients."
+      },
+      {
+        "start": 144100,
+        "stop": 144700,
+        "text": " After that, it automatically generates the invoice based on my information and the client's information."
+      },
+      {
+        "start": 144800,
+        "stop": 146300,
+        "text": " And if you get fancy and set up email with it, which I've never done, I always just download the PDF once it's generated the invoice and stick it in my email manually, but it can actually send emails directly from the Invoice Ninja software to the client, which is a really nice feature."
+      },
+      {
+        "start": 146300,
+        "stop": 146700,
+        "text": " Alex, you're right to include me because I have a lot of questions."
+      },
+      {
+        "start": 146700,
+        "stop": 146900,
+        "text": " Okay, fire away."
+      },
+      {
+        "start": 146900,
+        "stop": 147200,
+        "text": " Okay, you've been using this for how long now? I think it's been like two years, if I remember."
+      },
+      {
+        "start": 147300,
+        "stop": 147900,
+        "text": " Two years, plus however long it is since I set you up with your instance that is probably dead by now."
+      },
+      {
+        "start": 147900,
+        "stop": 148100,
+        "text": " You did send me a backup, so thank you for that."
+      },
+      {
+        "start": 148100,
+        "stop": 148300,
+        "text": " Okay, okay, good."
+      },
+      {
+        "start": 148300,
+        "stop": 149200,
+        "text": " Yeah, Alex, you shared with me Invoice Ninja, I think when you first found it, or maybe you were a few months in and you were crazy excited about it, and I did get the chance to try it."
+      },
+      {
+        "start": 149200,
+        "stop": 149600,
+        "text": " Yeah, it's years old in my workflow now at this point."
+      },
+      {
+        "start": 149700,
+        "stop": 150600,
+        "text": " The thing that you described in your introduction just there is not something that I think is unique. I'm curious from your perspective, what are the things that you're really loving about this?"
+      },
+      {
+        "start": 150600,
+        "stop": 151400,
+        "text": " Is it the fact that you can self-host it really easily? Is it the fact that it's really responsive? Is it the interface? What is it about it that really grabs you?"
+      },
+      {
+        "start": 151400,
+        "stop": 152300,
+        "text": " Yeah, I didn't touch much on the actual mechanics of hosting this thing. The Invoice Ninja project actually has hosted options, which you can pay monthly for."
+      },
+      {
+        "start": 152400,
+        "stop": 152800,
+        "text": " However, I don't do that. I have a fully self-hosted version that lives on my server."
+      },
+      {
+        "start": 152800,
+        "stop": 154000,
+        "text": " This thing requires three containers. So there's the app container, there's a database container, which in my case I'm using MySQL, and then there's a front end, which in my case I'm using Nginx, which I then proxy through traffic."
+      },
+      {
+        "start": 154000,
+        "stop": 154600,
+        "text": " So, I'll tell you what I like about it. Just as a piece of software, it looks nice."
+      },
+      {
+        "start": 154600,
+        "stop": 154800,
+        "text": " Yeah, I'll agree with that."
+      },
+      {
+        "start": 154900,
+        "stop": 156600,
+        "text": " I like the fact that when I create an invoice, it gives me a little chart that says you're owed $500 this month, and then until you mark that invoice as received or paid, it will show you a pending number versus a last 30 day number versus a 90 day number, or whatever you want."
+      },
+      {
+        "start": 156600,
+        "stop": 157200,
+        "text": " So I could see this being very useful for people who are actually sending hundreds of invoices every day."
+      },
+      {
+        "start": 157300,
+        "stop": 158000,
+        "text": " It's very useful for me who sends maybe one a month or two a month, but it's still nice to have a record of everything I've ever sent in one place."
+      },
+      {
+        "start": 158000,
+        "stop": 160000,
+        "text": " The other thing that I like about it too is that I can tweak stuff. I feel like I'm driving a really powerful sports car, and I'm only pootling down the road at 30mph, but it's nice to know that it's got all of that other stuff there should I ever need it."
+      },
+      {
+        "start": 160100,
+        "stop": 160800,
+        "text": " Yeah, and I think too it's pretty quick that the pricing on a lot of the hosted invoicing can get really expensive."
+      },
+      {
+        "start": 160800,
+        "stop": 162000,
+        "text": " I have been a customer of FreshBooks for a long time, but I think I'm paying somewhere near $50 a month or something like that, $60 a month for the package. Well, JB does, not me."
+      },
+      {
+        "start": 162000,
+        "stop": 162700,
+        "text": " It's actually kind of a good deal for a lot of these things. People pay astronomical prices for QuickBooks and the invoicing components."
+      },
+      {
+        "start": 162800,
+        "stop": 163400,
+        "text": " So there's that aspect of invoice, besides the UI, and besides the self-hosting and the tinkering, there's the cost savings too."
+      },
+      {
+        "start": 163400,
+        "stop": 164300,
+        "text": " In addition, it does a whole bunch of other stuff. So I can set up things like recurring invoices if I want to in a separate area from individual invoices."
+      },
+      {
+        "start": 164300,
+        "stop": 165000,
+        "text": " I can record manually all the payments that come in and attach those to specific invoices if I want to."
+      },
+      {
+        "start": 165100,
+        "stop": 166000,
+        "text": " I can also do things like quotes and proposals and set up specific projects and attach different things within invoice ninja to different projects and what have you."
+      },
+      {
+        "start": 166000,
+        "stop": 167100,
+        "text": " If I was running a home improvement company, that could be quite useful to have different quotes for the same person within a single project, for example, something like that."
+      },
+      {
+        "start": 167200,
+        "stop": 169000,
+        "text": " I can also do things like track different vendors. So I can say, well, this vendor, I've sent them this money for this product. Like I say, it's an incredibly powerful piece of software that I'm really only scratching the surface of by pretty much only using the invoice portion of it."
+      },
+      {
+        "start": 169000,
+        "stop": 170000,
+        "text": " But it has the ability to run some pretty sophisticated reporting as well. So again, if I was a bit more of a serious small business owner or something like that, which I'm not,"
+      },
+      {
+        "start": 170100,
+        "stop": 171100,
+        "text": " I could, you know, let's say, give me the last, you know, every invoice this year to a specific client or something like that. And it would just show me all those things in one place."
+      },
+      {
+        "start": 171100,
+        "stop": 171800,
+        "text": " Now, Alex, have you used anything else for invoicing or is this kind of your first foray into this style of software to help you accomplish things?"
+      },
+      {
+        "start": 171800,
+        "stop": 172600,
+        "text": " I used to just have a Google sheet that I've manually changed and filled out things for a long time."
+      },
+      {
+        "start": 172600,
+        "stop": 172800,
+        "text": " Which is also very powerful."
+      },
+      {
+        "start": 172900,
+        "stop": 173600,
+        "text": " It can be, but it's also, you know, you don't really have a record unless you do a new sheet per invoice or something of what you've done."
+      },
+      {
+        "start": 173600,
+        "stop": 174200,
+        "text": " But this is the first kind of invoicing suite, I guess that I've used."
+      },
+      {
+        "start": 174200,
+        "stop": 174700,
+        "text": " Because many of the features you described are, yeah, they're great. They're not unique."
+      },
+      {
+        "start": 174700,
+        "stop": 175600,
+        "text": " But what I have found when I used invoice Ninja was that they're very well implemented. And like you mentioned, they allowed you to really tweak a lot of things."
+      },
+      {
+        "start": 175700,
+        "stop": 176400,
+        "text": " I have been using for many years a piece of software called invoice plane, and it is far more basic. It is self hosted."
+      },
+      {
+        "start": 176400,
+        "stop": 176800,
+        "text": " And I have some automated emails and stuff sending out of there."
+      },
+      {
+        "start": 176800,
+        "stop": 177400,
+        "text": " But I do find after having used invoice Ninja, thanks to you, that I feel it's lacking now."
+      },
+      {
+        "start": 177400,
+        "stop": 177900,
+        "text": " And every time I use it, I'm like, Oh God, I really got to switch over. I got to change this."
+      },
+      {
+        "start": 178000,
+        "stop": 179100,
+        "text": " I think you made probably a really nice choice in choosing your first piece of software because often the hardest part is taking all that information out of these pieces of software and switching to something new."
+      },
+      {
+        "start": 179100,
+        "stop": 180300,
+        "text": " That's one thing I really struggle with. And so have you investigated at all what the importing and exporting parts of this database might look like and what that's like to port to something new if you so choose?"
+      },
+      {
+        "start": 180400,
+        "stop": 181300,
+        "text": " I just, whilst we were talking just then, exported a CSV report of every invoice that I've sent this year. So let's just take a quick look at that."
+      },
+      {
+        "start": 181300,
+        "stop": 182500,
+        "text": " Apple numbers, of course, is going to be a real fun time. So the CSV is exactly what you'd expect. It's just a bunch of this client, this date, this invoice number, this amount, status, all that kind of stuff."
+      },
+      {
+        "start": 182600,
+        "stop": 183700,
+        "text": " And so if you can get it out to us, a format that you own like a CSV file, there's no QuickBooks or FreshBooks kind of proprietary license required."
+      },
+      {
+        "start": 183700,
+        "stop": 184800,
+        "text": " And that's a huge thing for me, given I just do this as a spare time thing. So yeah, I think CSV seems to be pretty good. I haven't actually done anything with importing though."
+      },
+      {
+        "start": 184900,
+        "stop": 186000,
+        "text": " I have another question for you. I overheard when I was at your place last that your wife Catherine has been using it as well. Did you get any feedback from her using it in her business?"
+      },
+      {
+        "start": 186000,
+        "stop": 187300,
+        "text": " Yeah, I think it's massive overkill for just invoicing a few music students, parents. But she likes it. I mean, she has her own login. She has a shortcut on her browsers, bookmarks."
+      },
+      {
+        "start": 187400,
+        "stop": 188000,
+        "text": " She just logs in and just does the thing, like I do once a month, I guess, and just sends the invoice out and it's all good."
+      },
+      {
+        "start": 188000,
+        "stop": 189000,
+        "text": " I've just found the Import Data pane, by the way, and it supports a huge number of different formats. You've got CSV, JSON, FreshBooks, blah, blah, blah."
+      },
+      {
+        "start": 189000,
+        "stop": 189900,
+        "text": " Invoice plane is one of them, I would just say. There's about 10 or 12 different options for importing, and exporting is CSV, XLS or JSON."
+      },
+      {
+        "start": 189900,
+        "stop": 190100,
+        "text": " Sounds like you've got me hooked."
+      },
+      {
+        "start": 190100,
+        "stop": 190300,
+        "text": " Yeah, there's no downside. I can see. Next!"
+      },
+      {
+        "start": 190300,
+        "stop": 190900,
+        "text": " Yeah, and even if you try it and you don't like it, it sounds like it's pretty easy to get out. So, there's no real downside to trying it."
+      },
+      {
+        "start": 190900,
+        "stop": 191500,
+        "text": " I know a lot of people listening to this show probably love their Yubikey. I've heard from some of them."
+      },
+      {
+        "start": 191500,
+        "stop": 192300,
+        "text": " And it sounds like Cloudflare is going to work with Yubikeys. I really don't know. I mean, I didn't know they didn't. Tell us all about this one, Alex."
+      },
+      {
+        "start": 192300,
+        "stop": 192900,
+        "text": " Well, the first thing about Yubikeys, we should explain what they are for those that don't know."
+      },
+      {
+        "start": 193000,
+        "stop": 194000,
+        "text": " They're hardware two-factor authentication tokens. So essentially what that means is whenever you log into a specific login portal, website, piece of software, whatever that needs 2FA,"
+      },
+      {
+        "start": 194000,
+        "stop": 195300,
+        "text": " that six-digit code or whatever, it could be an alphanumeric string in the case of a Yubikey, you have to physically plug in a USB device into your computer or your phone via NFC."
+      },
+      {
+        "start": 195300,
+        "stop": 195700,
+        "text": " The two-factor piece is stored in the hardware of the Yubikey."
+      },
+      {
+        "start": 195800,
+        "stop": 196500,
+        "text": " That has a few benefits, obviously. Unless someone has physical access to my hardware two-factor token, they can't log in."
+      },
+      {
+        "start": 196500,
+        "stop": 198100,
+        "text": " The downside is that includes me. And what I found when I got a free Yubikey back at DockerCon in 2015, I think, because they were doing some push to get people to sign Docker images back then."
+      },
+      {
+        "start": 198200,
+        "stop": 198900,
+        "text": " So I tried it for a while because you can load SSH keys onto this thing as well. You know, secrets can include a private key, all that kind of stuff."
+      },
+      {
+        "start": 198900,
+        "stop": 199500,
+        "text": " Even your bitwarden two-factor authentication token can be stored and set up to work with a Yubikey."
+      },
+      {
+        "start": 199500,
+        "stop": 200300,
+        "text": " The trouble is my Yubikey is always at the wrong end of the house. It's always at the opposite end of the house from where I am."
+      },
+      {
+        "start": 200400,
+        "stop": 201200,
+        "text": " So whenever I want to log into something, I'm like, \"Damn it! I have to run from one end of the house to the other or just have multiple Yubikeys.\""
+      },
+      {
+        "start": 201200,
+        "stop": 201700,
+        "text": " I feel like there's some universal law about two-factor, and the device you're using is always at the other end of the house."
+      },
+      {
+        "start": 201700,
+        "stop": 201900,
+        "text": " Yeah, that's true."
+      },
+      {
+        "start": 201900,
+        "stop": 202200,
+        "text": " I remember our friend Noah wears it around his neck for that very reason."
+      },
+      {
+        "start": 202300,
+        "stop": 203800,
+        "text": " It's not to say that they're not good because they're incredibly useful in the workplace, for example. You want to give someone access to some privileged secrets. You give them this hardware token and at work, typically that's the most common use case for it, I would say."
+      },
+      {
+        "start": 203900,
+        "stop": 205400,
+        "text": " So what Cloudflare are doing is they're running a promotion with Yubikey to provide these security keys at \"good for the internet\" pricing. And they start as low as $10 per Yubikey."
+      },
+      {
+        "start": 205500,
+        "stop": 207200,
+        "text": " Now typically these things are $30, $40 plus each, so actually that could be a huge boon if you've been looking to get involved with the Yubico/Yubikey stuff. Sign up to this offer that's in the show notes with Cloudflare. It's not sponsored or affiliated, it's just a Cloudflare thing."
+      },
+      {
+        "start": 207200,
+        "stop": 207400,
+        "text": " And get yourself a cheap Yubikey."
+      },
+      {
+        "start": 207400,
+        "stop": 207800,
+        "text": " Good for the internet pricing, is that adorable?"
+      },
+      {
+        "start": 207900,
+        "stop": 208600,
+        "text": " I thought we were supposed to hate Cloudflare, but I can't help but think this is a good idea. This is truly good for the security of the internet."
+      },
+      {
+        "start": 208600,
+        "stop": 209100,
+        "text": " You know, Chris, I did find a Yubikey in your closet one time, I think the last time I was here."
+      },
+      {
+        "start": 209100,
+        "stop": 209400,
+        "text": " Um, Brand, you're going through my closet?"
+      },
+      {
+        "start": 209400,
+        "stop": 209700,
+        "text": " No, no, I just, well, we'll talk about it later."
+      },
+      {
+        "start": 209900,
+        "stop": 211300,
+        "text": " You know, there used to be lots of reasons not to use Yubikeys. Well, laziness, being at the wrong end of the house is one of them. But they didn't use to make a USB-C specific one that was low profile for like Macbooks and stuff. They fixed that, that's now a low profile one for Macbooks."
+      },
+      {
+        "start": 211300,
+        "stop": 212500,
+        "text": " They didn't use to work on mobile devices, but they now do through NFC. So really, there's no real reason if you're curious not to try one at a $10 entry price."
+      },
+      {
+        "start": 212600,
+        "stop": 213700,
+        "text": " That is a really good point. I've looked at these keys many times, both the Yubikeys and alternatives, and I've always hesitated to pull the trigger A on price because actually you kind of need two of them."
+      },
+      {
+        "start": 213700,
+        "stop": 214800,
+        "text": " One is your main one is a backup. But the other reason was always that I couldn't quite figure out all of the different features and you know, which is it Fido that I need to support everything."
+      },
+      {
+        "start": 214900,
+        "stop": 216600,
+        "text": " It seemed like 12 websites use this one proprietary way of doing it and the other 12 use this other method. So I always got lost in all of those details and complexity and I hope that maybe that's been solved recently. Do you have any sense of whether they're easier these days than they were maybe five years ago?"
+      },
+      {
+        "start": 216600,
+        "stop": 217600,
+        "text": " I think they're more mature and they support a lot more stuff than they used to. I don't know whether that makes it simpler or more approachable though. If anything, it makes it worse because there's more options."
+      },
+      {
+        "start": 217700,
+        "stop": 219500,
+        "text": " That's where I kind of debate. Like maybe the sweet spot is like an authenticator app on your phone. But I do kind of, I love that idea of you plugging a hardware device that does something. It feels like you'd really want to combine a two factor code on authentication app with a hardware device with a password potentially."
+      },
+      {
+        "start": 219600,
+        "stop": 221400,
+        "text": " Or as a backup, you know, when places do SMS phishing attacks and stuff, that's one of the most common attack vectors is people steal your SMS access, send a two factor code there whilst they have the temporary access before you notice. And this would completely negate that as an attack vector."
+      },
+      {
+        "start": 221400,
+        "stop": 221500,
+        "text": " But only if supported."
+      },
+      {
+        "start": 221600,
+        "stop": 223500,
+        "text": " This takes me back to a few years ago where the company I worked at used YubiKeys and in Slack multiple times a day, different people accidentally touched their YubiKeys and put in their 40 character long string. Most of the days."
+      },
+      {
+        "start": 223500,
+        "stop": 223900,
+        "text": " Yeah, I have seen that. I see that in our chat room sometimes too."
+      },
+      {
+        "start": 223900,
+        "stop": 224500,
+        "text": " I did it one time. And Alex, you've sent some of your passwords to GitHub if I remember correctly."
+      },
+      {
+        "start": 224500,
+        "stop": 224900,
+        "text": " Oh, well that's different. That's just me being an idiot, but that's different."
+      },
+      {
+        "start": 224900,
+        "stop": 225100,
+        "text": " What's the difference?"
+      },
+      {
+        "start": 225100,
+        "stop": 226800,
+        "text": " Well, these strings aren't useful on their own because they're attached to a specific service and they're time limited and all that kind of stuff. So if you happen to know exactly what service I'm logging into at that specific moment in history, maybe it's useful for about the next 25 seconds. But otherwise it's useless."
+      },
+      {
+        "start": 226900,
+        "stop": 228100,
+        "text": " Well, I want to talk about something you came across that really piques my interest because I'm often using Reddit as a way to discover topics that seem like might be worth discussion. And you found essentially an automatic archiver for Reddit."
+      },
+      {
+        "start": 228200,
+        "stop": 230000,
+        "text": " I did. I haven't actually tried it out yet, but there's a piece of software in the show notes linked called Expanse. And this builds itself as a fully self hosted multi user web app which allows you to externally store Reddit items such as things you've saved, created, upvoted, downvoted and hidden."
+      },
+      {
+        "start": 230000,
+        "stop": 230600,
+        "text": " And this bypasses Reddit's 1000 item listing limit, which I didn't know was a limit."
+      },
+      {
+        "start": 230700,
+        "stop": 231500,
+        "text": " So essentially there's a quick demo in the GitHub repo, short YouTube video, and that was enough to sell me. I'm hooked. I will set this up at the earliest opportunity."
+      },
+      {
+        "start": 231500,
+        "stop": 232700,
+        "text": " Same. What the video really demonstrates is it creates like a mirrored environment of Reddit. So you kind of create some of the same categories of saved, posted, upvoted, posted, downvoted, submitted, commented."
+      },
+      {
+        "start": 232800,
+        "stop": 234200,
+        "text": " And it's the same kind of thing you get from your Reddit history. It mirrors that UI in a cleaner way and just presents all that information to you. And it just continues to just suck that information into your own local instance as you use Reddit like you normally might. You don't have to do anything special."
+      },
+      {
+        "start": 234200,
+        "stop": 234500,
+        "text": " Pretty much like Pocket for Reddit."
+      },
+      {
+        "start": 234500,
+        "stop": 235500,
+        "text": " Yeah, but like if everything you read just automatically went to Pocket or something because it's everything you do on Reddit just automatically gets backed up to this thing. It's kind of brilliant. I wish I had that for all the services."
+      },
+      {
+        "start": 235500,
+        "stop": 235700,
+        "text": " Yeah. Can we get that for Hacker News?"
+      },
+      {
+        "start": 235700,
+        "stop": 236300,
+        "text": " Yeah, and Twitter and anything that's really like all the services for everything."
+      },
+      {
+        "start": 236300,
+        "stop": 236500,
+        "text": " Have you heard of RSS?"
+      },
+      {
+        "start": 236500,
+        "stop": 238500,
+        "text": " I see you found out that Bitwarden has integrated fast mail email aliasing so that way when you sign up now, you can generate a fast mail unique email address for a service. How great is this?"
+      },
+      {
+        "start": 238600,
+        "stop": 240600,
+        "text": " It's amazing. You know that Google supports the plus delimiter in their email addresses. So you can say Alex KTZ plus Twitter at Gmail or whatever. And it will send every email that Twitter has to that specific email address."
+      },
+      {
+        "start": 240700,
+        "stop": 243000,
+        "text": " The trouble is it relies on the service that's in question, Twitter or whoever, to respect that. And then also when they sell that information to third parties at whatever point Elon decides to in the future, they've also got to include that plus in there because everybody knows that plus is just a delimiter and so the real email address is just a bit before the plus."
+      },
+      {
+        "start": 243100,
+        "stop": 244800,
+        "text": " What this fast mail integration allows me to do is set up a genuine email alias. So it becomes two or three random words and a couple of random numbers instead of my actual email address being semi obfuscated."
+      },
+      {
+        "start": 244900,
+        "stop": 246100,
+        "text": " And it's built directly into the Bitwarden clients. So they have that generate password feature. If you look at the checkbox, the next one down is now a generate username box, which we've talked about before."
+      },
+      {
+        "start": 246100,
+        "stop": 246800,
+        "text": " But if you look just a little bit further down than that, there's three or four services in there and one of them is now fast mail."
+      },
+      {
+        "start": 246900,
+        "stop": 247900,
+        "text": " And so just by creating or generating an email address alias in the Bitwarden client, it will go and talk to the fast mail API, create the email alias."
+      },
+      {
+        "start": 247900,
+        "stop": 248900,
+        "text": " And then from that point in history, you have a routable email address that is not your real email address, but is the alias. It's brilliant."
+      },
+      {
+        "start": 249000,
+        "stop": 250100,
+        "text": " You know, it feels to me like we are creating a huge void between two worlds. We now have most of us, hopefully, who are well educated about passwords, using password managers."
+      },
+      {
+        "start": 250100,
+        "stop": 251100,
+        "text": " You mentioned Yubikey earlier, all of these things that are really great. But then I feel like most people are just not even anywhere close to using a unique email address for each service."
+      },
+      {
+        "start": 251100,
+        "stop": 251500,
+        "text": " I think we need to figure out how to bridge that gap."
+      },
+      {
+        "start": 251600,
+        "stop": 252100,
+        "text": " Well, the tooling helps, you know, building the tooling to do it. I think that's what this is trying to do, isn't it?"
+      },
+      {
+        "start": 252100,
+        "stop": 252500,
+        "text": " Yeah, I think you're right. Yeah, okay, you win."
+      },
+      {
+        "start": 252500,
+        "stop": 253200,
+        "text": " I mean, this is not a sponsored thing. I've been trying to get Brent on Bitwarden for weeks. The man loves his key pass."
+      },
+      {
+        "start": 253200,
+        "stop": 253900,
+        "text": " You know what I like about it is that it's worked for the last 15 years and I don't need to question it."
+      },
+      {
+        "start": 254000,
+        "stop": 254600,
+        "text": " But I've been trying to find that key reason that will make me switch and maybe this is it."
+      },
+      {
+        "start": 254600,
+        "stop": 255600,
+        "text": " I think the key reason will be when you decide it's time. If I know anything about you, Brent, it's that you have to decide it's a good idea before you do something."
+      },
+      {
+        "start": 255600,
+        "stop": 255800,
+        "text": " Shouldn't that be all of us?"
+      },
+      {
+        "start": 255800,
+        "stop": 256300,
+        "text": " Yeah, technically. I think it might be time for some feedback, gentlemen. What do you think?"
+      },
+      {
+        "start": 256300,
+        "stop": 256500,
+        "text": " Bring it on."
+      },
+      {
+        "start": 256600,
+        "stop": 257200,
+        "text": " There's a lot of various Tailscale alternatives sent into the show and at first it was like, \"Okay, okay.\""
+      },
+      {
+        "start": 257200,
+        "stop": 258100,
+        "text": " But one that's come in a couple of times has been NetBird. And I don't know if either one of you guys have seen this, but NetBird is trying to check all the boxes."
+      },
+      {
+        "start": 258100,
+        "stop": 259000,
+        "text": " And I hope the Tailscale team takes this as a compliment because this is clearly an indication that they're on to something, that all of these open source projects have cropped up."
+      },
+      {
+        "start": 259100,
+        "stop": 260200,
+        "text": " And I suppose for a lot of folks, Headscale has not been sufficient, I guess, but the NetBird folks are attempting to get as close as you can to a WireGuard-based mesh network."
+      },
+      {
+        "start": 260200,
+        "stop": 260800,
+        "text": " They're supporting single sign-on and multi-factor authentication like Tailscale does. They have some simple controls."
+      },
+      {
+        "start": 260800,
+        "stop": 261400,
+        "text": " I don't think they have the install down quite as smooth as Tailscale does, but really, who would, right?"
+      },
+      {
+        "start": 261500,
+        "stop": 262100,
+        "text": " But you get a lot of it. You get a lot of the advantages. But it's 100 percent a..."
+      },
+      {
+        "start": 262100,
+        "stop": 262700,
+        "text": " Well, it doesn't have to be. Actually, they're also offering their own hosted implementation as well, of course."
+      },
+      {
+        "start": 262700,
+        "stop": 263600,
+        "text": " Which then I'm not even sure why it's even better than Tailscale, but they do have by default a host implementation, but they make it really clear how to do all your own self-hosting if you like."
+      },
+      {
+        "start": 263600,
+        "stop": 264100,
+        "text": " This is why we were all so excited about WireGuard being put in the Linux kernel a few years ago."
+      },
+      {
+        "start": 264200,
+        "stop": 265000,
+        "text": " We legitimized the project, and we hoped at the time that it would lead to this proliferation of solutions based upon it for VPN stuff."
+      },
+      {
+        "start": 265000,
+        "stop": 265400,
+        "text": " I'm so pleased to see that that's coming true. Aren't you?"
+      },
+      {
+        "start": 265400,
+        "stop": 266400,
+        "text": " Yeah, absolutely. And it looks like we're going to have a spoil of choices, so I wonder if we'll go through a period of some of these sort of proving themselves out."
+      },
+      {
+        "start": 266500,
+        "stop": 267400,
+        "text": " Tailscale will probably be a leader for a while because they got a huge start. They have a commercial entity behind them that has some money, and they got a good product, right?"
+      },
+      {
+        "start": 267400,
+        "stop": 268200,
+        "text": " So now you're going to see a lot of, I'd say, kind of not clones, but this kind of what they are, right?"
+      },
+      {
+        "start": 268200,
+        "stop": 268800,
+        "text": " And we're going to have to see which one kind of wins out and which one ends up being the most popular in the community."
+      },
+      {
+        "start": 268800,
+        "stop": 269300,
+        "text": " Will it be Tailscale and Headscale for those that want self-hosting, or will it be something like NetBird?"
+      },
+      {
+        "start": 269400,
+        "stop": 270000,
+        "text": " So if you've tried something like this out there, let us know. Send us a boost, or go to selfhost.show/contact and let us know your thoughts."
+      },
+      {
+        "start": 270000,
+        "stop": 270800,
+        "text": " I am just so happy with Tailscale, and now that I'm doing subnet routing and all of that, I'm really quite pleased."
+      },
+      {
+        "start": 270800,
+        "stop": 271800,
+        "text": " I don't really see any particular reason to switch, and I'm also totally comfortable with their backplane managing some of the authentication and some of the connecting."
+      },
+      {
+        "start": 271800,
+        "stop": 272100,
+        "text": " That's fine for me because I want this to work like a rock."
+      },
+      {
+        "start": 272200,
+        "stop": 272800,
+        "text": " We talked a little bit about the subnet routing at the Airbnb in Pasadena with our questionable Wi-Fi situation."
+      },
+      {
+        "start": 272800,
+        "stop": 273000,
+        "text": " That's generous of you."
+      },
+      {
+        "start": 273000,
+        "stop": 273500,
+        "text": " And it's fascinating. I use the heck out of the subnet routing. It's amazing."
+      },
+      {
+        "start": 273500,
+        "stop": 274300,
+        "text": " Oh, it's so handy, especially for devices that aren't PCs or Raspberry Pis, something you can't install software on."
+      },
+      {
+        "start": 274300,
+        "stop": 275000,
+        "text": " Like my Victron solar equipment and battery equipment. I can't install Tailscale on that. It's an appliance."
+      },
+      {
+        "start": 275100,
+        "stop": 275500,
+        "text": " And then I have Tailscale on my Raspberry Pi that's on the same LAN, and I have subnet routing on."
+      },
+      {
+        "start": 275500,
+        "stop": 276000,
+        "text": " So now I'm checking the solar when we're at the Airbnb, making sure Jupes is doing okay."
+      },
+      {
+        "start": 276000,
+        "stop": 276900,
+        "text": " And then I wanted to check the temperatures at the studio, so I have Tailscale installed from HACS on Home Assistant with subnet routing turned on."
+      },
+      {
+        "start": 276900,
+        "stop": 277500,
+        "text": " And so I'm checking the temperatures in the garage to make sure the server's okay, and I'm just using local IPs for all of it."
+      },
+      {
+        "start": 277600,
+        "stop": 278900,
+        "text": " And I'm pleased to say that I did hope one day that this would exist, that this world would be real, and so I preemptively set the RV network to a 17216 subnet."
+      },
+      {
+        "start": 278900,
+        "stop": 279400,
+        "text": " And the studio is a 192.168.7 subnet."
+      },
+      {
+        "start": 279400,
+        "stop": 279600,
+        "text": " Smart man."
+      },
+      {
+        "start": 279600,
+        "stop": 279900,
+        "text": " And so the two are very different. And that has made life, like, so it just made it ready to go."
+      },
+      {
+        "start": 280000,
+        "stop": 281500,
+        "text": " Yeah, when Brent was here, I had to completely retool my CIDR, my IP range in the house, because there was some overlap between my house here and my dad's Starlink network, because remember, I moaned in an episode. I couldn't change the DHCP range."
+      },
+      {
+        "start": 281500,
+        "stop": 282000,
+        "text": " So I had to completely retool. So that's some good foresight from you there, Christopher. I tell you what."
+      },
+      {
+        "start": 282000,
+        "stop": 282900,
+        "text": " The old days. The old days of VPNing like an animal, building flat networks. But let us know if you try out NetBird. I'd be really curious to hear how it goes."
+      },
+      {
+        "start": 282900,
+        "stop": 283000,
+        "text": " Yeah, same."
+      },
+      {
+        "start": 283000,
+        "stop": 284000,
+        "text": " And I think in a future episode, we might do a bit more of a deep dive into the subnet routing that I'm doing and the split DNS between different sites, because I think that would be of interest to folks."
+      },
+      {
+        "start": 284000,
+        "stop": 284400,
+        "text": " So if you're interested in that, let us know at selfhosted.show/contact."
+      },
+      {
+        "start": 284400,
+        "stop": 284900,
+        "text": " I agree. Having chatted a little bit about it at the Airbnb, I think it would be a great topic."
+      },
+      {
+        "start": 285000,
+        "stop": 286200,
+        "text": " So we got some boosts into the show, too, and Neve boosted in with over 9,000, 9,001 sats. And we also got 1024 sats from Amar, who's having some trouble getting their whole home audio working."
+      },
+      {
+        "start": 286200,
+        "stop": 287200,
+        "text": " So these are our whole home audio boosts that I wanted to follow up on. So we'll start with Neve, and he writes, \"Whole home audio as a concept has existed as long as human history."
+      },
+      {
+        "start": 287300,
+        "stop": 288500,
+        "text": " So there are plenty of solutions moving around. Rather than getting fancy with software, I might present an alternative,\" he writes, \"Pulse Audio's network streaming and Kodi.\""
+      },
+      {
+        "start": 288500,
+        "stop": 289800,
+        "text": " Now, why Kodi? Because Kodi has a rich app ecosystem for remote controls and a web GUI. Plus, it supports Plex, Jellyfin, Enby, and even Aircast. This solution I have been using for years now."
+      },
+      {
+        "start": 289800,
+        "stop": 290100,
+        "text": " I would never have thought of Kodi, would you?"
+      },
+      {
+        "start": 290200,
+        "stop": 291600,
+        "text": " No, and I think it's probably worth a mention because a lot of people love Kodi that listen to the show. And Pulse Audio network streaming has been around for years, and I never think to mention it. But I constantly hear feedback from the audience that it works pretty well."
+      },
+      {
+        "start": 291600,
+        "stop": 292000,
+        "text": " Just anything with Pulse Audio gives me PTSD, I think."
+      },
+      {
+        "start": 292100,
+        "stop": 293400,
+        "text": " Rusticast and Versa boosted with 2,000 sats, and he echoed a sentiment we heard from multiple people out there. What about Volmelio or Volumio? Sorry, I'm butchering that. But it acts as an Airplay Chromecast endpoint."
+      },
+      {
+        "start": 293400,
+        "stop": 294000,
+        "text": " He says if you want a lot of them synced, you'd have to pay, but it's a good project, so it's worth paying for."
+      },
+      {
+        "start": 294100,
+        "stop": 295500,
+        "text": " I have a couple of recommendations for Volumio, actually. The pricing doesn't put me off too much. I don't mind necessarily paying for the right solution. I mean, the alternative would be just giving up and going for a Sonos-based deployment, right? And that ain't going to be free, is it?"
+      },
+      {
+        "start": 295600,
+        "stop": 297400,
+        "text": " So the other thing that came in as a recommendation was there's a chap on YouTube called Darko that does... he's got beautiful production quality on his videos. He is a HiFi audiophile nerd, and he talks occasionally about how he streams music around his house."
+      },
+      {
+        "start": 297500,
+        "stop": 299000,
+        "text": " One of the recommendations I had come in was something called Rune Audio. It's not open source, I don't think, and it is paid. It does cost quite a bit per month. But this will support, along with Volumio, multiple rooms based off of Raspberry Pi and that kind of thing."
+      },
+      {
+        "start": 299100,
+        "stop": 300600,
+        "text": " I'm still stuck, though, on how to actually automate the speaker component. The Raspberry Pi bit, I think, is actually the easy bit. I mean, there's a few options. Snapcast is another one out there. It's just controlling the speaker component that's the tricky bit."
+      },
+      {
+        "start": 300700,
+        "stop": 302500,
+        "text": " The Broadlink infrared emitter blaster that I talked about in the last episode sort of, kind of is behaving itself, but I've ordered the components to build myself a blaster based off an ESP device as well. See if that's any better than the Broadlink stuff, because it's just not reliable enough."
+      },
+      {
+        "start": 302500,
+        "stop": 303200,
+        "text": " Yeah, thanks for the recommendation. I'll take a look at Volumio a bit more seriously over the next few weeks when I'm not traveling to LA."
+      },
+      {
+        "start": 303300,
+        "stop": 304400,
+        "text": " It's a shame to hear you're having some trouble with the IR blaster, because when you're doing the music stuff and you just want to hit a button and have it go, you want it to be a really kind of chill experience. That's not when you want to do the troubleshooting."
+      },
+      {
+        "start": 304400,
+        "stop": 306000,
+        "text": " It seems to me like the intersection of two very different worlds. The hardware button, audio file grade box that's sitting next to your TV or your entertainment system feels like maybe high-end technology of a very different era."
+      },
+      {
+        "start": 306100,
+        "stop": 306900,
+        "text": " And you're trying to kind of marry the two, so I understand there's clearly some challenge there, but wouldn't it be great if they just made friends?"
+      },
+      {
+        "start": 307200,
+        "stop": 310100,
+        "text": " Quickcode wanted to know if anybody has any tips on content request systems for music. You know how there's things out there like Overseer and other tools for books and stuff like that. If anybody has suggestions for music, send them into the show. And then Drew Oof or Dr. Oof boosted in with 5,678 sats, and he wanted to give a plus one to the ZZ Wave switches, specifically the 700 series. Thank you very much for that detail."
+      },
+      {
+        "start": 310100,
+        "stop": 312800,
+        "text": " He says, \"I've been through a bunch of different brands of smart switches over the years, and the ZZs have been the most reliable, affordable, and configurable to date. I'm a network security engineer by trade, and I have an enterprise-grade Wi-Fi throughout my house and property. Four different APs. And even that can't keep up with my smart switches. Interesting. My house is long and narrow, so it just turns out 900 MHz mesh network works better than Wi-Fi. Thanks for the great podcast.\""
+      },
+      {
+        "start": 312900,
+        "stop": 315200,
+        "text": " I do love 900 MHz. I love 900 MHz radio so much. I wish we could have stayed there. MegaStrike 3 boosted in with 3,000 sats. \"Hey Chris and Alex, love the show. I picked up an Ikea Zigbee lightbulb as I begin to build out my smart home. Any recommendations for a home assistant Zigbee router? Currently I'm looking at the Conbee too. Thanks as always.\""
+      },
+      {
+        "start": 315300,
+        "stop": 317200,
+        "text": " Conbee's already got my recommendation. I used the really cheap Sonoff one to start with, and it was not good. It was just not good. But the Conbee too has been my favorite phrase, rock solid, since I installed it."
+      },
+      {
+        "start": 317300,
+        "stop": 318400,
+        "text": " You know what though? I agree. In fact, I don't even have mine hanging off a dongle. It's just hooked up right to the back and my home assistant blew in the studio. And I'm talking to devices that are on the other end of the house."
+      },
+      {
+        "start": 318400,
+        "stop": 320200,
+        "text": " I will also link to the Zilish Zigbee 3.0 stick that Cloudfree.shop sells, because I would imagine if Cloudfree is selling that, that's probably a pretty good device. But I too own the Conbee2 USB Zigbee gateway and have been very happy with it, and home assistant just picked it up right away."
+      },
+      {
+        "start": 320200,
+        "stop": 320400,
+        "text": " So that was really nice."
+      },
+      {
+        "start": 320400,
+        "stop": 321100,
+        "text": " Don't forget, we've still got a coupon code over at Cloudfree.shop. If you put self-hosted in there, you'll probably get a dollar off whatever you're buying."
+      },
+      {
+        "start": 321200,
+        "stop": 323300,
+        "text": " Tell user 3513 boosted in with 8,192 sets. I'd love to know how Alex is running Proxmox and Docker on his systems. Are you running an Ubuntu VM on top of Proxmox? Or containers? Did you use a bare metal Linux and then somehow hack the packages to install Proxmox onto it? Tell user 3513, Alex."
+      },
+      {
+        "start": 323400,
+        "stop": 324700,
+        "text": " This question has been coming up in Discord a lot in the last month or so. It's like something has changed and people just need to know exactly what I'm doing to copy it, which I don't understand."
+      },
+      {
+        "start": 324700,
+        "stop": 325300,
+        "text": " They can't buy Pi's anymore, so they're finally giving in and buying x86 systems and going Proxmox."
+      },
+      {
+        "start": 325300,
+        "stop": 325800,
+        "text": " They are very sensible people, you know. You should consider doing that."
+      },
+      {
+        "start": 326100,
+        "stop": 327100,
+        "text": " PerfectMediaServer.com would be where I'd send people for actual documentation on what I'm doing. I put a new page up there in May, I think. Badger's Stack in May."
+      },
+      {
+        "start": 327100,
+        "stop": 327700,
+        "text": " Just to tell, because I was getting so many questions. What are you doing, Alex? What are you doing?"
+      },
+      {
+        "start": 327800,
+        "stop": 329500,
+        "text": " I'm like, well, here it is. Here's the hardware I'm using, the exact hardware, the CPU, the OS, all that kind of stuff. In the original Perfect Media Server guides, I used to recommend virtualizing Ubuntu and then passing through all of the drive controllers to those virtual machines."
+      },
+      {
+        "start": 329600,
+        "stop": 332200,
+        "text": " That was in the days before I was an absolute quick sync snob. If you recall in the show a long time ago, also I've written blog posts about it, and it's on PerfectMediaServer.com, I was trying to do something called GVTG to split the quick sync GPU, the iGPU, up between multiple virtual machines and pass it through and all that kind of stuff."
+      },
+      {
+        "start": 332300,
+        "stop": 333000,
+        "text": " It just didn't work. The performance was no good, the complexity was off the charts, and you know how it goes."
+      },
+      {
+        "start": 333000,
+        "stop": 334400,
+        "text": " Essentially, I decided at that point, I've got no option. If I want hardware transcoding using quick sync, rather than having my dual Xeon box pull 400 watts, I only want to pull 4 watts when I'm doing a transcode, and who wouldn't want that?"
+      },
+      {
+        "start": 334500,
+        "stop": 335400,
+        "text": " I've got to run Plex on the host, and that's it. That really drove the next wave of my builds, which I've been doing now for about 18 months I would say."
+      },
+      {
+        "start": 335400,
+        "stop": 336900,
+        "text": " All of my containers run directly on the host. Home Assistant itself runs as a Haas OS VM, or whatever they call it these days. That's the only VM I have in Proxbox, is literally just Home Assistant. It's a bit of a waste."
+      },
+      {
+        "start": 337000,
+        "stop": 337800,
+        "text": " Occasionally I spin up an Ubuntu thing for testing, or a Fedora thing, or whatever, just literally for testing."
+      },
+      {
+        "start": 337800,
+        "stop": 338600,
+        "text": " In terms of production, everything's on the Proxmox host. It's all done in Ansible in my GitHub repo, which I'll put a link to in the show notes as well."
+      },
+      {
+        "start": 338600,
+        "stop": 339400,
+        "text": " It's just really simple. It's just an install of Debian with Proxmox installed on top of it. I used the Proxmox documentation to achieve that."
+      },
+      {
+        "start": 339500,
+        "stop": 340000,
+        "text": " There's not much to it. It's just Linux, really. It's very boring."
+      },
+      {
+        "start": 340000,
+        "stop": 341000,
+        "text": " I think that's a good thing. We were talking before we hit record, and I'm like, \"There's a lot of things about Linux that are getting boring, but that's what you need when it becomes this layer in the industry. It just needs to work.\""
+      },
+      {
+        "start": 341000,
+        "stop": 342200,
+        "text": " That's great. We'll have a link to Alex's high-level overview in the notes, including some links to also, as Alex is adding them right now, to documentation on how to get Proxmox running on Debian 11."
+      },
+      {
+        "start": 342300,
+        "stop": 342500,
+        "text": " The Badger Stack."
+      },
+      {
+        "start": 342500,
+        "stop": 343500,
+        "text": " Well, it can be confusing because Proxmox provide an ISO directly, so you can install Proxmox directly from an ISO, just from the project."
+      },
+      {
+        "start": 343500,
+        "stop": 344200,
+        "text": " Or you can install Debian and then install Proxmox on top of it, and that can confuse some people."
+      },
+      {
+        "start": 344300,
+        "stop": 345300,
+        "text": " Either route is completely valid. One is slightly more hands-on than the other. There's no real preference in my mind as to which one works better. Just do whatever makes you feel warm and cozy."
+      },
+      {
+        "start": 345300,
+        "stop": 345700,
+        "text": " I'm wondering how you feel about this next one, Alex. John A. Boosting with 10,000Sats."
+      },
+      {
+        "start": 345700,
+        "stop": 346400,
+        "text": " He, after listening to the last episode, is YOLOing into setting up his own email server."
+      },
+      {
+        "start": 346400,
+        "stop": 346500,
+        "text": " No."
+      },
+      {
+        "start": 346500,
+        "stop": 346900,
+        "text": " He also is checking out Podverse, which is awesome. New podcast apps."
+      },
+      {
+        "start": 347000,
+        "stop": 348000,
+        "text": " He's coming from P4P4John, who says, \"I've started self-hosting my own email server this year. I got a business Comcast connection with a static IP, and I'm using Unohost. It's going great.\""
+      },
+      {
+        "start": 348000,
+        "stop": 348600,
+        "text": " Somehow, when we say, \"I don't know if it's a good idea,\" people are like, \"Thanks, guys. I'm doing it.\""
+      },
+      {
+        "start": 348600,
+        "stop": 348800,
+        "text": " You guys are crazy."
+      },
+      {
+        "start": 348800,
+        "stop": 349200,
+        "text": " I don't think it's a good idea to send us a million dollars. That would be an awful idea, don't you?"
+      },
+      {
+        "start": 349200,
+        "stop": 349600,
+        "text": " Oh, yeah. Yeah, definitely a bad idea to... No. No."
+      },
+      {
+        "start": 349600,
+        "stop": 349800,
+        "text": " Bad idea."
+      },
+      {
+        "start": 349900,
+        "stop": 350000,
+        "text": " I just think it's interesting."
+      },
+      {
+        "start": 350000,
+        "stop": 350600,
+        "text": " So, John, you can send us an email from your shiny new email server to tell us how it's going, huh? And if we receive it, we'll let you know."
+      },
+      {
+        "start": 350600,
+        "stop": 351400,
+        "text": " Right. Yeah, definitely. Also, let me know how the Podverse transition goes, John. I'm going to expect a boost from Podverse in the future."
+      },
+      {
+        "start": 351400,
+        "stop": 352300,
+        "text": " Also, I just wanted to give a quick shout-out. We got 5,555Sats from Soltross sending in just some love for the show. Just wanted to wish us well. I thought that was nice."
+      },
+      {
+        "start": 352300,
+        "stop": 352800,
+        "text": " And then, Brent, you got this one right. Schmitzfeld, I think it was?"
+      },
+      {
+        "start": 352800,
+        "stop": 352900,
+        "text": " Schmitzfeld."
+      },
+      {
+        "start": 352900,
+        "stop": 354000,
+        "text": " He says that he just wanted to send us a series of ducks, Huey, Louie, and Dewey. And we got 3,000Sats from FourLeggedEmu who says he's loving Calyx on his Pixel."
+      },
+      {
+        "start": 354000,
+        "stop": 354200,
+        "text": " Oh."
+      },
+      {
+        "start": 354200,
+        "stop": 354600,
+        "text": " I switched to Graphene, and now I'm hearing about Calyx constantly."
+      },
+      {
+        "start": 354600,
+        "stop": 355000,
+        "text": " I heard you were testing Graphene, so maybe you need to switch and text Calyx as well."
+      },
+      {
+        "start": 355000,
+        "stop": 355400,
+        "text": " Maybe I should just go back to the iPhone, because this is just... it's too much. It's too much."
+      },
+      {
+        "start": 355500,
+        "stop": 356100,
+        "text": " But we do love the boost. We read all of them. We only feature some of them on the shows now just to keep things tight, but we do appreciate everybody who sends one in."
+      },
+      {
+        "start": 356100,
+        "stop": 357300,
+        "text": " If you'd like to boost the show, you can grab a new podcasting app, newpodcastapps.com. Or, if you don't want to switch podcast apps, you can use Breeze, B-R-E-E-Z dot technology, and keep your dang podcast app."
+      },
+      {
+        "start": 357300,
+        "stop": 357600,
+        "text": " I think probably Alby deserves a mention as well."
+      },
+      {
+        "start": 357600,
+        "stop": 358300,
+        "text": " Alby's a way to do it from the web if you don't want to use a mobile app at all. And the Alby team seems to be really solid. They're creating some great open source code."
+      },
+      {
+        "start": 358400,
+        "stop": 358900,
+        "text": " I had a little call with one of their co-founders. I really like where they're going. A-L-B-Y for that."
+      },
+      {
+        "start": 358900,
+        "stop": 359300,
+        "text": " Can we give a little pluggy pug to office-hours.hair?"
+      },
+      {
+        "start": 359300,
+        "stop": 360400,
+        "text": " Yeah, something about plugs and hair, but office-hours.hair... Lucky episode 13, I think it was. We covered some of the shenanigans on our trip."
+      },
+      {
+        "start": 360400,
+        "stop": 361100,
+        "text": " And then, in the most recent Linux Unplugged, we covered our JPL trip too, which... how great was the JPL trip?"
+      },
+      {
+        "start": 361100,
+        "stop": 361300,
+        "text": " Alex, how was the JPL trip?"
+      },
+      {
+        "start": 361300,
+        "stop": 362100,
+        "text": " I just can't process it. Did that really happen to us? We're just normal people. Something like that doesn't happen to normal people, does it?"
+      },
+      {
+        "start": 362100,
+        "stop": 362700,
+        "text": " It was so cool. And to see the clipper, to see them working on the next mission, the Europa Clipper."
+      },
+      {
+        "start": 362700,
+        "stop": 363200,
+        "text": " I caught Chris last night tuning into the live cam that you can get for their..."
+      },
+      {
+        "start": 363200,
+        "stop": 363400,
+        "text": " When you? Oh, cool."
+      },
+      {
+        "start": 363400,
+        "stop": 364100,
+        "text": " Yeah, on YouTube. Go look up the Europa Clipper stream. I've checked it several times, and they've added a lot more to it since we saw it."
+      },
+      {
+        "start": 364200,
+        "stop": 365000,
+        "text": " Wow, that's so cool. I'm just so grateful. I know I put a little clip in Linux Unplugged for you, saying how great the audience is."
+      },
+      {
+        "start": 365000,
+        "stop": 365900,
+        "text": " And it sounds like a cliché, but genuinely, I think you said it. It's amazing. We had 20 people show up for the tour and about double that for the meetup."
+      },
+      {
+        "start": 365900,
+        "stop": 366500,
+        "text": " Not one person got lost. Everybody was on time. Everybody was friendly. They brought stories. They brought..."
+      },
+      {
+        "start": 366600,
+        "stop": 367300,
+        "text": " Does any other podcast network have such an amazing audience? I don't know. But ours is pretty great."
+      },
+      {
+        "start": 367300,
+        "stop": 367700,
+        "text": " I don't think so. How could they? Because we took all the good ones."
+      },
+      {
+        "start": 367700,
+        "stop": 368700,
+        "text": " True. I also learnt so much just by chatting with people. Alex, I know you were fascinated basically all night because I was hanging around you and learning a bunch of stuff."
+      },
+      {
+        "start": 368700,
+        "stop": 369000,
+        "text": " But Chris, you were having a great time, and it was almost like 10pm."
+      },
+      {
+        "start": 369100,
+        "stop": 369900,
+        "text": " Yeah, our meetup went for five hours strong, and I still didn't get to everybody. But let's be clear here. Alex saved the night."
+      },
+      {
+        "start": 369900,
+        "stop": 371300,
+        "text": " Because our guest of the night, Tim Kennam from JPL, brought a very exclusive little device. He brought the computer from the Mars Copter, like the Earth version, the test version, the prototype version."
+      },
+      {
+        "start": 371400,
+        "stop": 372500,
+        "text": " He brought that for show and tell so we could all see just the parts that we don't recognize. It's in this bag, and it's like secret private property of NASA and JPL."
+      },
+      {
+        "start": 372500,
+        "stop": 373600,
+        "text": " And then it's inside this sealed case even. It was really a big deal. And Tim, bless his heart, I think with just everything going on, he got up and walked away."
+      },
+      {
+        "start": 373600,
+        "stop": 373800,
+        "text": " He left it on the bench."
+      },
+      {
+        "start": 373800,
+        "stop": 374000,
+        "text": " He left it on the bench."
+      },
+      {
+        "start": 374100,
+        "stop": 374400,
+        "text": " And we had our own iPhone 4 moment, didn't we? Very nearly."
+      },
+      {
+        "start": 374400,
+        "stop": 375400,
+        "text": " Yeah, but you tapped him on the shoulder and you're like, \"I think you forgot something.\" And I think he was extremely grateful. A little bit of history right there."
+      },
+      {
+        "start": 375400,
+        "stop": 375700,
+        "text": " What a lovely guy. What a lovely guy."
+      },
+      {
+        "start": 375700,
+        "stop": 376700,
+        "text": " Yeah, it was really nice of him to help us make all that happen. And then to make it to the meetup as well and bring a little show and tell for everybody. Just so cool."
+      },
+      {
+        "start": 376700,
+        "stop": 377000,
+        "text": " Really, really a great experience. Something you'll never forget, you know?"
+      },
+      {
+        "start": 377000,
+        "stop": 377800,
+        "text": " Yeah. Huge thanks to Tim. Huge thanks to everybody at JB. But of course thanks to Linode as well for enabling us all to go down there and take the tour, you know?"
+      },
+      {
+        "start": 377800,
+        "stop": 378600,
+        "text": " Yeah, absolutely. They really came through for us. And you know, we had some great swag. We got to give away swag to people who came to JPL and came to all the meetups too."
+      },
+      {
+        "start": 378600,
+        "stop": 379400,
+        "text": " Linode gave us an updated shirt for the road with the new route on there and all that. Brighter, bolder colors. So awesome."
+      },
+      {
+        "start": 379500,
+        "stop": 380200,
+        "text": " You know, we got to meet some members while we were down there as well. So thank you to all the members who make this show possible. selfhosted.show/sre if you'd like to sign up."
+      },
+      {
+        "start": 380200,
+        "stop": 381100,
+        "text": " You are our site reliability engineers and you can support all the shows if you want to get an ad-free version and all their special features for the whole network at jupiter.party."
+      },
+      {
+        "start": 381100,
+        "stop": 382300,
+        "text": " And the very last meetup is on the day that this episode airs. So if you're a very keen listener, you've still got time to catch Chris in Portland on his way back north at 6pm Pacific time on October the 7th."
+      },
+      {
+        "start": 382400,
+        "stop": 382800,
+        "text": " Yep. And if you missed us future meetups meetup.com/jupiterbroadcasting."
+      },
+      {
+        "start": 382800,
+        "stop": 383900,
+        "text": " Although I do think we've done the meetups pretty heavily for the last few months. I will say if you're going to be in Raleigh around Halloween at all things open, I'm going to be in town obviously because I live here."
+      },
+      {
+        "start": 383900,
+        "stop": 384600,
+        "text": " But so is Cheese Bacon, longtime friend of the network. I think System76 are sending him over to Man of Booth for the conference."
+      },
+      {
+        "start": 384700,
+        "stop": 386000,
+        "text": " So we may do an informal meetup. Keep an eye on the Matrix Raleigh room and we'll talk about any stuff that's going to happen in there. We'll mention it in the shows too of course, but the details will be in the Matrix room."
+      },
+      {
+        "start": 386000,
+        "stop": 387000,
+        "text": " That's going to be fun. All things open always seems like a good one to go to. Now we do love your feedback, your questions, your topic ideas. selfhosted.show/contact is the place to go to get in touch with us."
+      },
+      {
+        "start": 387000,
+        "stop": 387300,
+        "text": " And of course you can find me on Twitter. I'm @ChrisLAS."
+      },
+      {
+        "start": 387400,
+        "stop": 387900,
+        "text": " And for now, at least until Elon closes the deal, finally I'm @ironicbadger."
+      },
+      {
+        "start": 387900,
+        "stop": 388300,
+        "text": " And I'm @brencherbadger."
+      },
+      {
+        "start": 388300,
+        "stop": 389300,
+        "text": " We might have to revisit the whole Twitter topic soon. In the meantime, there is also a show account for some reason, @selfhostedshow. You can follow it."
+      },
+      {
+        "start": 389300,
+        "stop": 390000,
+        "text": " What a ringing endorsement that is. Thanks for listening everybody. That was selfhosted.show/81."
+      }
+    ],
+    "processing_time": {
+      "secs": 2262,
+      "nanos": 576950059
+    }
+  },
+  "metadata": {
+    "title": "Self-Hosted 81: The Badger Stack",
+    "pictures": [],
+    "duration": {
+      "secs": 3884,
+      "nanos": 738000000
+    },
+    "unique_id": "http://selfhosted.show/81"
+  },
+  "episode": {
+    "title": "The Badger Stack | Self-Hosted 81",
+    "description": "Chris Raspberry Pi server is dead, and Alex has a few ideas for his next build. Special Guest: Brent Gervais.",
+    "content": "<p><p>Chris Raspberry Pi server is dead, and Alex has a few ideas for his next build.</p><p>Special Guest: Brent Gervais.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/ssh\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/ssh\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/ssh</li><li><a href=\"https://cloudfree.shop/\" rel=\"nofollow\">CloudFree.shop</a>: <a href=\"https://cloudfree.shop/\" rel=\"nofollow\">CloudFree Smart Plug – Runs Tasmota for $9. Use code SELFHOSTED and support the show.</a> Promo Code: SELFHOSTED</li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53744\" rel=\"payment\">Support Self-Hosted</a></p><p>Links:</p><ul><li><a href=\"https://www.jeffgeerling.com/blog/2022/you-cant-buy-raspberry-pi-right-now\" title=\"You can't buy a Raspberry Pi right now \" rel=\"nofollow\">You can't buy a Raspberry Pi right now </a> &mdash; ...or at least, not without a lot of patience or a fat wallet.</li><li><a href=\"https://staceyoniot.com/matter-is-now-official/\" title=\"Matter is now official!\" rel=\"nofollow\">Matter is now official!</a> &mdash; The Connectivity Standards Alliance has certified and released the first version of the Matter smart home interoperability protocol Tuesday and I couldn’t be happier.</li><li><a href=\"https://twitter.com/balloob/status/1576421490106384385\" title=\"Paulus Schoutsen on Twitter\" rel=\"nofollow\">Paulus Schoutsen on Twitter</a> &mdash; Ladies and gentlemen, we've got it! That's the first release.</li><li><a href=\"https://invoiceninja.com/\" title=\"Invoice Ninja \" rel=\"nofollow\">Invoice Ninja </a> &mdash; Focus on doing what you love. We’ll help with the invoicing.</li><li><a href=\"https://github.com/invoiceninja/dockerfiles\" title=\"Docker files for Invoice Ninja\" rel=\"nofollow\">Docker files for Invoice Ninja</a> &mdash; Introducing our very own Helm Chart that helps you launch a simple standalone app to a production-ready, highly available Invoice Ninja setup. </li><li><a href=\"https://www.invoiceplane.com/\" title=\"InvoicePlane\" rel=\"nofollow\">InvoicePlane</a> &mdash; InvoicePlane is a self-hosted open source application for managing your quotes, invoices, clients and payments.</li><li><a href=\"https://blog.cloudflare.com/making-phishing-defense-seamless-cloudflare-yubico/\" title=\"Cloudflare Zero Trust and Yubico\" rel=\"nofollow\">Cloudflare Zero Trust and Yubico</a> &mdash; Yubico is providing Security Keys at “Good for the Internet” pricing - as low as $10 per key.  Yubico will ship the keys to customers directly.</li><li><a href=\"https://developers.yubico.com/SSH/\" title=\"SSH with YubiKey\" rel=\"nofollow\">SSH with YubiKey</a></li><li><a href=\"https://bitwarden.com/help/setup-two-step-login-yubikey/\" title=\"Bitwarden Two-step Login via YubiKey\" rel=\"nofollow\">Bitwarden Two-step Login via YubiKey</a></li><li><a href=\"https://github.com/jc9108/expanse\" title=\"expanse\" rel=\"nofollow\">expanse</a> &mdash; fully selfhosted multi-user web app for externally storing Reddit items (saved, created, upvoted, downvoted, hidden) to bypass Reddit's 1000-item listing limits</li><li><a href=\"https://bitwarden.com/blog/use-bitwarden-to-generate-email-aliases-with-fastmail/\" title=\"Use Bitwarden to Generate Email Aliases with Fastmail\" rel=\"nofollow\">Use Bitwarden to Generate Email Aliases with Fastmail</a> &mdash; As of the September release, the Bitwarden username generator now supports creating email aliases</li><li><a href=\"https://github.com/netbirdio/netbird\" title=\"netbird\" rel=\"nofollow\">netbird</a> &mdash; NetBird is an open-source VPN management platform built on top of WireGuard® making it easy to create secure private networks for your organization or home.</li><li><a href=\"https://www.runeaudio.com/\" title=\"RuneAudio\" rel=\"nofollow\">RuneAudio</a> &mdash; RuneAudio is a free and open source software that turns embedded hardware into Hi-Fi music players.</li><li><a href=\"https://volumio.com/en/\" title=\"Volumio - The Audiophile Music Player\" rel=\"nofollow\">Volumio - The Audiophile Music Player</a> &mdash; A very powerful and convenient music aggregator, now Volumio can also be used with great results in all sorts of different situations.</li><li><a href=\"https://github.com/badaix/snapcast\" title=\"snapcast: Synchronous multiroom audio player\" rel=\"nofollow\">snapcast: Synchronous multiroom audio player</a> &mdash; Snapcast is a multiroom client-server audio player, where all clients are time synchronized with the server to play perfectly synced audio. It's not a standalone player, but an extension that turns your existing audio player into a Sonos-like multiroom solution.</li><li><a href=\"https://www.amazon.com/gp/product/B07PZ7ZHG5\" title=\"ConBee II Zigbee USB Gateway\" rel=\"nofollow\">ConBee II Zigbee USB Gateway</a> &mdash; Universal Zigbee USB gateway integrates Zigbee products across manufacturers</li><li><a href=\"https://cloudfree.shop/product/slaesh-zigbee-stick/\" title=\"Slaesh Zigbee 3.0 USB Stick - CloudFree\" rel=\"nofollow\">Slaesh Zigbee 3.0 USB Stick - CloudFree</a> &mdash; Recommended by Zigbee2MQTT</li><li><a href=\"https://perfectmediaserver.com/01-overview/high-level/\" title=\"Badgers Stack\" rel=\"nofollow\">Badgers Stack</a> &mdash; A new page for May 2022, here's a high level overview snapshot of PMS as it stands today.</li><li><a href=\"https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_11_Bullseye\" title=\"Install Proxmox VE on Debian 11 Bullseye\" rel=\"nofollow\">Install Proxmox VE on Debian 11 Bullseye</a> &mdash; The installation of a supported Proxmox VE server should be done via bare-metal ISO installer. In some cases it makes sense to install Proxmox VE on top of a running Debian Bullseye 64-bit, especially if you want a custom partition layout. For this How-To any official Bullseye installation medium should work.</li><li><a href=\"https://github.com/ironicbadger/infra\" title=\"ironicbadger/infra: 99.9% less leaked credentials\" rel=\"nofollow\">ironicbadger/infra: 99.9% less leaked credentials</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost with a New Podcast App\" rel=\"nofollow\">Send a Boost with a New Podcast App</a> &mdash; Upgrade to a Podcasting 2.0 compatible app.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8898",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15688699/5cb1c28a-b975-4141-a540-25a1beb7ff93.mp3",
+      "length": "54936884",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-07T04:02:00+02:00"
+  },
+  "speedup": 1.7169529
+}

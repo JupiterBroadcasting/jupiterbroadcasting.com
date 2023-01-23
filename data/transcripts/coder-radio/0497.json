@@ -1,0 +1,2302 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 760,
+        "text": " This is Coda Radio, episode 497 for December 15th, 2022."
+      },
+      {
+        "start": 760,
+        "stop": 1620,
+        "text": " Hello, friend."
+      },
+      {
+        "start": 1620,
+        "stop": 1850,
+        "text": " Welcome into Jupiter Broadcasting's weekly talk show."
+      },
+      {
+        "start": 1850,
+        "stop": 2230,
+        "text": " Taking a pragmatic look at the art and the business, software development"
+      },
+      {
+        "start": 2230,
+        "stop": 2420,
+        "text": " and the world of technology."
+      },
+      {
+        "start": 2420,
+        "stop": 2864,
+        "text": " My name is Chris and joining me out of time, it's our host, Mr."
+      },
+      {
+        "start": 2864,
+        "stop": 2910,
+        "text": " Dominic."
+      },
+      {
+        "start": 2910,
+        "stop": 2980,
+        "text": " Hello, Mike."
+      },
+      {
+        "start": 3000,
+        "stop": 3340,
+        "text": " We must fly our TARDISes in a circle to get out of time and space."
+      },
+      {
+        "start": 3340,
+        "stop": 3580,
+        "text": " It's what we have to do every now and then as podcasters."
+      },
+      {
+        "start": 3580,
+        "stop": 3940,
+        "text": " I mean, the normies don't know about it, but we've mastered time travel."
+      },
+      {
+        "start": 3940,
+        "stop": 4320,
+        "text": " We're a bit of time lords and we're doing this one a little head."
+      },
+      {
+        "start": 4320,
+        "stop": 4370,
+        "text": " That's right."
+      },
+      {
+        "start": 4370,
+        "stop": 4640,
+        "text": " Because the holidays are cometh and we're just recording the head."
+      },
+      {
+        "start": 4640,
+        "stop": 4860,
+        "text": " We're like doing our homework before it's due."
+      },
+      {
+        "start": 4860,
+        "stop": 4990,
+        "text": " Whaaaaat?"
+      },
+      {
+        "start": 4990,
+        "stop": 5130,
+        "text": " I thought we were edgelords, by the way."
+      },
+      {
+        "start": 5130,
+        "stop": 5520,
+        "text": " I thought I thought an edgelord was something else, but that's not appropriate for this year."
+      },
+      {
+        "start": 5520,
+        "stop": 5620,
+        "text": " We're an edging lord."
+      },
+      {
+        "start": 5620,
+        "stop": 5670,
+        "text": " Tell you what."
+      },
+      {
+        "start": 5670,
+        "stop": 5760,
+        "text": " Sorry, that's different."
+      },
+      {
+        "start": 5760,
+        "stop": 5820,
+        "text": " You know what?"
+      },
+      {
+        "start": 5850,
+        "stop": 6030,
+        "text": " We should start right off with a spicy one."
+      },
+      {
+        "start": 6030,
+        "stop": 6230,
+        "text": " I think we just go right into it."
+      },
+      {
+        "start": 6230,
+        "stop": 6630,
+        "text": " Liberty Person on Matrix asked about AI."
+      },
+      {
+        "start": 6630,
+        "stop": 7310,
+        "text": " He says, are you guys worried about the role AI will play soon now that it can code for you or will it be just another tool in your box?"
+      },
+      {
+        "start": 7310,
+        "stop": 8330,
+        "text": " So side note, ChatGPT can generate working automation configuration files and whatnot for like things like Home Assistant."
+      },
+      {
+        "start": 8340,
+        "stop": 9110,
+        "text": " It will spit out fully functional YAML that you can pop into Home Assistant, tweak a few of the variable names and start using it."
+      },
+      {
+        "start": 9110,
+        "stop": 9390,
+        "text": " I was blown away with that."
+      },
+      {
+        "start": 9390,
+        "stop": 9880,
+        "text": " So he asks, is this going to replace people or is this just another tool in their box?"
+      },
+      {
+        "start": 9880,
+        "stop": 10100,
+        "text": " He says, I'm seriously concerned about it myself."
+      },
+      {
+        "start": 10100,
+        "stop": 10480,
+        "text": " I'm worried that I'll become very dependent on it in the long run."
+      },
+      {
+        "start": 10480,
+        "stop": 11230,
+        "text": " In the short run, I'm afraid that by the time I'm done building my distro and learn Rust, I'm going to be obsolete before I can even get in the job market."
+      },
+      {
+        "start": 11250,
+        "stop": 11800,
+        "text": " I feel that this year there have been slow leaks of seriously game-changing technologies."
+      },
+      {
+        "start": 11800,
+        "stop": 12190,
+        "text": " I don't know how the developer industry will pan out over the next few years."
+      },
+      {
+        "start": 12190,
+        "stop": 12450,
+        "text": " I wouldn't worry too much, right?"
+      },
+      {
+        "start": 12450,
+        "stop": 12630,
+        "text": " There's always users breaking things."
+      },
+      {
+        "start": 12630,
+        "stop": 12740,
+        "text": " You always have work."
+      },
+      {
+        "start": 12740,
+        "stop": 13420,
+        "text": " It's a question of how much is this going to become part of your day-to-day, you know, day-to-day tool set, right?"
+      },
+      {
+        "start": 13420,
+        "stop": 13670,
+        "text": " Is this something you have to use for lack of..."
+      },
+      {
+        "start": 13670,
+        "stop": 13970,
+        "text": " But a good example of this is like Docker."
+      },
+      {
+        "start": 13970,
+        "stop": 14830,
+        "text": " Right now, ironically, I'm seeing some, a little bit of like Docker backlash now, but for a while there, Docker was like the hotness and the default option."
+      },
+      {
+        "start": 14830,
+        "stop": 15350,
+        "text": " And, you know, it would behoove anyone to learn it."
+      },
+      {
+        "start": 15350,
+        "stop": 15480,
+        "text": " I don't know."
+      },
+      {
+        "start": 15480,
+        "stop": 15550,
+        "text": " I wouldn't worry."
+      },
+      {
+        "start": 15550,
+        "stop": 15580,
+        "text": " I see."
+      },
+      {
+        "start": 15580,
+        "stop": 15850,
+        "text": " I, yeah, I'm always a little kind of poo-poo on these."
+      },
+      {
+        "start": 15850,
+        "stop": 15980,
+        "text": " Oh, what's going to happen to the industry?"
+      },
+      {
+        "start": 15980,
+        "stop": 16010,
+        "text": " Nothing."
+      },
+      {
+        "start": 16010,
+        "stop": 16180,
+        "text": " It's going to continue the way it has, right?"
+      },
+      {
+        "start": 16180,
+        "stop": 16230,
+        "text": " Yeah."
+      },
+      {
+        "start": 16230,
+        "stop": 16400,
+        "text": " I mean, maybe you won't get free kombucha."
+      },
+      {
+        "start": 16400,
+        "stop": 16520,
+        "text": " Well, something's going to change."
+      },
+      {
+        "start": 16520,
+        "stop": 17620,
+        "text": " If you're in the VC world, you know, for very disappointing, in my opinion, cultural reasons, the beer on tap is going away, but that might be my own hobbies."
+      },
+      {
+        "start": 17620,
+        "stop": 18140,
+        "text": " And for financial reasons, the kombucha is going away too, right?"
+      },
+      {
+        "start": 18140,
+        "stop": 18290,
+        "text": " So you're not going to be as pampered, but..."
+      },
+      {
+        "start": 18290,
+        "stop": 18380,
+        "text": " Oh man."
+      },
+      {
+        "start": 18380,
+        "stop": 18500,
+        "text": " So I'm going to take the other side of this."
+      },
+      {
+        "start": 18500,
+        "stop": 18570,
+        "text": " All right, take it."
+      },
+      {
+        "start": 18570,
+        "stop": 18810,
+        "text": " I've been using stable diffusion on the regular."
+      },
+      {
+        "start": 18810,
+        "stop": 19310,
+        "text": " If you go to jupiter.tube, you can see where I think it actually is a great tooling for somebody like me."
+      },
+      {
+        "start": 19310,
+        "stop": 19690,
+        "text": " I need, I basically need something that's like stock photography."
+      },
+      {
+        "start": 19690,
+        "stop": 20430,
+        "text": " I can't justify the subscription for just some stupid jupiter.tube thumbnail or social media post, right?"
+      },
+      {
+        "start": 20430,
+        "stop": 22010,
+        "text": " But if I can go into stable diffusion and within 5-10 minutes generate an image that works for me, that works for a blog post, works for jupiter.tube, works for a social media post, and I can do that for free, as I get better at it too, I'm quicker to get to the results I want now."
+      },
+      {
+        "start": 22010,
+        "stop": 22220,
+        "text": " It's a powerful tool for me."
+      },
+      {
+        "start": 22220,
+        "stop": 22330,
+        "text": " I use it all the time now."
+      },
+      {
+        "start": 22330,
+        "stop": 23790,
+        "text": " And chatgpt, since that has gone public, JB has used it every single day in the line of production because you can throw the show docs at it and it'll take a pass at generating the description."
+      },
+      {
+        "start": 23790,
+        "stop": 24030,
+        "text": " It'll take a pass at generating all the tags."
+      },
+      {
+        "start": 24030,
+        "stop": 24820,
+        "text": " You can also have it, you know, look at the stories and it'll take a pass at generating the highlights of the story."
+      },
+      {
+        "start": 24820,
+        "stop": 25270,
+        "text": " Now, it's generally pretty worthless when it does that."
+      },
+      {
+        "start": 25270,
+        "stop": 26130,
+        "text": " However, it often extracts a few things that I'd have to go manually do anyways, dates, names, high level observations."
+      },
+      {
+        "start": 26130,
+        "stop": 26350,
+        "text": " From that, I can start writing."
+      },
+      {
+        "start": 26350,
+        "stop": 27130,
+        "text": " Like, I'm the kind of guy that when we need to send out an email, I'll have somebody else write the email first and then I'll just completely rewrite it."
+      },
+      {
+        "start": 27130,
+        "stop": 27320,
+        "text": " But I couldn't actually start it."
+      },
+      {
+        "start": 27320,
+        "stop": 27710,
+        "text": " I have to have somebody else start it and then I'll read it and make it better."
+      },
+      {
+        "start": 27810,
+        "stop": 28040,
+        "text": " And I don't mean that in an arrogant way."
+      },
+      {
+        "start": 28040,
+        "stop": 28850,
+        "text": " I just mean that's just like sometimes, not always, but sometimes, I shouldn't hit it too hard, but I just need to get the creative juices flowing."
+      },
+      {
+        "start": 28850,
+        "stop": 29370,
+        "text": " I need something just to get the ball rolling, that first sentence written for me, and then I can write a book."
+      },
+      {
+        "start": 29370,
+        "stop": 29800,
+        "text": " In one sentence you said, \"Hit it too hard, get the juices flowing, and ball."
+      },
+      {
+        "start": 29800,
+        "stop": 30010,
+        "text": " I am showing admirable restraint, sir.\""
+      },
+      {
+        "start": 30010,
+        "stop": 30110,
+        "text": " Good job."
+      },
+      {
+        "start": 30160,
+        "stop": 31110,
+        "text": " So, I was actually just talking to Wes about this last night, is it is helping me scale this week because we're doing the double stuff, right?"
+      },
+      {
+        "start": 31110,
+        "stop": 31260,
+        "text": " And it's all the shows for me."
+      },
+      {
+        "start": 31260,
+        "stop": 31660,
+        "text": " So that's, it's a wild amount of work."
+      },
+      {
+        "start": 31660,
+        "stop": 32130,
+        "text": " I left my house at 5 a.m. and last night I got home around 9 p.m."
+      },
+      {
+        "start": 32130,
+        "stop": 32810,
+        "text": " I have to scrape my windshield when I leave in the morning and I have to scrape my windshield before I go home at night, just for this whole week, right?"
+      },
+      {
+        "start": 32820,
+        "stop": 33670,
+        "text": " So anything I can do to kind of like just do the repetitive stuff, like extracting all the tags for an episode, so powerful."
+      },
+      {
+        "start": 33670,
+        "stop": 34070,
+        "text": " And I could easily see myself becoming dependent on a tool like that."
+      },
+      {
+        "start": 34070,
+        "stop": 34870,
+        "text": " And if they let me self-host ChatGPT and I could run it here unlimited, I'd already be so far gone, I'd be helpless."
+      },
+      {
+        "start": 34870,
+        "stop": 35220,
+        "text": " It's ridiculous how useful I find a tool like that."
+      },
+      {
+        "start": 35230,
+        "stop": 36080,
+        "text": " And what's remarkable about ChatGPT is it's kind of stupid and it's got a long way to go, but it's still better than Google Search."
+      },
+      {
+        "start": 36080,
+        "stop": 36930,
+        "text": " It finds and correlates information way better than Google does, way better than the Alexa does, way better than the Google Assistant or Siri does."
+      },
+      {
+        "start": 36930,
+        "stop": 37380,
+        "text": " It's way ahead of them and it makes those Assistant tubes look like dummies."
+      },
+      {
+        "start": 37380,
+        "stop": 38180,
+        "text": " And now I'm not claiming that ChatGPT is going to make people lose their jobs, but I do think as it improves and it learns more and it gets more input"
+      },
+      {
+        "start": 38190,
+        "stop": 38740,
+        "text": " because people are just shoving data into it like crazy, it's going to become a tool that we become dependent on."
+      },
+      {
+        "start": 38740,
+        "stop": 38940,
+        "text": " Much like we've said before, like Spellcheck."
+      },
+      {
+        "start": 38940,
+        "stop": 39640,
+        "text": " I think when we said it's the new Clippy, when we were talking about Copilot a while ago, I think if you zoom out and apply it to AI in general,"
+      },
+      {
+        "start": 39640,
+        "stop": 40440,
+        "text": " what big company like Microsoft isn't going to want to own something like ChatGPT and just bake it into their office suite to be the next Grammarly?"
+      },
+      {
+        "start": 40450,
+        "stop": 41250,
+        "text": " And I don't mean to undersell it, but I think if you start looking at it in these terms, I think then my version and your version come together, right?"
+      },
+      {
+        "start": 41250,
+        "stop": 41700,
+        "text": " Like it is going to become a tool that we become dependent on that is integrated into a lot of our software,"
+      },
+      {
+        "start": 41700,
+        "stop": 42350,
+        "text": " but it's going to be co-opted by the big tech companies that do all this stuff and just baked into their existing product line that's just a featurette."
+      },
+      {
+        "start": 42350,
+        "stop": 42950,
+        "text": " This, ultimately I believe, ChatGPT is a feature, not a product."
+      },
+      {
+        "start": 42960,
+        "stop": 43760,
+        "text": " Well, the problem with ChatGPT, I don't remember the exact numbers, is they're burning cash for every single request you send them."
+      },
+      {
+        "start": 43760,
+        "stop": 44060,
+        "text": " And it's not insignificant cash, right?"
+      },
+      {
+        "start": 44060,
+        "stop": 44560,
+        "text": " I don't know, but ten years from now, don't you think something like this will exist and make sense?"
+      },
+      {
+        "start": 44560,
+        "stop": 45560,
+        "text": " 100%, and I think it's just going to be Apple and I think they'll eventually phase out their existing assistant products and go around something based on this."
+      },
+      {
+        "start": 45570,
+        "stop": 46470,
+        "text": " Oh, you're such an optimist. I think it's going to replace the s***ty automated customer service when you call the bank, right? Or you call, you know, insert big company here."
+      },
+      {
+        "start": 46470,
+        "stop": 46870,
+        "text": " Oh, totally, you're right. Customer service?"
+      },
+      {
+        "start": 46870,
+        "stop": 47070,
+        "text": " It's not going to be like Siri or, yeah."
+      },
+      {
+        "start": 47070,
+        "stop": 47170,
+        "text": " Oh, and it's going to be both, man."
+      },
+      {
+        "start": 47180,
+        "stop": 49480,
+        "text": " Well, but I think, I'll put it to you this way. My insane landlord, who is a giant private equity company, keeps having this problem where because they refuse to use people locally to either handle requests from either myself or the HOA, they hit these weird cases where their little, their app is basically, and I say app loosely, it's an app, it's their system, right? Their internal system."
+      },
+      {
+        "start": 49490,
+        "stop": 50890,
+        "text": " Someone told me, is basically a wizard, right? You have to click through and if something doesn't cleanly fit into the buckets, they don't know how to categorize it. So what they do, the workers do, is they categorize it with whatever's close."
+      },
+      {
+        "start": 50890,
+        "stop": 51890,
+        "text": " But the contractors they hire won't do work unless it cleanly fits into a pre-approved, effectively a barcode, right? Like a UPC for what they pay."
+      },
+      {
+        "start": 51890,
+        "stop": 52190,
+        "text": " Of course, of course, dude, of course."
+      },
+      {
+        "start": 52200,
+        "stop": 53600,
+        "text": " So you end up in this insane loop where, and we had this three times so far in the last month, they send a dude out from, you know, Joe's contracting company. He's like, Hey, man, I'm Joe. What's the problem? I'm like, ah, we got the letter from the HOA, but we didn't get it. Landlord sent it to us."
+      },
+      {
+        "start": 53610,
+        "stop": 55810,
+        "text": " Oh, but, oh, wait, they want SOD? Yeah, they didn't approve SOD, so I can't do that. And there's no way to actually fix this problem. I mean, I feel like isn't ChatGTP going to be just the souped up, hopefully somewhat better extension of Invitations Home's little wizard, which by the way, is BlackRock Capital, just so you guys know."
+      },
+      {
+        "start": 55820,
+        "stop": 57120,
+        "text": " I believe. So what we're seeing today with ChatGTP is an example of what this technology is capable of. That backend technology will be built in to all of these tech companies' products. Like, OK, let's flip this around just for a second."
+      },
+      {
+        "start": 57120,
+        "stop": 58620,
+        "text": " If you think about it, isn't it strange that when you call Apple today, the phone isn't answered by Siri? Like, Siri should be answering the phone at Apple support and responding to your questions and direct..."
+      },
+      {
+        "start": 58620,
+        "stop": 58720,
+        "text": " No, she shouldn't."
+      },
+      {
+        "start": 58730,
+        "stop": 60830,
+        "text": " Well, you could see that from their perspective, right? From Apple's perspective, Siri is their voice. That's their brand. And that should be the person answering the phone. And when you call an Apple, you get your region specific Siri, and she's capable of a lot of these things, but it's essentially being run by a GPT-3 AI backend. And it's the same Siri on your phone."
+      },
+      {
+        "start": 60840,
+        "stop": 61840,
+        "text": " She's like, the same cloud instances that are answering your phone questions are the ones that are answering the phone when you call in support. And it's the same one that's on your Mac. It's on your watch."
+      },
+      {
+        "start": 61840,
+        "stop": 62750,
+        "text": " I mean, we're eventually going to get there. I don't know. I kind of see this as more of a cost cutting move only because I think Apple will be afraid of the reputational risk of it being bad, right?"
+      },
+      {
+        "start": 62760,
+        "stop": 64160,
+        "text": " Perhaps. Microsoft's all in, though, because there's no way Landon, our 24/7 matrix chat room points out, Microsoft's already invested a billion greenbacks into open AI, and all of that infra is on Azure."
+      },
+      {
+        "start": 64160,
+        "stop": 64260,
+        "text": " True."
+      },
+      {
+        "start": 64260,
+        "stop": 65360,
+        "text": " So Microsoft's definitely keeping the door cracked. You know what I mean? I think this makes so much sense for their Office 365 products."
+      },
+      {
+        "start": 65370,
+        "stop": 65770,
+        "text": " Well, yeah, all rosy to Azure, right? We said that a couple years ago, and it's still true."
+      },
+      {
+        "start": 65770,
+        "stop": 66870,
+        "text": " Speaking of which, Brock, who's been boosting in, talking about their .NET Azure shop, he followed up on Twitter. He said, \"We've been using Azure on and off for a decade with all our services. It's been incredible and stable.\""
+      },
+      {
+        "start": 66870,
+        "stop": 67870,
+        "text": " Maybe he wasn't the booster, I'm not sure, but he's an Azure user. He says, \"It's power user oriented,\" which he likes a lot, \"with a focus on automation. The servers never fail when running Linux.\""
+      },
+      {
+        "start": 67880,
+        "stop": 68880,
+        "text": " Oh, and our Windows IIS servers, I have to nuke and pave every six months. No! Is that still a thing? Is that still a thing people are doing?"
+      },
+      {
+        "start": 68880,
+        "stop": 68980,
+        "text": " Sounds really bad."
+      },
+      {
+        "start": 68980,
+        "stop": 69980,
+        "text": " I have not run a Windows server. It's got to be over a decade, maybe. I mean, it's been a very long time. Maybe a decade ago I had clients."
+      },
+      {
+        "start": 69990,
+        "stop": 71290,
+        "text": " I think the last server version that I was actively using from Microsoft was, I mean, God, this is going to make me feel old, but I believe it was Server 2003, which is a good release."
+      },
+      {
+        "start": 71290,
+        "stop": 71690,
+        "text": " So, you know, they just last a while. That's all. I'm not old."
+      },
+      {
+        "start": 71690,
+        "stop": 72590,
+        "text": " Linode.com/coder. Go there to get $100 and 60-day credit while you're checking out the development platform of choice."
+      },
+      {
+        "start": 72600,
+        "stop": 73400,
+        "text": " This is a great way to deploy tools to get your job done or host your infrastructure. Linode's what we use. It's our development environment, and we also use it for our production environment."
+      },
+      {
+        "start": 73400,
+        "stop": 74200,
+        "text": " And Linode is making it easier all the time for newbies or long timers. For example, they have a one-click deployment from Astadon."
+      },
+      {
+        "start": 74200,
+        "stop": 75100,
+        "text": " If you're thinking about joining the Federation, but you just have heard what a nightmare it is to set up and run a Mastadon server, and so it's slowing you down like it has for me."
+      },
+      {
+        "start": 75110,
+        "stop": 76310,
+        "text": " Well, perhaps they're one-click deployments for us. Now, one-click, I don't know if you can really truly call it that because one of the nice things it'll do is it'll ask you some of the necessary questions you need to set up a Masto."
+      },
+      {
+        "start": 76310,
+        "stop": 76710,
+        "text": " And you just fill out that information, then you hit deploy and it's up and running."
+      },
+      {
+        "start": 76710,
+        "stop": 77610,
+        "text": " And Linode has 11 data centers around the world today, and they're bringing on a dozen more next year, so there's always something near you or your end users."
+      },
+      {
+        "start": 77620,
+        "stop": 78320,
+        "text": " They started in 2003 as one of the very first companies in cloud computing, and now I think they've built the best platform developers."
+      },
+      {
+        "start": 78320,
+        "stop": 79220,
+        "text": " Great performance, great support, great infrastructure, you have a good range of hardware configurations, so you can really nail that price-to-performance ratio."
+      },
+      {
+        "start": 79220,
+        "stop": 79920,
+        "text": " And their mission has been laser focus this entire time. Make cloud computing simple, affordable, and accessible to all types."
+      },
+      {
+        "start": 79930,
+        "stop": 80730,
+        "text": " And they do that by making a great product and by having great support. And if you go to linode.com/coder, you'll get a $100 offer."
+      },
+      {
+        "start": 80730,
+        "stop": 81630,
+        "text": " So you can try out anything on Linode. You get $100, you can try it out. You can really kick the tires and see if it's the right platform for your personal stuff, your business stuff, whatever it might be."
+      },
+      {
+        "start": 81630,
+        "stop": 82230,
+        "text": " You know, you can experiment with the Mastodon instance, you can experiment with a GitLab deployment. It's a great opportunity to learn, too."
+      },
+      {
+        "start": 82240,
+        "stop": 83140,
+        "text": " That $100 is kind of like a free class ticket, isn't it? It's kind of like a free opportunity. You just have to go take advantage of it and use your imagination."
+      },
+      {
+        "start": 83140,
+        "stop": 83740,
+        "text": " That's a great way to support the show, too. From development tools to game servers, Linode makes it easy to get started in just a few clicks."
+      },
+      {
+        "start": 83740,
+        "stop": 84740,
+        "text": " And of course, I'm always super appreciative of their S3-compatible object storage. That's been a lifesaver for us, especially for our Nextcloud and PeerTube instances and for backups."
+      },
+      {
+        "start": 84750,
+        "stop": 85750,
+        "text": " The systems here at the studio back up to Linode's S3-compatible object storage. They just have so many features. That's why you get the $100. You can go try it and see what I've been talking about."
+      },
+      {
+        "start": 85750,
+        "stop": 86550,
+        "text": " linode.com/coder. One more time to support the show. You go to linode.com/coder."
+      },
+      {
+        "start": 86560,
+        "stop": 87860,
+        "text": " All right, so Apple has made a ton of news since we got together on Monday. And we actually just published Coder Radio like 23 hours ago, 24 hours ago as we're recording."
+      },
+      {
+        "start": 87860,
+        "stop": 88960,
+        "text": " But in that time, Apple is reportedly preparing to allow third-party app stores on their Internet phone platform."
+      },
+      {
+        "start": 88970,
+        "stop": 89970,
+        "text": " This is coming from your buddy over at Bloomberg, and The Verge also picked it up. And the plans are reportedly being spurred on by the EU's Digital Markets Act."
+      },
+      {
+        "start": 89970,
+        "stop": 90970,
+        "text": " We've talked about DMA on the show before, which is meant to \"enact rules for digital gatekeepers,\" which Apple and Google would be considered, \"to ensure open markets.\""
+      },
+      {
+        "start": 90970,
+        "stop": 91870,
+        "text": " So disappointing. Didn't they know that we have a clip for them whenever the EU calls that we are prepared for this exact scenario?"
+      },
+      {
+        "start": 91880,
+        "stop": 92280,
+        "text": " You know, she curses in the, you know, \"F*ck the EU.\""
+      },
+      {
+        "start": 92280,
+        "stop": 92880,
+        "text": " It's okay when it's the EU, because you know what, if you couldn't keep England, that's right. That's right, I'm making Brexit jokes again."
+      },
+      {
+        "start": 92880,
+        "stop": 93680,
+        "text": " That's true. We do favor the favor, yeah, no. No, you know what, let's not joke about this, because people get so upset. We're just kidding."
+      },
+      {
+        "start": 93680,
+        "stop": 93880,
+        "text": " You want me to Brexit this topic? Is that what you're saying?"
+      },
+      {
+        "start": 93880,
+        "stop": 94080,
+        "text": " But I do like the UK better."
+      },
+      {
+        "start": 94080,
+        "stop": 94580,
+        "text": " The only thing that's not great in the UK is food is weirdly expensive, right?"
+      },
+      {
+        "start": 94590,
+        "stop": 95290,
+        "text": " And bad. You know how I know it's bad? And I mean, no offense to my buddies who come to visit, but..."
+      },
+      {
+        "start": 95290,
+        "stop": 95490,
+        "text": " Lots of offense, you damn wankers."
+      },
+      {
+        "start": 95490,
+        "stop": 96490,
+        "text": " Well, but they know this is true, they will not deny it. When they come here, what I consider to be like low-end bad food, and I'm not even S-ing you, is like some of the best food they've ever had."
+      },
+      {
+        "start": 96490,
+        "stop": 96890,
+        "text": " Chris is taking our British host to Chili's and they're thrilled."
+      },
+      {
+        "start": 96890,
+        "stop": 97290,
+        "text": " No worse than Chili's, dude. Mod pizza."
+      },
+      {
+        "start": 97290,
+        "stop": 97490,
+        "text": " Oh, that sucks, wow, really?"
+      },
+      {
+        "start": 97500,
+        "stop": 97900,
+        "text": " The British guys get over here and they can't stop raving about Mod Pizza."
+      },
+      {
+        "start": 97900,
+        "stop": 100100,
+        "text": " Like, I want to take them to like really good, a family-owned pizza restaurant that's been around for 30 years, survived just on the merits of their fantastic, incredible pizza, you know, passed down recipe through the family over generations, and they're like, \"But we really want to go to Mod Pizza. That's incredible pizza, and we know we like Mod Pizza.\" In some way, like..."
+      },
+      {
+        "start": 100110,
+        "stop": 100510,
+        "text": " See, now I want them to come here and I'll take them to like Hungry Howie, see what happens."
+      },
+      {
+        "start": 100510,
+        "stop": 101810,
+        "text": " Anyways, so the EU has these schedules of how this stuff goes into effect. Some of them are in effect by March 6, 2024, the one that affects the App Store stuff."
+      },
+      {
+        "start": 101820,
+        "stop": 103320,
+        "text": " Also in here, however, there is a bit about how messaging services need to be interoperable with other services, part of the conditions, and it looks like Find My Network would need to be compatible with services like Tile as well."
+      },
+      {
+        "start": 103320,
+        "stop": 104220,
+        "text": " So basically, coming in and busting up all of the platform advantages, I'm always a little torn on this. There seems to be, you know, some good in this."
+      },
+      {
+        "start": 104230,
+        "stop": 105830,
+        "text": " An ability to install third-party apps outside the App Store would be, I think, a huge improvement for the ecosystem. However, it looks like Apple is considering charging a fee to do so, either to the developer or the... I'm not sure."
+      },
+      {
+        "start": 105830,
+        "stop": 106230,
+        "text": " How likely do you think any of this is? Do you think there's some way they're going to get out of this?"
+      },
+      {
+        "start": 106230,
+        "stop": 106730,
+        "text": " I'm sorry, I just wasn't listening because I think the bots just did our job. Look at Element."
+      },
+      {
+        "start": 106730,
+        "stop": 106930,
+        "text": " Okay, alright, what do we have in there?"
+      },
+      {
+        "start": 106940,
+        "stop": 107940,
+        "text": " This is Coder Radio. This is apparently GTV Chat. This is Coder Radio. Hello, friend, and welcome into Jupiter Broadcasting's Weleak Talk Show. We're here to talk about all things tech, code, and magic the gathering. I may have made a minor edit."
+      },
+      {
+        "start": 107940,
+        "stop": 108740,
+        "text": " From third-party app stores to fast API, we keep it fresh and you... and never whack, yo. Are we in 80s? Are we Will Smith?"
+      },
+      {
+        "start": 108740,
+        "stop": 109240,
+        "text": " We are little 80s. Yeah, yo. We keep it fresh, yo, and we never whack."
+      },
+      {
+        "start": 109240,
+        "stop": 109840,
+        "text": " Well, you know what's not 80s? Getting your 30%... nah, that's very 80s, actually, getting your 30%."
+      },
+      {
+        "start": 109850,
+        "stop": 109950,
+        "text": " Yeah, it is."
+      },
+      {
+        "start": 109950,
+        "stop": 110850,
+        "text": " So why would anybody do this? Because you know Apple has already won in federal court in the US, and we have nothing but respect for Great Britain."
+      },
+      {
+        "start": 110850,
+        "stop": 111750,
+        "text": " But I don't think that the other place that Britain used to be part of is going to be able to stop them from getting that 30%."
+      },
+      {
+        "start": 111760,
+        "stop": 112860,
+        "text": " And also, like, the bigger markets are the United States and China. Like, China can stop them from letting people airdrop things. They pretty effectively did that. All hail Pooh Bear."
+      },
+      {
+        "start": 112860,
+        "stop": 112970,
+        "text": " But..."
+      },
+      {
+        "start": 112970,
+        "stop": 113660,
+        "text": " I could see them not... yeah, right, maybe they don't enable this outside the EU, perhaps. That could be one thing."
+      },
+      {
+        "start": 113660,
+        "stop": 114260,
+        "text": " Why would you even do it? Like, I don't want to say fork the EU, but..."
+      },
+      {
+        "start": 114260,
+        "stop": 114460,
+        "text": " It's the law."
+      },
+      {
+        "start": 114460,
+        "stop": 114660,
+        "text": " But isn't this a good thing if this happens?"
+      },
+      {
+        "start": 114670,
+        "stop": 116070,
+        "text": " Is it? I don't know. You know, the EU likes to bluster and do a lot of things, but... I've... alright, one, I don't care. Two, I've lost a lot of faith. The fact that they couldn't make some accommodation with the right-wingers and Great Britain..."
+      },
+      {
+        "start": 116070,
+        "stop": 116570,
+        "text": " Okay, alright, well let me flip it around. What if this was coming from the US? What if it was, you know, a law going..."
+      },
+      {
+        "start": 116570,
+        "stop": 117170,
+        "text": " We can't do anything. We are 85 years old, we have erectile dysfunction, and we've been drinking all day, okay?"
+      },
+      {
+        "start": 117170,
+        "stop": 117470,
+        "text": " But I'm just trying to get to the nut of the matter, which is, like..."
+      },
+      {
+        "start": 117480,
+        "stop": 117780,
+        "text": " No, we never get to nut. This is Congress. Never. Never get there."
+      },
+      {
+        "start": 117780,
+        "stop": 118480,
+        "text": " There's no market heavyweights strong enough to force Apple to open up sideloading. They're never going to do it."
+      },
+      {
+        "start": 118480,
+        "stop": 119080,
+        "text": " Yes, there is. His name is Xi Jinping. If you send him a picture of Winnie the Pooh, he will have you killed. That is the only one."
+      },
+      {
+        "start": 119080,
+        "stop": 119380,
+        "text": " Yeah, but he's not going to make Apple open up the app store like that."
+      },
+      {
+        "start": 119380,
+        "stop": 119680,
+        "text": " No, he loves centralized control. He's like, \"Yay, I'm down.\""
+      },
+      {
+        "start": 119680,
+        "stop": 120380,
+        "text": " That's what I'm saying. There's no free market force that'll ever force Apple to do this, so it almost feels like it's going to take a state actor..."
+      },
+      {
+        "start": 120390,
+        "stop": 120890,
+        "text": " And as you just said, we have a bunch of geriatrics who can't even figure..."
+      },
+      {
+        "start": 120890,
+        "stop": 121490,
+        "text": " I'm like, \"Oh my God, I watched a four hour Senate hearing yesterday and it ruined my day. It was so bad.\""
+      },
+      {
+        "start": 121490,
+        "stop": 121890,
+        "text": " I really regret it, but incompetence does not begin to describe..."
+      },
+      {
+        "start": 121890,
+        "stop": 122090,
+        "text": " Well, they're senile. I think..."
+      },
+      {
+        "start": 122090,
+        "stop": 122390,
+        "text": " So they're incapable, right? So it takes somebody..."
+      },
+      {
+        "start": 122390,
+        "stop": 122890,
+        "text": " There's not going to be a free market actor. It's going to take a state actor, and it's not going to be the US Congress,"
+      },
+      {
+        "start": 122900,
+        "stop": 123700,
+        "text": " so it seems like it's going to have to be EU or the UK. It's going to have to be some other large western nation where Apple wants to make a lot of money."
+      },
+      {
+        "start": 123700,
+        "stop": 123900,
+        "text": " Or it's going to have to be China, but that's never going to happen."
+      },
+      {
+        "start": 123900,
+        "stop": 124500,
+        "text": " Well, the thing about China is China usually doesn't do stuff, but when they do it, they come in."
+      },
+      {
+        "start": 124500,
+        "stop": 125200,
+        "text": " I mean, remember Jack Ma? When China decides they don't like something, they really don't like it, and they handle that."
+      },
+      {
+        "start": 125200,
+        "stop": 125600,
+        "text": " I'm not saying that's good. I'm just saying in terms of effectiveness."
+      },
+      {
+        "start": 125610,
+        "stop": 126310,
+        "text": " The EU, what are they going to do? They make a bunch of bluster, they talk about these principles, and then they end up settling for something much less."
+      },
+      {
+        "start": 126310,
+        "stop": 126610,
+        "text": " Right? No matter what, Apple's getting their 30%."
+      },
+      {
+        "start": 126610,
+        "stop": 127410,
+        "text": " I could see this being fought for years, and then years down the road, it basically, Apple agrees to a monthly fine. Or a yearly fine."
+      },
+      {
+        "start": 127410,
+        "stop": 127710,
+        "text": " And they just write it off as an expense to operate the app store."
+      },
+      {
+        "start": 127710,
+        "stop": 128510,
+        "text": " This is like the dumbest thing. Like, I don't know. We tend to get too much into politics, but if you think about problems the EU might have,"
+      },
+      {
+        "start": 128520,
+        "stop": 129320,
+        "text": " iOS app store, that's where we're going. Who cares? And I also don't like the app store policies."
+      },
+      {
+        "start": 129320,
+        "stop": 130020,
+        "text": " I think this is maybe just more about dominating. You know, it's a little bit about establishing power, perhaps."
+      },
+      {
+        "start": 130020,
+        "stop": 130520,
+        "text": " Well, they also like to bitch slap American companies, right? So, you know."
+      },
+      {
+        "start": 130520,
+        "stop": 131320,
+        "text": " So, they're not going to love this, but Apple has announced they're rolling out true end-to-end encryption, optionally, won't be on by default."
+      },
+      {
+        "start": 131320,
+        "stop": 131420,
+        "text": " Not going to happen."
+      },
+      {
+        "start": 131430,
+        "stop": 131730,
+        "text": " For your iCloud photos, notes, backups, and more."
+      },
+      {
+        "start": 131730,
+        "stop": 131830,
+        "text": " Nope."
+      },
+      {
+        "start": 131830,
+        "stop": 132230,
+        "text": " What do you mean, nope? It's like, it's in beta. It's like going to happen. What are you talking about, nope?"
+      },
+      {
+        "start": 132230,
+        "stop": 132730,
+        "text": " Show me Xi Jinping. Unless it just doesn't happen in China."
+      },
+      {
+        "start": 132730,
+        "stop": 132830,
+        "text": " Perhaps. Perhaps."
+      },
+      {
+        "start": 132830,
+        "stop": 133430,
+        "text": " You have to embrace in your heart, right? The first step is that China is now the most important country in the world."
+      },
+      {
+        "start": 133430,
+        "stop": 134230,
+        "text": " I think this is a theory which is correct. I think if you use this worldview from a, if you're looking at it from the perspective of a large, multinational corporation,"
+      },
+      {
+        "start": 134240,
+        "stop": 134740,
+        "text": " like Apple. Not from our perspective, but from like, Apple's."
+      },
+      {
+        "start": 134740,
+        "stop": 135640,
+        "text": " Right. It's the growth market. And, frankly, it would still be the United States if we could get somebody under the age of 72 into Congress."
+      },
+      {
+        "start": 135640,
+        "stop": 136340,
+        "text": " But we can't, so. I don't know why we can't. Oh, well, crazy ladies with guns, we can. We can do that. But, that's about it."
+      },
+      {
+        "start": 136340,
+        "stop": 136840,
+        "text": " See, Chris, I'm over-correcting for your apparent right-wing alt-rightness that we got emailed about."
+      },
+      {
+        "start": 136840,
+        "stop": 136940,
+        "text": " Oh, yeah."
+      },
+      {
+        "start": 136940,
+        "stop": 137140,
+        "text": " So, now we're going to get the other side, right?"
+      },
+      {
+        "start": 137150,
+        "stop": 138450,
+        "text": " Yeah, I said the key words. I mean, I think they're doing it. I don't know. Maybe they will region lock it, but it's starting with iOS 16.2, iPad 16.2, and macOS 13.1, which is in beta."
+      },
+      {
+        "start": 138450,
+        "stop": 139050,
+        "text": " Your device backups and iMessages will now be encrypted, which was kind of that backdoor that existed."
+      },
+      {
+        "start": 139050,
+        "stop": 139950,
+        "text": " iCloud Drive encrypted, Notes, Photos encrypted, Reminders encrypted, Voice Memos, Safari bookmarks, Siri shortcuts, Wallet passes, all encrypted."
+      },
+      {
+        "start": 139960,
+        "stop": 141060,
+        "text": " And, as you have experienced, if you lose the key, if you lose the login, you lose everything. Apple cannot restore it."
+      },
+      {
+        "start": 141060,
+        "stop": 141760,
+        "text": " They have you set up a recovery device, and if you lose that recovery contact and device, you are screwed."
+      },
+      {
+        "start": 141760,
+        "stop": 142660,
+        "text": " We've talked a lot about the limpness of Congress here, but if there is one law that I think they could actually manage to pass that isn't like renaming a post office."
+      },
+      {
+        "start": 142670,
+        "stop": 143670,
+        "text": " I'm pretty sure preventing this is the one, right? Because you're going to have the, I mean, I could think of lots of do-gooder organizations screaming, \"The children!\""
+      },
+      {
+        "start": 143670,
+        "stop": 145070,
+        "text": " You know, blah, blah, blah. The cops, the FBI, everybody who wants to spy on people. Weirdly, the IRS now. You know, lobbying pretty hard to not have this happen."
+      },
+      {
+        "start": 145080,
+        "stop": 145680,
+        "text": " In fact, we've already, the FBI was pissed off already, right? We've seen this happen where they went toe-to-toe in public with Apple."
+      },
+      {
+        "start": 145680,
+        "stop": 146180,
+        "text": " And they released a statement after Apple's announcement, and they said it was \"deeply concerning.\""
+      },
+      {
+        "start": 146180,
+        "stop": 147180,
+        "text": " And there's another group, to your point, actually, I think it's called the Surveillance Technology Oversight Project, or STOP, took the opposite side, and said that it's long overdue that Apple did this,"
+      },
+      {
+        "start": 147180,
+        "stop": 147580,
+        "text": " but then another organization took their opposite side and said, \"Well, this is only going to harm children.\""
+      },
+      {
+        "start": 147590,
+        "stop": 148590,
+        "text": " \"This hinders our ability to protect the American people from criminal acts ranging from cyber attacks and violence against children.\""
+      },
+      {
+        "start": 148590,
+        "stop": 149090,
+        "text": " And most importantly, tax evasion. Let's be honest, what it's going to be used for."
+      },
+      {
+        "start": 149090,
+        "stop": 149890,
+        "text": " Yeah, probably. And it's, you know, when it is optional, then only the people that have something to hide will likely turn it on, and I hate that. And that's one of the reasons why I advocate for..."
+      },
+      {
+        "start": 149900,
+        "stop": 150900,
+        "text": " Not true. No, not true. Not true. If you look at the statistics, if we're talking about actual pedophiles, right, pedophiles, why did I make that British?"
+      },
+      {
+        "start": 150900,
+        "stop": 151900,
+        "text": " See, I'm in love with, you know what, I love Britain, still. You could have done better in the World Cup, you could have tried. You guys phoned it in. We're not going to talk about it too much."
+      },
+      {
+        "start": 151910,
+        "stop": 153210,
+        "text": " But most, if you look at educational attainment, socioeconomic status, see, I'm British again. Bloody hell. Most actual pedophiles are not like smart guys. They're not quota radio listeners, right?"
+      },
+      {
+        "start": 153210,
+        "stop": 154210,
+        "text": " They're dumb. They would have to read a step-by-step article of how to turn that on. And they'd probably mess it up anyway, right?"
+      },
+      {
+        "start": 154210,
+        "stop": 154410,
+        "text": " Yeah."
+      },
+      {
+        "start": 154420,
+        "stop": 155420,
+        "text": " The sophisticated criminals that are going to turn this on are like your Sam Bakeman Freeds of the World Cup. By the way, oh, oh, are you, can I have a, can I gloat?"
+      },
+      {
+        "start": 155420,
+        "stop": 155620,
+        "text": " Yeah."
+      },
+      {
+        "start": 155620,
+        "stop": 156220,
+        "text": " As much as I'm anti-system today, my faith is restored, because, hey, me in jail? That sounds bad."
+      },
+      {
+        "start": 156220,
+        "stop": 156620,
+        "text": " Yeah, well, we'll see, right? We'll see what ends up happening ultimately, but the fact that he's arrested."
+      },
+      {
+        "start": 156620,
+        "stop": 157020,
+        "text": " He's a jail, they denied him bail. I can't, I couldn't believe that."
+      },
+      {
+        "start": 157030,
+        "stop": 158730,
+        "text": " Well, his ex-girlfriend, Caroline, is working with a former SEC representative who's a lawyer now, and I saw a report last night that perhaps a couple of FTX insiders came forward to the Bohemian authorities and basically spilled the beans on Sam."
+      },
+      {
+        "start": 158740,
+        "stop": 160440,
+        "text": " Chris, I have to flip this card here. See, flip, get it? Yeah, they all flipped, right? Of course. I hope that what happens is that they extradite him to the US and that he gets a proper return on his political investment and nothing happens."
+      },
+      {
+        "start": 160440,
+        "stop": 160840,
+        "text": " Just because I want you to restart unfiltered."
+      },
+      {
+        "start": 160840,
+        "stop": 161440,
+        "text": " Oh, I would, right? I tell you what."
+      },
+      {
+        "start": 161450,
+        "stop": 161950,
+        "text": " You would lose it. I can feel it in the Slack channel already."
+      },
+      {
+        "start": 161950,
+        "stop": 163950,
+        "text": " We'll see what happens. I watched this, these were the Senate hearings about the collapse of FTX. It was two days worth, and they pointed out that the folks that got wrapped up in the Madoff scams are just beginning to get paid now, you know, 12, 13 years later."
+      },
+      {
+        "start": 163960,
+        "stop": 164460,
+        "text": " They're just beginning to get their payments. So this is a very long process."
+      },
+      {
+        "start": 164460,
+        "stop": 165360,
+        "text": " Yeah, I mean, they say crime doesn't pay, but I don't know if it's financial. It seems to be going, notice no VCs are being questioned, just, you know, saying."
+      },
+      {
+        "start": 165360,
+        "stop": 166660,
+        "text": " Day one wasn't too bad, but day two, you're not going to believe this. Day two for testimony, for expert testimony to Congress, they brought in an actor whose name I forget, but he's an actor."
+      },
+      {
+        "start": 166670,
+        "stop": 167570,
+        "text": " And I didn't catch his introduction, so I didn't realize he was an actor, but I was chatting online. I was like, why does this guy feel like he's a poser? Like he's just pretending."
+      },
+      {
+        "start": 167570,
+        "stop": 167970,
+        "text": " Like he doesn't even know what he's talking about. And so he's actually an actor. Like they brought in an actor."
+      },
+      {
+        "start": 167970,
+        "stop": 168170,
+        "text": " Because he literally is."
+      },
+      {
+        "start": 168170,
+        "stop": 169070,
+        "text": " They brought in Kevin O'Leary from Shark Tank, who was literally completely uninformed on crypto until SBF paid him $15 million."
+      },
+      {
+        "start": 169080,
+        "stop": 170280,
+        "text": " So if you've ever watched Shark Tank, and if someone offers you a deal like he offers, those are bad deals. Right? Paying interest plus a rev share is always stupid."
+      },
+      {
+        "start": 170280,
+        "stop": 171280,
+        "text": " These are the congressional expert testimonies, right? And then they brought in two professors. The first gal thought there was only 10 Bitcoin developers."
+      },
+      {
+        "start": 171290,
+        "stop": 172190,
+        "text": " She didn't have any idea how it worked. She had to read from her notes constantly, but she did disclose that up front she would just shut it all down immediately."
+      },
+      {
+        "start": 172190,
+        "stop": 172690,
+        "text": " And then another gal who seemed to be the most neutral, but they never called on her very much."
+      },
+      {
+        "start": 172690,
+        "stop": 173490,
+        "text": " And so you just had all these show voters come in, and it was brutal to watch. They don't have any understanding of what happened."
+      },
+      {
+        "start": 173500,
+        "stop": 174400,
+        "text": " And nothing they're proposing. Like there's a bill that Senator Warren is proposing to solve this, and none of it addresses what happened with FTX."
+      },
+      {
+        "start": 174400,
+        "stop": 175200,
+        "text": " It's all more about making sure people don't transfer large sums of money, and it's about reporting person-to-person transactions."
+      },
+      {
+        "start": 175200,
+        "stop": 175900,
+        "text": " It's all about financial monitoring, and none of it has anything to do with resolving what happened with FTX."
+      },
+      {
+        "start": 175900,
+        "stop": 176000,
+        "text": " It's about tax collection."
+      },
+      {
+        "start": 176000,
+        "stop": 176100,
+        "text": " Yes."
+      },
+      {
+        "start": 176110,
+        "stop": 176710,
+        "text": " Yeah, it's about tax collection. That's all it's about. They don't care about it. They're going to say it's about like crime and human trafficking and all that. That's bullsh*t."
+      },
+      {
+        "start": 176710,
+        "stop": 177310,
+        "text": " A more boring hearing that wasn't a hearing, but a press release from the IRS is like this is their plan."
+      },
+      {
+        "start": 177310,
+        "stop": 178910,
+        "text": " I keep hitting that point, but we are going to live in such a monitored society that if you forget that you sent money to somebody, or worse, accidentally send money to the wrong, God forbid, Venmo account, you're going to need to account for that."
+      },
+      {
+        "start": 178920,
+        "stop": 179520,
+        "text": " Everything's going to need to be run as though even people were individual little businesses that have to keep records."
+      },
+      {
+        "start": 179520,
+        "stop": 180320,
+        "text": " And I will tell you that I think the, you know, I don't think you and I are guilty of anything."
+      },
+      {
+        "start": 180320,
+        "stop": 181520,
+        "text": " I don't think most of our listeners are, but I think the tax code in the U.S. is incredibly complicated, and it's very easy to interpret something wrong or make a mistake, and I think a lot of people are going to get nailed."
+      },
+      {
+        "start": 181530,
+        "stop": 182630,
+        "text": " And it's not going to be, no one's going to jail, right? It's going to be, well, that's a $200 fine. I'm sure you've had this experience. You fill out a form wrong, they consider it invalid, it's late, that's $250."
+      },
+      {
+        "start": 182630,
+        "stop": 184130,
+        "text": " Yeah, yeah. Not to have us both hitting this point at the same time, but super hard here. But I think what you're saying will come to fruition because tax revenue is going to be in the dumpster, right?"
+      },
+      {
+        "start": 184140,
+        "stop": 185440,
+        "text": " We had a really good tax revenue for 2021 and 2020 and even 2019 because a huge, huge portion of tax revenue for local state government and federal government is capital gains tax."
+      },
+      {
+        "start": 185440,
+        "stop": 186640,
+        "text": " Stocks, Bitcoin, any of the crypto, you know, NFT silliness going on, lots of big, you know, corporate deals and sales. All of that has capital gains tax."
+      },
+      {
+        "start": 186650,
+        "stop": 187550,
+        "text": " And when you have a recession, everybody's taking a loss on those same items. And there's way, way, way, way less tax revenue coming in."
+      },
+      {
+        "start": 187550,
+        "stop": 188350,
+        "text": " Plus driving goes down, so there's less gas tax revenue. So my state generates a ton of revenue from the gas tax that goes down."
+      },
+      {
+        "start": 188350,
+        "stop": 189550,
+        "text": " There's a huge flip in the income for the government. And at the same time, they're adding debt on like crazy, right? So the two things are incompatible, so they will have to raise their income."
+      },
+      {
+        "start": 189560,
+        "stop": 190260,
+        "text": " And how does the government raise its income? Through taxes. And so they will have to become more active and more aggressive."
+      },
+      {
+        "start": 190260,
+        "stop": 191260,
+        "text": " And that's how they'll raise revenue is by tax enforcement. And it's not a conspiracy. That's literally what the Biden administration said the plan is. So it is going to be rough."
+      },
+      {
+        "start": 191260,
+        "stop": 191960,
+        "text": " Yeah, and they're not going to like throw people in jail. They're going to hit small businesses with like little technicalities, right?"
+      },
+      {
+        "start": 191960,
+        "stop": 192260,
+        "text": " Yeah, or folks with side hustles, you know, the side hustlers."
+      },
+      {
+        "start": 192270,
+        "stop": 192970,
+        "text": " Oh, you're going to, if you don't account for that Venmo over $600 that you got over a 12-month period, yeah, that's taxable income. Yeah."
+      },
+      {
+        "start": 192970,
+        "stop": 193170,
+        "text": " It's not just going to be Venmo, too. It's PayPal."
+      },
+      {
+        "start": 193170,
+        "stop": 193470,
+        "text": " It's any of them, right? I'm using Venmo."
+      },
+      {
+        "start": 193470,
+        "stop": 194370,
+        "text": " So anything that looks like it's any kind of payment for goods or services, anything like that is going to get automatically analyzed and scrutinized. And it could get you flagged."
+      },
+      {
+        "start": 194370,
+        "stop": 195070,
+        "text": " Right, and it's not going to be about like persecuting the people. It's going to be about getting that sweet, sweet $200 fine. That's just all it is."
+      },
+      {
+        "start": 195270,
+        "stop": 196070,
+        "text": " Tailscale.com/coder. Go there to get a free personal account for 20 devices when you go to Tailscale.com/coder."
+      },
+      {
+        "start": 196070,
+        "stop": 196770,
+        "text": " And it's a great way to support the show and check out a zero config mesh VPN that you can get going in minutes. It's powerful that way."
+      },
+      {
+        "start": 196770,
+        "stop": 197170,
+        "text": " It's so powerful. It's so powerful and they keep adding great features."
+      },
+      {
+        "start": 197170,
+        "stop": 197870,
+        "text": " So my devices, they all connect directly to each other on a mesh wire guard flat network."
+      },
+      {
+        "start": 197880,
+        "stop": 198680,
+        "text": " And it's fantastic. Doesn't matter if I'm behind a carrier grade NAT. Doesn't matter if I've got firewall rules in between me. Doesn't matter what kind of network setup."
+      },
+      {
+        "start": 198680,
+        "stop": 199380,
+        "text": " Tailscale is super smart about finding each other. And then they build that mesh network and then they send the traffic directly to each other."
+      },
+      {
+        "start": 199380,
+        "stop": 200280,
+        "text": " Man, that makes things really, really simple because you start with just, OK, this isn't always on network that I have and only the traffic that's supposed to go to that network routes there."
+      },
+      {
+        "start": 200290,
+        "stop": 200990,
+        "text": " But then you can start layering things on top of it. Like I've deployed Nextcloud exclusively in my Tailscale network."
+      },
+      {
+        "start": 200990,
+        "stop": 201790,
+        "text": " And Tailscale is also rolling out new features like quick user switching. So now I can have a work Tailscale network and a personal Tailscale network."
+      },
+      {
+        "start": 201790,
+        "stop": 202290,
+        "text": " And I can switch on the fly without having to re-authenticate anymore. It's awesome."
+      },
+      {
+        "start": 202290,
+        "stop": 203090,
+        "text": " And they're also rolling out a new ability for you to control the keys. So you can verify that all of the key management is on the up and up."
+      },
+      {
+        "start": 203100,
+        "stop": 203500,
+        "text": " If you want to take that responsibility away from Tailscale, they're rolling that feature out now."
+      },
+      {
+        "start": 203500,
+        "stop": 204100,
+        "text": " TailNet Lock. And if you go to their website, they'll have a white paper published. Of course, you can check their Twitter account, too."
+      },
+      {
+        "start": 204100,
+        "stop": 205200,
+        "text": " And they've also recently announced funnels. They're really, really on fire. They're moving so fast, building so many great features, and they do it with a fantastic base."
+      },
+      {
+        "start": 205210,
+        "stop": 206210,
+        "text": " If you read their blog, and I've actually talked to their founder, you can find the interview in the archives of Linux Unplugged, there's a real smart approach."
+      },
+      {
+        "start": 206210,
+        "stop": 207010,
+        "text": " Where they've built this super solid base, this really intelligent network layout, and now they can just build things on top of that foundation."
+      },
+      {
+        "start": 207010,
+        "stop": 207910,
+        "text": " They have their layer one, and now they're adding on top of that. And as a user, all the stuff I can opt into or not, it's really simple. It's not overwhelming at all."
+      },
+      {
+        "start": 207920,
+        "stop": 208520,
+        "text": " It starts with just simple mesh networking, and then you get things like Tailscale Send, which is like AirDrop for all your devices."
+      },
+      {
+        "start": 208520,
+        "stop": 209220,
+        "text": " Or Tailscale SSH. Or now, TailNet Lock, and of course, Funnel, and quick user switching."
+      },
+      {
+        "start": 209220,
+        "stop": 210220,
+        "text": " I'm such a happy Tailscale user. And you can get it for free, not for a limited time, just get it for free for up to 20 devices, when you go to tailscale.com/coder."
+      },
+      {
+        "start": 210220,
+        "stop": 210820,
+        "text": " It's a great way to up your networking game, get a fantastic VPN that you're going to use for years, and support the show."
+      },
+      {
+        "start": 210830,
+        "stop": 211030,
+        "text": " Tailscale.com/coder."
+      },
+      {
+        "start": 211030,
+        "stop": 212140,
+        "text": " Well, it was all going so well, until the FTC stepped in, and they're suing to block Microsoft's acquisition of Activision Blizzard."
+      },
+      {
+        "start": 212140,
+        "stop": 213040,
+        "text": " The Federal Trade Commission voted in three to one in favor of a complaint against Microsoft's planned $68.7 million acquisition."
+      },
+      {
+        "start": 213050,
+        "stop": 213850,
+        "text": " And I think this is going to have huge fight written all over it."
+      },
+      {
+        "start": 213850,
+        "stop": 214060,
+        "text": " This is the insanest case they could have picked."
+      },
+      {
+        "start": 214060,
+        "stop": 214470,
+        "text": " You think so? Okay, alright, so tell me why. Tell me why."
+      },
+      {
+        "start": 214470,
+        "stop": 215280,
+        "text": " It's stupid. Sorry, my European friends, who we love and respect, Great Britain. Joking, loving you guys. French wine's good."
+      },
+      {
+        "start": 215290,
+        "stop": 216190,
+        "text": " You have to define the market, and the market is going to be video games, because that's the market, right? It's pretty obvious on its face."
+      },
+      {
+        "start": 216190,
+        "stop": 217000,
+        "text": " And Microsoft is not, nor will they be after this, you know, a monopolist in video games."
+      },
+      {
+        "start": 217000,
+        "stop": 218010,
+        "text": " A company who apparently doesn't want to tell you this, but we've seen in court documents, is one of the largest companies in video games, is called Apple."
+      },
+      {
+        "start": 218020,
+        "stop": 219120,
+        "text": " Right? And Nintendo still exists. First of all, if you're an Activision Blizzard fan, and you think it's good that Microsoft not buy them, do I have some articles for you to read?"
+      },
+      {
+        "start": 219120,
+        "stop": 219330,
+        "text": " Because it's just going to get worse."
+      },
+      {
+        "start": 219330,
+        "stop": 220040,
+        "text": " You know, I think about it like this. How will the consumer be affected if Microsoft merges with Activision?"
+      },
+      {
+        "start": 220050,
+        "stop": 221150,
+        "text": " What I foresee happening is Microsoft adds a whole new suite of licensed games to the Xbox streaming service, which is like nine bucks a month."
+      },
+      {
+        "start": 221150,
+        "stop": 222050,
+        "text": " And I doubt they'll raise the price. So, it actually is going to make prices lower, it's going to make things more available for consumers."
+      },
+      {
+        "start": 222050,
+        "stop": 222850,
+        "text": " And I agree with you. Sony is huge. People don't, I think, fully grasp the size of Sony and Nintendo, especially in the console space."
+      },
+      {
+        "start": 222860,
+        "stop": 223250,
+        "text": " This is kind of a console-forward service that Microsoft's dealing with here."
+      },
+      {
+        "start": 223250,
+        "stop": 224450,
+        "text": " And then on top of that, what we realized immediately after the acquisition was announced is that there was a real internal rot going on at Activision."
+      },
+      {
+        "start": 224450,
+        "stop": 224950,
+        "text": " And they were really going off the wheels. They was falling apart over there."
+      },
+      {
+        "start": 224960,
+        "stop": 225950,
+        "text": " Microsoft coming in, bringing that corporate maturity, bringing that corporate structure, while being perhaps a little incompatible with some folks, is probably an antidote they needed."
+      },
+      {
+        "start": 225950,
+        "stop": 226950,
+        "text": " And Microsoft, to kind of try to allay everyone's fears, you probably saw this, is going out of their way to announce a ten-year deal with Nintendo for Call of Duty and stuff."
+      },
+      {
+        "start": 226950,
+        "stop": 227450,
+        "text": " They're doing that because your hardcore FPS players are chilling with their Switch."
+      },
+      {
+        "start": 227450,
+        "stop": 227750,
+        "text": " I know. It's so silly. It's just not the platform for that."
+      },
+      {
+        "start": 227760,
+        "stop": 229350,
+        "text": " But if you think about it, if you're going to spend 70 bill on Activision to get things like Call of Duty, it's actually in Microsoft's best interest to make Call of Duty available on the PlayStation and the Nintendo so they can make that money back."
+      },
+      {
+        "start": 229350,
+        "stop": 229950,
+        "text": " Because $8 a month, $9 a month, it's going to take a long time to pay that 70 bill off."
+      },
+      {
+        "start": 229960,
+        "stop": 230950,
+        "text": " But if they can put it as part of their Microsoft streaming package and they can sell it one off at $60 a copy on Nintendo and Sony's platform, why wouldn't they do that?"
+      },
+      {
+        "start": 230950,
+        "stop": 231250,
+        "text": " Right? It's silly. It's like, of course they want to do that."
+      },
+      {
+        "start": 231250,
+        "stop": 231650,
+        "text": " And I think the issue here is the FTC has a new boss."
+      },
+      {
+        "start": 231650,
+        "stop": 231750,
+        "text": " Elena Kahn, yeah."
+      },
+      {
+        "start": 231760,
+        "stop": 233050,
+        "text": " And she has a kind of a philosophical-driven approach to governing the FTC, and her philosophy is, if it looks like something could become a problem at some point down the road, let's act today."
+      },
+      {
+        "start": 233050,
+        "stop": 233550,
+        "text": " And I think you could make an argument for that. I can see that logic there."
+      },
+      {
+        "start": 233550,
+        "stop": 233950,
+        "text": " The issue is, is I don't think those dynamics are quite playing out here."
+      },
+      {
+        "start": 233950,
+        "stop": 234650,
+        "text": " I mean, but perhaps her argument is right, and that's why she's taking this action, but it seems like a really dramatic step on what might be an issue."
+      },
+      {
+        "start": 234660,
+        "stop": 234950,
+        "text": " Instead of dealing with what the issue is in the marketplace today."
+      },
+      {
+        "start": 234950,
+        "stop": 235650,
+        "text": " Okay, so there's so much to unpack here, right? So one, Microsoft's issue has nothing to do with Sony, Activision, or Nintendo."
+      },
+      {
+        "start": 235650,
+        "stop": 235950,
+        "text": " Nintendo basically makes the machine to play their own games."
+      },
+      {
+        "start": 235950,
+        "stop": 236350,
+        "text": " And we keep giving them money because their games are very, very good."
+      },
+      {
+        "start": 236350,
+        "stop": 237450,
+        "text": " Microsoft doesn't care what console you're playing on. They might temporarily care, but their real problem is a little-known company called Comcast."
+      },
+      {
+        "start": 237460,
+        "stop": 237750,
+        "text": " Right? That's what's screwing them over. Comcast and Apple."
+      },
+      {
+        "start": 237750,
+        "stop": 238450,
+        "text": " Comcast has, unbelievably, internet access is horrible in the US. This is where the EU beats us."
+      },
+      {
+        "start": 238450,
+        "stop": 239350,
+        "text": " And it's, The Verge just did a thing, my favorite website, where they were comparing American internet high-speed bills to foreign ones."
+      },
+      {
+        "start": 239350,
+        "stop": 239850,
+        "text": " And, God damn it, I'm moving to South Korea. Like, what the hell?"
+      },
+      {
+        "start": 239850,
+        "stop": 240250,
+        "text": " It's double the price for a third of the service in most cases."
+      },
+      {
+        "start": 240250,
+        "stop": 240350,
+        "text": " I know it. I know it."
+      },
+      {
+        "start": 240360,
+        "stop": 241250,
+        "text": " Yeah. So that's, like, the problem with Game Pass, right? And Microsoft, and Microsoft themselves, every year, comes out with an Internet Connectivity Report, they call it."
+      },
+      {
+        "start": 241250,
+        "stop": 242250,
+        "text": " And they're just bitching and moaning to the government, and the government just won't take their blue pill and do something, right? So, it's just not a thing."
+      },
+      {
+        "start": 242250,
+        "stop": 242650,
+        "text": " Their product is held back by the infrastructure in the States for internet, for sure."
+      },
+      {
+        "start": 242660,
+        "stop": 243650,
+        "text": " Unfortunately, we're turning into The Verge here, because a lot of this stuff is so large that it actually requires the state to do something."
+      },
+      {
+        "start": 243650,
+        "stop": 244350,
+        "text": " And they can't do anything other than collect taxes and throw people in jail, right? Like..."
+      },
+      {
+        "start": 244360,
+        "stop": 246250,
+        "text": " If only somebody could figure out how to engineer a company that can build relaunchable rockets and then could deploy low-orbit satellites at scale and just build out a new internet infrastructure, but, you know, nobody's ever seemed to be able to do that, so I think that's not gonna happen."
+      },
+      {
+        "start": 246260,
+        "stop": 247650,
+        "text": " Or you could just, like, not allow the telco monopolies, right? I guess they're not technically monopolies, but isn't it strange how they all base their prices based on how much competition they have in your neighborhood? It's a little weird, right?"
+      },
+      {
+        "start": 247650,
+        "stop": 248350,
+        "text": " Dude, our bill just went up a hundred bucks a month at the studio. We're now paying nearly... you're not gonna believe this."
+      },
+      {
+        "start": 248350,
+        "stop": 248450,
+        "text": " How much?"
+      },
+      {
+        "start": 248450,
+        "stop": 249050,
+        "text": " We're now paying nearly $480 a month for 300 megabits."
+      },
+      {
+        "start": 249060,
+        "stop": 249850,
+        "text": " See, luckily for me, where I live outside of Tampa, there is competition and I pay $500 by $570 a month."
+      },
+      {
+        "start": 249850,
+        "stop": 251350,
+        "text": " Oh, God, we're looking to what we can do. But anyways, I have two thoughts, and one I'll just toss away short aside so we don't get into the politics of it, but this is pitting the Microsoft company and their lobbyists against the Biden administration."
+      },
+      {
+        "start": 251350,
+        "stop": 251950,
+        "text": " The FTC commissioner is very much seen as part of the Biden administration. It's Biden pick."
+      },
+      {
+        "start": 251960,
+        "stop": 252250,
+        "text": " It's such a weird choice, though, of all the things she could have gone after."
+      },
+      {
+        "start": 252250,
+        "stop": 253350,
+        "text": " I know, and all of the things, and all the companies for the Biden administration to go after, because Microsoft has been enjoying about a decade of very little government interference, and this is a big change in that all of a sudden."
+      },
+      {
+        "start": 253360,
+        "stop": 255050,
+        "text": " But putting that aside here, don't you think that Microsoft has likely learned from Windows and Office and now understands that the real strategy is make our products available on whatever platform people want, and it's gonna be gaming as a service?"
+      },
+      {
+        "start": 255050,
+        "stop": 256150,
+        "text": " The metaphor would be they're skating to where the puck is gonna go here, because yes, infrastructure is bad today, but theoretically it is conceivable that in the next 10 years, 20 years, that's gonna get solved."
+      },
+      {
+        "start": 256160,
+        "stop": 256950,
+        "text": " And so they want to be ready to go with the biggest, with the Disney-sized catalog for gaming, and they're gonna do it at nine bucks a pop."
+      },
+      {
+        "start": 256950,
+        "stop": 258250,
+        "text": " I don't see what the FTC's case is here. I don't think they have one, because Microsoft can point to the governance of Activision, Microsoft can point to the market dominance of Sony, and they can point to what you just said, the ISP situation."
+      },
+      {
+        "start": 258260,
+        "stop": 259350,
+        "text": " In this particular situation, they can use that to their advantage and argue, \"It's not even capable of becoming a market-dominant player with the state of the broadband situation.\""
+      },
+      {
+        "start": 259350,
+        "stop": 259850,
+        "text": " They can actually use that as an argument to their advantage right now in arguing against the FTC."
+      },
+      {
+        "start": 259850,
+        "stop": 260250,
+        "text": " I don't see how they have a leg to stand on, the FTC. They're gonna lose this."
+      },
+      {
+        "start": 260260,
+        "stop": 261250,
+        "text": " They're gonna lose, and this is pure predatory capitalism on Microsoft's part, only because for some reason Activision was unable to rein their nonsense in."
+      },
+      {
+        "start": 261250,
+        "stop": 262150,
+        "text": " There's Wall Street Journal articles about the insane frat boy behavior at Activision, and also their games kind of suck now."
+      },
+      {
+        "start": 262160,
+        "stop": 263550,
+        "text": " I understand there's a history there with Blizzard and all that, but yeah, they're big, but they're nowhere near the entirety of the industry. They're nowhere near 51 percent."
+      },
+      {
+        "start": 263550,
+        "stop": 264350,
+        "text": " And even if they were, that's just not legally a monopoly. We're not lawyers, right?"
+      },
+      {
+        "start": 264360,
+        "stop": 265550,
+        "text": " Yeah, and one of their leading arguments was that Microsoft will use this market position to \"show and already has withhold content from its gaming rivals.\""
+      },
+      {
+        "start": 265550,
+        "stop": 266350,
+        "text": " But then, right before this FTC thing dropped very tactfully by Microsoft, they announced that 10-year deal with Nintendo, and they announced a deal with Sony,"
+      },
+      {
+        "start": 266350,
+        "stop": 266850,
+        "text": " which just undercuts that position, which is what the FTC led with with the suit."
+      },
+      {
+        "start": 266860,
+        "stop": 268150,
+        "text": " Yeah, I really don't understand this move on the FTC's part, because there are so many very, very obvious targets that, I mean, I guess maybe they think Microsoft, they'll be able to get a settlement,"
+      },
+      {
+        "start": 268150,
+        "stop": 268950,
+        "text": " because Microsoft is very, like, you know, they love capitulating to the government because they don't want what happened to them in the past to happen again."
+      },
+      {
+        "start": 268950,
+        "stop": 269450,
+        "text": " I don't know. Apple App Store seems like a much bigger, more obvious target."
+      },
+      {
+        "start": 269450,
+        "stop": 269650,
+        "text": " Right."
+      },
+      {
+        "start": 269660,
+        "stop": 271350,
+        "text": " All of the ISPs, just like nail the ISPs, right? Pick like one case, like, I'll give you an example, Eatontown, New Jersey, where there's one ISP and they charge you 200 bucks for 200 by 200 of cable, right, like cable internet, coax internet, where I used to live."
+      },
+      {
+        "start": 271350,
+        "stop": 272550,
+        "text": " See, it's not just the EU. I tend to think that the problem is, like, Lina Khan is a very smart person. And I think she knows that Microsoft will sign some sort of settlement instead of fighting."
+      },
+      {
+        "start": 272560,
+        "stop": 273450,
+        "text": " And then she can say it's a win. Where if you go after Comcast, they may or may not have a few pet hundred Congress critters, right?"
+      },
+      {
+        "start": 273450,
+        "stop": 274950,
+        "text": " This has got to be it, dude. I think you've nailed it. Because if you did go after the ISPs, and you busted that up, and you brought competition back to the ISP space, that would return exponential economic dividends for decades."
+      },
+      {
+        "start": 274960,
+        "stop": 275850,
+        "text": " Not educational. Think about kids in underprivileged neighborhoods who are fighting their way with s*** DSL or tethering to mom's phone."
+      },
+      {
+        "start": 275850,
+        "stop": 275950,
+        "text": " Telemedicine."
+      },
+      {
+        "start": 275950,
+        "stop": 276050,
+        "text": " Yep, telemedicine, yep."
+      },
+      {
+        "start": 276050,
+        "stop": 277550,
+        "text": " It would change lives if we could break up the ISP monopoly, and it would change lives almost immediately for the better, and it would put more money back in the pockets of the American people while inflation is going crazy."
+      },
+      {
+        "start": 277550,
+        "stop": 277850,
+        "text": " It would be huge. And you're right, instead, this is what they focus on."
+      },
+      {
+        "start": 277860,
+        "stop": 278050,
+        "text": " Ooh, boy!"
+      },
+      {
+        "start": 278050,
+        "stop": 279350,
+        "text": " God forbid someone has to, like, not get an exclusive skin in Call of Duty on the Nintendo. Although, that's not even true, because Microsoft already promised all that stuff. So it's like, I don't know, this is dumb."
+      },
+      {
+        "start": 279350,
+        "stop": 280050,
+        "text": " Ask not what your podcast can boost for you, but what you can boost for your podcast."
+      },
+      {
+        "start": 280050,
+        "stop": 280450,
+        "text": " The Golden Dragon came in with a row of ducks."
+      },
+      {
+        "start": 280460,
+        "stop": 281650,
+        "text": " Just my obligatory thank you for another great show boost. Well, thank you, The Golden Dragon. This is a small set, since the episode's only been out for 24 hours, and so you were quick on it. Really appreciate that."
+      },
+      {
+        "start": 281650,
+        "stop": 282950,
+        "text": " And Mitch D came in. Mitch, he is the co-developer of Podverse. Well, one of the developers, I suppose they have more, but co-founder of Podverse, which is a podcasting 2.0 app with 10,000 sats coming in hot!"
+      },
+      {
+        "start": 282950,
+        "stop": 283150,
+        "text": " Coming in hot with the boost!"
+      },
+      {
+        "start": 283160,
+        "stop": 284450,
+        "text": " Glad you are planning to make JB lit. That is the live item tag. Yes, we are. So, there's a whole new system coming along where you will be able to listen when Coda Radio is live, just in your podcasting 2.0 app."
+      },
+      {
+        "start": 284450,
+        "stop": 285850,
+        "text": " You won't have to go to JupiterTube, you won't have to have a separate feed, it's just when you open up your podcast list and you're looking at all your available podcasts, when Coda Radio is live, it'll just be in that list with a live, like, you know, little live logo next to it."
+      },
+      {
+        "start": 285860,
+        "stop": 286950,
+        "text": " And you can just hit play and tune into our live stream. We're not there yet. Step one is to start generating our own feeds, which we hope to do in early 2023."
+      },
+      {
+        "start": 286950,
+        "stop": 287850,
+        "text": " Mitch also sent in another 10,000 sats to make his total 20,000. Appreciate it very much and thanks for the great work on Podverse."
+      },
+      {
+        "start": 287850,
+        "stop": 288550,
+        "text": " And also a thank you to Teppulus, who's been streaming us batches of 200 sats while he listens over the last day or so."
+      },
+      {
+        "start": 288560,
+        "stop": 289550,
+        "text": " And I thought I'd do something kind of fun. So, Mike and I are pre-recording right now. And so, your emails and your boosts, they're going to be kind of spread out over the next few episodes."
+      },
+      {
+        "start": 289550,
+        "stop": 290550,
+        "text": " If you don't hear it in one, it might be in another. And I thought, this could be a nice chance. If you'd like to send us a row of holiday bells and get, I'll batch up all of the holiday well-wished boosts."
+      },
+      {
+        "start": 290560,
+        "stop": 291850,
+        "text": " And then you can do a row of bells, which is four eights, 8888. Nice little row of bells. And then I'll batch all of the holiday boost messages or New Year's too, because we'll probably get to those in the first episode of the New Year altogether."
+      },
+      {
+        "start": 291850,
+        "stop": 292750,
+        "text": " So, send in a row of bells by doing 8888 with your holiday best wishes and New Year's predictions as well. Toss those in there and we'll put them all together."
+      },
+      {
+        "start": 292760,
+        "stop": 294650,
+        "text": " And I think that'll probably be in the first week of January, because we're recording one more episode this year on Monday. So, if you'd like to join us for what I think might be our last episode of the year, join us Monday the 19th of December at jupiter.tube at 9 a.m. Pacific, noon Eastern."
+      },
+      {
+        "start": 294660,
+        "stop": 296150,
+        "text": " That'll be our last live show. The feed will keep delivering episodes though, because we have been banking them. So, get your holiday boosts in or get your emails in, because we'd like to bank a couple of those so we can also fill out those episodes. You can do that at coder.show/contact as well."
+      },
+      {
+        "start": 296150,
+        "stop": 296750,
+        "text": " Mr. Dominic, is there anywhere you'd like to send the good people before we get out of here? Any holiday locations?"
+      },
+      {
+        "start": 296750,
+        "stop": 297450,
+        "text": " Yeah, I would send you to wherever the FCC petition site. Let's break up Comcast. Let's do it."
+      },
+      {
+        "start": 297460,
+        "stop": 298250,
+        "text": " Dude, wouldn't that be amazing if the Coder Radio program got that rolling? I'd totally be on board."
+      },
+      {
+        "start": 298250,
+        "stop": 298550,
+        "text": " I think we would both end up in the back of a Buick, but yeah."
+      },
+      {
+        "start": 298550,
+        "stop": 299050,
+        "text": " Oh, yeah. That's true. Neither one of us are suicidal, so if we disappear..."
+      },
+      {
+        "start": 299050,
+        "stop": 299750,
+        "text": " Yeah, if I die in Arkansas in particular, it wasn't self-imposed."
+      },
+      {
+        "start": 299760,
+        "stop": 301050,
+        "text": " Speaking of the end of the year, I should mention our last Coderly of the year went out, so if you're a member, if you're a CoderQA.com member, be sure to get that in your downloads area or it'll be in your ad-free feed. That's a perk we give our members."
+      },
+      {
+        "start": 301050,
+        "stop": 302450,
+        "text": " And if you'd like to support all the shows, jupiter.party and use the promo code 2022 to take two bucks off a month, the membership for the lifetime of the sub, for new accounts and for upgrades from single show plans to network."
+      },
+      {
+        "start": 302450,
+        "stop": 302550,
+        "text": " What?"
+      },
+      {
+        "start": 302560,
+        "stop": 302850,
+        "text": " And you can use the promo code 2022 at jupiter.party. Yeah, I know."
+      },
+      {
+        "start": 302850,
+        "stop": 303350,
+        "text": " Crazy Chris has taken two bucks off. That's like the profit margin. But you know what? Love you guys."
+      },
+      {
+        "start": 303350,
+        "stop": 304250,
+        "text": " So it's the holidays. And we're also, I should say, the reason why I did it is because I'm shutting down the Patreon account, which is what I should lead with so people know."
+      },
+      {
+        "start": 304250,
+        "stop": 304750,
+        "text": " I'm shutting down Patreon, consolidating, focusing. A man needs his APIs, Mr. Dominic."
+      },
+      {
+        "start": 304750,
+        "stop": 304850,
+        "text": " Yeah, he sure do."
+      },
+      {
+        "start": 304850,
+        "stop": 305450,
+        "text": " And only one provider. And you know what? One platform has the APIs and one doesn't. You know what I'm saying?"
+      },
+      {
+        "start": 305460,
+        "stop": 305750,
+        "text": " And the API leads me. As we all do."
+      },
+      {
+        "start": 305750,
+        "stop": 305850,
+        "text": " Just chasing that dragon."
+      },
+      {
+        "start": 305850,
+        "stop": 306450,
+        "text": " Chasing that API dragon. Links to what we talked about today. Well, heck, those are over at coder.show/497."
+      },
+      {
+        "start": 306450,
+        "stop": 306950,
+        "text": " Or you can find them at our community-built website, jupiterbroadcasting.com."
+      },
+      {
+        "start": 306950,
+        "stop": 307850,
+        "text": " I mentioned JupiterTube. That's where you can catch us live or watch the livestream playbacks and see how the sausage gets made. Although not for the queasy."
+      },
+      {
+        "start": 307860,
+        "stop": 308750,
+        "text": " You can find me on the Twitter @chrislas. You can find us both in the Matrix. coder.show/matrix in the Fenaverse."
+      },
+      {
+        "start": 308750,
+        "stop": 309150,
+        "text": " And our contact page, coder.show/contact. We love hearing from you."
+      },
+      {
+        "start": 309150,
+        "stop": 309450,
+        "text": " Thanks for joining us, and we'll see you right back here next week."
+      },
+      {
+        "start": 309450,
+        "stop": 310440,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 2201,
+      "nanos": 873774279
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 497: Shots Across the Pond",
+    "pictures": [],
+    "duration": {
+      "secs": 3090,
+      "nanos": 776000000
+    },
+    "unique_id": "http://coder.show/497"
+  },
+  "episode": {
+    "title": "Shots Across the Pond | Coder Radio 497",
+    "description": "Mike's skeptical of the rumors Apple is preparing to allow third-party app stores, and in a total flip of roles, Chris comes to the defense of Microsoft.",
+    "content": "<p><p>Mike&#39;s skeptical of the rumors Apple is preparing to allow third-party app stores, and in a total flip of roles, Chris comes to the defense of Microsoft.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://www.theverge.com/2022/12/13/23507766/apple-app-store-eu-dma-third-party-sideloading\" title=\"Apple is reportedly preparing to allow third-party app stores on the iPhone\" rel=\"nofollow\">Apple is reportedly preparing to allow third-party app stores on the iPhone</a> &mdash; Bloomberg’s Mark Gurman reports Apple will respond to upcoming EU rules with next year’s iOS 17 update. But it could still have strings attached, like only being available in Europe or only allowing installation of approved apps.</li><li><a href=\"https://www.macrumors.com/2022/12/07/apple-advanced-data-protection/\" title=\"Apple Announces End-to-End Encryption Option for iCloud Photos, Notes, Backups, and More\" rel=\"nofollow\">Apple Announces End-to-End Encryption Option for iCloud Photos, Notes, Backups, and More</a> &mdash; Apple today announced it is expanding end-to-end encryption to many additional iCloud data categories on an opt-in basis for enhanced security.</li><li><a href=\"https://www.macrumors.com/2022/12/08/fbi-privacy-groups-icloud-encryption/\" title=\"FBI Calls End-to-End Encryption 'Deeply Concerning' as Privacy Groups Hail Apple's Advanced Data Protection as a Victory for Users\" rel=\"nofollow\">FBI Calls End-to-End Encryption 'Deeply Concerning' as Privacy Groups Hail Apple's Advanced Data Protection as a Victory for Users</a> &mdash; Apple yesterday announced that end-to-end encryption is coming to even more sensitive types of iCloud data, including device backups, messages, photos, and more, meeting the longstanding demand of both users and privacy groups who have rallied for the company to take the significant step forward in user privacy.</li><li><a href=\"https://www.irs.gov/newsroom/reminder-service-providers-others-may-receive-1099-ks-for-sales-over-600-in-early-2023\" title=\"IRS Reminder: Service providers, others may receive 1099-Ks for sales over $600 in early 2023\" rel=\"nofollow\">IRS Reminder: Service providers, others may receive 1099-Ks for sales over $600 in early 2023</a> &mdash; The Internal Revenue Service reminds taxpayers earning income from selling goods and/or providing services that they may receive Form 1099-K, Payment Card and Third-Party Network Transactions, for payment card transactions and third-party payment network transactions of more than $600 for the year.</li><li><a href=\"https://www.cnbc.com/2022/12/08/ftc-sues-to-block-microsofts-acquisition-of-game-giant-activision-blizzard.html\" title=\"FTC sues to block Microsoft's acquisition of Activision Blizzard\" rel=\"nofollow\">FTC sues to block Microsoft's acquisition of Activision Blizzard</a> &mdash; Federal Trade Commission commissioners voted 3-1 in favor of a complaint against Microsoft’s planned $68.7 billion acquisition that will go before the agency’s administrative law judge.</li><li><a href=\"https://www.ftc.gov/news-events/news/press-releases/2022/12/ftc-seeks-block-microsoft-corps-acquisition-activision-blizzard-inc\" title=\"FTC Seeks to Block Microsoft Corp.’s Acquisition of Activision Blizzard, Inc\" rel=\"nofollow\">FTC Seeks to Block Microsoft Corp.’s Acquisition of Activision Blizzard, Inc</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost into the Show\" rel=\"nofollow\">Send a Boost into the Show</a> &mdash; Upgrade to a Podcasting 2.0 app, get great new features, and send a Boost into the show 🎉</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9166",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15859928/42d74c47-fa35-47b1-b1eb-4d5ff9e798f4.mp3",
+      "length": "43965018",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-12-21T03:05:00+01:00"
+  },
+  "speedup": 1.4037026
+}

@@ -1,0 +1,4457 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 120,
+        "stop": 920,
+        "text": " this is Kota radio episode 491 for November 7th 2022"
+      },
+      {
+        "start": 920,
+        "stop": 1876,
+        "text": " hey good buddy welcome back to Jupiter broadcasting's weekly talk show taking a"
+      },
+      {
+        "start": 1876,
+        "stop": 2328,
+        "text": " pragmatic look at the art and the business of software development and the"
+      },
+      {
+        "start": 2328,
+        "stop": 2788,
+        "text": " world of technology my name is Chris and joining us every single week hopefully"
+      },
+      {
+        "start": 2788,
+        "stop": 3344,
+        "text": " fully caffeinated it's our host mr. Dominic hello Mike damn skip it Chris I'm"
+      },
+      {
+        "start": 3344,
+        "stop": 3700,
+        "text": " a pot of coffee in and I have a steaming cup of hot matcha right next to me in"
+      },
+      {
+        "start": 3700,
+        "stop": 4050,
+        "text": " yes in cuz I'm you know I'm no pleb in a mad"
+      },
+      {
+        "start": 4050,
+        "stop": 4536,
+        "text": " butter cup ah very good a mad butter coffee cup yep you know I still love in"
+      },
+      {
+        "start": 4536,
+        "stop": 4932,
+        "text": " that coda robe mmm still loving it just rocking it the other day it's all I wear"
+      },
+      {
+        "start": 4932,
+        "stop": 5276,
+        "text": " when the mailman comes you know I really genuinely had the thought the other day"
+      },
+      {
+        "start": 5276,
+        "stop": 5672,
+        "text": " like why don't I just wear this all the time and nothing but this when I'm just"
+      },
+      {
+        "start": 5672,
+        "stop": 6016,
+        "text": " gonna be home all day it doesn't happen very often but my god the two things"
+      },
+      {
+        "start": 6016,
+        "stop": 6648,
+        "text": " together are so glorious so so glorious we are gathered here today mostly I"
+      },
+      {
+        "start": 6648,
+        "stop": 7016,
+        "text": " think to hear about your two-factor nightmare and looks like you went deep"
+      },
+      {
+        "start": 7016,
+        "stop": 7520,
+        "text": " into Swift again so that's gonna be I think the bulk of the show today however"
+      },
+      {
+        "start": 7520,
+        "stop": 8056,
+        "text": " since we gathered together last week there has been a tremendous amount of"
+      },
+      {
+        "start": 8056,
+        "stop": 8560,
+        "text": " news so we're gonna do a little hangover watch for the economy pour yourself a"
+      },
+      {
+        "start": 8560,
+        "stop": 8916,
+        "text": " cup of coffee yeah so we found a new site that I wanted to tell you about"
+      },
+      {
+        "start": 8916,
+        "stop": 9684,
+        "text": " that is shocking it's called layoffs dot FYI and it's currently tracking 755"
+      },
+      {
+        "start": 9684,
+        "stop": 10316,
+        "text": " startups with over a hundred and four thousand layoffs in 22 so far and of"
+      },
+      {
+        "start": 10316,
+        "stop": 10632,
+        "text": " course you can jump around you can look at the charts they've cut they're doing"
+      },
+      {
+        "start": 10632,
+        "stop": 11016,
+        "text": " some really interesting ways of tracking it and showing different waves of"
+      },
+      {
+        "start": 11016,
+        "stop": 11620,
+        "text": " difference I guess phases of layoffs since kovat 19 really hit and the list"
+      },
+      {
+        "start": 11620,
+        "stop": 12208,
+        "text": " is it's kind of depressing to see honestly but the news has been"
+      },
+      {
+        "start": 12208,
+        "stop": 12864,
+        "text": " unbelievable today before we started recording Apple announced an update on"
+      },
+      {
+        "start": 12864,
+        "stop": 13372,
+        "text": " the supply of iPhone 14 and iPhone 14 Pro Max I haven't seen one of these"
+      },
+      {
+        "start": 13372,
+        "stop": 14016,
+        "text": " updates since about 2008 or 9 mm-hmm they say that they say due to kovat 19"
+      },
+      {
+        "start": 14016,
+        "stop": 14764,
+        "text": " restrictions in China and the concern about the health of their workers they"
+      },
+      {
+        "start": 14764,
+        "stop": 15332,
+        "text": " are going to miss the supply and that they will have more shipments and"
+      },
+      {
+        "start": 15332,
+        "stop": 15644,
+        "text": " previously anticipated that will experience longer wait times as they"
+      },
+      {
+        "start": 15644,
+        "stop": 16336,
+        "text": " will be producing fewer iPhones and we've seen rumors about less iPhone"
+      },
+      {
+        "start": 16336,
+        "stop": 16756,
+        "text": " demand yep and I had speculated that that would be an early recession"
+      },
+      {
+        "start": 16756,
+        "stop": 17064,
+        "text": " indicator is all of a sudden a thousand dollar phone looks a little ridiculous"
+      },
+      {
+        "start": 17064,
+        "stop": 17644,
+        "text": " when times are good and the money's flowing you can buy a $1,100 phone but"
+      },
+      {
+        "start": 17644,
+        "stop": 17952,
+        "text": " when the price of gas is going up on a monthly basis and the price of food"
+      },
+      {
+        "start": 17952,
+        "stop": 18548,
+        "text": " still going up $1,100 phones kind of silly sometimes and I think Apple's"
+      },
+      {
+        "start": 18548,
+        "stop": 18944,
+        "text": " feeling they're blaming kovat 19 but they've also been moving more and more"
+      },
+      {
+        "start": 18944,
+        "stop": 19472,
+        "text": " manufacturing to India and Taiwan and other places so I don't know this that's"
+      },
+      {
+        "start": 19472,
+        "stop": 20006,
+        "text": " but I think that's a big indicator there also today's the day that Elon set the"
+      },
+      {
+        "start": 20006,
+        "stop": 20396,
+        "text": " deadline for Twitter blue and it seems to have worked remember he said they"
+      },
+      {
+        "start": 20396,
+        "stop": 20764,
+        "text": " have until like the seventh or they're fired yeah well they're fine they're"
+      },
+      {
+        "start": 20764,
+        "stop": 21040,
+        "text": " rolling out the Twitter blue they're rolling out the new membership stuff I"
+      },
+      {
+        "start": 21040,
+        "stop": 21360,
+        "text": " think they although yeah a lot of them are fired you know I've been thinking"
+      },
+      {
+        "start": 21360,
+        "stop": 21804,
+        "text": " about this too imagine what we're gonna see here after if Elon pulls this off"
+      },
+      {
+        "start": 21804,
+        "stop": 22476,
+        "text": " even somewhat and if the if the metric is going by ruthless CEO standards in the"
+      },
+      {
+        "start": 22476,
+        "stop": 23084,
+        "text": " market not going by human standards if the metric is profitability he might do"
+      },
+      {
+        "start": 23084,
+        "stop": 23440,
+        "text": " it I mean if he gets thousands of people to pay eight bucks a month and he lays"
+      },
+      {
+        "start": 23440,
+        "stop": 24004,
+        "text": " off 60% of the staff he might get it and if he has verified accounts advertisers"
+      },
+      {
+        "start": 24004,
+        "stop": 24396,
+        "text": " are gonna eat that up I mean right now you're seeing advertisers pause but once"
+      },
+      {
+        "start": 24396,
+        "stop": 24820,
+        "text": " they know that that's a genuine human who's been verified and that they know"
+      },
+      {
+        "start": 24820,
+        "stop": 25292,
+        "text": " exactly what kind of things they like that in terms of an ad by a person who"
+      },
+      {
+        "start": 25292,
+        "stop": 25788,
+        "text": " is a knowable verifiable person is worth substantially more than an anonymous"
+      },
+      {
+        "start": 25788,
+        "stop": 26228,
+        "text": " number right then an impression on a page or a CPM or anything like that sure"
+      },
+      {
+        "start": 26228,
+        "stop": 26722,
+        "text": " so what if we're seeing an extreme recession model be created here you'll"
+      },
+      {
+        "start": 26722,
+        "stop": 27132,
+        "text": " see other tech companies essentially go on sale they'll have some CEO that buys"
+      },
+      {
+        "start": 27132,
+        "stop": 27700,
+        "text": " them out ruthlessly comes in fires half the staff brings in their own people"
+      },
+      {
+        "start": 27700,
+        "stop": 28356,
+        "text": " basically carves it down to an MVP takes it private does all this work you"
+      },
+      {
+        "start": 28356,
+        "stop": 28662,
+        "text": " wouldn't do it when it's a public company does all this carving it's kind"
+      },
+      {
+        "start": 28662,
+        "stop": 29252,
+        "text": " of the Romney strategy of past the you know the bank capital strategy only it's"
+      },
+      {
+        "start": 29252,
+        "stop": 29772,
+        "text": " for tech companies now and it's by tech CEOs and I think if he pulls it off and"
+      },
+      {
+        "start": 29772,
+        "stop": 30236,
+        "text": " I'm not saying this is a good thing if he pulls this off I think it's gonna be"
+      },
+      {
+        "start": 30236,
+        "stop": 30500,
+        "text": " looked at as a model for the next two years because we're going into a"
+      },
+      {
+        "start": 30500,
+        "stop": 31036,
+        "text": " multi-year recession and there's gonna be a lot of businesses on sale and I"
+      },
+      {
+        "start": 31036,
+        "stop": 31650,
+        "text": " think this is gonna be the play is the idea is you go in you clean up and then"
+      },
+      {
+        "start": 31650,
+        "stop": 32082,
+        "text": " you turn it around by the time the markets picking back up in 2024 2025 you"
+      },
+      {
+        "start": 32082,
+        "stop": 32540,
+        "text": " bring it public again you make a bunch of money yeah I mean I think Twitter"
+      },
+      {
+        "start": 32540,
+        "stop": 32968,
+        "text": " itself I mean that could be a model that generally works I still feel kind of"
+      },
+      {
+        "start": 32968,
+        "stop": 33236,
+        "text": " going along with what I said last week that Twitter itself has some unique"
+      },
+      {
+        "start": 33236,
+        "stop": 33588,
+        "text": " problems one I mean I don't know if you've noticed this I know I'm much more"
+      },
+      {
+        "start": 33588,
+        "stop": 33988,
+        "text": " active on Twitter than you generally are my Twitter feed is basically worthless"
+      },
+      {
+        "start": 33988,
+        "stop": 34384,
+        "text": " now and I used to get a lot of good like tech news dev news follow a bunch of"
+      },
+      {
+        "start": 34384,
+        "stop": 34780,
+        "text": " like open source people or people out like Microsoft stuff like that because"
+      },
+      {
+        "start": 34780,
+        "stop": 35484,
+        "text": " it's everybody just being mad about Elon yeah and I I understand that it's you"
+      },
+      {
+        "start": 35484,
+        "stop": 35928,
+        "text": " know it's just strange right the things I've been saying are the magic the"
+      },
+      {
+        "start": 35928,
+        "stop": 36736,
+        "text": " gathering 30 30th anniversary event and Elon hate so I I feel like he's somehow"
+      },
+      {
+        "start": 36736,
+        "stop": 37268,
+        "text": " gotta get a handle on this now the of course the Internet's attention span is"
+      },
+      {
+        "start": 37268,
+        "stop": 37772,
+        "text": " is like that of my dogs so maybe you know maybe he just needs to ride it out"
+      },
+      {
+        "start": 37772,
+        "stop": 38252,
+        "text": " for another week yeah I mean I think inevitably once we get past all this"
+      },
+      {
+        "start": 38252,
+        "stop": 38616,
+        "text": " right and I think this I don't really want to go on about Twitter but yeah I"
+      },
+      {
+        "start": 38616,
+        "stop": 39144,
+        "text": " think inevitably people just they freak out they have an absolute panic attack"
+      },
+      {
+        "start": 39144,
+        "stop": 39480,
+        "text": " and then in six months they pretend like it never happened that's our current"
+      },
+      {
+        "start": 39480,
+        "stop": 39840,
+        "text": " state of the world right right I mean as far as like the way I like to use"
+      },
+      {
+        "start": 39840,
+        "stop": 40328,
+        "text": " Twitter other than like trolling like memes or whatever I still feel like"
+      },
+      {
+        "start": 40328,
+        "stop": 40744,
+        "text": " Google+ was a much better like techie social network where I got more valuable"
+      },
+      {
+        "start": 40744,
+        "stop": 41220,
+        "text": " data then I ever did with Twitter right like I had different circles for"
+      },
+      {
+        "start": 41220,
+        "stop": 41696,
+        "text": " different perfect example so Google+ I had like an iOS dev circle I was in and"
+      },
+      {
+        "start": 41696,
+        "stop": 42016,
+        "text": " I had your whatever the JB one was right there was like I don't know if what you"
+      },
+      {
+        "start": 42016,
+        "stop": 42420,
+        "text": " was official by you or what yeah yeah yep we had it we had our own JB circle"
+      },
+      {
+        "start": 42420,
+        "stop": 42750,
+        "text": " you could have like the hey I have this problem with like UI table view"
+      },
+      {
+        "start": 42750,
+        "stop": 43156,
+        "text": " conversation and avoid getting the you know sometimes friendly sometimes less"
+      },
+      {
+        "start": 43156,
+        "stop": 43604,
+        "text": " than friendly trolling from the Linux folks right and then you could have the"
+      },
+      {
+        "start": 43604,
+        "stop": 43956,
+        "text": " Linux conversation about you know whatever open source I think at the time"
+      },
+      {
+        "start": 43956,
+        "stop": 44376,
+        "text": " I was like trying to help out with Gary or something like that it was better"
+      },
+      {
+        "start": 44376,
+        "stop": 44840,
+        "text": " right than just like scream I feel like Twitter in a lot of ways is you know"
+      },
+      {
+        "start": 44840,
+        "stop": 45244,
+        "text": " going to the Empire State Building and just shouting at the top of your lungs"
+      },
+      {
+        "start": 45244,
+        "stop": 45936,
+        "text": " so I don't know I maybe I'm just retroactively assigning more value to"
+      },
+      {
+        "start": 45936,
+        "stop": 46432,
+        "text": " Google+ than there really was but I felt like I had more serious deeper"
+      },
+      {
+        "start": 46432,
+        "stop": 46944,
+        "text": " conversations that actually produced you know mutual value right oh absolutely"
+      },
+      {
+        "start": 46944,
+        "stop": 47416,
+        "text": " Mastodon is seeing a big boom right now so some people are moving over there I"
+      },
+      {
+        "start": 47416,
+        "stop": 47948,
+        "text": " want to keep going on the hangover watch though Apple also warned investors they"
+      },
+      {
+        "start": 47948,
+        "stop": 48524,
+        "text": " predict a substantial drop in Mac revenue for the holiday quarter Tim Cook's made"
+      },
+      {
+        "start": 48524,
+        "stop": 48876,
+        "text": " it clear during the earnings call with investors that the company is subject to"
+      },
+      {
+        "start": 48876,
+        "stop": 49308,
+        "text": " impacts of the macro economy which has been affected by the war in Eastern"
+      },
+      {
+        "start": 49308,
+        "stop": 49836,
+        "text": " Europe and as a consequence of the pandemic in other words the supply chain"
+      },
+      {
+        "start": 49836,
+        "stop": 50280,
+        "text": " and inflation is going to cost them well and they sold a ton of MacBook Airs"
+      },
+      {
+        "start": 50280,
+        "stop": 50728,
+        "text": " right the MacBook Air I see I know our audience we're all like MacBook Pros you"
+      },
+      {
+        "start": 50728,
+        "stop": 51188,
+        "text": " know or the Linux folks whatever they sold a lot of those and those buyers are"
+      },
+      {
+        "start": 51188,
+        "stop": 51672,
+        "text": " your average Joe and Jane they're buying maybe every three years so and there was"
+      },
+      {
+        "start": 51672,
+        "stop": 52356,
+        "text": " huge pent-up demand I I worry that if the iPhone is being paused in production"
+      },
+      {
+        "start": 52356,
+        "stop": 52792,
+        "text": " and they're predicting a quote substantial drop in Mac revenue which"
+      },
+      {
+        "start": 52792,
+        "stop": 53284,
+        "text": " Apple is usually very accurate about these things I think we're gonna see"
+      },
+      {
+        "start": 53284,
+        "stop": 53768,
+        "text": " dark Apple I think we really are you know there is also since we got together"
+      },
+      {
+        "start": 53768,
+        "stop": 54316,
+        "text": " developers have discovered that recent changes made to the App Store ads sort"
+      },
+      {
+        "start": 54316,
+        "stop": 54736,
+        "text": " of raised some serious privacy concerns it seems that the App Store app on iOS"
+      },
+      {
+        "start": 54736,
+        "stop": 55248,
+        "text": " 14.6 and up is sending every tap you make inside the app everywhere to Apple"
+      },
+      {
+        "start": 55248,
+        "stop": 55676,
+        "text": " wee-wee that could be exploited there's some uncertainty is that if you have"
+      },
+      {
+        "start": 55676,
+        "stop": 56124,
+        "text": " analytics on or not right or is it by default I wonder though you combine this"
+      },
+      {
+        "start": 56124,
+        "stop": 56652,
+        "text": " with the recent gambling ad stuff and that's bad of course you know they they"
+      },
+      {
+        "start": 56652,
+        "stop": 57160,
+        "text": " they just knocked the knees out from meta for app tracking and a bunch of"
+      },
+      {
+        "start": 57160,
+        "stop": 57464,
+        "text": " other advertising platforms and they've only been turning it up on their own"
+      },
+      {
+        "start": 57464,
+        "stop": 58044,
+        "text": " platform and it's this I think is pretty alarming because if their hardware sales"
+      },
+      {
+        "start": 58044,
+        "stop": 58380,
+        "text": " are gonna go down then they're just going to have to push even harder on"
+      },
+      {
+        "start": 58380,
+        "stop": 58888,
+        "text": " services and they just raised the rate of Apple one they're all in subscription"
+      },
+      {
+        "start": 58888,
+        "stop": 59296,
+        "text": " package mm-hmm the level of details in the video that they show here is"
+      },
+      {
+        "start": 59296,
+        "stop": 59908,
+        "text": " striking Gruber says Apple ads are going wild even Gruber is not on board Jason"
+      },
+      {
+        "start": 59908,
+        "stop": 60460,
+        "text": " Snell also very concerned like longtime Apple commentators feel like we're"
+      },
+      {
+        "start": 60460,
+        "stop": 60848,
+        "text": " starting to see dark Apple develop here and I just got to imagine a recession"
+      },
+      {
+        "start": 60848,
+        "stop": 61240,
+        "text": " with hardware sales it's just gonna make the situation even worse I think Apple"
+      },
+      {
+        "start": 61240,
+        "stop": 61600,
+        "text": " is becoming more and more of a threat vector it sucks because the m1 hardware"
+      },
+      {
+        "start": 61600,
+        "stop": 62084,
+        "text": " them to stuff I'm sure is gonna be great like the M series is fantastic but Apple"
+      },
+      {
+        "start": 62084,
+        "stop": 62524,
+        "text": " is a company I think not good we mentioned the Twitter layoffs Jack"
+      },
+      {
+        "start": 62524,
+        "stop": 63076,
+        "text": " Dorsey came out playing cover for Elon Musk said it's his fault they hired too"
+      },
+      {
+        "start": 63076,
+        "stop": 63540,
+        "text": " many people Facebook has announced the are planning quote large-scale layoffs"
+      },
+      {
+        "start": 63540,
+        "stop": 64028,
+        "text": " this week stripe is cutting its head count by 14% readies for quote leaner"
+      },
+      {
+        "start": 64028,
+        "stop": 64660,
+        "text": " times lift to lay off 700 employees in a second round of job cuts and lifted this"
+      },
+      {
+        "start": 64660,
+        "stop": 65176,
+        "text": " is the lift has been having a but just a bear of a time for for a couple years"
+      },
+      {
+        "start": 65176,
+        "stop": 65856,
+        "text": " Amazon executives confirm a hiring freeze additionally the scuttlebutt in"
+      },
+      {
+        "start": 65856,
+        "stop": 66284,
+        "text": " my local town is they have a ginormous Amazon facility by the studio that's"
+      },
+      {
+        "start": 66284,
+        "stop": 66940,
+        "text": " gonna bring 2,000 trucks a day into my area this and it was it was about 95%"
+      },
+      {
+        "start": 66940,
+        "stop": 67436,
+        "text": " finished and Amazon hit the pause button and they're not gonna finish it until"
+      },
+      {
+        "start": 67436,
+        "stop": 67980,
+        "text": " proceeds go up because they don't know if there's enough demand for another"
+      },
+      {
+        "start": 67980,
+        "stop": 68296,
+        "text": " warehouse in this area so they're just gonna leave it at 90% finished they're"
+      },
+      {
+        "start": 68296,
+        "stop": 68532,
+        "text": " gonna have to keep security on it they're gonna have to keep the lights on"
+      },
+      {
+        "start": 68532,
+        "stop": 68872,
+        "text": " and there's a lot of homeless around here so if they're not constantly"
+      },
+      {
+        "start": 68872,
+        "stop": 69264,
+        "text": " guarding it it's gonna turn into a ginormous homeless encampment oh my god"
+      },
+      {
+        "start": 69264,
+        "stop": 69632,
+        "text": " it's really gonna be something and it's wild because it's just this huge"
+      },
+      {
+        "start": 69632,
+        "stop": 69920,
+        "text": " building that blocked my view of the mountains and just totally took over the"
+      },
+      {
+        "start": 69920,
+        "stop": 70388,
+        "text": " skyline and there's hidden pause I mean we've been saying it for months now"
+      },
+      {
+        "start": 70388,
+        "stop": 70924,
+        "text": " right the I know it's gonna be an icy winter it's so why do we talk about it"
+      },
+      {
+        "start": 70924,
+        "stop": 71304,
+        "text": " we talk about it not because we want to watch like the economic porn we're not"
+      },
+      {
+        "start": 71304,
+        "stop": 71676,
+        "text": " talking about it because we want to scare you we're talking about it because"
+      },
+      {
+        "start": 71676,
+        "stop": 72160,
+        "text": " these macro trends are going to impact developers they're gonna impact client"
+      },
+      {
+        "start": 72160,
+        "stop": 72552,
+        "text": " jobs are gonna impact employment they're gonna impact your negotiation abilities"
+      },
+      {
+        "start": 72552,
+        "stop": 72936,
+        "text": " there's a real-world impact that's gonna hit the development community and"
+      },
+      {
+        "start": 72936,
+        "stop": 73496,
+        "text": " they're gonna be hit hardest because this is specifically going after tech"
+      },
+      {
+        "start": 73496,
+        "stop": 73992,
+        "text": " investors are pivoting from growth stocks to value stocks they're literally"
+      },
+      {
+        "start": 73992,
+        "stop": 74368,
+        "text": " transferring money out of tech stocks like another trillion dollars in tech"
+      },
+      {
+        "start": 74368,
+        "stop": 74816,
+        "text": " stocks was drained last year or last week last week and they're putting it"
+      },
+      {
+        "start": 74816,
+        "stop": 75208,
+        "text": " into other places assets and other stocks that are like value stocks and"
+      },
+      {
+        "start": 75208,
+        "stop": 75592,
+        "text": " things like that and the tech companies are getting hit the hardest because the"
+      },
+      {
+        "start": 75592,
+        "stop": 75976,
+        "text": " tech companies were the biggest recipients of the easy money for the"
+      },
+      {
+        "start": 75976,
+        "stop": 76276,
+        "text": " last decade and so now they're getting hit the hardest and it's gonna directly"
+      },
+      {
+        "start": 76276,
+        "stop": 76692,
+        "text": " affect our community and we've been talking about it but now it's actually"
+      },
+      {
+        "start": 76692,
+        "stop": 77088,
+        "text": " happening and it just seems like the pace is picking up it's faster and"
+      },
+      {
+        "start": 77088,
+        "stop": 77448,
+        "text": " faster you got a wonder where we're gonna be in a couple of months a couple"
+      },
+      {
+        "start": 77448,
+        "stop": 77832,
+        "text": " of months right we're gonna see more layoffs I agree with you on the multi"
+      },
+      {
+        "start": 77832,
+        "stop": 78280,
+        "text": " year thing I think this actually doesn't hit the depending on how you want to"
+      },
+      {
+        "start": 78280,
+        "stop": 78732,
+        "text": " look at it the peak of pain or the trough of misery right the the maximalist"
+      },
+      {
+        "start": 78732,
+        "stop": 79328,
+        "text": " destruction probably for another whole year you you convinced me of something"
+      },
+      {
+        "start": 79328,
+        "stop": 79748,
+        "text": " last week and I was thinking about it after the show I don't think that unless"
+      },
+      {
+        "start": 79748,
+        "stop": 80266,
+        "text": " you get a sorry Europeans this is super America United States our Canadian"
+      },
+      {
+        "start": 80266,
+        "stop": 80768,
+        "text": " friends don't like it when we say America the super u.s. focused but unless"
+      },
+      {
+        "start": 80768,
+        "stop": 81292,
+        "text": " you have a Republican sweep in Congress there is no way Biden is gonna not turn"
+      },
+      {
+        "start": 81292,
+        "stop": 81896,
+        "text": " on the money printer he'll tolerate for maybe a year but not if this isn't gonna"
+      },
+      {
+        "start": 81896,
+        "stop": 82540,
+        "text": " be five years because they'll never win another election it's just unfortunately"
+      },
+      {
+        "start": 82540,
+        "stop": 83108,
+        "text": " the whole the whole economy and the populace as a whole is now addicted to"
+      },
+      {
+        "start": 83108,
+        "stop": 83680,
+        "text": " printing money and everything runs on printed money now everything runs on you"
+      },
+      {
+        "start": 83680,
+        "stop": 84060,
+        "text": " know you take a look at the housing market which is going down it's somewhat"
+      },
+      {
+        "start": 84060,
+        "stop": 84564,
+        "text": " but the prices are still unattainable for your average you know your average"
+      },
+      {
+        "start": 84564,
+        "stop": 84974,
+        "text": " 20-something coming out of college getting married whatever where if you go"
+      },
+      {
+        "start": 84974,
+        "stop": 85444,
+        "text": " back to the halcyon days after World War two and let's even say like the 60s 70s"
+      },
+      {
+        "start": 85444,
+        "stop": 85856,
+        "text": " that was much more doable and not only that way that was the normal very"
+      },
+      {
+        "start": 85856,
+        "stop": 86444,
+        "text": " attainable path so same thing for wages this is not one that you'll see in the"
+      },
+      {
+        "start": 86444,
+        "stop": 86708,
+        "text": " Wall Street Journal but I think it's interesting that we effectively lease"
+      },
+      {
+        "start": 86708,
+        "stop": 87152,
+        "text": " everything now in terms of all these services instead of actually owning"
+      },
+      {
+        "start": 87152,
+        "stop": 87588,
+        "text": " anything it's something that's been on my mind like I paid ten bucks a month to"
+      },
+      {
+        "start": 87588,
+        "stop": 87962,
+        "text": " listen to the same maybe thirty albums when I could have just bought and I in"
+      },
+      {
+        "start": 87962,
+        "stop": 88448,
+        "text": " fact do have many of them either in iTunes purchased or CD or whatever the"
+      },
+      {
+        "start": 88448,
+        "stop": 89226,
+        "text": " universe that happens if they just let this burn is a total realignment of the"
+      },
+      {
+        "start": 89226,
+        "stop": 90020,
+        "text": " economy and probably that's actually good if you're a little guy if you can"
+      },
+      {
+        "start": 90020,
+        "stop": 90588,
+        "text": " survive it because I don't I think tech businesses particularly software"
+      },
+      {
+        "start": 90588,
+        "stop": 91052,
+        "text": " businesses are gonna sober up a little bit and go back to hey we actually have"
+      },
+      {
+        "start": 91052,
+        "stop": 91414,
+        "text": " to be a business where we sell or license a product and actually make"
+      },
+      {
+        "start": 91414,
+        "stop": 91848,
+        "text": " money where I can tell you one of my big pain points has been and I've talked to"
+      },
+      {
+        "start": 91848,
+        "stop": 92304,
+        "text": " other people in similar positions VC backed companies who are just a drunk on"
+      },
+      {
+        "start": 92304,
+        "stop": 92598,
+        "text": " the free money find out you're a competitor and they're like oh they're"
+      },
+      {
+        "start": 92598,
+        "stop": 93054,
+        "text": " charging you know eight thousand five thousand for a license or whatever we'll"
+      },
+      {
+        "start": 93054,
+        "stop": 93616,
+        "text": " do it for five hundred right they just literally kneecap you and effectively"
+      },
+      {
+        "start": 93616,
+        "stop": 94048,
+        "text": " bleed out your capital right because your bootstrapped so that might be my"
+      },
+      {
+        "start": 94048,
+        "stop": 94362,
+        "text": " hobby horse but I I think it's bad that all these people are losing their jobs"
+      },
+      {
+        "start": 94362,
+        "stop": 94830,
+        "text": " obviously I feel for them on a human level yeah but these businesses and I'm"
+      },
+      {
+        "start": 94830,
+        "stop": 95286,
+        "text": " thinking less of the big big guys and more of like the the VC companies that"
+      },
+      {
+        "start": 95286,
+        "stop": 95862,
+        "text": " are trying to kind of edge their way in they need to be real businesses right"
+      },
+      {
+        "start": 95862,
+        "stop": 96356,
+        "text": " even it's funny you mentioned all these big dudes Apple in a way was on this"
+      },
+      {
+        "start": 96356,
+        "stop": 96728,
+        "text": " list the only traditional business that when it started had to actually make"
+      },
+      {
+        "start": 96728,
+        "stop": 97264,
+        "text": " money you go down that list Twitter Facebook my thinking though is if it"
+      },
+      {
+        "start": 97264,
+        "stop": 97630,
+        "text": " hits these big guys it's gonna be even harder on the small ones well what's"
+      },
+      {
+        "start": 97630,
+        "stop": 97924,
+        "text": " gonna be harder is I think consulting could become harder because you're gonna"
+      },
+      {
+        "start": 97924,
+        "stop": 98240,
+        "text": " have a bunch of like ex-facebook engineers who are like screw it I'm"
+      },
+      {
+        "start": 98240,
+        "stop": 98824,
+        "text": " gonna go 1099 it out and you know that's very sexy for the you know the marketing"
+      },
+      {
+        "start": 98824,
+        "stop": 99358,
+        "text": " agency hiring an iOS step for a contract or something sure but yeah I mean it's"
+      },
+      {
+        "start": 99358,
+        "stop": 99742,
+        "text": " bad overall don't get me wrong I'm saying there's a slight silver lining"
+      },
+      {
+        "start": 99742,
+        "stop": 100366,
+        "text": " but this is a bloodbath and it shouldn't have happened it shouldn't have and just"
+      },
+      {
+        "start": 100366,
+        "stop": 100738,
+        "text": " to touch on the human moment just a little bit because we often talk about"
+      },
+      {
+        "start": 100738,
+        "stop": 101236,
+        "text": " it from a business owner CEO kind of market perspective but"
+      },
+      {
+        "start": 101236,
+        "stop": 101880,
+        "text": " regular everyday people are paying the price for policies that led us here and"
+      },
+      {
+        "start": 101880,
+        "stop": 102548,
+        "text": " last week I watched chair pals the update on you know another another rate"
+      },
+      {
+        "start": 102548,
+        "stop": 103078,
+        "text": " increase and he signaled he's going he's gonna go for a while pedal to the metal"
+      },
+      {
+        "start": 103078,
+        "stop": 103602,
+        "text": " baby yeah here's the real mind-blower is so there are 12 members of the feds open"
+      },
+      {
+        "start": 103602,
+        "stop": 104042,
+        "text": " market committee that vote for these rate increases and one of them is Esther"
+      },
+      {
+        "start": 104042,
+        "stop": 104536,
+        "text": " George and she is the president of the Federal Reserve Bank of Kansas City"
+      },
+      {
+        "start": 104536,
+        "stop": 104972,
+        "text": " she's on this 12 member board that votes for the rate increases and she did"
+      },
+      {
+        "start": 104972,
+        "stop": 105470,
+        "text": " something really unusual she had an interview with NPR in this interview she"
+      },
+      {
+        "start": 105470,
+        "stop": 105858,
+        "text": " says they're basically gonna keep going until American savings account are"
+      },
+      {
+        "start": 105858,
+        "stop": 106426,
+        "text": " drained quote we see today that there is a bit of savings buffer still sitting"
+      },
+      {
+        "start": 106426,
+        "stop": 106882,
+        "text": " for households that may allow them to continue to spend in a way that keeps"
+      },
+      {
+        "start": 106882,
+        "stop": 107538,
+        "text": " demand strong she said that suggests we may have to keep at this for a while"
+      },
+      {
+        "start": 107538,
+        "stop": 107918,
+        "text": " because regular Americans have too much money they're gonna have to keep at this"
+      },
+      {
+        "start": 107918,
+        "stop": 108390,
+        "text": " for a while because they can afford the inflation for a little while and then"
+      },
+      {
+        "start": 108390,
+        "stop": 108962,
+        "text": " you know you look at what what Powell says is he says employment's too high"
+      },
+      {
+        "start": 108962,
+        "stop": 109406,
+        "text": " there's the employment market still too hot is his term they need to cool down"
+      },
+      {
+        "start": 109406,
+        "stop": 109754,
+        "text": " the employment market there's still too many jobs available there's there's not"
+      },
+      {
+        "start": 109754,
+        "stop": 110370,
+        "text": " enough people unemployed so you've got a clear like they want to raise employment"
+      },
+      {
+        "start": 110370,
+        "stop": 110858,
+        "text": " and they want to make Americans spend their savings buffer so that way they"
+      },
+      {
+        "start": 110858,
+        "stop": 111390,
+        "text": " can lower demand which will lower pressure on the supply chain which will"
+      },
+      {
+        "start": 111390,
+        "stop": 111694,
+        "text": " then fix inflation so they're talking about like fourth-order effects they're"
+      },
+      {
+        "start": 111694,
+        "stop": 112148,
+        "text": " going for here and the experiment is being done on the middle-class average"
+      },
+      {
+        "start": 112148,
+        "stop": 112642,
+        "text": " workers while the people that are rich will be able to just buy up assets that"
+      },
+      {
+        "start": 112642,
+        "stop": 113010,
+        "text": " become super cheap as a result of this stress assets yeah and they'll just"
+      },
+      {
+        "start": 113010,
+        "stop": 113350,
+        "text": " totally blow up in value when the market returns and they'll make a ton of money"
+      },
+      {
+        "start": 113350,
+        "stop": 113790,
+        "text": " and meanwhile the American people the average people will be left with less"
+      },
+      {
+        "start": 113790,
+        "stop": 114198,
+        "text": " sales and a higher standing unemployment which is gonna bring the quality of life"
+      },
+      {
+        "start": 114198,
+        "stop": 114662,
+        "text": " down for everyone and that's their stated policy yeah I mean we should get"
+      },
+      {
+        "start": 114662,
+        "stop": 115158,
+        "text": " off the doom and gloom but it I think I also saw her on NPR I think it's"
+      },
+      {
+        "start": 115158,
+        "stop": 115498,
+        "text": " actually slightly worse than you describe it I think there's a thing you"
+      },
+      {
+        "start": 115498,
+        "stop": 116018,
+        "text": " kind of missed it's it's not just savings it's at spending power which is"
+      },
+      {
+        "start": 116018,
+        "stop": 116518,
+        "text": " a euphemism for credit so what is likely to happen and we've seen this before"
+      },
+      {
+        "start": 116518,
+        "stop": 117066,
+        "text": " right 2008 remember that it's a good time most households are not going to"
+      },
+      {
+        "start": 117066,
+        "stop": 117478,
+        "text": " immediately cut their standard of living they're gonna yes burn through savings"
+      },
+      {
+        "start": 117478,
+        "stop": 118014,
+        "text": " but they're also gonna leverage every bit of credit they have and at the end"
+      },
+      {
+        "start": 118014,
+        "stop": 118558,
+        "text": " of this you're gonna have a lot of bankruptcies and what will happen is the"
+      },
+      {
+        "start": 118558,
+        "stop": 119006,
+        "text": " people lucky enough to own modest homes this is gonna be a party for Black Rock"
+      },
+      {
+        "start": 119006,
+        "stop": 119406,
+        "text": " Capital right you're gonna have a lot of foreclosures people use home equity"
+      },
+      {
+        "start": 119406,
+        "stop": 119882,
+        "text": " credit if they have any a lot of just bankruptcies caused by straight-up you"
+      },
+      {
+        "start": 119882,
+        "stop": 120378,
+        "text": " know credit card debt and yeah you're gonna see payday lending is gonna go up"
+      },
+      {
+        "start": 120378,
+        "stop": 120850,
+        "text": " which you should never ever do that by the way in a weird way this is gonna be"
+      },
+      {
+        "start": 120850,
+        "stop": 121282,
+        "text": " since we're using the addiction analogy right this is gonna be okay you know the"
+      },
+      {
+        "start": 121282,
+        "stop": 121758,
+        "text": " feds cutting off your your legal opioid supply now you're doing street heroin"
+      },
+      {
+        "start": 121758,
+        "stop": 122394,
+        "text": " right that's I'm it's the history proves it out and I am 100% sure will be the"
+      },
+      {
+        "start": 122394,
+        "stop": 122850,
+        "text": " same this time people aren't just going to say I'm lowering my family's day to"
+      },
+      {
+        "start": 122850,
+        "stop": 123182,
+        "text": " day standard of living significantly they're gonna whip out that capital"
+      },
+      {
+        "start": 123182,
+        "stop": 123482,
+        "text": " until they're forced well when they max everything out right it's but it's not"
+      },
+      {
+        "start": 123482,
+        "stop": 123990,
+        "text": " just savings right it's not capital it's also debt yeah you're right yeah so yeah"
+      },
+      {
+        "start": 123990,
+        "stop": 124520,
+        "text": " so I think people that can focus on doing more with less people that can"
+      },
+      {
+        "start": 124520,
+        "stop": 125082,
+        "text": " focus on building a minimum viable product value are probably gonna have"
+      },
+      {
+        "start": 125082,
+        "stop": 125482,
+        "text": " the most success and there's gonna be a correction in other places that's not"
+      },
+      {
+        "start": 125482,
+        "stop": 125786,
+        "text": " true the super-rich are still gonna have the most success well that's true if you"
+      },
+      {
+        "start": 125786,
+        "stop": 126618,
+        "text": " bought Apple in 1995 you're in great shape no matter what right"
+      },
+      {
+        "start": 126618,
+        "stop": 127094,
+        "text": " linode.com slash coder that's where you go to get $100 and it's a great way to"
+      },
+      {
+        "start": 127094,
+        "stop": 127426,
+        "text": " support the show you get it hundred dollars on a new account for 60 days"
+      },
+      {
+        "start": 127426,
+        "stop": 127898,
+        "text": " linode.com slash coder Linode is quite simply the best place to build your next"
+      },
+      {
+        "start": 127898,
+        "stop": 128350,
+        "text": " application host your infrastructure or run a personal site or a gaming server"
+      },
+      {
+        "start": 128350,
+        "stop": 128766,
+        "text": " Linode has a really easy to use dashboard and they have one-click"
+      },
+      {
+        "start": 128766,
+        "stop": 129278,
+        "text": " deployments for things like Joplin, get T, focal board which is a sort of like a"
+      },
+      {
+        "start": 129278,
+        "stop": 129594,
+        "text": " Trello system that you can just self host up on Linode and when you have our"
+      },
+      {
+        "start": 129594,
+        "stop": 130258,
+        "text": " $100 credit why not it's like if Trello and Asana had a tacit affair and had a"
+      },
+      {
+        "start": 130258,
+        "stop": 130802,
+        "text": " baby that would be focal board and you can deploy it with one click up over on"
+      },
+      {
+        "start": 130802,
+        "stop": 131134,
+        "text": " the Linode dashboard so many great things in here I mentioned gaming server"
+      },
+      {
+        "start": 131134,
+        "stop": 131514,
+        "text": " to one-click deployment of the Minecraft Java Edition actually several game"
+      },
+      {
+        "start": 131514,
+        "stop": 132042,
+        "text": " servers several including you know adult games I'm talking about development"
+      },
+      {
+        "start": 132042,
+        "stop": 132612,
+        "text": " stuff like node.js next cloud that's my form of gaming at least so they have the"
+      },
+      {
+        "start": 132612,
+        "stop": 132886,
+        "text": " one-click deployments and they have a dozen data centers around the world and"
+      },
+      {
+        "start": 132886,
+        "stop": 133398,
+        "text": " they're adding another dozen throughout 2023 they just keep moving from strength"
+      },
+      {
+        "start": 133398,
+        "stop": 133762,
+        "text": " to strength they started almost 19 years ago and they just had to survive on a"
+      },
+      {
+        "start": 133762,
+        "stop": 134190,
+        "text": " great product and now here we are standing on the shoulders of generations"
+      },
+      {
+        "start": 134190,
+        "stop": 134646,
+        "text": " of development it's really quite nice I had an opportunity recently to deploy"
+      },
+      {
+        "start": 134646,
+        "stop": 135638,
+        "text": " one of their GPU systems 96 gigs of RAM it had an RTX 6000 GPU three times over"
+      },
+      {
+        "start": 135638,
+        "stop": 136246,
+        "text": " unbelievable and it has a 40 gigabit connection to the network their systems"
+      },
+      {
+        "start": 136246,
+        "stop": 136678,
+        "text": " are screaming fast regardless of which build you go with because they are their"
+      },
+      {
+        "start": 136678,
+        "stop": 137146,
+        "text": " own ISP so they all have 40 gigabit connections they have MVME PCIe storage"
+      },
+      {
+        "start": 137146,
+        "stop": 137510,
+        "text": " they have AMD epic processors if you want a rig that has really fast"
+      },
+      {
+        "start": 137510,
+        "stop": 137942,
+        "text": " processors they have high memory systems this is one thing I've never really"
+      },
+      {
+        "start": 137942,
+        "stop": 138446,
+        "text": " needed I do have a system that does have 96 gigs of RAM our matrix server but"
+      },
+      {
+        "start": 138446,
+        "stop": 139072,
+        "text": " they have systems where you can get like you know 300 gigs of RAM and because"
+      },
+      {
+        "start": 139072,
+        "stop": 139362,
+        "text": " Linode has the best support ever if you've got a question you get stuck or"
+      },
+      {
+        "start": 139362,
+        "stop": 139702,
+        "text": " you want to talk about a custom plan they'll work with you on that as well"
+      },
+      {
+        "start": 139702,
+        "stop": 140106,
+        "text": " 365 they pick up the phone they answer your questions because again as a"
+      },
+      {
+        "start": 140106,
+        "stop": 140424,
+        "text": " business they had to survive on the merits of their product and support is"
+      },
+      {
+        "start": 140424,
+        "stop": 140786,
+        "text": " part of that product and it just reflects throughout the entire Linode"
+      },
+      {
+        "start": 140786,
+        "stop": 141090,
+        "text": " product they have so many great things over there like object storage"
+      },
+      {
+        "start": 141090,
+        "stop": 141650,
+        "text": " kubernetes support database as a service and a lot more so go try it out support"
+      },
+      {
+        "start": 141650,
+        "stop": 142142,
+        "text": " the show and get $100 on a new account you go to Linode.com/coder one more"
+      },
+      {
+        "start": 142142,
+        "stop": 142686,
+        "text": " time to support the show it's Linode.com/coder"
+      },
+      {
+        "start": 142686,
+        "stop": 143210,
+        "text": " so I get the sense you've been deep diving into Swift but before we get"
+      },
+      {
+        "start": 143210,
+        "stop": 143722,
+        "text": " there I want to chat about your recent go about with losing a device and how I"
+      },
+      {
+        "start": 143722,
+        "stop": 144050,
+        "text": " think you almost lost access to everything yeah at least based on the"
+      },
+      {
+        "start": 144050,
+        "stop": 144686,
+        "text": " chat we had one way Apple gets device sales is people who are forced to my my"
+      },
+      {
+        "start": 144686,
+        "stop": 145246,
+        "text": " iPhone 12 Pro whatever it was had an unfortunate trick-or-treating accident"
+      },
+      {
+        "start": 145246,
+        "stop": 145942,
+        "text": " so I got it kind of working but of course it was shattered it it stopped"
+      },
+      {
+        "start": 145942,
+        "stop": 146424,
+        "text": " working completely oh man in the time it was working I thought it was going to be"
+      },
+      {
+        "start": 146424,
+        "stop": 147098,
+        "text": " okay and I had failed to take off my Google authenticator from it oh yes oh"
+      },
+      {
+        "start": 147098,
+        "stop": 147746,
+        "text": " my gosh yeah been there in there so okay I have no phone now which I was super"
+      },
+      {
+        "start": 147746,
+        "stop": 148210,
+        "text": " not viable for a nigga business so I marched my little butt over to my local"
+      },
+      {
+        "start": 148210,
+        "stop": 148710,
+        "text": " Verizon reseller because for some reason you can do the Verizon's back to doing"
+      },
+      {
+        "start": 148710,
+        "stop": 149094,
+        "text": " the two-year thing and I've had Verizon for like ten years so whatever so I go"
+      },
+      {
+        "start": 149094,
+        "stop": 149850,
+        "text": " you know I get me a handy new iPhone 14 Pro Max which I can tell you if I didn't"
+      },
+      {
+        "start": 149850,
+        "stop": 150194,
+        "text": " smash my 12 Pro I would not have gotten because it's just not that different"
+      },
+      {
+        "start": 150194,
+        "stop": 150794,
+        "text": " it's a little bigger it's more purple yeah which I like but it's not worth you"
+      },
+      {
+        "start": 150794,
+        "stop": 151254,
+        "text": " know what it costs in terms of upgrades no wonder the iPhone 14 isn't selling"
+      },
+      {
+        "start": 151254,
+        "stop": 151618,
+        "text": " yeah they say the camera is better I can't see it that might just be yeah"
+      },
+      {
+        "start": 151618,
+        "stop": 151942,
+        "text": " whatever you know I really could not tell much of a difference between the 12"
+      },
+      {
+        "start": 151942,
+        "stop": 152450,
+        "text": " 13 or the 14 as you know I'm on the upgrade plan I got my 14 it's fine you"
+      },
+      {
+        "start": 152450,
+        "stop": 152986,
+        "text": " know so it was the 13 except the device to device transfer did not transfer"
+      },
+      {
+        "start": 152986,
+        "stop": 153366,
+        "text": " everything like I had been told it would and they've added a new screen after"
+      },
+      {
+        "start": 153366,
+        "stop": 153782,
+        "text": " you're done doing device device transfer on the original device your old device"
+      },
+      {
+        "start": 153782,
+        "stop": 154138,
+        "text": " they now come up with a screen that says would you like to erase this device"
+      },
+      {
+        "start": 154138,
+        "stop": 154510,
+        "text": " because I've been led to believe everything was copied over oh no in a"
+      },
+      {
+        "start": 154510,
+        "stop": 154922,
+        "text": " moment of lapse of judgment I said yeah go ahead and erase it oh no then the"
+      },
+      {
+        "start": 154922,
+        "stop": 155314,
+        "text": " password the password prompt for my iCloud account came up and it says you"
+      },
+      {
+        "start": 155314,
+        "stop": 155606,
+        "text": " gotta enter your password before we can erase this device and I thought okay yeah"
+      },
+      {
+        "start": 155606,
+        "stop": 155914,
+        "text": " I don't feel like doing that cuz I got to go look it up in bitward and so I'll"
+      },
+      {
+        "start": 155914,
+        "stop": 156330,
+        "text": " let me log into my new phone so I log into the new phone and I realize it's"
+      },
+      {
+        "start": 156330,
+        "stop": 156630,
+        "text": " like doing that download from the App Store and restoring stuff and I launch a"
+      },
+      {
+        "start": 156630,
+        "stop": 157106,
+        "text": " few of my apps and they have none of my state including my two-factor app so I"
+      },
+      {
+        "start": 157106,
+        "stop": 157522,
+        "text": " pick up the old phone and I go hit cancel I'm raising my finger to tap the"
+      },
+      {
+        "start": 157522,
+        "stop": 158038,
+        "text": " cancel button and before I can hit cancel the password screen clears oh god"
+      },
+      {
+        "start": 158038,
+        "stop": 158566,
+        "text": " and it begins the white process oh god and it wipes my phone oh so you feel my"
+      },
+      {
+        "start": 158566,
+        "stop": 159046,
+        "text": " pain yeah so tell me what happened all right so I am super like so I get the"
+      },
+      {
+        "start": 159046,
+        "stop": 159498,
+        "text": " phone it I don't know what goes on at the Verizon store but it always takes an"
+      },
+      {
+        "start": 159498,
+        "stop": 159866,
+        "text": " hour and a half to get out of there but it sure enough took an hour and a half I"
+      },
+      {
+        "start": 159866,
+        "stop": 160310,
+        "text": " think it's the eSIM they just had a hard time activating the phone I think they"
+      },
+      {
+        "start": 160310,
+        "stop": 160730,
+        "text": " just have like a countdown timer on their point-of-sales device and they"
+      },
+      {
+        "start": 160730,
+        "stop": 161006,
+        "text": " just come up with a reason to keep you there for an hour and a half maybe it's"
+      },
+      {
+        "start": 161006,
+        "stop": 161382,
+        "text": " like maybe get paid by the hour you're there or something it was weird but so"
+      },
+      {
+        "start": 161382,
+        "stop": 161890,
+        "text": " whatever I get it then I realized about the Google authenticator so I'm like"
+      },
+      {
+        "start": 161890,
+        "stop": 162284,
+        "text": " crap so I'm desperately trying to get my other phone to unlock while I'm sitting"
+      },
+      {
+        "start": 162284,
+        "stop": 162702,
+        "text": " there waiting for this dude won't do it won't turn on nothing dead at DOA gone"
+      },
+      {
+        "start": 162702,
+        "stop": 163262,
+        "text": " luckily I had diligently saved my override codes I can't say this is the"
+      },
+      {
+        "start": 163262,
+        "stop": 163650,
+        "text": " first time this has happened something like this especially because I've been"
+      },
+      {
+        "start": 163650,
+        "stop": 164278,
+        "text": " using to FA for a very long time on one service that I will not name I only have"
+      },
+      {
+        "start": 164278,
+        "stop": 164950,
+        "text": " two override codes left so it got me thinking after I had spent roughly an"
+      },
+      {
+        "start": 164950,
+        "stop": 165418,
+        "text": " entire afternoon unlocking and read to FA and everything what happens if you"
+      },
+      {
+        "start": 165418,
+        "stop": 165866,
+        "text": " just run out of override codes do you know what happens I would imagine then"
+      },
+      {
+        "start": 165866,
+        "stop": 166218,
+        "text": " it's gonna depend on what their support policies are it's gonna be per platform"
+      },
+      {
+        "start": 166218,
+        "stop": 166670,
+        "text": " with the exception of Facebook the only one who will override to a faith for you"
+      },
+      {
+        "start": 166670,
+        "stop": 167074,
+        "text": " is Facebook and they require you to send them your driver's license yeah you know"
+      },
+      {
+        "start": 167074,
+        "stop": 167326,
+        "text": " I could see that they're probably dealing with boomers all the time that"
+      },
+      {
+        "start": 167326,
+        "stop": 167884,
+        "text": " are losing their account no offense no I listen get off my lawn so by the way we"
+      },
+      {
+        "start": 167884,
+        "stop": 168318,
+        "text": " are boomers look at how we bitch about the economy right we're down with it I"
+      },
+      {
+        "start": 168318,
+        "stop": 168790,
+        "text": " am literally considered a millennial yes oh my you're on the I'm on the edge I'm"
+      },
+      {
+        "start": 168790,
+        "stop": 169634,
+        "text": " on the line so it turns out that the answer to my question is your host there"
+      },
+      {
+        "start": 169634,
+        "stop": 170130,
+        "text": " is no for almost every service there is a no way around that yeah get a new"
+      },
+      {
+        "start": 170130,
+        "stop": 170526,
+        "text": " account get a new account in the case of matrix message Chris and have him just"
+      },
+      {
+        "start": 170526,
+        "stop": 170990,
+        "text": " reset it for you thanks Chris thanks Wes really thanks"
+      },
+      {
+        "start": 170990,
+        "stop": 171910,
+        "text": " you asked me I asked Wes so I have a couple ideas here one what I'm doing now"
+      },
+      {
+        "start": 171910,
+        "stop": 172246,
+        "text": " is I got rid of Google off completely and I'm just using my phone number oh"
+      },
+      {
+        "start": 172246,
+        "stop": 173022,
+        "text": " okay which in itself is problematic right it's it's not as good it's slow if"
+      },
+      {
+        "start": 173022,
+        "stop": 173322,
+        "text": " there's a problem with their you know their Twilio integration which is"
+      },
+      {
+        "start": 173322,
+        "stop": 173682,
+        "text": " probably what most of them are using and there's a there's you know a good amount"
+      },
+      {
+        "start": 173682,
+        "stop": 174074,
+        "text": " of documented public hacks where somebody got through because they're"
+      },
+      {
+        "start": 174074,
+        "stop": 174614,
+        "text": " using SMS two-factor well right and it's just SMS not I message yeah I propose"
+      },
+      {
+        "start": 174614,
+        "stop": 175214,
+        "text": " that as Apple wants to conquer more of the known universe they should make an"
+      },
+      {
+        "start": 175214,
+        "stop": 175886,
+        "text": " iMessage specific at to 2fa system like a Google auth that runs through I"
+      },
+      {
+        "start": 175886,
+        "stop": 176290,
+        "text": " message that if you have access because think about Apple has your biometrics"
+      },
+      {
+        "start": 176290,
+        "stop": 176838,
+        "text": " right they have your in my case they have two fingerprints a couple face"
+      },
+      {
+        "start": 176838,
+        "stop": 177230,
+        "text": " game well I think they scan your face like every five ten minutes but a bunch"
+      },
+      {
+        "start": 177230,
+        "stop": 177766,
+        "text": " of face scans I have multiple passwords they have my phone if you're also"
+      },
+      {
+        "start": 177766,
+        "stop": 178206,
+        "text": " wearing the watch they have that the watch is on you and they know how close"
+      },
+      {
+        "start": 178206,
+        "stop": 178682,
+        "text": " it is to the phone which is just another data point so why couldn't that be the"
+      },
+      {
+        "start": 178682,
+        "stop": 179130,
+        "text": " override right like that it seems like a system and I know I know some of our"
+      },
+      {
+        "start": 179130,
+        "stop": 179778,
+        "text": " infosec listeners are going to be well every override is a attack vector that's"
+      },
+      {
+        "start": 179778,
+        "stop": 180634,
+        "text": " true but I I fear and I've always pushed 2fa I just fear that even me who knows"
+      },
+      {
+        "start": 180634,
+        "stop": 181182,
+        "text": " what he's doing other than destroying his iPhone people are gonna have this"
+      },
+      {
+        "start": 181182,
+        "stop": 181566,
+        "text": " experience like I did but be a little less savvy and not know how to get"
+      },
+      {
+        "start": 181566,
+        "stop": 182078,
+        "text": " around it with the or frankly not save their override codes which I think is"
+      },
+      {
+        "start": 182078,
+        "stop": 182666,
+        "text": " probably super likely super common right and they're just gonna stop using 2fa"
+      },
+      {
+        "start": 182666,
+        "stop": 183370,
+        "text": " altogether which is a bad idea to be clear so I don't know I mean it was a"
+      },
+      {
+        "start": 183370,
+        "stop": 183850,
+        "text": " nightmare it wasted like most of a day discord was surprisingly hard to recover"
+      },
+      {
+        "start": 183850,
+        "stop": 184390,
+        "text": " mm-hmm yes and I only use discord for patreon things that I follow I don't"
+      },
+      {
+        "start": 184390,
+        "stop": 184874,
+        "text": " particularly care for discord if I didn't know better right I probably"
+      },
+      {
+        "start": 184874,
+        "stop": 185354,
+        "text": " wouldn't have re-enabled two-factor-all on anything because it was such a pain"
+      },
+      {
+        "start": 185354,
+        "stop": 185886,
+        "text": " in the ass to to get stuff back and I think about things like frog my"
+      },
+      {
+        "start": 185886,
+        "stop": 186338,
+        "text": " discourse the perfect example I support a bunch of things that I follow"
+      },
+      {
+        "start": 186338,
+        "stop": 186718,
+        "text": " unfiltered even though Chris won't give me any new episodes because you see you"
+      },
+      {
+        "start": 186718,
+        "stop": 187110,
+        "text": " know he doesn't love me anymore they can't remember Shannon Morris's channel"
+      },
+      {
+        "start": 187110,
+        "stop": 187426,
+        "text": " a bunch of Magic the Gathering stuff that you people never want to hear about"
+      },
+      {
+        "start": 187426,
+        "stop": 187810,
+        "text": " because you don't love Magic the Gathering like I do of course but I have"
+      },
+      {
+        "start": 187810,
+        "stop": 188378,
+        "text": " tons of content that I can only get in that discord account right that I like"
+      },
+      {
+        "start": 188378,
+        "stop": 188766,
+        "text": " to watch right right yeah so what would I have to do I thought about it so what"
+      },
+      {
+        "start": 188766,
+        "stop": 189106,
+        "text": " if it fails okay well I have to somehow get a hold of Shannon Morris who"
+      },
+      {
+        "start": 189106,
+        "stop": 189502,
+        "text": " probably has some pretty aggressive filters I would assume so actually"
+      },
+      {
+        "start": 189502,
+        "stop": 189782,
+        "text": " getting in touch for it would be challenging I have to get all these"
+      },
+      {
+        "start": 189782,
+        "stop": 190298,
+        "text": " random youtubers and who play magic again who I have a feeling have some"
+      },
+      {
+        "start": 190298,
+        "stop": 190990,
+        "text": " pretty aggressive you know filters up to individually respond to me believe me"
+      },
+      {
+        "start": 190990,
+        "stop": 191566,
+        "text": " that I am one of the people paying their patreon and then somehow let me just"
+      },
+      {
+        "start": 191566,
+        "stop": 191978,
+        "text": " give them another discord handle that they can give the access to this an"
+      },
+      {
+        "start": 191978,
+        "stop": 192394,
+        "text": " entire manual process that I would need about six people to do many of them I'm"
+      },
+      {
+        "start": 192394,
+        "stop": 193182,
+        "text": " pretty sure never read their DMS nor should they so that would suck I imagine"
+      },
+      {
+        "start": 193182,
+        "stop": 193490,
+        "text": " this is what life also feels like say your Google account gets turned off it's"
+      },
+      {
+        "start": 193490,
+        "stop": 193754,
+        "text": " a very similar thing there's a gentleman we could ask about that from a month ago"
+      },
+      {
+        "start": 193754,
+        "stop": 194150,
+        "text": " right yeah and I I also use my Google account to authenticate to several"
+      },
+      {
+        "start": 194150,
+        "stop": 194534,
+        "text": " services as well outside of that well I do too for all my work stuff because I"
+      },
+      {
+        "start": 194534,
+        "stop": 195030,
+        "text": " use a G Suite it's all Google like I can't use my if I lost my Google account"
+      },
+      {
+        "start": 195030,
+        "stop": 195500,
+        "text": " I could not use github anymore because I we have the SSO thing so you know what"
+      },
+      {
+        "start": 195500,
+        "stop": 195858,
+        "text": " what saved my bacon in this situation and I'm not necessarily saying you"
+      },
+      {
+        "start": 195858,
+        "stop": 196438,
+        "text": " should do it this way but what saved my bacon was I use authi which sinks your"
+      },
+      {
+        "start": 196438,
+        "stop": 196966,
+        "text": " two factors across your different devices you have authion and I happen to"
+      },
+      {
+        "start": 196966,
+        "stop": 197478,
+        "text": " have it installed on an m1 Mac mini desktop the m1 saves the day so I could"
+      },
+      {
+        "start": 197478,
+        "stop": 197830,
+        "text": " do my two-factor when I was sitting at that machine from the desktop and so I"
+      },
+      {
+        "start": 197830,
+        "stop": 198318,
+        "text": " was able to pull it up on that device and then resync my my new phone but it"
+      },
+      {
+        "start": 198318,
+        "stop": 198714,
+        "text": " took me two days before I remembered that because I don't use that Mac mini"
+      },
+      {
+        "start": 198714,
+        "stop": 199314,
+        "text": " very often so I was like for two days genuinely depressed that I had effed that"
+      },
+      {
+        "start": 199314,
+        "stop": 199930,
+        "text": " up so badly and that I I knew what a because everything has two-factor and I"
+      },
+      {
+        "start": 199930,
+        "stop": 200402,
+        "text": " mean hundreds of different services and sites I have just for JB alone not to"
+      },
+      {
+        "start": 200402,
+        "stop": 200854,
+        "text": " mention all my personal stuff like I was mourning the loss of my two-factor codes"
+      },
+      {
+        "start": 200854,
+        "stop": 201166,
+        "text": " and then I remembered it was on that machine so having that sync I don't"
+      },
+      {
+        "start": 201166,
+        "stop": 201542,
+        "text": " think it makes it as secure and it makes off you know it seems like all these the"
+      },
+      {
+        "start": 201542,
+        "stop": 201974,
+        "text": " obvious attack factor then yeah right is it sinking the actual generated codes or"
+      },
+      {
+        "start": 201974,
+        "stop": 202300,
+        "text": " is it sinking the over yes the gen okay that's actually pretty good you know"
+      },
+      {
+        "start": 202300,
+        "stop": 202718,
+        "text": " don't do like I do but that that was that worked really well bit warden can"
+      },
+      {
+        "start": 202718,
+        "stop": 203062,
+        "text": " also be a tool in this bit warden comm slash Linux if you want to support our"
+      },
+      {
+        "start": 203062,
+        "stop": 203390,
+        "text": " shows this is an awful experience and the other thing that's really"
+      },
+      {
+        "start": 203390,
+        "stop": 203838,
+        "text": " challenging here is if you're trying to go from iPhone to Android some of the"
+      },
+      {
+        "start": 203838,
+        "stop": 204120,
+        "text": " stuff doesn't move over either yeah I feel like if you with an all Apple"
+      },
+      {
+        "start": 204120,
+        "stop": 204598,
+        "text": " solution you'd be tied to Apple and they'd have a lock on that so I just but"
+      },
+      {
+        "start": 204598,
+        "stop": 204870,
+        "text": " you wouldn't want Google to do it either I wouldn't want any of these major"
+      },
+      {
+        "start": 204870,
+        "stop": 205338,
+        "text": " companies to do it oh the problem is is that if you know security now right TNO"
+      },
+      {
+        "start": 205338,
+        "stop": 205848,
+        "text": " trust no one but that includes yourself so if you're doing a true trust no one"
+      },
+      {
+        "start": 205848,
+        "stop": 206294,
+        "text": " security setup it is totally possible to screw yourself these I feel like our"
+      },
+      {
+        "start": 206294,
+        "stop": 206730,
+        "text": " rough areas technology needs to work out and as we have more and more digital"
+      },
+      {
+        "start": 206730,
+        "stop": 207168,
+        "text": " assets that we place value on this just becomes a bigger and bigger problem like"
+      },
+      {
+        "start": 207168,
+        "stop": 207766,
+        "text": " your photos you know your email cryptocurrency pictures pictures of like"
+      },
+      {
+        "start": 207766,
+        "stop": 208200,
+        "text": " JPEG monkeys I don't know like whatever people think is worth something like you"
+      },
+      {
+        "start": 208200,
+        "stop": 208722,
+        "text": " have this problem where if you want to secure it and protect it you also make"
+      },
+      {
+        "start": 208722,
+        "stop": 209118,
+        "text": " it possible to lose it if you lose access to it like it's a it's a genuine"
+      },
+      {
+        "start": 209118,
+        "stop": 209430,
+        "text": " problem that humanity really hasn't fully sorted out we don't have photo"
+      },
+      {
+        "start": 209430,
+        "stop": 209810,
+        "text": " albums like we used to just you know we don't have that anymore it's all on the"
+      },
+      {
+        "start": 209810,
+        "stop": 210270,
+        "text": " computer it's all digital now yeah it's all digital now figure it out for some"
+      },
+      {
+        "start": 210270,
+        "stop": 210558,
+        "text": " reason I thought you ended up on an Android device during all I briefly was"
+      },
+      {
+        "start": 210558,
+        "stop": 211118,
+        "text": " using a pixel test device that I have what era of pixel pixel three four no"
+      },
+      {
+        "start": 211118,
+        "stop": 211648,
+        "text": " pics for a okay okay yeah I have a three and that's getting pretty long in"
+      },
+      {
+        "start": 211648,
+        "stop": 212090,
+        "text": " the tooth it was pretty slow like I try to call I bought a couple like games to"
+      },
+      {
+        "start": 212090,
+        "stop": 212634,
+        "text": " try on it just say how it ran it was pretty if I was to stick with Android I"
+      },
+      {
+        "start": 212634,
+        "stop": 213074,
+        "text": " might have to get a new one you just got out of there usually like no way well so"
+      },
+      {
+        "start": 213074,
+        "stop": 213732,
+        "text": " this is unrelated but turns out all my contacts are an iCloud oh yeah yeah so"
+      },
+      {
+        "start": 213732,
+        "stop": 214090,
+        "text": " like I had to ask my wife for her phone number yeah yeah I would have to as well"
+      },
+      {
+        "start": 214090,
+        "stop": 214462,
+        "text": " yeah I'm not I was just thinking the other day I should memorize that yeah I"
+      },
+      {
+        "start": 214462,
+        "stop": 214918,
+        "text": " know I I did a little bender on Android about a month ago I went with graphene"
+      },
+      {
+        "start": 214918,
+        "stop": 215298,
+        "text": " OS and my whole thing was not to use Google services so I had the same"
+      },
+      {
+        "start": 215298,
+        "stop": 215626,
+        "text": " problem with contacts I'm like what the hell do I do for my contacts in my"
+      },
+      {
+        "start": 215626,
+        "stop": 216130,
+        "text": " calendar and I'm not saying this is what everybody could do but I have the option"
+      },
+      {
+        "start": 216130,
+        "stop": 216606,
+        "text": " and I did this is I was able to put a little a little wedge in there basically"
+      },
+      {
+        "start": 216606,
+        "stop": 217178,
+        "text": " that lets me send all that to next cloud so I became my own contacts and"
+      },
+      {
+        "start": 217178,
+        "stop": 217538,
+        "text": " calendar sync point and then I had that available in next cloud as well that was"
+      },
+      {
+        "start": 217538,
+        "stop": 217930,
+        "text": " really nice I had to roll that whole solution myself including unlock the"
+      },
+      {
+        "start": 217930,
+        "stop": 218366,
+        "text": " phone reflash it with adb set up you know find this app thanks to Jeff who"
+      },
+      {
+        "start": 218366,
+        "stop": 218630,
+        "text": " gave me an idea where to find it get this app so I could actually sync to"
+      },
+      {
+        "start": 218630,
+        "stop": 218942,
+        "text": " next cloud get all that configured I already had next cloud set right like it"
+      },
+      {
+        "start": 218942,
+        "stop": 219432,
+        "text": " was just this massive amount of work if you were starting from square one I was"
+      },
+      {
+        "start": 219432,
+        "stop": 219958,
+        "text": " starting from like square three but it was possible on a modern ish Android"
+      },
+      {
+        "start": 219958,
+        "stop": 220446,
+        "text": " device to have a clean Android install with no attachment to Google and still"
+      },
+      {
+        "start": 220446,
+        "stop": 220862,
+        "text": " have like cloud syncing stuff if you want to build it yeah but do you want to"
+      },
+      {
+        "start": 220862,
+        "stop": 221290,
+        "text": " build it I guess some people do it depends on how bad it gets I suppose"
+      },
+      {
+        "start": 221290,
+        "stop": 221738,
+        "text": " yeah all right we've been teasing it you got you got into like the Swift again"
+      },
+      {
+        "start": 221738,
+        "stop": 222058,
+        "text": " something you smell a little Swifty maybe that's the Swift UI that's extra"
+      },
+      {
+        "start": 222058,
+        "stop": 222434,
+        "text": " ripe I'm not sure but I think you've been doing a deep dive yeah I I've been"
+      },
+      {
+        "start": 222434,
+        "stop": 222804,
+        "text": " playing around with Swift again for a lot of eight doesn't matter if he's"
+      },
+      {
+        "start": 222804,
+        "stop": 223202,
+        "text": " sexy doesn't show so I'm building my kid for Christmas a Pokemon a digital"
+      },
+      {
+        "start": 223202,
+        "stop": 223650,
+        "text": " Pokemon trading card binder in Swift yeah I might throw it on the app store"
+      },
+      {
+        "start": 223650,
+        "stop": 223994,
+        "text": " because people always ask do you have anything on the app store but I but I"
+      },
+      {
+        "start": 223994,
+        "stop": 224418,
+        "text": " figured if I'm gonna do it I'm gonna do it right so it's using the latest the"
+      },
+      {
+        "start": 224418,
+        "stop": 225026,
+        "text": " greatest version of Swift which I think is 5.7 because I didn't put that in my"
+      },
+      {
+        "start": 225026,
+        "stop": 225682,
+        "text": " notes pure Swift UI none of my safe space of you know interface builder or"
+      },
+      {
+        "start": 225682,
+        "stop": 226250,
+        "text": " her good old UI viewer or any storyboards anything like that I'm doing"
+      },
+      {
+        "start": 226250,
+        "stop": 226946,
+        "text": " I'm using the relatively new async await features and Swift and and this is what"
+      },
+      {
+        "start": 226946,
+        "stop": 227634,
+        "text": " I think is the the interesting part I'm actually doing deserialization the Swift"
+      },
+      {
+        "start": 227634,
+        "stop": 228222,
+        "text": " way not the objective C way which is just doing it by hand"
+      },
+      {
+        "start": 228230,
+        "stop": 229042,
+        "text": " where to begin Xcode always has the best error messages this is something other"
+      },
+      {
+        "start": 229042,
+        "stop": 229630,
+        "text": " IDs need to think about because at one point I opened Xcode it's like I can't"
+      },
+      {
+        "start": 229630,
+        "stop": 229962,
+        "text": " open this project it's from the future closed it open it again it opened it"
+      },
+      {
+        "start": 229962,
+        "stop": 230474,
+        "text": " fine incredible good stuff like Doctor Who I crossed my own timeline amazing"
+      },
+      {
+        "start": 230474,
+        "stop": 230990,
+        "text": " yeah nicely done but I will say it is far more stable than it used to be all"
+      },
+      {
+        "start": 230990,
+        "stop": 231710,
+        "text": " right that's good still Swift UI I don't know how much rim you need but it wants"
+      },
+      {
+        "start": 231710,
+        "stop": 232274,
+        "text": " all of it all the rim in terms of the preview view but it's still pretty nice"
+      },
+      {
+        "start": 232274,
+        "stop": 232754,
+        "text": " just kind of lagging kind of slow whatever my first takes working in it"
+      },
+      {
+        "start": 232754,
+        "stop": 233430,
+        "text": " were so Apple just sat back watch like the whole angular react thing happened"
+      },
+      {
+        "start": 233430,
+        "stop": 233678,
+        "text": " it was like we're gonna do this but we're gonna make it better because we're"
+      },
+      {
+        "start": 233678,
+        "stop": 234466,
+        "text": " Apple and we only care about one platform cool this one class async image"
+      },
+      {
+        "start": 234466,
+        "stop": 235066,
+        "text": " which you can put on any Swift UI major components like a V stack or an H stack"
+      },
+      {
+        "start": 235066,
+        "stop": 235494,
+        "text": " those are vertical stack and horizontal stack respectively I had to write a"
+      },
+      {
+        "start": 235494,
+        "stop": 236122,
+        "text": " whole library to do this in old iOS and the this is you have a view you have a"
+      },
+      {
+        "start": 236122,
+        "stop": 236594,
+        "text": " URL to an image you want that image to load asynchronously and show a progress"
+      },
+      {
+        "start": 236594,
+        "stop": 237326,
+        "text": " bar and not block the UI it is one line of code in Swift UI and the performance"
+      },
+      {
+        "start": 237326,
+        "stop": 237810,
+        "text": " is really good that sounds nice it is super nice I mean I'm super jelly of the"
+      },
+      {
+        "start": 237810,
+        "stop": 238390,
+        "text": " new iOS developers because it's this is easy mode a sick and Swift it's like"
+      },
+      {
+        "start": 238390,
+        "stop": 239134,
+        "text": " they took a sink in Python but married it to the bitchiness of rust okay you"
+      },
+      {
+        "start": 239134,
+        "stop": 239746,
+        "text": " got a lot of try catching going on I mean it demands so this is something I"
+      },
+      {
+        "start": 239746,
+        "stop": 240218,
+        "text": " guess I had forgotten about Swift unless you slap those exclamation points"
+      },
+      {
+        "start": 240218,
+        "stop": 240774,
+        "text": " everywhere which is the rough equivalent to slapping unsafe everywhere in rust it"
+      },
+      {
+        "start": 240774,
+        "stop": 241342,
+        "text": " makes you catch everything but you know and by the way this is coming to C# as"
+      },
+      {
+        "start": 241342,
+        "stop": 241734,
+        "text": " the default now and dotnet I think it just came in six and Donna at seven comes"
+      },
+      {
+        "start": 241734,
+        "stop": 242154,
+        "text": " out soon too so enjoy you could have question marks everywhere and exclamation"
+      },
+      {
+        "start": 242154,
+        "stop": 242718,
+        "text": " points beautiful I actually think it is beautiful because I'm catching stuff at"
+      },
+      {
+        "start": 242718,
+        "stop": 243190,
+        "text": " compile time that basically once I get the damn view to you know be buildable"
+      },
+      {
+        "start": 243190,
+        "stop": 243678,
+        "text": " it pretty much works yeah fair enough might as well catch it then yeah so far"
+      },
+      {
+        "start": 243678,
+        "stop": 244170,
+        "text": " device scaling Swift UI I think does a fair job of being device agnostic with"
+      },
+      {
+        "start": 244170,
+        "stop": 244650,
+        "text": " the big caveat of I have not yet decided to try it out landscape things that I"
+      },
+      {
+        "start": 244650,
+        "stop": 245210,
+        "text": " don't like I get it and I have this problem with rust - I get that you want"
+      },
+      {
+        "start": 245210,
+        "stop": 245854,
+        "text": " to be absolutely correct but you know sometimes it's weird like the Xcode"
+      },
+      {
+        "start": 245854,
+        "stop": 246322,
+        "text": " makes you feel just like rust does it makes you feel dirty when you're like"
+      },
+      {
+        "start": 246322,
+        "stop": 246866,
+        "text": " overriding its warnings or it's you know checking stuff a lot of it's just feels"
+      },
+      {
+        "start": 246866,
+        "stop": 247646,
+        "text": " unnecessary I know I've read the forums I've read the subreddit I may have"
+      },
+      {
+        "start": 247646,
+        "stop": 248182,
+        "text": " posted on reddit and gotten yelled at by the Swift people that you know things"
+      },
+      {
+        "start": 248182,
+        "stop": 248534,
+        "text": " should be safe you need to know the types blah blah blah blah blah fair"
+      },
+      {
+        "start": 248534,
+        "stop": 249146,
+        "text": " enough I've been doing too much Python it is very clear to me and I'm not sure"
+      },
+      {
+        "start": 249146,
+        "stop": 249568,
+        "text": " that this maybe this maybe this isn't bad but that Apple is gonna shove Swift"
+      },
+      {
+        "start": 249568,
+        "stop": 250206,
+        "text": " UI down your throat so if you're clinging to you know storyboards or"
+      },
+      {
+        "start": 250206,
+        "stop": 250566,
+        "text": " it's probably only storyboards at this point right and unless you're doing I"
+      },
+      {
+        "start": 250566,
+        "stop": 251066,
+        "text": " guess you could do individual nibs but I think you need to change I wrote a couple"
+      },
+      {
+        "start": 251066,
+        "stop": 251574,
+        "text": " about a year and a half ago a blog post on bringing over zibs which they're"
+      },
+      {
+        "start": 251574,
+        "stop": 252298,
+        "text": " called nibs by the way from UI UI kit into Swift UI I almost think that's"
+      },
+      {
+        "start": 252298,
+        "stop": 253070,
+        "text": " basically misguided now and it's in this weird transitional state of so far if you"
+      },
+      {
+        "start": 253070,
+        "stop": 253632,
+        "text": " stick to just the it's not it's unfair to credit slash blame him but like the"
+      },
+      {
+        "start": 253632,
+        "stop": 253936,
+        "text": " Marco Armin style of app development where you're basically just using"
+      },
+      {
+        "start": 253936,
+        "stop": 254434,
+        "text": " apples components with very little styling then Swift UI is super fast"
+      },
+      {
+        "start": 254434,
+        "stop": 254982,
+        "text": " proficient the minute you want to go a little custom things get rougher and"
+      },
+      {
+        "start": 254982,
+        "stop": 255374,
+        "text": " it's tempting to drop to you I view because you can wrap it in a Swift UI"
+      },
+      {
+        "start": 255374,
+        "stop": 256046,
+        "text": " component but I having tried it both ways I almost think it's one a matter of"
+      },
+      {
+        "start": 256046,
+        "stop": 256754,
+        "text": " time before Apple just you know makes it more robust right you get more robust"
+      },
+      {
+        "start": 256754,
+        "stop": 257214,
+        "text": " controls out of the box you would hope so well from when I tried it last time"
+      },
+      {
+        "start": 257214,
+        "stop": 257746,
+        "text": " to where it is now they have right they totally have you know WWDCs in June yeah"
+      },
+      {
+        "start": 257746,
+        "stop": 258054,
+        "text": " if they're trending in the right direction that's a good sign yeah I my"
+      },
+      {
+        "start": 258054,
+        "stop": 258722,
+        "text": " point being I think it's almost misguided to not just embrace the the"
+      },
+      {
+        "start": 258722,
+        "stop": 259346,
+        "text": " glory that is Swift UI and I know I like T Swift this is really good I mean"
+      },
+      {
+        "start": 259346,
+        "stop": 260034,
+        "text": " working on this Pokemon project I'm like super missing iOS stuff and I do some"
+      },
+      {
+        "start": 260034,
+        "stop": 260594,
+        "text": " for clients the we have an app from 2010 that is written in no memory managed"
+      },
+      {
+        "start": 260594,
+        "stop": 261038,
+        "text": " Objective C but that's more archaeology at this point it's not like new dev this"
+      },
+      {
+        "start": 261038,
+        "stop": 261506,
+        "text": " is like fun to work in in particular you can monitor your apps health and tail"
+      },
+      {
+        "start": 261506,
+        "stop": 262386,
+        "text": " scale tailscale.com slash coder that's where you go to try it for free for up"
+      },
+      {
+        "start": 262386,
+        "stop": 262926,
+        "text": " to 20 devices and experience the best mesh VPN you've ever ever tried to set"
+      },
+      {
+        "start": 262926,
+        "stop": 263390,
+        "text": " up you get it going in like mmm probably two minutes on a device if if not that I"
+      },
+      {
+        "start": 263390,
+        "stop": 263890,
+        "text": " I'm not even kidding you it takes me 30 seconds to get a system on my tail scale"
+      },
+      {
+        "start": 263890,
+        "stop": 264370,
+        "text": " VPN mesh network and it's all protected by wire guards noise protocol the"
+      },
+      {
+        "start": 264370,
+        "stop": 264798,
+        "text": " encryption is solid and the other thing is the performance is incredible and the"
+      },
+      {
+        "start": 264798,
+        "stop": 265134,
+        "text": " system is smart enough to know if you're trying to communicate with your tail"
+      },
+      {
+        "start": 265134,
+        "stop": 265406,
+        "text": " scale network or if you're trying to communicate with a general internet or"
+      },
+      {
+        "start": 265406,
+        "stop": 265700,
+        "text": " something on your land it's also smart enough to figure out that if you're"
+      },
+      {
+        "start": 265700,
+        "stop": 266110,
+        "text": " talking to another tail scale device on your land it'll just stay on the land"
+      },
+      {
+        "start": 266110,
+        "stop": 266506,
+        "text": " it doesn't ride out to the internet and come back in we had huge storms here in"
+      },
+      {
+        "start": 266506,
+        "stop": 266950,
+        "text": " the Pacific Northwest this last weekend 70 mile per hour winds power got knocked"
+      },
+      {
+        "start": 266950,
+        "stop": 267294,
+        "text": " out at the studio and one of the things that I love is in the tail scale"
+      },
+      {
+        "start": 267294,
+        "stop": 267750,
+        "text": " dashboard I can see the last time a node was online so I knew exactly when the"
+      },
+      {
+        "start": 267750,
+        "stop": 268066,
+        "text": " power went out at the studio so I knew how long things were down I set up a"
+      },
+      {
+        "start": 268066,
+        "stop": 268410,
+        "text": " ping I just started pinging the tail scale IP of one of the devices here and"
+      },
+      {
+        "start": 268410,
+        "stop": 268762,
+        "text": " sure enough it came back online when the power came up and I knew to come down"
+      },
+      {
+        "start": 268762,
+        "stop": 269258,
+        "text": " and fix everything because it was a bad one I just love that flexibility tail"
+      },
+      {
+        "start": 269258,
+        "stop": 269566,
+        "text": " scale gives me to just you know I can use it in so many different ways but the"
+      },
+      {
+        "start": 269566,
+        "stop": 270220,
+        "text": " thing that really became handy was this is my bad but more systems were using"
+      },
+      {
+        "start": 270220,
+        "stop": 270712,
+        "text": " DHCP then probably should have so a bunch of my box has got new IP addresses and"
+      },
+      {
+        "start": 270712,
+        "stop": 271258,
+        "text": " like my node for Bitcoin where I check the boost but also some studio systems"
+      },
+      {
+        "start": 271258,
+        "stop": 271804,
+        "text": " but their tail scale IP stayed the same same tail scale IP so I was like oh yeah"
+      },
+      {
+        "start": 271804,
+        "stop": 272270,
+        "text": " wait a minute I can just connect to the tail scale IP and I'm fine it just was"
+      },
+      {
+        "start": 272270,
+        "stop": 272776,
+        "text": " like wow this is even on my land this is just so freaking great and tail scale"
+      },
+      {
+        "start": 272776,
+        "stop": 273158,
+        "text": " sin is like airdrop for all my devices including my Linux boxes and my mobile"
+      },
+      {
+        "start": 273158,
+        "stop": 273682,
+        "text": " devices and tail scale SSH is absolute fire you can log into your system using"
+      },
+      {
+        "start": 273682,
+        "stop": 274126,
+        "text": " tail scale through SSH it's absolute fire you're gonna love it there's so many"
+      },
+      {
+        "start": 274126,
+        "stop": 274496,
+        "text": " great things and they've recently made DNS even better than ever on the tail"
+      },
+      {
+        "start": 274496,
+        "stop": 274880,
+        "text": " scale network so go try it for yourself for free for up to 20 machines and"
+      },
+      {
+        "start": 274880,
+        "stop": 275366,
+        "text": " support the show by going to tail scale comm slash coder I think this is gonna"
+      },
+      {
+        "start": 275366,
+        "stop": 275720,
+        "text": " blow you away you're gonna wonder why you hadn't tried it sooner tail scale"
+      },
+      {
+        "start": 275720,
+        "stop": 276504,
+        "text": " comm slash coder now that's not all I know you had a continuing journey and"
+      },
+      {
+        "start": 276504,
+        "stop": 277042,
+        "text": " have discovered strong opinions some pushback and perhaps even a few demons"
+      },
+      {
+        "start": 277042,
+        "stop": 277472,
+        "text": " yes so this this is actually really cool so I said I did the JSON"
+      },
+      {
+        "start": 277472,
+        "stop": 278036,
+        "text": " deserialization for my Pokemon card structs the way that Swift wants you to"
+      },
+      {
+        "start": 278036,
+        "stop": 278546,
+        "text": " not the old objective C way of like just passing in an NS dictionary and you know"
+      },
+      {
+        "start": 278546,
+        "stop": 279008,
+        "text": " manually parsing the keys right and yes kids that is how we used to do an"
+      },
+      {
+        "start": 279008,
+        "stop": 279484,
+        "text": " objective C yes I know it's bad you guys have no freaking idea how easy you have"
+      },
+      {
+        "start": 279484,
+        "stop": 280096,
+        "text": " it so I don't want to hear about it go to your room okay is it in good we just"
+      },
+      {
+        "start": 280096,
+        "stop": 280396,
+        "text": " make up some like 13 year old developer and just yell at him that's what we do"
+      },
+      {
+        "start": 280396,
+        "stop": 280708,
+        "text": " on the show we're gonna call him Tim and we're just gonna yell at him all day"
+      },
+      {
+        "start": 280708,
+        "stop": 281372,
+        "text": " long dang it Tim you are disappointing us Tim what what do you mean Java Java"
+      },
+      {
+        "start": 281372,
+        "stop": 281726,
+        "text": " has functions that doesn't have functions everything's like objects Java"
+      },
+      {
+        "start": 281726,
+        "stop": 282270,
+        "text": " one that's all you get how do you not know who Duke is go read Wikipedia go to"
+      },
+      {
+        "start": 282270,
+        "stop": 282590,
+        "text": " your room yeah then the problem is me and Chris go to the bar and we get"
+      },
+      {
+        "start": 282590,
+        "stop": 283020,
+        "text": " uber home because we're crying about somebody named Scott McNeely and son and"
+      },
+      {
+        "start": 283020,
+        "stop": 283394,
+        "text": " the 20 year old bartender has no idea what's wrong with these two old dudes"
+      },
+      {
+        "start": 283394,
+        "stop": 283764,
+        "text": " but she wants them away it poor little Tim he's just looking at his code of"
+      },
+      {
+        "start": 283764,
+        "stop": 284170,
+        "text": " radio dads and he's just wondering why do they always cry when Sun comes up I"
+      },
+      {
+        "start": 284170,
+        "stop": 284566,
+        "text": " don't understand what's wrong about the Sun every day at sunset we just sit on"
+      },
+      {
+        "start": 284566,
+        "stop": 285078,
+        "text": " the on the veranda drinks in hand tears streaming openly weeping I mean it's"
+      },
+      {
+        "start": 285078,
+        "stop": 285590,
+        "text": " really terrible but things that make us happy the codable protocol and Swift"
+      },
+      {
+        "start": 285590,
+        "stop": 286110,
+        "text": " first of all if you're gonna name protocols I love this thing yeah in fact"
+      },
+      {
+        "start": 286110,
+        "stop": 286626,
+        "text": " Swift you guys get a robe this is robe worthy yeah this is better than coderly"
+      },
+      {
+        "start": 286626,
+        "stop": 287150,
+        "text": " yeah painful we got to do that it's codable I know I know so I"
+      },
+      {
+        "start": 287150,
+        "stop": 287834,
+        "text": " linked the documentation it's so baller that it's really a type alias for two"
+      },
+      {
+        "start": 287834,
+        "stop": 288394,
+        "text": " protocols not one decodable which does exactly what it sounds like decodes a"
+      },
+      {
+        "start": 288394,
+        "stop": 288946,
+        "text": " JSON object into your class an instance of your class or I'm sorry struct"
+      },
+      {
+        "start": 288946,
+        "stop": 289378,
+        "text": " encodable which does the opposite encodes your you know your data type"
+      },
+      {
+        "start": 289378,
+        "stop": 290266,
+        "text": " into JSON and now it has some opinions on how the JSON should look but and this"
+      },
+      {
+        "start": 290266,
+        "stop": 290958,
+        "text": " is what saved my but it is possible to do custom decoding and still keep all"
+      },
+      {
+        "start": 290958,
+        "stop": 291502,
+        "text": " the other benefits so if you have one let's say easy example you have like one"
+      },
+      {
+        "start": 291502,
+        "stop": 291804,
+        "text": " type that's like a weird type in JSON it's some kind of weird like string that"
+      },
+      {
+        "start": 291804,
+        "stop": 292186,
+        "text": " they encoded instead of using a real data type you can just have like a"
+      },
+      {
+        "start": 292186,
+        "stop": 292606,
+        "text": " custom function that decodes that as long as it decodes back to one of the"
+      },
+      {
+        "start": 292606,
+        "stop": 293166,
+        "text": " basic Swift types mmm man that's handy right but if it is a bit if it's an easy"
+      },
+      {
+        "start": 293166,
+        "stop": 293606,
+        "text": " map so like a JSON array to a Swift array it just does it you just tell it"
+      },
+      {
+        "start": 293606,
+        "stop": 293938,
+        "text": " it's an array and it does it so you don't have to follow its specific output"
+      },
+      {
+        "start": 293938,
+        "stop": 294362,
+        "text": " that it requires you can there's room for fudging it it expects camel casing"
+      },
+      {
+        "start": 294362,
+        "stop": 294814,
+        "text": " but if you don't have camel casing you can tell it that it's it actually has"
+      },
+      {
+        "start": 294814,
+        "stop": 295210,
+        "text": " built-in enums for like other crazy casing like snake casing well good I'm"
+      },
+      {
+        "start": 295210,
+        "stop": 295678,
+        "text": " glad you're not compromising on this well no I like my snake casing okay good"
+      },
+      {
+        "start": 295678,
+        "stop": 295994,
+        "text": " I'm good I'm glad it accommodates you what's what's wrong with snake casing"
+      },
+      {
+        "start": 295994,
+        "stop": 296602,
+        "text": " nothing nothing mmm sensing a disturbance I just what I find quite"
+      },
+      {
+        "start": 296602,
+        "stop": 297118,
+        "text": " humorous is you going out of your way to just not have to change like I would"
+      },
+      {
+        "start": 297118,
+        "stop": 297486,
+        "text": " just be like okay machine all right I'll do it your way you're like no see this"
+      },
+      {
+        "start": 297486,
+        "stop": 297926,
+        "text": " it's not my API though I don't control the J's there yeah fair right you're"
+      },
+      {
+        "start": 297926,
+        "stop": 298218,
+        "text": " not yeah you're not necessarily controlling the input yeah I suppose"
+      },
+      {
+        "start": 298218,
+        "stop": 298586,
+        "text": " that's fair to to be fair the API I'm using is camel cased and I did have it"
+      },
+      {
+        "start": 298586,
+        "stop": 298882,
+        "text": " hit one of mine that's snake cased and you know what snake casing is the right"
+      },
+      {
+        "start": 298882,
+        "stop": 299310,
+        "text": " casing although my Swift code I am I am being a proper Swift developer and doing"
+      },
+      {
+        "start": 299310,
+        "stop": 299938,
+        "text": " it camel case so there you go I hear it tastes like chicken it tastes like it"
+      },
+      {
+        "start": 299938,
+        "stop": 300296,
+        "text": " does taste like chicken it's a bird I thought for I think chicken I think like"
+      },
+      {
+        "start": 300296,
+        "stop": 300738,
+        "text": " Raptors great-grandson now and I'm very scared I had hot wings I'm like when the"
+      },
+      {
+        "start": 300738,
+        "stop": 301040,
+        "text": " dinosaurs come back they're gonna be so pissed at me you could just look at him"
+      },
+      {
+        "start": 301040,
+        "stop": 301554,
+        "text": " and kind of see it right you can just see it it's surprisingly fast it can"
+      },
+      {
+        "start": 301554,
+        "stop": 301922,
+        "text": " even handle cases where you can do the question mark thing and say it's an"
+      },
+      {
+        "start": 301922,
+        "stop": 302484,
+        "text": " optional and if it's not there it just accepts it you can nest different"
+      },
+      {
+        "start": 302484,
+        "stop": 303150,
+        "text": " codable or decodable types within a kind of a overarching type so for instance I"
+      },
+      {
+        "start": 303150,
+        "stop": 303560,
+        "text": " have a card result type which in it has a card and in that has the card has a"
+      },
+      {
+        "start": 303560,
+        "stop": 304016,
+        "text": " set so we can decode the set and in that you have like all kinds of crap right"
+      },
+      {
+        "start": 304016,
+        "stop": 304648,
+        "text": " like Pokemon attacks blah blah blah now I know the dotnet developers are like we"
+      },
+      {
+        "start": 304648,
+        "stop": 305298,
+        "text": " have this too you do Swift does it a lot better because I think what they did is"
+      },
+      {
+        "start": 305298,
+        "stop": 305774,
+        "text": " just Rob your ass I'm feeling a lot of the Swift stuff is just ripping off good"
+      },
+      {
+        "start": 305774,
+        "stop": 306128,
+        "text": " ideas from other places it's like we have the strictness of rust you can"
+      },
+      {
+        "start": 306128,
+        "stop": 306516,
+        "text": " throw an exclamation point in there if you don't want to listen and here's all"
+      },
+      {
+        "start": 306516,
+        "stop": 307010,
+        "text": " the dotnet MVVM kind of stuff but we're gonna make it a lot simpler and a little"
+      },
+      {
+        "start": 307010,
+        "stop": 307898,
+        "text": " you know more I want to say forgiving I wouldn't say that but more almost like"
+      },
+      {
+        "start": 307898,
+        "stop": 308422,
+        "text": " you can Voltron up your own you can more easily than I found a dotnet Voltron up"
+      },
+      {
+        "start": 308422,
+        "stop": 308988,
+        "text": " your own custom whatever data structure you need right it seems like a good"
+      },
+      {
+        "start": 308988,
+        "stop": 309336,
+        "text": " strategy on their part that actually does why not look why not see what others are"
+      },
+      {
+        "start": 309336,
+        "stop": 309832,
+        "text": " doing like dotnet in this case for sure yeah good strategy yeah I would say the"
+      },
+      {
+        "start": 309832,
+        "stop": 310448,
+        "text": " closest analogy is probably like a cup of ock who I think is a Klingon typescript"
+      },
+      {
+        "start": 310448,
+        "stop": 310756,
+        "text": " does something similar which I think is ironic also Microsoft who ripped off"
+      },
+      {
+        "start": 310756,
+        "stop": 311220,
+        "text": " c-sharp their own thing so I feel like c-sharp being early with the stuff kind"
+      },
+      {
+        "start": 311220,
+        "stop": 311936,
+        "text": " of you know it's got some baggage so I'm gonna go on a limb here Swift is"
+      },
+      {
+        "start": 311936,
+        "stop": 312400,
+        "text": " enjoyable whoo just thinking if I had a time machine right now don't worry Alex"
+      },
+      {
+        "start": 312400,
+        "stop": 312856,
+        "text": " will find it I have perfect faith in him I think he's kind of been he's kind of"
+      },
+      {
+        "start": 312856,
+        "stop": 313172,
+        "text": " moved past it by now he's like a 200 now yeah he's in the - I can't believe he's I"
+      },
+      {
+        "start": 313172,
+        "stop": 313656,
+        "text": " can't believe you although it's 2016 I know it was 190 something okay okay"
+      },
+      {
+        "start": 313656,
+        "stop": 314116,
+        "text": " such a wild episode for me on my end haha where you rage quit in the middle of the"
+      },
+      {
+        "start": 314116,
+        "stop": 314660,
+        "text": " show because so short version is we were doing the Apple event live they"
+      },
+      {
+        "start": 314660,
+        "stop": 314944,
+        "text": " announced Swift and then we go to record the show to get the reaction and Mike's"
+      },
+      {
+        "start": 314944,
+        "stop": 315436,
+        "text": " reaction is just rage through the unbridled rage yeah and then he leaves"
+      },
+      {
+        "start": 315436,
+        "stop": 315756,
+        "text": " the show and I'm like all right well thanks for coming everybody it's like a"
+      },
+      {
+        "start": 315756,
+        "stop": 316156,
+        "text": " 25-minute show yeah one of our most listened to shows I just I'm pretty sure"
+      },
+      {
+        "start": 316156,
+        "stop": 316812,
+        "text": " I keep people keep sending me stuff about it I feel like Swift has made a"
+      },
+      {
+        "start": 316812,
+        "stop": 317204,
+        "text": " big journey since that episode oh it's a complete I would argue it's a completely"
+      },
+      {
+        "start": 317204,
+        "stop": 317820,
+        "text": " different language to like even from where Swift 1.0 started to Swift 5.7 I"
+      },
+      {
+        "start": 317820,
+        "stop": 318248,
+        "text": " say it's more like rust than anything else I think it's been trending this way"
+      },
+      {
+        "start": 318248,
+        "stop": 318484,
+        "text": " because it seems like each time we check in you're like okay this is getting"
+      },
+      {
+        "start": 318484,
+        "stop": 318776,
+        "text": " better I like this this getting little you know I like where they're going here"
+      },
+      {
+        "start": 318776,
+        "stop": 319152,
+        "text": " and so it sounds like this is it's really starting to come together for you"
+      },
+      {
+        "start": 319152,
+        "stop": 319764,
+        "text": " cotable protocol I like it I mean I kind of wish Apple wasn't so vampiric with"
+      },
+      {
+        "start": 319764,
+        "stop": 320400,
+        "text": " the App Store but uh you know I since I'm doing this Pokemon card thing anyway"
+      },
+      {
+        "start": 320400,
+        "stop": 320740,
+        "text": " for the kid I may as well throw it on there and charge 99 cents which"
+      },
+      {
+        "start": 320740,
+        "stop": 321180,
+        "text": " guarantees I will get one download or you can make it free and do a $9 in-app"
+      },
+      {
+        "start": 321180,
+        "stop": 321580,
+        "text": " purchase for something really basic you know and then Apple will spotlight it"
+      },
+      {
+        "start": 321580,
+        "stop": 322244,
+        "text": " because it's free ask not what your podcast can boost for you but what you"
+      },
+      {
+        "start": 322244,
+        "stop": 322752,
+        "text": " can boost for your podcast we got a ton of great support for last week's episode"
+      },
+      {
+        "start": 322752,
+        "stop": 323520,
+        "text": " thank you everybody zerno boosted in with 29,900 sats keep the change you"
+      },
+      {
+        "start": 323520,
+        "stop": 323976,
+        "text": " filthy animal it was a spread across a couple of boosts because he was bailing"
+      },
+      {
+        "start": 323976,
+        "stop": 324432,
+        "text": " out of breeze I've also sort of stopped using breeze myself hmm fountain has done"
+      },
+      {
+        "start": 324432,
+        "stop": 324740,
+        "text": " recent updates and they've added CarPlay support and they just did an update"
+      },
+      {
+        "start": 324740,
+        "stop": 325200,
+        "text": " yesterday to fix a couple of stability issues I gotta say I'm still I'm really"
+      },
+      {
+        "start": 325200,
+        "stop": 325628,
+        "text": " liking fountain podverse but zero says okay Mike every time you say github"
+      },
+      {
+        "start": 325628,
+        "stop": 326072,
+        "text": " copilot produces terrible code I wonder I've heard on other podcasts that it"
+      },
+      {
+        "start": 326072,
+        "stop": 326396,
+        "text": " seems to produce code based on the users previous work does this mean your"
+      },
+      {
+        "start": 326396,
+        "stop": 326916,
+        "text": " repository is filled with bad code that's not quite how it works right it"
+      },
+      {
+        "start": 326916,
+        "stop": 327320,
+        "text": " doesn't just go on your code alone no it doesn't and I and I would even challenge"
+      },
+      {
+        "start": 327320,
+        "stop": 327612,
+        "text": " firms I don't say it only produces terrible code I would say that when it"
+      },
+      {
+        "start": 327612,
+        "stop": 328142,
+        "text": " produces bad code it's really funny but it it doesn't produce bad code right"
+      },
+      {
+        "start": 328142,
+        "stop": 328778,
+        "text": " like if you're a for example if you're just doing a jQuery form or a you know"
+      },
+      {
+        "start": 328778,
+        "stop": 329330,
+        "text": " Python WTF form it will do that and it will be fine right it'll do it in"
+      },
+      {
+        "start": 329330,
+        "stop": 330004,
+        "text": " context and it it'll scan I think it scans a collection per language I think"
+      },
+      {
+        "start": 330004,
+        "stop": 330452,
+        "text": " it's actually per platform - it can tell like if you're doing flask or fast API"
+      },
+      {
+        "start": 330452,
+        "stop": 331104,
+        "text": " for example or rails it will produce code for I don't know most common cases"
+      },
+      {
+        "start": 331104,
+        "stop": 331542,
+        "text": " I I don't think it's all terrible but how valuable is you know someone"
+      },
+      {
+        "start": 331542,
+        "stop": 331884,
+        "text": " generating a form for me that I've written 400 times get hub says on their"
+      },
+      {
+        "start": 331884,
+        "stop": 332334,
+        "text": " site languages with less representation in public repositories may produce fewer"
+      },
+      {
+        "start": 332334,
+        "stop": 332962,
+        "text": " or less robust suggestions but they say for example JavaScript is well"
+      },
+      {
+        "start": 332962,
+        "stop": 333426,
+        "text": " represented in public repositories and is one of github's co-pilots best"
+      },
+      {
+        "start": 333426,
+        "stop": 333702,
+        "text": " supported languages because there's so many examples of it so you can kind of"
+      },
+      {
+        "start": 333702,
+        "stop": 333950,
+        "text": " imagine how that would probably work the more there is of something the more"
+      },
+      {
+        "start": 333950,
+        "stop": 334462,
+        "text": " source it has also on the topic of co-pilot a lawsuit has been filed Oh"
+      },
+      {
+        "start": 334462,
+        "stop": 334838,
+        "text": " Lord it's a basically along the lines what we've talked about a class-action"
+      },
+      {
+        "start": 334838,
+        "stop": 335268,
+        "text": " lawsuit in a US federal court in San Francisco you know the details and we'll"
+      },
+      {
+        "start": 335268,
+        "stop": 335512,
+        "text": " follow it we'll follow quietly and we'll update everybody if there's anything"
+      },
+      {
+        "start": 335512,
+        "stop": 335818,
+        "text": " worth really discussing there but I think it's interesting that that process"
+      },
+      {
+        "start": 335818,
+        "stop": 336222,
+        "text": " has now kicked off it's a probably wasn't and we probably should we"
+      },
+      {
+        "start": 336222,
+        "stop": 336518,
+        "text": " probably could have had a bet on on when it would happen not if yeah I have a"
+      },
+      {
+        "start": 336518,
+        "stop": 336842,
+        "text": " little fast I thought I mean I still hold what I said a couple weeks ago it"
+      },
+      {
+        "start": 336842,
+        "stop": 337610,
+        "text": " would be a shame if legal chicanery got rid of co-pilot maybe maybe not get you"
+      },
+      {
+        "start": 337610,
+        "stop": 338026,
+        "text": " know the idea of a co-pilot like tool right it's funny because from the from"
+      },
+      {
+        "start": 338026,
+        "stop": 338374,
+        "text": " the first from Zurno's message I would actually prefer to be able to tell"
+      },
+      {
+        "start": 338374,
+        "stop": 338686,
+        "text": " co-pilot only to look at my repositories because then I could actually use it on"
+      },
+      {
+        "start": 338686,
+        "stop": 339102,
+        "text": " client work I think you can with like the private version for Visual Studio"
+      },
+      {
+        "start": 339102,
+        "stop": 339490,
+        "text": " I'm not sure so there's some way to do that privately there is some way maybe"
+      },
+      {
+        "start": 339490,
+        "stop": 339862,
+        "text": " there is I just turn it off when I'm not working on my own thing so I would you"
+      },
+      {
+        "start": 339862,
+        "stop": 340378,
+        "text": " know if I was gonna be selfish if I knew I could go use co-pilot and it would be"
+      },
+      {
+        "start": 340378,
+        "stop": 340830,
+        "text": " a pretty good aid and if there's a way I could somehow trust its results maybe I"
+      },
+      {
+        "start": 340830,
+        "stop": 341190,
+        "text": " maybe I could just do that through peer review I'd probably be more inclined to"
+      },
+      {
+        "start": 341190,
+        "stop": 341638,
+        "text": " to write my own stuff and do my own like little side projects if I knew it was"
+      },
+      {
+        "start": 341638,
+        "stop": 342230,
+        "text": " actually gonna be a good guide if you're writing like a very mainstream you know"
+      },
+      {
+        "start": 342230,
+        "stop": 342754,
+        "text": " node with an angular front end or node with a react front end there's just a"
+      },
+      {
+        "start": 342754,
+        "stop": 343246,
+        "text": " ton of examples that code pilot can pull from it's when you get more domain"
+      },
+      {
+        "start": 343246,
+        "stop": 343782,
+        "text": " specific you're gonna yeah which I probably would yeah yeah all right"
+      },
+      {
+        "start": 343782,
+        "stop": 344170,
+        "text": " nomadic coder 5 boosted with five thousand five hundred and fifty five"
+      },
+      {
+        "start": 344170,
+        "stop": 344666,
+        "text": " sets I recently started using my iPod touch just to listen to podcasts and"
+      },
+      {
+        "start": 344666,
+        "stop": 345010,
+        "text": " music but if Apple's latest money grab I'll have to switch to fountain on my"
+      },
+      {
+        "start": 345010,
+        "stop": 345450,
+        "text": " calyx OS phone in case Apple starts taxing boosts with every announcement"
+      },
+      {
+        "start": 345450,
+        "stop": 345734,
+        "text": " Apple does something that drives me further and further away it seems like"
+      },
+      {
+        "start": 345734,
+        "stop": 346130,
+        "text": " it drives me further and further away from them I agree yeah they are going"
+      },
+      {
+        "start": 346130,
+        "stop": 346638,
+        "text": " after like in-app advertising although with like fountain you don't buy the"
+      },
+      {
+        "start": 346638,
+        "stop": 347158,
+        "text": " SATs so there's no transaction happening thankfully I'm that's why they know I've"
+      },
+      {
+        "start": 347158,
+        "stop": 347554,
+        "text": " talked to the folks behind both fountain and pod verse and they're very much"
+      },
+      {
+        "start": 347554,
+        "stop": 348118,
+        "text": " aware of Apple's shenanigans it's they're very careful they're not they try"
+      },
+      {
+        "start": 348118,
+        "stop": 348422,
+        "text": " not to even play in the gray zone they've they go by the letter of the law"
+      },
+      {
+        "start": 348422,
+        "stop": 348750,
+        "text": " no I gotta say like if you're doing an iOS app I've learned this from many"
+      },
+      {
+        "start": 348750,
+        "stop": 349114,
+        "text": " years of complaining about it on the show don't it don't even go and it's"
+      },
+      {
+        "start": 349114,
+        "stop": 349482,
+        "text": " like it's like the neutral zone with the Romulans don't just stay the hell out"
+      },
+      {
+        "start": 349482,
+        "stop": 350082,
+        "text": " don't go don't go there I agree I agree a Sam squash comes in with sixteen"
+      },
+      {
+        "start": 350082,
+        "stop": 350450,
+        "text": " thousand one hundred and eighty sets"
+      },
+      {
+        "start": 350638,
+        "stop": 351130,
+        "text": " and I'm buying a car sweet I know like I said that we've got some great support"
+      },
+      {
+        "start": 351130,
+        "stop": 351630,
+        "text": " this week they say so I absolutely think Twitter is likely pretty bloated but the"
+      },
+      {
+        "start": 351630,
+        "stop": 352006,
+        "text": " metric of code is a bit of an odd choice to go by I agree people have been"
+      },
+      {
+        "start": 352006,
+        "stop": 352386,
+        "text": " tossing around how much code bad management yeah yeah in my experience as"
+      },
+      {
+        "start": 352386,
+        "stop": 352766,
+        "text": " my career has gone on and I've gone through to become a principal engineer"
+      },
+      {
+        "start": 352766,
+        "stop": 353282,
+        "text": " and now a manager I write less and less code I spend more time reviewing other"
+      },
+      {
+        "start": 353282,
+        "stop": 353766,
+        "text": " people's code catching bad decisions overseeing early design plans etc"
+      },
+      {
+        "start": 353766,
+        "stop": 354154,
+        "text": " effectively I try to be a force multiplier does that mean by Elon's"
+      },
+      {
+        "start": 354154,
+        "stop": 354750,
+        "text": " metric I'm a bad engineer no I mean I don't know if we have any data to"
+      },
+      {
+        "start": 354750,
+        "stop": 355106,
+        "text": " suggest that I did see an article that said they actually are trying to reach"
+      },
+      {
+        "start": 355106,
+        "stop": 355430,
+        "text": " back out to some of the people that have been fired so far and we hire them check"
+      },
+      {
+        "start": 355430,
+        "stop": 356106,
+        "text": " yes that's embarrassing that is that's just yeah I tell you what I don't know"
+      },
+      {
+        "start": 356106,
+        "stop": 356546,
+        "text": " it's gonna be wild to watch that yeah it I think his best shot just to touch on"
+      },
+      {
+        "start": 356546,
+        "stop": 356886,
+        "text": " it one last time is to make his changes and get the hell out of there and hand"
+      },
+      {
+        "start": 356886,
+        "stop": 357306,
+        "text": " it off yeah I don't think you should take Elon super seriously when he talks"
+      },
+      {
+        "start": 357306,
+        "stop": 357870,
+        "text": " about the management stuff or basically anything else because I'm pretty sure"
+      },
+      {
+        "start": 357870,
+        "stop": 358314,
+        "text": " he's playing a caricature of himself at this point right it's it's like when I"
+      },
+      {
+        "start": 358314,
+        "stop": 358906,
+        "text": " go and like you know decide I'm gonna complain and make fun of the PHP people"
+      },
+      {
+        "start": 358906,
+        "stop": 359246,
+        "text": " I don't actually hate PHP people I don't even think PHP is that bad of a language"
+      },
+      {
+        "start": 359246,
+        "stop": 359766,
+        "text": " it's it's just an act right he's and to his detriment at this point I would say"
+      },
+      {
+        "start": 359766,
+        "stop": 360254,
+        "text": " he's playing a caricature he's there's no way he is sitting there reading"
+      },
+      {
+        "start": 360254,
+        "stop": 360654,
+        "text": " printouts of thousands of lines of code no they didn't even do that eventually"
+      },
+      {
+        "start": 360654,
+        "stop": 361130,
+        "text": " there's been some bogus reporting but yeah it is it's just bull yeah anyway"
+      },
+      {
+        "start": 361130,
+        "stop": 361466,
+        "text": " yeah moving on I think he I think he is moving quick and ruthlessly because he"
+      },
+      {
+        "start": 361466,
+        "stop": 361742,
+        "text": " just spent 44 billion dollars on something that's probably worth a"
+      },
+      {
+        "start": 361742,
+        "stop": 362266,
+        "text": " billion dollars well maybe more but anyways okay noob Steve boosted with"
+      },
+      {
+        "start": 362266,
+        "stop": 362842,
+        "text": " forty eight thousand six hundred sats I hoard that which all kind covered now"
+      },
+      {
+        "start": 362842,
+        "stop": 363326,
+        "text": " he's listening to episode 483 I think he's responding to something he said in"
+      },
+      {
+        "start": 363326,
+        "stop": 363750,
+        "text": " episode 481 about subscriptions in Adobe cloud which kicked off a series of"
+      },
+      {
+        "start": 363750,
+        "stop": 364356,
+        "text": " discussions he said sorry guys I didn't really mean to kick off an s-storm as he"
+      },
+      {
+        "start": 364356,
+        "stop": 364714,
+        "text": " puts it I promise I'll never mention those who shall not be named again please"
+      },
+      {
+        "start": 364714,
+        "stop": 365266,
+        "text": " accept my humble boost as a formal apology also congrats Mike sorry you're"
+      },
+      {
+        "start": 365266,
+        "stop": 365706,
+        "text": " having to deal with green bubbles right now I lasted less than a day don't worry"
+      },
+      {
+        "start": 365706,
+        "stop": 366350,
+        "text": " that's amazing that is amazing I don't who is the not to be named I believe it"
+      },
+      {
+        "start": 366350,
+        "stop": 366846,
+        "text": " was Adobe and creative cloud that kicked off oh noob you can correct me but that's"
+      },
+      {
+        "start": 366846,
+        "stop": 367458,
+        "text": " what I recall so ham boosted in with a row of ducks 2222 sats this old duck"
+      },
+      {
+        "start": 367458,
+        "stop": 367942,
+        "text": " still got it all right brace yourself for this one capitalism requires the"
+      },
+      {
+        "start": 367942,
+        "stop": 368478,
+        "text": " funny green line profit to always go up the catch the earth and humanity is a"
+      },
+      {
+        "start": 368478,
+        "stop": 368978,
+        "text": " finite resource infinite growth is simply not possible Apple really has no"
+      },
+      {
+        "start": 368978,
+        "stop": 369458,
+        "text": " choice other than to become a bully can you really blame them this is I agree to"
+      },
+      {
+        "start": 369458,
+        "stop": 369814,
+        "text": " it to a sense here it's like if we are serious about wanting to protect the"
+      },
+      {
+        "start": 369814,
+        "stop": 370290,
+        "text": " environment then we can't have unlimited everything we have to be real about some"
+      },
+      {
+        "start": 370290,
+        "stop": 370834,
+        "text": " of these limited resources like honestly lithium there's a new OPEC being"
+      },
+      {
+        "start": 370834,
+        "stop": 371194,
+        "text": " organized around lithium now which is just going to recreate the same problem"
+      },
+      {
+        "start": 371194,
+        "stop": 371690,
+        "text": " we have with oil and the number one producer of lithium is China and I hate"
+      },
+      {
+        "start": 371690,
+        "stop": 372130,
+        "text": " to think what the labor standards are it really is a quite a conundrum I don't"
+      },
+      {
+        "start": 372130,
+        "stop": 372670,
+        "text": " know because I don't see I think capitalism is really just human nature"
+      },
+      {
+        "start": 372670,
+        "stop": 373190,
+        "text": " it's trading and creating value for things I think that's human nature where"
+      },
+      {
+        "start": 373190,
+        "stop": 373654,
+        "text": " obviously as it gets a certain scale and certain amount of control and influence"
+      },
+      {
+        "start": 373654,
+        "stop": 374014,
+        "text": " it tries to get perverted and now it's become something that seems very sick"
+      },
+      {
+        "start": 374014,
+        "stop": 374738,
+        "text": " but I don't know if you can take trading and selling out of humanity so we just"
+      },
+      {
+        "start": 374738,
+        "stop": 375118,
+        "text": " have to I guess have a way to to do it sustainably let us know if you got an"
+      },
+      {
+        "start": 375118,
+        "stop": 375774,
+        "text": " idea for that also shoutouts for boost CLI oh yeah you know what you get that's"
+      },
+      {
+        "start": 375774,
+        "stop": 376230,
+        "text": " just for you so ham for using boost CLI all right trev dev boosted in with some"
+      },
+      {
+        "start": 376230,
+        "stop": 376570,
+        "text": " leets at saying inflating your downloads we're talking about people that have"
+      },
+      {
+        "start": 376570,
+        "stop": 376954,
+        "text": " been buying downloads mmm he's a whole industry in third world countries he"
+      },
+      {
+        "start": 376954,
+        "stop": 377330,
+        "text": " writes it boosts your placement on the top podcast list in the in the Apple"
+      },
+      {
+        "start": 377330,
+        "stop": 377754,
+        "text": " podcast index that artificial inflation of your popularity gets you real"
+      },
+      {
+        "start": 377754,
+        "stop": 378274,
+        "text": " audience that's a good point that is true that actually does make the"
+      },
+      {
+        "start": 378274,
+        "stop": 378608,
+        "text": " transaction worth it as an example when we get big baller boosts into the show"
+      },
+      {
+        "start": 378608,
+        "stop": 379064,
+        "text": " we go to the top of the fountain FM list coda radio he's like in sometimes the"
+      },
+      {
+        "start": 379064,
+        "stop": 379652,
+        "text": " top four whoo podcasts when people give us big boosts and that's a serious"
+      },
+      {
+        "start": 379652,
+        "stop": 379982,
+        "text": " signal people are spending real sats that's a real signal of quality and it's"
+      },
+      {
+        "start": 379982,
+        "stop": 380310,
+        "text": " we've been we've been picking up new audience as a result of that lup to"
+      },
+      {
+        "start": 380310,
+        "stop": 380850,
+        "text": " lups been benefiting from that as well peg dot boosts in with some enterprise"
+      },
+      {
+        "start": 380850,
+        "stop": 381542,
+        "text": " sats 1701 make it so this is our last one hello Star Trek radio show a few"
+      },
+      {
+        "start": 381542,
+        "stop": 381948,
+        "text": " weeks ago I asked which series to get started with with Star Trek we remember"
+      },
+      {
+        "start": 381948,
+        "stop": 382406,
+        "text": " both of you recommended the next generation I started yesterday with"
+      },
+      {
+        "start": 382406,
+        "stop": 382776,
+        "text": " encounter at farpoint which is episode 1 & 2 and I'm continuing today with"
+      },
+      {
+        "start": 382776,
+        "stop": 383216,
+        "text": " episode 3 the one where everyone gets drunk and horny really enjoying it so"
+      },
+      {
+        "start": 383216,
+        "stop": 383748,
+        "text": " far thanks for the recommendation PS I tried the Lord of the Rings series"
+      },
+      {
+        "start": 383748,
+        "stop": 384308,
+        "text": " yesterday too but I like Star Trek better that's great I I thought TNG was"
+      },
+      {
+        "start": 384308,
+        "stop": 384806,
+        "text": " a little risky just cuz that first season first two seasons they have some"
+      },
+      {
+        "start": 384806,
+        "stop": 385228,
+        "text": " gems but they also have some rough spots but if you're enjoying the drunk episode"
+      },
+      {
+        "start": 385228,
+        "stop": 385592,
+        "text": " I think you're gonna be alright yeah I was in the truck episode is one of the"
+      },
+      {
+        "start": 385592,
+        "stop": 386258,
+        "text": " worst episodes in that season so yeah there's also that one where the king of"
+      },
+      {
+        "start": 386258,
+        "stop": 386702,
+        "text": " a planet like captures Tasha to make her his love slave and then they have to"
+      },
+      {
+        "start": 386702,
+        "stop": 387212,
+        "text": " fight his current love slave well you have to have the the original series"
+      },
+      {
+        "start": 387212,
+        "stop": 387608,
+        "text": " sexism reboot right I mean well it's funny you say that man because that's"
+      },
+      {
+        "start": 387608,
+        "stop": 388036,
+        "text": " the drunk episode that episode a lot of the season 1 & 2 episodes were old"
+      },
+      {
+        "start": 388036,
+        "stop": 388516,
+        "text": " scripts from the 60s yep and they just kind of they kind of put the 80s lipstick"
+      },
+      {
+        "start": 388516,
+        "stop": 389112,
+        "text": " book on them right it's exactly 80s hair and lipstick yeah season 3 the next"
+      },
+      {
+        "start": 389112,
+        "stop": 389484,
+        "text": " generation kind of gets its own identity although if you want the one true"
+      },
+      {
+        "start": 389484,
+        "stop": 390168,
+        "text": " Trek and I will stand by this I'm I'm rewatching Strange New Worlds I just love"
+      },
+      {
+        "start": 390168,
+        "stop": 390740,
+        "text": " it it's funny you say that I was I was reading this boost with Wes yesterday"
+      },
+      {
+        "start": 390740,
+        "stop": 391216,
+        "text": " and I he and I were talking about how TNG was kind of a risk and I said I"
+      },
+      {
+        "start": 391216,
+        "stop": 391584,
+        "text": " think the other way to go now would be Strange New Worlds because it's it's"
+      },
+      {
+        "start": 391584,
+        "stop": 391972,
+        "text": " good Trek with modern production values I think it's a good introduction"
+      },
+      {
+        "start": 391972,
+        "stop": 392476,
+        "text": " possibly although if you can enjoy TNG it gets so rich because then you can"
+      },
+      {
+        "start": 392476,
+        "stop": 392968,
+        "text": " move into DS 9 and Voyager and then Enterprise and just work your way up and"
+      },
+      {
+        "start": 392968,
+        "stop": 393424,
+        "text": " that is that is quite literally years of TV watching I started doing that with my"
+      },
+      {
+        "start": 393424,
+        "stop": 393888,
+        "text": " wife before when we were dating and we're now on season 2 of Enterprise and"
+      },
+      {
+        "start": 393888,
+        "stop": 394420,
+        "text": " so we started with TNG and it's and we've been married for like six I don't"
+      },
+      {
+        "start": 394420,
+        "stop": 394732,
+        "text": " know I don't know couple of years but we've been dating for a while it's been"
+      },
+      {
+        "start": 394732,
+        "stop": 395152,
+        "text": " years and we're just now in Enterprise and so it's literally years of great"
+      },
+      {
+        "start": 395152,
+        "stop": 395632,
+        "text": " television and you can store it locally and there's no ads and it's just if you"
+      },
+      {
+        "start": 395632,
+        "stop": 396016,
+        "text": " get into it it's pretty great all right enough enough big shout out to I really"
+      },
+      {
+        "start": 396016,
+        "stop": 396342,
+        "text": " want to say thank you to those that boosted in some just send in some sats"
+      },
+      {
+        "start": 396342,
+        "stop": 396636,
+        "text": " without saying anything few send in some notes we don't put them all in the show"
+      },
+      {
+        "start": 396636,
+        "stop": 397120,
+        "text": " if you can believe it but we did get a hundred and nine thousand nine hundred"
+      },
+      {
+        "start": 397120,
+        "stop": 397540,
+        "text": " and ninety nine sats from WM who went on a little bit of a boosting spree for our"
+      },
+      {
+        "start": 397540,
+        "stop": 397872,
+        "text": " shows and Coda radio was a big beneficiary there we got a hundred sats"
+      },
+      {
+        "start": 397872,
+        "stop": 398392,
+        "text": " from jmac 217 who says no one in his real life circle is using Twitter in"
+      },
+      {
+        "start": 398392,
+        "stop": 398780,
+        "text": " central Illinois Twitter is just not a thing in his neck of the woods he says"
+      },
+      {
+        "start": 398780,
+        "stop": 399220,
+        "text": " in the real world and we got 3,000 sats for a Megania or a Hagenia thank you"
+      },
+      {
+        "start": 399220,
+        "stop": 399620,
+        "text": " guys very much or appreciate you very much you're doing a good job if you'd"
+      },
+      {
+        "start": 399620,
+        "stop": 399908,
+        "text": " like to send a boost into the show go get a new podcast app at new podcast"
+      },
+      {
+        "start": 399908,
+        "stop": 400380,
+        "text": " apps calm there's a whole suite of options there from a whole new podcast"
+      },
+      {
+        "start": 400380,
+        "stop": 400772,
+        "text": " app to just using tools and if you're in the US and you want to grab some cheap"
+      },
+      {
+        "start": 400772,
+        "stop": 401232,
+        "text": " sats the strike app or the cash app is fantastic outside the US I like blue"
+      },
+      {
+        "start": 401232,
+        "stop": 401656,
+        "text": " wallet a whole bunch and of course you can invest in the ongoing production the"
+      },
+      {
+        "start": 401656,
+        "stop": 402080,
+        "text": " real nuts and bolts of the show by becoming a member Coder QA co I got an"
+      },
+      {
+        "start": 402080,
+        "stop": 402464,
+        "text": " email I got a nice note from one of our members think we both got it from one of"
+      },
+      {
+        "start": 402464,
+        "stop": 402904,
+        "text": " our members over the week who says this would be this would be my boost would be"
+      },
+      {
+        "start": 402904,
+        "stop": 403200,
+        "text": " but since I'm a member I'm just gonna send it to you directly totally fine we"
+      },
+      {
+        "start": 403200,
+        "stop": 403568,
+        "text": " love hearing from you and as a thank you you get an ad free version of the show"
+      },
+      {
+        "start": 403568,
+        "stop": 403988,
+        "text": " and a coder Lee report which we're gonna get together we will oh my gosh you guys"
+      },
+      {
+        "start": 403988,
+        "stop": 404316,
+        "text": " you wouldn't believe how busy the world has been oh yeah but we'll get it"
+      },
+      {
+        "start": 404316,
+        "stop": 404796,
+        "text": " together and send it out to our members as a thank you coder QA co how do you"
+      },
+      {
+        "start": 404796,
+        "stop": 405094,
+        "text": " feel like you got anywhere you want to send the people this week mr. Tom you"
+      },
+      {
+        "start": 405094,
+        "stop": 405392,
+        "text": " know I'm always acting when you go on Twitter but why don't you all sign up"
+      },
+      {
+        "start": 405392,
+        "stop": 405900,
+        "text": " for the matrix room I usually hang out in the coder radio general matrix chat"
+      },
+      {
+        "start": 405900,
+        "stop": 406236,
+        "text": " room yeah we got to coder chat rooms there's like a feedback specific room"
+      },
+      {
+        "start": 406236,
+        "stop": 406640,
+        "text": " and a general chat and we link to the general chat at coder dot show slash"
+      },
+      {
+        "start": 406640,
+        "stop": 406956,
+        "text": " matrix that's a great call because that's also what we put up on our live"
+      },
+      {
+        "start": 406956,
+        "stop": 407316,
+        "text": " stream and so you can find out when we're live just by being in there or you"
+      },
+      {
+        "start": 407316,
+        "stop": 407660,
+        "text": " can just review the chat if you're listening to an episode you're curious"
+      },
+      {
+        "start": 407660,
+        "stop": 407996,
+        "text": " to know what the chat room said it's all there and of course yeah both Mike and I"
+      },
+      {
+        "start": 407996,
+        "stop": 408248,
+        "text": " are hanging out and they're pretty much every day from time to time I'm popping"
+      },
+      {
+        "start": 408248,
+        "stop": 408608,
+        "text": " in at least a few times a day so join us over there we got links to what we"
+      },
+      {
+        "start": 408608,
+        "stop": 409272,
+        "text": " talked about today at coder dot show slash 491 how about that and you can"
+      },
+      {
+        "start": 409272,
+        "stop": 409660,
+        "text": " actually watch how these shows get made over at Jupiter dot tube it's live 9 a.m."
+      },
+      {
+        "start": 409660,
+        "stop": 410128,
+        "text": " Monday 12 p.m. Eastern and then the archive version stays up there for"
+      },
+      {
+        "start": 410128,
+        "stop": 410852,
+        "text": " playback because why not it's our own YouTube I can do whatever I want is that"
+      },
+      {
+        "start": 410852,
+        "stop": 411200,
+        "text": " not a great laugh I'll work on an evil laugh though I'll get that together for"
+      },
+      {
+        "start": 411200,
+        "stop": 411458,
+        "text": " the next time I talk about it thanks so much for joining us on this week's"
+      },
+      {
+        "start": 411458,
+        "stop": 412084,
+        "text": " episode of the coder radio program and we'll see you right back here next week"
+      },
+      {
+        "start": 412084,
+        "stop": 412290,
+        "text": " you"
+      },
+      {
+        "start": 412290,
+        "stop": 412496,
+        "text": " you"
+      },
+      {
+        "start": 412496,
+        "stop": 412702,
+        "text": " you"
+      },
+      {
+        "start": 412702,
+        "stop": 412908,
+        "text": " you"
+      },
+      {
+        "start": 412908,
+        "stop": 413114,
+        "text": " you"
+      },
+      {
+        "start": 413164,
+        "stop": 413370,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 1841,
+      "nanos": 355052654
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 491: Voltron Based Development",
+    "pictures": [],
+    "duration": {
+      "secs": 4115,
+      "nanos": 332000000
+    },
+    "unique_id": "http://coder.show/491"
+  },
+  "episode": {
+    "title": "Voltron Based Development | Coder Radio 491",
+    "description": "Mike just came up for air after a Swift deep dive, and he has a fresh new take. Plus, the wheels of history are spinning faster; we take a snapshot in time and then round it all out with spicy Apple bacon.",
+    "content": "<p><p>Mike just came up for air after a Swift deep dive, and he has a fresh new take. Plus, the wheels of history are spinning faster; we take a snapshot in time and then round it all out with spicy Apple bacon.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://layoffs.fyi/\" title=\"Layoffs.fyi\" rel=\"nofollow\">Layoffs.fyi</a> &mdash; Tracking all tech startup layoffs since COVID-19. Data is compiled from public reports. </li><li><a href=\"https://www.apple.com/newsroom/2022/11/update-on-supply-of-iphone-14-pro-and-iphone-14-pro-max/\" title=\"Update on supply of iPhone 14 Pro and iPhone 14 Pro Max\" rel=\"nofollow\">Update on supply of iPhone 14 Pro and iPhone 14 Pro Max</a> &mdash; However, we now expect lower iPhone 14 Pro and iPhone 14 Pro Max shipments than we previously anticipated and customers will experience longer wait times to receive their new products.</li><li><a href=\"https://9to5mac.com/2022/10/27/apple-drop-mac-revenue-holiday-quarter/\" title=\"Apple predicts ‘substantial’ drop in Mac revenue for holiday quarter\" rel=\"nofollow\">Apple predicts ‘substantial’ drop in Mac revenue for holiday quarter</a> &mdash;  Both Maestri and Apple CEO Tim Cook made it clear during the earnings call with investors that the company is subject to the impacts of the macro economy, which has been affected by the war in Eastern Europe and also as a consequence of the pandemic.</li><li><a href=\"https://appleinsider.com/articles/22/11/02/apple-is-freezing-hiring-cutting-budgets-claims-new-report\" title=\"Apple is freezing hiring, cutting budgets, claims new report\" rel=\"nofollow\">Apple is freezing hiring, cutting budgets, claims new report</a></li><li><a href=\"https://twitter.com/mysk_co/status/1588308341780262912?s=46&t=29BBySAWdO-TeudhEccVlg\" title=\"Mysk 🇨🇦🇩🇪 on Twitter\" rel=\"nofollow\">Mysk 🇨🇦🇩🇪 on Twitter</a> &mdash; The recent changes that Apple has made to App Store ads should raise many #privacy concerns. It seems that the #AppStore app on iOS 14.6 sends every tap you make in the app to Apple.👇This data is sent in one request: (data usage &amp; personalized ads are off)</li><li><a href=\"https://www.engadget.com/jack-dorsey-twitter-apology-220930392.html\" title=\"Former Twitter CEO Jack Dorsey says company-wide layoffs are his fault\" rel=\"nofollow\">Former Twitter CEO Jack Dorsey says company-wide layoffs are his fault</a></li><li><a href=\"https://www.reuters.com/technology/twitter-asks-some-laid-off-workers-come-back-bloomberg-news-2022-11-06/\" title=\"Twitter asks some laid off workers to come back\" rel=\"nofollow\">Twitter asks some laid off workers to come back</a></li><li><a href=\"https://www.wsj.com/articles/meta-is-preparing-to-notify-employees-of-large-scale-layoffs-this-week-11667767794\" title=\"Facebook Parent Meta Is Preparing to Notify Employees of Large-Scale Layoffs This Week\" rel=\"nofollow\">Facebook Parent Meta Is Preparing to Notify Employees of Large-Scale Layoffs This Week</a></li><li><a href=\"https://www.bloomberg.com/news/articles/2022-11-03/stripe-cutting-headcount-by-14-as-it-readies-for-leaner-times\" title=\"Stripe Cutting Headcount by 14% as It Readies for ‘Leaner Times’\" rel=\"nofollow\">Stripe Cutting Headcount by 14% as It Readies for ‘Leaner Times’</a></li><li><a href=\"https://www.wsj.com/articles/lyft-plans-to-lay-off-hundreds-of-staffers-11667490092?mod=djemalertNEWS\" title=\"Lyft to Lay Off About 700 Employees in Second Round of Job Cuts\" rel=\"nofollow\">Lyft to Lay Off About 700 Employees in Second Round of Job Cuts</a></li><li><a href=\"https://techcrunch.com/2022/11/03/amazon-exec-confirms-corporate-hiring-freeze-through-end-of-year/\" title=\"Amazon exec confirms corporate hiring freeze through end of year\" rel=\"nofollow\">Amazon exec confirms corporate hiring freeze through end of year</a></li><li><a href=\"https://theintercept.com/2022/11/04/federal-reserve-interest-rates-savings/\" title=\"Top Fed Official: Fed Will “Keep At This” Until Your Savings Accounts Are Drained\" rel=\"nofollow\">Top Fed Official: Fed Will “Keep At This” Until Your Savings Accounts Are Drained</a> &mdash; “We see today that there is a bit of a savings buffer still sitting for households, that may allow them to continue to spend in a way that keeps demand strong,” she said. “That suggests we may have to keep at this for a while.”</li><li><a href=\"https://developer.apple.com/documentation/swift/codable\" title=\"Codable\" rel=\"nofollow\">Codable</a> &mdash; Codable is a type alias for the Encodable and Decodable protocols. When you use Codable as a type or a generic constraint, it matches any type that conforms to both protocols.</li><li><a href=\"https://developer.apple.com/xcode/swiftui/\" title=\"SwiftUI Overview \" rel=\"nofollow\">SwiftUI Overview </a> &mdash; SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and surprisingly little code. You can bring even better experiences to everyone, on any Apple device, using just one set of tools and APIs.</li><li><a href=\"https://developer.apple.com/videos/swiftui-ui-frameworks/\" title=\"SwiftUI & UI Frameworks - Videos\" rel=\"nofollow\">SwiftUI &amp; UI Frameworks - Videos</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost into the Show\" rel=\"nofollow\">Send a Boost into the Show</a> &mdash; Upgrade to a Podcasting 2.0 app, and send a Boost into the show.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9016",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15769982/96daf25a-ab33-435b-9b59-a2b8b453ce42.mp3",
+      "length": "58376368",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-09T03:10:00+01:00"
+  },
+  "speedup": 2.2349474
+}

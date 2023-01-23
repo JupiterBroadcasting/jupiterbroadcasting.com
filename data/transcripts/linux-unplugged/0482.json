@@ -1,0 +1,4892 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 206,
+        "text": " you"
+      },
+      {
+        "start": 242,
+        "stop": 714,
+        "text": " we start the episode this week with a call out to you Linux users with old and"
+      },
+      {
+        "start": 714,
+        "stop": 1270,
+        "text": " weird laptops direct quote there we need help some backlight changes are coming"
+      },
+      {
+        "start": 1270,
+        "stop": 1842,
+        "text": " to Linux 6.1 and users of old weird laptops can actually help make sure that"
+      },
+      {
+        "start": 1842,
+        "stop": 2282,
+        "text": " we don't break things I just think this is one of those great moments so there"
+      },
+      {
+        "start": 2282,
+        "stop": 2594,
+        "text": " are changes landing in Linux 6.1 that would allow setting the maximum"
+      },
+      {
+        "start": 2594,
+        "stop": 2874,
+        "text": " brightness amounts and then communicating that clearly when those"
+      },
+      {
+        "start": 2874,
+        "stop": 3282,
+        "text": " controls are not supported that seems like a great feature right well early"
+      },
+      {
+        "start": 3282,
+        "stop": 3814,
+        "text": " testing is actually shown that it's damaged some old weird laptops so you're"
+      },
+      {
+        "start": 3814,
+        "stop": 4124,
+        "text": " probably okay now they've made some fixes there but they still need testing"
+      },
+      {
+        "start": 4124,
+        "stop": 4574,
+        "text": " and there are ways you can just download and help test the next kernel today go"
+      },
+      {
+        "start": 4574,
+        "stop": 5162,
+        "text": " help only you old weird Linux laptop user can help"
+      },
+      {
+        "start": 5162,
+        "stop": 5362,
+        "text": " you"
+      },
+      {
+        "start": 5362,
+        "stop": 6706,
+        "text": " hello friend and welcome back to your weekly Linux talk show it's just me my"
+      },
+      {
+        "start": 6706,
+        "stop": 7034,
+        "text": " name is Chris nobody else here today you see I let I let Brent off the hook"
+      },
+      {
+        "start": 7034,
+        "stop": 7362,
+        "text": " because he had some sort of family hit he had to do it's family business I"
+      },
+      {
+        "start": 7362,
+        "stop": 7870,
+        "text": " can't get into it and then Wes got the sick I think he was doing like some"
+      },
+      {
+        "start": 7870,
+        "stop": 8270,
+        "text": " really important on location business for the show and he came down with the"
+      },
+      {
+        "start": 8270,
+        "stop": 8866,
+        "text": " sick so it's just me in studio this week but I am joined by a fired up and ready"
+      },
+      {
+        "start": 8866,
+        "stop": 9790,
+        "text": " to go virtual lug time appropriate greetings mumble room hello that is"
+      },
+      {
+        "start": 9790,
+        "stop": 10130,
+        "text": " that's it I think that's a top five intro right there mumble room hello"
+      },
+      {
+        "start": 10130,
+        "stop": 10578,
+        "text": " everybody hello everybody up there in the in the silent listening today I hope"
+      },
+      {
+        "start": 10578,
+        "stop": 10894,
+        "text": " you have your old weird Linux laptops ready to go because the kernel team"
+      },
+      {
+        "start": 10894,
+        "stop": 11446,
+        "text": " needs your help coming up on the show today let's discuss if I saw longtime"
+      },
+      {
+        "start": 11446,
+        "stop": 11778,
+        "text": " Linux users are holding Linux back a bit from the next level of growth there's a"
+      },
+      {
+        "start": 11778,
+        "stop": 12330,
+        "text": " couple of topics both of which Liam at the register has just absolutely nailed"
+      },
+      {
+        "start": 12330,
+        "stop": 12682,
+        "text": " this week so I think Liam you are the unofficial co-host of the show this week"
+      },
+      {
+        "start": 12682,
+        "stop": 12974,
+        "text": " because you've got two pieces that I want to discuss with the mumble room and"
+      },
+      {
+        "start": 12974,
+        "stop": 13338,
+        "text": " with you listening out there and there have been some changes and some trends"
+      },
+      {
+        "start": 13338,
+        "stop": 13706,
+        "text": " over time that have just been kind of going in certain directions they mean"
+      },
+      {
+        "start": 13706,
+        "stop": 14190,
+        "text": " kind of a fundamental way a shift in a way that the community communicates"
+      },
+      {
+        "start": 14190,
+        "stop": 14730,
+        "text": " organizes develops plus your good buddy Lenart pottering system D developer has"
+      },
+      {
+        "start": 14730,
+        "stop": 15158,
+        "text": " a new idea on how to really improve security for Linux there's essentially"
+      },
+      {
+        "start": 15158,
+        "stop": 15710,
+        "text": " one major change we could make and it may be good may be bad but it also could"
+      },
+      {
+        "start": 15710,
+        "stop": 16062,
+        "text": " reduce maybe the tinker ability of Linux if you will so we'll talk about what"
+      },
+      {
+        "start": 16062,
+        "stop": 16522,
+        "text": " that change could be if it really is such a big deal and kind of what the idea"
+      },
+      {
+        "start": 16522,
+        "stop": 16914,
+        "text": " is and why some people are saying it gives Microsoft full control over Linux"
+      },
+      {
+        "start": 16914,
+        "stop": 17310,
+        "text": " that's like the going all the way so I'll dig into that too and we'll round"
+      },
+      {
+        "start": 17310,
+        "stop": 17822,
+        "text": " out the show with some boosts some pics and a heck of a lot more so before we go"
+      },
+      {
+        "start": 17822,
+        "stop": 18130,
+        "text": " any further I have to say good morning to our friends over at tail scale they're"
+      },
+      {
+        "start": 18130,
+        "stop": 18414,
+        "text": " like the secret sauce you know when you have some family members food it's just"
+      },
+      {
+        "start": 18414,
+        "stop": 18822,
+        "text": " like extra tasty and you discover they put butter in tail scales the butter for"
+      },
+      {
+        "start": 18822,
+        "stop": 19222,
+        "text": " my networking it's so great it just makes everything work a little bit"
+      },
+      {
+        "start": 19222,
+        "stop": 19738,
+        "text": " better creates a mesh VPN powered and secured by wire guard one flat network"
+      },
+      {
+        "start": 19738,
+        "stop": 20074,
+        "text": " for all your devices that you can get going in just minutes we love it it'll"
+      },
+      {
+        "start": 20074,
+        "stop": 20502,
+        "text": " change your networking game go say good morning and try it for free for up to 20"
+      },
+      {
+        "start": 20502,
+        "stop": 21058,
+        "text": " devices over at tail scale calm tell it tell them the unplugged program sent you"
+      },
+      {
+        "start": 21058,
+        "stop": 21610,
+        "text": " so we'll see we'll see how we do today just me I don't even know how long it's"
+      },
+      {
+        "start": 21610,
+        "stop": 21986,
+        "text": " been since I've done a solo show for the unplugged program I wonder if anybody"
+      },
+      {
+        "start": 21986,
+        "stop": 22570,
+        "text": " out there knows it's got to be hundreds of episodes right I think the last time"
+      },
+      {
+        "start": 22570,
+        "stop": 23042,
+        "text": " you did it you were still doing the Linux action show probably probably"
+      },
+      {
+        "start": 23042,
+        "stop": 23470,
+        "text": " shoot like I think I was in college the last time you did that that's ten years"
+      },
+      {
+        "start": 23470,
+        "stop": 24010,
+        "text": " ago are you trying to make me feel are you look man you started doing this"
+      },
+      {
+        "start": 24010,
+        "stop": 24598,
+        "text": " podcasting when I was in middle school so I can make you feel old by mentioning"
+      },
+      {
+        "start": 24598,
+        "stop": 25130,
+        "text": " that fact you just did yeah just did yeah yeah I know that's pretty crazy I"
+      },
+      {
+        "start": 25130,
+        "stop": 25426,
+        "text": " know this shows older than some of my kids that's also really weird because"
+      },
+      {
+        "start": 25426,
+        "stop": 25694,
+        "text": " they're actual human beings that exist in the world you were not married when"
+      },
+      {
+        "start": 25694,
+        "stop": 26058,
+        "text": " you started yeah and now I've been through divorce and remarried so how"
+      },
+      {
+        "start": 26058,
+        "stop": 26542,
+        "text": " about that well the gnome projects going through a bit of a divorce with mailing"
+      },
+      {
+        "start": 26542,
+        "stop": 26942,
+        "text": " list the gnome project is preparing to shut down its mailing list towards the"
+      },
+      {
+        "start": 26942,
+        "stop": 27538,
+        "text": " end of October which is right now happy Halloween everybody and the register has"
+      },
+      {
+        "start": 27538,
+        "stop": 27870,
+        "text": " a great piece about that they interviewed the gnome project executive"
+      },
+      {
+        "start": 27870,
+        "stop": 28290,
+        "text": " director Neil McGovern about this and several others Neil points out that's"
+      },
+      {
+        "start": 28290,
+        "stop": 28610,
+        "text": " Neil from gnome not Neil from the Mumba room points out that like many other"
+      },
+      {
+        "start": 28610,
+        "stop": 29150,
+        "text": " projects that use mailman they find that relying on Python 2 is not sustainable"
+      },
+      {
+        "start": 29150,
+        "stop": 29546,
+        "text": " anymore which probably means they have an old version of mailman and so that's"
+      },
+      {
+        "start": 29546,
+        "stop": 29958,
+        "text": " a reason that they're shutting down the mailing list evolution and other gnome"
+      },
+      {
+        "start": 29958,
+        "stop": 30334,
+        "text": " projects have made the announcement that their mailing list will be retired at"
+      },
+      {
+        "start": 30334,
+        "stop": 30790,
+        "text": " the end of October they write as we've been communicating during the past few"
+      },
+      {
+        "start": 30790,
+        "stop": 31234,
+        "text": " months gnomes mailman platform is being decommissioned and they cite the Python"
+      },
+      {
+        "start": 31234,
+        "stop": 31836,
+        "text": " to deprecation and also they cite a major burden with spam they say the"
+      },
+      {
+        "start": 31836,
+        "stop": 32370,
+        "text": " deadline is currently set to be the end of October 2022 mailing the subscribers"
+      },
+      {
+        "start": 32370,
+        "stop": 32770,
+        "text": " are invited to migrate to gnomes discourse instance and they have some"
+      },
+      {
+        "start": 32770,
+        "stop": 33150,
+        "text": " information about that and we'll come back to that discourse instance because"
+      },
+      {
+        "start": 33150,
+        "stop": 33774,
+        "text": " that's a major factor here other projects are doing the same my read and"
+      },
+      {
+        "start": 33774,
+        "stop": 34238,
+        "text": " Neil here in a second I'd be curious to get yours but my read is is that"
+      },
+      {
+        "start": 34238,
+        "stop": 34910,
+        "text": " infrastructure kind of got out of date both physically software wise the team"
+      },
+      {
+        "start": 34910,
+        "stop": 35182,
+        "text": " has just had skills that evolved over those years they don't necessarily"
+      },
+      {
+        "start": 35182,
+        "stop": 35612,
+        "text": " specialize in maintaining mailman anymore so they don't necessarily have"
+      },
+      {
+        "start": 35612,
+        "stop": 36224,
+        "text": " the right skills people are time to devote to replacing it or upgrading and"
+      },
+      {
+        "start": 36224,
+        "stop": 36594,
+        "text": " their mailing list has seen a steady decline since they rolled out that"
+      },
+      {
+        "start": 36594,
+        "stop": 37102,
+        "text": " discourse and gnomes infrastructure team coordinator told the register that quote"
+      },
+      {
+        "start": 37102,
+        "stop": 37642,
+        "text": " the new platform offers way more features than mailman including"
+      },
+      {
+        "start": 37642,
+        "stop": 38090,
+        "text": " gamification which newer generations in general appreciate but also markdown"
+      },
+      {
+        "start": 38090,
+        "stop": 38606,
+        "text": " support RSS feeds proper spam support multiple authentication types so on"
+      },
+      {
+        "start": 38606,
+        "stop": 39042,
+        "text": " and so forth so I'm curious Neil because I know you've participated across the"
+      },
+      {
+        "start": 39042,
+        "stop": 39452,
+        "text": " spectrum are you sad to see the slow death of mailing list and it seems like"
+      },
+      {
+        "start": 39452,
+        "stop": 39764,
+        "text": " it feels like for some reason with the gnome project kind of winding this up"
+      },
+      {
+        "start": 39764,
+        "stop": 40172,
+        "text": " this is kind of a major one and I'm curious what your thoughts are so one of"
+      },
+      {
+        "start": 40172,
+        "stop": 40646,
+        "text": " the big things I don't like about the elimination of mailing list is that with"
+      },
+      {
+        "start": 40646,
+        "stop": 41066,
+        "text": " forums in particular you have a interesting restriction on who you can"
+      },
+      {
+        "start": 41066,
+        "stop": 41422,
+        "text": " talk to they have or communicate with and that's all the people that are"
+      },
+      {
+        "start": 41422,
+        "stop": 41926,
+        "text": " already there one of the unsung capabilities of mailing one of mail list"
+      },
+      {
+        "start": 41926,
+        "stop": 42426,
+        "text": " based communication that I leverage over the years is being able to CC some other"
+      },
+      {
+        "start": 42426,
+        "stop": 42826,
+        "text": " person somewhere else into a conversation and deliberately bring them"
+      },
+      {
+        "start": 42826,
+        "stop": 43246,
+        "text": " in and give them the ability to have contacts and whatever that's a great"
+      },
+      {
+        "start": 43246,
+        "stop": 43634,
+        "text": " point I've also been told just behind the scenes that it's also how a lot of"
+      },
+      {
+        "start": 43634,
+        "stop": 44002,
+        "text": " people scale across multiple projects which is I'm curious if it's a tool for"
+      },
+      {
+        "start": 44002,
+        "stop": 44402,
+        "text": " you because you can aggregate into one inbox it's the only way I can function"
+      },
+      {
+        "start": 44402,
+        "stop": 44926,
+        "text": " projects that have moved to the forums I've mostly like stopped engaging in"
+      },
+      {
+        "start": 44926,
+        "stop": 45254,
+        "text": " because I can't in order for those things to work I have to actually like"
+      },
+      {
+        "start": 45254,
+        "stop": 45726,
+        "text": " actively poke into those forums and go look at them and whatever and like yes"
+      },
+      {
+        "start": 45726,
+        "stop": 46418,
+        "text": " discourse as an email-based function no it's not very good and RSS what browser"
+      },
+      {
+        "start": 46418,
+        "stop": 46852,
+        "text": " has our I said support and yes I could have a dedicated RSS reader I don't use"
+      },
+      {
+        "start": 46852,
+        "stop": 47202,
+        "text": " one because I'm on different computers all the time and browsers are the only"
+      },
+      {
+        "start": 47202,
+        "stop": 47526,
+        "text": " thing that stay in sync across all the computers I have and Google Reader killed"
+      },
+      {
+        "start": 47526,
+        "stop": 47938,
+        "text": " it for all of us yeah pretty much right like this kind of comes back to like I"
+      },
+      {
+        "start": 47938,
+        "stop": 48274,
+        "text": " don't have Google Reader anymore so I don't exactly have a good way of doing"
+      },
+      {
+        "start": 48274,
+        "stop": 48994,
+        "text": " that but like more seriously this move to to discourse isn't I I suspect is"
+      },
+      {
+        "start": 48994,
+        "stop": 49406,
+        "text": " actually not driven by the things you'd expect one of the things that just that"
+      },
+      {
+        "start": 49406,
+        "stop": 49810,
+        "text": " has been going on undercurrent in in gnome infrastructure for the past few"
+      },
+      {
+        "start": 49810,
+        "stop": 50170,
+        "text": " years is that they've been retooling all of their infrastructure to run on top of"
+      },
+      {
+        "start": 50170,
+        "stop": 50622,
+        "text": " Red Hat OpenShift container platform and so all their applications have to be"
+      },
+      {
+        "start": 50622,
+        "stop": 51058,
+        "text": " able to deploy on OpenShift and run in in the OpenShift environment and scale"
+      },
+      {
+        "start": 51058,
+        "stop": 51418,
+        "text": " with that and whatever like they just recently redeployed the gnome gitlab and"
+      },
+      {
+        "start": 51418,
+        "stop": 51958,
+        "text": " broke everybody's ability to push via SSH because the way that you have to do"
+      },
+      {
+        "start": 51958,
+        "stop": 52578,
+        "text": " SSH get SSH in OpenShift or in Kubernetes in containerized environments"
+      },
+      {
+        "start": 52578,
+        "stop": 52882,
+        "text": " is completely different from non containerized environments and so"
+      },
+      {
+        "start": 52882,
+        "stop": 53354,
+        "text": " everybody has to like adjust for that and stuff like that and what about their"
+      },
+      {
+        "start": 53354,
+        "stop": 53878,
+        "text": " argument that gamification appeals to a newer generation that's totally true"
+      },
+      {
+        "start": 53878,
+        "stop": 54346,
+        "text": " right like even like that's why fedora has the badges thing then and like we've"
+      },
+      {
+        "start": 54346,
+        "stop": 54626,
+        "text": " got this whole big thing you remember a couple years ago when the butter fest"
+      },
+      {
+        "start": 54626,
+        "stop": 54958,
+        "text": " stuff was going on there was a butter fest badge for anyone who came in and"
+      },
+      {
+        "start": 54958,
+        "stop": 55546,
+        "text": " tested that's like that's still I think like the most given away badge in in the"
+      },
+      {
+        "start": 55546,
+        "stop": 55962,
+        "text": " fedora badges system so there you know it shows that it and we was the most"
+      },
+      {
+        "start": 55962,
+        "stop": 56410,
+        "text": " tested feature that we've ever done and that clearly shows the value of it but"
+      },
+      {
+        "start": 56410,
+        "stop": 56894,
+        "text": " that's not the point the the point is that they don't actually want to they"
+      },
+      {
+        "start": 56894,
+        "stop": 57266,
+        "text": " don't want to spend the effort to move the mailing lists on to OpenShift maybe"
+      },
+      {
+        "start": 57266,
+        "stop": 57554,
+        "text": " they could argue they don't have the right people on their team"
+      },
+      {
+        "start": 57554,
+        "stop": 58066,
+        "text": " phooey if you can get gitlab to run on there you can get bloody mailman to run"
+      },
+      {
+        "start": 58066,
+        "stop": 58362,
+        "text": " on there all right well here's the other argument they say it reduces"
+      },
+      {
+        "start": 58362,
+        "stop": 58846,
+        "text": " fragmentation amongst the gnome communities improved integration they"
+      },
+      {
+        "start": 58846,
+        "stop": 59214,
+        "text": " have a bridge with live matrix chat so they can move conversations between"
+      },
+      {
+        "start": 59214,
+        "stop": 59666,
+        "text": " ephemeral and something that's posted online and they say it's a modernization"
+      },
+      {
+        "start": 59666,
+        "stop": 60002,
+        "text": " of the overall infrastructure project they're also they've migrated IRC to"
+      },
+      {
+        "start": 60002,
+        "stop": 60410,
+        "text": " matrix this is the next thing this is akin to IRC moving to matrix they say"
+      },
+      {
+        "start": 60410,
+        "stop": 60970,
+        "text": " no but sure there's certainly a modernization aspect of this but it's"
+      },
+      {
+        "start": 60970,
+        "stop": 61558,
+        "text": " definitely not a like this is a you know a strict improvement of the experience"
+      },
+      {
+        "start": 61558,
+        "stop": 61986,
+        "text": " it certainly allows richer formatting whatever like the biggest reason why"
+      },
+      {
+        "start": 61986,
+        "stop": 62386,
+        "text": " email conversations aren't rich is because there's this convention these"
+      },
+      {
+        "start": 62386,
+        "stop": 62866,
+        "text": " plain text emails and to do the bottom posting and you all this this netiquette"
+      },
+      {
+        "start": 62866,
+        "stop": 63270,
+        "text": " stuff from them from the 90s like whatever fine isn't there some truth"
+      },
+      {
+        "start": 63270,
+        "stop": 63658,
+        "text": " though to like the whole you know when you go on github all of a sudden you get"
+      },
+      {
+        "start": 63658,
+        "stop": 63954,
+        "text": " a lot more contributors isn't that something to like when you go on disk"
+      },
+      {
+        "start": 63954,
+        "stop": 64178,
+        "text": " course all of a sudden you're gonna get a lot more people they can get their"
+      },
+      {
+        "start": 64178,
+        "stop": 64610,
+        "text": " eyes on it actually here's another dirty secret overall engagement in the gnome"
+      },
+      {
+        "start": 64610,
+        "stop": 65098,
+        "text": " project on various communication platforms has been going down so one of"
+      },
+      {
+        "start": 65098,
+        "stop": 65702,
+        "text": " the gnomies told me privately that discourse is like kind of half dead in"
+      },
+      {
+        "start": 65702,
+        "stop": 66186,
+        "text": " terms of engagement from both developers and users and the mailing list have also"
+      },
+      {
+        "start": 66186,
+        "stop": 66870,
+        "text": " rotted but so has everything else so when if on the whole balance engagement"
+      },
+      {
+        "start": 66870,
+        "stop": 67390,
+        "text": " and communication is rotting and and in decline the ones that are in decline the"
+      },
+      {
+        "start": 67390,
+        "stop": 67662,
+        "text": " fastest of probably the ones worth kicking out and mailing lists were"
+      },
+      {
+        "start": 67662,
+        "stop": 68110,
+        "text": " probably in decline way faster than all the other ones because people just leave"
+      },
+      {
+        "start": 68110,
+        "stop": 68668,
+        "text": " and whatever and sure and an email unlike the other platforms actually"
+      },
+      {
+        "start": 68668,
+        "stop": 68974,
+        "text": " harder to keep up with because you still have to do all the stuff to make sure"
+      },
+      {
+        "start": 68974,
+        "stop": 69442,
+        "text": " you don't get listed spam you have to update for the the MTA's and all that"
+      },
+      {
+        "start": 69442,
+        "stop": 69826,
+        "text": " other fun stuff but in on in general like from what I've been told from a"
+      },
+      {
+        "start": 69826,
+        "stop": 70222,
+        "text": " couple of from a few gnomies that are involved in this is that overall"
+      },
+      {
+        "start": 70222,
+        "stop": 70714,
+        "text": " engagement in GNOME has actually gone downward in communication discourse"
+      },
+      {
+        "start": 70714,
+        "stop": 71262,
+        "text": " mailing lists IRC all of it is all on a downward trend doesn't feel like a"
+      },
+      {
+        "start": 71262,
+        "stop": 71834,
+        "text": " technology problem to be Neil that feels like a different problem going on there"
+      },
+      {
+        "start": 71834,
+        "stop": 72338,
+        "text": " I don't I don't need I don't need that right now but like but basically because"
+      },
+      {
+        "start": 72338,
+        "stop": 72790,
+        "text": " there's a downward trend here and and mailing lists are the harder of the two"
+      },
+      {
+        "start": 72790,
+        "stop": 73142,
+        "text": " to maintain they're gonna cut the mailing lists this is actually gonna be"
+      },
+      {
+        "start": 73142,
+        "stop": 73570,
+        "text": " a little painful because gnome isn't the only project that uses the gnome mailing"
+      },
+      {
+        "start": 73570,
+        "stop": 73874,
+        "text": " lists I that was why I brought them up for discussion is because they're not"
+      },
+      {
+        "start": 73874,
+        "stop": 74410,
+        "text": " the only project doing this in the open source community broader so I wonder like"
+      },
+      {
+        "start": 74410,
+        "stop": 74774,
+        "text": " what are if we if we zoom out from gnome what are we losing here I could think"
+      },
+      {
+        "start": 74774,
+        "stop": 75110,
+        "text": " there's definitely an accessibility aspect we're losing because when you"
+      },
+      {
+        "start": 75110,
+        "stop": 75440,
+        "text": " take things out of plain text and out of email you're automatically gonna make it"
+      },
+      {
+        "start": 75440,
+        "stop": 75758,
+        "text": " less accessible to some folks especially those that might be visually"
+      },
+      {
+        "start": 75758,
+        "stop": 76226,
+        "text": " impaired or something like that so I I recognize that's a loss but I'm"
+      },
+      {
+        "start": 76226,
+        "stop": 76542,
+        "text": " wondering just outside of that from like a development community what else are we"
+      },
+      {
+        "start": 76542,
+        "stop": 77030,
+        "text": " losing if we move away from that in some respects you have to consider forms are"
+      },
+      {
+        "start": 77030,
+        "stop": 77438,
+        "text": " a lot a lot less asynchronous than email is sure because in order for you to"
+      },
+      {
+        "start": 77438,
+        "stop": 77734,
+        "text": " engage there's a different set of expectations when you're working with"
+      },
+      {
+        "start": 77734,
+        "stop": 78040,
+        "text": " web forums but can't you argue they're more transparent because they're on the"
+      },
+      {
+        "start": 78040,
+        "stop": 78450,
+        "text": " web and available to anyone I think that depends like it depends on how you run"
+      },
+      {
+        "start": 78450,
+        "stop": 78786,
+        "text": " the forum it depends on how the forum works it depends like there's a lot of"
+      },
+      {
+        "start": 78786,
+        "stop": 79170,
+        "text": " factors here but there are some common things right so web forums are"
+      },
+      {
+        "start": 79170,
+        "stop": 79670,
+        "text": " pseudo synchronous and that means that while they're technically asynchronous"
+      },
+      {
+        "start": 79670,
+        "stop": 80138,
+        "text": " there's a lot of community expectation of timeliness like for example the gnome"
+      },
+      {
+        "start": 80138,
+        "stop": 80882,
+        "text": " discourse auto locks discussion threads after so many days of inactivity that is"
+      },
+      {
+        "start": 80882,
+        "stop": 81354,
+        "text": " a pseudo synchronous thing to do that means that you have there is an"
+      },
+      {
+        "start": 81354,
+        "stop": 81762,
+        "text": " expectation that there is engagement continually but the way that discourse"
+      },
+      {
+        "start": 81762,
+        "stop": 82274,
+        "text": " and most web forums work it's a push you have to actually directly go there and"
+      },
+      {
+        "start": 82274,
+        "stop": 82760,
+        "text": " pull the stuff so not push-based pull based engagement and because it's"
+      },
+      {
+        "start": 82760,
+        "stop": 83406,
+        "text": " pull-based engagement the effort is on you to to find out what's going on yes"
+      },
+      {
+        "start": 83406,
+        "stop": 83730,
+        "text": " there are certain ways to mitigate some of this but you can't fully mitigate"
+      },
+      {
+        "start": 83730,
+        "stop": 84158,
+        "text": " because it's built into the model whereas emails are push-based generally"
+      },
+      {
+        "start": 84158,
+        "stop": 84582,
+        "text": " when you subscribe to something the engagement comes to you and you make the"
+      },
+      {
+        "start": 84582,
+        "stop": 85066,
+        "text": " choice to to to interact with it and and there is not really a straightforward"
+      },
+      {
+        "start": 85066,
+        "stop": 85370,
+        "text": " way to lock people out of the conversation true and you can it's"
+      },
+      {
+        "start": 85370,
+        "stop": 85658,
+        "text": " pretty easy for you to develop your own tooling around that to manage it filter"
+      },
+      {
+        "start": 85658,
+        "stop": 85992,
+        "text": " it and sort it but I will say from like a research standpoint like when I'm"
+      },
+      {
+        "start": 85992,
+        "stop": 86480,
+        "text": " investigating a story for Linux action news forums are easier yeah way easier to"
+      },
+      {
+        "start": 86480,
+        "stop": 86862,
+        "text": " search way easier to find stuff way easier as an outsider to come in and get"
+      },
+      {
+        "start": 86862,
+        "stop": 87226,
+        "text": " I get a good picture of what the conversation has been a mailing list is"
+      },
+      {
+        "start": 87226,
+        "stop": 87630,
+        "text": " a chore sometimes to track it all down I mean there is that aspect to it sure"
+      },
+      {
+        "start": 87630,
+        "stop": 87972,
+        "text": " there is and also it also depends on what kind of archiver is being used"
+      },
+      {
+        "start": 87972,
+        "stop": 88410,
+        "text": " right some archivers have a search engine others don't most projects using"
+      },
+      {
+        "start": 88410,
+        "stop": 88966,
+        "text": " mailman 2 or ponies something or other I forget what the Apache one is pony mail"
+      },
+      {
+        "start": 88966,
+        "stop": 89362,
+        "text": " I think they don't have any of this and so it's or or god forbid you want to"
+      },
+      {
+        "start": 89362,
+        "stop": 89930,
+        "text": " search the source for its ones like that custom front end is so garbage oh man oh"
+      },
+      {
+        "start": 89930,
+        "stop": 90442,
+        "text": " man painful memories there right those are difficult for sure but like if you"
+      },
+      {
+        "start": 90442,
+        "stop": 90810,
+        "text": " look at hyper kitty shoot there's a groups that I owe is a mailing list"
+      },
+      {
+        "start": 90810,
+        "stop": 91378,
+        "text": " platform it's a commercial SAS based one and Google groups and those it's yeah"
+      },
+      {
+        "start": 91378,
+        "stop": 91674,
+        "text": " you're right they have decent search there are a lot more accessible to find"
+      },
+      {
+        "start": 91674,
+        "stop": 92020,
+        "text": " these things they also all have the unique capability of letting you reply"
+      },
+      {
+        "start": 92020,
+        "stop": 92416,
+        "text": " from the web I wanted to give NJCS a chance to jump in here in regards to"
+      },
+      {
+        "start": 92416,
+        "stop": 92838,
+        "text": " email accessibility all of that go ahead first I'm seeing in the chat and I want"
+      },
+      {
+        "start": 92838,
+        "stop": 93218,
+        "text": " to differentiate a couple different accessibilities that see people seem to"
+      },
+      {
+        "start": 93218,
+        "stop": 93526,
+        "text": " be talking about this information accessibility when it comes to this kind"
+      },
+      {
+        "start": 93526,
+        "stop": 93866,
+        "text": " of thing which is great email client as long as you're pulling down copies of"
+      },
+      {
+        "start": 93866,
+        "stop": 94350,
+        "text": " things you can search through things and a mailing list is super easy to get"
+      },
+      {
+        "start": 94350,
+        "stop": 94654,
+        "text": " through with a control F or however you want to search through that text but"
+      },
+      {
+        "start": 94654,
+        "stop": 95152,
+        "text": " then there's also the accessibility of low vision users I happen to be one and"
+      },
+      {
+        "start": 95152,
+        "stop": 95610,
+        "text": " after a stint of several years working in large educational institutions that"
+      },
+      {
+        "start": 95610,
+        "stop": 96074,
+        "text": " still use mailman specifically to do mass mailings and group discussions I"
+      },
+      {
+        "start": 96074,
+        "stop": 96634,
+        "text": " can say that from a visual perspective or a low vision perspective mailing list"
+      },
+      {
+        "start": 96634,
+        "stop": 97244,
+        "text": " are awful to get through as a low vision user unless you have a specialty client"
+      },
+      {
+        "start": 97244,
+        "stop": 97600,
+        "text": " that's going to understand the conversation nature otherwise you're"
+      },
+      {
+        "start": 97600,
+        "stop": 98230,
+        "text": " listening to the entire wall of text so moving any type of mailing list for"
+      },
+      {
+        "start": 98230,
+        "stop": 98646,
+        "text": " visual accessibility reasons to a web-based plant that understands"
+      },
+      {
+        "start": 98646,
+        "stop": 99106,
+        "text": " messages that understands the web standards that can separate things out"
+      },
+      {
+        "start": 99106,
+        "stop": 99550,
+        "text": " for screen readers big plus something that I would be very excited about well"
+      },
+      {
+        "start": 99550,
+        "stop": 99878,
+        "text": " that's great insight thank you for that I that's good to know I want to give"
+      },
+      {
+        "start": 99878,
+        "stop": 100156,
+        "text": " gamma a chance to jump in on the demographics of users that could be"
+      },
+      {
+        "start": 100156,
+        "stop": 100642,
+        "text": " using these systems go ahead gamma Mike Neal actually mentioned earlier when you"
+      },
+      {
+        "start": 100642,
+        "stop": 100998,
+        "text": " have an email you you can be so be subscribed to so many different emails"
+      },
+      {
+        "start": 100998,
+        "stop": 101762,
+        "text": " and pull them in fairly passively so you can be engaged in the community fairly"
+      },
+      {
+        "start": 101762,
+        "stop": 102274,
+        "text": " easily there's a lot more passive almost drive by nature and you really don't get"
+      },
+      {
+        "start": 102274,
+        "stop": 102730,
+        "text": " that in a forum where you have to go out and actively be engaged in it people who"
+      },
+      {
+        "start": 102730,
+        "stop": 103410,
+        "text": " are going to the gnome discourse are people who are actively seeking out gnome"
+      },
+      {
+        "start": 103410,
+        "stop": 103906,
+        "text": " gnome things like maybe maybe maybe it's a news like it's instead of its"
+      },
+      {
+        "start": 103906,
+        "stop": 104272,
+        "text": " reactionary that they're going there instead of like they're they're passively"
+      },
+      {
+        "start": 104272,
+        "stop": 104698,
+        "text": " like oh there's they're seeing stuff as it's going on like no they're like"
+      },
+      {
+        "start": 104698,
+        "stop": 105084,
+        "text": " they're going there for a reason I could see your point there well ultimately kind"
+      },
+      {
+        "start": 105084,
+        "stop": 105376,
+        "text": " of I'd kneel I kind of want to know your thoughts around just I know I'm sure you"
+      },
+      {
+        "start": 105376,
+        "stop": 105826,
+        "text": " lots but my thinking is is developers are really the target demographic here"
+      },
+      {
+        "start": 105826,
+        "stop": 106162,
+        "text": " developers are capable of using their own tooling and consuming this"
+      },
+      {
+        "start": 106162,
+        "stop": 106600,
+        "text": " information in their own way to work best with their particular workflow is"
+      },
+      {
+        "start": 106600,
+        "stop": 106948,
+        "text": " that not a factor in this and don't mainly miss potentially suit that use"
+      },
+      {
+        "start": 106948,
+        "stop": 107336,
+        "text": " case better again because we're not looking for everyday users we're looking"
+      },
+      {
+        "start": 107336,
+        "stop": 107820,
+        "text": " for developers here for sure right like every everyday users I think totally can"
+      },
+      {
+        "start": 107820,
+        "stop": 108262,
+        "text": " be satisfied by forums and I've actually made this point before on in other"
+      },
+      {
+        "start": 108262,
+        "stop": 108822,
+        "text": " venues that user support isn't well served by mailing lists they're actually"
+      },
+      {
+        "start": 108822,
+        "stop": 109224,
+        "text": " better served with web forums and things like that because you don't want you"
+      },
+      {
+        "start": 109224,
+        "stop": 109602,
+        "text": " don't want Brando's being pulled in and all kinds of crazy places and you"
+      },
+      {
+        "start": 109602,
+        "stop": 110034,
+        "text": " generally want a more curated experience there whereas developer engagement"
+      },
+      {
+        "start": 110034,
+        "stop": 110486,
+        "text": " especially the highly distributed nature of open source development it doesn't"
+      },
+      {
+        "start": 110486,
+        "stop": 110870,
+        "text": " work super well when you have islands for communication but also I wanted to"
+      },
+      {
+        "start": 110870,
+        "stop": 111246,
+        "text": " mention something else I forget which one like someone made that point about"
+      },
+      {
+        "start": 111246,
+        "stop": 111670,
+        "text": " the accessibility stuff this is actually also a function of what kind of web"
+      },
+      {
+        "start": 111670,
+        "stop": 112234,
+        "text": " email archiver yet some archivers do translate email conversations into"
+      },
+      {
+        "start": 112234,
+        "stop": 112810,
+        "text": " something that screen readers and whatever can actually handle in the same"
+      },
+      {
+        "start": 112810,
+        "stop": 113146,
+        "text": " way that they would handle a web forum and I know that those are not terribly"
+      },
+      {
+        "start": 113146,
+        "stop": 113522,
+        "text": " common in the open source space yet but like for example I think hyper kitty"
+      },
+      {
+        "start": 113522,
+        "stop": 114028,
+        "text": " groups I own Google groups they all actually use these tags and like smart"
+      },
+      {
+        "start": 114028,
+        "stop": 114466,
+        "text": " detection to make it so that these conversations are handled in the same"
+      },
+      {
+        "start": 114466,
+        "stop": 114748,
+        "text": " way that you would handle like say quoted messages and web forums and and"
+      },
+      {
+        "start": 114748,
+        "stop": 115150,
+        "text": " you're able to ignore them and process them properly and things like that that's"
+      },
+      {
+        "start": 115150,
+        "stop": 115514,
+        "text": " not unfortunately not everybody is using that like you've still got your mailman"
+      },
+      {
+        "start": 115514,
+        "stop": 115972,
+        "text": " twos you've got your pony mails you've got your you've got your ml m mj's and"
+      },
+      {
+        "start": 115972,
+        "stop": 116378,
+        "text": " all these other older ones that just don't do any of this stuff the email"
+      },
+      {
+        "start": 116378,
+        "stop": 116774,
+        "text": " mailing lists are an email experience that you make of it whereas web forums"
+      },
+      {
+        "start": 116774,
+        "stop": 117200,
+        "text": " are typically what they've made for you and and that's where I think the the"
+      },
+      {
+        "start": 117200,
+        "stop": 117604,
+        "text": " crux of the differences that's not to say that anyone else's concerns about"
+      },
+      {
+        "start": 117604,
+        "stop": 118106,
+        "text": " mailing lists are are invalid but it's certainly like something where the the"
+      },
+      {
+        "start": 118106,
+        "stop": 118544,
+        "text": " the group implementing the mailing list has to like care to deal with these"
+      },
+      {
+        "start": 118544,
+        "stop": 118784,
+        "text": " problems"
+      },
+      {
+        "start": 118784,
+        "stop": 119374,
+        "text": " Linode comm slash unplugged go there to get a hundred dollars in 60-day credit"
+      },
+      {
+        "start": 119374,
+        "stop": 119632,
+        "text": " on a new account and it's just a great way to support the show while you're"
+      },
+      {
+        "start": 119632,
+        "stop": 120064,
+        "text": " really trying out the Linode platform Linode is fast reliable cloud hosting"
+      },
+      {
+        "start": 120064,
+        "stop": 120426,
+        "text": " with really the best support in the business because Linode is architected"
+      },
+      {
+        "start": 120426,
+        "stop": 120778,
+        "text": " differently they're built around a great product that had to do well in the"
+      },
+      {
+        "start": 120778,
+        "stop": 121132,
+        "text": " marketplace and they had to actually compete for their customers by making"
+      },
+      {
+        "start": 121132,
+        "stop": 121694,
+        "text": " something they'd want to use and so in that they have created a fantastic"
+      },
+      {
+        "start": 121694,
+        "stop": 122114,
+        "text": " support department that's available 365 the first person you contact is the"
+      },
+      {
+        "start": 122114,
+        "stop": 122504,
+        "text": " person who resolves it they don't have to like do that silly game of escalation"
+      },
+      {
+        "start": 122504,
+        "stop": 122972,
+        "text": " but let's be real on the big hyperscaler platforms the support situation is"
+      },
+      {
+        "start": 122972,
+        "stop": 123452,
+        "text": " obtuse it's a nightmare it's opaque it's awful and it always starts with a chat"
+      },
+      {
+        "start": 123452,
+        "stop": 123922,
+        "text": " bot so Linode is a little differently because their product had to be great so"
+      },
+      {
+        "start": 123922,
+        "stop": 124452,
+        "text": " the systems are fast the dashboard is fantastic the API is clear and easy to"
+      },
+      {
+        "start": 124452,
+        "stop": 124780,
+        "text": " implement the infrastructure management tools or whatever you want to use"
+      },
+      {
+        "start": 124780,
+        "stop": 125234,
+        "text": " kubernetes terraform ansible yeah it all works and they managed to do it while"
+      },
+      {
+        "start": 125234,
+        "stop": 125550,
+        "text": " they're 30 to 50 percent cheaper than the hyperscale is it just want to lock"
+      },
+      {
+        "start": 125550,
+        "stop": 126018,
+        "text": " into their crazy platform that they like to pretend they invented but on top of"
+      },
+      {
+        "start": 126018,
+        "stop": 126446,
+        "text": " that the performance is just fantastic it's so good I've had an opportunity to"
+      },
+      {
+        "start": 126446,
+        "stop": 126730,
+        "text": " try out their GPU rigs I've had an opportunity to try out their dedicated"
+      },
+      {
+        "start": 126730,
+        "stop": 127350,
+        "text": " CPU systems their monster systems I've got a matrix box with like 48 CPU cores"
+      },
+      {
+        "start": 127350,
+        "stop": 127798,
+        "text": " and something like 96 or 128 gigs of RAM it's in the category of likes the"
+      },
+      {
+        "start": 127798,
+        "stop": 128246,
+        "text": " numbers so high that it just doesn't really even make sense anymore the"
+      },
+      {
+        "start": 128246,
+        "stop": 128646,
+        "text": " performance is insane and we started that at a tiny little system a tiny"
+      },
+      {
+        "start": 128646,
+        "stop": 129062,
+        "text": " little two core box with 8 gigs of RAM or something like that that we just"
+      },
+      {
+        "start": 129062,
+        "stop": 129546,
+        "text": " scaled up over time as our matrix user base needed it I couldn't have done that"
+      },
+      {
+        "start": 129546,
+        "stop": 129870,
+        "text": " with the physical box I may have if I built something I may have started with"
+      },
+      {
+        "start": 129870,
+        "stop": 130314,
+        "text": " something a little more powerful than two cores and 8 gigs of RAM but within a"
+      },
+      {
+        "start": 130314,
+        "stop": 130682,
+        "text": " few months I have way way way outstripped what I would have been able"
+      },
+      {
+        "start": 130682,
+        "stop": 131186,
+        "text": " to afford to build and I just did it incrementally as our user demand required"
+      },
+      {
+        "start": 131186,
+        "stop": 131554,
+        "text": " it it was really simple to use their tools to do that plus we have backups"
+      },
+      {
+        "start": 131554,
+        "stop": 131878,
+        "text": " and snapshots they got 11 data centers for you to choose from they're bringing"
+      },
+      {
+        "start": 131878,
+        "stop": 132366,
+        "text": " on a whole bunch more next year so go build something go learn about something"
+      },
+      {
+        "start": 132366,
+        "stop": 132602,
+        "text": " it's a great way to try out an open source project on incredibly fast"
+      },
+      {
+        "start": 132602,
+        "stop": 133130,
+        "text": " hardware go try it for yourself with $100 really kick the tires Linode.com/unplugged"
+      },
+      {
+        "start": 133130,
+        "stop": 133634,
+        "text": " where you go supports the show and you get that $100 Linode.com/unplugged"
+      },
+      {
+        "start": 133634,
+        "stop": 134406,
+        "text": " just a spot of housekeeping here cuz it's all on me this week nobody else is"
+      },
+      {
+        "start": 134406,
+        "stop": 134822,
+        "text": " here to clean up and who's gonna bring the meat whoo this is rough I mean I"
+      },
+      {
+        "start": 134822,
+        "stop": 135374,
+        "text": " know it sucks for questing it sick but did nobody think about me anyways just a"
+      },
+      {
+        "start": 135374,
+        "stop": 135638,
+        "text": " few things to mention if you haven't checked out our new community-built"
+      },
+      {
+        "start": 135638,
+        "stop": 136018,
+        "text": " website at jupiterbroadcasting.com something really special is going on"
+      },
+      {
+        "start": 136018,
+        "stop": 136494,
+        "text": " over there and it is totally open on our github over at jupiter broadcasting"
+      },
+      {
+        "start": 136494,
+        "stop": 136922,
+        "text": " github you know I don't know github.com you get it right it's a URL and then you"
+      },
+      {
+        "start": 136922,
+        "stop": 137286,
+        "text": " put slash our name in there anyways you go there to the dot-com section and you"
+      },
+      {
+        "start": 137286,
+        "stop": 137630,
+        "text": " can open up an issue you can all participate and we're kind of putting the"
+      },
+      {
+        "start": 137630,
+        "stop": 138228,
+        "text": " challenge out to the community I talked about this in office hours 15 I think we"
+      },
+      {
+        "start": 138228,
+        "stop": 138978,
+        "text": " are probably a few months away if people worked on it from a portable open source"
+      },
+      {
+        "start": 138978,
+        "stop": 139758,
+        "text": " fully self hostable podcasting 2.0 compatible podcast network website you"
+      },
+      {
+        "start": 139758,
+        "stop": 140238,
+        "text": " know it's weird there's no really good site built for a podcast network you"
+      },
+      {
+        "start": 140238,
+        "stop": 140766,
+        "text": " know like my buddy Joe and Michael they have tux digital and Joe's got his late"
+      },
+      {
+        "start": 140766,
+        "stop": 141178,
+        "text": " night Linux series of shows and they've all kind of taken different approaches"
+      },
+      {
+        "start": 141178,
+        "stop": 141494,
+        "text": " like I have it trying to either centralize or not centralize all of the"
+      },
+      {
+        "start": 141494,
+        "stop": 142010,
+        "text": " shows like how do you do that right it's not like anything just does it out of"
+      },
+      {
+        "start": 142010,
+        "stop": 142398,
+        "text": " the box and when you go look for like templates for like Hugo or WordPress"
+      },
+      {
+        "start": 142398,
+        "stop": 142890,
+        "text": " what you find is like something that's designed for a single podcast and it's"
+      },
+      {
+        "start": 142890,
+        "stop": 143350,
+        "text": " all like old-school like Apple sets the terms on what the RSS feed supports just"
+      },
+      {
+        "start": 143350,
+        "stop": 143706,
+        "text": " like an old janky way of doing it and I don't know if we'll ever get there but"
+      },
+      {
+        "start": 143706,
+        "stop": 144040,
+        "text": " I kind of put the challenge out in office hours 15 so the details are at"
+      },
+      {
+        "start": 144040,
+        "stop": 144630,
+        "text": " office hours dot hair slash 15 episode is one PR at a time I don't think it'd"
+      },
+      {
+        "start": 144630,
+        "stop": 144952,
+        "text": " be that much work to like make it possible to swap out the branding swap"
+      },
+      {
+        "start": 144952,
+        "stop": 145334,
+        "text": " out the theming and build your own network Hugo site and the beautiful"
+      },
+      {
+        "start": 145334,
+        "stop": 145858,
+        "text": " thing is this thing builds itself when we release an episode it just"
+      },
+      {
+        "start": 145858,
+        "stop": 146310,
+        "text": " automatically builds itself every post is automatically generated I don't have"
+      },
+      {
+        "start": 146310,
+        "stop": 146890,
+        "text": " to do a thing it's so beautiful and it's how it should be and we're building out"
+      },
+      {
+        "start": 146890,
+        "stop": 147170,
+        "text": " even more we're not done yet we're adding more podcasting to know features"
+      },
+      {
+        "start": 147170,
+        "stop": 147568,
+        "text": " and specs and we're opening we've opened up the development of the community so"
+      },
+      {
+        "start": 147568,
+        "stop": 147984,
+        "text": " there's all kinds of things that are open or can be improved we just recently"
+      },
+      {
+        "start": 147984,
+        "stop": 148542,
+        "text": " had some big updates to the website to make it possible to automatically update"
+      },
+      {
+        "start": 148542,
+        "stop": 148816,
+        "text": " the sponsor segment all of that we'll be talking about all that more in office"
+      },
+      {
+        "start": 148816,
+        "stop": 149088,
+        "text": " hours that's why I've decided I'm putting it all in office hours but I"
+      },
+      {
+        "start": 149088,
+        "stop": 149440,
+        "text": " wanted to make you aware in case you haven't been listening our matrix"
+      },
+      {
+        "start": 149440,
+        "stop": 149728,
+        "text": " community has been growing like crazy to details for that over at Jupiter"
+      },
+      {
+        "start": 149728,
+        "stop": 150184,
+        "text": " broadcasting dot-com slash matrix I'd love to have you join us over there and"
+      },
+      {
+        "start": 150184,
+        "stop": 150556,
+        "text": " hang out with a crowd go get the element app it's open source you can use it in"
+      },
+      {
+        "start": 150556,
+        "stop": 151048,
+        "text": " your web browser or you can use it as a downloadable stand-alone flat packer"
+      },
+      {
+        "start": 151048,
+        "stop": 151392,
+        "text": " I don't know it's probably a snap"
+      },
+      {
+        "start": 151392,
+        "stop": 152032,
+        "text": " I got some baller boosts I want to thank before we get into the big meat of the"
+      },
+      {
+        "start": 152032,
+        "stop": 152944,
+        "text": " show today John a you sneaky sneaky sob so I get it man I get it deleted came in"
+      },
+      {
+        "start": 152944,
+        "stop": 153280,
+        "text": " she kind of threw you off your game threw down a challenge she felt like it"
+      },
+      {
+        "start": 153280,
+        "stop": 153688,
+        "text": " was a lot of pressure stats aren't free they are on sale right now but they're"
+      },
+      {
+        "start": 153688,
+        "stop": 154138,
+        "text": " not free they recently went up a little bit in price I know how you're feeling"
+      },
+      {
+        "start": 154138,
+        "stop": 154580,
+        "text": " you feel like I can't do this so John a boost in 10,000 stats is like okay I"
+      },
+      {
+        "start": 154580,
+        "stop": 154988,
+        "text": " gotta go low this week someone else can have the glorious experience of pain to"
+      },
+      {
+        "start": 154988,
+        "stop": 155372,
+        "text": " hear the hey rich lobster song played after their mention all right Johnny for"
+      },
+      {
+        "start": 155372,
+        "stop": 155588,
+        "text": " you"
+      },
+      {
+        "start": 155588,
+        "stop": 156208,
+        "text": " you see Johnny likes to stay in touch so as the week goes on Johnny sends another"
+      },
+      {
+        "start": 156208,
+        "stop": 156688,
+        "text": " 5,000 sets as to my location I'm actually in that Yakima area you ever"
+      },
+      {
+        "start": 156688,
+        "stop": 157066,
+        "text": " heard of Yakima hops that's where it comes from the delicious Yakima hops in"
+      },
+      {
+        "start": 157066,
+        "stop": 157576,
+        "text": " your beer that's where Johnny lives he lives in the valley of Yakima hops says"
+      },
+      {
+        "start": 157576,
+        "stop": 157874,
+        "text": " if you guys ever go to Spokane for a meetup I'd absolutely try to make it"
+      },
+      {
+        "start": 157874,
+        "stop": 158314,
+        "text": " over there okay all right that sounds great John so then Johnny sends in"
+      },
+      {
+        "start": 158314,
+        "stop": 158840,
+        "text": " another 5,000 stats and he says I also will be in the Seattle area sometime in"
+      },
+      {
+        "start": 158840,
+        "stop": 159248,
+        "text": " the next two to four weeks I could always drop by the studio and say hi I"
+      },
+      {
+        "start": 159248,
+        "stop": 159572,
+        "text": " would love to see your setup anyways I moonlight as a pro audio guy well first"
+      },
+      {
+        "start": 159572,
+        "stop": 160008,
+        "text": " of all I want to hear more about that John you got any demos got any examples"
+      },
+      {
+        "start": 160008,
+        "stop": 160484,
+        "text": " but how dare you ask that how dare it no I'm kidding totally you could totally"
+      },
+      {
+        "start": 160484,
+        "stop": 160784,
+        "text": " join to send me a boost when you're getting close when the when the date is"
+      },
+      {
+        "start": 160784,
+        "stop": 161132,
+        "text": " approaching and we'll arrange a little hangout here in studio we got a third"
+      },
+      {
+        "start": 161132,
+        "stop": 161522,
+        "text": " seat you can hang out in so I think that I think that in total puts you up to"
+      },
+      {
+        "start": 161522,
+        "stop": 161942,
+        "text": " 20,000 sets which puts you in the baller section so you made it and you would"
+      },
+      {
+        "start": 161942,
+        "stop": 162546,
+        "text": " have been our top baller but then out of absolutely nowhere a sleeper baller"
+      },
+      {
+        "start": 162546,
+        "stop": 163270,
+        "text": " comes in 200,000 sets"
+      },
+      {
+        "start": 163422,
+        "stop": 163892,
+        "text": " from enutek it was actually a hundred thousand but then because I got their"
+      },
+      {
+        "start": 163892,
+        "stop": 164260,
+        "text": " name right on the live stream it became 200,000 so that's I've never been"
+      },
+      {
+        "start": 164260,
+        "stop": 164556,
+        "text": " rewarded like that for getting a pronunciation right it totally"
+      },
+      {
+        "start": 164556,
+        "stop": 165128,
+        "text": " restructures the motivation as humans respond to incentives my friend he"
+      },
+      {
+        "start": 165128,
+        "stop": 165480,
+        "text": " writes I stopped using gnome because of the members attitude and hostility"
+      },
+      {
+        "start": 165480,
+        "stop": 165792,
+        "text": " towards its users and the way they insult potential contributors and"
+      },
+      {
+        "start": 165792,
+        "stop": 166172,
+        "text": " downstream projects so this is a this is a sentiment that I've been hearing from"
+      },
+      {
+        "start": 166172,
+        "stop": 166478,
+        "text": " the audience is something we talked about in our members pre show I'm"
+      },
+      {
+        "start": 166478,
+        "stop": 167002,
+        "text": " curious to know if the politics or the communication style of the project"
+      },
+      {
+        "start": 167002,
+        "stop": 167450,
+        "text": " matters to you at all out there dear listener we talked a lot about it on our"
+      },
+      {
+        "start": 167450,
+        "stop": 167940,
+        "text": " live stream today I'm curious to know out there in the download audience do"
+      },
+      {
+        "start": 167940,
+        "stop": 168550,
+        "text": " you really care I realized one of the things I really enjoy about arch and"
+      },
+      {
+        "start": 168550,
+        "stop": 169142,
+        "text": " Nick's is I can't really articulate any political positions necessarily that any"
+      },
+      {
+        "start": 169142,
+        "stop": 169608,
+        "text": " of the leadership take now if I dig around in my memory I can but for the"
+      },
+      {
+        "start": 169608,
+        "stop": 170032,
+        "text": " most part I can't think of any like controversial things coming out of those"
+      },
+      {
+        "start": 170032,
+        "stop": 170450,
+        "text": " projects right like I could name some out of every other project but you know"
+      },
+      {
+        "start": 170450,
+        "stop": 170918,
+        "text": " just as an example and there is something nice about that and something"
+      },
+      {
+        "start": 170918,
+        "stop": 171258,
+        "text": " that is a factor when I choose a distribution but I'm curious out there"
+      },
+      {
+        "start": 171258,
+        "stop": 171632,
+        "text": " if that is true for you like it is for enutek so you can let me know by sending"
+      },
+      {
+        "start": 171632,
+        "stop": 172038,
+        "text": " a boost or going to Linux unplugged comm slash contact I want to thank you guys"
+      },
+      {
+        "start": 172038,
+        "stop": 172330,
+        "text": " for the baller boost I know they're still getting it's still kind of early"
+      },
+      {
+        "start": 172330,
+        "stop": 172698,
+        "text": " uptake on the adoption outside of just showing your support for the show"
+      },
+      {
+        "start": 172698,
+        "stop": 173290,
+        "text": " personally for me it makes it makes me feel pretty good because I am I'm not"
+      },
+      {
+        "start": 173290,
+        "stop": 173818,
+        "text": " totally comfortable with the way the podcasting and just general ad market is"
+      },
+      {
+        "start": 173818,
+        "stop": 174214,
+        "text": " going I don't actually know if we're gonna be screwed but I just keep hearing"
+      },
+      {
+        "start": 174214,
+        "stop": 174666,
+        "text": " all of these disastrous reports by by the podcast networks and and podcasters"
+      },
+      {
+        "start": 174666,
+        "stop": 175062,
+        "text": " that are like you know they get like 200 300 thousand a million downloads of the"
+      },
+      {
+        "start": 175062,
+        "stop": 175442,
+        "text": " really big numbers and I just keep hearing these devastating stories about"
+      },
+      {
+        "start": 175442,
+        "stop": 175914,
+        "text": " how they've lost their sponsors and like just same sponsor spends her way way"
+      },
+      {
+        "start": 175914,
+        "stop": 176418,
+        "text": " down Wes isn't here today but he was just recently telling me about a podcast"
+      },
+      {
+        "start": 176418,
+        "stop": 176862,
+        "text": " that has dynamic ads that he's listened to forever but they just switched to"
+      },
+      {
+        "start": 176862,
+        "stop": 177330,
+        "text": " dynamic ad insertion because they lost their advertiser and I think he said not"
+      },
+      {
+        "start": 177330,
+        "stop": 177842,
+        "text": " only is it somebody that you can barely understand because their mics horrible"
+      },
+      {
+        "start": 177842,
+        "stop": 178426,
+        "text": " but to fit in a longer ad read into a smaller section they like time"
+      },
+      {
+        "start": 178426,
+        "stop": 178978,
+        "text": " compressed it so you switched it switches to the ad read at like 2x speed"
+      },
+      {
+        "start": 178978,
+        "stop": 179486,
+        "text": " so the ad read sounds like a chipmunk super fast like just absolutely horrible"
+      },
+      {
+        "start": 179486,
+        "stop": 179914,
+        "text": " it's going on right now and I just it seems like a slow decline and then I"
+      },
+      {
+        "start": 179914,
+        "stop": 180406,
+        "text": " have to say I hate to say it because it hurts me because I've been a customer of"
+      },
+      {
+        "start": 180406,
+        "stop": 180910,
+        "text": " theirs for I don't know 13 years but I feel like Libsyn is undercutting the"
+      },
+      {
+        "start": 180910,
+        "stop": 181406,
+        "text": " podcast industry as well the very industry they serve Libsyn is is doing"
+      },
+      {
+        "start": 181406,
+        "stop": 181834,
+        "text": " their best to undercut advertising and podcasting at the time when there's just"
+      },
+      {
+        "start": 181834,
+        "stop": 182490,
+        "text": " a lot of pressure and I worry about the tough decisions that my friends out"
+      },
+      {
+        "start": 182490,
+        "stop": 182806,
+        "text": " there will have to make and that other small businesses will have to make and"
+      },
+      {
+        "start": 182806,
+        "stop": 183354,
+        "text": " the boosts are just outside of all of that it's just a system that is outside"
+      },
+      {
+        "start": 183354,
+        "stop": 183786,
+        "text": " of all of it and there's something that that I fantasize that if everything went"
+      },
+      {
+        "start": 183786,
+        "stop": 184286,
+        "text": " really bad and JB collapsed and everything just totally fell apart I"
+      },
+      {
+        "start": 184286,
+        "stop": 184770,
+        "text": " feel like I would still be going down the road and lady juke somehow fueled by"
+      },
+      {
+        "start": 184770,
+        "stop": 185334,
+        "text": " corn fuel and podcasting powered by sats like they would that would still be a"
+      },
+      {
+        "start": 185334,
+        "stop": 185638,
+        "text": " thing that would still be that still would be online PayPal could be gone or"
+      },
+      {
+        "start": 185638,
+        "stop": 185942,
+        "text": " I wouldn't use pay you know it's just like it feels like it's this you know"
+      },
+      {
+        "start": 185942,
+        "stop": 186306,
+        "text": " that there's like a in the back of my mind there's that Linux prepper in me"
+      },
+      {
+        "start": 186306,
+        "stop": 186670,
+        "text": " that's always thinking about how do I be completely non dependent on any"
+      },
+      {
+        "start": 186670,
+        "stop": 186982,
+        "text": " commercial platform on any centralized network on anything that's closed source"
+      },
+      {
+        "start": 186982,
+        "stop": 187542,
+        "text": " that RMS in the back of my head that says don't trust the closed proprietary"
+      },
+      {
+        "start": 187542,
+        "stop": 187922,
+        "text": " networks the commercial systems will always inevitably screw you so the"
+      },
+      {
+        "start": 187922,
+        "stop": 188158,
+        "text": " baller boosts are really kind of a way that says to me like there's people out"
+      },
+      {
+        "start": 188158,
+        "stop": 188582,
+        "text": " there that get this you know you know this is my livelihood right if things"
+      },
+      {
+        "start": 188582,
+        "stop": 188958,
+        "text": " just went really sideways I feel like there'd be a community out there between"
+      },
+      {
+        "start": 188958,
+        "stop": 189314,
+        "text": " the members and the boosters and people who contribute to the website and people"
+      },
+      {
+        "start": 189314,
+        "stop": 189562,
+        "text": " who show up in the mumble room and people who participate in our chat rooms"
+      },
+      {
+        "start": 189562,
+        "stop": 189962,
+        "text": " the people who have contributed to the meetups or have shared the show with"
+      },
+      {
+        "start": 189962,
+        "stop": 190330,
+        "text": " somebody like all these ways like they that that's the core value that would"
+      },
+      {
+        "start": 190330,
+        "stop": 190750,
+        "text": " continue to happen that value for value would continue regardless of what"
+      },
+      {
+        "start": 190750,
+        "stop": 191042,
+        "text": " happened with anything in the rest of the market would happen to the podcast"
+      },
+      {
+        "start": 191042,
+        "stop": 191546,
+        "text": " landscape that stuff's a foundation and that that's why it's such a big deal to"
+      },
+      {
+        "start": 191546,
+        "stop": 192014,
+        "text": " me so thank you to John a thank you to any attack and we'll get to more boost"
+      },
+      {
+        "start": 192014,
+        "stop": 192374,
+        "text": " later on in the show but I also have in the show notes a link to how the"
+      },
+      {
+        "start": 192374,
+        "stop": 192982,
+        "text": " Serenity OS developer makes a living and that is some lean lean living but it's"
+      },
+      {
+        "start": 192982,
+        "stop": 193242,
+        "text": " interesting how they get it done so I have a link in the show notes if you're"
+      },
+      {
+        "start": 193242,
+        "stop": 193742,
+        "text": " curious about that but let's shift gears and talk about the future direction of"
+      },
+      {
+        "start": 193742,
+        "stop": 194242,
+        "text": " Linux and just how secure we need it to be so Lenart pottering the system D"
+      },
+      {
+        "start": 194242,
+        "stop": 194786,
+        "text": " developer has written a lengthy very technical very jargon heavy blog post he"
+      },
+      {
+        "start": 194786,
+        "stop": 195362,
+        "text": " does put a glossary at the bottom it is entitled quote a brave new trusted boot"
+      },
+      {
+        "start": 195362,
+        "stop": 195806,
+        "text": " world in which he outlines the current issues with the Linux boot process in"
+      },
+      {
+        "start": 195806,
+        "stop": 196382,
+        "text": " his opinion and how there could be a way for providing a more secure robust and"
+      },
+      {
+        "start": 196382,
+        "stop": 197146,
+        "text": " trusted boot experience leveraging your favorite technologies like TPM secure"
+      },
+      {
+        "start": 197146,
+        "stop": 197650,
+        "text": " boot and things like that specifically TPM 2.0 hardware sort of like Windows 11"
+      },
+      {
+        "start": 197650,
+        "stop": 198218,
+        "text": " essentially the issue that Lenart brings up is that there is this flaw no matter"
+      },
+      {
+        "start": 198218,
+        "stop": 198606,
+        "text": " how secure you make everything else when you update things that touch the kernel"
+      },
+      {
+        "start": 198606,
+        "stop": 198986,
+        "text": " your Linux system updates your initial RAM disk and builds a new one and there"
+      },
+      {
+        "start": 198986,
+        "stop": 199514,
+        "text": " is an opportunity for nasty things to get slipped in there he thinks you update"
+      },
+      {
+        "start": 199514,
+        "stop": 199882,
+        "text": " you know kernel you get a new version of the graphics driver you're building a"
+      },
+      {
+        "start": 199882,
+        "stop": 200230,
+        "text": " new init read right like you guys you've all seen this if you've updated Linux"
+      },
+      {
+        "start": 200230,
+        "stop": 200748,
+        "text": " for a period of time so Lenart is essentially proposing a unified kernel"
+      },
+      {
+        "start": 200748,
+        "stop": 201402,
+        "text": " image or a uki for the kids out there which is a combination of a Linux"
+      },
+      {
+        "start": 201402,
+        "stop": 201958,
+        "text": " kernel image and init read image or an it Rd image my OBS systems freaking out"
+      },
+      {
+        "start": 201958,
+        "stop": 202410,
+        "text": " because I'm talking about changing Linux right now that's kind of funny and a uefi"
+      },
+      {
+        "start": 202410,
+        "stop": 203406,
+        "text": " boot stub program it would all be loaded into a single uefi PE file and the PE"
+      },
+      {
+        "start": 203406,
+        "stop": 203906,
+        "text": " file stands for Microsoft portable executable which you can probably start"
+      },
+      {
+        "start": 203906,
+        "stop": 204674,
+        "text": " to get why it bothers some people and a shim is a boot component that extends"
+      },
+      {
+        "start": 204674,
+        "stop": 205030,
+        "text": " the public key database for that secure boot maintains and you can use that that"
+      },
+      {
+        "start": 205030,
+        "stop": 205458,
+        "text": " shim in there so all of this is a is a really sophisticated system to create"
+      },
+      {
+        "start": 205458,
+        "stop": 205826,
+        "text": " this unified kernel that lives in you uefi that would be completely signed"
+      },
+      {
+        "start": 205826,
+        "stop": 206258,
+        "text": " and then you would know that absolutely everything is secure because what Lenart"
+      },
+      {
+        "start": 206258,
+        "stop": 206806,
+        "text": " says the issue here is somebody could just insert something in that init image"
+      },
+      {
+        "start": 206806,
+        "stop": 207354,
+        "text": " and then you can have the most secure system in the absolute total protected"
+      },
+      {
+        "start": 207354,
+        "stop": 207850,
+        "text": " world but none of it's gonna matter if that little init RAM image gets created"
+      },
+      {
+        "start": 207850,
+        "stop": 208138,
+        "text": " and you got malware in there and it can just infect the system over and over and"
+      },
+      {
+        "start": 208138,
+        "stop": 208510,
+        "text": " over again and then you scan your system and everything looks good and you're not"
+      },
+      {
+        "start": 208510,
+        "stop": 208842,
+        "text": " in that scanner isn't necessarily like gonna decompress and open up the image"
+      },
+      {
+        "start": 208842,
+        "stop": 209206,
+        "text": " and look at the init image right like that's probably not happening so you're"
+      },
+      {
+        "start": 209206,
+        "stop": 209662,
+        "text": " just kind of blind to it and it can just attack a system over and over again hold"
+      },
+      {
+        "start": 209662,
+        "stop": 209986,
+        "text": " up why wouldn't it why wouldn't it open up the init ramfs I mean it totally"
+      },
+      {
+        "start": 209986,
+        "stop": 210402,
+        "text": " could it should like Windows malware scanners open up zip files and tar balls"
+      },
+      {
+        "start": 210402,
+        "stop": 210794,
+        "text": " and all those things yeah if we make the assumption that we're not gonna scan"
+      },
+      {
+        "start": 210794,
+        "stop": 211430,
+        "text": " like archives on our disk we're screwed a lot of different ways so let me ask you"
+      },
+      {
+        "start": 211430,
+        "stop": 211846,
+        "text": " what are your and I agree I'm just saying I'm just I'm just making I'm"
+      },
+      {
+        "start": 211846,
+        "stop": 212254,
+        "text": " trying to I'm trying to articulate Lenart's case here I assume this is you"
+      },
+      {
+        "start": 212254,
+        "stop": 212526,
+        "text": " know they're thinking primarily in server context and probably maybe"
+      },
+      {
+        "start": 212526,
+        "stop": 212890,
+        "text": " laptops and I think it's actually primarily driven by laptops and not"
+      },
+      {
+        "start": 212890,
+        "stop": 213314,
+        "text": " servers well that's my question Neil is what is the demand here who is asking"
+      },
+      {
+        "start": 213314,
+        "stop": 213690,
+        "text": " for this what is this use case okay so first of all nobody's asking for this"
+      },
+      {
+        "start": 213690,
+        "stop": 214014,
+        "text": " that's the important part to remember the second thing is they're thinking"
+      },
+      {
+        "start": 214014,
+        "stop": 214578,
+        "text": " about like this isn't super useful on well okay of course it could be useful"
+      },
+      {
+        "start": 214578,
+        "stop": 214934,
+        "text": " on servers particularly ones that are like edge devices that are actually"
+      },
+      {
+        "start": 214934,
+        "stop": 215350,
+        "text": " floating around the key thing is this is primarily useful if the device that's"
+      },
+      {
+        "start": 215350,
+        "stop": 215838,
+        "text": " running Linux is mobile it moves around it is it is not fixed into a secure"
+      },
+      {
+        "start": 215838,
+        "stop": 216410,
+        "text": " location most servers are fixed into a data center or a cloud or whatever and"
+      },
+      {
+        "start": 216410,
+        "stop": 216974,
+        "text": " basically you have perimeter protections you have fixed area protections things"
+      },
+      {
+        "start": 216974,
+        "stop": 217346,
+        "text": " like that this just becomes redundant on top of all that and then that's"
+      },
+      {
+        "start": 217346,
+        "stop": 217794,
+        "text": " redundant protections belt and suspenders that's all well and good but"
+      },
+      {
+        "start": 217794,
+        "stop": 218554,
+        "text": " but when you look at where where most of the attacks are happening they're not at"
+      },
+      {
+        "start": 218554,
+        "stop": 219034,
+        "text": " servers anymore they're at customer premises equipment so those are edge"
+      },
+      {
+        "start": 219034,
+        "stop": 219482,
+        "text": " devices those are laptops those are desktop computers or whatever what about"
+      },
+      {
+        "start": 219482,
+        "stop": 219878,
+        "text": " it what about Android Android yeah Android has a similar system to this"
+      },
+      {
+        "start": 219878,
+        "stop": 220554,
+        "text": " already they already do this but here's the problem Android devices can do this"
+      },
+      {
+        "start": 220554,
+        "stop": 220970,
+        "text": " because the user is fundamentally not screwing around with the with the host"
+      },
+      {
+        "start": 220970,
+        "stop": 221478,
+        "text": " operating system the brave new trusted boot world that when art is talking"
+      },
+      {
+        "start": 221478,
+        "stop": 221914,
+        "text": " about is immediately violated by two particular conditions the first"
+      },
+      {
+        "start": 221914,
+        "stop": 222510,
+        "text": " condition is if you need to install a third-party driver because in Linux land"
+      },
+      {
+        "start": 222510,
+        "stop": 223134,
+        "text": " your drivers need to be able to be part of the init ramfs in order to boot in to"
+      },
+      {
+        "start": 223134,
+        "stop": 223522,
+        "text": " boot the system properly particularly graphics drivers storage drivers things"
+      },
+      {
+        "start": 223522,
+        "stop": 224118,
+        "text": " like that in the server space network cards frequently and storage controllers"
+      },
+      {
+        "start": 224118,
+        "stop": 224598,
+        "text": " even more so are proprietary out of three drivers that you have to load into"
+      },
+      {
+        "start": 224598,
+        "stop": 225042,
+        "text": " them so once you have those cases you can't do this anymore then you have"
+      },
+      {
+        "start": 225042,
+        "stop": 225562,
+        "text": " hardware you have accelerators and things like that like the Nvidia what's"
+      },
+      {
+        "start": 225562,
+        "stop": 225958,
+        "text": " it the CUDA accelerator things for data centers and things like that again you're"
+      },
+      {
+        "start": 225958,
+        "stop": 226342,
+        "text": " back to the Nvidia driver as soon as you have these things you can't do any of"
+      },
+      {
+        "start": 226342,
+        "stop": 226902,
+        "text": " this because you have to generate a custom in-around with us but what they"
+      },
+      {
+        "start": 226902,
+        "stop": 227218,
+        "text": " are I think envisioning here is that the default case is what they're hoping for"
+      },
+      {
+        "start": 227218,
+        "stop": 227582,
+        "text": " where you know you have your basic Intel laptop with all the hardware fully"
+      },
+      {
+        "start": 227582,
+        "stop": 228018,
+        "text": " supported the mainline kernel you can produce an init ram a disk and then it"
+      },
+      {
+        "start": 228018,
+        "stop": 228498,
+        "text": " ramfs unified kernel image server-side like the distribution provides it signs"
+      },
+      {
+        "start": 228498,
+        "stop": 228942,
+        "text": " it with their key does the whole kit caboodle you do that up front ship it out"
+      },
+      {
+        "start": 228942,
+        "stop": 229418,
+        "text": " as a as an RPM or whatever and then you install on your system and the keychain"
+      },
+      {
+        "start": 229418,
+        "stop": 229762,
+        "text": " goes through like okay shim verifies against the Microsoft third-party you"
+      },
+      {
+        "start": 229762,
+        "stop": 230162,
+        "text": " advisor boots that grub is cross-signed with built-in Microsoft cert as well as"
+      },
+      {
+        "start": 230162,
+        "stop": 230518,
+        "text": " the distro cert so that passes the validation chain so that the grub that"
+      },
+      {
+        "start": 230518,
+        "stop": 230862,
+        "text": " trusts the distro cert that meets the kernel which then goes forward and does"
+      },
+      {
+        "start": 230862,
+        "stop": 231270,
+        "text": " a PCR check and verifies that the image is there and then goes forward into the"
+      },
+      {
+        "start": 231270,
+        "stop": 231606,
+        "text": " operating system and then the Linux takes over with lockdown yeah in reality"
+      },
+      {
+        "start": 231606,
+        "stop": 231936,
+        "text": " we can't do any of this because there's not enough integration at the upper"
+      },
+      {
+        "start": 231936,
+        "stop": 232486,
+        "text": " layers of the stack and because and there's no interest like there's no"
+      },
+      {
+        "start": 232486,
+        "stop": 233006,
+        "text": " interest in providing this kind of security because all of this requires"
+      },
+      {
+        "start": 233006,
+        "stop": 233458,
+        "text": " giving up control to the user and I mean the other obvious issue here is that"
+      },
+      {
+        "start": 233458,
+        "stop": 233998,
+        "text": " as you just articulated it also builds a dependency on Microsoft well no the"
+      },
+      {
+        "start": 233998,
+        "stop": 234386,
+        "text": " Microsoft dependency is not a given right I know you could you could but most"
+      },
+      {
+        "start": 234386,
+        "stop": 234676,
+        "text": " hardware manufacturers don't even allow you to load your own keys the ones that"
+      },
+      {
+        "start": 234676,
+        "stop": 234952,
+        "text": " do you could yeah the ones that you do and some of them are buggy where you"
+      },
+      {
+        "start": 234952,
+        "stop": 235448,
+        "text": " could break everything by by doing that like it's the the the the crux of the"
+      },
+      {
+        "start": 235448,
+        "stop": 235874,
+        "text": " issue is that if you actually want to do this properly you basically need custom"
+      },
+      {
+        "start": 235874,
+        "stop": 236274,
+        "text": " boot BIOS firmware too because you have to guarantee that you can articulate the"
+      },
+      {
+        "start": 236274,
+        "stop": 236582,
+        "text": " security at that level now this makes the assumption that your firmware is good"
+      },
+      {
+        "start": 236582,
+        "stop": 236886,
+        "text": " your CPU is good and and all that fun stuff but you can't make that assumption"
+      },
+      {
+        "start": 236886,
+        "stop": 237442,
+        "text": " because it's usually not yeah it's not yeah never is right so like that's not"
+      },
+      {
+        "start": 237442,
+        "stop": 237846,
+        "text": " to say that we shouldn't try to strive for more security in this stuff and TPM"
+      },
+      {
+        "start": 237846,
+        "stop": 238426,
+        "text": " is actually like it take aside the UKI stuff you could do this TPM asserts on"
+      },
+      {
+        "start": 238426,
+        "stop": 238886,
+        "text": " on things to to better protect the system you can also do an indirect trust"
+      },
+      {
+        "start": 238886,
+        "stop": 239426,
+        "text": " by say alright your your init remfs has been checksum and verified and you store"
+      },
+      {
+        "start": 239426,
+        "stop": 239936,
+        "text": " the verification in on the ESP and the bootloader then verifies that part and"
+      },
+      {
+        "start": 239936,
+        "stop": 240250,
+        "text": " checks it to make sure that it hasn't been tampered with and the bootloader"
+      },
+      {
+        "start": 240250,
+        "stop": 240656,
+        "text": " image itself is regenerated to include the checksum inside the binary that's"
+      },
+      {
+        "start": 240656,
+        "stop": 241012,
+        "text": " you've just you've just described the Nix OS boot spec that's a research"
+      },
+      {
+        "start": 241012,
+        "stop": 241322,
+        "text": " project to do this right so then if you go further down the road then you want"
+      },
+      {
+        "start": 241322,
+        "stop": 241638,
+        "text": " to have your root file system locked down with that you want to have FS"
+      },
+      {
+        "start": 241638,
+        "stop": 242038,
+        "text": " Verity or something like that which then has authenticity you see you do"
+      },
+      {
+        "start": 242038,
+        "stop": 242382,
+        "text": " authentication to verify the integrity of the file system so all your operating"
+      },
+      {
+        "start": 242382,
+        "stop": 242754,
+        "text": " system components are verified against the distro key are imbued into the file"
+      },
+      {
+        "start": 242754,
+        "stop": 243110,
+        "text": " system and that's trusted by the Linux kernel through something you could also"
+      },
+      {
+        "start": 243110,
+        "stop": 243518,
+        "text": " do IMA to do other things you can have a kernel key ring of all these components"
+      },
+      {
+        "start": 243518,
+        "stop": 243854,
+        "text": " all files that are verified with that you can eat there are a lot of different"
+      },
+      {
+        "start": 243854,
+        "stop": 244246,
+        "text": " ways to do this to solve this problem okay so you're convincing me that this"
+      },
+      {
+        "start": 244246,
+        "stop": 244830,
+        "text": " isn't necessarily the only way to solve this so I've noticed a much stronger"
+      },
+      {
+        "start": 244830,
+        "stop": 245270,
+        "text": " than typical reaction of this is Microsoft because now Linart works at"
+      },
+      {
+        "start": 245270,
+        "stop": 245674,
+        "text": " Microsoft this is Microsoft just embracing and extending and everybody's"
+      },
+      {
+        "start": 245674,
+        "stop": 246070,
+        "text": " conspiracy theories about system D and Linart were true all along I've seen"
+      },
+      {
+        "start": 246070,
+        "stop": 246514,
+        "text": " memes about it already told you you know so this is definitely not a Microsoft"
+      },
+      {
+        "start": 246514,
+        "stop": 246934,
+        "text": " thing because I can tell you that Linart's been complaining about this for"
+      },
+      {
+        "start": 246934,
+        "stop": 247310,
+        "text": " like ten years now he's been complaining about this on the door of mailu lists"
+      },
+      {
+        "start": 247310,
+        "stop": 247682,
+        "text": " for god knows how long he's been complaining about it in system D mailing"
+      },
+      {
+        "start": 247682,
+        "stop": 248070,
+        "text": " list for even longer he's been pushing everybody to use the system D boot even"
+      },
+      {
+        "start": 248070,
+        "stop": 248498,
+        "text": " though the user experience of SD boot is kind of crap and it just makes it so"
+      },
+      {
+        "start": 248498,
+        "stop": 248926,
+        "text": " like he's not making any friends with this proposal because he doesn't know"
+      },
+      {
+        "start": 248926,
+        "stop": 249306,
+        "text": " how to cult how to communicate that yeah and the other people that are actually"
+      },
+      {
+        "start": 249306,
+        "stop": 249538,
+        "text": " signed on to this like if you look at the bottom blog post there's a number of"
+      },
+      {
+        "start": 249538,
+        "stop": 249826,
+        "text": " people who are also signed on to this some of them actually do a much better"
+      },
+      {
+        "start": 249826,
+        "stop": 250146,
+        "text": " job of communicating the value problem this and I certainly understand it I"
+      },
+      {
+        "start": 250146,
+        "stop": 250526,
+        "text": " work at a company where I help build freaking edge devices I of course see"
+      },
+      {
+        "start": 250526,
+        "stop": 250870,
+        "text": " the value of this but I also have to work with said edge devices that have"
+      },
+      {
+        "start": 250870,
+        "stop": 251358,
+        "text": " broken UEFI and can't actually do this correctly and the TPM doesn't work the"
+      },
+      {
+        "start": 251358,
+        "stop": 251778,
+        "text": " way it's supposed to and like the CPU just it bugs out all the time so like"
+      },
+      {
+        "start": 251778,
+        "stop": 252290,
+        "text": " what am I supposed to do I don't know it makes me realize though that if system"
+      },
+      {
+        "start": 252290,
+        "stop": 252766,
+        "text": " D were to start life today Linart were to start system D at Microsoft"
+      },
+      {
+        "start": 252766,
+        "stop": 253214,
+        "text": " there's no way it would have gotten the traction it would have immediately been"
+      },
+      {
+        "start": 253214,
+        "stop": 253658,
+        "text": " called out as an embrace and extend technology it never would have taken off"
+      },
+      {
+        "start": 253658,
+        "stop": 254086,
+        "text": " on Linux they would have yeah no like Microsoft is not a company you want to"
+      },
+      {
+        "start": 254086,
+        "stop": 254442,
+        "text": " have started like from a political perspective this is irrespective of what"
+      },
+      {
+        "start": 254442,
+        "stop": 254854,
+        "text": " good or bad or whatever irrespective you you just don't want Microsoft to be"
+      },
+      {
+        "start": 254854,
+        "stop": 255202,
+        "text": " creating Linux technologies because there is a large contingent rightfully"
+      },
+      {
+        "start": 255202,
+        "stop": 255578,
+        "text": " or wrongfully I'm not gonna make a value judgment here that Microsoft can't make"
+      },
+      {
+        "start": 255578,
+        "stop": 256102,
+        "text": " a good technology choice for Linux stuff for the broader ecosystem without"
+      },
+      {
+        "start": 256102,
+        "stop": 256554,
+        "text": " surreptitiously screwing over everyone in the process so I have a question and"
+      },
+      {
+        "start": 256554,
+        "stop": 256838,
+        "text": " this is open to anyone in the mumble room of course open to you too Neil but I"
+      },
+      {
+        "start": 256838,
+        "stop": 257402,
+        "text": " wonder if if this isn't sort of symptomatic of a larger tendency in free"
+      },
+      {
+        "start": 257402,
+        "stop": 257698,
+        "text": " software development where the engineers the bright people are always trying to"
+      },
+      {
+        "start": 257698,
+        "stop": 258018,
+        "text": " build these really next advanced systems and these complicated ways of doing"
+      },
+      {
+        "start": 258018,
+        "stop": 258402,
+        "text": " things that are so great but when you look at the fundamental like pragmatic"
+      },
+      {
+        "start": 258402,
+        "stop": 258850,
+        "text": " ways we could improve Linux security I was just taking a quick little look skis"
+      },
+      {
+        "start": 258850,
+        "stop": 259470,
+        "text": " through the system D github open issues and pull requests they have almost 1800"
+      },
+      {
+        "start": 259470,
+        "stop": 259866,
+        "text": " open issues right now 209 of those are labeled as bugs some of those could be"
+      },
+      {
+        "start": 259866,
+        "stop": 260294,
+        "text": " security issues 22 are labeled as needing total rework there's even more"
+      },
+      {
+        "start": 260294,
+        "stop": 260670,
+        "text": " that are labeled as needing like complete re-architecting there's a hundred"
+      },
+      {
+        "start": 260670,
+        "stop": 260942,
+        "text": " ninety seven different labels that describe the various different issues"
+      },
+      {
+        "start": 260942,
+        "stop": 261318,
+        "text": " that people are having with different problems on system D one of the most"
+      },
+      {
+        "start": 261318,
+        "stop": 261818,
+        "text": " recent ones today issue number twenty five thousand one hundred and sixty our"
+      },
+      {
+        "start": 261818,
+        "stop": 262230,
+        "text": " syslog takes a hundred percent of CPU on cysts on certain systems with system D"
+      },
+      {
+        "start": 262230,
+        "stop": 262650,
+        "text": " when they interact with each other hundred percent CPU that probably doesn't"
+      },
+      {
+        "start": 262650,
+        "stop": 262978,
+        "text": " leave your system in a very good state that probably exposes it to security at"
+      },
+      {
+        "start": 262978,
+        "stop": 263402,
+        "text": " issues as well it's like we don't look internally at the things that we could"
+      },
+      {
+        "start": 263402,
+        "stop": 263742,
+        "text": " improve the obvious problems in front of us instead it's always like well what's"
+      },
+      {
+        "start": 263742,
+        "stop": 264286,
+        "text": " the next big pie in the sky idea what's the next big thing instead of just"
+      },
+      {
+        "start": 264286,
+        "stop": 264750,
+        "text": " looking at the open issues and going well you know if I fixed a couple of"
+      },
+      {
+        "start": 264750,
+        "stop": 265110,
+        "text": " hundred of these or if we focused on a couple of these we could just"
+      },
+      {
+        "start": 265110,
+        "stop": 265410,
+        "text": " dramatically improve security for multiple distributions across the board"
+      },
+      {
+        "start": 265410,
+        "stop": 265862,
+        "text": " because so many people now are shipping system D what is this tendency this"
+      },
+      {
+        "start": 265862,
+        "stop": 266226,
+        "text": " tendency is it's not fun is it just that because that just seems like such a so"
+      },
+      {
+        "start": 266226,
+        "stop": 266766,
+        "text": " Lenart at the core of it is an architect he wants to build he wants to build"
+      },
+      {
+        "start": 266766,
+        "stop": 267442,
+        "text": " architectures that align with what he believes are important personal theory"
+      },
+      {
+        "start": 267442,
+        "stop": 267870,
+        "text": " crafting thing here is I think one of the reasons he went to Microsoft is"
+      },
+      {
+        "start": 267870,
+        "stop": 268310,
+        "text": " because as part of the Azure Linux team he's working on CBL mariner and he gets"
+      },
+      {
+        "start": 268310,
+        "stop": 268750,
+        "text": " to do this he gets to be an architect to build out what he believes is the dream"
+      },
+      {
+        "start": 268750,
+        "stop": 269106,
+        "text": " vision of a legacy free Linux system and I'm curious to see it because I think"
+      },
+      {
+        "start": 269106,
+        "stop": 269446,
+        "text": " he's an intelligent individual I don't mind sure I mean it's not he's not always"
+      },
+      {
+        "start": 269446,
+        "stop": 269830,
+        "text": " wrong or actually even most of time he's not wrong he does a really good job and"
+      },
+      {
+        "start": 269830,
+        "stop": 270154,
+        "text": " he comes up with things and he solves hard problems but one of the things that"
+      },
+      {
+        "start": 270154,
+        "stop": 270610,
+        "text": " he's struggled with you know and and many of the and this is true of many of"
+      },
+      {
+        "start": 270610,
+        "stop": 270962,
+        "text": " the community I could name many many people and I I'm subject to this"
+      },
+      {
+        "start": 270962,
+        "stop": 271446,
+        "text": " sometimes myself is we don't want to think about what it takes to account for"
+      },
+      {
+        "start": 271446,
+        "stop": 271798,
+        "text": " the real world when we want to solve a problem we don't want to think about"
+      },
+      {
+        "start": 271798,
+        "stop": 272198,
+        "text": " what it takes to adapt to the ugly messes that we already have today we"
+      },
+      {
+        "start": 272198,
+        "stop": 272774,
+        "text": " don't want to think about how do we build something where we minimize the"
+      },
+      {
+        "start": 272774,
+        "stop": 273298,
+        "text": " pain to stakeholders around us to make things better a good example of this is"
+      },
+      {
+        "start": 273298,
+        "stop": 273698,
+        "text": " how we've gone around with sandboxing like sandboxing applications didn't"
+      },
+      {
+        "start": 273698,
+        "stop": 273942,
+        "text": " require us to change the way we delivered applications in the first"
+      },
+      {
+        "start": 273942,
+        "stop": 274302,
+        "text": " place but we tied the two together because that made it more interesting"
+      },
+      {
+        "start": 274302,
+        "stop": 274582,
+        "text": " and it was more disruptive and it meant that you could do more breaking things"
+      },
+      {
+        "start": 274582,
+        "stop": 275050,
+        "text": " but we didn't have to do that neither Microsoft or Apple did there are various"
+      },
+      {
+        "start": 275050,
+        "stop": 275422,
+        "text": " ways that you could implement sandboxing without having to do that there are all"
+      },
+      {
+        "start": 275422,
+        "stop": 275914,
+        "text": " kinds of other things out there that we could have done like the you know people"
+      },
+      {
+        "start": 275914,
+        "stop": 276254,
+        "text": " are just not interested in working on the problems that we have today they"
+      },
+      {
+        "start": 276254,
+        "stop": 276550,
+        "text": " want to work on the problems we might have tomorrow because those are more"
+      },
+      {
+        "start": 276550,
+        "stop": 276986,
+        "text": " interesting or more fun or more greenfield or whatever nobody likes"
+      },
+      {
+        "start": 276986,
+        "stop": 277350,
+        "text": " working on brownfield projects everyone wants to work on a greenfield one what"
+      },
+      {
+        "start": 277350,
+        "stop": 277994,
+        "text": " it sounds like to me is if this were say executed on to the degree that Lenart"
+      },
+      {
+        "start": 277994,
+        "stop": 278330,
+        "text": " outlines which we have a link to his blog post in the show notes it would"
+      },
+      {
+        "start": 278330,
+        "stop": 278754,
+        "text": " kind of seem like essentially the default bar would be Linux could only"
+      },
+      {
+        "start": 278754,
+        "stop": 279146,
+        "text": " boot on systems that can also boot Windows 11 like you know that mark that"
+      },
+      {
+        "start": 279146,
+        "stop": 279614,
+        "text": " Microsoft made that Windows 11 Linux would be held in that I mean talk about"
+      },
+      {
+        "start": 279614,
+        "stop": 279930,
+        "text": " like we talked about eliminating 32-bit support or we talked about eliminating"
+      },
+      {
+        "start": 279930,
+        "stop": 280394,
+        "text": " 486 architecture support talk about eliminating a lot of users and then on"
+      },
+      {
+        "start": 280394,
+        "stop": 280838,
+        "text": " the ARM side of the world secure boot often can't even be disabled like on x86"
+      },
+      {
+        "start": 280838,
+        "stop": 281242,
+        "text": " you can sometime turn that stuff off but you can't on the ARM devices in most"
+      },
+      {
+        "start": 281242,
+        "stop": 281830,
+        "text": " cases and so as things transition to ARM by default you can't you generally can't"
+      },
+      {
+        "start": 281830,
+        "stop": 282138,
+        "text": " add your own keys if you can't add your own keys you potentially open yourself"
+      },
+      {
+        "start": 282138,
+        "stop": 282442,
+        "text": " up for the vulnerability of malware being able to add your own keys you also"
+      },
+      {
+        "start": 282442,
+        "stop": 282770,
+        "text": " can't remove the Microsoft keys without breaking the system even if it's"
+      },
+      {
+        "start": 282770,
+        "stop": 283106,
+        "text": " important that's awful because like think about this something people don't"
+      },
+      {
+        "start": 283106,
+        "stop": 283490,
+        "text": " realize is that Microsoft's third-party and primary certs are actually used to"
+      },
+      {
+        "start": 283490,
+        "stop": 283934,
+        "text": " sign option ROMs and things for the hardware that's on the system and so for"
+      },
+      {
+        "start": 283934,
+        "stop": 284314,
+        "text": " example booting network Ethernet the network Ethernet option ROM has to be"
+      },
+      {
+        "start": 284314,
+        "stop": 284702,
+        "text": " signed by Microsoft if you remove the Microsoft certificate the Ethernet"
+      },
+      {
+        "start": 284702,
+        "stop": 285334,
+        "text": " hardware fails to initialize and in servers video option ROM has the same"
+      },
+      {
+        "start": 285334,
+        "stop": 285754,
+        "text": " problem you know what it sounds like it sounds like Mac OS exactly it is it's"
+      },
+      {
+        "start": 285754,
+        "stop": 286274,
+        "text": " the same it's the same setup and generally computers are moving in this"
+      },
+      {
+        "start": 286274,
+        "stop": 286710,
+        "text": " direction because in the proprietary systems you don't have any other way of"
+      },
+      {
+        "start": 286710,
+        "stop": 287162,
+        "text": " securing the platform so is this the path that we inevitably set ourselves on when"
+      },
+      {
+        "start": 287162,
+        "stop": 287646,
+        "text": " we accepted system D into our lives no this was the path we set ourselves upon"
+      },
+      {
+        "start": 287646,
+        "stop": 288098,
+        "text": " when we didn't have any stakeholders of the Linux community involved in the UEFI"
+      },
+      {
+        "start": 288098,
+        "stop": 288622,
+        "text": " process yes right very much so I completely agree because I mean it"
+      },
+      {
+        "start": 288622,
+        "stop": 289078,
+        "text": " starts with simple things like you if I mandates PE binaries that doesn't even"
+      },
+      {
+        "start": 289078,
+        "stop": 289554,
+        "text": " make sense because PE is one of the more complex binary formats but it's the one"
+      },
+      {
+        "start": 289554,
+        "stop": 289902,
+        "text": " that's used in that yeah that's a Microsoft thing yeah right the second"
+      },
+      {
+        "start": 289902,
+        "stop": 290632,
+        "text": " thing is we have to the the PE system the UEFI system has specific"
+      },
+      {
+        "start": 290632,
+        "stop": 290994,
+        "text": " requirements and structures that essentially force little endian well"
+      },
+      {
+        "start": 290994,
+        "stop": 291318,
+        "text": " what about big endian architectures what about you know power what about"
+      },
+      {
+        "start": 291318,
+        "stop": 291844,
+        "text": " systems II like why can't they use you think well because they because you EFI"
+      },
+      {
+        "start": 291844,
+        "stop": 292348,
+        "text": " is little endian because it was written for itanium and x86 originally all other"
+      },
+      {
+        "start": 292348,
+        "stop": 292662,
+        "text": " architectures support you if I need to be a little endian but those also are"
+      },
+      {
+        "start": 292662,
+        "stop": 292888,
+        "text": " all the same architectures that only Windows supports because Windows doesn't"
+      },
+      {
+        "start": 292888,
+        "stop": 293404,
+        "text": " support any beginning architectures anymore and other choices are based on"
+      },
+      {
+        "start": 293404,
+        "stop": 293910,
+        "text": " the people that are actually involved in the project red hat and SUSE and all"
+      },
+      {
+        "start": 293910,
+        "stop": 294256,
+        "text": " these other companies they got involved in the UEFI stuff way too late it was"
+      },
+      {
+        "start": 294256,
+        "stop": 294710,
+        "text": " just Apple and Intel and a couple of others up front and HP and a few others"
+      },
+      {
+        "start": 294710,
+        "stop": 294998,
+        "text": " up front initially and of course what they chose were the ones that they were"
+      },
+      {
+        "start": 294998,
+        "stop": 295398,
+        "text": " working with and because of that we're stuck with this long legacy of choices"
+      },
+      {
+        "start": 295398,
+        "stop": 295916,
+        "text": " that make it harder for the Linux side to actually like really be part of this"
+      },
+      {
+        "start": 295916,
+        "stop": 296450,
+        "text": " story there are there's basic there's no innovation in in the in the boot space"
+      },
+      {
+        "start": 296450,
+        "stop": 296780,
+        "text": " from the Linux side because they're campy you know what I like about you when"
+      },
+      {
+        "start": 296780,
+        "stop": 297138,
+        "text": " you visit Neil is you always drop the member berries you know like oh yeah I'd"
+      },
+      {
+        "start": 297138,
+        "stop": 297450,
+        "text": " forgotten about that whole way the UEFI thing went down it really did start with"
+      },
+      {
+        "start": 297450,
+        "stop": 297790,
+        "text": " Apple and Intel and they brought a few others in the Linux folks basically"
+      },
+      {
+        "start": 297790,
+        "stop": 298210,
+        "text": " didn't get involved until everything was set we didn't the Linux world didn't"
+      },
+      {
+        "start": 298210,
+        "stop": 298718,
+        "text": " start getting involved until I think it was like 2008-9 that was when Matthew"
+      },
+      {
+        "start": 298718,
+        "stop": 299226,
+        "text": " Garrett started working on is because Microsoft with Windows 8 started ship"
+      },
+      {
+        "start": 299226,
+        "stop": 299714,
+        "text": " having PC makers to secure boot and then people flipped out over it because like"
+      },
+      {
+        "start": 299714,
+        "stop": 300114,
+        "text": " initially you couldn't boot Linux systems by the way almost 15 years later"
+      },
+      {
+        "start": 300114,
+        "stop": 300422,
+        "text": " we are now getting laptops were by default you can't boot Linux on them"
+      },
+      {
+        "start": 300422,
+        "stop": 300778,
+        "text": " because the third you if I third-party certificate is now turned off oh I've"
+      },
+      {
+        "start": 300778,
+        "stop": 301228,
+        "text": " known or not installed by default on on quote-unquote secured core which are all"
+      },
+      {
+        "start": 301228,
+        "stop": 301868,
+        "text": " systems that I think 12th gen Intel and rise in fifth generation and newer so"
+      },
+      {
+        "start": 301868,
+        "stop": 302322,
+        "text": " like that's a that's a big deal right like you're gonna have her fourth"
+      },
+      {
+        "start": 302322,
+        "stop": 302658,
+        "text": " generation rise and I forget what the rise in general for 5,000 series"
+      },
+      {
+        "start": 302658,
+        "stop": 303084,
+        "text": " whatever anyway point is that's happening and like I actually had to"
+      },
+      {
+        "start": 303084,
+        "stop": 303482,
+        "text": " help somebody just last week saying I'm trying to get the door to boot on this"
+      },
+      {
+        "start": 303482,
+        "stop": 303936,
+        "text": " laptop it's like hold up you have a yoga don't you all right go into the boot"
+      },
+      {
+        "start": 303936,
+        "stop": 304434,
+        "text": " loader turn on the UEFI third parties third party certificate because that was"
+      },
+      {
+        "start": 304434,
+        "stop": 304878,
+        "text": " true that's not on and that's why it doesn't boot and and and that nobody"
+      },
+      {
+        "start": 304878,
+        "stop": 305448,
+        "text": " knows that nobody knows that that's a thing and it basically invalidates the"
+      },
+      {
+        "start": 305448,
+        "stop": 305790,
+        "text": " whole reason we went through all this crap to do secure boot support in the"
+      },
+      {
+        "start": 305790,
+        "stop": 306204,
+        "text": " first place but we can't not do it because if because removing Microsoft"
+      },
+      {
+        "start": 306204,
+        "stop": 306484,
+        "text": " certificates by the way this actually recommends that you remove the Microsoft"
+      },
+      {
+        "start": 306484,
+        "stop": 306902,
+        "text": " certs when you're securing something for high security environments but in order"
+      },
+      {
+        "start": 306902,
+        "stop": 307146,
+        "text": " to do that you have to do all kinds of other crazy things to make sure that the"
+      },
+      {
+        "start": 307146,
+        "stop": 307576,
+        "text": " system still boots afterwards but like in order to do proper security with"
+      },
+      {
+        "start": 307576,
+        "stop": 307956,
+        "text": " secure boot you have to remove the Microsoft trust and put your own but in"
+      },
+      {
+        "start": 307956,
+        "stop": 308516,
+        "text": " most computers especially consumer ones doing so bricks them permanently"
+      },
+      {
+        "start": 308600,
+        "stop": 309104,
+        "text": " Linode comm slash unplugged go there to get a hundred dollars in 60-day credit"
+      },
+      {
+        "start": 309104,
+        "stop": 309364,
+        "text": " on a new account and it's just a great way to support the show while you're"
+      },
+      {
+        "start": 309364,
+        "stop": 309796,
+        "text": " really trying out the Linode platform Linode is fast reliable cloud hosting"
+      },
+      {
+        "start": 309796,
+        "stop": 310156,
+        "text": " with really the best support in the business because Linode is architected"
+      },
+      {
+        "start": 310156,
+        "stop": 310508,
+        "text": " differently they're built around a great product that had to do well in the"
+      },
+      {
+        "start": 310508,
+        "stop": 310880,
+        "text": " marketplace and they had to actually compete for their customers by making"
+      },
+      {
+        "start": 310880,
+        "stop": 311424,
+        "text": " something they'd want to use and so in that they have created a fantastic"
+      },
+      {
+        "start": 311424,
+        "stop": 311844,
+        "text": " support department that's available 365 the first person you contact is the"
+      },
+      {
+        "start": 311844,
+        "stop": 312236,
+        "text": " person who resolves it they don't have to like do that silly game of escalation"
+      },
+      {
+        "start": 312236,
+        "stop": 312704,
+        "text": " but let's be real on the big hyperscaler platforms the support situation is"
+      },
+      {
+        "start": 312704,
+        "stop": 313184,
+        "text": " obtuse it's a nightmare it's opaque it's awful and it always starts with a chat"
+      },
+      {
+        "start": 313184,
+        "stop": 313654,
+        "text": " bot so Linode is a little differently because their product had to be great so"
+      },
+      {
+        "start": 313654,
+        "stop": 314184,
+        "text": " the systems are fast the dashboard is fantastic the API is clear and easy to"
+      },
+      {
+        "start": 314184,
+        "stop": 314512,
+        "text": " implement the infrastructure management tools or whatever you want to use"
+      },
+      {
+        "start": 314512,
+        "stop": 314964,
+        "text": " kubernetes terraform ansible yeah it all works and they managed to do it while"
+      },
+      {
+        "start": 314964,
+        "stop": 315280,
+        "text": " they're 30 to 50 percent cheaper than the hyperscale is it just want to lock"
+      },
+      {
+        "start": 315280,
+        "stop": 315744,
+        "text": " into their crazy platform that they like to pretend they invented but on top of"
+      },
+      {
+        "start": 315744,
+        "stop": 316172,
+        "text": " that the performance is just fantastic it's so good I've had an opportunity to"
+      },
+      {
+        "start": 316172,
+        "stop": 316458,
+        "text": " try out their GPU rigs I've had an opportunity to try out their dedicated"
+      },
+      {
+        "start": 316458,
+        "stop": 317076,
+        "text": " CPU systems their monster systems I've got a matrix box with like 48 CPU cores"
+      },
+      {
+        "start": 317076,
+        "stop": 317560,
+        "text": " and something like 96 or 128 gigs of RAM it's in the category of likes the number"
+      },
+      {
+        "start": 317560,
+        "stop": 318076,
+        "text": " so high that it just doesn't really even make sense anymore and then the"
+      },
+      {
+        "start": 318076,
+        "stop": 318476,
+        "text": " performance is insane and we started that at a tiny little system a tiny"
+      },
+      {
+        "start": 318476,
+        "stop": 318896,
+        "text": " little two core box with 8 gigs of RAM or something like that that we just"
+      },
+      {
+        "start": 318896,
+        "stop": 319364,
+        "text": " scaled up over time as our matrix user base needed it I couldn't have done that"
+      },
+      {
+        "start": 319364,
+        "stop": 319704,
+        "text": " with the physical box I may have if I built something I may have started with"
+      },
+      {
+        "start": 319704,
+        "stop": 320144,
+        "text": " something a little more powerful than two cores and 8 gigs of RAM but within a"
+      },
+      {
+        "start": 320144,
+        "stop": 320560,
+        "text": " few months I have way way way outstripped what I would have been able to afford to"
+      },
+      {
+        "start": 320560,
+        "stop": 321124,
+        "text": " build and I just did it incrementally as our user demand required it it was"
+      },
+      {
+        "start": 321124,
+        "stop": 321452,
+        "text": " really simple to use their tools to do that plus we have backups and snapshots"
+      },
+      {
+        "start": 321452,
+        "stop": 321744,
+        "text": " they got 11 data centers for you to choose from they're bringing on a whole"
+      },
+      {
+        "start": 321744,
+        "stop": 322208,
+        "text": " bunch more next year so go build something go learn about something it's"
+      },
+      {
+        "start": 322208,
+        "stop": 322540,
+        "text": " a great way to try out an open source project on incredibly fast hardware go"
+      },
+      {
+        "start": 322540,
+        "stop": 322836,
+        "text": " try it for yourself with that hundred dollars really kick the tires linode.com/unplugged"
+      },
+      {
+        "start": 322836,
+        "stop": 323276,
+        "text": " where you go supports the show and you get that $100 linode.com/unplugged"
+      },
+      {
+        "start": 323276,
+        "stop": 324044,
+        "text": " we got some emails into the show this week Matthew wrote in"
+      },
+      {
+        "start": 324044,
+        "stop": 324780,
+        "text": " he loves Nix OS he says oh my god oh my god oh my god oh my god Nix OS oh my god"
+      },
+      {
+        "start": 324780,
+        "stop": 325144,
+        "text": " oh my god oh my god oh my god now I just wanted to shoot you an email to thank"
+      },
+      {
+        "start": 325144,
+        "stop": 325596,
+        "text": " you for Nix OS I finally pulled the pin out and just Wow just Wow I never have to"
+      },
+      {
+        "start": 325596,
+        "stop": 325956,
+        "text": " fully configure the system again I believe the Nix OS challenge was a"
+      },
+      {
+        "start": 325956,
+        "stop": 326412,
+        "text": " screenshot of H top well here is my screenshot from inside Terminator oh"
+      },
+      {
+        "start": 326412,
+        "stop": 326924,
+        "text": " that's great also I noticed the host name I'm loving that host name"
+      },
+      {
+        "start": 326924,
+        "stop": 327488,
+        "text": " Picard at Enterprise call yourself captain Picard that's so funny that's so"
+      },
+      {
+        "start": 327488,
+        "stop": 328030,
+        "text": " funny I know I know I know not everybody Neil loves Nix OS but and that's why"
+      },
+      {
+        "start": 328030,
+        "stop": 328606,
+        "text": " that's why every week my personal struggle is not to make the episode"
+      },
+      {
+        "start": 328606,
+        "stop": 329062,
+        "text": " about Nix OS that's my that's my battle that's my burden and I take that and I"
+      },
+      {
+        "start": 329062,
+        "stop": 329640,
+        "text": " try not to make every episode about Nix OS but behind the scenes I'm still"
+      },
+      {
+        "start": 329640,
+        "stop": 330264,
+        "text": " freaking out. Lil Palm wrote in and says I have a suggestion for the cupboard"
+      },
+      {
+        "start": 330264,
+        "stop": 330840,
+        "text": " display in Jupes so I want to install a like a tablet or a touchscreen in my"
+      },
+      {
+        "start": 330840,
+        "stop": 331184,
+        "text": " cupboard and because this particular cupboard that I want to install"
+      },
+      {
+        "start": 331184,
+        "stop": 331494,
+        "text": " actually has an outlet in the back of it and I want to have the Jupes home"
+      },
+      {
+        "start": 331494,
+        "stop": 332044,
+        "text": " assistant dashboard kind of embedded into this cupboard so they write to make"
+      },
+      {
+        "start": 332044,
+        "stop": 332502,
+        "text": " it an appliance you should use the nerves project a kiosk nerve systems for"
+      },
+      {
+        "start": 332502,
+        "stop": 332892,
+        "text": " the Raspberry Pi or three is available you can configure the kiosk system to go"
+      },
+      {
+        "start": 332892,
+        "stop": 333386,
+        "text": " to a URL in a web view on boot nerves is a project for creating a Linux based"
+      },
+      {
+        "start": 333386,
+        "stop": 333896,
+        "text": " firmware the boots oh cool elixir and Erlang it's in a little VM it's made for"
+      },
+      {
+        "start": 333896,
+        "stop": 334318,
+        "text": " embedded stuff and I suppose if I was an elixir guy I'd probably love that he"
+      },
+      {
+        "start": 334318,
+        "stop": 334614,
+        "text": " says but you can ignore the elixir stuff and just have a display the home"
+      },
+      {
+        "start": 334614,
+        "stop": 335038,
+        "text": " assistant dashboard now you're talking my language that's great Lil Palm I"
+      },
+      {
+        "start": 335038,
+        "stop": 335546,
+        "text": " currently use wall panel I think it is on Android tablets I might have that"
+      },
+      {
+        "start": 335546,
+        "stop": 335948,
+        "text": " name wrong I think it's wall panel though and that's also just basically a"
+      },
+      {
+        "start": 335948,
+        "stop": 336424,
+        "text": " kiosk web browser and I plug that in to the home assistant dashboard URL and"
+      },
+      {
+        "start": 336424,
+        "stop": 336792,
+        "text": " because I'm a fancy boy I have different dashboards for like different things"
+      },
+      {
+        "start": 336792,
+        "stop": 337172,
+        "text": " like I have a heating dashboard I have a lighting dashboard I have electrical use"
+      },
+      {
+        "start": 337172,
+        "stop": 337508,
+        "text": " dashboard and I got like an admin dashboard because you know dashboard for"
+      },
+      {
+        "start": 337508,
+        "stop": 338084,
+        "text": " days it's my thing so different tablets point to different dashboards so like"
+      },
+      {
+        "start": 338084,
+        "stop": 338564,
+        "text": " heating and energy and lighting and man if that system doesn't work great I"
+      },
+      {
+        "start": 338564,
+        "stop": 338924,
+        "text": " don't know what does but the problem is is that Android tablets are crap they're"
+      },
+      {
+        "start": 338924,
+        "stop": 339568,
+        "text": " just crap and they just get junkier over time and then to make matters worse I'm"
+      },
+      {
+        "start": 339568,
+        "stop": 339948,
+        "text": " buying the cheapest ones I can because I'm plugging these things in 24/7 and"
+      },
+      {
+        "start": 339948,
+        "stop": 340258,
+        "text": " mounting them on the wall and just displaying a web page I'm not like"
+      },
+      {
+        "start": 340258,
+        "stop": 340520,
+        "text": " playing Angry Birds on the thing you get where I'm going"
+      },
+      {
+        "start": 340520,
+        "stop": 341004,
+        "text": " boost agree we got some boosts into the show true grits boosted in with a trek"
+      },
+      {
+        "start": 341004,
+        "stop": 341644,
+        "text": " boost 1701 sats make it so I'm surprised you guys haven't noticed the reason Wes"
+      },
+      {
+        "start": 341644,
+        "stop": 342176,
+        "text": " is so good with the AI prompts is because Wes is an AI akin to data from"
+      },
+      {
+        "start": 342176,
+        "stop": 342732,
+        "text": " Star Trek now when I hold on this before we go on if that was true true grits"
+      },
+      {
+        "start": 342732,
+        "stop": 343340,
+        "text": " then why isn't Wes here today do artificial life forms get sick I'd say"
+      },
+      {
+        "start": 343340,
+        "stop": 343796,
+        "text": " you could argue either way if it's later Star Trek data is always the one that"
+      },
+      {
+        "start": 343796,
+        "stop": 344144,
+        "text": " isn't affected by like the gas that gets released on the ship or the alien"
+      },
+      {
+        "start": 344144,
+        "stop": 344588,
+        "text": " influence but if it's season 1 episode 2 and everybody's getting drunk and you"
+      },
+      {
+        "start": 344588,
+        "stop": 344988,
+        "text": " know what happened when data and Tasha got drunk well then if you prick him"
+      },
+      {
+        "start": 344988,
+        "stop": 345356,
+        "text": " does he not bleed so I don't have an answer for you but Josh the techie"
+      },
+      {
+        "start": 345356,
+        "stop": 345792,
+        "text": " boosted in with 500 sats and again it's not the amount anymore it's the it's"
+      },
+      {
+        "start": 345792,
+        "stop": 346272,
+        "text": " just the boost message but I want to get to that more but 500 sats from Josh"
+      },
+      {
+        "start": 346272,
+        "stop": 346588,
+        "text": " techie first time booster here from Florida I tried to listen to the show"
+      },
+      {
+        "start": 346588,
+        "stop": 346956,
+        "text": " each week in between calls and meetings at work thanks Josh I do love to know"
+      },
+      {
+        "start": 346956,
+        "stop": 347476,
+        "text": " how you guys just kind of process and consume the show I'm always curious just"
+      },
+      {
+        "start": 347476,
+        "stop": 348040,
+        "text": " like to picture that the boosts for me personally sats aside because there is"
+      },
+      {
+        "start": 348040,
+        "stop": 348412,
+        "text": " an amount whatever it is you know it could be dollars it could be dog coins"
+      },
+      {
+        "start": 348412,
+        "stop": 348748,
+        "text": " well not really don't send me your dog coins makes I know there's something"
+      },
+      {
+        "start": 348748,
+        "stop": 348986,
+        "text": " real it's like a it's a name it's the episode you're listening to and it's a"
+      },
+      {
+        "start": 348986,
+        "stop": 349372,
+        "text": " message and there's a value attached to it it take it's it's more it's it's just"
+      },
+      {
+        "start": 349372,
+        "stop": 349758,
+        "text": " more visceral and so that's why I love them it doesn't have to be some"
+      },
+      {
+        "start": 349758,
+        "stop": 350032,
+        "text": " incredible message he goes on to say thanks to the show I've gotten back in"
+      },
+      {
+        "start": 350032,
+        "stop": 350310,
+        "text": " the Linux community and really enjoyed watching the evolution of links on the"
+      },
+      {
+        "start": 350310,
+        "stop": 350658,
+        "text": " desktop yeah that's quite big quite the show isn't it keep up the great work"
+      },
+      {
+        "start": 350658,
+        "stop": 350968,
+        "text": " look forward to listening to the next episode PS I hope you put Nick's OS with"
+      },
+      {
+        "start": 350968,
+        "stop": 351472,
+        "text": " better fast on the new office Thalia yeah I haven't ordered it yet I'm just"
+      },
+      {
+        "start": 351472,
+        "stop": 352024,
+        "text": " been too busy but I'm going to and I have been reliably informed and Intel"
+      },
+      {
+        "start": 352024,
+        "stop": 352538,
+        "text": " Arc GPU is inbound so I may have an update on that next week trolley the"
+      },
+      {
+        "start": 352538,
+        "stop": 352954,
+        "text": " hellhound boosted it was 7,000 sets"
+      },
+      {
+        "start": 352968,
+        "stop": 353414,
+        "text": " this is my first boost ever here to congratulate you all on the new website"
+      },
+      {
+        "start": 353414,
+        "stop": 353898,
+        "text": " hope you have better luck on your road trips in the future and the tech and for"
+      },
+      {
+        "start": 353898,
+        "stop": 354340,
+        "text": " podcasting 2.0 a podcast I worked on and got caught up on was in I heart media"
+      },
+      {
+        "start": 354340,
+        "stop": 354846,
+        "text": " blitz oh it was about the show Firefly didn't last too long after that but I"
+      },
+      {
+        "start": 354846,
+        "stop": 355134,
+        "text": " wanted to throw a curveball question to see if you guys know of a program I can"
+      },
+      {
+        "start": 355134,
+        "stop": 355578,
+        "text": " try what is a good open source alternative to kit scenarios which I"
+      },
+      {
+        "start": 355578,
+        "stop": 355986,
+        "text": " think is a screenwriting app the problem is the program I have doesn't resize"
+      },
+      {
+        "start": 355986,
+        "stop": 356306,
+        "text": " well the budget is zero so if you know out there of an open source screen"
+      },
+      {
+        "start": 356306,
+        "stop": 356660,
+        "text": " writing app please put the name of it in the matrix chat or boost it in out there"
+      },
+      {
+        "start": 356660,
+        "stop": 357046,
+        "text": " and then they did follow up with an additional 777 SAT so the slot machine"
+      },
+      {
+        "start": 357046,
+        "stop": 357514,
+        "text": " boost is for seven thousand seven hundred and seventy seven sets right you"
+      },
+      {
+        "start": 357514,
+        "stop": 357950,
+        "text": " get it it's like seven seven sevens on a slot machine followed it up with 777"
+      },
+      {
+        "start": 357950,
+        "stop": 358418,
+        "text": " sats to just round it all out if you want smart tech without Linus tech tips"
+      },
+      {
+        "start": 358418,
+        "stop": 358926,
+        "text": " and the hype you could listen to Linux unplugged wow I didn't say it I didn't"
+      },
+      {
+        "start": 358926,
+        "stop": 359562,
+        "text": " say it we got a row of ducks from BHH 32 this old duck still got it I want to see"
+      },
+      {
+        "start": 359562,
+        "stop": 359902,
+        "text": " how much the steam deck is a success story for our community I finally got"
+      },
+      {
+        "start": 359902,
+        "stop": 360406,
+        "text": " mine last month and it's going to be my go-to gaming device now I'm choosing"
+      },
+      {
+        "start": 360406,
+        "stop": 360902,
+        "text": " this over my ps5 the icing on the cake is it on release day Gotham Knights ran"
+      },
+      {
+        "start": 360902,
+        "stop": 361358,
+        "text": " flawlessly this was unheard of in the past and I believe it's still tight it's"
+      },
+      {
+        "start": 361358,
+        "stop": 361742,
+        "text": " still taking Linux to new heights I'm even thinking of selling my console and"
+      },
+      {
+        "start": 361742,
+        "stop": 362406,
+        "text": " going back to strictly PC gaming because of it the stream deck got my oldest"
+      },
+      {
+        "start": 362406,
+        "stop": 362878,
+        "text": " definitely more interested in PC gaming again and he's thinking about things now"
+      },
+      {
+        "start": 362878,
+        "stop": 363306,
+        "text": " in terms of if I get it on Steam then I can play it on my laptop I can play it"
+      },
+      {
+        "start": 363306,
+        "stop": 363802,
+        "text": " on dad's steam deck I can install it on my future computers but if I'm playing"
+      },
+      {
+        "start": 363802,
+        "stop": 364166,
+        "text": " on the iPad I can only do it on Apple's devices if I play on the Nintendo so he"
+      },
+      {
+        "start": 364166,
+        "stop": 364506,
+        "text": " it's it's got him thinking about things in a different way which I think is"
+      },
+      {
+        "start": 364506,
+        "stop": 364962,
+        "text": " really positive and I think it also kind of restored his faith in Linux gaming a"
+      },
+      {
+        "start": 364962,
+        "stop": 365350,
+        "text": " little bit because he was fading because some geometry - game was only available"
+      },
+      {
+        "start": 365350,
+        "stop": 365792,
+        "text": " for Windows or Android or something like that so he his faith was fading and the"
+      },
+      {
+        "start": 365792,
+        "stop": 366102,
+        "text": " deck came along and I think I kind of turned things around for him"
+      },
+      {
+        "start": 366102,
+        "stop": 366702,
+        "text": " calzone 9 boosted with 5,000 sats be oh oh st hello JB I've been holding on to"
+      },
+      {
+        "start": 366702,
+        "stop": 367038,
+        "text": " some sats until I had something thought-provoking to say that's not"
+      },
+      {
+        "start": 367038,
+        "stop": 367402,
+        "text": " happening so just take my sats already you guys do such great work I'm usually"
+      },
+      {
+        "start": 367402,
+        "stop": 367866,
+        "text": " always up-to-date on the latest lup coder and land throw a little self-hosted in"
+      },
+      {
+        "start": 367866,
+        "stop": 368430,
+        "text": " there kelds well thank you and then Mississippi mayhem came in which let's be"
+      },
+      {
+        "start": 368430,
+        "stop": 368838,
+        "text": " honest that would have that would be a great that would be also a really great"
+      },
+      {
+        "start": 368838,
+        "stop": 369154,
+        "text": " boost I should have a missy if anybody wants to clip me a little Mississippi"
+      },
+      {
+        "start": 369154,
+        "stop": 369550,
+        "text": " mayhem boost go ahead the 300 sats to say just a quick peep to let you guys"
+      },
+      {
+        "start": 369550,
+        "stop": 369906,
+        "text": " know I'm still alive having some issues that are making it difficult although I"
+      },
+      {
+        "start": 369906,
+        "stop": 370158,
+        "text": " do want to be involved as a member of the community and boost into the show"
+      },
+      {
+        "start": 370158,
+        "stop": 370596,
+        "text": " maybe next time I'll have something worth reading on air all right stop the"
+      },
+      {
+        "start": 370596,
+        "stop": 370998,
+        "text": " show I got something I got to say to you guys I feel like I've set the"
+      },
+      {
+        "start": 370998,
+        "stop": 371510,
+        "text": " expectations too high just hearing from you and knowing you're out there is"
+      },
+      {
+        "start": 371510,
+        "stop": 372094,
+        "text": " really a lot that's 80 90 percent a great message gets it on air but hearing"
+      },
+      {
+        "start": 372094,
+        "stop": 372450,
+        "text": " from you knowing you're out there knowing you're listening seeing the"
+      },
+      {
+        "start": 372450,
+        "stop": 372834,
+        "text": " boost is sort of like a yes keep going you did a great job that kind of stuff"
+      },
+      {
+        "start": 372834,
+        "stop": 373326,
+        "text": " that is super invaluable to us as a team motivator so don't wait if you have"
+      },
+      {
+        "start": 373326,
+        "stop": 373646,
+        "text": " something don't wait for some great inspiration just say hi and let us know"
+      },
+      {
+        "start": 373646,
+        "stop": 373894,
+        "text": " you're listening and a special thank you because not all the boost you make it in"
+      },
+      {
+        "start": 373894,
+        "stop": 374294,
+        "text": " a couple of more but there's more that gets sent in we are just selecting just"
+      },
+      {
+        "start": 374294,
+        "stop": 374626,
+        "text": " several to read on there we got a hundred stats from the Bosch the bush"
+      },
+      {
+        "start": 374626,
+        "stop": 375010,
+        "text": " definitely would be willing to listen to an AI generated version of our podcast"
+      },
+      {
+        "start": 375010,
+        "stop": 375286,
+        "text": " voices if you don't know what he's referring to check out last week's"
+      },
+      {
+        "start": 375286,
+        "stop": 375818,
+        "text": " episode we also got a 555 stats from nomadic coder 5 I'll be listening"
+      },
+      {
+        "start": 375818,
+        "stop": 376226,
+        "text": " for the next few weeks to hear your take on the odroid h3 experience to get an"
+      },
+      {
+        "start": 376226,
+        "stop": 376642,
+        "text": " idea if I should buy one good nomadic code I hope that's value we can offer to"
+      },
+      {
+        "start": 376642,
+        "stop": 377098,
+        "text": " you I will update you I have a couple of more components arriving I have the"
+      },
+      {
+        "start": 377098,
+        "stop": 377478,
+        "text": " odroid h3 which is a little tiny they call it a Raspberry Pi killer but I"
+      },
+      {
+        "start": 377478,
+        "stop": 378102,
+        "text": " call it a Raspberry Pi alternative that's obviously x86 it's got two SATA"
+      },
+      {
+        "start": 378102,
+        "stop": 378822,
+        "text": " ports it's got an MVME slot and two RAM slots so just like and two gigabit 2.5"
+      },
+      {
+        "start": 378822,
+        "stop": 379282,
+        "text": " gigabit NICs actually so just like it's just a huge upgrade over the pi 4 and"
+      },
+      {
+        "start": 379282,
+        "stop": 379834,
+        "text": " I'm waiting for a SATA cable and an eSATA power cable or whatever they call"
+      },
+      {
+        "start": 379834,
+        "stop": 380074,
+        "text": " them you know the ones that have the weird adapters I'm waiting for that"
+      },
+      {
+        "start": 380074,
+        "stop": 380482,
+        "text": " still but once that arrives I am building my box 20,000 sats came from"
+      },
+      {
+        "start": 380482,
+        "stop": 381062,
+        "text": " Mitch the lead developer over at pod verse dot FM this is sending Bitcoin"
+      },
+      {
+        "start": 381062,
+        "stop": 381390,
+        "text": " boosts to your favorite podcasts with pod verse and I'll be couldn't be easier"
+      },
+      {
+        "start": 381390,
+        "stop": 381966,
+        "text": " and it's all open source go podcasting Thank You Mitch podcasting 2.0 apps are"
+      },
+      {
+        "start": 381966,
+        "stop": 382358,
+        "text": " coming along at a remarkable pace and pod versus one of many they're getting"
+      },
+      {
+        "start": 382358,
+        "stop": 382738,
+        "text": " better every single week if you'd like to boost to the show support new"
+      },
+      {
+        "start": 382738,
+        "stop": 383198,
+        "text": " features support an open podcasting ecosystem go to new podcast apps calm"
+      },
+      {
+        "start": 383198,
+        "stop": 383638,
+        "text": " try one out pod verse is the one we mentioned a lot because it's GPL it's"
+      },
+      {
+        "start": 383638,
+        "stop": 383930,
+        "text": " fully open source it's what we've embedded on our website people love"
+      },
+      {
+        "start": 383930,
+        "stop": 384190,
+        "text": " fountain FM you hear get mentioned all the time because you can earn sats while"
+      },
+      {
+        "start": 384190,
+        "stop": 384626,
+        "text": " you listen of course there's boost CLI if you're a ninja and all of that so go"
+      },
+      {
+        "start": 384626,
+        "stop": 385302,
+        "text": " over to new podcast apps calm and grab one and then say hey two picks this week"
+      },
+      {
+        "start": 385302,
+        "stop": 385794,
+        "text": " one is an honorable mention for Brent he said he submitted even though he"
+      },
+      {
+        "start": 385794,
+        "stop": 386190,
+        "text": " couldn't be here this week and one is going around the internet like crazy so"
+      },
+      {
+        "start": 386190,
+        "stop": 386630,
+        "text": " I really I can't take credit I did technically flag it but you probably"
+      },
+      {
+        "start": 386630,
+        "stop": 386882,
+        "text": " have already heard of it if you've been lurking on the internet in the last week"
+      },
+      {
+        "start": 386882,
+        "stop": 387722,
+        "text": " it's called VHS I got my attention it's actually it's like a gif recorder for"
+      },
+      {
+        "start": 387722,
+        "stop": 388274,
+        "text": " your terminal or a gif your choice so you can do something on the terminal you"
+      },
+      {
+        "start": 388274,
+        "stop": 388622,
+        "text": " know maybe your neo fetch maybe you got a bug you're trying to get the you know"
+      },
+      {
+        "start": 388622,
+        "stop": 388942,
+        "text": " you got the output of the air something like that a build fails whatever you're"
+      },
+      {
+        "start": 388942,
+        "stop": 389318,
+        "text": " trying to capture it maybe logs on your command line and you want to make a gift"
+      },
+      {
+        "start": 389318,
+        "stop": 389918,
+        "text": " gif that you could like toss into a chat well this is the tool that just makes it"
+      },
+      {
+        "start": 389918,
+        "stop": 390566,
+        "text": " happen in seconds you just do like the command and then you add so like so"
+      },
+      {
+        "start": 390566,
+        "stop": 391174,
+        "text": " you're gonna open up a document so you do nano demo tape and then when you're"
+      },
+      {
+        "start": 391174,
+        "stop": 391634,
+        "text": " all done you get the output of that you can give it the size the width you want"
+      },
+      {
+        "start": 391634,
+        "stop": 392030,
+        "text": " you can add some dramatic effect like having it type it all out slowly kind of"
+      },
+      {
+        "start": 392030,
+        "stop": 392794,
+        "text": " like you know hunt for red October text prompting style that's called VHS"
+      },
+      {
+        "start": 392794,
+        "stop": 393358,
+        "text": " you've probably seen this if you haven't you're welcome but the one that like"
+      },
+      {
+        "start": 393358,
+        "stop": 393806,
+        "text": " everybody's talking about even our chat room was talking about before we got"
+      },
+      {
+        "start": 393806,
+        "stop": 394714,
+        "text": " started is ffmpeg dot guide it is finally here build the perfect ffmpeg"
+      },
+      {
+        "start": 394714,
+        "stop": 395914,
+        "text": " command or filter with a graph GUI interface it's so gorgeous"
+      },
+      {
+        "start": 395914,
+        "stop": 396446,
+        "text": " you have boxes with lines that connect to other boxes where you set your filter"
+      },
+      {
+        "start": 396446,
+        "stop": 396946,
+        "text": " parameters the thing connect to other boxes it's a graph style kind of a mind"
+      },
+      {
+        "start": 396946,
+        "stop": 397542,
+        "text": " map to give you a visual it's a bit of a mind map and you put it all together and"
+      },
+      {
+        "start": 397542,
+        "stop": 397958,
+        "text": " out comes the perfect ffmpeg command and they got a beautiful live demo on their"
+      },
+      {
+        "start": 397958,
+        "stop": 398450,
+        "text": " website simple GUI to create complex ffmpeg filter graphs quickly and"
+      },
+      {
+        "start": 398450,
+        "stop": 399030,
+        "text": " correctly without having to mess with cumbersome filter syntax so you know my"
+      },
+      {
+        "start": 399030,
+        "stop": 399386,
+        "text": " old-school approach was I go on like a stack stack exchange or reddit or"
+      },
+      {
+        "start": 399386,
+        "stop": 399770,
+        "text": " something and just find people's like really long super super long commands"
+      },
+      {
+        "start": 399770,
+        "stop": 400230,
+        "text": " copy it and then try to like reverse engineer what that command was doing no"
+      },
+      {
+        "start": 400230,
+        "stop": 400894,
+        "text": " longer no longer shall you be subject to that ffmpeg guide of course level link"
+      },
+      {
+        "start": 400894,
+        "stop": 401362,
+        "text": " to that in the show notes at Linux unplugged comm slash four eight two and"
+      },
+      {
+        "start": 401362,
+        "stop": 402054,
+        "text": " I I can't help but notice we're getting close to four eight six getting real"
+      },
+      {
+        "start": 402054,
+        "stop": 402434,
+        "text": " close I'm feeling like we should do a retro episode from four eight six"
+      },
+      {
+        "start": 402434,
+        "stop": 402806,
+        "text": " especially with the hot talk about the four eighty six architecture getting"
+      },
+      {
+        "start": 402806,
+        "stop": 403194,
+        "text": " worked out of the Linux kernel if you didn't know about that you missed Linux"
+      },
+      {
+        "start": 403194,
+        "stop": 403514,
+        "text": " action news Linux action news comm there's a real short and tight one this"
+      },
+      {
+        "start": 403514,
+        "stop": 403974,
+        "text": " week that's kind of our deal with land we're not gonna waste your time we're"
+      },
+      {
+        "start": 403974,
+        "stop": 404342,
+        "text": " not gonna fill it with stuff that you don't need to know about and you know"
+      },
+      {
+        "start": 404342,
+        "stop": 404686,
+        "text": " that West pain when he's not puking in toilets he's a hell of a news analyst"
+      },
+      {
+        "start": 404686,
+        "stop": 405094,
+        "text": " let me tell you you'd be surprised a bit of a news hound see you next week same"
+      },
+      {
+        "start": 405094,
+        "stop": 405534,
+        "text": " bad time same bad station all right I would love to have you join us we do the"
+      },
+      {
+        "start": 405534,
+        "stop": 405958,
+        "text": " show live on Sundays you do it at noon Pacific 3 p.m. Eastern over Jupiter"
+      },
+      {
+        "start": 405958,
+        "stop": 406326,
+        "text": " dot tube this week big round of applause to our mumble room thank you everybody"
+      },
+      {
+        "start": 406326,
+        "stop": 406594,
+        "text": " in there really helped round out the show this week and you could do that too"
+      },
+      {
+        "start": 406594,
+        "stop": 406926,
+        "text": " if you joined us live at Jupiter dot tube and details for our mumble room"
+      },
+      {
+        "start": 406926,
+        "stop": 407438,
+        "text": " which is going 24/7 that's it Jupiter broadcasting comm slash mumble all right"
+      },
+      {
+        "start": 407438,
+        "stop": 407858,
+        "text": " you getting the theme like slash matrix made it real easy made it real easy for"
+      },
+      {
+        "start": 407858,
+        "stop": 408250,
+        "text": " you just made it nice nice and simple let's go check it out and join us live"
+      },
+      {
+        "start": 408250,
+        "stop": 408626,
+        "text": " sometime but if you don't want to no problem we have RSS feeds for you to get"
+      },
+      {
+        "start": 408626,
+        "stop": 408962,
+        "text": " the show any way you want anytime you want just thanks so much for joining us"
+      },
+      {
+        "start": 408962,
+        "stop": 409382,
+        "text": " I'll see you right back here next Sunday"
+      },
+      {
+        "start": 409382,
+        "stop": 409588,
+        "text": " you"
+      },
+      {
+        "start": 409588,
+        "stop": 409794,
+        "text": " you"
+      },
+      {
+        "start": 409794,
+        "stop": 410000,
+        "text": " you"
+      },
+      {
+        "start": 410000,
+        "stop": 410206,
+        "text": " you"
+      },
+      {
+        "start": 412836,
+        "stop": 413360,
+        "text": " all right now I know we had a couple of more things to touch on that topic we"
+      },
+      {
+        "start": 413360,
+        "stop": 413788,
+        "text": " could have we could have talked about the secure boot stuff forever but Jeff"
+      },
+      {
+        "start": 413788,
+        "stop": 414084,
+        "text": " you had a comment that maybe there's a communications thing that could be"
+      },
+      {
+        "start": 414084,
+        "stop": 414444,
+        "text": " improved here that would at least help end users I consider the end user to"
+      },
+      {
+        "start": 414444,
+        "stop": 414880,
+        "text": " probably be the distro maker right so if there would be a communication a little"
+      },
+      {
+        "start": 414880,
+        "stop": 415404,
+        "text": " bit better communication kind of going back to that whole you know topic maybe"
+      },
+      {
+        "start": 415404,
+        "stop": 415956,
+        "text": " what you brought up fixing older bugs and stuff like that would be better it"
+      },
+      {
+        "start": 415956,
+        "stop": 416264,
+        "text": " might happen more often I mean we see a lack of communication and other"
+      },
+      {
+        "start": 416264,
+        "stop": 416596,
+        "text": " industries all the time and these engineers come up with these great big"
+      },
+      {
+        "start": 416596,
+        "stop": 416980,
+        "text": " grandiose ideas that are supposed to make everybody's life better but nobody"
+      },
+      {
+        "start": 416980,
+        "stop": 417396,
+        "text": " speaks to the person that's actually using these products right so it's up"
+      },
+      {
+        "start": 417396,
+        "stop": 417720,
+        "text": " making things worse in the long run and I just kind of wonder if that you know"
+      },
+      {
+        "start": 417720,
+        "stop": 418132,
+        "text": " the same idea the same things happening here right I actually would love to have"
+      },
+      {
+        "start": 418132,
+        "stop": 418564,
+        "text": " anyone out there in the world the show reaches far and wide across the world of"
+      },
+      {
+        "start": 418564,
+        "stop": 419208,
+        "text": " Linux users lots of you are out there in the industry does anybody want this sort"
+      },
+      {
+        "start": 419208,
+        "stop": 419708,
+        "text": " of unified kernel that gets loaded into UEFI that's signed its full secure boot"
+      },
+      {
+        "start": 419708,
+        "stop": 420208,
+        "text": " from top to bottom do you want that and I know judgment I'm just curious is"
+      },
+      {
+        "start": 420208,
+        "stop": 420824,
+        "text": " there actual user demand like maybe you know Lenart's working at Microsoft and"
+      },
+      {
+        "start": 420824,
+        "stop": 421160,
+        "text": " Microsoft's hearing from I don't know maybe it's government contractors or"
+      },
+      {
+        "start": 421160,
+        "stop": 421556,
+        "text": " maybe it's defense people then they have a certain minimum bar of security and"
+      },
+      {
+        "start": 421556,
+        "stop": 421852,
+        "text": " they're pushing back and saying it's just not good enough and so you know the"
+      },
+      {
+        "start": 421852,
+        "stop": 422180,
+        "text": " team at Microsoft has been tasked with coming up with a solution and Lenart's"
+      },
+      {
+        "start": 422180,
+        "stop": 422840,
+        "text": " on it or maybe it's a problem looking for a solution I really would love to"
+      },
+      {
+        "start": 422840,
+        "stop": 423176,
+        "text": " know if you're listening out there and you're like no guys trust me in our"
+      },
+      {
+        "start": 423176,
+        "stop": 423572,
+        "text": " industry we need this it's a problem let me know send a boost or go to Linux"
+      },
+      {
+        "start": 423572,
+        "stop": 423972,
+        "text": " unplugged comm slash contactor ping me on matrix maybe Microsoft can start a"
+      },
+      {
+        "start": 423972,
+        "stop": 424596,
+        "text": " discourse for and then just really put things over the top and you tech boosted"
+      },
+      {
+        "start": 424596,
+        "stop": 425100,
+        "text": " live while we were streaming another 300,000 sats keep the change you filthy"
+      },
+      {
+        "start": 425100,
+        "stop": 425616,
+        "text": " animal let's push the total of 500,000 sats for today's show this boost is for"
+      },
+      {
+        "start": 425616,
+        "stop": 425996,
+        "text": " some extra support for Brent and Wes Brent I hope everything's okay with the"
+      },
+      {
+        "start": 425996,
+        "stop": 426352,
+        "text": " family and Wes I hope you feel better soon and Chris keep the great shows"
+      },
+      {
+        "start": 426352,
+        "stop": 426864,
+        "text": " coming and you tech thank you so much truly our baller booster this week much"
+      },
+      {
+        "start": 426864,
+        "stop": 427148,
+        "text": " much appreciation"
+      },
+      {
+        "start": 427316,
+        "stop": 427520,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 2825,
+      "nanos": 427571052
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 482: Legacy Gets the Boot",
+    "pictures": [],
+    "duration": {
+      "secs": 4254,
+      "nanos": 562000000
+    },
+    "unique_id": "http://linuxunplugged.com/482"
+  },
+  "episode": {
+    "title": "Legacy Gets the Boot | LINUX Unplugged 482",
+    "description": "Are the long-timers holding Linux back? Lennart Poettering argues we are and proposes a new Microsoft-blessed way to secure Linux.",
+    "content": "<p>Are the long-timers holding Linux back? Lennart Poettering argues we are and proposes a new Microsoft-blessed way to secure Linux.</p>\n\n<p><p>Plus, our thoughts on the slow decline of mailing lists in open-source development.</p><p>Special Guest: Neal Gompa.</p><p>Sponsored By:</p><ul><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://arstechnica.com/gadgets/2022/10/linux-kernel-needs-your-help-testing-backlight-drivers-on-old-weird-laptops/\" title=\"“Old/weird laptops” sought to help test Linux kernel backlight drivers\" rel=\"nofollow\">“Old/weird laptops” sought to help test Linux kernel backlight drivers</a> &mdash; You could help smooth out a long-needed overhaul of Linux's backlight systems.\n</li><li><a href=\"https://www.theregister.com/2022/10/27/the_gnome_project_is_closing/\" title=\"The GNOME Project is closing all its mailing lists\" rel=\"nofollow\">The GNOME Project is closing all its mailing lists</a> &mdash; \nThe GNOME Project is preparing to shut down its mailing lists due to problems maintaining the project's GNU Mailman instance - which relies on Python 2 - and a lack of moderators.</p>\n\n<p></li><li><a href=\"https://mail.gnome.org/archives/evolution-list/2022-October/msg00128.html\" title=\"[Evolution] Announcement: this mailing list will be retired\" rel=\"nofollow\">[Evolution] Announcement: this mailing list will be retired</a></li><li><a href=\"https://mail.gnome.org/archives/desktop-devel-list/2022-September/msg00018.html\" title=\"Re: Moving final mailman lists over to discourse\" rel=\"nofollow\">Re: Moving final mailman lists over to discourse</a></li><li><a href=\"https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues\" title=\"Issues · jupiterbroadcasting.com\" rel=\"nofollow\">Issues · jupiterbroadcasting.com</a></li><li><a href=\"https://www.officehours.hair/15\" title=\"Office Hours 15: One PR At a Time\" rel=\"nofollow\">Office Hours 15: One PR At a Time</a> &mdash; We recap a busy night after a studio power outage, then dig into what makes an open-source project worth contributing to. Why do some fail while others grow and prosper?</li><li><a href=\"https://awesomekling.github.io/How-I-make-a-living-working-on-SerenityOS/\" title=\"How I make a living working on SerenityOS\" rel=\"nofollow\">How I make a living working on SerenityOS</a> &mdash; This post describes in detail how I support myself while working on the SerenityOS project.</p>\n\n<p></li><li><a href=\"https://www.theregister.com/2022/10/26/tightening_linux_boot_process_microsoft_poettering/\" title=\"Systemd supremo proposes tightening up Linux boot process\" rel=\"nofollow\">Systemd supremo proposes tightening up Linux boot process</a> &mdash; In brief, what he sees as the problem is that on hardware with Secure Boot enabled, while the boot process up to and including the kernel is signed, the next step, loading the initrd, is not. That's what he wants to fix.</li><li><a href=\"https://0pointer.net/blog/brave-new-trusted-boot-world.html\" title=\"Brave New Trusted Boot World\" rel=\"nofollow\">Brave New Trusted Boot World</a> &mdash; This document looks at the boot process of general purpose Linux distributions. It covers the status quo and how we envision Linux boot to work in the future with a focus on robustness and simplicity.</li><li><a href=\"https://github.com/DeterminateSystems/bootspec-secureboot\" title=\"NixOS bootspec-secureboot\" rel=\"nofollow\">NixOS bootspec-secureboot</a> &mdash; This repository is a research project that aims to improve the bootloader story in NixOS.</li><li><a href=\"https://imgur.com/pT1OtmN\" title=\"Matthew's NixOS Screen shot \" rel=\"nofollow\">Matthew's NixOS Screen shot </a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Grab a new podcast app\" rel=\"nofollow\">Grab a new podcast app</a> &mdash; Upgrade to a Podcasting 2.0 compatible app.</li><li><a href=\"https://github.com/charmbracelet/vhs\" title=\"vhs: Your CLI home video recorder 📼\" rel=\"nofollow\">vhs: Your CLI home video recorder 📼</a> &mdash; Write terminal GIFs as code for integration testing and demoing your CLI tools.</p>\n\n<p></li><li><a href=\"https://ffmpeg.guide/\" title=\"FFmpeg.guide\" rel=\"nofollow\">FFmpeg.guide</a> &mdash; A simple GUI tool to create complex FFmpeg filtergraphs quickly and correctly, without having to mess with the cumbersome filter syntax</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8985",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15750901/eeddebaa-1197-4f89-a1f9-d81bdb9c6e77.mp3",
+      "length": "60523253",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-30T20:25:00+01:00"
+  },
+  "speedup": 1.5058118
+}

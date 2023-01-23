@@ -1,22 +1,22 @@
 <!-- Transcripts Section -->
 <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0">
   <div class="column">
-    <h2 class="has-text-centered-mobile">Transcripts</h2>
     <section class="section transcripts">
       <div>
         {{ $slug := .Params.show_slug }}
         {{ $episode := .Params.episode_padded }}
         {{ $transcript := index $.Site.Data.transcripts $slug }}
         {{ if $transcript }}
+          <h2 class="has-text-centered-mobile">Transcripts</h2>
           {{ $episode_data := index $transcript $episode }}
           {{ if $episode_data }}
               {{ range $episode_data.transcript.utterances }}
-                {{ $duration := time (div (int .start)  100)  }}
-                <p> ({{ $duration.Format "04:05" }})</p>
-                <p>{{ .text }}</p>
+              {{ $duration := time (div (int .start)  100)  }}
+                <p><span class="transcript-timestamp">({{ $duration.Format "15:04.05" }})</span> </p>
+                <p>{{ trim .text ""}}</p>
               {{ end }}
           {{ else }}
-              transcript not found
+              Transcript not yet available.
           {{ end }}
         {{ end }}
       </div>

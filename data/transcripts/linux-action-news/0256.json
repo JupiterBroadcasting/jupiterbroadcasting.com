@@ -1,0 +1,537 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 1400,
+        "text": " Hello and welcome to Linux Action News episode 256 recorded on August 31st 2022. I'm Chris and I'm Wes. Hello Wes. Let's do the news."
+      },
+      {
+        "start": 1400,
+        "stop": 3600,
+        "text": " And we start with a project that is as universally loved in the Linux community as just about any project can be. Fwupd. This week Richard Hughes, the lead developer of Fwupd, as well as its backend infrastructure, the Linux vendor firmware service, announced the release of Fwupd 1.8.4."
+      },
+      {
+        "start": 3600,
+        "stop": 5200,
+        "text": " A significant update, Fwupd 1.8.4 not only includes bug fixes and support for some new hardware, but it notably also lays the groundwork for the ability to make changes to the system's BIOS from within Linux."
+      },
+      {
+        "start": 5200,
+        "stop": 6700,
+        "text": " Yeah, let that sink in for a minute. Fwupd can now read your system BIOS settings and has the ability to actually change them if the user desires and has the authorization to do so, I should say."
+      },
+      {
+        "start": 6700,
+        "stop": 8300,
+        "text": " And this ability is not only useful for some obvious reasons out there, but should also go towards this new device security control center page in future versions of Gnome, which has planned to expose important hardware information like a security issue should they exist."
+      },
+      {
+        "start": 8300,
+        "stop": 10100,
+        "text": " And according to Hughes, support is going to be limited, at least for now, to certain hardware, writing, \"We currently support this on modern Lenovo and Dell platforms via the firmware attributes kernel interface. Other vendors just have to add that kernel WMI bridge and it should mostly start magically working.\""
+      },
+      {
+        "start": 10100,
+        "stop": 11800,
+        "text": " You ThinkPad users out there will especially want to keep your eyes out for this update, since it includes support for the ThinkPad Thunderbolt 4 dock as well as the ThinkPad Universal Smart Dock. Additional details on Fwupd 1.8.4 can also be found via the link in our notes to Richard Hughes' blog."
+      },
+      {
+        "start": 12100,
+        "stop": 13400,
+        "text": " Well, an update on Canonical's effort to make Ubuntu more appealing to gamers. They are continuing to make improvements to their Steam Snap, like resolving some graphics drivers issues, and now seem to be expanding out to other components for gaming."
+      },
+      {
+        "start": 13400,
+        "stop": 15200,
+        "text": " Now, you might guess that Canonical had snapped up another game library or maybe created a free interface to GOG, but you'd be wrong. The latest Linux gaming component to receive Snap treatment is now Feral Interactive's Game Mode."
+      },
+      {
+        "start": 15200,
+        "stop": 16400,
+        "text": " Yeah, you might remember Game Mode. That's their demon for automatically setting the CPU governor to performance mode and then dynamically adjusting other system settings when a game is launched, and then it restores those settings back when you exit the game."
+      },
+      {
+        "start": 16400,
+        "stop": 17000,
+        "text": " And it looks like maybe Canonical here just wants to snap up more of the gaming ecosystem."
+      },
+      {
+        "start": 17100,
+        "stop": 18300,
+        "text": " Reception in the Linux community? Well, it seems to be a bit confused and hesitant. For their part, though, Canonical has been making it pretty clear they want to invest in gaming on Ubuntu."
+      },
+      {
+        "start": 18300,
+        "stop": 19100,
+        "text": " They held a talk at the Libre Applications Summit earlier this year and opened two positions within the company focused on gaming."
+      },
+      {
+        "start": 19100,
+        "stop": 20400,
+        "text": " But I think it's safe to say that many of us sort of expected those efforts would be going into system optimizations, enabling newer drivers on Ubuntu, or maybe reaching out to developers and other partners."
+      },
+      {
+        "start": 20400,
+        "stop": 21800,
+        "text": " Yeah, I suppose we can hope that's kind of part of the plan. Maybe what we're seeing right now is a bit of a phase one, some basic groundwork that the team can then build on later. I guess we'll have to see. Time will tell."
+      },
+      {
+        "start": 21800,
+        "stop": 23800,
+        "text": " Just a few days ago, Pine64 announced the Star64 single-board computer prototype. And yeah, it's powered by a RISC-V-based Star5 JH7110 64-bit processor."
+      },
+      {
+        "start": 23800,
+        "stop": 25500,
+        "text": " Alright, bring it on, I say. Let's get more of these on the market. The Star64 will be available with 4GB and 8GB of LPDDR4 RAM. And the Star64 will also feature an eMMC slot, a PCIe slot, and a microSD slot."
+      },
+      {
+        "start": 25600,
+        "stop": 27900,
+        "text": " The Star64 also features dual gigabit ports, Wi-Fi 6, an HDMI and MIPI display interface, and of course, the board also includes a 40-pin GPIO header, three USB 2.0 ports, one USB 3.0 port, a 3.5mm audio jack, and a power button."
+      },
+      {
+        "start": 28000,
+        "stop": 29200,
+        "text": " Well, how about that, a power button? These small board computers are getting fancy indeed. Now, we're still missing some, I'd say, essential launch details, so in my opinion, that's a bit of a mini red flag."
+      },
+      {
+        "start": 29200,
+        "stop": 30900,
+        "text": " I have no doubt that ultimately, Pine will ship this. My main question is, is how finished will it ever get? But that, we'll have to wait and see. It does sound like interested developers might be able to receive their boards as early as in a few weeks. So, we'll keep you posted."
+      },
+      {
+        "start": 30900,
+        "stop": 31300,
+        "text": " [Intro]"
+      },
+      {
+        "start": 31300,
+        "stop": 31900,
+        "text": " And a quick update on one of those apps that's always working for you in the background."
+      },
+      {
+        "start": 31900,
+        "stop": 32600,
+        "text": " Network Manager 1.40 has been released with multipath TCP support."
+      },
+      {
+        "start": 32700,
+        "stop": 33900,
+        "text": " Multipath TCP has really come together in the kernel over the past two years, and it allows TCP connections to use multiple paths for greater performance, efficiency, and added redundancy."
+      },
+      {
+        "start": 33900,
+        "stop": 34900,
+        "text": " With recent kernels, the multipath TCP functionality is in great shape, so it's really nice to see the Network Manager configuration side finally adding support."
+      },
+      {
+        "start": 35000,
+        "stop": 36200,
+        "text": " According to that, though, there's also been some generous cleanup around the Network Manager DHCP client code, support for configuring the IPv6 MTU, and improved carrier detection for you mobile users out there."
+      },
+      {
+        "start": 36400,
+        "stop": 36600,
+        "text": " [Music]"
+      },
+      {
+        "start": 36600,
+        "stop": 37300,
+        "text": " Linode.com/lan. Go there to get $100 in 60-day credit on a new account, and it's a great way to support the show."
+      },
+      {
+        "start": 37300,
+        "stop": 38100,
+        "text": " Big thank you to Linode for their continued support of Linux Action News. Keeping us going, keeping us on the air, Linode is fast, reliable cloud hosting."
+      },
+      {
+        "start": 38100,
+        "stop": 38700,
+        "text": " I think it's the best in the business, and they have the best support in the business, and the best performance in the business."
+      },
+      {
+        "start": 38700,
+        "stop": 39400,
+        "text": " I know, big talk, but independent study after independent study has shown it over the years, and I've seen it with my own eyes, too."
+      },
+      {
+        "start": 39500,
+        "stop": 40100,
+        "text": " So, Linode launched the new website, brand new website, it's up, if you haven't been to jupyterbroadcasting.com in a little while, go check it out."
+      },
+      {
+        "start": 40100,
+        "stop": 40800,
+        "text": " And yeah, it's running on Linode. We build it on Linode, we deploy it on Linode, all the infrastructure on Linode is part of our tool bag."
+      },
+      {
+        "start": 40800,
+        "stop": 41700,
+        "text": " It's how we get jobs done. And Linode's been around for nearly 19 years, building the absolute best way for you to run applications on Linux in the cloud."
+      },
+      {
+        "start": 41800,
+        "stop": 42500,
+        "text": " And they're 30-50% cheaper than those hyperscalers that just want to lock you into their cray-cray platform."
+      },
+      {
+        "start": 42500,
+        "stop": 43200,
+        "text": " And they're always trying to upsell you, they're always coming up with some new rebranded open source project and selling it to you for a premium."
+      },
+      {
+        "start": 43200,
+        "stop": 43900,
+        "text": " You know, that's always their game. That's not the game Linode plays. And they've structured themselves in a way where they are their own ISP."
+      },
+      {
+        "start": 44000,
+        "stop": 44800,
+        "text": " They can have a dedicated 365 support staff. They've got 11 data centers around the world. And then they have great complimentary features."
+      },
+      {
+        "start": 44800,
+        "stop": 45400,
+        "text": " Stuff that make sense, like S3 compatible object storage, cloud firewalls, bare metal boxes if you need them."
+      },
+      {
+        "start": 45400,
+        "stop": 46300,
+        "text": " And Kubernetes, Ansible and Terraform support, so that way you can just snap this right into your existing infrastructure and potentially make it part of your multi-cloud strategy."
+      },
+      {
+        "start": 46400,
+        "stop": 47100,
+        "text": " So go try it out. Go build something, go learn something, go kick the tires, go put that $100 to work and support the show."
+      },
+      {
+        "start": 47100,
+        "stop": 47900,
+        "text": " linode.com/lan. One more time for good luck. Go there and keep us going. linode.com/lan"
+      },
+      {
+        "start": 47900,
+        "stop": 48600,
+        "text": " And a big thank you to Kolide. Kolide.com/lan."
+      },
+      {
+        "start": 48600,
+        "stop": 49200,
+        "text": " Kolide is an endpoint security solution that uses the most powerful untapped resource in IT."
+      },
+      {
+        "start": 49300,
+        "stop": 50300,
+        "text": " Your end users. When you're trying to achieve security goals, whether for a third party audit or your own compliance standards, I think the conventional wisdom is to treat every device like it's Fort Knox or something."
+      },
+      {
+        "start": 50300,
+        "stop": 51500,
+        "text": " You know, with old school device management tools like MDM's that just force disruptive agents onto employees' devices, slow them down, treat privacy as an afterthought and often have their own set of security drawbacks."
+      },
+      {
+        "start": 51500,
+        "stop": 51700,
+        "text": " You know what I'm talking about."
+      },
+      {
+        "start": 51800,
+        "stop": 52400,
+        "text": " Kolide also has a way of turning end users against the IT admins and kind of creates this baseline hostility between the two groups."
+      },
+      {
+        "start": 52400,
+        "stop": 53200,
+        "text": " Kolide does things differently. Instead of forcing changes on users, Kolide sends them security recommendations via Slack."
+      },
+      {
+        "start": 53200,
+        "stop": 54000,
+        "text": " Kolide will automatically notify your team when their devices are insecure and give them step-by-step instructions on how to solve the problem."
+      },
+      {
+        "start": 54100,
+        "stop": 55000,
+        "text": " By reaching out to employees via a friendly Slack DM and educating them about company policies, Kolide can help you build a culture in which everyone contributes to security."
+      },
+      {
+        "start": 55000,
+        "stop": 55400,
+        "text": " Because everyone understands how and why to do it."
+      },
+      {
+        "start": 55400,
+        "stop": 55900,
+        "text": " And for IT admins, Kolide provides a single dashboard that lets you monitor the security of your entire fleet."
+      },
+      {
+        "start": 55900,
+        "stop": 56200,
+        "text": " Maybe they're on a Mac, Windows or Linux. You got it."
+      },
+      {
+        "start": 56300,
+        "stop": 57400,
+        "text": " You can see at a glance which employees have their disk encrypted, their OS up to date and a password manager installed, making it easy to prove compliance to your auditors, your customers or even leadership or yourself."
+      },
+      {
+        "start": 57400,
+        "stop": 58200,
+        "text": " So that, that's Kolide. User-centered, cross-platform, endpoint security for teams that Slack."
+      },
+      {
+        "start": 58200,
+        "stop": 58900,
+        "text": " You can meet your compliance goals by putting users first. Visit kolide.com/lan to find out how."
+      },
+      {
+        "start": 59000,
+        "stop": 59700,
+        "text": " And if you go there, they're going to also hook you up with a goodie bag, including a free t-shirt, just for activating a free trial. You gotta love that free swag."
+      },
+      {
+        "start": 59700,
+        "stop": 60400,
+        "text": " So it's k-o-l-i-d-e dot com slash l-a-n. Kolide dot com slash lan."
+      },
+      {
+        "start": 60400,
+        "stop": 61200,
+        "text": " And we end this week with Debian's problem with non-free firmware."
+      },
+      {
+        "start": 61300,
+        "stop": 62300,
+        "text": " The basic issue is that the use of downloadable firmware and computer hardware is on the rise, and most of that firmware is just not free software."
+      },
+      {
+        "start": 62300,
+        "stop": 63500,
+        "text": " The official Debian installer, however, only incorporates free software and thus free firmware, which leads to serious problems for many users attempting to get Debian up and running on a modern system."
+      },
+      {
+        "start": 63600,
+        "stop": 64400,
+        "text": " Right, you got a new piece of hardware, it's got some fancy stuff in there that, well, only has binary blobs. This has always been a gray area for Debian."
+      },
+      {
+        "start": 64400,
+        "stop": 65400,
+        "text": " And a lot of us who've used it for a long time know that installer image only has packages from the official main repository, which is software that's only conforming to the Debian free software guidelines."
+      },
+      {
+        "start": 65400,
+        "stop": 66400,
+        "text": " So it's going to be a more limited set. It's generally a pretty healthy set of software, but this is an area, hardware blobs, where it's just traditionally been a little weak."
+      },
+      {
+        "start": 66500,
+        "stop": 67500,
+        "text": " And the same team that's responsible for creating the official installer images that don't have that firmware, but they also create the unofficial images, which do have the firmware in there."
+      },
+      {
+        "start": 67500,
+        "stop": 68300,
+        "text": " And honestly, most of us are going to end up just going and getting those images to get Debian up and running on modern hardware."
+      },
+      {
+        "start": 68400,
+        "stop": 69600,
+        "text": " But as you might imagine, the status of \"unofficial\" adds a little confusion to things, so an internal discussion on how Debian should be handling this started earlier this year."
+      },
+      {
+        "start": 69600,
+        "stop": 70200,
+        "text": " Now that discussion is moving forward into the Debian general resolution process."
+      },
+      {
+        "start": 70300,
+        "stop": 71400,
+        "text": " Yeah, indeed, something can only be unofficially unofficial for so long, so discussions on how Debian should be handling this have been going on for a really long time."
+      },
+      {
+        "start": 71400,
+        "stop": 72400,
+        "text": " This is really being driven by a long-time contributor, Steve McIntyre, and recently he proposed a general resolution on how Debian is going to just handle this non-free firmware situation."
+      },
+      {
+        "start": 72400,
+        "stop": 73200,
+        "text": " Now there's a discussion period that's kicked off that'll last until September 3rd, and this resolution that he's proposed has three main options."
+      },
+      {
+        "start": 73200,
+        "stop": 74000,
+        "text": " First, there's option A, \"Include non-free firmware packages on the official installation media.\""
+      },
+      {
+        "start": 74000,
+        "stop": 74700,
+        "text": " In this version of the proposal, firmware binaries would be normally enabled by default where needed for hardware support."
+      },
+      {
+        "start": 74700,
+        "stop": 75500,
+        "text": " But it would also suggest that Debian explore ways to let users disable that support at boot time if desired."
+      },
+      {
+        "start": 75600,
+        "stop": 76600,
+        "text": " Under option A, the Debian installer or live system would also have a means of informing the user about what firmware is loaded, whether that firmware be free or non-free."
+      },
+      {
+        "start": 76600,
+        "stop": 78000,
+        "text": " Finally, option A specifies that these new versions of the media would replace Debian's current official installation media, which, as we noted, does not include non-free firmware packages as it stands right now."
+      },
+      {
+        "start": 78100,
+        "stop": 78800,
+        "text": " And there's option B, \"Include non-free firmware onto the official installation media\" along similar lines to option A."
+      },
+      {
+        "start": 78800,
+        "stop": 79600,
+        "text": " The main difference with option B is that these new images would not replace the current Debian official installation media."
+      },
+      {
+        "start": 79600,
+        "stop": 80100,
+        "text": " Instead, these new images would be separate and complementary non-free firmware images."
+      },
+      {
+        "start": 80200,
+        "stop": 81500,
+        "text": " Finally, there's proposal C, which is really just a simplified statement that supports the inclusion of non-free firmware for the installer, but leaves out all the fine details present in options A and B."
+      },
+      {
+        "start": 81500,
+        "stop": 82900,
+        "text": " In my opinion, anything other than option A seems like bending over backwards to suit the idealists, but that's not to be dismissive about the difficulty of that choice, because Debian is a very principled distribution."
+      },
+      {
+        "start": 83000,
+        "stop": 83600,
+        "text": " And they are frequently in this struggle of ideals over ease for end users."
+      },
+      {
+        "start": 83600,
+        "stop": 84500,
+        "text": " And this is one of those tricky problems, because this probably affects new users to Linux more than the more experienced users that are going to be making this decision."
+      },
+      {
+        "start": 84600,
+        "stop": 86100,
+        "text": " And so this is kind of representative of how Debian wants to be perceived by that class of user, and that's probably what I find the most fascinating about this decision. Ultimately, whatever they choose to do, I can obviously roll with."
+      },
+      {
+        "start": 86100,
+        "stop": 87100,
+        "text": " But I think it's really saying something about who Debian is targeting, who the people that are making these decisions feel that the project is targeting at least."
+      },
+      {
+        "start": 87200,
+        "stop": 88400,
+        "text": " Yeah, that does have some logic to it, right? I mean, most new users, well, they're still kind of figuring out all of our principles and ideals around free and open source software and some of the consequences that that can imply."
+      },
+      {
+        "start": 88400,
+        "stop": 89800,
+        "text": " And I agree with you, right? Like, if you are concerned about that, which there's many legitimate reasons to be concerned about these binary blobs, having some kind of escape hatch, like a, you know, a command line option to disable that at boot, that might just work."
+      },
+      {
+        "start": 89900,
+        "stop": 91100,
+        "text": " I do want to add here, though, you know, I think sometimes when we discuss binary blobs, we think of fancy high end hardware, but another reason for wanting non free firmware by default might be accessibility."
+      },
+      {
+        "start": 91100,
+        "stop": 92000,
+        "text": " Say a blind user is running the installer in text to speech mode, but also needs audio firmware loaded, be able to actually drive the installer at all."
+      },
+      {
+        "start": 92100,
+        "stop": 93200,
+        "text": " Absolutely. And if they can't get the hardware activated, they can't even get the operating system installed. And you know, option A seems like the most straightforward. You just include the non free packages on the official installation media."
+      },
+      {
+        "start": 93200,
+        "stop": 94500,
+        "text": " The challenge seems to be that it requires changes to the installer to actually fully execute this so that way the user can be properly notified. And in there, it seems like it's honestly pretty easy to add a checkbox."
+      },
+      {
+        "start": 94600,
+        "stop": 95700,
+        "text": " And if for legality reasons they needed to have it download at the time when you check the box, that seems totally reasonable too. There is definitely a way to make this work for the end user."
+      },
+      {
+        "start": 95700,
+        "stop": 97400,
+        "text": " You know, in the case of assisted access, perhaps the project could make an effort if they choose not to bake it into the main image, perhaps the project could make an effort to try to put an information campaign out there that does tell users that need that stuff."
+      },
+      {
+        "start": 97500,
+        "stop": 99300,
+        "text": " I don't think that's a particularly great strategy, but maybe that's something they'll like to do if they don't choose option A. We'll see. We're going to be watching this story, and if more information is shared publicly, we'll capture it and we'll share it with you and everything else going on in the world of Linux and open source."
+      },
+      {
+        "start": 99300,
+        "stop": 99800,
+        "text": " So don't miss an episode. Go to LinuxActionNews.com/subscribe to stay up to date."
+      },
+      {
+        "start": 99800,
+        "stop": 100400,
+        "text": " And head over to LinuxActionNews.com/contact for all the ways to get in touch."
+      },
+      {
+        "start": 100400,
+        "stop": 101500,
+        "text": " I am so excited to say our new website has launched. Check it out and then get the entire behind the scenes story on how our community built our new website, office-hours.hair/11."
+      },
+      {
+        "start": 101500,
+        "stop": 102100,
+        "text": " We'll be back next week with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 102100,
+        "stop": 102500,
+        "text": " Thanks for joining us. That's all the news for this week."
+      },
+      {
+        "start": 102500,
+        "stop": 104500,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 697,
+      "nanos": 600902242
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 256",
+    "pictures": [],
+    "duration": {
+      "secs": 1042,
+      "nanos": 574000000
+    },
+    "unique_id": "http://linuxactionnews.com/256"
+  },
+  "episode": {
+    "title": "Linux Action News 256",
+    "description": "Debian’s firmware future is up for debate, Pine64 teases a RISC-V SBC, and some of your favorite tools just got new tricks.",
+    "content": "<p><p>Debian’s firmware future is up for debate, Pine64 teases a RISC-V SBC, and some of your favorite tools just got new tricks.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://blogs.gnome.org/hughsie/2022/08/30/new-fwupd-1-8-4-release/\" title=\"New fwupd 1.8.4 starts work on BIOS control\" rel=\"nofollow\">New fwupd 1.8.4 starts work on BIOS control</a> &mdash; fwupd now reads your system BIOS settings, and has the ability to change them if the user desires (and has authorization to do).</li><li><a href=\"https://www.phoronix.com/news/Fwupd-1.8.4-BIOS-Settings-Linux\" title=\"Fwupd 1.8.4 Supports More Hardware, Starts Allowing To Make BIOS Changes From Linux\" rel=\"nofollow\">Fwupd 1.8.4 Supports More Hardware, Starts Allowing To Make BIOS Changes From Linux</a></li><li><a href=\"https://www.phoronix.com/news/Ubuntu-Snaps-Steam-GameMode\" title=\"Canonical Continues Snap’ing Up Linux Gaming For Ubuntu\" rel=\"nofollow\">Canonical Continues Snap’ing Up Linux Gaming For Ubuntu</a> &mdash; Canonical has been indicating they want to improve the Linux gaming experience on Ubuntu (and hiring for it) and ensure its a dominant platform for Linux gaming.</li><li><a href=\"https://www.pine64.org/2022/08/28/august-update-risc-and-reward/\" title=\"Pine’ Star64 RISC-V based Single Board Computer\" rel=\"nofollow\">Pine’ Star64 RISC-V based Single Board Computer</a></li><li><a href=\"https://linuxgizmos.com/pine64-reveals-the-star64-risc-v-based-single-board-computer/\" title=\"Pine64 reveals the Star64 RISC-V based Single Board Computer\" rel=\"nofollow\">Pine64 reveals the Star64 RISC-V based Single Board Computer</a> &mdash; Along the long leading edges you’ll find PCIe on one end and GPIO on the other. At one end of the board you’ll find a digital video output, a double-stacked Gigabit Ethernet port and a 12V barrel plug for power. On the opposite side, you’ll find 3x USB 2.0, 1x USB 3.0, an audio jack as well as a power button. There are also two U.FL ports for antennas – one for bluetooth and the other for WiFi.</li><li><a href=\"https://www.phoronix.com/news/NetworkManager-1.40\" title=\"NetworkManager 1.40 Released With Multi-Path TCP Support\" rel=\"nofollow\">NetworkManager 1.40 Released With Multi-Path TCP Support</a> &mdash; Multi-Path TCP has come together in the kernel over the past two years for this standard, allowing TCP connections to use multiple paths for greater performance/efficiency and added redundancy.</li><li><a href=\"https://lwn.net/Articles/906380/\" title=\"Debian General Resolution To Decide What To Do With Non-Free Firmware\" rel=\"nofollow\">Debian General Resolution To Decide What To Do With Non-Free Firmware</a> &mdash; The basic problem is that the use of downloadable firmware in computer systems is on the rise and most of that firmware is not free software. The official Debian installer only incorporates free software (and firmware), which leads to serious problems for many users.</li><li><a href=\"https://debugpointnews.com/non-free-debian-image-proposal/\" title=\"Debian Proposes Better Discovery of non-free Firmware Images\" rel=\"nofollow\">Debian Proposes Better Discovery of non-free Firmware Images</a></li><li><a href=\"https://www.debian.org/vote/2022/vote_003\" title=\"General Resolution: non-free firmware\" rel=\"nofollow\">General Resolution: non-free firmware</a></li><li><a href=\"https://officehours.hair/11\" title=\"Office Hours 11\" rel=\"nofollow\">Office Hours 11</a> &mdash; We launch our new site LIVE!</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8772",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15603625/763fa85a-c19e-471a-b880-8ceb757a3350.mp3",
+      "length": "15027380",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-01T10:55:00+02:00"
+  },
+  "speedup": 1.4945135
+}

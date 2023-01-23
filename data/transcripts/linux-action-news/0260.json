@@ -1,0 +1,1297 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 206,
+        "text": " you"
+      },
+      {
+        "start": 228,
+        "stop": 832,
+        "text": " hello and welcome to Linux action news episode 260 recorded on September 28th"
+      },
+      {
+        "start": 832,
+        "stop": 1428,
+        "text": " 2022 from a very sunny Pasadena California I'm Chris and I'm Wes hello"
+      },
+      {
+        "start": 1428,
+        "stop": 2042,
+        "text": " Wes from the footsteps of JPL let's do the news this week the GNU toolchain"
+      },
+      {
+        "start": 2042,
+        "stop": 2532,
+        "text": " infrastructure project was established the project will take advantage of the"
+      },
+      {
+        "start": 2532,
+        "stop": 2990,
+        "text": " Linux Foundation's kernel infrastructure team to provide hosting for the GNU"
+      },
+      {
+        "start": 2990,
+        "stop": 3616,
+        "text": " tools yes Carlos O'Donnell of Red Hat summed it up in a mailing list post"
+      },
+      {
+        "start": 3616,
+        "stop": 4084,
+        "text": " saying quote during the sourceware infrastructure BoF sessions at the GNU"
+      },
+      {
+        "start": 4084,
+        "stop": 4556,
+        "text": " cauldron the GNU toolchain community in collaboration with the Linux Foundation"
+      },
+      {
+        "start": 4556,
+        "stop": 5248,
+        "text": " and open SSF announced the GNU toolchain infrastructure project or what everybody"
+      },
+      {
+        "start": 5248,
+        "stop": 5876,
+        "text": " likes to call GTI he went on to say quote the collaboration includes a fund"
+      },
+      {
+        "start": 5876,
+        "stop": 6280,
+        "text": " for infrastructure and software supply chain security which will allow us to"
+      },
+      {
+        "start": 6280,
+        "stop": 6764,
+        "text": " utilize the respected Linux Foundation IT services that currently host kernel"
+      },
+      {
+        "start": 6764,
+        "stop": 7392,
+        "text": " org and to fund other important projects and to be fair that does seem like the"
+      },
+      {
+        "start": 7392,
+        "stop": 7724,
+        "text": " kernel team is quite happy with the infrastructure that is provided for"
+      },
+      {
+        "start": 7724,
+        "stop": 8324,
+        "text": " kernel org now to understand this entire situation you have to realize that for"
+      },
+      {
+        "start": 8324,
+        "stop": 8852,
+        "text": " the past two decades Red Hat has been sponsoring the hosting of the GCC"
+      },
+      {
+        "start": 8852,
+        "stop": 9360,
+        "text": " compiler and the related GNU toolchain infrastructure at sourceware org"
+      },
+      {
+        "start": 9360,
+        "stop": 9792,
+        "text": " recently an application was made to bring sourceware under the umbrella of"
+      },
+      {
+        "start": 9792,
+        "stop": 10296,
+        "text": " the software freedom Conservancy at least for fundraising purposes but it"
+      },
+      {
+        "start": 10296,
+        "stop": 10820,
+        "text": " turns out there was a separate initiative developed in secret this was"
+      },
+      {
+        "start": 10820,
+        "stop": 11324,
+        "text": " all revealed after a rather intense discussion during a new tools cauldron"
+      },
+      {
+        "start": 11324,
+        "stop": 11920,
+        "text": " session at the recent Linux plumbers conference now nominally the session was"
+      },
+      {
+        "start": 11920,
+        "stop": 12400,
+        "text": " going to be about some new services that were being worked on for sourceware but"
+      },
+      {
+        "start": 12400,
+        "stop": 12920,
+        "text": " the presenter sourceware overseer mark wheelard did not end up getting very far"
+      },
+      {
+        "start": 12920,
+        "stop": 13340,
+        "text": " into that presentation before being interrupted and reminded of an agreement"
+      },
+      {
+        "start": 13340,
+        "stop": 13988,
+        "text": " evidently made ahead of the session that the real focus would be on the SFC"
+      },
+      {
+        "start": 13988,
+        "stop": 14408,
+        "text": " proposal at least according to mark representatives of the projects that are"
+      },
+      {
+        "start": 14408,
+        "stop": 14912,
+        "text": " currently hosted on sourceware well they seem to like the SFC proposal the free"
+      },
+      {
+        "start": 14912,
+        "stop": 15440,
+        "text": " software foundation does as well now we should note there was some yelling from"
+      },
+      {
+        "start": 15440,
+        "stop": 15744,
+        "text": " the audience at this point and seems to make it clear there is a little"
+      },
+      {
+        "start": 15744,
+        "stop": 16240,
+        "text": " disagreement left on that point this is all sounding bizarre I mean it's a"
+      },
+      {
+        "start": 16240,
+        "stop": 16720,
+        "text": " technical session with shouting from the audience and secret plans being"
+      },
+      {
+        "start": 16720,
+        "stop": 17188,
+        "text": " announced it's very odd and at this point o'donnell finally revealed the"
+      },
+      {
+        "start": 17188,
+        "stop": 17588,
+        "text": " secret alternative plan to the rest of the group stressing these challenges"
+      },
+      {
+        "start": 17588,
+        "stop": 17832,
+        "text": " that were coming for the toolchain community they're going to require"
+      },
+      {
+        "start": 17832,
+        "stop": 18304,
+        "text": " resources beyond with the software freedom Conservancy or the SFC could"
+      },
+      {
+        "start": 18304,
+        "stop": 18836,
+        "text": " provide specifically he talked about cybersecurity requirements that could"
+      },
+      {
+        "start": 18836,
+        "stop": 19320,
+        "text": " lead to the exclusion of new tools from important projects at least if it's"
+      },
+      {
+        "start": 19320,
+        "stop": 19792,
+        "text": " development systems are not seen as being managed in a sufficiently secure"
+      },
+      {
+        "start": 19792,
+        "stop": 20284,
+        "text": " manner details on exactly what those requirements might be or how they could"
+      },
+      {
+        "start": 20284,
+        "stop": 20820,
+        "text": " be met when I provided at the time now o'donnell did note that the toolchain"
+      },
+      {
+        "start": 20820,
+        "stop": 21288,
+        "text": " development model seems to function a lot like the Linux kernels model so"
+      },
+      {
+        "start": 21288,
+        "stop": 21580,
+        "text": " there really could be some value in taking advantage of the infrastructure"
+      },
+      {
+        "start": 21580,
+        "stop": 22036,
+        "text": " that the Linux Foundation has already set up to support the kernel"
+      },
+      {
+        "start": 22036,
+        "stop": 22416,
+        "text": " yeah no doubt and I think it's important to note at this stage that these changes"
+      },
+      {
+        "start": 22416,
+        "stop": 22816,
+        "text": " do not alter the governance or leadership structure of the GNU projects"
+      },
+      {
+        "start": 22816,
+        "stop": 23340,
+        "text": " this isn't about governance at all it's really about infrastructure and just"
+      },
+      {
+        "start": 23340,
+        "stop": 23740,
+        "text": " offloading the work of managing that infrastructure to someone else"
+      },
+      {
+        "start": 23740,
+        "stop": 24336,
+        "text": " yeah and on that point I mean from the busy developer perspective I can"
+      },
+      {
+        "start": 24336,
+        "stop": 24916,
+        "text": " definitely see the appeal the problem seems to be the way that GTI was"
+      },
+      {
+        "start": 24916,
+        "stop": 25524,
+        "text": " developed somewhat in secret and then it's just surprisingly revealed really"
+      },
+      {
+        "start": 25524,
+        "stop": 25892,
+        "text": " does seem to have caused some considerable consternation at least in"
+      },
+      {
+        "start": 25892,
+        "stop": 26392,
+        "text": " some elements of the toolchain community so you know regardless of whatever"
+      },
+      {
+        "start": 26392,
+        "stop": 26752,
+        "text": " burdens that might be alleviated however much easier you make it for them"
+      },
+      {
+        "start": 26752,
+        "stop": 27444,
+        "text": " I'm not sure everyone is able to forget the origin of the proposal so easily and"
+      },
+      {
+        "start": 27444,
+        "stop": 27868,
+        "text": " it's just once again one of those things that involves the Linux Foundation that"
+      },
+      {
+        "start": 27868,
+        "stop": 28268,
+        "text": " has some good obviously that kernel.org infrastructure has been a good thing for"
+      },
+      {
+        "start": 28268,
+        "stop": 28816,
+        "text": " Linux that management has been solid but the way it's gone about with these"
+      },
+      {
+        "start": 28816,
+        "stop": 29204,
+        "text": " secret plans and how seemingly seemingly most of the project was on board with"
+      },
+      {
+        "start": 29204,
+        "stop": 29652,
+        "text": " going with the Conservancy and then this big change it it all seems a little"
+      },
+      {
+        "start": 29652,
+        "stop": 29980,
+        "text": " unsettling doesn't and I thought Jonathan Colbert from LWN really nailed"
+      },
+      {
+        "start": 29980,
+        "stop": 30408,
+        "text": " it when he wrote quote the secretive way this project has been handled is a poor"
+      },
+      {
+        "start": 30408,
+        "stop": 30960,
+        "text": " example of how to deal with a community regardless of what reality may be GTI"
+      },
+      {
+        "start": 30960,
+        "stop": 31452,
+        "text": " looks to a number of people involved like a murky hostile takeover of an"
+      },
+      {
+        "start": 31452,
+        "stop": 31752,
+        "text": " important piece of community infrastructure"
+      },
+      {
+        "start": 31752,
+        "stop": 32784,
+        "text": " it's been quite a while since we last checked in on a mobile Linux effort so"
+      },
+      {
+        "start": 32784,
+        "stop": 33236,
+        "text": " we wanted to catch you up on some work from July through September for plasma"
+      },
+      {
+        "start": 33236,
+        "stop": 33808,
+        "text": " mobile gear some of these updates are pretty major and others are just nice to"
+      },
+      {
+        "start": 33808,
+        "stop": 34436,
+        "text": " see like the addition of a clear all notifications button and a do not disturb"
+      },
+      {
+        "start": 34436,
+        "stop": 34624,
+        "text": " quick setting"
+      },
+      {
+        "start": 34624,
+        "stop": 34980,
+        "text": " I consider that a pretty major feature right there it was great to just see all"
+      },
+      {
+        "start": 34980,
+        "stop": 35388,
+        "text": " this work come together there was work that went into making it possible as"
+      },
+      {
+        "start": 35388,
+        "stop": 35952,
+        "text": " well to install plasma mobile alongside plasma desktop and streamline some of"
+      },
+      {
+        "start": 35952,
+        "stop": 36292,
+        "text": " the configurations between them as well that's that's going to be absolutely"
+      },
+      {
+        "start": 36292,
+        "stop": 36672,
+        "text": " essential for developers are building apps for this also great to see some"
+      },
+      {
+        "start": 36672,
+        "stop": 37080,
+        "text": " good stuff for podcast listeners the interface in the podcast app has gotten"
+      },
+      {
+        "start": 37080,
+        "stop": 37436,
+        "text": " some nice improvements including the way the episode pages listed the"
+      },
+      {
+        "start": 37436,
+        "stop": 37872,
+        "text": " information within is listed some reworking there that helps with sleep"
+      },
+      {
+        "start": 37872,
+        "stop": 38172,
+        "text": " timer functionality but here's a good one"
+      },
+      {
+        "start": 38172,
+        "stop": 38576,
+        "text": " they've added the possibility to push all local episode states to a g Potter"
+      },
+      {
+        "start": 38576,
+        "stop": 39032,
+        "text": " sync server you can sync the state of your pods across your multiple plasma"
+      },
+      {
+        "start": 39032,
+        "stop": 39648,
+        "text": " mobile devices of course any mobile operating system needs support for phone"
+      },
+      {
+        "start": 39648,
+        "stop": 40128,
+        "text": " calls and this time around plasma mobile gear definitely got some improvements"
+      },
+      {
+        "start": 40128,
+        "stop": 40648,
+        "text": " there including improved support for screening incoming calls and some"
+      },
+      {
+        "start": 40648,
+        "stop": 41116,
+        "text": " lockscreen overlay support for that call screening plus more reliable behavior"
+      },
+      {
+        "start": 41116,
+        "stop": 41448,
+        "text": " when accepting calls showing notifications about calls and"
+      },
+      {
+        "start": 41448,
+        "stop": 41960,
+        "text": " importantly switching call audio modes automatically they've also introduced a"
+      },
+      {
+        "start": 41960,
+        "stop": 42444,
+        "text": " new swipe control to easily answer calls that all seems like pretty good stuff"
+      },
+      {
+        "start": 42444,
+        "stop": 42804,
+        "text": " but catch this one there West pain they've also introduced some really"
+      },
+      {
+        "start": 42804,
+        "stop": 43176,
+        "text": " clever support for call blocking of unknown numbers and it makes it possible"
+      },
+      {
+        "start": 43176,
+        "stop": 43640,
+        "text": " to change the notification logic according to the address book or if a"
+      },
+      {
+        "start": 43640,
+        "stop": 44008,
+        "text": " number matches a certain pattern I'd like to have that on my commercial phone"
+      },
+      {
+        "start": 44008,
+        "stop": 44496,
+        "text": " right now just mark everything as spam I mean sure this isn't going to replace"
+      },
+      {
+        "start": 44496,
+        "stop": 44872,
+        "text": " your daily driver just yet but thank goodness a team of people are working"
+      },
+      {
+        "start": 44872,
+        "stop": 45904,
+        "text": " away at this solid progress to report for the Asahi rust-based direct rendering"
+      },
+      {
+        "start": 45904,
+        "stop": 46520,
+        "text": " manager video driver for Linux on that shiny Apple M hardware recently that"
+      },
+      {
+        "start": 46520,
+        "stop": 47304,
+        "text": " driver successfully managed to render its very first cube this is a milestone"
+      },
+      {
+        "start": 47304,
+        "stop": 47748,
+        "text": " they reached it this past weekend Asahi Lina has been working on bringing up"
+      },
+      {
+        "start": 47748,
+        "stop": 48140,
+        "text": " this new driver and just recently managed to also get the display working"
+      },
+      {
+        "start": 48140,
+        "stop": 48644,
+        "text": " over the HDMI port with the driver as well and to make things even more"
+      },
+      {
+        "start": 48644,
+        "stop": 49272,
+        "text": " exciting it appears Wayland support is well underway tweeting early on the 28th"
+      },
+      {
+        "start": 49272,
+        "stop": 49856,
+        "text": " of September Asahi Lina says Katie isn't starting all the way up just yet but"
+      },
+      {
+        "start": 49856,
+        "stop": 50468,
+        "text": " Wayland quote works hey I have that problem on my x86 system sometimes it's"
+      },
+      {
+        "start": 50468,
+        "stop": 51076,
+        "text": " not so bad let's be real though it's gonna be months and then it's gonna be"
+      },
+      {
+        "start": 51076,
+        "stop": 51404,
+        "text": " even more time until it's in the hands of end users and that's all to say"
+      },
+      {
+        "start": 51404,
+        "stop": 51904,
+        "text": " nothing about the fact that rust support hasn't even landed in the Linux kernel"
+      },
+      {
+        "start": 51904,
+        "stop": 52424,
+        "text": " yet but it will be landing soon and we'll have more on that in the near"
+      },
+      {
+        "start": 52424,
+        "stop": 53400,
+        "text": " future an important security item for our friends in the matrix Fedevers this"
+      },
+      {
+        "start": 53400,
+        "stop": 53964,
+        "text": " week two critical vulnerabilities in end-to-end encryption are found in some"
+      },
+      {
+        "start": 53964,
+        "stop": 54564,
+        "text": " of the SDKs which power element and many other popular clients these have now"
+      },
+      {
+        "start": 54564,
+        "stop": 55012,
+        "text": " been fixed and thankfully the matrix team have not seen any evidence of these"
+      },
+      {
+        "start": 55012,
+        "stop": 55542,
+        "text": " exploits being used in the wild to make it even a little better all the critical"
+      },
+      {
+        "start": 55542,
+        "stop": 55900,
+        "text": " vulnerabilities actually require cooperation from a malicious home server"
+      },
+      {
+        "start": 55900,
+        "stop": 56426,
+        "text": " in order to be exploited we should also note that this is not a bug in the"
+      },
+      {
+        "start": 56426,
+        "stop": 57028,
+        "text": " protocol just a bug in some of the SDKs used by a lot of clients because of that"
+      },
+      {
+        "start": 57028,
+        "stop": 57672,
+        "text": " not all clients are affected so go check with yours but the matrix team have used"
+      },
+      {
+        "start": 57672,
+        "stop": 58144,
+        "text": " this as an opportunity to underscore their ongoing efforts to replace some of"
+      },
+      {
+        "start": 58144,
+        "stop": 58732,
+        "text": " these first generation SDKs with a new clean carefully written rust"
+      },
+      {
+        "start": 58732,
+        "stop": 59376,
+        "text": " implementation complete with an independent public audit but until that"
+      },
+      {
+        "start": 59376,
+        "stop": 59848,
+        "text": " glorious future comes patch clients are available now go get those package"
+      },
+      {
+        "start": 59848,
+        "stop": 60716,
+        "text": " updates linode.com slash land you go there to get a hundred dollars in 60-day"
+      },
+      {
+        "start": 60716,
+        "stop": 61008,
+        "text": " credit on a new account and what a great way to support the show right because"
+      },
+      {
+        "start": 61008,
+        "stop": 61284,
+        "text": " you're letting them know you heard about it here but you also get to check out"
+      },
+      {
+        "start": 61284,
+        "stop": 61660,
+        "text": " something awesome and a hundred dollars well that's real money that you can do"
+      },
+      {
+        "start": 61660,
+        "stop": 62040,
+        "text": " something with Linode is fast reliable cloud hosting I think they're the best"
+      },
+      {
+        "start": 62040,
+        "stop": 62324,
+        "text": " in the business and they have the best support in the business real humans all"
+      },
+      {
+        "start": 62324,
+        "stop": 62758,
+        "text": " day every day and really nobody else is architected their business the way"
+      },
+      {
+        "start": 62758,
+        "stop": 63108,
+        "text": " Linode has to make that possible and Linode's how we run everything we've"
+      },
+      {
+        "start": 63108,
+        "stop": 63468,
+        "text": " built in the last few years in the cloud including that new website of ours if"
+      },
+      {
+        "start": 63468,
+        "stop": 64004,
+        "text": " you haven't checked it out yet that renders builds and is deployed on Linode"
+      },
+      {
+        "start": 64004,
+        "stop": 64480,
+        "text": " you know they started about 19 years ago and they've just built a great product"
+      },
+      {
+        "start": 64480,
+        "stop": 64964,
+        "text": " and now they've got a great reputation and they're 30 to 50 percent cheaper"
+      },
+      {
+        "start": 64964,
+        "stop": 65292,
+        "text": " than the hyperscalers out there but that doesn't mean you skimp on the features"
+      },
+      {
+        "start": 65292,
+        "stop": 65786,
+        "text": " Linode today has 11 data centers around the world for you to choose from but my"
+      },
+      {
+        "start": 65786,
+        "stop": 66414,
+        "text": " friends they are turning it up past 11 in 2023 they are going to introduce 12"
+      },
+      {
+        "start": 66414,
+        "stop": 66984,
+        "text": " new data centers around the world and I'm happy as a West coaster I'm happy to"
+      },
+      {
+        "start": 66984,
+        "stop": 67454,
+        "text": " say that Seattle is going to have one of these data centers but they're literally all"
+      },
+      {
+        "start": 67454,
+        "stop": 68000,
+        "text": " over the world many places from Amsterdam Stockholm I mean Paris just"
+      },
+      {
+        "start": 68000,
+        "stop": 68436,
+        "text": " tons of places Rome it's going to be a dozen and then they're also working on a"
+      },
+      {
+        "start": 68436,
+        "stop": 68804,
+        "text": " brand new concept called distributed sites where they've identified 50"
+      },
+      {
+        "start": 68804,
+        "stop": 69180,
+        "text": " additional cities where they're going to do a new concept where you can get basic"
+      },
+      {
+        "start": 69180,
+        "stop": 69672,
+        "text": " computes and difficult to reach locations Linode is always investing in"
+      },
+      {
+        "start": 69672,
+        "stop": 70056,
+        "text": " making the service and the product better the hardware the support and the"
+      },
+      {
+        "start": 70056,
+        "stop": 70584,
+        "text": " reach and on top of that they have great back-end features like s3 compatible"
+      },
+      {
+        "start": 70584,
+        "stop": 71080,
+        "text": " object storage cloud firewall great backups kubernetes support super fast"
+      },
+      {
+        "start": 71080,
+        "stop": 71688,
+        "text": " networking and so much more so go build something go learn something try it out"
+      },
+      {
+        "start": 71688,
+        "stop": 72080,
+        "text": " for yourself and support the show you just go to Linode.com/lan to get"
+      },
+      {
+        "start": 72080,
+        "stop": 72456,
+        "text": " that hundred dollars and 60-day credit kick the tires for yourself one more"
+      },
+      {
+        "start": 72456,
+        "stop": 73032,
+        "text": " time to support the show Linode.com/lan"
+      },
+      {
+        "start": 73160,
+        "stop": 73872,
+        "text": " collide.com/lan collide is endpoint security that uses the most powerful"
+      },
+      {
+        "start": 73872,
+        "stop": 74428,
+        "text": " untapped resource in IT the end users yes that's right if you're trying to"
+      },
+      {
+        "start": 74428,
+        "stop": 74768,
+        "text": " achieve security goals for yourself for a third-party auditor for the new boss"
+      },
+      {
+        "start": 74768,
+        "stop": 75316,
+        "text": " I've had to do it for the FDA for the FCC for the FBI okay maybe not the FBI"
+      },
+      {
+        "start": 75316,
+        "stop": 75772,
+        "text": " but you get the idea the conventional wisdom has been to treat every device"
+      },
+      {
+        "start": 75772,
+        "stop": 76156,
+        "text": " like it's Fort Knox go all in on security with old device management stuff"
+      },
+      {
+        "start": 76156,
+        "stop": 76712,
+        "text": " like MDM's that force disruptive agents onto employees devices slow them down"
+      },
+      {
+        "start": 76712,
+        "stop": 77360,
+        "text": " and treat privacy as an afterthought to say it politely not to mention they'll"
+      },
+      {
+        "start": 77360,
+        "stop": 77676,
+        "text": " often introduce their own security vulnerabilities like how many times have"
+      },
+      {
+        "start": 77676,
+        "stop": 78200,
+        "text": " we seen that every single time it's just a tired old way of doing things and I"
+      },
+      {
+        "start": 78200,
+        "stop": 78660,
+        "text": " can tell you from personal experience it turns IT admins and end users into"
+      },
+      {
+        "start": 78660,
+        "stop": 79136,
+        "text": " enemies it creates security problems users don't like it IT staff always look"
+      },
+      {
+        "start": 79136,
+        "stop": 79596,
+        "text": " at it as a compromise and eventually creates a culture of shadow IT it's"
+      },
+      {
+        "start": 79596,
+        "stop": 80120,
+        "text": " awful collide does things differently instead of forcing changes on its users"
+      },
+      {
+        "start": 80120,
+        "stop": 80526,
+        "text": " collide sends them security recommendations via slack Clyde will"
+      },
+      {
+        "start": 80526,
+        "stop": 80856,
+        "text": " automatically notify your team when their devices are insecure and give them"
+      },
+      {
+        "start": 80856,
+        "stop": 81288,
+        "text": " step-by-step instructions on how to solve the problem and by reaching out to"
+      },
+      {
+        "start": 81288,
+        "stop": 81664,
+        "text": " employees via a friendly slack DM and educating them about company policies"
+      },
+      {
+        "start": 81664,
+        "stop": 82264,
+        "text": " collide can help you build a culture in which everyone contributes to security"
+      },
+      {
+        "start": 82264,
+        "stop": 82824,
+        "text": " because everyone understands how and why to do it and for IT admins collide"
+      },
+      {
+        "start": 82824,
+        "stop": 83176,
+        "text": " provides a single dashboard that lets you monitor the security of your entire"
+      },
+      {
+        "start": 83176,
+        "stop": 83808,
+        "text": " fleet even if they're on a Mac Windows or of course Linux you can see at a"
+      },
+      {
+        "start": 83808,
+        "stop": 84228,
+        "text": " glance which employees have their disk encrypted their OS up to date and"
+      },
+      {
+        "start": 84228,
+        "stop": 84628,
+        "text": " a password manager installed make it easy to prove compliance to yourself"
+      },
+      {
+        "start": 84628,
+        "stop": 85172,
+        "text": " your auditors your customers leadership you get the idea that's collide user"
+      },
+      {
+        "start": 85172,
+        "stop": 85680,
+        "text": " centered cross-platform endpoint security for teams that slack you can"
+      },
+      {
+        "start": 85680,
+        "stop": 86138,
+        "text": " meet your compliance goals by putting users first visit collide calm slash"
+      },
+      {
+        "start": 86138,
+        "stop": 86452,
+        "text": " land to find out how you go there they're gonna hook you up with a goodie"
+      },
+      {
+        "start": 86452,
+        "stop": 86884,
+        "text": " bag including a free t-shirt just for trying out a free trial so I mean free"
+      },
+      {
+        "start": 86884,
+        "stop": 87564,
+        "text": " t-shirt y'all so go to kolide.com slash land to sign up again that's collide.com"
+      },
+      {
+        "start": 87564,
+        "stop": 87912,
+        "text": " slash land"
+      },
+      {
+        "start": 87912,
+        "stop": 88628,
+        "text": " we're visiting NASA's jet propulsion laboratory this week to celebrate the"
+      },
+      {
+        "start": 88628,
+        "stop": 89184,
+        "text": " incredible achievements of Linux in modern space exploration so it's rather"
+      },
+      {
+        "start": 89184,
+        "stop": 89784,
+        "text": " fitting the Linux powered Mars helicopter ingenuity completed its 33rd"
+      },
+      {
+        "start": 89784,
+        "stop": 90352,
+        "text": " flight this week that's just amazing and currently it's around 96 million miles"
+      },
+      {
+        "start": 90352,
+        "stop": 90860,
+        "text": " away from where we sit right now the little Linux copter originally only had"
+      },
+      {
+        "start": 90860,
+        "stop": 91520,
+        "text": " five flights planned so the fact they hit 33 is just incredible at the time"
+      },
+      {
+        "start": 91520,
+        "stop": 91866,
+        "text": " when they launched this thing expectations were low I mean keep in"
+      },
+      {
+        "start": 91866,
+        "stop": 92320,
+        "text": " mind there's Mars itself it only has 3/8 Earth's gravity it also has a much"
+      },
+      {
+        "start": 92320,
+        "stop": 93016,
+        "text": " thinner atmosphere 1.5 percent of Earth's atmospheric density 1.5 percent"
+      },
+      {
+        "start": 93016,
+        "stop": 93584,
+        "text": " imagine flying in that and then to make matters worse Mars only has 43 percent"
+      },
+      {
+        "start": 93584,
+        "stop": 93988,
+        "text": " of the solar radiance so charging batteries is tricky and there's just a"
+      },
+      {
+        "start": 93988,
+        "stop": 94356,
+        "text": " bunch of other variables on another planet where we've never flown before"
+      },
+      {
+        "start": 94356,
+        "stop": 94836,
+        "text": " that made this a big unknown so things started humbly with a little Linux"
+      },
+      {
+        "start": 94836,
+        "stop": 95372,
+        "text": " copter simple basic essential tests were done one bit at a time during one of the"
+      },
+      {
+        "start": 95372,
+        "stop": 95724,
+        "text": " high-speed spin tests back in early April in fact there was a problem they"
+      },
+      {
+        "start": 95724,
+        "stop": 96124,
+        "text": " had to shut it down there was a watchdog service because of course this thing's"
+      },
+      {
+        "start": 96124,
+        "stop": 96438,
+        "text": " running Linux and they got watch guard services on there and it noticed there"
+      },
+      {
+        "start": 96438,
+        "stop": 96872,
+        "text": " was too long of a delay between the transition between the preflight and the"
+      },
+      {
+        "start": 96872,
+        "stop": 97388,
+        "text": " flight system so it called foul and shut everything down but the team was capable"
+      },
+      {
+        "start": 97388,
+        "stop": 98012,
+        "text": " of fixing that from earth with a very remote software update after that really"
+      },
+      {
+        "start": 98012,
+        "stop": 98348,
+        "text": " seems like things have been mainly for the most part by the numbers with these"
+      },
+      {
+        "start": 98348,
+        "stop": 98712,
+        "text": " flights with the team pushing things a bit further and getting more data and"
+      },
+      {
+        "start": 98712,
+        "stop": 99260,
+        "text": " cool pictures every single time in the last few months there's been concern"
+      },
+      {
+        "start": 99260,
+        "stop": 99932,
+        "text": " because Mars is in the middle of winter and it gets real cold on Mars yes it does"
+      },
+      {
+        "start": 99932,
+        "stop": 100588,
+        "text": " overnight temperatures can get as low as negative 124 degrees Fahrenheit negative"
+      },
+      {
+        "start": 100588,
+        "stop": 101294,
+        "text": " 86 Celsius winter on Mars also means even less of that limited solar energy"
+      },
+      {
+        "start": 101294,
+        "stop": 101764,
+        "text": " you mentioned hitting those cute little solar panels and that makes it difficult"
+      },
+      {
+        "start": 101764,
+        "stop": 102350,
+        "text": " to maintain charge in the batteries though good news during the day the"
+      },
+      {
+        "start": 102350,
+        "stop": 102860,
+        "text": " panel creates just enough energy to make short hops possible and that's how"
+      },
+      {
+        "start": 102860,
+        "stop": 103580,
+        "text": " 33 flights later now amazingly Linux's role in the future of space exploration"
+      },
+      {
+        "start": 103580,
+        "stop": 104252,
+        "text": " it's pretty much guaranteed and this week JPL's expertise was on call once"
+      },
+      {
+        "start": 104252,
+        "stop": 105252,
+        "text": " again for the asteroid striking dart mission oh wow oh my goodness yeah wow"
+      },
+      {
+        "start": 105252,
+        "stop": 105948,
+        "text": " four three what"
+      },
+      {
+        "start": 105948,
+        "stop": 106704,
+        "text": " oh my gosh oh wow I'm getting visual confirmation"
+      },
+      {
+        "start": 106704,
+        "stop": 107396,
+        "text": " we got it"
+      },
+      {
+        "start": 107580,
+        "stop": 109020,
+        "text": " we have planetary defense indeed dart stands for double asteroid"
+      },
+      {
+        "start": 109020,
+        "stop": 109664,
+        "text": " redirection test and well it seeks to develop a method to protect our beloved"
+      },
+      {
+        "start": 109664,
+        "stop": 110228,
+        "text": " earth in case of a future asteroid impact threat how does it do it well"
+      },
+      {
+        "start": 110228,
+        "stop": 110744,
+        "text": " actually pretty simply just by shifting the asteroids orbit through kinetic"
+      },
+      {
+        "start": 110744,
+        "stop": 111584,
+        "text": " impact launched back in November 2021 dart is approximately 600 kilograms and"
+      },
+      {
+        "start": 111584,
+        "stop": 112372,
+        "text": " had to fly 6.8 million miles away all to slam into the asteroid dimorphos just"
+      },
+      {
+        "start": 112372,
+        "stop": 112952,
+        "text": " just 160 meters across it's a difficult job said JPL's Julie"
+      },
+      {
+        "start": 112952,
+        "stop": 113400,
+        "text": " belrose who leads the dart spacecraft navigation team she went on to say quote"
+      },
+      {
+        "start": 113400,
+        "stop": 113786,
+        "text": " it's a big part of what the navigation team is working on it's getting dart to"
+      },
+      {
+        "start": 113786,
+        "stop": 114416,
+        "text": " a 15 kilometer wide box in space 24 hours before impact at that point the"
+      },
+      {
+        "start": 114416,
+        "stop": 114868,
+        "text": " mission's final trajectory correction maneuver aka the firing of thrusters to"
+      },
+      {
+        "start": 114868,
+        "stop": 115284,
+        "text": " modify the direction of flight that'll be executed by mission controllers back"
+      },
+      {
+        "start": 115284,
+        "stop": 116076,
+        "text": " here on earth but from then on it was all up to dart yeah the thing flew"
+      },
+      {
+        "start": 116076,
+        "stop": 116376,
+        "text": " itself right into the rock the autonomous navigation system is"
+      },
+      {
+        "start": 116376,
+        "stop": 116744,
+        "text": " fascinating it's a particular area of interest for West and I that we hope to"
+      },
+      {
+        "start": 116744,
+        "stop": 117084,
+        "text": " get a little more information about when we visit JPL in the next day but"
+      },
+      {
+        "start": 117084,
+        "stop": 117604,
+        "text": " watching Linux become the dominant operating system of space it's just been"
+      },
+      {
+        "start": 117604,
+        "stop": 118000,
+        "text": " fascinating and so encouraging to watch we're gonna keep an eye on this and"
+      },
+      {
+        "start": 118000,
+        "stop": 118408,
+        "text": " everything else going on in the world of Linux and all open source so go to"
+      },
+      {
+        "start": 118408,
+        "stop": 118828,
+        "text": " Linux action news comm slash subscribe for all the ways to get new episodes and"
+      },
+      {
+        "start": 118828,
+        "stop": 119312,
+        "text": " a Linux action news comm slash contact for ways to keep in touch across our"
+      },
+      {
+        "start": 119312,
+        "stop": 119652,
+        "text": " solar system and if you're looking for some of those behind-the-scenes details"
+      },
+      {
+        "start": 119652,
+        "stop": 120168,
+        "text": " on our trip down to Pasadena don't miss lucky number 13 of office hours we have"
+      },
+      {
+        "start": 120168,
+        "stop": 120628,
+        "text": " the deets as for us well don't worry we'll be back next week with our usual"
+      },
+      {
+        "start": 120628,
+        "stop": 121140,
+        "text": " take on the latest Linux and open source news thanks for joining us and that's"
+      },
+      {
+        "start": 121140,
+        "stop": 121496,
+        "text": " all the news for this week"
+      },
+      {
+        "start": 121496,
+        "stop": 121702,
+        "text": " you"
+      },
+      {
+        "start": 121702,
+        "stop": 121908,
+        "text": " you"
+      },
+      {
+        "start": 121908,
+        "stop": 122114,
+        "text": " you"
+      },
+      {
+        "start": 122114,
+        "stop": 122320,
+        "text": " you"
+      },
+      {
+        "start": 122320,
+        "stop": 122526,
+        "text": " you"
+      },
+      {
+        "start": 122526,
+        "stop": 122732,
+        "text": " you"
+      },
+      {
+        "start": 122732,
+        "stop": 122938,
+        "text": " you"
+      },
+      {
+        "start": 122938,
+        "stop": 123144,
+        "text": " you"
+      },
+      {
+        "start": 123144,
+        "stop": 123350,
+        "text": " you"
+      },
+      {
+        "start": 123350,
+        "stop": 123556,
+        "text": " you"
+      },
+      {
+        "start": 123556,
+        "stop": 123762,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 792,
+      "nanos": 240268484
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 260",
+    "pictures": [],
+    "duration": {
+      "secs": 1231,
+      "nanos": 360000000
+    },
+    "unique_id": "http://linuxactionnews.com/260"
+  },
+  "episode": {
+    "title": "Linux Action News 260",
+    "description": "The controversial change for the GNU Toolchain, critical vulnerabilities in popular Matrix clients, and the significant milestone for the Ingenuity LinuxCopter this week.",
+    "content": "<p><p>The controversial change for the GNU Toolchain, critical vulnerabilities in popular Matrix clients, and the significant milestone for the Ingenuity LinuxCopter this week.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://lwn.net/Articles/909704/\" title=\"Announcing the GNU Toolchain Infrastructure Project\" rel=\"nofollow\">Announcing the GNU Toolchain Infrastructure Project</a> &mdash; Linux Foundation IT services plans for the GNU Toolchain include Git repositories, mailing lists, issue tracking, web sites, and CI/CD, implemented with strong authentication, attestation, and security posture. Utilizing the experience and infrastructure of the LF IT team that is already used by the Linux kernel community will provide the most effective solution and best experience for the GNU Toolchain developer community.</li><li><a href=\"http://sourceware.org/\" title=\"Sourceware.org\" rel=\"nofollow\">Sourceware.org</a></li><li><a href=\"https://www.phoronix.com/news/GNU-Toolchain-Infrastructure\" title=\"GNU Toolchain Plans Move To The Linux Foundation’s Infrastructure\" rel=\"nofollow\">GNU Toolchain Plans Move To The Linux Foundation’s Infrastructure</a></li><li><a href=\"https://lwn.net/Articles/908638/\" title=\"Two visions for the future of sourceware.org\" rel=\"nofollow\">Two visions for the future of sourceware.org</a></li><li><a href=\"https://plasma-mobile.org/2022/09/27/plasma-mobile-gear-22-09/\" title=\"Plasma Mobile Gear Update\" rel=\"nofollow\">Plasma Mobile Gear Update</a> &mdash; The Plasma Mobile team is happy to announce the developments integrated into Plasma Mobile between July-September 2022.</li><li><a href=\"https://www.phoronix.com/news/Rust-Apple-DRM-Starts-Weston\" title=\"The Work-In-Progress Rust-Written Apple DRM Driver Manages To Start Wayland’s Weston\" rel=\"nofollow\">The Work-In-Progress Rust-Written Apple DRM Driver Manages To Start Wayland’s Weston</a> &mdash; After passing the initial spinning cube milestone this past weekend, Asahi Lina has been working on bringing up more of this reverse-engineered kernel DRM/KMS driver.</li><li><a href=\"https://twitter.com/LinaAsahi/status/1575100421823115264\" title=\"Asahi Lina on Twitter\" rel=\"nofollow\">Asahi Lina on Twitter</a> &mdash; 🚀 Weston/Wayland works!!! 🚀 KDE doesn’t start all the way yet, but on X at least it showed the splash screen ^^ </li><li><a href=\"https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients\" title=\"Upgrade now to address E2EE vulnerabilities in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk2\" rel=\"nofollow\">Upgrade now to address E2EE vulnerabilities in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk2</a> &mdash; Two critical severity vulnerabilities in end-to-end encryption were found in the SDKs which power Element, Beeper, Cinny, SchildiChat, Circuli, Synod.im and any other clients based on matrix-js-sdk, matrix-ios-sdk or matrix-android-sdk2.</li><li><a href=\"https://www.linode.com/blog/linode/akamai-turns-linode-up-past-11\" title=\"Akamai Turns Linode Up Past 11 \" rel=\"nofollow\">Akamai Turns Linode Up Past 11 </a></li><li><a href=\"https://twitter.com/NASAJPL/status/1574899348197949440\" title=\"Over the weekend, #MarsHelicopter successfully completed Flight 33\" rel=\"nofollow\">Over the weekend, #MarsHelicopter successfully completed Flight 33</a> &mdash; The rotorcraft reached an altitude of 10 meters (33 ft) and traveled 111.24 meters (365 ft) in 55.2 seconds.</li><li><a href=\"https://twitter.com/NASAJPL/status/1380938444927508484\" title=\"There will be up to five flights in the 31-day test period. \" rel=\"nofollow\">There will be up to five flights in the 31-day test period. </a> &mdash; The NASAPersevere rover will attempt to capture video of those flights.</li><li><a href=\"https://www.jpl.nasa.gov/news/nasas-asteroid-striking-dart-mission-team-has-jpl-members\" title=\"NASA’s Asteroid-Striking DART Mission Team Has JPL Members\" rel=\"nofollow\">NASA’s Asteroid-Striking DART Mission Team Has JPL Members</a> &mdash; JPL’s navigation section is experienced at getting spacecraft to faraway locations accurately.</li><li><a href=\"https://www.pasadenastarnews.com/2022/09/26/how-jpls-role-in-nasas-dart-asteroid-impact-could-save-the-earth-one-day/\" title=\"How JPL’s role in NASA’s DART asteroid impact could save the earth one day – Pasadena Star News\" rel=\"nofollow\">How JPL’s role in NASA’s DART asteroid impact could save the earth one day – Pasadena Star News</a></li><li><a href=\"https://youtu.be/4RA8Tfa6Sck?t=4604\" title=\"DART’s Impact with Asteroid Dimorphos (Official NASA Broadcast)\" rel=\"nofollow\">DART’s Impact with Asteroid Dimorphos (Official NASA Broadcast)</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8867",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15671074/aadf35cb-e69e-4206-8c33-3a81732bc066.mp3",
+      "length": "17682871",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-29T05:30:00+02:00"
+  },
+  "speedup": 1.5542759
+}

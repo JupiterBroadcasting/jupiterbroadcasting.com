@@ -1,0 +1,1372 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 1036,
+        "text": " Hello, and welcome to Linux Action News, Episode 274, recorded on January 4th, 2023."
+      },
+      {
+        "start": 1036,
+        "stop": 1136,
+        "text": " I'm Chris."
+      },
+      {
+        "start": 1136,
+        "stop": 1236,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1236,
+        "stop": 1336,
+        "text": " Hello, Wes."
+      },
+      {
+        "start": 1336,
+        "stop": 1592,
+        "text": " Let's do the news."
+      },
+      {
+        "start": 1592,
+        "stop": 2216,
+        "text": " Just a few days ago, at the RISC-V summit, Google announced it intends to make RISC-V"
+      },
+      {
+        "start": 2216,
+        "stop": 2976,
+        "text": " a Tier 1 Android architecture, which put it on par with ARM."
+      },
+      {
+        "start": 2976,
+        "stop": 3624,
+        "text": " Lars Bergstrom, Android's director of engineering, took to the stage to make that case."
+      },
+      {
+        "start": 3624,
+        "stop": 4052,
+        "text": " So today I'm excited to finally get to talk to all of you about the Android operating"
+      },
+      {
+        "start": 4052,
+        "stop": 4624,
+        "text": " system, the Android open source project, our new support for the RISC-V architecture, and"
+      },
+      {
+        "start": 4624,
+        "stop": 5016,
+        "text": " talk a little bit about some of our roadmap that we're expecting over the next few years."
+      },
+      {
+        "start": 5016,
+        "stop": 5408,
+        "text": " We'll have a link to about a 14-minute keynote by Lars."
+      },
+      {
+        "start": 5408,
+        "stop": 5826,
+        "text": " He kind of does a hard sell for Android in this keynote, and I think he's just trying"
+      },
+      {
+        "start": 5826,
+        "stop": 6420,
+        "text": " to proactively answer the question for developers why, in his opinion, they should choose Android"
+      },
+      {
+        "start": 6420,
+        "stop": 6656,
+        "text": " over, say, vanilla Linux."
+      },
+      {
+        "start": 6656,
+        "stop": 7076,
+        "text": " And so when you look at the Android open source project, like I mentioned, it has everything"
+      },
+      {
+        "start": 7076,
+        "stop": 7564,
+        "text": " that you need to port the Android operating system to your platform, not just the Linux"
+      },
+      {
+        "start": 7564,
+        "stop": 8020,
+        "text": " kernel but also all of the security layers, all of the security privileges, the trusted"
+      },
+      {
+        "start": 8020,
+        "stop": 8516,
+        "text": " execution environment, all of the cross-compilers so that you can do all of your work on the"
+      },
+      {
+        "start": 8516,
+        "stop": 8914,
+        "text": " Linux host but target whatever particular device that you have."
+      },
+      {
+        "start": 8914,
+        "stop": 9550,
+        "text": " A value pitch is they have a rich ecosystem of libraries, reference applications, and"
+      },
+      {
+        "start": 9550,
+        "stop": 10160,
+        "text": " so forth, and Google believes this is going to be appealing to RISC-V developers."
+      },
+      {
+        "start": 10160,
+        "stop": 10734,
+        "text": " Though Lars did make it clear here that Google does not have any hardware to announce at"
+      },
+      {
+        "start": 10734,
+        "stop": 11374,
+        "text": " the moment, but they do intend to prepare the tooling for RISC-V as quickly as possible."
+      },
+      {
+        "start": 11374,
+        "stop": 11708,
+        "text": " Well, at the end of September here, we started landing patches."
+      },
+      {
+        "start": 11708,
+        "stop": 12188,
+        "text": " Now, we've been following RISC-V for a very long time on the Android side, watching its"
+      },
+      {
+        "start": 12188,
+        "stop": 12364,
+        "text": " progress very eagerly."
+      },
+      {
+        "start": 12364,
+        "stop": 12880,
+        "text": " We believe that more architectures and a more diverse ecosystem is better for everyone."
+      },
+      {
+        "start": 12880,
+        "stop": 13430,
+        "text": " At this point, Google is actually doing daily RISC-V builds against the tip of the tree,"
+      },
+      {
+        "start": 13430,
+        "stop": 13982,
+        "text": " and they are doing 64-bit builds right now, and it sounds like potentially may only do"
+      },
+      {
+        "start": 13982,
+        "stop": 14410,
+        "text": " 64-bit builds, although I get the sense that is up for some debate."
+      },
+      {
+        "start": 14410,
+        "stop": 14778,
+        "text": " This effort seems to really have some momentum behind it at Google, though, and if you're"
+      },
+      {
+        "start": 14778,
+        "stop": 15194,
+        "text": " on a Linux box out there, you could start to play around with some of this stuff today."
+      },
+      {
+        "start": 15194,
+        "stop": 15628,
+        "text": " So what you can do right now from a Linux box is go ahead and enlist right up against"
+      },
+      {
+        "start": 15628,
+        "stop": 15906,
+        "text": " the tip of the tree and build locally."
+      },
+      {
+        "start": 15906,
+        "stop": 16342,
+        "text": " We're expecting to have full high-fidelity emulator support very, very early at the start"
+      },
+      {
+        "start": 16342,
+        "stop": 16442,
+        "text": " of next year."
+      },
+      {
+        "start": 16442,
+        "stop": 16734,
+        "text": " I was hoping to have a demo today but didn't quite come together."
+      },
+      {
+        "start": 16734,
+        "stop": 17250,
+        "text": " And we'll have Android runtime support for all of the Java workloads during Q1, so starting"
+      },
+      {
+        "start": 17250,
+        "stop": 17648,
+        "text": " with the interpreter and building up through our just-in-time compiler."
+      },
+      {
+        "start": 17648,
+        "stop": 18358,
+        "text": " As for where this effort is going next, well, Lars shared a bit of that with the audience."
+      },
+      {
+        "start": 18358,
+        "stop": 18704,
+        "text": " In some ways, most importantly, getting all of the continuous integration in place."
+      },
+      {
+        "start": 18704,
+        "stop": 19150,
+        "text": " It's important for us that RISC-V be seen as a tier one platform by the rest of the"
+      },
+      {
+        "start": 19150,
+        "stop": 19646,
+        "text": " ecosystem, both on the tooling side and on the open source software side, so that we"
+      },
+      {
+        "start": 19646,
+        "stop": 20144,
+        "text": " know that the projects will not just run once for one demo, but that every day these projects"
+      },
+      {
+        "start": 20144,
+        "stop": 20438,
+        "text": " are working for RISC-V, they're optimized, they're running well, and they're hitting"
+      },
+      {
+        "start": 20438,
+        "stop": 20918,
+        "text": " the fast path."
+      },
+      {
+        "start": 20918,
+        "stop": 21350,
+        "text": " Sticking with the ad giant for just a little bit longer, this week Google released OSV"
+      },
+      {
+        "start": 21350,
+        "stop": 21450,
+        "text": " Scanner."
+      },
+      {
+        "start": 21450,
+        "stop": 21998,
+        "text": " It's an Apache-licensed front-end interface to the open source vulnerability database."
+      },
+      {
+        "start": 21998,
+        "stop": 22768,
+        "text": " That vulnerability database has a schema standard, the OpenSSF OSV format, developed in collaboration"
+      },
+      {
+        "start": 22768,
+        "stop": 22958,
+        "text": " with community members."
+      },
+      {
+        "start": 22958,
+        "stop": 23634,
+        "text": " The schema provides a human and machine readable data format to describe vulnerabilities in"
+      },
+      {
+        "start": 23634,
+        "stop": 24346,
+        "text": " a way that precisely maps to open source package versions or repo commit hashes."
+      },
+      {
+        "start": 24346,
+        "stop": 24936,
+        "text": " And now, with the release of OSV Scanner, we have an easy way to actually make use of"
+      },
+      {
+        "start": 24936,
+        "stop": 25036,
+        "text": " all that data."
+      },
+      {
+        "start": 25036,
+        "stop": 25546,
+        "text": " Yeah, so from a practical standpoint, when you run OSV Scanner on a project, it first"
+      },
+      {
+        "start": 25546,
+        "stop": 25888,
+        "text": " determines all of the dependencies that that project uses."
+      },
+      {
+        "start": 25888,
+        "stop": 26338,
+        "text": " It analyzes manifest, looks at the software build materials and commit hashes, and then"
+      },
+      {
+        "start": 26338,
+        "stop": 26764,
+        "text": " all of that information is collected and they query the OSV database to find any vulnerabilities"
+      },
+      {
+        "start": 26764,
+        "stop": 27026,
+        "text": " associated within the project you're scanning."
+      },
+      {
+        "start": 27026,
+        "stop": 27584,
+        "text": " Now, at the moment, the way this works is primarily through lock files, which actually"
+      },
+      {
+        "start": 27584,
+        "stop": 27946,
+        "text": " tells this tool what version is being used in a project."
+      },
+      {
+        "start": 27946,
+        "stop": 28198,
+        "text": " Out of the gate, it's got pretty decent support."
+      },
+      {
+        "start": 28198,
+        "stop": 28784,
+        "text": " You've got Java and JavaScript, of course, and PHP, Ruby, Python, but also things like"
+      },
+      {
+        "start": 28784,
+        "stop": 29264,
+        "text": " Go, Rust, Elixir, and even Flutter."
+      },
+      {
+        "start": 29264,
+        "stop": 29906,
+        "text": " And to make it even more useful, OSV Scanner also supports checking installed Debian packages"
+      },
+      {
+        "start": 29906,
+        "stop": 30378,
+        "text": " for vulnerabilities, at least if it's inside a Docker container."
+      },
+      {
+        "start": 30378,
+        "stop": 31026,
+        "text": " And OSV Scanner has also been integrated into the OpenSSF Scorecards Vulnerabilities Check,"
+      },
+      {
+        "start": 31026,
+        "stop": 31612,
+        "text": " which is an automated security tool that identifies risky supply chain practices in open source"
+      },
+      {
+        "start": 31612,
+        "stop": 31712,
+        "text": " projects."
+      },
+      {
+        "start": 31712,
+        "stop": 32038,
+        "text": " That just seems like a really useful tool for teams that are trying to audit their stack"
+      },
+      {
+        "start": 32038,
+        "stop": 32278,
+        "text": " and figure out what they need to take care of."
+      },
+      {
+        "start": 32278,
+        "stop": 32704,
+        "text": " But for any tool to actually be helpful, the humans are still going to have to take action."
+      },
+      {
+        "start": 32704,
+        "stop": 33014,
+        "text": " And I think you also have to be careful of becoming complacent because you can't just"
+      },
+      {
+        "start": 33014,
+        "stop": 33398,
+        "text": " throw this at your stack and be like, \"Okay, well, we'll take a look at it."
+      },
+      {
+        "start": 33398,
+        "stop": 33498,
+        "text": " Everything's fine.\""
+      },
+      {
+        "start": 33498,
+        "stop": 33890,
+        "text": " This is a handy tool, and it helps the team find issues, but it does not replace the standard"
+      },
+      {
+        "start": 33890,
+        "stop": 34254,
+        "text": " software lifecycle, and it doesn't replace best practices either."
+      },
+      {
+        "start": 34254,
+        "stop": 34826,
+        "text": " But if you'd like to know more, we'll have a link in the show notes."
+      },
+      {
+        "start": 34826,
+        "stop": 35444,
+        "text": " It got a quick mention in last week's episode, but today, news landed that Ubuntu's new"
+      },
+      {
+        "start": 35444,
+        "stop": 36214,
+        "text": " installer is now being used by default in the daily builds of the upcoming Ubuntu 2304"
+      },
+      {
+        "start": 36214,
+        "stop": 36314,
+        "text": " Lunar Lobster release."
+      },
+      {
+        "start": 36314,
+        "stop": 36932,
+        "text": " Yeah, this is that new Flutter-based installer, and we tried an earlier build not too long"
+      },
+      {
+        "start": 36932,
+        "stop": 37038,
+        "text": " ago."
+      },
+      {
+        "start": 37038,
+        "stop": 37474,
+        "text": " And even then, I thought the new UI was a bit of an improvement over the previous installer."
+      },
+      {
+        "start": 37474,
+        "stop": 37890,
+        "text": " The workflow is fairly similar, so if you've ever installed Ubuntu before, I think you're"
+      },
+      {
+        "start": 37890,
+        "stop": 38028,
+        "text": " going to know how to operate this thing."
+      },
+      {
+        "start": 38028,
+        "stop": 38418,
+        "text": " It's got options in there for doing a minimal install, which is nice to see."
+      },
+      {
+        "start": 38418,
+        "stop": 38818,
+        "text": " You can turn on your proprietary graphics driver, Wi-Fi support's built in, it's got"
+      },
+      {
+        "start": 38818,
+        "stop": 39040,
+        "text": " the extra multimedia codecs option."
+      },
+      {
+        "start": 39040,
+        "stop": 39322,
+        "text": " It's the stuff you like to see in a standard installer."
+      },
+      {
+        "start": 39322,
+        "stop": 39672,
+        "text": " And don't worry, they're not leaving out power user features."
+      },
+      {
+        "start": 39672,
+        "stop": 40286,
+        "text": " What they call advanced features allows for LVM setup and full disk encryption."
+      },
+      {
+        "start": 40286,
+        "stop": 40462,
+        "text": " And I think you'll like this, Chris."
+      },
+      {
+        "start": 40462,
+        "stop": 40962,
+        "text": " You can now pick a light or dark theme for your desktop right from the installer."
+      },
+      {
+        "start": 40962,
+        "stop": 41214,
+        "text": " Hey, that actually is kind of nice to see."
+      },
+      {
+        "start": 41214,
+        "stop": 41630,
+        "text": " Yeah, there's some advanced feature options in there, just as long as you don't consider"
+      },
+      {
+        "start": 41630,
+        "stop": 41862,
+        "text": " ZFS one of those."
+      },
+      {
+        "start": 41862,
+        "stop": 42362,
+        "text": " At least at the time of our recording, this new Ubuntu installer that's in 2304 does not"
+      },
+      {
+        "start": 42362,
+        "stop": 42890,
+        "text": " have any options for ZFS or support at all."
+      },
+      {
+        "start": 42890,
+        "stop": 43430,
+        "text": " Maybe that's still to come, or maybe this is how Canonical slowly spins down support"
+      },
+      {
+        "start": 43430,
+        "stop": 43622,
+        "text": " for ZFS."
+      },
+      {
+        "start": 43622,
+        "stop": 44094,
+        "text": " If that is the case, I hope they open a window and make it easier for users to deploy ButterFS,"
+      },
+      {
+        "start": 44094,
+        "stop": 44542,
+        "text": " because some of us love those snapshots that copy on write."
+      },
+      {
+        "start": 44542,
+        "stop": 45138,
+        "text": " We want those file system features."
+      },
+      {
+        "start": 45138,
+        "stop": 45710,
+        "text": " Fans of the details in the extremes will be pleased to hear that Valve is getting serious"
+      },
+      {
+        "start": 45710,
+        "stop": 46030,
+        "text": " about HDR support on Linux."
+      },
+      {
+        "start": 46030,
+        "stop": 46566,
+        "text": " Thanks to improvements to the Steam Play runtime, GameScope, Valve's micro compositor, and a"
+      },
+      {
+        "start": 46566,
+        "stop": 47138,
+        "text": " whole bunch of other low-level parts of the Linux graphics stack, HDR gaming is possible"
+      },
+      {
+        "start": 47138,
+        "stop": 47666,
+        "text": " today on the latest builds of supported software."
+      },
+      {
+        "start": 47666,
+        "stop": 48142,
+        "text": " This is really neat to see, and it's mostly being reported as a Valve story right now,"
+      },
+      {
+        "start": 48142,
+        "stop": 48722,
+        "text": " but the truth is there's been a lot of hard work across all levels of the Linux stack."
+      },
+      {
+        "start": 48722,
+        "stop": 49106,
+        "text": " I know folks at Red Hat have been laser focused on this for a while."
+      },
+      {
+        "start": 49106,
+        "stop": 49558,
+        "text": " I know they've been working with folks at NVIDIA and Collabra as well to work on all"
+      },
+      {
+        "start": 49558,
+        "stop": 49962,
+        "text": " of this, and I'm sure there's other places I haven't heard about as well that have been"
+      },
+      {
+        "start": 49962,
+        "stop": 50162,
+        "text": " working towards this effort."
+      },
+      {
+        "start": 50162,
+        "stop": 50770,
+        "text": " And if you look at some of the commits, a great deal of work around the GNOME 43 release"
+      },
+      {
+        "start": 50770,
+        "stop": 51382,
+        "text": " is going into HDR support in Mudder and in GNOME Shell as well to get it all ready."
+      },
+      {
+        "start": 51382,
+        "stop": 51858,
+        "text": " That said, it does seem like Valve is one of the main driving forces of a lot of this"
+      },
+      {
+        "start": 51858,
+        "stop": 51958,
+        "text": " work."
+      },
+      {
+        "start": 51958,
+        "stop": 52438,
+        "text": " In fact, the latest round of coverage was kicked off by Pierre-Louis Craphet of Valve's"
+      },
+      {
+        "start": 52438,
+        "stop": 53146,
+        "text": " Linux team, who tested HDR on games including Halo Infinite, Deep Rock Galactic, and Death"
+      },
+      {
+        "start": 53146,
+        "stop": 53246,
+        "text": " Stranding."
+      },
+      {
+        "start": 53246,
+        "stop": 53762,
+        "text": " Now, of course, this is all still in early development, and it's going to need a fair"
+      },
+      {
+        "start": 53762,
+        "stop": 54166,
+        "text": " bit more time to actually be useful to most users."
+      },
+      {
+        "start": 54166,
+        "stop": 54850,
+        "text": " But I think the fact that it's already being tested means we won't be waiting too long"
+      },
+      {
+        "start": 54850,
+        "stop": 54950,
+        "text": " for this one."
+      },
+      {
+        "start": 54950,
+        "stop": 55430,
+        "text": " And, in fact, we should see another burst of planning and work later this year when"
+      },
+      {
+        "start": 55430,
+        "stop": 55770,
+        "text": " RedHot holds their upcoming HDR Hackfest."
+      },
+      {
+        "start": 55770,
+        "stop": 55870,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 55870,
+        "stop": 56658,
+        "text": " Go there to get $100 and 60-day credit on a new account, and it's a great way to support"
+      },
+      {
+        "start": 56658,
+        "stop": 56962,
+        "text": " the show while you're checking out fast, reliable cloud hosting."
+      },
+      {
+        "start": 56962,
+        "stop": 57422,
+        "text": " They are the best in the business with the support to match it, real humans all day,"
+      },
+      {
+        "start": 57422,
+        "stop": 57522,
+        "text": " every day."
+      },
+      {
+        "start": 57522,
+        "stop": 57950,
+        "text": " So, they're just looking at their one-click deployment options, and with us chatting about"
+      },
+      {
+        "start": 57950,
+        "stop": 58270,
+        "text": " the security vulnerability stuff, it got me thinking, maybe this would be a great week"
+      },
+      {
+        "start": 58270,
+        "stop": 58698,
+        "text": " to go try out Kali Linux on Linode and just test all the things."
+      },
+      {
+        "start": 58698,
+        "stop": 59066,
+        "text": " I have a real fondness for Kali Linux, and they have a one-click deployment setup that"
+      },
+      {
+        "start": 59066,
+        "stop": 59434,
+        "text": " you answer a couple easy questions, and then you've got a remote vulnerability scanner"
+      },
+      {
+        "start": 59434,
+        "stop": 59534,
+        "text": " under your control."
+      },
+      {
+        "start": 59534,
+        "stop": 59998,
+        "text": " That's a great way to spend that $100 at linode.com/lan."
+      },
+      {
+        "start": 59998,
+        "stop": 60318,
+        "text": " They also are 30 to 50 percent cheaper than the hyperscalers out there, so they've got"
+      },
+      {
+        "start": 60318,
+        "stop": 60686,
+        "text": " a great platform with great performance and great tools at a great price."
+      },
+      {
+        "start": 60686,
+        "stop": 61054,
+        "text": " And on top of that, they've got 11 data centers around the world with another dozen coming"
+      },
+      {
+        "start": 61054,
+        "stop": 61246,
+        "text": " online this year."
+      },
+      {
+        "start": 61246,
+        "stop": 61346,
+        "text": " Go see why we love them."
+      },
+      {
+        "start": 61346,
+        "stop": 61642,
+        "text": " That $100, I think, will give you an opportunity to really see why I think they're just the"
+      },
+      {
+        "start": 61642,
+        "stop": 61742,
+        "text": " best out there."
+      },
+      {
+        "start": 61742,
+        "stop": 61842,
+        "text": " Go build something."
+      },
+      {
+        "start": 61842,
+        "stop": 61972,
+        "text": " Go learn something."
+      },
+      {
+        "start": 61972,
+        "stop": 62178,
+        "text": " Try it for yourself and support the show."
+      },
+      {
+        "start": 62178,
+        "stop": 62278,
+        "text": " Linode's what we use."
+      },
+      {
+        "start": 62278,
+        "stop": 62410,
+        "text": " You're going to love it."
+      },
+      {
+        "start": 62410,
+        "stop": 62510,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 62510,
+        "stop": 62610,
+        "text": " That's linode.com/lan."
+      },
+      {
+        "start": 62610,
+        "stop": 63518,
+        "text": " And thank you to Collide."
+      },
+      {
+        "start": 63518,
+        "stop": 64114,
+        "text": " Endpoint security doesn't have to be a battle between IT admins and end users."
+      },
+      {
+        "start": 64114,
+        "stop": 64478,
+        "text": " That's because Collide does things differently."
+      },
+      {
+        "start": 64478,
+        "stop": 65026,
+        "text": " Collide provides user-centered solutions for companies that slack."
+      },
+      {
+        "start": 65026,
+        "stop": 65506,
+        "text": " Users receive security recommendations, and Collide will automatically notify your team"
+      },
+      {
+        "start": 65506,
+        "stop": 66258,
+        "text": " when their devices are insecure and give them step-by-step instructions to fix the problem."
+      },
+      {
+        "start": 66258,
+        "stop": 66838,
+        "text": " And Collide's dashboard allows IT admins to easily monitor the security of the entire"
+      },
+      {
+        "start": 66838,
+        "stop": 67396,
+        "text": " fleet, whether they're on Mac, Windows, or, yes, Linux."
+      },
+      {
+        "start": 67396,
+        "stop": 67974,
+        "text": " With Collide, you can build a culture of security and meet your compliance goals."
+      },
+      {
+        "start": 67974,
+        "stop": 68846,
+        "text": " So go try it out for free at collide.com/lan and get a goodie bag just for activating your"
+      },
+      {
+        "start": 68846,
+        "stop": 68946,
+        "text": " trial."
+      },
+      {
+        "start": 68946,
+        "stop": 69354,
+        "text": " It's time to put users first with Collide."
+      },
+      {
+        "start": 69354,
+        "stop": 69554,
+        "text": " That's collide.com/lan."
+      },
+      {
+        "start": 69554,
+        "stop": 70522,
+        "text": " Well, I hope you're sitting down for this next story because here comes a real shocker."
+      },
+      {
+        "start": 70522,
+        "stop": 71102,
+        "text": " A bug was discovered in the Google Home smart speaker, the Google Mini, that allows for"
+      },
+      {
+        "start": 71102,
+        "stop": 71650,
+        "text": " creating a backdoor account that could control the speaker device and remotely access the"
+      },
+      {
+        "start": 71650,
+        "stop": 72198,
+        "text": " microphone feed, effectively turning it into the perfect spy device."
+      },
+      {
+        "start": 72198,
+        "stop": 72374,
+        "text": " Yikes."
+      },
+      {
+        "start": 72374,
+        "stop": 73134,
+        "text": " This bug was discovered by researcher Matt Koons, who received $107,500 from responsibly"
+      },
+      {
+        "start": 73134,
+        "stop": 73398,
+        "text": " reporting it to Google."
+      },
+      {
+        "start": 73398,
+        "stop": 73878,
+        "text": " This all came to light earlier this week when Matt published the technical details about"
+      },
+      {
+        "start": 73878,
+        "stop": 74242,
+        "text": " his findings and how to leverage them."
+      },
+      {
+        "start": 74242,
+        "stop": 74732,
+        "text": " While experimenting with his own Google Home Mini speaker, Matt discovered that new accounts"
+      },
+      {
+        "start": 74732,
+        "stop": 75422,
+        "text": " added using the Google Home app could send commands to it remotely via the Cloud API."
+      },
+      {
+        "start": 75422,
+        "stop": 75590,
+        "text": " How convenient."
+      },
+      {
+        "start": 75590,
+        "stop": 76062,
+        "text": " And so Matt fired up Nmap, he did the traditional scan, and he found that the port for the local"
+      },
+      {
+        "start": 76062,
+        "stop": 76426,
+        "text": " HTTP API on the Google Home was open and listening."
+      },
+      {
+        "start": 76426,
+        "stop": 77014,
+        "text": " So he set up a proxy to capture the encrypted HTTPS traffic, hoping to snatch the user authorization"
+      },
+      {
+        "start": 77014,
+        "stop": 77114,
+        "text": " token out of there."
+      },
+      {
+        "start": 77114,
+        "stop": 77506,
+        "text": " And he discovered that he just could add a new user to the smart speaker."
+      },
+      {
+        "start": 77506,
+        "stop": 77974,
+        "text": " And it was a simple, quote unquote, two-step process that required the info from the device"
+      },
+      {
+        "start": 77974,
+        "stop": 78234,
+        "text": " that he could pull out of that local API."
+      },
+      {
+        "start": 78234,
+        "stop": 78334,
+        "text": " Yeah."
+      },
+      {
+        "start": 78334,
+        "stop": 78854,
+        "text": " So with that info that he was able to discover locally, Matt was then able to successfully"
+      },
+      {
+        "start": 78854,
+        "stop": 79510,
+        "text": " send a request to Google's cloud that enabled him to link a new rogue account."
+      },
+      {
+        "start": 79510,
+        "stop": 79732,
+        "text": " But Matt didn't stop there."
+      },
+      {
+        "start": 79732,
+        "stop": 80274,
+        "text": " He then implemented a process to add a rogue user in a handy Python script that automated"
+      },
+      {
+        "start": 80274,
+        "stop": 80850,
+        "text": " the exfiltration of that authorization data that he needed from the local device and reproduced"
+      },
+      {
+        "start": 80850,
+        "stop": 81338,
+        "text": " the linking request all nice and easy in a Python script."
+      },
+      {
+        "start": 81338,
+        "stop": 81438,
+        "text": " How convenient."
+      },
+      {
+        "start": 81438,
+        "stop": 81782,
+        "text": " And well, you know, the thing's basically a tiny little Linux box."
+      },
+      {
+        "start": 81782,
+        "stop": 82282,
+        "text": " So once you're in, you can do all kinds of things like turn on the microphone."
+      },
+      {
+        "start": 82282,
+        "stop": 82654,
+        "text": " Also for fun, Matt made some arbitrary HTTP requests on the network."
+      },
+      {
+        "start": 82654,
+        "stop": 82986,
+        "text": " He was able to write and read some arbitrary files on the device."
+      },
+      {
+        "start": 82986,
+        "stop": 83262,
+        "text": " It was a good old time."
+      },
+      {
+        "start": 83262,
+        "stop": 83864,
+        "text": " More worryingly though, Matt also found a way to abuse the call a phone number command"
+      },
+      {
+        "start": 83864,
+        "stop": 84462,
+        "text": " by adding it to a malicious routine that would activate the microphone at a specified time,"
+      },
+      {
+        "start": 84462,
+        "stop": 84966,
+        "text": " calling the attacker's number and sending a live microphone feed."
+      },
+      {
+        "start": 84966,
+        "stop": 85612,
+        "text": " Now, during the call, the device's LED would turn blue, but that really only indicates"
+      },
+      {
+        "start": 85612,
+        "stop": 86154,
+        "text": " that some activity is happening and a victim might notice it, but they could also just"
+      },
+      {
+        "start": 86154,
+        "stop": 86598,
+        "text": " assume the device is doing something mundane like updating its firmware."
+      },
+      {
+        "start": 86598,
+        "stop": 87362,
+        "text": " The standard microphone activation indicator is a pulsating LED, but that doesn't happen"
+      },
+      {
+        "start": 87362,
+        "stop": 87566,
+        "text": " during calls."
+      },
+      {
+        "start": 87566,
+        "stop": 88206,
+        "text": " And to make all of this work, it turns out if you can get nearby access to a wifi network,"
+      },
+      {
+        "start": 88206,
+        "stop": 88674,
+        "text": " you can send classic D-off packets, knock the Google Home Mini off the network, and"
+      },
+      {
+        "start": 88674,
+        "stop": 89278,
+        "text": " then it handy dandy spins up its own little wifi network that you can attach to without"
+      },
+      {
+        "start": 89278,
+        "stop": 89586,
+        "text": " authentication."
+      },
+      {
+        "start": 89586,
+        "stop": 89754,
+        "text": " So convenient."
+      },
+      {
+        "start": 89754,
+        "stop": 89886,
+        "text": " So convenient, of course."
+      },
+      {
+        "start": 89886,
+        "stop": 90390,
+        "text": " And it's a classic move to stack these types of things and then utilize all of the vulnerabilities."
+      },
+      {
+        "start": 90390,
+        "stop": 90858,
+        "text": " And of course, Google has since added protection to prevent that call command from being used"
+      },
+      {
+        "start": 90858,
+        "stop": 91154,
+        "text": " as a sneaky spy device."
+      },
+      {
+        "start": 91154,
+        "stop": 91624,
+        "text": " And they've sent out patches to the devices to clean up this mistake that was baked into"
+      },
+      {
+        "start": 91624,
+        "stop": 91802,
+        "text": " this thing."
+      },
+      {
+        "start": 91802,
+        "stop": 92262,
+        "text": " And it's probably worth noting though that, you know, that Home Mini was first released"
+      },
+      {
+        "start": 92262,
+        "stop": 92512,
+        "text": " in 2016."
+      },
+      {
+        "start": 92512,
+        "stop": 92830,
+        "text": " Scheduled routines where the call attack, the part where they made the phone call, that"
+      },
+      {
+        "start": 92830,
+        "stop": 93058,
+        "text": " was added in 2018."
+      },
+      {
+        "start": 93058,
+        "stop": 93406,
+        "text": " And then the local SDK, the home SDK, you could grab to play around with all this stuff and"
+      },
+      {
+        "start": 93406,
+        "stop": 93532,
+        "text": " get even more information."
+      },
+      {
+        "start": 93532,
+        "stop": 93702,
+        "text": " That was released in 2020."
+      },
+      {
+        "start": 93702,
+        "stop": 94384,
+        "text": " So if somebody was motivated, they've had years to figure this out."
+      },
+      {
+        "start": 94384,
+        "stop": 94692,
+        "text": " And so the people out there that always said, I'm never putting these in my home, maybe"
+      },
+      {
+        "start": 94692,
+        "stop": 94870,
+        "text": " they just made the best call."
+      },
+      {
+        "start": 94870,
+        "stop": 95360,
+        "text": " Because looking back at it, who knows, a properly motivated individual or state actor could"
+      },
+      {
+        "start": 95360,
+        "stop": 95510,
+        "text": " have figured this out."
+      },
+      {
+        "start": 95510,
+        "stop": 95924,
+        "text": " That's why I just think it's probably the only thing you can do is stay diligent, maybe"
+      },
+      {
+        "start": 95924,
+        "stop": 96286,
+        "text": " stay a little skeptical, but we'll keep you up to date as these things get discovered,"
+      },
+      {
+        "start": 96286,
+        "stop": 96734,
+        "text": " as the industry learns and makes these things better, as open source alternatives emerge."
+      },
+      {
+        "start": 96734,
+        "stop": 97078,
+        "text": " We'll keep an eye on that and everything else going on in the world of Linux and all"
+      },
+      {
+        "start": 97078,
+        "stop": 97178,
+        "text": " of open source."
+      },
+      {
+        "start": 97178,
+        "stop": 97314,
+        "text": " So don't miss a single episode."
+      },
+      {
+        "start": 97314,
+        "stop": 97900,
+        "text": " Be sure you go to LinuxActionNews.com/subscribe for all the ways to get every new episode."
+      },
+      {
+        "start": 97900,
+        "stop": 98378,
+        "text": " And LinuxActionNews.com/contact for ways to keep in touch."
+      },
+      {
+        "start": 98378,
+        "stop": 98498,
+        "text": " Did we miss a story this week?"
+      },
+      {
+        "start": 98498,
+        "stop": 98830,
+        "text": " If we did, boost in and let us know which story you'd like to hear us cover, and we'll"
+      },
+      {
+        "start": 98830,
+        "stop": 99020,
+        "text": " work that into a future episode."
+      },
+      {
+        "start": 99020,
+        "stop": 99630,
+        "text": " And we'll be back next week with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 99630,
+        "stop": 99730,
+        "text": " Thanks for joining us."
+      },
+      {
+        "start": 99730,
+        "stop": 99906,
+        "text": " And that's all the news for this week."
+      },
+      {
+        "start": 99906,
+        "stop": 100006,
+        "text": " [MUSIC PLAYING]"
+      },
+      {
+        "start": 100006,
+        "stop": 100106,
+        "text": " [END]"
+      },
+      {
+        "start": 100106,
+        "stop": 100206,
+        "text": " [END]"
+      },
+      {
+        "start": 100206,
+        "stop": 100306,
+        "text": " [END]"
+      },
+      {
+        "start": 100306,
+        "stop": 100406,
+        "text": " [END]"
+      },
+      {
+        "start": 100406,
+        "stop": 100506,
+        "text": " [END]"
+      },
+      {
+        "start": 100506,
+        "stop": 100606,
+        "text": " [END]"
+      },
+      {
+        "start": 100606,
+        "stop": 100706,
+        "text": " [END]"
+      },
+      {
+        "start": 100706,
+        "stop": 100806,
+        "text": " [END]"
+      },
+      {
+        "start": 100806,
+        "stop": 100906,
+        "text": " [END]"
+      },
+      {
+        "start": 100906,
+        "stop": 101006,
+        "text": " [END]"
+      },
+      {
+        "start": 101006,
+        "stop": 101106,
+        "text": " [END]"
+      },
+      {
+        "start": 101106,
+        "stop": 101206,
+        "text": " [END]"
+      },
+      {
+        "start": 101206,
+        "stop": 101306,
+        "text": " [END]"
+      },
+      {
+        "start": 101306,
+        "stop": 101406,
+        "text": " [END]"
+      },
+      {
+        "start": 101406,
+        "stop": 101506,
+        "text": " [END]"
+      },
+      {
+        "start": 101506,
+        "stop": 101606,
+        "text": " [END]"
+      },
+      {
+        "start": 101606,
+        "stop": 101706,
+        "text": " [END]"
+      },
+      {
+        "start": 101706,
+        "stop": 101806,
+        "text": " [END]"
+      },
+      {
+        "start": 101806,
+        "stop": 101906,
+        "text": " [END]"
+      },
+      {
+        "start": 101906,
+        "stop": 102006,
+        "text": " [END]"
+      },
+      {
+        "start": 102006,
+        "stop": 102106,
+        "text": " [END]"
+      }
+    ],
+    "processing_time": {
+      "secs": 555,
+      "nanos": 531096445
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 274",
+    "pictures": [],
+    "duration": {
+      "secs": 1017,
+      "nanos": 172000000
+    },
+    "unique_id": "http://linuxactionnews.com/274"
+  },
+  "episode": {
+    "title": "Linux Action News 274",
+    "description": "Android is getting RISC-Y, the handy new Google tool going open source, the next nail in the coffin for ZFS on Ubuntu, and why you were right about smart speakers all along.",
+    "content": "<p><p>Android is getting RISC-Y, the handy new Google tool going open source, the next nail in the coffin for ZFS on Ubuntu, and why you were right about smart speakers all along.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://arstechnica.com/gadgets/2023/01/google-announces-official-android-support-for-risc-v/\" title=\"Android Gets RISC-Y\" rel=\"nofollow\">Android Gets RISC-Y</a> &mdash; Google's keynote at the RISC-V Summit promises official, polished support. </li><li><a href=\"https://www.youtube.com/watch?v=70O_RmTWP58\" title=\"Keynote: The Android Open Source Project and RISC-V - Lars Bergstrom, Google Director of Engineering\" rel=\"nofollow\">Keynote: The Android Open Source Project and RISC-V - Lars Bergstrom, Google Director of Engineering</a></li><li><a href=\"https://www.infoq.com/news/2022/12/google-osv-scanner/\" title=\"New Google Tool Goes Open\" rel=\"nofollow\">New Google Tool Goes Open</a> &mdash; The OSV database is a distributed, open-source database that stores vulnerability information in the OSV format. The OSV-Scanner assesses a project's dependencies against the OSV database showing all vulnerabilities relating to the project.</li><li><a href=\"https://www.phoronix.com/news/Ubuntu-23.04-New-Installer-Jan\" title=\"Ubuntu’s New Installer Milestone\" rel=\"nofollow\">Ubuntu’s New Installer Milestone</a> &mdash; With Ubuntu 23.04 \"Lunar Lobster\" in April that new desktop installer is poised to finally be used by default. </li><li><a href=\"https://www.phoronix.com/news/Valve-HDR-Linux-Gaming-Begins\" title=\"HDR Beginning To Work For Linux Gaming\" rel=\"nofollow\">HDR Beginning To Work For Linux Gaming</a> &mdash; \"New Linux gaming milestone: with the latest work from Josh Ashton, HDR can now be enabled for real games! Tested it tonight on my AMD desktop with Halo Infinite, Deep Rock Galactic, DEATH STRANDING DC. Very early and will still need some time to bake to be useful to most.\"</li><li><a href=\"https://wiki.gnome.org/Hackfests/ShellDisplayNext2023\" title=\"Red Hat Planning HDR Hackfest\" rel=\"nofollow\">Red Hat Planning HDR Hackfest</a></li><li><a href=\"https://www.phoronix.com/news/GNOME-Shell-Mutter-43-Alpha\" title=\"GNOME Shell + Mutter 43 Alpha Released\" rel=\"nofollow\">GNOME Shell + Mutter 43 Alpha Released</a></li><li><a href=\"https://www.phoronix.com/news/VKD3D-Proton-2.7-Released\" title=\"VKD3D-Proton 2.7 Released With Eight Months Worth Of Changes\" rel=\"nofollow\">VKD3D-Proton 2.7 Released With Eight Months Worth Of Changes</a></li><li><a href=\"https://www.bleepingcomputer.com/news/security/google-home-speakers-allowed-hackers-to-snoop-on-conversations/\" title=\"Google Home speakers allowed hackers to snoop on conversations\" rel=\"nofollow\">Google Home speakers allowed hackers to snoop on conversations</a> &mdash; A bug in Google Home smart speaker allowed installing a backdoor account that could be used to control it remotely and to turn it into a snooping device by accessing the microphone feed.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9215",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15885795/265a70d2-c9ab-4dc8-8aea-e83fa23860f3.mp3",
+      "length": "14670151",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2023-01-05T08:30:00+01:00"
+  },
+  "speedup": 1.8309903
+}
