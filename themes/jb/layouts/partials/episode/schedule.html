@@ -1,0 +1,15 @@
+<div class="card card-episode">
+
+  <div class="card-image">
+    <a href="{{ .Permalink }}">
+      <img src="{{.Params.header_image }}" width="432" height="242" alt="{{.Title}}">
+    </a>
+  </div>
+  <div class="card-content">
+     <div class="content">
+      <a href="{{ .Permalink }}"><h3>{{.Title}}</h3></a>
+      <p class="schedule" data-schedule="{{.Params.live}}"></p>
+      </div>
+  </div>
+
+</div>

@@ -6,6 +6,7 @@ draft = false
 categories = ["Office Hours"]
 show = "office-hours"
 hosts = ["chris","brent"]
+live = "Alternating Tuesdays<br>12:00pm Pacific<br>3:00pm Eastern"
 
 type = "show"
 active = true

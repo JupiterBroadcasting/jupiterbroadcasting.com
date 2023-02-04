@@ -6,6 +6,7 @@ draft = false
 categories = ["LINUX Unplugged"]
 show = "linux-unplugged"
 hosts = ["chris","brent","wes"]
+live = "Sundays<br>12:00pm Pacific<br>3:00pm Eastern"
 
 type = "show"
 active = true

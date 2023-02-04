@@ -6,6 +6,8 @@ draft = false
 categories = ["Coder Radio"]
 show = "coder-radio"
 hosts = ["chris","michael", "wes"]
+live = "Mondays<br>9:00am Pacific<br>12:00pm Eastern"
+
 
 type = "show"
 active = true

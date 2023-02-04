@@ -5,11 +5,7 @@
   <div class="container">
       <div class="content">
         <h1>{{.Title}}</h1>
-        Subscribe To The Calendar: <a href="{{.Site.Params.calendar.rss}}">iCalendar</a>
-
-        <iframe frameborder="0" scrolling="no" data-src="//www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src={{.Site.Params.calendar.embedd}}&amp;color=%235229A3" width="100%" height="400px"></iframe>
-
-        <select name="ctz" id="ctz" style="width: 100%;">
+        <select name="ctz" id="ctz" style="float: right;">
           <option value="none">-- Select Your Timezone --</option>
           <option value="Pacific/Niue">(GMT-11:00) Niue</option>
           <option value="Pacific/Pago_Pago">(GMT-11:00) Pago Pago</option>
@@ -320,24 +316,64 @@
           <option value="Pacific/Tongatapu">(GMT+13:00) Tongatapu</option>
           <option value="Pacific/Kiritimati">(GMT+14:00) Kiritimati</option>
         </select>
+
+        <br>
+        <br>
+
+        <div class="container">
+          <div class="columns is-multiline">
+             {{ range where .Site.Pages  "Section" "show" }}
+              {{ if (isset .Params "live") }}
+                <div class="column is-6 is-3-fullhd is-3-desktop is-12-mobile"  style="display: flex;">
+                  {{ partial "episode/schedule.html" . }}
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        Subscribe To The Calendar: <a href="{{.Site.Params.calendar.rss}}">iCalendar</a>
+
+        <iframe frameborder="0" scrolling="no" data-src="//www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src={{.Site.Params.calendar.embedd}}&amp;color=%235229A3" width="100%" height="400px"></iframe>
+
+
     </div>
   </div>
 
   <script>
-    var calendarBase = document.querySelector('iframe').dataset.src;
+    let iframe = document.querySelector('iframe');
+    var calendarBase = iframe.dataset.src;
 
     // Detect timezone automatically
     var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     var tzname = encodeURIComponent(tz);
-    document.querySelector('iframe').src = calendarBase + "&ctz=" + tzname;
+    iframe.src = calendarBase + "&ctz=" + tzname;
+
+    let ctz = document.querySelector('#ctz');
+    ctz.value = tz;
+
+    let schedules = document.getElementsByClassName("schedule");
+    let updateSchedules = function(tz) {
+      for (let x = 0; x < schedules.length; x++) {
+        let text = schedules[x].getAttribute("data-schedule");
+        // TODO time zone date math
+        schedules[x].innerHTML = text
+      }
+    }
+    updateSchedules(tz)
 
     // Change on timezone after dropdown
-    document.querySelector('#ctz').onchange = function () {
-      var tzname = document.querySelector('#ctz').value;
+    ctz.onchange = function () {
+      var tzname = ctz.value;
       
       if(tzname && tzname != "none") {
-        document.querySelector('iframe').src = calendarBase + "&ctz=" + tzname;
+        iframe.src = calendarBase + "&ctz=" + tzname;
+        updateSchedules()
       }
     };
+
   </script>
 {{end}}

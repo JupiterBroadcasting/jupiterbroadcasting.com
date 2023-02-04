@@ -9,6 +9,7 @@ hosts = ["chris","alex"]
 sponsors = ["cloudfree.shop-ssh"]
 type = "show"
 active = true
+live = "Alternating Wednesdays<br>4:30pm Pacific<br>7:30pm Eastern"
 
 header_image = "/images/shows/self-hosted.png"
 
