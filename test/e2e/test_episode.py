@@ -1,11 +1,8 @@
 import os
 import re
 
-from functools import wraps
-from typing import Any
-from pathlib import Path
 from pytest import fixture, mark
-from playwright.sync_api import Page, FrameLocator, Locator, expect
+from playwright.sync_api import Page, FrameLocator, expect
 
 
 """
@@ -22,15 +19,16 @@ EXTRA_EPISODES: list[dict[str, str]] = [
     }
 ]
 
-"""
-Generate list of episode URLS for testing. This list consists of the following
-* For each show:
-    * 5 oldest episodes
-    * 5 newest episodes
-* A specified set of episodes that contain "out of the ordinary" things for an episode (an example being a high number of guests
-"""
+
 @fixture()
 def episodes() -> list[str]:
+    """
+    Generate list of episode URLS for testing. This list consists of the following
+    * For each show:
+        * 5 oldest episodes
+        * 5 newest episodes
+    * A specified set of episodes that contain "out of the ordinary" things for an episode (an example being a high number of guests
+    """
     test_episodes: list[str] = []
     shows_dir: str = "content/show"
     meta_files: [str] = ["_index.md", "subscribe.md"]
@@ -45,16 +43,17 @@ def episodes() -> list[str]:
         test_episodes += [f"{show_url}/{os.path.splitext(e)[0].lstrip('0') or '0'}" for e in all_episodes[-5::] if e not in test_episodes]  # 5 most recent episodes of a show
 
     # Defined list of edge case episodes
-    test_episodes += [f"/show/{e['show']}/{e['number']}" for e in EXTRA_EPISODES if e not in test_episodes]  # Extra episodes worth testing
+    test_episodes += [f"/show/{e['show']}/{e['number']}" for e in EXTRA_EPISODES if e not in test_episodes]
 
     return test_episodes
 
 
-"""
-Make sure the title (text in the tab) contains the show name, episode number, and network name (Jupiter Broadcasting)
-"""
 @mark.dev
 def test_page_title(page: Page, episodes: list[str]):
+    """
+    Make sure the title (text in the tab) contains the show name, episode number, and
+    network name (Jupiter Broadcasting)
+    """
     # TODO figure out how to call this loop async
     for url in episodes:
         show, episode_number = url.split('/')[2:4] # This skips the empty string and 'show' in the url
@@ -62,17 +61,19 @@ def test_page_title(page: Page, episodes: list[str]):
         print(f"{show} - {episode_number}")
         expect(page).to_have_title(re.compile(f".* | {show} {episode_number} | Jupiter Broadcasting"))
 
-"""
-Test podverse player to and make sure the correct show is displayed
-"""
+
 def test_podverse_player(page: Page, episodes: list[str]):
-    def check_title(page:Page, url: str):
-        show, episode_number = url.split('/')[2:4] # This skips the empty string and 'show' in the url
+    """
+    Test podverse player to and make sure the correct show is displayed
+    """
+    def check_title(page: Page, url: str):
+        show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
         page.goto(url)
         pv_player: FrameLocator = page.frame_locator("#pv-embed-player")
         # expect(pv_player).to_be_visible()
-        pv_player_show_text: Locator = pv_player.locator(".embed-player-header-top-text").text_content()
-        assert pv_player_show_text.replace('-', ' ').lower() == show.replace('-', ' ').lower(), f"Podverse player show for {url} says {pv_player_show_text}"
+        pv_player_show_text: str = pv_player.locator(".embed-player-header-top-text").text_content()
+        assert pv_player_show_text.replace('-', ' ').lower() == show.replace('-', ' ').lower(), \
+            f"Podverse player show for {url} says {pv_player_show_text}"
 
     # TODO figure out how to call this loop async
     for url in episodes:
