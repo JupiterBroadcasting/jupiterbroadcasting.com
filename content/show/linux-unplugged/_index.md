@@ -6,7 +6,6 @@ draft = false
 categories = ["LINUX Unplugged"]
 show = "linux-unplugged"
 hosts = ["chris","brent","wes"]
-live = "Sundays<br>12:00pm Pacific<br>3:00pm Eastern"
 
 type = "show"
 active = true
@@ -14,6 +13,11 @@ active = true
 header_image = "/images/shows/linux-unplugged.png"
 
 podverse_podcast_id = "g40Um-HP1"
+
+[live]
+  type = "weekly"
+  day = 0
+  hour = 12
 
 [links.twitter]
   url = "https://twitter.com/LINUXUnplugged"

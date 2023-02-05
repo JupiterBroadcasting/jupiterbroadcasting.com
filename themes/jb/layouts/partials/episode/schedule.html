@@ -8,7 +8,14 @@
   <div class="card-content">
      <div class="content">
       <a href="{{ .Permalink }}"><h3>{{.Title}}</h3></a>
-      <p class="schedule" data-schedule="{{.Params.live}}"></p>
+      <p class="schedule"
+          data-live-schedule-type="{{ index .Params.live.type }}"
+          data-live-schedule-day="{{ index .Params.live.day }}"
+          data-live-schedule-hour="{{ index .Params.live.hour }}"
+          {{ if (isset .Params.live "minute") }}
+            data-live-schedule-minute="{{ index .Params.live.minute }}"
+          {{ end }}
+      ></p>
       </div>
   </div>
 

@@ -9,11 +9,16 @@ hosts = ["chris","alex"]
 sponsors = ["cloudfree.shop-ssh"]
 type = "show"
 active = true
-live = "Alternating Wednesdays<br>4:30pm Pacific<br>7:30pm Eastern"
 
 header_image = "/images/shows/self-hosted.png"
 
 podverse_podcast_id = "nUl1ZCL76"
+
+[live]
+  type = "even-weeks"
+  day = 3
+  hour = 16
+  minute = 30
 
 [links.discord]
   url="https://discord.gg/U3Gvr54VRp"

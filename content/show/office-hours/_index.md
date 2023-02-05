@@ -6,7 +6,6 @@ draft = false
 categories = ["Office Hours"]
 show = "office-hours"
 hosts = ["chris","brent"]
-live = "Alternating Tuesdays<br>12:00pm Pacific<br>3:00pm Eastern"
 
 type = "show"
 active = true
@@ -14,6 +13,11 @@ active = true
 header_image = "/images/shows/office-hours.png"
 
 podverse_podcast_id = "GLuztlxs0-"
+
+[live]
+  type = "odd-weeks"
+  day = 2
+  hour = 12
 
 [links.shownotes]
   url="https://www.officehours.hair"

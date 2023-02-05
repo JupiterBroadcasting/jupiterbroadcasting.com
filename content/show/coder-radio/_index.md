@@ -6,8 +6,6 @@ draft = false
 categories = ["Coder Radio"]
 show = "coder-radio"
 hosts = ["chris","michael", "wes"]
-live = "Mondays<br>9:00am Pacific<br>12:00pm Eastern"
-
 
 type = "show"
 active = true
@@ -15,6 +13,11 @@ active = true
 header_image = "/images/shows/coder-radio.png"
 
 podverse_podcast_id = "ZXd_1Ojd9"
+
+[live]
+  type = "weekly"
+  day = 1
+  hour = 9
 
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
