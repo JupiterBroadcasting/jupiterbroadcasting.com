@@ -345,8 +345,8 @@
   </div>
 
   <script>
-    let iframe = document.querySelector('iframe');
-    var calendarBase = iframe.dataset.src;
+    const iframe = document.querySelector('iframe');
+    const calendarBase = iframe.dataset.src;
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     // Detect timezone automatically
@@ -369,7 +369,7 @@
       const tzHour = Number.parseInt(tzSign + tzParts[2], 10) + 8;
 
       for (let x = 0; x < schedules.length; x++) {
-        let type = schedules[x].getAttribute("data-live-schedule-type");
+        const type = schedules[x].getAttribute("data-live-schedule-type");
         let day = Number.parseInt(schedules[x].getAttribute("data-live-schedule-day"), 10);
         let hour = Number.parseInt(schedules[x].getAttribute("data-live-schedule-hour"), 10);
         let minute = Number.parseInt(schedules[x].getAttribute("data-live-schedule-minute") || "0", 10);
