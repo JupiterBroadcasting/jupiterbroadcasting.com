@@ -410,14 +410,14 @@
 
         const tzName = tzParts[4];
 
-        let text = "";
+        let scheduleHtml = "";
         if (type != "weekly") {
-          text += "Alternating "
+          scheduleHtml += "Alternating "
         }
         const minuteText = minute.toString().padStart(2, '0');
-        text += `${daysOfWeek[day]}s<br>${hour}:${minuteText}${ampm}&nbsp;${tzName}`
+        scheduleHtml += `${daysOfWeek[day]}s<br>${hour}:${minuteText}${ampm}&nbsp;${tzName}`
 
-        schedules[x].innerHTML = text
+        schedules[x].innerHTML = scheduleHtml
       }
     }
     updateSchedules(ctz.options[ctz.selectedIndex].text)
