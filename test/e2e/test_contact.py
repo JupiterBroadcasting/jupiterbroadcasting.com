@@ -3,7 +3,6 @@ from pytest import fixture
 from playwright.sync_api import Page, FrameLocator, Locator
 
 
-
 @fixture(autouse=True)
 def setup(page: Page):
     """

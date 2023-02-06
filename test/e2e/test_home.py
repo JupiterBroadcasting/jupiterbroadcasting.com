@@ -47,7 +47,6 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str, str]]):
         expect(element).to_contain_text(rss_feed['title'])
 
 
-@mark.dev
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str, List[Dict[str, str]]]):
     """
     Tests dropdowns to make sure the dropdown items have links, and all items specified in conftest are present

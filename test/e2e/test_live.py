@@ -56,7 +56,8 @@ def test_mobile_live_indicator(
     # check if live indicator is red
     assert (
         navbar.evaluate(
-            # integrated docs for python evaluate function: https://github.com/microsoft/playwright/blob/a30aac56687598c373c51255308ef5833de0c9bb/docs/src/api/class-jshandle.md?plain=1#L77-L80
+            # integrated docs for python evaluate function:
+            # https://github.com/microsoft/playwright/blob/a30aac56687598c373c51255308ef5833de0c9bb/docs/src/api/class-jshandle.md?plain=1#L77-L80
             # use evaluate function in python: https://playwright.dev/python/docs/api/class-page#page-evaluate
             # use getComputerStyle w/playwright: https://stackoverflow.com/a/71433333
             "element => window.getComputedStyle(element, ':before').backgroundColor"
