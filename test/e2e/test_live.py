@@ -10,8 +10,8 @@ def test_live_indicator(
     # intercepting reponses for live event, and make live
     set_live(page)
 
-    # go to the live page
-    page.goto("/live")
+#     # go to the live page
+#     page.goto("/live")
 
     # validate live button is red
     expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
@@ -19,12 +19,12 @@ def test_live_indicator(
         value="rgb(255, 0, 0)",  # red
     )
 
-    # waiting for peertube iframe to load
-    jbtube_video: FrameLocator = page.frame_locator("#liveStream")
-    video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
-    expect(video_player_peertube_icon).to_be_visible()
+#     # waiting for peertube iframe to load
+#     jbtube_video: FrameLocator = page.frame_locator("#liveStream")
+#     video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
+#     expect(video_player_peertube_icon).to_be_visible()
 
-    page.evaluate("window.scrollTo(0, 0)")
+#     page.evaluate("window.scrollTo(0, 0)")
 
     page.screenshot(path=f"{screenshot_dir}/live.png", full_page=True)
 

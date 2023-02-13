@@ -135,12 +135,20 @@ def mobile_device_tuple(
     also should be able to view them here:
     https://github.com/microsoft/playwright/blob/v1.25.2/packages/playwright-core/src/server/deviceDescriptorsSource.json
     """
+    params=playwright.devices[request.param]
+
 
     # based on here: https://playwright.dev/python/docs/emulation#devices
+    params = playwright.devices[request.param]
+    if browser.browser_type.name == "firefox":
+        # bug in playwright for firefox https://github.com/microsoft/playwright/issues/16622
+        # https://github.com/Lookyloo/PlaywrightCapture/blob/34ab2c3e096fc3bc1ebef217063b78f3554d8a42/playwrightcapture/capture.py#L188
+        del params['is_mobile']
+
     context = browser.new_context(
         base_url=base_url,
         # based on this info: https://playwright.dev/python/docs/emulation#devices
-        **playwright.devices[request.param]
+        **params
     )
     try:
         # essentially a "return", but used with generators
@@ -274,8 +282,30 @@ def _replace_live_event(page: Page) -> None:
     )
 
 @fixture
-def get_live_event(get_test_dir: Path) -> str:
+def live_event_json(get_test_dir: Path) -> str:
     return Path(get_test_dir / 'fixture_files/jb-live_sample-live-event.json').read_text()
+
+@fixture 
+def replace_live_event(page: Page) -> Callable:
+    def handle_route(route: Route, p: Page, live_event: str) -> Callable[[Page, str], None]:
+        # fetch original response
+        response = p.request.fetch(route.request)
+
+        # setting live event
+        route.fulfill(
+            # Pass all fields from the response
+            response=response,
+            # override body
+            body=live_event.strip()
+        )
+    
+    def mock_jb_tube_request(p: Page, live_event: str):
+        p.route(
+        "https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt",
+        lambda route: handle_route(route, p, live_event)
+    ) 
+
+    return mock_jb_tube_request
 
 
 @fixture
