@@ -26,16 +26,16 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
 def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
     return {
         "Shows": [
-            {'href': '/show/coder-radio', 'title': 'Coder Radio'},
-            {'href': '/show/jupiter-extras', 'title': 'Jupiter EXTRAS'},
-            {'href': '/show/linux-action-news', 'title': 'Linux Action News'},
-            {'href': '/show/linux-unplugged', 'title': 'LINUX Unplugged'},
-            {'href': '/show/office-hours', 'title': 'Office Hours'},
-            {'href': '/show/self-hosted', 'title': 'Self-Hosted'},
+            {'href': '/show/coder-radio/', 'title': 'Coder Radio'},
+            {'href': '/show/jupiter-extras/', 'title': 'Jupiter EXTRAS'},
+            {'href': '/show/linux-action-news/', 'title': 'Linux Action News'},
+            {'href': '/show/linux-unplugged/', 'title': 'LINUX Unplugged'},
+            {'href': '/show/office-hours/', 'title': 'Office Hours'},
+            {'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
         ],
         "People": [
-            {'href': '/hosts', 'title': 'Hosts'},
-            {'href': '/guests', 'title': 'Guests'},
+            {'href': '/hosts/', 'title': 'Hosts'},
+            {'href': '/guests/', 'title': 'Guests'},
         ],
         "Community": [
             {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
@@ -55,24 +55,24 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
 @fixture
 def expected_dropdowns() -> List[Dict[str,str]]:
     return [
-        {'title': 'Shows', 'href': '/show'},
-        {'title': 'People', 'href': "/people"},
-        {'title': 'Community', 'href': "/community"}
+        {'title': 'Shows', 'href': '/show/'},
+        {'title': 'People', 'href': "/people/"},
+        {'title': 'Community', 'href': "/community/"}
     ]
 
 @fixture
 def expect_nav_items() -> List[Dict[str,str]]:
     return [
-        {'title': 'Sponsors', 'href': '/sponsors'},
-        {'title': 'Live', 'href': '/live'},
-        {'title': 'Calendar', 'href': '/calendar'},
-        {'title': 'Boost!', 'href': '/boost'},
+        {'title': 'Sponsors', 'href': '/sponsors/'},
+        {'title': 'Live', 'href': '/live/'},
+        {'title': 'Calendar', 'href': '/calendar/'},
+        {'title': 'Boost!', 'href': '/boost/'},
         {'title': 'Garage Sale', 'href': 'https://www.jupitergarage.com/'},
-        {'title': 'Membership', 'href': '/membership'},
+        {'title': 'Membership', 'href': '/membership/'},
         # commenting out for now PR #399
         # {'title': 'Archive', 'href': '/archive'},
         # failing on tests here: https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/runs/8254156209?check_suite_focus=true#step:9:26
-        {'title': 'Contact', 'href': '/contact'},
+        {'title': 'Contact', 'href': '/contact/'},
     ]
 
 # https://playwright.dev/python/docs/api-testing#configure

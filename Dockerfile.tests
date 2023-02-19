@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/playwright/python:v1.25.2-jammy
 
 RUN pip install pipenv
 
-CMD [ "--base-url", "http://localhost:1313" ]
+CMD [ "--base-url", "http://localhost:1313", "-m", "not periodic" ]
 ENTRYPOINT [ "pytest" ]
 
 COPY test/Pipfile test/Pipfile.lock ./

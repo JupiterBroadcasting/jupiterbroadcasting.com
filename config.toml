@@ -42,73 +42,73 @@ paginate = 12
 [[Menu.Main]]
     name = "Shows"
     identifier = "shows"
-    url = "/show"
+    url = "/show/"
     weight =-90
 
     [[Menu.Main]]
         name = "Coder Radio"
         identifier = "coder-radio"
-        url = "/show/coder-radio"
+        url = "/show/coder-radio/"
         weight =91
         parent = "shows"
 
     [[Menu.Main]]
         name = "Jupiter EXTRAS"
         identifier = "jupiter-extras"
-        url = "/show/jupiter-extras"
+        url = "/show/jupiter-extras/"
         weight =92
         parent = "shows"
 
     [[Menu.Main]]
         name = "Linux Action News"
         identifier = "linux-action-news"
-        url = "/show/linux-action-news"
+        url = "/show/linux-action-news/"
         weight =93
         parent = "shows"
 
     [[Menu.Main]]
         name = "LINUX Unplugged"
         identifier = "linux-unplugged"
-        url = "/show/linux-unplugged"
+        url = "/show/linux-unplugged/"
         weight =94
         parent = "shows"
 
     [[Menu.Main]]
         name = "Office Hours"
         identifier = "office-hours"
-        url = "/show/office-hours"
+        url = "/show/office-hours/"
         weight =95
         parent = "shows"
 
     [[Menu.Main]]
         name = "Self-Hosted"
         identifier = "self-hosted"
-        url = "/show/self-hosted"
+        url = "/show/self-hosted/"
         weight =96
         parent = "shows"
 
 [[Menu.Main]]
     name = "Sponsors"
     identifier = "sponsors"
-    url = "/sponsors"
+    url = "/sponsors/"
     weight =40
 
 [[Menu.Main]]
     name = "Live"
     identifier = "live"
-    url = "/live"
+    url = "/live/"
     weight =43
 
 [[Menu.Main]]
     name = "Calendar"
     identifier = "calendar"
-    url = "/calendar"
+    url = "/calendar/"
     weight =45
 
 [[Menu.Main]]
     name = "Boost!"
     identifier = "boost"
-    url = "/boost"
+    url = "/boost/"
     weight =50
 
 [[Menu.Main]]
@@ -120,45 +120,45 @@ paginate = 12
 [[Menu.Main]]
     name = "Membership"
     identifier = "membership"
-    url = "/membership"
+    url = "/membership/"
     weight =70
 
 [[Menu.Main]]
     name = "People"
     identifier = "people"
-    url = "/people"
+    url = "/people/"
     weight =80
 
     [[Menu.Main]]
         name = "Hosts"
         identifier = "hosts"
-        url = "/hosts"
+        url = "/hosts/"
         weight =81
         parent = "people"
 
     [[Menu.Main]]
         name = "Guests"
         identifier = "guests"
-        url = "/guests"
+        url = "/guests/"
         weight =82
         parent = "people"
 
 #[[Menu.Main]]
     #name = "Archive"
     #identifier = "archive"
-    #url = "/archive"
+    #url = "/archive/"
     #weight =90
 
 [[Menu.Main]]
     name = "Community"
     identifier = "community"
-    url = "/community"
+    url = "/community/"
     weight =100
 
 [[Menu.Main]]
     name = "Contact"
     identifier = "contact"
-    url = "/contact"
+    url = "/contact/"
     weight =110
 
 # Footer Menu (left)
