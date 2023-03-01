@@ -14,7 +14,7 @@ def test_live_indicator(
     page.goto("/live")
 
     # validate live button is red
-    expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
+    expect(page.locator("#mainnavigation.is-live").locator("#livebutton")).to_have_css(
         name="background-color",
         value="rgb(255, 0, 0)",  # red
     )
@@ -26,8 +26,6 @@ def test_live_indicator(
 
     page.evaluate("window.scrollTo(0, 0)")
 
-    page.screenshot(path=f"{screenshot_dir}/live.png", full_page=True)
-
 
 def test_mobile_live_indicator(
     mobile_device_tuple: Tuple[Page, str],
@@ -36,10 +34,6 @@ def test_mobile_live_indicator(
 ):
     # set mobile page to variable
     mobile_device = mobile_device_tuple[0]
-    # set screenshot dir for mobile device
-    screenshot_dir = Path(
-        screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
-    )
 
     # intercepting reponses for live event, and make live
     set_live(mobile_device)
@@ -71,8 +65,6 @@ def test_mobile_live_indicator(
     expect(video_player_peertube_icon).to_be_visible()
 
     mobile_device.evaluate("window.scrollTo(0, 0)")
-
-    mobile_device.screenshot(path=f"{screenshot_dir}/live-mobile.png", full_page=True)
 
     # click navbar to expand
     navbar.click()

@@ -78,3 +78,12 @@ def test_podverse_player(page: Page, episodes: list[str]):
     # TODO figure out how to call this loop async
     for url in episodes:
         check_title(page, url)
+
+
+def test_tag_broken_link_spaces(page: Page):
+    """
+    Checking for broken tag links with spaces in them
+    """
+    page.goto("/show/linux-unplugged/489/")
+    page.locator(".tag > a", has_text="linux unplugged").click()
+    expect(page.locator(".title", has_text="Tag: linux unplugged")).to_be_visible()
