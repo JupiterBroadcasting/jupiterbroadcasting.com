@@ -11,7 +11,7 @@ def setup(page: Page):
     page.goto("/contact")
 
 
-def test_submit_button_visible(page: Page, screenshot_dir: Path):
+def test_contect_submit_button_visible(page: Page):
     """
     This test ensures that the "Submit" button at the bottom of the contact form is always visible to the user, even if they forget the fill in the fields. This
     test also saves a screenshot of the contact page after the form validation errors have been generated for manual review if needed.
