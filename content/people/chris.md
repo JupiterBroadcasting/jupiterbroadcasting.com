@@ -5,6 +5,7 @@ bio: Host on Jupiter Broadcasting, with the best shows on Linux, Security, Priva
   Community, Development, News and Politics. Everyday's a holiday!
 homepage: https://www.jupiterbroadcasting.com/
 instagram: https://instagram.com/instachrislas
+mastodon: https://podcastindex.social/@ChrisLAS
 linkedin: null
 title: Chris Fisher
 twitter: https://twitter.com/chrislas
