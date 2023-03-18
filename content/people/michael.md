@@ -7,7 +7,6 @@ instagram: https://instagram.com/dominucco
 linkedin: null
 title: Michael Dominick
 twitter: https://twitter.com/dominucco
-mastodon: https://mastodon.social/@dominucco
 type: host
 username: michael
 youtube: null
