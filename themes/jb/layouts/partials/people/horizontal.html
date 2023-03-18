@@ -42,6 +42,11 @@
                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
               </a>
             {{ end }}
+            {{ if .Params.mastodon }}
+             <a href="{{ .Params.mastodon }}" class="card-footer-item-social" target="_blank">
+               <i class="fa fa-mastodon" aria-hidden="true"></i>
+             </a>
+            {{ end }}
           </div>
         </footer>
       </div>
