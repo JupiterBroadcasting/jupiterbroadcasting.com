@@ -5,6 +5,7 @@ bio: Father. Dog lover. Podcaster. Red Hatter.
 gplus: null
 homepage: https://blog.ktz.me/
 instagram: https://www.instagram.com/al_ktz/
+mastodon: https://techhub.social/@ironicbadger
 linkedin: https://www.linkedin.com/in/alex-kretzschmar
 title: Alex Kretzschmar
 twitter: https://twitter.com/ironicbadger
