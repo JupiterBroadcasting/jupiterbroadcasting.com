@@ -6,6 +6,7 @@
 - [Table of Contents](#table-of-contents)
 - [Lets Be Efficient!](#lets-be-efficient)
 - [Discussions via Matrix](#discussions-via-matrix)
+- [Video Tutorials](#video-tutorials)
 - [FAQ:](#faq)
   - [I want to help, what should I work on?](#i-want-to-help-what-should-i-work-on)
   - [How do I assign an issue to myself?](#how-do-i-assign-an-issue-to-myself)
@@ -13,7 +14,8 @@
   - [What is the stack used for the site?](#what-is-the-stack-used-for-the-site)
   - [I don't see a package.json file, why don't you use npm/yarn?](#i-dont-see-a-packagejson-file-why-dont-you-use-npmyarn)
   - [How do I style my UI components?](#how-do-i-style-my-ui-components)
-  - [How to Add JS for a page]
+  - [How to Add JS for a page](#how-to-add-js-for-a-page)
+
 
 ---
 
@@ -175,6 +177,13 @@ Example below:
 2. Call your function
     - See [above](###adding-to-a-partial), point 5
 
+## Video Tutorials
+
+ *Note: [elreydetoda](https://github.com/elreydetoda) assited in creating the commands and guides for the below videos. Workshop was preformed by [bluelotus03](https://github.com/bluelotus03) and [GWC-UNCC](https://github.com/GWC-UNCC).*
+
+ 1. [Is setting everything up & basic git stuff](https://www.youtube.com/watch?v=cGU5RUMHy38&list=PLxG0x9l83vZcHE3oIXEpmHmPt6-hxL17y&index=1)
+ 2. [Some more advanced usage with Git(Hub) (mainly PRs & and stuff)](https://www.youtube.com/watch?v=6gm8t2z4QNI&list=PLxG0x9l83vZcHE3oIXEpmHmPt6-hxL17y&index=2)
+ 3. [Is initially using hugo](https://www.youtube.com/watch?v=Bf4LrJVhRTs&list=PLxG0x9l83vZcHE3oIXEpmHmPt6-hxL17y&index=3)
 
 ---
 
