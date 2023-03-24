@@ -179,7 +179,7 @@ Example below:
 
 ## Video Tutorials
 
- *Note: [elreydetoda](https://github.com/elreydetoda) assited in creating the commands and guides for the below videos. Workshop was preformed by [bluelotus03](https://github.com/bluelotus03) and [GWC-UNCC](https://github.com/GWC-UNCC).
+ *Note: [elreydetoda](https://github.com/elreydetoda) assited in creating the commands and guides for the below videos. Workshop was preformed by [bluelotus03](https://github.com/bluelotus03) and [GWC-UNCC](https://github.com/GWC-UNCC).*
 
  1. [Is setting everything up & basic git stuff](https://www.youtube.com/watch?v=cGU5RUMHy38&list=PLxG0x9l83vZcHE3oIXEpmHmPt6-hxL17y&index=1)
  2. [Some more advanced usage with Git(Hub) (mainly PRs & and stuff)](https://www.youtube.com/watch?v=6gm8t2z4QNI&list=PLxG0x9l83vZcHE3oIXEpmHmPt6-hxL17y&index=2)
