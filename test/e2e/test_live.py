@@ -79,6 +79,6 @@ def test_mobile_live_indicator(
         value="rgb(255, 0, 0)",  # red
     )
 
-    mobile_device.locator("#mainnavigation").locator(
-        ".navbar-menu.is-active"
-    ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")
+    # mobile_device.locator("#mainnavigation").locator(
+    #     ".navbar-menu.is-active"
+    # ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")

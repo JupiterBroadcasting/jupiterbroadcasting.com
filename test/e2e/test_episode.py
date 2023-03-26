@@ -31,7 +31,8 @@ def episodes() -> list[str]:
     * For each show:
         * 5 oldest episodes
         * 5 newest episodes
-    * A specified set of episodes that contain "out of the ordinary" things for an episode (an example being a high number of guests
+    * A specified set of episodes that contain "out of the ordinary" things for an episode (an example being a high
+    number of guests)
     """
     test_episodes: list[str] = []
     shows_dir: str = "content/show"
@@ -75,7 +76,7 @@ def test_episode_page_title(page: Page, episodes: list[str]):
     for url in episodes:
         show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
         page.goto(url)
-        print(f"{show} - {episode_number}")
+        # print(f"{show} - {episode_number}")
         expect(page).to_have_title(re.compile(f".* | {show} {episode_number} | Jupiter Broadcasting"))
 
 
@@ -97,12 +98,28 @@ def test_episodes_podverse_player(page: Page, episodes: list[str]):
         check_title(page, url)
 
 
+@mark.dev
 def test_episode_tag_broken_link_spaces(page: Page, episodes: list[str]):
     """
-    Checking for broken tag links with spaces in them
+    Checks for tags with spaces in the name. If there is a space in that tag name, it render the tags page to make sure
+    it exists.
     """
+    checked_tags: list[str] = []  # List of tag pages that were already tested
     for url in episodes:
-        show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
         page.goto(url)
-        page.locator(".tag > a", has_text=show).click()
-        expect(page.locator(".title", has_text=f"Tag: {show}")).to_be_visible()
+        tags: list[str] = [t for t in page.locator(".tag > a").all_text_contents() if ' ' in t]
+        for tag in tags:
+            if tag in checked_tags:
+                continue
+            print(f"{tag} at http://localhost:1313{url}")
+            page.locator(".tag > a", has_text=tag).click()
+            expect(page.locator("h1.title", has_text=f"Tag: {tag}")).to_be_visible()
+            checked_tags.append(tag)
+            page.goto(url)  # Go back to episode page to click on the next tag
+
+
+def test_episode_emoji_tags(page: Page, episodes: list[str]):
+    """
+    Check to see if emoji tags are on the episode and renders tag page of that emoji to make sure it exitsts
+    """
+    pass
