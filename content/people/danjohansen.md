@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/danjohansen.jpg
 avatar_small: /images/people/danjohansen_small.jpg
-bio: Project Lead on The Majaro ARM Project
+bio: Open Source enthusiast and family man
 gplus: null
 homepage: https://www.strits.dk/
 instagram: null
