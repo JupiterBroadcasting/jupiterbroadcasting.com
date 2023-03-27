@@ -88,7 +88,7 @@ def test_episodes_podverse_player(page: Page, episodes: list[str]):
         show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
         page.goto(url)
         pv_player: FrameLocator = page.frame_locator("#pv-embed-player")
-        # expect(pv_player).to_be_visible()
+        # expect(pv_player).to_be_visible()  # TODO: Need to look into why this fails
         pv_player_show_text: str = pv_player.locator(".embed-player-header-top-text").text_content()
         assert pv_player_show_text.replace('-', ' ').lower() == show.replace('-', ' ').lower(), \
             f"Podverse player show for {url} says {pv_player_show_text}"
@@ -98,7 +98,7 @@ def test_episodes_podverse_player(page: Page, episodes: list[str]):
         check_title(page, url)
 
 
-@mark.dev
+@mark.skip("Issue #534 as well as issue with gnome software vs gnome-software")
 def test_episode_tag_broken_link_spaces(page: Page, episodes: list[str]):
     """
     Checks for tags with spaces in the name. If there is a space in that tag name, it render the tags page to make sure
@@ -111,13 +111,14 @@ def test_episode_tag_broken_link_spaces(page: Page, episodes: list[str]):
         for tag in tags:
             if tag in checked_tags:
                 continue
-            print(f"{tag} at http://localhost:1313{url}")
+            # print(f"{tag} at http://localhost:1313{url}")
             page.locator(".tag > a", has_text=tag).click()
             expect(page.locator("h1.title", has_text=f"Tag: {tag}")).to_be_visible()
             checked_tags.append(tag)
             page.goto(url)  # Go back to episode page to click on the next tag
 
 
+@mark.skip("Issue #516")
 def test_episode_emoji_tags(page: Page, episodes: list[str]):
     """
     Check to see if emoji tags are on the episode and renders tag page of that emoji to make sure it exitsts
