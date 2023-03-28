@@ -11,5 +11,5 @@ title: Dan Johansen
 twitter: null
 type: guest
 username: danjohansen
-youtube: null
+youtube: https://www.youtube.com/@DanJohansen
 ---
