@@ -1,7 +1,3 @@
-{{ define "headcontent" }}
-  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
-{{end}}
-
 {{ define "main" }}
   {{ if ne .Title (print .CurrentSection.Title " " .Params.episode) }}
     {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .Title ) }}
@@ -21,7 +17,6 @@
         <div class="column is-8">
           <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
           <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
-          <!-- {{ partial "episode/videoplayer.html" . }} -->
           <br />
           <p>{{ .Description }} </p>
           </div>
