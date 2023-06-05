@@ -9,7 +9,7 @@ homepage: https://platform.uno
 instagram: null
 linkedin: null
 title: Jérôme Laban
-twitter: https://twitter.com/jlabanjlaban
+twitter: https://twitter.com/jlaban
 type: guest
 username: jeromelaban
 youtube: null
