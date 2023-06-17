@@ -1,13 +1,12 @@
 ---
 avatar: /images/people/irabinovitch.jpg
 avatar_small: /images/people/irabinovitch_small.jpg
-bio: VP, Product & Technical Community at DataDog, recovering SysAdmin, SCALE Conference
-  Chair, and other FL/OSS fun.
-homepage: http://www.fonz.net/blog/
+bio: null
+homepage: null
 instagram: null
 linkedin: null
 title: Ilan Rabinovitch
-twitter: https://twitter.com/irabinovitch
+twitter: null
 type: guest
 username: irabinovitch
 youtube: null

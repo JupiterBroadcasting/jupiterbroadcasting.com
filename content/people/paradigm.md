@@ -1,8 +1,8 @@
 ---
 avatar: /images/people/paradigm.jpg
 avatar_small: /images/people/paradigm_small.jpg
-bio: Creator of Bedrock Linux.
-homepage: https://bedrocklinux.org/
+bio: null
+homepage: null
 instagram: null
 linkedin: null
 title: paradigm

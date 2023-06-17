@@ -1,13 +1,12 @@
 ---
 avatar: /images/people/bartongeorge.jpg
 avatar_small: /images/people/bartongeorge_small.jpg
-bio: Founder & lead Project Sputnik (dev systems). Employed by Dell -- focused on
-  Linux, developers & Open Source. These insightful opinions are my own.
-homepage: https://bartongeorge.io/
+bio: null
+homepage: null
 instagram: null
-linkedin: https://www.linkedin.com/in/barton808/
+linkedin: null
 title: Barton George
-twitter: https://twitter.com/barton808
+twitter: null
 type: guest
 username: bartongeorge
 youtube: null
