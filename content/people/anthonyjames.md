@@ -1,13 +1,13 @@
 ---
 avatar: /images/people/anthonyjames.jpg
 avatar_small: /images/people/anthonyjames_small.jpg
-bio: Founder/CEO @ LinuxAcademy.com we're hiring! - Co-host @ ScaleYourCode.com
-homepage: https://linuxacademy.com/
+bio: null
+homepage: null
 instagram: null
-linkedin: https://www.linkedin.com/in/anthonydjames/
+linkedin: null
 title: Anthony James
-twitter: https://twitter.com/anthonydjames
+twitter: null
 type: guest
 username: anthonyjames
-youtube: https://www.youtube.com/user/pineheadtv
+youtube: null
 ---

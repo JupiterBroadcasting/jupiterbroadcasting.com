@@ -1,12 +1,12 @@
 ---
 avatar: /images/people/jason.jpg
 avatar_small: /images/people/jason_small.jpg
-bio: ''
-homepage: https://www.forbes.com/sites/jasonevangelho
+bio: null
+homepage: null
 instagram: null
 linkedin: null
 title: Jason Evangelho
-twitter: https://twitter.com/killyourfm
+twitter: null
 type: guest
 username: jason
 youtube: null
