@@ -1,12 +1,13 @@
 ---
 avatar: /images/people/andygrover.jpg
 avatar_small: /images/people/andygrover_small.jpg
-bio: null
-homepage: null
+bio: Hacks on Stratis Storage at Red Hat, and has other creative dreams too. Bass.
+  Rustlang. Mostly cat and political retweets these days.
+homepage: https://groveronline.com/
 instagram: null
-linkedin: null
+linkedin: https://www.linkedin.com/in/andygrover/
 title: Andy Grover
-twitter: null
+twitter: https://twitter.com/iamagrover
 type: guest
 username: andygrover
 youtube: null

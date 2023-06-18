@@ -1,8 +1,8 @@
 ---
 avatar: /images/people/davejones.jpg
 avatar_small: /images/people/davejones_small.jpg
-bio: null
-homepage: null
+bio: Keeping the lights at podcastindex.org
+homepage: https://podcastindex.org/
 instagram: null
 linkedin: null
 title: Dave Jones
