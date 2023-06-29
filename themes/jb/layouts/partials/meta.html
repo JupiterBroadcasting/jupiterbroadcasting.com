@@ -19,7 +19,7 @@
             ) ".Params.username" .Title
           ) 0
         }}
-        {{- $titleMeta = (printf `%s | %s` $person.Title .Site.Title) -}}
+        {{- $titleMeta = (printf `%s | %s` (cond (eq $person.Title nil) .Title $person.Title) .Site.Title) -}}
     {{ else -}}
         {{/* covers LAN and any page that does not have a show name or episode */ -}}
         {{- $titleMeta = (printf `%s | %s` .Title .Site.Title) -}}
