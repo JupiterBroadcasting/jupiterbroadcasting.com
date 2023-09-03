@@ -7,3 +7,10 @@
 @import "helpers/_all"
 #wrapper
   padding-top: 4rem
+
+.host-list .columns
+  @include until(600px)
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .column:first-child:last-child
+      grid-column: 1 / span 2;

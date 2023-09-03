@@ -39,8 +39,8 @@
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
           <!-- Hosts Section -->
-          <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0">
-            <div class="column">
+          <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0 hosts">
+            <div class="column px-0">
               <h2 class="has-text-centered-mobile">Hosts</h2>
               <section class="section host-list">
                 <div class="columns is-narrow">
@@ -53,7 +53,7 @@
                 </div>
               </section>
             </div>
-            <div class="column">
+            <div class="column px-0">
               {{ with .Params.guests }}
               <h2 class="has-text-centered-mobile">Guests</h2>
               <section class="section host-list">
@@ -71,20 +71,37 @@
             {{ end }}
             </div>
           </div>
+          <!-- Sponsors -->
+          <div class="tile is-child columns is-flex-grow-0 is-hidden-tablet">
+            <div class="column px-0">
+              {{ with .Params.sponsors }}
+                <h2>Sponsors</h2>
+                <section class="section px-0 sponsor-list">
+                  {{ range . }}
+                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
+                    {{ if $sponsor }}
+                      {{ partial "sponsor/small.html" $sponsor }}
+                      <br />
+                    {{ end }}
+                  {{ end }}
+                </section>
+              {{ end }}
+            </div>
+          </div>
           <!-- Episode Links -->
           <div class="tile is-child columns is-flex-grow-0">
-            <div class="column">
+            <div class="column px-0">
               {{ .Content }}
             </div>
           </div>
         </div>
         <div class="tile is-parent is-vertical is-4">
           <!-- Sponsors -->
-          <div class="tile is-child columns is-flex-grow-0">
-            <div class="column">
+          <div class="tile is-child columns is-flex-grow-0 is-hidden-mobile">
+            <div class="column px-0">
               {{ with .Params.sponsors }}
                 <h2>Sponsors</h2>
-                <section class="section sponsor-list">
+                <section class="section px-0 sponsor-list">
                   {{ range . }}
                     {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
                     {{ if $sponsor }}
