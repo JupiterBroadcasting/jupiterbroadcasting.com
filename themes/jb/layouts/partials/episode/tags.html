@@ -1,6 +1,6 @@
 {{ range $tag := . }}
   <span class="tag">
     <!-- urlquery found here: https://discourse.gohugo.io/t/url-encoding-percent-encoding-with-hugo/16546/13 -->
-    <a href="{{ `/tags/` }}{{ replace $tag " " "-" | urlquery }}/">{{$tag}}</a>
+    <a href="{{ `/tags/` }}{{ cond (ne (replace $tag " " "-" | urlize ) "") (replace $tag " " "-" | urlize) (replace $tag " " "-" | urlquery) }}/">{{$tag}}</a>
   </span>
 {{ end }}
