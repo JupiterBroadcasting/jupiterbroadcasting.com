@@ -1,22 +1,23 @@
 from pathlib import Path
 from typing import Tuple, Callable
-from playwright.sync_api import Page, expect, Locator, FrameLocator
+from playwright.sync_api import Page, expect, Locator, FrameLocator, Route
 
+def handle_peertube_response(route: Route):
+        response = route.fulfill()
+        json = response.json()
+        json.data[0].isLive = True
+        # Fulfill using the original response, while patching the response body
+        route.fulfill(response=response, json=json)
 
 def test_live_indicator(
     page: Page,
-    set_live: Tuple[Callable, str],
     screenshot_dir: Path,
 ):
-    # explicitly defining tuple objects for clarity
-    replace_live_event: Callable = set_live[0]
-    live_event: str = set_live[1]
-
-    # intercepting reponses for live event, and make live
-    replace_live_event(page, live_event)
 
     # go to the live page
     page.goto("/live")
+
+    page.route("https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt", handle_peertube_response)
 
     # validate live button is red
     expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
@@ -36,13 +37,8 @@ def test_live_indicator(
 
 def test_mobile_live_indicator(
     mobile_device_tuple: Tuple[Page, str],
-    set_live: Tuple[Callable, str],
     screenshot_dir: Path,
 ):
-    # explicitly defining tuple objects for clarity
-    replace_live_event: Callable = set_live[0]
-    live_event: str = set_live[1]
-
     # set mobile page to variable
     mobile_device = mobile_device_tuple[0]
     # set screenshot dir for mobile device
@@ -50,10 +46,9 @@ def test_mobile_live_indicator(
         screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
     )
 
-    # intercepting reponses for live event, and make live
-    replace_live_event(mobile_device, live_event)
-
     mobile_device.goto("/live")
+
+    mobile_device.route("https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt", handle_peertube_response)
 
     navbar: Locator = mobile_device.locator("#mainnavigation.is-live",).locator(
         ".navbar-burger",

@@ -47,7 +47,7 @@ def mobile_device_tuple(
     #   so we're not having to hard-code the URL
     base_url: base_url,
 ) -> Tuple[Page,str]:
-    
+
     # based on here: https://playwright.dev/python/docs/emulation#devices
     context = browser.new_context(
         base_url=base_url,
@@ -152,30 +152,3 @@ def expect_nav_items() -> List[Dict[str,str]]:
         # failing on tests here: https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/runs/8254156209?check_suite_focus=true#step:9:26
         {'title': 'Contact', 'href': '/contact/'},
     ]
-
-@fixture
-def get_live_event(get_test_dir: Path) -> str:
-    return Path(get_test_dir / 'fixture_files/jb-live_sample-live-event.json').read_text()
-
-@fixture
-def set_live(get_live_event: str) -> Tuple[Callable, str]:
-    return (_replace_live_event,get_live_event)
-    # return replace_live_event
-
-@staticmethod
-def _replace_live_event(page: Page, live_event: str) -> None:
-    def handle_route(route: Route) -> None:
-        # fetch original response
-        response = page.request.fetch(route.request)
-
-        # setting live event
-        route.fulfill(
-            # Pass all fields from the response
-            response=response,
-            # override body
-            body=live_event.strip()
-        )
-    page.route(
-        "https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt",
-        handle_route
-    )
