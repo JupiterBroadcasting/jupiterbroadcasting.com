@@ -71,7 +71,7 @@
             {{ end }}
             </div>
           </div>
-          <!-- Sponsors -->
+          <!-- Sponsors: will be shown on mobile to promote sponsors -->
           <div class="tile is-child columns is-flex-grow-0 is-hidden-tablet">
             <div class="column px-0">
               {{ with .Params.sponsors }}
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="tile is-parent is-vertical is-4">
-          <!-- Sponsors -->
+          <!-- Sponsors: will hide on mobile so sponsors can be shown above episode links -->
           <div class="tile is-child columns is-flex-grow-0 is-hidden-mobile">
             <div class="column px-0">
               {{ with .Params.sponsors }}
