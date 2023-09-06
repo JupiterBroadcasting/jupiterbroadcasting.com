@@ -5,6 +5,7 @@ from pytest import fixture
 from _pytest.fixtures import SubRequest
 from pytest_base_url.plugin import base_url
 from playwright.sync_api import Playwright, APIRequestContext, Route, Page, Browser
+import json
 
 @fixture
 def get_test_dir() -> Path:
@@ -152,3 +153,30 @@ def expect_nav_items() -> List[Dict[str,str]]:
         # failing on tests here: https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/runs/8254156209?check_suite_focus=true#step:9:26
         {'title': 'Contact', 'href': '/contact/'},
     ]
+
+@fixture
+def set_live() -> Callable:
+    return _replace_live_event
+
+@staticmethod
+def _replace_live_event(page: Page) -> None:
+    def handle_route(route: Route) -> None:
+        # fetch original response
+        response = page.request.fetch(route.request)
+        json_data = response.json()
+
+        # override response values
+        if json_data.get('data'):
+            json_data['data'][0]['isLive'] = True
+        json_data['total'] = 1
+
+        # setting live event
+        route.fulfill(
+            # Pass all fields from the response
+            response=response,
+            body=json.dumps(json_data),
+        )
+    page.route(
+        "https://jupiter.tube/api/v1/video-channels/live/**",
+        handle_route
+    )

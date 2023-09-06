@@ -2,22 +2,16 @@ from pathlib import Path
 from typing import Tuple, Callable
 from playwright.sync_api import Page, expect, Locator, FrameLocator, Route
 
-def handle_peertube_response(route: Route):
-        response = route.fulfill()
-        json = response.json()
-        json.data[0].isLive = True
-        # Fulfill using the original response, while patching the response body
-        route.fulfill(response=response, json=json)
-
 def test_live_indicator(
     page: Page,
+    set_live: Callable,
     screenshot_dir: Path,
 ):
+    # intercepting reponses for live event, and make live
+    set_live(page)
 
     # go to the live page
     page.goto("/live")
-
-    page.route("https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt", handle_peertube_response)
 
     # validate live button is red
     expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
@@ -37,6 +31,7 @@ def test_live_indicator(
 
 def test_mobile_live_indicator(
     mobile_device_tuple: Tuple[Page, str],
+    set_live: Callable,
     screenshot_dir: Path,
 ):
     # set mobile page to variable
@@ -46,9 +41,10 @@ def test_mobile_live_indicator(
         screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
     )
 
-    mobile_device.goto("/live")
+    # intercepting reponses for live event, and make live
+    set_live(mobile_device)
 
-    mobile_device.route("https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt", handle_peertube_response)
+    mobile_device.goto("/live")
 
     navbar: Locator = mobile_device.locator("#mainnavigation.is-live",).locator(
         ".navbar-burger",
