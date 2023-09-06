@@ -14,7 +14,7 @@
       {{ range sort .Site.Taxonomies.tags }}
       <span class="tag">
         <!-- urlquery found here: https://discourse.gohugo.io/t/url-encoding-percent-encoding-with-hugo/16546/13 -->
-        <a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a>
+        <a href='{{ replace .Page.Permalink "#" "%23" }}'>{{ .Page.Title }} ({{ .Count }})</a>
         </span>
 
       {{ end }}
