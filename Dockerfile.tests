@@ -2,7 +2,8 @@
 #   python3.10, and is latest version (python verison pinned in the test/Pipfile as well (make sure to change there as well))
 FROM mcr.microsoft.com/playwright/python:v1.25.2-jammy
 
-RUN pip install pipenv
+# Rollback and pin version as there is a bug in the l
+RUN pip install pipenv==2023.7.23
 
 CMD [ "--base-url", "http://localhost:1313", "-m", "not periodic" ]
 ENTRYPOINT [ "pytest" ]

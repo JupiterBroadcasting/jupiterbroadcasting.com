@@ -5,6 +5,7 @@ from pytest import fixture
 from _pytest.fixtures import SubRequest
 from pytest_base_url.plugin import base_url
 from playwright.sync_api import Playwright, APIRequestContext, Route, Page, Browser
+import json
 
 @fixture
 def get_test_dir() -> Path:
@@ -47,7 +48,7 @@ def mobile_device_tuple(
     #   so we're not having to hard-code the URL
     base_url: base_url,
 ) -> Tuple[Page,str]:
-    
+
     # based on here: https://playwright.dev/python/docs/emulation#devices
     context = browser.new_context(
         base_url=base_url,
@@ -154,28 +155,28 @@ def expect_nav_items() -> List[Dict[str,str]]:
     ]
 
 @fixture
-def get_live_event(get_test_dir: Path) -> str:
-    return Path(get_test_dir / 'fixture_files/jb-live_sample-live-event.json').read_text()
-
-@fixture
-def set_live(get_live_event: str) -> Tuple[Callable, str]:
-    return (_replace_live_event,get_live_event)
-    # return replace_live_event
+def set_live() -> Callable:
+    return _replace_live_event
 
 @staticmethod
-def _replace_live_event(page: Page, live_event: str) -> None:
+def _replace_live_event(page: Page) -> None:
     def handle_route(route: Route) -> None:
         # fetch original response
         response = page.request.fetch(route.request)
+        json_data = response.json()
+
+        # override response values
+        if json_data.get('data'):
+            json_data['data'][0]['isLive'] = True
+        json_data['total'] = 1
 
         # setting live event
         route.fulfill(
             # Pass all fields from the response
             response=response,
-            # override body
-            body=live_event.strip()
+            body=json.dumps(json_data),
         )
     page.route(
-        "https://jupiter.tube/api/v1/video-channels/live/videos?isLive=true&skipCount=false&count=1&sort=-createdAt",
+        "https://jupiter.tube/api/v1/video-channels/live/**",
         handle_route
     )
