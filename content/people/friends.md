@@ -10,4 +10,5 @@ twitter: https://twitter.com/jupitersignal
 type: host
 username: friends
 youtube: null
+is_archived: true
 ---
