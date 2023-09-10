@@ -11,7 +11,7 @@
 
     <div class="tags">
 
-      {{ range sort .Site.Taxonomies.tags }}
+      {{ range .Site.Taxonomies.tags.ByCount }}
       <span class="tag">
         <!-- urlquery found here: https://discourse.gohugo.io/t/url-encoding-percent-encoding-with-hugo/16546/13 -->
         <a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a>
