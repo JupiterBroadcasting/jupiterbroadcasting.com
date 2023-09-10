@@ -1,12 +1,20 @@
 /* Query URLs */
 const JoopTubeURL = new URL("https://jupiter.tube/api/v1/");
-const JoopTubeQuery =
-    ({ isLive }) => new URL("video-channels/live/videos?" +
+const joopTubeQuery = ({ isLive }) =>
+  fetch(
+    new URL(
+      "video-channels/live/videos?" +
         `isLive=${isLive ? true : false}` + // Normally redundant, avoids injection
         `&skipCount=false` +
         `&count=1` +
         `&sort=-createdAt`,
-        JoopTubeURL);
+      JoopTubeURL
+    ),
+    liveRequestOptions
+  )
+    .then((response) => response.text())
+    .then((result) => JSON.parse(result))
+    .catch((error) => console.error("Error while fetching live URL!", error));
 const liveRequestOptions = {
     method: 'GET',
     headers: new Headers({ "Accept": "application/json" }),
@@ -44,31 +52,21 @@ const getEmbedLink = show => {
  *      b) the embed link of the most recently aired show
  * @returns {string} The embedable URL
  */
-async function jbLive() {
-    const liveShowQuery = fetch(JoopTubeQuery({ isLive: true }), liveRequestOptions)
-        .then(response => response.text())
-        .then(result => JSON.parse(result))
-        .catch(error => console.error('Error while fetching live URL!', error));
-
-    const archivedShowQuery = fetch(JoopTubeQuery({ isLive: false }), liveRequestOptions)
-        .then(response => response.text())
-        .then(result => JSON.parse(result))
-        .catch(error => console.error(('Error while fetching live URL!', error)));
-
-    const [liveShow, archivedShow] = await Promise.allSettled([liveShowQuery, archivedShowQuery])
-
-    return getEmbedLink(liveShow)?.toString() ?? getEmbedLink(archivedShow)?.toString();
-}
+const jbLive = async () =>
+  (
+    await Promise.allSettled(
+      [true, false].map((isLive) => joopTubeQuery({ isLive }))
+    )
+  )
+    .map((show) => getEmbedLink(show)?.toString())
+    .find((link) => link);
 /**
  * Queries the 'live' channel at jupiter.tube for live
  * show status and sets the CSS style background-color red for #livebutton
  */
 async function doLiveHighlight() {
-    fetch(JoopTubeQuery({ isLive: true }), liveRequestOptions)
-        .then(response => response.text())
-        .then(result => JSON.parse(result))
+    joopTubeQuery({ isLive: true })
         .then(data => {if(data.total > 0)
             document.getElementById("mainnavigation").classList.add("is-live")
         })
-        .catch(error => console.error('Error while fetching live URL!', error));
 }
