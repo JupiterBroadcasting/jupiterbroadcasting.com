@@ -38,7 +38,7 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
 
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
     for dropdown_text, child_elements in expected_dropdown_items.items():
-        
+
         # dropdown item to hover over in menu
         parent_element: Locator = page.locator(f'.navbar-start >> a:has-text("{dropdown_text}"):visible')
 
@@ -54,7 +54,7 @@ def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,s
         dropdown_elements: Locator = page.locator(f'a:has-text("{dropdown_text}") + .navbar-dropdown')
 
         for dropdown_item in child_elements:
-            item: Locator = dropdown_elements.locator(f'a.navbar-item:has-text("{dropdown_item["title"]}")')
+            item: Locator = dropdown_elements.locator(f'a.navbar-item:text-is("{dropdown_item["title"]}")')
             try:
                 # check if the path matches exactly what's in our expected output
                 expect(item).to_have_attribute('href', dropdown_item['href'])
