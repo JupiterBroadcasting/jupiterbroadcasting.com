@@ -1,0 +1,24 @@
+<div class="dropdown is-info py-2">
+    <div class="dropdown-trigger">
+      <button class="button is-info" aria-haspopup="true" aria-controls="dropdown-menu">
+        <span>Subscribe to {{.show}}</span>
+      </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <a href="{{.rss}}" target="_blank" class="dropdown-item">RSS</a>
+        {{- range $key, $url := .direct_links -}}
+        <a href="$url" class="dropdown-item" style="text-transform: capitalize;">
+          {{- replace $key "_" " " -}}
+        </a>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+  <script>
+    var dropdown = document.querySelector('.dropdown button');
+    dropdown.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdown.parentElement.parentElement.classList.toggle('is-active');
+    });
+  </script>
