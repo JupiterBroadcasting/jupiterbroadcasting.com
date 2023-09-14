@@ -31,7 +31,16 @@
           </center>
           </div>
         </div>
+      {{ if .Params.podcast_file }}
       {{ partial "episode/podverseplayer.html" . }}
+      {{else}}
+      <div>
+        <audio controls class="my-4" style="width: 100%;">
+          <source src='{{ .Params.podcast_ogg_file }}' type="audio/ogg">
+          <source src='{{ .Params.podcast_alt_file }}' type="audio/mpeg">
+        </audio>
+      </div>
+      {{ end }}
 
       {{ partial "episode/downloadlinks.html" . }}
 
