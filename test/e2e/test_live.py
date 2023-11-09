@@ -1,19 +1,14 @@
 from pathlib import Path
 from typing import Tuple, Callable
-from playwright.sync_api import Page, expect, Locator, FrameLocator
-
+from playwright.sync_api import Page, expect, Locator, FrameLocator, Route
 
 def test_live_indicator(
     page: Page,
-    set_live: Tuple[Callable, str],
+    set_live: Callable,
     screenshot_dir: Path,
 ):
-    # explicitly defining tuple objects for clarity
-    replace_live_event: Callable = set_live[0]
-    live_event: str = set_live[1]
-
     # intercepting reponses for live event, and make live
-    replace_live_event(page, live_event)
+    set_live(page)
 
     # go to the live page
     page.goto("/live")
@@ -36,13 +31,9 @@ def test_live_indicator(
 
 def test_mobile_live_indicator(
     mobile_device_tuple: Tuple[Page, str],
-    set_live: Tuple[Callable, str],
+    set_live: Callable,
     screenshot_dir: Path,
 ):
-    # explicitly defining tuple objects for clarity
-    replace_live_event: Callable = set_live[0]
-    live_event: str = set_live[1]
-
     # set mobile page to variable
     mobile_device = mobile_device_tuple[0]
     # set screenshot dir for mobile device
@@ -51,7 +42,7 @@ def test_mobile_live_indicator(
     )
 
     # intercepting reponses for live event, and make live
-    replace_live_event(mobile_device, live_event)
+    set_live(mobile_device)
 
     mobile_device.goto("/live")
 

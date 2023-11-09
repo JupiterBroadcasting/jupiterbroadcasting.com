@@ -15,16 +15,15 @@ aliases = [
 
 ## Spaces and Rooms
 
-Jupiter Broadcasting's Rooms are organized into groups called "spaces".
+Jupiter Broadcasting's Rooms are organized into groups called `spaces` and `sub-spaces`. You join the main JB space to get access to all the rooms, or join a specific sub-space:
 
-You can find all the Jupiter Broadcasting rooms [in this space][jb-space], or join the sub-spaces you are interested in:
-
-- [Community][com-space] (this sub-space is the most active at the time of writing)
-- [Colony Meetups][meet-space]
-- [Coder Radio][cr-space]
-- [Linux Action News][lan-space]
-- [LINUX Unplugged][lup-space]
-- [Self-Hosted][sh-space]
+- [Jupiter Broadcasting Space][jb-space] - Main space which includes all of the Jupiter Broadcasting rooms and sub-spaces
+    - [Community][com-space] - JB community rooms on different topics
+    - [Colony Meetups][meet-space] - A sub-space to organize location specific meetups
+    - [Coder Radio][cr-space]
+    - [Linux Action News][lan-space]
+    - [LINUX Unplugged][lup-space]
+    - [Self-Hosted][sh-space]
 
 ## Element
 
