@@ -41,7 +41,7 @@
         {{.Content}}
         {{ partial "show/links.html" . }}
       </div>
-      <div class="column is-half">
+      <div class="column is-half host-list">
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
         {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" .Params.hosts }}
