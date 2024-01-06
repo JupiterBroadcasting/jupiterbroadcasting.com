@@ -1,9 +1,8 @@
 ---
 avatar: /images/people/nategraham.jpg
 avatar_small: /images/people/nategraham_small.jpg
-bio: QA Manager at Blue Systems, and close follower of the KDE's Usability and Productivity
-  goals.
-homepage: https://pointieststick.wordpress.com/
+bio: null
+homepage: null
 instagram: null
 linkedin: null
 title: Nate Graham
