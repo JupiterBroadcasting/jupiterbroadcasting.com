@@ -1,12 +1,12 @@
 ---
 avatar: /images/people/sohiniroy.jpg
 avatar_small: /images/people/sohiniroy_small.jpg
-bio: null
+bio: Product Manager at Canonical.
 homepage: null
 instagram: null
 linkedin: null
 title: Sohini Bianka Roy
-twitter: null
+twitter: https://twitter.com/biankaroy_
 type: guest
 username: sohiniroy
 youtube: null
