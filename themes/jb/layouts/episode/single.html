@@ -21,14 +21,14 @@
           <p>{{ .Description }} </p>
           </div>
           <div class="column is-4">
-              <center>
-                <a href="{{ .Permalink }}">
-                  <img src="{{.Params.header_image }}" width="auto" height="121" alt="{{.Title}}">
-                </a><br />
-                {{ partial "episode/support.html" . }}
-                <br/>
-                {{ partial "episode/subscribe.html" . }}
-              </center>
+            <center>
+              <a href="{{ .Permalink }}">
+                <img src="{{.Params.header_image }}" width="auto" height="121" alt="{{.Title}}">
+              </a><br />
+              {{ partial "episode/support.html" . }}
+              <br/>
+              {{ partial "episode/subscribe.html" . }}
+            </center>
           </div>
         </div>
       {{ partial "episode/podverseplayer.html" . }}
