@@ -1,31 +1,82 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container px-4">
   <h1 class="title">{{.Title}}</h1>
 </div>
 
+{{ if .Content }}
 <div class="container">
   <div class="column is-full content">
     {{.Content}}
   </div>
 </div>
+{{ end }}
+
+<div class="container">
+
+  <section class="px-4 host-list">
+    <h2 class="title is-3 my-3 px-0">Hosts</h2>
+    <div class="columns is-multiline">
+
+      {{ range where (where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) "Type" "host" }}
+      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
+        {{ partial "people/small.html" . }}
+      </div>
+
+      {{ end }}
+    </div>
+  </section>
+</div>
+<div class="container" style="margin-top: 75px;">
+  <section class="px-4 guest-list">
+    <h2 class="title is-3 my-3 px-0">Guests</h2>
+    <div class="columns is-multiline">
+      {{ $guest_paginator := (.Paginate (where (where site.RegularPages "Section" "people") "Type" "guest")).Pages }}
+      {{ range $guest_paginator }}
+      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
+        {{ partial "people/small.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+</div>
 
 <!-- The .Reverse is because it's sorted alphbetically and guest comes before host -->
-{{ range ((where site.RegularPages "Section" "people").GroupBy "Type").Reverse }}
+<!--
 
-<section class="{{ .Key | pluralize }}-list">
+  {{ range ((where site.RegularPages "Section" "people").GroupBy "Type").Reverse }}
+
+  <section class="{{ .Key | pluralize }}-list">
   <div class="container">
-    <h2 class="title is-3 my-3">{{ .Key | pluralize | title }}</h2>
-     <div class="columns is-multiline">
-      {{ range .Pages  }}
+    <h2 class="title is-3 my-3 px-5">{{ .Key | pluralize | title }}</h2>
+    <div class="section">
+
+      <div class="columns is-multiline">
+        {{ if eq .Key "guest" }}
+        {{ $people_paginator :=  .Pages }}
+        {{ range $people_paginator }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
           {{ partial "people/small.html" . }}
-        </div>
-      {{ end }}
+          </div>
+          {{ end }}
+          {{ else }}
+          {{ range .Pages  }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "people/small.html" . }}
+          </div>
+          {{ end }}
+
+
+        {{ end }}
+
+      </div>
     </div>
   </div>
 </section>
-
 {{ end }}
+-->
+<div class="container p-4">
+  {{ partial "helper/pagination.html" . }}
+</div>
 
 {{ end }}
