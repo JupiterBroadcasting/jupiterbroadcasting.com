@@ -1,28 +1,19 @@
 {{ define "main" }}
-
 <div class="px-4 container">
   <h1 class="title">{{.Title}}</h1>
 </div>
 
 <div class="py-4 container">
-
   <div class="column is-full content">
     {{.Content}}
-
     <div class="tags">
-
       {{ range sort .Site.Taxonomies.tags }}
       <span class="tag">
         <!-- urlquery found here: https://discourse.gohugo.io/t/url-encoding-percent-encoding-with-hugo/16546/13 -->
         <a href='{{ replace .Page.Permalink "#" "%23" }}'>{{ .Page.Title }} ({{ .Count }})</a>
         </span>
-
       {{ end }}
     </div>
-
   </div>
-
-
 </div>
-
 {{ end }}
