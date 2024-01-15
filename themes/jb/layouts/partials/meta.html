@@ -87,15 +87,24 @@
 
 <!-- Favicons -->
 
-<link rel="shortcut icon" href="/images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-<link rel="apple-touch-icon" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+<link rel="icon" sizes="32x32" href="/images/favicon/favicon.ico">
 
-<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="192x192" href="/images/favicon/android-chrome-192x192.png" />
-<link rel="apple-touch-icon" sizes="512x512" href="/images/favicon/android-chrome-512x512.png" />
+<!-- needed this svg tag for chromium based browsers. if using the one for firefox below,
+it would default to one of the android-chrome pngs -->
+<link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg">
 
-<link rel="manifest" href="/images/favicon/site.webmanifest">	
+<!-- needed this svg tag for firefox. if using the one above for chromium,
+bookmark/history favicon defaults to apple-touch-icon -->
+<link rel="icon" type="image/svg+xml" sizes="512x512" href="/images/favicon/favicon.svg">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#2a2a2a">
+<meta name="msapplication-TileColor" content="#2a2a2a">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
 
 <!-- iPhone Notch Theme Color -->
 
