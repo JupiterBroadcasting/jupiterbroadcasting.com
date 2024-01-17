@@ -1,7 +1,7 @@
 {{ define "main" }}
     <section class="spnosor-list px-4 mb-5">
         <div class="container">
-            <div class="column is-full content">
+            <div class="column is-full content" data-pagefind-body>
                 <h1 class="title">Sponsors</h1>
                 <h4>We have many sponsors we love who support each show, and we hope you'll enjoy them too:</h4>
                 {{- $sponsor_pages := where site.Pages "Section" "sponsors" -}}
