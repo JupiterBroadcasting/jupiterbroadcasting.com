@@ -1,7 +1,7 @@
 ---
-description: Support the entire network, and get access to every member's special
-  feed for every show on the network. Sign up now and save $3/m FOREVER!
-link: https://jupitersignal.memberful.com/checkout?plan=74364&coupon=2024
+description: Take $2 a month off for the lifetime of your membership and contribute
+  to our show directly
+link: https://jupitersignal.memberful.com/checkout?plan=53334&coupon=jarjar
 shortname: memberful.com-cr
-title: Network Membership Holiday Discount
+title: Coder QA
 ---
