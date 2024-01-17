@@ -4,6 +4,10 @@ from playwright.sync_api import APIRequestContext
 def test_matrix_well_known(
     api_request_context: APIRequestContext,
 ):
+    """
+    Check to make sure the files required for matrix federation and name resolution
+    are present and contain necessary details
+    """
     well_known_folder = "/.well-known/matrix"
     well_known_types = {
         "client": {

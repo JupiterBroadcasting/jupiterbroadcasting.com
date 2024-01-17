@@ -14,7 +14,7 @@ def test_live_indicator(
     page.goto("/live")
 
     # validate live button is red
-    expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
+    expect(page.locator("#mainnavigation.is-live").locator("#livebutton")).to_have_css(
         name="background-color",
         value="rgb(255, 0, 0)",  # red
     )
@@ -26,8 +26,6 @@ def test_live_indicator(
 
     page.evaluate("window.scrollTo(0, 0)")
 
-    page.screenshot(path=f"{screenshot_dir}/live.png", full_page=True)
-
 
 def test_mobile_live_indicator(
     mobile_device_tuple: Tuple[Page, str],
@@ -36,10 +34,6 @@ def test_mobile_live_indicator(
 ):
     # set mobile page to variable
     mobile_device = mobile_device_tuple[0]
-    # set screenshot dir for mobile device
-    screenshot_dir = Path(
-        screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
-    )
 
     # intercepting reponses for live event, and make live
     set_live(mobile_device)
@@ -56,7 +50,8 @@ def test_mobile_live_indicator(
     # check if live indicator is red
     assert (
         navbar.evaluate(
-            # integrated docs for python evaluate function: https://github.com/microsoft/playwright/blob/a30aac56687598c373c51255308ef5833de0c9bb/docs/src/api/class-jshandle.md?plain=1#L77-L80
+            # integrated docs for python evaluate function:
+            # https://github.com/microsoft/playwright/blob/a30aac56687598c373c51255308ef5833de0c9bb/docs/src/api/class-jshandle.md?plain=1#L77-L80
             # use evaluate function in python: https://playwright.dev/python/docs/api/class-page#page-evaluate
             # use getComputerStyle w/playwright: https://stackoverflow.com/a/71433333
             "element => window.getComputedStyle(element, ':before').backgroundColor"
@@ -71,8 +66,6 @@ def test_mobile_live_indicator(
 
     mobile_device.evaluate("window.scrollTo(0, 0)")
 
-    mobile_device.screenshot(path=f"{screenshot_dir}/live-mobile.png", full_page=True)
-
     # click navbar to expand
     navbar.click()
 
@@ -86,6 +79,6 @@ def test_mobile_live_indicator(
         value="rgb(255, 0, 0)",  # red
     )
 
-    mobile_device.locator("#mainnavigation").locator(
-        ".navbar-menu.is-active"
-    ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")
+    # mobile_device.locator("#mainnavigation").locator(
+    #     ".navbar-menu.is-active"
+    # ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")
