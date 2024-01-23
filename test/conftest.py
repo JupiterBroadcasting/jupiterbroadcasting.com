@@ -93,6 +93,7 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
     return [
         { 'href': 'http://feeds2.feedburner.com/JupiterBroadcasting', 'title': 'All Shows Feed - Audio'},
         { 'href': 'http://feeds2.feedburner.com/AllJupiterVideos', 'title': 'All Shows Feed - Video'},
+        { 'href': 'https://jupiterstation.live/rss', 'title': 'Jupiter Station'},
         { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
         { 'href': 'https://extras.show/rss', 'title': 'Jupiter EXTRAS'},
         { 'href': 'https://linuxactionnews.com/rss', 'title': 'Linux Action News'},
