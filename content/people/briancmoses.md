@@ -1,13 +1,12 @@
 ---
 avatar: /images/people/briancmoses.jpg
 avatar_small: /images/people/briancmoses_small.jpg
-bio: I'm a multi-category geek; sports, cars, computers, etc. I'm also ablogger and
-  a Coloradan captured by the state of Texas.
-homepage: https://blog.briancmoses.com
+bio: null
+homepage: null
 instagram: null
 linkedin: null
 title: Brian Moses
-twitter: https://twitter.com/briancmoses
+twitter: null
 type: guest
 username: briancmoses
 youtube: null
