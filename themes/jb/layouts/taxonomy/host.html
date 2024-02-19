@@ -31,7 +31,7 @@
             }}
           {{ end }}
         {{ end }}
-        <div class="columns is-multiline" data-pagefind-ignore>
+        <div class="columns is-multiline">
           {{ range $initialSections }}
           <div class="column is-half">
             <div class="card">
@@ -54,7 +54,7 @@
     <h2 class="title is-3">Latest Episodes with {{ $name }}</h2>
     <div class="columns is-multiline">
       {{ range .RegularPages }}
-      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile is-flex">
+      <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile is-flex" data-pagefind-ignore>
         {{ partial "episode/preview.html" . }}
       </div>
 
