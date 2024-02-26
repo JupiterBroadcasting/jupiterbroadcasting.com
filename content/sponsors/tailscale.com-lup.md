@@ -1,8 +1,7 @@
 ---
-description: Tailscale is a Zero config VPN. It installs on any device in minutes,
-  manages firewall rules for you, and works from anywhere. Get 20 devices for free
-  for a personal account.
-link: http://tailscale.com/
+description: Tailscale is a programmable networking software that is private and secure
+  by default, get it free on up to 100 drives
+link: http://tailscale.com/linuxunplugged
 shortname: tailscale.com-lup
 title: Tailscale
 ---
