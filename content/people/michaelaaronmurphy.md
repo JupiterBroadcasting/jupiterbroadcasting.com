@@ -2,7 +2,7 @@
 avatar: /images/people/michaelaaronmurphy.jpg
 avatar_small: /images/people/michaelaaronmurphy_small.jpg
 bio: Product Engineer at System7 and Pop!_OS Maintainer / Developer
-homepage: null
+homepage: https://system76.com
 instagram: null
 linkedin: null
 title: Michael Aaron Murphy
