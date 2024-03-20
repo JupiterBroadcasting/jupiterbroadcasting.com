@@ -52,7 +52,7 @@
             <div class="column px-0">
               <h2 class="has-text-centered-mobile">Hosts</h2>
               <section class="section host-list">
-                <div class="columns is-narrow">
+                <div class="columns is-narrow is-multiline">
                   {{ range .Params.hosts }}
                     {{ $host := index ( where $people_sections "Params.username" .) 0 }}
                     <div class="column is-narrow">
@@ -66,7 +66,7 @@
               {{ with .Params.guests }}
               <h2 class="has-text-centered-mobile">Guests</h2>
               <section class="section host-list">
-                  <div class="columns is-narrow">
+                  <div class="columns is-narrow is-multiline">
                     {{ range . }}
                       {{ $guest := index (where $people_sections "Params.username" .) 0 }}
                       <div class="column is-narrow">
