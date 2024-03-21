@@ -55,7 +55,7 @@
                 <div class="columns is-narrow is-multiline">
                   {{ range .Params.hosts }}
                     {{ $host := index ( where $people_sections "Params.username" .) 0 }}
-                    <div class="column is-narrow">
+                    <div class="column is-flex-grow-0">
                       {{ partial "people/smallest.html" $host }}
                     </div>
                   {{ end }}
