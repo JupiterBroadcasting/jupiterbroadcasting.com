@@ -15,11 +15,9 @@ header_image = "/images/shows/this-week-in-bitcoin.png"
 podverse_podcast_id = "9kZDxtyEq"
 
 [links.shownotes]
-  url="https://www.thisweekinbitcoin.show/"
+  url="https://www.thisweekinbitcoin.show"
 [links.email]
   url="/contact"
-[links.twitter]
-  url="https://twitter.com/ChrisLAS"
 
 +++
 
