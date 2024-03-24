@@ -13,4 +13,5 @@ twitter: https://twitter.com/drewofdoom
 type: host
 username: drew-devore
 youtube: null
+is_archived: true
 ---
