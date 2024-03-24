@@ -14,6 +14,12 @@ header_image = "/images/shows/self-hosted.png"
 
 podverse_podcast_id = "nUl1ZCL76"
 
+[live]
+  type = "even-weeks"
+  day = 3
+  hour = 16
+  minute = 30
+
 [links.discord]
   url="https://discord.gg/U3Gvr54VRp"
 [links.twitter]
