@@ -1,0 +1,4757 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 900,
+        "text": " I think we've got to talk about this. A new Dell XPS Ubuntu edition has shipped, and I have a ton of respect for what our friends over at Dell have done with the Sputnik line."
+      },
+      {
+        "start": 900,
+        "stop": 1700,
+        "text": " And I understand that they're just kind of revalidating and rebadging an existing product. There is an XPS 13 for Windows."
+      },
+      {
+        "start": 1700,
+        "stop": 2200,
+        "text": " But the XPS 13+ Developer Edition has what they call a new radical look."
+      },
+      {
+        "start": 2200,
+        "stop": 3000,
+        "text": " And it seems that Dell's design team is about four years behind Apple. We've got what is essentially a butterfly chiclet keyboard."
+      },
+      {
+        "start": 3000,
+        "stop": 3900,
+        "text": " The function row has been replaced by touch LED lights. There's no escape key. And it has two ports. USB-C, both."
+      },
+      {
+        "start": 3900,
+        "stop": 4900,
+        "text": " Why? I think it was well proven that these things were not helpful for anyone. I wonder what the meeting room was like that day."
+      },
+      {
+        "start": 4900,
+        "stop": 5600,
+        "text": " Right. After years of Apple getting grief from MacBook customers about the touch bar and getting rid of the escape key."
+      },
+      {
+        "start": 5600,
+        "stop": 6300,
+        "text": " And then them specifically, after years, reverting those changes. And just as they do that, Dell comes out with this."
+      },
+      {
+        "start": 6300,
+        "stop": 7200,
+        "text": " And I don't get it because it also feels like now is the worst time to mess this kind of thing up in this product category."
+      },
+      {
+        "start": 7200,
+        "stop": 7900,
+        "text": " Dell essentially helped create part of this category with the Sputnik line, along with others like System 76."
+      },
+      {
+        "start": 7900,
+        "stop": 8400,
+        "text": " It was their game to lose. They had the large, they were the largest OEM."
+      },
+      {
+        "start": 8400,
+        "stop": 8900,
+        "text": " They were one of the best options for enterprises that wanted an Ubuntu system."
+      },
+      {
+        "start": 8900,
+        "stop": 9800,
+        "text": " And with this, it feels like they're just seeding their market to their competitors with the DevOne and the new Lemur and other laptop,"
+      },
+      {
+        "start": 9800,
+        "stop": 10200,
+        "text": " like lots of Linux laptops now. Some directly from distributions."
+      },
+      {
+        "start": 10200,
+        "stop": 10900,
+        "text": " Is this maybe a signal that even with the seemingly good support that the community has shown for adopting Sputnik,"
+      },
+      {
+        "start": 10900,
+        "stop": 11400,
+        "text": " for doing reviews, for talking about it on entertainment and educational shows,"
+      },
+      {
+        "start": 11400,
+        "stop": 12300,
+        "text": " that it's still a relatively small signal compared to whatever signals they think the folks who are setting the direction for this whole line are receiving up the chain?"
+      },
+      {
+        "start": 12300,
+        "stop": 12900,
+        "text": " Because as you say, right, like the good side of this is they're committed to making a Linux version of what they're selling."
+      },
+      {
+        "start": 12900,
+        "stop": 13500,
+        "text": " The bad side is it doesn't seem like what Linux users might want is exactly factoring up into what that product looks like."
+      },
+      {
+        "start": 13500,
+        "stop": 15200,
+        "text": " Hello, friends, and welcome back to your weekly Linux talk show. My name is Chris."
+      },
+      {
+        "start": 15200,
+        "stop": 15300,
+        "text": " My name is Les."
+      },
+      {
+        "start": 15300,
+        "stop": 15400,
+        "text": " And my name is Brent."
+      },
+      {
+        "start": 15400,
+        "stop": 16100,
+        "text": " Hello, gentlemen. Coming up on the show today, we're going to take a sleeper distro maybe you've heard of but never really looked at,"
+      },
+      {
+        "start": 16100,
+        "stop": 16700,
+        "text": " packed full of modern Linux technologies, even though it has kind of a more traditional long term support release cycle."
+      },
+      {
+        "start": 16700,
+        "stop": 17200,
+        "text": " And it is also the final distribution in our summer of immutable Linux journey."
+      },
+      {
+        "start": 17200,
+        "stop": 18000,
+        "text": " And it is fittingly Endless OS. An old friend is going to join the show in a little bit and go deep into Endless OS with us."
+      },
+      {
+        "start": 18000,
+        "stop": 18700,
+        "text": " Plus, today is the day we are pulling names from our JPL hat to determine who is actually going to join us for our JPL tour."
+      },
+      {
+        "start": 18700,
+        "stop": 19100,
+        "text": " Then we'll round out the show with some boosts, some picks and a lot more."
+      },
+      {
+        "start": 19100,
+        "stop": 19500,
+        "text": " So before we go any further, let's say time appropriate greetings to our virtual lug."
+      },
+      {
+        "start": 19500,
+        "stop": 19700,
+        "text": " Hello, Mumble Room. Good morning."
+      },
+      {
+        "start": 19700,
+        "stop": 19900,
+        "text": " Hello, Chris. Hey, Brent. And hey, Wes."
+      },
+      {
+        "start": 19900,
+        "stop": 20100,
+        "text": " Hello, you guys. Hello. Hello."
+      },
+      {
+        "start": 20100,
+        "stop": 20900,
+        "text": " Great to see you in there. Plus, I think a record setter for our quiet listening room in weeks as we transition our mainstream over to our peer tube"
+      },
+      {
+        "start": 20900,
+        "stop": 21300,
+        "text": " instance at Jupiter.Tube. I think a lot of people are saying, hey, you know what I want?"
+      },
+      {
+        "start": 21300,
+        "stop": 21700,
+        "text": " I want a high quality Opus stream that's super low latency."
+      },
+      {
+        "start": 21700,
+        "stop": 22000,
+        "text": " And they go get Mumble. And then you have Mumble set up for other stuff as well."
+      },
+      {
+        "start": 22000,
+        "stop": 22400,
+        "text": " So welcome in, everybody. Also, a big good morning to Tailscale."
+      },
+      {
+        "start": 22400,
+        "stop": 23000,
+        "text": " Our friends over at Tailscale.com have created a mesh VPN protected by WireGuard's noise protocol."
+      },
+      {
+        "start": 23000,
+        "stop": 23600,
+        "text": " It's like peak WireGuard implementation, the kind of thing you hope somebody would build when we first started talking about WireGuard."
+      },
+      {
+        "start": 23600,
+        "stop": 24200,
+        "text": " It's here and it's a game changer. Go build a mesh network just for yourself using Tailscale."
+      },
+      {
+        "start": 24200,
+        "stop": 24700,
+        "text": " Go say good morning and get it for free up to 20 devices at Tailscale.com."
+      },
+      {
+        "start": 24700,
+        "stop": 25300,
+        "text": " So this week, GNOME launched a new telemetry program to help, quote, improve GNOME."
+      },
+      {
+        "start": 25300,
+        "stop": 26100,
+        "text": " We've talked about data collection before on the show with mixed opinions, I think, from the virtual lug and from your hosts."
+      },
+      {
+        "start": 26100,
+        "stop": 26600,
+        "text": " GNOME has created this tool directly. It's not pre-installed on any distribution or with any version of GNOME."
+      },
+      {
+        "start": 26600,
+        "stop": 27400,
+        "text": " It collects your Linux distro and its version, obviously, your hardware, OEM model, CPU, et cetera, that it can kind of grok from the system."
+      },
+      {
+        "start": 27400,
+        "stop": 28100,
+        "text": " It checks to see if you have flat pack. And if you do, if flat hub is enabled, it looks to see what applications in GNOME are pinned to the dock."
+      },
+      {
+        "start": 28100,
+        "stop": 28600,
+        "text": " You know, your favorites in GNOME. It checks to see what GNOME extensions you have installed."
+      },
+      {
+        "start": 28600,
+        "stop": 29000,
+        "text": " I think we should come back to that. And it checks to see what your default browser is."
+      },
+      {
+        "start": 29000,
+        "stop": 29800,
+        "text": " It's called GNOME Info Collect. And it's out there right now for anyone who wants to grab it and run it on their own system."
+      },
+      {
+        "start": 29800,
+        "stop": 30400,
+        "text": " They've got SUSE packages available, Arch package available, Fedora package available and a snap available."
+      },
+      {
+        "start": 30400,
+        "stop": 30600,
+        "text": " I don't know. I'm curious to know what you think, guys."
+      },
+      {
+        "start": 30600,
+        "stop": 31100,
+        "text": " But this seems to me like perhaps the best compromise we have seen yet of this information collected."
+      },
+      {
+        "start": 31100,
+        "stop": 31600,
+        "text": " It's voluntary. You have to go get it yourself in the download page where you go to get it."
+      },
+      {
+        "start": 31600,
+        "stop": 31900,
+        "text": " They tell you what they're collecting. Wes, you gave it a go before the show."
+      },
+      {
+        "start": 31900,
+        "stop": 32500,
+        "text": " I did. Although, you know, I thought I'd try to be a little bit of a troll and try it out on a plasma system."
+      },
+      {
+        "start": 32500,
+        "stop": 33000,
+        "text": " It was too smart for that, though. So, yeah, no dice. You got to run it from a GNOME system."
+      },
+      {
+        "start": 33000,
+        "stop": 33400,
+        "text": " But it's super simple. I really like that. It's just a little Python app."
+      },
+      {
+        "start": 33400,
+        "stop": 33800,
+        "text": " They do ask for some help getting a package. So if those are skills you have, maybe go take a look."
+      },
+      {
+        "start": 33800,
+        "stop": 34100,
+        "text": " But it's really easy to run. It doesn't have a ton of dependencies."
+      },
+      {
+        "start": 34100,
+        "stop": 34600,
+        "text": " And, of course, it's all open source, seemingly including the bits that run the server."
+      },
+      {
+        "start": 34600,
+        "stop": 35100,
+        "text": " Oh, that's an interesting observation. I wasn't aware of that. I notice it's not yet packaged for Nix."
+      },
+      {
+        "start": 35100,
+        "stop": 35500,
+        "text": " Though I think someone in our Nix nerds matrix chat room did create a flake for it, right?"
+      },
+      {
+        "start": 35500,
+        "stop": 35600,
+        "text": " Looking at you, Kenji."
+      },
+      {
+        "start": 35600,
+        "stop": 35800,
+        "text": " That's great, Kenji. Thank you."
+      },
+      {
+        "start": 35800,
+        "stop": 36300,
+        "text": " Brent, how do you feel about this stuff? I know you're probably one of the more privacy conscious ones on the show."
+      },
+      {
+        "start": 36300,
+        "stop": 36800,
+        "text": " This is pretty voluntary. It doesn't come pre-shipped, although I actually think it'd be more beneficial if it did."
+      },
+      {
+        "start": 36800,
+        "stop": 37300,
+        "text": " And at the end of the GNOME setup wizard, it asked you to collect this info because you're going to get such a tiny,"
+      },
+      {
+        "start": 37300,
+        "stop": 37900,
+        "text": " skewed demo that downloads and tries this. But is this just the compromise we have to make?"
+      },
+      {
+        "start": 37900,
+        "stop": 38400,
+        "text": " Well, I think having a choice is actually really refreshing. We've talked about this several times in the past, I think."
+      },
+      {
+        "start": 38400,
+        "stop": 39100,
+        "text": " But to have it be written in a language and be open source, so at least if you're really interested, you can go see what's happening."
+      },
+      {
+        "start": 39100,
+        "stop": 39500,
+        "text": " And that they're so upfront about what's being collected, I think is really helpful."
+      },
+      {
+        "start": 39500,
+        "stop": 40200,
+        "text": " And that, to me, even feels like, OK, well, if that's what they're looking for, I could see, from a developer's point of view,"
+      },
+      {
+        "start": 40200,
+        "stop": 40800,
+        "text": " how useful that might be for them to target certain systems and certain applications and user interfaces and stuff like that."
+      },
+      {
+        "start": 40800,
+        "stop": 41500,
+        "text": " So I think it's really just the transparency that's helpful. If you know what they're collecting and you think it's helpful and you want to help in that way,"
+      },
+      {
+        "start": 41500,
+        "stop": 42000,
+        "text": " and that's a good way for you to help, then I don't see why this is harmful in any way."
+      },
+      {
+        "start": 42000,
+        "stop": 42600,
+        "text": " So I would say, let it be a choice and let them be upfront about it in the installer, too. It's helpful."
+      },
+      {
+        "start": 42600,
+        "stop": 43300,
+        "text": " I am almost hesitating to really say this, but it's happening as GNOME becomes feature complete or they settle on the features they want to support."
+      },
+      {
+        "start": 43300,
+        "stop": 44000,
+        "text": " Doesn't it seem natural that they would look towards extensions and what extensions their community are using the most"
+      },
+      {
+        "start": 44000,
+        "stop": 44400,
+        "text": " and then seeing if they have a way they could just safely build that into GNOME itself?"
+      },
+      {
+        "start": 44400,
+        "stop": 45000,
+        "text": " And so one of the things that jumped out at me on this is they're checking to see what extensions are installed on a GNOME system."
+      },
+      {
+        "start": 45000,
+        "stop": 45400,
+        "text": " And I think that could be a significant data point for them."
+      },
+      {
+        "start": 45400,
+        "stop": 46100,
+        "text": " In my personal opinion, I think for a long time there's been a culture of underplaying extensions for some of the GNOME developers."
+      },
+      {
+        "start": 46100,
+        "stop": 46600,
+        "text": " And so getting data like this where you're going to see there is some consistent extensions."
+      },
+      {
+        "start": 46600,
+        "stop": 47100,
+        "text": " And I can just tell this is, you know, I've been using GNOME very consistently since GNOME 3.12."
+      },
+      {
+        "start": 47100,
+        "stop": 47600,
+        "text": " I took a break for a little while, but came back around 3.12 and I've always had it on some of my systems since then."
+      },
+      {
+        "start": 47600,
+        "stop": 47900,
+        "text": " And you can tell if anybody has been running it for this long, you can look at the extension page."
+      },
+      {
+        "start": 47900,
+        "stop": 48300,
+        "text": " You can see what developers update after a GNOME release. You can sort by popularity."
+      },
+      {
+        "start": 48300,
+        "stop": 48500,
+        "text": " You get an idea of which ones are getting feedback."
+      },
+      {
+        "start": 48500,
+        "stop": 49000,
+        "text": " And you can tell some of those extensions are probably on like 80% of GNOME systems out there."
+      },
+      {
+        "start": 49000,
+        "stop": 49400,
+        "text": " They're just maybe pre-installed by a distro maker. So it'd be great for them to get that signal."
+      },
+      {
+        "start": 49400,
+        "stop": 50000,
+        "text": " And you've got to appreciate that, you know, of course, like all open source projects, GNOME has limited time and resources."
+      },
+      {
+        "start": 50000,
+        "stop": 50600,
+        "text": " So I like how they framed some of this data collection around like, how much should we be investing in static workplaces?"
+      },
+      {
+        "start": 50600,
+        "stop": 50700,
+        "text": " Are people using them?"
+      },
+      {
+        "start": 50700,
+        "stop": 51200,
+        "text": " Now, obviously there's some issues around folks with installs that aren't going to configure this and how this all plays out."
+      },
+      {
+        "start": 51200,
+        "stop": 51900,
+        "text": " But it seems reasonable to sort of say like, hey, this is an easy way for you to help shape the future of the software you're using."
+      },
+      {
+        "start": 51900,
+        "stop": 52700,
+        "text": " There's also the possibility that somebody like me who does like static workspace on my secondary screens and a moving workspace on my main screen,"
+      },
+      {
+        "start": 52700,
+        "stop": 52800,
+        "text": " that's been working really well for me."
+      },
+      {
+        "start": 52800,
+        "stop": 53300,
+        "text": " Maybe I'm the only person that uses that. And so they decide by the data, they're going to take that away and I'll be sad."
+      },
+      {
+        "start": 53300,
+        "stop": 53500,
+        "text": " So I should prepare myself for that kind of thing."
+      },
+      {
+        "start": 53500,
+        "stop": 53700,
+        "text": " Go install it on more systems, maybe."
+      },
+      {
+        "start": 53700,
+        "stop": 54100,
+        "text": " Yeah, I'll go spin up 30 VMs."
+      },
+      {
+        "start": 54100,
+        "stop": 54600,
+        "text": " Dan, you were pointing out that Plasma is doing something similar as well, right?"
+      },
+      {
+        "start": 54600,
+        "stop": 55100,
+        "text": " Yeah, they have the K user feedback thing that is incorporated."
+      },
+      {
+        "start": 55100,
+        "stop": 55500,
+        "text": " So I think I probably knew that, but I think I just totally forgot about K user feedback."
+      },
+      {
+        "start": 55500,
+        "stop": 55800,
+        "text": " But I'm glad. I'm glad they have it."
+      },
+      {
+        "start": 55800,
+        "stop": 56300,
+        "text": " Yeah, it's set to disabled by default, but you can increase the amount of information you want to give them."
+      },
+      {
+        "start": 56300,
+        "stop": 56700,
+        "text": " I'm all for it. You know, volunteer the information you want on the systems you don't want on the grid."
+      },
+      {
+        "start": 56700,
+        "stop": 57100,
+        "text": " Don't install these tools. Don't use these tools. It's a really nice compromise."
+      },
+      {
+        "start": 57100,
+        "stop": 57600,
+        "text": " Kenji brought up another point that's worthwhile, I think maybe is, are we going to get to see these stats down the road?"
+      },
+      {
+        "start": 57600,
+        "stop": 58200,
+        "text": " So like all the stuff to collect it is open, but what kind of, is it going to be just internal to the GNOME team?"
+      },
+      {
+        "start": 58200,
+        "stop": 58400,
+        "text": " Or is it going to be published in some way?"
+      },
+      {
+        "start": 58400,
+        "stop": 58700,
+        "text": " I didn't see any answers about that, although I didn't do a ton of searching admittedly."
+      },
+      {
+        "start": 58700,
+        "stop": 58900,
+        "text": " That's a great question."
+      },
+      {
+        "start": 58900,
+        "stop": 59300,
+        "text": " I hadn't even thought of that. I'd like to know. Why not? I bet they will."
+      },
+      {
+        "start": 59300,
+        "stop": 59700,
+        "text": " I'll read through. I'll read through their GitHub posts and see if they say it."
+      },
+      {
+        "start": 59700,
+        "stop": 60200,
+        "text": " I actually don't recall them addressing it, but it looks like, you know, the back end is open source."
+      },
+      {
+        "start": 60200,
+        "stop": 60600,
+        "text": " They're being really transparent about all of this. I wouldn't be too surprised if we see that."
+      },
+      {
+        "start": 60600,
+        "stop": 61300,
+        "text": " Now we're doing a little cleaning right here at the top of the show, so we got some housekeeping for you."
+      },
+      {
+        "start": 61300,
+        "stop": 61600,
+        "text": " Big updates for our West Coast meetups."
+      },
+      {
+        "start": 61600,
+        "stop": 62500,
+        "text": " The venues are in and with a little bit of planning, it turned out that we're going to breweries for all of them."
+      },
+      {
+        "start": 62500,
+        "stop": 62800,
+        "text": " It's a brewery tour and they're all incredible."
+      },
+      {
+        "start": 62800,
+        "stop": 63100,
+        "text": " Every single venue looks fantastic."
+      },
+      {
+        "start": 63100,
+        "stop": 63500,
+        "text": " And this is a big thank you to our West Coast crew."
+      },
+      {
+        "start": 63500,
+        "stop": 64000,
+        "text": " Our Matrix room helped my wife, Adia, narrow down all of the best possible venues."
+      },
+      {
+        "start": 64000,
+        "stop": 65200,
+        "text": " So if you're in Southern Oregon area and I hope even nearby, if you're in the Sacramento area, if you're in the Southern California area, if you're in the Portland area, we got meetups for you."
+      },
+      {
+        "start": 65200,
+        "stop": 65700,
+        "text": " We've got swag ordered. We have geocaches we'll be deploying."
+      },
+      {
+        "start": 65700,
+        "stop": 65900,
+        "text": " It's getting really set up, guys."
+      },
+      {
+        "start": 65900,
+        "stop": 66400,
+        "text": " And I've been working for about three weekends straight on just getting jukes road ready."
+      },
+      {
+        "start": 66400,
+        "stop": 66700,
+        "text": " She's going to be looking sharp when you see her."
+      },
+      {
+        "start": 66700,
+        "stop": 67000,
+        "text": " She'll be nearby at some of these places. So go sign up."
+      },
+      {
+        "start": 67000,
+        "stop": 67500,
+        "text": " We need to know if you're coming or not so we can start telling the venues how many people to expect."
+      },
+      {
+        "start": 67500,
+        "stop": 68100,
+        "text": " Meetup.com/JupiterBroadcasting for that and then get in that West Coast crew chat room."
+      },
+      {
+        "start": 68100,
+        "stop": 68500,
+        "text": " That's bit.ly/WestCoastCrew."
+      },
+      {
+        "start": 68500,
+        "stop": 68700,
+        "text": " It's pretty easy."
+      },
+      {
+        "start": 68700,
+        "stop": 69000,
+        "text": " I thought it should be West Coast crew with no T, but you know, I got outvoted."
+      },
+      {
+        "start": 69000,
+        "stop": 69300,
+        "text": " Yeah. Get the West crew in there."
+      },
+      {
+        "start": 69300,
+        "stop": 69500,
+        "text": " You know, get the West crew representin'."
+      },
+      {
+        "start": 69500,
+        "stop": 69800,
+        "text": " I feel like that might be the Knicks nerds chat room."
+      },
+      {
+        "start": 69800,
+        "stop": 70100,
+        "text": " I bet they're a bunch of West fans."
+      },
+      {
+        "start": 70100,
+        "stop": 70800,
+        "text": " Alright, well, so now before we get into our main topic today,"
+      },
+      {
+        "start": 70800,
+        "stop": 71300,
+        "text": " we've been waiting weeks to pull the names out of the hat to see who will go to JPL."
+      },
+      {
+        "start": 71300,
+        "stop": 71500,
+        "text": " Wes has run the scripts."
+      },
+      {
+        "start": 71500,
+        "stop": 72100,
+        "text": " Alright, here we go. Coming in right now."
+      },
+      {
+        "start": 72200,
+        "stop": 72800,
+        "text": " We have a chosen few. I'll just say first names, but we'll be reaching out via email as well."
+      },
+      {
+        "start": 72800,
+        "stop": 73200,
+        "text": " Michael J, you are in. Fern, you are in."
+      },
+      {
+        "start": 73200,
+        "stop": 73500,
+        "text": " Valdal? Why you gotta do me like that? You're in."
+      },
+      {
+        "start": 73500,
+        "stop": 73900,
+        "text": " AJS, you're in. Greg, you are in. Oliver T is in."
+      },
+      {
+        "start": 73900,
+        "stop": 74200,
+        "text": " Anyone Andrew, you're in. Joshua M is in."
+      },
+      {
+        "start": 74200,
+        "stop": 74400,
+        "text": " Bloodpath, you're in."
+      },
+      {
+        "start": 74400,
+        "stop": 74900,
+        "text": " I look forward to telling JPL that Bloodpath will be attending. That'll be good."
+      },
+      {
+        "start": 74900,
+        "stop": 75200,
+        "text": " This is what we got when we allowed handles for submissions."
+      },
+      {
+        "start": 75200,
+        "stop": 75500,
+        "text": " But it seems natural for our community."
+      },
+      {
+        "start": 75500,
+        "stop": 76300,
+        "text": " Mikey G, you are in. Tyler L, you are in. Eric P, you are in. Jonathan M, you are in."
+      },
+      {
+        "start": 76300,
+        "stop": 76700,
+        "text": " David H, you are in. And Mr. Optimist Grey is in."
+      },
+      {
+        "start": 76700,
+        "stop": 77100,
+        "text": " We have a few others we may be reaching out to directly as well."
+      },
+      {
+        "start": 77100,
+        "stop": 77800,
+        "text": " 'Cause I didn't see Jeremy's name in this list, but we do have a slot for listener Jeremy who wrote in too."
+      },
+      {
+        "start": 77800,
+        "stop": 78000,
+        "text": " Oh yeah, these were just the ones that were, you know."
+      },
+      {
+        "start": 78000,
+        "stop": 78400,
+        "text": " Right, Rando picked right there. Boom! Very good. Congratulations everybody."
+      },
+      {
+        "start": 78400,
+        "stop": 78700,
+        "text": " Thank you so much for signing up and we hope to see you there."
+      },
+      {
+        "start": 78700,
+        "stop": 78900,
+        "text": " Well, you better come. 'Cause you committed."
+      },
+      {
+        "start": 78900,
+        "stop": 79100,
+        "text": " But you are the chosen few. You checked the box."
+      },
+      {
+        "start": 79100,
+        "stop": 79500,
+        "text": " If you can't, just no hard feelings, just let us know as soon as you find that out."
+      },
+      {
+        "start": 79500,
+        "stop": 79900,
+        "text": " We've got some reserve names that we will draw from in the event that happens."
+      },
+      {
+        "start": 79900,
+        "stop": 80300,
+        "text": " Yep, so if you didn't hear your name called, you are probably then on the reserve list."
+      },
+      {
+        "start": 80300,
+        "stop": 81000,
+        "text": " That was neat. That worked out really well. Again, we used our Nextcloud instance to do this, so it's all using a free software stack."
+      },
+      {
+        "start": 81000,
+        "stop": 81600,
+        "text": " And then Wes used some tools we'll talk about in a little bit in the show to sort of sort everything out and parse it."
+      },
+      {
+        "start": 81600,
+        "stop": 82200,
+        "text": " But there you go. Oh my gosh, that's a big moment. We actually have our list of JPL to our attendees."
+      },
+      {
+        "start": 82200,
+        "stop": 82400,
+        "text": " It's real. It's real now."
+      },
+      {
+        "start": 82400,
+        "stop": 83000,
+        "text": " I got an email from Tim a couple days ago, which I gotta get back to, that said, \"Hey, what's your schedule?\""
+      },
+      {
+        "start": 83000,
+        "stop": 83300,
+        "text": " \"Hey, why don't you get a bit down here?\""
+      },
+      {
+        "start": 83300,
+        "stop": 83600,
+        "text": " So, we had to get this done, right? We had to figure this out."
+      },
+      {
+        "start": 83600,
+        "stop": 84000,
+        "text": " So we got it figured out, and hopefully we got it with enough time everybody can get their travel plans in."
+      },
+      {
+        "start": 84000,
+        "stop": 84700,
+        "text": " But like Wes said, if you can't, you can contact the show, LinuxUnplugged.com/contact, or reach out to myself or Wes."
+      },
+      {
+        "start": 84700,
+        "stop": 85000,
+        "text": " And let us know and we can slot someone else in on that list."
+      },
+      {
+        "start": 85000,
+        "stop": 86000,
+        "text": " Linode.com/unplugged. Go there to get $100 in 60-day credit on a new account, and you go there to support this show."
+      },
+      {
+        "start": 86000,
+        "stop": 86300,
+        "text": " Linode makes cloud computing simple, affordable, and accessible."
+      },
+      {
+        "start": 86300,
+        "stop": 86700,
+        "text": " It's fast and reliable. It's the best hosting in the business."
+      },
+      {
+        "start": 86700,
+        "stop": 87400,
+        "text": " Real humans every day can help you, and it's what we've used for every project we've built and deployed in the cloud for nearly three years now."
+      },
+      {
+        "start": 87400,
+        "stop": 87800,
+        "text": " It's really powerful. It's fast. Eleven data centers around the world."
+      },
+      {
+        "start": 87800,
+        "stop": 88300,
+        "text": " And they have an interface that everyone on our team can interact with at their own skill level."
+      },
+      {
+        "start": 88300,
+        "stop": 89000,
+        "text": " Like, you can use backend automation tools, which I really appreciate, or you can use their really simple cloud dashboard, their API, their command line tool."
+      },
+      {
+        "start": 89000,
+        "stop": 89100,
+        "text": " There's a lot there."
+      },
+      {
+        "start": 89100,
+        "stop": 89700,
+        "text": " And it's made it really possible for us to work collaboratively on this new website that, yeah, we're deploying on Linode."
+      },
+      {
+        "start": 89700,
+        "stop": 89900,
+        "text": " Where else would we deploy something like this?"
+      },
+      {
+        "start": 89900,
+        "stop": 90300,
+        "text": " And of course Linode also has that S3-compatible object storage."
+      },
+      {
+        "start": 90300,
+        "stop": 90600,
+        "text": " That object storage, which I just absolutely love."
+      },
+      {
+        "start": 90600,
+        "stop": 91100,
+        "text": " You put it all together with the performance, the support, and then it really seals the deal with the pricing."
+      },
+      {
+        "start": 91100,
+        "stop": 91400,
+        "text": " They're 30 to 50 percent cheaper than the major hyperscalers out there."
+      },
+      {
+        "start": 91400,
+        "stop": 91600,
+        "text": " But better than that, guys."
+      },
+      {
+        "start": 91600,
+        "stop": 91800,
+        "text": " This is the model you want."
+      },
+      {
+        "start": 91800,
+        "stop": 92600,
+        "text": " This is the model where you get a Linux box, where you can SSH into a Linux box, and you actually get root access, and you can control the system, right?"
+      },
+      {
+        "start": 92600,
+        "stop": 93300,
+        "text": " The hyperscalers, it's all abstracted away from you with their esoteric language and their esoteric names and their esoteric interface."
+      },
+      {
+        "start": 93300,
+        "stop": 94000,
+        "text": " God, I like saying esoteric because it's so true for those different, I don't know, I'll just call them hyperscalers."
+      },
+      {
+        "start": 94000,
+        "stop": 94200,
+        "text": " I won't start swearing, but you know how I feel about it."
+      },
+      {
+        "start": 94200,
+        "stop": 94500,
+        "text": " Like, that is not the future that I want to see."
+      },
+      {
+        "start": 94500,
+        "stop": 95100,
+        "text": " I mean, I'm glad that's a product for some people, but I want Linux systems that I can get access to, I can install the packages, I can manage."
+      },
+      {
+        "start": 95100,
+        "stop": 95700,
+        "text": " That's my infrastructure, and that's the model Linode is continuing to make awesome and excellent."
+      },
+      {
+        "start": 95700,
+        "stop": 96200,
+        "text": " And they're doing it with the best performance, the best support, and 11 data centers for you to choose from."
+      },
+      {
+        "start": 96200,
+        "stop": 96600,
+        "text": " Go build something, go learn something, try it for yourself, and support the show."
+      },
+      {
+        "start": 96600,
+        "stop": 96800,
+        "text": " That $100 really lets you try it."
+      },
+      {
+        "start": 96800,
+        "stop": 97100,
+        "text": " linode.com/unplugged."
+      },
+      {
+        "start": 97100,
+        "stop": 97300,
+        "text": " One more time, go support the show and try it out."
+      },
+      {
+        "start": 97300,
+        "stop": 97600,
+        "text": " linode.com/unplugged."
+      },
+      {
+        "start": 97600,
+        "stop": 98000,
+        "text": " Back home baller. Damn straight, y'all."
+      },
+      {
+        "start": 98000,
+        "stop": 98400,
+        "text": " Yeah, that's right, it's time for some baller boosts."
+      },
+      {
+        "start": 98400,
+        "stop": 99000,
+        "text": " First up from Tcario with 30,000 satoshis."
+      },
+      {
+        "start": 99000,
+        "stop": 99500,
+        "text": " Cause I'm a back home baller. If I want something I just holler."
+      },
+      {
+        "start": 99500,
+        "stop": 100000,
+        "text": " A long time listener crashed her mumble server at one time with emojis. Hey, ouch, Tcario."
+      },
+      {
+        "start": 100000,
+        "stop": 100300,
+        "text": " But thanks for owning up to it anyway."
+      },
+      {
+        "start": 100300,
+        "stop": 100700,
+        "text": " Just want to say thanks for putting this together week after week."
+      },
+      {
+        "start": 100700,
+        "stop": 101200,
+        "text": " It's been a great journey, and this is the one podcast I have always looked forward to for years now."
+      },
+      {
+        "start": 101200,
+        "stop": 101600,
+        "text": " Keep it real. Hey, you keep it real, Tcario. We really appreciate you."
+      },
+      {
+        "start": 101600,
+        "stop": 101800,
+        "text": " Yeah, thank you, TC."
+      },
+      {
+        "start": 101800,
+        "stop": 101900,
+        "text": " That's amazing."
+      },
+      {
+        "start": 101900,
+        "stop": 102600,
+        "text": " Your baller boost also helped put us on one of the top boosted lists for the fountain.fm podcast player."
+      },
+      {
+        "start": 102600,
+        "stop": 103300,
+        "text": " So thank you very much. We didn't get a ton of boosts this week, but this definitely was made up for it. So thank you very much."
+      },
+      {
+        "start": 103300,
+        "stop": 103500,
+        "text": " We got the boosts that mattered."
+      },
+      {
+        "start": 103500,
+        "stop": 104200,
+        "text": " Speaking of, here's a boost from our friend Gene Bean with 13,370 sats."
+      },
+      {
+        "start": 104200,
+        "stop": 104500,
+        "text": " Cause I'm a back home baller."
+      },
+      {
+        "start": 104500,
+        "stop": 105200,
+        "text": " You might be interested in this one, Chris. Gene Bean writes, \"I think I've found a good meetup.com alternative.\""
+      },
+      {
+        "start": 105200,
+        "stop": 105600,
+        "text": " He does note you can hit him up on Matrix if you want some more details, but the short version,"
+      },
+      {
+        "start": 105600,
+        "stop": 106500,
+        "text": " \"I asked around on the Phostodon Mastodon server and got a lot of good feedback about Mobils... Mobilison? I don't know how to say that. Mobilison!"
+      },
+      {
+        "start": 106500,
+        "stop": 107100,
+        "text": " And a few other services, though. Mobilison seemed like the best fit for your guys' possible needs."
+      },
+      {
+        "start": 107100,
+        "stop": 108000,
+        "text": " I did a little bit of time looking into this and it looks like it's a free Libre and open source software set maintained by the same folks behind PeerTube, uh, Fromasoft."
+      },
+      {
+        "start": 108000,
+        "stop": 108200,
+        "text": " What? Really?"
+      },
+      {
+        "start": 108200,
+        "stop": 108400,
+        "text": " Aw, lovely. How do we not know about this?"
+      },
+      {
+        "start": 108400,
+        "stop": 108700,
+        "text": " I wonder if it's like a play on mobilization."
+      },
+      {
+        "start": 108700,
+        "stop": 109200,
+        "text": " I think it's French, so I'm sure I A) said it wrong and B) were missing several layers of nuance."
+      },
+      {
+        "start": 109200,
+        "stop": 109300,
+        "text": " Mobilison."
+      },
+      {
+        "start": 109300,
+        "stop": 109500,
+        "text": " Oh, oh, Brad knows it."
+      },
+      {
+        "start": 109500,
+        "stop": 109700,
+        "text": " Yes, I do. I have the French tongue."
+      },
+      {
+        "start": 109700,
+        "stop": 110300,
+        "text": " I gotta say, I've legit never heard of this. I've heard of some of the others, like Get Together and whatnot. Never seen this."
+      },
+      {
+        "start": 110300,
+        "stop": 110700,
+        "text": " So this is super interesting. I really appreciate that. I will definitely take a look at that."
+      },
+      {
+        "start": 110700,
+        "stop": 110900,
+        "text": " Have you guys ever heard of this one?"
+      },
+      {
+        "start": 110900,
+        "stop": 111400,
+        "text": " No, but it's got a nice website and, um, yeah, it might be worth a look."
+      },
+      {
+        "start": 111400,
+        "stop": 112000,
+        "text": " That's great. Well, thank you very much. If you'd like to send us a boost, you can get a new podcast app at newpodcastapps.com."
+      },
+      {
+        "start": 112000,
+        "stop": 112700,
+        "text": " What we're doing now is we're splitting out the baller boosts from the regular boosts, I guess."
+      },
+      {
+        "start": 112700,
+        "stop": 113400,
+        "text": " We appreciate all of them. But what we're doing is for the last half of the show, towards the end of the show, we're going to pivot to just boost quality."
+      },
+      {
+        "start": 113400,
+        "stop": 113700,
+        "text": " The signal is what we'll choose for which boost make it into the show."
+      },
+      {
+        "start": 113700,
+        "stop": 114100,
+        "text": " So we have a special spot to thank the people who are helping support the show directly with the baller boosts."
+      },
+      {
+        "start": 114100,
+        "stop": 114500,
+        "text": " And then later on in the show for the feedback section, any boost is welcome."
+      },
+      {
+        "start": 114500,
+        "stop": 114800,
+        "text": " It just has to meet a certain threshold of signal, I suppose."
+      },
+      {
+        "start": 114800,
+        "stop": 115100,
+        "text": " I don't like that. I don't want to make that sound bad, though, but I hope you get what we mean."
+      },
+      {
+        "start": 115100,
+        "stop": 115300,
+        "text": " Just trying to keep it tidy."
+      },
+      {
+        "start": 115300,
+        "stop": 115700,
+        "text": " We can only read so many thank you boosts, but they mean a lot to us. We just have to edit for the show sometimes."
+      },
+      {
+        "start": 115700,
+        "stop": 116000,
+        "text": " That's basically it. We read them all and we appreciate them all."
+      },
+      {
+        "start": 116000,
+        "stop": 116300,
+        "text": " All right, guys, let's talk about Endless OS."
+      },
+      {
+        "start": 116300,
+        "stop": 117000,
+        "text": " Endless was founded in 2012 in San Francisco, California, by Matthew Dalio and Marcelio Sampaio."
+      },
+      {
+        "start": 117000,
+        "stop": 117400,
+        "text": " And then in April of 2015, it probably got on all of our radar."
+      },
+      {
+        "start": 117400,
+        "stop": 117800,
+        "text": " I know we covered it at JV when they launched a Kickstarter."
+      },
+      {
+        "start": 117800,
+        "stop": 118400,
+        "text": " They raised one hundred and seventy six thousand dollars with one thousand and forty one backers in less than 30 days."
+      },
+      {
+        "start": 118400,
+        "stop": 118700,
+        "text": " And initially they were really going to focus on hardware."
+      },
+      {
+        "start": 118700,
+        "stop": 119100,
+        "text": " Over the years, they've pivoted more to focusing just on the software."
+      },
+      {
+        "start": 119100,
+        "stop": 119800,
+        "text": " On April 1st, 2020, Endless became a nonprofit organization known as the Endless OS Foundation."
+      },
+      {
+        "start": 119800,
+        "stop": 120300,
+        "text": " Endless is based on Debian, roughly, with a whole lot of customizations."
+      },
+      {
+        "start": 120300,
+        "stop": 120800,
+        "text": " It is an immutable OS based on OS tree and a lot of flat packs."
+      },
+      {
+        "start": 120800,
+        "stop": 121600,
+        "text": " We wanted to kick the tires and see if this was the implementation truly designed for a workstation, for end users, maybe for family, for an office setting."
+      },
+      {
+        "start": 121600,
+        "stop": 121800,
+        "text": " Brent, why don't we start with your experience?"
+      },
+      {
+        "start": 121800,
+        "stop": 122300,
+        "text": " Yeah, I was really excited to try Endless. I've heard about it for years."
+      },
+      {
+        "start": 122300,
+        "stop": 122900,
+        "text": " I think it was back in like 2018 I started poking my eyes on it and keeping track of it."
+      },
+      {
+        "start": 122900,
+        "stop": 123800,
+        "text": " And they're doing a bunch of really neat stuff around education and outreach to countries that don't have super fast Internet."
+      },
+      {
+        "start": 123800,
+        "stop": 124200,
+        "text": " So they've got a bunch of really neat features around that. So that's what got me interested at first."
+      },
+      {
+        "start": 124200,
+        "stop": 124700,
+        "text": " And I knew, oh, I know you too. And I figured you'd focus on the technical bits."
+      },
+      {
+        "start": 124700,
+        "stop": 125200,
+        "text": " So I thought, well, I'm just going to approach this from a usability and sort of user friendliness standpoint."
+      },
+      {
+        "start": 125200,
+        "stop": 125500,
+        "text": " And I think you both know I'm pretty good at that."
+      },
+      {
+        "start": 125500,
+        "stop": 125700,
+        "text": " So things were going pretty well."
+      },
+      {
+        "start": 125700,
+        "stop": 126100,
+        "text": " I unfortunately, though, started running into a few frustrating issues."
+      },
+      {
+        "start": 126100,
+        "stop": 126700,
+        "text": " I'm here testing Endless OS and feeling some frustrations."
+      },
+      {
+        "start": 126700,
+        "stop": 127100,
+        "text": " I really want to like Endless OS."
+      },
+      {
+        "start": 127100,
+        "stop": 127400,
+        "text": " There's some really nice stuff about it and some well thought out sections."
+      },
+      {
+        "start": 127400,
+        "stop": 127900,
+        "text": " But I'm running into some performance issues, which I never expected."
+      },
+      {
+        "start": 127900,
+        "stop": 128600,
+        "text": " I was originally running it in a virtual machine on my ThinkPad X2-50."
+      },
+      {
+        "start": 128600,
+        "stop": 128900,
+        "text": " And it was running kind of slow. And I thought, OK, I'm going to give it a good chance."
+      },
+      {
+        "start": 128900,
+        "stop": 130200,
+        "text": " So I pulled out my workstation and installed it on an SSD, internal SSD, because I thought I'm going to give it the best chance possible."
+      },
+      {
+        "start": 130200,
+        "stop": 130500,
+        "text": " And I'm running into some issues."
+      },
+      {
+        "start": 130500,
+        "stop": 131500,
+        "text": " So there's in particular, I think, a great example of how frustrating this is, is there's one of the 12 icons that appears in the launcher."
+      },
+      {
+        "start": 131500,
+        "stop": 131900,
+        "text": " It's called System, which is a little bit confusing."
+      },
+      {
+        "start": 131900,
+        "stop": 132200,
+        "text": " I thought it was going to be like system information or something like that."
+      },
+      {
+        "start": 132200,
+        "stop": 132800,
+        "text": " It ends up being, which I think is also great, ends up being a teaching tool for computer internals."
+      },
+      {
+        "start": 132800,
+        "stop": 133300,
+        "text": " And it's like graphically cartoony and looks kind of fun."
+      },
+      {
+        "start": 133300,
+        "stop": 133700,
+        "text": " But it just brings the entire system to a halt."
+      },
+      {
+        "start": 133700,
+        "stop": 133900,
+        "text": " The graphics are super glitchy."
+      },
+      {
+        "start": 133900,
+        "stop": 134400,
+        "text": " Whenever you move the mouse, one of the cores on my CPU, which has six."
+      },
+      {
+        "start": 134400,
+        "stop": 134600,
+        "text": " It's not a slouch of a computer."
+      },
+      {
+        "start": 134600,
+        "stop": 135100,
+        "text": " I guess it's an AMD Aphenom 2 1075T."
+      },
+      {
+        "start": 135100,
+        "stop": 135300,
+        "text": " Graphics are AMD RS880."
+      },
+      {
+        "start": 135300,
+        "stop": 135500,
+        "text": " So it's an old thing."
+      },
+      {
+        "start": 135500,
+        "stop": 135700,
+        "text": " It's got eight gigs of RAM. It's an old thing."
+      },
+      {
+        "start": 135700,
+        "stop": 136000,
+        "text": " But not a slouch by any means."
+      },
+      {
+        "start": 136000,
+        "stop": 136600,
+        "text": " And one of the processors just gets pegged whenever you have this thing open and you're scrolling your mouse around it."
+      },
+      {
+        "start": 136600,
+        "stop": 137500,
+        "text": " But it also just brings the entire system to a halt, to the point where it feels like I'm running this on a Raspberry Pi or something."
+      },
+      {
+        "start": 137500,
+        "stop": 137900,
+        "text": " And that is so frustrating."
+      },
+      {
+        "start": 137900,
+        "stop": 138400,
+        "text": " It is like the slowest experience that I've had in a long time."
+      },
+      {
+        "start": 138400,
+        "stop": 139200,
+        "text": " And maybe it's just that application, but it seems like the whole system just comes to a halt."
+      },
+      {
+        "start": 139200,
+        "stop": 139400,
+        "text": " Just wasn't performing the way you wanted there, eh Brent?"
+      },
+      {
+        "start": 139400,
+        "stop": 140000,
+        "text": " Yeah, and to be fair, I think it was that particular application that was causing that issue."
+      },
+      {
+        "start": 140000,
+        "stop": 140700,
+        "text": " Unfortunately, it was the very first icon I clicked on when I booted Enlist for the first time."
+      },
+      {
+        "start": 140700,
+        "stop": 141000,
+        "text": " Because I thought, \"Oh, that looks interesting.\""
+      },
+      {
+        "start": 141000,
+        "stop": 141200,
+        "text": " Yeah, I did pretty similar too."
+      },
+      {
+        "start": 141200,
+        "stop": 141400,
+        "text": " And it just kills the performance."
+      },
+      {
+        "start": 141400,
+        "stop": 141600,
+        "text": " Yeah."
+      },
+      {
+        "start": 141600,
+        "stop": 142200,
+        "text": " And I don't know why that is, because they have another application called Hack, which is a teaching tool for coding."
+      },
+      {
+        "start": 142200,
+        "stop": 143000,
+        "text": " And it has a very similar feel to it in terms of the graphics that are presented as a user interface."
+      },
+      {
+        "start": 143000,
+        "stop": 143200,
+        "text": " And yet it seemed to perform perfectly."
+      },
+      {
+        "start": 143200,
+        "stop": 143700,
+        "text": " So there's got to be something there, and maybe it's fairly trivial for them to address that."
+      },
+      {
+        "start": 143700,
+        "stop": 144200,
+        "text": " And I don't think it's necessarily a perfect representation of the rest of the experience."
+      },
+      {
+        "start": 144200,
+        "stop": 144800,
+        "text": " But I have to say, it took the whole experience down several notches for me, because I just..."
+      },
+      {
+        "start": 144800,
+        "stop": 145000,
+        "text": " Well, it just wasn't great."
+      },
+      {
+        "start": 145000,
+        "stop": 145200,
+        "text": " But there were some other things that I really loved."
+      },
+      {
+        "start": 145200,
+        "stop": 145700,
+        "text": " Like, the login screen was super simplistic, but had a ton of accessibility options."
+      },
+      {
+        "start": 145700,
+        "stop": 145900,
+        "text": " Like, more than I even knew existed."
+      },
+      {
+        "start": 145900,
+        "stop": 146500,
+        "text": " Which I think, maybe considering their audience, they're trying to make it as inclusive as possible."
+      },
+      {
+        "start": 146500,
+        "stop": 146600,
+        "text": " So that was really cool to see."
+      },
+      {
+        "start": 146600,
+        "stop": 147100,
+        "text": " But I did run into a bunch of other paper cuts, and I'll be curious to hear your experiences."
+      },
+      {
+        "start": 147100,
+        "stop": 147400,
+        "text": " Like, you know my internet isn't very fast here in my little cabin."
+      },
+      {
+        "start": 147400,
+        "stop": 147700,
+        "text": " Yes, I'm back home, everyone. Hello, Canada."
+      },
+      {
+        "start": 147700,
+        "stop": 148300,
+        "text": " So I thought, okay, I'm going to try their metered, selecting my Wi-Fi as a metered connection."
+      },
+      {
+        "start": 148300,
+        "stop": 148500,
+        "text": " I just thought, well, see what happens."
+      },
+      {
+        "start": 148500,
+        "stop": 148800,
+        "text": " And I got some weird things happening."
+      },
+      {
+        "start": 148800,
+        "stop": 149500,
+        "text": " Like, one of the things that happened in the software updater was that it suggested it was downloading the newer version of Endless OS."
+      },
+      {
+        "start": 149500,
+        "stop": 149800,
+        "text": " The installer I had was a little bit of an outdated version."
+      },
+      {
+        "start": 149800,
+        "stop": 150000,
+        "text": " So it suggested it was downloading, but it never would."
+      },
+      {
+        "start": 150000,
+        "stop": 150500,
+        "text": " Nor could I cancel it, and nor could I kick it off, you know, on purpose."
+      },
+      {
+        "start": 150500,
+        "stop": 150800,
+        "text": " And so that was my intention with using the metered connection."
+      },
+      {
+        "start": 150800,
+        "stop": 151400,
+        "text": " I was like, well, I don't want things to download in the background, because I have some productivity that I want to get done."
+      },
+      {
+        "start": 151400,
+        "stop": 151900,
+        "text": " And downloading huge ISOs or whatever sometimes can take an hour or two here."
+      },
+      {
+        "start": 151900,
+        "stop": 152500,
+        "text": " I'm sure that's an easy fix as well, but was just another one of those, oh, it's not quite where I want it to be."
+      },
+      {
+        "start": 152500,
+        "stop": 153000,
+        "text": " And I ran into something similar too with just trying to set a shortcut key for the terminal."
+      },
+      {
+        "start": 153000,
+        "stop": 153300,
+        "text": " I was just looking to set a keyboard shortcut."
+      },
+      {
+        "start": 153300,
+        "stop": 153900,
+        "text": " And it asks for what the terminal application name is that you want to run."
+      },
+      {
+        "start": 153900,
+        "stop": 154300,
+        "text": " And so I right-clicked on the terminal and went, oh, which terminal is this?"
+      },
+      {
+        "start": 154300,
+        "stop": 154800,
+        "text": " And it opened up the software center and just said, oh, sorry, there's no details for this application."
+      },
+      {
+        "start": 154800,
+        "stop": 155300,
+        "text": " So there was a bunch of these little things that just started getting to me."
+      },
+      {
+        "start": 155300,
+        "stop": 156000,
+        "text": " No dark mode? I know it's an old GNOME version, and I'm sure there's an add-on that I can do to get a dark mode."
+      },
+      {
+        "start": 156000,
+        "stop": 156600,
+        "text": " But hopefully they get that with a newer version of GNOME when they update that."
+      },
+      {
+        "start": 156600,
+        "stop": 157200,
+        "text": " So I think I didn't ever run into any issues with the underlying OS and the technologies there."
+      },
+      {
+        "start": 157200,
+        "stop": 157500,
+        "text": " And updating when I did happen was super smooth."
+      },
+      {
+        "start": 157500,
+        "stop": 157800,
+        "text": " And most of the interface was exactly as you'd expect."
+      },
+      {
+        "start": 157800,
+        "stop": 158500,
+        "text": " But I, in the end, found all these little tiny paper cuts just kind of deflated my excitement to try it out."
+      },
+      {
+        "start": 158500,
+        "stop": 158800,
+        "text": " Which I feel is very unfortunate."
+      },
+      {
+        "start": 158800,
+        "stop": 159100,
+        "text": " And I hope maybe in a year or so, maybe that'll be a little bit different."
+      },
+      {
+        "start": 159100,
+        "stop": 159400,
+        "text": " But I'm curious to hear what you thought, Chris."
+      },
+      {
+        "start": 159400,
+        "stop": 159900,
+        "text": " So I came at it from a could-this-work-for-my-kids standpoint."
+      },
+      {
+        "start": 159900,
+        "stop": 160400,
+        "text": " Because I like the idea of an immutable distro for the kids."
+      },
+      {
+        "start": 160400,
+        "stop": 161300,
+        "text": " Just the other day, some updates installed on Fedora 36, and now I'm having trouble getting Dylan's NVIDIA card to work at all."
+      },
+      {
+        "start": 161300,
+        "stop": 161400,
+        "text": " Oh, boy."
+      },
+      {
+        "start": 161400,
+        "stop": 161800,
+        "text": " It sees it when I LS PCI, and it's clearly there."
+      },
+      {
+        "start": 161800,
+        "stop": 162200,
+        "text": " But then nothing I can do now to get the driver to actually work is happening."
+      },
+      {
+        "start": 162200,
+        "stop": 162600,
+        "text": " And I just think to myself, the primary job of this computer is to play games for him, really."
+      },
+      {
+        "start": 162600,
+        "stop": 162900,
+        "text": " And it'd be nice if I could just have rolled that back."
+      },
+      {
+        "start": 162900,
+        "stop": 163200,
+        "text": " And so an immutable system does seem really appealing."
+      },
+      {
+        "start": 163200,
+        "stop": 163600,
+        "text": " And I don't think a lot of the stuff that you hit would really bother him, to be honest with you."
+      },
+      {
+        "start": 163600,
+        "stop": 163800,
+        "text": " It would bother my son, Dylan."
+      },
+      {
+        "start": 163800,
+        "stop": 164100,
+        "text": " I think most of that would probably be unnoticed by him."
+      },
+      {
+        "start": 164100,
+        "stop": 164500,
+        "text": " But as I was setting it up, there were a few things I observed that I just thought were kind of interesting."
+      },
+      {
+        "start": 164500,
+        "stop": 165100,
+        "text": " I know you saw this one, too, but just one of the absolutely most unique EULAs I have ever seen in a Linux distro."
+      },
+      {
+        "start": 165100,
+        "stop": 165400,
+        "text": " I don't think the last time we commented on the EULA, right?"
+      },
+      {
+        "start": 165400,
+        "stop": 165700,
+        "text": " It's true, yeah, right. I did read it."
+      },
+      {
+        "start": 165700,
+        "stop": 166300,
+        "text": " I think you spent half your time with Endless just stuck in the EULA, Brent, if your Slack messages to me were any cue."
+      },
+      {
+        "start": 166300,
+        "stop": 166500,
+        "text": " That's Endless EULA, really."
+      },
+      {
+        "start": 166500,
+        "stop": 166700,
+        "text": " Well, they have sections highlighted and stuff."
+      },
+      {
+        "start": 166700,
+        "stop": 167000,
+        "text": " Like, \"Make sure you see this.\" I'm like, \"Okay, that's... wow.\""
+      },
+      {
+        "start": 167000,
+        "stop": 167400,
+        "text": " They've really drawn your attention, and it seems like it's a PDF embedded into the installer, too."
+      },
+      {
+        "start": 167400,
+        "stop": 167900,
+        "text": " Yeah, I had a hard time reading it, actually, on the monitors that I have here."
+      },
+      {
+        "start": 167900,
+        "stop": 168700,
+        "text": " Just the way it was scaling the PDF, and then it would bound it as well, so I couldn't zoom in enough to really get it legible in a way that I wanted."
+      },
+      {
+        "start": 168700,
+        "stop": 169000,
+        "text": " So it could use a bit of work, I think."
+      },
+      {
+        "start": 169000,
+        "stop": 169300,
+        "text": " But you did click \"Agree,\" right? Just so we know if you've..."
+      },
+      {
+        "start": 169300,
+        "stop": 170100,
+        "text": " So I read it first, and then the three of us had about 30 minutes of conversation back and forth about it, and then I hit \"Accept.\""
+      },
+      {
+        "start": 170100,
+        "stop": 170300,
+        "text": " Yeah, we did discuss it quite a bit."
+      },
+      {
+        "start": 170300,
+        "stop": 170700,
+        "text": " I actually like the way they've done the primary icons for Launcher."
+      },
+      {
+        "start": 170700,
+        "stop": 171300,
+        "text": " It has a very iPadOS kind of feel, including the folders in which icons hide out in."
+      },
+      {
+        "start": 171300,
+        "stop": 171700,
+        "text": " So unlike most distros, which are turning off desktop icons these days,"
+      },
+      {
+        "start": 171700,
+        "stop": 172200,
+        "text": " Endless comes with Hack, which is what Brent was talking about, and Sidetrack, which are those interesting heavy apps."
+      },
+      {
+        "start": 172200,
+        "stop": 172900,
+        "text": " And it comes with Chromium as its default browser, and an App Center and rhythm box, you know, Shotwell Video, a bunch of stuff, right?"
+      },
+      {
+        "start": 172900,
+        "stop": 173300,
+        "text": " But it's on the desktop, like SpringPad or whatever, Springboard, they call it on iOS."
+      },
+      {
+        "start": 173300,
+        "stop": 173400,
+        "text": " It looks like that."
+      },
+      {
+        "start": 173400,
+        "stop": 173800,
+        "text": " Then, of course, there is more applications installed, and it has a launch bar."
+      },
+      {
+        "start": 173800,
+        "stop": 174200,
+        "text": " It has a search to run your thing, so if you want, you can just..."
+      },
+      {
+        "start": 174200,
+        "stop": 174500,
+        "text": " And it's a search and enter to launch kind of thing."
+      },
+      {
+        "start": 174500,
+        "stop": 174900,
+        "text": " And I think all of that would work really, really well for most new users."
+      },
+      {
+        "start": 174900,
+        "stop": 175800,
+        "text": " In fact, I would argue that's probably for new users or average users, that's probably the most accessible desktop launcher setup I've seen in a long time."
+      },
+      {
+        "start": 175800,
+        "stop": 175900,
+        "text": " I think they nailed that."
+      },
+      {
+        "start": 175900,
+        "stop": 176200,
+        "text": " I don't think it's how most pro Linux users like it."
+      },
+      {
+        "start": 176200,
+        "stop": 176900,
+        "text": " It's clearly not how upstream GNOME does things, which is interesting considering Endless's relationship with GNOME, which we'll get to more."
+      },
+      {
+        "start": 176900,
+        "stop": 177100,
+        "text": " But yet, it's how they're doing things."
+      },
+      {
+        "start": 177100,
+        "stop": 177600,
+        "text": " I think the technological appeal to Endless OS is OS tree also."
+      },
+      {
+        "start": 177600,
+        "stop": 178500,
+        "text": " They integrate flat packs at a level deeper than I've seen any other distribution, like when the system's booting up and you clear the splash screen and you just look at the services starting,"
+      },
+      {
+        "start": 178500,
+        "stop": 179000,
+        "text": " you'll see a ton of stuff is actually flat pack stuff, even at the lower level of the system."
+      },
+      {
+        "start": 179000,
+        "stop": 179200,
+        "text": " I've never seen it integrated that low before."
+      },
+      {
+        "start": 179200,
+        "stop": 179400,
+        "text": " I'll talk about that more with Cassidy."
+      },
+      {
+        "start": 179400,
+        "stop": 180100,
+        "text": " And it's hard to mess up because of all of these things, because of the flat pack and because of the immutable nature."
+      },
+      {
+        "start": 180100,
+        "stop": 180500,
+        "text": " It also means that if it's not right, it's harder to tweak it to make it right."
+      },
+      {
+        "start": 180500,
+        "stop": 181100,
+        "text": " But if it's working out of the box and it works for you, it'll pretty much stay that way."
+      },
+      {
+        "start": 181100,
+        "stop": 181200,
+        "text": " That is really nice."
+      },
+      {
+        "start": 181200,
+        "stop": 181900,
+        "text": " You know, having I think the number one thing I hate is when I give a family member Linux and then they come back to me in about three months and something broke."
+      },
+      {
+        "start": 181900,
+        "stop": 182200,
+        "text": " And I just find that intolerable. Right."
+      },
+      {
+        "start": 182200,
+        "stop": 182500,
+        "text": " And so I think this would prevent those kinds of things."
+      },
+      {
+        "start": 182500,
+        "stop": 182900,
+        "text": " And then ultimately, it's easy to use."
+      },
+      {
+        "start": 182900,
+        "stop": 183100,
+        "text": " It's obvious."
+      },
+      {
+        "start": 183100,
+        "stop": 183900,
+        "text": " I think anyone who has any familiarity with a computer at all could use endless OS and not all distribution strike that balance."
+      },
+      {
+        "start": 183900,
+        "stop": 184100,
+        "text": " So I don't I don't know if I love it."
+      },
+      {
+        "start": 184100,
+        "stop": 184500,
+        "text": " I think I prefer I prefer seeing what Gnome's doing now."
+      },
+      {
+        "start": 184500,
+        "stop": 184900,
+        "text": " I want the newer stuff now. I already want Gnome 43. Right."
+      },
+      {
+        "start": 184900,
+        "stop": 185200,
+        "text": " So endless just isn't really a distribution for me."
+      },
+      {
+        "start": 185200,
+        "stop": 185700,
+        "text": " But, you know, I don't think Dylan cares what version of Gnome he gets as long as files works."
+      },
+      {
+        "start": 185700,
+        "stop": 186000,
+        "text": " You know, as long as he can use the system, he doesn't care what version of Gnome it is."
+      },
+      {
+        "start": 186000,
+        "stop": 186200,
+        "text": " He just wants it to be nice."
+      },
+      {
+        "start": 186200,
+        "stop": 186400,
+        "text": " He wants it to look modern. He wants it to be nice."
+      },
+      {
+        "start": 186400,
+        "stop": 186700,
+        "text": " He sees dad set up and he wants it to look cool like dad set up."
+      },
+      {
+        "start": 186700,
+        "stop": 186900,
+        "text": " So dark mode would be helpful. What about you, Wes?"
+      },
+      {
+        "start": 186900,
+        "stop": 187100,
+        "text": " A few things stand out from what you guys said."
+      },
+      {
+        "start": 187100,
+        "stop": 187500,
+        "text": " One, yeah, the Flatpak implementation is it's just it's just really nice."
+      },
+      {
+        "start": 187500,
+        "stop": 187900,
+        "text": " And that to me, it led me down this train of thought here of like."
+      },
+      {
+        "start": 187900,
+        "stop": 188600,
+        "text": " I can't really think of the last time I saw a Linux distribution that felt this productized and not in a bad way."
+      },
+      {
+        "start": 188600,
+        "stop": 189700,
+        "text": " Just like very thoughtfully designed clearly that these elements have been selected and worked on and honed over the long number of years now that endless has been around to try to get this experience."
+      },
+      {
+        "start": 189700,
+        "stop": 191400,
+        "text": " I think maybe there's some questions around if that's really the experience like, you know, you and I and Brent want for our systems because we're so used to sort of taking all these bits, especially with something, you know, talking of immutability playing with with Nix where we're building our own custom systems from whole cloth, basically."
+      },
+      {
+        "start": 191400,
+        "stop": 192000,
+        "text": " And this is kind of on the opposite end of the spectrum. But what they've done is it's just really impressive."
+      },
+      {
+        "start": 192000,
+        "stop": 192900,
+        "text": " And like you're talking about, you know, with Dylan, I'm thinking kind of the reverse here. I'm thinking my mom, you know, she's on the older 1804, 2004."
+      },
+      {
+        "start": 192900,
+        "stop": 193500,
+        "text": " Either way, I need to do some updates. A mate system. I think I might just try endless next for her."
+      },
+      {
+        "start": 193500,
+        "stop": 193900,
+        "text": " I could see that being a pretty trouble free OS in that situation."
+      },
+      {
+        "start": 193900,
+        "stop": 194600,
+        "text": " I did find it a little funny to get started with. I do want to give them a lot of credit for having a lot of different images available."
+      },
+      {
+        "start": 194600,
+        "stop": 195700,
+        "text": " I really enjoyed that they had like a VMDK image if you just want to try it out in a virtual machine. No fuss. They've got Raspberry Pi. They've got pine stuff. They've got like a lot of different ARM versions."
+      },
+      {
+        "start": 195700,
+        "stop": 196900,
+        "text": " But that also means you have a ton of different things to pick from. And you're like, well, do I want this multi-language? And like they've got these minimal base versions, but then these also really fat like 16 gig downloads if you want all the stuff baked in."
+      },
+      {
+        "start": 196900,
+        "stop": 197800,
+        "text": " But unless you spend enough time sort of reading all the verbiage to understand what those options are in meme, I don't know, I could see not getting the image I want."
+      },
+      {
+        "start": 197800,
+        "stop": 198500,
+        "text": " And then I was also just a little surprised that you end up getting a .torrent file instead of your ISO or IMG."
+      },
+      {
+        "start": 198500,
+        "stop": 199300,
+        "text": " I'm fine with that. I'm fine with that. But is the average endless user fine with that? I don't know. I don't want to presume."
+      },
+      {
+        "start": 199300,
+        "stop": 200500,
+        "text": " And that's where I have some questions. I'd be real curious to learn more because on one hand torrent files are kind of arcane if you're not a nerd downloading a lot of ISOs or other content."
+      },
+      {
+        "start": 200500,
+        "stop": 201700,
+        "text": " But at the same time, you could see where some of the use cases that endless is trying to fit here, maybe you don't have access to fancy CDNs, but you do have a local community or a local school or few organizations in a country that have these distributed."
+      },
+      {
+        "start": 201700,
+        "stop": 201900,
+        "text": " And that's where something like torrents might really shine."
+      },
+      {
+        "start": 201900,
+        "stop": 202600,
+        "text": " Yeah, I could also see though in school networks torrents being totally blocked. You know, you just in a university, I could see them blocking torrent downloads."
+      },
+      {
+        "start": 202600,
+        "stop": 203500,
+        "text": " You know, Wes, to add to your confusion, I found that there were certain downloads of a certain version of endless OS at endless OS.com."
+      },
+      {
+        "start": 203500,
+        "stop": 204900,
+        "text": " And then there were a few places at endless OS.org where I think more of the development happens where I found more updated versions like 4.0.8, I think it is, is the most recent."
+      },
+      {
+        "start": 204900,
+        "stop": 205700,
+        "text": " And I was a little confused, I guess on the homepage, maybe that's their like super stable, you know, 4.0 release."
+      },
+      {
+        "start": 205700,
+        "stop": 206700,
+        "text": " And that's what they're putting out there. But if you I was trying to get the latest and greatest version and I found like three different places to get different versions that I thought was a little bit confusing."
+      },
+      {
+        "start": 206700,
+        "stop": 207200,
+        "text": " And the one that they put it endless.org, they actually lead with a Windows installer version."
+      },
+      {
+        "start": 207200,
+        "stop": 207400,
+        "text": " Oh, that's fancy. Fascinating."
+      },
+      {
+        "start": 207400,
+        "stop": 207900,
+        "text": " Yeah, there's a lot more to play with here. I got to say, like, I don't think I've finished my playing around with endless OS."
+      },
+      {
+        "start": 207900,
+        "stop": 208300,
+        "text": " I mean, as you say, right, they've got this whole option to like just install it alongside Windows."
+      },
+      {
+        "start": 208300,
+        "stop": 208800,
+        "text": " I definitely the next time I'm feeling up to actually doing a fresh Windows install, I'd like to try that alongside."
+      },
+      {
+        "start": 208800,
+        "stop": 209300,
+        "text": " And then, as you mentioned, like they've got Raspberry Pi support. I just I just want to see how that hangs together."
+      },
+      {
+        "start": 209300,
+        "stop": 210000,
+        "text": " Yeah, it is. It makes for a confusing set of download options, but I guess, you know, it's nice to have those options."
+      },
+      {
+        "start": 210000,
+        "stop": 210300,
+        "text": " So either way, for an enthusiast, it's fine."
+      },
+      {
+        "start": 210300,
+        "stop": 211000,
+        "text": " I wonder how the cycle for users, are most endless users, you know, sort of setting this up for themselves?"
+      },
+      {
+        "start": 211000,
+        "stop": 211500,
+        "text": " Or is it something, you know, more institutional where, you know, someone can get these ISO files on the back end?"
+      },
+      {
+        "start": 211500,
+        "stop": 212100,
+        "text": " Maybe they're not even a computer expert, but they know enough to sort of get these files going and start flashing laptops with them and hand them out."
+      },
+      {
+        "start": 212100,
+        "stop": 212700,
+        "text": " Because it seems like once you get past that first phase, then, yeah, I think we've all kind of thought, oh, yeah, I'm not going to be able to break this very easily."
+      },
+      {
+        "start": 212700,
+        "stop": 213000,
+        "text": " Or at least, you know, less knowledgeable Linux users certainly won't."
+      },
+      {
+        "start": 213000,
+        "stop": 213900,
+        "text": " I think our buddy Cass will speak to that a bit, but I got a vague sense when talking to him kind of like where their market is now for that kind of thing."
+      },
+      {
+        "start": 213900,
+        "stop": 214300,
+        "text": " And I think it's probably a lot of pre-installed, like somebody else is installing it for them."
+      },
+      {
+        "start": 214300,
+        "stop": 215000,
+        "text": " Yeah, that makes sense. And, you know, really here, we're not experts. We're just kind of dabbling. We've done our whole summer of immutability."
+      },
+      {
+        "start": 215000,
+        "stop": 215300,
+        "text": " Endless is a fascinating, totally different approach."
+      },
+      {
+        "start": 215300,
+        "stop": 216000,
+        "text": " I think it also speaks to sort of the usefulness of tools like OSTree and where those technologies are going."
+      },
+      {
+        "start": 216000,
+        "stop": 216200,
+        "text": " But we wanted, you know, we wanted more details."
+      },
+      {
+        "start": 216200,
+        "stop": 216900,
+        "text": " And thankfully, our dear friend of the show, Cassidy James Blady, was willing to sit down earlier this week with Chris."
+      },
+      {
+        "start": 216900,
+        "stop": 217400,
+        "text": " He's now working at Endless and had a bunch of insights to share with us."
+      },
+      {
+        "start": 217400,
+        "stop": 217600,
+        "text": " So a big welcome back to the show, Cassidy."
+      },
+      {
+        "start": 217600,
+        "stop": 218100,
+        "text": " It has been too long. I think the last time you and I chatted might have been in person at System76 last year."
+      },
+      {
+        "start": 218100,
+        "stop": 218300,
+        "text": " Yeah, yeah, it's been a minute."
+      },
+      {
+        "start": 218300,
+        "stop": 219000,
+        "text": " A lot has changed for you since then. So I know you're now over at Endless. I think probably the last time you were on the show, you were still at elementary."
+      },
+      {
+        "start": 219000,
+        "stop": 219400,
+        "text": " So tell us what you do at Endless and what your title is over there and all that jazz."
+      },
+      {
+        "start": 219400,
+        "stop": 219600,
+        "text": " At Endless, I'm the Partner Success Engineer."
+      },
+      {
+        "start": 219600,
+        "stop": 220400,
+        "text": " And basically my job, it's funny because it's kind of this almost, what's the word, amorphous job description."
+      },
+      {
+        "start": 220400,
+        "stop": 221100,
+        "text": " But it's basically like, make sure that our partners are successful and whatever is needed there."
+      },
+      {
+        "start": 221100,
+        "stop": 221700,
+        "text": " And practically what that means is I'm a bridge between the engineering team and partner organizations."
+      },
+      {
+        "start": 221700,
+        "stop": 222700,
+        "text": " So there's like other nonprofits, non-governmental organizations, sometimes governments that are deploying Endless OS in various places around the world."
+      },
+      {
+        "start": 222700,
+        "stop": 222900,
+        "text": " And I help make that happen."
+      },
+      {
+        "start": 222900,
+        "stop": 224000,
+        "text": " Interesting. Those sound like some pretty heavy hitter clients. It's interesting too because knowing what I know about you and your style and your taste, I think it seems like Endless is a really good fit."
+      },
+      {
+        "start": 224000,
+        "stop": 224600,
+        "text": " Because Endless OS itself is one of the most polished Linux distributions that I've ever used."
+      },
+      {
+        "start": 224600,
+        "stop": 225300,
+        "text": " And there's a lot that goes into making a distribution this nice, this well put together, and this accessible to end users."
+      },
+      {
+        "start": 225300,
+        "stop": 225800,
+        "text": " But yet, I wonder if you agree, because I know you've been around for a minute in the Linux community."
+      },
+      {
+        "start": 225800,
+        "stop": 226100,
+        "text": " It really doesn't feel like many people are talking about Endless."
+      },
+      {
+        "start": 226100,
+        "stop": 226800,
+        "text": " Why do you suppose it doesn't quite get the attention, maybe say, a Mint or another distribution that's really desktop focused out there?"
+      },
+      {
+        "start": 226800,
+        "stop": 227700,
+        "text": " Yeah, well, it's funny. It definitely is kind of a sleeper OS in a way, as far as within the Linux community."
+      },
+      {
+        "start": 227700,
+        "stop": 228500,
+        "text": " And I think a big part of that is because the Linux community, shocker, is not really the target audience of Endless OS."
+      },
+      {
+        "start": 228500,
+        "stop": 229500,
+        "text": " And that's fine. And that's actually pretty cool. The target for Endless OS is these partner organizations and people around the world who need a simple computer."
+      },
+      {
+        "start": 229500,
+        "stop": 230400,
+        "text": " And a lot of times, there's a heavy education focus. We work with educational institutions like schools or school districts."
+      },
+      {
+        "start": 230400,
+        "stop": 231100,
+        "text": " And they'll deploy this in a school for kids who have only ever used a smartphone as their computer."
+      },
+      {
+        "start": 231100,
+        "stop": 232300,
+        "text": " And so this is their first real computer. That's a very different audience from what I think most people using Linux Mint or Fedora or whatever are going to be."
+      },
+      {
+        "start": 232300,
+        "stop": 233000,
+        "text": " And that speaks to the diversity of open source and why I think it's cool."
+      },
+      {
+        "start": 233000,
+        "stop": 233400,
+        "text": " You get a lot of flack sometimes. People say, \"Oh, why don't all the distros come together? Make one super distro.\""
+      },
+      {
+        "start": 233400,
+        "stop": 233700,
+        "text": " That's recurring, almost like a meme at this point."
+      },
+      {
+        "start": 233700,
+        "stop": 234100,
+        "text": " It's like, \"Why can't we all just make one desktop environment, one distro, one OS?\""
+      },
+      {
+        "start": 234100,
+        "stop": 235200,
+        "text": " And while sometimes I do think companies venture out on their own a little too much and don't work with the rest of the community, I think there's also a place for that."
+      },
+      {
+        "start": 235200,
+        "stop": 235500,
+        "text": " I think there's a place for we have a target market."
+      },
+      {
+        "start": 235500,
+        "stop": 236200,
+        "text": " We have, I mean, at Endless, we have a decade of experience working with these organizations and these deployments around the world."
+      },
+      {
+        "start": 236200,
+        "stop": 237000,
+        "text": " A lot of times it's places with really low power computers, with little or no internet or very expensive internet."
+      },
+      {
+        "start": 237000,
+        "stop": 237500,
+        "text": " These are very different users than, say, a developer running Ubuntu."
+      },
+      {
+        "start": 237500,
+        "stop": 238000,
+        "text": " I think sometimes there's a place for that, for different solutions for different people."
+      },
+      {
+        "start": 238000,
+        "stop": 238900,
+        "text": " It strikes me, though, that there's a bit of a dichotomy with this distribution because I think you just really did a really good job defining who the target user is."
+      },
+      {
+        "start": 238900,
+        "stop": 239500,
+        "text": " But yet, my early investigations into this, it feels like it's built on a lot of advanced technologies."
+      },
+      {
+        "start": 239500,
+        "stop": 240100,
+        "text": " I feel like I see flat packs incorporated way lower in the system than I've seen other distributions incorporate flat packs."
+      },
+      {
+        "start": 240100,
+        "stop": 240300,
+        "text": " Can you talk about that a little bit?"
+      },
+      {
+        "start": 240300,
+        "stop": 240600,
+        "text": " I'm actually not super clear on the origin origins of this."
+      },
+      {
+        "start": 240600,
+        "stop": 241400,
+        "text": " Rob McQueen, our CEO, would actually be the person to dive into the real interesting history here with Collabra and Linauro."
+      },
+      {
+        "start": 241400,
+        "stop": 241900,
+        "text": " The origins of Endless OS comes out of that somehow, somewhere."
+      },
+      {
+        "start": 241900,
+        "stop": 242500,
+        "text": " Basically, it was one of the first image-based Linux operating systems."
+      },
+      {
+        "start": 242500,
+        "stop": 242800,
+        "text": " So we use OS tree for the operating system at a low level."
+      },
+      {
+        "start": 242800,
+        "stop": 243700,
+        "text": " The whole OS is an OS tree image and updates come through as a diff commits, almost like Git."
+      },
+      {
+        "start": 243700,
+        "stop": 244000,
+        "text": " If you're familiar with OS tree, it's like Git for operating systems."
+      },
+      {
+        "start": 244000,
+        "stop": 244300,
+        "text": " It's actually the same technology that flat pack uses under the hood."
+      },
+      {
+        "start": 244300,
+        "stop": 244800,
+        "text": " So the whole operating system's an image and you get updates to it."
+      },
+      {
+        "start": 244800,
+        "stop": 245300,
+        "text": " And then the natural solution for apps on top of that is flat pack."
+      },
+      {
+        "start": 245300,
+        "stop": 245500,
+        "text": " Again, similar technology or same technologies under the hood."
+      },
+      {
+        "start": 245500,
+        "stop": 246000,
+        "text": " The biggest thing for us is it has to be bulletproof."
+      },
+      {
+        "start": 246000,
+        "stop": 246900,
+        "text": " It has to just work really well and updates over extremely slow, extremely expensive data connections."
+      },
+      {
+        "start": 246900,
+        "stop": 247200,
+        "text": " Updates have to come down and they have to be diffs of the OS."
+      },
+      {
+        "start": 247200,
+        "stop": 247800,
+        "text": " You can't download an entire 100 gigabyte or more image with all the educational content especially."
+      },
+      {
+        "start": 247800,
+        "stop": 248500,
+        "text": " And you can't download it halfway and then have it fail and download it again because you're paying per bit."
+      },
+      {
+        "start": 248500,
+        "stop": 248700,
+        "text": " So it has to be bulletproof."
+      },
+      {
+        "start": 248700,
+        "stop": 249300,
+        "text": " On the other side of the keyboard, on the user side of the keyboard, you have somebody who can't debug it."
+      },
+      {
+        "start": 249300,
+        "stop": 250200,
+        "text": " Whether it's a kid at a school or maybe a teacher or an administrator at a school who is not an IT person."
+      },
+      {
+        "start": 250200,
+        "stop": 250500,
+        "text": " The school may not even have an IT department."
+      },
+      {
+        "start": 250500,
+        "stop": 250900,
+        "text": " It just has to work. It has to work really well."
+      },
+      {
+        "start": 250900,
+        "stop": 251300,
+        "text": " And so that's really the reason we use OS tree, image based and flat pack."
+      },
+      {
+        "start": 251300,
+        "stop": 251600,
+        "text": " We can't have package conflicts."
+      },
+      {
+        "start": 251600,
+        "stop": 252000,
+        "text": " We can't have any of that legacy issues that you might have had in the past on Linux."
+      },
+      {
+        "start": 252000,
+        "stop": 252400,
+        "text": " You know we've been spending the summer looking at immutable Linux distributions."
+      },
+      {
+        "start": 252400,
+        "stop": 253200,
+        "text": " And Endless feels like the absolute peak implementation where maybe even at first pass if you downloaded this and just use it,"
+      },
+      {
+        "start": 253200,
+        "stop": 253500,
+        "text": " you wouldn't realize that it's an image based OS at all."
+      },
+      {
+        "start": 253500,
+        "stop": 254000,
+        "text": " That's fascinating. And I imagine to pull that off, to integrate flat packs like they have,"
+      },
+      {
+        "start": 254000,
+        "stop": 254600,
+        "text": " all of this, there must be a lot of upstream collaboration with the Gnome project and GTK."
+      },
+      {
+        "start": 254600,
+        "stop": 255200,
+        "text": " I think this is an area where Endless is probably heavily involved and again doesn't get very much attention."
+      },
+      {
+        "start": 255200,
+        "stop": 255900,
+        "text": " Yeah I love this. When I talk to friends about, they're like, \"Oh Endless, I've kind of heard about you guys. What do you do?\""
+      },
+      {
+        "start": 255900,
+        "stop": 256400,
+        "text": " I'm like, \"Well, do you use Gnome software? Do you use flat pack? Have you ever used flat hub?"
+      },
+      {
+        "start": 256400,
+        "stop": 257000,
+        "text": " Have you ever used the power profiles work? Have you ever done anything with metered data?\""
+      },
+      {
+        "start": 257000,
+        "stop": 257300,
+        "text": " If you've done any of that stuff, you've used our software."
+      },
+      {
+        "start": 257300,
+        "stop": 257900,
+        "text": " And because we've written it upstream. Even if you've gone super wild experimental developer,"
+      },
+      {
+        "start": 257900,
+        "stop": 258600,
+        "text": " like if you're testing Gnome OS, which is the open secret Gnome operating system that's just for CI,"
+      },
+      {
+        "start": 258600,
+        "stop": 259200,
+        "text": " or just for testing in CI, not on real hardware, that uses the Endless installer as its installer."
+      },
+      {
+        "start": 259200,
+        "stop": 259400,
+        "text": " We contributed that upstream to Gnome."
+      },
+      {
+        "start": 259400,
+        "stop": 259700,
+        "text": " Much of the work going into Gnome these days, I don't want to take credit for everything."
+      },
+      {
+        "start": 259700,
+        "stop": 260000,
+        "text": " Obviously there's so many people and there's such a diversity of people involved in Gnome."
+      },
+      {
+        "start": 260000,
+        "stop": 260800,
+        "text": " But much of the work that you don't realize in the Gnome community and the flat pack community is done by Endless people."
+      },
+      {
+        "start": 260800,
+        "stop": 261500,
+        "text": " I find that absolutely fascinating. And of course users get the benefit on all of the distributions."
+      },
+      {
+        "start": 261500,
+        "stop": 262300,
+        "text": " But it creates this interesting situation where Endless isn't necessarily shipping the latest Gnome base."
+      },
+      {
+        "start": 262300,
+        "stop": 262600,
+        "text": " It's like what, 3.38 or something like that base still."
+      },
+      {
+        "start": 262600,
+        "stop": 263000,
+        "text": " And of course Gnome 42 is out and they're working on 43."
+      },
+      {
+        "start": 263000,
+        "stop": 263600,
+        "text": " But yet, a lot of the features I'm now enjoying in current versions of Gnome are actually here in Endless already."
+      },
+      {
+        "start": 263600,
+        "stop": 263900,
+        "text": " Yeah, yeah. The meter data is a big example of that."
+      },
+      {
+        "start": 263900,
+        "stop": 264600,
+        "text": " It was years ago I went to a hackfest in London at Red Hat office with a bunch of Gnome people."
+      },
+      {
+        "start": 264600,
+        "stop": 265000,
+        "text": " I was there half representing elementary and half representing System 76."
+      },
+      {
+        "start": 265000,
+        "stop": 265500,
+        "text": " This is the beauty of open source and all the companies and organizations involved in open source."
+      },
+      {
+        "start": 265500,
+        "stop": 266300,
+        "text": " I'm still involved with the exact same people as when I was working at System 76 doing elementary in my free time and now I'm working at Endless."
+      },
+      {
+        "start": 266300,
+        "stop": 266800,
+        "text": " But yeah, the focus of that hackfest was meter data and parental controls."
+      },
+      {
+        "start": 266800,
+        "stop": 267200,
+        "text": " And those were two features that didn't exist in Gnome and weren't standardized in any way."
+      },
+      {
+        "start": 267200,
+        "stop": 267900,
+        "text": " They existed in Endless OS downstream and Endless sent people to like,"
+      },
+      {
+        "start": 267900,
+        "stop": 269100,
+        "text": " \"Hey, how do we design it in a way that not just works for us and our use cases? We know we have weird use cases for our weird users compared to the broader Linux community."
+      },
+      {
+        "start": 269100,
+        "stop": 269300,
+        "text": " But how do we actually do it the right way upstream?\""
+      },
+      {
+        "start": 269300,
+        "stop": 269700,
+        "text": " And so now that's why parental controls is built in."
+      },
+      {
+        "start": 269700,
+        "stop": 270100,
+        "text": " There's a, what's it called, malcontent, which is a great name for a library."
+      },
+      {
+        "start": 270100,
+        "stop": 270500,
+        "text": " It's a library for implementing parental controls and content aware."
+      },
+      {
+        "start": 270500,
+        "stop": 270900,
+        "text": " And it piggybacks on the flat pack and app stream data."
+      },
+      {
+        "start": 270900,
+        "stop": 271500,
+        "text": " So like you can restrict your apps that are open based on what kind of contents they have."
+      },
+      {
+        "start": 271500,
+        "stop": 272400,
+        "text": " There's all these efforts that we've been, kind of had our fingers in, that really make for a really good experience for any general purpose operating system as well."
+      },
+      {
+        "start": 272400,
+        "stop": 272800,
+        "text": " Yeah, and it makes it safe as a family machine, Desktop OS, and that's nice."
+      },
+      {
+        "start": 272800,
+        "stop": 273000,
+        "text": " And not one you have to tinker with."
+      },
+      {
+        "start": 273000,
+        "stop": 273100,
+        "text": " Yeah, exactly."
+      },
+      {
+        "start": 273100,
+        "stop": 273600,
+        "text": " Yeah, we hear a lot of people who are like, \"Hey, I heard this Endless OS thing. I'm a developer, it doesn't really make sense for me.\""
+      },
+      {
+        "start": 273600,
+        "stop": 273800,
+        "text": " Which, first of all, that's a side note."
+      },
+      {
+        "start": 273800,
+        "stop": 274000,
+        "text": " I do a lot of development and I use Endless OS."
+      },
+      {
+        "start": 274000,
+        "stop": 274700,
+        "text": " But I get it. Maybe Ubuntu or Fedora install or something is better for you and that's fine."
+      },
+      {
+        "start": 274700,
+        "stop": 275300,
+        "text": " But we'll hear from these people, \"But I bought a laptop for my kid and I threw Endless OS on it and I just don't have to worry.\""
+      },
+      {
+        "start": 275300,
+        "stop": 275400,
+        "text": " And it's like, \"Yes, exactly.\""
+      },
+      {
+        "start": 275400,
+        "stop": 277000,
+        "text": " You don't have to be an IT person to run it. You don't have to worry about the content because it has parental controls built in and it's proven by tens of thousands of active users out there around the world of different cultures and different deployments in different countries."
+      },
+      {
+        "start": 277000,
+        "stop": 277200,
+        "text": " So it's a pretty safe bet."
+      },
+      {
+        "start": 277200,
+        "stop": 277800,
+        "text": " It's maybe one of the lesser known out there, but it should probably get more attention."
+      },
+      {
+        "start": 277800,
+        "stop": 278300,
+        "text": " I hear from listeners all the time who say, \"Well, I ended up getting a Mac or I switched to Windows for a bit. I just got too frustrated.\""
+      },
+      {
+        "start": 278300,
+        "stop": 278700,
+        "text": " And my thought is always like, \"Well, you should try something like Endless.\""
+      },
+      {
+        "start": 278700,
+        "stop": 279400,
+        "text": " Because you still get to use Linux, you get that environment, but you've got that bulletproof image base, flat packs for the applications."
+      },
+      {
+        "start": 279400,
+        "stop": 280200,
+        "text": " As we wrap up this little summer journey into Immutable Linux, I wonder if you agree that it's going to take a long time."
+      },
+      {
+        "start": 280200,
+        "stop": 281300,
+        "text": " But I could see in five to ten years, your average users that are getting Linux systems, maybe they're shipped from a manufacturer for office work and enterprise work and school work."
+      },
+      {
+        "start": 281300,
+        "stop": 282500,
+        "text": " Doesn't it seem like the trend is going to be all of those are inevitably going to be immutable-based systems, image-based systems in some way just because of the problems that solves for everyday users?"
+      },
+      {
+        "start": 282500,
+        "stop": 282700,
+        "text": " It seems inevitable to me. What about to you?"
+      },
+      {
+        "start": 282700,
+        "stop": 283400,
+        "text": " Yeah, absolutely. I'm actually more surprised that it's not already happening sooner, if that makes sense."
+      },
+      {
+        "start": 283400,
+        "stop": 284500,
+        "text": " I've been using Silverblue off and on. For a while, it was my way to see what GNOME was up to before I was as deeply involved in the GNOME community."
+      },
+      {
+        "start": 284500,
+        "stop": 284700,
+        "text": " Because I just knew, you know, I don't really want to fiddle with..."
+      },
+      {
+        "start": 284700,
+        "stop": 285000,
+        "text": " Honestly, for me, I wasn't used to Fedora package management."
+      },
+      {
+        "start": 285000,
+        "stop": 285600,
+        "text": " And so I was like, \"If I just can't do Fedora package management with Silverblue, I knew there's RPM, OS3, and stuff.\""
+      },
+      {
+        "start": 285600,
+        "stop": 286200,
+        "text": " So that was the reason I started on Silverblue, and I think it was on Fedora 34."
+      },
+      {
+        "start": 286200,
+        "stop": 287100,
+        "text": " And then that install, I upgraded to 35 and 36. I upgraded to the alpha of 36 and rolled back to 35, and that was flawless."
+      },
+      {
+        "start": 287100,
+        "stop": 287400,
+        "text": " That's what sold me and what blew my mind."
+      },
+      {
+        "start": 287400,
+        "stop": 288000,
+        "text": " It was like, \"Oh, this is just the way it should be. This is just the right way to do it.\""
+      },
+      {
+        "start": 288000,
+        "stop": 288600,
+        "text": " And I think all the right people, all the important people working on things, know that."
+      },
+      {
+        "start": 288600,
+        "stop": 289500,
+        "text": " I think the hurdles we have to get over is developer tooling, which I'll say with Toolbox and Flatpak Builder and stuff,"
+      },
+      {
+        "start": 289500,
+        "stop": 289800,
+        "text": " the developer experience is actually really good too."
+      },
+      {
+        "start": 289800,
+        "stop": 290700,
+        "text": " I'm still kind of getting used to doing everything in a toolbox, but it's really nice to have that separation between your host OS and your development environment."
+      },
+      {
+        "start": 290700,
+        "stop": 290900,
+        "text": " It's a sound concept."
+      },
+      {
+        "start": 290900,
+        "stop": 291100,
+        "text": " Maybe here's my hot take."
+      },
+      {
+        "start": 291100,
+        "stop": 291700,
+        "text": " I would be shocked if Fedora doesn't switch to Silverblue as the default within the next three years, maybe."
+      },
+      {
+        "start": 291700,
+        "stop": 291900,
+        "text": " I feel like that's a safer bet."
+      },
+      {
+        "start": 291900,
+        "stop": 292100,
+        "text": " I was going to say five, but I was like, \"Let's be aggressive.\""
+      },
+      {
+        "start": 292100,
+        "stop": 292800,
+        "text": " Yeah, five was my bet. So three is a little aggressive, but it's wild, and I feel like I've had a blind spot on all of this,"
+      },
+      {
+        "start": 292800,
+        "stop": 293500,
+        "text": " really until about April and then June of this year when I really started paying attention at the beginning of summer."
+      },
+      {
+        "start": 293500,
+        "stop": 294000,
+        "text": " It's just funny because you look at it, and after you've used it for a bit, you're like, \"Oh, well, clearly this is the way it's going.\""
+      },
+      {
+        "start": 294000,
+        "stop": 294300,
+        "text": " Yeah, and it solves so many problems."
+      },
+      {
+        "start": 294300,
+        "stop": 295200,
+        "text": " I was talking with the GNOME design team last week, and they're working on some new features in GNOME software, some new designs,"
+      },
+      {
+        "start": 295200,
+        "stop": 295700,
+        "text": " and it's like, \"You know, this would just be so much easier if we didn't have to worry about devs and RPMs,"
+      },
+      {
+        "start": 295700,
+        "stop": 296200,
+        "text": " and if it was just images for the OS and Flatpaks for the apps.\""
+      },
+      {
+        "start": 296200,
+        "stop": 296600,
+        "text": " And honestly, that's how I have Silverblue. That's how Endless OS is set up."
+      },
+      {
+        "start": 296600,
+        "stop": 297100,
+        "text": " It really is nice once you kind of just accept that's how it works. It's real nice."
+      },
+      {
+        "start": 297100,
+        "stop": 297500,
+        "text": " Yeah, you get in that workflow, and it functions really good. It's really solid."
+      },
+      {
+        "start": 297500,
+        "stop": 298100,
+        "text": " You have modern applications. You're not stuck to just what's in the repo, and you have that bulletproof reliability."
+      },
+      {
+        "start": 298100,
+        "stop": 298300,
+        "text": " It's such a win."
+      },
+      {
+        "start": 298300,
+        "stop": 298700,
+        "text": " Well, Cassie, it's been really fun to dig into this. Endless looks like just a beautiful OS."
+      },
+      {
+        "start": 298700,
+        "stop": 299400,
+        "text": " It's just a really great piece of work, and stay in touch. Thanks for coming on and chatting with me, and keep up the great work."
+      },
+      {
+        "start": 299400,
+        "stop": 299500,
+        "text": " Sounds good. Thank you."
+      },
+      {
+        "start": 299700,
+        "stop": 300600,
+        "text": " bitwarden.com/linux. Get started with a free trial for yourself or a team or an enterprise at bitwarden.com/linux."
+      },
+      {
+        "start": 300600,
+        "stop": 301000,
+        "text": " I started as an individual user, and now I use it for my business."
+      },
+      {
+        "start": 301000,
+        "stop": 301500,
+        "text": " And Bitwarden makes it really simple all along the way to just have really great password and security hygiene"
+      },
+      {
+        "start": 301500,
+        "stop": 301700,
+        "text": " and store your secrets in a safe place."
+      },
+      {
+        "start": 301700,
+        "stop": 302300,
+        "text": " I imported from my old password manager years ago, and then it was also very simple for others on our team"
+      },
+      {
+        "start": 302300,
+        "stop": 302600,
+        "text": " to import from their password managers, and now we can all work collaboratively."
+      },
+      {
+        "start": 302600,
+        "stop": 303300,
+        "text": " And as a team, we use that daily, right? But as a business owner, I take some security in knowing that Bitwarden is open source,"
+      },
+      {
+        "start": 303300,
+        "stop": 303600,
+        "text": " and it's trusted by millions of individuals in their community."
+      },
+      {
+        "start": 303600,
+        "stop": 304000,
+        "text": " Wes and I use it every single day personally and for our work stuff."
+      },
+      {
+        "start": 304000,
+        "stop": 304300,
+        "text": " And Bitwarden has been adding features at an incredible clip."
+      },
+      {
+        "start": 304300,
+        "stop": 305000,
+        "text": " New stuff all the time, like cross-domain identity management, of course, username generator, which I think is just brilliant."
+      },
+      {
+        "start": 305000,
+        "stop": 305700,
+        "text": " And they've worked with email relay services, so you can actually even give a unique email, a unique username,"
+      },
+      {
+        "start": 305700,
+        "stop": 306100,
+        "text": " and a unique password for every site or service you use."
+      },
+      {
+        "start": 306100,
+        "stop": 306600,
+        "text": " And Bitwarden is the only way I think it's reasonable to stay secure across mobile and desktop devices."
+      },
+      {
+        "start": 306600,
+        "stop": 307100,
+        "text": " And of course, they have a flat pack app, so it's one of the very first things I install so I can start authenticating everything,"
+      },
+      {
+        "start": 307100,
+        "stop": 307400,
+        "text": " because like everything needs a login these days."
+      },
+      {
+        "start": 307400,
+        "stop": 307600,
+        "text": " And then of course, I also have to log in on my mobile device."
+      },
+      {
+        "start": 307600,
+        "stop": 308300,
+        "text": " And like, am I going to have like this crazy three or four sentence long password that I type in manually every single time?"
+      },
+      {
+        "start": 308300,
+        "stop": 308500,
+        "text": " Of course not. Of course not."
+      },
+      {
+        "start": 308500,
+        "stop": 308700,
+        "text": " And Bitwarden is the best way to manage that."
+      },
+      {
+        "start": 308700,
+        "stop": 308800,
+        "text": " And it's all your secrets."
+      },
+      {
+        "start": 308800,
+        "stop": 309200,
+        "text": " And you can also put your two-factor tokens in there, which is really convenient."
+      },
+      {
+        "start": 309200,
+        "stop": 309500,
+        "text": " And they make it really simple to manage your personal stuff and your business stuff."
+      },
+      {
+        "start": 309500,
+        "stop": 309900,
+        "text": " I can attest to that. You can keep them separated, but easily switch between them."
+      },
+      {
+        "start": 309900,
+        "stop": 310300,
+        "text": " On top of all of that, you can get ease of mind with their Vault Health reports."
+      },
+      {
+        "start": 310300,
+        "stop": 310600,
+        "text": " It's so great bringing it all together."
+      },
+      {
+        "start": 310600,
+        "stop": 311300,
+        "text": " And then when you add the new features, just the really smart stuff that they've been like laser accurately adding to Bitwarden."
+      },
+      {
+        "start": 311300,
+        "stop": 311600,
+        "text": " Oh, it's such a great time to become a Bitwarden user."
+      },
+      {
+        "start": 311600,
+        "stop": 312000,
+        "text": " If maybe you've already done it, you know, I'd be surprised if you haven't, because it is really self-evident."
+      },
+      {
+        "start": 312000,
+        "stop": 312400,
+        "text": " So if you have, maybe you could suggest this to someone else. It's a great way to support the show as well."
+      },
+      {
+        "start": 312400,
+        "stop": 312600,
+        "text": " Maybe your workplace could use this."
+      },
+      {
+        "start": 312600,
+        "stop": 313100,
+        "text": " We all have a friend or a family member that could probably do passwords better."
+      },
+      {
+        "start": 313100,
+        "stop": 313300,
+        "text": " Better than the sticky under their keyboard."
+      },
+      {
+        "start": 313300,
+        "stop": 313700,
+        "text": " I won't name names, but I have more than one family member that used to do it that way."
+      },
+      {
+        "start": 313700,
+        "stop": 313900,
+        "text": " I gave the gift to Bitwarden. You can too."
+      },
+      {
+        "start": 313900,
+        "stop": 314100,
+        "text": " bitwarden.com/linux."
+      },
+      {
+        "start": 314100,
+        "stop": 314400,
+        "text": " One more time to go get it for yourself or for a team."
+      },
+      {
+        "start": 314400,
+        "stop": 314800,
+        "text": " bitwarden.com/linux."
+      },
+      {
+        "start": 314800,
+        "stop": 315300,
+        "text": " As always, we got some great feedback this week."
+      },
+      {
+        "start": 315300,
+        "stop": 315800,
+        "text": " If you want to send us some, you can go to linuxunplugged.com/contact."
+      },
+      {
+        "start": 315800,
+        "stop": 316300,
+        "text": " Former Gentour sent two ideas I think were worthy of discussion."
+      },
+      {
+        "start": 316300,
+        "stop": 316600,
+        "text": " The first is just a little feedback on Tailscale."
+      },
+      {
+        "start": 316600,
+        "stop": 317300,
+        "text": " They say, \"Hey, wonderful team! I've been listening to y'all for a year now, and I'm eternally grateful for Tailscale,"
+      },
+      {
+        "start": 317300,
+        "stop": 317800,
+        "text": " which I learned about from you and which I've been using to roll out my own VPN for the family."
+      },
+      {
+        "start": 317800,
+        "stop": 318100,
+        "text": " We're spread out through three continents."
+      },
+      {
+        "start": 318100,
+        "stop": 318400,
+        "text": " I take a good look at every single one of your software recommendations."
+      },
+      {
+        "start": 318400,
+        "stop": 318500,
+        "text": " Thank you.\""
+      },
+      {
+        "start": 318500,
+        "stop": 318600,
+        "text": " Isn't that nice?"
+      },
+      {
+        "start": 318600,
+        "stop": 318800,
+        "text": " That is nice. That is nice."
+      },
+      {
+        "start": 318800,
+        "stop": 319000,
+        "text": " I don't think we can take full credit for Tailscale."
+      },
+      {
+        "start": 319000,
+        "stop": 319200,
+        "text": " I think the team over there did some of the work too."
+      },
+      {
+        "start": 319200,
+        "stop": 319500,
+        "text": " We just are standing on the shoulders of giants with Tailscale."
+      },
+      {
+        "start": 319500,
+        "stop": 319800,
+        "text": " We have the easy job of just being fans."
+      },
+      {
+        "start": 319800,
+        "stop": 320400,
+        "text": " I do like it a lot. To me, it's the same type of game changer that FileSync was and SSH was."
+      },
+      {
+        "start": 320400,
+        "stop": 320700,
+        "text": " It's a whole step change in functionality."
+      },
+      {
+        "start": 320700,
+        "stop": 321200,
+        "text": " And I guess always some shout-outs to old Jason Doenfeld for Wireguard in the frickin' first place."
+      },
+      {
+        "start": 321200,
+        "stop": 321900,
+        "text": " Also, another favorite tool of the show is Nebula. It's another really great one that you can completely host yourself."
+      },
+      {
+        "start": 321900,
+        "stop": 322200,
+        "text": " You need to set it up a little bit more. Versus Tailscale, it's like a, you know..."
+      },
+      {
+        "start": 322200,
+        "stop": 322700,
+        "text": " Yeah, especially for some of your, you know, if you have like staticky backend infrastructure that you have deployed,"
+      },
+      {
+        "start": 322700,
+        "stop": 323100,
+        "text": " like Nebula is great and super minimal and fast and clean."
+      },
+      {
+        "start": 323100,
+        "stop": 323700,
+        "text": " If you've got, you know, like a great example would be just a couple of systems or VPSs spread out across a couple of providers"
+      },
+      {
+        "start": 323700,
+        "stop": 324100,
+        "text": " and maybe like a local box, and you're planning to keep them forever."
+      },
+      {
+        "start": 324100,
+        "stop": 324600,
+        "text": " You don't really need a mobile device in there. I think Nebula would work really well for that."
+      },
+      {
+        "start": 324600,
+        "stop": 325000,
+        "text": " Former Gentooer continued, \"I haven't heard you mention Keybase at all."
+      },
+      {
+        "start": 325000,
+        "stop": 325300,
+        "text": " The client is open source, the server is not-ish."
+      },
+      {
+        "start": 325300,
+        "stop": 325800,
+        "text": " It uses GNU, PG to implement and end encryption for several sorts of things."
+      },
+      {
+        "start": 325800,
+        "stop": 326500,
+        "text": " Full-featured chat, group chat, file sharing, Git repos even, and general encryption/decryption of files."
+      },
+      {
+        "start": 326500,
+        "stop": 327100,
+        "text": " It can even act as a sort of social network where you follow people and can view their public file folders"
+      },
+      {
+        "start": 327100,
+        "stop": 327300,
+        "text": " as well as privately chat with them."
+      },
+      {
+        "start": 327300,
+        "stop": 327700,
+        "text": " Works right on Linux, Mac, Windows, Android, iPhones."
+      },
+      {
+        "start": 327700,
+        "stop": 328100,
+        "text": " And of course, it has a pretty capable command line interface as well."
+      },
+      {
+        "start": 328100,
+        "stop": 328600,
+        "text": " The former startup was acquired by Zoom in 2020 after those first security shenanigans,"
+      },
+      {
+        "start": 328600,
+        "stop": 328900,
+        "text": " but everything on the client side still remains open source."
+      },
+      {
+        "start": 328900,
+        "stop": 329300,
+        "text": " Chris, I think you've used Keybase in the past, have you not? Or you've explored it? I remember that."
+      },
+      {
+        "start": 329300,
+        "stop": 329700,
+        "text": " Yeah, I guess I still technically have an active Keybase account."
+      },
+      {
+        "start": 329700,
+        "stop": 330000,
+        "text": " I'm kind of sad Keybase never really took off more."
+      },
+      {
+        "start": 330000,
+        "stop": 330600,
+        "text": " It felt like it was, out of all of the sort of social things, I think it was a little early, it was a little complicated."
+      },
+      {
+        "start": 330600,
+        "stop": 331100,
+        "text": " But what it really gave you is a way to verify who you are."
+      },
+      {
+        "start": 331100,
+        "stop": 331800,
+        "text": " If you go look at a Keybase profile, you can find mine, keybase.io/chrisles, I think."
+      },
+      {
+        "start": 331800,
+        "stop": 332300,
+        "text": " And if you go there, you'll see sort of like these ways I verify this is actually my identity."
+      },
+      {
+        "start": 332300,
+        "stop": 332900,
+        "text": " And that's pretty useful in the current world that we live in."
+      },
+      {
+        "start": 332900,
+        "stop": 333400,
+        "text": " And so I do that via some GPG keys, you can do that via Bitcoin addresses,"
+      },
+      {
+        "start": 333400,
+        "stop": 334000,
+        "text": " you can do that via my proving, a tweet, a GitHub entry, your Reddit account."
+      },
+      {
+        "start": 334000,
+        "stop": 334600,
+        "text": " I also put a file at jupyterbroadcasting.com that verifies that, just to show that it's me."
+      },
+      {
+        "start": 334600,
+        "stop": 335100,
+        "text": " And I think that's a great concept. And now they have a Slack-like chat interface, works on Linux."
+      },
+      {
+        "start": 335100,
+        "stop": 335800,
+        "text": " Yeah, they have built a lot of kind of cool tools around Keybase, and it does seem like if you've taken the time to kind of set up your Keybase infrastructure"
+      },
+      {
+        "start": 335800,
+        "stop": 336300,
+        "text": " and verify all these things and connect all your keys and identities, it can be well worth it."
+      },
+      {
+        "start": 336300,
+        "stop": 337000,
+        "text": " Because it kind of integrates all very nicely in a way that feels a little disparate and thrown out all over the place sometimes with our other solutions."
+      },
+      {
+        "start": 337000,
+        "stop": 337700,
+        "text": " I think the truth is, though, and you just can't overlook it, you can't just shrug it off, is that Zoom bought them."
+      },
+      {
+        "start": 337700,
+        "stop": 338000,
+        "text": " And I think that just leaves everybody with a little bit of a bad taste in their mouth."
+      },
+      {
+        "start": 338000,
+        "stop": 338500,
+        "text": " Especially considering the folks who were probably some of the primary consumers of Keybase, right?"
+      },
+      {
+        "start": 338500,
+        "stop": 339300,
+        "text": " Like there's never probably going to be a giant mainstream thing. It was going to be for like privacy folks and tech nerds, and all of whom are a little sketched out by Zoom, maybe."
+      },
+      {
+        "start": 339300,
+        "stop": 339900,
+        "text": " I think that's part of it, right? And it's not like they've messed it up. They've pretty much just left it alone."
+      },
+      {
+        "start": 339900,
+        "stop": 340300,
+        "text": " It really doesn't seem like they've screwed up the product, but I guess that could change at any point."
+      },
+      {
+        "start": 340300,
+        "stop": 340500,
+        "text": " And I think it's just a non-starter issue for some people."
+      },
+      {
+        "start": 340500,
+        "stop": 341100,
+        "text": " Like honestly, if I tried to get you on a print and I told you all about Keybase and then I told you it's owned by Zoom, wouldn't that give you pause?"
+      },
+      {
+        "start": 341100,
+        "stop": 341500,
+        "text": " There's a hesitation, for sure. Yeah, I would say so."
+      },
+      {
+        "start": 341500,
+        "stop": 342000,
+        "text": " And now, it is time for Le Boost."
+      },
+      {
+        "start": 342000,
+        "stop": 342700,
+        "text": " Our first non-baller boost of the day from our friend Ron's wing with 9001 sets."
+      },
+      {
+        "start": 342700,
+        "stop": 342900,
+        "text": " It's over 9000!"
+      },
+      {
+        "start": 342900,
+        "stop": 343400,
+        "text": " I've been listening to you for about a year now, and a question just crossed my mind."
+      },
+      {
+        "start": 343400,
+        "stop": 343900,
+        "text": " Well, hey, hey, welcome to the show, Broswing. We're glad to have you."
+      },
+      {
+        "start": 343900,
+        "stop": 344500,
+        "text": " Their question though, how do you guys all know each other? Or how did you all meet?"
+      },
+      {
+        "start": 344500,
+        "stop": 344700,
+        "text": " That feels like a big question, eh?"
+      },
+      {
+        "start": 344700,
+        "stop": 345200,
+        "text": " I'm kind of glad this came up because it's all starting to fade for me, so I mean, I remember-"
+      },
+      {
+        "start": 345200,
+        "stop": 345500,
+        "text": " Wait, tell me, always known each other? And we've always been doing this show."
+      },
+      {
+        "start": 345500,
+        "stop": 345700,
+        "text": " I don't really remember a before."
+      },
+      {
+        "start": 345700,
+        "stop": 346000,
+        "text": " Right. This is just a side."
+      },
+      {
+        "start": 346000,
+        "stop": 346700,
+        "text": " Realized last week, several weeks late, that Linux Unplugged has been running longer than Linux Action Show."
+      },
+      {
+        "start": 346700,
+        "stop": 347000,
+        "text": " Whoa, that is cool."
+      },
+      {
+        "start": 347000,
+        "stop": 347300,
+        "text": " Isn't that mind-blowing? I believe Coda Radio has been too."
+      },
+      {
+        "start": 347300,
+        "stop": 347800,
+        "text": " Perhaps not in total years, because we took some time off and we did a computer action show."
+      },
+      {
+        "start": 347800,
+        "stop": 348200,
+        "text": " We fooled around for a little bit, tried twice a month for a bit."
+      },
+      {
+        "start": 348200,
+        "stop": 348700,
+        "text": " But yeah, definitely in episode numbers, and maybe in actual runtime."
+      },
+      {
+        "start": 348700,
+        "stop": 349300,
+        "text": " So I remember that for episode 100 of the Unplugged program, we did a barbecue meetup."
+      },
+      {
+        "start": 349300,
+        "stop": 350200,
+        "text": " And Wes came with food and commentary. And then I think it's just been every week since then."
+      },
+      {
+        "start": 350200,
+        "stop": 350400,
+        "text": " It's pretty much been it."
+      },
+      {
+        "start": 350400,
+        "stop": 350900,
+        "text": " Pretty much. We got some Mexican food and talked about show stuff at one point, I seem to recall."
+      },
+      {
+        "start": 350900,
+        "stop": 351000,
+        "text": " Oh, okay, sure."
+      },
+      {
+        "start": 351000,
+        "stop": 351300,
+        "text": " And then he invited me back a couple of times, like, \"Hey, yeah, you want to come on again?\""
+      },
+      {
+        "start": 351300,
+        "stop": 351600,
+        "text": " And then at some point I just stopped leaving."
+      },
+      {
+        "start": 351600,
+        "stop": 351900,
+        "text": " Or I just started showing up, I guess. I don't know if I was invited or not."
+      },
+      {
+        "start": 351900,
+        "stop": 352300,
+        "text": " I do like to warm people up with a little El Presios. That's one of my maneuvers."
+      },
+      {
+        "start": 352300,
+        "stop": 352700,
+        "text": " Now that you're talking about it, I sort of recall us revisiting."
+      },
+      {
+        "start": 352700,
+        "stop": 353400,
+        "text": " It might have been for episode 400 that you did a revisit and you had a clip from the barbecue."
+      },
+      {
+        "start": 353400,
+        "stop": 353900,
+        "text": " Wes's first on-the-air clip. And I think that was pretty great."
+      },
+      {
+        "start": 353900,
+        "stop": 354300,
+        "text": " And I remember playing it back and it was like, you'd think Wes had been doing it for 100 episodes."
+      },
+      {
+        "start": 354300,
+        "stop": 354600,
+        "text": " He just hit the ground running. So I was like, \"Well, this guy's got to get on the show.\""
+      },
+      {
+        "start": 354600,
+        "stop": 355200,
+        "text": " Brent, remind me, how did we meet? I must have been through the shows. LinuxFest?"
+      },
+      {
+        "start": 355200,
+        "stop": 355400,
+        "text": " Okay, yeah. What else do you remember?"
+      },
+      {
+        "start": 355400,
+        "stop": 355800,
+        "text": " Like I say, it's all fate. That's why we got to... It's good we do this."
+      },
+      {
+        "start": 355800,
+        "stop": 356100,
+        "text": " Yeah, it is. I think LinuxFest is probably a..."
+      },
+      {
+        "start": 356100,
+        "stop": 356700,
+        "text": " Well, both a great place to meet people and also a place where those memories just get sort of squashed."
+      },
+      {
+        "start": 356700,
+        "stop": 357000,
+        "text": " There's so much happening. Yeah, this was LinuxFest Northwest."
+      },
+      {
+        "start": 357000,
+        "stop": 357600,
+        "text": " So I think it must have been... maybe 2017 would be my best guess."
+      },
+      {
+        "start": 357600,
+        "stop": 357700,
+        "text": " Wow, really?"
+      },
+      {
+        "start": 357700,
+        "stop": 358100,
+        "text": " Yeah, and I had planned... I was living in Northern Ontario at the time."
+      },
+      {
+        "start": 358100,
+        "stop": 359000,
+        "text": " And I had planned to see my brother who was out here in BC and also do a little road trip to go to my very first LinuxFest."
+      },
+      {
+        "start": 359000,
+        "stop": 359300,
+        "text": " And that happened to be LinuxFest Northwest."
+      },
+      {
+        "start": 359300,
+        "stop": 359900,
+        "text": " And of course, as a JB fanboy at the time, I wanted to meet all the folks."
+      },
+      {
+        "start": 359900,
+        "stop": 360500,
+        "text": " And I ended up driving from BC. I think... Oh, yeah, that was... What a crazy time."
+      },
+      {
+        "start": 360500,
+        "stop": 361100,
+        "text": " Anyways, I rented a car and drove from BC, crossed the border into the US,"
+      },
+      {
+        "start": 361100,
+        "stop": 361700,
+        "text": " and made my way to the LinuxFest Northwest parking lot the night before the event started."
+      },
+      {
+        "start": 361700,
+        "stop": 362100,
+        "text": " And it was so late and I didn't have a hotel. I had a tent, but there was nowhere to pitch it."
+      },
+      {
+        "start": 362100,
+        "stop": 362700,
+        "text": " And I was like, \"Okay, I guess I'm going to sleep in the back of this car that I've rented,\" which is not the first time I've done this."
+      },
+      {
+        "start": 362700,
+        "stop": 362800,
+        "text": " And..."
+      },
+      {
+        "start": 362800,
+        "stop": 363000,
+        "text": " And you're in a pinch, you know. You're very resourceful, Brent."
+      },
+      {
+        "start": 363000,
+        "stop": 363500,
+        "text": " Right? I did bring water. And I ended up sort of on campus where they hold LinuxFest Northwest."
+      },
+      {
+        "start": 363500,
+        "stop": 364000,
+        "text": " And I just so happened to find Jupes. And I was like, \"Whoa, I think I'm in the right place.\""
+      },
+      {
+        "start": 364000,
+        "stop": 364500,
+        "text": " I don't know exactly where to go when the event starts, but I know at least I'm in the right vicinity."
+      },
+      {
+        "start": 364500,
+        "stop": 364800,
+        "text": " Yeah, we were there overnight camping as well, so we were there the night before."
+      },
+      {
+        "start": 364800,
+        "stop": 364900,
+        "text": " That's true."
+      },
+      {
+        "start": 364900,
+        "stop": 365000,
+        "text": " And we're kind of hard to miss."
+      },
+      {
+        "start": 365000,
+        "stop": 366100,
+        "text": " Right. And then as I was parking, I was like, \"Well, I don't want to park too close to be like that creep that's, you know, just within the bounds of the creepiness.\""
+      },
+      {
+        "start": 366100,
+        "stop": 366900,
+        "text": " But not so far that I don't, like, I don't know. So I picked a spot, camped there. I think it was like two or three nights in that car. It was crazy."
+      },
+      {
+        "start": 366900,
+        "stop": 367500,
+        "text": " So I met you at the booth the very first time. You probably met a hundred people at that booth, so I don't think you remember."
+      },
+      {
+        "start": 367500,
+        "stop": 368300,
+        "text": " No, is that true? I thought we met in the parking lot in the morning when we let Levi out to go to the bathroom and you were out kind of like waking up and stretching."
+      },
+      {
+        "start": 368300,
+        "stop": 369300,
+        "text": " Oh, yeah. Oh, you're right. I mean, I'm not a morning person, so. But yeah, you're right. I was like, I don't know, brushing my teeth or something out of a bottle or something like that."
+      },
+      {
+        "start": 369300,
+        "stop": 370100,
+        "text": " And my first thought was, did this guy, did he time it so that way he'd be out there when we came out? Like, I was wondering, was he waiting for us?"
+      },
+      {
+        "start": 370100,
+        "stop": 370500,
+        "text": " I do remember that night. It rained like crazy too, and I had my windows open and that caused some issues."
+      },
+      {
+        "start": 370500,
+        "stop": 370600,
+        "text": " Oh, man."
+      },
+      {
+        "start": 370600,
+        "stop": 371800,
+        "text": " Oh, yeah. Good memory. I was aware that I didn't want to, like, jump you guys at that point and be one of those people. So I, hopefully I left enough space."
+      },
+      {
+        "start": 371800,
+        "stop": 372300,
+        "text": " But, you know, Levi's a conversation starter and I'm pretty sure we got to talking and, you know."
+      },
+      {
+        "start": 372300,
+        "stop": 373900,
+        "text": " Yeah. And so thankfully I, that meant, well, you guys were great. You, as all the fans who've met you know that you just invited me in and gave me a tour of Lady Joops and Levi and I became friends immediately."
+      },
+      {
+        "start": 373900,
+        "stop": 375800,
+        "text": " And I think that just started sort of a friendship. And then a few days later you invited us, of course, to a barbecue at the studio and I think I never left. I remember sleeping on the floor of the studio one night and I just had a great time."
+      },
+      {
+        "start": 375800,
+        "stop": 376300,
+        "text": " Those post Linux Fest parties at the studio, they got out of hand."
+      },
+      {
+        "start": 376300,
+        "stop": 376900,
+        "text": " Yeah. Yeah. Wonderfully so. And Alan was there and a whole bunch of people. It was a great time."
+      },
+      {
+        "start": 376900,
+        "stop": 377200,
+        "text": " Right. We probably had several projects going on. I'm sure you just got, you know."
+      },
+      {
+        "start": 377200,
+        "stop": 377300,
+        "text": " You? No."
+      },
+      {
+        "start": 377300,
+        "stop": 377800,
+        "text": " Yeah. It's funny how those, those Linux Fests can be life changing."
+      },
+      {
+        "start": 377800,
+        "stop": 379400,
+        "text": " That's exactly what it was. It was like me going to live out a small dream that I had for a few years and it was even better than I would have expected. And I remember taking a bunch of photos and being able to share those, which was fun. And that friendship just grew from there."
+      },
+      {
+        "start": 379400,
+        "stop": 380900,
+        "text": " And I was able to actually the way I started with Linux unplugged just by chance was that at that time I said to you, Hey, if I can help in any way that let me know. You said, Oh, okay, well hit me up in like two weeks because it's kind of insane right now."
+      },
+      {
+        "start": 380900,
+        "stop": 381700,
+        "text": " And so I did. And you were like, Oh, well actually Wes is like going to Bali or something and I need a co-host for Linux unplugged for a short time. You want to join me?"
+      },
+      {
+        "start": 381700,
+        "stop": 382900,
+        "text": " I was like, sure, let's see how this goes. Yeah. Right. That was, I was super nervous back then, but you were kind enough to give me a try and then I never left."
+      },
+      {
+        "start": 382900,
+        "stop": 383600,
+        "text": " I bet we talked about digital photography. That was, yeah, I was fascinated, you know, professional photographer using Linux. It was, you know."
+      },
+      {
+        "start": 383600,
+        "stop": 383700,
+        "text": " You don't see those every day."
+      },
+      {
+        "start": 383700,
+        "stop": 384500,
+        "text": " Bronze Wing, thank you for the boost. That was a fun conversation and good refresher. Get all that recalled before we forget it."
+      },
+      {
+        "start": 384500,
+        "stop": 385300,
+        "text": " But the boosts, they must go on. Our next one is from Soli86 with 5,000 sats."
+      },
+      {
+        "start": 385300,
+        "stop": 386200,
+        "text": " A long time listener in Australia here. I'm using Fountain thanks to JB. So I'm boosting back the free sats I received from them. Well, thank you, Soli."
+      },
+      {
+        "start": 386200,
+        "stop": 387000,
+        "text": " Wow, that's a decent return there on the stream of sats, 5,000 for listening to podcasts. That's a feature in Fountain FM is they kind of have like this incentive system."
+      },
+      {
+        "start": 387000,
+        "stop": 387700,
+        "text": " And so we've been getting more boosts from new timers who are just listening to the shows, collecting the sats and then sending them back their boosts."
+      },
+      {
+        "start": 387700,
+        "stop": 387900,
+        "text": " And I've been doing the same thing. It's been fun."
+      },
+      {
+        "start": 387900,
+        "stop": 388700,
+        "text": " Soli goes on. I work in IT and of course, we're all Microsoft. I have managed to have most of my workflow in Linux."
+      },
+      {
+        "start": 388700,
+        "stop": 389300,
+        "text": " However, the most important thing is Outlook and .msg files."
+      },
+      {
+        "start": 389300,
+        "stop": 390100,
+        "text": " I like using Outlook on the web. However, the business workflow and ticketing system relies on those .msg files."
+      },
+      {
+        "start": 390100,
+        "stop": 390800,
+        "text": " Got any ideas on how I can open .msg files in Linux without needing to convert the files? Thanks for the great content."
+      },
+      {
+        "start": 390800,
+        "stop": 391600,
+        "text": " The not needing to convert is tricky. I would say it's worth seeing what Evolution can do."
+      },
+      {
+        "start": 391600,
+        "stop": 392200,
+        "text": " I think you'd be really surprised at how easily Evolution integrates in with an Outlook ecosystem."
+      },
+      {
+        "start": 392200,
+        "stop": 392800,
+        "text": " But it's a lot to install. Personally, I would just make a copy of stuff and I would convert it."
+      },
+      {
+        "start": 392800,
+        "stop": 393000,
+        "text": " I don't know about you, Wes, but that's what my approach would be."
+      },
+      {
+        "start": 393000,
+        "stop": 393600,
+        "text": " Yeah, probably. It sounds like maybe there's some ways to get Thunderbird to play decently there too, although I have not tried that."
+      },
+      {
+        "start": 393600,
+        "stop": 394200,
+        "text": " And then as a last resort, we'll have a link to a .msg convert, which if you have to go to a conversion-based workflow, it looks like a..."
+      },
+      {
+        "start": 394200,
+        "stop": 394800,
+        "text": " I think it might even be derived from Thunderbird and it's a little Perl script to handle .msg conversions."
+      },
+      {
+        "start": 394800,
+        "stop": 395500,
+        "text": " I think of it as backup, right? Don't think of it as conversion and duplication. Think of it as backup."
+      },
+      {
+        "start": 395500,
+        "stop": 395800,
+        "text": " Wolfman wrote in with 500 sats."
+      },
+      {
+        "start": 395800,
+        "stop": 396400,
+        "text": " Just completed my resume getting my amateur radio license. And then it occurred to me."
+      },
+      {
+        "start": 396400,
+        "stop": 396900,
+        "text": " Does anyone else at JB have their ham license? I've never heard the topic come up on air before."
+      },
+      {
+        "start": 396900,
+        "stop": 397600,
+        "text": " Something like a DMR repeater or hosting a community DMR server sounds like something the community may get interested in."
+      },
+      {
+        "start": 397600,
+        "stop": 398300,
+        "text": " I kind of agree. We don't talk about ham much. I don't know much about it, but I think it's super cool."
+      },
+      {
+        "start": 398300,
+        "stop": 399000,
+        "text": " And every time Noah's around, I try to get him to talk about it so I can learn some language."
+      },
+      {
+        "start": 399000,
+        "stop": 399700,
+        "text": " Even though Noah's even left a few devices here, so we technically have devices. I don't know if I'm allowed to use them."
+      },
+      {
+        "start": 399700,
+        "stop": 400500,
+        "text": " You know, I think Cheese was interested in that stuff too. I remember him doing some emergency preparedness stuff in his area during..."
+      },
+      {
+        "start": 400500,
+        "stop": 401000,
+        "text": " you know, remember when they got flooded and stuff like that down in Texas? So I think he's got some experience if I remember."
+      },
+      {
+        "start": 401000,
+        "stop": 401700,
+        "text": " Definitely seems like there's a lot of kindred spirits there, right? Like hosting it yourself, learning how this technology works,"
+      },
+      {
+        "start": 401700,
+        "stop": 402200,
+        "text": " understanding the physics and computers all involved. Yeah, that's some excellent geekery right there."
+      },
+      {
+        "start": 402200,
+        "stop": 403400,
+        "text": " It's the original decentralized. We got a boost 2,222 sats, row of ducks, from someone named nix-bitcoin is amazing."
+      },
+      {
+        "start": 403400,
+        "stop": 404100,
+        "text": " I love that. Welcome back, nix-bitcoin. It's been a bit since we heard from you. This is what got me into Nix, so I obviously agree."
+      },
+      {
+        "start": 404100,
+        "stop": 404800,
+        "text": " They're right. Have you considered an AC enclosure in your garage for the server? The enclosure keeps the machines cool and clean."
+      },
+      {
+        "start": 404800,
+        "stop": 405400,
+        "text": " However, if the AC stops running for any reason, then the enclosure will actually turn into a furnace."
+      },
+      {
+        "start": 405400,
+        "stop": 406600,
+        "text": " Chris, I feel like you and I talked quite a bit about this, I think almost exactly a year ago when we built... oh no, in January we built the server rack."
+      },
+      {
+        "start": 406600,
+        "stop": 407300,
+        "text": " And we had many conversations about this, and those were some of the hesitations. It was like, okay, well, if we put in some infrastructure,"
+      },
+      {
+        "start": 407300,
+        "stop": 407900,
+        "text": " someone has to maintain that infrastructure as well, so how can we do it? I had some ideas about doing it passively,"
+      },
+      {
+        "start": 407900,
+        "stop": 408400,
+        "text": " but I wonder what your thoughts are now that you've been living with the heat again."
+      },
+      {
+        "start": 408400,
+        "stop": 409100,
+        "text": " Of course I've been all over the spectrum on this. I am beginning to discount colo. We got more boosts that came in just like,"
+      },
+      {
+        "start": 409100,
+        "stop": 409700,
+        "text": " \"I want a second, the colo stuff. Cool your roll on that.\" We got some people that had that opinion."
+      },
+      {
+        "start": 409700,
+        "stop": 410400,
+        "text": " And we've talked about maybe building a box in the garage, but Jeff and I were talking before the show started."
+      },
+      {
+        "start": 410400,
+        "stop": 411200,
+        "text": " Jeff's been out here, he's seen the studio. You think maybe we could do it with some insulation and decent cooling, or at least we have a shot."
+      },
+      {
+        "start": 411200,
+        "stop": 412200,
+        "text": " Yeah, I think if we insulate the garage attic, because those are typically not insulated at all, maybe double insulate where it usually is at the barrier of the roof,"
+      },
+      {
+        "start": 412200,
+        "stop": 412800,
+        "text": " and then up top with the rafters, and then definitely insulate the garage door itself."
+      },
+      {
+        "start": 412800,
+        "stop": 413300,
+        "text": " That might be enough with a fan, a little bit of airflow. It doesn't get too hot up there."
+      },
+      {
+        "start": 413300,
+        "stop": 414100,
+        "text": " Yeah, and if we kept it somewhere in the 80 degree range, maybe even a little higher, I'd be fine with that. The servers have survived that. It's all used gear."
+      },
+      {
+        "start": 414100,
+        "stop": 415000,
+        "text": " Well, we don't need it to be necessarily perfect uptime. Like if there was two heat waves a year and we shut it down for those, that's at least a lot better than where we're at now."
+      },
+      {
+        "start": 415000,
+        "stop": 415600,
+        "text": " I foresee me being in the attic here in a week or two. I could see that coming. I'll bring a suit."
+      },
+      {
+        "start": 415600,
+        "stop": 416400,
+        "text": " We'll bring Jeff up with us after the road trip, and all of us will come up and we'll insulate the garage."
+      },
+      {
+        "start": 416400,
+        "stop": 416600,
+        "text": " Let's make a plan and I'll take the time off. Let's go."
+      },
+      {
+        "start": 416600,
+        "stop": 416900,
+        "text": " Well, that way Brent can record up there."
+      },
+      {
+        "start": 416900,
+        "stop": 417700,
+        "text": " Yeah, you're right. That'll be soundproof. Very good. I think it could work, guys. I think it could work."
+      },
+      {
+        "start": 417700,
+        "stop": 418800,
+        "text": " All right. I just have a couple of shout outs. A 50 sat from VIP Torso listening from Finland for over a year, sent in 50 sets."
+      },
+      {
+        "start": 418800,
+        "stop": 419500,
+        "text": " That's like a penny. But it's just amazing that you can do it right. Like that's what I think people have to appreciate about lightning."
+      },
+      {
+        "start": 419500,
+        "stop": 420000,
+        "text": " We got a row of ducks for Mr. Quackers, who said he's thinking about changing his name."
+      },
+      {
+        "start": 420000,
+        "stop": 420800,
+        "text": " Whoa. Yeah, he's thinking about changing his name. I would be sad. I like Mr. Quackers. I think we have a really great sound bite that goes with it."
+      },
+      {
+        "start": 420800,
+        "stop": 421100,
+        "text": " Quacker, quacker, it's a treasure. Yippee!"
+      },
+      {
+        "start": 421100,
+        "stop": 421500,
+        "text": " Pick your new name based on sound bite ability. That's all we got."
+      },
+      {
+        "start": 421500,
+        "stop": 422300,
+        "text": " We got 2,000 sets from Trevdev, who said loves gooicks. You know, geeks. I call it gooicks, but it's geeks."
+      },
+      {
+        "start": 422300,
+        "stop": 422900,
+        "text": " I know we're drawing the summer of immutability to a close, but maybe I need to sneak geeks in there."
+      },
+      {
+        "start": 422900,
+        "stop": 423500,
+        "text": " Good. Now use this scheme. Yeah. Ah, there's only so many days in the summer, though."
+      },
+      {
+        "start": 423500,
+        "stop": 424300,
+        "text": " We also got 2,323 sets from Logic. He boosted when we were live and we were having some trouble last week and he was helping troubleshoot."
+      },
+      {
+        "start": 424300,
+        "stop": 424900,
+        "text": " So I'm going to be leaving helipad up during live shows. We don't actually have the live tag yet, but some people are still boosting it during the show."
+      },
+      {
+        "start": 424900,
+        "stop": 425500,
+        "text": " So I don't want to miss those. If you'd like to send us a boost, go grab a new podcast app. New podcast apps dot com."
+      },
+      {
+        "start": 425500,
+        "stop": 426200,
+        "text": " Podverse is totally free. It's an F droid. It's on iOS. It's an Android. And it's going to be all over our new website."
+      },
+      {
+        "start": 426200,
+        "stop": 426900,
+        "text": " So then you really get like the trifecta because the Web, the mobile apps, GPL. It's gorgeous."
+      },
+      {
+        "start": 426900,
+        "stop": 427500,
+        "text": " You heard us talk about Fountain. That's one that lets you actually earn sats for listening to podcasts."
+      },
+      {
+        "start": 427500,
+        "stop": 428100,
+        "text": " And Cast-o-matic is great on iOS as well. There's a whole bunch over at new podcast apps dot com, including Breeze."
+      },
+      {
+        "start": 428100,
+        "stop": 428700,
+        "text": " You don't have to change your podcast app and boost CLI if you really want to be a geek."
+      },
+      {
+        "start": 428700,
+        "stop": 429200,
+        "text": " We got a bag of picks here. And what do you say, Wes? Should we give just a mention to Vizzy data?"
+      },
+      {
+        "start": 429200,
+        "stop": 429800,
+        "text": " That was one of the many tools that you use to go sort the hat to get our JPL names."
+      },
+      {
+        "start": 429800,
+        "stop": 430300,
+        "text": " Yeah, we definitely should, just because you know how we love dirty command line picks."
+      },
+      {
+        "start": 430300,
+        "stop": 431000,
+        "text": " And this is one that multiple audience members, you know, anytime we talked about fun little command line tools or especially like command line spreadsheets,"
+      },
+      {
+        "start": 431000,
+        "stop": 432000,
+        "text": " spreadsheets or like data manipulation or charts, Vizzy data came up and I hadn't had a chance to actually play with it until I was kind of going through these CSV's that we got out of our next cloud."
+      },
+      {
+        "start": 432000,
+        "stop": 432500,
+        "text": " I'm thinking, you know, there's got to be a better way. I don't really want to do this in a browser."
+      },
+      {
+        "start": 432500,
+        "stop": 432900,
+        "text": " I definitely don't need LibreOffice installed on this machine. I have a terminal."
+      },
+      {
+        "start": 432900,
+        "stop": 434200,
+        "text": " Is he that it was perfect? You can do operations on multiple rows, multiple columns. You can do pivot tables, you can do charts. And because it's all like powered with Python, you can just run your own Python scripts on the data powered by Vizzy data."
+      },
+      {
+        "start": 434200,
+        "stop": 434900,
+        "text": " It's it's pretty rad. It was very handy. I think this is probably a tool we'll be going to for these types of things in the future."
+      },
+      {
+        "start": 434900,
+        "stop": 435700,
+        "text": " And I love that it has pivot tables. Minimec sent in a Google teller pick. This one's kind of creepy, isn't it? Minimec."
+      },
+      {
+        "start": 435700,
+        "stop": 436400,
+        "text": " Yeah, that's really cool. We will love that one. So I was reading my favorite news site, which is Der Stannadat."
+      },
+      {
+        "start": 436400,
+        "stop": 436900,
+        "text": " It's an Austrian news site. Give it a try if you're familiar with the German language."
+      },
+      {
+        "start": 436900,
+        "stop": 437700,
+        "text": " So they wrote an article about that tool, Google Teller. And that is a tool that gives you some feedback from your internal computer speaker."
+      },
+      {
+        "start": 437700,
+        "stop": 438600,
+        "text": " Whenever there is some data exchange between your browser and one of the Google servers and services like Google search, Google ads, Google funds, YouTube, whatever."
+      },
+      {
+        "start": 438600,
+        "stop": 439700,
+        "text": " So imagine the situation you have Google Chrome or Chromium open and you type something in the address bar. In these two browsers, you have the active word prediction active."
+      },
+      {
+        "start": 439700,
+        "stop": 440800,
+        "text": " So whenever you type a letter in there, your computer starts beeping. And that, in the end effect, means every single address you type in, in Google Chrome and Chromium in the address bar gets sent to Google."
+      },
+      {
+        "start": 440800,
+        "stop": 441600,
+        "text": " Everything. Other example, you have an ad blocker. You don't have an ad blocker and you start loading your favorite news site."
+      },
+      {
+        "start": 441600,
+        "stop": 442600,
+        "text": " My new computer is screaming because of all the Google ads, for example. Interesting fact, you have the whole site loaded and you start scrolling around."
+      },
+      {
+        "start": 442600,
+        "stop": 443400,
+        "text": " And all of a sudden you have these beeps again because, I don't know, some cookie sends the exact position you are on that site or some other info to Google."
+      },
+      {
+        "start": 443400,
+        "stop": 444200,
+        "text": " It is really a really interesting experience. So that tool is really worth playing. You will find the code on GitHub."
+      },
+      {
+        "start": 444200,
+        "stop": 444800,
+        "text": " You have to compile it. And it's only working in Linux for now because it works in combination with other IP tables."
+      },
+      {
+        "start": 444800,
+        "stop": 445400,
+        "text": " But in fact, the installation instructions and usage are well described. And I guess you will do a link in the show note."
+      },
+      {
+        "start": 445400,
+        "stop": 445600,
+        "text": " You got it. We will have a link in the show notes."
+      },
+      {
+        "start": 445600,
+        "stop": 446400,
+        "text": " So if you want a little audible indication that motivates you to get rid of Google as fast as possible, that's the way to do it."
+      },
+      {
+        "start": 446400,
+        "stop": 447200,
+        "text": " Imagine combining that with a game plan to migrate off Google in one week to just really get you across the finish line."
+      },
+      {
+        "start": 447200,
+        "stop": 447700,
+        "text": " You should treat it maybe like a radar detection tool. You hear those little beeps and you worry about your safety."
+      },
+      {
+        "start": 447700,
+        "stop": 448200,
+        "text": " And then, Brett, we have a feedback item that came in. It's a feedback pick."
+      },
+      {
+        "start": 448200,
+        "stop": 448800,
+        "text": " We do. Josh wrote in and suggested Espanzo. I think it's probably the best way to say that."
+      },
+      {
+        "start": 448800,
+        "stop": 449500,
+        "text": " It's an open source text expander that has builds for Windows, Linux and Mac with Wayland and M1 beta support as well."
+      },
+      {
+        "start": 449500,
+        "stop": 449700,
+        "text": " Get out of here. Whoa."
+      },
+      {
+        "start": 449700,
+        "stop": 450000,
+        "text": " Yeah, I know. As you might have expected, it's also written in Rust."
+      },
+      {
+        "start": 450000,
+        "stop": 450500,
+        "text": " This, oh, are you serious? That's great."
+      },
+      {
+        "start": 450700,
+        "stop": 451200,
+        "text": " So this is really handy because text expander is one of these independent tools on the Mac."
+      },
+      {
+        "start": 451200,
+        "stop": 452000,
+        "text": " I think it's I don't know. But you set a you type a sequence of characters, you know, like some sort of short code that you've created."
+      },
+      {
+        "start": 452000,
+        "stop": 452600,
+        "text": " And then it will expand that to like a whole set of predefined text that supports variables and whatnot."
+      },
+      {
+        "start": 452600,
+        "stop": 453100,
+        "text": " Super common for like just doing rapid replies to emails or some sort of repetitive thing that you have to type a lot."
+      },
+      {
+        "start": 453100,
+        "stop": 453600,
+        "text": " You add a short code for it and then it expands it out into a fuller sentence or whatever it might be."
+      },
+      {
+        "start": 453600,
+        "stop": 454300,
+        "text": " Maybe it's you want to insert your address or your email address and you don't want to type it out every single time or a web address or maybe it's a block of code."
+      },
+      {
+        "start": 454300,
+        "stop": 454700,
+        "text": " And it's a really handy tool. I've tried it. I find it to be really heavy on the Mac and expensive."
+      },
+      {
+        "start": 454700,
+        "stop": 455100,
+        "text": " So I didn't actually I've never really tried it for a prolonged period of time."
+      },
+      {
+        "start": 455100,
+        "stop": 455700,
+        "text": " But the idea that you can get this working on Wayland is huge because I kind of had given up on this concept."
+      },
+      {
+        "start": 455700,
+        "stop": 456100,
+        "text": " I thought this is going to be something I could only do on X 11. So this is a fantastic find."
+      },
+      {
+        "start": 456100,
+        "stop": 457000,
+        "text": " Plus it looks like it's GPL three. I mean, that's kind of rad and Rust and quick and a really slick little website and a nice little repo and seemingly some good docs."
+      },
+      {
+        "start": 457000,
+        "stop": 457200,
+        "text": " What a find."
+      },
+      {
+        "start": 457200,
+        "stop": 457600,
+        "text": " This is a treat. Like pretty often we've heard of the apps that get sent in."
+      },
+      {
+        "start": 457600,
+        "stop": 458300,
+        "text": " But oh, my gosh, it has packages. Of course, all these things have packages so you can extend it, add more stuff."
+      },
+      {
+        "start": 458300,
+        "stop": 458600,
+        "text": " Shell script support, form support."
+      },
+      {
+        "start": 458600,
+        "stop": 458900,
+        "text": " Oh, that's nice. So you can add you can replace some of the variables."
+      },
+      {
+        "start": 458900,
+        "stop": 459200,
+        "text": " Oh, this is getting installed after the show, gentlemen."
+      },
+      {
+        "start": 459200,
+        "stop": 459500,
+        "text": " That's what I say. There's an app image here."
+      },
+      {
+        "start": 459500,
+        "stop": 460100,
+        "text": " Hey, yo. Hey, Wes, see if it's in the next package."
+      },
+      {
+        "start": 460100,
+        "stop": 460400,
+        "text": " Not this problem again. I'm sure it's in there. You are doing it."
+      },
+      {
+        "start": 460400,
+        "stop": 461000,
+        "text": " Well, that was great. If you want to send us in something, either a boost or a regular old email, that's just great."
+      },
+      {
+        "start": 461000,
+        "stop": 461300,
+        "text": " You can head over to Linux unplugged dot com slash contact."
+      },
+      {
+        "start": 461300,
+        "stop": 461900,
+        "text": " I'm curious to know out there if anybody out there has endless OS in production or maybe you've deployed it for somebody."
+      },
+      {
+        "start": 461900,
+        "stop": 462400,
+        "text": " If that's you, send us a boost or send us an email and let us know how you're using it."
+      },
+      {
+        "start": 462400,
+        "stop": 462700,
+        "text": " I'm trying to get a sense of how well it's known in our audience."
+      },
+      {
+        "start": 462700,
+        "stop": 463100,
+        "text": " I guess on that same token, I would like to know if you've never heard about it."
+      },
+      {
+        "start": 463100,
+        "stop": 463900,
+        "text": " Let us know that, too. I'd like some just some kind of data points around endless OS and how it's perceived out there, how it's getting used."
+      },
+      {
+        "start": 463900,
+        "stop": 464600,
+        "text": " And if you want to join us live on a Sunday, we do this show over at Jupiter, dot tube at noon Pacific, 3 p.m. Eastern."
+      },
+      {
+        "start": 464600,
+        "stop": 465300,
+        "text": " And something that we do for our members at unplugged core dot com is we record this live stream, which is."
+      },
+      {
+        "start": 465300,
+        "stop": 465700,
+        "text": " Huge, it's a. It's like two hours and 20 minutes ish."
+      },
+      {
+        "start": 465700,
+        "stop": 466000,
+        "text": " It's getting close to that right now as we go. It's just a lot more show."
+      },
+      {
+        "start": 466000,
+        "stop": 466500,
+        "text": " We we have some stuff we're doing, you know, we got business we're attending to and you get to listen in on all that."
+      },
+      {
+        "start": 466500,
+        "stop": 467000,
+        "text": " See how the podcast sausage is made. And we also make an ad free version available as well."
+      },
+      {
+        "start": 467000,
+        "stop": 467500,
+        "text": " If you just prefer something short, concise and fully produced by our editor, Drew, that's unplugged core dot com."
+      },
+      {
+        "start": 467500,
+        "stop": 468000,
+        "text": " If you'd like to support the show and keep us independent. That's like the turkey bacon to the sausage of the full show."
+      },
+      {
+        "start": 468000,
+        "stop": 468600,
+        "text": " Yeah. And you can get the full like what would it be when you do the Jupiter party? Would that be like the meat pack or what?"
+      },
+      {
+        "start": 468600,
+        "stop": 469100,
+        "text": " What is that? Like it's a veggie burger stack, like full English breakfast."
+      },
+      {
+        "start": 469100,
+        "stop": 469800,
+        "text": " Yeah, I get the full English breakfast over at Jupiter, that party support all the shows, get all the features you pick, which shows the blood sausage sausage, though."
+      },
+      {
+        "start": 469800,
+        "stop": 470500,
+        "text": " That's a. Yeah, they go there with no way. No."
+      },
+      {
+        "start": 470500,
+        "stop": 471100,
+        "text": " I'm going to get that visual out of my head. Think I like mashed potatoes. Maybe one of them is mashed potatoes. Maybe one of them is catfish."
+      },
+      {
+        "start": 471100,
+        "stop": 471600,
+        "text": " I don't know. You let me know. I don't know. Don't miss Linux Action News."
+      },
+      {
+        "start": 471600,
+        "stop": 472400,
+        "text": " That's all I know. That's all I know. Linux Action News dot com. We're covering the stuff that really matters in the world of Linux and open source every single week."
+      },
+      {
+        "start": 472400,
+        "stop": 473200,
+        "text": " We'd love you to catch it. So go grab that and links to everything we talked about today over at Linux unplugged dot com slash four seven three."
+      },
+      {
+        "start": 473200,
+        "stop": 474000,
+        "text": " You get our mumble info, our matrix info, the contact form, all of it over there. And go check out the new site, new dot Jupiter broadcasting dot com."
+      },
+      {
+        "start": 474000,
+        "stop": 474500,
+        "text": " Let us know what you think. Thanks for joining us. See you right back here next Sunday."
+      },
+      {
+        "start": 474500,
+        "stop": 476300,
+        "text": " So."
+      },
+      {
+        "start": 476300,
+        "stop": 478600,
+        "text": " So let's talk about that new Web site like we're down to the final hours. Is it hours? I thought we had days."
+      },
+      {
+        "start": 478600,
+        "stop": 479300,
+        "text": " I think you could measure it in actual hours. That's right. It's true. We need a countdown. We need a countdown. Some say it is the final countdown."
+      },
+      {
+        "start": 479300,
+        "stop": 481100,
+        "text": " Final countdown. We don't have a license for that. Dang. Well, I could just sing it. That's fine. It's definitely the last kind of week for what we have."
+      },
+      {
+        "start": 481100,
+        "stop": 482500,
+        "text": " I had it, so I had to use it. Well, if you got it, use it if you got it. Yeah, I feel like it's definitely we can say it's the last week for our what we're calling the one point oh milestone of the Web site."
+      },
+      {
+        "start": 482500,
+        "stop": 483400,
+        "text": " I think maybe the three of us should have some discussions on whether or not the current Web site does everything we need on the in as far as the back end goes."
+      },
+      {
+        "start": 483400,
+        "stop": 485000,
+        "text": " As far as front end, I feel like the new Web site has gotten really far. Chris, I know there's a bunch of like features that have been implemented in the last week or week and a half that have been helping you quite a bit, like the peer tube embed and stuff like that."
+      },
+      {
+        "start": 485000,
+        "stop": 487000,
+        "text": " That's my favorite one. Let's be honest. There's so much good work going in. So I don't want to play favorites. I love all my children. But how awesome is this? So I may have mentioned this already, but now when you go to the new new Jupiter broadcasting dot com site and you click live."
+      },
+      {
+        "start": 487000,
+        "stop": 488400,
+        "text": " That site will auto embed the current live stream from peer to just automatically gives you the current live stream. We don't have to do anything. We don't have to put in bed code in there. It just drops it right in there. No updates, no manual stuff. It's awesome."
+      },
+      {
+        "start": 488400,
+        "stop": 489700,
+        "text": " And it's great because it's a static Web site, too. So the way you really have to do that is you'd have to go edit the site, rebuild the site, redeploy the site. Right. So it's so nice that it just automatically embeds and updates. It's coming along."
+      },
+      {
+        "start": 489700,
+        "stop": 491100,
+        "text": " I think it's getting really close to a one point. Oh, I think there's a little few. You know, there's a few things like down here we can still clean up the bottom and stuff like that. But yeah, there's a bit of bit of stuff to do. But I feel like the essentials, the important part is like all the all the bones, right?"
+      },
+      {
+        "start": 491100,
+        "stop": 491900,
+        "text": " All the pieces that are hard to figure out. Or can it work that way? It seems like that is all resolved. And now it's kind of just the polishing layers."
+      },
+      {
+        "start": 491900,
+        "stop": 493600,
+        "text": " And I want to say a huge kudos to everyone who's been helping on this project. I've been super impressed with how many people have been involved in the Matrix room, but also the number of people who've been committing ideas and changes and opinions and all of that to the project."
+      },
+      {
+        "start": 493600,
+        "stop": 495300,
+        "text": " So thank you to everyone. And I think it's important to say that Kyle Potts put in quite an amazing PR last week and it just got merged, I think a day or two ago."
+      },
+      {
+        "start": 495300,
+        "stop": 497100,
+        "text": " They wrote some intense testing via Playwright for the site, and I am still on the very edge of beginning to understand what that means. But I think it helps us test the the commits that are coming in in a way that emulates browsers."
+      },
+      {
+        "start": 497100,
+        "stop": 498000,
+        "text": " That's going to be super helpful for us not breaking the site in production, which we've done a few times in the last few weeks. So that sounds like an amazing tool. I'm looking forward to learning it."
+      },
+      {
+        "start": 498000,
+        "stop": 498800,
+        "text": " I don't know if either of you played with that. Wes, maybe you have, but we're certainly going to talk more about it in Office Hours this coming Tuesday."
+      },
+      {
+        "start": 498800,
+        "stop": 499000,
+        "text": " Great! Office hours dot hair."
+      }
+    ],
+    "processing_time": {
+      "secs": 2717,
+      "nanos": 385814050
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 473: End of the Road",
+    "pictures": [],
+    "duration": {
+      "secs": 4967,
+      "nanos": 248000000
+    },
+    "unique_id": "http://linuxunplugged.com/473"
+  },
+  "episode": {
+    "title": "End of the Road | LINUX Unplugged 473",
+    "description": "We've reached the end of the road in our immutable Linux series, and an old friend stops by to give us the inside scoop on Endless OS.",
+    "content": "<p>We&#39;ve reached the end of the road in our immutable Linux series, and an old friend stops by to give us the inside scoop on Endless OS.</p>\n\n<p><p>Plus, we announce who will be joining us at JPL in September.</p><p>Special Guest: Cassidy James Blaede.</p><p>Sponsored By:</p><ul><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://www.reddit.com/r/linux/comments/wxhq7q/gnome_launches_a_new_telemetry_program_to_improve\" title=\"GNOME launches a new “telemetry” program to improve GNOME\" rel=\"nofollow\">GNOME launches a new “telemetry” program to improve GNOME</a></li><li><a href=\"https://gitlab.gnome.org/vstanek/gnome-info-collect\" title=\"gnome-info-collect repository\" rel=\"nofollow\">gnome-info-collect repository</a> &mdash; gnome-info-collect is a simple client-server application used for collecting information on GNOME systems. The data will be used to improve GNOME, specifically by informing design decisions, influencing where resources are invested, and generally helping us to understand users better.</li><li><a href=\"https://controlc.com/c1dff953\" title=\"Self contained flake for gnome-info-collect courtesy of kenji\" rel=\"nofollow\">Self contained flake for gnome-info-collect courtesy of kenji</a></li><li><a href=\"http://meetup.com/jupiterbroadcasting\" title=\"Jupiter Broadcasting Meetups\" rel=\"nofollow\">Jupiter Broadcasting Meetups</a></li><li><a href=\"https://bit.ly/westcoastcrew\" title=\"JB Matrix westcoastcrew Meetup Room\" rel=\"nofollow\">JB Matrix westcoastcrew Meetup Room</a></li><li><a href=\"https://fountain.fm/charts\" title=\"Hot on Fountain\" rel=\"nofollow\">Hot on Fountain</a></li><li><a href=\"https://joinmobilizon.org/en/\" title=\"Mobilizon\" rel=\"nofollow\">Mobilizon</a> &mdash; Mobilizon is a tool that helps you find, create and organize events.</li><li><a href=\"https://endlessos.com/download/\" title=\"Endless OS\" rel=\"nofollow\">Endless OS</a> &mdash; Comes preloaded with over 100 apps and essential tools so you have all you need, even when there's no internet access.</li><li><a href=\"https://keybase.io/\" title=\"Keybase\" rel=\"nofollow\">Keybase</a></li><li><a href=\"https://blog.zoom.us/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/\" title=\"May 7th 2020: Zoom Acquires Keybase\" rel=\"nofollow\">May 7th 2020: Zoom Acquires Keybase</a></li><li><a href=\"https://www.matijs.net/software/msgconv/\" title=\"MSGConvert\" rel=\"nofollow\">MSGConvert</a> &mdash; A .MSG to mime/mbox converter</li><li><a href=\"https://www.visidata.org/\" title=\"VisiData\" rel=\"nofollow\">VisiData</a> &mdash; VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.</li><li><a href=\"https://github.com/berthubert/googerteller\" title=\"googerteller\" rel=\"nofollow\">googerteller</a> &mdash; audible feedback on just how much your browsing feeds into google.</li><li><a href=\"https://espanso.org/\" title=\"Espanso\" rel=\"nofollow\">Espanso</a> &mdash; Tired of typing the same sentences over and over? Discover the incredible power of a full-blown text expander.</li><li><a href=\"https://new.jupiterbroadcasting.com/\" title=\"New Jupiter Broadcasting Website\" rel=\"nofollow\">New Jupiter Broadcasting Website</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8756",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15596767/8f07d035-a3be-4955-adb7-a0772dec9865.mp3",
+      "length": "70548880",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-28T20:15:00+02:00"
+  },
+  "speedup": 1.8279511
+}

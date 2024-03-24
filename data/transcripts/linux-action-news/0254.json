@@ -1,0 +1,992 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 1096,
+        "text": " Hello and welcome to Linux Action News episode 254 recorded on August 17, 2022. I'm Chris."
+      },
+      {
+        "start": 1096,
+        "stop": 1704,
+        "text": " And I'm Wes. Hello Wes, let's do the news. We start with Android 13."
+      },
+      {
+        "start": 1704,
+        "stop": 2304,
+        "text": " Once the makings of a big news cycle these days Android has matured to the point that"
+      },
+      {
+        "start": 2304,
+        "stop": 2968,
+        "text": " yet another release is a fairly standard affair. Combine that with the limited uptake of a new"
+      },
+      {
+        "start": 2968,
+        "stop": 3832,
+        "text": " Android release and sometimes a new version goes totally unnoticed by most. But as we record Android"
+      },
+      {
+        "start": 3832,
+        "stop": 4552,
+        "text": " 13 is rolling out to Pixel devices and then soon to Samsung Galaxy devices, Asus, OnePlus, and others."
+      },
+      {
+        "start": 4552,
+        "stop": 5224,
+        "text": " And most importantly at least I think it's landing upstream in AOSP right now so that's great to see."
+      },
+      {
+        "start": 5224,
+        "stop": 5792,
+        "text": " Actually there's some stuff in here that is really good including multi-language support for apps but"
+      },
+      {
+        "start": 5792,
+        "stop": 6408,
+        "text": " also one I like to see a lot landing in Android 13 is official built-in support for Bluetooth LE"
+      },
+      {
+        "start": 6408,
+        "stop": 6872,
+        "text": " audio so developers can now start using LE capabilities on compatible devices."
+      },
+      {
+        "start": 6872,
+        "stop": 7320,
+        "text": " That means battery life on some of these Bluetooth LE devices is just going to be"
+      },
+      {
+        "start": 7320,
+        "stop": 7816,
+        "text": " mind-blowing. It's great to see that built in now. We're also seeing the beginning of a new feature"
+      },
+      {
+        "start": 7816,
+        "stop": 8296,
+        "text": " that's coming to Android and developers need access to it now so they can start baking support in"
+      },
+      {
+        "start": 8368,
+        "stop": 8872,
+        "text": " hopefully to future versions of their apps and this caught my attention it's called predictive"
+      },
+      {
+        "start": 8872,
+        "stop": 9592,
+        "text": " back gesture. So in Android 13 they've introduced a new API where your app can tell the system how"
+      },
+      {
+        "start": 9592,
+        "stop": 10256,
+        "text": " it's going to handle back events in advance. In practice they call it the ahead of time model."
+      },
+      {
+        "start": 10256,
+        "stop": 10688,
+        "text": " They say this new approach is part of a multi-year effort to help prepare your apps to support the"
+      },
+      {
+        "start": 10688,
+        "stop": 11296,
+        "text": " new predictive back gesture which is available in testing right now if you turn on the developer"
+      },
+      {
+        "start": 11296,
+        "stop": 12032,
+        "text": " options. Another headline feature this time around is tablet support. Google says 13 has been"
+      },
+      {
+        "start": 12032,
+        "stop": 12696,
+        "text": " optimized for large screen layouts though honestly the implication in the release announcement is a"
+      },
+      {
+        "start": 12696,
+        "stop": 13344,
+        "text": " lot more work needs to be done around the tooling. Notification permissions and photo library access"
+      },
+      {
+        "start": 13344,
+        "stop": 14152,
+        "text": " are now more in line with the iOS style of asking the user for permission first. Oh I like that. I"
+      },
+      {
+        "start": 14152,
+        "stop": 14776,
+        "text": " also like that application performance has got a big boost in Android 13 thanks to some updates to"
+      },
+      {
+        "start": 14776,
+        "stop": 15424,
+        "text": " the art runtime and the good news there is Google plans to ship those improvements to other versions"
+      },
+      {
+        "start": 15424,
+        "stop": 16128,
+        "text": " of Android through Google Play updates. Well that's great for those of you who use the Play services."
+      },
+      {
+        "start": 16128,
+        "stop": 16672,
+        "text": " I mean overall Android 13 looks like a really nice update perhaps what Android 12 just should have"
+      },
+      {
+        "start": 16672,
+        "stop": 17304,
+        "text": " been all along. Google is asking developers to start testing now and I think hopefully since this"
+      },
+      {
+        "start": 17304,
+        "stop": 17792,
+        "text": " isn't really a life-changing upgrade we'll see a significant uptake from the hardware vendors out there."
+      },
+      {
+        "start": 17792,
+        "stop": 18792,
+        "text": " Just when we thought Linux was entering an era of gaming utopia, rolling release Linux users"
+      },
+      {
+        "start": 18792,
+        "stop": 19384,
+        "text": " discovered some bad news I'm afraid we're all going to have to deal with sometime soon. And it"
+      },
+      {
+        "start": 19384,
+        "stop": 20056,
+        "text": " really touches on what should be the upstream responsibility for long-term compatibility and"
+      },
+      {
+        "start": 20056,
+        "stop": 20544,
+        "text": " stable ABIs. And unfortunately for some users they're finding themselves trapped right in the"
+      },
+      {
+        "start": 20544,
+        "stop": 21176,
+        "text": " middle of that debate as their anti-cheat enabled games began breaking after recently updating to"
+      },
+      {
+        "start": 21176,
+        "stop": 21968,
+        "text": " glibc version 2.36. The breakage stems from the dt_hash section being dropped in the GNU C library"
+      },
+      {
+        "start": 21968,
+        "stop": 22736,
+        "text": " altogether. The GNU C library or glibc as it's often known has traditionally supported two ways"
+      },
+      {
+        "start": 22736,
+        "stop": 23648,
+        "text": " to get your hash on dt_hash and the newer gnu_dt_hash. Now these days most consider the"
+      },
+      {
+        "start": 23648,
+        "stop": 24288,
+        "text": " GNU version to be better structured and dt_gnu_hash has been around for a decade and a half at this"
+      },
+      {
+        "start": 24288,
+        "stop": 24896,
+        "text": " point. But as you're probably already guessing since we're talking about this, the makers of"
+      },
+      {
+        "start": 24896,
+        "stop": 25624,
+        "text": " anti-cheat software are still relying on the old non-gnu version. Yep, and once rolling Linux users"
+      },
+      {
+        "start": 25624,
+        "stop": 26176,
+        "text": " like Arch users began updating their system they got that new version of glibc, the one that only"
+      },
+      {
+        "start": 26176,
+        "stop": 26776,
+        "text": " has the GNU hash section. And well, understand it's not just anti-cheat games that are getting"
+      },
+      {
+        "start": 26776,
+        "stop": 27328,
+        "text": " broken, other Linux apps are as well such as libstrangle, but really anything that relies on"
+      },
+      {
+        "start": 27328,
+        "stop": 28128,
+        "text": " the traditional dt_hash section is breaking with glibc 2.36 due to this change. Over the past week"
+      },
+      {
+        "start": 28128,
+        "stop": 28680,
+        "text": " and a half this issue has been discussed pretty darn thoroughly on Valve's Proton bug tracker."
+      },
+      {
+        "start": 28680,
+        "stop": 29432,
+        "text": " Thankfully for those on Arch Linux where the problem was first reported, glibc 2.36-2 is"
+      },
+      {
+        "start": 29432,
+        "stop": 29976,
+        "text": " currently in testing and reverts the earlier change so both styles of hash are still included."
+      },
+      {
+        "start": 30056,
+        "stop": 30624,
+        "text": " And being those rolling release maniacs, Arch users have already tested that testing package"
+      },
+      {
+        "start": 30624,
+        "stop": 31048,
+        "text": " and confirmed that anti-cheat enabled games are once again working correctly."
+      },
+      {
+        "start": 31048,
+        "stop": 31776,
+        "text": " As far as getting the fix upstream for this issue, or maybe just rolling the change back upstream,"
+      },
+      {
+        "start": 31776,
+        "stop": 32336,
+        "text": " well it's not really clear what's going to happen right now. A Proton developer at Valve says that"
+      },
+      {
+        "start": 32336,
+        "stop": 32992,
+        "text": " the upstream glibc discussion on dt_hash isn't coming out in the direction of prioritizing"
+      },
+      {
+        "start": 32992,
+        "stop": 33696,
+        "text": " compatibility with pre-existing applications. They added in a tweet thread, \"every such instance"
+      },
+      {
+        "start": 33696,
+        "stop": 34320,
+        "text": " contributes to damaging the idea of desktop Linux as a viable target for third-party developers.\""
+      },
+      {
+        "start": 34320,
+        "stop": 34816,
+        "text": " I can definitely appreciate that. I mean, I don't want my games to break."
+      },
+      {
+        "start": 34816,
+        "stop": 35504,
+        "text": " But as ever in Linux, there's multiple parties, multiple projects, and multiple developers"
+      },
+      {
+        "start": 35504,
+        "stop": 36080,
+        "text": " involved. On the glibc side, there's definitely been some discussion about how best to address"
+      },
+      {
+        "start": 36080,
+        "stop": 36768,
+        "text": " this issue going forward. Carlos O'Donnell, a glibc steward, said, \"What I would like to see"
+      },
+      {
+        "start": 36768,
+        "stop": 37400,
+        "text": " is more feedback from the anti-cheat teams about exactly what they need.\" He also pointed out that,"
+      },
+      {
+        "start": 37400,
+        "stop": 38016,
+        "text": " \"depending on dt_hash and specific loader semantics is going to break at some point.\""
+      },
+      {
+        "start": 38080,
+        "stop": 38552,
+        "text": " To make this issue a little more complicated, although perhaps also a potential avenue for a fix,"
+      },
+      {
+        "start": 38552,
+        "stop": 39344,
+        "text": " is that the old style of hash is still marked as required in the upstream specification. So a"
+      },
+      {
+        "start": 39344,
+        "stop": 39880,
+        "text": " change at that layer might at least signal to downstream consumers, like anti-cheat software,"
+      },
+      {
+        "start": 39880,
+        "stop": 40528,
+        "text": " that they really shouldn't rely on just the old style of hash sticking around. And of course,"
+      },
+      {
+        "start": 40528,
+        "stop": 41128,
+        "text": " because this is Linux, right now a lot of the control rests in the hands of distributions."
+      },
+      {
+        "start": 41128,
+        "stop": 42128,
+        "text": " Carlos also emphasized that dt_gnu_hash was added way back in 2006 and has kind of been the standard"
+      },
+      {
+        "start": 42128,
+        "stop": 42808,
+        "text": " on Linux for the last 16 years. Also, this most recent glibc change was made to allow distributions"
+      },
+      {
+        "start": 42808,
+        "stop": 43496,
+        "text": " to choose how backwards compatible they want to be. So really, at least from some perspectives in"
+      },
+      {
+        "start": 43496,
+        "stop": 44096,
+        "text": " the glibc camp, the choice to have dt_hash or not is with distributions. If this breaks specific"
+      },
+      {
+        "start": 44096,
+        "stop": 44744,
+        "text": " applications, then those developers need to engage with those distribution ecosystems or adapt their"
+      },
+      {
+        "start": 44744,
+        "stop": 45232,
+        "text": " software. Yeah, it's stories like these, Wes, where I think the Valve developers are thinking"
+      },
+      {
+        "start": 45232,
+        "stop": 45696,
+        "text": " to themselves, \"Well, I'm glad we built SteamOS because they're clearly going to mitigate this"
+      },
+      {
+        "start": 45696,
+        "stop": 46232,
+        "text": " at the distribution level, and other distribution makers are going to have to make the same decision.\""
+      },
+      {
+        "start": 46232,
+        "stop": 46568,
+        "text": " There is some good news out there this week for Linux gamers, though."
+      },
+      {
+        "start": 46568,
+        "stop": 47184,
+        "text": " Proton 7.0.4 shipped just a couple of days ago, and it brings a whole batch of new Windows games"
+      },
+      {
+        "start": 47184,
+        "stop": 47728,
+        "text": " to the Linux fun. It's not just better game compatibility, though. There's an exciting"
+      },
+      {
+        "start": 47728,
+        "stop": 48464,
+        "text": " lower-level improvement shipping with Proton 7.0.4. It's support for file system copy-on-write"
+      },
+      {
+        "start": 48464,
+        "stop": 49176,
+        "text": " behavior, at least for supported file systems like r/DearButterFS. The goal here is to reduce"
+      },
+      {
+        "start": 49176,
+        "stop": 49904,
+        "text": " space used by game prefixes, which is really nice to see for some of us on smaller NVMe drives, like me."
+      },
+      {
+        "start": 49904,
+        "stop": 50816,
+        "text": " Linus Torvalds released the first release candidate of Linux 6.0 this week, officially"
+      },
+      {
+        "start": 50816,
+        "stop": 51448,
+        "text": " making this current cycle the big 6.0. But if you want to call this release 5.20 or whatever,"
+      },
+      {
+        "start": 51448,
+        "stop": 52120,
+        "text": " Linus did. You can, quote, \"go right ahead.\" Fun games aside, it is kind of nice to have that"
+      },
+      {
+        "start": 52120,
+        "stop": 52616,
+        "text": " settled. Or, well, at least as settled as anything is in the world of Linux."
+      },
+      {
+        "start": 52616,
+        "stop": 53224,
+        "text": " But, you know, we've talked a lot about how many features are getting packed into this release,"
+      },
+      {
+        "start": 53224,
+        "stop": 53768,
+        "text": " and there are a ton. But one of the things that seems to have missed the RC window"
+      },
+      {
+        "start": 53768,
+        "stop": 54496,
+        "text": " is Rust. Torvalds lamented about that a bit in the release notes, writing, quote, \"I actually"
+      },
+      {
+        "start": 54496,
+        "stop": 55040,
+        "text": " was hoping that we'd get some of the first Rust infrastructure and the multi-gen LRU VM."
+      },
+      {
+        "start": 55112,
+        "stop": 55720,
+        "text": " But neither of them happened this time around.\" He did emphasize, though, that, quote, \"there's"
+      },
+      {
+        "start": 55720,
+        "stop": 56312,
+        "text": " always more releases.\" Indeed. I hope so, at least. I kind of find it a riot, though, to just"
+      },
+      {
+        "start": 56312,
+        "stop": 56992,
+        "text": " watch the meta story develop around Linux 6.0, and also to watch Linus consistently try to tamp down"
+      },
+      {
+        "start": 56992,
+        "stop": 57576,
+        "text": " expectations, and just call this not a big deal constantly. But the media outlets, they're all in."
+      },
+      {
+        "start": 57576,
+        "stop": 57968,
+        "text": " They've been playing all kinds of games this week, and I think you could be forgiven for actually"
+      },
+      {
+        "start": 57968,
+        "stop": 58440,
+        "text": " thinking the final version of Linux 6.0 had actually shipped. The headlines going around"
+      },
+      {
+        "start": 58440,
+        "stop": 58960,
+        "text": " are just totally detached from reality now. Here's a couple of examples from just the last few days."
+      },
+      {
+        "start": 58960,
+        "stop": 59520,
+        "text": " ZDNet's headline, quote, \"Linux 6.0 arrives with performance improvements and more Rust coming.\""
+      },
+      {
+        "start": 59520,
+        "stop": 60344,
+        "text": " The register also had a doozy. \"Linux 6.0 debuts missing some rusty bits.\" Making it sound like"
+      },
+      {
+        "start": 60344,
+        "stop": 60864,
+        "text": " it's a shipped product, I assume, just to get the clicks. Maybe it's been a slow news cycle"
+      },
+      {
+        "start": 60864,
+        "stop": 61344,
+        "text": " over the summer. I don't know. But none of it really matters, I would guess. At least not to Linus."
+      },
+      {
+        "start": 61344,
+        "stop": 61864,
+        "text": " He wrote himself, quote, \"The kernel version numbers are really entirely made up and have no"
+      },
+      {
+        "start": 61864,
+        "stop": 62432,
+        "text": " intrinsic meaning.\" I don't know. I mean, there is something to like. The numbers sure seem to"
+      },
+      {
+        "start": 62432,
+        "stop": 63016,
+        "text": " matter to some people. He can keep hammering that point away, but alas, I'm not sure it's really"
+      },
+      {
+        "start": 63016,
+        "stop": 63768,
+        "text": " going to change everyone's minds. This release cycle also left the kernel just 50 patches away"
+      },
+      {
+        "start": 63768,
+        "stop": 64416,
+        "text": " from real-time support finally being integrated. But there appear to still be some roadblocks that"
+      },
+      {
+        "start": 64416,
+        "stop": 65112,
+        "text": " kept those patches out of the tree, at least for the 6.0 RC1 release. Yeah, unfortunately, that was"
+      },
+      {
+        "start": 65112,
+        "stop": 65560,
+        "text": " one of the other big headline features for this release. But I think the other way to look at that"
+      },
+      {
+        "start": 65560,
+        "stop": 66160,
+        "text": " is we're just about 50 patches or so from this actually landing. So hopefully this real-time"
+      },
+      {
+        "start": 66160,
+        "stop": 66872,
+        "text": " work will manage to cross the finish line later this year with Linux 6.1."
+      },
+      {
+        "start": 66872,
+        "stop": 67912,
+        "text": " August 16th was Debian's 29th anniversary, so we wanted to send them a big happy birthday from all"
+      },
+      {
+        "start": 67912,
+        "stop": 68648,
+        "text": " of us here at Jupyter Broadcasting. The project is helping local Debian groups worldwide plan Debian"
+      },
+      {
+        "start": 68648,
+        "stop": 69232,
+        "text": " day celebrations. If you're interested, we'll have a link to the local Debian groups page in the notes."
+      },
+      {
+        "start": 69232,
+        "stop": 70264,
+        "text": " Linode.com/lan. L-A-N. Go there to get a hundred dollars and 60-day credit on a new account,"
+      },
+      {
+        "start": 70264,
+        "stop": 70744,
+        "text": " and it's just a great way to support the show. Linode is fast, reliable cloud hosting with the"
+      },
+      {
+        "start": 70744,
+        "stop": 71320,
+        "text": " best support in the business. Real humans every day of the year. Linode's how we run everything"
+      },
+      {
+        "start": 71320,
+        "stop": 71832,
+        "text": " that we've built and everything we continue to build. Our new website, we're building it on Linode."
+      },
+      {
+        "start": 71832,
+        "stop": 72360,
+        "text": " And like us, Linode loves Linux. They bake it into everything they've done, everything they've built"
+      },
+      {
+        "start": 72360,
+        "stop": 73040,
+        "text": " over the last 19 years. Nobody has them matched in this area. And they're 30 to 50 percent cheaper"
+      },
+      {
+        "start": 73040,
+        "stop": 73480,
+        "text": " than the hyperscalers. They'll want to lock you into their crazy platforms and try to upsell you"
+      },
+      {
+        "start": 73480,
+        "stop": 73848,
+        "text": " every single day on all their little services. They all have to have cute little esoteric names"
+      },
+      {
+        "start": 73848,
+        "stop": 74296,
+        "text": " for them. And by cute, I mean horrible. But on top of that, Linode has the best performance."
+      },
+      {
+        "start": 74296,
+        "stop": 74784,
+        "text": " They've got 11 data centers around the world you can choose from. And of course,"
+      },
+      {
+        "start": 74784,
+        "stop": 75352,
+        "text": " their interface is simple, straightforward and easy to understand with great documentation and"
+      },
+      {
+        "start": 75352,
+        "stop": 75840,
+        "text": " an API that lets you do everything. And then they have a bunch of great features on top of that"
+      },
+      {
+        "start": 75840,
+        "stop": 76400,
+        "text": " object storage, cloud firewall, simple, elegant backups, Kubernetes and Terraform and Ansible"
+      },
+      {
+        "start": 76400,
+        "stop": 76800,
+        "text": " support and so much more. And if you're a performance hound, your application needs a lot"
+      },
+      {
+        "start": 76800,
+        "stop": 77360,
+        "text": " of throughput. Go check out Linode's MVME storage and dedicated AMD EPYC CPU rigs."
+      },
+      {
+        "start": 77360,
+        "stop": 77856,
+        "text": " So go build something, go learn something, try it for yourself and support the show."
+      },
+      {
+        "start": 77856,
+        "stop": 78512,
+        "text": " You just go to linode.com/lan. That gets you the $100 so you can really try the service. You can"
+      },
+      {
+        "start": 78512,
+        "stop": 79040,
+        "text": " get a genuine idea of what it's like to use it, what the performance is, what the feature set is,"
+      },
+      {
+        "start": 79040,
+        "stop": 79536,
+        "text": " and you can get that for 60 days. Go lock it in and kick the tires. Go to linode.com/lan."
+      },
+      {
+        "start": 79536,
+        "stop": 79928,
+        "text": " One more time, support the show, linode.com/lan."
+      },
+      {
+        "start": 79928,
+        "stop": 80936,
+        "text": " collide.com/lan. Collide is endpoint security that uses the most powerful untapped resource"
+      },
+      {
+        "start": 80936,
+        "stop": 81392,
+        "text": " in your entire organization, the end users. You know, when you're trying to achieve security"
+      },
+      {
+        "start": 81392,
+        "stop": 81784,
+        "text": " goals, maybe it's an internal goal, maybe it's one for a third party auditor. I had to do that"
+      },
+      {
+        "start": 81784,
+        "stop": 82312,
+        "text": " for years. Maybe it's just something the boss wants done. The traditional approach is treating"
+      },
+      {
+        "start": 82312,
+        "stop": 82872,
+        "text": " every device like it's Fort Knox. With old school tools like MDMs that force disruptive agents onto"
+      },
+      {
+        "start": 82872,
+        "stop": 83376,
+        "text": " employees' devices, Rex Performance makes the machines feel like they're five years older than"
+      },
+      {
+        "start": 83376,
+        "stop": 84048,
+        "text": " they really are, and it turns IT admins and users into enemies. Plus, a lot of these tools create"
+      },
+      {
+        "start": 84048,
+        "stop": 84560,
+        "text": " their own security problems. Let's be real. Collide does things differently. Instead of"
+      },
+      {
+        "start": 84560,
+        "stop": 85048,
+        "text": " forcing changes on users, Collide sends them security recommendations via Slack."
+      },
+      {
+        "start": 85160,
+        "stop": 85656,
+        "text": " Collide will automatically notify your team when their device is insecure, and it'll give them"
+      },
+      {
+        "start": 85656,
+        "stop": 86144,
+        "text": " step-by-step instructions on how to solve those problems. By reaching out to employees via a"
+      },
+      {
+        "start": 86144,
+        "stop": 86752,
+        "text": " friendly Slack DM and educating them about company policies, Collide can help you build a culture in"
+      },
+      {
+        "start": 86752,
+        "stop": 87376,
+        "text": " which everyone contributes to security because everyone understands how and why to do it."
+      },
+      {
+        "start": 87376,
+        "stop": 87808,
+        "text": " And for IT admins, Collide provides a single dashboard that lets you monitor the security"
+      },
+      {
+        "start": 87808,
+        "stop": 88264,
+        "text": " of your entire fleet. Maybe they're on a Mac, maybe they're on Windows, or maybe they're on"
+      },
+      {
+        "start": 88264,
+        "stop": 88672,
+        "text": " Linux. Doesn't matter. You can see it all with a glance. See which employees have used disk"
+      },
+      {
+        "start": 88672,
+        "stop": 89144,
+        "text": " encryption, which ones have kept their OS up to date. If they have a password manager installed,"
+      },
+      {
+        "start": 89144,
+        "stop": 89640,
+        "text": " it really makes it easy to prove compliance to the auditors, to your customers, to leadership,"
+      },
+      {
+        "start": 89640,
+        "stop": 90304,
+        "text": " whoever it be. So that's Collide. User-centered, cross-platform endpoint security for teams"
+      },
+      {
+        "start": 90304,
+        "stop": 91096,
+        "text": " with Slack. You can meet your compliance goals by putting users first. Visit collide.com/lan"
+      },
+      {
+        "start": 91096,
+        "stop": 91440,
+        "text": " to find out. And when you go there, they're going to hook you up with a goodie bag that includes a"
+      },
+      {
+        "start": 91440,
+        "stop": 92288,
+        "text": " free t-shirt just for activating a free trial. How great is that? So go to collide.com/lan."
+      },
+      {
+        "start": 92888,
+        "stop": 93416,
+        "text": " John Deere has famously been at the center of the right-to-repair fight for years now,"
+      },
+      {
+        "start": 93416,
+        "stop": 94024,
+        "text": " locking their farmers out of their own equipment, forcing the use of company service options."
+      },
+      {
+        "start": 94024,
+        "stop": 94824,
+        "text": " Well, a new jailbreak announced at Defcon by SICK codes might just tip the bounds of power"
+      },
+      {
+        "start": 94824,
+        "stop": 95392,
+        "text": " in favor of the equipment owners. Under pressure from the right-to-repair movement,"
+      },
+      {
+        "start": 95392,
+        "stop": 95888,
+        "text": " John Deere had already announced some plans to open up some of its software to owners of"
+      },
+      {
+        "start": 95888,
+        "stop": 96424,
+        "text": " the equipment, but many had emphasized that this was just too little, too late."
+      },
+      {
+        "start": 96424,
+        "stop": 97000,
+        "text": " And now the next shoe has dropped, and surprise, surprise everyone, John Deere's embedded systems,"
+      },
+      {
+        "start": 97000,
+        "stop": 97616,
+        "text": " they're running old versions of Linux and Windows CE. So to develop this jailbreak,"
+      },
+      {
+        "start": 97616,
+        "stop": 98072,
+        "text": " SICK codes got his hands on numerous generations of John Deere tractor-controlled touchscreen"
+      },
+      {
+        "start": 98072,
+        "stop": 98688,
+        "text": " consoles. He ultimately decided to just focus on a few models, and SICK codes then decided to solder"
+      },
+      {
+        "start": 98688,
+        "stop": 99288,
+        "text": " controllers directly onto the circuit boards, and eventually was able to bypass system protections,"
+      },
+      {
+        "start": 99288,
+        "stop": 99792,
+        "text": " even protections that John Deere had tried to recently update. Once set up, he used an"
+      },
+      {
+        "start": 99792,
+        "stop": 100368,
+        "text": " attack on a reboot check to restore the device as if it was being accessed by a certified dealer."
+      },
+      {
+        "start": 100368,
+        "stop": 100968,
+        "text": " He found that when the system was in this mode, it would offer more than 1.5 gigabytes worth of logs,"
+      },
+      {
+        "start": 100968,
+        "stop": 101456,
+        "text": " and of course this log data revealed the path to another potential timing attack that he could use"
+      },
+      {
+        "start": 101456,
+        "stop": 102152,
+        "text": " to get even deeper into the system. And boy did it. Not only did SICK codes find that"
+      },
+      {
+        "start": 102152,
+        "stop": 102752,
+        "text": " all the firmware's code is running as root, because of course it is, but it also turned out that once"
+      },
+      {
+        "start": 102752,
+        "stop": 103240,
+        "text": " you were able to get your own software onto the equipment, it would just accept whatever code you"
+      },
+      {
+        "start": 103240,
+        "stop": 103920,
+        "text": " put on there and happily execute it. SICK codes emphasized, saying, \"The main bug is that nothing's"
+      },
+      {
+        "start": 103920,
+        "stop": 104728,
+        "text": " encrypted or checksum properly,\" or anything like that. It's impressive how fragile this empire is."
+      },
+      {
+        "start": 104728,
+        "stop": 105400,
+        "text": " This empire of service repair and locking farmers out wasn't really that well protected once you got"
+      },
+      {
+        "start": 105400,
+        "stop": 106168,
+        "text": " physical access to it. Kyle Wayans, the CEO of iFixit, and also a right-to-repair advocate himself,"
+      },
+      {
+        "start": 106168,
+        "stop": 106592,
+        "text": " he attended SICK codes' presentation, and he recounted the experience on Twitter, saying,"
+      },
+      {
+        "start": 106728,
+        "stop": 107288,
+        "text": " \"SICK codes has jailbroken a John Deere.\" And this is just the beginning. Turns out,"
+      },
+      {
+        "start": 107288,
+        "stop": 107816,
+        "text": " our entire food system is built on outdated, unpatched Linux and Windows CE hardware"
+      },
+      {
+        "start": 107816,
+        "stop": 108624,
+        "text": " with LTE modems. Yikes. Also, we should note that there's no patching around this flaw,"
+      },
+      {
+        "start": 108624,
+        "stop": 109088,
+        "text": " so we suspect this is really just the beginning for people who want to repair their tractors"
+      },
+      {
+        "start": 109088,
+        "stop": 109760,
+        "text": " and other farm equipment themselves. Also, now that we know with certainty that GPL software"
+      },
+      {
+        "start": 109760,
+        "stop": 110304,
+        "text": " is used on their equipment, you've got to wonder if John Deere has been in compliance"
+      },
+      {
+        "start": 110304,
+        "stop": 110944,
+        "text": " with the terms of that license. I suspect we may find out in time, and yes, dear listener,"
+      },
+      {
+        "start": 110944,
+        "stop": 111344,
+        "text": " they've already got Doom running on these devices. You have to wonder what else they're going to get"
+      },
+      {
+        "start": 111344,
+        "stop": 111800,
+        "text": " running on these John Deere tractors. What other functionality could they bring to these tractors?"
+      },
+      {
+        "start": 111800,
+        "stop": 112368,
+        "text": " Could we one day see an updated Linux distribution for tractors? Who knows, but the possibilities are"
+      },
+      {
+        "start": 112368,
+        "stop": 112800,
+        "text": " pretty endless, just like so many other things in the world of Linux and open source, so we'll keep"
+      },
+      {
+        "start": 112800,
+        "stop": 113256,
+        "text": " an eye on all of it. Be sure you go to LinuxActionNews.com/subscribe for all the ways to"
+      },
+      {
+        "start": 113256,
+        "stop": 113888,
+        "text": " get new episodes so you don't miss a thing. And LinuxActionNews.com/contact for ways to get in touch."
+      },
+      {
+        "start": 113888,
+        "stop": 114464,
+        "text": " And be sure to go check out our buddy Alex from Self-hosted on episode 190 of Late Night Linux,"
+      },
+      {
+        "start": 114464,
+        "stop": 114984,
+        "text": " recorded during the recent London Meetup. As for us, well, we'll be back next week with our"
+      },
+      {
+        "start": 114984,
+        "stop": 115592,
+        "text": " take on the latest Linux and open source news. Thanks for joining us, and that's all the news"
+      },
+      {
+        "start": 115592,
+        "stop": 115768,
+        "text": " for this week."
+      },
+      {
+        "start": 115768,
+        "stop": 117768,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 694,
+      "nanos": 893322749
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 254",
+    "pictures": [],
+    "duration": {
+      "secs": 1173,
+      "nanos": 718000000
+    },
+    "unique_id": "http://linuxactionnews.com/254"
+  },
+  "episode": {
+    "title": "Linux Action News 254",
+    "description": "A Linux jailbreak that's a win for Right to Repair, our favorite things in Android 13, and the major features that just missed the Linux 6.0 window.",
+    "content": "<p><p>A Linux jailbreak that&#39;s a win for Right to Repair, our favorite things in Android 13, and the major features that just missed the Linux 6.0 window.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://android-developers.googleblog.com/2022/08/android-13-is-in-aosp.html\" title=\"Android 13 is in AOSP\" rel=\"nofollow\">Android 13 is in AOSP</a> &mdash; Today we’re pushing the Android 13 source to the Android Open Source Project (AOSP) and officially releasing the newest version of Android.</li><li><a href=\"https://www.phoronix.com/news/Android-13-AOSP\" title=\"Android 13 Sources Released To AOSP\" rel=\"nofollow\">Android 13 Sources Released To AOSP</a></li><li><a href=\"https://www.phoronix.com/news/Glibc-2.36-EAC-Problems\" title=\"Glibc 2.36 Dropping DT_HASH Has Been Breaking Easy Anti Cheat Games\" rel=\"nofollow\">Glibc 2.36 Dropping DT<em>HASH Has Been Breaking Easy Anti Cheat Games</a> &mdash; The breakage stems from the DT</em>HASH section being dropped in GNU C Library but EAC being among the few software still expecting that section rather than DT<em>GNU</em>HASH.</li><li><a href=\"https://twitter.com/plagman2/status/1559683905904463873\" title=\"Pierre-Loup Griffais on Twitter\" rel=\"nofollow\">Pierre-Loup Griffais on Twitter</a> &mdash; Unfortunate that upstream glibc discussion on DT<em>HASH isn't coming out strongly in favor of prioritizing compatibility with pre-existing applications. Every such instance contributes to damaging the idea of desktop Linux as a viable target for third-party developers.</li><li><a href=\"https://twitter.com/CarlosODonell/status/1556742747419181060\" title=\"Carlos O’Donell on Twitter\" rel=\"nofollow\">Carlos O’Donell on Twitter</a> &mdash; How far should Linux ELF follow the generic ELF standard (gABI)? We recently let distributions drop DT</em>HASH from glibc builds (mandatory under the gABI). This broke EPIC's Easy Anti-Cheat. We <em>should</em> ask the gABI for DT<em>HASH to be optional.</li><li><a href=\"https://github.com/ValveSoftware/Proton/issues/6051\" title=\"GLIBC update broke EAC for most games that use it\" rel=\"nofollow\">GLIBC update broke EAC for most games that use it</a> &mdash; Issue #6051 · ValveSoftware/Proton</li><li><a href=\"https://sourceware.org/pipermail/libc-alpha/2022-August/141304.html\" title=\"Should we make DT_HASH dynamic section for glibc?\" rel=\"nofollow\">Should we make DT</em>HASH dynamic section for glibc?</a></li><li><a href=\"https://groups.google.com/g/generic-abi/c/th5919osPAQ?pli=1\" title=\"gapi discussion: Making DT_HASH optional?\" rel=\"nofollow\">gapi discussion: Making DT<em>HASH optional?</a></li><li><a href=\"https://www.theregister.com/2022/08/15/linux_60_debuts_missing_some/\" title=\"Linux 6.0 debuts, missing some Rusty bits\" rel=\"nofollow\">Linux 6.0 debuts, missing some Rusty bits</a> &mdash; Emperor Penguin Linus Torvalds has released the first release candidate for Linux 6.0, but doesn't mind what you call it.</li><li><a href=\"https://www.zdnet.com/article/linux-6-0-arrives-with-performance-improvements-and-more-rust-coming/\" title=\"Linux 6.0 arrives with performance improvements and more Rust coming\" rel=\"nofollow\">Linux 6.0 arrives with performance improvements and more Rust coming</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.0-rc1-Released\" title=\"Linux 6.0-rc1 Released With Exciting Performance Optimizations\" rel=\"nofollow\">Linux 6.0-rc1 Released With Exciting Performance Optimizations</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.0-RT-Patches\" title=\"Real-Time “PREEMPT_RT” Not in 6.0-rc1\" rel=\"nofollow\">Real-Time “PREEMPT</em>RT” Not in 6.0-rc1</a> &mdash; Of the 50 patches, it's not too bad either as there are five patches for example that are rather trivial for just enabling real-time (RT) support in the Kconfig files for ARM / ARM64 / POWER / x86 / x86_64. There are also a handful of patches each specific to POWER and the i915 graphics driver code.</li><li><a href=\"https://bits.debian.org/2022/08/debian-turns-29.html\" title=\"Debian turns 29!\" rel=\"nofollow\">Debian turns 29!</a> &mdash; Today is Debian's 29th anniversary. We recently wrote about some ideas to celebrate DebianDay, and several events have been planned in more than 14 locations.</li><li><a href=\"https://wiki.debian.org/LocalGroups\" title=\"LocalGroups - Debian Wiki\" rel=\"nofollow\">LocalGroups - Debian Wiki</a></li><li><a href=\"https://www.wired.com/story/john-deere-tractor-jailbreak-defcon-2022/\" title=\"A New Jailbreak for John Deere Tractors Rides the Right-to-Repair Wave\" rel=\"nofollow\">A New Jailbreak for John Deere Tractors Rides the Right-to-Repair Wave</a> &mdash; An exploit that provides root access to two popular models of the company’s farm equipment.</li><li><a href=\"https://ni.hil.ist/@mu/108824144772569843\" title=\"mu on Twitter\" rel=\"nofollow\">mu on Twitter</a> &mdash; Sick Codes has jailbroken a John Deere, and this is just the beginning. Turns out our entire food system is built on outdated, unpatched Linux and Windows CE hardware with LTE modems.</li><li><a href=\"https://www.xda-developers.com/john-deere-right-to-repair-movement/\" title=\"How a version of Doom running on a John Deere tractor champions the right-to-repair movement\" rel=\"nofollow\">How a version of Doom running on a John Deere tractor champions the right-to-repair movement</a> &mdash; Sick Codes achieved this by working with different tractor control touchscreen consoles, narrowing it down to a select few models, and finding a way to exploit these devices.</li><li><a href=\"https://www.politico.com/newsletters/the-long-game/2022/07/22/right-to-repair-movement-goes-deere-hunting-00047357\" title=\"Right to repair movement goes Deere hunting\" rel=\"nofollow\">Right to repair movement goes Deere hunting</a></li><li><a href=\"https://www.agriculture.com/machinery/repair-maintenance/the-debate-for-right-to-repair-in-2022-joe-biden-jon-tester-john-deere\" title=\"The debate over right to repair in 2022 | Successful Farming\" rel=\"nofollow\">The debate over right to repair in 2022 | Successful Farming</a></li><li><a href=\"https://www.farm-equipment.com/articles/20002-deere-hit-with-class-action-lawsuit-over-right-to-repair\" title=\"Deere Hit with Class Action Lawsuit Over Right to Repair\" rel=\"nofollow\">Deere Hit with Class Action Lawsuit Over Right to Repair</a></li><li><a href=\"https://latenightlinux.com/late-night-linux-episode-190/\" title=\"Late Night Linux – Episode 190\" rel=\"nofollow\">Late Night Linux – Episode 190</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8716",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15580370/29abb6ef-4cea-47eb-afce-d62c3202b521.mp3",
+      "length": "16872017",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-18T20:40:00+02:00"
+  },
+  "speedup": 1.6890622
+}

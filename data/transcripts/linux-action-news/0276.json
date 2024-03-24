@@ -1,0 +1,1282 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 944,
+        "text": " Hello and welcome to Linux Action News, Episode 276 recorded on January 18th, 2023."
+      },
+      {
+        "start": 944,
+        "stop": 1156,
+        "text": " I'm Chris and I'm Wes."
+      },
+      {
+        "start": 1156,
+        "stop": 1408,
+        "text": " Hello Wes, let's do the news."
+      },
+      {
+        "start": 1408,
+        "stop": 1848,
+        "text": " If you've ever configured only an expire wall, then you're probably familiar with Net"
+      },
+      {
+        "start": 1848,
+        "stop": 1948,
+        "text": " Filter."
+      },
+      {
+        "start": 1948,
+        "stop": 2392,
+        "text": " The community-driven FOSS project that provides packet filtering and other networking"
+      },
+      {
+        "start": 2392,
+        "stop": 2632,
+        "text": " goodies for the Linux kernel."
+      },
+      {
+        "start": 2632,
+        "stop": 3084,
+        "text": " It powers both IP tables and its successor, NF tables."
+      },
+      {
+        "start": 3084,
+        "stop": 3664,
+        "text": " Well, this week, a significant vulnerability was discovered in NetFilter that could leak"
+      },
+      {
+        "start": 3664,
+        "stop": 4240,
+        "text": " stack and heap addresses, and potentially allow local privilege escalation on vulnerable"
+      },
+      {
+        "start": 4240,
+        "stop": 4420,
+        "text": " Linux systems."
+      },
+      {
+        "start": 4420,
+        "stop": 4884,
+        "text": " Indeed, it's known now as CVE20230179."
+      },
+      {
+        "start": 4884,
+        "stop": 5140,
+        "text": " So keep your eyes out for patches that address that."
+      },
+      {
+        "start": 5140,
+        "stop": 5568,
+        "text": " We know at the moment it seems to impact Rail 9, and of course versions of Debbie and"
+      },
+      {
+        "start": 5568,
+        "stop": 5668,
+        "text": " its derivatives."
+      },
+      {
+        "start": 5668,
+        "stop": 5856,
+        "text": " So you'll want to watch for this one."
+      },
+      {
+        "start": 5856,
+        "stop": 6408,
+        "text": " What happened was a researcher was auditing the RC1 for Linux 6.2, which will be releasing"
+      },
+      {
+        "start": 6408,
+        "stop": 6836,
+        "text": " soon, and they discovered this buffer overflow vulnerability."
+      },
+      {
+        "start": 6836,
+        "stop": 7384,
+        "text": " The researcher brought this to the Linux-distrose mailing list on early January 11."
+      },
+      {
+        "start": 7384,
+        "stop": 7900,
+        "text": " Red had assigned the CVEID on the same day, and after some concerns raised by Greg"
+      },
+      {
+        "start": 7900,
+        "stop": 8316,
+        "text": " Gage around the initial disclosure of the flaw, he helped the researcher bring this to"
+      },
+      {
+        "start": 8316,
+        "stop": 8668,
+        "text": " the attention of the NetFilter maintainers."
+      },
+      {
+        "start": 8668,
+        "stop": 9128,
+        "text": " The flaw can be exploited when NetFilter reads network packets that have an encapsulated"
+      },
+      {
+        "start": 9128,
+        "stop": 9228,
+        "text": " VLAN tag."
+      },
+      {
+        "start": 9228,
+        "stop": 9756,
+        "text": " While processing the packet data, NetFilter fails to account for the possibly increased"
+      },
+      {
+        "start": 9756,
+        "stop": 9996,
+        "text": " size of the data it's handling."
+      },
+      {
+        "start": 9996,
+        "stop": 10504,
+        "text": " Specifically, if that data's offset combined with its length goes over the allowed size"
+      },
+      {
+        "start": 10504,
+        "stop": 11068,
+        "text": " of the Ethernet and VLAN headers combined, then the length is adjusted to copy the bytes"
+      },
+      {
+        "start": 11068,
+        "stop": 11672,
+        "text": " that are within the boundaries, but the remaining bytes are copied directly from the socket"
+      },
+      {
+        "start": 11672,
+        "stop": 12056,
+        "text": " buffer area into memory."
+      },
+      {
+        "start": 12056,
+        "stop": 12600,
+        "text": " But the remaining bytes beyond the Ethernet and VLAN headers are copied directly from"
+      },
+      {
+        "start": 12600,
+        "stop": 13196,
+        "text": " the socket buffer data area, which allows for the possible stack overflow."
+      },
+      {
+        "start": 13196,
+        "stop": 13636,
+        "text": " Yeah, now the attacker does need to be on the same network they're attacking, and of"
+      },
+      {
+        "start": 13636,
+        "stop": 14052,
+        "text": " course the host needs to be running one of these vulnerable kernels, but there are"
+      },
+      {
+        "start": 14052,
+        "stop": 14240,
+        "text": " several re- there's years of them apparently."
+      },
+      {
+        "start": 14240,
+        "stop": 14488,
+        "text": " So you have to keep that in mind."
+      },
+      {
+        "start": 14488,
+        "stop": 15080,
+        "text": " And something else to consider, this exploit can be used for different kinds of attacks,"
+      },
+      {
+        "start": 15080,
+        "stop": 15180,
+        "text": " really."
+      },
+      {
+        "start": 15180,
+        "stop": 15420,
+        "text": " I mean, yes, the one we've talked about here is the buffer overflow tag that could"
+      },
+      {
+        "start": 15420,
+        "stop": 15692,
+        "text": " conceivably allow you to execute code directly on the system."
+      },
+      {
+        "start": 15692,
+        "stop": 15912,
+        "text": " That's the worst case scenario."
+      },
+      {
+        "start": 15912,
+        "stop": 16476,
+        "text": " But you could also just use this vulnerability to collect information about a host remotely,"
+      },
+      {
+        "start": 16476,
+        "stop": 16900,
+        "text": " information that you could then leverage into a more significant kind of attack."
+      },
+      {
+        "start": 16900,
+        "stop": 17352,
+        "text": " And that is something the researchers have seemingly already pulled off."
+      },
+      {
+        "start": 17352,
+        "stop": 17824,
+        "text": " Now since not every distribution has patched this yet, we thought we'd pass along a quick"
+      },
+      {
+        "start": 17824,
+        "stop": 17964,
+        "text": " workaround."
+      },
+      {
+        "start": 17964,
+        "stop": 18372,
+        "text": " If you can't patch for whatever reason or your distribution hasn't sent you a patch yet,"
+      },
+      {
+        "start": 18372,
+        "stop": 18836,
+        "text": " you can disable unprivileged user namespaces, which should prevent exploitation."
+      },
+      {
+        "start": 18836,
+        "stop": 19508,
+        "text": " And we'll have a link in the notes with more details."
+      },
+      {
+        "start": 19508,
+        "stop": 19916,
+        "text": " Kevin's favorite Linux virtualization API got a nice update this week."
+      },
+      {
+        "start": 19916,
+        "stop": 20180,
+        "text": " Libvert 9.0 was released on Monday."
+      },
+      {
+        "start": 20180,
+        "stop": 20688,
+        "text": " Now backed by Red Hat, Libvert was first released in 2005 by Daniel Burnage while working"
+      },
+      {
+        "start": 20688,
+        "stop": 20848,
+        "text": " at Kubernet."
+      },
+      {
+        "start": 20848,
+        "stop": 21412,
+        "text": " Libvert provides a portable long-term, stable-sea API for managing the virtualization technologies"
+      },
+      {
+        "start": 21412,
+        "stop": 21616,
+        "text": " that are offered by Linux."
+      },
+      {
+        "start": 21616,
+        "stop": 21860,
+        "text": " Not just Linux anymore either."
+      },
+      {
+        "start": 21860,
+        "stop": 22176,
+        "text": " It also targets Windows and macOS."
+      },
+      {
+        "start": 22176,
+        "stop": 22692,
+        "text": " But it's really expanded over the years into one of the default virtualization platforms"
+      },
+      {
+        "start": 22692,
+        "stop": 22792,
+        "text": " on the market."
+      },
+      {
+        "start": 22792,
+        "stop": 23328,
+        "text": " And it's got robust library support too, from popular programming languages like C, Python,"
+      },
+      {
+        "start": 23328,
+        "stop": 23588,
+        "text": " Go, and more."
+      },
+      {
+        "start": 23588,
+        "stop": 24176,
+        "text": " With 9.0, Libvert had support for external snapshot deletion, at least with QEMU, using"
+      },
+      {
+        "start": 24176,
+        "stop": 24376,
+        "text": " its existing API."
+      },
+      {
+        "start": 24376,
+        "stop": 25080,
+        "text": " 9.0 also now supports past or plug a simple socket transport for connecting an emulated"
+      },
+      {
+        "start": 25080,
+        "stop": 25312,
+        "text": " network device to the host network."
+      },
+      {
+        "start": 25312,
+        "stop": 25576,
+        "text": " Again, this needs QEMU."
+      },
+      {
+        "start": 25576,
+        "stop": 25772,
+        "text": " That sounds pretty handy though."
+      },
+      {
+        "start": 25772,
+        "stop": 26248,
+        "text": " And of course, Libvert supports more than just QEMU, but it seems like those particular"
+      },
+      {
+        "start": 26248,
+        "stop": 26416,
+        "text": " updates are really significant."
+      },
+      {
+        "start": 26416,
+        "stop": 26712,
+        "text": " And I got to imagine it's one of the more popular ways people interact with it."
+      },
+      {
+        "start": 26712,
+        "stop": 26992,
+        "text": " I just have a real soft spot for this project."
+      },
+      {
+        "start": 26992,
+        "stop": 27276,
+        "text": " I still remember when it was brand new."
+      },
+      {
+        "start": 27276,
+        "stop": 27828,
+        "text": " And it really was one of those technologies that helped turn Linux into a virtualization"
+      },
+      {
+        "start": 27828,
+        "stop": 27928,
+        "text": " powerhouse."
+      },
+      {
+        "start": 28056,
+        "stop": 29116,
+        "text": " The JFS file system was first introduced to the Linux kernel way back in version 2.4.19,"
+      },
+      {
+        "start": 29116,
+        "stop": 29492,
+        "text": " released in October 2001."
+      },
+      {
+        "start": 29492,
+        "stop": 30192,
+        "text": " IBM developed the JFS file system originally in the 90s for AIX, and then the second generation"
+      },
+      {
+        "start": 30192,
+        "stop": 30660,
+        "text": " implementation was ported over to Linux after it was made open source."
+      },
+      {
+        "start": 30660,
+        "stop": 31120,
+        "text": " And saying it was originally developed for AIX, maybe makes it sound old now, but you have"
+      },
+      {
+        "start": 31120,
+        "stop": 31444,
+        "text": " to understand back in the day, that actually gave it some credibility."
+      },
+      {
+        "start": 31444,
+        "stop": 32012,
+        "text": " And much like our beloved RizerFS file system, the kernel team now in present day is preparing"
+      },
+      {
+        "start": 32012,
+        "stop": 32524,
+        "text": " to deprecate and eventually just completely remove the tried and true journaled file system."
+      },
+      {
+        "start": 32524,
+        "stop": 32976,
+        "text": " All good things must indeed come to an end."
+      },
+      {
+        "start": 32976,
+        "stop": 33404,
+        "text": " But realistically here, JFS is not widely used."
+      },
+      {
+        "start": 33404,
+        "stop": 33908,
+        "text": " And no Linux distribution we know of has ever used it as a default file system."
+      },
+      {
+        "start": 33908,
+        "stop": 34444,
+        "text": " I mean, heck, we love playing around with half-baked file systems and we've never even bothered"
+      },
+      {
+        "start": 34444,
+        "stop": 34544,
+        "text": " to use it."
+      },
+      {
+        "start": 34544,
+        "stop": 34756,
+        "text": " Yeah, that's probably pretty true."
+      },
+      {
+        "start": 34756,
+        "stop": 35072,
+        "text": " I don't know if I ever have used JFS, definitely not recently."
+      },
+      {
+        "start": 35072,
+        "stop": 35748,
+        "text": " I mean, maybe back in the battle days before the extended file system had journaling that"
+      },
+      {
+        "start": 35748,
+        "stop": 36092,
+        "text": " there was a time, but that's when we used Rizer."
+      },
+      {
+        "start": 36092,
+        "stop": 36372,
+        "text": " So I don't think so."
+      },
+      {
+        "start": 36372,
+        "stop": 36720,
+        "text": " But I don't think I've seen any new patches land in years."
+      },
+      {
+        "start": 36720,
+        "stop": 36908,
+        "text": " So I guess it kind of makes sense."
+      },
+      {
+        "start": 36908,
+        "stop": 37344,
+        "text": " This is coming long time, Colonel developer, Christophe Hellwig has now just raised the idea"
+      },
+      {
+        "start": 37344,
+        "stop": 37476,
+        "text": " of orphanine JFS."
+      },
+      {
+        "start": 37476,
+        "stop": 38028,
+        "text": " He wrote, quote, \"a while ago we deprecated RizerFS and scheduled it for removal."
+      },
+      {
+        "start": 38028,
+        "stop": 38440,
+        "text": " Looking into the Harry Metapage code in JFS, I wonder if we should do the same."
+      },
+      {
+        "start": 38440,
+        "stop": 39044,
+        "text": " While JFS isn't anywhere as complicated as RizerFS, it's also way less used and never"
+      },
+      {
+        "start": 39044,
+        "stop": 39496,
+        "text": " made it to be the default file system in any major distribution.\""
+      },
+      {
+        "start": 39496,
+        "stop": 39948,
+        "text": " Huh, sounds like they don't know of any district that's shifted either."
+      },
+      {
+        "start": 39948,
+        "stop": 40560,
+        "text": " Well, no firm plans have been made just yet, but we're officially putting JFS on the"
+      },
+      {
+        "start": 40560,
+        "stop": 40804,
+        "text": " Action Death Watch list."
+      },
+      {
+        "start": 40804,
+        "stop": 41412,
+        "text": " And quite seriously, if you currently are really ever have used JFS in production,"
+      },
+      {
+        "start": 41412,
+        "stop": 41920,
+        "text": " please write in and tell us about it."
+      },
+      {
+        "start": 41920,
+        "stop": 42780,
+        "text": " And it's a great way to support the show while you are checking out some fast, reliable"
+      },
+      {
+        "start": 42780,
+        "stop": 43124,
+        "text": " cloud hosting that I give my 100% endorsement to."
+      },
+      {
+        "start": 43124,
+        "stop": 43432,
+        "text": " I think they're the best in the business and they back it with the best support in the"
+      },
+      {
+        "start": 43432,
+        "stop": 43560,
+        "text": " business as well."
+      },
+      {
+        "start": 43560,
+        "stop": 43792,
+        "text": " Real humans all day, every day."
+      },
+      {
+        "start": 43792,
+        "stop": 44320,
+        "text": " They're 30 to 50% cheaper than the hyperscalers that have those crazy esoteric platforms"
+      },
+      {
+        "start": 44320,
+        "stop": 44480,
+        "text": " that are always trying to upsell you."
+      },
+      {
+        "start": 44480,
+        "stop": 44676,
+        "text": " And on top of that, their performance is great."
+      },
+      {
+        "start": 44676,
+        "stop": 44828,
+        "text": " I think it's better than the hyperscalers."
+      },
+      {
+        "start": 44828,
+        "stop": 45208,
+        "text": " I think it's better than any place I've ever hosted my infrastructure."
+      },
+      {
+        "start": 45208,
+        "stop": 45756,
+        "text": " They got 11 data centers today, but they're spinning up a dozen more this year."
+      },
+      {
+        "start": 45756,
+        "stop": 46084,
+        "text": " And they have great features such as Object Storage Cloud Firewall, Backup, Kubernetes"
+      },
+      {
+        "start": 46084,
+        "stop": 46324,
+        "text": " Terraform Support, Ansible, and more."
+      },
+      {
+        "start": 46324,
+        "stop": 46792,
+        "text": " Plus an API that's clean, well documented, and there's plenty of libraries good and ready"
+      },
+      {
+        "start": 46792,
+        "stop": 47180,
+        "text": " to go for you to use, not to mention a command line client, which also takes advantage"
+      },
+      {
+        "start": 47180,
+        "stop": 47280,
+        "text": " of that API."
+      },
+      {
+        "start": 47280,
+        "stop": 47528,
+        "text": " That's how I get all my files up on Object Storage."
+      },
+      {
+        "start": 47528,
+        "stop": 47704,
+        "text": " I think you're really going to be impressed by Lino."
+      },
+      {
+        "start": 47704,
+        "stop": 48112,
+        "text": " I certainly was and I suspect Lino thinks so as well."
+      },
+      {
+        "start": 48112,
+        "stop": 48288,
+        "text": " That's why they're giving you a hundred bucks."
+      },
+      {
+        "start": 48288,
+        "stop": 48388,
+        "text": " So go try it."
+      },
+      {
+        "start": 48388,
+        "stop": 48488,
+        "text": " Go take advantage of it."
+      },
+      {
+        "start": 48488,
+        "stop": 48588,
+        "text": " Go build something."
+      },
+      {
+        "start": 48588,
+        "stop": 48688,
+        "text": " Go learn something."
+      },
+      {
+        "start": 48688,
+        "stop": 48960,
+        "text": " Try it for yourself and support the show."
+      },
+      {
+        "start": 48960,
+        "stop": 49200,
+        "text": " Lino is what we use for everything we deploy."
+      },
+      {
+        "start": 49200,
+        "stop": 49412,
+        "text": " Lino.com/LAN."
+      },
+      {
+        "start": 49412,
+        "stop": 49960,
+        "text": " That's Lino.com/LAN."
+      },
+      {
+        "start": 49960,
+        "stop": 50144,
+        "text": " And thanks to Collide."
+      },
+      {
+        "start": 50144,
+        "stop": 50520,
+        "text": " Visit collide.com/LAN."
+      },
+      {
+        "start": 50520,
+        "stop": 51052,
+        "text": " You know the old saying, \"When the only tool you have is a hammer, everything looks like"
+      },
+      {
+        "start": 51052,
+        "stop": 51208,
+        "text": " a nail.\""
+      },
+      {
+        "start": 51208,
+        "stop": 51760,
+        "text": " The traditional approach to device security is that hammer, a blunt instrument that can't"
+      },
+      {
+        "start": 51760,
+        "stop": 52028,
+        "text": " solve nuanced problems."
+      },
+      {
+        "start": 52028,
+        "stop": 52572,
+        "text": " Even after installing clunky agents that users hate, IT teams still have to deal with"
+      },
+      {
+        "start": 52572,
+        "stop": 53056,
+        "text": " mountains of support tickets over the same old issues."
+      },
+      {
+        "start": 53056,
+        "stop": 53492,
+        "text": " And they have no way to address things like unencrypted SSH keys, operating system"
+      },
+      {
+        "start": 53492,
+        "stop": 53980,
+        "text": " updates, or pretty much anything going on with a Linux device."
+      },
+      {
+        "start": 53980,
+        "stop": 54568,
+        "text": " Collide is an endpoint security solution that's more like a Swiss Army Knife."
+      },
+      {
+        "start": 54568,
+        "stop": 55224,
+        "text": " It gives IT teams a single dashboard for all devices, Mac, Windows, and even Linux."
+      },
+      {
+        "start": 55224,
+        "stop": 55704,
+        "text": " And you can query your entire fleet to check for common compliance issues or write your"
+      },
+      {
+        "start": 55704,
+        "stop": 55924,
+        "text": " own custom checks."
+      },
+      {
+        "start": 55924,
+        "stop": 56456,
+        "text": " Plus, instead of installing intrusive software that creates more work for IT, collides"
+      },
+      {
+        "start": 56456,
+        "stop": 57068,
+        "text": " lightweight agent shows end users how to fix issues themselves."
+      },
+      {
+        "start": 57068,
+        "stop": 57536,
+        "text": " You can achieve endpoint compliance by adding a new tool to your toolbox."
+      },
+      {
+        "start": 57536,
+        "stop": 57912,
+        "text": " Visit collide.com/LAN to find out how."
+      },
+      {
+        "start": 57912,
+        "stop": 58684,
+        "text": " That's KOL IDE.com/LAN."
+      },
+      {
+        "start": 58684,
+        "stop": 59144,
+        "text": " After an initial delay, Mozilla has shipped a controversial update that slipped into Firefox"
+      },
+      {
+        "start": 59144,
+        "stop": 59244,
+        "text": " 109."
+      },
+      {
+        "start": 59244,
+        "stop": 59648,
+        "text": " Now, it's a long, with several bug fixes and improvements for Linux users."
+      },
+      {
+        "start": 59648,
+        "stop": 59792,
+        "text": " So it's definitely worth the upgrade."
+      },
+      {
+        "start": 59792,
+        "stop": 60220,
+        "text": " It fixes things like resolving an issue where the YouTube seek bar sometimes didn't work"
+      },
+      {
+        "start": 60220,
+        "stop": 60768,
+        "text": " right, or issues that cause Firefox to just simply crash when using Sway, just as a couple"
+      },
+      {
+        "start": 60768,
+        "stop": 60904,
+        "text": " of examples."
+      },
+      {
+        "start": 60904,
+        "stop": 61244,
+        "text": " But there is a feature that's concerned folks in the most recent Firefox, and it's"
+      },
+      {
+        "start": 61244,
+        "stop": 61792,
+        "text": " the addition of manifest version three extension support."
+      },
+      {
+        "start": 61792,
+        "stop": 62428,
+        "text": " Use the version manifest standard set by Google comes the removal and support for extensions"
+      },
+      {
+        "start": 62428,
+        "stop": 63180,
+        "text": " that use the web request API, which many ad blockers and privacy tools rely on."
+      },
+      {
+        "start": 63180,
+        "stop": 63700,
+        "text": " However, Mozilla has signaled their empathetic to these concerns, and have committed to working"
+      },
+      {
+        "start": 63700,
+        "stop": 64204,
+        "text": " with extension developers to transition to the newer API while promising to leave version"
+      },
+      {
+        "start": 64204,
+        "stop": 64640,
+        "text": " two in place for at least some time."
+      },
+      {
+        "start": 64640,
+        "stop": 65184,
+        "text": " These manifest version three extensions, named as such by Google, change how extensions interact"
+      },
+      {
+        "start": 65184,
+        "stop": 65408,
+        "text": " with the network, amongst other things."
+      },
+      {
+        "start": 65408,
+        "stop": 65836,
+        "text": " So instead of having direct access to the network, and even being able to manipulate network"
+      },
+      {
+        "start": 65836,
+        "stop": 66316,
+        "text": " traffic, which could potentially be a security risk depending on how you look at it, the"
+      },
+      {
+        "start": 66316,
+        "stop": 66816,
+        "text": " browser will now handle and forward that required data to the extension."
+      },
+      {
+        "start": 66816,
+        "stop": 67284,
+        "text": " Google and Mozilla say that this new declarative net request API will also improve browser"
+      },
+      {
+        "start": 67284,
+        "stop": 67768,
+        "text": " performance as the extension accessing your network traffic can no longer hold up the browser's"
+      },
+      {
+        "start": 67768,
+        "stop": 67868,
+        "text": " rendering process."
+      },
+      {
+        "start": 67868,
+        "stop": 68472,
+        "text": " And in the case of Firefox, there should be this new manifest fee three with a dedicated"
+      },
+      {
+        "start": 68472,
+        "stop": 68680,
+        "text": " extensions menu."
+      },
+      {
+        "start": 68680,
+        "stop": 69248,
+        "text": " This new management UI allows you to enable and disable extensions per site now, at least"
+      },
+      {
+        "start": 69248,
+        "stop": 69652,
+        "text": " assuming that particular extension has been updated to manifest fee three."
+      },
+      {
+        "start": 69652,
+        "stop": 69892,
+        "text": " Yeah, and not everybody's loving that new button."
+      },
+      {
+        "start": 69892,
+        "stop": 70112,
+        "text": " So if you do search around, there is a way to disable it."
+      },
+      {
+        "start": 70112,
+        "stop": 70424,
+        "text": " Can be done, but you have to go into the config options."
+      },
+      {
+        "start": 70424,
+        "stop": 70948,
+        "text": " Some of the reasons that were cited by Mozilla for this transition is compatibility with"
+      },
+      {
+        "start": 70948,
+        "stop": 71164,
+        "text": " future Chrome extensions."
+      },
+      {
+        "start": 71164,
+        "stop": 71648,
+        "text": " Mozilla stated that ultimately they feel it's better for the end user if browser extensions"
+      },
+      {
+        "start": 71648,
+        "stop": 72032,
+        "text": " are cross browser compatible."
+      },
+      {
+        "start": 72032,
+        "stop": 72688,
+        "text": " I suppose there is some logic in that, even if it's a controversial standard."
+      },
+      {
+        "start": 72688,
+        "stop": 73184,
+        "text": " In summary, though, the declarative net request API, well, it's aiming to reduce the risk"
+      },
+      {
+        "start": 73184,
+        "stop": 73664,
+        "text": " of malicious extensions, intercepting sensitive information or being able to inject malicious"
+      },
+      {
+        "start": 73664,
+        "stop": 74316,
+        "text": " code into network requests, while also aiming to improve the browser's performance."
+      },
+      {
+        "start": 74316,
+        "stop": 74900,
+        "text": " But developers are expressing some concerns around a few key areas."
+      },
+      {
+        "start": 74900,
+        "stop": 75416,
+        "text": " To start with, some of those requests that get blocked, well, those also have an impact"
+      },
+      {
+        "start": 75416,
+        "stop": 75984,
+        "text": " on performance, and if they no longer are blocked, that can slow down the browser in its own way."
+      },
+      {
+        "start": 75984,
+        "stop": 76368,
+        "text": " Plus, the introduction of stricter extension signing requirements that's coming along with"
+      },
+      {
+        "start": 76368,
+        "stop": 76468,
+        "text": " this?"
+      },
+      {
+        "start": 76468,
+        "stop": 76916,
+        "text": " Well, that may make it more difficult for small independent developers to distribute their extensions."
+      },
+      {
+        "start": 76916,
+        "stop": 77464,
+        "text": " That's one thing if you're a big dev shop whose primary product is an extension."
+      },
+      {
+        "start": 77464,
+        "stop": 77836,
+        "text": " It's a whole other thing if you just have a whim and want to make a little useful extension"
+      },
+      {
+        "start": 77836,
+        "stop": 78208,
+        "text": " for yourself and a few others in your community."
+      },
+      {
+        "start": 78208,
+        "stop": 78736,
+        "text": " Also, the removal of the ability to hide extensions from the user interface could make"
+      },
+      {
+        "start": 78736,
+        "stop": 79040,
+        "text": " it harder for users to manage their extensions."
+      },
+      {
+        "start": 79040,
+        "stop": 79520,
+        "text": " And finally, the increase in review times for extensions could make it more difficult for"
+      },
+      {
+        "start": 79520,
+        "stop": 80008,
+        "text": " developers to get their extensions and their updates to users in a timely manner."
+      },
+      {
+        "start": 80008,
+        "stop": 80116,
+        "text": " Yeah, that one's interesting."
+      },
+      {
+        "start": 80116,
+        "stop": 80544,
+        "text": " Mozilla has said that part of this change will involve a more thorough review process for"
+      },
+      {
+        "start": 80544,
+        "stop": 80968,
+        "text": " extensions before they're allowed to be distributed inside the Firefox browser."
+      },
+      {
+        "start": 80968,
+        "stop": 81320,
+        "text": " And I can see why developers would seem to be concerned that that's going to make things"
+      },
+      {
+        "start": 81320,
+        "stop": 81816,
+        "text": " just take longer, and it may delay updates to end users."
+      },
+      {
+        "start": 81816,
+        "stop": 82264,
+        "text": " And additionally, the review process looks like it'll be more stringent for extensions that"
+      },
+      {
+        "start": 82264,
+        "stop": 82832,
+        "text": " have access to more sensitive browser data, and that's also likely to increase the review"
+      },
+      {
+        "start": 82832,
+        "stop": 82932,
+        "text": " time."
+      },
+      {
+        "start": 82932,
+        "stop": 83464,
+        "text": " The developer of one of the most widely used ad block extensions, UBlock Origin, has said"
+      },
+      {
+        "start": 83464,
+        "stop": 84024,
+        "text": " that the new API is less powerful than the old web request API, and will make it more"
+      },
+      {
+        "start": 84024,
+        "stop": 84420,
+        "text": " difficult to create an efficient ad blocking extension."
+      },
+      {
+        "start": 84420,
+        "stop": 84956,
+        "text": " He also stated that the new API may also increase the memory usage of the browser and"
+      },
+      {
+        "start": 84956,
+        "stop": 85360,
+        "text": " that it could make it more difficult for users to customize their browsing experience."
+      },
+      {
+        "start": 85360,
+        "stop": 85856,
+        "text": " So, it's not all wins here in terms of performance."
+      },
+      {
+        "start": 85856,
+        "stop": 86348,
+        "text": " The developer of another popular ad blocking extension, ad block plus, commented on the changes"
+      },
+      {
+        "start": 86348,
+        "stop": 86868,
+        "text": " as well, and echoed the concerns that this new API is less powerful, and that these changes"
+      },
+      {
+        "start": 86868,
+        "stop": 87364,
+        "text": " could make it more difficult to create an efficient and well functioning ad blocking or privacy"
+      },
+      {
+        "start": 87364,
+        "stop": 87464,
+        "text": " extension."
+      },
+      {
+        "start": 87464,
+        "stop": 87992,
+        "text": " Now, some ad blockers have been able to create an alternative solution to the declarative"
+      },
+      {
+        "start": 87992,
+        "stop": 88352,
+        "text": " net request API to just sort of keep things working."
+      },
+      {
+        "start": 88352,
+        "stop": 88880,
+        "text": " Still though, it may require more resources to develop these workarounds, and to ultimately"
+      },
+      {
+        "start": 88880,
+        "stop": 89180,
+        "text": " maintain the extensions we've come to rely on."
+      },
+      {
+        "start": 89212,
+        "stop": 89616,
+        "text": " Yeah, and likely just more expertise to know how to do those workarounds."
+      },
+      {
+        "start": 89616,
+        "stop": 90012,
+        "text": " And the situation seems even more concerning in Chrome land."
+      },
+      {
+        "start": 90012,
+        "stop": 90400,
+        "text": " At least Mozilla seems to be committed to working with developers on keeping version two of"
+      },
+      {
+        "start": 90400,
+        "stop": 90912,
+        "text": " the manifest around for a while and making concessions to their version three implementation"
+      },
+      {
+        "start": 90912,
+        "stop": 91192,
+        "text": " that could keep some of these ad blocking extensions working."
+      },
+      {
+        "start": 91192,
+        "stop": 91388,
+        "text": " It's really Google's move now."
+      },
+      {
+        "start": 91388,
+        "stop": 91916,
+        "text": " They kicked this whole discussion off, and now Firefox has managed to ship this before"
+      },
+      {
+        "start": 91916,
+        "stop": 92484,
+        "text": " Google has shipped it in Chrome, and I think Mozilla has managed to do it in a much more reasonable,"
+      },
+      {
+        "start": 92484,
+        "stop": 92652,
+        "text": " much more balanced approach."
+      },
+      {
+        "start": 92652,
+        "stop": 93200,
+        "text": " And so now, you know, if Google ships it the way they originally intended much more restrictive,"
+      },
+      {
+        "start": 93200,
+        "stop": 93372,
+        "text": " they're going to look like the bullying a sense."
+      },
+      {
+        "start": 93372,
+        "stop": 93688,
+        "text": " But it's definitely just something for us to keep our eye on in general."
+      },
+      {
+        "start": 93688,
+        "stop": 94000,
+        "text": " You know we're going to report back to you and we find something new that develops that's"
+      },
+      {
+        "start": 94000,
+        "stop": 94484,
+        "text": " worth your attention, just like we do for the entire world of Linux and open source."
+      },
+      {
+        "start": 94484,
+        "stop": 94896,
+        "text": " So be sure you don't miss a single episode head over to Linux action news.com/subs."
+      },
+      {
+        "start": 94896,
+        "stop": 95276,
+        "text": " Subscribe for all the ways to get every single new episode."
+      },
+      {
+        "start": 95276,
+        "stop": 95924,
+        "text": " And Linux action news.com/contact to let us know which niche file system you're using this"
+      },
+      {
+        "start": 95924,
+        "stop": 96024,
+        "text": " week."
+      },
+      {
+        "start": 96024,
+        "stop": 96444,
+        "text": " And don't forget, if you'd like an ad free version of this here show, you can become a"
+      },
+      {
+        "start": 96444,
+        "stop": 96912,
+        "text": " two-bit or dot party member and you get all the JB shows ad free, including this here"
+      },
+      {
+        "start": 96912,
+        "stop": 97036,
+        "text": " Linux action news."
+      },
+      {
+        "start": 97036,
+        "stop": 97584,
+        "text": " And don't worry, whichever feeds you cats, I'll be back next week with our take on the latest"
+      },
+      {
+        "start": 97584,
+        "stop": 97864,
+        "text": " Linux and open source news."
+      },
+      {
+        "start": 97864,
+        "stop": 98136,
+        "text": " Thanks for joining us and that's all the news for this week."
+      },
+      {
+        "start": 98136,
+        "stop": 99936,
+        "text": " [Music]"
+      },
+      {
+        "start": 99936,
+        "stop": 100336,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 17,
+      "nanos": 360609674
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 276",
+    "pictures": [],
+    "duration": {
+      "secs": 999,
+      "nanos": 440000000
+    },
+    "unique_id": "http://linuxactionnews.com/276"
+  },
+  "episode": {
+    "title": "Linux Action News 276",
+    "description": "A high-profile Linux kernel network flaw, we put JFS on a death watch, and break down the controversial Firefox update this week.",
+    "content": "<p><p>A high-profile Linux kernel network flaw, we put JFS on a death watch, and break down the controversial Firefox update this week.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://l.kolide.co/3klbWzr\" rel=\"nofollow\">Kolide</a>: <a href=\"https://l.kolide.co/3klbWzr\" rel=\"nofollow\">Kolide can help you nail third-party audits and internal compliance goals with endpoint security for your entire fleet. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://seclists.org/oss-sec/2023/q1/20\" title=\"A new privilege escalation vulnerability in the Linux kernel\" rel=\"nofollow\">A new privilege escalation vulnerability in the Linux kernel</a> &mdash; The vulnerability consists of a stack buffer overflow due to an integer\nunderflow vulnerability inside the nft<em>payload</em>copy<em>vlan function, which is\ninvoked with nft</em>payload expressions as long as a VLAN tag is present in\nthe current skb.</li><li><a href=\"https://github.com/torvalds/linux/commit/f6ae9f1\" title=\"netfilter: nft_payload: add C-VLAN support · torvalds/linux@f6ae9f1\" rel=\"nofollow\">netfilter: nft<em>payload: add C-VLAN support · torvalds/linux@f6ae9f1</a></li><li><a href=\"https://security-tracker.debian.org/tracker/CVE-2023-0179\" title=\"CVE-2023-0179\" rel=\"nofollow\">CVE-2023-0179</a></li><li><a href=\"https://access.redhat.com/security/cve/cve-2023-0179\" title=\"CVE-2023-0179- Red Hat Customer Portal\" rel=\"nofollow\">CVE-2023-0179- Red Hat Customer Portal</a></li><li><a href=\"https://patchwork.ozlabs.org/project/netfilter-devel/patch/20230111212251.193032-4-pablo@netfilter.org/\" title=\"[net,3/3] netfilter: nft_payload: incorrect arithmetics when fetching VLAN header bits - Patchwork\" rel=\"nofollow\">[net,3/3] netfilter: nft</em>payload: incorrect arithmetics when fetching VLAN header bits - Patchwork</a></li><li><a href=\"https://seclists.org/oss-sec/2023/q1/22\" title=\"oss-sec: Re: CVE-2023-0179: Linux kernel stack buffer overflow in nftables: PoC and writeup\" rel=\"nofollow\">oss-sec: Re: CVE-2023-0179: Linux kernel stack buffer overflow in nftables: PoC and writeup</a></li><li><a href=\"https://www.phoronix.com/news/libvirt-9.0\" title=\"libvirt 9.0 Released For Latest Linux Virtualization API\" rel=\"nofollow\">libvirt 9.0 Released For Latest Linux Virtualization API</a> &mdash; Libvirt 9.0 adds support for external snapshot deletion with QEMU using its existing API, libvirt 9.0 with QEMU now supports PASST as \"Plug A Simple Socket Transport\" for connecting an emulated network device to the host's network, QEMU external back-end support for SWTPM as a software Trusted Platform Module (TPM), support for passing file descriptors rather than passing files for the QEMU disk, and other additions. </li><li><a href=\"https://www.phoronix.com/news/Linux-Possible-Orphan-JFS\" title=\"JFS Filesystem’s Days are Numbered\" rel=\"nofollow\">JFS Filesystem’s Days are Numbered</a> &mdash; IBM developed the JFS file-system originally in the 90's for AIX and the second-generation implementation then ported to Linux after it was made open-source. </li><li><a href=\"https://www.mozilla.org/en-US/firefox/109.0/releasenotes/\" title=\"Firefox 109.0 Ships Manifest Version 3\" rel=\"nofollow\">Firefox 109.0 Ships Manifest Version 3</a> &mdash; Manifest Version 3 (MV3) extension support is now enabled by default (MV2 remains enabled/supported). This major update also ushers an exciting user interface change in the form of the new extensions button.</li><li><a href=\"https://blog.mozilla.org/en/products/firefox/extensions-addons/heres-whats-going-on-in-the-world-of-extensions/\" title=\"Here’s what’s going on in the world of extensions\" rel=\"nofollow\">Here’s what’s going on in the world of extensions</a></li><li><a href=\"https://support.mozilla.org/en-US/kb/unified-extensions\" title=\"Manage your extensions using the extensions button in the toolbar\" rel=\"nofollow\">Manage your extensions using the extensions button in the toolbar</a></li><li><a href=\"https://blog.mozilla.org/addons/2022/11/17/manifest-v3-signing-available-november-21-on-firefox-nightly/\" title=\"Manifest v3 signing available November 21 on Firefox Nightly\" rel=\"nofollow\">Manifest v3 signing available November 21 on Firefox Nightly</a></li><li><a href=\"https://9to5google.com/2022/12/12/manifest-v2-chrome-extension/\" title=\"Google delays start of Manifest V2 Chrome extension deprecation\" rel=\"nofollow\">Google delays start of Manifest V2 Chrome extension deprecation</a> &mdash; The original plan called for Chrome Beta, Dev, and Canary builds to start experiments that turned off Manifest V2 extension support. Additionally, Manifest V3 would be required to get the “Featured” badge in the Chrome Web Store. </li><li><a href=\"https://www.omgubuntu.co.uk/2023/01/firefox-109-released\" title=\"Firefox 109 Adds New Extensions Button, Manifest V3 Support\" rel=\"nofollow\">Firefox 109 Adds New Extensions Button, Manifest V3 Support</a> &mdash; The biggest new feature is the new Unified Extensions button in the toolbar. </li><li><a href=\"https://arstechnica.com/gadgets/2022/12/chrome-delays-plan-to-limit-ad-blockers-new-timeline-coming-in-march\" title=\"Chrome’s “Manifest V3” plan to limit ad-blocking extensions is delayed\" rel=\"nofollow\">Chrome’s “Manifest V3” plan to limit ad-blocking extensions is delayed</a></li><li><a href=\"https://www.eff.org/deeplinks/2021/12/chrome-users-beware-manifest-v3-deceitful-and-threatening\" title=\" Chrome Users Beware: Manifest V3 is Deceitful and Threatening\" rel=\"nofollow\"> Chrome Users Beware: Manifest V3 is Deceitful and Threatening</a> &mdash; Manifest V3, or Mv3 for short, is outright harmful to privacy efforts. It will restrict the capabilities of web extensions</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9266",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15914597/b0fdfcdd-3ec2-4c0e-93c0-7bbd81219973.mp3",
+      "length": "14420559",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2023-01-19T10:35:00+01:00"
+  },
+  "speedup": 57.56941
+}

@@ -1,0 +1,592 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 1000,
+        "text": " Hello, and welcome to Linux Action News, Episode 268, recorded on November 23, 2022. I'm Chris."
+      },
+      {
+        "start": 1000,
+        "stop": 1200,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1200,
+        "stop": 1400,
+        "text": " Hello Wes, let's do the news."
+      },
+      {
+        "start": 1400,
+        "stop": 2500,
+        "text": " We start this week with a new framework for Linux that's finally coming together after years of discussion, code prototypes, and even some specialized drivers."
+      },
+      {
+        "start": 2600,
+        "stop": 3500,
+        "text": " It seems that at this year's Plumbers Conference, there was some consensus reached among upstream developers on how to handle an accelerator subsystem for Linux."
+      },
+      {
+        "start": 3500,
+        "stop": 4500,
+        "text": " Yeah, and we've been kind of watching this from afar, not really sure what direction it was going to go ultimately, and really not sure how to communicate about it."
+      },
+      {
+        "start": 4500,
+        "stop": 5200,
+        "text": " But it seems like the debate is beginning to settle, so let's zoom out a bit here and set some context so you know what we're talking about."
+      },
+      {
+        "start": 5300,
+        "stop": 6600,
+        "text": " Over the years, kernel developers and hardware developers have been seeing just a large increase in general hardware accelerated workloads for all kinds of various types of things, from AI and beyond."
+      },
+      {
+        "start": 6600,
+        "stop": 7500,
+        "text": " And currently, the drivers for those types of applications, for those types of hardware, they live in a catch-all directory in the Linux tree."
+      },
+      {
+        "start": 7600,
+        "stop": 8300,
+        "text": " And what's starting to come together now is an overall compute accelerator framework, or what you might call a subsystem."
+      },
+      {
+        "start": 8300,
+        "stop": 9300,
+        "text": " And this new subsystem will leverage the existing direct rendering manager infrastructure, but will also provide an official home for those wayward drivers."
+      },
+      {
+        "start": 9300,
+        "stop": 10400,
+        "text": " And really, at the core of this ongoing debate for the last few years was just, should we simply extend that direct rendering manager, or should we create this whole new subsystem?"
+      },
+      {
+        "start": 10500,
+        "stop": 11600,
+        "text": " But after much discussion at the most recent Linux Pulmters conference, it does seem that agreement was finally reached, and a complete subsystem should be the way to go for the long term."
+      },
+      {
+        "start": 11600,
+        "stop": 12300,
+        "text": " Of course, these kinds of choices are always a bit easier when there's some code and progress that you can take a look at."
+      },
+      {
+        "start": 12300,
+        "stop": 13100,
+        "text": " Odette Gabay of Intel has been working on just that, with some patches for this new \"Excel\" subsystem."
+      },
+      {
+        "start": 13200,
+        "stop": 14400,
+        "text": " This weekend marked the fourth iteration of that patch set, and in the announcement, Odette confirmed that it's hopefully the last version of the patch set, and that he believes it's ready to be merged."
+      },
+      {
+        "start": 14400,
+        "stop": 15000,
+        "text": " And if all goes as planned, that means we could potentially see this hit Linux 6.2."
+      },
+      {
+        "start": 15400,
+        "stop": 16500,
+        "text": " Sticking with the kernel for just a bit longer, Peter Robinson gave a talk at that most recent Linux Pulmters conference, sounding the alarm on the state of wireless on Linux."
+      },
+      {
+        "start": 16500,
+        "stop": 17200,
+        "text": " He's not only a current WiFi maintainer, but also a Linux user himself since 1996."
+      },
+      {
+        "start": 17300,
+        "stop": 18600,
+        "text": " Hi folks, my name's Ped Robinson. A bit about me. I've been a Linux user for some time, working on ARM and sort of embedded Edge IoT devices since around 2010."
+      },
+      {
+        "start": 18600,
+        "stop": 19600,
+        "text": " I've been employed by Red Hat, doing various different roles since 2012, and for the last six years I've been the leader of device Edge and IoT."
+      },
+      {
+        "start": 19600,
+        "stop": 20200,
+        "text": " And Peter's talk is not a rant. It's a discussion on the state of WiFi."
+      },
+      {
+        "start": 20200,
+        "stop": 20500,
+        "text": " This talk, it's not a rant. I want to have a discussion."
+      },
+      {
+        "start": 20500,
+        "stop": 21300,
+        "text": " But wireless experience, and in this case I'm mostly talking about WiFi and Bluetooth."
+      },
+      {
+        "start": 21300,
+        "stop": 22400,
+        "text": " It's generally just not pleasant. The amount of regressions we get, the amount of devices that just don't work out of the box is just astounding."
+      },
+      {
+        "start": 22500,
+        "stop": 23900,
+        "text": " So the main ones I deal with, the Intel WiFi, the Broadcom stack, which is now a group of three different companies, the Marvel ones, Realtek, Qualcomm, MediaTek."
+      },
+      {
+        "start": 23900,
+        "stop": 24600,
+        "text": " So why are they bad? The Intel stuff used to be the best WiFi for Linux."
+      },
+      {
+        "start": 24700,
+        "stop": 26100,
+        "text": " It might still be, but we end up in situations where they'll ship a Bluetooth firmware update and suddenly like hundreds of people in Fedora can't connect to WiFi anymore."
+      },
+      {
+        "start": 26100,
+        "stop": 26800,
+        "text": " We'll have the full talk linked in the notes, but what Peter outlines in that talk needs more attention."
+      },
+      {
+        "start": 26800,
+        "stop": 27500,
+        "text": " We were pleased at least to see some small part of the Linux wireless stack get some attention this week, though."
+      },
+      {
+        "start": 27600,
+        "stop": 27800,
+        "text": " And Intel released IWD 2.0."
+      },
+      {
+        "start": 27800,
+        "stop": 28600,
+        "text": " Okay, so for just like a quick refresher, if you don't remember, IWD is Intel's wireless daemon."
+      },
+      {
+        "start": 28600,
+        "stop": 29500,
+        "text": " And the project summarizes itself as the IWD project aims to provide a comprehensive WiFi connectivity solution for Linux-based devices."
+      },
+      {
+        "start": 29500,
+        "stop": 30000,
+        "text": " And it's got a goal of, it says, optimize resources, reduced memory, and all that."
+      },
+      {
+        "start": 30100,
+        "stop": 31100,
+        "text": " And it accomplishes those goals by, quote, \"not depending on any external libraries and utilizing features provided by the Linux kernel itself to the maximum extent possible.\""
+      },
+      {
+        "start": 31100,
+        "stop": 31900,
+        "text": " The result, they say, is a, quote, \"self-contained environment that only depends on the Linux kernel and the runtime C library.\""
+      },
+      {
+        "start": 32000,
+        "stop": 33200,
+        "text": " Now, we should be honest here, IWD 2.0 probably won't blow you away, but it does have some nice new features, like being smarter about handling ciphers sent over P2P arrangements."
+      },
+      {
+        "start": 33200,
+        "stop": 33800,
+        "text": " And it had support for MAC address changes while the adapter is powered."
+      },
+      {
+        "start": 33900,
+        "stop": 35500,
+        "text": " I think this is why I am an ideal Linux desktop user, because I'm the kind of geek that does get excited about upgrading his wireless daemon while also being very skeptical, and then I'm drawn in by the temptations of changing my MAC address while the adapter is powered."
+      },
+      {
+        "start": 35500,
+        "stop": 35900,
+        "text": " That actually sounds sweet from a security perspective, assuming, I guess, your hardware supported it."
+      },
+      {
+        "start": 35900,
+        "stop": 36500,
+        "text": " It's that kind of stuff that I love about being a Linux user, and just being able to see this stuff as it begins to land."
+      },
+      {
+        "start": 36600,
+        "stop": 37800,
+        "text": " Honestly, the updates in IWD 2.0, they're decent, it's good, but they're mostly just low-level stuff that just makes your thing connect to the other thing, and that good. That very good."
+      },
+      {
+        "start": 37800,
+        "stop": 38700,
+        "text": " A brief mention today for Phoronix's premium Black Friday sale."
+      },
+      {
+        "start": 38700,
+        "stop": 39500,
+        "text": " Michael Larable, over at Phoronix, is one of the hardest working original sources in the open source and Linux news space."
+      },
+      {
+        "start": 39500,
+        "stop": 39800,
+        "text": " Really, for the past 19 years."
+      },
+      {
+        "start": 39800,
+        "stop": 40500,
+        "text": " We often source, or at least cross-check stories on this show with the reporting he does at Phoronix."
+      },
+      {
+        "start": 40500,
+        "stop": 41100,
+        "text": " And there's really no question to us. He makes this space better as a result of all that hard work."
+      },
+      {
+        "start": 41100,
+        "stop": 41900,
+        "text": " If you, like us, are grateful, through the end of November, you can go premium at the discounted holiday rate."
+      },
+      {
+        "start": 42000,
+        "stop": 42500,
+        "text": " Phoronix premium costs $40 a year, or $200 for a lifetime subscription."
+      },
+      {
+        "start": 42500,
+        "stop": 43300,
+        "text": " But while this deal is in play, you can go premium for just $30 per year, or $150 for a lifetime."
+      },
+      {
+        "start": 43500,
+        "stop": 44600,
+        "text": " Linode.com/lan. That's where you go to get $100 in 60-day credit on a new account, and it's a great way to support the show while you're checking out fast, reliable cloud hosting."
+      },
+      {
+        "start": 44600,
+        "stop": 45000,
+        "text": " And Linode has the best support in the business with real humans every single day."
+      },
+      {
+        "start": 45000,
+        "stop": 45500,
+        "text": " They're 30-50% cheaper than the hyperscalers out there that want to lock you into their crazy platforms."
+      },
+      {
+        "start": 45500,
+        "stop": 45900,
+        "text": " It's one of the reasons we've been a Linode customer for nearly three years."
+      },
+      {
+        "start": 46000,
+        "stop": 46600,
+        "text": " But on top of that, they just have the best performance. Eleven data centers you can choose from. They're going to add another dozen next year."
+      },
+      {
+        "start": 46600,
+        "stop": 47400,
+        "text": " We built our new website on there, we host our internal infrastructure on there, and whenever we have a project that we unleash on our livestream, we put it on Linode because we know it's going to last."
+      },
+      {
+        "start": 47400,
+        "stop": 48100,
+        "text": " I choose Linode because that's long-term infrastructure, and I'm in for the long haul. So go build something, go learn something."
+      },
+      {
+        "start": 48100,
+        "stop": 48600,
+        "text": " Try it for yourself and support the show, and get that $100 when you go to Linode.com/lan."
+      },
+      {
+        "start": 48700,
+        "stop": 49100,
+        "text": " One more time to support the show, Linode.com/lan."
+      },
+      {
+        "start": 49100,
+        "stop": 49600,
+        "text": " And thank you to Collide."
+      },
+      {
+        "start": 49600,
+        "stop": 50400,
+        "text": " Collide is an endpoint security solution that uses the most powerful untapped resource in IT. End users."
+      },
+      {
+        "start": 50400,
+        "stop": 51500,
+        "text": " When you're trying to achieve security goals, whether for a third-party audit or for your own compliance standards, the conventional wisdom is to treat every device like Fort Knox."
+      },
+      {
+        "start": 51600,
+        "stop": 52600,
+        "text": " Old-school device management tools like MDMs force disruptive agents onto employee devices at slow performance and treat privacy as an afterthought."
+      },
+      {
+        "start": 52600,
+        "stop": 53900,
+        "text": " That way of doing things turns IT admins and end users into enemies, and it creates its own security problems because users turn to shadow IT just to do their jobs."
+      },
+      {
+        "start": 54000,
+        "stop": 54900,
+        "text": " Collide does things differently. Instead of forcing changes on users, Collide sends them security recommendations via Slack."
+      },
+      {
+        "start": 54900,
+        "stop": 55700,
+        "text": " Collide will automatically notify your team when their devices are insecure and give them step-by-step instructions on how to solve the problem."
+      },
+      {
+        "start": 55700,
+        "stop": 56700,
+        "text": " By reaching out to employees via a friendly Slack DM and educating them about company policies, Collide can help you build a culture in which everyone contributes to security."
+      },
+      {
+        "start": 56800,
+        "stop": 57100,
+        "text": " And everyone understands how and why to do it."
+      },
+      {
+        "start": 57100,
+        "stop": 58200,
+        "text": " For IT admins, Collide provides a single dashboard that lets you monitor the security of your entire fleet, whether they're running on Mac, Windows, or Linux."
+      },
+      {
+        "start": 58200,
+        "stop": 59400,
+        "text": " You can see at a glance which employees have their disks encrypted, OS up-to-date, and password manager installed, making it easy to prove compliance to your auditors, customers, and leadership."
+      },
+      {
+        "start": 59500,
+        "stop": 60200,
+        "text": " So that's Collide. User-centered, cross-platform, endpoint security for teams that Slack."
+      },
+      {
+        "start": 60200,
+        "stop": 60900,
+        "text": " You can meet your compliance goals by putting users first. Visit Collide.com/lan to find out how."
+      },
+      {
+        "start": 60900,
+        "stop": 62200,
+        "text": " If you follow that link, they'll hook you up with a goodie bag, including a t-shirt, just for activating a free trial. That's Collide.com/lan."
+      },
+      {
+        "start": 62400,
+        "stop": 63200,
+        "text": " The Asahi Linux team released a progress report on getting Linux up and running on the Apple Silicon hardware this week."
+      },
+      {
+        "start": 63200,
+        "stop": 64200,
+        "text": " And first up in that update is some improvements that take Asahi from \"well, it just barely works\" to \"now it works as you would expect.\""
+      },
+      {
+        "start": 64200,
+        "stop": 64700,
+        "text": " Yeah, real, genuine USB 3."
+      },
+      {
+        "start": 64800,
+        "stop": 65900,
+        "text": " The Asahi systems were limited to USB 2.0 speeds on the Mac's Thunderbolt 4 ports, but with some recent work done on the PHY driver, USB 3.0 speeds should be in pretty good shape."
+      },
+      {
+        "start": 65900,
+        "stop": 66400,
+        "text": " Though the project does suggest that some glitches should still be expected."
+      },
+      {
+        "start": 66400,
+        "stop": 67100,
+        "text": " That's going to be even more useful for reasons that will be revealed momentarily, but overall there's something you need to know."
+      },
+      {
+        "start": 67200,
+        "stop": 67800,
+        "text": " It's not there yet. I think that's the high-level takeaway. It's getting close, but there's still things that don't work properly."
+      },
+      {
+        "start": 67800,
+        "stop": 68300,
+        "text": " The project, for example, is still working on getting the entire MacBook line of integrated speakers functioning."
+      },
+      {
+        "start": 68300,
+        "stop": 69200,
+        "text": " Right now they're being just turned off by default because it's possible, with software on Linux, to drive the speakers hard enough that they can be damaged."
+      },
+      {
+        "start": 69200,
+        "stop": 69600,
+        "text": " It seems that Apple sets that limit in software, apparently."
+      },
+      {
+        "start": 69700,
+        "stop": 70700,
+        "text": " The news is, with most recent updates and work done, the headphone jack is now working across the full line of devices thanks to a little bit of codec reverse engineering."
+      },
+      {
+        "start": 70700,
+        "stop": 71500,
+        "text": " Work also continues to go into power management, and turns out the project has a pretty practical approach to handling power usage."
+      },
+      {
+        "start": 71500,
+        "stop": 72200,
+        "text": " The team's been working on S2 idle, which should significantly improve idle state power savings."
+      },
+      {
+        "start": 72300,
+        "stop": 73400,
+        "text": " Now, Apple Silicon Macs do support a true S3-like suspend mode that puts the whole system into a deeper sleep state, which, of course, is what Mac OS uses when it suspends."
+      },
+      {
+        "start": 73400,
+        "stop": 74400,
+        "text": " Now, this would probably give considerably more power savings to Asahi, but it's also more complex to implement, and it depends on a few things that the team still needs to sort out."
+      },
+      {
+        "start": 74400,
+        "stop": 75200,
+        "text": " So, for now, since there is still low-hanging fruit on the S2 idle side, they're going to focus on that going forward."
+      },
+      {
+        "start": 75200,
+        "stop": 75900,
+        "text": " But perhaps the most anticipated updates this time around are the work going into the installer."
+      },
+      {
+        "start": 75900,
+        "stop": 76800,
+        "text": " Indeed, of course, right? Because that's what us non-Asahi developers need to get Linux dual booting on these M1 and M2 Macs."
+      },
+      {
+        "start": 76800,
+        "stop": 77900,
+        "text": " And it seems, impressively, the project has managed to stay in sync with Apple's firmware releases, because they do this firmware release thing where it's in sync with Mac OS and the hardware."
+      },
+      {
+        "start": 78000,
+        "stop": 78600,
+        "text": " So, you basically get the firmware updates through the operating system. And so, for them, they have to really keep an eye on that."
+      },
+      {
+        "start": 78600,
+        "stop": 79300,
+        "text": " So, not only have they been able to keep up with the firmware releases, but they've managed to cram some new features into their installer."
+      },
+      {
+        "start": 79300,
+        "stop": 80100,
+        "text": " Now, the installer can recover some broken installations. It can also upgrade some of the boot environment."
+      },
+      {
+        "start": 80200,
+        "stop": 81100,
+        "text": " And when you put all of it together, Asahi Linux users will also be able to recover some broken Mac OS installations, at least when all is said and done."
+      },
+      {
+        "start": 81100,
+        "stop": 82500,
+        "text": " And one thing that could make it easy for Apple Silicon owners to dip their toes into Linux is, along with that improved USB 3 speeds, there is now what they say is expert-only experimental feature."
+      },
+      {
+        "start": 82600,
+        "stop": 83900,
+        "text": " So, keep that in mind. To install their mini bootloader, that's the M1/N1 bootloader, in proxy mode onto an external USB drive, this is really kind of an extra bit of impressive here."
+      },
+      {
+        "start": 83900,
+        "stop": 84700,
+        "text": " Because, to my knowledge, the Apple SoC Macs don't natively support USB boot."
+      },
+      {
+        "start": 84800,
+        "stop": 86400,
+        "text": " Apple pulls off a little bit of trickery at the firmware level, and it seems now the Asahi installer can take advantage of that same mechanism, even though it's a third-party OS, and should be able to do a \"full\" USB install of the M1/N1 bootloader."
+      },
+      {
+        "start": 86400,
+        "stop": 87300,
+        "text": " That could make it a lot easier for users to just dip their toes into Asahi Linux before taking over the disk and repartitioning."
+      },
+      {
+        "start": 87400,
+        "stop": 87800,
+        "text": " So, I'm hoping that one of our future updates will include a link to getting Asahi installed on your machine."
+      },
+      {
+        "start": 87800,
+        "stop": 88500,
+        "text": " In the meantime, we'll have a link in the show notes that gives you an up-to-date array of what features are in which kernel and what stage they're at."
+      },
+      {
+        "start": 88500,
+        "stop": 88700,
+        "text": " We'll have a link for that in the show notes."
+      },
+      {
+        "start": 88700,
+        "stop": 89300,
+        "text": " And, of course, we're going to keep an eye on this and everything else going on in the world of Linux and open source."
+      },
+      {
+        "start": 89300,
+        "stop": 90000,
+        "text": " So, don't miss a single episode. Be sure you go to LinuxActionNews.com/subscribe for all the ways to get new episodes."
+      },
+      {
+        "start": 90100,
+        "stop": 90500,
+        "text": " And, LinuxActionNews.com/contact for ways to get in touch."
+      },
+      {
+        "start": 90500,
+        "stop": 91200,
+        "text": " And happy Thanksgiving to those of you who participate in the holiday. We, of course, are grateful for all of you. Thanks for listening."
+      },
+      {
+        "start": 91200,
+        "stop": 91800,
+        "text": " We'll be back next week with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 91800,
+        "stop": 92400,
+        "text": " And as always, a big thank you to everyone for joining us. And that's all the news for this week."
+      },
+      {
+        "start": 92400,
+        "stop": 94200,
+        "text": " (music playing)"
+      },
+      {
+        "start": 94400,
+        "stop": 94600,
+        "text": " (music fades)"
+      }
+    ],
+    "processing_time": {
+      "secs": 319,
+      "nanos": 742136877
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 268",
+    "pictures": [],
+    "duration": {
+      "secs": 942,
+      "nanos": 370000000
+    },
+    "unique_id": "http://linuxactionnews.com/268"
+  },
+  "episode": {
+    "title": "Linux Action News 268",
+    "description": "The contested subsystem coming soon, a sobering assessment of wireless support in Linux, and a triumph for free software.",
+    "content": "<p><p>The contested subsystem coming soon, a sobering assessment of wireless support in Linux, and a triumph for free software.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://lore.kernel.org/dri-devel/20221119204435.97113-1-ogabbay@kernel.org/\" title=\"New subsystem for compute accelerator devices\" rel=\"nofollow\">New subsystem for compute accelerator devices</a> &mdash; This is the fourth (and hopefully last) version of the patch set to add the new subsystem for compute accelerators. </li><li><a href=\"https://www.phoronix.com/news/Compute-Accelerator-v4\" title=\"Compute Accelerator Subsystem Hopes To Be Ready For Linux 6.2\" rel=\"nofollow\">Compute Accelerator Subsystem Hopes To Be Ready For Linux 6.2</a></li><li><a href=\"https://www.youtube.com/watch?v=pwIFz9na2lE\" title=\"Peter's Talk at Linux Plumbers Conference\" rel=\"nofollow\">Peter's Talk at Linux Plumbers Conference</a> &mdash; All types of wireless in Linux are terrible and why the vendors should feel bad - Peter Robinson</li><li><a href=\"https://www.phoronix.com/news/Intel-IWD-2.0-Released\" title=\"Intel’s IWD 2.0 Released For Modern Linux Wireless Daemon\" rel=\"nofollow\">Intel’s IWD 2.0 Released For Modern Linux Wireless Daemon</a> &mdash; Released this week was IWD 2.0 as the latest milestone for this open-source wireless daemon. </li><li><a href=\"https://www.phoronix.com/news/Black-Friday-2022\" title=\"Phoronix Premium Black Friday Deal\" rel=\"nofollow\">Phoronix Premium Black Friday Deal</a> &mdash; For this year's deal, you can go premium for just $30 per year or $150 for a lifetime subscription.</li><li><a href=\"https://asahilinux.org/2022/11/november-2022-report/\" title=\"Asahi Linux Updates\" rel=\"nofollow\">Asahi Linux Updates</a> &mdash; This month’s update is packed with new hardware support, new features, and fixes for longstanding pain points, as well as a new bleeding-edge kernel branch with long-awaited support for suspend and the display controller!</li><li><a href=\"https://github.com/AsahiLinux/docs/wiki/Feature-Support\" title=\"Feature Support · AsahiLinux/docs Wiki\" rel=\"nofollow\">Feature Support · AsahiLinux/docs Wiki</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9081",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15806729/84def281-f9c7-44f4-97a7-17606bcb154e.mp3",
+      "length": "13617780",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-24T07:05:00+01:00"
+  },
+  "speedup": 2.9472814
+}
