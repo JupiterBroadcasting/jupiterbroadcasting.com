@@ -99,7 +99,8 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
         { 'href': 'https://linuxactionnews.com/rss', 'title': 'Linux Action News'},
         { 'href': 'https://linuxunplugged.com/rss', 'title': 'LINUX Unplugged'},
         { 'href': 'https://www.officehours.hair/rss', 'title': 'Office Hours'},
-        { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'}
+        { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'},
+        { 'href': 'https://www.thisweekinbitcoin.show/rss', 'title': 'This Week in Bitcoin'},
     ]
 
 @fixture
@@ -112,6 +113,7 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             {'href': '/show/linux-unplugged/', 'title': 'LINUX Unplugged'},
             {'href': '/show/office-hours/', 'title': 'Office Hours'},
             {'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
+            {'href': '/show/this-week-in-bitcoin/', 'title': 'This Week in Bitcoin'},
         ],
         "People": [
             {'href': '/hosts/', 'title': 'Hosts'},
