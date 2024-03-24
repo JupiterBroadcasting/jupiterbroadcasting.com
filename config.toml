@@ -87,6 +87,13 @@ paginate = 12
         weight =96
         parent = "shows"
 
+    [[Menu.Main]]
+        name = "This Week in Bitcoin"
+        identifier = "this-week-in-bitcoin"
+        url = "/show/this-week-in-bitcoin/"
+        weight =97
+        parent = "shows"
+
 [[Menu.Main]]
     name = "Sponsors"
     identifier = "sponsors"
