@@ -12,7 +12,7 @@ active = true
 
 header_image = "/images/shows/this-week-in-bitcoin.png"
 
-podverse_podcast_id = "9kZDxtyEq"
+podverse_podcast_id = "MxEmZU_zDt"
 
 [links.shownotes]
   url="https://www.thisweekinbitcoin.show"
