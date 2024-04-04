@@ -10,7 +10,7 @@ instagram: https://instagram.com/drewofdoom
 linkedin: null
 title: Drew DeVore
 twitter: https://twitter.com/drewofdoom
-type: host
+type: guest
 username: drew-devore
 youtube: null
 ---
