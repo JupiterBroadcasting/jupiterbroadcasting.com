@@ -3,12 +3,12 @@
   <div class="container">
       <div class="columns">
           <div class="column has-text-centered-mobile">
-            <a href="{{ .Site.Params.footer.logo.url}}  " alt="{{ .Site.Params.footer.logo.text }}">
+            <a href="{{ .Site.Params.footer.logo.url}}" aria-label="{{ .Site.Params.footer.logo.text }}">
               <img src="{{ .Site.Params.footer.logo.image }}" alt="{{ .Site.Params.footer.logo.text }}" width="300" height="105"/>
             </a>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.left.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.left.headline }}</h4>
             <ul>
               {{ range where site.RegularPages "Section" "community" }}
                   {{ $link := "" }}
@@ -26,7 +26,7 @@
             </ul>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.center.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.center.headline }}</h4>
             <ul>
               {{ range .Site.Menus.footercenter }}
                 <li>
@@ -42,7 +42,7 @@
             </ul>
           </div>
           <div class="column has-text-centered-mobile">
-            <h6 class="title is-6">{{ .Site.Params.footer.right.headline }}</h6>
+            <h4 class="title is-size-5">{{ .Site.Params.footer.right.headline }}</h4>
             <ul>
               {{ range .Site.Menus.footerright }}
                 <li>
@@ -76,9 +76,8 @@
 
 {{ $main := resources.Get "js/main.js" }}
 {{ $navigation := resources.Get "js/navigation.js" }}
-{{ $video := resources.Get "js/video.min.js" }}
 {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
-{{ $defaultJS := slice $swiper $navigation $video $main | resources.Concat "js/global.js" }}
+{{ $defaultJS := slice $swiper $navigation $main | resources.Concat "js/global.js" }}
 {{ if hugo.IsProduction }}
   {{ $defaultJS = $defaultJS | resources.Minify | resources.Fingerprint }}
   {{ $current_domain := (urls.Parse .Site.BaseURL).Host }}

@@ -1,0 +1,67 @@
+name: Building Tests Container
+
+# built with the following guides/examples:
+# - https://github.com/marketplace/actions/push-to-registry#examples
+# - https://github.com/marketplace/actions/buildah-build#building-using-containerfiles
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - ./Dockerfile.tests
+      - ./tests/Pipfile.lock
+
+  workflow_dispatch:
+
+jobs:
+  # this sets up some variables so the next job can use them for tags
+  env_setup:
+    runs-on: ubuntu-latest
+    outputs:
+      date_output: ${{ steps.date.outputs.date_fmt }}
+      registry_user: ${{ steps.registry_user.outputs.username }}
+      current_branch: ${{ steps.current_branch.outputs.current_branch }}
+    steps:
+      # used for tagging the container with the current date down to the seconds
+      #   since we have so many changes down to the seconds was required. Example: 2022-09-08T05_42_23-04_00
+      - id: date
+        run: echo "::set-output name=date_fmt::$(date -Isec | tr ':' '_' | tr '+' '-' )"
+      # the username for the quay registry, since it can be derived from the quay secret's robot username
+      - id: registry_user
+        run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+      - id: current_branch
+        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_REF_NAME:-}" )"
+
+  tests:
+    runs-on: ubuntu-latest
+    needs: env_setup
+    # location where the credentials are stored for quay
+    environment: production_containers
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Image
+        id: build-image
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: jb_web_container
+          # tagging with 2 different tags, this will let us have a consistent target of prod-latest or tests_web-latest,
+          #   but still allow us to properly version each build of the containers (with the current time). This double
+          #   tagging strategy will allow us to rollback changes on the prod environment if something goes awry
+          tags: tests${{ needs.env_setup.outputs.current_branch }}-latest tests${{ needs.env_setup.outputs.current_branch }}-${{ needs.env_setup.outputs.date_output }}
+          containerfiles: |
+            ./Dockerfile.tests
+
+      - name: Push To quay.io
+        id: push-to-quay
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          image: ${{ steps.build-image.outputs.image }}
+          tags: ${{ steps.build-image.outputs.tags }}
+          registry: quay.io/${{ needs.env_setup.outputs.registry_user }}
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Print image url
+        run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"

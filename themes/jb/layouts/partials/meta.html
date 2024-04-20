@@ -1,9 +1,35 @@
-<!-- Meta Ttitles -->
-<title itemprop="name">{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title -}}{{- if .Title }} | {{end}}{{ .Site.Title }}" />
+<!-- Meta Titles -->
+{{- $titleMeta := .Site.Title -}}
+{{- if .Title -}}
+    {{ if and 
+        (and (isset .Params `show_name`) (isset .Params `episode`)) 
+        (ne .Title (print .CurrentSection.Title ` ` .Params.episode))
+    -}}
+        {{/* for all other shows */ -}}
+        {{- $titleMeta = (printf `%s | %s %v | %s` .Title .Params.show_name .Params.episode .Site.Title) -}}
+    {{ else if or
+        (eq .Type `hosts`)
+        (eq .Type `guests`)
+    -}}
+        {{/* for people */ -}}
+        {{
+          $person := index (
+            where (
+              where site.RegularPages "Section" "people"
+            ) ".Params.username" .Title
+          ) 0
+        }}
+        {{- $titleMeta = (printf `%s | %s` (cond (eq $person.Title nil) .Title $person.Title) .Site.Title) -}}
+    {{ else -}}
+        {{/* covers LAN and any page that does not have a show name or episode */ -}}
+        {{- $titleMeta = (printf `%s | %s` .Title .Site.Title) -}}
+    {{ end -}}
+{{ end -}}
+<title itemprop="name">{{ $titleMeta }}</title>
+<meta property="og:title" content="{{ $titleMeta }}" />
+<meta name="twitter:title" content="{{ $titleMeta }}" />
+<meta itemprop="name" content="{{ $titleMeta }}" />
+<meta name="application-name" content="{{ $titleMeta }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Meta Description -->
@@ -61,15 +87,24 @@
 
 <!-- Favicons -->
 
-<link rel="shortcut icon" href="/images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-<link rel="apple-touch-icon" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+<link rel="icon" sizes="32x32" href="/images/favicon/favicon.ico">
 
-<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="192x192" href="/images/favicon/android-chrome-192x192.png" />
-<link rel="apple-touch-icon" sizes="512x512" href="/images/favicon/android-chrome-512x512.png" />
+<!-- needed this svg tag for chromium based browsers. if using the one for firefox below,
+it would default to one of the android-chrome pngs -->
+<link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg">
 
-<link rel="manifest" href="/images/favicon/site.webmanifest">	
+<!-- needed this svg tag for firefox. if using the one above for chromium,
+bookmark/history favicon defaults to apple-touch-icon -->
+<link rel="icon" type="image/svg+xml" sizes="512x512" href="/images/favicon/favicon.svg">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#2a2a2a">
+<meta name="msapplication-TileColor" content="#2a2a2a">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
 
 <!-- iPhone Notch Theme Color -->
 

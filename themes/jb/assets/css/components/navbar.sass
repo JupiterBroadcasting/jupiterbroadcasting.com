@@ -10,7 +10,33 @@ $navbar-dropdown-item-active-color: $text !default
 $navbar-dropdown-item-active-background-color: $background !default
 $navbar-new-dropdown-arrow: $text !default
 
+@keyframes pulse
+  0%
+    opacity: .75
+  100%
+    opacity: 1
+
 .navbar
+  &.is-live
+    .navbar-burger
+      &.is-active
+        &:before
+          display: none
+      &:before
+        content: ''
+        height: 10px
+        width: 10px
+        background: red
+        border-radius: 100%
+        display: block
+        position: absolute
+        top: 14px
+        right: 14px
+        z-index: 99
+        pointer-events: none
+        animation: 1.5s infinite alternate pulse
+    #livebutton
+      background: red
   @each $name, $pair in $navbar-colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
@@ -59,6 +85,12 @@ $navbar-new-dropdown-arrow: $text !default
             &.is-active
               background-color: $color
               color: $color-invert
+
+@media (prefers-reduced-motion: reduce)
+  .navbar
+    &.is-live
+      .navbar-burger:before
+        animation: none
 
 .navbar-link:not(.is-arrowless)
   +ltr-property("padding", 2.5em)

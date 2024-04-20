@@ -1,4 +1,4 @@
-ARG HUGO_VERSION=0.101.0
+ARG HUGO_VERSION=0.105.0
 FROM registry.gitlab.com/pages/hugo/hugo_extended:${HUGO_VERSION}
 CMD [ "serve", "-D", "--bind", "0.0.0.0" ]
 ENTRYPOINT [ "hugo" ]

@@ -1,6 +1,6 @@
-<div class="card is-horizontal">
-  <div class="columns">
-    <div class="column is-one-third pr-0">
+<div class="card is-horizontal pt-4">
+  <div class="columns section">
+    <div class="column is-one-third px-0 pt-0 pb-1 columns mb-0">
       <div class="card-image">
         <image class="image" src="{{ .Params.avatar }}"></image>
       </div>
@@ -41,6 +41,11 @@
               <a href="{{ .Params.youtube }}" class="card-footer-item-social" target="_blank">
                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
               </a>
+            {{ end }}
+            {{ if .Params.mastodon }}
+             <a href="{{ .Params.mastodon }}" class="card-footer-item-social" target="_blank">
+               <i class="fa fa-mastodon" aria-hidden="true"></i>
+             </a>
             {{ end }}
           </div>
         </footer>
