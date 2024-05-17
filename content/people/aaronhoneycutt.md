@@ -1,8 +1,8 @@
 ---
 avatar: /images/people/aaronhoneycutt.jpg
 avatar_small: /images/people/aaronhoneycutt_small.jpg
-bio: null
-homepage: null
+bio: Techie, Community Guy, Gamer. Happiness Engineer @ System76.
+homepage: https://system76.com/
 instagram: null
 linkedin: null
 title: Aaron Honeycutt
