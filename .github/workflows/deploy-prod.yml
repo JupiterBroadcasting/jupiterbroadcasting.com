@@ -18,26 +18,23 @@ on:
       - completed
 
 jobs:
-  deploy:
+  deploy-via-tailscale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-           
-      # Build
-      - name: Pull latest changes on VPS
-        uses: appleboy/ssh-action@master
+      # deploys using alexktz tailnet
+      - name: Connect Tailscale
+        uses: tailscale/github-action@v2
         with:
-            host: ${{ secrets.VPS_HOST }}
-            USERNAME: ${{ secrets.VPS_DEPLOY_USER }}
-            PORT: ${{ secrets.VPS_SSH_PORT }}
-            KEY: ${{ secrets.VPS_SSHKEY }}
-            script: cd ${{ secrets.VPS_PROJECT_PATH }} && git pull
-            
-      - name: Deploy
-        uses: appleboy/ssh-action@master
-        with:
-            host: ${{ secrets.VPS_HOST }}
-            USERNAME: ${{ secrets.VPS_DEPLOY_USER }}
-            PORT: ${{ secrets.VPS_SSH_PORT }}
-            KEY: ${{ secrets.VPS_SSHKEY }}
-            script: cd ${{ secrets.VPS_PROJECT_PATH }} && make deploy-prod
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+
+      - name: Do the deploy thing
+        run: |
+          ssh -o "StrictHostKeyChecking no" ironicbadger@ktz-cloud "
+            cd ${{ secrets.VPS_PROJECT_PATH }}
+            git pull
+            docker build -t jb-jbcom .
+            docker-compose -f ~/docker-compose.yml up -d jb-jbcom
+            docker image prune -af
+          "
