@@ -35,6 +35,6 @@ jobs:
             cd ${{ secrets.VPS_PROJECT_PATH }}
             git pull
             docker build -t jb-jbcom .
-            docker-compose -f ~/docker-compose.yml up -d jb-jbcom
+            docker compose -f ~/docker-compose.yml up -d --force-recreate jb-jbcom
             docker image prune -af
           "
