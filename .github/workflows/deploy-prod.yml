@@ -31,7 +31,7 @@ jobs:
 
       - name: Do the deploy thing
         run: |
-          ssh -o "StrictHostKeyChecking no" ironicbadger@ktz-cloud "
+          ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
             cd ${{ secrets.VPS_PROJECT_PATH }}
             git pull
             docker build -t jb-jbcom .
