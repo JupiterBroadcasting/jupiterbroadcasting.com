@@ -1,0 +1,672 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 1000,
+        "text": " Hello, and welcome to Linux Action News, episode 255, recorded on August 24, 2022. I'm Chris."
+      },
+      {
+        "start": 1000,
+        "stop": 1100,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1100,
+        "stop": 1300,
+        "text": " Hello, Wes. Let's do the news."
+      },
+      {
+        "start": 1300,
+        "stop": 2100,
+        "text": " We start this week with a story for those of us with just too dang many CPU cores and not enough time."
+      },
+      {
+        "start": 2100,
+        "stop": 3000,
+        "text": " Multiple efforts are now underway to improve the boot time for ARM or RISC-V systems that use KExec."
+      },
+      {
+        "start": 3000,
+        "stop": 3400,
+        "text": " Every now and then we have a story that I feel like was custom written for Wes Payne."
+      },
+      {
+        "start": 3400,
+        "stop": 4400,
+        "text": " We've recently even covered another effort underway by the folks at TikTok to optimize how the kernel image compression is handled during a KExec boot or shutdown."
+      },
+      {
+        "start": 4400,
+        "stop": 5100,
+        "text": " But now there's new work seemingly underway from either an individual or at least a small group sharing a Gmail account."
+      },
+      {
+        "start": 5100,
+        "stop": 5700,
+        "text": " And this new set of patches allows the kernel to bring down CPU cores in parallel."
+      },
+      {
+        "start": 5700,
+        "stop": 6300,
+        "text": " Before we get into the details, a little background for those of you maybe not KExec enthusiasts."
+      },
+      {
+        "start": 6300,
+        "stop": 7700,
+        "text": " It's an abbreviation for kernel execute, and it allows an admin to reboot or boot into an entirely different new kernel without going through the usual posting process of a typical startup."
+      },
+      {
+        "start": 7700,
+        "stop": 8900,
+        "text": " So this lets you perform faster system reboots, get to skip all that slow hardware initialization, or you can boot into a very different kernel, perhaps to perform a function like crash recovery."
+      },
+      {
+        "start": 8900,
+        "stop": 11100,
+        "text": " Now, currently, carrying out a KExec reboot on RISC-V or a 64-bit ARM system, well, it can be a little bit painful, at least if you're lucky enough to have a high core count system, since each CPU core is shut down one at a time, one after another."
+      },
+      {
+        "start": 11100,
+        "stop": 12000,
+        "text": " To underscore that point, the patch author points out that with this new work, an 80-core ARM server can do a KExec reboot in just one second."
+      },
+      {
+        "start": 12000,
+        "stop": 12400,
+        "text": " Previously, that took almost 15 seconds."
+      },
+      {
+        "start": 12400,
+        "stop": 12800,
+        "text": " Yeah, now you add that up across infrastructure like AWS."
+      },
+      {
+        "start": 12800,
+        "stop": 13000,
+        "text": " Oh, man, now you're talking a real savings."
+      },
+      {
+        "start": 13000,
+        "stop": 14700,
+        "text": " That's a game changer for some of these big cloud providers, and other architectures like x86-64 and Power, well, yeah, no surprise there. They've already solved this a little while ago when using KExec, so they're not currently bottlenecked by that serialized style of shutdown of the CPU cores."
+      },
+      {
+        "start": 14700,
+        "stop": 15500,
+        "text": " So with a bit of luck, these 10 patches could soon be mainlineed, and, well, at least R/Westpane will be delighted about it."
+      },
+      {
+        "start": 15500,
+        "stop": 16700,
+        "text": " But one thing that I'd like a little more clarity about is if these two efforts have any connection at all, it seemed on first pass they didn't, but I think I'd like more details there."
+      },
+      {
+        "start": 16700,
+        "stop": 17400,
+        "text": " Yeah, it is a little bit curious. Why all this work on KExec just right now?"
+      },
+      {
+        "start": 17400,
+        "stop": 18700,
+        "text": " Perhaps it's the intersection of some of these new architectures really gaining in popularity lately, and then perhaps also a bit of KExec being viewed as something of a curiosity, at least by us desktop dominant folks at times."
+      },
+      {
+        "start": 18700,
+        "stop": 19300,
+        "text": " But I suspect it may see more use in production than we really give it credit for."
+      },
+      {
+        "start": 19300,
+        "stop": 20600,
+        "text": " But, as always, if you have more details, or, heck, if you're using KExec in production, let us know in our matrix room or LinuxActionNews.com/contact."
+      },
+      {
+        "start": 20600,
+        "stop": 22700,
+        "text": " And speaking of RISC-V devices, Star5Tech out of Shenzhen, China has launched their first Kickstarter to fund a small board computer in the spirit of a Raspberry Pi, but loaded with a RISC-V chip. And, I have to say, it's been a really long time since a crowdfunder sucked me in and I funded anything."
+      },
+      {
+        "start": 22700,
+        "stop": 23400,
+        "text": " But the Vision 5.2 got me. I have backed a unit that claims it will ship in November."
+      },
+      {
+        "start": 23400,
+        "stop": 24400,
+        "text": " At the core of that unit? Well, it's the Star5 64-bit CPU, featuring quad SiFive 1.5 GHz cores."
+      },
+      {
+        "start": 24400,
+        "stop": 25900,
+        "text": " And in a larger change from the Vision 5.2's predecessor, this thing's got an Imagination BXZ432 graphics processing unit, which should do some of the heavy lifting if you're using this for desktop or graphical workloads."
+      },
+      {
+        "start": 25900,
+        "stop": 27200,
+        "text": " Yeah, so the device itself, it's in a rough footprint of a Raspberry Pi, I'll say. But unlike the Pi, the Vision 5.2 also has eMMC onboard and an M.2 key slot for an SSD."
+      },
+      {
+        "start": 27200,
+        "stop": 28300,
+        "text": " As well as a standard 40-pin GPIO header, HDMI, multiple USB, and two, yes, two, Ethernet ports."
+      },
+      {
+        "start": 28300,
+        "stop": 29000,
+        "text": " Now, the Kickstarter is offering a super early bird special version, which has different Ethernet ports."
+      },
+      {
+        "start": 29000,
+        "stop": 29800,
+        "text": " One supports 10 or 100 megabits, while the other is gigabit only. But all other aspects remain the same."
+      },
+      {
+        "start": 29800,
+        "stop": 30500,
+        "text": " Impressively, the Kickstarter has already reached its goal and within 24 hours to boot."
+      },
+      {
+        "start": 30500,
+        "stop": 31200,
+        "text": " Aiming to hit 28K from the start, the campaign has raised nearly 40K, as we record."
+      },
+      {
+        "start": 31200,
+        "stop": 31900,
+        "text": " Well, just a quick note to let you know about an important election coming up."
+      },
+      {
+        "start": 31900,
+        "stop": 33000,
+        "text": " The 2022 election for members of the Linux Foundation's Technical Advisory Board, known as TAB, will be held during the Linux Plumbers Conference coming up on September 12th to the 14th."
+      },
+      {
+        "start": 33000,
+        "stop": 33900,
+        "text": " The TAB represents the kernel development community to the Linux Foundation and beyond, and holds a seat on the Foundation's Board of Directors."
+      },
+      {
+        "start": 33900,
+        "stop": 34600,
+        "text": " The call for nominees for this year's election has already gone out. The deadline for nominations is September 12th."
+      },
+      {
+        "start": 34600,
+        "stop": 36400,
+        "text": " From the \"I had no idea that project was even still alive in 2022\" file, Webman, the once king of remote web management, first released in 1997, has released version 2.0 this week."
+      },
+      {
+        "start": 36400,
+        "stop": 37300,
+        "text": " And yes, it's still mainly written in Perl. As you might expect, Webman 2.0 has been in the works for years."
+      },
+      {
+        "start": 37300,
+        "stop": 38000,
+        "text": " Initially, the goal of the 2.0 release was focused on removing the legacy support that it built up over the many years of development."
+      },
+      {
+        "start": 38000,
+        "stop": 38700,
+        "text": " But as time has gone on, Webman 2.0 has become more of an incremental update over the 1 series."
+      },
+      {
+        "start": 38700,
+        "stop": 39800,
+        "text": " There are some nice visual improvements for sure, support for multiple versions of Webman installed on a system with systemd, and it's great to see support for AMD CPU temperatures."
+      },
+      {
+        "start": 39800,
+        "stop": 40400,
+        "text": " You know, just in general, it's impressive to see a project continue on after 25 years."
+      },
+      {
+        "start": 40400,
+        "stop": 41100,
+        "text": " It's still developed, it's still in use, we should just take a moment to acknowledge that this is providing a lot of value to folks out there."
+      },
+      {
+        "start": 41100,
+        "stop": 42300,
+        "text": " In this particular release, the project seems to be focusing on enforcing HTTP, strict transport security, as well as adding better HTTP to HTTPS redirects when you've got SSL enabled."
+      },
+      {
+        "start": 42300,
+        "stop": 43100,
+        "text": " That's a good thing to see on your remote web interface, to add them in your box. I'm really glad they enabled that."
+      },
+      {
+        "start": 43100,
+        "stop": 43400,
+        "text": " I also, though, am just really happy to see the project continue."
+      },
+      {
+        "start": 43400,
+        "stop": 43800,
+        "text": " And it's not like they haven't had any releases over the years, we're having a bit of fun here."
+      },
+      {
+        "start": 43800,
+        "stop": 44900,
+        "text": " In fact, their previous release, version 1.999-2, was released on August 4th, and the release before that, July 25th, and July 13th before that."
+      },
+      {
+        "start": 44900,
+        "stop": 45400,
+        "text": " So, really, the 1.0 series has seen many updates over the years."
+      },
+      {
+        "start": 45400,
+        "stop": 46600,
+        "text": " It's just not something I use anymore, but there was a time in the early 2000s when Webman helped me bridge that gap in a world where I had Windows and Linux servers and I needed to transition."
+      },
+      {
+        "start": 46600,
+        "stop": 47300,
+        "text": " Especially when I was learning Linux service management and things like Xynet-D and Apache Virtual Hosts and the basics of Samba."
+      },
+      {
+        "start": 47300,
+        "stop": 48400,
+        "text": " Webman gave me a UI to figure that stuff out, and having a standard tool I could load on my Red Hat boxes, my Debian machines, and my Mandrake systems was really valuable."
+      },
+      {
+        "start": 48800,
+        "stop": 50300,
+        "text": " Flatpak 1.14.0 is out this week. It's the culmination of several months of work by dozens of people, and it brings a variety of lower-level improvements, as well as correcting an issue that could lead to memory corruption."
+      },
+      {
+        "start": 50300,
+        "stop": 51300,
+        "text": " Well, that's always good to see. You know, there's a lot in 1.14, but I think what our listeners are going to find most interesting are the improvements to the command-line tools."
+      },
+      {
+        "start": 51300,
+        "stop": 52300,
+        "text": " I've always sort of personally felt that the command-line interface to Flatpak wasn't quite as good as it could be and did not always expose all of the information that the user needed."
+      },
+      {
+        "start": 52300,
+        "stop": 53000,
+        "text": " So now, with 1.14, the command-line interface has seen many improvements. A couple of them, I think, are essential."
+      },
+      {
+        "start": 53000,
+        "stop": 53900,
+        "text": " One is, the user will now be properly informed of apps that are using an end-of-life runtime extension. That's good for security reasons, obviously."
+      },
+      {
+        "start": 53900,
+        "stop": 55000,
+        "text": " And, when the user uses the uninstall command, it will now ask for confirmation before removing a runtime or runtime extension that another Flatpak is depending on."
+      },
+      {
+        "start": 55000,
+        "stop": 56100,
+        "text": " Yeah, that's a pretty big deal right there. But really, maybe the bigger picture with Flatpaks is, I think we've hit the era of polish."
+      },
+      {
+        "start": 56100,
+        "stop": 57500,
+        "text": " You know, the base technology of delivering containerized applications, that's basically solved. At this point, we can ship just about any application in one of these universal formats, even something as complicated as, say, Steam."
+      },
+      {
+        "start": 57500,
+        "stop": 58200,
+        "text": " And Flatpak seems to have wider and wider community adoption just about every single week, it seems, these days."
+      },
+      {
+        "start": 58200,
+        "stop": 58700,
+        "text": " I think you're right, Wes. I think the challenges that still need to be solved now are social ones."
+      },
+      {
+        "start": 58900,
+        "stop": 60300,
+        "text": " We rarely draw attention to individual releases of web browsers. But, with Firefox 1.04, released on August 23rd, there was a feature we thought you might like to know about."
+      },
+      {
+        "start": 60300,
+        "stop": 62000,
+        "text": " Among a few others, like commercial desktops getting the ability to measure the actual power usage of a website, one thing we're all getting is a new feature for the Firefox UI itself. Or, maybe I should say, it's a lack of features?"
+      },
+      {
+        "start": 62000,
+        "stop": 63500,
+        "text": " Starting with version 1.04, when Firefox is hidden under another window or minimized, the entire UI will be throttled for performance and for improved battery impact, much like how idle background tabs get throttled already."
+      },
+      {
+        "start": 63500,
+        "stop": 64500,
+        "text": " Overall, Firefox has had a string of excellent releases lately, and if you haven't checked it out for a bit, it really might be time to revisit the Fox."
+      },
+      {
+        "start": 64700,
+        "stop": 65700,
+        "text": " Linode.com/lan. Go there to get $100 in 60-day credit on a new account, and it's just a great way to support the show while trying something great out."
+      },
+      {
+        "start": 65700,
+        "stop": 66500,
+        "text": " This year's show is made possible by you taking advantage of our sponsors, and Linode is one that we can enthusiastically endorse here on the show."
+      },
+      {
+        "start": 66500,
+        "stop": 68100,
+        "text": " They started in 2003 as one of the few companies that saw where Linux and its virtualization capabilities are going, and now, nearly 19 years later, they're the best place to host your application, your data, and to run your service or website, game, whatever it might be."
+      },
+      {
+        "start": 68100,
+        "stop": 68900,
+        "text": " Linode's always adding new features. They recently added Kali Linux. Maybe you want to do a little remote audit? That's actually a great idea, by the way."
+      },
+      {
+        "start": 68900,
+        "stop": 69600,
+        "text": " People used to pay me good money to go and do remote audits of their network. How do you think I did it back in the day? I'll tell you how I did it. Like an animal."
+      },
+      {
+        "start": 69600,
+        "stop": 70300,
+        "text": " I had an actual physical server in a rack at a data center, and I was paying for the power. I was paying for the internet connection."
+      },
+      {
+        "start": 70300,
+        "stop": 71400,
+        "text": " It was awful when I had to go in there and fix the server, too. It's so funny how Linode has completely changed the game and made infrastructure that's fast and reliable and well-priced so accessible."
+      },
+      {
+        "start": 71400,
+        "stop": 72600,
+        "text": " And they've done everything they can over the years to just lower the barriers of entry so anybody who's never even set up a server or pros who were racking and stacking 20 years ago, they all can use Linode."
+      },
+      {
+        "start": 72600,
+        "stop": 73000,
+        "text": " They've really struck that balance. And if you need the more advanced stuff, they've got it."
+      },
+      {
+        "start": 73000,
+        "stop": 73700,
+        "text": " They've got VLAN support, they've got cloud firewalls, they've got S3-compatible object storage, they've got an elegant API."
+      },
+      {
+        "start": 73700,
+        "stop": 75200,
+        "text": " But something that they've got that nobody else has got, and I was actually talking to a friend in another company in the Linux ecosystem, and they said to me, \"Our goal is to get our community game as half as good as Linode's.\""
+      },
+      {
+        "start": 75200,
+        "stop": 76100,
+        "text": " They went on to say, \"We see Linode at every community event. We see Linode sponsoring projects and not going out there and making a big deal about it. They're just helping a project out with infrastructure.\""
+      },
+      {
+        "start": 76100,
+        "stop": 77100,
+        "text": " You know, like, here at JB, they're making it possible for our West Coast road tour. You know, we make a big stink about it, but it's not like Linode goes and puts out on blast, \"Oh, look what we're doing over here!\""
+      },
+      {
+        "start": 77100,
+        "stop": 78000,
+        "text": " They do it because it's an investment in the community, and that community pays dividends for them for years. They've seen it for 19 years. They get it."
+      },
+      {
+        "start": 78000,
+        "stop": 78700,
+        "text": " And on top of that, they're just super fast. They have 11 data centers around the world, and they're 30-50% cheaper than the major hyperscalers out there."
+      },
+      {
+        "start": 78700,
+        "stop": 79500,
+        "text": " So go get $100, support the show, kick the tires, really try it. That's what you can do with that $100, so go take advantage of it. Sign up today."
+      },
+      {
+        "start": 79500,
+        "stop": 80400,
+        "text": " linode.com/lan. Get that $100, support the show. One more time, support the show at linode.com/lan."
+      },
+      {
+        "start": 80400,
+        "stop": 81200,
+        "text": " And a big warm thank you to Collide. Collide.com/lan."
+      },
+      {
+        "start": 81200,
+        "stop": 81900,
+        "text": " Collide is endpoint security solutions that use the most powerful untapped resource in all of IT."
+      },
+      {
+        "start": 81900,
+        "stop": 83100,
+        "text": " No, it is not kryptonite. It is end users. And if you're trying to achieve security goals just for your own internal reasons, maybe you have an audit, maybe you got a new boss, maybe you'd just like to know where things stand."
+      },
+      {
+        "start": 83100,
+        "stop": 84300,
+        "text": " Well, the traditional way has been get an agent on every machine, run some sort of network-wide audit, and these things would always bring their own security issues with them, inevitably. They always do."
+      },
+      {
+        "start": 84300,
+        "stop": 85200,
+        "text": " And they also slow down the user's machine. They pit IT against the end user. It is a very uncomfortable dynamic, and I have been on both ends of it."
+      },
+      {
+        "start": 85200,
+        "stop": 86100,
+        "text": " Collide does things differently. Instead of forcing changes on users, Collide sends them security recommendations via Slack."
+      },
+      {
+        "start": 86100,
+        "stop": 86900,
+        "text": " Collide will automatically notify your team when their device is insecure, and it'll give them step-by-step instructions on how to solve the problem."
+      },
+      {
+        "start": 86900,
+        "stop": 88400,
+        "text": " And by reaching out to employees via friendly Slack DM and educating them about company policies, Collide actually helps you build a culture where everyone contributes to security because everyone understands it and why they're doing it."
+      },
+      {
+        "start": 88400,
+        "stop": 88700,
+        "text": " They're reasonable humans. Just tell them."
+      },
+      {
+        "start": 88700,
+        "stop": 89700,
+        "text": " And for IT admins, Collide provides a single dashboard that lets you monitor the security of your entire fleet. Maybe it's a Mac, maybe it's Windows, hopefully it's Linux."
+      },
+      {
+        "start": 89700,
+        "stop": 90600,
+        "text": " Collide supports it all. And you can see it at a glance which employees have their disks encrypted, all their OS updates installed, and a password manager installed as well."
+      },
+      {
+        "start": 90600,
+        "stop": 91200,
+        "text": " It makes it easy to prove compliance to your auditors, to yourself, to customers, to leadership, whoever it need be."
+      },
+      {
+        "start": 91200,
+        "stop": 91700,
+        "text": " So that's Collide. User-centered, cross-platform, endpoint security for teams that Slack."
+      },
+      {
+        "start": 91700,
+        "stop": 93100,
+        "text": " You can meet your compliance goals by putting users first. So visit collide.com/lan to find out how. When you go there, they'll hook you up with a goody bag, including a free t-shirt just for activating a free trial."
+      },
+      {
+        "start": 93100,
+        "stop": 93800,
+        "text": " That's Collide, so go check it out. K-O-L-I-D-E dot com slash L-A-N."
+      },
+      {
+        "start": 94200,
+        "stop": 95100,
+        "text": " We end this week with an update on the journey to a fully OpenGL-accelerated Linux desktop on the Apple M-Series hardware."
+      },
+      {
+        "start": 95100,
+        "stop": 96300,
+        "text": " Alyssa Rosenzweig, who's been involved with the Asahi Linux project for nearly two years, working on reverse engineering Apple M-Series graphics support, has shared a new status update."
+      },
+      {
+        "start": 96300,
+        "stop": 96800,
+        "text": " And it seems something of a milestone has been reached."
+      },
+      {
+        "start": 96800,
+        "stop": 97700,
+        "text": " Neverball West, the old classic Neverball game in all of its OpenGL glory, rendered on the open source Mesa Asahi driver."
+      },
+      {
+        "start": 97700,
+        "stop": 98400,
+        "text": " Now, understand that this OpenGL driver is actually running on Mac OS while using the standard proprietary Mac OS kernel driver."
+      },
+      {
+        "start": 98400,
+        "stop": 100000,
+        "text": " The hope here is that once the Apple silicon kernel graphics driver for Linux begins taking shape, this Mesa OpenGL driver will, with just a little bit of work, start functioning under Linux rather than only being functional on Mac OS."
+      },
+      {
+        "start": 100000,
+        "stop": 100500,
+        "text": " And make no mistake, this is still quite the achievement."
+      },
+      {
+        "start": 100500,
+        "stop": 101700,
+        "text": " In her most recent update, Rosenzweig writes about the process of reverse engineering the behavior of Apple's Metal driver, since, of course, Apple provides no hardware documentation."
+      },
+      {
+        "start": 101700,
+        "stop": 102500,
+        "text": " No, and surprise, surprise, the documentation for Metal, well, according to Rosenzweig, is really kind of two versions out there."
+      },
+      {
+        "start": 102500,
+        "stop": 103200,
+        "text": " They say they have one version for the public developers to consume that documents things for a developer targeting the App Store."
+      },
+      {
+        "start": 103200,
+        "stop": 104200,
+        "text": " But she believes there's a second version inside Apple that is, quote, \"an internal API adding back features that Apple doesn't want you using.\""
+      },
+      {
+        "start": 104200,
+        "stop": 105300,
+        "text": " And while Apple does not publish those features or any kind of documentation on those internal APIs, the team found a, quote, \"glimps behind the curtain.\""
+      },
+      {
+        "start": 105300,
+        "stop": 106400,
+        "text": " The undocumented classes and methods making up Apple's internal Metal API, of course, are still available in the production Metal binaries. To use them, a developer only needs the missing headers."
+      },
+      {
+        "start": 106400,
+        "stop": 107700,
+        "text": " And fortunately, Objective-C symbols contain enough information to reconstruct the header files, allowing Rosenzweig to experiment with undocumented methods that have extra functionality inherited from OpenGL."
+      },
+      {
+        "start": 107700,
+        "stop": 108600,
+        "text": " Now, all of this is very exciting, but we should probably be clear. Reverse engineering a driver stack requires years of work."
+      },
+      {
+        "start": 108600,
+        "stop": 109300,
+        "text": " You gamers out there should probably be prepared to wait a few more years before you'll really be satisfied with GPU driver performance."
+      },
+      {
+        "start": 109300,
+        "stop": 109900,
+        "text": " Yep, and the Asahi developers will be the first to tell us, \"Temper our expectations.\""
+      },
+      {
+        "start": 109900,
+        "stop": 112200,
+        "text": " But for those of us who would be satisfied with enough functionality for an accelerated desktop environment, a working web browser, and maybe a few older games, Rosenzweig thinks they might be there by the end of this year, saying, quote, \"I'm optimistic I will have native OpenGL 2.1 in Asahi Linux by the end of the year.\""
+      },
+      {
+        "start": 112200,
+        "stop": 112900,
+        "text": " That's enough to accelerate your desktop environment and browser. It's also enough to play older games like Neverball."
+      },
+      {
+        "start": 112900,
+        "stop": 113600,
+        "text": " Even without fancy features, GPU acceleration means smooth animations and better battery life."
+      },
+      {
+        "start": 113600,
+        "stop": 114600,
+        "text": " That'd be a heck of a thing to see, especially if they do it by the end of the year. That would be really impressive, and in my opinion, pretty much the best-case scenario for work like this, I'd say."
+      },
+      {
+        "start": 114600,
+        "stop": 115800,
+        "text": " I mean, I'd be blown away, honestly. And I wouldn't be surprised if the project doesn't make a funding push to try to hire Rosenzweig full-time so she can really get this thing across the finish line."
+      },
+      {
+        "start": 115800,
+        "stop": 117000,
+        "text": " Well, keep an eye on it. Keep an eye on everything else going on in the world of Linux and open source, so don't miss a single episode. Go to LinuxActionNews.com/subscribe for all the ways to get every single release."
+      },
+      {
+        "start": 117000,
+        "stop": 117500,
+        "text": " And LinuxActionNews.com/contact for ways to get in touch."
+      },
+      {
+        "start": 117500,
+        "stop": 118100,
+        "text": " Did we miss a story this week? Boost in with the new podcast app and tell us what you'd like to have heard us cover."
+      },
+      {
+        "start": 118100,
+        "stop": 118600,
+        "text": " We'll be back next week with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 118600,
+        "stop": 118900,
+        "text": " Thanks for joining us. And that's all the news for this week."
+      },
+      {
+        "start": 118900,
+        "stop": 121100,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 777,
+      "nanos": 688326775
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 255",
+    "pictures": [],
+    "duration": {
+      "secs": 1206,
+      "nanos": 244000000
+    },
+    "unique_id": "http://linuxactionnews.com/255"
+  },
+  "episode": {
+    "title": "Linux Action News 255",
+    "description": "Details on two new efforts in the Linux kernel, the Pi-like RISC-V board that just hit its funding goal, and a significant milestone for Asahi GPU driver development.",
+    "content": "<p><p>Details on two new efforts in the Linux kernel, the Pi-like RISC-V board that just hit its funding goal, and a significant milestone for Asahi GPU driver development.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.phoronix.com/news/Linux-Faster-ARM64-RISC-V-Kexec\" title=\"Experimental Kernel Patches\" rel=\"nofollow\">Experimental Kernel Patches</a> &mdash; Patches sent out today clean-up the code taken on those architectures for bringing CPU cores down and allow for parallelism. With these patches and an 80-core Arm server, a Kexec reboot can go from taking around 15 seconds to now just around one second.</li><li><a href=\"https://www.phoronix.com/news/Bytedance-Faster-Kexec-Reboot\" title=\"ByteDance Working To Make It Faster Kexec Booting The Linux Kernel\" rel=\"nofollow\">ByteDance Working To Make It Faster Kexec Booting The Linux Kernel</a></li><li><a href=\"https://lore.kernel.org/lkml/20220822021520.6996-1-kernelfans@gmail.com/\" title=\"[RFC 00/10] arm64/riscv: Introduce fast kexec reboot - Pingfan Liu\" rel=\"nofollow\">[RFC 00/10] arm64/riscv: Introduce fast kexec reboot - Pingfan Liu</a></li><li><a href=\"https://lore.kernel.org/lkml/20220725083904.56552-1-huangjie.albert@bytedance.com/\" title=\"[PATCH 0/4] faster kexec reboot - Albert Huang\" rel=\"nofollow\">[PATCH 0/4] faster kexec reboot - Albert Huang</a></li><li><a href=\"https://www.kickstarter.com/projects/starfive/visionfive-2\" title=\"VisionFive 2 — Kickstarter\" rel=\"nofollow\">VisionFive 2 — Kickstarter</a> &mdash; High-performance quad-core RISC-V single board computer (SBC) with an integrated 3D GPU, 2G/4G/8G LPDDR.</li><li><a href=\"https://lwn.net/Articles/905651/\" title=\"Linux Foundation TAB election: call for nominees\" rel=\"nofollow\">Linux Foundation TAB election: call for nominees</a> &mdash; The 2022 election for members of the Linux Foundation Technical Advisory Board (TAB) will be held during the Linux Plumbers Conference, September 12 to 14. </li><li><a href=\"https://github.com/webmin/webmin/releases/tag/2.000\" title=\"Webmin 2.0 Released\" rel=\"nofollow\">Webmin 2.0 Released</a> &mdash; Webmin is a web-based system administration tool for Unix-like servers and services with over 1,000,000 installations worldwide.</li><li><a href=\"https://github.com/flatpak/flatpak/releases/tag/1.14.0\" title=\"Flatpak 1.14.0 Released\" rel=\"nofollow\">Flatpak 1.14.0 Released</a> &mdash; Flatpak 1.14 brings a variety of mostly small and lower-level improvements to this Linux app sandboxing tech</li><li><a href=\"https://www.phoronix.com/news/Flatpak-1.14-Released\" title=\"Flatpak 1.14 Released With Improvements For Sandboxed Linux Apps\" rel=\"nofollow\">Flatpak 1.14 Released With Improvements For Sandboxed Linux Apps</a></li><li><a href=\"https://www.mozilla.org/en-US/firefox/104.0/releasenotes/\" title=\"Firefox 104.0\" rel=\"nofollow\">Firefox 104.0</a> &mdash; The Firefox UI itself will now be throttled for performance and battery usage when minimized or occluded, in the same way background tabs are.</li><li><a href=\"https://rosenzweig.io/blog/asahi-gpu-part-6.html\" title=\"Rosenzweig – Clip control on the Apple GPU\" rel=\"nofollow\">Rosenzweig – Clip control on the Apple GPU</a> &mdash; After a year in development, the open source “Asahi” driver for the Apple GPU is running real games. </li><li><a href=\"https://www.phoronix.com/news/Asahi-Linux-GL-2.1-EOY2022\" title=\"Asahi Linux May Have OpenGL 2.1 For Apple M1/M2 By Year’s End\" rel=\"nofollow\">Asahi Linux May Have OpenGL 2.1 For Apple M1/M2 By Year’s End</a> &mdash; \" I’m optimistic that we’ll have native OpenGL 2.1 in Asahi Linux by the end of the year.\"</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8744",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15592068/3cbfbf46-300d-4075-a426-a841c721c34c.mp3",
+      "length": "17329725",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-25T06:30:00+02:00"
+  },
+  "speedup": 1.5510635
+}

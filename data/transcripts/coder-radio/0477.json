@@ -1,0 +1,6177 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 700,
+        "text": " This is Coda Radio, episode 477 for August 1st, 2022."
+      },
+      {
+        "start": 700,
+        "stop": 1932,
+        "text": " Hey, good buddy, welcome back to Jupiter Broadcasting's weekly talk show, taking a pragmatic look"
+      },
+      {
+        "start": 1932,
+        "stop": 2500,
+        "text": " at the art and the business of software development and the world of technology."
+      },
+      {
+        "start": 2500,
+        "stop": 3020,
+        "text": " My name is Chris, and joining us every single week with his laser pointer, it's our host,"
+      },
+      {
+        "start": 3020,
+        "stop": 3120,
+        "text": " Mr. Dominic."
+      },
+      {
+        "start": 3120,
+        "stop": 3220,
+        "text": " Hello, Mike."
+      },
+      {
+        "start": 3220,
+        "stop": 3804,
+        "text": " Salutations, ye, ye, ye, from ye olde Ren Faire edition of Coda Radio."
+      },
+      {
+        "start": 3804,
+        "stop": 4108,
+        "text": " I'm gonna admit something to you."
+      },
+      {
+        "start": 4108,
+        "stop": 4544,
+        "text": " Didn't actually know it was August until that exact moment when I read the date."
+      },
+      {
+        "start": 4544,
+        "stop": 4898,
+        "text": " I looked down at the date, and I just realized it was August."
+      },
+      {
+        "start": 4898,
+        "stop": 5216,
+        "text": " As always, folks, we're at our normal peak performance."
+      },
+      {
+        "start": 5216,
+        "stop": 5476,
+        "text": " Systems are operational, but barely just so."
+      },
+      {
+        "start": 5476,
+        "stop": 5716,
+        "text": " Oh, man, it's just every day, right?"
+      },
+      {
+        "start": 5716,
+        "stop": 5828,
+        "text": " It's just, what does it matter?"
+      },
+      {
+        "start": 5828,
+        "stop": 6084,
+        "text": " Every day's a work day, so it doesn't really matter, I suppose."
+      },
+      {
+        "start": 6084,
+        "stop": 6282,
+        "text": " Seven days a week, all air day, all day."
+      },
+      {
+        "start": 6282,
+        "stop": 6468,
+        "text": " I got something kind of special for you."
+      },
+      {
+        "start": 6468,
+        "stop": 6760,
+        "text": " So we've been, you know, we've been doing the video stream of the shows now over at"
+      },
+      {
+        "start": 6760,
+        "stop": 7188,
+        "text": " Jupiter.Tube, and we've been kind of coming up with music to kick the shows off with as"
+      },
+      {
+        "start": 7188,
+        "stop": 7826,
+        "text": " the stream opens up, and Deckbot wrote in a suggestion, and it was a good suggestion,"
+      },
+      {
+        "start": 7826,
+        "stop": 7980,
+        "text": " but I wanted to take it a bit further."
+      },
+      {
+        "start": 7980,
+        "stop": 8144,
+        "text": " I wanted to make it even better."
+      },
+      {
+        "start": 8144,
+        "stop": 8434,
+        "text": " I wanted to make it something special to the show."
+      },
+      {
+        "start": 8434,
+        "stop": 8960,
+        "text": " So I'm going to play a hit, and I want you to tell me if you can identify when and where"
+      },
+      {
+        "start": 8960,
+        "stop": 9072,
+        "text": " this hit comes from."
+      },
+      {
+        "start": 9072,
+        "stop": 9228,
+        "text": " I grabbed this for you."
+      },
+      {
+        "start": 9228,
+        "stop": 9576,
+        "text": " That's your one and only hint, is I went out and I got this for you based on Deckbot's"
+      },
+      {
+        "start": 9576,
+        "stop": 9676,
+        "text": " email."
+      },
+      {
+        "start": 9676,
+        "stop": 9776,
+        "text": " [music]"
+      },
+      {
+        "start": 9776,
+        "stop": 11926,
+        "text": " All right, ringing any bells?"
+      },
+      {
+        "start": 11926,
+        "stop": 12026,
+        "text": " It weirdly does."
+      },
+      {
+        "start": 12026,
+        "stop": 12214,
+        "text": " It's for me."
+      },
+      {
+        "start": 12214,
+        "stop": 12314,
+        "text": " For you."
+      },
+      {
+        "start": 12314,
+        "stop": 12594,
+        "text": " Does it, how does it make you feel when you hear it?"
+      },
+      {
+        "start": 12594,
+        "stop": 12694,
+        "text": " I kind of like it."
+      },
+      {
+        "start": 12694,
+        "stop": 12794,
+        "text": " I'm kind of into it."
+      },
+      {
+        "start": 12794,
+        "stop": 12894,
+        "text": " Yeah?"
+      },
+      {
+        "start": 12894,
+        "stop": 13180,
+        "text": " It reminds you of better times?"
+      },
+      {
+        "start": 13180,
+        "stop": 13280,
+        "text": " Is it the 90s?"
+      },
+      {
+        "start": 13280,
+        "stop": 13696,
+        "text": " I feel like I'm walking into a trap."
+      },
+      {
+        "start": 13696,
+        "stop": 14052,
+        "text": " My Admiral Ackbar sensors are blaring right now."
+      },
+      {
+        "start": 14052,
+        "stop": 14194,
+        "text": " I don't know, what is it?"
+      },
+      {
+        "start": 14194,
+        "stop": 14562,
+        "text": " It is the opening video to Snow Leopard after a fresh install."
+      },
+      {
+        "start": 14562,
+        "stop": 14662,
+        "text": " Damn it, I knew it."
+      },
+      {
+        "start": 14662,
+        "stop": 14762,
+        "text": " I knew it was something."
+      },
+      {
+        "start": 14762,
+        "stop": 15122,
+        "text": " I was like, I sound so familiar and I feel so happy."
+      },
+      {
+        "start": 15122,
+        "stop": 15434,
+        "text": " I just thought maybe it was like a Jar Jar thing, like there was some Jar Jar skit I"
+      },
+      {
+        "start": 15434,
+        "stop": 15534,
+        "text": " didn't know about."
+      },
+      {
+        "start": 15534,
+        "stop": 15914,
+        "text": " Yeah, that's the back, that's the little music they'd play, you know when that video"
+      },
+      {
+        "start": 15914,
+        "stop": 16214,
+        "text": " would come up in all the different languages and they'd welcome you to the desktop."
+      },
+      {
+        "start": 16214,
+        "stop": 16546,
+        "text": " That's right, it's terrible now, I just had to pay my back today."
+      },
+      {
+        "start": 16546,
+        "stop": 16770,
+        "text": " Yeah, yeah, no, today they don't care."
+      },
+      {
+        "start": 16770,
+        "stop": 16870,
+        "text": " Now they're like, yeah, whatever."
+      },
+      {
+        "start": 16870,
+        "stop": 16970,
+        "text": " They don't care about it."
+      },
+      {
+        "start": 16970,
+        "stop": 17134,
+        "text": " You don't need no fancy video, screw you."
+      },
+      {
+        "start": 17134,
+        "stop": 17302,
+        "text": " But back then, you know, that was a big deal."
+      },
+      {
+        "start": 17302,
+        "stop": 17770,
+        "text": " In fact, a machine could even play video was a big deal back then."
+      },
+      {
+        "start": 17770,
+        "stop": 17906,
+        "text": " What does your machine have?"
+      },
+      {
+        "start": 17906,
+        "stop": 18006,
+        "text": " Video."
+      },
+      {
+        "start": 18006,
+        "stop": 18106,
+        "text": " What?"
+      },
+      {
+        "start": 18106,
+        "stop": 18294,
+        "text": " Yeah, it can do it."
+      },
+      {
+        "start": 18294,
+        "stop": 18662,
+        "text": " All right, Jacob wrote into the show, \"In a recent episode,\" you guys were talking"
+      },
+      {
+        "start": 18662,
+        "stop": 19198,
+        "text": " about WSL, \"I worked for a very large retailer with a large IT department and a mature set"
+      },
+      {
+        "start": 19198,
+        "stop": 19662,
+        "text": " of practices, especially about what machines and operating systems they use."
+      },
+      {
+        "start": 19662,
+        "stop": 19882,
+        "text": " Linux machines are not on the list."
+      },
+      {
+        "start": 19882,
+        "stop": 20214,
+        "text": " Macs and PCs, that's it."
+      },
+      {
+        "start": 20214,
+        "stop": 20546,
+        "text": " For the Mac based people, having access to a good terminal is no problem."
+      },
+      {
+        "start": 20546,
+        "stop": 20670,
+        "text": " I've introduced them to warp."
+      },
+      {
+        "start": 20670,
+        "stop": 20810,
+        "text": " Thanks, Mike."
+      },
+      {
+        "start": 20810,
+        "stop": 21234,
+        "text": " For the PC folks, well, things are a bit more challenging."
+      },
+      {
+        "start": 21234,
+        "stop": 21626,
+        "text": " We've had a scenario where two of our engineers were unable to run the scripts they needed"
+      },
+      {
+        "start": 21626,
+        "stop": 22014,
+        "text": " to because they didn't have some of the tools native to Linux or Mac."
+      },
+      {
+        "start": 22014,
+        "stop": 22678,
+        "text": " So they installed WSL and after a quick restart and a quick apt-get, they were up and running."
+      },
+      {
+        "start": 22678,
+        "stop": 22916,
+        "text": " This was super efficient."
+      },
+      {
+        "start": 22916,
+        "stop": 23494,
+        "text": " We didn't have to request a Linux box from IT and get to wait for the ticket to be solved."
+      },
+      {
+        "start": 23494,
+        "stop": 23894,
+        "text": " We didn't have to wait for a Linux VM to get spun up for us."
+      },
+      {
+        "start": 23894,
+        "stop": 24386,
+        "text": " Microsoft's technique of enabling a Linux within our enterprise solution that just fits"
+      },
+      {
+        "start": 24386,
+        "stop": 24926,
+        "text": " allowed us to quickly meet our needs without triggering any of the security configs on"
+      },
+      {
+        "start": 24926,
+        "stop": 25026,
+        "text": " the machine."
+      },
+      {
+        "start": 25026,
+        "stop": 25798,
+        "text": " From my experience, WSL has the space and makes our workflow a lot more efficient."
+      },
+      {
+        "start": 25798,
+        "stop": 26312,
+        "text": " The whole IT angle, right, of needing to provision a machine or even provision a VM."
+      },
+      {
+        "start": 26312,
+        "stop": 26466,
+        "text": " And with WSL, you can just check a box."
+      },
+      {
+        "start": 26466,
+        "stop": 26810,
+        "text": " Now, you've got to have certain privileges to get that installed, but assuming you have"
+      },
+      {
+        "start": 26810,
+        "stop": 27514,
+        "text": " those, yeah, that's the secret success right there is that WSL will end up having more"
+      },
+      {
+        "start": 27514,
+        "stop": 28116,
+        "text": " dark matter developers using it than all of the Linux desktop users combined."
+      },
+      {
+        "start": 28116,
+        "stop": 28314,
+        "text": " Just that one category of user."
+      },
+      {
+        "start": 28314,
+        "stop": 28654,
+        "text": " And the question is, and this is the flame war question, are they Linux users?"
+      },
+      {
+        "start": 28654,
+        "stop": 28850,
+        "text": " I'm going to go ahead and say kind of."
+      },
+      {
+        "start": 28850,
+        "stop": 29582,
+        "text": " I mean, I kind of feel like you have to say yes if you agree that by using the Linux kernel"
+      },
+      {
+        "start": 29582,
+        "stop": 29990,
+        "text": " to do this, which they are with WSL, then they're Linux users."
+      },
+      {
+        "start": 29990,
+        "stop": 30402,
+        "text": " But then that also means Android users are Linux users by that same definition."
+      },
+      {
+        "start": 30402,
+        "stop": 30762,
+        "text": " Do you agree that all Android users are Linux users?"
+      },
+      {
+        "start": 30762,
+        "stop": 30862,
+        "text": " No."
+      },
+      {
+        "start": 30862,
+        "stop": 31246,
+        "text": " I mean, so it's funny, right, because the WSL guys are literally going to be pulling"
+      },
+      {
+        "start": 31246,
+        "stop": 31902,
+        "text": " from either Debian packages or if they're using, what was it, the one I used, Penguin,"
+      },
+      {
+        "start": 31902,
+        "stop": 32390,
+        "text": " right, which is I think, although they have flavors now, they have a Fedora flavor, but"
+      },
+      {
+        "start": 32390,
+        "stop": 32580,
+        "text": " it's Debian based."
+      },
+      {
+        "start": 32580,
+        "stop": 33026,
+        "text": " And their day to day workflow right in Windows Terminal, which is effectively going to be"
+      },
+      {
+        "start": 33026,
+        "stop": 33614,
+        "text": " a bass or a Z shell, is a lot closer to a desktop Linux users than a desktop Windows"
+      },
+      {
+        "start": 33614,
+        "stop": 33830,
+        "text": " user if they're doing like web dev."
+      },
+      {
+        "start": 33830,
+        "stop": 33986,
+        "text": " And I can feel the hatred flowing."
+      },
+      {
+        "start": 33986,
+        "stop": 34310,
+        "text": " I just got like a wave of anger in the universe at me."
+      },
+      {
+        "start": 34310,
+        "stop": 35040,
+        "text": " So you think it's like part technology stack, but also part of what you're doing?"
+      },
+      {
+        "start": 35040,
+        "stop": 35222,
+        "text": " Like are you using the system?"
+      },
+      {
+        "start": 35222,
+        "stop": 35322,
+        "text": " Yeah."
+      },
+      {
+        "start": 35322,
+        "stop": 35696,
+        "text": " So see this one, I don't even know how valuable of a question this is, right?"
+      },
+      {
+        "start": 35696,
+        "stop": 35796,
+        "text": " Yeah."
+      },
+      {
+        "start": 35796,
+        "stop": 35896,
+        "text": " Yeah."
+      },
+      {
+        "start": 35896,
+        "stop": 36288,
+        "text": " But this becomes a weird question because of somebody who let's take our good friend"
+      },
+      {
+        "start": 36288,
+        "stop": 36412,
+        "text": " Alan Jude, right?"
+      },
+      {
+        "start": 36412,
+        "stop": 36894,
+        "text": " If somebody who not not to pick on Alan, but, you know, lives in a Windows seven machine,"
+      },
+      {
+        "start": 36894,
+        "stop": 37392,
+        "text": " but basically works on Unix servers all day, every day in terminal or even someone like"
+      },
+      {
+        "start": 37392,
+        "stop": 37918,
+        "text": " me who, okay, spends a lot of time working on a Mac machine, but does uses the Mac machine"
+      },
+      {
+        "start": 37918,
+        "stop": 38464,
+        "text": " to SSH into Linux boxes almost all day and write code for Linux machines?"
+      },
+      {
+        "start": 38464,
+        "stop": 38714,
+        "text": " And you know, is that not like working in Linux?"
+      },
+      {
+        "start": 38714,
+        "stop": 38814,
+        "text": " I don't know."
+      },
+      {
+        "start": 38814,
+        "stop": 38914,
+        "text": " Right."
+      },
+      {
+        "start": 38914,
+        "stop": 39080,
+        "text": " And Alan is producing code for FreeBSD."
+      },
+      {
+        "start": 39080,
+        "stop": 39180,
+        "text": " For FreeBSD."
+      },
+      {
+        "start": 39180,
+        "stop": 39280,
+        "text": " Yep."
+      },
+      {
+        "start": 39280,
+        "stop": 39380,
+        "text": " Yep."
+      },
+      {
+        "start": 39380,
+        "stop": 39480,
+        "text": " Because the devil."
+      },
+      {
+        "start": 39480,
+        "stop": 39580,
+        "text": " Yes."
+      },
+      {
+        "start": 39580,
+        "stop": 39680,
+        "text": " But I don't know."
+      },
+      {
+        "start": 39680,
+        "stop": 39990,
+        "text": " I mean, maybe you would say they're not like GUI Linux users, but you know, we've been"
+      },
+      {
+        "start": 39990,
+        "stop": 40126,
+        "text": " talking about this a long time."
+      },
+      {
+        "start": 40126,
+        "stop": 40358,
+        "text": " The value of Linux is really the kernel."
+      },
+      {
+        "start": 40358,
+        "stop": 40458,
+        "text": " Yeah."
+      },
+      {
+        "start": 40458,
+        "stop": 40694,
+        "text": " I'd say it's the platform to run things on."
+      },
+      {
+        "start": 40694,
+        "stop": 41190,
+        "text": " Like it's a general compute platform and you can move that to your Windows platform, I suppose."
+      },
+      {
+        "start": 41190,
+        "stop": 41290,
+        "text": " All right."
+      },
+      {
+        "start": 41290,
+        "stop": 41542,
+        "text": " Well, let's let's switch over to the other side."
+      },
+      {
+        "start": 41542,
+        "stop": 41870,
+        "text": " Travis writes in and this is an interesting one."
+      },
+      {
+        "start": 41870,
+        "stop": 41996,
+        "text": " Hey, guys, question."
+      },
+      {
+        "start": 41996,
+        "stop": 42670,
+        "text": " I want to do an Apple research project, which is an expansion of a current small scale official"
+      },
+      {
+        "start": 42670,
+        "stop": 43206,
+        "text": " IRB certified research on the secondary traumatic stress disorder for health care workers."
+      },
+      {
+        "start": 43206,
+        "stop": 43546,
+        "text": " So it's sort of like PTSD, but for health care workers."
+      },
+      {
+        "start": 43546,
+        "stop": 44018,
+        "text": " And Travis wants to do a study using the Apple research kit, which uses a bunch of metrics"
+      },
+      {
+        "start": 44018,
+        "stop": 44486,
+        "text": " from the watch to monitor things like heart rate and blood oxygen level and steps and"
+      },
+      {
+        "start": 44486,
+        "stop": 44662,
+        "text": " all of that kind of stuff."
+      },
+      {
+        "start": 44662,
+        "stop": 44794,
+        "text": " Travis already has this ongoing."
+      },
+      {
+        "start": 44794,
+        "stop": 45278,
+        "text": " He says, when I go to the Apple website and I dig around with the email correspondence"
+      },
+      {
+        "start": 45278,
+        "stop": 45672,
+        "text": " I have so far, it seems like they want me to bring my own app dev team to the table"
+      },
+      {
+        "start": 45672,
+        "stop": 45850,
+        "text": " to create this project."
+      },
+      {
+        "start": 45850,
+        "stop": 46374,
+        "text": " Currently, I'm heading up one of the larger studies on PTSD and I that I know of, at least"
+      },
+      {
+        "start": 46374,
+        "stop": 46822,
+        "text": " involving three different departments of one level, one trauma center in Virginia."
+      },
+      {
+        "start": 46822,
+        "stop": 47182,
+        "text": " I am to use this study to get funding for and head up a larger study using the Apple"
+      },
+      {
+        "start": 47182,
+        "stop": 47778,
+        "text": " research kit to make this the largest study on STSD in the world to date."
+      },
+      {
+        "start": 47778,
+        "stop": 48212,
+        "text": " My angle is that with Apple research, I can incorporate not only survey results, but data"
+      },
+      {
+        "start": 48212,
+        "stop": 48558,
+        "text": " from iPhones and metrics from Apple watches to create what I believe could be a pivotal"
+      },
+      {
+        "start": 48558,
+        "stop": 49090,
+        "text": " study that includes heart rate, O2 steps and other measurable data from phones and watches"
+      },
+      {
+        "start": 49090,
+        "stop": 49266,
+        "text": " to give a complete picture."
+      },
+      {
+        "start": 49266,
+        "stop": 49810,
+        "text": " Now, I am an emergency nurse by trade and I know very little about coding or who I should"
+      },
+      {
+        "start": 49810,
+        "stop": 50398,
+        "text": " talk to, but I know that this is a huge unspoken issue in the healthcare system."
+      },
+      {
+        "start": 50398,
+        "stop": 50854,
+        "text": " I'm looking for ideas from you guys in the know on who can code such an idea into reality."
+      },
+      {
+        "start": 50854,
+        "stop": 51474,
+        "text": " If my grant funding is enough, I think I could hire alice.dev to do this project."
+      },
+      {
+        "start": 51474,
+        "stop": 51642,
+        "text": " Or maybe I could do the research project myself."
+      },
+      {
+        "start": 51642,
+        "stop": 51742,
+        "text": " I have so many questions."
+      },
+      {
+        "start": 51742,
+        "stop": 51906,
+        "text": " I'd love to know your initial thoughts."
+      },
+      {
+        "start": 51906,
+        "stop": 52022,
+        "text": " Thanks for your time on the matter."
+      },
+      {
+        "start": 52022,
+        "stop": 52454,
+        "text": " Yes, long time listener since last."
+      },
+      {
+        "start": 52454,
+        "stop": 52554,
+        "text": " And I says thanks."
+      },
+      {
+        "start": 52554,
+        "stop": 52654,
+        "text": " Sincerely, Travis."
+      },
+      {
+        "start": 52654,
+        "stop": 52828,
+        "text": " What a fascinating idea."
+      },
+      {
+        "start": 52828,
+        "stop": 53290,
+        "text": " And for those of you curious, I put a link to some of the research kit information in"
+      },
+      {
+        "start": 53290,
+        "stop": 53718,
+        "text": " the show notes, including the open source research kit project that Apple released a"
+      },
+      {
+        "start": 53718,
+        "stop": 54186,
+        "text": " while ago, which is a framework introduced by Apple to let researchers and developers"
+      },
+      {
+        "start": 54186,
+        "stop": 54428,
+        "text": " create apps for medical research."
+      },
+      {
+        "start": 54428,
+        "stop": 54730,
+        "text": " And it's called, surprisingly, research kit."
+      },
+      {
+        "start": 54730,
+        "stop": 54898,
+        "text": " What do you think, Mr. Dominic?"
+      },
+      {
+        "start": 54898,
+        "stop": 55154,
+        "text": " I mean, that's a juicy email, right?"
+      },
+      {
+        "start": 55154,
+        "stop": 55610,
+        "text": " Well, you know, I haven't looked at research kit quite a lot, but it's very interesting"
+      },
+      {
+        "start": 55610,
+        "stop": 55908,
+        "text": " how Apple has been able to kind of leverage."
+      },
+      {
+        "start": 55908,
+        "stop": 56430,
+        "text": " There are just, let's be honest, gargantuan Smaug the dragon like horde of medical data"
+      },
+      {
+        "start": 56430,
+        "stop": 56806,
+        "text": " to empower frankly, researchers."
+      },
+      {
+        "start": 56806,
+        "stop": 57220,
+        "text": " I would say, man, if you can start this on your own and kind of bootstrap it, that's"
+      },
+      {
+        "start": 57220,
+        "stop": 57402,
+        "text": " the way to go."
+      },
+      {
+        "start": 57402,
+        "stop": 57686,
+        "text": " See where you get it."
+      },
+      {
+        "start": 57686,
+        "stop": 58050,
+        "text": " Obviously, having looked at the frameworks before the show today, I can say this is kind"
+      },
+      {
+        "start": 58050,
+        "stop": 58678,
+        "text": " of, I know we like to beat up on Apple sometimes, but given these kind of libraries and frameworks"
+      },
+      {
+        "start": 58678,
+        "stop": 58926,
+        "text": " away is a huge deal."
+      },
+      {
+        "start": 58926,
+        "stop": 59150,
+        "text": " And he'd go for it."
+      },
+      {
+        "start": 59150,
+        "stop": 59382,
+        "text": " You probably know a lot more about this than I do."
+      },
+      {
+        "start": 59382,
+        "stop": 59502,
+        "text": " I completely agree."
+      },
+      {
+        "start": 59502,
+        "stop": 60030,
+        "text": " And Apple is always adding more sensors to that watch."
+      },
+      {
+        "start": 60030,
+        "stop": 60130,
+        "text": " You know what I mean?"
+      },
+      {
+        "start": 60130,
+        "stop": 60282,
+        "text": " Like it's just going to get better."
+      },
+      {
+        "start": 60282,
+        "stop": 60546,
+        "text": " This is just going to get more powerful."
+      },
+      {
+        "start": 60546,
+        "stop": 61006,
+        "text": " And so far it seems like the privacy works."
+      },
+      {
+        "start": 61006,
+        "stop": 61356,
+        "text": " Like the way they've built this, it seems like everybody's okay with it."
+      },
+      {
+        "start": 61356,
+        "stop": 61526,
+        "text": " There hasn't been a catastrophe yet."
+      },
+      {
+        "start": 61526,
+        "stop": 61734,
+        "text": " But Travis, it's a great idea."
+      },
+      {
+        "start": 61734,
+        "stop": 61994,
+        "text": " And you know, one of the things that I thought was interesting about your email, Travis,"
+      },
+      {
+        "start": 61994,
+        "stop": 62426,
+        "text": " is I hadn't really thought about this, but of course to somebody that's completely"
+      },
+      {
+        "start": 62426,
+        "stop": 62900,
+        "text": " outside this field, you would almost think that Apple supplies the developers, right?"
+      },
+      {
+        "start": 62900,
+        "stop": 63416,
+        "text": " Because it's their watch, their research kit, and they are the richest company in the"
+      },
+      {
+        "start": 63416,
+        "stop": 63516,
+        "text": " world."
+      },
+      {
+        "start": 63516,
+        "stop": 63970,
+        "text": " And you almost kind of just assume that Apple has developers ready to go that you contact"
+      },
+      {
+        "start": 63970,
+        "stop": 64346,
+        "text": " Apple and then they assign a handful of developers to your project."
+      },
+      {
+        "start": 64346,
+        "stop": 64690,
+        "text": " But that's, nope, nope, you do all the work."
+      },
+      {
+        "start": 64690,
+        "stop": 65034,
+        "text": " You do all the things to make the watch super valuable."
+      },
+      {
+        "start": 65034,
+        "stop": 65258,
+        "text": " And then Apple takes 30%."
+      },
+      {
+        "start": 65258,
+        "stop": 65438,
+        "text": " That's how that works, Travis."
+      },
+      {
+        "start": 65438,
+        "stop": 65538,
+        "text": " Yeah."
+      },
+      {
+        "start": 65538,
+        "stop": 65938,
+        "text": " But in this case, I think you can defend that a little better."
+      },
+      {
+        "start": 65938,
+        "stop": 66402,
+        "text": " Because just the idea, for instance, like that I can monitor my heart rate, my, you"
+      },
+      {
+        "start": 66402,
+        "stop": 66898,
+        "text": " know, am I going AFib or anything like that on my wrist for what did this watch cost me,"
+      },
+      {
+        "start": 66898,
+        "stop": 67136,
+        "text": " like 400, 500 bucks?"
+      },
+      {
+        "start": 67136,
+        "stop": 67314,
+        "text": " That's pretty significant, right?"
+      },
+      {
+        "start": 67314,
+        "stop": 67536,
+        "text": " Just the amount of engineering that had to go into this."
+      },
+      {
+        "start": 67536,
+        "stop": 67898,
+        "text": " And the fact that it doesn't look like a potato helps."
+      },
+      {
+        "start": 67898,
+        "stop": 68002,
+        "text": " Means I'll actually wear it."
+      },
+      {
+        "start": 68002,
+        "stop": 68252,
+        "text": " It also means a lot of people are getting a free Apple watch because a big part of these"
+      },
+      {
+        "start": 68252,
+        "stop": 68732,
+        "text": " studies, because of course you can't just limit it to Apple customers."
+      },
+      {
+        "start": 68732,
+        "stop": 69172,
+        "text": " A big part of these studies is giving out like the base watch, by that means free Apple"
+      },
+      {
+        "start": 69172,
+        "stop": 69272,
+        "text": " watch for a lot of people."
+      },
+      {
+        "start": 69272,
+        "stop": 69372,
+        "text": " Yay!"
+      },
+      {
+        "start": 69372,
+        "stop": 69472,
+        "text": " Apple watch for it."
+      },
+      {
+        "start": 69472,
+        "stop": 69644,
+        "text": " Yeah, get your free Apple watch."
+      },
+      {
+        "start": 69644,
+        "stop": 69774,
+        "text": " We're just going to monitor everything."
+      },
+      {
+        "start": 69774,
+        "stop": 69874,
+        "text": " All right."
+      },
+      {
+        "start": 69874,
+        "stop": 70018,
+        "text": " Matthew's got our last email of the day."
+      },
+      {
+        "start": 70018,
+        "stop": 70182,
+        "text": " Now, we did get a couple more emails."
+      },
+      {
+        "start": 70182,
+        "stop": 70348,
+        "text": " They'll be in the next episode, don't worry."
+      },
+      {
+        "start": 70348,
+        "stop": 70582,
+        "text": " And please do keep sending in your questions."
+      },
+      {
+        "start": 70582,
+        "stop": 70682,
+        "text": " Coder.show/contact."
+      },
+      {
+        "start": 70682,
+        "stop": 71174,
+        "text": " I would like to build up a bit of a backlog just so that we have a pool to pull from."
+      },
+      {
+        "start": 71174,
+        "stop": 71370,
+        "text": " So Matthew's got our last one of the day here."
+      },
+      {
+        "start": 71370,
+        "stop": 71470,
+        "text": " He says, \"Hey, y'all."
+      },
+      {
+        "start": 71470,
+        "stop": 71962,
+        "text": " I've been looking at GitOps and other newer DevOps techniques and tooling."
+      },
+      {
+        "start": 71962,
+        "stop": 72572,
+        "text": " Curious what your thoughts are and approaches are on DevOps and/or GitOps specifically."
+      },
+      {
+        "start": 72572,
+        "stop": 72966,
+        "text": " It's not as exciting as other aspects of development, but I feel it impacts developer happiness"
+      },
+      {
+        "start": 72966,
+        "stop": 73190,
+        "text": " and productivity quite a lot.\""
+      },
+      {
+        "start": 73190,
+        "stop": 73346,
+        "text": " Thanks."
+      },
+      {
+        "start": 73346,
+        "stop": 73798,
+        "text": " And for those of you who don't know, GitOps is essentially a framework that takes DevOps"
+      },
+      {
+        "start": 73798,
+        "stop": 74422,
+        "text": " best practices, which could be used for application development, such as version control, collaboration,"
+      },
+      {
+        "start": 74422,
+        "stop": 74878,
+        "text": " compliance, tooling, all of that, and applies it to infrastructure automation."
+      },
+      {
+        "start": 74878,
+        "stop": 75302,
+        "text": " So taking some of the best of development practices and applying it to infrastructure"
+      },
+      {
+        "start": 75302,
+        "stop": 75402,
+        "text": " management."
+      },
+      {
+        "start": 75402,
+        "stop": 76002,
+        "text": " Now, I know you have a moderate, a modest infrastructure at the Mad Botter, but I'm"
+      },
+      {
+        "start": 76002,
+        "stop": 76378,
+        "text": " sure you probably thought a little bit about deploying things and keeping things manageable."
+      },
+      {
+        "start": 76378,
+        "stop": 76506,
+        "text": " What are your thoughts in this area?"
+      },
+      {
+        "start": 76506,
+        "stop": 76978,
+        "text": " It's an active conversation because as things have changed, the self-hosting model is starting"
+      },
+      {
+        "start": 76978,
+        "stop": 77174,
+        "text": " to make less sense for us."
+      },
+      {
+        "start": 77174,
+        "stop": 77330,
+        "text": " Oh, tell me more."
+      },
+      {
+        "start": 77330,
+        "stop": 78062,
+        "text": " Well, it's coming down to a former sponsor keeps raising their hosting prices on me,"
+      },
+      {
+        "start": 78062,
+        "stop": 78382,
+        "text": " and a certain Microsoft-owned platform called GitHub—I don't know if you've ever heard"
+      },
+      {
+        "start": 78382,
+        "stop": 78850,
+        "text": " of them, they're a little indie rail shop—keeps lowering their prices."
+      },
+      {
+        "start": 78850,
+        "stop": 79276,
+        "text": " It just so happens that many of the tools and places we want to deploy to have these"
+      },
+      {
+        "start": 79276,
+        "stop": 79846,
+        "text": " really neat preconfigured GitHub actions that you could just, bam, now we can deploy for"
+      },
+      {
+        "start": 79846,
+        "stop": 80506,
+        "text": " the technologies that we primarily use, which would be Python and to a lesser degree Rails."
+      },
+      {
+        "start": 80506,
+        "stop": 81230,
+        "text": " So that is becoming more attractive because I did the math, actually last week, we would"
+      },
+      {
+        "start": 81230,
+        "stop": 81776,
+        "text": " cut our hosting bill in half because of just the implied backups that GitHub themselves"
+      },
+      {
+        "start": 81776,
+        "stop": 82106,
+        "text": " do that we're now manually doing all the time, right?"
+      },
+      {
+        "start": 82106,
+        "stop": 82334,
+        "text": " Interesting, yeah."
+      },
+      {
+        "start": 82334,
+        "stop": 82890,
+        "text": " So the question becomes, okay, our GitLab pipelines, what does moving them to GitHub"
+      },
+      {
+        "start": 82890,
+        "stop": 83090,
+        "text": " look like?"
+      },
+      {
+        "start": 83090,
+        "stop": 83662,
+        "text": " And for the things we care about that we currently do continuous deployment, continuous integration"
+      },
+      {
+        "start": 83662,
+        "stop": 83950,
+        "text": " on, is that level of effort worth it?"
+      },
+      {
+        "start": 83950,
+        "stop": 84272,
+        "text": " And I'm pretty sure the answer is just yes."
+      },
+      {
+        "start": 84272,
+        "stop": 84826,
+        "text": " So I, you know what, the logic here is we're small."
+      },
+      {
+        "start": 84826,
+        "stop": 85214,
+        "text": " The more we spend on hosting, the kind of the worse off we are."
+      },
+      {
+        "start": 85214,
+        "stop": 85790,
+        "text": " And also it's a big responsibility to host your own GitLab server."
+      },
+      {
+        "start": 85790,
+        "stop": 86074,
+        "text": " It's not hard, but over time, you know, there's more updates."
+      },
+      {
+        "start": 86074,
+        "stop": 86546,
+        "text": " There's just more stuff to do when GitHub is just so damn cheap now."
+      },
+      {
+        "start": 86546,
+        "stop": 86990,
+        "text": " And however, whatever you think of Microsoft, because I know some people have some feelings"
+      },
+      {
+        "start": 86990,
+        "stop": 87542,
+        "text": " around this, GitHub has effectively become the de facto standard for most pieces of,"
+      },
+      {
+        "start": 87542,
+        "stop": 88078,
+        "text": " you know, every IDE, every deployment, every platform as a service or infrastructure as"
+      },
+      {
+        "start": 88078,
+        "stop": 88398,
+        "text": " a service has a little GitHub button to just connect to."
+      },
+      {
+        "start": 88398,
+        "stop": 89170,
+        "text": " And basically does like, let's say, 60% of the deployment work, which now this is good"
+      },
+      {
+        "start": 89170,
+        "stop": 89270,
+        "text": " for us."
+      },
+      {
+        "start": 89270,
+        "stop": 89370,
+        "text": " We lower our costs."
+      },
+      {
+        "start": 89370,
+        "stop": 89790,
+        "text": " It's also good for our customers because, you know, they're not paying us for time that"
+      },
+      {
+        "start": 89790,
+        "stop": 90082,
+        "text": " we don't need to be doing hand deployments in most cases."
+      },
+      {
+        "start": 90082,
+        "stop": 90498,
+        "text": " So I'd say ongoing conversation is the right way to put it here too."
+      },
+      {
+        "start": 90498,
+        "stop": 91014,
+        "text": " First of all, we're rebuilding our website and the entire website workflow."
+      },
+      {
+        "start": 91014,
+        "stop": 91402,
+        "text": " We are moving to essentially GitHub and GitHub actions."
+      },
+      {
+        "start": 91402,
+        "stop": 91942,
+        "text": " So when you want to update a page at jupyterbroadcasting.net, which is our current development site, you"
+      },
+      {
+        "start": 91942,
+        "stop": 92382,
+        "text": " go modify a page on GitHub, you check it in and you know, you make all your changes and"
+      },
+      {
+        "start": 92382,
+        "stop": 92934,
+        "text": " then a GitHub action runs and actually renders that static website and redeploys it."
+      },
+      {
+        "start": 92934,
+        "stop": 93414,
+        "text": " We're kind of thinking about that too from a Nix OS standpoint, because as time goes"
+      },
+      {
+        "start": 93414,
+        "stop": 93962,
+        "text": " on, we've built out more and more infrastructure as we've leaned more and more into self hosting."
+      },
+      {
+        "start": 93962,
+        "stop": 94678,
+        "text": " And now we kind of have a mix of CentOS, we have Ubuntu, of course, we have several different"
+      },
+      {
+        "start": 94678,
+        "stop": 94878,
+        "text": " versions of Ubuntu."
+      },
+      {
+        "start": 94878,
+        "stop": 95014,
+        "text": " We have some SUSE in there."
+      },
+      {
+        "start": 95014,
+        "stop": 95176,
+        "text": " Wait, wait, wait, what was that last one?"
+      },
+      {
+        "start": 95176,
+        "stop": 95276,
+        "text": " Some lizard OS."
+      },
+      {
+        "start": 95276,
+        "stop": 95434,
+        "text": " I've never heard of it before."
+      },
+      {
+        "start": 95434,
+        "stop": 95534,
+        "text": " Lizard people arise."
+      },
+      {
+        "start": 95534,
+        "stop": 95634,
+        "text": " Yeah."
+      },
+      {
+        "start": 95634,
+        "stop": 95734,
+        "text": " F Atlantis."
+      },
+      {
+        "start": 95734,
+        "stop": 96322,
+        "text": " And it's like, okay, this is getting a little bit ridiculous because some systems we have"
+      },
+      {
+        "start": 96322,
+        "stop": 96690,
+        "text": " a standard, so like all the SSH keys are on there and all the accounts are created and"
+      },
+      {
+        "start": 96690,
+        "stop": 96918,
+        "text": " everybody has the right UIDs and all that kind of stuff."
+      },
+      {
+        "start": 96918,
+        "stop": 97170,
+        "text": " In other systems we have nothing like that."
+      },
+      {
+        "start": 97170,
+        "stop": 97534,
+        "text": " And it's just like, oh, this is the box where we don't have any of those standards."
+      },
+      {
+        "start": 97534,
+        "stop": 97782,
+        "text": " Oh, can anybody help me get logged into this box?"
+      },
+      {
+        "start": 97782,
+        "stop": 98154,
+        "text": " It's got to wait 15 minutes so that the one person who does have a login can get you in"
+      },
+      {
+        "start": 98154,
+        "stop": 98370,
+        "text": " and that kind of like no more of that."
+      },
+      {
+        "start": 98370,
+        "stop": 98470,
+        "text": " Right, right."
+      },
+      {
+        "start": 98470,
+        "stop": 98670,
+        "text": " You know, Jimbo's on the toilet so nobody can get their stuff."
+      },
+      {
+        "start": 98670,
+        "stop": 98962,
+        "text": " Because he's the only guy who has SSH keys actually on the box."
+      },
+      {
+        "start": 98962,
+        "stop": 99062,
+        "text": " Right."
+      },
+      {
+        "start": 99062,
+        "stop": 99406,
+        "text": " Or you know, you can have a situation where it's like the one day a year where I am completely"
+      },
+      {
+        "start": 99406,
+        "stop": 99830,
+        "text": " AFK or Wes is completely AFK and it's like, oh, well now this thing doesn't work."
+      },
+      {
+        "start": 99830,
+        "stop": 100118,
+        "text": " It's like, okay, we can't do that anymore."
+      },
+      {
+        "start": 100118,
+        "stop": 100570,
+        "text": " And the nice thing I like about Nix is that it's all defined in a configuration file."
+      },
+      {
+        "start": 100570,
+        "stop": 100706,
+        "text": " It's really powerful that way."
+      },
+      {
+        "start": 100706,
+        "stop": 101078,
+        "text": " And that configuration file, of course, you can check into Git and so you can actually"
+      },
+      {
+        "start": 101078,
+        "stop": 101480,
+        "text": " track your changes via Git to your OS level configuration and deployments."
+      },
+      {
+        "start": 101480,
+        "stop": 101654,
+        "text": " And that seems super powerful to me."
+      },
+      {
+        "start": 101654,
+        "stop": 101990,
+        "text": " Yeah, you should also explain, right, Nix is basically a CI tool."
+      },
+      {
+        "start": 101990,
+        "stop": 102090,
+        "text": " Yeah, for OS."
+      },
+      {
+        "start": 102090,
+        "stop": 102526,
+        "text": " It's like CI applied to an OS and that is fantastic."
+      },
+      {
+        "start": 102526,
+        "stop": 102626,
+        "text": " I love that."
+      },
+      {
+        "start": 102626,
+        "stop": 102726,
+        "text": " Right."
+      },
+      {
+        "start": 102726,
+        "stop": 103166,
+        "text": " And the big thing about GitOps in general, even away from GitHub or GitLab is kind of"
+      },
+      {
+        "start": 103166,
+        "stop": 103542,
+        "text": " pushes it super hard to the only the your source of truth, right?"
+      },
+      {
+        "start": 103542,
+        "stop": 103794,
+        "text": " The thing you trust is that remote Git repo."
+      },
+      {
+        "start": 103794,
+        "stop": 103894,
+        "text": " So origin, right?"
+      },
+      {
+        "start": 103894,
+        "stop": 104450,
+        "text": " So your your main branch or whatever it is very much like an extension of I don't know"
+      },
+      {
+        "start": 104450,
+        "stop": 104722,
+        "text": " if this is a popular thing people blog about anymore, but Git flow."
+      },
+      {
+        "start": 104722,
+        "stop": 104842,
+        "text": " Are you familiar with that?"
+      },
+      {
+        "start": 104842,
+        "stop": 104942,
+        "text": " Chris?"
+      },
+      {
+        "start": 104942,
+        "stop": 105190,
+        "text": " Yeah, flow, Git flow rings a bell, but I don't think I'm familiar with it."
+      },
+      {
+        "start": 105190,
+        "stop": 105658,
+        "text": " It's like a methodology for naming and branching and tagging releases where basic I mean, there's"
+      },
+      {
+        "start": 105658,
+        "stop": 105974,
+        "text": " all everybody has their own little snowflake version of it."
+      },
+      {
+        "start": 105974,
+        "stop": 106538,
+        "text": " But basically, like your main branch is usually production."
+      },
+      {
+        "start": 106538,
+        "stop": 107026,
+        "text": " Then you'll have like, you know, staging, customer facing staging, internal dev, where"
+      },
+      {
+        "start": 107026,
+        "stop": 107278,
+        "text": " literally the code flows up."
+      },
+      {
+        "start": 107278,
+        "stop": 107578,
+        "text": " And it's always you always have a way to go back."
+      },
+      {
+        "start": 107578,
+        "stop": 107678,
+        "text": " Right."
+      },
+      {
+        "start": 107678,
+        "stop": 107778,
+        "text": " And people get fancy."
+      },
+      {
+        "start": 107778,
+        "stop": 108018,
+        "text": " They like to depends on what kind of thing you're doing."
+      },
+      {
+        "start": 108018,
+        "stop": 108118,
+        "text": " Right."
+      },
+      {
+        "start": 108118,
+        "stop": 108366,
+        "text": " If you're doing binaries, you can actually like tag versions that are like the build"
+      },
+      {
+        "start": 108366,
+        "stop": 108466,
+        "text": " binary."
+      },
+      {
+        "start": 108466,
+        "stop": 108890,
+        "text": " And again, if you're on GitHub, you can literally just put the binary on your page."
+      },
+      {
+        "start": 108890,
+        "stop": 109166,
+        "text": " If it's something you're giving away for free, like here, just download the binary."
+      },
+      {
+        "start": 109166,
+        "stop": 109266,
+        "text": " Don't bother me."
+      },
+      {
+        "start": 109266,
+        "stop": 109654,
+        "text": " Oh, and then code pilot can use your code to suggest insane things."
+      },
+      {
+        "start": 109654,
+        "stop": 109798,
+        "text": " Just quick code pilot diversion."
+      },
+      {
+        "start": 109798,
+        "stop": 110050,
+        "text": " I got it to do something crazy today."
+      },
+      {
+        "start": 110050,
+        "stop": 110150,
+        "text": " Tell me about it."
+      },
+      {
+        "start": 110150,
+        "stop": 110422,
+        "text": " So I'm mixing C plus plus and rust in a Python project."
+      },
+      {
+        "start": 110422,
+        "stop": 110522,
+        "text": " It's called Alice."
+      },
+      {
+        "start": 110522,
+        "stop": 110634,
+        "text": " I don't know if you've ever heard of it."
+      },
+      {
+        "start": 110634,
+        "stop": 111110,
+        "text": " And apparently, because I wanted to just try something and I did like the inline consume"
+      },
+      {
+        "start": 111110,
+        "stop": 111650,
+        "text": " this as C plus plus thing, I saw the little, you know, as the envious code, like you see"
+      },
+      {
+        "start": 111650,
+        "stop": 111870,
+        "text": " the little dude with his goggles on the bottom, right?"
+      },
+      {
+        "start": 111870,
+        "stop": 112058,
+        "text": " Yeah, I think his head spun."
+      },
+      {
+        "start": 112058,
+        "stop": 112158,
+        "text": " He was like, what?"
+      },
+      {
+        "start": 112158,
+        "stop": 112358,
+        "text": " What are you?"
+      },
+      {
+        "start": 112358,
+        "stop": 112614,
+        "text": " This madness like."
+      },
+      {
+        "start": 112614,
+        "stop": 112858,
+        "text": " So then it started suggesting really weird."
+      },
+      {
+        "start": 112858,
+        "stop": 113066,
+        "text": " What I think is game to have C plus plus to me."
+      },
+      {
+        "start": 113066,
+        "stop": 113258,
+        "text": " Oh, you're getting the game dev stuff now."
+      },
+      {
+        "start": 113258,
+        "stop": 113370,
+        "text": " I don't know what happened."
+      },
+      {
+        "start": 113370,
+        "stop": 113538,
+        "text": " It was like, it is not a game, right?"
+      },
+      {
+        "start": 113538,
+        "stop": 113710,
+        "text": " It was just, I wanted to speed something up."
+      },
+      {
+        "start": 113710,
+        "stop": 113810,
+        "text": " That's taking too long."
+      },
+      {
+        "start": 113810,
+        "stop": 113998,
+        "text": " And it, it just, yeah."
+      },
+      {
+        "start": 113998,
+        "stop": 114098,
+        "text": " Yeah, watch out."
+      },
+      {
+        "start": 114098,
+        "stop": 114274,
+        "text": " You might get a little Carmack in there."
+      },
+      {
+        "start": 114274,
+        "stop": 114478,
+        "text": " And I paid for it for a year."
+      },
+      {
+        "start": 114478,
+        "stop": 114734,
+        "text": " Well, then I look forward to future updates."
+      },
+      {
+        "start": 114734,
+        "stop": 114922,
+        "text": " I have to tell you what."
+      },
+      {
+        "start": 114922,
+        "stop": 115294,
+        "text": " It's like my hilarious companion that I turn off because it keeps suggesting stupid things"
+      },
+      {
+        "start": 115294,
+        "stop": 115394,
+        "text": " to me."
+      },
+      {
+        "start": 115394,
+        "stop": 115494,
+        "text": " All right."
+      },
+      {
+        "start": 115494,
+        "stop": 115794,
+        "text": " Speaking of things that aren't stupid, the London Meetup is nigh."
+      },
+      {
+        "start": 115794,
+        "stop": 116090,
+        "text": " It is just a few days away as this episode will come out."
+      },
+      {
+        "start": 116090,
+        "stop": 116342,
+        "text": " It is Friday, August 5th in London."
+      },
+      {
+        "start": 116342,
+        "stop": 116608,
+        "text": " Details at meetup.com/JupiterBroadcasting."
+      },
+      {
+        "start": 116608,
+        "stop": 116930,
+        "text": " And of course, over there, we also have the West Coast Meetups posted."
+      },
+      {
+        "start": 116930,
+        "stop": 117154,
+        "text": " All that is coming up soon."
+      },
+      {
+        "start": 117154,
+        "stop": 117558,
+        "text": " And my last thing I'll just say about this, so we don't go on and on, is that if you are"
+      },
+      {
+        "start": 117558,
+        "stop": 118062,
+        "text": " on the West Coast, we could use some location experts for our meetups."
+      },
+      {
+        "start": 118062,
+        "stop": 118322,
+        "text": " And we have a matrix room dedicated to just the West Coast."
+      },
+      {
+        "start": 118322,
+        "stop": 119070,
+        "text": " And that is at bit.ly/WestCoastCrew."
+      },
+      {
+        "start": 119070,
+        "stop": 119286,
+        "text": " Linode.com/Coder."
+      },
+      {
+        "start": 119286,
+        "stop": 119616,
+        "text": " Go there to get $100 in 60-day credit on a new account."
+      },
+      {
+        "start": 119616,
+        "stop": 119756,
+        "text": " And you go there to support the show."
+      },
+      {
+        "start": 119756,
+        "stop": 119972,
+        "text": " That's a great way to support the show."
+      },
+      {
+        "start": 119972,
+        "stop": 120072,
+        "text": " What is Linode?"
+      },
+      {
+        "start": 120072,
+        "stop": 120378,
+        "text": " Fast, reliable cloud hosting."
+      },
+      {
+        "start": 120378,
+        "stop": 120488,
+        "text": " You just got to go try it."
+      },
+      {
+        "start": 120488,
+        "stop": 120862,
+        "text": " That's why you're going to get $100 and you're going to go kick the tires yourself."
+      },
+      {
+        "start": 120862,
+        "stop": 121042,
+        "text": " Linode is always improving the infrastructure."
+      },
+      {
+        "start": 121042,
+        "stop": 121488,
+        "text": " They've got 11 data centers around the world, and they've always been reinvesting in that"
+      },
+      {
+        "start": 121488,
+        "stop": 121818,
+        "text": " infrastructure, staying ahead of all of the other cloud providers."
+      },
+      {
+        "start": 121818,
+        "stop": 121990,
+        "text": " And you can measure it."
+      },
+      {
+        "start": 121990,
+        "stop": 122212,
+        "text": " You can benchmark the systems and you can see it."
+      },
+      {
+        "start": 122212,
+        "stop": 122732,
+        "text": " I have tried the various different hyperscalers out there and Linode competitors, and Linode"
+      },
+      {
+        "start": 122732,
+        "stop": 122974,
+        "text": " is always above the rest."
+      },
+      {
+        "start": 122974,
+        "stop": 123182,
+        "text": " They own their own Internet links."
+      },
+      {
+        "start": 123182,
+        "stop": 123366,
+        "text": " They're constantly upgrading their hardware."
+      },
+      {
+        "start": 123366,
+        "stop": 123834,
+        "text": " They've been refining this for nearly 19 years to build the best experience to run applications"
+      },
+      {
+        "start": 123834,
+        "stop": 124070,
+        "text": " on Linux in the cloud."
+      },
+      {
+        "start": 124070,
+        "stop": 124222,
+        "text": " You got to go try it for your next project."
+      },
+      {
+        "start": 124222,
+        "stop": 124322,
+        "text": " I mean it."
+      },
+      {
+        "start": 124322,
+        "stop": 124494,
+        "text": " You really have to see what they can do."
+      },
+      {
+        "start": 124494,
+        "stop": 124806,
+        "text": " And of course, Linode is about investing in the community."
+      },
+      {
+        "start": 124806,
+        "stop": 124906,
+        "text": " They were just at scale."
+      },
+      {
+        "start": 124906,
+        "stop": 125254,
+        "text": " I heard from a lot of you out there that got to see Linode and got some cool Linode swag"
+      },
+      {
+        "start": 125254,
+        "stop": 125714,
+        "text": " at scale, and they're making our West Coast road trip possible this year."
+      },
+      {
+        "start": 125714,
+        "stop": 126256,
+        "text": " So we can do meetups all up and down the West Coast and get down to JPL and have that tour."
+      },
+      {
+        "start": 126256,
+        "stop": 126626,
+        "text": " Linode invests in the community because they're part of the Linux community."
+      },
+      {
+        "start": 126626,
+        "stop": 126754,
+        "text": " They've been around forever."
+      },
+      {
+        "start": 126754,
+        "stop": 127088,
+        "text": " That's how I found them originally was at a Linux Fest."
+      },
+      {
+        "start": 127088,
+        "stop": 127584,
+        "text": " And now I use them for everything we deploy that our staff needs to use, our team, but"
+      },
+      {
+        "start": 127584,
+        "stop": 127860,
+        "text": " also our community, anything customer facing."
+      },
+      {
+        "start": 127860,
+        "stop": 127960,
+        "text": " That's on Linode."
+      },
+      {
+        "start": 127960,
+        "stop": 128208,
+        "text": " They have better pricing than the major hyperscalers out there."
+      },
+      {
+        "start": 128208,
+        "stop": 128726,
+        "text": " They have a better interface, better documentation and leagues better support."
+      },
+      {
+        "start": 128726,
+        "stop": 129046,
+        "text": " Whole different category."
+      },
+      {
+        "start": 129046,
+        "stop": 129226,
+        "text": " Nobody else touches Linode on the support."
+      },
+      {
+        "start": 129226,
+        "stop": 129438,
+        "text": " And when that matters, it really matters."
+      },
+      {
+        "start": 129438,
+        "stop": 129594,
+        "text": " So go try it."
+      },
+      {
+        "start": 129594,
+        "stop": 129694,
+        "text": " Go see what you can do."
+      },
+      {
+        "start": 129694,
+        "stop": 129794,
+        "text": " Go build something."
+      },
+      {
+        "start": 129794,
+        "stop": 129894,
+        "text": " Go learn something."
+      },
+      {
+        "start": 129894,
+        "stop": 129994,
+        "text": " Go do a one click deployment."
+      },
+      {
+        "start": 129994,
+        "stop": 130322,
+        "text": " Just go get that hundred bucks and support the show."
+      },
+      {
+        "start": 130322,
+        "stop": 130476,
+        "text": " Linode.com/coder."
+      },
+      {
+        "start": 130476,
+        "stop": 130924,
+        "text": " That's where you go to sign up, try it out, support the show and get a hundred bucks."
+      },
+      {
+        "start": 130924,
+        "stop": 131136,
+        "text": " Linode.com/coder."
+      },
+      {
+        "start": 131176,
+        "stop": 131376,
+        "text": " [music]"
+      },
+      {
+        "start": 131376,
+        "stop": 131980,
+        "text": " All right, let's get a little spicy with Clojure here, because apparently Clojure has"
+      },
+      {
+        "start": 131980,
+        "stop": 132280,
+        "text": " a hole and it's a rails shaped hole."
+      },
+      {
+        "start": 132280,
+        "stop": 132636,
+        "text": " There's a hole in the closure tonight."
+      },
+      {
+        "start": 132636,
+        "stop": 132736,
+        "text": " Yeah."
+      },
+      {
+        "start": 132736,
+        "stop": 133084,
+        "text": " There's a compiler error of fear and sorrow."
+      },
+      {
+        "start": 133084,
+        "stop": 133184,
+        "text": " Anyway."
+      },
+      {
+        "start": 133184,
+        "stop": 133760,
+        "text": " Clojure developers are just staring down a foggy railway, just lost."
+      },
+      {
+        "start": 133760,
+        "stop": 134254,
+        "text": " They're in a 90s soul asylum video, like wandering children down a runaway train."
+      },
+      {
+        "start": 134254,
+        "stop": 134424,
+        "text": " With that weird filter on it."
+      },
+      {
+        "start": 134424,
+        "stop": 134666,
+        "text": " Like is that black and white or is it just muted colors?"
+      },
+      {
+        "start": 134666,
+        "stop": 134766,
+        "text": " I can't quite tell."
+      },
+      {
+        "start": 134766,
+        "stop": 134890,
+        "text": " It was VH1."
+      },
+      {
+        "start": 134890,
+        "stop": 134990,
+        "text": " Thank you very much."
+      },
+      {
+        "start": 134990,
+        "stop": 135090,
+        "text": " Everything had a filter."
+      },
+      {
+        "start": 135090,
+        "stop": 135328,
+        "text": " No, that was MTV, wasn't it?"
+      },
+      {
+        "start": 135328,
+        "stop": 135528,
+        "text": " But yeah, so Clojure."
+      },
+      {
+        "start": 135528,
+        "stop": 135672,
+        "text": " I don't know if you've ever heard of this language."
+      },
+      {
+        "start": 135672,
+        "stop": 135836,
+        "text": " I have some weirdos like it."
+      },
+      {
+        "start": 135836,
+        "stop": 135936,
+        "text": " Wes, what's up dog?"
+      },
+      {
+        "start": 135936,
+        "stop": 136036,
+        "text": " Yeah, some people I know."
+      },
+      {
+        "start": 136036,
+        "stop": 136136,
+        "text": " Some people I don't know."
+      },
+      {
+        "start": 136136,
+        "stop": 136236,
+        "text": " Some guy, whatever."
+      },
+      {
+        "start": 136236,
+        "stop": 136392,
+        "text": " He's always challenging me with weird languages."
+      },
+      {
+        "start": 136392,
+        "stop": 136536,
+        "text": " That was a lot of fun."
+      },
+      {
+        "start": 136536,
+        "stop": 136948,
+        "text": " You should listen back if you never had the, what was it, like seven months where Wes tortured"
+      },
+      {
+        "start": 136948,
+        "stop": 137292,
+        "text": " me with weird programming languages that weren't Objective C."
+      },
+      {
+        "start": 137292,
+        "stop": 137488,
+        "text": " It turns out if you try hard enough, you can."
+      },
+      {
+        "start": 137488,
+        "stop": 137732,
+        "text": " Hey, there he is."
+      },
+      {
+        "start": 137732,
+        "stop": 138292,
+        "text": " So yeah, Clojure has a problem according to the author of this post, Janet Carr."
+      },
+      {
+        "start": 138292,
+        "stop": 138512,
+        "text": " And I tend to agree with her."
+      },
+      {
+        "start": 138512,
+        "stop": 138764,
+        "text": " You know, Ruby was kind of obscure until Rails came out."
+      },
+      {
+        "start": 138764,
+        "stop": 138924,
+        "text": " Thank you, DHH."
+      },
+      {
+        "start": 138924,
+        "stop": 139372,
+        "text": " Clojure does not have a Rails and it has a weird succession of potential web development"
+      },
+      {
+        "start": 139372,
+        "stop": 139916,
+        "text": " frameworks and suitors for this kind of application."
+      },
+      {
+        "start": 139916,
+        "stop": 140408,
+        "text": " But no one has come out on top, which I will never repeat this in front of Wes, is a damn"
+      },
+      {
+        "start": 140408,
+        "stop": 140704,
+        "text": " shame because Clojure has got some really interesting ideas in it."
+      },
+      {
+        "start": 140704,
+        "stop": 141172,
+        "text": " Yeah, now, is the idea maybe with Clojure that you're not supposed to need something"
+      },
+      {
+        "start": 141172,
+        "stop": 141280,
+        "text": " like Rails?"
+      },
+      {
+        "start": 141280,
+        "stop": 141480,
+        "text": " That they're going to solve this stuff lower level?"
+      },
+      {
+        "start": 141480,
+        "stop": 141898,
+        "text": " You know, you build what you need on top of that, but you know, you don't need a Rails"
+      },
+      {
+        "start": 141898,
+        "stop": 141998,
+        "text": " with Clojure."
+      },
+      {
+        "start": 141998,
+        "stop": 142454,
+        "text": " The way I used to look at it, like what do we mean when we say Rails for Clojure?"
+      },
+      {
+        "start": 142454,
+        "stop": 142610,
+        "text": " The way you read that is exactly correct."
+      },
+      {
+        "start": 142610,
+        "stop": 143058,
+        "text": " It's something super abstract, high level, that's easy and quick for development and"
+      },
+      {
+        "start": 143058,
+        "stop": 143378,
+        "text": " you know, people can get into the language a lot easier."
+      },
+      {
+        "start": 143378,
+        "stop": 143888,
+        "text": " Or you could say, no, it's not the style of Rails, it's just like a de facto standard,"
+      },
+      {
+        "start": 143888,
+        "stop": 144238,
+        "text": " which for a long time Rails was and in my opinion still is for Ruby."
+      },
+      {
+        "start": 144238,
+        "stop": 144634,
+        "text": " Because when you have a standard, right, when there's a de facto standard framework, what"
+      },
+      {
+        "start": 144634,
+        "stop": 145312,
+        "text": " happens is all, many, not all, but most of the library developers keep that framework"
+      },
+      {
+        "start": 145312,
+        "stop": 145692,
+        "text": " in mind, keep compatibility and convenience for that framework in mind when they develop"
+      },
+      {
+        "start": 145692,
+        "stop": 145820,
+        "text": " their library."
+      },
+      {
+        "start": 145820,
+        "stop": 146300,
+        "text": " Such that, again, just like the Ruby ecosystem, the ecosystem ends up co-existing around that"
+      },
+      {
+        "start": 146300,
+        "stop": 146814,
+        "text": " framework, and it's usually pretty easy to pull in any gem and make it work with your"
+      },
+      {
+        "start": 146814,
+        "stop": 146914,
+        "text": " Rails app."
+      },
+      {
+        "start": 146914,
+        "stop": 147072,
+        "text": " Yeah, there's no denying that."
+      },
+      {
+        "start": 147072,
+        "stop": 147394,
+        "text": " And you've seen the ecosystem around that."
+      },
+      {
+        "start": 147394,
+        "stop": 148058,
+        "text": " I think if you were to get Wes drunk, maybe one late night, and you got him going about"
+      },
+      {
+        "start": 148058,
+        "stop": 148458,
+        "text": " closure, I think you'd probably talk about luminous, I think is how you say it, which"
+      },
+      {
+        "start": 148458,
+        "stop": 148794,
+        "text": " kind of promises to be the missing Rails."
+      },
+      {
+        "start": 148794,
+        "stop": 149042,
+        "text": " But how could anything be Rails at this point?"
+      },
+      {
+        "start": 149042,
+        "stop": 149142,
+        "text": " Nothing."
+      },
+      {
+        "start": 149142,
+        "stop": 149330,
+        "text": " Like, when you say Rails, what are you really saying?"
+      },
+      {
+        "start": 149330,
+        "stop": 149776,
+        "text": " Are you just trying to invoke an idea, or are you actually trying to say you're going"
+      },
+      {
+        "start": 149776,
+        "stop": 150006,
+        "text": " to compete with everything that Rails does now?"
+      },
+      {
+        "start": 150006,
+        "stop": 150318,
+        "text": " Yeah, I would also argue, right, with turbo links and some of..."
+      },
+      {
+        "start": 150318,
+        "stop": 150482,
+        "text": " In fact, we should probably revisit Rails."
+      },
+      {
+        "start": 150482,
+        "stop": 150662,
+        "text": " It's been a long time."
+      },
+      {
+        "start": 150662,
+        "stop": 151098,
+        "text": " But with some of the turbo links stuff, I mean, if you look at the Hey app, it's crazy."
+      },
+      {
+        "start": 151098,
+        "stop": 151522,
+        "text": " Rails is so different from what Rails used to be, if you're using some of the newer hotness."
+      },
+      {
+        "start": 151522,
+        "stop": 152048,
+        "text": " Like, it would be very interesting to take a Rails 3 and a Rails 7, kind of the best"
+      },
+      {
+        "start": 152048,
+        "stop": 152574,
+        "text": " practices and development methodologies, particularly for a full stack website, and say, \"Yeah,"
+      },
+      {
+        "start": 152574,
+        "stop": 152702,
+        "text": " this is kind of different.\""
+      },
+      {
+        "start": 152702,
+        "stop": 153042,
+        "text": " And all hail ActiveRecord, still better than SQLAlchemy."
+      },
+      {
+        "start": 153042,
+        "stop": 153466,
+        "text": " Well, I'll drop a couple of links in the show notes."
+      },
+      {
+        "start": 153466,
+        "stop": 153750,
+        "text": " I feel like, you know, one of these days, what we've got to do is track down that Wes"
+      },
+      {
+        "start": 153750,
+        "stop": 154102,
+        "text": " Payne and get him on here and get him to explain himself how he can still defend something"
+      },
+      {
+        "start": 154102,
+        "stop": 154202,
+        "text": " like this."
+      },
+      {
+        "start": 154202,
+        "stop": 154418,
+        "text": " I'm going to challenge Wes Payne."
+      },
+      {
+        "start": 154418,
+        "stop": 155094,
+        "text": " Wes, if you're listening, you pick a language, and I'll pick a language, and we'll do a challenge."
+      },
+      {
+        "start": 155094,
+        "stop": 155806,
+        "text": " But this challenge, we have to build a tiny, tiny app that pulls some Jupyter Broadcasting"
+      },
+      {
+        "start": 155806,
+        "stop": 156282,
+        "text": " public GitHub page, maybe for the website, and just looks at the commits or something."
+      },
+      {
+        "start": 156282,
+        "stop": 156382,
+        "text": " We'll think about it."
+      },
+      {
+        "start": 156382,
+        "stop": 156482,
+        "text": " I like it."
+      },
+      {
+        "start": 156482,
+        "stop": 156698,
+        "text": " Yes, it is hammer time."
+      },
+      {
+        "start": 156698,
+        "stop": 157002,
+        "text": " I think that soundboard clip is consent, right?"
+      },
+      {
+        "start": 157002,
+        "stop": 157194,
+        "text": " I think that's implied consent right there."
+      },
+      {
+        "start": 157194,
+        "stop": 157466,
+        "text": " So you've been hanging out with Dick Cheney again, huh?"
+      },
+      {
+        "start": 157466,
+        "stop": 157706,
+        "text": " Or that's a little more Harvey Weinstein, let's be honest."
+      },
+      {
+        "start": 157706,
+        "stop": 157806,
+        "text": " Yeah, yeah, yeah, right."
+      },
+      {
+        "start": 157806,
+        "stop": 158102,
+        "text": " No, when I go duck hunting, I'll let you know."
+      },
+      {
+        "start": 158102,
+        "stop": 158202,
+        "text": " Whoa!"
+      },
+      {
+        "start": 158202,
+        "stop": 158802,
+        "text": " I know that you had a little bit of a skirmish this weekend, and I feel like you've been"
+      },
+      {
+        "start": 158802,
+        "stop": 159262,
+        "text": " out there doing some field testing for the show, and now you can report back on the great"
+      },
+      {
+        "start": 159262,
+        "stop": 159382,
+        "text": " migration."
+      },
+      {
+        "start": 159382,
+        "stop": 160246,
+        "text": " I got a little bit of, I won't say sass, but a little, eh, you know, Apple guy saying,"
+      },
+      {
+        "start": 160246,
+        "stop": 160426,
+        "text": " why do you pave your machines all the time?"
+      },
+      {
+        "start": 160426,
+        "stop": 160578,
+        "text": " You know, you get a new machine."
+      },
+      {
+        "start": 160578,
+        "stop": 160706,
+        "text": " You don't need to do that."
+      },
+      {
+        "start": 160706,
+        "stop": 160806,
+        "text": " Use migration assistance."
+      },
+      {
+        "start": 160806,
+        "stop": 160906,
+        "text": " It's flawless."
+      },
+      {
+        "start": 160906,
+        "stop": 161274,
+        "text": " So do you normally, when you get a new laptop, so like, okay, so walk me through."
+      },
+      {
+        "start": 161274,
+        "stop": 161706,
+        "text": " So you spill your drink, you get rid of your laptop, you buy a brand new machine, just"
+      },
+      {
+        "start": 161706,
+        "stop": 162094,
+        "text": " coincidentally as the new hardware lands, and then do you start from a fresh install?"
+      },
+      {
+        "start": 162094,
+        "stop": 162418,
+        "text": " Well, if we're going to start from the beginning first, I dance around Buffalo Bill style."
+      },
+      {
+        "start": 162418,
+        "stop": 162518,
+        "text": " Okay, good, good."
+      },
+      {
+        "start": 162518,
+        "stop": 162642,
+        "text": " I'm glad we know that now."
+      },
+      {
+        "start": 162642,
+        "stop": 162742,
+        "text": " Good."
+      },
+      {
+        "start": 162742,
+        "stop": 163194,
+        "text": " Then I inevitably drop the laptop in a pit with a small poodle of some sort."
+      },
+      {
+        "start": 163194,
+        "stop": 163294,
+        "text": " Oops."
+      },
+      {
+        "start": 163294,
+        "stop": 163394,
+        "text": " Oops."
+      },
+      {
+        "start": 163394,
+        "stop": 163874,
+        "text": " But I have never actually used migration assistant before, so my usual process is I git pull"
+      },
+      {
+        "start": 163874,
+        "stop": 164514,
+        "text": " my damn Bash RC that I always forget is seashell now, so I have to edit it every single time,"
+      },
+      {
+        "start": 164514,
+        "stop": 164790,
+        "text": " and I still haven't pushed it up for some reason."
+      },
+      {
+        "start": 164790,
+        "stop": 165140,
+        "text": " And yeah, that's just Mike being lazy."
+      },
+      {
+        "start": 165140,
+        "stop": 165362,
+        "text": " And I, you know, you know the drill, right?"
+      },
+      {
+        "start": 165362,
+        "stop": 165754,
+        "text": " You got to install Xcode, the command line tools, then you realize you don't have the"
+      },
+      {
+        "start": 165754,
+        "stop": 166014,
+        "text": " headers for Postgres or something."
+      },
+      {
+        "start": 166014,
+        "stop": 166500,
+        "text": " It's both tedious, but at the same time, it's like you're only building back what you need,"
+      },
+      {
+        "start": 166500,
+        "stop": 166906,
+        "text": " and you're going with the freshest versions of everything, and maybe this is the build"
+      },
+      {
+        "start": 166906,
+        "stop": 167134,
+        "text": " where you try a different video player or something, right?"
+      },
+      {
+        "start": 167134,
+        "stop": 167446,
+        "text": " So I can see some advantages to not just copying whole hog."
+      },
+      {
+        "start": 167446,
+        "stop": 167774,
+        "text": " But the disadvantage is really that Xcode step, because it's just awful."
+      },
+      {
+        "start": 167774,
+        "stop": 167874,
+        "text": " Right?"
+      },
+      {
+        "start": 167874,
+        "stop": 168034,
+        "text": " It's just slow and terrible."
+      },
+      {
+        "start": 168034,
+        "stop": 168518,
+        "text": " So you know, I was getting some flack about this, that it's flawless, and it even works"
+      },
+      {
+        "start": 168518,
+        "stop": 168714,
+        "text": " across ARM and Intel."
+      },
+      {
+        "start": 168714,
+        "stop": 168814,
+        "text": " That's pretty impressive."
+      },
+      {
+        "start": 168814,
+        "stop": 168962,
+        "text": " Cross architecture is damn."
+      },
+      {
+        "start": 168962,
+        "stop": 169198,
+        "text": " Yes, lies are often impressive."
+      },
+      {
+        "start": 169198,
+        "stop": 169634,
+        "text": " Yes, I feel like I have a couple bridges to tell you."
+      },
+      {
+        "start": 169634,
+        "stop": 170054,
+        "text": " So it did appear to work, and it did take like an hour and a half."
+      },
+      {
+        "start": 170054,
+        "stop": 170450,
+        "text": " But it very foolishly, and I don't understand why they don't do this, because they could"
+      },
+      {
+        "start": 170450,
+        "stop": 170776,
+        "text": " certainly add this to the program, because you have to actually launch like a little"
+      },
+      {
+        "start": 170776,
+        "stop": 171468,
+        "text": " migration assistant application where it's like, hey, buddy, that's a different CPU architecture."
+      },
+      {
+        "start": 171468,
+        "stop": 172154,
+        "text": " So no, or we're not going to copy over your homebrew stuff or your command line stuff"
+      },
+      {
+        "start": 172154,
+        "stop": 172538,
+        "text": " and leave you leave your system in this insane state."
+      },
+      {
+        "start": 172538,
+        "stop": 172706,
+        "text": " Or you couldn't totally like chill in so far."
+      },
+      {
+        "start": 172706,
+        "stop": 173002,
+        "text": " Like if you just like chill in the gooey, you're probably fine."
+      },
+      {
+        "start": 173002,
+        "stop": 173414,
+        "text": " The minute you open terminal, it's just going to scream in agony."
+      },
+      {
+        "start": 173414,
+        "stop": 173790,
+        "text": " Yeah, so it sounds like it would move some things, but not other things, and it would"
+      },
+      {
+        "start": 173790,
+        "stop": 173926,
+        "text": " just be a total hodgepodge."
+      },
+      {
+        "start": 173926,
+        "stop": 174250,
+        "text": " Well, it's not just that it does move them."
+      },
+      {
+        "start": 174250,
+        "stop": 174410,
+        "text": " It moves most of them."
+      },
+      {
+        "start": 174410,
+        "stop": 174782,
+        "text": " But it doesn't check what architecture your stuff is compiled for."
+      },
+      {
+        "start": 174782,
+        "stop": 175142,
+        "text": " And like really common stuff like homebrew."
+      },
+      {
+        "start": 175142,
+        "stop": 175746,
+        "text": " Homebrew-- fun fact-- saves in a different location on ARM CPU machines."
+      },
+      {
+        "start": 175746,
+        "stop": 176246,
+        "text": " It's like slash ops, slash homebrew where I might get this wrong, but it's like slash"
+      },
+      {
+        "start": 176246,
+        "stop": 176698,
+        "text": " library slash something on Intel."
+      },
+      {
+        "start": 176698,
+        "stop": 176866,
+        "text": " It's user local bin."
+      },
+      {
+        "start": 176866,
+        "stop": 177318,
+        "text": " So you're telling me the migration tool that Apple ships in the most recent versions of"
+      },
+      {
+        "start": 177318,
+        "stop": 177942,
+        "text": " Mac OS, which support both Intel and ARM, doesn't differentiate on that stuff?"
+      },
+      {
+        "start": 177942,
+        "stop": 178098,
+        "text": " What is ARM code?"
+      },
+      {
+        "start": 178098,
+        "stop": 178598,
+        "text": " Even though you can get info and it's in the metadata of the application, it's in the metadata"
+      },
+      {
+        "start": 178598,
+        "stop": 178858,
+        "text": " right there available to the system?"
+      },
+      {
+        "start": 178858,
+        "stop": 179114,
+        "text": " And I'm not suggesting it should do program by program."
+      },
+      {
+        "start": 179114,
+        "stop": 179214,
+        "text": " I'm suggesting--"
+      },
+      {
+        "start": 179214,
+        "stop": 179314,
+        "text": " Oh, I am."
+      },
+      {
+        "start": 179314,
+        "stop": 179414,
+        "text": " Don't you think, dude?"
+      },
+      {
+        "start": 179414,
+        "stop": 179514,
+        "text": " Oh, don't you think?"
+      },
+      {
+        "start": 179514,
+        "stop": 179986,
+        "text": " I feel like once you plug a machine of the other architecture into the other architecture,"
+      },
+      {
+        "start": 179986,
+        "stop": 180274,
+        "text": " it should be like, hey man, just-- there should be a warning."
+      },
+      {
+        "start": 180274,
+        "stop": 180522,
+        "text": " Hey man, this is going to be wild."
+      },
+      {
+        "start": 180522,
+        "stop": 180842,
+        "text": " Or like, hey, would you like to do just the universal applications?"
+      },
+      {
+        "start": 180842,
+        "stop": 181334,
+        "text": " Which by the way, that means you don't get these three, four applications and these whatever."
+      },
+      {
+        "start": 181334,
+        "stop": 181610,
+        "text": " Or would you like to bring over the Intel stuff?"
+      },
+      {
+        "start": 181610,
+        "stop": 182106,
+        "text": " Because you're crapping up, basically, a brand new Mac with a ton of stuff that's going to"
+      },
+      {
+        "start": 182106,
+        "stop": 182226,
+        "text": " have to run under Rosetta."
+      },
+      {
+        "start": 182226,
+        "stop": 182358,
+        "text": " Well, this is not a brand new Mac."
+      },
+      {
+        "start": 182358,
+        "stop": 182458,
+        "text": " But yeah."
+      },
+      {
+        "start": 182458,
+        "stop": 182558,
+        "text": " But you get my point, right?"
+      },
+      {
+        "start": 182558,
+        "stop": 182790,
+        "text": " Somebody's bought a new M2 or whatever, sits down."
+      },
+      {
+        "start": 182790,
+        "stop": 182946,
+        "text": " Yeah, so you get screwed both ways."
+      },
+      {
+        "start": 182946,
+        "stop": 183538,
+        "text": " If you go Intel to ARM, you unnecessarily run everything in Rosetta, which is dumb."
+      },
+      {
+        "start": 183538,
+        "stop": 184058,
+        "text": " But if you go-- what I did is I went ARM to Intel, and it just copies ARM binaries over,"
+      },
+      {
+        "start": 184058,
+        "stop": 184242,
+        "text": " and they're just busted."
+      },
+      {
+        "start": 184242,
+        "stop": 184406,
+        "text": " I can't even believe this."
+      },
+      {
+        "start": 184406,
+        "stop": 184994,
+        "text": " Like, I mean, this sounds like something out of a beta tool, like an alpha tool that just"
+      },
+      {
+        "start": 184994,
+        "stop": 185438,
+        "text": " hasn't been updated by the community for the new architecture support."
+      },
+      {
+        "start": 185438,
+        "stop": 185770,
+        "text": " Not from the manufacturer of the OS and the hardware."
+      },
+      {
+        "start": 185770,
+        "stop": 185870,
+        "text": " It was pretty bad."
+      },
+      {
+        "start": 185870,
+        "stop": 186250,
+        "text": " I spent about an hour trying to hammer out these insane terminal errors."
+      },
+      {
+        "start": 186250,
+        "stop": 186458,
+        "text": " And then I'm like, you know what?"
+      },
+      {
+        "start": 186458,
+        "stop": 186734,
+        "text": " System preferences erase all settings and content."
+      },
+      {
+        "start": 186734,
+        "stop": 187310,
+        "text": " And I just did it-- I paved it by hand, and I did my normal setup process."
+      },
+      {
+        "start": 187310,
+        "stop": 187430,
+        "text": " Oh, man."
+      },
+      {
+        "start": 187430,
+        "stop": 187530,
+        "text": " It's so funny, right?"
+      },
+      {
+        "start": 187530,
+        "stop": 187954,
+        "text": " Because we're in this state where the M1 and the M2 hardware, it's just some of the best"
+      },
+      {
+        "start": 187954,
+        "stop": 188054,
+        "text": " hardware out there."
+      },
+      {
+        "start": 188054,
+        "stop": 188314,
+        "text": " It really is, in terms of power and performance."
+      },
+      {
+        "start": 188314,
+        "stop": 189382,
+        "text": " I just had my first experience with some really advanced, very expensive audio repair plug-ins."
+      },
+      {
+        "start": 189382,
+        "stop": 190178,
+        "text": " And they've always been single-threaded on x86 machines and on Intel Macs, but on Linux"
+      },
+      {
+        "start": 190178,
+        "stop": 190370,
+        "text": " under Wine, just anywhere we've used it."
+      },
+      {
+        "start": 190370,
+        "stop": 190566,
+        "text": " And it just takes forever."
+      },
+      {
+        "start": 190566,
+        "stop": 191098,
+        "text": " Like an hour-long track just would take at least an hour to render and process."
+      },
+      {
+        "start": 191098,
+        "stop": 191414,
+        "text": " When you're trying to edit, that's just brutal."
+      },
+      {
+        "start": 191414,
+        "stop": 191686,
+        "text": " And this weekend, I was helping out a friend."
+      },
+      {
+        "start": 191686,
+        "stop": 191810,
+        "text": " And I was like, well, I'll try this."
+      },
+      {
+        "start": 191810,
+        "stop": 192030,
+        "text": " I've got this on this Mac."
+      },
+      {
+        "start": 192030,
+        "stop": 192646,
+        "text": " I'll try it here on the MacBook Pro with the M1 Ultra in it."
+      },
+      {
+        "start": 192646,
+        "stop": 193570,
+        "text": " And when it lit up all the cores, and it did an hour-long audio in, I don't know, 20 seconds,"
+      },
+      {
+        "start": 193570,
+        "stop": 194312,
+        "text": " it was the first time I saw that huge leap in something that I have used for a decade"
+      },
+      {
+        "start": 194312,
+        "stop": 194570,
+        "text": " that's always taken-- basically, it's a one-to-one ratio."
+      },
+      {
+        "start": 194570,
+        "stop": 195002,
+        "text": " Whatever the length of the file I was rendering out, that was just how long I was going to"
+      },
+      {
+        "start": 195002,
+        "stop": 195102,
+        "text": " wait."
+      },
+      {
+        "start": 195102,
+        "stop": 195358,
+        "text": " And for the first time ever, I saw it."
+      },
+      {
+        "start": 195358,
+        "stop": 195858,
+        "text": " And the great thing about it was is this was in a pinch on the go."
+      },
+      {
+        "start": 195858,
+        "stop": 196230,
+        "text": " And I only had like 20% battery left because I hadn't had the machine plugged in for like"
+      },
+      {
+        "start": 196230,
+        "stop": 196374,
+        "text": " a week."
+      },
+      {
+        "start": 196374,
+        "stop": 196658,
+        "text": " And it used like 2% battery to do all of that."
+      },
+      {
+        "start": 196658,
+        "stop": 196862,
+        "text": " And that was like, wow, that's great."
+      },
+      {
+        "start": 196862,
+        "stop": 196962,
+        "text": " That is really great."
+      },
+      {
+        "start": 196962,
+        "stop": 197910,
+        "text": " But I have to say, I remain unenthused with macOS, like the amount of tweaking here and"
+      },
+      {
+        "start": 197910,
+        "stop": 198358,
+        "text": " there, and little tool that does like this one or two things that cost me at least $5"
+      },
+      {
+        "start": 198358,
+        "stop": 199098,
+        "text": " or $10, and all that little stuff you got to do to make macOS a fully functional workstation."
+      },
+      {
+        "start": 199098,
+        "stop": 199570,
+        "text": " If you're honest with yourself, it's more work than setting up the Plasma desktop or"
+      },
+      {
+        "start": 199570,
+        "stop": 199670,
+        "text": " the GNOME desktop."
+      },
+      {
+        "start": 199670,
+        "stop": 200262,
+        "text": " So on the OS side, or just like this kind of stuff, the migration stuff, that isn't"
+      },
+      {
+        "start": 200262,
+        "stop": 200430,
+        "text": " a premium experience."
+      },
+      {
+        "start": 200430,
+        "stop": 200906,
+        "text": " You're buying a premium machine, supposedly has a custom OS built by the hardware vendor,"
+      },
+      {
+        "start": 200906,
+        "stop": 201378,
+        "text": " yet the migration assistant seems to be clueless about the architecture of the applications."
+      },
+      {
+        "start": 201378,
+        "stop": 201544,
+        "text": " That's actually hilarious."
+      },
+      {
+        "start": 201544,
+        "stop": 201814,
+        "text": " That's a worse experience than you get on the free desktop."
+      },
+      {
+        "start": 201814,
+        "stop": 202042,
+        "text": " That kind of stuff, that drives me crazy."
+      },
+      {
+        "start": 202042,
+        "stop": 202670,
+        "text": " But another area that I find sort of user hostile is Apple remains still completely"
+      },
+      {
+        "start": 202670,
+        "stop": 203242,
+        "text": " insufficient in the tools that they give their end users to manage their file system and"
+      },
+      {
+        "start": 203242,
+        "stop": 203342,
+        "text": " their data."
+      },
+      {
+        "start": 203342,
+        "stop": 203858,
+        "text": " And when you have photos and you have your Xcode projects on there or your media library"
+      },
+      {
+        "start": 203858,
+        "stop": 204222,
+        "text": " projects, that stuff is priceless."
+      },
+      {
+        "start": 204222,
+        "stop": 204950,
+        "text": " And APFS has capabilities and tools that are not exposed to the end user in any meaningful"
+      },
+      {
+        "start": 204950,
+        "stop": 205122,
+        "text": " way at all."
+      },
+      {
+        "start": 205122,
+        "stop": 205632,
+        "text": " And I just find it completely just unacceptable because Apple of the past went out of their"
+      },
+      {
+        "start": 205632,
+        "stop": 206104,
+        "text": " way to integrate this ridiculous time machine effect where you could go to any folder on"
+      },
+      {
+        "start": 206104,
+        "stop": 206530,
+        "text": " your Mac and you can hit a stupid button and you go into a stupid space effect, and then"
+      },
+      {
+        "start": 206530,
+        "stop": 207056,
+        "text": " you could fly through time, but it visually made sense to restore data."
+      },
+      {
+        "start": 207056,
+        "stop": 207488,
+        "text": " And now Apple has built in snapshot capabilities into the file system and they don't expose"
+      },
+      {
+        "start": 207488,
+        "stop": 207630,
+        "text": " any of that stuff to the user."
+      },
+      {
+        "start": 207630,
+        "stop": 208158,
+        "text": " Time machine remains barely adequate at best, and macOS requires tons of little utilities"
+      },
+      {
+        "start": 208158,
+        "stop": 208398,
+        "text": " and fixes to make it actually usable."
+      },
+      {
+        "start": 208398,
+        "stop": 208754,
+        "text": " So it's like the hardware has just completely outstretched the software."
+      },
+      {
+        "start": 208754,
+        "stop": 209276,
+        "text": " I don't know if you saw this, but the latest Linux kernel was just released this weekend,"
+      },
+      {
+        "start": 209276,
+        "stop": 209410,
+        "text": " right on time."
+      },
+      {
+        "start": 209410,
+        "stop": 210006,
+        "text": " And Linus announced that this was the first Linux kernel that's ever been released from"
+      },
+      {
+        "start": 210006,
+        "stop": 210128,
+        "text": " an ARM Mac."
+      },
+      {
+        "start": 210128,
+        "stop": 210498,
+        "text": " He's running Asahi Linux now on his ARM Mac."
+      },
+      {
+        "start": 210498,
+        "stop": 210946,
+        "text": " And that's Linus' setup now to run Linux."
+      },
+      {
+        "start": 210946,
+        "stop": 211358,
+        "text": " And I don't know if it's a MacBook Air, probably, that seems to be his favorite machine or what,"
+      },
+      {
+        "start": 211358,
+        "stop": 212234,
+        "text": " but Linus Torvalds is using Apple hardware and he just released 5.19 from an ARM64 machine"
+      },
+      {
+        "start": 212234,
+        "stop": 212546,
+        "text": " and he felt like it was worth noting in the release announcement."
+      },
+      {
+        "start": 212546,
+        "stop": 212682,
+        "text": " I mean, that's beautiful."
+      },
+      {
+        "start": 212682,
+        "stop": 213434,
+        "text": " I think that's, yeah, Reddit must be a flame."
+      },
+      {
+        "start": 213434,
+        "stop": 213626,
+        "text": " Tailscale.com/coder."
+      },
+      {
+        "start": 213626,
+        "stop": 213910,
+        "text": " Go there to get a free personal account for up to 20 devices."
+      },
+      {
+        "start": 213910,
+        "stop": 214386,
+        "text": " And of course, you support the show when you go to tailscale.com/coder."
+      },
+      {
+        "start": 214386,
+        "stop": 214506,
+        "text": " Come here traveler."
+      },
+      {
+        "start": 214506,
+        "stop": 214994,
+        "text": " Let me give you a secret weapon that will help you on your travels because Tailscale"
+      },
+      {
+        "start": 214994,
+        "stop": 215394,
+        "text": " is that zero config VPN you have been looking for."
+      },
+      {
+        "start": 215394,
+        "stop": 215706,
+        "text": " It installs on any device in minutes."
+      },
+      {
+        "start": 215706,
+        "stop": 215858,
+        "text": " It manages firewall rules."
+      },
+      {
+        "start": 215858,
+        "stop": 216014,
+        "text": " It handles that double net situation."
+      },
+      {
+        "start": 216014,
+        "stop": 216538,
+        "text": " If you're in that situation, you can quickly and easily create a flat network protected"
+      },
+      {
+        "start": 216538,
+        "stop": 216788,
+        "text": " by WireGuard's noise protocol."
+      },
+      {
+        "start": 216788,
+        "stop": 217222,
+        "text": " And whatever desktop OS you're on, you can get tools to manage that super simply."
+      },
+      {
+        "start": 217222,
+        "stop": 217598,
+        "text": " Plus it has a great command line that also makes it really easy to bring things up and"
+      },
+      {
+        "start": 217598,
+        "stop": 217698,
+        "text": " down."
+      },
+      {
+        "start": 217698,
+        "stop": 218086,
+        "text": " If you've got five devices, you can probably get everything online in five minutes."
+      },
+      {
+        "start": 218086,
+        "stop": 218198,
+        "text": " It's that easy."
+      },
+      {
+        "start": 218198,
+        "stop": 218386,
+        "text": " I've got it on my Raspberry Pis."
+      },
+      {
+        "start": 218386,
+        "stop": 218486,
+        "text": " I've got it on my mobile devices."
+      },
+      {
+        "start": 218486,
+        "stop": 218666,
+        "text": " I've got it on my x86 boxes."
+      },
+      {
+        "start": 218666,
+        "stop": 218810,
+        "text": " I've got it on my family's computers."
+      },
+      {
+        "start": 218810,
+        "stop": 218934,
+        "text": " I've got it on my virtual machines."
+      },
+      {
+        "start": 218934,
+        "stop": 219114,
+        "text": " I've got it on my VPS's."
+      },
+      {
+        "start": 219114,
+        "stop": 219562,
+        "text": " It brings everything together into one flat network and then I get static IPs."
+      },
+      {
+        "start": 219562,
+        "stop": 219984,
+        "text": " So now I've got a static IP for the devices I use the most often for those web dashboards"
+      },
+      {
+        "start": 219984,
+        "stop": 220390,
+        "text": " I need to get access to or those machines I need to SSH into or that box I got a remote"
+      },
+      {
+        "start": 220390,
+        "stop": 220538,
+        "text": " desktop to."
+      },
+      {
+        "start": 220538,
+        "stop": 220974,
+        "text": " It's all one flat network now and it's changed everything for me."
+      },
+      {
+        "start": 220974,
+        "stop": 221418,
+        "text": " And it literally made the show possible while I was traveling a few months ago."
+      },
+      {
+        "start": 221418,
+        "stop": 221888,
+        "text": " And one of the best parts about it is that it handles that mobile NAT that you get when"
+      },
+      {
+        "start": 221888,
+        "stop": 222302,
+        "text": " you're on like a cell phone connection, which can really screw things up for certain types"
+      },
+      {
+        "start": 222302,
+        "stop": 222470,
+        "text": " of applications."
+      },
+      {
+        "start": 222470,
+        "stop": 222614,
+        "text": " Just intelligently handles that."
+      },
+      {
+        "start": 222614,
+        "stop": 223078,
+        "text": " It also just brilliantly handles the routing so your data doesn't get sent to the wrong"
+      },
+      {
+        "start": 223078,
+        "stop": 223554,
+        "text": " area like, you know, some VPNs might route everything through the VPN connection."
+      },
+      {
+        "start": 223554,
+        "stop": 223782,
+        "text": " Tailscale don't do that."
+      },
+      {
+        "start": 223782,
+        "stop": 224142,
+        "text": " They're always, always intelligent about the way they handle the traffic."
+      },
+      {
+        "start": 224142,
+        "stop": 224278,
+        "text": " Just love that."
+      },
+      {
+        "start": 224278,
+        "stop": 224378,
+        "text": " And why?"
+      },
+      {
+        "start": 224378,
+        "stop": 224518,
+        "text": " Why I love it is because I can leave it on."
+      },
+      {
+        "start": 224518,
+        "stop": 224746,
+        "text": " That means I can always leave tailscale connected."
+      },
+      {
+        "start": 224746,
+        "stop": 225274,
+        "text": " So that means that mesh wire guard protected network is always available to me and they"
+      },
+      {
+        "start": 225274,
+        "stop": 225536,
+        "text": " can sign in through your existing identity provider."
+      },
+      {
+        "start": 225536,
+        "stop": 225856,
+        "text": " So if you're a small business or something, you know, if you got or maybe it's like maybe"
+      },
+      {
+        "start": 225856,
+        "stop": 226182,
+        "text": " you just like to do things through a single sign on, you want to have some two factor"
+      },
+      {
+        "start": 226182,
+        "stop": 226282,
+        "text": " authentication."
+      },
+      {
+        "start": 226282,
+        "stop": 226398,
+        "text": " I don't know what you do."
+      },
+      {
+        "start": 226398,
+        "stop": 226542,
+        "text": " Tailscale will support that, too."
+      },
+      {
+        "start": 226542,
+        "stop": 226670,
+        "text": " So go try it out."
+      },
+      {
+        "start": 226670,
+        "stop": 227116,
+        "text": " Go get the always on VPN that really works with gooeys for the platforms you use."
+      },
+      {
+        "start": 227116,
+        "stop": 227426,
+        "text": " Super DNS friendly and dead simple to set up."
+      },
+      {
+        "start": 227426,
+        "stop": 227762,
+        "text": " Those are just some of the reasons I use tailscale every single day."
+      },
+      {
+        "start": 227762,
+        "stop": 228364,
+        "text": " So try it now for yourself for free up to 20 devices at tailscale.com/coder."
+      },
+      {
+        "start": 228364,
+        "stop": 228564,
+        "text": " That's tailscale.com/coder."
+      },
+      {
+        "start": 228564,
+        "stop": 228864,
+        "text": " All right."
+      },
+      {
+        "start": 228864,
+        "stop": 229354,
+        "text": " Apparently, we have the secrets to become a successful software engineer."
+      },
+      {
+        "start": 229354,
+        "stop": 229746,
+        "text": " Are you are we sure we want to just give it away for free?"
+      },
+      {
+        "start": 229746,
+        "stop": 230046,
+        "text": " I mean, maybe we should like have some sort of online course they have to sign up for"
+      },
+      {
+        "start": 230046,
+        "stop": 230146,
+        "text": " us."
+      },
+      {
+        "start": 230146,
+        "stop": 230390,
+        "text": " Manning Press isn't giving it away for free ever."
+      },
+      {
+        "start": 230390,
+        "stop": 230590,
+        "text": " It's against the rules."
+      },
+      {
+        "start": 230590,
+        "stop": 230702,
+        "text": " No."
+      },
+      {
+        "start": 230702,
+        "stop": 231014,
+        "text": " So you know, we always get the hey, I'm starting out emails."
+      },
+      {
+        "start": 231014,
+        "stop": 231386,
+        "text": " You know, what should I look into any books, any courses?"
+      },
+      {
+        "start": 231386,
+        "stop": 231574,
+        "text": " And because I'm an old man, I love books."
+      },
+      {
+        "start": 231574,
+        "stop": 232082,
+        "text": " I don't particularly care for video courses."
+      },
+      {
+        "start": 232082,
+        "stop": 232572,
+        "text": " So I used to and still do recommend Mike Underwood's Coder to Developer."
+      },
+      {
+        "start": 232572,
+        "stop": 232696,
+        "text": " But that it's a great book."
+      },
+      {
+        "start": 232696,
+        "stop": 232830,
+        "text": " I think you should read it."
+      },
+      {
+        "start": 232830,
+        "stop": 233046,
+        "text": " It's also super dated."
+      },
+      {
+        "start": 233046,
+        "stop": 233594,
+        "text": " There's some stuff in there that that will seem somewhat comical given the way one, the"
+      },
+      {
+        "start": 233594,
+        "stop": 234078,
+        "text": " world has changed, but remote work and to just the types of technologies that the vast"
+      },
+      {
+        "start": 234078,
+        "stop": 234250,
+        "text": " majority of you are probably interested in."
+      },
+      {
+        "start": 234250,
+        "stop": 234578,
+        "text": " But still full of good advice."
+      },
+      {
+        "start": 234578,
+        "stop": 235438,
+        "text": " However, however, Manning Press unashamed goes for the mantle with Fernando Dalio."
+      },
+      {
+        "start": 235438,
+        "stop": 235538,
+        "text": " I hope I said that right."
+      },
+      {
+        "start": 235538,
+        "stop": 236022,
+        "text": " I don't know if he's Italian, but I gave it the Italian G L thing anyway."
+      },
+      {
+        "start": 236022,
+        "stop": 236282,
+        "text": " So hopefully I said that right."
+      },
+      {
+        "start": 236282,
+        "stop": 236710,
+        "text": " Fernando published skills of a successful software engineer, which weirdly has another"
+      },
+      {
+        "start": 236710,
+        "stop": 236966,
+        "text": " title at some point to."
+      },
+      {
+        "start": 236966,
+        "stop": 237482,
+        "text": " It is like Coder to Developer, but written after."
+      },
+      {
+        "start": 237482,
+        "stop": 237662,
+        "text": " You know, within the last five years."
+      },
+      {
+        "start": 237662,
+        "stop": 237794,
+        "text": " OK, super good."
+      },
+      {
+        "start": 237794,
+        "stop": 238426,
+        "text": " A lot of good advice doesn't focus on any particular technologies or languages, but"
+      },
+      {
+        "start": 238426,
+        "stop": 238898,
+        "text": " it covers things like TV, a lot about how to successfully work remotely, particularly"
+      },
+      {
+        "start": 238898,
+        "stop": 239466,
+        "text": " 100 percent remote, which I think a lot of people should probably read and kind of the"
+      },
+      {
+        "start": 239466,
+        "stop": 239702,
+        "text": " basics of like, you know, don't be a jackass."
+      },
+      {
+        "start": 239702,
+        "stop": 240206,
+        "text": " But it's targeted very much for beginning junior developers."
+      },
+      {
+        "start": 240206,
+        "stop": 240690,
+        "text": " And I kind of go through the different concerns that might be hard for you to see at that"
+      },
+      {
+        "start": 240690,
+        "stop": 241148,
+        "text": " level that either your managers or the more senior people in your team might have tips"
+      },
+      {
+        "start": 241148,
+        "stop": 241622,
+        "text": " for how to continually improve your skills and literally do continuous improvement."
+      },
+      {
+        "start": 241622,
+        "stop": 241862,
+        "text": " So again, we were just talking about get offs, right?"
+      },
+      {
+        "start": 241862,
+        "stop": 242002,
+        "text": " Stuff like that."
+      },
+      {
+        "start": 242002,
+        "stop": 242434,
+        "text": " I can't say I agree 100 percent of everything in the book, but it's worth reading."
+      },
+      {
+        "start": 242434,
+        "stop": 242630,
+        "text": " And it's five stars for me."
+      },
+      {
+        "start": 242630,
+        "stop": 242730,
+        "text": " It's a must buy."
+      },
+      {
+        "start": 242730,
+        "stop": 242830,
+        "text": " All right."
+      },
+      {
+        "start": 242830,
+        "stop": 243222,
+        "text": " Well, of course, we'll have a link at Coder.show/477."
+      },
+      {
+        "start": 243222,
+        "stop": 243398,
+        "text": " And then we got one more here."
+      },
+      {
+        "start": 243398,
+        "stop": 243734,
+        "text": " Code to Developer tools and strategies for delivering your software."
+      },
+      {
+        "start": 243734,
+        "stop": 244084,
+        "text": " And this one, they got a Kindle version."
+      },
+      {
+        "start": 244084,
+        "stop": 244438,
+        "text": " And now it is time for the boost."
+      },
+      {
+        "start": 244438,
+        "stop": 244538,
+        "text": " Let's do it."
+      },
+      {
+        "start": 244538,
+        "stop": 244914,
+        "text": " A Chiron, I'm going to say, came in with a row of duckaroos."
+      },
+      {
+        "start": 244914,
+        "stop": 245014,
+        "text": " I'm a duck."
+      },
+      {
+        "start": 245014,
+        "stop": 245114,
+        "text": " D-U-K, duck."
+      },
+      {
+        "start": 245114,
+        "stop": 245314,
+        "text": " Loaded with talent."
+      },
+      {
+        "start": 245314,
+        "stop": 245678,
+        "text": " That's been listening since episode one."
+      },
+      {
+        "start": 245678,
+        "stop": 245888,
+        "text": " And here's my first boost."
+      },
+      {
+        "start": 245888,
+        "stop": 246426,
+        "text": " I'd be interested to hear your thoughts on things like solid pods and the semantic web"
+      },
+      {
+        "start": 246426,
+        "stop": 246854,
+        "text": " as a means of building a truly decentralized Internet."
+      },
+      {
+        "start": 246854,
+        "stop": 246954,
+        "text": " What's up, Richard Hendricks?"
+      },
+      {
+        "start": 246954,
+        "stop": 247422,
+        "text": " Yeah, I feel like I totally would love to see a truly decentralized Internet, but I"
+      },
+      {
+        "start": 247422,
+        "stop": 247838,
+        "text": " don't know if I've seen anything that's going to that compels me to say there's going to"
+      },
+      {
+        "start": 247838,
+        "stop": 248038,
+        "text": " be traction."
+      },
+      {
+        "start": 248038,
+        "stop": 248630,
+        "text": " And we do have an announcement to make in regards to the show and the boost."
+      },
+      {
+        "start": 248630,
+        "stop": 249362,
+        "text": " Swigs writes in with our last cheap boost for the show, 300 sats."
+      },
+      {
+        "start": 249362,
+        "stop": 249722,
+        "text": " After today, we're going to set the limit to 2,000 sats to get into the show just to"
+      },
+      {
+        "start": 249722,
+        "stop": 249952,
+        "text": " keep it tight because we got to keep, you know, we want to make it nice and tight here"
+      },
+      {
+        "start": 249952,
+        "stop": 250052,
+        "text": " on the show."
+      },
+      {
+        "start": 250052,
+        "stop": 250152,
+        "text": " We don't want to take too long."
+      },
+      {
+        "start": 250152,
+        "stop": 250396,
+        "text": " But Swigs, you get the last one because I hadn't made the announcement yet."
+      },
+      {
+        "start": 250396,
+        "stop": 250496,
+        "text": " And I think it's perfect."
+      },
+      {
+        "start": 250496,
+        "stop": 250840,
+        "text": " I'm glad, actually, because Swigs writes, I've been listening to Jupiter Broadcasting"
+      },
+      {
+        "start": 250840,
+        "stop": 251046,
+        "text": " for the better part of a year now."
+      },
+      {
+        "start": 251046,
+        "stop": 251426,
+        "text": " I finally broke down and installed the Fountain app."
+      },
+      {
+        "start": 251426,
+        "stop": 251820,
+        "text": " And it's actually really nice to be able to contribute to the podcast of my choice in such"
+      },
+      {
+        "start": 251820,
+        "stop": 251920,
+        "text": " an easy manner."
+      },
+      {
+        "start": 251920,
+        "stop": 252134,
+        "text": " Yeah, because it just puts the button right there while you're listening."
+      },
+      {
+        "start": 252134,
+        "stop": 252418,
+        "text": " Side note, I run Sailfish OS on a Sony Xperia 10."
+      },
+      {
+        "start": 252418,
+        "stop": 252622,
+        "text": " Man, the people who have Xperia's love them."
+      },
+      {
+        "start": 252622,
+        "stop": 252890,
+        "text": " He says the Fountain app works great as expected."
+      },
+      {
+        "start": 252890,
+        "stop": 253326,
+        "text": " Thanks for the content and keep up the podcasting 2.0 fight."
+      },
+      {
+        "start": 253326,
+        "stop": 253426,
+        "text": " Thank you, sir."
+      },
+      {
+        "start": 253426,
+        "stop": 253526,
+        "text": " Thank you very much."
+      },
+      {
+        "start": 253526,
+        "stop": 253626,
+        "text": " Appreciate you."
+      },
+      {
+        "start": 253626,
+        "stop": 254108,
+        "text": " All right, Optimus Grey, who's also watching live right now, boosted in with a big set"
+      },
+      {
+        "start": 254108,
+        "stop": 254308,
+        "text": " of grandpa ducks."
+      },
+      {
+        "start": 254308,
+        "stop": 254576,
+        "text": " Twenty two thousand two hundred and twenty two sets."
+      },
+      {
+        "start": 254576,
+        "stop": 254740,
+        "text": " Thank you very much."
+      },
+      {
+        "start": 254740,
+        "stop": 254908,
+        "text": " And here's something for your trouble."
+      },
+      {
+        "start": 254908,
+        "stop": 255204,
+        "text": " All right, I feel like this is where we're going to get in trouble in this episode, Mike."
+      },
+      {
+        "start": 255204,
+        "stop": 255304,
+        "text": " But here we go."
+      },
+      {
+        "start": 255304,
+        "stop": 255508,
+        "text": " He says, I know you guys are not the lawyers."
+      },
+      {
+        "start": 255508,
+        "stop": 255728,
+        "text": " This is not Lawyer Radio."
+      },
+      {
+        "start": 255728,
+        "stop": 256056,
+        "text": " But I have been tasked with coming up with the open source alternatives and tools for"
+      },
+      {
+        "start": 256056,
+        "stop": 256272,
+        "text": " dependencies we currently use."
+      },
+      {
+        "start": 256272,
+        "stop": 256650,
+        "text": " There is a good source on what types of licenses can be used in the corporate world."
+      },
+      {
+        "start": 256650,
+        "stop": 256934,
+        "text": " You know, simple BSD or versus open core."
+      },
+      {
+        "start": 256934,
+        "stop": 257174,
+        "text": " What are all the differences and where should I go?"
+      },
+      {
+        "start": 257174,
+        "stop": 257318,
+        "text": " So there's a question right there."
+      },
+      {
+        "start": 257318,
+        "stop": 257618,
+        "text": " Like, do you have anywhere you send people?"
+      },
+      {
+        "start": 257618,
+        "stop": 258030,
+        "text": " I've got a link that I'm going to put in the show notes that is like a look from a legal"
+      },
+      {
+        "start": 258030,
+        "stop": 258386,
+        "text": " level and they have a visual matrix breakdown of the different licenses."
+      },
+      {
+        "start": 258386,
+        "stop": 258818,
+        "text": " But I'm curious what you would do, like if you were going to go research if this is legal,"
+      },
+      {
+        "start": 258818,
+        "stop": 258918,
+        "text": " is this risky?"
+      },
+      {
+        "start": 258918,
+        "stop": 259202,
+        "text": " You know, like there's got to be somewhere you start, right?"
+      },
+      {
+        "start": 259202,
+        "stop": 259632,
+        "text": " I mean, I have a pretty super conservative thing."
+      },
+      {
+        "start": 259632,
+        "stop": 259968,
+        "text": " If it's not Apache, BSD or MIT, I don't use it."
+      },
+      {
+        "start": 259968,
+        "stop": 260228,
+        "text": " Yeah, that's kind of the safe way to do it, I suppose."
+      },
+      {
+        "start": 260228,
+        "stop": 260440,
+        "text": " So I'll definitely take a look at your chart."
+      },
+      {
+        "start": 260440,
+        "stop": 260540,
+        "text": " Yeah."
+      },
+      {
+        "start": 260540,
+        "stop": 260836,
+        "text": " And let us know what you think out there, audience, because I think that is a question"
+      },
+      {
+        "start": 260836,
+        "stop": 261056,
+        "text": " that we've never 100 percent answered on the show."
+      },
+      {
+        "start": 261056,
+        "stop": 261352,
+        "text": " But I do have a link in the show notes and maybe we can start there."
+      },
+      {
+        "start": 261352,
+        "stop": 261824,
+        "text": " I love this next username, Winebat Boosted in with 5,000 sats."
+      },
+      {
+        "start": 261824,
+        "stop": 261930,
+        "text": " Boost!"
+      },
+      {
+        "start": 261930,
+        "stop": 262428,
+        "text": " The last couple of episodes, it may be time to start the Flutter challenge."
+      },
+      {
+        "start": 262428,
+        "stop": 262528,
+        "text": " Maybe bring Wes in."
+      },
+      {
+        "start": 262528,
+        "stop": 262628,
+        "text": " Maybe."
+      },
+      {
+        "start": 262628,
+        "stop": 262870,
+        "text": " I mean, that's so time consuming."
+      },
+      {
+        "start": 262870,
+        "stop": 262970,
+        "text": " That's the thing about the challenges."
+      },
+      {
+        "start": 262970,
+        "stop": 263326,
+        "text": " Yeah, the challenges are tough, especially like if it's going to be a gooey thing."
+      },
+      {
+        "start": 263326,
+        "stop": 263594,
+        "text": " That's even harder."
+      },
+      {
+        "start": 263594,
+        "stop": 263694,
+        "text": " We should keep it on the back."
+      },
+      {
+        "start": 263694,
+        "stop": 263794,
+        "text": " We should do something."
+      },
+      {
+        "start": 263794,
+        "stop": 264192,
+        "text": " I don't, you know, Flutter, we hear a lot about Flutter, but I'm not sure if that's the Flutter"
+      },
+      {
+        "start": 264192,
+        "stop": 264774,
+        "text": " folks and right in if you are, you know, are there a lot of them listening or?"
+      },
+      {
+        "start": 264774,
+        "stop": 264946,
+        "text": " Or are we just hearing from the..."
+      },
+      {
+        "start": 264946,
+        "stop": 265046,
+        "text": " Are they super vocal?"
+      },
+      {
+        "start": 265046,
+        "stop": 265146,
+        "text": " Right."
+      },
+      {
+        "start": 265146,
+        "stop": 265246,
+        "text": " Yeah."
+      },
+      {
+        "start": 265246,
+        "stop": 265482,
+        "text": " You know, but that's what we said about Rust early on, too."
+      },
+      {
+        "start": 265482,
+        "stop": 265646,
+        "text": " And it's all Jeremy Solar."
+      },
+      {
+        "start": 265646,
+        "stop": 265958,
+        "text": " All right, Trevdev Boosted."
+      },
+      {
+        "start": 265958,
+        "stop": 266058,
+        "text": " Hello, Trevdev."
+      },
+      {
+        "start": 266058,
+        "stop": 266158,
+        "text": " Good to see you again."
+      },
+      {
+        "start": 266158,
+        "stop": 266258,
+        "text": " 2048 sats."
+      },
+      {
+        "start": 266258,
+        "stop": 266458,
+        "text": " Coming in hot with the Boost!"
+      },
+      {
+        "start": 266458,
+        "stop": 266818,
+        "text": " He's followed up to a question I asked last week when he said that, you know, Microsoft"
+      },
+      {
+        "start": 266818,
+        "stop": 266918,
+        "text": " is trying to extinguish Linux."
+      },
+      {
+        "start": 266918,
+        "stop": 267154,
+        "text": " I said, do you really think they're trying to extinguish it?"
+      },
+      {
+        "start": 267154,
+        "stop": 267786,
+        "text": " He said, I guess what I mean by extinguish is make Linux as irrelevant as possible."
+      },
+      {
+        "start": 267786,
+        "stop": 267902,
+        "text": " OK."
+      },
+      {
+        "start": 267902,
+        "stop": 268238,
+        "text": " Not long ago, working primarily with FOSS was not easy to convince people to do."
+      },
+      {
+        "start": 268238,
+        "stop": 268338,
+        "text": " I agree."
+      },
+      {
+        "start": 268338,
+        "stop": 268762,
+        "text": " He goes on to say Microsoft sees the competitive nature of free software today."
+      },
+      {
+        "start": 268762,
+        "stop": 269222,
+        "text": " They'll keep fluffiness up, buying our platforms, buying our talent and taking over as much"
+      },
+      {
+        "start": 269222,
+        "stop": 269514,
+        "text": " as they need to keep the Linux desktop from being competitive."
+      },
+      {
+        "start": 269514,
+        "stop": 269614,
+        "text": " The cloud?"
+      },
+      {
+        "start": 269614,
+        "stop": 269714,
+        "text": " Maybe."
+      },
+      {
+        "start": 269714,
+        "stop": 270122,
+        "text": " At the end of the day, they need to convince managers and bean counters that their solution"
+      },
+      {
+        "start": 270122,
+        "stop": 270222,
+        "text": " is better."
+      },
+      {
+        "start": 270222,
+        "stop": 270482,
+        "text": " Yeah, that might be it."
+      },
+      {
+        "start": 270482,
+        "stop": 270582,
+        "text": " I don't know."
+      },
+      {
+        "start": 270582,
+        "stop": 270682,
+        "text": " Yeah, I don't know."
+      },
+      {
+        "start": 270682,
+        "stop": 271130,
+        "text": " See, I think nobody thinks about desktop Linux more than desktop Linux people."
+      },
+      {
+        "start": 271130,
+        "stop": 271238,
+        "text": " I'm sorry."
+      },
+      {
+        "start": 271238,
+        "stop": 271542,
+        "text": " And I love my dev one and my my pop OS and all that."
+      },
+      {
+        "start": 271542,
+        "stop": 272018,
+        "text": " But I think Microsoft is just happy to make a ton of money on Azure using Linux."
+      },
+      {
+        "start": 272018,
+        "stop": 272118,
+        "text": " And they're cool with that."
+      },
+      {
+        "start": 272118,
+        "stop": 272218,
+        "text": " Right."
+      },
+      {
+        "start": 272218,
+        "stop": 272492,
+        "text": " I know that using word is doing a lot of work in that sense, but I agree."
+      },
+      {
+        "start": 272492,
+        "stop": 272930,
+        "text": " And if you want to if you want to use the GNOME desktop and you want to write all of"
+      },
+      {
+        "start": 272930,
+        "stop": 273312,
+        "text": " your code in GNOME text and then, you know, upload it."
+      },
+      {
+        "start": 273312,
+        "stop": 273542,
+        "text": " No one, no one wants to write all over."
+      },
+      {
+        "start": 273542,
+        "stop": 273642,
+        "text": " I don't care."
+      },
+      {
+        "start": 273642,
+        "stop": 273742,
+        "text": " Right."
+      },
+      {
+        "start": 273742,
+        "stop": 274082,
+        "text": " As long as you're running on Azure services or maybe you're using V.S. code, they don't"
+      },
+      {
+        "start": 274082,
+        "stop": 274182,
+        "text": " care."
+      },
+      {
+        "start": 274182,
+        "stop": 274334,
+        "text": " I don't even think they really care about V.S. code."
+      },
+      {
+        "start": 274334,
+        "stop": 274548,
+        "text": " It's all just to get you up to Azure like that."
+      },
+      {
+        "start": 274548,
+        "stop": 274882,
+        "text": " It's we did we predict this like three years ago or four years ago."
+      },
+      {
+        "start": 274882,
+        "stop": 275034,
+        "text": " It's just it's all about Azure."
+      },
+      {
+        "start": 275034,
+        "stop": 275256,
+        "text": " It's all roads lead to Azure."
+      },
+      {
+        "start": 275256,
+        "stop": 275722,
+        "text": " The only thing that the only influence desktop Linux has had, not only, but the biggest one"
+      },
+      {
+        "start": 275722,
+        "stop": 275946,
+        "text": " is Katie's naming conventions."
+      },
+      {
+        "start": 275946,
+        "stop": 276482,
+        "text": " Every time I go to a store and see a giant K, I'm like, is that a Linux project or the"
+      },
+      {
+        "start": 276482,
+        "stop": 276808,
+        "text": " genome stuff that, you know, the G edits like it's not kibble."
+      },
+      {
+        "start": 276808,
+        "stop": 276908,
+        "text": " It's kibble."
+      },
+      {
+        "start": 276908,
+        "stop": 277008,
+        "text": " I don't even know why."
+      },
+      {
+        "start": 277008,
+        "stop": 277108,
+        "text": " My poor dog."
+      },
+      {
+        "start": 277108,
+        "stop": 277208,
+        "text": " Yeah."
+      },
+      {
+        "start": 277208,
+        "stop": 277308,
+        "text": " And here's why."
+      },
+      {
+        "start": 277308,
+        "stop": 277654,
+        "text": " Here's why I'm pretty confident in this assessment is because in this assessment, Microsoft makes"
+      },
+      {
+        "start": 277654,
+        "stop": 277972,
+        "text": " money with Linux is successful or Windows is successful."
+      },
+      {
+        "start": 277972,
+        "stop": 278290,
+        "text": " They don't need Linux to fail to make money in this scenario."
+      },
+      {
+        "start": 278290,
+        "stop": 278598,
+        "text": " I'm pretty sure they make more money on Azure now to."
+      },
+      {
+        "start": 278598,
+        "stop": 278698,
+        "text": " All right."
+      },
+      {
+        "start": 278698,
+        "stop": 279054,
+        "text": " So noob Steve comes in with a big grandpa row of tux."
+      },
+      {
+        "start": 279054,
+        "stop": 279266,
+        "text": " Twenty two thousand two hundred and twenty two cents."
+      },
+      {
+        "start": 279266,
+        "stop": 279366,
+        "text": " Thank you very much."
+      },
+      {
+        "start": 279366,
+        "stop": 279570,
+        "text": " And here's something for your trouble."
+      },
+      {
+        "start": 279570,
+        "stop": 279674,
+        "text": " Long time listener."
+      },
+      {
+        "start": 279674,
+        "stop": 279814,
+        "text": " First time Boast."
+      },
+      {
+        "start": 279814,
+        "stop": 279998,
+        "text": " Boast written in before."
+      },
+      {
+        "start": 279998,
+        "stop": 280414,
+        "text": " But I'm the dude who retired from the Navy and is hoping to move into dev work."
+      },
+      {
+        "start": 280414,
+        "stop": 280514,
+        "text": " I've got two questions."
+      },
+      {
+        "start": 280514,
+        "stop": 280614,
+        "text": " Oh, great."
+      },
+      {
+        "start": 280614,
+        "stop": 280762,
+        "text": " Noob Steve says first."
+      },
+      {
+        "start": 280762,
+        "stop": 281038,
+        "text": " I hear this and other podcasts."
+      },
+      {
+        "start": 281038,
+        "stop": 281250,
+        "text": " How much everyone just seems to love rust."
+      },
+      {
+        "start": 281250,
+        "stop": 281350,
+        "text": " How awesome it is."
+      },
+      {
+        "start": 281350,
+        "stop": 281622,
+        "text": " If that's the case, why are there no jobs for it?"
+      },
+      {
+        "start": 281622,
+        "stop": 282028,
+        "text": " I'd love to learn it, but it definitely needs to focus on what's going to get me a job at"
+      },
+      {
+        "start": 282028,
+        "stop": 282238,
+        "text": " least in the next two years."
+      },
+      {
+        "start": 282238,
+        "stop": 282382,
+        "text": " That's a fair assessment right there."
+      },
+      {
+        "start": 282382,
+        "stop": 282482,
+        "text": " Yeah."
+      },
+      {
+        "start": 282482,
+        "stop": 282870,
+        "text": " So everybody loves rust because rust is technically very good."
+      },
+      {
+        "start": 282870,
+        "stop": 283180,
+        "text": " Employers don't hire for a lot of rust because rust is technically very good and very hard"
+      },
+      {
+        "start": 283180,
+        "stop": 283318,
+        "text": " to develop in."
+      },
+      {
+        "start": 283318,
+        "stop": 283674,
+        "text": " If you don't want to spend lots of money on very senior developers."
+      },
+      {
+        "start": 283674,
+        "stop": 283888,
+        "text": " That's a great observation right there."
+      },
+      {
+        "start": 283888,
+        "stop": 284124,
+        "text": " And you know what it is, is a lot of senior developers who've been in these positions"
+      },
+      {
+        "start": 284124,
+        "stop": 284310,
+        "text": " forever are just rewriting their tools and rust."
+      },
+      {
+        "start": 284310,
+        "stop": 284410,
+        "text": " They've already got the jobs."
+      },
+      {
+        "start": 284410,
+        "stop": 284990,
+        "text": " A lot of the more vocal rust people are people who've been doing C++ for a long time and"
+      },
+      {
+        "start": 284990,
+        "stop": 285214,
+        "text": " are just tired of getting bitten."
+      },
+      {
+        "start": 285214,
+        "stop": 285910,
+        "text": " But I mean, maybe again, if you're a new person who's diving into rust as your first language,"
+      },
+      {
+        "start": 285910,
+        "stop": 286150,
+        "text": " I, God protect you."
+      },
+      {
+        "start": 286150,
+        "stop": 286278,
+        "text": " God bless you."
+      },
+      {
+        "start": 286278,
+        "stop": 286398,
+        "text": " Good luck."
+      },
+      {
+        "start": 286398,
+        "stop": 286962,
+        "text": " But I don't know if you're looking for quantity of jobs, anything webby Python can do basically"
+      },
+      {
+        "start": 286962,
+        "stop": 287298,
+        "text": " anything because we've all decided that we're Google."
+      },
+      {
+        "start": 287298,
+        "stop": 287550,
+        "text": " Every problem can be solved with a Python script."
+      },
+      {
+        "start": 287550,
+        "stop": 287994,
+        "text": " And unfortunately, especially with your navy background, well not unfortunately, but it"
+      },
+      {
+        "start": 287994,
+        "stop": 288318,
+        "text": " depends on how much of a Linux zealot you are."
+      },
+      {
+        "start": 288318,
+        "stop": 288418,
+        "text": " .NET baby."
+      },
+      {
+        "start": 288418,
+        "stop": 288562,
+        "text": " Especially with that military background."
+      },
+      {
+        "start": 288562,
+        "stop": 289078,
+        "text": " As long as you got a nice honorable discharge there, there are tons of contractors who will"
+      },
+      {
+        "start": 289078,
+        "stop": 289354,
+        "text": " totally hire you to do C#."
+      },
+      {
+        "start": 289354,
+        "stop": 289638,
+        "text": " I agree with everything, plus one to all of that."
+      },
+      {
+        "start": 289638,
+        "stop": 289974,
+        "text": " And don't feel bad about it either noob Steve because you know, say you go down the .NET"
+      },
+      {
+        "start": 289974,
+        "stop": 290514,
+        "text": " path, you go heavy with the web development stuff, it could be three, four years, five"
+      },
+      {
+        "start": 290514,
+        "stop": 290614,
+        "text": " years."
+      },
+      {
+        "start": 290614,
+        "stop": 290870,
+        "text": " It doesn't mean you don't pick something up in the meantime, you don't start a side hobby,"
+      },
+      {
+        "start": 290870,
+        "stop": 291106,
+        "text": " you don't start learning something else, you don't transition to something else."
+      },
+      {
+        "start": 291106,
+        "stop": 291354,
+        "text": " You just got to get that ball rolling."
+      },
+      {
+        "start": 291354,
+        "stop": 292038,
+        "text": " Also being a veteran or soon to be a veteran, that puts you for that particular, and maybe"
+      },
+      {
+        "start": 292038,
+        "stop": 292432,
+        "text": " you don't want to do the military contracting, who knows, but that puts you in a basically"
+      },
+      {
+        "start": 292432,
+        "stop": 292708,
+        "text": " automatically ahead of anybody else."
+      },
+      {
+        "start": 292708,
+        "stop": 293212,
+        "text": " Even if you go work for a smaller end contractor, there's tons of them around."
+      },
+      {
+        "start": 293212,
+        "stop": 293312,
+        "text": " They're always hiring .NET."
+      },
+      {
+        "start": 293312,
+        "stop": 293444,
+        "text": " Yeah, that's a great point."
+      },
+      {
+        "start": 293444,
+        "stop": 293596,
+        "text": " That's probably the easiest path."
+      },
+      {
+        "start": 293596,
+        "stop": 293696,
+        "text": " Keep us posted noob Steve."
+      },
+      {
+        "start": 293696,
+        "stop": 294040,
+        "text": " And he actually rounds it out, we're just about done, he rounds it out with a double"
+      },
+      {
+        "start": 294040,
+        "stop": 294172,
+        "text": " boost with another grandpa's."
+      },
+      {
+        "start": 294172,
+        "stop": 294272,
+        "text": " What is this, Lebensboro?"
+      },
+      {
+        "start": 294272,
+        "stop": 294372,
+        "text": " Another grandpa's."
+      },
+      {
+        "start": 294372,
+        "stop": 294820,
+        "text": " Alright, my other question is maybe a little controversial."
+      },
+      {
+        "start": 294820,
+        "stop": 295130,
+        "text": " I'm not looking to start a flame war, but I just actually want to understand why the"
+      },
+      {
+        "start": 295130,
+        "stop": 295684,
+        "text": " hell would anyone want to use Vim or Emacs when there's tools like VS Code and JetBrains?"
+      },
+      {
+        "start": 295684,
+        "stop": 296116,
+        "text": " I have a student license, so I get JetBrains cheap, but I couldn't imagine using anything"
+      },
+      {
+        "start": 296116,
+        "stop": 296304,
+        "text": " but JetBrains and VS Code."
+      },
+      {
+        "start": 296304,
+        "stop": 296438,
+        "text": " What am I missing?"
+      },
+      {
+        "start": 296438,
+        "stop": 296744,
+        "text": " Is there some kind of amazing functionality I'm overlooking?"
+      },
+      {
+        "start": 296744,
+        "stop": 297260,
+        "text": " Me trying to quit Vim is the best way to seed your encryption, by the way."
+      },
+      {
+        "start": 297260,
+        "stop": 297360,
+        "text": " Part of me agrees with noob Steve."
+      },
+      {
+        "start": 297360,
+        "stop": 297520,
+        "text": " I'd like to hear the audience's answer though."
+      },
+      {
+        "start": 297520,
+        "stop": 297652,
+        "text": " I'd like people to let us know."
+      },
+      {
+        "start": 297652,
+        "stop": 297830,
+        "text": " Boost in and let us know what you think."
+      },
+      {
+        "start": 297830,
+        "stop": 298082,
+        "text": " And Steve, I'm just going to double down on my .NET."
+      },
+      {
+        "start": 298082,
+        "stop": 298604,
+        "text": " Check out Visual Studio, you will love it, or JetBrains Project Writer, or just be sharper"
+      },
+      {
+        "start": 298604,
+        "stop": 298704,
+        "text": " in Visual Studio."
+      },
+      {
+        "start": 298704,
+        "stop": 298836,
+        "text": " You'll be very happy."
+      },
+      {
+        "start": 298836,
+        "stop": 298936,
+        "text": " I don't know."
+      },
+      {
+        "start": 298936,
+        "stop": 299036,
+        "text": " People are purists, right?"
+      },
+      {
+        "start": 299036,
+        "stop": 299628,
+        "text": " I mean, I use them for some stuff, but I have been seduced by the ways of VS Code."
+      },
+      {
+        "start": 299628,
+        "stop": 300132,
+        "text": " I'm eager to try JetBrains, not Blains, Brains."
+      },
+      {
+        "start": 300132,
+        "stop": 300376,
+        "text": " It's not some sort of strange plane."
+      },
+      {
+        "start": 300376,
+        "stop": 300476,
+        "text": " What is it?"
+      },
+      {
+        "start": 300476,
+        "stop": 300576,
+        "text": " Fleet?"
+      },
+      {
+        "start": 300576,
+        "stop": 300676,
+        "text": " Project Fleet?"
+      },
+      {
+        "start": 300676,
+        "stop": 300848,
+        "text": " I've been playing around with Zed."
+      },
+      {
+        "start": 300848,
+        "stop": 300948,
+        "text": " I don't know."
+      },
+      {
+        "start": 300948,
+        "stop": 301244,
+        "text": " I mean, why do people like Emacs and Vim?"
+      },
+      {
+        "start": 301244,
+        "stop": 301840,
+        "text": " Well, because one, it's a nice alpha nerd flex, and two, a lot of the...first of all,"
+      },
+      {
+        "start": 301840,
+        "stop": 302156,
+        "text": " Emacs, a lot of the Emacs guys are just like BSD Greybeards."
+      },
+      {
+        "start": 302156,
+        "stop": 302380,
+        "text": " There must be some core functionality though."
+      },
+      {
+        "start": 302380,
+        "stop": 302480,
+        "text": " There must be."
+      },
+      {
+        "start": 302480,
+        "stop": 302956,
+        "text": " Well, I've seen especially Emacs setups where you could just...like their email client is"
+      },
+      {
+        "start": 302956,
+        "stop": 303056,
+        "text": " an Emacs, right?"
+      },
+      {
+        "start": 303056,
+        "stop": 303156,
+        "text": " They just live in Emacs."
+      },
+      {
+        "start": 303156,
+        "stop": 303256,
+        "text": " So that, yeah."
+      },
+      {
+        "start": 303256,
+        "stop": 303356,
+        "text": " I don't know."
+      },
+      {
+        "start": 303356,
+        "stop": 303772,
+        "text": " Work with whatever makes you happy, except TextMate 2 is better."
+      },
+      {
+        "start": 303772,
+        "stop": 303872,
+        "text": " Yeah."
+      },
+      {
+        "start": 303872,
+        "stop": 304168,
+        "text": " Magenta Eagle comes in with our last boost, and it's a hot one."
+      },
+      {
+        "start": 304168,
+        "stop": 304284,
+        "text": " Coming in hot with the boost."
+      },
+      {
+        "start": 304284,
+        "stop": 305048,
+        "text": " When's the mic going to admit that the best language is C and not C# and not that other"
+      },
+      {
+        "start": 305048,
+        "stop": 305148,
+        "text": " dead language?"
+      },
+      {
+        "start": 305148,
+        "stop": 305308,
+        "text": " I think he's talking about objective C."
+      },
+      {
+        "start": 305308,
+        "stop": 305408,
+        "text": " What?"
+      },
+      {
+        "start": 305408,
+        "stop": 305508,
+        "text": " Dead."
+      },
+      {
+        "start": 305508,
+        "stop": 305764,
+        "text": " Death is only the beginning."
+      },
+      {
+        "start": 305764,
+        "stop": 306484,
+        "text": " Coming in with the opinions, also coming in with a 420 sat follow-up, MIT is greater than"
+      },
+      {
+        "start": 306484,
+        "stop": 306584,
+        "text": " GPL."
+      },
+      {
+        "start": 306584,
+        "stop": 306684,
+        "text": " You redeemed yourself, sir."
+      },
+      {
+        "start": 306684,
+        "stop": 306784,
+        "text": " I thought you'd like that."
+      },
+      {
+        "start": 306784,
+        "stop": 306884,
+        "text": " No, again."
+      },
+      {
+        "start": 306884,
+        "stop": 307604,
+        "text": " We used to cover .NET a lot when I was doing a lot of the, you know, the Xamarin, Xamarin,"
+      },
+      {
+        "start": 307604,
+        "stop": 307920,
+        "text": " whatever the hell you call it stuff."
+      },
+      {
+        "start": 307920,
+        "stop": 308028,
+        "text": " C# is really good, right?"
+      },
+      {
+        "start": 308028,
+        "stop": 308256,
+        "text": " I would say it's Java, but better."
+      },
+      {
+        "start": 308256,
+        "stop": 308512,
+        "text": " Although Java's copied a lot of their features too."
+      },
+      {
+        "start": 308512,
+        "stop": 308732,
+        "text": " So it's really good."
+      },
+      {
+        "start": 308732,
+        "stop": 309092,
+        "text": " Objective C is better, but it lost because..."
+      },
+      {
+        "start": 309092,
+        "stop": 309192,
+        "text": " Apple decided."
+      },
+      {
+        "start": 309192,
+        "stop": 309292,
+        "text": " War crimes."
+      },
+      {
+        "start": 309292,
+        "stop": 309468,
+        "text": " Apple, yes, Apple."
+      },
+      {
+        "start": 309468,
+        "stop": 309860,
+        "text": " The king, he doth decree that the brackets will be dropped."
+      },
+      {
+        "start": 309860,
+        "stop": 309960,
+        "text": " Yep."
+      },
+      {
+        "start": 309960,
+        "stop": 310060,
+        "text": " That's it."
+      },
+      {
+        "start": 310060,
+        "stop": 310360,
+        "text": " Although several times a year, I doth get a call."
+      },
+      {
+        "start": 310360,
+        "stop": 310556,
+        "text": " They need my ancient wisdom."
+      },
+      {
+        "start": 310556,
+        "stop": 310732,
+        "text": " My pre-arc ancient wisdom."
+      },
+      {
+        "start": 310732,
+        "stop": 310856,
+        "text": " Go to the hills."
+      },
+      {
+        "start": 310856,
+        "stop": 311012,
+        "text": " Summon one of the ancient ones."
+      },
+      {
+        "start": 311012,
+        "stop": 311270,
+        "text": " Hey, do you know this Michael Dominic?"
+      },
+      {
+        "start": 311270,
+        "stop": 311370,
+        "text": " Mike Dominic."
+      },
+      {
+        "start": 311370,
+        "stop": 311568,
+        "text": " It's not a name I've heard."
+      },
+      {
+        "start": 311568,
+        "stop": 311668,
+        "text": " To Obi-Wan, right?"
+      },
+      {
+        "start": 311668,
+        "stop": 311768,
+        "text": " No."
+      },
+      {
+        "start": 311768,
+        "stop": 311988,
+        "text": " Not a name I've heard in many years."
+      },
+      {
+        "start": 311988,
+        "stop": 312240,
+        "text": " I once was a friend of your father's."
+      },
+      {
+        "start": 312240,
+        "stop": 312352,
+        "text": " Until he died."
+      },
+      {
+        "start": 312352,
+        "stop": 312480,
+        "text": " I just talked to my dad last night."
+      },
+      {
+        "start": 312480,
+        "stop": 312600,
+        "text": " He became a Swift developer."
+      },
+      {
+        "start": 312600,
+        "stop": 312700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 312700,
+        "stop": 312800,
+        "text": " Yeah."
+      },
+      {
+        "start": 313300,
+        "stop": 313400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313400,
+        "stop": 313500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313500,
+        "stop": 313600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313600,
+        "stop": 313700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313700,
+        "stop": 313800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313800,
+        "stop": 313900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 313900,
+        "stop": 314000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314000,
+        "stop": 314100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314100,
+        "stop": 314200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314200,
+        "stop": 314300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314300,
+        "stop": 314400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314400,
+        "stop": 314500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314500,
+        "stop": 314600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314600,
+        "stop": 314700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314700,
+        "stop": 314800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314800,
+        "stop": 314900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 314900,
+        "stop": 315000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315000,
+        "stop": 315100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315100,
+        "stop": 315200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315200,
+        "stop": 315300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315300,
+        "stop": 315400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315400,
+        "stop": 315500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315500,
+        "stop": 315600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315600,
+        "stop": 315700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315700,
+        "stop": 315800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315800,
+        "stop": 315900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 315900,
+        "stop": 316000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316000,
+        "stop": 316100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316100,
+        "stop": 316200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316200,
+        "stop": 316300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316300,
+        "stop": 316400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316400,
+        "stop": 316500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316500,
+        "stop": 316600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316600,
+        "stop": 316700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316700,
+        "stop": 316800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316800,
+        "stop": 316900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 316900,
+        "stop": 317000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317000,
+        "stop": 317100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317100,
+        "stop": 317200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317200,
+        "stop": 317300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317300,
+        "stop": 317400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317400,
+        "stop": 317500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317500,
+        "stop": 317600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317600,
+        "stop": 317700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317700,
+        "stop": 317800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317800,
+        "stop": 317900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 317900,
+        "stop": 318000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318000,
+        "stop": 318100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318100,
+        "stop": 318200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318200,
+        "stop": 318300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318300,
+        "stop": 318400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318400,
+        "stop": 318500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318500,
+        "stop": 318600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318600,
+        "stop": 318700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318700,
+        "stop": 318800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318800,
+        "stop": 318900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 318900,
+        "stop": 319000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319000,
+        "stop": 319100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319100,
+        "stop": 319200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319200,
+        "stop": 319300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319300,
+        "stop": 319400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319400,
+        "stop": 319500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319500,
+        "stop": 319600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319600,
+        "stop": 319700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319700,
+        "stop": 319800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319800,
+        "stop": 319900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 319900,
+        "stop": 320000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320000,
+        "stop": 320100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320100,
+        "stop": 320200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320200,
+        "stop": 320300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320300,
+        "stop": 320400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320400,
+        "stop": 320500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320500,
+        "stop": 320600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320600,
+        "stop": 320700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320700,
+        "stop": 320800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320800,
+        "stop": 320900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 320900,
+        "stop": 321000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321000,
+        "stop": 321100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321100,
+        "stop": 321200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321200,
+        "stop": 321300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321300,
+        "stop": 321400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321400,
+        "stop": 321500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321500,
+        "stop": 321600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321600,
+        "stop": 321700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321700,
+        "stop": 321800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321800,
+        "stop": 321900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 321900,
+        "stop": 322000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322000,
+        "stop": 322100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322100,
+        "stop": 322200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322200,
+        "stop": 322300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322300,
+        "stop": 322400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322400,
+        "stop": 322500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322500,
+        "stop": 322600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322600,
+        "stop": 322700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322700,
+        "stop": 322800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322800,
+        "stop": 322900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 322900,
+        "stop": 323000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323000,
+        "stop": 323100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323100,
+        "stop": 323200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323200,
+        "stop": 323300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323300,
+        "stop": 323400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323400,
+        "stop": 323500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323500,
+        "stop": 323600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323600,
+        "stop": 323700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323700,
+        "stop": 323800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323800,
+        "stop": 323900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 323900,
+        "stop": 324000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324000,
+        "stop": 324100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324100,
+        "stop": 324200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324200,
+        "stop": 324300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324300,
+        "stop": 324400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324400,
+        "stop": 324500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324500,
+        "stop": 324600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324600,
+        "stop": 324700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324700,
+        "stop": 324800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324800,
+        "stop": 324900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 324900,
+        "stop": 325000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325000,
+        "stop": 325100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325100,
+        "stop": 325200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325200,
+        "stop": 325300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325300,
+        "stop": 325400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325400,
+        "stop": 325500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325500,
+        "stop": 325600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325600,
+        "stop": 325700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325700,
+        "stop": 325800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325800,
+        "stop": 325900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 325900,
+        "stop": 326000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326000,
+        "stop": 326100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326100,
+        "stop": 326200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326200,
+        "stop": 326300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326300,
+        "stop": 326400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326400,
+        "stop": 326500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326500,
+        "stop": 326600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326600,
+        "stop": 326700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326700,
+        "stop": 326800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326800,
+        "stop": 326900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 326900,
+        "stop": 327000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327000,
+        "stop": 327100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327100,
+        "stop": 327200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327200,
+        "stop": 327300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327300,
+        "stop": 327400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327400,
+        "stop": 327500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327500,
+        "stop": 327600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327600,
+        "stop": 327700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327700,
+        "stop": 327800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327800,
+        "stop": 327900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 327900,
+        "stop": 328000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328000,
+        "stop": 328100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328100,
+        "stop": 328200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328200,
+        "stop": 328300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328300,
+        "stop": 328400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328400,
+        "stop": 328500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328500,
+        "stop": 328600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328600,
+        "stop": 328700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328700,
+        "stop": 328800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328800,
+        "stop": 328900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 328900,
+        "stop": 329000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329000,
+        "stop": 329100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329100,
+        "stop": 329200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329200,
+        "stop": 329300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329300,
+        "stop": 329400,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329400,
+        "stop": 329500,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329500,
+        "stop": 329600,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329600,
+        "stop": 329700,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329700,
+        "stop": 329800,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329800,
+        "stop": 329900,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 329900,
+        "stop": 330000,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 330000,
+        "stop": 330100,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 330100,
+        "stop": 330200,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 330200,
+        "stop": 330300,
+        "text": " He's dead inside."
+      },
+      {
+        "start": 330300,
+        "stop": 330400,
+        "text": " He's dead inside."
+      }
+    ],
+    "processing_time": {
+      "secs": 2358,
+      "nanos": 733979165
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 477: Sweet Little Lies",
+    "pictures": [],
+    "duration": {
+      "secs": 3289,
+      "nanos": 442000000
+    },
+    "unique_id": "http://coder.show/477"
+  },
+  "episode": {
+    "title": "Sweet Little Lies | Coder Radio 477",
+    "description": "We debate the lies our tool makers tell us, if Clojure has a Rails-sized hole, and the secrets of a successful software engineer.",
+    "content": "<p><p>We debate the lies our tool makers tell us, if Clojure has a Rails-sized hole, and the secrets of a successful software engineer.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://www.meetup.com/jupiterbroadcasting/\" title=\"Jupiter Broadcasting Meetup Page\" rel=\"nofollow\">Jupiter Broadcasting Meetup Page</a> &mdash; London Meetup just days away!</li><li><a href=\"https://bit.ly/westcoastcrew\" title=\"Join our West Coast Crew Matrix chat.\" rel=\"nofollow\">Join our West Coast Crew Matrix chat.</a> &mdash; Calling West Coast Locals! </li><li><a href=\"http://researchkit.org/\" title=\"ResearchKit\" rel=\"nofollow\">ResearchKit</a> &mdash; ResearchKit is an open source framework introduced by Apple that allows researchers and developers to create powerful apps for medical research. Easily create visual consent flows, real-time dynamic active tasks, and surveys using a variety of customizable modules that you can build upon and share with the community. And since ResearchKit works seamlessly with HealthKit, researchers can access even more relevant data for their studies — like daily step counts, calorie use, and heart rate.</li><li><a href=\"https://www.apple.com/lae/researchkit/\" title=\"ResearchKit and CareKit - Apple\" rel=\"nofollow\">ResearchKit and CareKit - Apple</a> &mdash; a framework for developers to build apps that let you manage your own well-being on a daily basis.</li><li><a href=\"https://about.gitlab.com/topics/gitops/\" title=\"What is GitOps?\" rel=\"nofollow\">What is GitOps?</a> &mdash; GitOps is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to infrastructure automation.</li><li><a href=\"https://blog.janetacarr.com/clojure-needs-a-rails/\" title=\"Clojure needs a Rails\" rel=\"nofollow\">Clojure needs a Rails</a> &mdash; Other programming languages have their definitive web framework. Ruby has Rails, Python has Django, Java has Play, Elixir has Pheonix. </li><li><a href=\"https://luminusweb.com/\" title=\"Luminus - a Clojure web framework\" rel=\"nofollow\">Luminus - a Clojure web framework</a> &mdash; Luminus is a Clojure micro-framework based on a set of lightweight libraries. It aims to provide a robust, scalable, and easy to use platform. With Luminus you can focus on developing your app the way you want without any distractions.</p>\n\n<p></li><li><a href=\"https://twitter.com/dominucco/status/1554102021883584515\" title=\"Michael Dominick on Twitter\" rel=\"nofollow\">Michael Dominick on Twitter</a> &mdash; First time using Migration Assistant. Going from an M1 to an Intel Mac. Let’s see how this goes lol </li><li><a href=\"https://www.manning.com/books/skills-of-a-successful-software-engineer\" title=\"Skills of a Successful Software Engineer\" rel=\"nofollow\">Skills of a Successful Software Engineer</a> &mdash; Skills to grow from a solo coder into a productive member of a software development team, with seasoned advice on everything from refactoring to acing an interview.</li><li><a href=\"https://www.amazon.com/gp/product/B000PY3ZCG/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0\" title=\"Coder to Developer\" rel=\"nofollow\">Coder to Developer</a></li><li><a href=\"https://brainhub.eu/library/open-source-licenses-to-avoid\" title=\"Open Source Licenses to Avoid\" rel=\"nofollow\">Open Source Licenses to Avoid</a> &mdash; Check if the open sources you use pose a threat to your business and find out what to do today to secure your company for years.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8661",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15539738/d0fc7ab5-4fcd-495f-97a8-06d9e0e2ee99.mp3",
+      "length": "46760594",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-03T03:05:00+02:00"
+  },
+  "speedup": 1.3945795
+}

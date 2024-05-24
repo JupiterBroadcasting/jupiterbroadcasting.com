@@ -1,0 +1,6037 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 448,
+        "text": " It's episode 87 of the show, and this is going to be a fun one because we have a challenge"
+      },
+      {
+        "start": 448,
+        "stop": 1016,
+        "text": " that we're about to get into, but I'm personally excited because not one, but two different"
+      },
+      {
+        "start": 1016,
+        "stop": 1388,
+        "text": " hardware devices have shown up in the last couple of days that I can talk about on the"
+      },
+      {
+        "start": 1388,
+        "stop": 1488,
+        "text": " show."
+      },
+      {
+        "start": 1488,
+        "stop": 1664,
+        "text": " So welcome in, boys."
+      },
+      {
+        "start": 1664,
+        "stop": 1800,
+        "text": " Self-hosted is going to be a great one."
+      },
+      {
+        "start": 1800,
+        "stop": 2012,
+        "text": " And Alex, our buddy Brent is joining us too."
+      },
+      {
+        "start": 2012,
+        "stop": 2112,
+        "text": " Well, hello."
+      },
+      {
+        "start": 2112,
+        "stop": 2404,
+        "text": " Hello, Brent Lee, up there from the snowy Kananida."
+      },
+      {
+        "start": 2404,
+        "stop": 2504,
+        "text": " We're glad you're here."
+      },
+      {
+        "start": 2504,
+        "stop": 2668,
+        "text": " Yeah, good being back on the show."
+      },
+      {
+        "start": 2668,
+        "stop": 2776,
+        "text": " Thank you for having me."
+      },
+      {
+        "start": 2776,
+        "stop": 3036,
+        "text": " And you're going to be taking part in our Jellyfin January challenge."
+      },
+      {
+        "start": 3036,
+        "stop": 3136,
+        "text": " Do I have a choice?"
+      },
+      {
+        "start": 3136,
+        "stop": 3284,
+        "text": " I'm not sure if I have a choice."
+      },
+      {
+        "start": 3284,
+        "stop": 3832,
+        "text": " But Alex, before I reveal the new hardware, I know what a big matter guy you are, and"
+      },
+      {
+        "start": 3832,
+        "stop": 4076,
+        "text": " I know how all in you are on thread."
+      },
+      {
+        "start": 4076,
+        "stop": 4464,
+        "text": " So I think you're going to be particularly jealous."
+      },
+      {
+        "start": 4464,
+        "stop": 4824,
+        "text": " I got the brand new Home Assistant Sky Connect dongle."
+      },
+      {
+        "start": 4824,
+        "stop": 5068,
+        "text": " It's just itsy bitsy tiny."
+      },
+      {
+        "start": 5068,
+        "stop": 5306,
+        "text": " It's got the Home Assistant logo on there."
+      },
+      {
+        "start": 5306,
+        "stop": 5856,
+        "text": " And it's a Zigbee radio that they say is going to be fully updatable, compatible with matter"
+      },
+      {
+        "start": 5856,
+        "stop": 6032,
+        "text": " and thread."
+      },
+      {
+        "start": 6032,
+        "stop": 6546,
+        "text": " And in the box, the Home Assistant Sky Connect comes with a USB extension cable and the dongle"
+      },
+      {
+        "start": 6546,
+        "stop": 6646,
+        "text": " itself."
+      },
+      {
+        "start": 6646,
+        "stop": 6812,
+        "text": " And the extension cable is actually pretty important."
+      },
+      {
+        "start": 6812,
+        "stop": 7294,
+        "text": " You want to get that adapter as far away from the computer as possible."
+      },
+      {
+        "start": 7294,
+        "stop": 7790,
+        "text": " So with the included adapter, you can mount it away from your metal case and you'll get"
+      },
+      {
+        "start": 7790,
+        "stop": 8120,
+        "text": " better signal, which is something I've learned kind of recently."
+      },
+      {
+        "start": 8120,
+        "stop": 8568,
+        "text": " And the Sky Connect is, I would say, it's about the size of a thumb."
+      },
+      {
+        "start": 8568,
+        "stop": 8738,
+        "text": " It's a tiny, tiny little device."
+      },
+      {
+        "start": 8738,
+        "stop": 9146,
+        "text": " It's not like their first or even second hardware device, but it's still one of their very,"
+      },
+      {
+        "start": 9146,
+        "stop": 9498,
+        "text": " you know, very first hardware devices, if you follow what I'm saying."
+      },
+      {
+        "start": 9498,
+        "stop": 9598,
+        "text": " Give me a clue."
+      },
+      {
+        "start": 9598,
+        "stop": 9754,
+        "text": " What does this thing do?"
+      },
+      {
+        "start": 9754,
+        "stop": 9902,
+        "text": " For now, it's a Zigbee radio."
+      },
+      {
+        "start": 9902,
+        "stop": 10862,
+        "text": " And it's going to be like the blessed Zigbee radio from Home Assistant, I would imagine."
+      },
+      {
+        "start": 10862,
+        "stop": 11526,
+        "text": " And then they will release updates, I guess, or maybe they have, to add the matter radio"
+      },
+      {
+        "start": 11526,
+        "stop": 12024,
+        "text": " stuff that is necessary to support the matter standard as that begins to roll out."
+      },
+      {
+        "start": 12024,
+        "stop": 12518,
+        "text": " So long term, it's about having a dongle that switches you over to matter."
+      },
+      {
+        "start": 12518,
+        "stop": 12646,
+        "text": " It's tricky, Alex, right?"
+      },
+      {
+        "start": 12646,
+        "stop": 12992,
+        "text": " Because who really wants to redo all this stuff?"
+      },
+      {
+        "start": 12992,
+        "stop": 13720,
+        "text": " I have my setup all done now on a Conbee and I don't really want to redo my Zigbee network"
+      },
+      {
+        "start": 13720,
+        "stop": 13862,
+        "text": " or even try to transfer it."
+      },
+      {
+        "start": 13862,
+        "stop": 14130,
+        "text": " If I were going to start from scratch, absolutely, I'd go this route."
+      },
+      {
+        "start": 14130,
+        "stop": 14250,
+        "text": " Well, maybe that's it."
+      },
+      {
+        "start": 14250,
+        "stop": 14376,
+        "text": " Maybe that's what matter is."
+      },
+      {
+        "start": 14376,
+        "stop": 14938,
+        "text": " It's just a chance to push reset on the wireless devices that you choose."
+      },
+      {
+        "start": 14938,
+        "stop": 15416,
+        "text": " Maybe I make it my dedicated matter device, you know, and I do matter on its own dedicated"
+      },
+      {
+        "start": 15416,
+        "stop": 15650,
+        "text": " hardware device or something as I start rolling those out."
+      },
+      {
+        "start": 15650,
+        "stop": 15750,
+        "text": " Yeah, maybe."
+      },
+      {
+        "start": 15750,
+        "stop": 15850,
+        "text": " But it's in."
+      },
+      {
+        "start": 15850,
+        "stop": 16106,
+        "text": " I'll put it into production soon and I'll do a follow up on the show."
+      },
+      {
+        "start": 16106,
+        "stop": 16354,
+        "text": " I think this kind of stuff is smart for Home Assistant."
+      },
+      {
+        "start": 16354,
+        "stop": 16682,
+        "text": " You know, it's a great companion with the blue or the yellow."
+      },
+      {
+        "start": 16682,
+        "stop": 16794,
+        "text": " That's just obvious."
+      },
+      {
+        "start": 16794,
+        "stop": 17270,
+        "text": " It's hardware that people need to use all of their other hardware with Home Assistant"
+      },
+      {
+        "start": 17270,
+        "stop": 17488,
+        "text": " and the pricing's pretty good."
+      },
+      {
+        "start": 17488,
+        "stop": 17588,
+        "text": " It's pre-order right now."
+      },
+      {
+        "start": 17588,
+        "stop": 17688,
+        "text": " It's in small quantities."
+      },
+      {
+        "start": 17688,
+        "stop": 18246,
+        "text": " And Home Assistant continues to get more and more mainstream traction."
+      },
+      {
+        "start": 18246,
+        "stop": 18582,
+        "text": " There I see there was another article on Ars Technica just this week talking about Home"
+      },
+      {
+        "start": 18582,
+        "stop": 19062,
+        "text": " Assistant and the need for an open smart home and that kind of thing and how I think a lot"
+      },
+      {
+        "start": 19062,
+        "stop": 19714,
+        "text": " of folks in the normal world, the muggle world, for want of a better phrase, kind of getting"
+      },
+      {
+        "start": 19714,
+        "stop": 20322,
+        "text": " a bit fatigued with smart home devices and just the rat race, I suppose, of just having"
+      },
+      {
+        "start": 20322,
+        "stop": 20786,
+        "text": " to replace these things that, you know, how often did we used to replace doorbells, for"
+      },
+      {
+        "start": 20786,
+        "stop": 20886,
+        "text": " example?"
+      },
+      {
+        "start": 20886,
+        "stop": 20986,
+        "text": " Right."
+      },
+      {
+        "start": 20986,
+        "stop": 21086,
+        "text": " Yeah."
+      },
+      {
+        "start": 21086,
+        "stop": 21508,
+        "text": " Or just a different app for every vendor and a log in for every different vendor."
+      },
+      {
+        "start": 21508,
+        "stop": 21686,
+        "text": " It just gets so old so quick."
+      },
+      {
+        "start": 21686,
+        "stop": 22018,
+        "text": " And then it maybe at best last a couple of years."
+      },
+      {
+        "start": 22018,
+        "stop": 22586,
+        "text": " Well, to that point, Alex, my parents just this week asked me, hey, Alex uses that thing"
+      },
+      {
+        "start": 22586,
+        "stop": 22766,
+        "text": " for home automation stuff."
+      },
+      {
+        "start": 22766,
+        "stop": 23390,
+        "text": " And we have these D-Link cameras and water sensors that are about to basically the service"
+      },
+      {
+        "start": 23390,
+        "stop": 23590,
+        "text": " stops in a week or two."
+      },
+      {
+        "start": 23590,
+        "stop": 24166,
+        "text": " And so my parents are asking me for Home Assistant and I'm not even like a Home Assistant user"
+      },
+      {
+        "start": 24166,
+        "stop": 24266,
+        "text": " on the daily."
+      },
+      {
+        "start": 24266,
+        "stop": 24838,
+        "text": " I don't even have one here, but just my association with knowing about it."
+      },
+      {
+        "start": 24838,
+        "stop": 25148,
+        "text": " And my parents, of all people, are asking me to install one at their place."
+      },
+      {
+        "start": 25148,
+        "stop": 25574,
+        "text": " So I think you're right in saying that it's moving into like the public sphere."
+      },
+      {
+        "start": 25574,
+        "stop": 25674,
+        "text": " Yeah."
+      },
+      {
+        "start": 25674,
+        "stop": 26150,
+        "text": " And wouldn't it be great in that scenario if you could say, buy this yellow device and"
+      },
+      {
+        "start": 26150,
+        "stop": 26638,
+        "text": " buy this dongle and you hook it up and I guarantee you it's all going to work out of the box?"
+      },
+      {
+        "start": 26638,
+        "stop": 27010,
+        "text": " Well, you know, I've been thinking about what the best strategy would be at their place"
+      },
+      {
+        "start": 27010,
+        "stop": 27348,
+        "text": " because they live, you know, on the other side of the country, basically."
+      },
+      {
+        "start": 27348,
+        "stop": 27826,
+        "text": " So I can't I can't just set it up at their place and go over whenever it doesn't work."
+      },
+      {
+        "start": 27826,
+        "stop": 28270,
+        "text": " So I was thinking exactly that Chris is just like setting up the appliance approach."
+      },
+      {
+        "start": 28270,
+        "stop": 28382,
+        "text": " Mm hmm."
+      },
+      {
+        "start": 28382,
+        "stop": 28590,
+        "text": " Well we have more to talk about if time allows."
+      },
+      {
+        "start": 28590,
+        "stop": 29034,
+        "text": " It's a big show, but I just want to mention one more piece of hardware I got."
+      },
+      {
+        "start": 29034,
+        "stop": 29580,
+        "text": " I had a power situation that I never expected to come up because Lady Jupes has a lithium"
+      },
+      {
+        "start": 29580,
+        "stop": 29712,
+        "text": " ion battery bank."
+      },
+      {
+        "start": 29712,
+        "stop": 29968,
+        "text": " She's essentially her own UPS."
+      },
+      {
+        "start": 29968,
+        "stop": 30226,
+        "text": " So I just never really expected this power hit."
+      },
+      {
+        "start": 30226,
+        "stop": 30682,
+        "text": " And I have surge protectors in place, but I wasn't really prepared for this."
+      },
+      {
+        "start": 30682,
+        "stop": 30926,
+        "text": " Over the last week, it got really cold."
+      },
+      {
+        "start": 30926,
+        "stop": 31498,
+        "text": " It got to like 10 degrees, 15 degrees, probably the coldest it's ever been in my lifetime"
+      },
+      {
+        "start": 31498,
+        "stop": 31742,
+        "text": " in the Pacific Northwest."
+      },
+      {
+        "start": 31742,
+        "stop": 32146,
+        "text": " And my battery bank got below freezing."
+      },
+      {
+        "start": 32146,
+        "stop": 32462,
+        "text": " And at 32 degrees, you're not supposed to charge lithium ion."
+      },
+      {
+        "start": 32462,
+        "stop": 32874,
+        "text": " And these Battle Born, they're tested like around 29, 26 degrees."
+      },
+      {
+        "start": 32874,
+        "stop": 33128,
+        "text": " But it was 10 degrees outside at some points."
+      },
+      {
+        "start": 33128,
+        "stop": 33310,
+        "text": " And it stayed that way for over 24 hours."
+      },
+      {
+        "start": 33310,
+        "stop": 33872,
+        "text": " And so the BMCs, that's the battery management modules, they disabled the batteries essentially."
+      },
+      {
+        "start": 33872,
+        "stop": 33988,
+        "text": " They just didn't use them."
+      },
+      {
+        "start": 33988,
+        "stop": 34088,
+        "text": " They didn't draw from them."
+      },
+      {
+        "start": 34088,
+        "stop": 34188,
+        "text": " They didn't charge them."
+      },
+      {
+        "start": 34188,
+        "stop": 34288,
+        "text": " They just left them, didn't touch them."
+      },
+      {
+        "start": 34288,
+        "stop": 34388,
+        "text": " It's a safety thing."
+      },
+      {
+        "start": 34388,
+        "stop": 34844,
+        "text": " I'm totally fine with that because I was connected to shore power at the time."
+      },
+      {
+        "start": 34844,
+        "stop": 34944,
+        "text": " The shore power went away."
+      },
+      {
+        "start": 34944,
+        "stop": 35318,
+        "text": " And it was one of those hits where like the light, everything goes out and then on and"
+      },
+      {
+        "start": 35318,
+        "stop": 35418,
+        "text": " then out and then on."
+      },
+      {
+        "start": 35418,
+        "stop": 35910,
+        "text": " It says boom, boom, you know, two hits real fast, real hard."
+      },
+      {
+        "start": 35910,
+        "stop": 36824,
+        "text": " And ever since then, my Wi-Fi drops out about once an hour or so, maybe twice an hour."
+      },
+      {
+        "start": 36824,
+        "stop": 36952,
+        "text": " The Wi-Fi network just disappears."
+      },
+      {
+        "start": 36952,
+        "stop": 37198,
+        "text": " The hardware remains online."
+      },
+      {
+        "start": 37198,
+        "stop": 37494,
+        "text": " I can't really narrow it down further than that."
+      },
+      {
+        "start": 37494,
+        "stop": 37638,
+        "text": " But man, does that suck."
+      },
+      {
+        "start": 37638,
+        "stop": 38058,
+        "text": " There's so many things that when your Wi-Fi network drops off and comes back, breaks."
+      },
+      {
+        "start": 38058,
+        "stop": 38366,
+        "text": " You know, backups break."
+      },
+      {
+        "start": 38366,
+        "stop": 38624,
+        "text": " Wi-Fi based smart devices break."
+      },
+      {
+        "start": 38624,
+        "stop": 39082,
+        "text": " Devices that are streaming over your Wi-Fi break like it sucks."
+      },
+      {
+        "start": 39082,
+        "stop": 39274,
+        "text": " So so bad."
+      },
+      {
+        "start": 39274,
+        "stop": 39622,
+        "text": " And in the back of my mind, I've wanted to get a new complete Wi-Fi system for a while,"
+      },
+      {
+        "start": 39622,
+        "stop": 39874,
+        "text": " but I didn't want to spend a lot of money."
+      },
+      {
+        "start": 39874,
+        "stop": 40566,
+        "text": " And I came across, it's not a brand new device, but I came across a pretty good deal for a"
+      },
+      {
+        "start": 40566,
+        "stop": 41186,
+        "text": " TP-Link EAP245 version three for fifty five bucks."
+      },
+      {
+        "start": 41186,
+        "stop": 41614,
+        "text": " This is, you know, people say this thing competes with the Unifi access points."
+      },
+      {
+        "start": 41614,
+        "stop": 41996,
+        "text": " And you can get a brand new on Amazon for like 70 bucks."
+      },
+      {
+        "start": 41996,
+        "stop": 42148,
+        "text": " I decided to pull the trigger."
+      },
+      {
+        "start": 42148,
+        "stop": 42372,
+        "text": " And if you buy it from Amazon, you can get it within the same day."
+      },
+      {
+        "start": 42372,
+        "stop": 42614,
+        "text": " If you buy it from eBay, you can get it pretty quick."
+      },
+      {
+        "start": 42614,
+        "stop": 42772,
+        "text": " People really say this thing's pretty awesome."
+      },
+      {
+        "start": 42772,
+        "stop": 43276,
+        "text": " It's got a three by five gigahertz antenna and a three by two gigahertz antenna."
+      },
+      {
+        "start": 43276,
+        "stop": 43582,
+        "text": " It does, you know, like the band shaping stuff."
+      },
+      {
+        "start": 43582,
+        "stop": 44060,
+        "text": " It has a band steering, I should say, load balancing, has a web management console."
+      },
+      {
+        "start": 44060,
+        "stop": 44244,
+        "text": " It also has an app, but it runs on Linux."
+      },
+      {
+        "start": 44244,
+        "stop": 44406,
+        "text": " So that might be something."
+      },
+      {
+        "start": 44406,
+        "stop": 45024,
+        "text": " Open hardware, decent processor and open WRT project seems to have early support for the"
+      },
+      {
+        "start": 45024,
+        "stop": 45124,
+        "text": " device, too."
+      },
+      {
+        "start": 45124,
+        "stop": 45396,
+        "text": " So that's going like in a good direction long term."
+      },
+      {
+        "start": 45396,
+        "stop": 45656,
+        "text": " So I decided to pull the trigger on this thing."
+      },
+      {
+        "start": 45656,
+        "stop": 46024,
+        "text": " And I ordered one of these TP-Link EAP245s."
+      },
+      {
+        "start": 46024,
+        "stop": 46212,
+        "text": " And I'm going to put this into production this weekend."
+      },
+      {
+        "start": 46212,
+        "stop": 46520,
+        "text": " Just came in last night and see how it goes."
+      },
+      {
+        "start": 46520,
+        "stop": 46878,
+        "text": " You know, like, I don't know if it's going to hold up to like Unifi level."
+      },
+      {
+        "start": 46878,
+        "stop": 47056,
+        "text": " Don't know if it's going to be that good."
+      },
+      {
+        "start": 47056,
+        "stop": 47340,
+        "text": " I'm also going from a mesh to the single AP unit."
+      },
+      {
+        "start": 47340,
+        "stop": 47500,
+        "text": " So we'll see how that goes as well."
+      },
+      {
+        "start": 47500,
+        "stop": 47670,
+        "text": " They look really interesting, those things."
+      },
+      {
+        "start": 47670,
+        "stop": 48194,
+        "text": " And to be honest with you, they are realistically the only viable alternative to a Unifi style"
+      },
+      {
+        "start": 48194,
+        "stop": 48774,
+        "text": " system that phones home to a central controller software, at least with Unifi itself hosted."
+      },
+      {
+        "start": 48774,
+        "stop": 49266,
+        "text": " Yeah, I think TP-Link, you can also self host their kind of control center as well."
+      },
+      {
+        "start": 49266,
+        "stop": 49694,
+        "text": " You know, when I look at Unifi and how I use it, you know, I've got two or three different"
+      },
+      {
+        "start": 49694,
+        "stop": 50150,
+        "text": " sites I manage for my family and a couple for some clients as well."
+      },
+      {
+        "start": 50150,
+        "stop": 50724,
+        "text": " And you know, having that central point of control between different sites is absolutely"
+      },
+      {
+        "start": 50724,
+        "stop": 50824,
+        "text": " wonderful."
+      },
+      {
+        "start": 50824,
+        "stop": 51212,
+        "text": " And I can see it being really handy for you between dupes and the studio, for example,"
+      },
+      {
+        "start": 51212,
+        "stop": 51776,
+        "text": " and just have all one like pane of glass to look at and say, how is my Wi-Fi doing today?"
+      },
+      {
+        "start": 51776,
+        "stop": 52246,
+        "text": " That does seem really nice to use the same system in both locations."
+      },
+      {
+        "start": 52246,
+        "stop": 52402,
+        "text": " Same management software."
+      },
+      {
+        "start": 52402,
+        "stop": 52650,
+        "text": " I just want more information."
+      },
+      {
+        "start": 52650,
+        "stop": 52908,
+        "text": " Like why is my Wi-Fi dropping out?"
+      },
+      {
+        "start": 52908,
+        "stop": 53028,
+        "text": " What's going on?"
+      },
+      {
+        "start": 53028,
+        "stop": 53480,
+        "text": " It's the uptime of the of the operating system running on the AP, like some basic details"
+      },
+      {
+        "start": 53480,
+        "stop": 53998,
+        "text": " that I can use to troubleshoot, because I imagine what's really going on is quite likely"
+      },
+      {
+        "start": 53998,
+        "stop": 54588,
+        "text": " a Wi-Fi device has been just has gone haywire and maybe my router's crashing."
+      },
+      {
+        "start": 54588,
+        "stop": 55112,
+        "text": " I mean, it's possible it's been physically damaged, but I don't see any other indications"
+      },
+      {
+        "start": 55112,
+        "stop": 55212,
+        "text": " of that."
+      },
+      {
+        "start": 55212,
+        "stop": 55522,
+        "text": " And I wonder if it isn't just something is just disrupting the Wi-Fi network and the"
+      },
+      {
+        "start": 55522,
+        "stop": 55676,
+        "text": " router isn't handling it properly."
+      },
+      {
+        "start": 55676,
+        "stop": 56090,
+        "text": " Well, I think I remember you complaining about this a couple of weeks ago in our sort of"
+      },
+      {
+        "start": 56090,
+        "stop": 56722,
+        "text": " telegram chat, and I sent you a very timely video from Linus Tech Tips where he was solving"
+      },
+      {
+        "start": 56722,
+        "stop": 57256,
+        "text": " some Wi-Fi issues that was actually turning out to be caused by Z-Wave devices in his"
+      },
+      {
+        "start": 57256,
+        "stop": 57356,
+        "text": " house."
+      },
+      {
+        "start": 57356,
+        "stop": 57780,
+        "text": " You know, he's gone, just bought or built or remodeled a house and he's put a whole"
+      },
+      {
+        "start": 57780,
+        "stop": 58048,
+        "text": " bunch of home automation gear in there."
+      },
+      {
+        "start": 58048,
+        "stop": 58456,
+        "text": " And some of it got some really bad crosstalk and it's kind of causing some issues with"
+      },
+      {
+        "start": 58456,
+        "stop": 58556,
+        "text": " interference."
+      },
+      {
+        "start": 58556,
+        "stop": 59216,
+        "text": " And so he purchased a kind of a device that looks at all the various different radio frequencies"
+      },
+      {
+        "start": 59216,
+        "stop": 59716,
+        "text": " that are occurring and uses SDR to kind of figure out what the problem is."
+      },
+      {
+        "start": 59716,
+        "stop": 60188,
+        "text": " So I'll put a link to that in the chat for you and hopefully gives you an excuse to spend"
+      },
+      {
+        "start": 60188,
+        "stop": 60528,
+        "text": " a bit of cash on an SDR setup."
+      },
+      {
+        "start": 60528,
+        "stop": 60912,
+        "text": " I've wanted to get an SDR for a while, so it just might."
+      },
+      {
+        "start": 60912,
+        "stop": 61140,
+        "text": " Yeah, that was very timely."
+      },
+      {
+        "start": 61140,
+        "stop": 61600,
+        "text": " I have walked around with like the Wi-Fi analyzer tool on the Android and I did make some improvements"
+      },
+      {
+        "start": 61600,
+        "stop": 61700,
+        "text": " based on that."
+      },
+      {
+        "start": 61700,
+        "stop": 61800,
+        "text": " I got back."
+      },
+      {
+        "start": 61800,
+        "stop": 61900,
+        "text": " Yeah, I think that's what he did to start with."
+      },
+      {
+        "start": 61900,
+        "stop": 62416,
+        "text": " But then when it wasn't a Wi-Fi issue, it was a Z-Wave, which also uses, or is it Zigbee"
+      },
+      {
+        "start": 62416,
+        "stop": 62632,
+        "text": " that uses 2.4 as well."
+      },
+      {
+        "start": 62632,
+        "stop": 63016,
+        "text": " That was where the issue started occurring with his, I think, wireless soundbar or something"
+      },
+      {
+        "start": 63016,
+        "stop": 63204,
+        "text": " he was having issues with."
+      },
+      {
+        "start": 63204,
+        "stop": 63644,
+        "text": " My neighbor's printer reaches all the way over to me and it's unbelievable how strong"
+      },
+      {
+        "start": 63644,
+        "stop": 63792,
+        "text": " that printer's AP is."
+      },
+      {
+        "start": 63792,
+        "stop": 64132,
+        "text": " I've thought about going over and knocking on her door and asking her if she'd let me"
+      },
+      {
+        "start": 64132,
+        "stop": 64280,
+        "text": " configure it and turn it off."
+      },
+      {
+        "start": 64280,
+        "stop": 64628,
+        "text": " I don't know if it is disableable, but that's how bad it is."
+      },
+      {
+        "start": 64628,
+        "stop": 64986,
+        "text": " Before we get to the Jellyfin stuff, do you want to just refresh everyone on the giveaway"
+      },
+      {
+        "start": 64986,
+        "stop": 65086,
+        "text": " that you've got brewing?"
+      },
+      {
+        "start": 65086,
+        "stop": 65186,
+        "text": " Yeah, yeah."
+      },
+      {
+        "start": 65186,
+        "stop": 65688,
+        "text": " So last episode I talked about an old hard drive that I pulled out of my server downstairs."
+      },
+      {
+        "start": 65688,
+        "stop": 65946,
+        "text": " Western Digital 10 terabyte drive."
+      },
+      {
+        "start": 65946,
+        "stop": 66308,
+        "text": " It's about four years old, perfect working order."
+      },
+      {
+        "start": 66308,
+        "stop": 66960,
+        "text": " And my idea was to do a giveaway to some needy student or somebody that's upon hard times"
+      },
+      {
+        "start": 66960,
+        "stop": 67196,
+        "text": " for whatever reason at the moment."
+      },
+      {
+        "start": 67196,
+        "stop": 67624,
+        "text": " And we had four entries this week in the inbox."
+      },
+      {
+        "start": 67624,
+        "stop": 68048,
+        "text": " So I was hoping for a bit more than that, if I'm honest."
+      },
+      {
+        "start": 68048,
+        "stop": 68388,
+        "text": " So please write to us at selfhosted.show/contact."
+      },
+      {
+        "start": 68388,
+        "stop": 68928,
+        "text": " Enter the giveaway with your best data loss story or Simon Cowell grade sob story, something"
+      },
+      {
+        "start": 68928,
+        "stop": 69056,
+        "text": " like that."
+      },
+      {
+        "start": 69056,
+        "stop": 69544,
+        "text": " continental US lower 48 ideally for shipping or the UK because I can send it back with"
+      },
+      {
+        "start": 69544,
+        "stop": 69776,
+        "text": " a family member when they visit in January."
+      },
+      {
+        "start": 69776,
+        "stop": 70128,
+        "text": " Linode.com/ssh."
+      },
+      {
+        "start": 70128,
+        "stop": 70560,
+        "text": " Go there to get $100 towards an account when you sign up and it's a great way to support"
+      },
+      {
+        "start": 70560,
+        "stop": 70660,
+        "text": " the show."
+      },
+      {
+        "start": 70660,
+        "stop": 70994,
+        "text": " Linode's how we host everything that we want to run in the cloud."
+      },
+      {
+        "start": 70994,
+        "stop": 71254,
+        "text": " It's a nice mix of power and control over a system."
+      },
+      {
+        "start": 71254,
+        "stop": 71408,
+        "text": " You can build it up from the ground up."
+      },
+      {
+        "start": 71408,
+        "stop": 71648,
+        "text": " I mean, that's how I've got Nix OS on there."
+      },
+      {
+        "start": 71648,
+        "stop": 72078,
+        "text": " Or you can go with one of their ready to go images, including like an Ubuntu or Debian"
+      },
+      {
+        "start": 72078,
+        "stop": 72276,
+        "text": " stack with Docker pre deployed."
+      },
+      {
+        "start": 72276,
+        "stop": 72552,
+        "text": " Then you just hit the button and get the image on there."
+      },
+      {
+        "start": 72552,
+        "stop": 72792,
+        "text": " Really kind of depends on what you are comfortable with."
+      },
+      {
+        "start": 72792,
+        "stop": 73106,
+        "text": " So it makes it really approachable for all types."
+      },
+      {
+        "start": 73106,
+        "stop": 73512,
+        "text": " People have been racking and stacking for 20 years and folks that are just spinning"
+      },
+      {
+        "start": 73512,
+        "stop": 73712,
+        "text": " up their first server."
+      },
+      {
+        "start": 73712,
+        "stop": 73936,
+        "text": " Linode makes it really easy to get going in a few clicks."
+      },
+      {
+        "start": 73936,
+        "stop": 74368,
+        "text": " And with that $100 while you're supporting the show, you can try out all kinds of features"
+      },
+      {
+        "start": 74368,
+        "stop": 74500,
+        "text": " beyond just running a server."
+      },
+      {
+        "start": 74500,
+        "stop": 74872,
+        "text": " They have big powerful CPUs and they have big powerful GPUs."
+      },
+      {
+        "start": 74872,
+        "stop": 75300,
+        "text": " And of course they've got super fast disk systems and they've got a whole range, including"
+      },
+      {
+        "start": 75300,
+        "stop": 75760,
+        "text": " nanodes, which are great for like just a blog or a gallery, maybe a landing page or a status"
+      },
+      {
+        "start": 75760,
+        "stop": 75928,
+        "text": " page or a VPN."
+      },
+      {
+        "start": 75928,
+        "stop": 76424,
+        "text": " In fact, I'll link in the show notes to a guide to set up your own self hosted VPN on"
+      },
+      {
+        "start": 76424,
+        "stop": 76568,
+        "text": " Linode in under 30 minutes."
+      },
+      {
+        "start": 76568,
+        "stop": 76668,
+        "text": " It's pretty nice."
+      },
+      {
+        "start": 76668,
+        "stop": 76872,
+        "text": " And I love Linode's S3 compatible object storage."
+      },
+      {
+        "start": 76872,
+        "stop": 77160,
+        "text": " I recommend you play around with that for your backups as well."
+      },
+      {
+        "start": 77160,
+        "stop": 77652,
+        "text": " It's a great way to get your data that's onsite on your LAN offsite somewhere."
+      },
+      {
+        "start": 77652,
+        "stop": 78056,
+        "text": " You encrypt it, send it up, put it on S3 compatible object storage on Linode."
+      },
+      {
+        "start": 78056,
+        "stop": 78208,
+        "text": " That's a great way to try out the $100 bucks."
+      },
+      {
+        "start": 78208,
+        "stop": 78444,
+        "text": " They have a powerful DNS manager."
+      },
+      {
+        "start": 78444,
+        "stop": 78884,
+        "text": " If you like to use orchestration management tools like Ansible, Terraform, Kubernetes,"
+      },
+      {
+        "start": 78884,
+        "stop": 79204,
+        "text": " all that stuff, Linode has fantastic support for that."
+      },
+      {
+        "start": 79204,
+        "stop": 79304,
+        "text": " Super fast networking."
+      },
+      {
+        "start": 79304,
+        "stop": 79468,
+        "text": " They've got 11 data centers around the world."
+      },
+      {
+        "start": 79468,
+        "stop": 79760,
+        "text": " That's one of the reasons I've chose them is performance really matters."
+      },
+      {
+        "start": 79760,
+        "stop": 79964,
+        "text": " And they've got it in the compute area."
+      },
+      {
+        "start": 79964,
+        "stop": 80140,
+        "text": " They got it in the disk IO area."
+      },
+      {
+        "start": 80140,
+        "stop": 80392,
+        "text": " They have 40 gigabit connections to the hypervisors."
+      },
+      {
+        "start": 80392,
+        "stop": 80696,
+        "text": " They are their own ISP."
+      },
+      {
+        "start": 80696,
+        "stop": 80796,
+        "text": " Have I mentioned that recently?"
+      },
+      {
+        "start": 80796,
+        "stop": 80940,
+        "text": " That's a huge deal."
+      },
+      {
+        "start": 80940,
+        "stop": 81246,
+        "text": " And they're spending up another dozen next year."
+      },
+      {
+        "start": 81246,
+        "stop": 81636,
+        "text": " So with pricing 30 to 50 percent cheaper than those big hyperscalers that want to lock into"
+      },
+      {
+        "start": 81636,
+        "stop": 81964,
+        "text": " their platform with $100 bucks, you get free credit."
+      },
+      {
+        "start": 81964,
+        "stop": 82080,
+        "text": " And it's a great way to support the show."
+      },
+      {
+        "start": 82080,
+        "stop": 82232,
+        "text": " Why not go check them out?"
+      },
+      {
+        "start": 82232,
+        "stop": 82368,
+        "text": " Their community support runs deep."
+      },
+      {
+        "start": 82368,
+        "stop": 82592,
+        "text": " Their commitment to these platforms run deep."
+      },
+      {
+        "start": 82592,
+        "stop": 82822,
+        "text": " They've been doing it for nearly 19 years."
+      },
+      {
+        "start": 82822,
+        "stop": 83148,
+        "text": " So go sign up today, support the show and get $100 bucks to try it out when you go to"
+      },
+      {
+        "start": 83148,
+        "stop": 83448,
+        "text": " Linode.com/SSH."
+      },
+      {
+        "start": 83448,
+        "stop": 83748,
+        "text": " That's Linode.com/SSH."
+      },
+      {
+        "start": 83944,
+        "stop": 84456,
+        "text": " Well, the headline writer in me is not one to miss out on an opportunity for some alliteration."
+      },
+      {
+        "start": 84456,
+        "stop": 85052,
+        "text": " And so I was watching, I think it was Linus again, this turns out to be a heavily Linus"
+      },
+      {
+        "start": 85052,
+        "stop": 85488,
+        "text": " influence video where he went on a rant about Plex on the WAN show."
+      },
+      {
+        "start": 85488,
+        "stop": 85852,
+        "text": " And he got me thinking that, okay, so what's your solution?"
+      },
+      {
+        "start": 85852,
+        "stop": 86148,
+        "text": " Is it to just not work with Plex anymore and just to rant about it?"
+      },
+      {
+        "start": 86148,
+        "stop": 86328,
+        "text": " Or is it, is there some action you can take?"
+      },
+      {
+        "start": 86328,
+        "stop": 86856,
+        "text": " And I thought our audience, why don't we put together a call to action, not just for the"
+      },
+      {
+        "start": 86856,
+        "stop": 87088,
+        "text": " hosts, but also for the audience as well."
+      },
+      {
+        "start": 87088,
+        "stop": 87728,
+        "text": " So for the month of January, we are going to completely disable our Plex servers and"
+      },
+      {
+        "start": 87728,
+        "stop": 87908,
+        "text": " switch to Jellyfin."
+      },
+      {
+        "start": 87908,
+        "stop": 88008,
+        "text": " Yes."
+      },
+      {
+        "start": 88008,
+        "stop": 88608,
+        "text": " And you know, I just recently tried Jellyfin, skidded off the surface, bounced off the atmosphere"
+      },
+      {
+        "start": 88608,
+        "stop": 88816,
+        "text": " and went into orbit around Plex again."
+      },
+      {
+        "start": 88816,
+        "stop": 89132,
+        "text": " So we'll see how this goes for you, but I'm willing to do it."
+      },
+      {
+        "start": 89132,
+        "stop": 89616,
+        "text": " I just have a couple of questions before I commit to disrupting the beautiful Odroid"
+      },
+      {
+        "start": 89616,
+        "stop": 89840,
+        "text": " set up that I just got working."
+      },
+      {
+        "start": 89840,
+        "stop": 89988,
+        "text": " What do you think ultimately the goal is?"
+      },
+      {
+        "start": 89988,
+        "stop": 90448,
+        "text": " You think at the end of January, you're hoping that we've, we've sort of sorted out our Jellyfin"
+      },
+      {
+        "start": 90448,
+        "stop": 90720,
+        "text": " issues and we just stay with Jellyfin going forward?"
+      },
+      {
+        "start": 90720,
+        "stop": 90980,
+        "text": " I mean, in a perfect world, I suppose so."
+      },
+      {
+        "start": 90980,
+        "stop": 91080,
+        "text": " Yeah."
+      },
+      {
+        "start": 91080,
+        "stop": 91832,
+        "text": " It's not, it's not that I have anything against Plex per se, but I think, I think we all know"
+      },
+      {
+        "start": 91832,
+        "stop": 92660,
+        "text": " deep down that one day Plex are probably going to make some move that alienates us to a point"
+      },
+      {
+        "start": 92660,
+        "stop": 93026,
+        "text": " where we're like, yeah, I can't keep using this anymore."
+      },
+      {
+        "start": 93026,
+        "stop": 93504,
+        "text": " And there has to be a viable alternative at that moment in time, whether it's a year's"
+      },
+      {
+        "start": 93504,
+        "stop": 94196,
+        "text": " time or 10 years time, who knows, but there are going to be a few things in place for"
+      },
+      {
+        "start": 94196,
+        "stop": 94660,
+        "text": " me as a server admin, you know, monitoring tools, for example, on the backend that I"
+      },
+      {
+        "start": 94660,
+        "stop": 95336,
+        "text": " need, as well as some basics for non-techie people like TV clients and stuff in place."
+      },
+      {
+        "start": 95336,
+        "stop": 95820,
+        "text": " And I know the Jellyfin project are working on this heavily, heavily, heavily, but I think"
+      },
+      {
+        "start": 95820,
+        "stop": 96400,
+        "text": " the ultimate goal of this challenge of this jet Jellyfin January challenge is to raise"
+      },
+      {
+        "start": 96400,
+        "stop": 96534,
+        "text": " the profile of Jellyfin."
+      },
+      {
+        "start": 96534,
+        "stop": 96862,
+        "text": " Number one, I think a lot of people in our audience already do know about it, but they"
+      },
+      {
+        "start": 96862,
+        "stop": 97734,
+        "text": " maybe haven't quite had enough of a push or impetus to actually try it and, or to just"
+      },
+      {
+        "start": 97734,
+        "stop": 97834,
+        "text": " kick the tires."
+      },
+      {
+        "start": 97834,
+        "stop": 97954,
+        "text": " Maybe we make this an annual thing."
+      },
+      {
+        "start": 97954,
+        "stop": 98054,
+        "text": " Who knows?"
+      },
+      {
+        "start": 98054,
+        "stop": 98746,
+        "text": " I like it because I feel like if we, you and I and Brent and Wes and others, if we won't"
+      },
+      {
+        "start": 98746,
+        "stop": 99238,
+        "text": " use it and our audience won't use it, then literally there probably is not a customer"
+      },
+      {
+        "start": 99238,
+        "stop": 99452,
+        "text": " base, right?"
+      },
+      {
+        "start": 99452,
+        "stop": 100000,
+        "text": " We have got to use this stuff in order to bang on it, get people out there, advocate"
+      },
+      {
+        "start": 100000,
+        "stop": 100500,
+        "text": " for it, get more people using it, grow the user base and help the developers, you know,"
+      },
+      {
+        "start": 100500,
+        "stop": 100652,
+        "text": " turn it into something sustainable."
+      },
+      {
+        "start": 100652,
+        "stop": 100892,
+        "text": " And if we don't do that, it'll just fade away."
+      },
+      {
+        "start": 100892,
+        "stop": 101460,
+        "text": " So that's been my thinking about Jellyfin is I also, I think Plex is a good product,"
+      },
+      {
+        "start": 101460,
+        "stop": 101980,
+        "text": " but I also have to agree with the thread on the self hosted subreddit that you started."
+      },
+      {
+        "start": 101980,
+        "stop": 102576,
+        "text": " It was a pleasant thread, just kind of gently asking people, has there been something with"
+      },
+      {
+        "start": 102576,
+        "stop": 102860,
+        "text": " Plex recently that you didn't like?"
+      },
+      {
+        "start": 102860,
+        "stop": 103644,
+        "text": " And by 97 points, the top comment is focusing on things that the core customers never asked"
+      },
+      {
+        "start": 103644,
+        "stop": 104152,
+        "text": " for, which I think if you boil down my complaints and your complaints, it's essentially just"
+      },
+      {
+        "start": 104152,
+        "stop": 104252,
+        "text": " that."
+      },
+      {
+        "start": 104252,
+        "stop": 104352,
+        "text": " Yeah."
+      },
+      {
+        "start": 104352,
+        "stop": 104738,
+        "text": " If we think about where Plex was, I don't know, three, four, five years ago, there was"
+      },
+      {
+        "start": 104738,
+        "stop": 105000,
+        "text": " very little cloud connectivity."
+      },
+      {
+        "start": 105000,
+        "stop": 105566,
+        "text": " I think the authentication has been cloud based for a long time, and that is a consistent"
+      },
+      {
+        "start": 105566,
+        "stop": 105884,
+        "text": " piece of feedback in this Reddit thread, which will be linked in the show notes if you're"
+      },
+      {
+        "start": 105884,
+        "stop": 106036,
+        "text": " interested."
+      },
+      {
+        "start": 106036,
+        "stop": 106426,
+        "text": " But on top of the kind of cloud authentication, there's been a huge push over certainly the"
+      },
+      {
+        "start": 106426,
+        "stop": 107144,
+        "text": " last two or three years since we spoke with Elon really on this show to add their free"
+      },
+      {
+        "start": 107144,
+        "stop": 107652,
+        "text": " ad supported media stuff, the podcast stuff, which I think has been removed now and just"
+      },
+      {
+        "start": 107652,
+        "stop": 108472,
+        "text": " a whole bunch of stuff that is not core to streaming files from a hard drive in my basement."
+      },
+      {
+        "start": 108472,
+        "stop": 108902,
+        "text": " And you and I recognized, I think at the very start of the show a couple of years ago, this"
+      },
+      {
+        "start": 108902,
+        "stop": 109240,
+        "text": " was going to be a problem because you can kind of nail that."
+      },
+      {
+        "start": 109240,
+        "stop": 109474,
+        "text": " And then where do you go from there to build a business?"
+      },
+      {
+        "start": 109474,
+        "stop": 109976,
+        "text": " And if you want to build a big business, you have to be seen as reputable and legitimate"
+      },
+      {
+        "start": 109976,
+        "stop": 110140,
+        "text": " by the rest of the industry."
+      },
+      {
+        "start": 110140,
+        "stop": 110776,
+        "text": " And so to do that, ostensibly Plex needs to be like this master streaming media application"
+      },
+      {
+        "start": 110776,
+        "stop": 111136,
+        "text": " that's supposedly bringing streams in from all these different locations and your local"
+      },
+      {
+        "start": 111136,
+        "stop": 111564,
+        "text": " media is just one of the options."
+      },
+      {
+        "start": 111564,
+        "stop": 111872,
+        "text": " It's not like our core focus is pirated content."
+      },
+      {
+        "start": 111872,
+        "stop": 112122,
+        "text": " It's just one of the options if they happen to have it."
+      },
+      {
+        "start": 112122,
+        "stop": 112472,
+        "text": " And that's how they had to position it like that, I think, to be considered a legitimate"
+      },
+      {
+        "start": 112472,
+        "stop": 112680,
+        "text": " business by the rest of the industry."
+      },
+      {
+        "start": 112680,
+        "stop": 113072,
+        "text": " And I think you and I recognized a long time ago that was going to create conflict with"
+      },
+      {
+        "start": 113072,
+        "stop": 113172,
+        "text": " the user base."
+      },
+      {
+        "start": 113172,
+        "stop": 113272,
+        "text": " 100% agree."
+      },
+      {
+        "start": 113272,
+        "stop": 113608,
+        "text": " There is a way that the company conducts itself too."
+      },
+      {
+        "start": 113608,
+        "stop": 114168,
+        "text": " I mean, Plex in general with its user base of is it fair to criticize Plex for the way"
+      },
+      {
+        "start": 114168,
+        "stop": 114400,
+        "text": " in which they conduct themselves as a business?"
+      },
+      {
+        "start": 114400,
+        "stop": 114808,
+        "text": " Because they obviously have VC money to repay."
+      },
+      {
+        "start": 114808,
+        "stop": 115304,
+        "text": " They have salaries to pay payroll to meet, all that kind of stuff."
+      },
+      {
+        "start": 115304,
+        "stop": 116020,
+        "text": " And so when I look at them adding air quotes, cool new feature, and I disable it in my,"
+      },
+      {
+        "start": 116020,
+        "stop": 116616,
+        "text": " you know, pinned sources bar, and then two weeks later for some reason it's back again"
+      },
+      {
+        "start": 116616,
+        "stop": 116820,
+        "text": " without me requesting it."
+      },
+      {
+        "start": 116820,
+        "stop": 117028,
+        "text": " That kind of behavior really pisses me off."
+      },
+      {
+        "start": 117028,
+        "stop": 117564,
+        "text": " And I don't ever envisage something like that happening with a free software project like"
+      },
+      {
+        "start": 117564,
+        "stop": 117724,
+        "text": " Jellyfin."
+      },
+      {
+        "start": 117724,
+        "stop": 118240,
+        "text": " And you know, it's the same thread that goes throughout this whole show of how do I own"
+      },
+      {
+        "start": 118240,
+        "stop": 118380,
+        "text": " my data?"
+      },
+      {
+        "start": 118380,
+        "stop": 119120,
+        "text": " And ultimately there is a link between my Plex ID and some data on a Plex server."
+      },
+      {
+        "start": 119120,
+        "stop": 119620,
+        "text": " Whether it's an insidious link now, probably not."
+      },
+      {
+        "start": 119620,
+        "stop": 120068,
+        "text": " Whether it's an insidious link in 10 years that's then sold to advertisers, we just don't"
+      },
+      {
+        "start": 120068,
+        "stop": 120168,
+        "text": " know."
+      },
+      {
+        "start": 120168,
+        "stop": 120608,
+        "text": " And you know, I'm not here to cast aspersions about Plex in general and say it's crap because"
+      },
+      {
+        "start": 120608,
+        "stop": 121106,
+        "text": " actually I still think it's probably the most polished solution that we have."
+      },
+      {
+        "start": 121106,
+        "stop": 121648,
+        "text": " But hopefully by the end of January we'll know, having stuck with Jellyfin for the month,"
+      },
+      {
+        "start": 121648,
+        "stop": 121834,
+        "text": " what all the areas of improvement are."
+      },
+      {
+        "start": 121834,
+        "stop": 122452,
+        "text": " So I thought in that vein, we'd invite Mr. Brent along and give him a chance to give"
+      },
+      {
+        "start": 122452,
+        "stop": 122968,
+        "text": " some feedback on his, because you're a big Jellyfin user already, aren't you?"
+      },
+      {
+        "start": 122968,
+        "stop": 123418,
+        "text": " Well you know, you mentioned maybe we might do this as an annual check-in for Jellyfin."
+      },
+      {
+        "start": 123418,
+        "stop": 123788,
+        "text": " And if I'm remembering correctly, I think I am."
+      },
+      {
+        "start": 123788,
+        "stop": 124196,
+        "text": " I actually gave Jellyfin as a gift last year for Christmas."
+      },
+      {
+        "start": 124196,
+        "stop": 124396,
+        "text": " You gave him the gift of Jellyfin?"
+      },
+      {
+        "start": 124396,
+        "stop": 124496,
+        "text": " Well I did."
+      },
+      {
+        "start": 124496,
+        "stop": 124886,
+        "text": " I ripped a bunch of DVDs, because our internet here is terrible and my brother lives like"
+      },
+      {
+        "start": 124886,
+        "stop": 125444,
+        "text": " a hundred feet away, and his wife has like this massive DVD collection that she loves."
+      },
+      {
+        "start": 125444,
+        "stop": 125762,
+        "text": " And that's back when our internet was far worse."
+      },
+      {
+        "start": 125762,
+        "stop": 125936,
+        "text": " We did a bunch of changes and fixed that."
+      },
+      {
+        "start": 125936,
+        "stop": 126280,
+        "text": " So I set up some instances and had a great time with it."
+      },
+      {
+        "start": 126280,
+        "stop": 126682,
+        "text": " There were a few little things that didn't quite work the way I was hoping, like local"
+      },
+      {
+        "start": 126682,
+        "stop": 127072,
+        "text": " media streaming for music, because I'm a big music listener."
+      },
+      {
+        "start": 127072,
+        "stop": 127276,
+        "text": " That was a little choppy at the time."
+      },
+      {
+        "start": 127276,
+        "stop": 128028,
+        "text": " I think I've sorted that out since, but it just never became the daily use model that"
+      },
+      {
+        "start": 128028,
+        "stop": 128178,
+        "text": " I was hoping for."
+      },
+      {
+        "start": 128178,
+        "stop": 128768,
+        "text": " So what I'm hoping for this year is that revisiting it, it might just really get integrated"
+      },
+      {
+        "start": 128768,
+        "stop": 129408,
+        "text": " more so, especially if we're tearing down all of our Plex infrastructure collectively."
+      },
+      {
+        "start": 129408,
+        "stop": 129760,
+        "text": " I think I'm excited to see what has changed in a year, and I'm hoping there's quite a"
+      },
+      {
+        "start": 129760,
+        "stop": 129992,
+        "text": " bit from what I can tell on their GitHub."
+      },
+      {
+        "start": 129992,
+        "stop": 130376,
+        "text": " Super active, so there's got to be a lot of good stuff that we're new to."
+      },
+      {
+        "start": 130376,
+        "stop": 130612,
+        "text": " When you say active, you do mean active."
+      },
+      {
+        "start": 130612,
+        "stop": 131176,
+        "text": " I mean like 90 PRs this last month that were accepted."
+      },
+      {
+        "start": 131176,
+        "stop": 131776,
+        "text": " I mean like 800 contributors in the lifetime of the project."
+      },
+      {
+        "start": 131776,
+        "stop": 132200,
+        "text": " That seems like a massive success to me if you're looking at it from that perspective."
+      },
+      {
+        "start": 132200,
+        "stop": 132300,
+        "text": " It's very impressive."
+      },
+      {
+        "start": 132300,
+        "stop": 132400,
+        "text": " Yeah."
+      },
+      {
+        "start": 132400,
+        "stop": 132548,
+        "text": " It's the same momentum as building."
+      },
+      {
+        "start": 132548,
+        "stop": 133048,
+        "text": " I'll be curious, Brent, to hear if you get a chance to try out the Watch Together stuff,"
+      },
+      {
+        "start": 133048,
+        "stop": 133304,
+        "text": " because I know you and Wes are thinking about it, because Wes is going to be in on this"
+      },
+      {
+        "start": 133304,
+        "stop": 133876,
+        "text": " too, because we're going to—it's a Linux unplugged, self-hosted joint effort, and I'm"
+      },
+      {
+        "start": 133876,
+        "stop": 134356,
+        "text": " hopeful that you get a chance to try that and report back on how the joint Play Together"
+      },
+      {
+        "start": 134356,
+        "stop": 134456,
+        "text": " stuff works."
+      },
+      {
+        "start": 134456,
+        "stop": 134740,
+        "text": " Yeah, the last time we visited it, it did work well."
+      },
+      {
+        "start": 134740,
+        "stop": 135380,
+        "text": " There were a few little gotchas, I think, in interface, but you've been asking us"
+      },
+      {
+        "start": 135380,
+        "stop": 135680,
+        "text": " to watch something together."
+      },
+      {
+        "start": 135680,
+        "stop": 135780,
+        "text": " Strange new worlds."
+      },
+      {
+        "start": 135780,
+        "stop": 136192,
+        "text": " And so I think it might just happen with this January."
+      },
+      {
+        "start": 136192,
+        "stop": 136532,
+        "text": " If that is the result of this challenge, I will take that."
+      },
+      {
+        "start": 136532,
+        "stop": 136940,
+        "text": " You know, okay, so Alex, this is your idea, and you came up with some ground rules that"
+      },
+      {
+        "start": 136940,
+        "stop": 137198,
+        "text": " we've all agreed to, and I just want to run down them real quick."
+      },
+      {
+        "start": 137198,
+        "stop": 137436,
+        "text": " So you touched on one of them."
+      },
+      {
+        "start": 137436,
+        "stop": 137676,
+        "text": " Plex servers must be offline for this."
+      },
+      {
+        "start": 137676,
+        "stop": 138280,
+        "text": " Yeah, no sneaky just app switch back to Plex or Infuse, particularly you, Mr. Fisher."
+      },
+      {
+        "start": 138280,
+        "stop": 138472,
+        "text": " You bastard."
+      },
+      {
+        "start": 138472,
+        "stop": 139024,
+        "text": " That honestly was the deep cut for me, because the front end is an easy switch with Infuse."
+      },
+      {
+        "start": 139024,
+        "stop": 139156,
+        "text": " But I agree."
+      },
+      {
+        "start": 139156,
+        "stop": 139520,
+        "text": " This is the tricky one, because I do have family and friends that use my Plex instance,"
+      },
+      {
+        "start": 139520,
+        "stop": 139976,
+        "text": " so I'm going to have to set them up to use Jellyfin, but I think that should be doable."
+      },
+      {
+        "start": 139976,
+        "stop": 140192,
+        "text": " We want to test live TV if possible."
+      },
+      {
+        "start": 140192,
+        "stop": 140440,
+        "text": " I've got a couple ideas, because I think you've got the HD home run."
+      },
+      {
+        "start": 140440,
+        "stop": 141108,
+        "text": " I want to try out live RTMP, RTSP streams, music playback apps."
+      },
+      {
+        "start": 141108,
+        "stop": 141912,
+        "text": " The day I set up my Giraffean OS Pixel 7, I put Jelly Amp on there, and I never set"
+      },
+      {
+        "start": 141912,
+        "stop": 142132,
+        "text": " it up, but I've been wanting to try this."
+      },
+      {
+        "start": 142132,
+        "stop": 142648,
+        "text": " Well all I'll say on that topic is that Plex Amp is a pretty high bar to match."
+      },
+      {
+        "start": 142648,
+        "stop": 142842,
+        "text": " I completely agree."
+      },
+      {
+        "start": 142842,
+        "stop": 143116,
+        "text": " It's even gotten better recently."
+      },
+      {
+        "start": 143116,
+        "stop": 143648,
+        "text": " One of the more recent Plex Amp updates added NFC tag support for playlists, so I have a"
+      },
+      {
+        "start": 143648,
+        "stop": 144344,
+        "text": " tag I scan and it just kicks off a Christmas playlist, and it's brilliant."
+      },
+      {
+        "start": 144344,
+        "stop": 144692,
+        "text": " Well, we've got some Jellyfin devs in the chat."
+      },
+      {
+        "start": 144692,
+        "stop": 144936,
+        "text": " We can just add some feature requests right there, please."
+      },
+      {
+        "start": 144936,
+        "stop": 145116,
+        "text": " But you know what, we'll see."
+      },
+      {
+        "start": 145116,
+        "stop": 145264,
+        "text": " Maybe it'll work out great, and maybe it's good enough."
+      },
+      {
+        "start": 145264,
+        "stop": 145480,
+        "text": " Audio book playback is going to be a big one."
+      },
+      {
+        "start": 145480,
+        "stop": 145688,
+        "text": " Also, for you and I, the spousal approval there is going to be..."
+      },
+      {
+        "start": 145688,
+        "stop": 146220,
+        "text": " My wife uses the crap out of Prolog, and she switched to iOS because of Prolog."
+      },
+      {
+        "start": 146220,
+        "stop": 146916,
+        "text": " So if we can't find something as good as Prolog, it's audiobook shelf, does that count?"
+      },
+      {
+        "start": 146916,
+        "stop": 147232,
+        "text": " No, it's not in the Jellyfin ecosystem."
+      },
+      {
+        "start": 147232,
+        "stop": 147608,
+        "text": " What happens if at the end of this, you switched over to Jellyfin, but you still have Plex"
+      },
+      {
+        "start": 147608,
+        "stop": 147812,
+        "text": " just for audiobooks and music?"
+      },
+      {
+        "start": 147812,
+        "stop": 147972,
+        "text": " I could see that happening."
+      },
+      {
+        "start": 147972,
+        "stop": 148104,
+        "text": " I could see that happening."
+      },
+      {
+        "start": 148104,
+        "stop": 148388,
+        "text": " I also, going to try the same."
+      },
+      {
+        "start": 148388,
+        "stop": 148928,
+        "text": " The smart TV clients, got to be the Jellyfin client if you can, and hardware transcoding,"
+      },
+      {
+        "start": 148928,
+        "stop": 149272,
+        "text": " which is actually where things went sideways for me last time."
+      },
+      {
+        "start": 149272,
+        "stop": 149400,
+        "text": " I never even could figure out why."
+      },
+      {
+        "start": 149400,
+        "stop": 150036,
+        "text": " I was using the Linux server IO image, and it was just like it just could not see the"
+      },
+      {
+        "start": 150036,
+        "stop": 150136,
+        "text": " device."
+      },
+      {
+        "start": 150136,
+        "stop": 150560,
+        "text": " Although inside, like if I opened up a shell in that container, and the device was passed"
+      },
+      {
+        "start": 150560,
+        "stop": 150936,
+        "text": " through, I could see the device on the command line, but Jellyfin could never see the device."
+      },
+      {
+        "start": 150936,
+        "stop": 151200,
+        "text": " I should qualify the hardware transcoding thing a little bit."
+      },
+      {
+        "start": 151200,
+        "stop": 151614,
+        "text": " There's things like HDR tone mapping, and a bunch of other stuff that beyond just the"
+      },
+      {
+        "start": 151614,
+        "stop": 151968,
+        "text": " basics of getting, I mean, I'm using Quick Sync, right?"
+      },
+      {
+        "start": 151968,
+        "stop": 152294,
+        "text": " There will be some people in the audience that are using NVIDIA."
+      },
+      {
+        "start": 152294,
+        "stop": 152612,
+        "text": " If you're going to take this challenge with us, and you're using something other than"
+      },
+      {
+        "start": 152612,
+        "stop": 153052,
+        "text": " an Intel GPU, please write in and let us know how that hardware transcoding works for you,"
+      },
+      {
+        "start": 153052,
+        "stop": 153556,
+        "text": " because I don't have an NVIDIA GPU to test it with in my server."
+      },
+      {
+        "start": 153556,
+        "stop": 153812,
+        "text": " Let us know at selfhosted.show/contact."
+      },
+      {
+        "start": 153812,
+        "stop": 154264,
+        "text": " And then I think the final thing we should touch on is monitoring and metrics."
+      },
+      {
+        "start": 154264,
+        "stop": 154784,
+        "text": " I use the heck out of Tauthuli, T-A-U-T-U-L-L-I."
+      },
+      {
+        "start": 154784,
+        "stop": 155024,
+        "text": " I have no idea how you actually say that word."
+      },
+      {
+        "start": 155024,
+        "stop": 155124,
+        "text": " Totally."
+      },
+      {
+        "start": 155124,
+        "stop": 155340,
+        "text": " Is that what it is?"
+      },
+      {
+        "start": 155340,
+        "stop": 155640,
+        "text": " I'm not sure, but that seems like the right way to do it."
+      },
+      {
+        "start": 155640,
+        "stop": 155740,
+        "text": " Totally."
+      },
+      {
+        "start": 155740,
+        "stop": 156040,
+        "text": " I mean, that's like you saying Trona, isn't it?"
+      },
+      {
+        "start": 156040,
+        "stop": 156140,
+        "text": " Trona?"
+      },
+      {
+        "start": 156140,
+        "stop": 156440,
+        "text": " At least he's not calling it Clarks."
+      },
+      {
+        "start": 156440,
+        "stop": 156540,
+        "text": " Preshow, preshow."
+      },
+      {
+        "start": 156540,
+        "stop": 156740,
+        "text": " Preshow reference, yes."
+      },
+      {
+        "start": 156740,
+        "stop": 156840,
+        "text": " Yeah."
+      },
+      {
+        "start": 156840,
+        "stop": 157284,
+        "text": " So I mean, just stuff like being able to see who's streaming what at what bit rate and"
+      },
+      {
+        "start": 157284,
+        "stop": 157556,
+        "text": " can I remotely terminate streams and stuff like that?"
+      },
+      {
+        "start": 157556,
+        "stop": 158084,
+        "text": " Because it happens surprisingly often that wife will pause an episode of something downstairs"
+      },
+      {
+        "start": 158084,
+        "stop": 158300,
+        "text": " and get distracted by toddler."
+      },
+      {
+        "start": 158300,
+        "stop": 159068,
+        "text": " And then that program will just sit paused for the next nine hours or something."
+      },
+      {
+        "start": 159068,
+        "stop": 159616,
+        "text": " And so occasionally I just go in and clean up the streams using Tauthuli and that then"
+      },
+      {
+        "start": 159616,
+        "stop": 160290,
+        "text": " frees up the client on the Nvidia Shield and then the CEC turns the screen off for me."
+      },
+      {
+        "start": 160290,
+        "stop": 160484,
+        "text": " So I have also had that problem."
+      },
+      {
+        "start": 160484,
+        "stop": 161016,
+        "text": " You know, I've come home, wife was watching a movie, hit pause, got onto something else,"
+      },
+      {
+        "start": 161016,
+        "stop": 161160,
+        "text": " stayed paused all day."
+      },
+      {
+        "start": 161160,
+        "stop": 161272,
+        "text": " That's interesting."
+      },
+      {
+        "start": 161272,
+        "stop": 161452,
+        "text": " All kinds of metrics really, right?"
+      },
+      {
+        "start": 161452,
+        "stop": 161844,
+        "text": " To me, it also would be useful with the three kids just to keep an eye on the TV usage and"
+      },
+      {
+        "start": 161844,
+        "stop": 162064,
+        "text": " see how much TV they're watching."
+      },
+      {
+        "start": 162064,
+        "stop": 162164,
+        "text": " Yeah."
+      },
+      {
+        "start": 162164,
+        "stop": 162264,
+        "text": " Trends and stuff like that."
+      },
+      {
+        "start": 162264,
+        "stop": 162376,
+        "text": " There's another thing I really love about Tauthuli."
+      },
+      {
+        "start": 162376,
+        "stop": 163052,
+        "text": " I can look at what types of things are transcoding, the reason why they're transcoding."
+      },
+      {
+        "start": 163052,
+        "stop": 163596,
+        "text": " If it's a certain user that just isn't familiar with the fact they can go in and change it"
+      },
+      {
+        "start": 163596,
+        "stop": 164024,
+        "text": " from a transcoded to an original quality thing, you know, all these kinds of things."
+      },
+      {
+        "start": 164024,
+        "stop": 164156,
+        "text": " I mean, I don't have a huge amount of users."
+      },
+      {
+        "start": 164156,
+        "stop": 164456,
+        "text": " I've got a couple of family members and the people in this building and that's pretty"
+      },
+      {
+        "start": 164456,
+        "stop": 164556,
+        "text": " much it."
+      },
+      {
+        "start": 164556,
+        "stop": 164656,
+        "text": " Maybe you two on occasion."
+      },
+      {
+        "start": 164656,
+        "stop": 164756,
+        "text": " Yeah."
+      },
+      {
+        "start": 164756,
+        "stop": 164856,
+        "text": " Sometimes we also mooch."
+      },
+      {
+        "start": 164856,
+        "stop": 164956,
+        "text": " Sometimes."
+      },
+      {
+        "start": 164956,
+        "stop": 165056,
+        "text": " Yeah."
+      },
+      {
+        "start": 165056,
+        "stop": 165188,
+        "text": " I just like that data."
+      },
+      {
+        "start": 165188,
+        "stop": 165708,
+        "text": " I don't use it that often, but when I want it, it's there with Plex."
+      },
+      {
+        "start": 165708,
+        "stop": 166028,
+        "text": " It would be kind of a downgrade for me to not have something like that."
+      },
+      {
+        "start": 166028,
+        "stop": 166470,
+        "text": " And I don't know whether it's a case of integrating Tauthuli with Jellyfin or doing some kind"
+      },
+      {
+        "start": 166470,
+        "stop": 166972,
+        "text": " of a rewrite or just improving the Jellyfin server metrics that are built into Jellyfin"
+      },
+      {
+        "start": 166972,
+        "stop": 167072,
+        "text": " itself."
+      },
+      {
+        "start": 167072,
+        "stop": 167472,
+        "text": " Who knows what the right solution is, but we're going to find out over the next month."
+      },
+      {
+        "start": 167472,
+        "stop": 167872,
+        "text": " I predict in a month we'll hear about Alex's Grafana dashboard that he's custom built for"
+      },
+      {
+        "start": 167872,
+        "stop": 167972,
+        "text": " Jellyfin."
+      },
+      {
+        "start": 167972,
+        "stop": 168248,
+        "text": " I wonder if I could do that."
+      },
+      {
+        "start": 168248,
+        "stop": 168492,
+        "text": " Yeah, I meant you might hear from somebody."
+      },
+      {
+        "start": 168492,
+        "stop": 168728,
+        "text": " So I'm curious, what do you have a strategy?"
+      },
+      {
+        "start": 168728,
+        "stop": 168996,
+        "text": " Are you going to do a Linux server IO image?"
+      },
+      {
+        "start": 168996,
+        "stop": 169136,
+        "text": " Are you going to do the project image?"
+      },
+      {
+        "start": 169136,
+        "stop": 169236,
+        "text": " You can do packages."
+      },
+      {
+        "start": 169236,
+        "stop": 169500,
+        "text": " Are you doing it on a VM?"
+      },
+      {
+        "start": 169500,
+        "stop": 169978,
+        "text": " Like what is your strategy considering hardware acceleration is a goal and all of that?"
+      },
+      {
+        "start": 169978,
+        "stop": 170288,
+        "text": " I've been using off and on for the last year."
+      },
+      {
+        "start": 170288,
+        "stop": 170656,
+        "text": " Much like you, I skip on and off the atmosphere of Jellyfin."
+      },
+      {
+        "start": 170656,
+        "stop": 171080,
+        "text": " Reasonably frequently actually, and I just used the Jellyfin image."
+      },
+      {
+        "start": 171080,
+        "stop": 171272,
+        "text": " I find it works just fine for my needs."
+      },
+      {
+        "start": 171272,
+        "stop": 171572,
+        "text": " I might try that then this time."
+      },
+      {
+        "start": 171572,
+        "stop": 171748,
+        "text": " That or I'm going to do native packages on Nix."
+      },
+      {
+        "start": 171748,
+        "stop": 171984,
+        "text": " I'm not sure which direction I'm going to go."
+      },
+      {
+        "start": 171984,
+        "stop": 172408,
+        "text": " I just want that hardware acceleration because that quick sync is a beautiful thing."
+      },
+      {
+        "start": 172408,
+        "stop": 172974,
+        "text": " I wonder since it's the time of year for predictions, do either of you have a prediction of how"
+      },
+      {
+        "start": 172974,
+        "stop": 173456,
+        "text": " it's going to go for you or things you're really hoping are going to win you over?"
+      },
+      {
+        "start": 173456,
+        "stop": 174104,
+        "text": " I'm expecting, and I hope I improved wrong that in a month's time I am firing up Plex"
+      },
+      {
+        "start": 174104,
+        "stop": 174452,
+        "text": " again, but I hope I'm wrong with that."
+      },
+      {
+        "start": 174452,
+        "stop": 174552,
+        "text": " Wow."
+      },
+      {
+        "start": 174552,
+        "stop": 174652,
+        "text": " I want it to work."
+      },
+      {
+        "start": 174652,
+        "stop": 175220,
+        "text": " I want it to be a freedom respecting media playback all in one stop shop."
+      },
+      {
+        "start": 175220,
+        "stop": 175472,
+        "text": " What do you think it's going to be going into it at this stage?"
+      },
+      {
+        "start": 175472,
+        "stop": 175928,
+        "text": " What do you think it's going to, if you were to guess, why, why does it not stick?"
+      },
+      {
+        "start": 175928,
+        "stop": 176028,
+        "text": " I don't know."
+      },
+      {
+        "start": 176028,
+        "stop": 176200,
+        "text": " It'll be one thing necessarily."
+      },
+      {
+        "start": 176200,
+        "stop": 176672,
+        "text": " It's usually a multitude of little things that add up."
+      },
+      {
+        "start": 176672,
+        "stop": 177376,
+        "text": " In the Android TV client, for example, I can't find a way, I knew it was an update a couple"
+      },
+      {
+        "start": 177376,
+        "stop": 177592,
+        "text": " of days ago, which I haven't tried yet deliberately."
+      },
+      {
+        "start": 177592,
+        "stop": 178176,
+        "text": " So I could try as part of this challenge to change subtitles or audio tracks or video"
+      },
+      {
+        "start": 178176,
+        "stop": 178276,
+        "text": " quality."
+      },
+      {
+        "start": 178276,
+        "stop": 178576,
+        "text": " One of those things I remember was a problem I couldn't switch."
+      },
+      {
+        "start": 178576,
+        "stop": 179048,
+        "text": " So it's just little things that add up like Tautuli and some other stuff too, like the"
+      },
+      {
+        "start": 179048,
+        "stop": 179152,
+        "text": " audio books."
+      },
+      {
+        "start": 179152,
+        "stop": 179508,
+        "text": " Would you consider an alternative front end to Jellyfin?"
+      },
+      {
+        "start": 179508,
+        "stop": 179608,
+        "text": " Like I do."
+      },
+      {
+        "start": 179608,
+        "stop": 179956,
+        "text": " I mean, I realized on Android, you have a couple of different options, but would you"
+      },
+      {
+        "start": 179956,
+        "stop": 180228,
+        "text": " consider, is that a deal breaker for you?"
+      },
+      {
+        "start": 180228,
+        "stop": 180960,
+        "text": " Because I think, I feel like the Android TV app might be the weakest link in the Jellyfin."
+      },
+      {
+        "start": 180960,
+        "stop": 181140,
+        "text": " And do they even have an Apple TV app?"
+      },
+      {
+        "start": 181140,
+        "stop": 181240,
+        "text": " Have we verified that?"
+      },
+      {
+        "start": 181240,
+        "stop": 181516,
+        "text": " Well, I'm looking through the clients right now on their download page."
+      },
+      {
+        "start": 181516,
+        "stop": 181692,
+        "text": " They've got an official desktop client."
+      },
+      {
+        "start": 181692,
+        "stop": 182328,
+        "text": " They've got a Kodi add on a Jellyfin app for Android and iOS and iPad OS app, Android and"
+      },
+      {
+        "start": 182328,
+        "stop": 182484,
+        "text": " Fire TV apps."
+      },
+      {
+        "start": 182484,
+        "stop": 183252,
+        "text": " They've got a Roku app, a web OS app, and also a third party Infuse client."
+      },
+      {
+        "start": 183252,
+        "stop": 183352,
+        "text": " Yeah."
+      },
+      {
+        "start": 183352,
+        "stop": 183612,
+        "text": " So I don't think they actually support Apple TV directly."
+      },
+      {
+        "start": 183612,
+        "stop": 183712,
+        "text": " Yeah."
+      },
+      {
+        "start": 183712,
+        "stop": 184028,
+        "text": " Cause the iOS app for it isn't available for Apple TV ridiculously."
+      },
+      {
+        "start": 184028,
+        "stop": 184188,
+        "text": " That'll be tricky."
+      },
+      {
+        "start": 184188,
+        "stop": 184448,
+        "text": " Although I'll still play around cause I have multiple devices."
+      },
+      {
+        "start": 184448,
+        "stop": 184756,
+        "text": " I also have an Android TV and I'm going to have to put it on a Roku device for family"
+      },
+      {
+        "start": 184756,
+        "stop": 184856,
+        "text": " members."
+      },
+      {
+        "start": 184856,
+        "stop": 185060,
+        "text": " So I'll get a chance to play around with all of it."
+      },
+      {
+        "start": 185060,
+        "stop": 185544,
+        "text": " I for me think the deal breaker would be if there's any weird performance issues, stability"
+      },
+      {
+        "start": 185544,
+        "stop": 186112,
+        "text": " issues and hardware decoding issues, I can see that being an issue, but I know going"
+      },
+      {
+        "start": 186112,
+        "stop": 186902,
+        "text": " into it since I just tried this recently, for me, it is non-negotiable that intro skipping"
+      },
+      {
+        "start": 186902,
+        "stop": 187326,
+        "text": " work as long as I'm watching Star Trek Enterprise, because I will only watch Star Trek Enterprise's"
+      },
+      {
+        "start": 187326,
+        "stop": 187484,
+        "text": " intro three times."
+      },
+      {
+        "start": 187484,
+        "stop": 188108,
+        "text": " The first time in season three when they change it and in season four when they have an awesome"
+      },
+      {
+        "start": 188108,
+        "stop": 188446,
+        "text": " different intro and I don't want to spoil it, but it's awesome."
+      },
+      {
+        "start": 188446,
+        "stop": 188668,
+        "text": " I will only watch that three times."
+      },
+      {
+        "start": 188668,
+        "stop": 188904,
+        "text": " Now that's non-negotiable."
+      },
+      {
+        "start": 188904,
+        "stop": 189208,
+        "text": " And if you sit there and try to fast forward and skim through something like that, you"
+      },
+      {
+        "start": 189208,
+        "stop": 189468,
+        "text": " know, it is disaster time."
+      },
+      {
+        "start": 189468,
+        "stop": 189652,
+        "text": " So what I want is intro skipping."
+      },
+      {
+        "start": 189652,
+        "stop": 189968,
+        "text": " Now Plex effing nails this, right?"
+      },
+      {
+        "start": 189968,
+        "stop": 190366,
+        "text": " Because it elegantly fades in the skip intro button before it even starts."
+      },
+      {
+        "start": 190366,
+        "stop": 190860,
+        "text": " So I don't even have to listen to the music and it brings it just as the intro is ending."
+      },
+      {
+        "start": 190860,
+        "stop": 190982,
+        "text": " Really well done."
+      },
+      {
+        "start": 190982,
+        "stop": 191400,
+        "text": " Jellyfin does not actually have this capability by default."
+      },
+      {
+        "start": 191400,
+        "stop": 192016,
+        "text": " There are a couple of community plugins, one of which I tried, the most popular one, and"
+      },
+      {
+        "start": 192016,
+        "stop": 192308,
+        "text": " it kind of works, right?"
+      },
+      {
+        "start": 192308,
+        "stop": 192670,
+        "text": " It looks for some basic things that indicate it's an intro."
+      },
+      {
+        "start": 192670,
+        "stop": 193150,
+        "text": " And if you're watching on something like Infuse or a lot of the clients, it doesn't have the"
+      },
+      {
+        "start": 193150,
+        "stop": 193342,
+        "text": " capability of exposing a button."
+      },
+      {
+        "start": 193342,
+        "stop": 193600,
+        "text": " So it's just mandatory."
+      },
+      {
+        "start": 193600,
+        "stop": 194032,
+        "text": " All intros skipped all the time if it detects them."
+      },
+      {
+        "start": 194032,
+        "stop": 194450,
+        "text": " And it's just, you're watching it, the video pauses for a second and then it continues"
+      },
+      {
+        "start": 194450,
+        "stop": 194568,
+        "text": " and the intro has been skipped."
+      },
+      {
+        "start": 194568,
+        "stop": 194668,
+        "text": " It's not elegant."
+      },
+      {
+        "start": 194668,
+        "stop": 194768,
+        "text": " There's no button."
+      },
+      {
+        "start": 194768,
+        "stop": 195260,
+        "text": " If you did want to watch the intro, you can't."
+      },
+      {
+        "start": 195260,
+        "stop": 195616,
+        "text": " That seems like that could be bad, at least as long as I'm watching Enterprise."
+      },
+      {
+        "start": 195616,
+        "stop": 196078,
+        "text": " I mean, there is a solution there that other TV shows do exist."
+      },
+      {
+        "start": 196078,
+        "stop": 196178,
+        "text": " Yeah, right."
+      },
+      {
+        "start": 196178,
+        "stop": 196396,
+        "text": " Well, that's the problem though."
+      },
+      {
+        "start": 196396,
+        "stop": 196784,
+        "text": " But some of the TV shows, I might want the intro and now it's gone for all my shows."
+      },
+      {
+        "start": 196784,
+        "stop": 196926,
+        "text": " I totally agree."
+      },
+      {
+        "start": 196926,
+        "stop": 197480,
+        "text": " Maybe even a show specific toggle would be a temporary solution for that."
+      },
+      {
+        "start": 197480,
+        "stop": 197930,
+        "text": " But yeah, we have some live feedback in the chat from Anthony Lovato, who's one of the"
+      },
+      {
+        "start": 197930,
+        "stop": 198118,
+        "text": " Jellyfin developers, I believe."
+      },
+      {
+        "start": 198118,
+        "stop": 198642,
+        "text": " Swiftfin is a native Jellyfin client for iOS and tvOS."
+      },
+      {
+        "start": 198642,
+        "stop": 198742,
+        "text": " Hey!"
+      },
+      {
+        "start": 198742,
+        "stop": 199216,
+        "text": " And it's been submitted for approval and I believe it's currently under App Store approval"
+      },
+      {
+        "start": 199216,
+        "stop": 199422,
+        "text": " pending developer release."
+      },
+      {
+        "start": 199422,
+        "stop": 199892,
+        "text": " I'd totally be willing to beta test if there was a test pilot available, but I'll put a"
+      },
+      {
+        "start": 199892,
+        "stop": 200298,
+        "text": " link to the Swiftfin GitHub in the show notes because that's looking really great."
+      },
+      {
+        "start": 200298,
+        "stop": 200398,
+        "text": " Oh yeah, there it is."
+      },
+      {
+        "start": 200398,
+        "stop": 200498,
+        "text": " Test Flight."
+      },
+      {
+        "start": 200498,
+        "stop": 200994,
+        "text": " All right, if I can do Test Flight on Apple TV, I've never tried that, but I'd love to."
+      },
+      {
+        "start": 200994,
+        "stop": 201354,
+        "text": " It's great to hear and it's native."
+      },
+      {
+        "start": 201354,
+        "stop": 201606,
+        "text": " Sounds like the perfect time to be trying this actually."
+      },
+      {
+        "start": 201606,
+        "stop": 202008,
+        "text": " This is exactly the kind of stuff we wanted to be discovering throughout this month and"
+      },
+      {
+        "start": 202008,
+        "stop": 202588,
+        "text": " yet here we are, like third minute in, I think, to the challenge."
+      },
+      {
+        "start": 202588,
+        "stop": 202754,
+        "text": " So I'm going to be trying this on my server."
+      },
+      {
+        "start": 202754,
+        "stop": 203098,
+        "text": " I'm just literally going to lift and shift and replace Plex completely for the next month."
+      },
+      {
+        "start": 203098,
+        "stop": 203390,
+        "text": " I'm also going to do it in England as well with the live TV stuff."
+      },
+      {
+        "start": 203390,
+        "stop": 203962,
+        "text": " So now the World Cup's over, there's pretty much nothing I want to watch that's actually"
+      },
+      {
+        "start": 203962,
+        "stop": 204210,
+        "text": " live, but it's a good time to test."
+      },
+      {
+        "start": 204210,
+        "stop": 204750,
+        "text": " Chris, I assume you're going to run this on a Raspberry Pi or some... what are you going"
+      },
+      {
+        "start": 204750,
+        "stop": 204850,
+        "text": " to run it on?"
+      },
+      {
+        "start": 204850,
+        "stop": 204982,
+        "text": " Oh, I got to do it in two places."
+      },
+      {
+        "start": 204982,
+        "stop": 205488,
+        "text": " So I got to do the instance here at the studio, which is the one that the family members share"
+      },
+      {
+        "start": 205488,
+        "stop": 205662,
+        "text": " and rent."
+      },
+      {
+        "start": 205662,
+        "stop": 206246,
+        "text": " And then I also need to do the Odroid instance, which I think I still have everything set"
+      },
+      {
+        "start": 206246,
+        "stop": 206738,
+        "text": " up, but it's just off for Jellyfin, but I might redo it with the upstream."
+      },
+      {
+        "start": 206738,
+        "stop": 207010,
+        "text": " And the Odroid has the Quick Sync source, right?"
+      },
+      {
+        "start": 207010,
+        "stop": 207110,
+        "text": " Yes."
+      },
+      {
+        "start": 207110,
+        "stop": 207210,
+        "text": " Yeah."
+      },
+      {
+        "start": 207210,
+        "stop": 207310,
+        "text": " So, so, so sweet."
+      },
+      {
+        "start": 207310,
+        "stop": 207410,
+        "text": " What about you, Brent?"
+      },
+      {
+        "start": 207410,
+        "stop": 207898,
+        "text": " Well, I have a few options and maybe I'll get your advice here in a sec."
+      },
+      {
+        "start": 207898,
+        "stop": 208442,
+        "text": " The challenge I ran into last year when I tried this is that really I watch content"
+      },
+      {
+        "start": 208442,
+        "stop": 208542,
+        "text": " in two locations."
+      },
+      {
+        "start": 208542,
+        "stop": 208670,
+        "text": " I often go to my brother's place."
+      },
+      {
+        "start": 208670,
+        "stop": 209128,
+        "text": " They have a nice little theater set up and we hang out there and watch some stuff."
+      },
+      {
+        "start": 209128,
+        "stop": 209484,
+        "text": " And I also watch things, of course, in my little cabin here."
+      },
+      {
+        "start": 209484,
+        "stop": 209868,
+        "text": " The challenge last year, which listener Jeff saw for me, thank you very much, Jeff, was"
+      },
+      {
+        "start": 209868,
+        "stop": 210320,
+        "text": " that the connectivity between the two buildings was pretty poor."
+      },
+      {
+        "start": 210320,
+        "stop": 210590,
+        "text": " That has since been solved in a really nice way."
+      },
+      {
+        "start": 210590,
+        "stop": 211172,
+        "text": " So previously I had two instances, one on a laptop that they have running their little"
+      },
+      {
+        "start": 211172,
+        "stop": 211922,
+        "text": " media center connected to the TV, which is a ThinkPad X 440 that I found in the trash."
+      },
+      {
+        "start": 211922,
+        "stop": 212186,
+        "text": " Actually, that thing runs great."
+      },
+      {
+        "start": 212186,
+        "stop": 212876,
+        "text": " And at my place here, I've got a little like quasi NAS server, Franken beast from"
+      },
+      {
+        "start": 212876,
+        "stop": 213404,
+        "text": " an old X 220 that is running fine and has a few little containers on it and stuff."
+      },
+      {
+        "start": 213404,
+        "stop": 213936,
+        "text": " But we had some listeners who very kindly gifted me some raspberry pies as well."
+      },
+      {
+        "start": 213936,
+        "stop": 214406,
+        "text": " So I have a few options and I'm, I think going to leave it to you both to tell me where"
+      },
+      {
+        "start": 214406,
+        "stop": 214646,
+        "text": " I should run this and what I should try."
+      },
+      {
+        "start": 214646,
+        "stop": 215070,
+        "text": " Well, I want the host name of whatever you run it on to be Franken Nas Beast, please."
+      },
+      {
+        "start": 215070,
+        "stop": 215170,
+        "text": " Okay."
+      },
+      {
+        "start": 215170,
+        "stop": 215376,
+        "text": " I mean, I'm tempted."
+      },
+      {
+        "start": 215376,
+        "stop": 215704,
+        "text": " I don't, the only only problem is, is I don't want to add a bunch of work, right?"
+      },
+      {
+        "start": 215704,
+        "stop": 215900,
+        "text": " Cause the whole, the goal is to try jellyfin."
+      },
+      {
+        "start": 215900,
+        "stop": 216484,
+        "text": " Well, I think the goal for me as well is to learn what it takes to run it well from an"
+      },
+      {
+        "start": 216484,
+        "stop": 217016,
+        "text": " administrative point of view, because if that's not approachable for someone like me, then"
+      },
+      {
+        "start": 217016,
+        "stop": 217312,
+        "text": " maybe that's hampering their success."
+      },
+      {
+        "start": 217312,
+        "stop": 217974,
+        "text": " Yeah, maybe because with Plex's cloud authentication, as much as we and the audience and Reddit"
+      },
+      {
+        "start": 217974,
+        "stop": 218424,
+        "text": " commenters hate it, it does include some batteries for some folks."
+      },
+      {
+        "start": 218424,
+        "stop": 218900,
+        "text": " Like you don't have to do stuff like a reverse proxy and TLS termination or that kind of"
+      },
+      {
+        "start": 218900,
+        "stop": 219174,
+        "text": " stuff just to have it work on your land."
+      },
+      {
+        "start": 219174,
+        "stop": 219274,
+        "text": " You know?"
+      },
+      {
+        "start": 219274,
+        "stop": 219374,
+        "text": " Very true."
+      },
+      {
+        "start": 219374,
+        "stop": 219474,
+        "text": " Very true."
+      },
+      {
+        "start": 219474,
+        "stop": 219574,
+        "text": " So pros and cons to both approach."
+      },
+      {
+        "start": 219574,
+        "stop": 219998,
+        "text": " I'm kind of feeling Brent, like you should maybe consider Ubuntu LTS on a raspberry pie."
+      },
+      {
+        "start": 219998,
+        "stop": 220328,
+        "text": " You know, I ran Ubuntu LTS on my pie for two years."
+      },
+      {
+        "start": 220328,
+        "stop": 220528,
+        "text": " It was absolutely fantastically solid."
+      },
+      {
+        "start": 220528,
+        "stop": 221018,
+        "text": " I'd probably still be running it if the SD card or whatever it was hadn't died."
+      },
+      {
+        "start": 221018,
+        "stop": 221118,
+        "text": " So that's the weak point, is it?"
+      },
+      {
+        "start": 221118,
+        "stop": 221364,
+        "text": " You know, it depends on how many users you want."
+      },
+      {
+        "start": 221364,
+        "stop": 221828,
+        "text": " If you could run it off of, also, if you could run it off a USB disc, that'd be a lot better."
+      },
+      {
+        "start": 221828,
+        "stop": 222218,
+        "text": " It gets tricky because you're going to want enough USB storage for the OS and your video"
+      },
+      {
+        "start": 222218,
+        "stop": 222838,
+        "text": " then, but if you're going to have more than two people watching, I might consider an x86"
+      },
+      {
+        "start": 222838,
+        "stop": 222938,
+        "text": " rig at that point."
+      },
+      {
+        "start": 222938,
+        "stop": 223330,
+        "text": " But if it's one at a time, something two people at a time max, I think the Pi 4 could handle"
+      },
+      {
+        "start": 223330,
+        "stop": 223430,
+        "text": " it no problem."
+      },
+      {
+        "start": 223430,
+        "stop": 223912,
+        "text": " I think there would be at most two streams happening concurrently, but for the most part,"
+      },
+      {
+        "start": 223912,
+        "stop": 224068,
+        "text": " probably one."
+      },
+      {
+        "start": 224068,
+        "stop": 224592,
+        "text": " And there is a possibility to set up, you know, some storage."
+      },
+      {
+        "start": 224592,
+        "stop": 224934,
+        "text": " Literally the storage can live beside this raspberry pie."
+      },
+      {
+        "start": 224934,
+        "stop": 225372,
+        "text": " So the possibility for some Ethernet networking to grab media is there as well."
+      },
+      {
+        "start": 225372,
+        "stop": 225604,
+        "text": " So it doesn't necessarily need to be directly connected."
+      },
+      {
+        "start": 225604,
+        "stop": 225736,
+        "text": " Oh, look at you."
+      },
+      {
+        "start": 225736,
+        "stop": 225836,
+        "text": " Well, I know."
+      },
+      {
+        "start": 225836,
+        "stop": 226036,
+        "text": " Now you're adding network storage to the list."
+      },
+      {
+        "start": 226036,
+        "stop": 226196,
+        "text": " Getting complicated all of a sudden."
+      },
+      {
+        "start": 226196,
+        "stop": 226318,
+        "text": " But totally doable."
+      },
+      {
+        "start": 226318,
+        "stop": 226928,
+        "text": " And if you recall with the last time you and I tried Jellyfin, it was on a CM4."
+      },
+      {
+        "start": 226928,
+        "stop": 227224,
+        "text": " And that worked really well, including the watch together stuff."
+      },
+      {
+        "start": 227224,
+        "stop": 227504,
+        "text": " So it could be totally doable."
+      },
+      {
+        "start": 227504,
+        "stop": 227908,
+        "text": " It'd probably be a quicker start on an x86 system, but not necessarily that much."
+      },
+      {
+        "start": 227908,
+        "stop": 228380,
+        "text": " If you've got a USB disc, you could install Ubuntu LTS on, you can just get the ISO and"
+      },
+      {
+        "start": 228380,
+        "stop": 228640,
+        "text": " it's like installing it on a regular old PC."
+      },
+      {
+        "start": 228640,
+        "stop": 228740,
+        "text": " It's pretty harmless."
+      },
+      {
+        "start": 228740,
+        "stop": 229196,
+        "text": " Well, I think maybe the question then becomes, should I even bother with the Pi if I already"
+      },
+      {
+        "start": 229196,
+        "stop": 229428,
+        "text": " have a machine, an x86?"
+      },
+      {
+        "start": 229428,
+        "stop": 229972,
+        "text": " Granted, an old thing, but it's probably more performant than the Pi easily."
+      },
+      {
+        "start": 229972,
+        "stop": 230160,
+        "text": " And so, is the-- Go for it, Brent."
+      },
+      {
+        "start": 230160,
+        "stop": 230260,
+        "text": " Yeah, all right."
+      },
+      {
+        "start": 230260,
+        "stop": 230360,
+        "text": " No, go for it."
+      },
+      {
+        "start": 230360,
+        "stop": 230460,
+        "text": " Just keep going, get ripping."
+      },
+      {
+        "start": 230460,
+        "stop": 230560,
+        "text": " Go for it."
+      },
+      {
+        "start": 230560,
+        "stop": 231284,
+        "text": " You know, because I often also, I have begun deploying stuff in a two-phased approach."
+      },
+      {
+        "start": 231284,
+        "stop": 231826,
+        "text": " I set it up once and I make all my mistakes and then I tear it all down and I set it up"
+      },
+      {
+        "start": 231826,
+        "stop": 231964,
+        "text": " again."
+      },
+      {
+        "start": 231964,
+        "stop": 232352,
+        "text": " And you know what, that could be, maybe you set it up once on the x86 box, you get a feel"
+      },
+      {
+        "start": 232352,
+        "stop": 232860,
+        "text": " for how it works, you get a feel for how to use the application, how to pass the different"
+      },
+      {
+        "start": 232860,
+        "stop": 233410,
+        "text": " media through Docker Compose, and then you set it up on its permanent home later, which"
+      },
+      {
+        "start": 233410,
+        "stop": 233584,
+        "text": " might be a Raspberry Pi a couple of months."
+      },
+      {
+        "start": 233584,
+        "stop": 234008,
+        "text": " It's surprising how often that temporary home becomes the permanent."
+      },
+      {
+        "start": 234008,
+        "stop": 234440,
+        "text": " The desk I'm sat at right now, I built for our last house in the rental house, so it"
+      },
+      {
+        "start": 234440,
+        "stop": 234658,
+        "text": " was designed for that room."
+      },
+      {
+        "start": 234658,
+        "stop": 235120,
+        "text": " And four years later, here I am still sat at the same desk in my own house."
+      },
+      {
+        "start": 235120,
+        "stop": 235306,
+        "text": " Very true."
+      },
+      {
+        "start": 235306,
+        "stop": 235438,
+        "text": " You've made upgrades."
+      },
+      {
+        "start": 235438,
+        "stop": 236084,
+        "text": " Oh yeah, but it still doesn't quite fit the room."
+      },
+      {
+        "start": 236084,
+        "stop": 236340,
+        "text": " Desk building is a hobby of mine, if the audience doesn't know."
+      },
+      {
+        "start": 236340,
+        "stop": 237060,
+        "text": " I just love pulling all my Neatly cable managed setup out completely and rewiring everything."
+      },
+      {
+        "start": 237060,
+        "stop": 237356,
+        "text": " I don't know why, because I hate doing it sometimes, but--"
+      },
+      {
+        "start": 237356,
+        "stop": 237556,
+        "text": " Do you take orders?"
+      },
+      {
+        "start": 237556,
+        "stop": 237656,
+        "text": " From you?"
+      },
+      {
+        "start": 237656,
+        "stop": 237756,
+        "text": " No, never."
+      },
+      {
+        "start": 237756,
+        "stop": 237956,
+        "text": " Shipping's too much."
+      },
+      {
+        "start": 237956,
+        "stop": 238290,
+        "text": " All right, so the challenge runs throughout January."
+      },
+      {
+        "start": 238290,
+        "stop": 238852,
+        "text": " The next self-hosted, the one that we're recording right now, airs on December the 30th, and"
+      },
+      {
+        "start": 238852,
+        "stop": 239262,
+        "text": " then there'll be two episodes before the end of the challenge at the end of January."
+      },
+      {
+        "start": 239262,
+        "stop": 239862,
+        "text": " So January the 27th will be our final conclusion episode."
+      },
+      {
+        "start": 239862,
+        "stop": 239972,
+        "text": " I've got something neat for you."
+      },
+      {
+        "start": 239972,
+        "stop": 240638,
+        "text": " Go to crowdstrike.com/lce, and you can ingest and view all of your logs in one place."
+      },
+      {
+        "start": 240638,
+        "stop": 240862,
+        "text": " So this is CrowdStrike Falcon Log Scale."
+      },
+      {
+        "start": 240862,
+        "stop": 241252,
+        "text": " This is CrowdStrike's new centralized log management and observability tool, formerly"
+      },
+      {
+        "start": 241252,
+        "stop": 241352,
+        "text": " known as Humio."
+      },
+      {
+        "start": 241352,
+        "stop": 241864,
+        "text": " So Log Scale's been developed as an alternative to legacy logging solutions that really make"
+      },
+      {
+        "start": 241864,
+        "stop": 242278,
+        "text": " it cost prohibitive to ingest and search data volumes that you just kind of get if you've"
+      },
+      {
+        "start": 242278,
+        "stop": 242740,
+        "text": " got some infrastructure, you know, more than a few systems."
+      },
+      {
+        "start": 242740,
+        "stop": 242938,
+        "text": " They just generate a ton of logs."
+      },
+      {
+        "start": 242938,
+        "stop": 243330,
+        "text": " And the beauty of Log Scale is that it can take logs from any of those sources and make"
+      },
+      {
+        "start": 243330,
+        "stop": 243452,
+        "text": " them usable."
+      },
+      {
+        "start": 243452,
+        "stop": 243632,
+        "text": " You don't need to constantly massage the format."
+      },
+      {
+        "start": 243632,
+        "stop": 243794,
+        "text": " Oh, man, I spend time doing that."
+      },
+      {
+        "start": 243794,
+        "stop": 243894,
+        "text": " It doesn't need a schema."
+      },
+      {
+        "start": 243894,
+        "stop": 244032,
+        "text": " Oh, yep, in there."
+      },
+      {
+        "start": 244032,
+        "stop": 244346,
+        "text": " You just pump them all in there and then you got them when you need them."
+      },
+      {
+        "start": 244346,
+        "stop": 244446,
+        "text": " And the dashboard?"
+      },
+      {
+        "start": 244446,
+        "stop": 244546,
+        "text": " Yep, it's great."
+      },
+      {
+        "start": 244546,
+        "stop": 244646,
+        "text": " Goes for days."
+      },
+      {
+        "start": 244646,
+        "stop": 244746,
+        "text": " This platform is crazy."
+      },
+      {
+        "start": 244746,
+        "stop": 245272,
+        "text": " It has an index-free architecture, which means you can ingest over a petabyte of data per"
+      },
+      {
+        "start": 245272,
+        "stop": 245926,
+        "text": " day and search that with sub-second latency, not hours, sub-second latency."
+      },
+      {
+        "start": 245926,
+        "stop": 246414,
+        "text": " And Log Scale's a lot cheaper because that architecture means they don't have a whole"
+      },
+      {
+        "start": 246414,
+        "stop": 246610,
+        "text": " big old hardware footprint."
+      },
+      {
+        "start": 246610,
+        "stop": 246710,
+        "text": " Right?"
+      },
+      {
+        "start": 246710,
+        "stop": 247082,
+        "text": " They're a lot better than platforms like Splunk or Elastic, thanks to that."
+      },
+      {
+        "start": 247082,
+        "stop": 247328,
+        "text": " A lot better for you to run, a lot easier, a lot simpler."
+      },
+      {
+        "start": 247328,
+        "stop": 247686,
+        "text": " And they also have a community edition that they host."
+      },
+      {
+        "start": 247686,
+        "stop": 247998,
+        "text": " Now, the reason why I like to mention this is there's a lot of ways you can do this,"
+      },
+      {
+        "start": 247998,
+        "stop": 248410,
+        "text": " you know, but I think one of the nice things about a platform like Log Scale is if you're"
+      },
+      {
+        "start": 248410,
+        "stop": 248774,
+        "text": " going through a period where you're building out your infrastructure, maybe you're troubleshooting"
+      },
+      {
+        "start": 248774,
+        "stop": 249314,
+        "text": " something, you could pump those logs into Log Scale Community Edition."
+      },
+      {
+        "start": 249314,
+        "stop": 249904,
+        "text": " That is the largest no-cost data ingestion offering on the market, right?"
+      },
+      {
+        "start": 249904,
+        "stop": 250366,
+        "text": " Because Log Scale Community Edition allows you to ingest up to 16 gigabytes a day and"
+      },
+      {
+        "start": 250366,
+        "stop": 250474,
+        "text": " you get seven days of retention."
+      },
+      {
+        "start": 250474,
+        "stop": 250670,
+        "text": " So you can really watch what's going on."
+      },
+      {
+        "start": 250670,
+        "stop": 250898,
+        "text": " There's no credit card required, no trial period."
+      },
+      {
+        "start": 250898,
+        "stop": 250998,
+        "text": " You get that."
+      },
+      {
+        "start": 250998,
+        "stop": 251494,
+        "text": " So you can try that, pump your logs into there, do your troubleshooting, build your infra,"
+      },
+      {
+        "start": 251494,
+        "stop": 251780,
+        "text": " fix your problems, get it all in one spot on a dashboard."
+      },
+      {
+        "start": 251780,
+        "stop": 252126,
+        "text": " It's just great for self-hosters who have a day job."
+      },
+      {
+        "start": 252126,
+        "stop": 252240,
+        "text": " You want to get this stuff fixed."
+      },
+      {
+        "start": 252240,
+        "stop": 252340,
+        "text": " You want to enjoy it."
+      },
+      {
+        "start": 252340,
+        "stop": 252718,
+        "text": " You want to experiment with this, but you don't want a second job."
+      },
+      {
+        "start": 252718,
+        "stop": 252818,
+        "text": " So go try it out."
+      },
+      {
+        "start": 252818,
+        "stop": 252972,
+        "text": " It's a great way to support the show too."
+      },
+      {
+        "start": 252972,
+        "stop": 253562,
+        "text": " Get started with Log Scale Community Edition for free at crowdstrike.com/lce."
+      },
+      {
+        "start": 253562,
+        "stop": 253662,
+        "text": " That's crowdstrike.com/lce."
+      },
+      {
+        "start": 253662,
+        "stop": 254340,
+        "text": " Well, happy holidays from The Matrix Project, everybody."
+      },
+      {
+        "start": 254340,
+        "stop": 254712,
+        "text": " They're running out of money and things are getting really, really bad over there."
+      },
+      {
+        "start": 254712,
+        "stop": 255510,
+        "text": " In a blog post on Christmas, they write that a handful of initiatives have resulted in"
+      },
+      {
+        "start": 255510,
+        "stop": 255778,
+        "text": " funding reaching the core matrix team."
+      },
+      {
+        "start": 255778,
+        "stop": 256074,
+        "text": " And as a result, this is directly putting core matrix development at risk."
+      },
+      {
+        "start": 256074,
+        "stop": 256202,
+        "text": " This is a quote from their blog."
+      },
+      {
+        "start": 256202,
+        "stop": 256486,
+        "text": " They say, \"We are witnessing a tragedy of the commons."
+      },
+      {
+        "start": 256486,
+        "stop": 256950,
+        "text": " We've released all the foundational code of matrix as permissively licensed open source"
+      },
+      {
+        "start": 256950,
+        "stop": 257310,
+        "text": " and got to the point that anyone can successfully run it at scale themselves."
+      },
+      {
+        "start": 257310,
+        "stop": 257962,
+        "text": " The network is expanding exponentially, but in return, it transpires that the vast majority"
+      },
+      {
+        "start": 257962,
+        "stop": 258480,
+        "text": " of these commercial deployments fail to contribute financially to the matrix foundation, whether"
+      },
+      {
+        "start": 258480,
+        "stop": 258804,
+        "text": " by donating directly or supporting indirectly by working with element who fund the vast"
+      },
+      {
+        "start": 258804,
+        "stop": 259000,
+        "text": " majority of core matrix development today."
+      },
+      {
+        "start": 259000,
+        "stop": 259674,
+        "text": " In short, folks love the amazing decentralized encrypted comms utopia of matrix, but organizations"
+      },
+      {
+        "start": 259674,
+        "stop": 260042,
+        "text": " also love that they can use it without having to pay anyone to develop it or maintain it.\""
+      },
+      {
+        "start": 260042,
+        "stop": 260670,
+        "text": " And then they say in bold, \"This is completely unsustainable and element is now literally"
+      },
+      {
+        "start": 260670,
+        "stop": 261142,
+        "text": " — that's in italics — unable to fund the entirety of the matrix foundation on behalf"
+      },
+      {
+        "start": 261142,
+        "stop": 261694,
+        "text": " of everyone else and had to lay off some folks working on the core team as a result.\""
+      },
+      {
+        "start": 261694,
+        "stop": 261858,
+        "text": " It's tragic, isn't it?"
+      },
+      {
+        "start": 261858,
+        "stop": 261994,
+        "text": " Yeah, you hate to see that."
+      },
+      {
+        "start": 261994,
+        "stop": 262542,
+        "text": " I think if you look at tech stocks in general over the last year or so, there's been several"
+      },
+      {
+        "start": 262542,
+        "stop": 263042,
+        "text": " trillion dollars in lost value in the tech space in general."
+      },
+      {
+        "start": 263042,
+        "stop": 263142,
+        "text": " Yeah, 7 trillion."
+      },
+      {
+        "start": 263142,
+        "stop": 263242,
+        "text": " 7, there you go."
+      },
+      {
+        "start": 263242,
+        "stop": 263418,
+        "text": " It's a big number."
+      },
+      {
+        "start": 263418,
+        "stop": 263966,
+        "text": " So if you look at that in that context, it's perhaps not too surprising that matrix are"
+      },
+      {
+        "start": 263966,
+        "stop": 264378,
+        "text": " struggling, but also in the context of Twitter potentially going away."
+      },
+      {
+        "start": 264378,
+        "stop": 264588,
+        "text": " And as we record this, none of us can log into Twitter."
+      },
+      {
+        "start": 264588,
+        "stop": 265018,
+        "text": " So who knows what's going on over there tonight?"
+      },
+      {
+        "start": 265018,
+        "stop": 265642,
+        "text": " Looks like matrix are more important than ever, and I don't really know what else"
+      },
+      {
+        "start": 265642,
+        "stop": 265742,
+        "text": " to say on the matter."
+      },
+      {
+        "start": 265742,
+        "stop": 266142,
+        "text": " Like we should try and support these guys however we can."
+      },
+      {
+        "start": 266142,
+        "stop": 266590,
+        "text": " I mean, you guys both know, huge fan."
+      },
+      {
+        "start": 266590,
+        "stop": 267190,
+        "text": " We have invested a ton into making matrix work great for our community because we think"
+      },
+      {
+        "start": 267190,
+        "stop": 267290,
+        "text": " it's super important."
+      },
+      {
+        "start": 267290,
+        "stop": 267898,
+        "text": " And it has been one of the highlights of my 2022 has been the growth of our matrix community."
+      },
+      {
+        "start": 267898,
+        "stop": 268290,
+        "text": " One of the highlights, one of the best things I think has ever happened to JB has been the"
+      },
+      {
+        "start": 268290,
+        "stop": 268470,
+        "text": " growth of our matrix community."
+      },
+      {
+        "start": 268470,
+        "stop": 268570,
+        "text": " So I love matrix."
+      },
+      {
+        "start": 268570,
+        "stop": 268712,
+        "text": " I love the project."
+      },
+      {
+        "start": 268712,
+        "stop": 269086,
+        "text": " And so I actually looked at what it would cost to donate to the project and become a"
+      },
+      {
+        "start": 269086,
+        "stop": 269300,
+        "text": " member of the foundation."
+      },
+      {
+        "start": 269300,
+        "stop": 269638,
+        "text": " And you could have like a few token things like you could do a Patreon, but you don't"
+      },
+      {
+        "start": 269638,
+        "stop": 269738,
+        "text": " get a membership."
+      },
+      {
+        "start": 269738,
+        "stop": 270174,
+        "text": " But if you want to be like in the loop on what's going on with the matrix foundation,"
+      },
+      {
+        "start": 270174,
+        "stop": 270606,
+        "text": " if you want to have like maybe on the mailing list and get word in on like what they're"
+      },
+      {
+        "start": 270606,
+        "stop": 271126,
+        "text": " doing, the price starts at $100,000 and it goes up from there depending on what you want"
+      },
+      {
+        "start": 271126,
+        "stop": 271226,
+        "text": " to be involved with."
+      },
+      {
+        "start": 271226,
+        "stop": 271662,
+        "text": " And then they have like things like, well, you could sign up for the element services"
+      },
+      {
+        "start": 271662,
+        "stop": 272078,
+        "text": " and you know, five bucks a user or three bucks a user, depending on which plan you want,"
+      },
+      {
+        "start": 272078,
+        "stop": 272240,
+        "text": " you can help support development."
+      },
+      {
+        "start": 272240,
+        "stop": 272380,
+        "text": " That doesn't apply to me."
+      },
+      {
+        "start": 272380,
+        "stop": 272654,
+        "text": " I'm specifically using this because I can self host it."
+      },
+      {
+        "start": 272654,
+        "stop": 273114,
+        "text": " I'm not interested in paying for a hosted version I'm never going to use just to support"
+      },
+      {
+        "start": 273114,
+        "stop": 273214,
+        "text": " the project."
+      },
+      {
+        "start": 273214,
+        "stop": 273372,
+        "text": " That doesn't make sense to me."
+      },
+      {
+        "start": 273372,
+        "stop": 273818,
+        "text": " Also with how we did it, I think we've been paying quite a bit considering our user mistake"
+      },
+      {
+        "start": 273818,
+        "stop": 273918,
+        "text": " on our server."
+      },
+      {
+        "start": 273918,
+        "stop": 274320,
+        "text": " And then the truth of the matter is, is yeah, when you're learning, it costs you a ton"
+      },
+      {
+        "start": 274320,
+        "stop": 274420,
+        "text": " to do it that way."
+      },
+      {
+        "start": 274420,
+        "stop": 274524,
+        "text": " That's a great point, Brent."
+      },
+      {
+        "start": 274524,
+        "stop": 274928,
+        "text": " And the truth, the truth of the entire thing is, is like they've never really come at"
+      },
+      {
+        "start": 274928,
+        "stop": 275448,
+        "text": " me with a viable way or an easy way for me to contribute value back to them."
+      },
+      {
+        "start": 275448,
+        "stop": 275832,
+        "text": " Like I can go buy a hoodie for 38 bucks or whatever it is."
+      },
+      {
+        "start": 275832,
+        "stop": 276056,
+        "text": " But like, so they what, they make five dollars?"
+      },
+      {
+        "start": 276056,
+        "stop": 276292,
+        "text": " Pounds, Chris, whatever it is."
+      },
+      {
+        "start": 276292,
+        "stop": 276524,
+        "text": " It's a currency of an entire nation, whatever it is."
+      },
+      {
+        "start": 276524,
+        "stop": 276624,
+        "text": " Well, I don't have it up."
+      },
+      {
+        "start": 276624,
+        "stop": 276824,
+        "text": " I don't, I don't have it up on my screen."
+      },
+      {
+        "start": 276824,
+        "stop": 276924,
+        "text": " It was just funny."
+      },
+      {
+        "start": 276924,
+        "stop": 277024,
+        "text": " Is it?"
+      },
+      {
+        "start": 277024,
+        "stop": 277124,
+        "text": " Okay."
+      },
+      {
+        "start": 277124,
+        "stop": 277432,
+        "text": " So I don't know what that, I don't know what that converts to in U.S. greenbacks, but you"
+      },
+      {
+        "start": 277432,
+        "stop": 277864,
+        "text": " know, it's, I don't know what is five, five dollars of U.S. greenbacks go to the project"
+      },
+      {
+        "start": 277864,
+        "stop": 277964,
+        "text": " maybe?"
+      },
+      {
+        "start": 277964,
+        "stop": 278064,
+        "text": " What am I going to buy?"
+      },
+      {
+        "start": 278064,
+        "stop": 278164,
+        "text": " 30 hoodies?"
+      },
+      {
+        "start": 278164,
+        "stop": 278264,
+        "text": " Like it just doesn't make any sense."
+      },
+      {
+        "start": 278264,
+        "stop": 278694,
+        "text": " I hate to say this, but they, it's like they thought they'd build it and just the money"
+      },
+      {
+        "start": 278694,
+        "stop": 278828,
+        "text": " would come."
+      },
+      {
+        "start": 278828,
+        "stop": 279128,
+        "text": " You know, when they say this is completely unsustainable, what's actually unsustainable"
+      },
+      {
+        "start": 279128,
+        "stop": 279450,
+        "text": " is their approach to the market to try to get funding in the first place."
+      },
+      {
+        "start": 279450,
+        "stop": 279868,
+        "text": " A good friend of mine made a point that I think really stuck with me and that is how"
+      },
+      {
+        "start": 279868,
+        "stop": 280000,
+        "text": " big do they want to be, right?"
+      },
+      {
+        "start": 280000,
+        "stop": 280264,
+        "text": " They want to be a ginormous foundation."
+      },
+      {
+        "start": 280264,
+        "stop": 280480,
+        "text": " That's why it's a hundred thousand dollars to get in the door."
+      },
+      {
+        "start": 280480,
+        "stop": 280822,
+        "text": " They want to be like the Linux Foundation."
+      },
+      {
+        "start": 280822,
+        "stop": 281232,
+        "text": " And I think the question we have to ask ourselves, is that the right model for what they're trying"
+      },
+      {
+        "start": 281232,
+        "stop": 281348,
+        "text": " to do here?"
+      },
+      {
+        "start": 281348,
+        "stop": 281498,
+        "text": " It's a huge job."
+      },
+      {
+        "start": 281498,
+        "stop": 281966,
+        "text": " It's a big task with very ambitious goals to basically be a new communications layer"
+      },
+      {
+        "start": 281966,
+        "stop": 282066,
+        "text": " for the internet."
+      },
+      {
+        "start": 282066,
+        "stop": 282258,
+        "text": " It's a standard everywhere."
+      },
+      {
+        "start": 282258,
+        "stop": 282362,
+        "text": " Big goals."
+      },
+      {
+        "start": 282362,
+        "stop": 282818,
+        "text": " But if we look at where they're at today, you know, they're basically not even on the"
+      },
+      {
+        "start": 282818,
+        "stop": 283024,
+        "text": " radar of the muggles."
+      },
+      {
+        "start": 283024,
+        "stop": 283596,
+        "text": " You know, they're nothing compared to Snapchat or iMessage or even Telegram."
+      },
+      {
+        "start": 283596,
+        "stop": 283936,
+        "text": " Again, love Matrix, highlight of my year."
+      },
+      {
+        "start": 283936,
+        "stop": 284036,
+        "text": " Love it."
+      },
+      {
+        "start": 284036,
+        "stop": 284136,
+        "text": " But I have to be real."
+      },
+      {
+        "start": 284136,
+        "stop": 284440,
+        "text": " Like they're not relevant in that space right now."
+      },
+      {
+        "start": 284440,
+        "stop": 284880,
+        "text": " And so they have to operate with the reality of the ground and the actual dynamics of the"
+      },
+      {
+        "start": 284880,
+        "stop": 285024,
+        "text": " marketplace today."
+      },
+      {
+        "start": 285024,
+        "stop": 285380,
+        "text": " Not these lofty goals of being the size of the Linux Foundation and hiring hundreds of"
+      },
+      {
+        "start": 285380,
+        "stop": 285480,
+        "text": " people."
+      },
+      {
+        "start": 285480,
+        "stop": 285580,
+        "text": " Right."
+      },
+      {
+        "start": 285580,
+        "stop": 286028,
+        "text": " That's just not where we're at, especially to your point, Alex, in this market now where"
+      },
+      {
+        "start": 286028,
+        "stop": 286252,
+        "text": " funding is really tight."
+      },
+      {
+        "start": 286252,
+        "stop": 286810,
+        "text": " And so I'm a little worried that they're kind of, maybe they're in the wrong, maybe I think"
+      },
+      {
+        "start": 286810,
+        "stop": 286910,
+        "text": " they've got the wrong idea."
+      },
+      {
+        "start": 286910,
+        "stop": 287016,
+        "text": " I don't know how to put it."
+      },
+      {
+        "start": 287016,
+        "stop": 287116,
+        "text": " I mean, who knows?"
+      },
+      {
+        "start": 287116,
+        "stop": 287222,
+        "text": " What do I know?"
+      },
+      {
+        "start": 287222,
+        "stop": 287704,
+        "text": " But do you think they were trying to go after the same market as Slack, say with that kind"
+      },
+      {
+        "start": 287704,
+        "stop": 287866,
+        "text": " of hundred thousand price tag?"
+      },
+      {
+        "start": 287866,
+        "stop": 288282,
+        "text": " Because that seems a price tag, certainly as an individual, that's just never going"
+      },
+      {
+        "start": 288282,
+        "stop": 288382,
+        "text": " to happen."
+      },
+      {
+        "start": 288382,
+        "stop": 288482,
+        "text": " Yeah."
+      },
+      {
+        "start": 288482,
+        "stop": 288700,
+        "text": " It's for companies that are maybe going to build a product."
+      },
+      {
+        "start": 288700,
+        "stop": 288812,
+        "text": " It's like the Linux Foundation."
+      },
+      {
+        "start": 288812,
+        "stop": 289252,
+        "text": " Microsoft buys in and Samsung buys in and VMware buys in because they're all shipping products"
+      },
+      {
+        "start": 289252,
+        "stop": 289428,
+        "text": " now that use Linux."
+      },
+      {
+        "start": 289428,
+        "stop": 289592,
+        "text": " That's how they generate their revenue."
+      },
+      {
+        "start": 289592,
+        "stop": 289976,
+        "text": " And so they want to have a little bit of influence in the features that get developed."
+      },
+      {
+        "start": 289976,
+        "stop": 290224,
+        "text": " And if you want that kind of say, you got to pay."
+      },
+      {
+        "start": 290224,
+        "stop": 290408,
+        "text": " And that's how the Linux Foundation makes money."
+      },
+      {
+        "start": 290408,
+        "stop": 291026,
+        "text": " I mean, if I go to matrix.org/supporters, there are a handful of supporters on there"
+      },
+      {
+        "start": 291026,
+        "stop": 291434,
+        "text": " and a big red, I want to become a Patreon."
+      },
+      {
+        "start": 291434,
+        "stop": 292142,
+        "text": " And if I look on their Patreon page, patreon.com/matrix.org as words, not characters or anything, they"
+      },
+      {
+        "start": 292142,
+        "stop": 292682,
+        "text": " have two goals on their Patreon that I can see both have been reached."
+      },
+      {
+        "start": 292682,
+        "stop": 292818,
+        "text": " One is 2500 a month."
+      },
+      {
+        "start": 292818,
+        "stop": 292956,
+        "text": " The other one is 5000 a month."
+      },
+      {
+        "start": 292956,
+        "stop": 293628,
+        "text": " So as a curious open source supporter, hypothetically, I go to this website and I look at it and"
+      },
+      {
+        "start": 293628,
+        "stop": 293752,
+        "text": " I say, how do I support matrix?"
+      },
+      {
+        "start": 293752,
+        "stop": 293980,
+        "text": " And I look at the goals and they say they've achieved their goals."
+      },
+      {
+        "start": 293980,
+        "stop": 294212,
+        "text": " And I think, great, they're fine."
+      },
+      {
+        "start": 294212,
+        "stop": 294640,
+        "text": " So when I look at this blog post and it says the complete opposite to we've reached our"
+      },
+      {
+        "start": 294640,
+        "stop": 294908,
+        "text": " goal, those two things don't marry up."
+      },
+      {
+        "start": 294908,
+        "stop": 295112,
+        "text": " So perhaps there's something they could do there."
+      },
+      {
+        "start": 295112,
+        "stop": 295736,
+        "text": " I would imagine that Patreon, you get in this weird spot with Patreon, really, where you"
+      },
+      {
+        "start": 295736,
+        "stop": 296048,
+        "text": " get in because it seems like a good idea, you got the network effect and it doesn't"
+      },
+      {
+        "start": 296048,
+        "stop": 296148,
+        "text": " really fit."
+      },
+      {
+        "start": 296148,
+        "stop": 296548,
+        "text": " You know, they're making 7200 bucks a month from this thing, but that number isn't legitimate."
+      },
+      {
+        "start": 296548,
+        "stop": 297040,
+        "text": " I can tell you I've been using Patreon since it was a public website."
+      },
+      {
+        "start": 297040,
+        "stop": 297428,
+        "text": " You could take 6 to 10 percent, as much as 20 percent off that number because there's"
+      },
+      {
+        "start": 297428,
+        "stop": 297858,
+        "text": " credit card processing fees, there's Patreon's fee, that isn't reflected in that."
+      },
+      {
+        "start": 297858,
+        "stop": 298148,
+        "text": " And then you have about a 5 to 10 percent credit card failure rate."
+      },
+      {
+        "start": 298148,
+        "stop": 298502,
+        "text": " And then after you cover all of that, that's the actual revenue."
+      },
+      {
+        "start": 298502,
+        "stop": 299062,
+        "text": " So there, I bet you legitimately, they're probably making 5400 a month from Patreon,"
+      },
+      {
+        "start": 299062,
+        "stop": 299262,
+        "text": " but that's still a decent amount of money."
+      },
+      {
+        "start": 299262,
+        "stop": 299606,
+        "text": " But it's not going to pay for this ambitious, huge Linux Foundation sized company."
+      },
+      {
+        "start": 299606,
+        "stop": 299882,
+        "text": " That's going to pay for VPS costs."
+      },
+      {
+        "start": 299882,
+        "stop": 299982,
+        "text": " Right."
+      },
+      {
+        "start": 299982,
+        "stop": 300250,
+        "text": " But we need Matrix desperately."
+      },
+      {
+        "start": 300250,
+        "stop": 300530,
+        "text": " You know, as I've been switching, because, you know, I'm an Android user now, by the"
+      },
+      {
+        "start": 300530,
+        "stop": 301290,
+        "text": " way, guys, as I've been using Android and I've been trying to solve for iMessage, the"
+      },
+      {
+        "start": 301290,
+        "stop": 301722,
+        "text": " best solution I came back to was either something like NextCloud Chat, which is very specific"
+      },
+      {
+        "start": 301722,
+        "stop": 302638,
+        "text": " to my setup, but honestly, Matrix with a really friendly front end client called Fluffy Chat,"
+      },
+      {
+        "start": 302638,
+        "stop": 303006,
+        "text": " because I can either just use matrix.org, I could use the Jupyter broadcasting system,"
+      },
+      {
+        "start": 303006,
+        "stop": 303482,
+        "text": " I could set up a family specific server, I can connect all of them."
+      },
+      {
+        "start": 303482,
+        "stop": 303924,
+        "text": " Fluffy Chat has the features of a modern chat client like Telegram."
+      },
+      {
+        "start": 303924,
+        "stop": 304546,
+        "text": " It just checks all the boxes and I really want that to be a resource that I can use"
+      },
+      {
+        "start": 304546,
+        "stop": 304812,
+        "text": " potentially for the next 15 years."
+      },
+      {
+        "start": 304812,
+        "stop": 305392,
+        "text": " You know, it could be my messaging plumbing for a decade plus if they can make it sustainable,"
+      },
+      {
+        "start": 305392,
+        "stop": 305974,
+        "text": " but they've got to also come up with some membership programs that maybe like as a company,"
+      },
+      {
+        "start": 305974,
+        "stop": 306214,
+        "text": " JB could contribute."
+      },
+      {
+        "start": 306214,
+        "stop": 306986,
+        "text": " The other issue though is that it's hard because for us, Matrix is a decent sized cost center."
+      },
+      {
+        "start": 306986,
+        "stop": 307620,
+        "text": " We spend money just to run Matrix, to manage Matrix, the system it's on is a 96 core system"
+      },
+      {
+        "start": 307620,
+        "stop": 307874,
+        "text": " with like hundreds of gigs of RAM, right?"
+      },
+      {
+        "start": 307874,
+        "stop": 308014,
+        "text": " It's not a cheap box."
+      },
+      {
+        "start": 308014,
+        "stop": 308472,
+        "text": " And all of these things are like cost centers for everybody that's doing this."
+      },
+      {
+        "start": 308472,
+        "stop": 308950,
+        "text": " If it was an easy problem to solve, we wouldn't be having this conversation."
+      },
+      {
+        "start": 308950,
+        "stop": 309426,
+        "text": " It's a problem then, a conversation that we have time and time and time again with free"
+      },
+      {
+        "start": 309426,
+        "stop": 309526,
+        "text": " and open source software."
+      },
+      {
+        "start": 309526,
+        "stop": 310402,
+        "text": " And I think people in the normal world conflate free and open with free and no cost."
+      },
+      {
+        "start": 310402,
+        "stop": 310686,
+        "text": " And that's clearly not true."
+      },
+      {
+        "start": 310686,
+        "stop": 311038,
+        "text": " People's time to write the code has a cost."
+      },
+      {
+        "start": 311038,
+        "stop": 311464,
+        "text": " Every step in the chain has a cost, whether it's financial, whether it's time, whether"
+      },
+      {
+        "start": 311464,
+        "stop": 311978,
+        "text": " it's someone's wellbeing with how much of those two things are putting into an open"
+      },
+      {
+        "start": 311978,
+        "stop": 312184,
+        "text": " source project."
+      },
+      {
+        "start": 312184,
+        "stop": 312692,
+        "text": " And we see that not only with big projects like Matrix and Jellyfin, but we see that"
+      },
+      {
+        "start": 312692,
+        "stop": 313242,
+        "text": " with tiny little projects that make up tiny little building blocks of the internet, as"
+      },
+      {
+        "start": 313242,
+        "stop": 313630,
+        "text": " part of software bill of material pipeline issues."
+      },
+      {
+        "start": 313630,
+        "stop": 313994,
+        "text": " Log for J, remember that just a year ago, what a big deal log for J was?"
+      },
+      {
+        "start": 313994,
+        "stop": 314160,
+        "text": " It's quite the story."
+      },
+      {
+        "start": 314160,
+        "stop": 314260,
+        "text": " All right."
+      },
+      {
+        "start": 314260,
+        "stop": 314360,
+        "text": " J Cube wrote into the show."
+      },
+      {
+        "start": 314360,
+        "stop": 314686,
+        "text": " I wanted to talk about a topic near to Alex's heart."
+      },
+      {
+        "start": 314686,
+        "stop": 314786,
+        "text": " Shucking."
+      },
+      {
+        "start": 314786,
+        "stop": 315210,
+        "text": " I have a Synology NAS that has four 12 terabyte Western Digital shuck drives in it."
+      },
+      {
+        "start": 315210,
+        "stop": 315410,
+        "text": " I've had them roughly for three years."
+      },
+      {
+        "start": 315410,
+        "stop": 315646,
+        "text": " I wanted to do the Badger Stack PMS build."
+      },
+      {
+        "start": 315646,
+        "stop": 316130,
+        "text": " I got the case and found a holding place for the data residing on the NAS and proceeded"
+      },
+      {
+        "start": 316130,
+        "stop": 316320,
+        "text": " to move the drives."
+      },
+      {
+        "start": 316320,
+        "stop": 316550,
+        "text": " Only the new build never saw those drives."
+      },
+      {
+        "start": 316550,
+        "stop": 317062,
+        "text": " The behavior matches up with what you would see in a 3.3 volt pin shenanigans situation."
+      },
+      {
+        "start": 317062,
+        "stop": 317388,
+        "text": " I tried snipping the cable method, no luck."
+      },
+      {
+        "start": 317388,
+        "stop": 317594,
+        "text": " I tried putting them back into the NAS."
+      },
+      {
+        "start": 317594,
+        "stop": 317768,
+        "text": " All four drives were invisible to it."
+      },
+      {
+        "start": 317768,
+        "stop": 318356,
+        "text": " I then tried pulling that 3.3 volt pin off the SATA power connector on the drive, still"
+      },
+      {
+        "start": 318356,
+        "stop": 318456,
+        "text": " invisible."
+      },
+      {
+        "start": 318456,
+        "stop": 318730,
+        "text": " Alex, have you had this issue before?"
+      },
+      {
+        "start": 318730,
+        "stop": 319208,
+        "text": " Well, I'm very worried about the idea of pulling a pin off the drive itself."
+      },
+      {
+        "start": 319208,
+        "stop": 319644,
+        "text": " That sounds like a very fast way to no warranty, Mr. Kretschmar."
+      },
+      {
+        "start": 319644,
+        "stop": 320018,
+        "text": " So yeah, the only time I've had this issue myself has been when I've shucked a drive"
+      },
+      {
+        "start": 320018,
+        "stop": 320612,
+        "text": " and then tried to connect it up with a power supply that has all four of the Molex power"
+      },
+      {
+        "start": 320612,
+        "stop": 320712,
+        "text": " rails on it."
+      },
+      {
+        "start": 320712,
+        "stop": 321030,
+        "text": " So ground, 12 volt, five volt, and 3.3 volt."
+      },
+      {
+        "start": 321030,
+        "stop": 321606,
+        "text": " And so the easy solution to that was just to cut the 3.3 volt rail at the output nearest"
+      },
+      {
+        "start": 321606,
+        "stop": 321706,
+        "text": " the PSU."
+      },
+      {
+        "start": 321706,
+        "stop": 322096,
+        "text": " So then there's just no 3.3 volt electricity flowing."
+      },
+      {
+        "start": 322096,
+        "stop": 322290,
+        "text": " And so the hard drive doesn't try and reset."
+      },
+      {
+        "start": 322290,
+        "stop": 322842,
+        "text": " Now this has me worried that you've potentially damaged the drives because they've been working,"
+      },
+      {
+        "start": 322842,
+        "stop": 323150,
+        "text": " as you say, for roughly three years just fine."
+      },
+      {
+        "start": 323150,
+        "stop": 323670,
+        "text": " Now you put them into a new case, it doesn't sound too clever to me."
+      },
+      {
+        "start": 323670,
+        "stop": 324158,
+        "text": " So I give the pins a visual inspection to make sure there's no other little plastic"
+      },
+      {
+        "start": 324158,
+        "stop": 324454,
+        "text": " bits have snapped off in any of the connectors."
+      },
+      {
+        "start": 324454,
+        "stop": 324902,
+        "text": " That's certainly what I did in that Cobol system that I tried out a few episodes ago,"
+      },
+      {
+        "start": 324902,
+        "stop": 325054,
+        "text": " probably a year or more."
+      },
+      {
+        "start": 325054,
+        "stop": 325500,
+        "text": " I rammed it into the back plane so hard because the tolerances were so tight on the plastic"
+      },
+      {
+        "start": 325500,
+        "stop": 325954,
+        "text": " rails that I ended up snapping some of the connectors off the end of the drives."
+      },
+      {
+        "start": 325954,
+        "stop": 326176,
+        "text": " That hurts when you do that."
+      },
+      {
+        "start": 326176,
+        "stop": 326548,
+        "text": " Don't do that."
+      },
+      {
+        "start": 326548,
+        "stop": 326974,
+        "text": " But an easier solution to just pulling the pins off the drive itself is using something"
+      },
+      {
+        "start": 326974,
+        "stop": 327074,
+        "text": " called Kapton tape."
+      },
+      {
+        "start": 327074,
+        "stop": 327526,
+        "text": " You know what they developed for the space shuttle on, I think it was actually for the"
+      },
+      {
+        "start": 327526,
+        "stop": 327666,
+        "text": " Apollo missions."
+      },
+      {
+        "start": 327666,
+        "stop": 328302,
+        "text": " It's that kind of golden, really thin, electrically isolative tape."
+      },
+      {
+        "start": 328302,
+        "stop": 328784,
+        "text": " And it's so thin that you can actually cut with an exacto knife or something, a small"
+      },
+      {
+        "start": 328784,
+        "stop": 329336,
+        "text": " enough little piece over the first pin or two, put it onto the power connector of the"
+      },
+      {
+        "start": 329336,
+        "stop": 329436,
+        "text": " drive itself."
+      },
+      {
+        "start": 329436,
+        "stop": 329904,
+        "text": " I mean, that achieves the same thing as cutting the 3.3 volt wire does."
+      },
+      {
+        "start": 329904,
+        "stop": 330232,
+        "text": " You're just blocking the electrical contact from making a circuit."
+      },
+      {
+        "start": 330232,
+        "stop": 330860,
+        "text": " But you know, if they used to work and now they don't work, then you know, it might not"
+      },
+      {
+        "start": 330860,
+        "stop": 331012,
+        "text": " be a good outcome, I'm afraid."
+      },
+      {
+        "start": 331012,
+        "stop": 331496,
+        "text": " But you did get three good years out of them, I suppose."
+      },
+      {
+        "start": 331496,
+        "stop": 331722,
+        "text": " Yeah, silver lining, look on the bright side."
+      },
+      {
+        "start": 331722,
+        "stop": 331906,
+        "text": " I don't think you should give up just yet."
+      },
+      {
+        "start": 331906,
+        "stop": 332414,
+        "text": " I think it's worth maybe testing one of these drives in an enclosure or some other case"
+      },
+      {
+        "start": 332414,
+        "stop": 332788,
+        "text": " and see if they're still viable in some other setup."
+      },
+      {
+        "start": 332788,
+        "stop": 332970,
+        "text": " Then you can start isolating some variables."
+      },
+      {
+        "start": 332970,
+        "stop": 333256,
+        "text": " You know, maybe it's, I don't know, maybe it's a file system issue."
+      },
+      {
+        "start": 333256,
+        "stop": 333522,
+        "text": " The drive's working fine and it's not seeing the file system."
+      },
+      {
+        "start": 333522,
+        "stop": 333870,
+        "text": " It depends how much you've digged into to see if the drives are working, but definitely"
+      },
+      {
+        "start": 333870,
+        "stop": 333970,
+        "text": " worth trying elsewhere."
+      },
+      {
+        "start": 333970,
+        "stop": 334470,
+        "text": " I just worry though that he had these drives in a NAS, put them into something else, they"
+      },
+      {
+        "start": 334470,
+        "stop": 334930,
+        "text": " didn't work, and then put them back in the original NAS and they still don't work."
+      },
+      {
+        "start": 334930,
+        "stop": 335090,
+        "text": " That's a bit of a red flag for me."
+      },
+      {
+        "start": 335090,
+        "stop": 335190,
+        "text": " Yeah, okay."
+      },
+      {
+        "start": 335190,
+        "stop": 335290,
+        "text": " You win this one."
+      },
+      {
+        "start": 335290,
+        "stop": 335390,
+        "text": " It's bad."
+      },
+      {
+        "start": 335390,
+        "stop": 335490,
+        "text": " It's a bad sign."
+      },
+      {
+        "start": 335490,
+        "stop": 335590,
+        "text": " No, we all lose this one."
+      },
+      {
+        "start": 335590,
+        "stop": 335690,
+        "text": " I think it's more accurate."
+      },
+      {
+        "start": 335690,
+        "stop": 335790,
+        "text": " Good luck, JQ."
+      },
+      {
+        "start": 335790,
+        "stop": 335890,
+        "text": " Godspeed."
+      },
+      {
+        "start": 335890,
+        "stop": 336442,
+        "text": " Yeah, you can send an email into the show at selfhosted.show/contact or you can boost"
+      },
+      {
+        "start": 336442,
+        "stop": 336810,
+        "text": " in and dodge a boost in with 47 47 sats."
+      },
+      {
+        "start": 336810,
+        "stop": 337202,
+        "text": " And in fact, this is a common sentiment, plus one to the HD home run."
+      },
+      {
+        "start": 337202,
+        "stop": 337486,
+        "text": " Several people wrote in saying that was a great tip."
+      },
+      {
+        "start": 337486,
+        "stop": 337784,
+        "text": " Super nice to be able to tune into your local stations from any device."
+      },
+      {
+        "start": 337784,
+        "stop": 338230,
+        "text": " From Home Assistant, oh, for notifications, you can try having an automation trigger based"
+      },
+      {
+        "start": 338230,
+        "stop": 338330,
+        "text": " on your location."
+      },
+      {
+        "start": 338330,
+        "stop": 338450,
+        "text": " I was thinking about that."
+      },
+      {
+        "start": 338450,
+        "stop": 338562,
+        "text": " I wonder if people do this."
+      },
+      {
+        "start": 338562,
+        "stop": 338854,
+        "text": " Do you ever try Home Assistant location-based notifications?"
+      },
+      {
+        "start": 338854,
+        "stop": 339278,
+        "text": " He says, \"I do this with the Slack module on Home Assistant."
+      },
+      {
+        "start": 339278,
+        "stop": 339582,
+        "text": " Send a message to my wife in the family Slack channel and it works great.\""
+      },
+      {
+        "start": 339582,
+        "stop": 339802,
+        "text": " Huh."
+      },
+      {
+        "start": 339802,
+        "stop": 339902,
+        "text": " That's interesting."
+      },
+      {
+        "start": 339902,
+        "stop": 340238,
+        "text": " I've been thinking about that, but the problem is, is what happens when I'm just on that"
+      },
+      {
+        "start": 340238,
+        "stop": 340422,
+        "text": " same route?"
+      },
+      {
+        "start": 340422,
+        "stop": 340538,
+        "text": " It just happened to be on that route."
+      },
+      {
+        "start": 340538,
+        "stop": 340638,
+        "text": " I don't know."
+      },
+      {
+        "start": 340638,
+        "stop": 340822,
+        "text": " It seems like it could also trigger a lot of false notifications."
+      },
+      {
+        "start": 340822,
+        "stop": 340922,
+        "text": " That was my only concern."
+      },
+      {
+        "start": 340922,
+        "stop": 341022,
+        "text": " You love a good NFC tag."
+      },
+      {
+        "start": 341022,
+        "stop": 341222,
+        "text": " Just have one on your dashboard and tap it."
+      },
+      {
+        "start": 341222,
+        "stop": 341386,
+        "text": " Yeah, but then what does it do?"
+      },
+      {
+        "start": 341386,
+        "stop": 341654,
+        "text": " Is it a Home Assistant thing that sends a Telegram message?"
+      },
+      {
+        "start": 341654,
+        "stop": 341906,
+        "text": " I just don't know even what to build."
+      },
+      {
+        "start": 341906,
+        "stop": 342346,
+        "text": " I honestly just, I'd love to hear people's setups because I really don't have a visual"
+      },
+      {
+        "start": 342346,
+        "stop": 342446,
+        "text": " on what to build."
+      },
+      {
+        "start": 342446,
+        "stop": 342902,
+        "text": " E-ROC, or Eric, E-R-O-C, boosted with 1,500 sats."
+      },
+      {
+        "start": 342902,
+        "stop": 343074,
+        "text": " He had an idea for the on-the-way home automation."
+      },
+      {
+        "start": 343074,
+        "stop": 343482,
+        "text": " He said, to your point, Alex, use Tasker."
+      },
+      {
+        "start": 343482,
+        "stop": 343836,
+        "text": " It's a bit of a learning curve, but if you're taking the time to set up Home Assistant and"
+      },
+      {
+        "start": 343836,
+        "stop": 344042,
+        "text": " use NixOS, you can probably handle Tasker."
+      },
+      {
+        "start": 344042,
+        "stop": 344142,
+        "text": " Right, yeah."
+      },
+      {
+        "start": 344142,
+        "stop": 344610,
+        "text": " If you're a NixOS guy, which you're still bleeding on about that."
+      },
+      {
+        "start": 344610,
+        "stop": 344762,
+        "text": " By the way, yeah."
+      },
+      {
+        "start": 344762,
+        "stop": 345082,
+        "text": " By the way, it's pretty great."
+      },
+      {
+        "start": 345082,
+        "stop": 345254,
+        "text": " And then CB came in with 5,001 sats."
+      },
+      {
+        "start": 345254,
+        "stop": 345518,
+        "text": " He says, I hope this makes it before you guys are done for the year."
+      },
+      {
+        "start": 345518,
+        "stop": 345756,
+        "text": " I had a recent Home Assistant success story."
+      },
+      {
+        "start": 345756,
+        "stop": 346126,
+        "text": " My ISP was having issues with their lines near my house, and it would cause a signal"
+      },
+      {
+        "start": 346126,
+        "stop": 346638,
+        "text": " issue that caused my modem to disconnect, and then it would not reconnect until I rebooted"
+      },
+      {
+        "start": 346638,
+        "stop": 346738,
+        "text": " it."
+      },
+      {
+        "start": 346738,
+        "stop": 346958,
+        "text": " This was happening up to half a dozen times per day."
+      },
+      {
+        "start": 346958,
+        "stop": 347422,
+        "text": " I got frustrated and I grabbed an extra IKEA TradFi plug."
+      },
+      {
+        "start": 347422,
+        "stop": 347522,
+        "text": " Tradfri."
+      },
+      {
+        "start": 347522,
+        "stop": 347710,
+        "text": " Oh, right, thank you."
+      },
+      {
+        "start": 347710,
+        "stop": 348130,
+        "text": " Someone wrote in and told me I said it perfectly, so I've got it nailed now."
+      },
+      {
+        "start": 348130,
+        "stop": 348230,
+        "text": " You do."
+      },
+      {
+        "start": 348230,
+        "stop": 348530,
+        "text": " You're now our IKEA plug guy."
+      },
+      {
+        "start": 348530,
+        "stop": 349054,
+        "text": " IKEA pronunciation expert for that one specific brand that they have."
+      },
+      {
+        "start": 349054,
+        "stop": 349342,
+        "text": " All the others, all the bets are off."
+      },
+      {
+        "start": 349342,
+        "stop": 349700,
+        "text": " CB continued on another boost, another 5,000 sats, he says."
+      },
+      {
+        "start": 349700,
+        "stop": 350118,
+        "text": " So I created an automation Home Assistant that cut the power to the modem for 30 seconds,"
+      },
+      {
+        "start": 350118,
+        "stop": 350474,
+        "text": " and then turned the power back on, waited two minutes, and then sent a notification"
+      },
+      {
+        "start": 350474,
+        "stop": 350814,
+        "text": " to everyone in the house that the internet is back up."
+      },
+      {
+        "start": 350814,
+        "stop": 351310,
+        "text": " So whenever the internet died, I just triggered the automation and just let it do its thing."
+      },
+      {
+        "start": 351310,
+        "stop": 351942,
+        "text": " Thankfully my ISP fixed the issue, but this little hack saved me many trips into the basement."
+      },
+      {
+        "start": 351942,
+        "stop": 352372,
+        "text": " You know, I've done a similar thing with all of my ESPHome devices for a little while."
+      },
+      {
+        "start": 352372,
+        "stop": 352874,
+        "text": " I have them set to reboot at 4 a.m. every day because there was some kind of a memory"
+      },
+      {
+        "start": 352874,
+        "stop": 353276,
+        "text": " leak in ESPHome a year plus ago."
+      },
+      {
+        "start": 353276,
+        "stop": 353658,
+        "text": " Things just stopped working after a day or two for no apparent reason, so now I just"
+      },
+      {
+        "start": 353658,
+        "stop": 353898,
+        "text": " reboot them every day and it's fine."
+      },
+      {
+        "start": 353898,
+        "stop": 354094,
+        "text": " It's a viable solution sometimes."
+      },
+      {
+        "start": 354094,
+        "stop": 354474,
+        "text": " I might consider that for my Shelly plug because that's the one device I have that sometimes"
+      },
+      {
+        "start": 354474,
+        "stop": 354598,
+        "text": " just sort of disappears."
+      },
+      {
+        "start": 354598,
+        "stop": 354910,
+        "text": " A little Shelly plug reboot might fix that."
+      },
+      {
+        "start": 354910,
+        "stop": 355170,
+        "text": " SUCD came in with some enterprise sats."
+      },
+      {
+        "start": 355170,
+        "stop": 355702,
+        "text": " On the Graphene OS adventure, have you looked into NTFY.SH?"
+      },
+      {
+        "start": 355702,
+        "stop": 356082,
+        "text": " It's Notify.SH, but it's N-T-F-Y dot S-H."
+      },
+      {
+        "start": 356082,
+        "stop": 356298,
+        "text": " I've been playing around with it, connected to an iPhone."
+      },
+      {
+        "start": 356298,
+        "stop": 356634,
+        "text": " It's been nice to get notifications about server stuff on my device."
+      },
+      {
+        "start": 356634,
+        "stop": 356790,
+        "text": " And of course over my tail net."
+      },
+      {
+        "start": 356790,
+        "stop": 357294,
+        "text": " Yeah, so NFTY or Notify is part of this unified push initiative, which the F-Droid folks are"
+      },
+      {
+        "start": 357294,
+        "stop": 357416,
+        "text": " involved with."
+      },
+      {
+        "start": 357416,
+        "stop": 357854,
+        "text": " So it turns out when you go down the Graphene OS route, you inevitably go down, \"I need"
+      },
+      {
+        "start": 357854,
+        "stop": 358054,
+        "text": " to self-host my notification server.\""
+      },
+      {
+        "start": 358054,
+        "stop": 358450,
+        "text": " And I didn't even know this was a thing, you guys."
+      },
+      {
+        "start": 358450,
+        "stop": 358610,
+        "text": " But actually I'm all here for it."
+      },
+      {
+        "start": 358610,
+        "stop": 359050,
+        "text": " It seems like I got several options, including there could be some integration with Nextcloud,"
+      },
+      {
+        "start": 359050,
+        "stop": 359570,
+        "text": " where Nextcloud essentially acts as the push notification receiving server."
+      },
+      {
+        "start": 359570,
+        "stop": 359688,
+        "text": " Pretty neat stuff."
+      },
+      {
+        "start": 359688,
+        "stop": 359982,
+        "text": " And more and more applications are actually building in support."
+      },
+      {
+        "start": 359982,
+        "stop": 360442,
+        "text": " So I'm running Notify now just using one of their hosted instances."
+      },
+      {
+        "start": 360442,
+        "stop": 360866,
+        "text": " And three or four of my apps have updated and are now using it to send me push notifications,"
+      },
+      {
+        "start": 360866,
+        "stop": 361218,
+        "text": " because I don't have the Google Play services running in the background, so I can't use"
+      },
+      {
+        "start": 361218,
+        "stop": 361354,
+        "text": " Google Play for notifications."
+      },
+      {
+        "start": 361354,
+        "stop": 361754,
+        "text": " And so some apps, you just don't get any notifications."
+      },
+      {
+        "start": 361754,
+        "stop": 361934,
+        "text": " And this is solving that problem."
+      },
+      {
+        "start": 361934,
+        "stop": 362034,
+        "text": " Really cool."
+      },
+      {
+        "start": 362034,
+        "stop": 362418,
+        "text": " I never thought I'd get into self-hosting notification servers when I started this."
+      },
+      {
+        "start": 362418,
+        "stop": 362674,
+        "text": " Not Notify is you when your notification server's down, though."
+      },
+      {
+        "start": 362674,
+        "stop": 362774,
+        "text": " That's the real..."
+      },
+      {
+        "start": 362774,
+        "stop": 362974,
+        "text": " You gotta run to it."
+      },
+      {
+        "start": 362974,
+        "stop": 363254,
+        "text": " I think that's the wife."
+      },
+      {
+        "start": 363254,
+        "stop": 363354,
+        "text": " Why aren't you answering me?"
+      },
+      {
+        "start": 363354,
+        "stop": 363686,
+        "text": " I've been trying to get a hold of you."
+      },
+      {
+        "start": 363686,
+        "stop": 364206,
+        "text": " Anonymous, they didn't have their username set up, but they sent us in 22,222 Sats just"
+      },
+      {
+        "start": 364206,
+        "stop": 364606,
+        "text": " saying, \"Seas and greetings, a late row of ducks for your Christmas stockings.\""
+      },
+      {
+        "start": 364606,
+        "stop": 365030,
+        "text": " They did this using their Albi Umbral setup, which is an awesome setup where you have the"
+      },
+      {
+        "start": 365030,
+        "stop": 365534,
+        "text": " Albi web extension and your own self-hosted node like Brent and I have."
+      },
+      {
+        "start": 365534,
+        "stop": 365902,
+        "text": " Sir Lurksalot came in with 13,370 Sats to round us out for the day."
+      },
+      {
+        "start": 365902,
+        "stop": 366078,
+        "text": " He says, \"Shout out to Albi."
+      },
+      {
+        "start": 366078,
+        "stop": 366706,
+        "text": " I've been using them to boost live from the podcastindex.org site to complain about Discord,"
+      },
+      {
+        "start": 366706,
+        "stop": 367102,
+        "text": " but here's one from BoostCLI to give props to Albi.\""
+      },
+      {
+        "start": 367102,
+        "stop": 367418,
+        "text": " BoostCLI is the ultimate self-hosting setup."
+      },
+      {
+        "start": 367418,
+        "stop": 367518,
+        "text": " Well done Lurksalot."
+      },
+      {
+        "start": 367518,
+        "stop": 367946,
+        "text": " I'll have a link to Albi, getalbi.com, and then you can get that."
+      },
+      {
+        "start": 367946,
+        "stop": 368526,
+        "text": " Cost a few cheap Sats in there and then go to the podcastindex and there's a built-in"
+      },
+      {
+        "start": 368526,
+        "stop": 368762,
+        "text": " embedded booster right there."
+      },
+      {
+        "start": 368762,
+        "stop": 368862,
+        "text": " It's pretty great."
+      },
+      {
+        "start": 368862,
+        "stop": 369126,
+        "text": " And pretty soon we'll have per episode split setup."
+      },
+      {
+        "start": 369126,
+        "stop": 369590,
+        "text": " So like on the episodes that Brent's on, you'll be included in the split automatically, pew,"
+      },
+      {
+        "start": 369590,
+        "stop": 369774,
+        "text": " pew, you'll get a cut."
+      },
+      {
+        "start": 369774,
+        "stop": 369946,
+        "text": " That'll be once we have our own feeds, but it's coming."
+      },
+      {
+        "start": 369946,
+        "stop": 370414,
+        "text": " We're going to be self-hosting and generating our own RSS feeds starting next year too."
+      },
+      {
+        "start": 370414,
+        "stop": 370514,
+        "text": " That's a big step for us."
+      },
+      {
+        "start": 370514,
+        "stop": 370694,
+        "text": " Look at us growing up."
+      },
+      {
+        "start": 370694,
+        "stop": 370794,
+        "text": " Yeah."
+      },
+      {
+        "start": 370794,
+        "stop": 371070,
+        "text": " And if we talk about that in office hours, if people are interested, we do some of that"
+      },
+      {
+        "start": 371070,
+        "stop": 371170,
+        "text": " in there."
+      },
+      {
+        "start": 371170,
+        "stop": 371506,
+        "text": " But thank you everybody who sent in an email or sent in a boost."
+      },
+      {
+        "start": 371506,
+        "stop": 371734,
+        "text": " We very much appreciate it."
+      },
+      {
+        "start": 371734,
+        "stop": 371982,
+        "text": " And a big thank you to our members as well."
+      },
+      {
+        "start": 371982,
+        "stop": 372218,
+        "text": " SREs out there, keep the show production going."
+      },
+      {
+        "start": 372218,
+        "stop": 372318,
+        "text": " You keep us on the rails."
+      },
+      {
+        "start": 372318,
+        "stop": 372456,
+        "text": " You invest in the ongoing production."
+      },
+      {
+        "start": 372456,
+        "stop": 372786,
+        "text": " The boosters come in and they thank us for the individual episodes and it's a nice little"
+      },
+      {
+        "start": 372786,
+        "stop": 372886,
+        "text": " Kumbaya."
+      },
+      {
+        "start": 372886,
+        "stop": 373038,
+        "text": " It's a great way to support the show."
+      },
+      {
+        "start": 373038,
+        "stop": 373422,
+        "text": " And as an SRE, you get an ad-free feed with a post-show."
+      },
+      {
+        "start": 373422,
+        "stop": 373626,
+        "text": " Special extra content in there."
+      },
+      {
+        "start": 373626,
+        "stop": 374106,
+        "text": " SRE or you can support the whole network at Jupiter.party."
+      },
+      {
+        "start": 374106,
+        "stop": 374406,
+        "text": " And Alex, remind us where people go for the hard drive giveaway."
+      },
+      {
+        "start": 374406,
+        "stop": 374762,
+        "text": " What's the best way to get ahold of you to get the submission in?"
+      },
+      {
+        "start": 374762,
+        "stop": 374862,
+        "text": " Self-hosted.show/contact."
+      },
+      {
+        "start": 374862,
+        "stop": 375038,
+        "text": " Oh, okay."
+      },
+      {
+        "start": 375038,
+        "stop": 375138,
+        "text": " Good old email."
+      },
+      {
+        "start": 375138,
+        "stop": 375238,
+        "text": " There you go."
+      },
+      {
+        "start": 375238,
+        "stop": 375466,
+        "text": " Just send Alex your sob story via email."
+      },
+      {
+        "start": 375466,
+        "stop": 375566,
+        "text": " That's classic."
+      },
+      {
+        "start": 375566,
+        "stop": 375726,
+        "text": " Do you like to read them?"
+      },
+      {
+        "start": 375726,
+        "stop": 376138,
+        "text": " The three or four entries, I think the four entries we've had have been pretty good actually."
+      },
+      {
+        "start": 376138,
+        "stop": 376434,
+        "text": " So please write in with your entertaining stories."
+      },
+      {
+        "start": 376434,
+        "stop": 376614,
+        "text": " I'd love to read more of them."
+      },
+      {
+        "start": 376614,
+        "stop": 376978,
+        "text": " Maybe we could figure out something that the runner ups get or something."
+      },
+      {
+        "start": 376978,
+        "stop": 377130,
+        "text": " Are you on Mastodon?"
+      },
+      {
+        "start": 377130,
+        "stop": 377338,
+        "text": " Do you do the Mastodon?"
+      },
+      {
+        "start": 377338,
+        "stop": 377618,
+        "text": " Yes, I still haven't figured out how to tell people where."
+      },
+      {
+        "start": 377618,
+        "stop": 377718,
+        "text": " I don't even know."
+      },
+      {
+        "start": 377718,
+        "stop": 378022,
+        "text": " I'd have to pull my phone out and look at it and I'd..."
+      },
+      {
+        "start": 378022,
+        "stop": 378122,
+        "text": " Nah."
+      },
+      {
+        "start": 378122,
+        "stop": 378222,
+        "text": " Maybe they'll just search for you on there."
+      },
+      {
+        "start": 378222,
+        "stop": 378322,
+        "text": " I'm on there too."
+      },
+      {
+        "start": 378322,
+        "stop": 378630,
+        "text": " It turns out I've been a Mastodon user since 2017."
+      },
+      {
+        "start": 378630,
+        "stop": 378966,
+        "text": " I just didn't remember."
+      },
+      {
+        "start": 378966,
+        "stop": 379142,
+        "text": " I found out live during LUP."
+      },
+      {
+        "start": 379142,
+        "stop": 379242,
+        "text": " No, no, no."
+      },
+      {
+        "start": 379242,
+        "stop": 379634,
+        "text": " A listener reminded you that you had an account from 2017."
+      },
+      {
+        "start": 379634,
+        "stop": 379782,
+        "text": " All right."
+      },
+      {
+        "start": 379782,
+        "stop": 380214,
+        "text": " Well, Brent, do you have anywhere in particular you want to send the folks to find you?"
+      },
+      {
+        "start": 380214,
+        "stop": 380418,
+        "text": " I guess Linux Unplugged and Office Hours."
+      },
+      {
+        "start": 380418,
+        "stop": 380658,
+        "text": " Yeah, Linux Unplugged and Office Hours as well."
+      },
+      {
+        "start": 380658,
+        "stop": 381124,
+        "text": " And I feel right on topic would be suggesting that you find me in Jupyter Broadcasting's"
+      },
+      {
+        "start": 381124,
+        "stop": 381224,
+        "text": " Matrix server."
+      },
+      {
+        "start": 381224,
+        "stop": 381324,
+        "text": " Yep."
+      },
+      {
+        "start": 381324,
+        "stop": 381914,
+        "text": " And of course, we should mention that we lurk in the Discord as well, selfhosted.show/discord,"
+      },
+      {
+        "start": 381914,
+        "stop": 382154,
+        "text": " and that's what we pull up during our live stream."
+      },
+      {
+        "start": 382154,
+        "stop": 382290,
+        "text": " And that is a really great place."
+      },
+      {
+        "start": 382290,
+        "stop": 382742,
+        "text": " There's lots of rooms in there talking about everything and everything not related to selfhosted."
+      },
+      {
+        "start": 382742,
+        "stop": 382856,
+        "text": " It's a pretty great place."
+      },
+      {
+        "start": 382856,
+        "stop": 383030,
+        "text": " So you can find that on our website."
+      },
+      {
+        "start": 383030,
+        "stop": 383262,
+        "text": " All that's linked at selfhosted.show."
+      },
+      {
+        "start": 383262,
+        "stop": 383406,
+        "text": " As always, thanks for listening, everybody."
+      },
+      {
+        "start": 383406,
+        "stop": 383706,
+        "text": " That was selfhosted.show/87."
+      },
+      {
+        "start": 383706,
+        "stop": 383922,
+        "text": " [MUSIC PLAYING]"
+      }
+    ],
+    "processing_time": {
+      "secs": 1978,
+      "nanos": 455019091
+    }
+  },
+  "metadata": {
+    "title": "Self-Hosted 87: Jellyfin January",
+    "pictures": [],
+    "duration": {
+      "secs": 3820,
+      "nanos": 648000000
+    },
+    "unique_id": "http://selfhosted.show/87"
+  },
+  "episode": {
+    "title": "Jellyfin January | Self-Hosted 87",
+    "description": "We kick off our Jellyfin January challenge and invite you to join us. Plus, Chris has some new hardware and our thoughts on the trouble at the Matrix foundation. Special Guest: Brent Gervais.",
+    "content": "<p><p>We kick off our Jellyfin January challenge and invite you to join us. Plus, Chris has some new hardware and our thoughts on the trouble at the Matrix foundation.</p><p>Special Guest: Brent Gervais.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/ssh\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/ssh\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/ssh</li><li><a href=\"https://crowdstrike.com/lce\" rel=\"nofollow\">LogScale</a>: <a href=\"https://crowdstrike.com/lce\" rel=\"nofollow\">Take logs from any source and make them usable. Get started with LogScale Community Edition for free.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53744\" rel=\"payment\">Support Self-Hosted</a></p><p>Links:</p><ul><li><a href=\"https://www.home-assistant.io/skyconnect/\" title=\"Home Assistant SkyConnect\" rel=\"nofollow\">Home Assistant SkyConnect</a> &mdash; The Home Assistant SkyConnect is the easiest way to add Zigbee support to your Home Assistant instance and make it Matter-ready. </li><li><a href=\"https://www.amazon.com/EAP245-Wireless-seamless-Supports-Injector/dp/B07NMZR3F1?th=1\" title=\"Amazon.com: TP-Link EAP245 V3\" rel=\"nofollow\">Amazon.com: TP-Link EAP245 V3</a></li><li><a href=\"https://www.ebay.com/itm/313957935457\" title=\"TP-Link EAP245 V3 on eBay\" rel=\"nofollow\">TP-Link EAP245 V3 on eBay</a></li><li><a href=\"https://openwrt.org/toh/hwdata/tp-link/tp-link_eap245_v3\" title=\"[OpenWrt Wiki] Techdata: TP-Link EAP245 v3\" rel=\"nofollow\">[OpenWrt Wiki] Techdata: TP-Link EAP245 v3</a></li><li><a href=\"https://www.youtube.com/watch?v=f-dGcs6bb5U\" title=\"It Took MONTHS to Solve This WiFi Problem but I DID!\" rel=\"nofollow\">It Took MONTHS to Solve This WiFi Problem but I DID!</a> &mdash; My family has been hounding me to figure out an audio issue that's ruining our movie nights. Problem is, it's really a Wi-Fi issue, and diagnosing it - even with cool Wi-Spy tools from MetaGeek - could be quite the rabbithole...</li><li><a href=\"https://jellyfin.org/\" title=\"Jellyfin\" rel=\"nofollow\">Jellyfin</a> &mdash; Jellyfin enables you to collect, manage, and stream your media. Run the Jellyfin server on your system and gain access to the leading free-software entertainment system, bells and whistles included.</li><li><a href=\"https://github.com/jellyfin/Swiftfin\" title=\"Swiftfin: Native Jellyfin Client for iOS and tvOS\" rel=\"nofollow\">Swiftfin: Native Jellyfin Client for iOS and tvOS</a> &mdash; Swiftfin is a modern video client for the Jellyfin media server. Redesigned in Swift to maximize direct play with the power of VLC and look native on all classes of Apple devices. </li><li><a href=\"https://hub.docker.com/r/linuxserver/jellyfin\" title=\"linuxserver/jellyfin - Docker Image\" rel=\"nofollow\">linuxserver/jellyfin - Docker Image</a></li><li><a href=\"https://nixos.wiki/wiki/Jellyfin\" title=\"Jellyfin - NixOS Wiki\" rel=\"nofollow\">Jellyfin - NixOS Wiki</a></li><li><a href=\"https://matrix.org/blog/2022/12/25/the-matrix-holiday-update-2022\" title=\"The Matrix Holiday Update 2022\" rel=\"nofollow\">The Matrix Holiday Update 2022</a> &mdash; This is directly putting core Matrix development at risk. We are witnessing a classic tragedy of the commons.</li><li><a href=\"https://ntfy.sh/\" title=\"ntfy.sh\" rel=\"nofollow\">ntfy.sh</a> &mdash; a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, entirely without signup, cost or setup. It's also open source if you want to run your own. </li><li><a href=\"https://getalby.com/\" title=\"Alby — Lightning buzz for your Browser!\" rel=\"nofollow\">Alby — Lightning buzz for your Browser!</a> &mdash; Alby brings Bitcoin payments to the web with in-browser payments and identity, all with your own wallet.</li><li><a href=\"https://podcastindex.org/podcast/830124\" title=\"Self-Hosted on Podcastindex.org\" rel=\"nofollow\">Self-Hosted on Podcastindex.org</a> &mdash; Send a Boost into the Show from the Podcast Index web page.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9200",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15874377/11dc327e-b5eb-4d9b-b22b-beeba54ce628.mp3",
+      "length": "54035342",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-12-30T03:05:00+01:00"
+  },
+  "speedup": 1.931127
+}

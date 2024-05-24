@@ -1,0 +1,3192 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 152,
+        "stop": 896,
+        "text": " this is coder radio episode 486 for October 3rd 2022"
+      },
+      {
+        "start": 896,
+        "stop": 1888,
+        "text": " hey good buddy welcome into Jupiter broadcasting's weekly talk show taking a"
+      },
+      {
+        "start": 1888,
+        "stop": 2268,
+        "text": " pragmatic look at the art and the business of software development and the"
+      },
+      {
+        "start": 2268,
+        "stop": 2744,
+        "text": " world of technology live from Sacramento California my name is Chris and joining"
+      },
+      {
+        "start": 2744,
+        "stop": 3212,
+        "text": " us hopefully from his place intact it's our host mr. Dominic hello Mike what's"
+      },
+      {
+        "start": 3212,
+        "stop": 3764,
+        "text": " up I am NOT dead now the roof remains a the roof remains my and sadly my"
+      },
+      {
+        "start": 3764,
+        "stop": 4124,
+        "text": " backyard swimming pool I don't have a swimming pool but I did for about two"
+      },
+      {
+        "start": 4124,
+        "stop": 4784,
+        "text": " days has receded back from whence it came thank you for all the well wishes I"
+      },
+      {
+        "start": 4784,
+        "stop": 5268,
+        "text": " tried to keep folks updated who were asking but it you know I was very lucky"
+      },
+      {
+        "start": 5268,
+        "stop": 5700,
+        "text": " so can we talk about the po-po real fast yeah oh yeah tell me about I'm curious"
+      },
+      {
+        "start": 5700,
+        "stop": 6264,
+        "text": " I believe that the reason I did not lose power was because I am on the evacuation"
+      },
+      {
+        "start": 6264,
+        "stop": 6620,
+        "text": " grid with the po-po and the emergency center oh yeah I used to live on a"
+      },
+      {
+        "start": 6620,
+        "stop": 7140,
+        "text": " hospital grid that is the best mm-hmm they keep that they don't care right so"
+      },
+      {
+        "start": 7140,
+        "stop": 7504,
+        "text": " it was very we were very fortunate a lot of folks down here did I took a walk"
+      },
+      {
+        "start": 7504,
+        "stop": 7964,
+        "text": " this morning I'm gonna post them to Twitter there's like a footbridge right"
+      },
+      {
+        "start": 7964,
+        "stop": 8464,
+        "text": " outside my house a tree two trees actually literally crushed it Wow like"
+      },
+      {
+        "start": 8464,
+        "stop": 8828,
+        "text": " big you know I don't know what kind of trees I'm not you know you're not a tree"
+      },
+      {
+        "start": 8828,
+        "stop": 9340,
+        "text": " expert a tree olives an arborist or whatever that is but literally smashed"
+      },
+      {
+        "start": 9340,
+        "stop": 9876,
+        "text": " it so we got extremely lucky it was some intense stuff and you know heart goes"
+      },
+      {
+        "start": 9876,
+        "stop": 10364,
+        "text": " out to all the folks over in Naples and in Fort Myers who really got yeah"
+      },
+      {
+        "start": 10364,
+        "stop": 10800,
+        "text": " shellac people worry you know because you're our Florida man on the job on the"
+      },
+      {
+        "start": 10800,
+        "stop": 11258,
+        "text": " JB now I am so I am her Florida man I mean maybe it's time to I don't know"
+      },
+      {
+        "start": 11258,
+        "stop": 11780,
+        "text": " stop subsidizing crap that destroys the environment just saying as a guy who"
+      },
+      {
+        "start": 11780,
+        "stop": 12272,
+        "text": " just had to deal with this yeah man oof I don't have to deal with those kinds of"
+      },
+      {
+        "start": 12272,
+        "stop": 12518,
+        "text": " storms but I feel like once in my lifetime I'll probably have to deal"
+      },
+      {
+        "start": 12518,
+        "stop": 12950,
+        "text": " with a massive earthquake over here on the Pacific Coast one day I feel like"
+      },
+      {
+        "start": 12950,
+        "stop": 13382,
+        "text": " that's worse yeah probably I think you're probably right you know today is"
+      },
+      {
+        "start": 13382,
+        "stop": 13708,
+        "text": " a not only is it a special episode because you survived another Florida"
+      },
+      {
+        "start": 13708,
+        "stop": 14320,
+        "text": " storm but it's also episode 486 and nice I'm such a nerd I have been waiting for"
+      },
+      {
+        "start": 14320,
+        "stop": 14850,
+        "text": " episode 486 forever that's the number I just your moment this is my moment and I"
+      },
+      {
+        "start": 14850,
+        "stop": 15366,
+        "text": " just wanted to go back in time really briefly and and play a 486 commercial"
+      },
+      {
+        "start": 15366,
+        "stop": 15970,
+        "text": " that really focused on the upgrade ability of the Intel 486 Oh Lord want to"
+      },
+      {
+        "start": 15970,
+        "stop": 16532,
+        "text": " run all your software fast then look for the Intel inside symbol on your next"
+      },
+      {
+        "start": 16532,
+        "stop": 17384,
+        "text": " computer it says you've got a real power source on the inside like the upgrade"
+      },
+      {
+        "start": 17384,
+        "stop": 18136,
+        "text": " able Intel 486 microprocessor power it up and run your software"
+      },
+      {
+        "start": 18136,
+        "stop": 18958,
+        "text": " at light speed Intel the computer inside yeah you got to get that 486 goodness"
+      },
+      {
+        "start": 18958,
+        "stop": 19484,
+        "text": " man you got to have the 486 there was also a commercial at the time and I"
+      },
+      {
+        "start": 19484,
+        "stop": 19936,
+        "text": " wanted to play this because it it's brilliant for the specs listen to the"
+      },
+      {
+        "start": 19936,
+        "stop": 20292,
+        "text": " specs this guy rattles off about his fancy new PC he's buying in the early"
+      },
+      {
+        "start": 20292,
+        "stop": 20696,
+        "text": " 90s it's it's adorable"
+      },
+      {
+        "start": 20696,
+        "stop": 21432,
+        "text": " 86s X 20 megahertz I got a hard drive 100 megabytes to make some memory"
+      },
+      {
+        "start": 21432,
+        "stop": 22216,
+        "text": " and a brand third 24-pin got accessories and software like"
+      },
+      {
+        "start": 22216,
+        "stop": 23668,
+        "text": " yeah man isn't that something super VGA I don't know why that one caught me"
+      },
+      {
+        "start": 23668,
+        "stop": 24284,
+        "text": " particularly but hundred megabyte hard drive hundred maybe that's a lot yeah I"
+      },
+      {
+        "start": 24284,
+        "stop": 24696,
+        "text": " know one day you'll have that in your pocket and one day that'll be what it"
+      },
+      {
+        "start": 24696,
+        "stop": 25128,
+        "text": " cost to open CNN yeah right you know that's why I just I don't know 486 it's"
+      },
+      {
+        "start": 25128,
+        "stop": 25488,
+        "text": " such a I remember I think in part that was really when I came in to like"
+      },
+      {
+        "start": 25488,
+        "stop": 25812,
+        "text": " recognizing there was different processors and computers and that"
+      },
+      {
+        "start": 25812,
+        "stop": 26148,
+        "text": " different processors were faster and started to pay attention a lot more"
+      },
+      {
+        "start": 26148,
+        "stop": 26544,
+        "text": " during the 486 era and I felt it was kind of appropriate that you found this"
+      },
+      {
+        "start": 26544,
+        "stop": 27176,
+        "text": " aqua Emacs or aqua max max baby it looks like it's from this era man they've"
+      },
+      {
+        "start": 27176,
+        "stop": 27524,
+        "text": " updated the copyright on their project as of 2022 so I think they're still"
+      },
+      {
+        "start": 27524,
+        "stop": 28080,
+        "text": " actually actively developing it but the thing is like retro yeah so so when I"
+      },
+      {
+        "start": 28080,
+        "stop": 28640,
+        "text": " first started running Mac OS I was a budding Emacs user and then I was"
+      },
+      {
+        "start": 28640,
+        "stop": 29012,
+        "text": " quickly slapped around we told the story a couple weeks ago and picked up them"
+      },
+      {
+        "start": 29012,
+        "stop": 29360,
+        "text": " but this is the Emacs client I used and the reason I'll put it in the show notes"
+      },
+      {
+        "start": 29360,
+        "stop": 29816,
+        "text": " because I forgot to do that this morning but the reason I put it in is there is a"
+      },
+      {
+        "start": 29816,
+        "stop": 30388,
+        "text": " pretty passionate hacker news thread of Emacs users just saying like we're here"
+      },
+      {
+        "start": 30388,
+        "stop": 30888,
+        "text": " and I have to tell you Chris I've gotten the DMS they are they are here we see"
+      },
+      {
+        "start": 30888,
+        "stop": 31488,
+        "text": " you we love you we're not talking about this anymore no fib don't worry unless"
+      },
+      {
+        "start": 31488,
+        "stop": 31928,
+        "text": " unless one of them ends or like you know like an Emacs contributor shoots a vim"
+      },
+      {
+        "start": 31928,
+        "stop": 32400,
+        "text": " contributor please don't do that or vice versa please don't do that it's we get"
+      },
+      {
+        "start": 32400,
+        "stop": 32940,
+        "text": " it you're there respect check out aqua max I get it you can live in Emacs check"
+      },
+      {
+        "start": 32940,
+        "stop": 33300,
+        "text": " out aqua max if you're on the Mac the best part of aqua max is it looks like"
+      },
+      {
+        "start": 33300,
+        "stop": 34044,
+        "text": " snow leopard so yeah it's that classic classic classic Mac OS look oh man I"
+      },
+      {
+        "start": 34044,
+        "stop": 34508,
+        "text": " sincerely wish we had never mentioned vim or Emacs on the show yeah yeah that"
+      },
+      {
+        "start": 34508,
+        "stop": 34764,
+        "text": " was a mistake you know what else it was also a mistake to admit that I was gonna"
+      },
+      {
+        "start": 34764,
+        "stop": 35196,
+        "text": " try a new Android ROM but I'm here for it I'm ready for it Francis writes in and"
+      },
+      {
+        "start": 35196,
+        "stop": 35624,
+        "text": " says check out calyx you should check out calyx OS or calyx I'm not sure how"
+      },
+      {
+        "start": 35624,
+        "stop": 36016,
+        "text": " you pronounce it c-a-l-y-x or calyx OS sounds a lot like calyx though wait a"
+      },
+      {
+        "start": 36016,
+        "stop": 36360,
+        "text": " minute I like this and it's only for pixel devices I believe it's an"
+      },
+      {
+        "start": 36360,
+        "stop": 36680,
+        "text": " alternative to something like main Android or graphene they both have a"
+      },
+      {
+        "start": 36680,
+        "stop": 37104,
+        "text": " similar niche but calyx or calyx has a built-in firewall I've been using I'm"
+      },
+      {
+        "start": 37104,
+        "stop": 37536,
+        "text": " very happy and Sasha wrote in and said I recently got a pixel 5 and I loaded up"
+      },
+      {
+        "start": 37536,
+        "stop": 38044,
+        "text": " with calyx OS and it's been great unlike graphene calyx OS comes with micro G"
+      },
+      {
+        "start": 38044,
+        "stop": 38448,
+        "text": " which means I can still install Play Store apps via the Aurora store app they"
+      },
+      {
+        "start": 38448,
+        "stop": 38908,
+        "text": " also use an app called shelter there's been some paper cuts but so far they"
+      },
+      {
+        "start": 38908,
+        "stop": 39336,
+        "text": " like it a lot and it's still a Google phone to some degree but it's a better"
+      },
+      {
+        "start": 39336,
+        "stop": 39822,
+        "text": " compromise I of course put on graphene OS on my pixel device recently so now"
+      },
+      {
+        "start": 39822,
+        "stop": 40084,
+        "text": " that I put on graphene OS I'm hearing from everybody that I should be using"
+      },
+      {
+        "start": 40084,
+        "stop": 40432,
+        "text": " calyx OS which is exactly what happened back in the day when I used to put ROMs"
+      },
+      {
+        "start": 40432,
+        "stop": 40804,
+        "text": " on my old Android devices I would do it and then immediately be told by"
+      },
+      {
+        "start": 40804,
+        "stop": 41044,
+        "text": " everybody that I use the wrong ROM when I should try out this totally different"
+      },
+      {
+        "start": 41044,
+        "stop": 41780,
+        "text": " ROM and it feels like I'm right back in that again however I do feel like"
+      },
+      {
+        "start": 41780,
+        "stop": 42312,
+        "text": " perhaps what it is is that graphene OS skews more towards the privacy conscious"
+      },
+      {
+        "start": 42312,
+        "stop": 42772,
+        "text": " and I think there's a spectrum here and I think the calyx folks are maybe more"
+      },
+      {
+        "start": 42772,
+        "stop": 43240,
+        "text": " traditionally lineage type lineage type folks that they want to they want a lot"
+      },
+      {
+        "start": 43240,
+        "stop": 43508,
+        "text": " of the functionality of their smartphone they just want to be a little bit more"
+      },
+      {
+        "start": 43508,
+        "stop": 44164,
+        "text": " removed from Google where graphene OS has taken some plumbing improvements like"
+      },
+      {
+        "start": 44164,
+        "stop": 44788,
+        "text": " they're using SE Linux to sandbox Google Play and the Google Play services so you"
+      },
+      {
+        "start": 44788,
+        "stop": 45076,
+        "text": " can actually install Google Play services in the Google Play Store on"
+      },
+      {
+        "start": 45076,
+        "stop": 45676,
+        "text": " graphene OS run them in a sandbox that prevents access outside of that sandbox"
+      },
+      {
+        "start": 45676,
+        "stop": 46208,
+        "text": " where on calyx or calyx or however you say it they're using micro G which is a"
+      },
+      {
+        "start": 46208,
+        "stop": 46824,
+        "text": " port it's a reimplementation of the play API and it's partially open source I"
+      },
+      {
+        "start": 46824,
+        "stop": 47352,
+        "text": " believe and there is a aspect of it that runs highly privileged in the system app"
+      },
+      {
+        "start": 47352,
+        "stop": 47844,
+        "text": " domain like the regular play services whereas with graphene OS everything is"
+      },
+      {
+        "start": 47844,
+        "stop": 48380,
+        "text": " sandboxed and they're running the play services at a lower privilege level that"
+      },
+      {
+        "start": 48380,
+        "stop": 48816,
+        "text": " is enforced by SE Linux so that's my big understanding of the two but there is a"
+      },
+      {
+        "start": 48816,
+        "stop": 49208,
+        "text": " whole underbelly here I scratched accidentally there's a lot of people out"
+      },
+      {
+        "start": 49208,
+        "stop": 49864,
+        "text": " there that are getting pixel devices and then they're free flashing them which is"
+      },
+      {
+        "start": 49864,
+        "stop": 50088,
+        "text": " just not what you'd expect right you think that's what people buy other"
+      },
+      {
+        "start": 50088,
+        "stop": 50408,
+        "text": " devices for but they're getting the flagship device and they're reflashing"
+      },
+      {
+        "start": 50408,
+        "stop": 50816,
+        "text": " it well kind of makes sense right there's no carrier nonsense on the pixel"
+      },
+      {
+        "start": 50816,
+        "stop": 51328,
+        "text": " if you buy it from Google I think mmm right well if you flash it doesn't even"
+      },
+      {
+        "start": 51328,
+        "stop": 51844,
+        "text": " matter you wipe it out anyway so yeah okay yeah I guess I could see that right"
+      },
+      {
+        "start": 51844,
+        "stop": 52240,
+        "text": " it's probably one of the easier devices at this point because you used to have"
+      },
+      {
+        "start": 52240,
+        "stop": 52536,
+        "text": " manufacturers that would make devices for that community and they've kind of"
+      },
+      {
+        "start": 52536,
+        "stop": 53032,
+        "text": " backed off from that and they're decent phones so you're gonna stick with it I"
+      },
+      {
+        "start": 53032,
+        "stop": 53352,
+        "text": " think I'll use graphene for a while I've been pretty happy now that I got the"
+      },
+      {
+        "start": 53352,
+        "stop": 53684,
+        "text": " play services on there and you need the play store if any app has an in-app"
+      },
+      {
+        "start": 53684,
+        "stop": 54260,
+        "text": " purchase basically you know so that's where I got hung up I had I had I wanted"
+      },
+      {
+        "start": 54260,
+        "stop": 54760,
+        "text": " to put photosync on there and to get access to the cloud services I I needed"
+      },
+      {
+        "start": 54760,
+        "stop": 55060,
+        "text": " to pay for it and so I was like that started the whole process and then if"
+      },
+      {
+        "start": 55060,
+        "stop": 55504,
+        "text": " you have an eSIM you need the play services to activate the eSIM - really"
+      },
+      {
+        "start": 55504,
+        "stop": 55944,
+        "text": " basically hooked it into everything oh yeah so that's okay you know we've kind"
+      },
+      {
+        "start": 55944,
+        "stop": 56276,
+        "text": " of dropped the Android play services thread but I remember years ago we used"
+      },
+      {
+        "start": 56276,
+        "stop": 56612,
+        "text": " to talk about how oh no they're putting more stuff in play services so now it's"
+      },
+      {
+        "start": 56612,
+        "stop": 57052,
+        "text": " like you want to activate your sim gotta have this play services yeah yeah okay"
+      },
+      {
+        "start": 57052,
+        "stop": 57588,
+        "text": " yep and eSIMs are really taking off now yep so I'm not a huge fan of that I"
+      },
+      {
+        "start": 57588,
+        "stop": 57952,
+        "text": " think graphene OS is a little more secure too in the way it launches"
+      },
+      {
+        "start": 57952,
+        "stop": 58304,
+        "text": " processes so overall it's like if you're trying to get away from Google it seems"
+      },
+      {
+        "start": 58304,
+        "stop": 58636,
+        "text": " like that's the way to go to me and I'm I think I'm missing something because"
+      },
+      {
+        "start": 58636,
+        "stop": 59012,
+        "text": " Calyx obviously has a lot of people that like it and I know the founder has a"
+      },
+      {
+        "start": 59012,
+        "stop": 59440,
+        "text": " little bit of a celebrity around him for Calyx and I think that might be playing"
+      },
+      {
+        "start": 59440,
+        "stop": 59848,
+        "text": " a factor as well but I can't quite tell I'm such a noob to all of this that I'm"
+      },
+      {
+        "start": 59848,
+        "stop": 60220,
+        "text": " kind of discovering it as I dive in and then people tell me oh but did you try"
+      },
+      {
+        "start": 60220,
+        "stop": 60752,
+        "text": " which is exactly what happens on Linux you know try Ubuntu oh you better get"
+      },
+      {
+        "start": 60752,
+        "stop": 61256,
+        "text": " Seuss tell me about it so so I have two side tangents here because that's why we"
+      },
+      {
+        "start": 61256,
+        "stop": 61700,
+        "text": " waste our time running show notes one did you see you probably didn't cuz"
+      },
+      {
+        "start": 61700,
+        "stop": 62244,
+        "text": " you're on the road that very quietly very sneakily Apple announced that they"
+      },
+      {
+        "start": 62244,
+        "stop": 62632,
+        "text": " can no longer activate the data plan and you can no longer hotspot just through"
+      },
+      {
+        "start": 62632,
+        "stop": 63124,
+        "text": " the iPad settings app on iPads oh no that was like a great feature you got to"
+      },
+      {
+        "start": 63124,
+        "stop": 63516,
+        "text": " go talk to those carriers but that was great I used to use it so this is like"
+      },
+      {
+        "start": 63516,
+        "stop": 63996,
+        "text": " you know back do you remember the old days Chris when you could travel freely"
+      },
+      {
+        "start": 63996,
+        "stop": 64676,
+        "text": " stay a while and listen all levels of strist um yeah I used to take an iPad"
+      },
+      {
+        "start": 64676,
+        "stop": 65214,
+        "text": " because no matter what I could have connectivity and if at the time I was a"
+      },
+      {
+        "start": 65214,
+        "stop": 65628,
+        "text": " T-mobile customer and you know they were T-mobile I know they're better now"
+      },
+      {
+        "start": 65628,
+        "stop": 66156,
+        "text": " but if they suck I would just do the one month like $30 Verizon thing and be like"
+      },
+      {
+        "start": 66156,
+        "stop": 66580,
+        "text": " whatever I'll do Verizon while I'm in it's usually like Colorado or North"
+      },
+      {
+        "start": 66580,
+        "stop": 66940,
+        "text": " Carolina somewhere like that and you could do it all from the settings app"
+      },
+      {
+        "start": 66940,
+        "stop": 67340,
+        "text": " inside there just right there right so even if my phone which had T-mobile"
+      },
+      {
+        "start": 67340,
+        "stop": 67680,
+        "text": " service was crappy well I had this Verizon connection in a pinch if I had"
+      },
+      {
+        "start": 67680,
+        "stop": 68130,
+        "text": " the tether or whatever and I never had to talk to a sales rep this was the key"
+      },
+      {
+        "start": 68130,
+        "stop": 68736,
+        "text": " right I get locked into some other plan those were the days yeah that was nice"
+      },
+      {
+        "start": 68736,
+        "stop": 69168,
+        "text": " I'm sure it must have been carrier pressure over time to get rid of that"
+      },
+      {
+        "start": 69168,
+        "stop": 69512,
+        "text": " yeah they feel like the carriers hated that it's funny how those things"
+      },
+      {
+        "start": 69512,
+        "stop": 70092,
+        "text": " quietly happened because you're right I had not seen that yeah turds yeah sneak"
+      },
+      {
+        "start": 70092,
+        "stop": 70434,
+        "text": " it in that's probably all my thoughts on graph you know it's I'm still so new"
+      },
+      {
+        "start": 70434,
+        "stop": 70776,
+        "text": " I'm still trying to learn so do let me know I mean it's getting to be a bit"
+      },
+      {
+        "start": 70776,
+        "stop": 71012,
+        "text": " much but I would like to know your thoughts on what I brought up today"
+      },
+      {
+        "start": 71012,
+        "stop": 71534,
+        "text": " coder.show/contact or you can boost it in but then just a little PSA our"
+      },
+      {
+        "start": 71534,
+        "stop": 71926,
+        "text": " last meetup on this West Coast tour is happening the Friday that this episode"
+      },
+      {
+        "start": 71926,
+        "stop": 72420,
+        "text": " goes out so coming up on the 6th of October in Portland we have our last"
+      },
+      {
+        "start": 72420,
+        "stop": 72920,
+        "text": " meetup meetup.com / Jupiter broadcasting and I'm heading home kind of sad but"
+      },
+      {
+        "start": 72920,
+        "stop": 73460,
+        "text": " also relieved from a technical standpoint this road trip has been very"
+      },
+      {
+        "start": 73460,
+        "stop": 73826,
+        "text": " hard probably hard enough that this is the last road trip like this I'm ever"
+      },
+      {
+        "start": 73826,
+        "stop": 74264,
+        "text": " gonna do so this is the end of an era in some ways and the last meetup of that"
+      },
+      {
+        "start": 74264,
+        "stop": 74614,
+        "text": " era hmm I'm gonna come up with something else but I think I'm done"
+      },
+      {
+        "start": 74614,
+        "stop": 74892,
+        "text": " doing this format and you know what I thought this is gonna be the one mic I"
+      },
+      {
+        "start": 74892,
+        "stop": 75410,
+        "text": " thought this would be road trip by the numbers because listener Jeff has been"
+      },
+      {
+        "start": 75410,
+        "stop": 75860,
+        "text": " an MVP of this road trip he set us up with a great parking spot at his place"
+      },
+      {
+        "start": 75860,
+        "stop": 76328,
+        "text": " in Sacramento with power and most importantly of course it's secure and it"
+      },
+      {
+        "start": 76328,
+        "stop": 76796,
+        "text": " could be locked up why we went down to Pasadena and internet he gave us"
+      },
+      {
+        "start": 76796,
+        "stop": 77114,
+        "text": " Ethernet so I thought Jesus is gonna be we're gonna we're gonna be we're gonna"
+      },
+      {
+        "start": 77114,
+        "stop": 77434,
+        "text": " be stationary I'm gonna have Ethernet connectivity I'm gonna have power"
+      },
+      {
+        "start": 77434,
+        "stop": 77952,
+        "text": " hookups what could go wrong right instead I had multiple devices fail in"
+      },
+      {
+        "start": 77952,
+        "stop": 78492,
+        "text": " the studio that I rely on and then I had a software update here in the RV that"
+      },
+      {
+        "start": 78492,
+        "stop": 78824,
+        "text": " happened in the background and changed the functionality of one of my"
+      },
+      {
+        "start": 78824,
+        "stop": 79168,
+        "text": " applications so you can no longer select the input and output for audio devices"
+      },
+      {
+        "start": 79168,
+        "stop": 79692,
+        "text": " which was a fundamental feature that I used and then of course we had routing"
+      },
+      {
+        "start": 79692,
+        "stop": 80148,
+        "text": " problems and all it just has been it has been a nightmare an absolute nightmare"
+      },
+      {
+        "start": 80148,
+        "stop": 80472,
+        "text": " so I think this is the last one I'm gonna do and I'll come up with a new"
+      },
+      {
+        "start": 80472,
+        "stop": 80856,
+        "text": " I'll come up with a new way to get out and see folks in the future so meetup"
+      },
+      {
+        "start": 80856,
+        "stop": 81324,
+        "text": " comm slash Jupiter broadcasting for the last meetup on the West Coast road tour"
+      },
+      {
+        "start": 81324,
+        "stop": 81684,
+        "text": " and probably the last meetup of this type of trip I think that's just"
+      },
+      {
+        "start": 81684,
+        "stop": 82116,
+        "text": " probably the way it's got to go just the way it is as they say and that West"
+      },
+      {
+        "start": 82116,
+        "stop": 82532,
+        "text": " Coast room will continue the West Coast crew at on our matrix server at bit.ly"
+      },
+      {
+        "start": 82532,
+        "stop": 83060,
+        "text": " slash West Coast crew that'll remain and as we figure out future events and stuff"
+      },
+      {
+        "start": 83060,
+        "stop": 83412,
+        "text": " like that we'll let people in the area know in there so check that out too."
+      },
+      {
+        "start": 83412,
+        "stop": 83936,
+        "text": " Well we all saw this one coming but I think it still is worth mentioning and"
+      },
+      {
+        "start": 83936,
+        "stop": 84376,
+        "text": " analyzing a little bit Google has announced that they'll be winding down"
+      },
+      {
+        "start": 84376,
+        "stop": 85068,
+        "text": " Stadia in January 2023 and TechCrunch wrote a piece and I completely agree"
+      },
+      {
+        "start": 85068,
+        "stop": 85748,
+        "text": " that says Stadia died because no one trusts Google they say it's that simple"
+      },
+      {
+        "start": 85748,
+        "stop": 86328,
+        "text": " it's a kind of like the writing was on the wall when Stadia launched Google has"
+      },
+      {
+        "start": 86328,
+        "stop": 86680,
+        "text": " exhibited such a poor understanding of what people want they write what they"
+      },
+      {
+        "start": 86680,
+        "stop": 87100,
+        "text": " need and will pay for at this point that people are wary of investing even it's"
+      },
+      {
+        "start": 87100,
+        "stop": 87916,
+        "text": " more popular products. I think you probably agree with that. I don't actually"
+      },
+      {
+        "start": 87916,
+        "stop": 88616,
+        "text": " I mean I do agree you shouldn't trust Google but I think there are just two"
+      },
+      {
+        "start": 88616,
+        "stop": 89092,
+        "text": " fundamental flaws kind of higher level have you seen the state of high-speed"
+      },
+      {
+        "start": 89092,
+        "stop": 89672,
+        "text": " internet in the US? Yeah. Like this is not a Stadia specific problem but until you"
+      },
+      {
+        "start": 89672,
+        "stop": 90204,
+        "text": " know the dragon that is Comcast and all the other ISPs are somehow forced to be"
+      },
+      {
+        "start": 90204,
+        "stop": 90624,
+        "text": " dumb pipes where this is all you know made into a utility all of municipal"
+      },
+      {
+        "start": 90624,
+        "stop": 91244,
+        "text": " files effectively right fiber optics. I don't think folks outside the US"
+      },
+      {
+        "start": 91244,
+        "stop": 91660,
+        "text": " particularly folks who have better internet like South Korea and much of"
+      },
+      {
+        "start": 91660,
+        "stop": 92124,
+        "text": " Europe can really understand just how shitty the situation is here. I'm pretty"
+      },
+      {
+        "start": 92124,
+        "stop": 92536,
+        "text": " lucky that I live in a place where for some insane reason Verizon used to be"
+      },
+      {
+        "start": 92536,
+        "stop": 92904,
+        "text": " here and laid a fiber optic line and now some company called frontier is happy to"
+      },
+      {
+        "start": 92904,
+        "stop": 93360,
+        "text": " sell it to me but they're not making more we've talked about it before but"
+      },
+      {
+        "start": 93360,
+        "stop": 93788,
+        "text": " this is a huge problem right the city of New York paid Verizon and I'm not just"
+      },
+      {
+        "start": 93788,
+        "stop": 94332,
+        "text": " picking on Verizon but they're easy target to fiber up all of New York City"
+      },
+      {
+        "start": 94332,
+        "stop": 94720,
+        "text": " and Verizon just like didn't do it right it just turned out that it's too hard"
+      },
+      {
+        "start": 94720,
+        "stop": 95264,
+        "text": " too much money there's lots of arguments about regulations and why does it cost"
+      },
+      {
+        "start": 95264,
+        "stop": 95580,
+        "text": " you know to bill a mile of road in the US is like five times what it costs"
+      },
+      {
+        "start": 95580,
+        "stop": 96024,
+        "text": " anywhere else the answer is because you can sue anyone for any reason that's"
+      },
+      {
+        "start": 96024,
+        "stop": 96792,
+        "text": " probably bad regardless of why the fact is the we still have internet caps in a"
+      },
+      {
+        "start": 96792,
+        "stop": 97232,
+        "text": " lot of places many places have just one provider who gives you the crappiest"
+      },
+      {
+        "start": 97232,
+        "stop": 97824,
+        "text": " service possible and that's just a challenge for streaming gaming the the"
+      },
+      {
+        "start": 97824,
+        "stop": 98476,
+        "text": " other thing I think is kind of I guess maybe misguided here is the problem if"
+      },
+      {
+        "start": 98476,
+        "stop": 99092,
+        "text": " you're a VP at Google is you need to make an impact on the scale of Adsense"
+      },
+      {
+        "start": 99092,
+        "stop": 99820,
+        "text": " and search and YouTube it might probably just wasn't worth it right these guys"
+      },
+      {
+        "start": 99820,
+        "stop": 100204,
+        "text": " are careerist these are business guys they're not you know they're not like"
+      },
+      {
+        "start": 100204,
+        "stop": 100848,
+        "text": " super into the tech side of things maybe we can take a flashback in time when I"
+      },
+      {
+        "start": 100848,
+        "stop": 101468,
+        "text": " was a kid I got the Sega Channel and I don't are you familiar with this at all"
+      },
+      {
+        "start": 101468,
+        "stop": 102012,
+        "text": " Chris is it a channel no no I don't think I am this is an ancient precursor"
+      },
+      {
+        "start": 102012,
+        "stop": 102432,
+        "text": " to this game streaming stuff that was run over coax it was a partnership"
+      },
+      {
+        "start": 102432,
+        "stop": 103076,
+        "text": " between Sega of America and I think Cox cable okay and it was literally this"
+      },
+      {
+        "start": 103076,
+        "stop": 103556,
+        "text": " idea you put this thing in your Genesis they ran a coax line and you could play"
+      },
+      {
+        "start": 103556,
+        "stop": 104060,
+        "text": " a wide library of Sega games because at the time Sega would just pitch the"
+      },
+      {
+        "start": 104060,
+        "stop": 104444,
+        "text": " publishers a little bit of money and they like yeah sure we'll let you do"
+      },
+      {
+        "start": 104444,
+        "stop": 104812,
+        "text": " this because nobody had it it worked fine because there were 16-bit games"
+      },
+      {
+        "start": 104812,
+        "stop": 105236,
+        "text": " Wow this is back in 94 I'd never even heard of this yeah this was in the in"
+      },
+      {
+        "start": 105236,
+        "stop": 105762,
+        "text": " the mid 90s things have changed quite a bit right and the reason I didn't have"
+      },
+      {
+        "start": 105762,
+        "stop": 106098,
+        "text": " it for very long is because they canceled it they canceled it meaning"
+      },
+      {
+        "start": 106098,
+        "stop": 106520,
+        "text": " Sega and and whatever thing I think it was Cox it was Cox or cable vision at"
+      },
+      {
+        "start": 106520,
+        "stop": 107198,
+        "text": " the time I can't remember but this idea is one not new and it always hits the"
+      },
+      {
+        "start": 107198,
+        "stop": 107966,
+        "text": " same problem of the ISPs do not want to give you the bandwidth you need because"
+      },
+      {
+        "start": 107966,
+        "stop": 108404,
+        "text": " they simply don't have to write in this bandwidth paying performance all that"
+      },
+      {
+        "start": 108404,
+        "stop": 108986,
+        "text": " stuff reliability a lot of folks down here are realizing after Ian that oh it"
+      },
+      {
+        "start": 108986,
+        "stop": 109440,
+        "text": " turns out if there's only one ISP in the neighborhood they're kind of not you"
+      },
+      {
+        "start": 109440,
+        "stop": 109828,
+        "text": " know paying overtime and double timing it to get you back connected right right"
+      },
+      {
+        "start": 109828,
+        "stop": 110338,
+        "text": " which is you know this is I'll put on my my little commie hat which my inner my"
+      },
+      {
+        "start": 110338,
+        "stop": 110774,
+        "text": " inner elephant will die a little bit but if something is essential it's not a"
+      },
+      {
+        "start": 110774,
+        "stop": 111404,
+        "text": " product it's utility right this this is probably just a utility and if you look"
+      },
+      {
+        "start": 111404,
+        "stop": 111752,
+        "text": " at some other countries the reason they don't have this set of problems is"
+      },
+      {
+        "start": 111752,
+        "stop": 112280,
+        "text": " because they treat connectivity and my mind correctly as either a pure utility"
+      },
+      {
+        "start": 112280,
+        "stop": 112612,
+        "text": " or a pseudo utility yeah we definitely seem like we've crossed that threshold"
+      },
+      {
+        "start": 112612,
+        "stop": 113124,
+        "text": " yeah I mean kids were going through school over the internet right that that"
+      },
+      {
+        "start": 113124,
+        "stop": 113424,
+        "text": " should have been just like it that's the line it's over there's this should not"
+      },
+      {
+        "start": 113424,
+        "stop": 113800,
+        "text": " be a for-profit or utilities are technically for profit but you know a"
+      },
+      {
+        "start": 113800,
+        "stop": 114340,
+        "text": " regulated best service minimal price industry what that said you solve the"
+      },
+      {
+        "start": 114340,
+        "stop": 114700,
+        "text": " problem of it was never gonna be big enough for the VP that ran this or"
+      },
+      {
+        "start": 114700,
+        "stop": 115136,
+        "text": " whatever the guy's title is to actually care right if you're a Google and you"
+      },
+      {
+        "start": 115136,
+        "stop": 115672,
+        "text": " want to advance you need to be in you know Adsense search YouTube right maybe"
+      },
+      {
+        "start": 115672,
+        "stop": 116084,
+        "text": " if you're lucky you can use this to parlay your way into a more influential"
+      },
+      {
+        "start": 116084,
+        "stop": 116716,
+        "text": " position right god it's horrible but you're probably right I think too on top"
+      },
+      {
+        "start": 116716,
+        "stop": 117224,
+        "text": " of that so there's the aspect of just really poor internet connectivity in the"
+      },
+      {
+        "start": 117224,
+        "stop": 117776,
+        "text": " States which is the primary market for this thing but additionally you have on"
+      },
+      {
+        "start": 117776,
+        "stop": 118164,
+        "text": " the flip side maybe folks that are living in the cities or living where"
+      },
+      {
+        "start": 118164,
+        "stop": 118548,
+        "text": " connectivity is is really quite good maybe they have gigabit things like that"
+      },
+      {
+        "start": 118548,
+        "stop": 118976,
+        "text": " well then they're probably more in a position to buy a gaming console or to"
+      },
+      {
+        "start": 118976,
+        "stop": 119436,
+        "text": " build a gaming PC right so then where you have perhaps really great"
+      },
+      {
+        "start": 119436,
+        "stop": 119734,
+        "text": " connectivity you kind of have this issue where they already have the gear they"
+      },
+      {
+        "start": 119734,
+        "stop": 120068,
+        "text": " want they've already bought their games on steam or from Nintendo and so they're"
+      },
+      {
+        "start": 120068,
+        "stop": 120552,
+        "text": " not really the ideal customer either so there's just this middle customer that"
+      },
+      {
+        "start": 120552,
+        "stop": 121036,
+        "text": " is I think like what you're saying a pretty small niche here well also let's"
+      },
+      {
+        "start": 121036,
+        "stop": 121328,
+        "text": " just assume you have the connectivity like you're saying like I was a stadia"
+      },
+      {
+        "start": 121328,
+        "stop": 121808,
+        "text": " customer but it never made sense you you have to stream it plus buy the game you"
+      },
+      {
+        "start": 121808,
+        "stop": 122092,
+        "text": " could buy for two hundred and something dollars I mean three hundred bucks"
+      },
+      {
+        "start": 122092,
+        "stop": 122508,
+        "text": " whatever it is an Xbox s and then ten bucks a month you get Xbox game pass"
+      },
+      {
+        "start": 122508,
+        "stop": 123006,
+        "text": " fifteen you get game pass ultimate and not only did it work better that was it"
+      },
+      {
+        "start": 123006,
+        "stop": 123408,
+        "text": " you just it was like Netflix for gaming right yeah that I think was a killer too"
+      },
+      {
+        "start": 123408,
+        "stop": 123968,
+        "text": " for stadia was just having to pay 60 bucks for a game for a service you knew"
+      },
+      {
+        "start": 123968,
+        "stop": 124528,
+        "text": " inevitably was gonna die but now speaking to that though Google has kind"
+      },
+      {
+        "start": 124528,
+        "stop": 125046,
+        "text": " of done the right thing here and they've offered full refunds on the stadia"
+      },
+      {
+        "start": 125046,
+        "stop": 125348,
+        "text": " hardware if anybody bought the controller or the Chromecast Ultra and"
+      },
+      {
+        "start": 125348,
+        "stop": 125848,
+        "text": " games they bought which I did yeah I'm happy yeah I mean I guess why it's not a"
+      },
+      {
+        "start": 125848,
+        "stop": 126488,
+        "text": " big controversy right now it's also well you should have seen Twitter it's also"
+      },
+      {
+        "start": 126488,
+        "stop": 126904,
+        "text": " quite the admission that yeah we were just shooting this you know back of the"
+      },
+      {
+        "start": 126904,
+        "stop": 127484,
+        "text": " shed yeah you have a link to on live in here and that's a name that's a name"
+      },
+      {
+        "start": 127484,
+        "stop": 127836,
+        "text": " young Luke I haven't heard and I mean I've wanted this for a long time you've"
+      },
+      {
+        "start": 127836,
+        "stop": 128288,
+        "text": " all wanted this yeah I was an on live user back in like 2012 when they were"
+      },
+      {
+        "start": 128288,
+        "stop": 128604,
+        "text": " you know so I think it was like 2010 2011 somewhere in there they launched"
+      },
+      {
+        "start": 128604,
+        "stop": 129128,
+        "text": " the beta and I got in on that oh man and I even liked that I have always wanted"
+      },
+      {
+        "start": 129128,
+        "stop": 129668,
+        "text": " this as a Linux user who wants access to more games I've wanted this because this"
+      },
+      {
+        "start": 129668,
+        "stop": 130016,
+        "text": " seemed like a viable solution and then when stadia came along and they're like"
+      },
+      {
+        "start": 130016,
+        "stop": 130340,
+        "text": " we're gonna stream you games but you got to port your games to Linux and Vulcan I"
+      },
+      {
+        "start": 130340,
+        "stop": 130708,
+        "text": " thought well maybe the weight of Google and the popularity if they integrate it"
+      },
+      {
+        "start": 130708,
+        "stop": 131000,
+        "text": " with something like YouTube or if they could integrate it with some of their"
+      },
+      {
+        "start": 131000,
+        "stop": 131302,
+        "text": " more popular products it was one click link and now you're in stadia and you're"
+      },
+      {
+        "start": 131302,
+        "stop": 131632,
+        "text": " gaming you don't have to buy anything that would have taken off like wildfire"
+      },
+      {
+        "start": 131632,
+        "stop": 132064,
+        "text": " I thought but they didn't go that way and it didn't inevitably convince very"
+      },
+      {
+        "start": 132064,
+        "stop": 132382,
+        "text": " many developers to port their games to Linux or Vulcan and then at the same"
+      },
+      {
+        "start": 132382,
+        "stop": 133072,
+        "text": " time valve came along with proton and improved gaming experience on Linux and"
+      },
+      {
+        "start": 133072,
+        "stop": 133668,
+        "text": " then the deck and it just sort of made stadia seem pointless the only thing"
+      },
+      {
+        "start": 133668,
+        "stop": 134152,
+        "text": " funny about it Mike is that even just two months ago stadia Twitter account"
+      },
+      {
+        "start": 134152,
+        "stop": 134534,
+        "text": " was assuring people that were tweeting them that they were in fact not shutting"
+      },
+      {
+        "start": 134534,
+        "stop": 135210,
+        "text": " down no worries there they said international corporations never lie"
+      },
+      {
+        "start": 135210,
+        "stop": 135794,
+        "text": " yeah I guess they were so cocky when they launched it Google just had the"
+      },
+      {
+        "start": 135794,
+        "stop": 136232,
+        "text": " Dreamcast and the Sega Saturn and those consoles like on display at the Google"
+      },
+      {
+        "start": 136232,
+        "stop": 136712,
+        "text": " campus as like consoles are really dead now they're never coming back after this"
+      },
+      {
+        "start": 136712,
+        "stop": 136984,
+        "text": " you won't believe what we're about to announce and they have these glass"
+      },
+      {
+        "start": 136984,
+        "stop": 137344,
+        "text": " displays of these failed consoles on their front lawn where they usually have"
+      },
+      {
+        "start": 137344,
+        "stop": 137788,
+        "text": " the Android statues in in anticipation of the launch before they made their"
+      },
+      {
+        "start": 137788,
+        "stop": 138320,
+        "text": " announcement I just want to say as a Sega fan like lifelong Sega fan if"
+      },
+      {
+        "start": 138320,
+        "stop": 138936,
+        "text": " you're copying Sega's console business strategy you're you've made a horrible"
+      },
+      {
+        "start": 138936,
+        "stop": 139376,
+        "text": " mistake in fact when they picked up that Dreamcast and that Saturn they should"
+      },
+      {
+        "start": 139376,
+        "stop": 140112,
+        "text": " have said wait a minute this seems bad why are we doing this because the"
+      },
+      {
+        "start": 140112,
+        "stop": 140472,
+        "text": " Dreamcast came out with this Sega started this with the Sega channel on"
+      },
+      {
+        "start": 140472,
+        "stop": 140896,
+        "text": " the Genesis we're gonna pretend the 32x doesn't exist because of you know nobody"
+      },
+      {
+        "start": 140896,
+        "stop": 141376,
+        "text": " bought it was me and two other guys the Dreamcast was the first online gaming"
+      },
+      {
+        "start": 141376,
+        "stop": 141896,
+        "text": " network that was a console it plugged into your 56k modem it was a partnership"
+      },
+      {
+        "start": 141896,
+        "stop": 142444,
+        "text": " with it was epics internet or earth link I can't remember but somebody can"
+      },
+      {
+        "start": 142444,
+        "stop": 143180,
+        "text": " fact-check me and it failed for basically the same reasons just fake"
+      },
+      {
+        "start": 143180,
+        "stop": 143940,
+        "text": " like Sega has been trying to do this since 94 trust me I was there I was"
+      },
+      {
+        "start": 143940,
+        "stop": 144368,
+        "text": " working my teenage job to get a damn dream cast I'm so sad right now never"
+      },
+      {
+        "start": 144368,
+        "stop": 145168,
+        "text": " mind oh it's too soon so the Wall Street Journal written by Christopher Mims over"
+      },
+      {
+        "start": 145168,
+        "stop": 145640,
+        "text": " there has a piece called the next battle between Google and Apple is for the soul"
+      },
+      {
+        "start": 145640,
+        "stop": 146372,
+        "text": " of your car and actually makes a pretty good case that this is heating up"
+      },
+      {
+        "start": 146372,
+        "stop": 146920,
+        "text": " essentially Tesla and some other mobile car creators are basically mobile phone"
+      },
+      {
+        "start": 146920,
+        "stop": 147304,
+        "text": " makers now but other car creators have really upped their game on the"
+      },
+      {
+        "start": 147304,
+        "stop": 147792,
+        "text": " infotainment and so it is now the number one requested feature when customers go"
+      },
+      {
+        "start": 147792,
+        "stop": 148332,
+        "text": " to buy a new car if you can believe it is Apple CarPlay or Google Android Auto"
+      },
+      {
+        "start": 148332,
+        "stop": 149052,
+        "text": " support and the infotainment system is now the number one source of consumer"
+      },
+      {
+        "start": 149052,
+        "stop": 149604,
+        "text": " complaints about new car issues is the crappy infotainment systems and so you"
+      },
+      {
+        "start": 149604,
+        "stop": 150044,
+        "text": " have this situation where the car manufacturers are feeling more and more"
+      },
+      {
+        "start": 150044,
+        "stop": 150504,
+        "text": " pressure to let Google and Apple in to solve this problem for them and of"
+      },
+      {
+        "start": 150504,
+        "stop": 150952,
+        "text": " course Google's solution involves Android automotive which is which is"
+      },
+      {
+        "start": 150952,
+        "stop": 151340,
+        "text": " more extensive than Android Auto same similar name real similar name very dumb"
+      },
+      {
+        "start": 151340,
+        "stop": 151880,
+        "text": " but Android automotive is a full car OS that takes over everything and Google"
+      },
+      {
+        "start": 151880,
+        "stop": 152438,
+        "text": " has announced partnerships with a dozen automakers including Honda BMW Nissan"
+      },
+      {
+        "start": 152438,
+        "stop": 152950,
+        "text": " General Motors the Chevy brands and Apple has announced a dozen launch"
+      },
+      {
+        "start": 152950,
+        "stop": 153384,
+        "text": " partners for their next generation of CarPlay which isn't a whole OS but is an"
+      },
+      {
+        "start": 153384,
+        "stop": 153816,
+        "text": " expanded version of CarPlay that likely depends that on car manufacturers meeting"
+      },
+      {
+        "start": 153816,
+        "stop": 154296,
+        "text": " certain requirements and those include Volvo Ford Honda Mercedes Porsche and"
+      },
+      {
+        "start": 154296,
+        "stop": 154996,
+        "text": " others and we got a little tease of Apple's whole scheme at WWDC where they"
+      },
+      {
+        "start": 154996,
+        "stop": 155380,
+        "text": " showed that CarPlay software taking over the entire instrument cluster from the"
+      },
+      {
+        "start": 155380,
+        "stop": 155884,
+        "text": " over the entire dash with your gas gauge or your charge gauge and your RPMs and"
+      },
+      {
+        "start": 155884,
+        "stop": 156316,
+        "text": " your speed all of that gets taken over by CarPlay now but they haven't yet"
+      },
+      {
+        "start": 156316,
+        "stop": 156874,
+        "text": " announced a dedicated OS and it would seem kind of out of character for Apple"
+      },
+      {
+        "start": 156874,
+        "stop": 157402,
+        "text": " to actually license an OS yeah that's just not really their style it's more"
+      },
+      {
+        "start": 157402,
+        "stop": 157718,
+        "text": " like the manufacturers will have to build to a spec and then Apple will sell"
+      },
+      {
+        "start": 157718,
+        "stop": 158266,
+        "text": " them the OS yeah sit down kill a meal the old no one's asking you yeah this is"
+      },
+      {
+        "start": 158266,
+        "stop": 158814,
+        "text": " like a whole new OS war that is brewing and what scares me about it is that"
+      },
+      {
+        "start": 158814,
+        "stop": 159292,
+        "text": " people making the decisions historically are horrible at software they do suck"
+      },
+      {
+        "start": 159292,
+        "stop": 159758,
+        "text": " it's true where does this take us when you have companies that are building"
+      },
+      {
+        "start": 159758,
+        "stop": 160368,
+        "text": " devices that can kill us that are essential and have a horrible history at"
+      },
+      {
+        "start": 160368,
+        "stop": 160898,
+        "text": " software and UI and now they have to try to bridge this gap and in some cases"
+      },
+      {
+        "start": 160898,
+        "stop": 161514,
+        "text": " like Volvo and others they're gonna have their own OS as well so you have"
+      },
+      {
+        "start": 161514,
+        "stop": 162170,
+        "text": " Volvo car OS which will be running Android automotive in an emulator great"
+      },
+      {
+        "start": 162170,
+        "stop": 162678,
+        "text": " and so you and then you also have like the ECM and you have the other car"
+      },
+      {
+        "start": 162678,
+        "stop": 163066,
+        "text": " computer modules that are also separate but maybe has Volvo software on it that"
+      },
+      {
+        "start": 163066,
+        "stop": 163618,
+        "text": " ties it together follow us that then like runs I guess an API set that"
+      },
+      {
+        "start": 163618,
+        "stop": 164034,
+        "text": " Android automotive can talk to but the whole thing like it sounds horrible it"
+      },
+      {
+        "start": 164034,
+        "stop": 164690,
+        "text": " sounds like it sounds like a massively complicated software stack in a car and"
+      },
+      {
+        "start": 164690,
+        "stop": 165030,
+        "text": " that sounds dangerous to me and I'm wondering if you feel the same way if"
+      },
+      {
+        "start": 165030,
+        "stop": 165574,
+        "text": " you feel opposite if you have any thoughts on this I mean I'm not sure"
+      },
+      {
+        "start": 165574,
+        "stop": 166122,
+        "text": " that we need this but you know I drive a Chevy let me tell you what happens I"
+      },
+      {
+        "start": 166122,
+        "stop": 166790,
+        "text": " look at the non digital gauges and I'm very happy with that I plug in my iPhone"
+      },
+      {
+        "start": 166790,
+        "stop": 167258,
+        "text": " and it does the carplay thing on the you know the - I will tell you when I don't"
+      },
+      {
+        "start": 167258,
+        "stop": 167854,
+        "text": " look into my iPhone whatever horrible operating system Chevrolet has or GM has"
+      },
+      {
+        "start": 167854,
+        "stop": 168530,
+        "text": " put on that it's crap oh it's so bad it's so bad even things like tuning FM"
+      },
+      {
+        "start": 168530,
+        "stop": 168918,
+        "text": " radio stations were easier on my old Chevy that did not have any of this"
+      },
+      {
+        "start": 168918,
+        "stop": 169366,
+        "text": " crap right that was just like it was knobs remember knobs knobs were great"
+      },
+      {
+        "start": 169366,
+        "stop": 170002,
+        "text": " mm-hmm we had a real-world problem in my house of I have so much Apple stuff that"
+      },
+      {
+        "start": 170002,
+        "stop": 170430,
+        "text": " were basically incentivized to always buy the Apple accessory for something or"
+      },
+      {
+        "start": 170430,
+        "stop": 170918,
+        "text": " the Apple compatible accessory right ecosystem so is your car gonna be one of"
+      },
+      {
+        "start": 170918,
+        "stop": 171314,
+        "text": " these things now - where it's like well I have an Apple watch and and I have an"
+      },
+      {
+        "start": 171314,
+        "stop": 171654,
+        "text": " iPhone and I could see like Apple's going into this car crash detection will"
+      },
+      {
+        "start": 171654,
+        "stop": 172238,
+        "text": " it work better if you have an Apple OS powered car I would I would imagine so"
+      },
+      {
+        "start": 172238,
+        "stop": 172630,
+        "text": " right hmm I hadn't even thought of the fact that safety features like that"
+      },
+      {
+        "start": 172630,
+        "stop": 172994,
+        "text": " could be a thing yeah you're right what if I run a car that's running Android OS"
+      },
+      {
+        "start": 172994,
+        "stop": 173394,
+        "text": " but you know I just rent which I used to do all the time before kovat right in a"
+      },
+      {
+        "start": 173394,
+        "stop": 174054,
+        "text": " strange city rent a car right now the situation is most modernish cars that I"
+      },
+      {
+        "start": 174054,
+        "stop": 174418,
+        "text": " rent I can plug in my iPhone and I have my familiar interface by maps saved"
+      },
+      {
+        "start": 174418,
+        "stop": 174878,
+        "text": " destinations all that if I do that in a car running Android OS or there's"
+      },
+      {
+        "start": 174878,
+        "stop": 175194,
+        "text": " Google gonna make a deal with the manufacturer to not allow carplay on"
+      },
+      {
+        "start": 175194,
+        "stop": 175850,
+        "text": " that car right to somehow block that screen where I don't know I feel like if"
+      },
+      {
+        "start": 175850,
+        "stop": 176490,
+        "text": " you wanted to innovate somewhere with vehicles this is me I see why they want"
+      },
+      {
+        "start": 176490,
+        "stop": 176782,
+        "text": " to do it because it's more of like a luxury thing that they can charge for"
+      },
+      {
+        "start": 176782,
+        "stop": 177758,
+        "text": " but how about full electrification right I know that's hard but life is hard you"
+      },
+      {
+        "start": 177758,
+        "stop": 178190,
+        "text": " can do it and don't worry if your GM if you fail the government will just like"
+      },
+      {
+        "start": 178190,
+        "stop": 178534,
+        "text": " make let you do some weird crazy bankruptcy that nobody else gets to do"
+      },
+      {
+        "start": 178534,
+        "stop": 179018,
+        "text": " so there's that right of course and if you're forward you'll realize that the"
+      },
+      {
+        "start": 179018,
+        "stop": 179398,
+        "text": " government's gonna punish you and you'll somehow not file bankruptcy right I'm"
+      },
+      {
+        "start": 179398,
+        "stop": 179890,
+        "text": " just saying I don't know they have little downside risk they can they can"
+      },
+      {
+        "start": 179890,
+        "stop": 180170,
+        "text": " kind of afford to screw around with this a little bit but I feel like their"
+      },
+      {
+        "start": 180170,
+        "stop": 180658,
+        "text": " failure to do a good job here has created a market opportunity for Google"
+      },
+      {
+        "start": 180658,
+        "stop": 181174,
+        "text": " and Apple well it also is gonna screw over local mechanics but this is yeah"
+      },
+      {
+        "start": 181174,
+        "stop": 181610,
+        "text": " another thing totally proprietary totally computerized I was thinking"
+      },
+      {
+        "start": 181610,
+        "stop": 181946,
+        "text": " about it too it and I don't know maybe there's just no getting around this but"
+      },
+      {
+        "start": 181946,
+        "stop": 182386,
+        "text": " you know I just got done putting graphing OS on my pixel as an effort to"
+      },
+      {
+        "start": 182386,
+        "stop": 182742,
+        "text": " see what's the downside of moving away from Google services and trying to"
+      },
+      {
+        "start": 182742,
+        "stop": 183122,
+        "text": " replace them with my own things like next cloud and graphing OS and it just"
+      },
+      {
+        "start": 183122,
+        "stop": 183478,
+        "text": " be kind of funny to kind of go through this multi-year process of de-googling"
+      },
+      {
+        "start": 183478,
+        "stop": 184078,
+        "text": " just to end up buying a car that forces me to use a Google OS that would really"
+      },
+      {
+        "start": 184078,
+        "stop": 184478,
+        "text": " suck and then I realize it's a very first-world problem but it's gonna be a"
+      },
+      {
+        "start": 184478,
+        "stop": 184826,
+        "text": " problem like I'm gonna I'm actively trying to send this company less of my"
+      },
+      {
+        "start": 184826,
+        "stop": 185170,
+        "text": " information and then the auto manufacturer comes along and just sells"
+      },
+      {
+        "start": 185170,
+        "stop": 185590,
+        "text": " me a $70,000 car or whatever with Google stuff built in I just don't know about"
+      },
+      {
+        "start": 185590,
+        "stop": 186042,
+        "text": " that you're right I like the idea that's on a removable upgradeable device my"
+      },
+      {
+        "start": 186042,
+        "stop": 186582,
+        "text": " phone gets upgraded very frequently my car does not and I've always preferred"
+      },
+      {
+        "start": 186582,
+        "stop": 186886,
+        "text": " to have the computing in a little separate module I doesn't need to be"
+      },
+      {
+        "start": 186886,
+        "stop": 187238,
+        "text": " wireless it doesn't need to be that fancy I don't mind plugging it in to let"
+      },
+      {
+        "start": 187238,
+        "stop": 187562,
+        "text": " it charge to let it have fast connectivity and then like you said all"
+      },
+      {
+        "start": 187562,
+        "stop": 188002,
+        "text": " of my saved data that I want to use comes up on the screen and that works"
+      },
+      {
+        "start": 188002,
+        "stop": 188378,
+        "text": " just fine I also think it's a little alarming as we just build in more and"
+      },
+      {
+        "start": 188378,
+        "stop": 188894,
+        "text": " more layers of complexity that we're not really requiring these companies to I"
+      },
+      {
+        "start": 188894,
+        "stop": 189338,
+        "text": " don't know prove that they can build these things first like they just ship"
+      },
+      {
+        "start": 189338,
+        "stop": 190166,
+        "text": " it and my wife has a 2013 I think Ford Focus and the sync software on the 2013"
+      },
+      {
+        "start": 190166,
+        "stop": 190894,
+        "text": " Ford Focus feels like alpha crap it is busted by design it is horrible I've"
+      },
+      {
+        "start": 190894,
+        "stop": 191534,
+        "text": " talked to other focus owners they hate it and it got better in later years but"
+      },
+      {
+        "start": 191534,
+        "stop": 192070,
+        "text": " it took them years and years and years of iterating before it got very usable"
+      },
+      {
+        "start": 192070,
+        "stop": 192490,
+        "text": " and it's not like they issue updates to the old cars so my wife's driving around"
+      },
+      {
+        "start": 192490,
+        "stop": 193052,
+        "text": " with what is basically she was a beta tester for Microsoft sync and you know"
+      },
+      {
+        "start": 193052,
+        "stop": 193542,
+        "text": " that car is it's a frustrating car because of sync it's such a silly thing"
+      },
+      {
+        "start": 193542,
+        "stop": 193890,
+        "text": " to have like the motor works fine everything mechanically about the car is"
+      },
+      {
+        "start": 193890,
+        "stop": 194362,
+        "text": " fine but sync drives us crazy every day yeah I cannot tell you how desperate my"
+      },
+      {
+        "start": 194362,
+        "stop": 195068,
+        "text": " chef is to get me to subscribe to on star it's just bad I mean there's"
+      },
+      {
+        "start": 195068,
+        "stop": 195394,
+        "text": " they're all just horrible horrible systems and there's a reason everybody"
+      },
+      {
+        "start": 195394,
+        "stop": 195752,
+        "text": " goes in and plugs on their iPhone or their pixel or whatever let me flip it"
+      },
+      {
+        "start": 195752,
+        "stop": 196122,
+        "text": " around on you though so what if this happens let's just take it down the road"
+      },
+      {
+        "start": 196122,
+        "stop": 196448,
+        "text": " a bit too when we're so we work some of this out because you know like some"
+      },
+      {
+        "start": 196448,
+        "stop": 196794,
+        "text": " automakers they're not even they're opting to go their own route entirely"
+      },
+      {
+        "start": 196794,
+        "stop": 197334,
+        "text": " like a few of them are gonna be integrating the Amazon echo stuff into"
+      },
+      {
+        "start": 197334,
+        "stop": 197744,
+        "text": " the car which that just sounds horrible great I I hate voice commands in the car"
+      },
+      {
+        "start": 197744,
+        "stop": 198090,
+        "text": " so much but let's just say we get down the road this stuff gets sorted out and"
+      },
+      {
+        "start": 198090,
+        "stop": 198998,
+        "text": " we land on a Google Apple future in my opinion Google loses this because"
+      },
+      {
+        "start": 198998,
+        "stop": 199666,
+        "text": " ultimately this kind of product lives and dies on the consumer feedback and"
+      },
+      {
+        "start": 199666,
+        "stop": 200298,
+        "text": " preferences and if this sync system that's in my wife's car somehow like big"
+      },
+      {
+        "start": 200298,
+        "stop": 200662,
+        "text": " had become like some sort of standard there was on a dozen different car"
+      },
+      {
+        "start": 200662,
+        "stop": 201130,
+        "text": " manufacturers systems they would have suffered in sales I mean there's a"
+      },
+      {
+        "start": 201130,
+        "stop": 201538,
+        "text": " reason why sync never took off Microsoft tried this like they always do"
+      },
+      {
+        "start": 201538,
+        "stop": 201906,
+        "text": " Microsoft was early they tried this they tried to get other manufacturers to use"
+      },
+      {
+        "start": 201906,
+        "stop": 202602,
+        "text": " sync but the problem was is Ford's customers hate it and it hurt sales it"
+      },
+      {
+        "start": 202602,
+        "stop": 203166,
+        "text": " cost them money so I think long term this isn't gonna work out for Google"
+      },
+      {
+        "start": 203166,
+        "stop": 203554,
+        "text": " because they can't even they can't even properly name the products they have"
+      },
+      {
+        "start": 203554,
+        "stop": 203926,
+        "text": " Android Auto and Android automotive as we've just described with stadia they"
+      },
+      {
+        "start": 203926,
+        "stop": 204466,
+        "text": " can't stick with anything and the reality is the car markets big but it"
+      },
+      {
+        "start": 204466,
+        "stop": 205018,
+        "text": " doesn't have the scale of the web not even close only a small part of the"
+      },
+      {
+        "start": 205018,
+        "stop": 205390,
+        "text": " market especially these days we'll be able to afford new cars it'll have this"
+      },
+      {
+        "start": 205390,
+        "stop": 205946,
+        "text": " tech built in so it's always going to be a small niche product and that spells"
+      },
+      {
+        "start": 205946,
+        "stop": 206418,
+        "text": " doom for Google Apple I think it's a little bit more of the roll the dice"
+      },
+      {
+        "start": 206418,
+        "stop": 206886,
+        "text": " Apple can live and survive in niche land because they design their profits in the"
+      },
+      {
+        "start": 206886,
+        "stop": 207382,
+        "text": " way they organize their deals to make money that way juicy margins exactly you"
+      },
+      {
+        "start": 207382,
+        "stop": 207802,
+        "text": " got it you got to have them juicy margins right after all it's business"
+      },
+      {
+        "start": 207802,
+        "stop": 208350,
+        "text": " business no one Apple they'll do the thing they always do all our stuff is"
+      },
+      {
+        "start": 208350,
+        "stop": 208666,
+        "text": " great but this is the good and that one's kind of you know whatever yeah"
+      },
+      {
+        "start": 208666,
+        "stop": 208998,
+        "text": " they'll leave the old plug in your iPhone and get crappy car player what"
+      },
+      {
+        "start": 208998,
+        "stop": 209438,
+        "text": " is current carplay and then they'll do the whatever car OS thing and that'll be"
+      },
+      {
+        "start": 209438,
+        "stop": 210006,
+        "text": " are you buying a Mercedes my friends right that's I mean it's Apple and also"
+      },
+      {
+        "start": 210006,
+        "stop": 210618,
+        "text": " if you're Mercedes you have our BMW it's probably BMW let's be honest you"
+      },
+      {
+        "start": 210618,
+        "stop": 211034,
+        "text": " probably want to partner with Apple because a lot of your values in your"
+      },
+      {
+        "start": 211034,
+        "stop": 211686,
+        "text": " brand and your whatever like lifestyle feeling and you know I'm least in the"
+      },
+      {
+        "start": 211686,
+        "stop": 212046,
+        "text": " US I can't I don't can't speak for the regions but it's pretty clear that Apple"
+      },
+      {
+        "start": 212046,
+        "stop": 212686,
+        "text": " is the luxury brand here totally I that was absolutely well put this the brand"
+      },
+      {
+        "start": 212686,
+        "stop": 213118,
+        "text": " Association they'll you know the car manufacturer wants to get a little bit"
+      },
+      {
+        "start": 213118,
+        "stop": 213414,
+        "text": " of that shine because Apple's like in the top three brands of the world or"
+      },
+      {
+        "start": 213414,
+        "stop": 213778,
+        "text": " something like that so they're gonna want that shine that you know that's"
+      },
+      {
+        "start": 213778,
+        "stop": 214342,
+        "text": " just how companies work but I also think like we have the flip problem of it's"
+      },
+      {
+        "start": 214342,
+        "stop": 214758,
+        "text": " one thing when Google is building products and services for the web and"
+      },
+      {
+        "start": 214758,
+        "stop": 215418,
+        "text": " they shut that down okay you know that stinks but it's a web service will be"
+      },
+      {
+        "start": 215418,
+        "stop": 216062,
+        "text": " fine but what about your sixty seventy thousand dollar car when they just kind"
+      },
+      {
+        "start": 216062,
+        "stop": 216490,
+        "text": " of give up on that what are you gonna you can't reflash it you can't put a"
+      },
+      {
+        "start": 216490,
+        "stop": 216974,
+        "text": " new ROM on your car you're just stuck with abandoned software okay so don't"
+      },
+      {
+        "start": 216974,
+        "stop": 217406,
+        "text": " yeah I mean you you've just made a very strong case to not buy a car powered by"
+      },
+      {
+        "start": 217406,
+        "stop": 217806,
+        "text": " Android OS so I do think there is a little bit of that brand factor that"
+      },
+      {
+        "start": 217806,
+        "stop": 218226,
+        "text": " that the stadia factor where I think everybody when stadia was announced the"
+      },
+      {
+        "start": 218226,
+        "stop": 218714,
+        "text": " first thing everybody did was wait for Google to kill it and they I think that"
+      },
+      {
+        "start": 218714,
+        "stop": 219074,
+        "text": " does affect them as a brand I think it because it impacts the way I view this"
+      },
+      {
+        "start": 219074,
+        "stop": 219618,
+        "text": " effort to hmm I mean there's really no way for them to fix that right no they've"
+      },
+      {
+        "start": 219618,
+        "stop": 219978,
+        "text": " they've it's they've done it they've become known as the company who kill"
+      },
+      {
+        "start": 219978,
+        "stop": 220402,
+        "text": " stuff I mean there's killed by google.com right and and to be fair they're the"
+      },
+      {
+        "start": 220402,
+        "stop": 221006,
+        "text": " company who they're let their standard for big enough for us to care to keep it"
+      },
+      {
+        "start": 221006,
+        "stop": 221418,
+        "text": " alive is just stupidly high right when you were the default search engine the"
+      },
+      {
+        "start": 221418,
+        "stop": 221928,
+        "text": " default advertising network for the entire internet you're just in a"
+      },
+      {
+        "start": 221928,
+        "stop": 222430,
+        "text": " different you know you're thinking on a galactic scale not a not a county scale"
+      },
+      {
+        "start": 222430,
+        "stop": 223130,
+        "text": " right god bless duck duck go who knows I mean I accidentally used Bing this"
+      },
+      {
+        "start": 223130,
+        "stop": 223806,
+        "text": " morning in edge it was terrible right so yeah I don't say yeah ask not what your"
+      },
+      {
+        "start": 223806,
+        "stop": 224494,
+        "text": " podcast can boost for you but what you can boost for your podcast DPG boosts in"
+      },
+      {
+        "start": 224494,
+        "stop": 225238,
+        "text": " with 2,000 sats and he says I'm boosting in to say that my upgrade from an 11 pro"
+      },
+      {
+        "start": 225238,
+        "stop": 225806,
+        "text": " max to a 14 pro max has been absolutely amazing waiting three years seems to be"
+      },
+      {
+        "start": 225806,
+        "stop": 226162,
+        "text": " the sweet spot for iPhones good luck on the road trip Chris I hope to do a"
+      },
+      {
+        "start": 226162,
+        "stop": 226558,
+        "text": " cross-country one someday and meet my wonderful internet friends out west well"
+      },
+      {
+        "start": 226558,
+        "stop": 227158,
+        "text": " that'd be amazing DPG 11 to 14 does seem like the sweet spot that's got to be a"
+      },
+      {
+        "start": 227158,
+        "stop": 227534,
+        "text": " great upgrade that's a big jump that's probably the strategy if I wasn't on the"
+      },
+      {
+        "start": 227534,
+        "stop": 227926,
+        "text": " upgrade program and that's kind of the cycle that my wife has been on I think"
+      },
+      {
+        "start": 227926,
+        "stop": 228414,
+        "text": " she's on an 11 right now and I don't know if I'm gonna get a 14 for her I"
+      },
+      {
+        "start": 228414,
+        "stop": 228734,
+        "text": " mean that would be a decent Christmas present but I definitely think she'll"
+      },
+      {
+        "start": 228734,
+        "stop": 229162,
+        "text": " want the 15 just for battery life reasons and whatnot I love that you know"
+      },
+      {
+        "start": 229162,
+        "stop": 229550,
+        "text": " that's the thing about these iPhones there's always people out there that are"
+      },
+      {
+        "start": 229550,
+        "stop": 229938,
+        "text": " always gonna be upgrading so Apple might not see unbelievable numbers I don't know"
+      },
+      {
+        "start": 229938,
+        "stop": 230346,
+        "text": " if we've gotten any hints yet but there's always customers there's always"
+      },
+      {
+        "start": 230346,
+        "stop": 230954,
+        "text": " gonna be customers they'll be alright yeah I think so Dave Jones the pod sage"
+      },
+      {
+        "start": 230954,
+        "stop": 231498,
+        "text": " boosted with 2011 12 sats he writes I'm boosting the intro because I have faith"
+      },
+      {
+        "start": 231498,
+        "stop": 231946,
+        "text": " you guys are gonna deliver haha it boosted during the intro Dave he also"
+      },
+      {
+        "start": 231946,
+        "stop": 232486,
+        "text": " double boosted in with another 2,112 sats"
+      },
+      {
+        "start": 232486,
+        "stop": 233058,
+        "text": " and he's calling me up he says barbecue in California blows it's like ordering"
+      },
+      {
+        "start": 233058,
+        "stop": 233434,
+        "text": " spaghetti meatballs at subway come down south and we'll get you guys taken care"
+      },
+      {
+        "start": 233434,
+        "stop": 233966,
+        "text": " of I'd love to take you up on that Dave I would love that Dave I'm already down"
+      },
+      {
+        "start": 233966,
+        "stop": 234434,
+        "text": " south I know what do you what is the is there a big barbecue culture in Florida"
+      },
+      {
+        "start": 234434,
+        "stop": 234890,
+        "text": " is there the pride about barbecue like there is in Texas and there it well it's"
+      },
+      {
+        "start": 234890,
+        "stop": 235354,
+        "text": " not quite like Texas yeah yeah it's not quite like Texas so the trick about"
+      },
+      {
+        "start": 235354,
+        "stop": 235810,
+        "text": " Florida is the more generally speaking the more north you go in Florida the"
+      },
+      {
+        "start": 235810,
+        "stop": 236298,
+        "text": " more southern it is wait a minute the more north you go the more southern is"
+      },
+      {
+        "start": 236298,
+        "stop": 236670,
+        "text": " because you're getting closer to the southern states right because a lot of"
+      },
+      {
+        "start": 236670,
+        "stop": 236990,
+        "text": " like southern Florida like for instance I go to Miami looks like it's like Cuban"
+      },
+      {
+        "start": 236990,
+        "stop": 237526,
+        "text": " food which is awesome pipe ooh yeah oh my god Cuban food this and like I"
+      },
+      {
+        "start": 237526,
+        "stop": 237862,
+        "text": " thought I'd had a Cuban sandwich and then I moved here and I had never had"
+      },
+      {
+        "start": 237862,
+        "stop": 238186,
+        "text": " one before until that day I gotta come to Florida I've been there for like two"
+      },
+      {
+        "start": 238186,
+        "stop": 238666,
+        "text": " minutes I gotta get down there it's let's say the problem of Florida - is"
+      },
+      {
+        "start": 238666,
+        "stop": 239262,
+        "text": " it's weird man like I'm just it's a lot of stuff going on down here and there's"
+      },
+      {
+        "start": 239262,
+        "stop": 239742,
+        "text": " a whole Disney area that gets real creepy like it's sounds like a party"
+      },
+      {
+        "start": 239742,
+        "stop": 240074,
+        "text": " down there except for the storms you know but it's otherwise it just sounds"
+      },
+      {
+        "start": 240074,
+        "stop": 240542,
+        "text": " like a hot mess of parties well I know I just got a flyer from DeSantis it is now"
+      },
+      {
+        "start": 240542,
+        "stop": 240898,
+        "text": " officially known as the free state of Florida whatever the hell that means"
+      },
+      {
+        "start": 240898,
+        "stop": 241418,
+        "text": " really did they make an official like proclamation I just want to say this"
+      },
+      {
+        "start": 241418,
+        "stop": 241842,
+        "text": " this laminated like I don't know how rich his campaign is because he's running"
+      },
+      {
+        "start": 241842,
+        "stop": 242230,
+        "text": " for governor again I have gotten lots of political crap never laminated though"
+      },
+      {
+        "start": 242230,
+        "stop": 242650,
+        "text": " never like this like I'm a dude I kind of want to hang this up except I don't"
+      },
+      {
+        "start": 242650,
+        "stop": 243046,
+        "text": " because I don't know what free state means because that sounds a lot like"
+      },
+      {
+        "start": 243046,
+        "stop": 243650,
+        "text": " like Chaz doesn't sound good right it's not only right it sounds like sounds"
+      },
+      {
+        "start": 243650,
+        "stop": 243928,
+        "text": " like we're gonna need a SWAT team in here to just like clean it up and we're"
+      },
+      {
+        "start": 243928,
+        "stop": 244410,
+        "text": " all gonna realize that what looked like a protest was really never mind we're"
+      },
+      {
+        "start": 244410,
+        "stop": 245254,
+        "text": " gonna be on all right yeah I know John John a yeah with a 2500 sats says I'm"
+      },
+      {
+        "start": 245254,
+        "stop": 246042,
+        "text": " considering upgrading my $4,000 MacBook Pro to a $1,000 dev one thanks guys you"
+      },
+      {
+        "start": 246042,
+        "stop": 246414,
+        "text": " know John I think you can muddle through I I know it's gonna be tough but it's a"
+      },
+      {
+        "start": 246414,
+        "stop": 246934,
+        "text": " tough problem it's rough but somebody's got to do it and why not both I say why"
+      },
+      {
+        "start": 246934,
+        "stop": 247404,
+        "text": " not both you know true although with that said I got my last Mac holdout to"
+      },
+      {
+        "start": 247404,
+        "stop": 247746,
+        "text": " finally I thought I had him a month ago but to finally switch to Linux today oh"
+      },
+      {
+        "start": 247746,
+        "stop": 248388,
+        "text": " yeah oh cuz X coda update broke his his Unix binaries that kind of stuff that's"
+      },
+      {
+        "start": 248388,
+        "stop": 248928,
+        "text": " what it takes right for a dev stack yep mm-hmm that'll do it non-standard"
+      },
+      {
+        "start": 248928,
+        "stop": 249670,
+        "text": " locations on Mac packed up boost in with 1701 sets which is a Star Trek boost"
+      },
+      {
+        "start": 249670,
+        "stop": 250142,
+        "text": " live long and prosper says thanks for all the great shows by never watching"
+      },
+      {
+        "start": 250142,
+        "stop": 250648,
+        "text": " Star Trek I did a great sin and I have to ask for forgiveness to fix this going"
+      },
+      {
+        "start": 250648,
+        "stop": 251146,
+        "text": " forward I'd like to know which season you recommend to start with would you"
+      },
+      {
+        "start": 251146,
+        "stop": 251546,
+        "text": " recommend the old og one or a new one like strange new worlds I'm looking"
+      },
+      {
+        "start": 251546,
+        "stop": 252078,
+        "text": " forward to your answer really enjoy the shows thanks for a fellow mid from"
+      },
+      {
+        "start": 252078,
+        "stop": 252418,
+        "text": " office hours okay oh I see from the right for inspiration for the boost"
+      },
+      {
+        "start": 252418,
+        "stop": 252908,
+        "text": " amount for the enterprise right right hmm nice oh god I have to tell you I"
+      },
+      {
+        "start": 252908,
+        "stop": 253330,
+        "text": " literally live in fear of this question on a daily basis I constantly think what"
+      },
+      {
+        "start": 253330,
+        "stop": 253614,
+        "text": " if somebody asked me where to start with Star Trek and I obsess over this"
+      },
+      {
+        "start": 253614,
+        "stop": 254058,
+        "text": " question because it's it's probably one of the most important questions a"
+      },
+      {
+        "start": 254058,
+        "stop": 254348,
+        "text": " person will ever ask you I'm dying to know what you think I don't think we're"
+      },
+      {
+        "start": 254348,
+        "stop": 254724,
+        "text": " gonna agree I don't know I think a couple of days ago my answer would have"
+      },
+      {
+        "start": 254724,
+        "stop": 255248,
+        "text": " been different but while we were down in Pasadena for the JPL tour we stayed at"
+      },
+      {
+        "start": 255248,
+        "stop": 255800,
+        "text": " an Airbnb for a few days and the most incredible thing happened it was perfect"
+      },
+      {
+        "start": 255800,
+        "stop": 256266,
+        "text": " I I swear to God I swear to God this is what happened I walk in the first thing"
+      },
+      {
+        "start": 256266,
+        "stop": 256604,
+        "text": " I did at the Airbnb is like because you walk in the living room I turned the TV"
+      },
+      {
+        "start": 256604,
+        "stop": 257090,
+        "text": " on it was a big TV Star Trek the next generation comes up and it's encounter"
+      },
+      {
+        "start": 257090,
+        "stop": 257546,
+        "text": " at Farpoint episode 1 and then it's like a 35 year anniversary thing so it"
+      },
+      {
+        "start": 257546,
+        "stop": 257886,
+        "text": " turns out they're playing every single episode in chronological order and we"
+      },
+      {
+        "start": 257886,
+        "stop": 258354,
+        "text": " showed up right as encounter at Farpoint starts we left the TV on the entire time"
+      },
+      {
+        "start": 258354,
+        "stop": 258788,
+        "text": " we were there we made it all the way into season 4 cupid which is episode 94"
+      },
+      {
+        "start": 258788,
+        "stop": 259202,
+        "text": " in the production run we made it all the way through like best of both worlds you"
+      },
+      {
+        "start": 259202,
+        "stop": 259706,
+        "text": " know like the good stuff and I have to say man mm-hmm Star Trek the next"
+      },
+      {
+        "start": 259706,
+        "stop": 260312,
+        "text": " generation gets so damn good around season 3 and then just continues to"
+      },
+      {
+        "start": 260312,
+        "stop": 260636,
+        "text": " deliver until the end of the series basically I can't believe this we're"
+      },
+      {
+        "start": 260636,
+        "stop": 261046,
+        "text": " gonna agree I cannot believe this really is this what your recommendation was I"
+      },
+      {
+        "start": 261046,
+        "stop": 261446,
+        "text": " could have sworn you were gonna say og you have to do it in order I don't know"
+      },
+      {
+        "start": 261446,
+        "stop": 261822,
+        "text": " I don't know I think you I think you got to learn to love Star Trek and then go"
+      },
+      {
+        "start": 261822,
+        "stop": 262366,
+        "text": " back and watch the original series I feel like the problem that with og Star"
+      },
+      {
+        "start": 262366,
+        "stop": 263084,
+        "text": " Trek is it's great after you watch TNG especially for more modern particularly"
+      },
+      {
+        "start": 263084,
+        "stop": 263590,
+        "text": " younger audiences you know even I think people in our age bracket roughly might"
+      },
+      {
+        "start": 263590,
+        "stop": 264050,
+        "text": " find some of the stuff in that a little interesting yeah I think the first"
+      },
+      {
+        "start": 264050,
+        "stop": 264546,
+        "text": " couple seasons of TNG are very much toss inspired they're like the original"
+      },
+      {
+        "start": 264546,
+        "stop": 264882,
+        "text": " series and yeah a lot of people don't like the first couple of seasons yeah I"
+      },
+      {
+        "start": 264882,
+        "stop": 265338,
+        "text": " mean I do think it's either og or original series the problem with with"
+      },
+      {
+        "start": 265338,
+        "stop": 265742,
+        "text": " strange new worlds is you have to have seen the original series to really"
+      },
+      {
+        "start": 265742,
+        "stop": 266122,
+        "text": " understand what the hell is going on I feel like right because it's playing off"
+      },
+      {
+        "start": 266122,
+        "stop": 266506,
+        "text": " the original series I think you get a lot richer experience you definitely get"
+      },
+      {
+        "start": 266506,
+        "stop": 266918,
+        "text": " a richer experience I think you could watch it in isolation if the production"
+      },
+      {
+        "start": 266918,
+        "stop": 267302,
+        "text": " and pacing of older Star Trek like the next generation I say older but you know"
+      },
+      {
+        "start": 267302,
+        "stop": 267742,
+        "text": " it's from the 80s and and Deep Space Nine if the pacing which I find to be"
+      },
+      {
+        "start": 267742,
+        "stop": 268326,
+        "text": " perfect but if you find it a little slow I think strange new worlds would be like"
+      },
+      {
+        "start": 268326,
+        "stop": 268754,
+        "text": " the my backup plan right start with the next generation and if it's just not"
+      },
+      {
+        "start": 268754,
+        "stop": 269118,
+        "text": " sticking then I'd probably try strange new worlds because maybe you just like"
+      },
+      {
+        "start": 269118,
+        "stop": 269398,
+        "text": " that style a little bit more then you start to build an appreciation for the"
+      },
+      {
+        "start": 269398,
+        "stop": 269758,
+        "text": " universe and then you can kind of pick up the other ones ooh but ds9 though"
+      },
+      {
+        "start": 269758,
+        "stop": 270146,
+        "text": " yeah wait a minute I know I know I think you could see I don't think you can do"
+      },
+      {
+        "start": 270146,
+        "stop": 270522,
+        "text": " discovery because it's too different from the other ones Deep Space Nine holds up"
+      },
+      {
+        "start": 270522,
+        "stop": 271022,
+        "text": " because it was it was early into that ongoing narrative storytelling and so I"
+      },
+      {
+        "start": 271022,
+        "stop": 271598,
+        "text": " think it it holds up in binge watching I'd say it's TNG or DS9 yeah I agree I"
+      },
+      {
+        "start": 271598,
+        "stop": 271990,
+        "text": " agree let us know how it goes and if you feel differently if you've got a better"
+      },
+      {
+        "start": 271990,
+        "stop": 272474,
+        "text": " suggestion I've even thought about like breaking it down to a list of episodes"
+      },
+      {
+        "start": 272474,
+        "stop": 272990,
+        "text": " that cross all the different Star Treks so you know you a couple of key moments"
+      },
+      {
+        "start": 272990,
+        "stop": 273398,
+        "text": " from TNG deep deep deep space nine Voyager toss you know an enterprise and"
+      },
+      {
+        "start": 273398,
+        "stop": 273702,
+        "text": " you throw them all on the board and you make a big list this is an important"
+      },
+      {
+        "start": 273702,
+        "stop": 274090,
+        "text": " question so boost in your answers if you've got a better one because somebody"
+      },
+      {
+        "start": 274090,
+        "stop": 274510,
+        "text": " will ask again and I want to do them right our last boost this week came in"
+      },
+      {
+        "start": 274510,
+        "stop": 274978,
+        "text": " from nanobills that's how I'm saying it he boosted him with 50 sets and he said"
+      },
+      {
+        "start": 274978,
+        "stop": 275374,
+        "text": " if you need to use flat packed vs code to reach your whole system you can use"
+      },
+      {
+        "start": 275374,
+        "stop": 275758,
+        "text": " flat seal to allow that and I wanted to mention that because we've brought up vs"
+      },
+      {
+        "start": 275758,
+        "stop": 276118,
+        "text": " code and flat pack a couple of times on Linux and how it's limited to the file"
+      },
+      {
+        "start": 276118,
+        "stop": 276590,
+        "text": " system there is an app that you can install as a flat pack called flat seal"
+      },
+      {
+        "start": 276590,
+        "stop": 277118,
+        "text": " one word and that gives you a GUI to manage all of the permissions on your"
+      },
+      {
+        "start": 277118,
+        "stop": 277514,
+        "text": " flat pack apps on your Linux desktop and you can go in there and say I want to"
+      },
+      {
+        "start": 277514,
+        "stop": 277914,
+        "text": " allow access to the file system I want to allow access to the camera or you"
+      },
+      {
+        "start": 277914,
+        "stop": 278374,
+        "text": " know whatever it might be so check out flat seal it makes all of that a lot"
+      },
+      {
+        "start": 278374,
+        "stop": 279046,
+        "text": " simpler to manage thank you to nanotubes bills for boosting that in I'm sorry"
+      },
+      {
+        "start": 279046,
+        "stop": 279502,
+        "text": " that I butchered your name I'm not trying I swear that's just how I am and"
+      },
+      {
+        "start": 279502,
+        "stop": 279882,
+        "text": " then also a couple of quick thank yous mr. quackers boosted in a row of ducks"
+      },
+      {
+        "start": 279882,
+        "stop": 280426,
+        "text": " quacker waka it's a treasure yippee Sean of the dev 512 sets want to give him"
+      },
+      {
+        "start": 280426,
+        "stop": 280662,
+        "text": " the shout out and thank you everybody else who's either streaming or sent some"
+      },
+      {
+        "start": 280662,
+        "stop": 280962,
+        "text": " stats in that are sent a boost in that I didn't read on the show we're just"
+      },
+      {
+        "start": 280962,
+        "stop": 281286,
+        "text": " picking some of them to try to keep the segment a little tighter but we do read"
+      },
+      {
+        "start": 281286,
+        "stop": 281670,
+        "text": " all of them if you'd like to boost us go get a new podcast app a new podcast"
+      },
+      {
+        "start": 281670,
+        "stop": 282198,
+        "text": " apps calm I have been rocking pod verse for about a month now GPL it's available"
+      },
+      {
+        "start": 282198,
+        "stop": 282606,
+        "text": " on all platforms including the web and I know out there fountain is super popular"
+      },
+      {
+        "start": 282606,
+        "stop": 282926,
+        "text": " as well it's got a great clipping system you can earn some stats while you listen"
+      },
+      {
+        "start": 282926,
+        "stop": 283330,
+        "text": " I'll put a link to that in the show notes as well mr. Dominic is there"
+      },
+      {
+        "start": 283330,
+        "stop": 283594,
+        "text": " anywhere you want to send the good people this week well I'm gonna try"
+      },
+      {
+        "start": 283594,
+        "stop": 283934,
+        "text": " again I didn't get it done last week but I'd like to send you to a tumunuk one"
+      },
+      {
+        "start": 283934,
+        "stop": 284402,
+        "text": " Twitter and Dominic em calm I should have something new up there soon ooh well"
+      },
+      {
+        "start": 284402,
+        "stop": 284802,
+        "text": " you do have the recent Thalia review up there too so I do you did get that out"
+      },
+      {
+        "start": 284802,
+        "stop": 285254,
+        "text": " so give yourself some credit you know I like the review all right well that's"
+      },
+      {
+        "start": 285254,
+        "stop": 285642,
+        "text": " pretty much all I'll plug them I think we could mention we have the contact"
+      },
+      {
+        "start": 285642,
+        "stop": 285954,
+        "text": " form emails are a big part of the show and they are down now because we've been"
+      },
+      {
+        "start": 285954,
+        "stop": 286328,
+        "text": " on the road and we've read through our backlog so go to coder show slash"
+      },
+      {
+        "start": 286328,
+        "stop": 286760,
+        "text": " contact and send in topic ideas questions you have for us corrections"
+      },
+      {
+        "start": 286760,
+        "stop": 287190,
+        "text": " suggestions things that you think we'd like to talk about coder dot show slash"
+      },
+      {
+        "start": 287190,
+        "stop": 287554,
+        "text": " contact all of that's over there and coder QA dot co is where you go to"
+      },
+      {
+        "start": 287554,
+        "stop": 288006,
+        "text": " become a member of the show you get the coderly report oh it's a new coder it's"
+      },
+      {
+        "start": 288006,
+        "stop": 288464,
+        "text": " a new quarter for the quarter quarter coder I'll get it right one of these"
+      },
+      {
+        "start": 288464,
+        "stop": 288790,
+        "text": " days and we'll be recording that fairly soon I suppose once I get back you and I"
+      },
+      {
+        "start": 288790,
+        "stop": 289206,
+        "text": " can get that schedule we get a quarterly out for our members we do that once a"
+      },
+      {
+        "start": 289206,
+        "stop": 289464,
+        "text": " quarter yeah let's do it and it's just a great way to support the show you get an"
+      },
+      {
+        "start": 289464,
+        "stop": 289884,
+        "text": " ad-free feed as a thank you as well coder QA co or all the JB shows at"
+      },
+      {
+        "start": 289884,
+        "stop": 290394,
+        "text": " Jupiter dot party the podcast here on the Twitter's is at coder radio show and"
+      },
+      {
+        "start": 290394,
+        "stop": 290892,
+        "text": " of course everything we talked about today links stuff like the RSS feed"
+      },
+      {
+        "start": 290892,
+        "stop": 291544,
+        "text": " links to our sponsors any of that kind of stuff coder dot show slash 486 that's"
+      },
+      {
+        "start": 291544,
+        "stop": 292098,
+        "text": " where you'll also find our RSS feed and of course links to our matrix chat so"
+      },
+      {
+        "start": 292098,
+        "stop": 292362,
+        "text": " you can join us and chat with us throughout the week doesn't just have to"
+      },
+      {
+        "start": 292362,
+        "stop": 292898,
+        "text": " be on Mondays when we're live over Jupiter tube at 9 a.m. Pacific noon"
+      },
+      {
+        "start": 292898,
+        "stop": 293232,
+        "text": " Eastern but you're welcome to join us then as well we love having you join us"
+      },
+      {
+        "start": 293232,
+        "stop": 293558,
+        "text": " live thanks so much for tuning in this week's episode of the coder radio"
+      },
+      {
+        "start": 293558,
+        "stop": 294054,
+        "text": " program and we'll see you right back here next week"
+      },
+      {
+        "start": 294054,
+        "stop": 294260,
+        "text": " you"
+      },
+      {
+        "start": 294260,
+        "stop": 294466,
+        "text": " you"
+      },
+      {
+        "start": 294466,
+        "stop": 294672,
+        "text": " you"
+      },
+      {
+        "start": 294672,
+        "stop": 294878,
+        "text": " you"
+      },
+      {
+        "start": 294878,
+        "stop": 295084,
+        "text": " you"
+      },
+      {
+        "start": 295084,
+        "stop": 295290,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 1739,
+      "nanos": 200799737
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 486: The Fight for the Next Knight Rider",
+    "pictures": [],
+    "duration": {
+      "secs": 2939,
+      "nanos": 144000000
+    },
+    "unique_id": "http://coder.show/486"
+  },
+  "episode": {
+    "title": "The Fight for the Next Knight Rider | Coder Radio 486",
+    "description": "Why we think Google will ultimately lose the next big tech battle.",
+    "content": "<p><p>Why we think Google will ultimately lose the next big tech battle.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li><li><a href=\"https://system76.com/laptops/oryx\" rel=\"nofollow\">System76</a>: <a href=\"https://system76.com/laptops/oryx\" rel=\"nofollow\">The new Oryx Pro has a beautiful Samsung OLED 4k display and an insanely fast RAM upgrade from DDR4 to DDR5.</a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://www.wikiwand.com/en/I486\" title=\"I486 - Wikiwand\" rel=\"nofollow\">I486 - Wikiwand</a> &mdash; The Intel 486, officially named i486 and also known as 80486, is a microprocessor. It is a higher-performance follow-up to the Intel 386.</li><li><a href=\"https://aquamacs.org/\" title=\"Aquamacs Emacs\" rel=\"nofollow\">Aquamacs Emacs</a> &mdash; An Editor for Text, HTML, LaTeX, C++, Java, Python, R, Perl, Ruby, PHP, and more…</li><li><a href=\"https://bit.ly/meetupmatrix\" title=\"Our List of Meetup Rooms on Matrix\" rel=\"nofollow\">Our List of Meetup Rooms on Matrix</a></li><li><a href=\"https://techcrunch.com/2022/10/01/stadia-died-because-no-one-trusts-google/\" title=\"Stadia died because no one trusts Google\" rel=\"nofollow\">Stadia died because no one trusts Google</a> &mdash; No one trusts Google. It has exhibited such poor understanding of what people want, need and will pay for that at this point, people are wary of investing in even its more popular products.</li><li><a href=\"https://twitter.com/Nibellion/status/1107969648874655744\" title=\"Nibel on Twitter\" rel=\"nofollow\">Nibel on Twitter</a> &mdash; No clue where this is going but I'm intrigued.</li><li><a href=\"https://en.wikipedia.org/wiki/Sega_Channel\" title=\"Sega Channel\" rel=\"nofollow\">Sega Channel</a> &mdash; The Sega Channel is a discontinued online game service developed by Sega for the Sega Genesis video game console, serving as a content delivery system. Launched on December 14, 1994, the Sega Channel was provided to the public by TCI and Time Warner Cable through cable television services by way of coaxial cable. </li><li><a href=\"https://en.wikipedia.org/wiki/OnLive\" title=\"OnLive\" rel=\"nofollow\">OnLive</a> &mdash; Games were delivered to OnLive's client software as streaming video rendered by the service's servers, rather than rendered locally by the device.</li><li><a href=\"https://www.wsj.com/articles/the-next-big-battle-between-google-and-apple-is-for-the-soul-of-your-car-11664596817?mod=djemalertNEWS\" title=\"The Next Big Battle Between Google and Apple Is for the Soul of Your Car\" rel=\"nofollow\">The Next Big Battle Between Google and Apple Is for the Soul of Your Car</a> &mdash; For the car companies involved, which face the nearly impossible challenge of producing software on par with what tech companies offer, working with Silicon Valley can address consumer desires while also staving off competition from companies like Tesla.</li><li><a href=\"http://web.archive.org/web/20221001150211/https://www.wsj.com/articles/the-next-big-battle-between-google-and-apple-is-for-the-soul-of-your-car-11664596817?mod=djemalertNEWS\" title=\"WSJ Archive Link\" rel=\"nofollow\">WSJ Archive Link</a></li><li><a href=\"https://flathub.org/apps/details/com.github.tchx84.Flatseal\" title=\"Flatseal—Linux Apps on Flathub\" rel=\"nofollow\">Flatseal—Linux Apps on Flathub</a> &mdash; Flatseal is a graphical utility to review and modify permissions from your Flatpak applications.</li><li><a href=\"https://fountain.fm/chrislas?code=e72160c3c5\" title=\"Find Chris on Fountain.FM and Check out his Clips\" rel=\"nofollow\">Find Chris on Fountain.FM and Check out his Clips</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost in with a New Podcast App\" rel=\"nofollow\">Send a Boost in with a New Podcast App</a> &mdash; Grab a podcasting 2.0 compatible app and send a Boost into the show!</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8885",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15684199/212084ca-b0c8-43b2-925e-59e423479fe4.mp3",
+      "length": "41832168",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-05T03:05:00+02:00"
+  },
+  "speedup": 1.6899395
+}

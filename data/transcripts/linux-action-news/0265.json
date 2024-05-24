@@ -1,0 +1,1507 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 500,
+        "text": " Hello and welcome to Linux Action News Episode"
+      },
+      {
+        "start": 500,
+        "stop": 800,
+        "text": " two hundred and sixty five recorded on November 2nd,"
+      },
+      {
+        "start": 800,
+        "stop": 1100,
+        "text": " twenty twenty two. I'm Chris and I'm"
+      },
+      {
+        "start": 1100,
+        "stop": 1200,
+        "text": " Wes. Hello, Wes."
+      },
+      {
+        "start": 1200,
+        "stop": 1400,
+        "text": " Let's do the news."
+      },
+      {
+        "start": 1400,
+        "stop": 1700,
+        "text": " We start this week with that open SSL"
+      },
+      {
+        "start": 1700,
+        "stop": 2000,
+        "text": " vulnerability we told you to keep an eye out for."
+      },
+      {
+        "start": 2000,
+        "stop": 2300,
+        "text": " Well, it turns out actually to"
+      },
+      {
+        "start": 2300,
+        "stop": 2600,
+        "text": " high severity vulnerabilities have now been disclosed."
+      },
+      {
+        "start": 2600,
+        "stop": 2900,
+        "text": " The critical issues include an X five"
+      },
+      {
+        "start": 2900,
+        "stop": 3200,
+        "text": " oh nine email address for byte buffer overflow"
+      },
+      {
+        "start": 3200,
+        "stop": 3500,
+        "text": " and a separate X five oh nine email address variable"
+      },
+      {
+        "start": 3500,
+        "stop": 3700,
+        "text": " length buffer overflow."
+      },
+      {
+        "start": 3700,
+        "stop": 4000,
+        "text": " Now, the one that you're probably thinking of, the one that caused the delay in the"
+      },
+      {
+        "start": 4000,
+        "stop": 4300,
+        "text": " Fedora release, that's CVE twenty"
+      },
+      {
+        "start": 4300,
+        "stop": 4500,
+        "text": " twenty two thirty six oh two."
+      },
+      {
+        "start": 4500,
+        "stop": 4800,
+        "text": " If you'd like to go look it up now, it turns out after further analysis,"
+      },
+      {
+        "start": 4800,
+        "stop": 5200,
+        "text": " they decided to downgrade is just a high severity issue."
+      },
+      {
+        "start": 5200,
+        "stop": 5500,
+        "text": " Additionally, research done before the public was notified"
+      },
+      {
+        "start": 5500,
+        "stop": 5800,
+        "text": " seems to demonstrate that platforms which"
+      },
+      {
+        "start": 5800,
+        "stop": 6100,
+        "text": " implement stack overflow protections can take"
+      },
+      {
+        "start": 6100,
+        "stop": 6400,
+        "text": " these issues from a risk of remote code execution to"
+      },
+      {
+        "start": 6400,
+        "stop": 6700,
+        "text": " just a risk of an application crash. Still not"
+      },
+      {
+        "start": 6700,
+        "stop": 7000,
+        "text": " great, but a whole lot better. Yeah, definitely"
+      },
+      {
+        "start": 7000,
+        "stop": 7300,
+        "text": " take that over remote code execution. The project"
+      },
+      {
+        "start": 7300,
+        "stop": 7600,
+        "text": " open SSL still does warn everyone, though, that"
+      },
+      {
+        "start": 7600,
+        "stop": 7900,
+        "text": " they can't really account for every platform and compiler"
+      },
+      {
+        "start": 7900,
+        "stop": 8200,
+        "text": " combination out there in their testing. So it"
+      },
+      {
+        "start": 8200,
+        "stop": 8500,
+        "text": " might still be theoretically possible to trigger a buffer"
+      },
+      {
+        "start": 8500,
+        "stop": 8800,
+        "text": " overflow that results in remote code execution in"
+      },
+      {
+        "start": 8800,
+        "stop": 9100,
+        "text": " some circumstances, even with protections"
+      },
+      {
+        "start": 9100,
+        "stop": 9400,
+        "text": " in place. So you see Linux users out there"
+      },
+      {
+        "start": 9400,
+        "stop": 9600,
+        "text": " don't get too smug."
+      },
+      {
+        "start": 9600,
+        "stop": 9900,
+        "text": " And that's why users of open SSL"
+      },
+      {
+        "start": 9900,
+        "stop": 10200,
+        "text": " three dot oh dot oh through three dot oh dot six"
+      },
+      {
+        "start": 10200,
+        "stop": 10500,
+        "text": " are highly encouraged to upgrade to three dot oh dot seven"
+      },
+      {
+        "start": 10500,
+        "stop": 10700,
+        "text": " as soon as possible."
+      },
+      {
+        "start": 10700,
+        "stop": 11000,
+        "text": " Now, if you're curious about the timeline of all"
+      },
+      {
+        "start": 11000,
+        "stop": 11300,
+        "text": " this like we were so that's CVE twenty twenty"
+      },
+      {
+        "start": 11300,
+        "stop": 11600,
+        "text": " twenty two thirty six oh two that was reported"
+      },
+      {
+        "start": 11600,
+        "stop": 11900,
+        "text": " in private to the open SSL project on the 17th"
+      },
+      {
+        "start": 11900,
+        "stop": 12200,
+        "text": " of this October by a user named polar bear who"
+      },
+      {
+        "start": 12200,
+        "stop": 12500,
+        "text": " was performing an audit of the open SSL code."
+      },
+      {
+        "start": 12500,
+        "stop": 12800,
+        "text": " Now, another individual did a subsequent analysis"
+      },
+      {
+        "start": 12800,
+        "stop": 13100,
+        "text": " later on the 18th of October, and they"
+      },
+      {
+        "start": 13100,
+        "stop": 13400,
+        "text": " found a second independently triggerable issue which has been"
+      },
+      {
+        "start": 13400,
+        "stop": 13800,
+        "text": " labeled CVE twenty twenty two thirty seven eighty six."
+      },
+      {
+        "start": 13800,
+        "stop": 14100,
+        "text": " Then on the 25th of October, the open"
+      },
+      {
+        "start": 14100,
+        "stop": 14400,
+        "text": " SSL project notified various organizations about these vulnerabilities"
+      },
+      {
+        "start": 14400,
+        "stop": 14700,
+        "text": " under their pre notification policy."
+      },
+      {
+        "start": 14700,
+        "stop": 15000,
+        "text": " And then we got version three dot oh seven"
+      },
+      {
+        "start": 15000,
+        "stop": 15300,
+        "text": " of open SSL, which contains the fixes for these"
+      },
+      {
+        "start": 15300,
+        "stop": 15500,
+        "text": " issues on the first of November."
+      },
+      {
+        "start": 15500,
+        "stop": 15800,
+        "text": " And special thanks to our buddy Alex"
+      },
+      {
+        "start": 15800,
+        "stop": 16100,
+        "text": " Jupiter broadcasting's inframachines were upgraded this morning"
+      },
+      {
+        "start": 16100,
+        "stop": 16400,
+        "text": " and we're very happy to report everything went smoothly."
+      },
+      {
+        "start": 16800,
+        "stop": 17100,
+        "text": " Now, keep in mind that Linux six dot one"
+      },
+      {
+        "start": 17100,
+        "stop": 17400,
+        "text": " is not even out yet, but that doesn't stop the"
+      },
+      {
+        "start": 17400,
+        "stop": 17700,
+        "text": " world from looking at the code and seeing where Linux six"
+      },
+      {
+        "start": 17700,
+        "stop": 18000,
+        "text": " dot two is going. And as always, when they're this"
+      },
+      {
+        "start": 18000,
+        "stop": 18300,
+        "text": " far along in the development process, there is quite a bit going on"
+      },
+      {
+        "start": 18300,
+        "stop": 18600,
+        "text": " in the development branch. Among many"
+      },
+      {
+        "start": 18600,
+        "stop": 18900,
+        "text": " other things, work has been going on at Google"
+      },
+      {
+        "start": 18900,
+        "stop": 19200,
+        "text": " on a, quote, lazy RCU"
+      },
+      {
+        "start": 19200,
+        "stop": 19500,
+        "text": " implementation, which is aiming to reduce power usage"
+      },
+      {
+        "start": 19500,
+        "stop": 19800,
+        "text": " and it might just land in six point two."
+      },
+      {
+        "start": 19800,
+        "stop": 20100,
+        "text": " If you're not familiar, RCU is the read"
+      },
+      {
+        "start": 20100,
+        "stop": 20400,
+        "text": " copy update synchronization mechanism that's built"
+      },
+      {
+        "start": 20400,
+        "stop": 20700,
+        "text": " into the kernel. This seems like a perfect time for this."
+      },
+      {
+        "start": 20700,
+        "stop": 21000,
+        "text": " We've got Linux successful on the steam deck. Of course,"
+      },
+      {
+        "start": 21000,
+        "stop": 21300,
+        "text": " the Linux kernel powers Android. Energy"
+      },
+      {
+        "start": 21300,
+        "stop": 21600,
+        "text": " prices are an area of big concern right now."
+      },
+      {
+        "start": 21600,
+        "stop": 21900,
+        "text": " So I feel like the community should think of"
+      },
+      {
+        "start": 21900,
+        "stop": 22200,
+        "text": " Linux six dot two as the lazy kernel."
+      },
+      {
+        "start": 22200,
+        "stop": 22500,
+        "text": " So here's what making the RCU lazy"
+      },
+      {
+        "start": 22500,
+        "stop": 22800,
+        "text": " really means. It means batching callbacks"
+      },
+      {
+        "start": 22800,
+        "stop": 23100,
+        "text": " and other activities and then"
+      },
+      {
+        "start": 23100,
+        "stop": 23400,
+        "text": " flushing them after a certain delay. Batching them all up when"
+      },
+      {
+        "start": 23400,
+        "stop": 23700,
+        "text": " the memory pressure gets to a certain point or after a certain amount of time"
+      },
+      {
+        "start": 23700,
+        "stop": 24000,
+        "text": " is expired means reducing power usage"
+      },
+      {
+        "start": 24000,
+        "stop": 24300,
+        "text": " by the kernel by up to five to ten percent. That's actually pretty"
+      },
+      {
+        "start": 24300,
+        "stop": 24600,
+        "text": " significant. The reason is, quite simply, you're not"
+      },
+      {
+        "start": 24600,
+        "stop": 24900,
+        "text": " waking the whole system up all the time every single time"
+      },
+      {
+        "start": 24900,
+        "stop": 25200,
+        "text": " something comes up. Instead, you hold on to them"
+      },
+      {
+        "start": 25200,
+        "stop": 25500,
+        "text": " sort of a common practice on some mobile operating"
+      },
+      {
+        "start": 25500,
+        "stop": 25800,
+        "text": " systems and then you send them all in a batch. And by doing"
+      },
+      {
+        "start": 25800,
+        "stop": 26100,
+        "text": " that, you wake up the CPU less and you save a lot of"
+      },
+      {
+        "start": 26100,
+        "stop": 26400,
+        "text": " power. Sticking with Linux six point two a bit"
+      },
+      {
+        "start": 26400,
+        "stop": 26700,
+        "text": " longer, it seems mainline support for the"
+      },
+      {
+        "start": 26700,
+        "stop": 27000,
+        "text": " Apple M1 Pro, Macs, and Ultra hardware"
+      },
+      {
+        "start": 27000,
+        "stop": 27300,
+        "text": " should be landing this time around. Hey,"
+      },
+      {
+        "start": 27300,
+        "stop": 27600,
+        "text": " it looks like the patches for Apple's fanciest SOCs,"
+      },
+      {
+        "start": 27600,
+        "stop": 27900,
+        "text": " which is quite notably, I think, for people out there"
+      },
+      {
+        "start": 27900,
+        "stop": 28200,
+        "text": " really kind of translates to the Mac Studio system,"
+      },
+      {
+        "start": 28200,
+        "stop": 28500,
+        "text": " that landed. That code is there and it may be"
+      },
+      {
+        "start": 28500,
+        "stop": 28800,
+        "text": " in Linux six dot two. That is,"
+      },
+      {
+        "start": 28800,
+        "stop": 29100,
+        "text": " assuming everything can get in there and the Asahi team"
+      },
+      {
+        "start": 29100,
+        "stop": 29400,
+        "text": " hasn't spoiled their relationship with Upstream."
+      },
+      {
+        "start": 29400,
+        "stop": 29700,
+        "text": " Yeah, some context on that."
+      },
+      {
+        "start": 29700,
+        "stop": 30000,
+        "text": " In a now deleted tweet, Asahi Linux lead Hector"
+      },
+      {
+        "start": 30000,
+        "stop": 30300,
+        "text": " Martin took to Twitter to vent about"
+      },
+      {
+        "start": 30300,
+        "stop": 30600,
+        "text": " quote arguing with kernel maintainers"
+      },
+      {
+        "start": 30600,
+        "stop": 30900,
+        "text": " going on to say he recently spent six hours"
+      },
+      {
+        "start": 30900,
+        "stop": 31200,
+        "text": " arguing on IRC with an Upstream developer."
+      },
+      {
+        "start": 31200,
+        "stop": 31500,
+        "text": " Yeah, and then Hector followed that up with another tweet"
+      },
+      {
+        "start": 31500,
+        "stop": 31800,
+        "text": " saying, quote, like dude, if you aren't going to step"
+      },
+      {
+        "start": 31800,
+        "stop": 32100,
+        "text": " into my world and actually understand what I'm trying to do here,"
+      },
+      {
+        "start": 32100,
+        "stop": 32400,
+        "text": " just suck it up and act my patch. It's not my"
+      },
+      {
+        "start": 32400,
+        "stop": 32700,
+        "text": " job to drag you kicking and screaming until you either give up"
+      },
+      {
+        "start": 32700,
+        "stop": 33000,
+        "text": " or have a light bulb moment. And"
+      },
+      {
+        "start": 33000,
+        "stop": 33300,
+        "text": " seems some on the kernel team have noticed that thread"
+      },
+      {
+        "start": 33300,
+        "stop": 33600,
+        "text": " and apparently did not take very kindly"
+      },
+      {
+        "start": 33600,
+        "stop": 33900,
+        "text": " to the tweets. It really would be a shame"
+      },
+      {
+        "start": 33900,
+        "stop": 34200,
+        "text": " of these kinds of things resulted in a slow down of progress"
+      },
+      {
+        "start": 34200,
+        "stop": 34500,
+        "text": " on this important work just due to personal"
+      },
+      {
+        "start": 34500,
+        "stop": 34800,
+        "text": " issues between teams. But sadly,"
+      },
+      {
+        "start": 34800,
+        "stop": 35100,
+        "text": " it would not be the first time we've seen that."
+      },
+      {
+        "start": 35100,
+        "stop": 35800,
+        "text": " I think one of the really great aspects of basing your infrastructure"
+      },
+      {
+        "start": 35800,
+        "stop": 36100,
+        "text": " and tooling on open source is that you can watch"
+      },
+      {
+        "start": 36100,
+        "stop": 36400,
+        "text": " and plan to see what's coming down the pipe and build"
+      },
+      {
+        "start": 36400,
+        "stop": 36700,
+        "text": " accordingly, like we just did with the kernel."
+      },
+      {
+        "start": 36700,
+        "stop": 37000,
+        "text": " And you can watch for stuff that's anywhere in the stack"
+      },
+      {
+        "start": 37000,
+        "stop": 37300,
+        "text": " or you can watch for stuff that just Westpaint is excited about."
+      },
+      {
+        "start": 37300,
+        "stop": 37600,
+        "text": " And BcashFS is certainly one of those."
+      },
+      {
+        "start": 37600,
+        "stop": 37900,
+        "text": " Yes, it is. And things are just looking"
+      },
+      {
+        "start": 37900,
+        "stop": 38200,
+        "text": " better and better. On Friday, BcashFS"
+      },
+      {
+        "start": 38200,
+        "stop": 38500,
+        "text": " developer Kent Overstreet published a new status update."
+      },
+      {
+        "start": 38500,
+        "stop": 38800,
+        "text": " And while the file system has been in development"
+      },
+      {
+        "start": 38800,
+        "stop": 39100,
+        "text": " since 2015, progress has really been"
+      },
+      {
+        "start": 39100,
+        "stop": 39400,
+        "text": " picking up of late. In his most recent update,"
+      },
+      {
+        "start": 39400,
+        "stop": 39700,
+        "text": " Overstreet noted that the on-disk format changes"
+      },
+      {
+        "start": 39700,
+        "stop": 40000,
+        "text": " are finally starting to slow down, which is an important"
+      },
+      {
+        "start": 40000,
+        "stop": 40300,
+        "text": " development if you want a file system that doesn't change things"
+      },
+      {
+        "start": 40300,
+        "stop": 40600,
+        "text": " out from under you. Yeah, and it also is an important"
+      },
+      {
+        "start": 40600,
+        "stop": 40900,
+        "text": " milestone for tooling to get built around that file system."
+      },
+      {
+        "start": 40900,
+        "stop": 41200,
+        "text": " I mean, I know we're not quite there yet."
+      },
+      {
+        "start": 41200,
+        "stop": 41500,
+        "text": " It'll be ready when it's ready, but it does feel"
+      },
+      {
+        "start": 41500,
+        "stop": 41800,
+        "text": " like we're getting within throwing distance and just getting to this"
+      },
+      {
+        "start": 41800,
+        "stop": 42100,
+        "text": " milestone where all of that's getting finalized."
+      },
+      {
+        "start": 42100,
+        "stop": 42400,
+        "text": " That's huge. Also, Overstreet has a completely"
+      },
+      {
+        "start": 42400,
+        "stop": 42700,
+        "text": " rewritten allocator in here now that's been developed to address"
+      },
+      {
+        "start": 42700,
+        "stop": 43000,
+        "text": " issues that were less than ideal with the previous allocator."
+      },
+      {
+        "start": 43000,
+        "stop": 43300,
+        "text": " And Overstreet notes that the new allocator is much more"
+      },
+      {
+        "start": 43300,
+        "stop": 43600,
+        "text": " scalable and simpler as well. Yeah, that definitely"
+      },
+      {
+        "start": 43600,
+        "stop": 43900,
+        "text": " seems to be one of the bigger recent developments, as well"
+      },
+      {
+        "start": 43900,
+        "stop": 44300,
+        "text": " as snapshots having stabilized recently and RAID 5 and 6"
+      },
+      {
+        "start": 44300,
+        "stop": 44700,
+        "text": " support, which is now, quote, \"getting close to usable.\""
+      },
+      {
+        "start": 44700,
+        "stop": 45100,
+        "text": " And performance. Let's not forget that. Don't bury the lead here."
+      },
+      {
+        "start": 45100,
+        "stop": 45400,
+        "text": " I know that's one of the reasons you've always been fascinated by the potential"
+      },
+      {
+        "start": 45400,
+        "stop": 45700,
+        "text": " performance of BcashFS, and it seems some work has been"
+      },
+      {
+        "start": 45700,
+        "stop": 46000,
+        "text": " going into that area, continues to go into that area, but just recent"
+      },
+      {
+        "start": 46000,
+        "stop": 46400,
+        "text": " work has resulted in a 50% improvement"
+      },
+      {
+        "start": 46400,
+        "stop": 46800,
+        "text": " for 4K direct random writes. This is all going"
+      },
+      {
+        "start": 46800,
+        "stop": 47200,
+        "text": " pretty smooth. We don't have any timelines yet, but it does mean that Chris"
+      },
+      {
+        "start": 47200,
+        "stop": 47600,
+        "text": " is bearish on extended 4 and bullish"
+      },
+      {
+        "start": 47600,
+        "stop": 47800,
+        "text": " on BcashFS."
+      },
+      {
+        "start": 47800,
+        "stop": 48600,
+        "text": " Back in late 2020, FreeBSD introduced a wire guard driver"
+      },
+      {
+        "start": 48600,
+        "stop": 49000,
+        "text": " in the development cycle of FreeBSD 13. But then,"
+      },
+      {
+        "start": 49000,
+        "stop": 49400,
+        "text": " during the FreeBSD 13 release candidate phase,"
+      },
+      {
+        "start": 49400,
+        "stop": 49700,
+        "text": " that very same driver was removed over concerns about the quality of the"
+      },
+      {
+        "start": 49700,
+        "stop": 50100,
+        "text": " implementation. Well, this week, a new wire guard driver"
+      },
+      {
+        "start": 50100,
+        "stop": 50500,
+        "text": " has landed, with many fixes and improvements"
+      },
+      {
+        "start": 50500,
+        "stop": 50900,
+        "text": " over that old code from 2020. Something crucial"
+      },
+      {
+        "start": 50900,
+        "stop": 51300,
+        "text": " about this new work is that it was developed in cooperation with the"
+      },
+      {
+        "start": 51300,
+        "stop": 51700,
+        "text": " upstream wire guard developers led by Jason Donenfeld."
+      },
+      {
+        "start": 51700,
+        "stop": 52100,
+        "text": " And with this merge, there's now 7,600"
+      },
+      {
+        "start": 52100,
+        "stop": 52500,
+        "text": " new lines of fancy wire guard kernel driver"
+      },
+      {
+        "start": 52500,
+        "stop": 52900,
+        "text": " in the mainline FreeBSD repo, which should be included with"
+      },
+      {
+        "start": 52900,
+        "stop": 53300,
+        "text": " FreeBSD 14. And for those of you on a current"
+      },
+      {
+        "start": 53300,
+        "stop": 53700,
+        "text": " FreeBSD release, well, don't worry, the wire guard module is also available"
+      },
+      {
+        "start": 53700,
+        "stop": 54100,
+        "text": " via FreeBSD ports."
+      },
+      {
+        "start": 54100,
+        "stop": 54500,
+        "text": " linode.com/lan. That's where you go to get"
+      },
+      {
+        "start": 54500,
+        "stop": 54900,
+        "text": " $100 in 60-day credit on a new account, and it's a great way to support the show"
+      },
+      {
+        "start": 54900,
+        "stop": 55300,
+        "text": " while you're checking out something great. Linode is fast, reliable"
+      },
+      {
+        "start": 55300,
+        "stop": 55700,
+        "text": " and well-built, and it's a great way to start out hosting with the best support in the business."
+      },
+      {
+        "start": 55700,
+        "stop": 56100,
+        "text": " It's what I choose to use for everything we've deployed recently. Our whole team knows"
+      },
+      {
+        "start": 56100,
+        "stop": 56500,
+        "text": " how to use Linode now. Their API is super easy to integrate with"
+      },
+      {
+        "start": 56500,
+        "stop": 56900,
+        "text": " our scripts. We can have systems take snapshots before we make any major changes"
+      },
+      {
+        "start": 56900,
+        "stop": 57300,
+        "text": " and we can just integrate it with our infrastructure management tools. We upgraded"
+      },
+      {
+        "start": 57300,
+        "stop": 57700,
+        "text": " to the new OpenSSL vulnerability in just minutes, thanks to the tooling that we can use"
+      },
+      {
+        "start": 57700,
+        "stop": 58100,
+        "text": " at Linode. So when I say we love it, I mean it. And it's"
+      },
+      {
+        "start": 58100,
+        "stop": 58500,
+        "text": " great to see a lot of people out there that just want to lock you into their crazy platforms. And you guys know I come on here"
+      },
+      {
+        "start": 58500,
+        "stop": 58900,
+        "text": " every single week and I tell you Linode is getting better, and it's true. I mean, can you imagine what it's going to be like"
+      },
+      {
+        "start": 58900,
+        "stop": 59300,
+        "text": " today? They have 11 data centers around the world, and they're going to double that."
+      },
+      {
+        "start": 59300,
+        "stop": 59700,
+        "text": " And more, really, they have a concept for micro data centers that's coming out"
+      },
+      {
+        "start": 59700,
+        "stop": 60100,
+        "text": " soon too that you'll hear more about. So check it out. It's a great time to get started."
+      },
+      {
+        "start": 60100,
+        "stop": 60500,
+        "text": " linode.com/lan. You get that $100, you support"
+      },
+      {
+        "start": 60500,
+        "stop": 60900,
+        "text": " the show, and you can try out the world's best platform to run Linux"
+      },
+      {
+        "start": 60900,
+        "stop": 61300,
+        "text": " and applications on Linux. There are a lot of options in the market,"
+      },
+      {
+        "start": 61300,
+        "stop": 61700,
+        "text": " but none of them. None of them check all the boxes. And Linode"
+      },
+      {
+        "start": 61700,
+        "stop": 62100,
+        "text": " has the staying power. You build it once, you deploy it on Linode, it lasts forever."
+      },
+      {
+        "start": 62100,
+        "stop": 62500,
+        "text": " linode.com/lan"
+      },
+      {
+        "start": 62500,
+        "stop": 62900,
+        "text": " collide.com/lan. Collide"
+      },
+      {
+        "start": 62900,
+        "stop": 63300,
+        "text": " is endpoint security that takes advantage of your most powerful untapped resource"
+      },
+      {
+        "start": 63300,
+        "stop": 63700,
+        "text": " in IT. End users. And when you're trying to achieve security goals for yourself,"
+      },
+      {
+        "start": 63700,
+        "stop": 64100,
+        "text": " or a third party audit, a lot of time shops have gone to old school"
+      },
+      {
+        "start": 64100,
+        "stop": 64500,
+        "text": " tools, MDMs that force disruptive agents onto employees' devices."
+      },
+      {
+        "start": 64500,
+        "stop": 64900,
+        "text": " The old way of doing things, you lock it down like it's Fort Knox, you often introduce new"
+      },
+      {
+        "start": 64900,
+        "stop": 65300,
+        "text": " vulnerabilities thanks to that software, and horrible performance that turns IT and end users"
+      },
+      {
+        "start": 65300,
+        "stop": 65700,
+        "text": " against each other. Collide does things differently. Instead of"
+      },
+      {
+        "start": 65700,
+        "stop": 66100,
+        "text": " forcing changes on users, Collide sends them security recommendations"
+      },
+      {
+        "start": 66100,
+        "stop": 66500,
+        "text": " via Slack. It'll automatically notify your team when their devices are insecure,"
+      },
+      {
+        "start": 66500,
+        "stop": 66900,
+        "text": " and then Collide gives them step-by-step instructions on how to solve that problem. So by"
+      },
+      {
+        "start": 66900,
+        "stop": 67300,
+        "text": " reaching out to employees via a friendly Slack DM, and educating them about policies"
+      },
+      {
+        "start": 67300,
+        "stop": 67700,
+        "text": " that your company follows, Collide can help you build a culture in which"
+      },
+      {
+        "start": 67700,
+        "stop": 68100,
+        "text": " everyone contributes to security, because everyone understands"
+      },
+      {
+        "start": 68100,
+        "stop": 68500,
+        "text": " how and why to do it. And for IT admins, you get a fantastic dashboard."
+      },
+      {
+        "start": 68500,
+        "stop": 68900,
+        "text": " Collide lets you monitor your entire fleet. Mac, Windows, or Linux. At a glance,"
+      },
+      {
+        "start": 68900,
+        "stop": 69300,
+        "text": " you can see the state of your machines and make sure they're following the policies"
+      },
+      {
+        "start": 69300,
+        "stop": 69700,
+        "text": " that you care about. And you can prove compliance to your auditors, customers,"
+      },
+      {
+        "start": 69700,
+        "stop": 70100,
+        "text": " and your leadership. So that's Collide. User-centered, cross-platform"
+      },
+      {
+        "start": 70100,
+        "stop": 70500,
+        "text": " endpoint security for teams that Slack. You can meet your compliance"
+      },
+      {
+        "start": 70500,
+        "stop": 70900,
+        "text": " goals by putting users first. Visit Collide.com/land"
+      },
+      {
+        "start": 70900,
+        "stop": 71300,
+        "text": " to find out how. You go there, you sign up for a free trial,"
+      },
+      {
+        "start": 71300,
+        "stop": 71700,
+        "text": " they'll give you a goodie bag that includes a free t-shirt. I'd like a free t-shirt"
+      },
+      {
+        "start": 71700,
+        "stop": 72100,
+        "text": " right now. I could use a free t-shirt. So go try it out. Support the show"
+      },
+      {
+        "start": 72100,
+        "stop": 72500,
+        "text": " and do security better and differently with Collide."
+      },
+      {
+        "start": 72500,
+        "stop": 72900,
+        "text": " K-O-L-I-D-E dot com slash land. Collide dot com slash land."
+      },
+      {
+        "start": 72900,
+        "stop": 73700,
+        "text": " Last week, we covered the formation of Git-T Limited. As they put it,"
+      },
+      {
+        "start": 73700,
+        "stop": 74100,
+        "text": " a company to help ensure the goals of the project are met."
+      },
+      {
+        "start": 74100,
+        "stop": 74500,
+        "text": " However, over the last week, we've seen a number of"
+      },
+      {
+        "start": 74500,
+        "stop": 74900,
+        "text": " issues raised by the Git-T development community. It seems a good number"
+      },
+      {
+        "start": 74900,
+        "stop": 75300,
+        "text": " of them were surprised by the announcement and published an open letter"
+      },
+      {
+        "start": 75300,
+        "stop": 75700,
+        "text": " demanding, quote, \"restitution of the Git-T project"
+      },
+      {
+        "start": 75700,
+        "stop": 76100,
+        "text": " after the takeover announced on 25 October.\" The open"
+      },
+      {
+        "start": 76100,
+        "stop": 76500,
+        "text": " letter stresses that the group behind it actually supports the creation of"
+      },
+      {
+        "start": 76500,
+        "stop": 76900,
+        "text": " the for-profit company, but it seems their core issue resolves around the"
+      },
+      {
+        "start": 76900,
+        "stop": 77300,
+        "text": " ownership of the domains and the trademarks. They state in the"
+      },
+      {
+        "start": 77300,
+        "stop": 77700,
+        "text": " letter that they, quote, \"want to believe this is an honest mistake and ask that"
+      },
+      {
+        "start": 77700,
+        "stop": 78100,
+        "text": " a non-profit organization owned by the Git-T community is created"
+      },
+      {
+        "start": 78100,
+        "stop": 78500,
+        "text": " and that the Git-T trademark and domains are transferred"
+      },
+      {
+        "start": 78500,
+        "stop": 78900,
+        "text": " to that non-profit and that the name of the company is changed"
+      },
+      {
+        "start": 78900,
+        "stop": 79300,
+        "text": " to avoid any confusion with the non-profit.\" However,"
+      },
+      {
+        "start": 79300,
+        "stop": 79700,
+        "text": " it seems no response was given within a satisfactory time period"
+      },
+      {
+        "start": 79700,
+        "stop": 80100,
+        "text": " and the authors of the letter have stated they have no alternative but to fork"
+      },
+      {
+        "start": 80100,
+        "stop": 80500,
+        "text": " the project under a new name, writing, quote,"
+      },
+      {
+        "start": 80500,
+        "stop": 80900,
+        "text": " \"This unfortunately concludes the Git-T open letter has failed"
+      },
+      {
+        "start": 80900,
+        "stop": 81300,
+        "text": " and there is no alternative but forking the project under a new name"
+      },
+      {
+        "start": 81300,
+        "stop": 81700,
+        "text": " with a healthy democratic governance, exactly as it was"
+      },
+      {
+        "start": 81700,
+        "stop": 82100,
+        "text": " before 25 October in the Git-T project, but"
+      },
+      {
+        "start": 82100,
+        "stop": 82500,
+        "text": " this time in the context of an incorporated non-profit that"
+      },
+      {
+        "start": 82500,
+        "stop": 82900,
+        "text": " provides a legal framework.\" In my opinion, surprise"
+      },
+      {
+        "start": 82900,
+        "stop": 83300,
+        "text": " and disappointment are the general themes that I get when reading this open letter."
+      },
+      {
+        "start": 83300,
+        "stop": 83700,
+        "text": " They state that it was the community who elected these folks last year"
+      },
+      {
+        "start": 83700,
+        "stop": 84100,
+        "text": " who are now creating this new company, and it seems that the authors of the"
+      },
+      {
+        "start": 84100,
+        "stop": 84500,
+        "text": " open letter believe that they should be the ones retaining ownership of those domains"
+      },
+      {
+        "start": 84500,
+        "stop": 84900,
+        "text": " and trademarks, and I can totally understand"
+      },
+      {
+        "start": 84900,
+        "stop": 85300,
+        "text": " that and see that from the community's perspective. It's sort of a form"
+      },
+      {
+        "start": 85300,
+        "stop": 85700,
+        "text": " of guaranteed ultimate control. But I also"
+      },
+      {
+        "start": 85700,
+        "stop": 86100,
+        "text": " just can't see a for-profit business that currently"
+      },
+      {
+        "start": 86100,
+        "stop": 86500,
+        "text": " has possession of those things willfully giving them up"
+      },
+      {
+        "start": 86500,
+        "stop": 86900,
+        "text": " unless they're just truly bought into the community message and ideas overall."
+      },
+      {
+        "start": 86900,
+        "stop": 87300,
+        "text": " But I don't know, Wes, to me this seems like a direct conflict of interest."
+      },
+      {
+        "start": 87300,
+        "stop": 87700,
+        "text": " Yeah, it's a complicated scenario. You know, you've got to think of the"
+      },
+      {
+        "start": 87700,
+        "stop": 88100,
+        "text": " risk that you have, obviously having community members develop a fork,"
+      },
+      {
+        "start": 88100,
+        "stop": 88500,
+        "text": " take efforts away from developing the main existing Git-T project,"
+      },
+      {
+        "start": 88500,
+        "stop": 88900,
+        "text": " that's a real threat. But on the other hand, what they're"
+      },
+      {
+        "start": 88900,
+        "stop": 89300,
+        "text": " proposing is a more complicated structure. And I could see,"
+      },
+      {
+        "start": 89300,
+        "stop": 89700,
+        "text": " I'm not saying this is my position, but I could see how the founders of the for-profit"
+      },
+      {
+        "start": 89700,
+        "stop": 90100,
+        "text": " company don't quite see the benefit. I suppose in one"
+      },
+      {
+        "start": 90100,
+        "stop": 90500,
+        "text": " sense it's asking the question, what is the future of the project?"
+      },
+      {
+        "start": 90500,
+        "stop": 90900,
+        "text": " Is it a for-profit entity that is happening"
+      },
+      {
+        "start": 90900,
+        "stop": 91300,
+        "text": " to make an open-source project, or is it an open-source project first"
+      },
+      {
+        "start": 91300,
+        "stop": 91700,
+        "text": " that also has a for-profit company there to support that"
+      },
+      {
+        "start": 91700,
+        "stop": 92100,
+        "text": " effort? Those are different models, and I think with all the surprise"
+      },
+      {
+        "start": 92100,
+        "stop": 92500,
+        "text": " and maybe lack of communication, it's hard to know exactly"
+      },
+      {
+        "start": 92500,
+        "stop": 92900,
+        "text": " what the intentions are here. They may be good, but it's just hard to say."
+      },
+      {
+        "start": 92900,
+        "stop": 93300,
+        "text": " I think what you just articulated there is what the community"
+      },
+      {
+        "start": 93300,
+        "stop": 93700,
+        "text": " and this for-profit organization are going to go through the process of figuring out"
+      },
+      {
+        "start": 93700,
+        "stop": 94100,
+        "text": " with this. And I was wondering when we covered"
+      },
+      {
+        "start": 94100,
+        "stop": 94500,
+        "text": " the story last week if we'd see a fork out of this, and it"
+      },
+      {
+        "start": 94500,
+        "stop": 94900,
+        "text": " seems like it's 50/50 with these types of announcements."
+      },
+      {
+        "start": 94900,
+        "stop": 95300,
+        "text": " And unfortunately, this is one that's going to result in a fork."
+      },
+      {
+        "start": 95300,
+        "stop": 95700,
+        "text": " I say unfortunately just because you always hate to see any kind of"
+      },
+      {
+        "start": 95700,
+        "stop": 96100,
+        "text": " talent, time, skills diffused out."
+      },
+      {
+        "start": 96100,
+        "stop": 96500,
+        "text": " I mean this has been a project that many folks in the Jupyter broadcasting community"
+      },
+      {
+        "start": 96500,
+        "stop": 96900,
+        "text": " and the larger sort of open-source tech world, they use and rely on and have"
+      },
+      {
+        "start": 96900,
+        "stop": 97300,
+        "text": " trusted for years now, so definitely it's concerning."
+      },
+      {
+        "start": 97300,
+        "stop": 97700,
+        "text": " We'll see where it goes. It could work out for the best, sometimes these things do."
+      },
+      {
+        "start": 97700,
+        "stop": 98100,
+        "text": " Or perhaps it all gets resolved. These are the interesting bits."
+      },
+      {
+        "start": 98100,
+        "stop": 98500,
+        "text": " There's a bit of a theme in this week's episode, is this stuff in open source is all out in the open for all"
+      },
+      {
+        "start": 98500,
+        "stop": 98900,
+        "text": " of us to watch, and so we get to document it in real time."
+      },
+      {
+        "start": 98900,
+        "stop": 99300,
+        "text": " That's the goal of this show. We try to pull out the little bits and nuggets that are happening in this"
+      },
+      {
+        "start": 99300,
+        "stop": 99700,
+        "text": " world that we think really matter to you this week and can help inform you"
+      },
+      {
+        "start": 99700,
+        "stop": 100100,
+        "text": " in your career and in your passion. So go to LinuxActionNews.com/subscribe for all"
+      },
+      {
+        "start": 100100,
+        "stop": 100500,
+        "text": " the ways to get new episodes every single week. And LinuxActionNews.com/contact"
+      },
+      {
+        "start": 100500,
+        "stop": 100900,
+        "text": " for ways to get in touch. If we missed a"
+      },
+      {
+        "start": 100900,
+        "stop": 101300,
+        "text": " story, something you'd like to hear about, boost in with a new podcast app at"
+      },
+      {
+        "start": 101300,
+        "stop": 101700,
+        "text": " newpodcastapps.com and tell us about it. Don't worry, we'll be back next week"
+      },
+      {
+        "start": 101700,
+        "stop": 102100,
+        "text": " with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 102100,
+        "stop": 102500,
+        "text": " Thanks for joining us, and that's all the news for this week."
+      },
+      {
+        "start": 102700,
+        "stop": 103100,
+        "text": " [Music]"
+      },
+      {
+        "start": 103300,
+        "stop": 103700,
+        "text": " [Music]"
+      },
+      {
+        "start": 103700,
+        "stop": 104100,
+        "text": " [Music]"
+      },
+      {
+        "start": 104100,
+        "stop": 104500,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 726,
+      "nanos": 733147988
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 265",
+    "pictures": [],
+    "duration": {
+      "secs": 1042,
+      "nanos": 158000000
+    },
+    "unique_id": "http://linuxactionnews.com/265"
+  },
+  "episode": {
+    "title": "Linux Action News 265",
+    "description": "What you need to know about that new OpenSSL vulnerability, the big bcachefs update we've been waiting for, and why the community is creating a Gitea fork.",
+    "content": "<p><p>What you need to know about that new OpenSSL vulnerability, the big bcachefs update we&#39;ve been waiting for, and why the community is creating a Gitea fork.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/\" title=\"OpenSSL 3.0.7 Released Fixing Critical Flaw\" rel=\"nofollow\">OpenSSL 3.0.7 Released Fixing Critical Flaw</a> &mdash; Today we published an advisory about CVE-2022-3786 (“X.509 Email Address Variable Length Buffer Overflow”) and CVE-2022-3602 (“X.509 Email Address 4-byte Buffer Overflow”).</li><li><a href=\"https://mta.openssl.org/pipermail/openssl-announce/2022-November/000241.html\" title=\"OpenSSL version 3.0.7 published\" rel=\"nofollow\">OpenSSL version 3.0.7 published</a></li><li><a href=\"https://www.openssl.org/news/openssl-3.0-notes.html\" title=\"/news/openssl-3.0-notes.html\" rel=\"nofollow\">/news/openssl-3.0-notes.html</a></li><li><a href=\"https://www.phoronix.com/news/Fedora-37-November-Delay\" title=\"Fedora 37 Release Delayed To Mid-November Over Critical OpenSSL Vulnerability\" rel=\"nofollow\">Fedora 37 Release Delayed To Mid-November Over Critical OpenSSL Vulnerability</a></li><li><a href=\"https://www.phoronix.com/news/Lazy-RCU-Likely-For-Linux-6.2\" title=\"Linux 6.2 Power-Savings While Idle Or Lightly Loaded\" rel=\"nofollow\">Linux 6.2 Power-Savings While Idle Or Lightly Loaded</a> &mdash; The short story for Linux end-users is the Lazy RCU work can provide 5~10% power-savings for idle or lightly-loaded systems by this lazy/batching functionality.</li><li><a href=\"https://www.phoronix.com/news/Linux-62-Apple-M1-Pro-Max-Ultra\" title=\"Linux 6.2 Picking Up Mainline Support For Apple M1 Pro/Max/Ultra Hardware\" rel=\"nofollow\">Linux 6.2 Picking Up Mainline Support For Apple M1 Pro/Max/Ultra Hardware</a> &mdash; This gets the high-end Mac Studio systems with those premium SoCs now compatible with the mainline kernel.</li><li><a href=\"http://webcache.googleusercontent.com/search?q=cache:https://twitter.com/marcan42/status/1587010094197506048\" title=\"Hector's Deleted Tweet\" rel=\"nofollow\">Hector's Deleted Tweet</a> &mdash; I'm getting tired of arguing with kernel maintainers. The other day I spent 6 hours arguing on IRC about what should've been a 30 minute fix patch.</li><li><a href=\"https://twitter.com/marcan42/status/1587011361753960448\" title=\"Hector Martin on Twitter Follow Up Tweet\" rel=\"nofollow\">Hector Martin on Twitter Follow Up Tweet</a> &mdash; Like dude, if you aren't going to step into my world and actually understand what I'm trying to do here, just suck it up and ack my patch. It is not my job to drag you kicking and screaming until you either give up or have a lightbulb moment.</li><li><a href=\"https://twitter.com/marcan42/status/1587285684800606208\" title=\"Seems some Kernel Maintainers Noticed the Twitter Rant\" rel=\"nofollow\">Seems some Kernel Maintainers Noticed the Twitter Rant</a> &mdash; Well they saw my tweets and apparently didn't like them 🤷‍♂️\n</li><li><a href=\"https://www.phoronix.com/news/Bcachefs-Linux-October-2022\" title=\"Bcachefs Rolling Out New Allocator, Performance Continues Improving\" rel=\"nofollow\">Bcachefs Rolling Out New Allocator, Performance Continues Improving</a> &mdash; Bcachefs developer Kent Overstreet on Friday published a new status update on this original file-system born out of Linux's block cache (BCache) code.</li><li><a href=\"https://www.phoronix.com/news/FreeBSD-WireGuard-Lands-2022\" title=\"FreeBSD Re-Introduces WireGuard Support Into Its Kernel\" rel=\"nofollow\">FreeBSD Re-Introduces WireGuard Support Into Its Kernel</a> &mdash; As of Friday, a new WireGuard driver implementation has been re-introduced with many fixes/improvements over the code state from 2020.</li><li><a href=\"https://gitea-open-letter.coding.social/\" title=\"Open Letter to Gitea - Restoring Trust in the Gitea Project\" rel=\"nofollow\">Open Letter to Gitea - Restoring Trust in the Gitea Project</a> &mdash; This unfortunately concludes the Gitea Open Letter has failed and there is no alternative but forking the project under a new name, with a healthy democratic governance.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8997",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15758797/ee9013c5-bc14-4d86-82d7-ae77ed4a9d38.mp3",
+      "length": "15021572",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-03T04:30:00+01:00"
+  },
+  "speedup": 1.4340311
+}

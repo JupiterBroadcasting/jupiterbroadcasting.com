@@ -1,0 +1,4157 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 800,
+        "text": " This is Coda Radio, Episode 479 for August 15th, 2022."
+      },
+      {
+        "start": 800,
+        "stop": 2000,
+        "text": " Hey good buddy, welcome back to Jupiter Broadcasting's weekly talk show."
+      },
+      {
+        "start": 2000,
+        "stop": 2400,
+        "text": " Taking a pragmatic look at the art and the business of software development and the world of technology."
+      },
+      {
+        "start": 2400,
+        "stop": 2800,
+        "text": " My name is Chris and joining us fighting his old IRC client"
+      },
+      {
+        "start": 2800,
+        "stop": 3200,
+        "text": " it's our host, Mr. Dominic. Hello Mike!"
+      },
+      {
+        "start": 3200,
+        "stop": 3600,
+        "text": " She's an oldie but she got me all the way across Route 66 all the way to Orleans"
+      },
+      {
+        "start": 3600,
+        "stop": 4000,
+        "text": " down to Tampa Way. That adium, it's old reliable"
+      },
+      {
+        "start": 4000,
+        "stop": 4400,
+        "text": " just not working right now. It's working right now. So I reopen it and it's like you already identified"
+      },
+      {
+        "start": 4400,
+        "stop": 4800,
+        "text": " I'm like I know, thank you."
+      },
+      {
+        "start": 4800,
+        "stop": 5200,
+        "text": " IRC's old, you know, it's old. It is."
+      },
+      {
+        "start": 5200,
+        "stop": 5600,
+        "text": " I think what happened is I didn't use this computer since last week's show"
+      },
+      {
+        "start": 5600,
+        "stop": 6000,
+        "text": " and all of my stuff is just popping up. You're not logged in."
+      },
+      {
+        "start": 6000,
+        "stop": 6400,
+        "text": " You're logged in. You're not logged in. It's like, yes."
+      },
+      {
+        "start": 6400,
+        "stop": 6800,
+        "text": " Now that we have the star power of Michael Dominic on our Matrix server we might as well just migrate our chat"
+      },
+      {
+        "start": 6800,
+        "stop": 7200,
+        "text": " over to Matrix soon. You know what I mean? We should as soon as I authorize this machine."
+      },
+      {
+        "start": 7200,
+        "stop": 7600,
+        "text": " I've been trying out Fluffy Chat by the way, which is a pretty decent Matrix client as well."
+      },
+      {
+        "start": 7600,
+        "stop": 8000,
+        "text": " We'll have to run it by the union though"
+      },
+      {
+        "start": 8000,
+        "stop": 8400,
+        "text": " because it's already turned around on us."
+      },
+      {
+        "start": 8400,
+        "stop": 8800,
+        "text": " What was this? A month before having a mascot has completely derailed the show?"
+      },
+      {
+        "start": 8800,
+        "stop": 9200,
+        "text": " It may be over after this. It may be over. @KodaRadioShow"
+      },
+      {
+        "start": 9200,
+        "stop": 9600,
+        "text": " from the official Koda Radio mascot, they write, \"I want to remind you both"
+      },
+      {
+        "start": 9600,
+        "stop": 10000,
+        "text": " that we have strict labor laws in Europe. I don't think denying a mascot its"
+      },
+      {
+        "start": 10000,
+        "stop": 10400,
+        "text": " vacation is legal. I consider founding the first podcast"
+      },
+      {
+        "start": 10400,
+        "stop": 10800,
+        "text": " mascot union to make sure the podcast mascot's rights are respected and not eradicated."
+      },
+      {
+        "start": 10800,
+        "stop": 11200,
+        "text": " This is a threat. If we don't act, this is a threat and they will launch"
+      },
+      {
+        "start": 11200,
+        "stop": 11600,
+        "text": " a union, a Koda Radio union, and then you know where that leads. The show's"
+      },
+      {
+        "start": 11600,
+        "stop": 12000,
+        "text": " costs are going to explode. It's not going to be profitable to do the show."
+      },
+      {
+        "start": 12000,
+        "stop": 12400,
+        "text": " We're going to have to end the show. Well luckily I called an old friend from the State Department."
+      },
+      {
+        "start": 12400,
+        "stop": 12800,
+        "text": " Oh yeah? And she had an interesting thing to say. How quick are you on your soundboard?"
+      },
+      {
+        "start": 12800,
+        "stop": 13200,
+        "text": " F*** the EU. But we do love Egon, our Koda Radio"
+      },
+      {
+        "start": 13200,
+        "stop": 13600,
+        "text": " mascot. Yeah but Newland's going to come over there and clear things up."
+      },
+      {
+        "start": 13600,
+        "stop": 14000,
+        "text": " I would expect... But don't worry, she'll bring sandwiches. She's definitely not personally responsible for"
+      },
+      {
+        "start": 14000,
+        "stop": 14400,
+        "text": " anything that's going on right now. No, definitely not directly responsible."
+      },
+      {
+        "start": 14400,
+        "stop": 14800,
+        "text": " No. You know, the thing about the Koda Radio mascot though, I thought maybe we could just"
+      },
+      {
+        "start": 14800,
+        "stop": 15200,
+        "text": " buy them off with some air time. You know, because air time is valuable. So maybe if we just"
+      },
+      {
+        "start": 15200,
+        "stop": 15600,
+        "text": " spent... You know what I'm saying? We'll just bribe them with some air time. We'll see. It's treacherous"
+      },
+      {
+        "start": 15600,
+        "stop": 16000,
+        "text": " though friends. If the show isn't here next week it's because the union"
+      },
+      {
+        "start": 16000,
+        "stop": 16400,
+        "text": " took us out. That's what we get for agreeing to a mascot."
+      },
+      {
+        "start": 16400,
+        "stop": 16800,
+        "text": " Alright, we got some feedback into the show and I thought we'd cover out bits of it. Some of it"
+      },
+      {
+        "start": 16800,
+        "stop": 17200,
+        "text": " I replied to directly, but I wanted to read a Frustrated Commuter's feedback."
+      },
+      {
+        "start": 17200,
+        "stop": 17600,
+        "text": " Listening to last episode, I think there's a huge issue in the ideas about"
+      },
+      {
+        "start": 17600,
+        "stop": 18000,
+        "text": " what the workplace is supposed to be and why the prospect of being in the office"
+      },
+      {
+        "start": 18000,
+        "stop": 18400,
+        "text": " is so absurd. I live in the greater Sacramento area, but whereas I live"
+      },
+      {
+        "start": 18400,
+        "stop": 18800,
+        "text": " in the lower west due to proximity to my family, most"
+      },
+      {
+        "start": 18800,
+        "stop": 19200,
+        "text": " jobs are in the northeast. And as such, I have"
+      },
+      {
+        "start": 19200,
+        "stop": 19600,
+        "text": " about an hour commute each way. I just started a job at a nationwide"
+      },
+      {
+        "start": 19600,
+        "stop": 20000,
+        "text": " retailer and we do projects in stores across the country."
+      },
+      {
+        "start": 20000,
+        "stop": 20400,
+        "text": " I'll never touch a physical machine or a server as they're located in retail stores in"
+      },
+      {
+        "start": 20400,
+        "stop": 20800,
+        "text": " the US and Canada. My direct supervisor recently received a special exemption"
+      },
+      {
+        "start": 20800,
+        "stop": 21200,
+        "text": " to move to Tennessee and works completely remote, but I am required"
+      },
+      {
+        "start": 21200,
+        "stop": 21600,
+        "text": " to be in the office 8 hours a day, 3 days a week for now, but they say"
+      },
+      {
+        "start": 21600,
+        "stop": 22000,
+        "text": " full time is on the horizon, and we have an always on camera"
+      },
+      {
+        "start": 22000,
+        "stop": 22400,
+        "text": " to validate. What's worse, I am not allowed to sign something to skip lunch."
+      },
+      {
+        "start": 22400,
+        "stop": 22800,
+        "text": " I have to clock out for an hour at least, and that means in my previous job"
+      },
+      {
+        "start": 22800,
+        "stop": 23200,
+        "text": " I gave them 8 hours of my time per day, but now I have to give this company essentially"
+      },
+      {
+        "start": 23200,
+        "stop": 23600,
+        "text": " 11 hours of my day and spend more money on"
+      },
+      {
+        "start": 23600,
+        "stop": 24000,
+        "text": " fuel. I'm just less inclined to fit in with this culture worker remotely, maybe."
+      },
+      {
+        "start": 24000,
+        "stop": 24400,
+        "text": " But I'm not there to make friends. This isn't a social club"
+      },
+      {
+        "start": 24400,
+        "stop": 24800,
+        "text": " or a barbecue. If I'm meeting the expectations, then the culture"
+      },
+      {
+        "start": 24800,
+        "stop": 25200,
+        "text": " fit shouldn't matter. The insistence on going back to the office is just"
+      },
+      {
+        "start": 25200,
+        "stop": 25600,
+        "text": " unnecessary. It's often insulting as the people with the authority get the exceptions"
+      },
+      {
+        "start": 25600,
+        "stop": 26000,
+        "text": " to keep enjoying the comforts of a remote workplace that they had during the pandemic,"
+      },
+      {
+        "start": 26000,
+        "stop": 26400,
+        "text": " whereas rubes are now arguably paying the tax to sit in their AC."
+      },
+      {
+        "start": 26400,
+        "stop": 26800,
+        "text": " At the end of the day, I just can't help those 3 extra hours a day don't do anything"
+      },
+      {
+        "start": 26800,
+        "stop": 27200,
+        "text": " to make me want to fit into the workplace. They just make me ponder my next"
+      },
+      {
+        "start": 27200,
+        "stop": 27600,
+        "text": " contract. Frustrated commuter. Could you imagine"
+      },
+      {
+        "start": 27600,
+        "stop": 28000,
+        "text": " the always on camera stuff? How awful that's getting now?"
+      },
+      {
+        "start": 28000,
+        "stop": 28400,
+        "text": " No, no. I really don't think that"
+      },
+      {
+        "start": 28400,
+        "stop": 28800,
+        "text": " that's appropriate to ask of anybody. Part of me says, \"Well, go get a new job, man. If you"
+      },
+      {
+        "start": 28800,
+        "stop": 29200,
+        "text": " don't like it, get a new job.\" That's how you vote with your feet. But then, I also"
+      },
+      {
+        "start": 29200,
+        "stop": 29600,
+        "text": " understand it's not as always easy as that depending on your industry and your work"
+      },
+      {
+        "start": 29600,
+        "stop": 30000,
+        "text": " and financial situation. And the disturbing thing is"
+      },
+      {
+        "start": 30000,
+        "stop": 30400,
+        "text": " is the New York Times put out a pretty good piece just yesterday about the"
+      },
+      {
+        "start": 30400,
+        "stop": 30800,
+        "text": " rise of worker productivity scores. And they're using all these automated"
+      },
+      {
+        "start": 30800,
+        "stop": 31200,
+        "text": " tools, cameras, keyboard monitors,"
+      },
+      {
+        "start": 31200,
+        "stop": 31600,
+        "text": " mouse monitors, input on the screen monitors, and they're then generating"
+      },
+      {
+        "start": 31600,
+        "stop": 32000,
+        "text": " scores for the manager to"
+      },
+      {
+        "start": 32000,
+        "stop": 32400,
+        "text": " review them to get an idea of how hard they're working to basically collect data on what they're doing."
+      },
+      {
+        "start": 32400,
+        "stop": 32800,
+        "text": " And this New York Times article lays out"
+      },
+      {
+        "start": 32800,
+        "stop": 33200,
+        "text": " how it started at lower wage workers, but now it's"
+      },
+      {
+        "start": 33200,
+        "stop": 33600,
+        "text": " lawyers, nurses, they talk about a hospice care provider"
+      },
+      {
+        "start": 33600,
+        "stop": 34000,
+        "text": " who got one point for calling the family, she got another productivity point"
+      },
+      {
+        "start": 34000,
+        "stop": 34400,
+        "text": " for each patient she saw. They also have some quotes from some of the makers"
+      },
+      {
+        "start": 34400,
+        "stop": 34800,
+        "text": " of this monitoring software saying that, \"You know, our data points aren't super accurate."
+      },
+      {
+        "start": 34800,
+        "stop": 35200,
+        "text": " They still need refinement and probably shouldn't be used for judging people's overall performance.\""
+      },
+      {
+        "start": 35200,
+        "stop": 35600,
+        "text": " And yet, clearly it's happening. I mean, United Health seems like one of the bigger"
+      },
+      {
+        "start": 35600,
+        "stop": 36000,
+        "text": " ones they talk on here, but they mention three or four different companies that are"
+      },
+      {
+        "start": 36000,
+        "stop": 36400,
+        "text": " doing this with cameras, with activity monitoring,"
+      },
+      {
+        "start": 36400,
+        "stop": 36800,
+        "text": " and they also talk about the rise of"
+      },
+      {
+        "start": 36800,
+        "stop": 37200,
+        "text": " mouse jigglers, ads on TikTok and Instagram"
+      },
+      {
+        "start": 37200,
+        "stop": 37600,
+        "text": " where you buy a mouse jiggler that you put on your desk and you set your mouse"
+      },
+      {
+        "start": 37600,
+        "stop": 38000,
+        "text": " in the jiggler, which randomizes input to make it look like you're busy."
+      },
+      {
+        "start": 38000,
+        "stop": 38400,
+        "text": " And they're selling like hotcakes right now."
+      },
+      {
+        "start": 38400,
+        "stop": 38800,
+        "text": " So, okay, right, this is where I'm somehow meditating on our mascots,"
+      },
+      {
+        "start": 38800,
+        "stop": 39200,
+        "text": " shall we say, Pinko Kamiways, and maybe"
+      },
+      {
+        "start": 39200,
+        "stop": 39600,
+        "text": " I have been listening to some Ace of Base, so there's some Europop involved."
+      },
+      {
+        "start": 39600,
+        "stop": 40000,
+        "text": " But also, my evil capitalist is like,"
+      },
+      {
+        "start": 40000,
+        "stop": 40400,
+        "text": " you can certainly demand that people come to the office. I think it's stupid, like we talked about last week,"
+      },
+      {
+        "start": 40400,
+        "stop": 40800,
+        "text": " if you're a small company like ours, right? But like this"
+      },
+      {
+        "start": 40800,
+        "stop": 41200,
+        "text": " middle ground of I'm going to spy on you in your home,"
+      },
+      {
+        "start": 41200,
+        "stop": 41600,
+        "text": " I just feel like that's, if you distrust the people that work for you that"
+      },
+      {
+        "start": 41600,
+        "stop": 42000,
+        "text": " much, they should work for you. And I know I'm speaking from the position of like"
+      },
+      {
+        "start": 42000,
+        "stop": 42400,
+        "text": " small teams and small organizations where, you know, it's, you know how it is, Chris, it gets"
+      },
+      {
+        "start": 42400,
+        "stop": 42800,
+        "text": " super personal, right? Like somebody has a kid, it's a big deal, right?"
+      },
+      {
+        "start": 42800,
+        "stop": 43200,
+        "text": " Like it's, you know, I just, I can't"
+      },
+      {
+        "start": 43200,
+        "stop": 43600,
+        "text": " imagine, I mean, I think we both know how I would react, but I can't even"
+      },
+      {
+        "start": 43600,
+        "stop": 44000,
+        "text": " imagine asking someone to do that without feeling like a complete"
+      },
+      {
+        "start": 44000,
+        "stop": 44400,
+        "text": " scumbag. Here's some of the justification. They say it"
+      },
+      {
+        "start": 44400,
+        "stop": 44800,
+        "text": " gives them solid metrics and what they say, newfound"
+      },
+      {
+        "start": 44800,
+        "stop": 45200,
+        "text": " clarity. The New York Times goes on to write, \"Derelict workers"
+      },
+      {
+        "start": 45200,
+        "stop": 45600,
+        "text": " can be rooted out. Industrial ones can be rewarded."
+      },
+      {
+        "start": 45600,
+        "stop": 46000,
+        "text": " It is a way to really just focus on the results,"
+      },
+      {
+        "start": 46000,
+        "stop": 46400,
+        "text": " rather than the impressions.\" So it's just this"
+      },
+      {
+        "start": 46400,
+        "stop": 46800,
+        "text": " kind of spin of like, well, but the good employees get rewarded"
+      },
+      {
+        "start": 46800,
+        "stop": 47200,
+        "text": " and it's only really the bad employees that get worked out, which the good employees appreciate"
+      },
+      {
+        "start": 47200,
+        "stop": 47600,
+        "text": " too, so everyone wins."
+      },
+      {
+        "start": 47600,
+        "stop": 48000,
+        "text": " Basically the same justification of stack ranking. Yeah, and OKRs."
+      },
+      {
+        "start": 48000,
+        "stop": 48400,
+        "text": " I mean, it's stack ranking plus taping you, I guess."
+      },
+      {
+        "start": 48400,
+        "stop": 48800,
+        "text": " Yeah, God, you know what this is? I got some bacon"
+      },
+      {
+        "start": 48800,
+        "stop": 49200,
+        "text": " for you, buddy. You ready? This is"
+      },
+      {
+        "start": 49200,
+        "stop": 49600,
+        "text": " all a ploy by big hard drive to just"
+      },
+      {
+        "start": 49600,
+        "stop": 50000,
+        "text": " sell more local storage, because everybody's going to the cloud"
+      },
+      {
+        "start": 50000,
+        "stop": 50400,
+        "text": " and they want to sell these hard drives, they've got, you know, these huge trucks, so big storage"
+      },
+      {
+        "start": 50400,
+        "stop": 50800,
+        "text": " is colluding with software developers. It's Western"
+      },
+      {
+        "start": 50800,
+        "stop": 51200,
+        "text": " Digital and Seagate. They've got to sell big enterprise storage, because you imagine"
+      },
+      {
+        "start": 51200,
+        "stop": 51600,
+        "text": " like if you're monitoring all your employees, actually let's be real, that's probably a cloud"
+      },
+      {
+        "start": 51600,
+        "stop": 52000,
+        "text": " service too. Yeah, there's some SaaS vendor."
+      },
+      {
+        "start": 52000,
+        "stop": 52400,
+        "text": " So you know what, no offense, but there's some kids somewhere thinking, \"These guys are"
+      },
+      {
+        "start": 52400,
+        "stop": 52800,
+        "text": " idiots. I'm going to make this SaaS right now, or I just, yeah, it's terrible. It's making"
+      },
+      {
+        "start": 52800,
+        "stop": 53200,
+        "text": " me physically ill.\" I understand. Alright, let's talk about something that gets people"
+      },
+      {
+        "start": 53200,
+        "stop": 53600,
+        "text": " fired up. GitHub versus GitLab, and I want to make it clear that"
+      },
+      {
+        "start": 53600,
+        "stop": 54000,
+        "text": " the Coder Radio program always recommends if you can host your own"
+      },
+      {
+        "start": 54000,
+        "stop": 54400,
+        "text": " infrastructure, then nobody can just disable you or do weird stuff, whatever."
+      },
+      {
+        "start": 54400,
+        "stop": 54800,
+        "text": " Do we make a studio? Well, nah."
+      },
+      {
+        "start": 54800,
+        "stop": 55200,
+        "text": " I mean, I think we're coming to a new understanding. I think we're coming to a new middle ground."
+      },
+      {
+        "start": 55200,
+        "stop": 55600,
+        "text": " And Josh writes in, \"Hey guys, just finished 4.78, and I"
+      },
+      {
+        "start": 55600,
+        "stop": 56000,
+        "text": " wanted to hype up GitHub over GitLab. One thing I love"
+      },
+      {
+        "start": 56000,
+        "stop": 56400,
+        "text": " about GitHub is its VS Code integration. If I get a bug report, I can view"
+      },
+      {
+        "start": 56400,
+        "stop": 56800,
+        "text": " the report on the website, and by pressing my period, a web version of"
+      },
+      {
+        "start": 56800,
+        "stop": 57200,
+        "text": " VS Code opens up with that repo pre-imported. I do"
+      },
+      {
+        "start": 57200,
+        "stop": 57600,
+        "text": " a minor change, I push it out, and it's instantly updated without me ever"
+      },
+      {
+        "start": 57600,
+        "stop": 58000,
+        "text": " leaving the repo web page. That's pretty great. I just wanted to add my 3 cents."
+      },
+      {
+        "start": 58000,
+        "stop": 58400,
+        "text": " Josh.\" Yeah, I think the other thing that we kind of dance"
+      },
+      {
+        "start": 58400,
+        "stop": 58800,
+        "text": " around but is huge, if you want to do"
+      },
+      {
+        "start": 58800,
+        "stop": 59200,
+        "text": " an open source project, ironically, it's going to be more successful"
+      },
+      {
+        "start": 59200,
+        "stop": 59600,
+        "text": " on GitHub than on GitLab, in my opinion."
+      },
+      {
+        "start": 59600,
+        "stop": 60000,
+        "text": " It's a network effect. Simple as that. We're doing the new JB"
+      },
+      {
+        "start": 60000,
+        "stop": 60400,
+        "text": " website, and I think the fact that it's on GitHub has been a"
+      },
+      {
+        "start": 60400,
+        "stop": 60800,
+        "text": " huge part of the success we're seeing with the project."
+      },
+      {
+        "start": 60800,
+        "stop": 61200,
+        "text": " Yeah, there's also the even more grubby, practical side of if you're someone pretty new in your"
+      },
+      {
+        "start": 61200,
+        "stop": 61600,
+        "text": " career and looking to really make some aggressive jumps in your career,"
+      },
+      {
+        "start": 61600,
+        "stop": 62000,
+        "text": " recruiters now know about GitHub, and so do internal hiring managers."
+      },
+      {
+        "start": 62000,
+        "stop": 62400,
+        "text": " So if you have a nice, beefy GitHub profile, that's going to go a long way."
+      },
+      {
+        "start": 62400,
+        "stop": 62800,
+        "text": " Mmm, good point. Alright, we also got an email from Stauf, it was long,"
+      },
+      {
+        "start": 62800,
+        "stop": 63200,
+        "text": " I think I'll link it in the show notes, because it's about tabs or spaces,"
+      },
+      {
+        "start": 63200,
+        "stop": 63600,
+        "text": " which you brought upon us, but I did pull a little bit of it. He wrote,"
+      },
+      {
+        "start": 63600,
+        "stop": 64000,
+        "text": " \"Essentially, tabs are a 'dealistic' and would win any argument"
+      },
+      {
+        "start": 64000,
+        "stop": 64400,
+        "text": " not based on real-world 'not caring of humans,'"
+      },
+      {
+        "start": 64400,
+        "stop": 64800,
+        "text": " but in reality, spaces win. But how many spaces is the"
+      },
+      {
+        "start": 64800,
+        "stop": 65200,
+        "text": " better question?\" Hahaha, I wonder what the"
+      },
+      {
+        "start": 65200,
+        "stop": 65600,
+        "text": " audience would say about two spaces. So yeah,"
+      },
+      {
+        "start": 65600,
+        "stop": 66000,
+        "text": " I'll put a link to this in the show notes, and you guys can"
+      },
+      {
+        "start": 66000,
+        "stop": 66400,
+        "text": " read the whole thing. He says in an ideal world, tabs, but in the real"
+      },
+      {
+        "start": 66400,
+        "stop": 66800,
+        "text": " world, spaces, and he just suggests two spaces."
+      },
+      {
+        "start": 66800,
+        "stop": 67200,
+        "text": " So we'll have a link to his whole email if you want to nerd"
+      },
+      {
+        "start": 67200,
+        "stop": 67600,
+        "text": " out and see why he thinks two spaces is the one true way"
+      },
+      {
+        "start": 67600,
+        "stop": 68000,
+        "text": " to go. Well, then you can let us know what you think. I will say, most beautiful"
+      },
+      {
+        "start": 68000,
+        "stop": 68400,
+        "text": " feature in Python, you don't have a goddamn choice. Hahaha!"
+      },
+      {
+        "start": 68400,
+        "stop": 68800,
+        "text": " Reminder, meetups are coming next month."
+      },
+      {
+        "start": 68800,
+        "stop": 69200,
+        "text": " Right about this time that you're listening, things are going to be just getting started in"
+      },
+      {
+        "start": 69200,
+        "stop": 69600,
+        "text": " Southern Oregon. So just super quick, Southern Oregon, September"
+      },
+      {
+        "start": 69600,
+        "stop": 70000,
+        "text": " 20th. Northern California, September 23rd. JPL,"
+      },
+      {
+        "start": 70000,
+        "stop": 70400,
+        "text": " the Jet Propulsion Laboratory, September 29th. Southern California"
+      },
+      {
+        "start": 70400,
+        "stop": 70800,
+        "text": " meetup around the JPL area, September 30th. And then"
+      },
+      {
+        "start": 70800,
+        "stop": 71200,
+        "text": " October 7th, a Portland area meetup."
+      },
+      {
+        "start": 71200,
+        "stop": 71600,
+        "text": " It's a lot of meetups. Along the way we'll be stashing some geocaches"
+      },
+      {
+        "start": 71600,
+        "stop": 72000,
+        "text": " with SWAG in them, and then we'll give hints on the show where you can find the geocache."
+      },
+      {
+        "start": 72000,
+        "stop": 72400,
+        "text": " And then we'll also have SWAG on board, Jupes will be bringing to the meetups, and all"
+      },
+      {
+        "start": 72400,
+        "stop": 72800,
+        "text": " of that. So details are at meetup.com/jupiterbroadcasting."
+      },
+      {
+        "start": 72800,
+        "stop": 73200,
+        "text": " I also invite you to join us in our matrix room,"
+      },
+      {
+        "start": 73200,
+        "stop": 73600,
+        "text": " bit.ly/westcoastcrew"
+      },
+      {
+        "start": 73600,
+        "stop": 74000,
+        "text": " where we're chatting about details, getting tips from locals,"
+      },
+      {
+        "start": 74000,
+        "stop": 74400,
+        "text": " and then we'll also use that area for future meetups as well."
+      },
+      {
+        "start": 74400,
+        "stop": 74800,
+        "text": " There's a lot going on, I'll put a link to all of that in the show notes. If you're in the"
+      },
+      {
+        "start": 74800,
+        "stop": 75200,
+        "text": " western area of the United States, we'd love to see you."
+      },
+      {
+        "start": 75200,
+        "stop": 75600,
+        "text": " Linode.com/coder."
+      },
+      {
+        "start": 75600,
+        "stop": 76000,
+        "text": " That's where you go to get $100 for 60 days on a new account, and it's a great"
+      },
+      {
+        "start": 76000,
+        "stop": 76400,
+        "text": " way to support the show. Linode offers just the best options"
+      },
+      {
+        "start": 76400,
+        "stop": 76800,
+        "text": " for developers and businesses that don't need or want the complexities"
+      },
+      {
+        "start": 76800,
+        "stop": 77200,
+        "text": " of hyperscalers and don't need all their endless options."
+      },
+      {
+        "start": 77200,
+        "stop": 77600,
+        "text": " And yeah, there's also budget VPS providers out there, but I just"
+      },
+      {
+        "start": 77600,
+        "stop": 78000,
+        "text": " wouldn't mess with that stuff. Not if it's something that matters, not if it's something that's for"
+      },
+      {
+        "start": 78000,
+        "stop": 78400,
+        "text": " my business or my data is important or my availability is important or support's important"
+      },
+      {
+        "start": 78400,
+        "stop": 78800,
+        "text": " if I ever get stuck. There's a lot of reasons to choose Linode, but their"
+      },
+      {
+        "start": 78800,
+        "stop": 79200,
+        "text": " nearly 19 year track record has got to be one of them. Incredible uptime"
+      },
+      {
+        "start": 79200,
+        "stop": 79600,
+        "text": " over that 19 years. Always innovating on making the network faster"
+      },
+      {
+        "start": 79600,
+        "stop": 80000,
+        "text": " and more capacity. They've got 11 data centers around the world for you"
+      },
+      {
+        "start": 80000,
+        "stop": 80400,
+        "text": " to choose from. And then a bunch of really nice backend features that"
+      },
+      {
+        "start": 80400,
+        "stop": 80800,
+        "text": " are just implemented nice and easily, like object storage, backups,"
+      },
+      {
+        "start": 80800,
+        "stop": 81200,
+        "text": " simple snapshots, an API that goes for days. You can do all kinds of stuff."
+      },
+      {
+        "start": 81200,
+        "stop": 81600,
+        "text": " My favorite little hot tip is put the Linode command line client on your box and"
+      },
+      {
+        "start": 81600,
+        "stop": 82000,
+        "text": " do a snapshot right there on your box before you make any changes. There's"
+      },
+      {
+        "start": 82000,
+        "stop": 82400,
+        "text": " so many things I love about Linode besides just the performance, the great support."
+      },
+      {
+        "start": 82400,
+        "stop": 82800,
+        "text": " There's also a huge community and tons of my friends from open source"
+      },
+      {
+        "start": 82800,
+        "stop": 83200,
+        "text": " projects around the world are using Linode. Linode sponsors a"
+      },
+      {
+        "start": 83200,
+        "stop": 83600,
+        "text": " lot of the infrastructure for open source. And of course"
+      },
+      {
+        "start": 83600,
+        "stop": 84000,
+        "text": " Linode is making it possible for us to go on our West Coast road tour"
+      },
+      {
+        "start": 84000,
+        "stop": 84400,
+        "text": " this year to meet up with a whole bunch of you. So if you're in the area"
+      },
+      {
+        "start": 84400,
+        "stop": 84800,
+        "text": " make sure you come see us because we'll have some Linode swag on board that we're giving away."
+      },
+      {
+        "start": 84800,
+        "stop": 85200,
+        "text": " And I've been told it's very cool brand new swag. But on top"
+      },
+      {
+        "start": 85200,
+        "stop": 85600,
+        "text": " of that it's just the best place to run something on Linux. Don't get locked into"
+      },
+      {
+        "start": 85600,
+        "stop": 86000,
+        "text": " those esoteric hyperscalers. Don't get fooled by the budget VPS providers"
+      },
+      {
+        "start": 86000,
+        "stop": 86400,
+        "text": " who will inevitably disappoint you. Go get the real thing. The"
+      },
+      {
+        "start": 86400,
+        "stop": 86800,
+        "text": " folks that have been building for 19 years and only getting better and better as they do it."
+      },
+      {
+        "start": 86800,
+        "stop": 87200,
+        "text": " And why not get $100 while you try it. Support the show"
+      },
+      {
+        "start": 87200,
+        "stop": 87600,
+        "text": " and get $100 to try out Linode when you go to Linode.com/coder"
+      },
+      {
+        "start": 87600,
+        "stop": 88000,
+        "text": " one more time. It's Linode.com/coder."
+      },
+      {
+        "start": 88000,
+        "stop": 88400,
+        "text": " We may finally"
+      },
+      {
+        "start": 88400,
+        "stop": 88800,
+        "text": " see a light at the end of the electron tunnel."
+      },
+      {
+        "start": 88800,
+        "stop": 89200,
+        "text": " I'm not saying electrons dead. But this"
+      },
+      {
+        "start": 89200,
+        "stop": 89600,
+        "text": " might be a critical flaw that they can never solve."
+      },
+      {
+        "start": 89600,
+        "stop": 90000,
+        "text": " And maybe in a decade it will force people off of Electron. I don't know."
+      },
+      {
+        "start": 90000,
+        "stop": 90400,
+        "text": " But you know it's black hat season so we're hearing about lots of exploits and researchers"
+      },
+      {
+        "start": 90400,
+        "stop": 90800,
+        "text": " have found remote code execution vulnerabilities in basically all"
+      },
+      {
+        "start": 90800,
+        "stop": 91200,
+        "text": " of the major electron based applications. Discord,"
+      },
+      {
+        "start": 91200,
+        "stop": 91600,
+        "text": " Teams, Slack, you name it. Right? Surprise, surprise. And here's"
+      },
+      {
+        "start": 91600,
+        "stop": 92000,
+        "text": " the core flaw. These particular issues they found have been"
+      },
+      {
+        "start": 92000,
+        "stop": 92400,
+        "text": " patched. Some of these they found like a year ago. But the fundamental issue is"
+      },
+      {
+        "start": 92400,
+        "stop": 92800,
+        "text": " surprise, surprise, they write in the research, quote,"
+      },
+      {
+        "start": 92800,
+        "stop": 93200,
+        "text": " \"This occurs because of the way Electron.js is designed"
+      },
+      {
+        "start": 93200,
+        "stop": 93600,
+        "text": " and in the fundamental design issue within the framework. Electron.js"
+      },
+      {
+        "start": 93600,
+        "stop": 94000,
+        "text": " and Chromium that they've branched is always"
+      },
+      {
+        "start": 94000,
+        "stop": 94400,
+        "text": " behind the main normal Chrome browser. I.e."
+      },
+      {
+        "start": 94400,
+        "stop": 94800,
+        "text": " Electron is always two or three months behind any upstream"
+      },
+      {
+        "start": 94800,
+        "stop": 95200,
+        "text": " fix in Chromium at best. Then you have"
+      },
+      {
+        "start": 95200,
+        "stop": 95600,
+        "text": " applications like Discord that are actually shipping"
+      },
+      {
+        "start": 95600,
+        "stop": 96000,
+        "text": " a version of Electron that's been end of life for a while."
+      },
+      {
+        "start": 96000,
+        "stop": 96400,
+        "text": " And they're just like patching it like animals to keep it running."
+      },
+      {
+        "start": 96400,
+        "stop": 96800,
+        "text": " And they just will never be able to solve this problem because this is just the nature"
+      },
+      {
+        "start": 96800,
+        "stop": 97200,
+        "text": " of the way this project works. It's downstream of Chromium and they've changed"
+      },
+      {
+        "start": 97200,
+        "stop": 97600,
+        "text": " it significantly enough that there is inherently a delay"
+      },
+      {
+        "start": 97600,
+        "stop": 98000,
+        "text": " between when the bug fix goes out in Chromium and when it goes in your"
+      },
+      {
+        "start": 98000,
+        "stop": 98400,
+        "text": " Electron app. And the Discord developers, they try to jump in and say, look,"
+      },
+      {
+        "start": 98400,
+        "stop": 98800,
+        "text": " when we found out about these vulnerabilities, we had it patched within like 42"
+      },
+      {
+        "start": 98800,
+        "stop": 99200,
+        "text": " hours. Like, look at us. But, you know, like, OK, you got one of probably hundreds"
+      },
+      {
+        "start": 99200,
+        "stop": 99600,
+        "text": " of vulnerabilities. And it seems to me this is just inherent"
+      },
+      {
+        "start": 99600,
+        "stop": 100000,
+        "text": " with Electron apps. There's no way around it. So not only is it not a great experience,"
+      },
+      {
+        "start": 100000,
+        "stop": 100400,
+        "text": " not only are we still not seeing the performance and memory usage that we'd like"
+      },
+      {
+        "start": 100400,
+        "stop": 100800,
+        "text": " to see, it's still an issue. But now you have this fundamental way it's designed. It seems like"
+      },
+      {
+        "start": 100800,
+        "stop": 101200,
+        "text": " this is always going to be a security issue. Do you think long term"
+      },
+      {
+        "start": 101200,
+        "stop": 101600,
+        "text": " this could force people's hand to move to something else? Microsoft's working on"
+      },
+      {
+        "start": 101600,
+        "stop": 102000,
+        "text": " Electron replacement. Don't know if it wouldn't have these problems, but"
+      },
+      {
+        "start": 102000,
+        "stop": 102400,
+        "text": " if you could port, if you could move, if you think about the"
+      },
+      {
+        "start": 102400,
+        "stop": 102800,
+        "text": " technologies being used here, it actually should be fundamentally possible to rip"
+      },
+      {
+        "start": 102800,
+        "stop": 103200,
+        "text": " out the Chromium stuff from Electron and put something else in there."
+      },
+      {
+        "start": 103200,
+        "stop": 103600,
+        "text": " Yeah. So, OK, one, this is not going to stop people"
+      },
+      {
+        "start": 103600,
+        "stop": 104000,
+        "text": " from using Electron. You're sacrificing a lot to use Electron"
+      },
+      {
+        "start": 104000,
+        "stop": 104400,
+        "text": " to gain development speed and cross platform this. I would definitely"
+      },
+      {
+        "start": 104400,
+        "stop": 104800,
+        "text": " caution the dunking on Electron, especially from, like, Linux community,"
+      },
+      {
+        "start": 104800,
+        "stop": 105200,
+        "text": " because you wouldn't have the applications without it. And that's just"
+      },
+      {
+        "start": 105200,
+        "stop": 105600,
+        "text": " probably true of a lot of Mac applications, too, at this juncture now, right?"
+      },
+      {
+        "start": 105600,
+        "stop": 106000,
+        "text": " With that all said, you could have,"
+      },
+      {
+        "start": 106000,
+        "stop": 106400,
+        "text": " we don't have it in the notes for this week, but there is a big post by the Dino team"
+      },
+      {
+        "start": 106400,
+        "stop": 106800,
+        "text": " on how they're kind of probably moving further from Node"
+      },
+      {
+        "start": 106800,
+        "stop": 107200,
+        "text": " for reasons, right? We don't need to super go into it. It's not"
+      },
+      {
+        "start": 107200,
+        "stop": 107600,
+        "text": " a framework that I use a lot, but I could"
+      },
+      {
+        "start": 107600,
+        "stop": 108000,
+        "text": " see something like that where, you know, whatever the Electron replacement"
+      },
+      {
+        "start": 108000,
+        "stop": 108400,
+        "text": " is, is effectively a compatibility thing, but"
+      },
+      {
+        "start": 108400,
+        "stop": 108800,
+        "text": " then eventually replaces it. A good example of this on the mobile side,"
+      },
+      {
+        "start": 108800,
+        "stop": 109200,
+        "text": " if you're doing cross platform, is Cordova, which is well deprecated,"
+      },
+      {
+        "start": 109200,
+        "stop": 109600,
+        "text": " and something like Capacitor, which does have Cordova"
+      },
+      {
+        "start": 109600,
+        "stop": 110000,
+        "text": " backwards compatibility, i.e. you can use Cordova plugins."
+      },
+      {
+        "start": 110000,
+        "stop": 110400,
+        "text": " I don't know, and I'm usually, like, not Microsoft"
+      },
+      {
+        "start": 110400,
+        "stop": 110800,
+        "text": " Bikini. I am not sure that a Microsoft Electron replacement"
+      },
+      {
+        "start": 110800,
+        "stop": 111200,
+        "text": " would necessarily be as different as maybe it sounds,"
+      },
+      {
+        "start": 111200,
+        "stop": 111600,
+        "text": " because it would certainly be like an Edge base, which is itself Chromium"
+      },
+      {
+        "start": 111600,
+        "stop": 112000,
+        "text": " based. Now, maybe Edge and Chrome are going to diverge."
+      },
+      {
+        "start": 112000,
+        "stop": 112400,
+        "text": " That's certainly possible, right? Again,"
+      },
+      {
+        "start": 112400,
+        "stop": 112800,
+        "text": " I just don't see this not being a problem based on anything that's architected"
+      },
+      {
+        "start": 112800,
+        "stop": 113200,
+        "text": " like this, where you are modifying a very"
+      },
+      {
+        "start": 113200,
+        "stop": 113600,
+        "text": " large, very complex upstream project, and you simply"
+      },
+      {
+        "start": 113600,
+        "stop": 114000,
+        "text": " can't keep up. I mean, if anybody who's done mobile dev for a long time knows"
+      },
+      {
+        "start": 114000,
+        "stop": 114400,
+        "text": " that all these cross platform frameworks are beautiful, except, like,"
+      },
+      {
+        "start": 114400,
+        "stop": 114800,
+        "text": " if you really, really want to be there day one and have, like, the hottest new Apple thing"
+      },
+      {
+        "start": 114800,
+        "stop": 115200,
+        "text": " to try to get featured on the store, that becomes real touch and go and dicey."
+      },
+      {
+        "start": 115200,
+        "stop": 115600,
+        "text": " And it goes the same for security stuff, right? When your project that you're dependent"
+      },
+      {
+        "start": 115600,
+        "stop": 116000,
+        "text": " on is following at a lagging pace,"
+      },
+      {
+        "start": 116000,
+        "stop": 116400,
+        "text": " not through any fault of their own, but through just the way stuff works,"
+      },
+      {
+        "start": 116400,
+        "stop": 116800,
+        "text": " an upstream project, you're always going to have these things. And"
+      },
+      {
+        "start": 116800,
+        "stop": 117200,
+        "text": " I don't think the value proposition that Electron or something Electron-like"
+      },
+      {
+        "start": 117200,
+        "stop": 117600,
+        "text": " brings is ever going to"
+      },
+      {
+        "start": 117600,
+        "stop": 118000,
+        "text": " be defeated at this juncture. Certainly not if the alternative"
+      },
+      {
+        "start": 118000,
+        "stop": 118400,
+        "text": " is everything's either literally... I mean, I think the more likely scenario is people just run"
+      },
+      {
+        "start": 118400,
+        "stop": 118800,
+        "text": " their web apps in actual Chrome, right? Or Edge."
+      },
+      {
+        "start": 118800,
+        "stop": 119200,
+        "text": " And maybe Safari. I mean, I prefer the Electron wrappers because I like"
+      },
+      {
+        "start": 119200,
+        "stop": 119600,
+        "text": " the native notifications on both Mac and GNOME. And I like having it,"
+      },
+      {
+        "start": 119600,
+        "stop": 120000,
+        "text": " its own process, its own window. Right, because, you know, Squadcast likes"
+      },
+      {
+        "start": 120000,
+        "stop": 120400,
+        "text": " to just take down your Chrome window, right? We use apps that, like,"
+      },
+      {
+        "start": 120400,
+        "stop": 120800,
+        "text": " break browsers sometimes. That's what the developer and researcher of these flaws said."
+      },
+      {
+        "start": 120800,
+        "stop": 121200,
+        "text": " Quote, \"If you're paranoid, I recommend using the website itself"
+      },
+      {
+        "start": 121200,
+        "stop": 121600,
+        "text": " because then you have the protection of the latest Chromium.\""
+      },
+      {
+        "start": 121600,
+        "stop": 122000,
+        "text": " Also, it's sandboxing all that, which is much larger than Electron. So you could"
+      },
+      {
+        "start": 122000,
+        "stop": 122400,
+        "text": " use a lot of these apps just in the browser and not use the Electron app and benefit from the more"
+      },
+      {
+        "start": 122400,
+        "stop": 122800,
+        "text": " updated security in the browser itself. Yeah, I mean, I, you know, it would"
+      },
+      {
+        "start": 122800,
+        "stop": 123200,
+        "text": " be not the worst idea. I just like my"
+      },
+      {
+        "start": 123200,
+        "stop": 123600,
+        "text": " little Slack, you know, doc icon, right? I like to be able to, you know, tap around to the different"
+      },
+      {
+        "start": 123600,
+        "stop": 124000,
+        "text": " applications. Well, and maybe this is something the operating system should be solving. You know,"
+      },
+      {
+        "start": 124000,
+        "stop": 124400,
+        "text": " I think of, like, Fedora SilverBlue and NixOS, which are immutable, and"
+      },
+      {
+        "start": 124400,
+        "stop": 124800,
+        "text": " so even if, you know, the browser or the Electron app just goes"
+      },
+      {
+        "start": 124800,
+        "stop": 125200,
+        "text": " crazy and starts trashing your system, at best it could read your home directory."
+      },
+      {
+        "start": 125200,
+        "stop": 125600,
+        "text": " But it couldn't really make any permanent changes to the system. It couldn't install itself"
+      },
+      {
+        "start": 125600,
+        "stop": 126000,
+        "text": " and run in the background after you reboot, it'd be gone, right?"
+      },
+      {
+        "start": 126000,
+        "stop": 126400,
+        "text": " Yeah, I mean, but how many years did people just run Flash and it didn't matter?"
+      },
+      {
+        "start": 126400,
+        "stop": 126800,
+        "text": " Right, and it was super inscric- I'm just saying the value prop"
+      },
+      {
+        "start": 126800,
+        "stop": 127200,
+        "text": " from, like, you're an enterprise IT manager, you need to hire some"
+      },
+      {
+        "start": 127200,
+        "stop": 127600,
+        "text": " dev shop or some contractor to write you an application."
+      },
+      {
+        "start": 127600,
+        "stop": 128000,
+        "text": " I mean, I would be more than happy to write you three. It'd be great."
+      },
+      {
+        "start": 128000,
+        "stop": 128400,
+        "text": " That sounds fun. The only thing I'll say maybe in defense of Microsoft"
+      },
+      {
+        "start": 128400,
+        "stop": 128800,
+        "text": " having an alternative is they have done a hell of a job with VS Code."
+      },
+      {
+        "start": 128800,
+        "stop": 129200,
+        "text": " And Edge is pretty impressive. It's my day-to-day browser when I'm on Pop."
+      },
+      {
+        "start": 129200,
+        "stop": 129600,
+        "text": " So, I don't know, maybe their alternative would-"
+      },
+      {
+        "start": 129600,
+        "stop": 130000,
+        "text": " what a world. So now your development toolchain is basically"
+      },
+      {
+        "start": 130000,
+        "stop": 130400,
+        "text": " VS Code and your target environment becomes a Microsoft-based framework."
+      },
+      {
+        "start": 130400,
+        "stop": 130800,
+        "text": " Yeah, and then you go run it on Azure. I was going to say, are we having flashbacks yet?"
+      },
+      {
+        "start": 130800,
+        "stop": 131200,
+        "text": " Funny how all these roads lead to Azure."
+      },
+      {
+        "start": 131200,
+        "stop": 131600,
+        "text": " Yeah, I wonder what the audience thinks. Here's what, you said Flash,"
+      },
+      {
+        "start": 131600,
+        "stop": 132000,
+        "text": " it's exactly what it made me think of. So let us know, coder.show/contact"
+      },
+      {
+        "start": 132000,
+        "stop": 132400,
+        "text": " or send us in a boost. I feel like this is its Flash moment."
+      },
+      {
+        "start": 132400,
+        "stop": 132800,
+        "text": " The very beginning of what took a decade is we started"
+      },
+      {
+        "start": 132800,
+        "stop": 133200,
+        "text": " discovering fundamental issues that were obvious in some cases"
+      },
+      {
+        "start": 133200,
+        "stop": 133600,
+        "text": " but we just hadn't realized, or in other cases we didn't know. We start"
+      },
+      {
+        "start": 133600,
+        "stop": 134000,
+        "text": " discovering these just, oh man, there's no fixing this. Oh man, another one, there's no fixing this."
+      },
+      {
+        "start": 134000,
+        "stop": 134400,
+        "text": " And it took a decade of that, and at the end of that decade, and"
+      },
+      {
+        "start": 134400,
+        "stop": 134800,
+        "text": " a lot of help from Steve Jobs, we finally freed ourselves from Flash."
+      },
+      {
+        "start": 134800,
+        "stop": 135200,
+        "text": " Yes, when Uncle Steve took his double-barrel shotgun and took"
+      },
+      {
+        "start": 135200,
+        "stop": 135600,
+        "text": " old Flashy out behind the shed. You know, nobody wrote those blog posts"
+      },
+      {
+        "start": 135600,
+        "stop": 136000,
+        "text": " or whatever, the open letter, whatever you called them. In terms of"
+      },
+      {
+        "start": 136000,
+        "stop": 136400,
+        "text": " a tech CEO who could write in plain language"
+      },
+      {
+        "start": 136400,
+        "stop": 136800,
+        "text": " and make you kind of understand their position,"
+      },
+      {
+        "start": 136800,
+        "stop": 137200,
+        "text": " that Steve Jobs note on Flash, I think, is"
+      },
+      {
+        "start": 137200,
+        "stop": 137600,
+        "text": " I don't think any other CEO in tech right now does something, anything like that."
+      },
+      {
+        "start": 137600,
+        "stop": 138000,
+        "text": " Musk does his own newer version, which really seems to piss people off, but Jobs"
+      },
+      {
+        "start": 138000,
+        "stop": 138400,
+        "text": " did too, I suppose. Yeah, but like, I don't know,"
+      },
+      {
+        "start": 138400,
+        "stop": 138800,
+        "text": " Musk has not eliminated a basically web development standard, although I will say"
+      },
+      {
+        "start": 138800,
+        "stop": 139200,
+        "text": " Flash, I had mixed feelings on what died. Adobe Air, which is probably the"
+      },
+      {
+        "start": 139200,
+        "stop": 139600,
+        "text": " closer analogy to Electron, and if you know what Adobe Air is,"
+      },
+      {
+        "start": 139600,
+        "stop": 140000,
+        "text": " I am very sorry, really, really deserve to die. Oh,"
+      },
+      {
+        "start": 140000,
+        "stop": 140400,
+        "text": " yeah, Silverlight, that sure was a hot distraction. That was a hot"
+      },
+      {
+        "start": 140400,
+        "stop": 140800,
+        "text": " mess. And remember running Netflix on Linux was, oh, you have to download"
+      },
+      {
+        "start": 140800,
+        "stop": 141200,
+        "text": " this really shady mono version of Silverlight. Yeah, that was so bad,"
+      },
+      {
+        "start": 141200,
+        "stop": 141600,
+        "text": " man, that was such a bad time. And you can't have 1080p because"
+      },
+      {
+        "start": 141600,
+        "stop": 142000,
+        "text": " something, something codecs, right? And it just felt like Microsoft"
+      },
+      {
+        "start": 142000,
+        "stop": 142400,
+        "text": " wanted a piece of that hot Flash action, and so they created"
+      },
+      {
+        "start": 142400,
+        "stop": 142800,
+        "text": " Silverlight. I feel like you just said Microsoft wanted to go back to"
+      },
+      {
+        "start": 142800,
+        "stop": 143200,
+        "text": " Metapos. Alright, I want to talk about something before we move on that"
+      },
+      {
+        "start": 143200,
+        "stop": 143600,
+        "text": " I thought would be one story when it first broke, and this happened"
+      },
+      {
+        "start": 143600,
+        "stop": 144000,
+        "text": " last week after the show, and then by the time we sat down to record, I have a"
+      },
+      {
+        "start": 144000,
+        "stop": 144400,
+        "text": " totally different position on this story. So Telegram went to war"
+      },
+      {
+        "start": 144400,
+        "stop": 144800,
+        "text": " last week, and you and I both use Telegram a bit. The founder of Telegram"
+      },
+      {
+        "start": 144800,
+        "stop": 145200,
+        "text": " took to his channel and just blasted the"
+      },
+      {
+        "start": 145200,
+        "stop": 145600,
+        "text": " App Store review, saying that Apple is holding back on"
+      },
+      {
+        "start": 145600,
+        "stop": 146000,
+        "text": " technology that will \"revolutionize how people express themselves"
+      },
+      {
+        "start": 146000,
+        "stop": 146400,
+        "text": " in messaging.\" He goes on to say, \"It has been stuck in Apple's"
+      },
+      {
+        "start": 146400,
+        "stop": 146800,
+        "text": " review for two weeks without explanation or feedback provided by Apple.\""
+      },
+      {
+        "start": 146800,
+        "stop": 147200,
+        "text": " Well, it turns out there was some feedback, but he"
+      },
+      {
+        "start": 147200,
+        "stop": 147600,
+        "text": " didn't disclose that at the time. But anyways, he goes on to say,"
+      },
+      {
+        "start": 147600,
+        "stop": 148000,
+        "text": " \"If Telegram, one of the top ten most popular apps"
+      },
+      {
+        "start": 148000,
+        "stop": 148400,
+        "text": " globally, is receiving this treatment, one could"
+      },
+      {
+        "start": 148400,
+        "stop": 148800,
+        "text": " only imagine the difficulties expressed by smaller app developers.\""
+      },
+      {
+        "start": 148800,
+        "stop": 149200,
+        "text": " Wait a minute, where have I heard this before? It's not just demoralizing."
+      },
+      {
+        "start": 149200,
+        "stop": 149600,
+        "text": " It causes direct financial losses to hundreds of thousands"
+      },
+      {
+        "start": 149600,
+        "stop": 150000,
+        "text": " of mobile apps globally. And he's just put"
+      },
+      {
+        "start": 150000,
+        "stop": 150400,
+        "text": " Apple on blast, right? So why did he go to war? What was it they were holding"
+      },
+      {
+        "start": 150400,
+        "stop": 150800,
+        "text": " back? What was this new... They were censoring his ideological beliefs. Nope."
+      },
+      {
+        "start": 150800,
+        "stop": 151200,
+        "text": " Nope. Wait, wait, wait. They were demanding monies here."
+      },
+      {
+        "start": 151200,
+        "stop": 151600,
+        "text": " They were demanding monies he was making outside of the App Store."
+      },
+      {
+        "start": 151600,
+        "stop": 152000,
+        "text": " The new revolutionary technology he was shipping was 3D emojis, and"
+      },
+      {
+        "start": 152000,
+        "stop": 152400,
+        "text": " they were based on the Apple trademark emojis, and according to the App Store"
+      },
+      {
+        "start": 152400,
+        "stop": 152800,
+        "text": " guideline 5.2.5, third-party developers cannot create apps"
+      },
+      {
+        "start": 152800,
+        "stop": 153200,
+        "text": " that are confusingly similar to Apple's existing product, and in that guideline,"
+      },
+      {
+        "start": 153200,
+        "stop": 153600,
+        "text": " Apple implicitly makes it clear you cannot replicate the Apple"
+      },
+      {
+        "start": 153600,
+        "stop": 154000,
+        "text": " emoji design. And so that's why they were holding it up."
+      },
+      {
+        "start": 154000,
+        "stop": 154400,
+        "text": " So there's two very funny things here. One, there is some lawyer at Apple"
+      },
+      {
+        "start": 154400,
+        "stop": 154800,
+        "text": " who was like, \"Hang on. I love emoji."
+      },
+      {
+        "start": 154800,
+        "stop": 155200,
+        "text": " And we are defending this IP to the f***ing death.\""
+      },
+      {
+        "start": 155200,
+        "stop": 155600,
+        "text": " And then this guy, who I like Telegram, good product,"
+      },
+      {
+        "start": 155600,
+        "stop": 156000,
+        "text": " is also risking his own product because of emoji. Can't you"
+      },
+      {
+        "start": 156000,
+        "stop": 156400,
+        "text": " just use the Unicode ones? Or is it because they're 3D?"
+      },
+      {
+        "start": 156400,
+        "stop": 156800,
+        "text": " Yeah, they had to, I guess, create new ones, but"
+      },
+      {
+        "start": 156800,
+        "stop": 157200,
+        "text": " for me, it's the arrogance of saying this is a revolutionary new feature and how"
+      },
+      {
+        "start": 157200,
+        "stop": 157600,
+        "text": " dare Apple, blah blah blah blah, and it turns out to be animated emojis."
+      },
+      {
+        "start": 157600,
+        "stop": 158000,
+        "text": " And this, by the way, is part of a bigger story where Telegram"
+      },
+      {
+        "start": 158000,
+        "stop": 158400,
+        "text": " is rolling out premium features, but the premium features they're"
+      },
+      {
+        "start": 158400,
+        "stop": 158800,
+        "text": " rolling out suck. They're dumb, and nobody wants them."
+      },
+      {
+        "start": 158800,
+        "stop": 159200,
+        "text": " And it's wild. I've never really seen anything like this go down."
+      },
+      {
+        "start": 159200,
+        "stop": 159600,
+        "text": " Chris, this is a safe space. Tell us what you really think."
+      },
+      {
+        "start": 159600,
+        "stop": 160000,
+        "text": " I've never implemented status. So, I could say I'm recording,"
+      },
+      {
+        "start": 160000,
+        "stop": 160400,
+        "text": " or I'm away, or I'm traveling, I'm driving right now, kind of like you can do in"
+      },
+      {
+        "start": 160400,
+        "stop": 160800,
+        "text": " Slack. If they would have implemented that in Telegram"
+      },
+      {
+        "start": 160800,
+        "stop": 161200,
+        "text": " as a member feature, I'd pay $9 a month for that right there. That's how much I use Telegram, right?"
+      },
+      {
+        "start": 161200,
+        "stop": 161600,
+        "text": " Instead, it's like stupid pictures and stickers"
+      },
+      {
+        "start": 161600,
+        "stop": 162000,
+        "text": " and 3D emojis and just stuff that nobody wants."
+      },
+      {
+        "start": 162000,
+        "stop": 162400,
+        "text": " And I've really kind of been impressed because I've read"
+      },
+      {
+        "start": 162400,
+        "stop": 162800,
+        "text": " different Telegram groups, I've read different Reddit posts on this,"
+      },
+      {
+        "start": 162800,
+        "stop": 163200,
+        "text": " I've read different threads on reply comments like this article on 9to5Mac,"
+      },
+      {
+        "start": 163200,
+        "stop": 163600,
+        "text": " and universally, universally"
+      },
+      {
+        "start": 163600,
+        "stop": 164000,
+        "text": " it's clear that the Telegram user base doesn't want any of this."
+      },
+      {
+        "start": 164000,
+        "stop": 164400,
+        "text": " It's all just stupid s***. It's a fascinating thing to watch"
+      },
+      {
+        "start": 164400,
+        "stop": 164800,
+        "text": " an app fall like this, because first they wanted to do some stupid"
+      },
+      {
+        "start": 164800,
+        "stop": 165200,
+        "text": " crypto ICO scam. I was going to say, wasn't there like a weird"
+      },
+      {
+        "start": 165200,
+        "stop": 165600,
+        "text": " crypto thing? It was a horrible idea and would have taken the app in a terrible direction,"
+      },
+      {
+        "start": 165600,
+        "stop": 166000,
+        "text": " but because of regulatory concerns, they bailed on that because they got a big old warning"
+      },
+      {
+        "start": 166000,
+        "stop": 166400,
+        "text": " on that. And so then they pivoted to membership,"
+      },
+      {
+        "start": 166400,
+        "stop": 166800,
+        "text": " but the member features are so lame that nobody's going to sign up for this thing"
+      },
+      {
+        "start": 166800,
+        "stop": 167200,
+        "text": " and the cost to run this Telegram service, the storage alone,"
+      },
+      {
+        "start": 167200,
+        "stop": 167600,
+        "text": " is astronomical. I'm told"
+      },
+      {
+        "start": 167600,
+        "stop": 168000,
+        "text": " it's millions and millions and millions and millions and millions of dollars a month."
+      },
+      {
+        "start": 168000,
+        "stop": 168400,
+        "text": " So I've never really witnessed an app blow it"
+      },
+      {
+        "start": 168400,
+        "stop": 168800,
+        "text": " this bad in a while. And then to also at the same time go to war"
+      },
+      {
+        "start": 168800,
+        "stop": 169200,
+        "text": " with Apple over an obvious violation of their"
+      },
+      {
+        "start": 169200,
+        "stop": 169600,
+        "text": " App Store guideline is essentially punching"
+      },
+      {
+        "start": 169600,
+        "stop": 170000,
+        "text": " the person who feeds you in the face, because Telegram is nothing"
+      },
+      {
+        "start": 170000,
+        "stop": 170400,
+        "text": " if it's not on iOS or on Android. It is absolutely"
+      },
+      {
+        "start": 170400,
+        "stop": 170800,
+        "text": " totally dependent on these two major duopolies."
+      },
+      {
+        "start": 170800,
+        "stop": 171200,
+        "text": " And he's gone off saying that they're holding back revolutionary"
+      },
+      {
+        "start": 171200,
+        "stop": 171600,
+        "text": " new communications technology when it turns out he was ripping off their emojis."
+      },
+      {
+        "start": 171600,
+        "stop": 172000,
+        "text": " Which maybe, you know, maybe should Apple be defending that? I don't know, but the guidelines"
+      },
+      {
+        "start": 172000,
+        "stop": 172400,
+        "text": " they make it clear, they specifically mention the emojis."
+      },
+      {
+        "start": 172400,
+        "stop": 172800,
+        "text": " I'm always happy to dunk on the App Store review team. In this case, I'm like"
+      },
+      {
+        "start": 172800,
+        "stop": 173200,
+        "text": " no. Right? It's silly."
+      },
+      {
+        "start": 173200,
+        "stop": 173600,
+        "text": " Kpovik in the chat?"
+      },
+      {
+        "start": 173600,
+        "stop": 174000,
+        "text": " Kp is saying in the chat, you know, basically they gave away most of the goods for free."
+      },
+      {
+        "start": 174000,
+        "stop": 174400,
+        "text": " I have a feeling that's kind of what's happening here. They need to monetize"
+      },
+      {
+        "start": 174400,
+        "stop": 174800,
+        "text": " a bit more. And it's just real hard to do that. Well, I think it's clear it's hard"
+      },
+      {
+        "start": 174800,
+        "stop": 175200,
+        "text": " to add new features. Because instead what they're doing is they're giving you"
+      },
+      {
+        "start": 175200,
+        "stop": 175600,
+        "text": " lipstick and I want like new functionality. I want to pay for functionality."
+      },
+      {
+        "start": 175600,
+        "stop": 176000,
+        "text": " Like I said, one simple idea. Status."
+      },
+      {
+        "start": 176000,
+        "stop": 176400,
+        "text": " Let me set a status. That's all I'm asking for. Let me set my status."
+      },
+      {
+        "start": 176400,
+        "stop": 176800,
+        "text": " I could see how that's simple to say and hard to implement. I bet there's all, yeah."
+      },
+      {
+        "start": 176800,
+        "stop": 177200,
+        "text": " Right. But that's why it's worth paying for. It's tough to make money on the App Store."
+      },
+      {
+        "start": 177200,
+        "stop": 177600,
+        "text": " I don't know. I feel like we've been, like I like the indignation, but then"
+      },
+      {
+        "start": 177600,
+        "stop": 178000,
+        "text": " the fact that it's about emoji, I'm kind of, you know. I guess this is my theme today."
+      },
+      {
+        "start": 178000,
+        "stop": 178400,
+        "text": " But I'm looking at this. I'm thinking, you look at his"
+      },
+      {
+        "start": 178400,
+        "stop": 178800,
+        "text": " hostile relationship with the teat that feeds him."
+      },
+      {
+        "start": 178800,
+        "stop": 179200,
+        "text": " And you look at this totally boondocled membership rollout."
+      },
+      {
+        "start": 179200,
+        "stop": 179600,
+        "text": " And I think Telegram's going to have ads soon. Telegram's going downhill."
+      },
+      {
+        "start": 179600,
+        "stop": 180000,
+        "text": " It's time to leave, baby. Switch to Matrix. Because I think Telegram"
+      },
+      {
+        "start": 180000,
+        "stop": 180400,
+        "text": " it's not tomorrow, but I think it's going to turn to crap."
+      },
+      {
+        "start": 180400,
+        "stop": 180800,
+        "text": " Or, you know, maybe IRC will just be the cockroach that survives everything."
+      },
+      {
+        "start": 180800,
+        "stop": 181200,
+        "text": " Tailscale.com/coder."
+      },
+      {
+        "start": 181200,
+        "stop": 181600,
+        "text": " My favorite part in the show right here when I get to tell you about Tailscale."
+      },
+      {
+        "start": 181600,
+        "stop": 182000,
+        "text": " Honestly, Tailscale. Tailscale. Tailscale. It's so"
+      },
+      {
+        "start": 182000,
+        "stop": 182400,
+        "text": " great. I wish we could do every show about it. It's a zero-config VPN"
+      },
+      {
+        "start": 182400,
+        "stop": 182800,
+        "text": " that installs on any device, regardless of architecture or platform."
+      },
+      {
+        "start": 182800,
+        "stop": 183200,
+        "text": " Takes care of your firewall rules. Takes care of your double-nats if you got some."
+      },
+      {
+        "start": 183200,
+        "stop": 183600,
+        "text": " You can quickly and easily create a flat mesh"
+      },
+      {
+        "start": 183600,
+        "stop": 184000,
+        "text": " VPN protected by Wireguard's noise protocol."
+      },
+      {
+        "start": 184000,
+        "stop": 184400,
+        "text": " So you get the best VPN encryption in the business with the"
+      },
+      {
+        "start": 184400,
+        "stop": 184800,
+        "text": " ease of management that Tailscale brings on top of that. It's the combination"
+      },
+      {
+        "start": 184800,
+        "stop": 185200,
+        "text": " of these two things. It's like Tailscale is taking VPNs out"
+      },
+      {
+        "start": 185200,
+        "stop": 185600,
+        "text": " of the uncanny valley. You know, they're doing that last 10% that the"
+      },
+      {
+        "start": 185600,
+        "stop": 186000,
+        "text": " rest of the world needed. And now I am seeing announcement after announcement"
+      },
+      {
+        "start": 186000,
+        "stop": 186400,
+        "text": " of different projects that are integrated in Tailscale support so you can put"
+      },
+      {
+        "start": 186400,
+        "stop": 186800,
+        "text": " applications, individual applications and services on your Tailscale network."
+      },
+      {
+        "start": 186800,
+        "stop": 187200,
+        "text": " It's so incredible because Tailscale is just the solution that on its"
+      },
+      {
+        "start": 187200,
+        "stop": 187600,
+        "text": " surface seems immensely simple. But on the backend"
+      },
+      {
+        "start": 187600,
+        "stop": 188000,
+        "text": " they do a lot of really creative magic to make a mesh VPN network"
+      },
+      {
+        "start": 188000,
+        "stop": 188400,
+        "text": " that just works all the time and doesn't do silly routing when you're accidentally sending the wrong"
+      },
+      {
+        "start": 188400,
+        "stop": 188800,
+        "text": " traffic over that VPN. And they introduce nice features like Tailscale Send"
+      },
+      {
+        "start": 188800,
+        "stop": 189200,
+        "text": " which is basically like AirDrop for your entire Tailscale network."
+      },
+      {
+        "start": 189200,
+        "stop": 189600,
+        "text": " And they've recently rolled out Tailscale SSH which allows you to establish connections"
+      },
+      {
+        "start": 189600,
+        "stop": 190000,
+        "text": " between your devices in your Tailscale network, authorized by the Tailscale controls"
+      },
+      {
+        "start": 190000,
+        "stop": 190400,
+        "text": " which are great. You can manage SSH. Well, you don't have to manage SSH"
+      },
+      {
+        "start": 190400,
+        "stop": 190800,
+        "text": " keys. That's kind of the thing. Tailscale manages the SSH keys and then"
+      },
+      {
+        "start": 190800,
+        "stop": 191200,
+        "text": " it authenticates your SSH connection using WireGuard."
+      },
+      {
+        "start": 191200,
+        "stop": 191600,
+        "text": " Like my two favorite things come together in Tailscale. There was a time"
+      },
+      {
+        "start": 191600,
+        "stop": 192000,
+        "text": " before I synced my files, right? There was a time before I had broadband."
+      },
+      {
+        "start": 192000,
+        "stop": 192400,
+        "text": " There was a time before I had decent portability in a laptop."
+      },
+      {
+        "start": 192400,
+        "stop": 192800,
+        "text": " And now I'm going to look back and remember a time before I had Tailscale."
+      },
+      {
+        "start": 192800,
+        "stop": 193200,
+        "text": " That's the kind of game changer. That's the kind of workflow improvement you get"
+      },
+      {
+        "start": 193200,
+        "stop": 193600,
+        "text": " with Tailscale. So the fact that you can go to tailscale.com/koda right now"
+      },
+      {
+        "start": 193600,
+        "stop": 194000,
+        "text": " and try it for free, up to 20 devices, why you support the show? I don't know."
+      },
+      {
+        "start": 194000,
+        "stop": 194400,
+        "text": " Kind of feels like peak awesome to me. This is one of those moments where"
+      },
+      {
+        "start": 194400,
+        "stop": 194800,
+        "text": " a new technology comes around and podcasting is around and we all get to kind of just"
+      },
+      {
+        "start": 194800,
+        "stop": 195200,
+        "text": " be in the same spot at the same time. And I'm very excited to watch this company go."
+      },
+      {
+        "start": 195200,
+        "stop": 195600,
+        "text": " And I very much recommend you try out Tailscale. I think you're going to be blown away."
+      },
+      {
+        "start": 195600,
+        "stop": 196000,
+        "text": " You'll never switch to any other VPN. This is it. You're done now. You've got yourself"
+      },
+      {
+        "start": 196000,
+        "stop": 196400,
+        "text": " a flat mesh network. You're welcome. Tailscale.com/koda."
+      },
+      {
+        "start": 196400,
+        "stop": 197000,
+        "text": " All right, well, here's where Apple's activity gets a little sketch."
+      },
+      {
+        "start": 197000,
+        "stop": 197600,
+        "text": " Feels a little mob boss to me. Reports are coming out from the Wall Street Journal"
+      },
+      {
+        "start": 197600,
+        "stop": 198000,
+        "text": " that Apple contacted Facebook and wanted a little bit of cut"
+      },
+      {
+        "start": 198000,
+        "stop": 198400,
+        "text": " from some of their new services they were rolling out. They wanted a little taste back in 2016."
+      },
+      {
+        "start": 198400,
+        "stop": 198800,
+        "text": " Like the promoted posts in Facebook."
+      },
+      {
+        "start": 198800,
+        "stop": 199200,
+        "text": " I just want to wet my beak, Mark. Just my beak, okay?"
+      },
+      {
+        "start": 199200,
+        "stop": 199600,
+        "text": " It was interesting the way they did it. They say like, you know, we feel like we should be getting"
+      },
+      {
+        "start": 199600,
+        "stop": 200000,
+        "text": " our 30% from this. Of course, Facebook pushes back on that. And it created"
+      },
+      {
+        "start": 200000,
+        "stop": 200400,
+        "text": " what seems like this really sour relationship"
+      },
+      {
+        "start": 200400,
+        "stop": 200800,
+        "text": " between Apple and Facebook."
+      },
+      {
+        "start": 200800,
+        "stop": 201200,
+        "text": " Yeah. I mean, sure."
+      },
+      {
+        "start": 201200,
+        "stop": 201600,
+        "text": " Nobody likes getting shaken down. Even the bad guys."
+      },
+      {
+        "start": 201600,
+        "stop": 202000,
+        "text": " I don't know. Is it not pretty clear that"
+      },
+      {
+        "start": 202000,
+        "stop": 202400,
+        "text": " in a slowing growth environment, Apple and most other big multinationals"
+      },
+      {
+        "start": 202400,
+        "stop": 202800,
+        "text": " goal is to extract more revenue per user? So they wanted a share"
+      },
+      {
+        "start": 202800,
+        "stop": 203200,
+        "text": " of the promoted ad sales. That, okay, doesn't surprise us. But to help"
+      },
+      {
+        "start": 203200,
+        "stop": 203600,
+        "text": " put it in perspective, because you and I have talked about this so much that we're completely just"
+      },
+      {
+        "start": 203600,
+        "stop": 204000,
+        "text": " it's all sort of a hodgepodge now. But Ben Thompson"
+      },
+      {
+        "start": 204000,
+        "stop": 204400,
+        "text": " did a decent little timeline in Stereotecory, which I'll have a link to in the show notes."
+      },
+      {
+        "start": 204400,
+        "stop": 204800,
+        "text": " But I grabbed a little bit of audio from his podcast."
+      },
+      {
+        "start": 205000,
+        "stop": 205400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 205600,
+        "stop": 206000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 206000,
+        "stop": 206400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 206400,
+        "stop": 206800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 206800,
+        "stop": 207200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 207200,
+        "stop": 207600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 207600,
+        "stop": 208000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 208000,
+        "stop": 208400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 208400,
+        "stop": 208800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 208800,
+        "stop": 209200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 209200,
+        "stop": 209600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 209600,
+        "stop": 210000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 210000,
+        "stop": 210400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 210400,
+        "stop": 210800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 210800,
+        "stop": 211200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 211200,
+        "stop": 211600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 211600,
+        "stop": 212000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 212000,
+        "stop": 212400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 212400,
+        "stop": 212800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 212800,
+        "stop": 213200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 213200,
+        "stop": 213600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 213600,
+        "stop": 214000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 214000,
+        "stop": 214400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 214400,
+        "stop": 214800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 214800,
+        "stop": 215200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 215200,
+        "stop": 215600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 215600,
+        "stop": 216000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 216000,
+        "stop": 216400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 216400,
+        "stop": 216800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 216800,
+        "stop": 217200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 217200,
+        "stop": 217600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 217600,
+        "stop": 218000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 218000,
+        "stop": 218400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 218400,
+        "stop": 218800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 218800,
+        "stop": 219200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 219200,
+        "stop": 219600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 219600,
+        "stop": 220000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 220000,
+        "stop": 220400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 220400,
+        "stop": 220800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 220800,
+        "stop": 221200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 221200,
+        "stop": 221600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 221600,
+        "stop": 222000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 222000,
+        "stop": 222400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 222400,
+        "stop": 222800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 222800,
+        "stop": 223200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 223200,
+        "stop": 223600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 223600,
+        "stop": 224000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 224000,
+        "stop": 224400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 224400,
+        "stop": 224800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 224800,
+        "stop": 225200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 225200,
+        "stop": 225600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 225600,
+        "stop": 226000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 226000,
+        "stop": 226400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 226400,
+        "stop": 226800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 226800,
+        "stop": 227200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 227200,
+        "stop": 227600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 227600,
+        "stop": 228000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 228000,
+        "stop": 228400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 228400,
+        "stop": 228800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 228800,
+        "stop": 229200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 229200,
+        "stop": 229600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 229600,
+        "stop": 230000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 230000,
+        "stop": 230400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 230400,
+        "stop": 230800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 230800,
+        "stop": 231200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 231200,
+        "stop": 231600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 231600,
+        "stop": 232000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 232000,
+        "stop": 232400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 232400,
+        "stop": 232800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 232800,
+        "stop": 233200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 233200,
+        "stop": 233600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 233600,
+        "stop": 234000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 234000,
+        "stop": 234400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 234400,
+        "stop": 234800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 234800,
+        "stop": 235200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 235200,
+        "stop": 235600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 235600,
+        "stop": 236000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 236000,
+        "stop": 236400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 236400,
+        "stop": 236800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 236800,
+        "stop": 237200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 237200,
+        "stop": 237600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 237600,
+        "stop": 238000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 238000,
+        "stop": 238400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 238400,
+        "stop": 238800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 238800,
+        "stop": 239200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 239200,
+        "stop": 239600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 239600,
+        "stop": 240000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 240000,
+        "stop": 240400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 240400,
+        "stop": 240800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 240800,
+        "stop": 241200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 241200,
+        "stop": 241600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 241600,
+        "stop": 242000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 242000,
+        "stop": 242400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 242400,
+        "stop": 242800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 242800,
+        "stop": 243200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 243200,
+        "stop": 243600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 243600,
+        "stop": 244000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 244000,
+        "stop": 244400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 244400,
+        "stop": 244800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 244800,
+        "stop": 245200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 245200,
+        "stop": 245600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 245600,
+        "stop": 246000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 246000,
+        "stop": 246400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 246400,
+        "stop": 246800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 246800,
+        "stop": 247200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 247200,
+        "stop": 247600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 247600,
+        "stop": 248000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 248000,
+        "stop": 248400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 248400,
+        "stop": 248800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 248800,
+        "stop": 249200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 249200,
+        "stop": 249600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 249600,
+        "stop": 250000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 250000,
+        "stop": 250400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 250400,
+        "stop": 250800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 250800,
+        "stop": 251200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 251200,
+        "stop": 251600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 251600,
+        "stop": 252000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 252000,
+        "stop": 252400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 252400,
+        "stop": 252800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 252800,
+        "stop": 253200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 253200,
+        "stop": 253600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 253600,
+        "stop": 254000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 254000,
+        "stop": 254400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 254400,
+        "stop": 254800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 254800,
+        "stop": 255200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 255200,
+        "stop": 255600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 255600,
+        "stop": 256000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 256000,
+        "stop": 256400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 256400,
+        "stop": 256800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 256800,
+        "stop": 257200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 257200,
+        "stop": 257600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 257600,
+        "stop": 258000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 258000,
+        "stop": 258400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 258400,
+        "stop": 258800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 258800,
+        "stop": 259200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 259200,
+        "stop": 259600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 259600,
+        "stop": 260000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 260000,
+        "stop": 260400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 260400,
+        "stop": 260800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 260800,
+        "stop": 261200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 261200,
+        "stop": 261600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 261600,
+        "stop": 262000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 262000,
+        "stop": 262400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 262400,
+        "stop": 262800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 262800,
+        "stop": 263200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 263200,
+        "stop": 263600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 263600,
+        "stop": 264000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 264000,
+        "stop": 264400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 264400,
+        "stop": 264800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 264800,
+        "stop": 265200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 265200,
+        "stop": 265600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 265600,
+        "stop": 266000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 266000,
+        "stop": 266400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 266400,
+        "stop": 266800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 266800,
+        "stop": 267200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 267200,
+        "stop": 267600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 267600,
+        "stop": 268000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 268000,
+        "stop": 268400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 268400,
+        "stop": 268800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 268800,
+        "stop": 269200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 269200,
+        "stop": 269600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 269600,
+        "stop": 270000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 270000,
+        "stop": 270400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 270400,
+        "stop": 270800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 270800,
+        "stop": 271200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 271200,
+        "stop": 271600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 271600,
+        "stop": 272000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 272000,
+        "stop": 272400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 272400,
+        "stop": 272800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 272800,
+        "stop": 273200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 273200,
+        "stop": 273600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 273600,
+        "stop": 274000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 274000,
+        "stop": 274400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 274400,
+        "stop": 274800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 274800,
+        "stop": 275200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 275200,
+        "stop": 275600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 275600,
+        "stop": 276000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 276000,
+        "stop": 276400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 276400,
+        "stop": 276800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 276800,
+        "stop": 277200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 277200,
+        "stop": 277600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 277600,
+        "stop": 278000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 278000,
+        "stop": 278400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 278400,
+        "stop": 278800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 278800,
+        "stop": 279200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 279200,
+        "stop": 279600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 279600,
+        "stop": 280000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 280000,
+        "stop": 280400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 280400,
+        "stop": 280800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 280800,
+        "stop": 281200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 281200,
+        "stop": 281600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 281600,
+        "stop": 282000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 282000,
+        "stop": 282400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 282400,
+        "stop": 282800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 282800,
+        "stop": 283200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 283200,
+        "stop": 283600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 283600,
+        "stop": 284000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 284000,
+        "stop": 284400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 284400,
+        "stop": 284800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 284800,
+        "stop": 285200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 285200,
+        "stop": 285600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 285600,
+        "stop": 286000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 286000,
+        "stop": 286400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 286400,
+        "stop": 286800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 286800,
+        "stop": 287200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 287200,
+        "stop": 287600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 287600,
+        "stop": 288000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 288000,
+        "stop": 288400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 288400,
+        "stop": 288800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 288800,
+        "stop": 289200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 289200,
+        "stop": 289600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 289600,
+        "stop": 290000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 290000,
+        "stop": 290400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 290400,
+        "stop": 290800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 290800,
+        "stop": 291200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 291200,
+        "stop": 291600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 291600,
+        "stop": 292000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 292000,
+        "stop": 292400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 292400,
+        "stop": 292800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 292800,
+        "stop": 293200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 293200,
+        "stop": 293600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 293600,
+        "stop": 294000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 294000,
+        "stop": 294400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 294400,
+        "stop": 294800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 294800,
+        "stop": 295200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 295200,
+        "stop": 295600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 295600,
+        "stop": 296000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 296000,
+        "stop": 296400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 296400,
+        "stop": 296800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 296800,
+        "stop": 297200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 297200,
+        "stop": 297600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 297600,
+        "stop": 298000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 298000,
+        "stop": 298400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 298400,
+        "stop": 298800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 298800,
+        "stop": 299200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 299200,
+        "stop": 299600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 299600,
+        "stop": 300000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 300000,
+        "stop": 300400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 300400,
+        "stop": 300800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 300800,
+        "stop": 301200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 301200,
+        "stop": 301600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 301600,
+        "stop": 302000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 302000,
+        "stop": 302400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 302400,
+        "stop": 302800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 302800,
+        "stop": 303200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 303200,
+        "stop": 303600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 303600,
+        "stop": 304000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 304000,
+        "stop": 304400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 304400,
+        "stop": 304800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 304800,
+        "stop": 305200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 305200,
+        "stop": 305600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 305600,
+        "stop": 306000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 306000,
+        "stop": 306400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 306400,
+        "stop": 306800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 306800,
+        "stop": 307200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 307200,
+        "stop": 307600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 307600,
+        "stop": 308000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 308000,
+        "stop": 308400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 308400,
+        "stop": 308800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 308800,
+        "stop": 309200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 309200,
+        "stop": 309600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 309600,
+        "stop": 310000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 310000,
+        "stop": 310400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 310400,
+        "stop": 310800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 310800,
+        "stop": 311200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 311200,
+        "stop": 311600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 311600,
+        "stop": 312000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 312000,
+        "stop": 312400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 312400,
+        "stop": 312800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 312800,
+        "stop": 313200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 313200,
+        "stop": 313600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 313600,
+        "stop": 314000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 314000,
+        "stop": 314400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 314400,
+        "stop": 314800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 314800,
+        "stop": 315200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 315200,
+        "stop": 315600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 315600,
+        "stop": 316000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 316000,
+        "stop": 316400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 316400,
+        "stop": 316800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 316800,
+        "stop": 317200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 317200,
+        "stop": 317600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 317600,
+        "stop": 318000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 318000,
+        "stop": 318400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 318400,
+        "stop": 318800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 318800,
+        "stop": 319200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 319200,
+        "stop": 319600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 319600,
+        "stop": 320000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 320000,
+        "stop": 320400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 320400,
+        "stop": 320800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 320800,
+        "stop": 321200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 321200,
+        "stop": 321600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 321600,
+        "stop": 322000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 322000,
+        "stop": 322400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 322400,
+        "stop": 322800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 322800,
+        "stop": 323200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 323200,
+        "stop": 323600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 323600,
+        "stop": 324000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 324000,
+        "stop": 324400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 324400,
+        "stop": 324800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 324800,
+        "stop": 325200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 325200,
+        "stop": 325600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 325600,
+        "stop": 326000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 326000,
+        "stop": 326400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 326400,
+        "stop": 326800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 326800,
+        "stop": 327200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 327200,
+        "stop": 327600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 327600,
+        "stop": 328000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 328000,
+        "stop": 328400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 328400,
+        "stop": 328800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 328800,
+        "stop": 329200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 329200,
+        "stop": 329600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 329600,
+        "stop": 330000,
+        "text": " [audio description]"
+      },
+      {
+        "start": 330000,
+        "stop": 330400,
+        "text": " [audio description]"
+      },
+      {
+        "start": 330400,
+        "stop": 330800,
+        "text": " [audio description]"
+      },
+      {
+        "start": 330800,
+        "stop": 331200,
+        "text": " [audio description]"
+      },
+      {
+        "start": 331200,
+        "stop": 331600,
+        "text": " [audio description]"
+      },
+      {
+        "start": 331600,
+        "stop": 332000,
+        "text": " [audio description]"
+      }
+    ],
+    "processing_time": {
+      "secs": 1777,
+      "nanos": 350247377
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 479: Apple's Mob Move",
+    "pictures": [],
+    "duration": {
+      "secs": 3302,
+      "nanos": 910000000
+    },
+    "unique_id": "http://coder.show/479"
+  },
+  "episode": {
+    "title": "Apple's Mob Move | Coder Radio 479",
+    "description": "New leaks reveal how hollow Apple's claims of fighting for user privacy are. We discuss their scheme to monetize the downturn.",
+    "content": "<p>New leaks reveal how hollow Apple&#39;s claims of fighting for user privacy are. We discuss their scheme to monetize the downturn. </p>\n\n<p><p>Plus, why we&#39;ve never seen an App blow it as severely as Telegram is right now, and Electron&#39;s Flash moment.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://twitter.com/crmascot/status/1559090879608094720?s=21&t=1qi3GcfKmSMawrujFfKXWQ\" title=\"CoderRadioMascot on Twitter\" rel=\"nofollow\">CoderRadioMascot on Twitter</a> &mdash; I want to remind you that we have strict labor laws in Europe. I don't think denying a mascot it's vacation is legal. I consider founding the first podcast mascot union to make sure podcast mascot's rights are respected and not eradicated.</li><li><a href=\"https://www.nytimes.com/interactive/2022/08/14/business/worker-productivity-tracking.html\" title=\"Workplace Productivity: Are You Being Tracked? - The New York Times\" rel=\"nofollow\">Workplace Productivity: Are You Being Tracked? - The New York Times</a> &mdash; Across industries and incomes, more employees are being tracked, recorded and ranked. What is gained, companies say, is efficiency and accountability. What is lost?</li><li><a href=\"http://web.archive.org/web/20220815021317/https://www.nytimes.com/interactive/2022/08/14/business/worker-productivity-tracking.html\" title=\"Archive.org: The Rise of the Worker Productivity Score\" rel=\"nofollow\">Archive.org: The Rise of the Worker Productivity Score</a> &mdash; Now digital productivity monitoring is also spreading among white-collar jobs and roles that require graduate degrees. Many employees, whether working remotely or in person, are subject to trackers, scores, “idle” buttons, or just quiet, constantly accumulating records. Pauses can lead to penalties, from lost pay to lost jobs.</li><li><a href=\"https://paste.docs.lol/reader/EnforcesAurelias\" title=\"Stof's thoughts on tabs or Spaces\" rel=\"nofollow\">Stof's thoughts on tabs or Spaces</a> &mdash; Essentially, tabs are idealistic and would win any argument not based on real world 'not caring' of humans, so in reality spaces win, but how many spaces is a better question! I wonder what the audience would say about 2 spaces?</li><li><a href=\"https://bit.ly/westcoastcrew\" title=\"West Coast Crew Chat\" rel=\"nofollow\">West Coast Crew Chat</a> &mdash; Join our west coast locals chan room.</li><li><a href=\"https://nextcloud.tuxies.party/apps/forms/FjFmqmReikJH2BwR\" title=\"Want to join us at JPL?\" rel=\"nofollow\">Want to join us at JPL?</a> &mdash; Put your name in the hat, just be sure you can be there Sept 29th!</li><li><a href=\"https://www.vice.com/en/article/m7gb7y/researchers-find-vulnerability-in-software-underlying-discord-microsoft-teams-and-other-apps\" title=\"Researchers Find Vulnerabilities in Software Underlying Discord, Microsoft Teams, and Other Apps\" rel=\"nofollow\">Researchers Find Vulnerabilities in Software Underlying Discord, Microsoft Teams, and Other Apps</a> &mdash; Aaditya Purani, one of the researchers who found these vulnerabilities, said that “regular users should know that the Electron apps are not the same as their day-to-day browsers,” meaning they are potentially more vulnerable. </li><li><a href=\"https://www.reddit.com/r/programming/comments/wmpchx/comment/ik32z40\" title=\"RCE Vulnerability found in Electron\" rel=\"nofollow\">RCE Vulnerability found in Electron</a> &mdash;  This occurs because of the way ElectronJS is designed and is a fundamental design issue within the framework. (ElectronJs = JS + Chromium so this intersection is where the flaw occurs as it’s not same as your normal chrome browser).</li><li><a href=\"https://9to5mac.com/2022/08/13/telegram-app-store-apple-complained-emoji/\" title=\"Telegram update brings new animated emoji \" rel=\"nofollow\">Telegram update brings new animated emoji </a> &mdash; The latest update to Telegram’s app for iOS comes with multiple new features, especially for Premium subscribers.</li><li><a href=\"https://9to5mac.com/2022/08/11/telegram-app-store-obscure-review-process/\" title=\"Telegram CEO complains about App Store 'obscure review process'\" rel=\"nofollow\">Telegram CEO complains about App Store 'obscure review process'</a> &mdash; For example, our upcoming update – which is about to revolutionize how people express themselves in messaging – has been stuck in Apple’s ‘review’ for two weeks, without explanation or any feedback provided by Apple.</li><li><a href=\"https://www.theverge.com/2022/8/12/23303095/apple-meta-facebook-ad-sales-subscription\" title=\"Apple asked for a cut of Facebook’s ad sales years before it stifled Facebook’s ad sales\" rel=\"nofollow\">Apple asked for a cut of Facebook’s ad sales years before it stifled Facebook’s ad sales</a> &mdash; Apple reportedly argued that it deserved a cut of certain portions of Facebook’s ad revenue.</li><li><a href=\"https://www.bloomberg.com/news/newsletters/2022-08-14/apple-aapl-set-to-expand-advertising-bringing-ads-to-maps-tv-and-books-apps-l6tdqqmg\" title=\"Apple Set to Expand Advertising, Bringing Ads to Maps, TV and Books Apps\" rel=\"nofollow\">Apple Set to Expand Advertising, Bringing Ads to Maps, TV and Books Apps</a> &mdash; Apple is set to expand ads to new areas of your iPhone and iPad in search of its next big revenue driver. Also: The company slows its pace of acquiring startups, and Peloton embarks on a major overhaul.</li><li><a href=\"https://stratechery.com/2022/apple-and-facebooks-pre-att-negotiations-timing-and-documentation-atts-impact/\" title=\"Apple and Facebook’s Pre-ATT Negotiations, Timing and Documentation\" rel=\"nofollow\">Apple and Facebook’s Pre-ATT Negotiations, Timing and Documentation</a> &mdash; The Wall Street Journal fills in important details about the run-up to ATT, including negotiations between Apple and Facebook. Then, ATT denials don't hold water. – Stratechery by Ben Thompson</li><li><a href=\"https://twitter.com/markgurman/status/1558846839746506752\" title=\"Mark Gurman on Twitter\" rel=\"nofollow\">Mark Gurman on Twitter</a> &mdash; Power On: Apple is set to expand ads to more parts of your iPhone, beyond News, Stocks and the App Store. Up next? Probably in Maps, Books, Podcasts and one day TV+.</li><li><a href=\"https://twitter.com/patrickmoorhead/status/1558878168685154306\" title=\"Patrick Moorhead #SixFiveSummit on Twitter\" rel=\"nofollow\">Patrick Moorhead #SixFiveSummit on Twitter</a> &mdash; What an Apple power move: Hobble the advertising efforts of your ecosystem and then start monetizing the real estate yourself. Redefines vertical integration. Truly brilliant.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost with a New Podcast App\" rel=\"nofollow\">Send a Boost with a New Podcast App</a> &mdash; Boosts, chapters, transcripts, and more. Get a Podcasting 2.0 compatible app.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8709",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15575819/b86110a0-1042-4911-8914-212808f6ea3a.mp3",
+      "length": "46950159",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-17T03:05:00+02:00"
+  },
+  "speedup": 1.8583337
+}

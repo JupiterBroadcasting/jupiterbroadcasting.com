@@ -1,0 +1,1407 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 892,
+        "text": " hello and welcome to Linux action news episode 253 recorded on August 10th 2022"
+      },
+      {
+        "start": 892,
+        "stop": 1544,
+        "text": " I'm Chris and I'm Wes hello Wes let's do the news we start this week with the"
+      },
+      {
+        "start": 1544,
+        "stop": 2068,
+        "text": " question we know is on the minds of all of you out there what's the latest with"
+      },
+      {
+        "start": 2068,
+        "stop": 2588,
+        "text": " Microsoft's Linux distribution it was just over a year ago that the world was"
+      },
+      {
+        "start": 2588,
+        "stop": 3184,
+        "text": " shocked to learn Microsoft had been working on CBL mariner and not only have"
+      },
+      {
+        "start": 3184,
+        "stop": 3620,
+        "text": " they been issuing steady updates but they've also been extending its"
+      },
+      {
+        "start": 3620,
+        "stop": 4204,
+        "text": " capabilities and Microsoft has been issuing one or sometimes even more"
+      },
+      {
+        "start": 4204,
+        "stop": 4716,
+        "text": " updates per month and this week it marked the release of CBL Mariner 2.0"
+      },
+      {
+        "start": 4716,
+        "stop": 5384,
+        "text": " the July 2022 update - so I take that to me they had two updates in one month and"
+      },
+      {
+        "start": 5384,
+        "stop": 5864,
+        "text": " it seems that the release itself well there's a lot in there but one of the"
+      },
+      {
+        "start": 5864,
+        "stop": 6260,
+        "text": " things that caught our attention is more and more packages are being added that"
+      },
+      {
+        "start": 6260,
+        "stop": 6936,
+        "text": " make the distribution at least somewhat practical to run on bare metal now now"
+      },
+      {
+        "start": 6936,
+        "stop": 7456,
+        "text": " we should note that this all still appears to be very use case specific so"
+      },
+      {
+        "start": 7456,
+        "stop": 8012,
+        "text": " no don't expect a desktop spin anytime soon they've also added some other"
+      },
+      {
+        "start": 8012,
+        "stop": 8432,
+        "text": " useful packages though like FIO and sysbench for performance testing"
+      },
+      {
+        "start": 8432,
+        "stop": 9176,
+        "text": " cubevert libxf kernel tools and a bunch of other ones I definitely do use this"
+      },
+      {
+        "start": 9176,
+        "stop": 9676,
+        "text": " newest revision to CBL mariner 2.0 also adds a few more packages to its subset"
+      },
+      {
+        "start": 9676,
+        "stop": 10212,
+        "text": " of fedora rpms network configuration support for unattended ISO installs"
+      },
+      {
+        "start": 10212,
+        "stop": 10908,
+        "text": " that's handy and it brings Linux 5.15 LTS to the mix among a bunch of other"
+      },
+      {
+        "start": 10908,
+        "stop": 11312,
+        "text": " fixes and improvements adventurous among you out there can actually go find an"
+      },
+      {
+        "start": 11312,
+        "stop": 11812,
+        "text": " ISO link from the github readme page which we will have in the notes but I"
+      },
+      {
+        "start": 11812,
+        "stop": 12308,
+        "text": " can't help wonder how far does this go it starts to get bare metal support over"
+      },
+      {
+        "start": 12308,
+        "stop": 12772,
+        "text": " time starts to get more and more package support more and more scripting for"
+      },
+      {
+        "start": 12772,
+        "stop": 13272,
+        "text": " unattended installations how far does this go and I think the second question"
+      },
+      {
+        "start": 13272,
+        "stop": 13604,
+        "text": " that I feel in all of this is and I'd love to hear the audience's input on"
+      },
+      {
+        "start": 13604,
+        "stop": 13944,
+        "text": " this so dear listener how do you think the Linux community is going to process"
+      },
+      {
+        "start": 13944,
+        "stop": 14336,
+        "text": " this information about CBL mariner and process the information around its"
+      },
+      {
+        "start": 14336,
+        "stop": 14724,
+        "text": " continued growth as they push it forward go to Linux action news.com slash"
+      },
+      {
+        "start": 14724,
+        "stop": 15284,
+        "text": " contact to let me know or send a boost into the show with a new podcast app"
+      },
+      {
+        "start": 15284,
+        "stop": 16044,
+        "text": " security issues around the free software supply chain have become a popular topic"
+      },
+      {
+        "start": 16044,
+        "stop": 16580,
+        "text": " of discussion lately at the core of the concern is how we verify the many"
+      },
+      {
+        "start": 16580,
+        "stop": 17128,
+        "text": " different libraries and components that modern application stacks depend on the"
+      },
+      {
+        "start": 17128,
+        "stop": 17584,
+        "text": " Microsoft on github announced on Monday that it plans to support code signing"
+      },
+      {
+        "start": 17584,
+        "stop": 18064,
+        "text": " for NPM software packages using the code-signing platform sig store that"
+      },
+      {
+        "start": 18064,
+        "stop": 18400,
+        "text": " tool grew out of a collaboration with multiple tech companies to make it much"
+      },
+      {
+        "start": 18400,
+        "stop": 18848,
+        "text": " easier for open source maintainers to verify that the source code they create"
+      },
+      {
+        "start": 18848,
+        "stop": 19212,
+        "text": " is the same code that ends up in the software packages actually being"
+      },
+      {
+        "start": 19212,
+        "stop": 19772,
+        "text": " downloaded and used by end users worldwide those multiple tech companies"
+      },
+      {
+        "start": 19772,
+        "stop": 20192,
+        "text": " include the likes of the links foundation Google red hat Purdue"
+      },
+      {
+        "start": 20192,
+        "stop": 20792,
+        "text": " University and chain guard has also been some significant adoption of six door by"
+      },
+      {
+        "start": 20792,
+        "stop": 21240,
+        "text": " the likes of kubernetes and there's even an official tool for signing python"
+      },
+      {
+        "start": 21240,
+        "stop": 21724,
+        "text": " packages using six or these days of course with any tool like this that"
+      },
+      {
+        "start": 21724,
+        "stop": 22300,
+        "text": " requires additional work six door relies on being free and easy to use to spur"
+      },
+      {
+        "start": 22300,
+        "stop": 22808,
+        "text": " adoption and to get people to actually use it github says it's starting with a"
+      },
+      {
+        "start": 22808,
+        "stop": 23300,
+        "text": " proposal on how six door will be implemented for NPM and then also having"
+      },
+      {
+        "start": 23300,
+        "stop": 23724,
+        "text": " an open comment period to get feedback from the community on exactly how the"
+      },
+      {
+        "start": 23724,
+        "stop": 24428,
+        "text": " tool will be deployed and on the topic of github also on monday the source code"
+      },
+      {
+        "start": 24428,
+        "stop": 24972,
+        "text": " for an open source ethereum privacy mixer called tornado cash was completely"
+      },
+      {
+        "start": 24972,
+        "stop": 25408,
+        "text": " removed from github prompting outcry from privacy and free speech advocates"
+      },
+      {
+        "start": 25408,
+        "stop": 25900,
+        "text": " alike this all happened after the US Treasury Department added the tornado"
+      },
+      {
+        "start": 25900,
+        "stop": 26356,
+        "text": " cash website and a long list of aetherium addresses to its specially"
+      },
+      {
+        "start": 26356,
+        "stop": 26872,
+        "text": " designated Nationals list banning American citizens from using the tool or"
+      },
+      {
+        "start": 26872,
+        "stop": 27410,
+        "text": " transacting with those addresses if you're not familiar tornado cash is an"
+      },
+      {
+        "start": 27410,
+        "stop": 27878,
+        "text": " app that lets users make private transactions on the ethereum network it"
+      },
+      {
+        "start": 27878,
+        "stop": 28340,
+        "text": " does this by pulling together ethereum deposited by many different users and"
+      },
+      {
+        "start": 28340,
+        "stop": 28856,
+        "text": " mixing them together so those transactions are obscured within hours"
+      },
+      {
+        "start": 28856,
+        "stop": 29176,
+        "text": " of the announcement by the Treasury Department report started to emerge that"
+      },
+      {
+        "start": 29176,
+        "stop": 29636,
+        "text": " github had taken action shutting down both the tornado cash project page but"
+      },
+      {
+        "start": 29636,
+        "stop": 29996,
+        "text": " also the developers entire github account the developer then took to"
+      },
+      {
+        "start": 29996,
+        "stop": 30528,
+        "text": " twitter asking is it now illegal to write open source code for their part"
+      },
+      {
+        "start": 30528,
+        "stop": 31116,
+        "text": " github says they had no choice but to act though that response certainly has"
+      },
+      {
+        "start": 31116,
+        "stop": 31626,
+        "text": " provoked a general outcry from several industry leaders who cited the 1996"
+      },
+      {
+        "start": 31626,
+        "stop": 32174,
+        "text": " federal court case Bernstein v. US which established source code as speech"
+      },
+      {
+        "start": 32174,
+        "stop": 32658,
+        "text": " protected by the First Amendment and Matthew Green a cryptography professor"
+      },
+      {
+        "start": 32658,
+        "stop": 33144,
+        "text": " at John Hopkins University said quote 30 years of hard legal work to establish"
+      },
+      {
+        "start": 33144,
+        "stop": 33524,
+        "text": " First Amendment protections around software distribution blown up in a day"
+      },
+      {
+        "start": 33524,
+        "stop": 34062,
+        "text": " by github and Microsoft in response to clarification on the situation and"
+      },
+      {
+        "start": 34062,
+        "stop": 34602,
+        "text": " github spokesperson said quote trade laws require github to restrict users"
+      },
+      {
+        "start": 34602,
+        "stop": 35128,
+        "text": " and customers identified as specially designated Nationals or other denied or"
+      },
+      {
+        "start": 35128,
+        "stop": 35728,
+        "text": " blocked parties or that may be using github on behalf of blocked parties it's"
+      },
+      {
+        "start": 35728,
+        "stop": 36236,
+        "text": " an understandable tough position for Microsoft and github notable though the"
+      },
+      {
+        "start": 36236,
+        "stop": 36776,
+        "text": " US Treasury sanctions on tornado cash do not name the tornado cash developer or"
+      },
+      {
+        "start": 36776,
+        "stop": 37246,
+        "text": " anyone involved with the project in fact the only identifying information in"
+      },
+      {
+        "start": 37246,
+        "stop": 37822,
+        "text": " there is tornado cash the project the name and some ethereum addresses there"
+      },
+      {
+        "start": 37822,
+        "stop": 38438,
+        "text": " is no individuals listed at all a tricky situation to be sure we're just glad"
+      },
+      {
+        "start": 38438,
+        "stop": 38890,
+        "text": " they're still viable self-hosting alternatives that are out there but"
+      },
+      {
+        "start": 38890,
+        "stop": 39450,
+        "text": " sticking with github for one last story many of us became aware of a privacy"
+      },
+      {
+        "start": 39450,
+        "stop": 40030,
+        "text": " policy reversal after a staffer tweeted about the issue yeah on December 17th"
+      },
+      {
+        "start": 40030,
+        "stop": 40422,
+        "text": " github published a blog post promising not to use non-essential cookies out of"
+      },
+      {
+        "start": 40422,
+        "stop": 40902,
+        "text": " concern for user privacy but a week ago that blog post got an update with an"
+      },
+      {
+        "start": 40902,
+        "stop": 41378,
+        "text": " asterisk signifying that the privacy policy had changed it seems that forget"
+      },
+      {
+        "start": 41378,
+        "stop": 41830,
+        "text": " how enterprise marketing subdomains not essential cookies are back on the menu"
+      },
+      {
+        "start": 41830,
+        "stop": 42244,
+        "text": " with the reason being just quite simply quote better reach and to improve the"
+      },
+      {
+        "start": 42244,
+        "stop": 42734,
+        "text": " web experience for enterprise users if you're not comfortable with that change"
+      },
+      {
+        "start": 42734,
+        "stop": 43198,
+        "text": " well there is a 30-day comment period you can find it at Linux action news"
+      },
+      {
+        "start": 43198,
+        "stop": 43602,
+        "text": " dot-com slash two five three"
+      },
+      {
+        "start": 43602,
+        "stop": 44330,
+        "text": " well after all of that we kind of feel like covering something like good news"
+      },
+      {
+        "start": 44330,
+        "stop": 44806,
+        "text": " from the decentralization file on the show and that's IPFS the interplanetary"
+      },
+      {
+        "start": 44806,
+        "stop": 45174,
+        "text": " file system which is a protocol for peer-to-peer decentralized file sharing"
+      },
+      {
+        "start": 45174,
+        "stop": 45742,
+        "text": " has now been baked into ffmpeg starting with version 5.1 and it appears the"
+      },
+      {
+        "start": 45742,
+        "stop": 46438,
+        "text": " effort is not stopping with ffmpeg that ipfs support actually landed in ffmpeg"
+      },
+      {
+        "start": 46438,
+        "stop": 46990,
+        "text": " back in july but mark geyser an open grant participant turned protocol labs"
+      },
+      {
+        "start": 46990,
+        "stop": 47546,
+        "text": " contractor recently belonged about the ffmpeg ipfs implementation sharing some"
+      },
+      {
+        "start": 47546,
+        "stop": 48054,
+        "text": " more juicy details that we could really sink our teeth into the utility of"
+      },
+      {
+        "start": 48054,
+        "stop": 48630,
+        "text": " having a fully decentralized file protocol built right into ffmpeg that"
+      },
+      {
+        "start": 48630,
+        "stop": 49086,
+        "text": " just seems pretty obvious to me and it seems like the inspiration for the idea"
+      },
+      {
+        "start": 49086,
+        "stop": 49566,
+        "text": " actually came from a failed drive in marks home server he wrote in the blog"
+      },
+      {
+        "start": 49566,
+        "stop": 50006,
+        "text": " post quote after days of debugging I just couldn't resolve the issue which"
+      },
+      {
+        "start": 50006,
+        "stop": 50646,
+        "text": " sparked a simple idea I already use ipfs why can't I use that to play my media"
+      },
+      {
+        "start": 50646,
+        "stop": 51322,
+        "text": " good idea mark in multiple ways because by building that support into ffmpeg not"
+      },
+      {
+        "start": 51322,
+        "stop": 51818,
+        "text": " only does anyone using ffmpeg directly benefit but so do a huge amount of"
+      },
+      {
+        "start": 51818,
+        "stop": 52538,
+        "text": " downstream projects that also make use of ffmpeg but oh no mark did not stop"
+      },
+      {
+        "start": 52538,
+        "stop": 53282,
+        "text": " there he's also begun adding support to VLC MPV and Cody that MPV support in"
+      },
+      {
+        "start": 53282,
+        "stop": 53738,
+        "text": " particular looks like it could be finished up in the next release for"
+      },
+      {
+        "start": 53738,
+        "stop": 54178,
+        "text": " details on how to play around with this new support in ffmpeg and the grants"
+      },
+      {
+        "start": 54178,
+        "stop": 54474,
+        "text": " that are making all of this possible well you should check out Mark's full"
+      },
+      {
+        "start": 54474,
+        "stop": 54850,
+        "text": " post we will have a link to that as well"
+      },
+      {
+        "start": 54850,
+        "stop": 56010,
+        "text": " Ubuntu 22.04.1 LTS was scheduled for release earlier this week but that's"
+      },
+      {
+        "start": 56010,
+        "stop": 56530,
+        "text": " been pushed back by an additional week after a bug was found that led to snaps"
+      },
+      {
+        "start": 56530,
+        "stop": 57146,
+        "text": " like Firefox failing to launch now if you've already upgraded to Ubuntu"
+      },
+      {
+        "start": 57146,
+        "stop": 57850,
+        "text": " 22.04.1 via apt upgrades don't worry this bug actually only affects new OEM"
+      },
+      {
+        "start": 57850,
+        "stop": 58358,
+        "text": " installs as for the bug itself well that was found in the final hours before"
+      },
+      {
+        "start": 58358,
+        "stop": 58970,
+        "text": " release thankfully though as we record right now the fix has been completed and"
+      },
+      {
+        "start": 58970,
+        "stop": 59418,
+        "text": " it's on track for that new release window"
+      },
+      {
+        "start": 59418,
+        "stop": 60070,
+        "text": " linode.com slash land go there to get $100 in 60-day credit on a new account"
+      },
+      {
+        "start": 60070,
+        "stop": 60526,
+        "text": " and it's just a great way to support the show linode is our hosting provider they"
+      },
+      {
+        "start": 60526,
+        "stop": 60998,
+        "text": " are the simple affordable hosting provider that has I believe the best"
+      },
+      {
+        "start": 60998,
+        "stop": 61434,
+        "text": " performance in the business and the studies keep backing that up fast"
+      },
+      {
+        "start": 61434,
+        "stop": 61906,
+        "text": " reliable cloud hosting that's linode right there with real humans that are"
+      },
+      {
+        "start": 61906,
+        "stop": 62382,
+        "text": " available to help you 365 days a year linode is how we run everything we've"
+      },
+      {
+        "start": 62382,
+        "stop": 62878,
+        "text": " built in the last few years in the cloud and like us linode loves Linux and that"
+      },
+      {
+        "start": 62878,
+        "stop": 63358,
+        "text": " stuff matters to me as a business owner I want to patronize other businesses that"
+      },
+      {
+        "start": 63358,
+        "stop": 63794,
+        "text": " support the Linux ecosystem and linode does they provide support for projects"
+      },
+      {
+        "start": 63794,
+        "stop": 64194,
+        "text": " they invest in open source and they also invest in the community they're sending"
+      },
+      {
+        "start": 64194,
+        "stop": 64498,
+        "text": " us down to California in September to meet up with a whole bunch of you and"
+      },
+      {
+        "start": 64498,
+        "stop": 65006,
+        "text": " get to it take a tour of JPL and linode doesn't do that because they're going to"
+      },
+      {
+        "start": 65006,
+        "stop": 65274,
+        "text": " make a ton of money on it although hopefully they'll get some of you to"
+      },
+      {
+        "start": 65274,
+        "stop": 65746,
+        "text": " sign up as a show of support but they do it as an investment in the community"
+      },
+      {
+        "start": 65746,
+        "stop": 65994,
+        "text": " because they're long-term thinkers I mean they've been doing this for nearly"
+      },
+      {
+        "start": 65994,
+        "stop": 66382,
+        "text": " 19 years so they they've really figured out how to do this right and because"
+      },
+      {
+        "start": 66382,
+        "stop": 66706,
+        "text": " they are Linux enthusiasts themselves they get that connection to the"
+      },
+      {
+        "start": 66706,
+        "stop": 67146,
+        "text": " community like no other provider does and of course it doesn't hurt that"
+      },
+      {
+        "start": 67146,
+        "stop": 67558,
+        "text": " they're 30 to 50 percent cheaper than the hyperscalers they'll want to lock"
+      },
+      {
+        "start": 67558,
+        "stop": 67982,
+        "text": " into their esoteric crazy platforms with their own unique languages and names for"
+      },
+      {
+        "start": 67982,
+        "stop": 68318,
+        "text": " everything where they forked a bunch of projects and call them something"
+      },
+      {
+        "start": 68318,
+        "stop": 68594,
+        "text": " completely different now you know what I'm talking about that's not linodes"
+      },
+      {
+        "start": 68594,
+        "stop": 69254,
+        "text": " game linodes game is simple affordable accessible cloud hosting their game is"
+      },
+      {
+        "start": 69254,
+        "stop": 69642,
+        "text": " the best place to run applications on Linux they've recently rolled out MVME"
+      },
+      {
+        "start": 69642,
+        "stop": 70146,
+        "text": " storage AMD epic processors they are their own ISP and with 11 data centers"
+      },
+      {
+        "start": 70146,
+        "stop": 70586,
+        "text": " around the world you'll find something close to you that's nice and fast it's"
+      },
+      {
+        "start": 70586,
+        "stop": 71026,
+        "text": " so nice it really is because honestly I wouldn't want to host my stuff anywhere"
+      },
+      {
+        "start": 71026,
+        "stop": 71458,
+        "text": " else I'm really happy to say that we are proud linode users and I think you're"
+      },
+      {
+        "start": 71458,
+        "stop": 71774,
+        "text": " gonna love it too and you know they just recently updated their Kali Linux"
+      },
+      {
+        "start": 71774,
+        "stop": 72066,
+        "text": " support so they added Kali Linux support and then a new version of Kali came out"
+      },
+      {
+        "start": 72066,
+        "stop": 72450,
+        "text": " and they've already updated the version of Kali that they now let you run it's"
+      },
+      {
+        "start": 72450,
+        "stop": 72894,
+        "text": " pretty convenient and it's a great way to remotely audit your network so go try"
+      },
+      {
+        "start": 72894,
+        "stop": 73354,
+        "text": " linode learn something support the show maybe deploy something try it for"
+      },
+      {
+        "start": 73354,
+        "stop": 73830,
+        "text": " yourself try it for your business just go to linode.com/lan one more time"
+      },
+      {
+        "start": 73830,
+        "stop": 74430,
+        "text": " that's linode.com/lan for that 60 days $100 credit on your new account"
+      },
+      {
+        "start": 74430,
+        "stop": 74966,
+        "text": " linode.com/lan"
+      },
+      {
+        "start": 74966,
+        "stop": 75582,
+        "text": " and a big thank you to collide collide.com/lan. Collide is an endpoint"
+      },
+      {
+        "start": 75582,
+        "stop": 76062,
+        "text": " security solution that uses the most powerful untapped resource in IT and"
+      },
+      {
+        "start": 76062,
+        "stop": 76438,
+        "text": " users and when you're trying to achieve security goals maybe it's for yourself"
+      },
+      {
+        "start": 76438,
+        "stop": 76978,
+        "text": " or a third-party audit maybe it's just for the boss the wisdom of yesterday was"
+      },
+      {
+        "start": 76978,
+        "stop": 77378,
+        "text": " to treat every device like it's Fort Knox with old-school device management"
+      },
+      {
+        "start": 77378,
+        "stop": 77866,
+        "text": " tools and MDMs that force disruptive agents onto employees devices slow down"
+      },
+      {
+        "start": 77866,
+        "stop": 78298,
+        "text": " performance and gunk them up I never wanted that stuff on my machine it"
+      },
+      {
+        "start": 78298,
+        "stop": 78910,
+        "text": " really turns IT admins and end users into enemies and not to mention those"
+      },
+      {
+        "start": 78910,
+        "stop": 79510,
+        "text": " tools often create their own security problems so it was time for something"
+      },
+      {
+        "start": 79510,
+        "stop": 79882,
+        "text": " different and that's why it's great to introduce you to Collide they do things"
+      },
+      {
+        "start": 79882,
+        "stop": 80366,
+        "text": " better instead of forcing changes on users Collide sends them security"
+      },
+      {
+        "start": 80366,
+        "stop": 80886,
+        "text": " recommendations via Slack and Collide will automatically notify your team when"
+      },
+      {
+        "start": 80886,
+        "stop": 81214,
+        "text": " the device becomes insecure and it'll give that person step-by-step"
+      },
+      {
+        "start": 81214,
+        "stop": 81598,
+        "text": " instructions on how to solve the problem and by reaching out to employees via a"
+      },
+      {
+        "start": 81598,
+        "stop": 82198,
+        "text": " friendly slack DM and then educating them about policies well Collide helps"
+      },
+      {
+        "start": 82198,
+        "stop": 82690,
+        "text": " you build a culture in which everyone contributes to security because everyone"
+      },
+      {
+        "start": 82690,
+        "stop": 83350,
+        "text": " understands how and why to do it and for IT admins Collide provides a single"
+      },
+      {
+        "start": 83350,
+        "stop": 83694,
+        "text": " dashboard that lets you monitor the security of your entire fleet maybe"
+      },
+      {
+        "start": 83694,
+        "stop": 83982,
+        "text": " they're on a Mac maybe they're on Windows and even when they're on Linux"
+      },
+      {
+        "start": 83982,
+        "stop": 84446,
+        "text": " you can see at a glance which employees have their disks encrypted their OS up"
+      },
+      {
+        "start": 84446,
+        "stop": 84850,
+        "text": " to date and a password manager installed making it easy to prove compliance with"
+      },
+      {
+        "start": 84850,
+        "stop": 85194,
+        "text": " your auditors your customers and leadership so that's Collide user"
+      },
+      {
+        "start": 85194,
+        "stop": 85678,
+        "text": " centered cross-platform endpoint security for teams that slack you can"
+      },
+      {
+        "start": 85678,
+        "stop": 86122,
+        "text": " meet your compliance goals by putting users first visit collide comm slash"
+      },
+      {
+        "start": 86122,
+        "stop": 86562,
+        "text": " land to find out how if you follow that link go there they'll hook you up with a"
+      },
+      {
+        "start": 86562,
+        "stop": 86998,
+        "text": " goodie bag including a free t-shirt just for activating a free trial you know I"
+      },
+      {
+        "start": 86998,
+        "stop": 87518,
+        "text": " love that free swag so go get it it's collide comm slash land that's k o l i"
+      },
+      {
+        "start": 87518,
+        "stop": 88662,
+        "text": " de dot-com slash l a n you'd be forgiven for thinking you missed the announcement"
+      },
+      {
+        "start": 88662,
+        "stop": 89262,
+        "text": " this week of the next Linux kernel officially getting the 6.0 major version"
+      },
+      {
+        "start": 89262,
+        "stop": 89782,
+        "text": " number after all there seems to even be some confusion about that on the Linux"
+      },
+      {
+        "start": 89782,
+        "stop": 90326,
+        "text": " kernel mailing list right now you might just say that excitement is building for"
+      },
+      {
+        "start": 90326,
+        "stop": 90826,
+        "text": " this next release but we don't actually know yet there's no official announcement"
+      },
+      {
+        "start": 90826,
+        "stop": 91342,
+        "text": " probably only Linus really knows if we're gonna get 6.0 or 5.20 for the next"
+      },
+      {
+        "start": 91342,
+        "stop": 91802,
+        "text": " kernel release historically Linus has bumped the major number around the dot"
+      },
+      {
+        "start": 91802,
+        "stop": 92314,
+        "text": " 19 release but he sometimes does it for the dot 20 release for example Linux 4.0"
+      },
+      {
+        "start": 92314,
+        "stop": 92830,
+        "text": " came after Linux 3.19 but just to send us a little bit of a curveball or keep"
+      },
+      {
+        "start": 92830,
+        "stop": 93490,
+        "text": " things inconsistent we did see Linux 4.20 before we got Linux 5 so you never"
+      },
+      {
+        "start": 93490,
+        "stop": 94022,
+        "text": " really know why does it matter well simply put Linux is probably the most"
+      },
+      {
+        "start": 94022,
+        "stop": 94522,
+        "text": " important operating system in the world and at least I think there's something"
+      },
+      {
+        "start": 94522,
+        "stop": 95034,
+        "text": " remarkable about how unremarkable a major decision like this is being made I"
+      },
+      {
+        "start": 95034,
+        "stop": 95542,
+        "text": " think to the outside observer it probably seems a little haphazard yeah I"
+      },
+      {
+        "start": 95542,
+        "stop": 95950,
+        "text": " can understand that position I mean version numbers mean different things to"
+      },
+      {
+        "start": 95950,
+        "stop": 96326,
+        "text": " different people different projects and maybe whether something is considered a"
+      },
+      {
+        "start": 96326,
+        "stop": 96782,
+        "text": " library or an application or in this case an operating system don't know"
+      },
+      {
+        "start": 96782,
+        "stop": 97286,
+        "text": " quite where that falls but I think you should read this and take some hints"
+      },
+      {
+        "start": 97286,
+        "stop": 97830,
+        "text": " from both - policies around not making breaking changes at least at least for"
+      },
+      {
+        "start": 97830,
+        "stop": 98398,
+        "text": " user space and then also as you say at the sort of haphazard nature a Linux"
+      },
+      {
+        "start": 98398,
+        "stop": 98874,
+        "text": " kernel version it just doesn't really mean much I've started to think of them"
+      },
+      {
+        "start": 98874,
+        "stop": 99230,
+        "text": " kind of like the arbitrary release numbers that seem to be popular with"
+      },
+      {
+        "start": 99230,
+        "stop": 99874,
+        "text": " browsers these days I totally see that comparison I agree for all of the minor"
+      },
+      {
+        "start": 99874,
+        "stop": 100258,
+        "text": " releases and I think most people don't even think about what version of the"
+      },
+      {
+        "start": 100258,
+        "stop": 100726,
+        "text": " kernel they have on their distribution the version that the distribution ships"
+      },
+      {
+        "start": 100726,
+        "stop": 101182,
+        "text": " with is probably very rarely a deciding factor on what distro they're gonna use"
+      },
+      {
+        "start": 101182,
+        "stop": 101538,
+        "text": " I mean it is for me but I doubt for most people I don't think it's something"
+      },
+      {
+        "start": 101538,
+        "stop": 102226,
+        "text": " users care about much however 6.0 right those big point releases that's gonna"
+      },
+      {
+        "start": 102226,
+        "stop": 102748,
+        "text": " get coverage that's gonna get attention that's gonna get buzz and you know I"
+      },
+      {
+        "start": 102748,
+        "stop": 103310,
+        "text": " think strategically it might be a good idea to do it because there is a lot of"
+      },
+      {
+        "start": 103310,
+        "stop": 103686,
+        "text": " great features in this release that probably should get some attention I"
+      },
+      {
+        "start": 103686,
+        "stop": 104120,
+        "text": " mean just super quick some of my personal favorites again we're gonna see"
+      },
+      {
+        "start": 104120,
+        "stop": 104602,
+        "text": " real-time kernel support possibly land one of my favorite file systems XFS is"
+      },
+      {
+        "start": 104602,
+        "stop": 105036,
+        "text": " getting improvements from multi-core CPU systems which is like all my systems"
+      },
+      {
+        "start": 105036,
+        "stop": 105522,
+        "text": " butter FS my other favorite file system it's getting version 2 of stream support"
+      },
+      {
+        "start": 105522,
+        "stop": 106062,
+        "text": " major new features in iou ring which people are excited about and finally the"
+      },
+      {
+        "start": 106062,
+        "stop": 106782,
+        "text": " Raspberry Pi for GPU kernel driver is landing love all of that yeah I like"
+      },
+      {
+        "start": 106782,
+        "stop": 107226,
+        "text": " those two but that's just scratching the surface with whatever this new kernels"
+      },
+      {
+        "start": 107226,
+        "stop": 107614,
+        "text": " gonna get called I mean we've mentioned that rust support is expected to land"
+      },
+      {
+        "start": 107614,
+        "stop": 108078,
+        "text": " there are also a ton of improvements and new hardware support for both AMD and"
+      },
+      {
+        "start": 108078,
+        "stop": 108590,
+        "text": " Intel and even some good news for clevel hardware users out there"
+      },
+      {
+        "start": 108590,
+        "stop": 109002,
+        "text": " enterprise users will also benefit from some plumbing being done for a compute"
+      },
+      {
+        "start": 109002,
+        "stop": 109602,
+        "text": " express link and there are some changes that should greatly improve NFS I just"
+      },
+      {
+        "start": 109602,
+        "stop": 110002,
+        "text": " can't see them not trying to get some attention on this release and I I think"
+      },
+      {
+        "start": 110002,
+        "stop": 110390,
+        "text": " people listening will say oh Linus doesn't care about that stuff wrong you"
+      },
+      {
+        "start": 110390,
+        "stop": 110742,
+        "text": " are I say I've observed this man for a long time and I think he does think"
+      },
+      {
+        "start": 110742,
+        "stop": 111166,
+        "text": " about this stuff a little bit they have pride in the Linux kernel and they have"
+      },
+      {
+        "start": 111166,
+        "stop": 111770,
+        "text": " pride in their work and they like to go after narratives about the kernel"
+      },
+      {
+        "start": 111770,
+        "stop": 112222,
+        "text": " getting too old or slow or too big that's all part of this and either way"
+      },
+      {
+        "start": 112222,
+        "stop": 112502,
+        "text": " we're just super happy to see this continue to get work done I mean there's"
+      },
+      {
+        "start": 112502,
+        "stop": 112966,
+        "text": " so many things landing in this next release that we could dedicate a week's"
+      },
+      {
+        "start": 112966,
+        "stop": 113402,
+        "text": " worth of shows to it even our favorite feature the new Samba server that's"
+      },
+      {
+        "start": 113402,
+        "stop": 113926,
+        "text": " built into the kernel even that is going to see some improvements long live ksmbd"
+      },
+      {
+        "start": 113926,
+        "stop": 114522,
+        "text": " I say how dare you as for when we might actually get our hands on that new"
+      },
+      {
+        "start": 114522,
+        "stop": 114946,
+        "text": " kernel well there is a process to follow the merge window which is the time"
+      },
+      {
+        "start": 114946,
+        "stop": 115298,
+        "text": " during which contributors can send in requests for their new code to be"
+      },
+      {
+        "start": 115298,
+        "stop": 115746,
+        "text": " integrated that's currently open once that closes will come a period of"
+      },
+      {
+        "start": 115746,
+        "stop": 116286,
+        "text": " testing and integration work marked by a series of release candidates then if all"
+      },
+      {
+        "start": 116286,
+        "stop": 116730,
+        "text": " that goes well we'll finally get to find out what new version we're working with"
+      },
+      {
+        "start": 116730,
+        "stop": 117186,
+        "text": " and either way we'll be happy I I went back just kind of historically to the"
+      },
+      {
+        "start": 117186,
+        "stop": 117646,
+        "text": " archives in preparation for this segment and I read all of the release"
+      },
+      {
+        "start": 117646,
+        "stop": 118286,
+        "text": " announcements between major version bumps you know 319 to 4 4 to 5 and just"
+      },
+      {
+        "start": 118286,
+        "stop": 118734,
+        "text": " read all of them and really is a capture it's like a time capsule of what's going"
+      },
+      {
+        "start": 118734,
+        "stop": 119178,
+        "text": " on in the community at that time and some releases you could tell things were"
+      },
+      {
+        "start": 119178,
+        "stop": 119666,
+        "text": " kind of stressful and in fact one of them Greg even writes in there in part"
+      },
+      {
+        "start": 119666,
+        "stop": 120018,
+        "text": " four line it's just everybody take a week off after this release go have a"
+      },
+      {
+        "start": 120018,
+        "stop": 120554,
+        "text": " week off walk away from the computer that's not the sense I get with this"
+      },
+      {
+        "start": 120554,
+        "stop": 120946,
+        "text": " release there's a lot of new stuff in here and a lot of excitement and the"
+      },
+      {
+        "start": 120946,
+        "stop": 121446,
+        "text": " kernel really seems to be firing on all cylinders this release cycle and every"
+      },
+      {
+        "start": 121446,
+        "stop": 121990,
+        "text": " single day Wes and I are seeing a new story a new announcement about something"
+      },
+      {
+        "start": 121990,
+        "stop": 122358,
+        "text": " landing in the kernel about some work being done about some improvement there"
+      },
+      {
+        "start": 122358,
+        "stop": 122970,
+        "text": " is just a level of development I think looking back at those archives that"
+      },
+      {
+        "start": 122970,
+        "stop": 123306,
+        "text": " we didn't know where we'd be at back then we weren't sure if we would be able"
+      },
+      {
+        "start": 123306,
+        "stop": 123706,
+        "text": " to continue there was a lot of talk if the development was sustainable in the"
+      },
+      {
+        "start": 123706,
+        "stop": 124086,
+        "text": " kernel and here we are and it's firing all cylinders are doing great we'll have"
+      },
+      {
+        "start": 124086,
+        "stop": 124354,
+        "text": " a link to some good resources in the show notes for all of that stuff"
+      },
+      {
+        "start": 124354,
+        "stop": 124786,
+        "text": " including a really good write-up about the new user space block driver that's"
+      },
+      {
+        "start": 124786,
+        "stop": 125314,
+        "text": " going to work with iou ring over on lwn net so if you're into that stuff that's"
+      },
+      {
+        "start": 125314,
+        "stop": 125646,
+        "text": " definitely worth a read but either way we're going to follow the development"
+      },
+      {
+        "start": 125646,
+        "stop": 125978,
+        "text": " and all this stuff pretty closely and we'll report back to you what ships when"
+      },
+      {
+        "start": 125978,
+        "stop": 126362,
+        "text": " it ships what you need to know about so to find out what's gonna happen to your"
+      },
+      {
+        "start": 126362,
+        "stop": 126746,
+        "text": " Linux install before it happens go subscribe to the show over at Linux"
+      },
+      {
+        "start": 126746,
+        "stop": 127190,
+        "text": " action news comm slash subscribe for all the ways to get those new episodes and"
+      },
+      {
+        "start": 127190,
+        "stop": 127694,
+        "text": " Linux action news comm slash contact for ways to get in touch would you like to"
+      },
+      {
+        "start": 127694,
+        "stop": 128050,
+        "text": " get an ad-free version of this show you can support this show and the entire"
+      },
+      {
+        "start": 128050,
+        "stop": 128514,
+        "text": " network by becoming a member over at Jupiter dot party whichever version you"
+      },
+      {
+        "start": 128514,
+        "stop": 128982,
+        "text": " choose we'll be back next week with our take on the latest Linux and open source"
+      },
+      {
+        "start": 128982,
+        "stop": 129566,
+        "text": " news thanks for joining us and that's all the news for this week"
+      },
+      {
+        "start": 129566,
+        "stop": 129772,
+        "text": " you"
+      },
+      {
+        "start": 129772,
+        "stop": 129978,
+        "text": " you"
+      },
+      {
+        "start": 129978,
+        "stop": 130184,
+        "text": " you"
+      },
+      {
+        "start": 130184,
+        "stop": 130390,
+        "text": " you"
+      },
+      {
+        "start": 130390,
+        "stop": 130596,
+        "text": " you"
+      },
+      {
+        "start": 130596,
+        "stop": 130802,
+        "text": " you"
+      },
+      {
+        "start": 130802,
+        "stop": 131008,
+        "text": " you"
+      },
+      {
+        "start": 131074,
+        "stop": 131280,
+        "text": " you"
+      },
+      {
+        "start": 131280,
+        "stop": 131486,
+        "text": " you"
+      },
+      {
+        "start": 131486,
+        "stop": 131692,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 830,
+      "nanos": 135067963
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 253",
+    "pictures": [],
+    "duration": {
+      "secs": 1310,
+      "nanos": 140000000
+    },
+    "unique_id": "http://linuxactionnews.com/253"
+  },
+  "episode": {
+    "title": "Linux Action News 253",
+    "description": "GitHub steps in it this week, Microsoft's Linux distribution now runs on bare metal, FFmpeg gets IPFS support, and the odd thing going on with the kernel.",
+    "content": "<p><p>GitHub steps in it this week, Microsoft&#39;s Linux distribution now runs on bare metal, FFmpeg gets IPFS support, and the odd thing going on with the kernel.</p><p>Sponsored By:</p><ul><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.phoronix.com/news/Microsoft-CBL-Mariner-July-U2\" title=\"Microsoft Continues Improving Its Internal Linux Distro With Another Update\" rel=\"nofollow\">Microsoft Continues Improving Its Internal Linux Distro With Another Update</a> &mdash; Microsoft has kept up with issuing one or more CBL-Mariner updates per month. This summer they rolled out CBL-Mariner 2.0 with many changes over its former 1.0 state, which continues to be maintained too. CBL-Mariner relies upon RPM SPEC files and other assets from Fedora, Photon OS, Openmamba, and Linux From Scratch. This week marked the release of CBL-Mariner 2.0 July 2022 Update 2.</li><li><a href=\"https://github.com/microsoft/CBL-Mariner\" title=\"CBL-Mariner GitHub\" rel=\"nofollow\">CBL-Mariner GitHub</a></li><li><a href=\"https://www.wired.com/story/github-code-signing-sigstore/\" title=\"GitHub Moves to Guard Open Source Against Supply Chain Attacks\" rel=\"nofollow\">GitHub Moves to Guard Open Source Against Supply Chain Attacks</a> &mdash; The popular Microsoft-owned code repository plans to roll out code signing, which will help beef up the security of open source projects.\n</li><li><a href=\"https://www.theregister.com/2022/08/10/github_tornado_cookies/\" title=\"GitHub courts controversy by suspending Tornado Cash\" rel=\"nofollow\">GitHub courts controversy by suspending Tornado Cash</a> &mdash; GitHub over the past week has tested the trust of its users by enacting policies that call into question its commitment to free speech and privacy.</li><li><a href=\"https://decrypt.co/107053/it-doesnt-change-anything-says-tornado-cash-code-disappears-github\" title=\"‘It Doesn’t Change Anything’ Says Tornado Cash After Code Disappears From GitHub\" rel=\"nofollow\">‘It Doesn’t Change Anything’ Says Tornado Cash After Code Disappears From GitHub</a></li><li><a href=\"https://twitter.com/kaanuzdogan/status/1549042139446648833\" title=\"Projects impacted by Tornando cash ban\" rel=\"nofollow\">Projects impacted by Tornando cash ban</a> &mdash; TIL the creator address of the Eth2.0 Deposit contract was funded with Tornado cash, created the contract and donated the rest to Wikileaks</li><li><a href=\"https://twitter.com/xGozzy/status/1556721884200423424\" title=\"Samuel JJ Gosling on Twitter\" rel=\"nofollow\">Samuel JJ Gosling on Twitter</a> &mdash;  “@TornadoCash For those looking to host the frontend locally, I’ve uploaded the source code to @IPFS as I suspected this happening. Disclaimer: I’m a contributor to tornado but you should still verify the source code.</li><li><a href=\"https://twitter.com/lgarron/status/1556835002897207296\" title=\"Lucas Garron on Twitter\" rel=\"nofollow\">Lucas Garron on Twitter</a></li><li><a href=\"https://github.com/github/site-policy/pull/582\" title=\"Privacy Statement Updates September 2022 by olholder\" rel=\"nofollow\">Privacy Statement Updates September 2022 by olholder</a></li><li><a href=\"https://www.phoronix.com/news/IPFS-FFmpeg-Open-Source-More\" title=\"IPFS Supported In FFmpeg 5.1, IPFS Devs Envision Support In More Open-Source Projects\" rel=\"nofollow\">IPFS Supported In FFmpeg 5.1, IPFS Devs Envision Support In More Open-Source Projects</a> &mdash; July's release of FFmpeg 5.1 introduced native IPFS support for this distributed peer-to-peer protocol.</li><li><a href=\"http://ipfs.io/\" title=\"IPFS.io\" rel=\"nofollow\">IPFS.io</a></li><li><a href=\"https://www.phoronix.com/news/Ubuntu-22.04.1-LTS-Delayed\" title=\"Ubuntu 22.04.1 LTS Delayed Due To An OEM Install Issue Leading To Broken Snaps\" rel=\"nofollow\">Ubuntu 22.04.1 LTS Delayed Due To An OEM Install Issue Leading To Broken Snaps</a> &mdash; Ubuntu 22.04.1 LTS had been due for release today but has now been pushed back by one week after discovering an installer issue that led to Snaps like the default Mozilla Firefox browser failing to launch once installed.</li><li><a href=\"https://www.phoronix.com/news/Linux-5.20-Is-Linux-6.0\" title=\"Linux 5.20 Likely To Be Called Linux 6.0\" rel=\"nofollow\">Linux 5.20 Likely To Be Called Linux 6.0</a> &mdash; With Linus Torvalds' modern versioning after 19~20 point releases has been when he bumps to the next major version number... Linux 4.0 succeeded Linux 3.19 while Linux 5.0 came after Linux 4.20.</li><li><a href=\"https://lwn.net/Articles/903855/\" title=\"An io_uring-based user-space block driver [LWN.net]\" rel=\"nofollow\">An io<em>uring-based user-space block driver [LWN.net]</a> &mdash; The ublk driver starts by creating a special device called /dev/ublk-control. The user-space server (or servers, there can be more than one) starts by opening that device and setting up an io</em>uring ring to communicate with it.</li><li><a href=\"https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e394ff83bbca1c72427b1feb5c6b9d4dad832f01\" title=\"Linus' kernel source tree\" rel=\"nofollow\">Linus' kernel source tree</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8695",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15560997/26df46e8-86b7-4c92-9f47-877d75f86a36.mp3",
+      "length": "18790964",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-11T10:40:00+02:00"
+  },
+  "speedup": 1.5782251
+}
