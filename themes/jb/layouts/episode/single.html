@@ -28,7 +28,7 @@
               {{ partial "episode/support.html" . }}
               <br/>
               {{ partial "episode/subscribe.html" . }}
-          </center>
+            </center>
           </div>
         </div>
       {{ if .Params.podcast_file }}
@@ -52,10 +52,10 @@
             <div class="column px-0">
               <h2 class="has-text-centered-mobile">Hosts</h2>
               <section class="section host-list">
-                <div class="columns is-narrow">
+                <div class="columns is-narrow is-multiline">
                   {{ range .Params.hosts }}
                     {{ $host := index ( where $people_sections "Params.username" .) 0 }}
-                    <div class="column is-narrow">
+                    <div class="column is-flex-grow-0">
                       {{ partial "people/smallest.html" $host }}
                     </div>
                   {{ end }}
@@ -66,10 +66,10 @@
               {{ with .Params.guests }}
               <h2 class="has-text-centered-mobile">Guests</h2>
               <section class="section host-list">
-                  <div class="columns is-narrow">
+                  <div class="columns is-narrow is-multiline">
                     {{ range . }}
                       {{ $guest := index (where $people_sections "Params.username" .) 0 }}
-                      <div class="column is-narrow">
+                      <div class="column is-flex-grow-0">
                         {{ if $guest }}
                           {{ partial "people/smallest.html" $guest }}
                         {{ end }}
@@ -81,22 +81,24 @@
             </div>
           </div>
           <!-- Sponsors: will be shown on mobile to promote sponsors -->
-          <div class="tile is-child columns is-flex-grow-0 is-hidden-tablet">
-            <div class="column px-0">
-              {{ with .Params.sponsors }}
-                <h2>Sponsors</h2>
-                <section class="section px-0 sponsor-list">
-                  {{ range . }}
-                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
-                    {{ if $sponsor }}
-                      {{ partial "sponsor/small.html" $sponsor }}
-                      <br />
+          {{ if .Params.sponsors }}
+            <div class="tile is-child columns is-flex-grow-0 is-hidden-tablet">
+              <div class="column px-0">
+                {{ with .Params.sponsors }}
+                  <h2>Sponsors</h2>
+                  <section class="section px-0 sponsor-list">
+                    {{ range . }}
+                      {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
+                      {{ if $sponsor }}
+                        {{ partial "sponsor/small.html" $sponsor }}
+                        <br />
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
-                </section>
-              {{ end }}
+                  </section>
+                {{ end }}
+              </div>
             </div>
-          </div>
+          {{ end }}
           <!-- Episode Links -->
           <div class="tile is-child columns is-flex-grow-0">
             <div class="column px-0">
@@ -106,31 +108,35 @@
         </div>
         <div class="tile is-parent is-vertical is-4">
           <!-- Sponsors: will hide on mobile so sponsors can be shown above episode links -->
-          <div class="tile is-child columns is-flex-grow-0 is-hidden-mobile">
-            <div class="column px-0">
-              {{ with .Params.sponsors }}
-                <h2>Sponsors</h2>
-                <section class="section px-0 sponsor-list">
-                  {{ range . }}
-                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
-                    {{ if $sponsor }}
-                      {{ partial "sponsor/small.html" $sponsor }}
-                      <br />
+          {{ if .Params.sponsors }}
+            <div class="tile is-child columns is-flex-grow-0 is-hidden-mobile">
+              <div class="column px-0">
+                {{ with .Params.sponsors }}
+                  <h2>Sponsors</h2>
+                  <section class="section px-0 sponsor-list">
+                    {{ range . }}
+                      {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
+                      {{ if $sponsor }}
+                        {{ partial "sponsor/small.html" $sponsor }}
+                        <br />
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
-                </section>
+                  </section>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+          <!-- Tags -->
+          {{ if .Params.tags }}
+            <div class="tile is-child is-flex-grow-0">
+              <h3>Tags</h3>
+              {{ with .Params.tags }}
+                <div class="tags">
+                  {{ partial "episode/tags.html" . }}
+                </div>
               {{ end }}
             </div>
-            <!-- Tags -->
-          </div>
-          <div class="tile is-child is-flex-grow-0">
-            <h3>Tags</h3>
-            {{ with .Params.tags }}
-              <div class="tags">
-                {{ partial "episode/tags.html" . }}
-              </div>
-            {{ end }}
-          </div>
+          {{ end }}
         </div>
       </div>
     </div>

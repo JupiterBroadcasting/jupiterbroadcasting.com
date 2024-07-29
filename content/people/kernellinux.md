@@ -6,7 +6,7 @@ bio: In 2009 Noah gave up on traditional IT models and started Altispeed Technol
   cost saving solutions without sacrificing quality. As a former host of the Linux
   Action Show Noah couldn't let his passion wind down with the show so teamed up with
   Jupiter Broadcasting to bring you Ask Noah!
-homepage: http://asknoahshow.com/
+homepage: https://asknoahshow.com/
 instagram: null
 linkedin: null
 title: Noah Chelliah
