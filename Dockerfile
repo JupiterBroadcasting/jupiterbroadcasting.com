@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/pages/hugo/hugo_extended:0.105.0 as builder
+FROM registry.gitlab.com/pages/hugo/hugo_extended:0.105.0 AS builder
 # this defaults to an empty variable
 ARG BASE_URL
 WORKDIR /site
@@ -10,7 +10,10 @@ COPY . /site
 #   set -x : changes the shell's default verbosity and puts it in "debug" mode
 RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
     && hugo --gc \
-    || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 )
+    || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 ) \ 
+    # Build search indexing
+# RUN apk add --no-cache nodejs npm \
+#     && npx -y pagefind --site
 
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
