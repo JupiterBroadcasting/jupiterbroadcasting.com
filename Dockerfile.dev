@@ -1,4 +1,20 @@
 ARG HUGO_VERSION=0.105.0
+# ARG PAGEFIND_VERSION=1.1.0
 FROM registry.gitlab.com/pages/hugo/hugo_extended:${HUGO_VERSION}
+
+# WORKDIR /site
+# COPY . /site
+# RUN hugo
+
+# RUN apk add --no-cache nodejs npm && \
+# npx -y pagefind --site
+
+# RUN \
+#     apk update && \
+#     apk add --no-cache wget && \
+#     wget https://github.com/CloudCannon/pagefind/releases/download/v1.1.0/pagefind_extended-v1.1.0-aarch64-unknown-linux-musl.tar.gz 
+#     tar -xvzf pagefind_extended-v${PAGEFIND_VERSION}-aarch64-unknown-linux-musl.tar.gz && \
+#     ./pagefind --site public
+
 CMD [ "serve", "-D", "--bind", "0.0.0.0" ]
 ENTRYPOINT [ "hugo" ]
