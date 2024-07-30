@@ -100,7 +100,7 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
         { 'href': 'https://linuxunplugged.com/rss', 'title': 'LINUX Unplugged'},
         { 'href': 'https://www.officehours.hair/rss', 'title': 'Office Hours'},
         { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'},
-        { 'href': 'https://www.thisweekinbitcoin.show/rss', 'title': 'This Week in Bitcoin'},
+        { 'href': 'https://serve.podhome.fm/rss/55b53584-4219-4fb0-b916-075ce23f714e', 'title': 'This Week in Bitcoin'},
     ]
 
 @fixture
