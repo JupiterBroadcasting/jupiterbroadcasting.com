@@ -6,6 +6,7 @@ draft = false
 categories = ["This Week in Bitcoin"]
 show = "this-week-in-bitcoin"
 hosts = ["chris"]
+rss_feed = "https://serve.podhome.fm/rss/55b53584-4219-4fb0-b916-075ce23f714e"
 
 type = "show"
 active = true
