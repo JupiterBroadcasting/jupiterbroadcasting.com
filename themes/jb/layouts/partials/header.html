@@ -51,7 +51,11 @@
                                             <a class="dropdown-item" href="{{ site.Params.feed.video_rss }}" class="navbar-item {{ if $active }}active{{ end }}">All Shows Feed - Video</a>
                                             <a class="dropdown-item" href="{{ site.Params.feed.jupiter_station }}" class="navbar-item {{ if $active }}active{{ end }}">Jupiter Station</a>
                                             {{ range .Children }}
-                                                <a class="dropdown-item" href="{{ (site.GetPage (string .URL)).Params.links.shownotes.url }}/rss" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                                                {{ if (site.GetPage (string .URL)).Params.rss_feed }}
+                                                    <a class="dropdown-item" href="{{ (site.GetPage (string .URL)).Params.rss_feed }}" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                                                {{ else }}
+                                                    <a class="dropdown-item" href="{{ (site.GetPage (string .URL)).Params.links.shownotes.url }}/rss" class="navbar-item {{ if $active }}active{{ end }}">{{ .Name }}</a>
+                                                {{ end }}
                                             {{ end }}
                                         </div>
                                     </div>
