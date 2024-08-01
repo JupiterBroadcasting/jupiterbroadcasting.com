@@ -1,0 +1,922 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 2900,
+        "text": " Hello, and welcome to Linux Action News, Episode 275, recorded on January 11th, 2023."
+      },
+      {
+        "start": 2900,
+        "stop": 3000,
+        "text": " Thanks for joining us."
+      },
+      {
+        "start": 3000,
+        "stop": 3100,
+        "text": " Indeed."
+      },
+      {
+        "start": 3100,
+        "stop": 3300,
+        "text": " Kind of wild to even be thinking about that."
+      },
+      {
+        "start": 3300,
+        "stop": 3736,
+        "text": " And so not only has just a huge amount of polish and fit work gone into this release,"
+      },
+      {
+        "start": 3736,
+        "stop": 4200,
+        "text": " but it looks like multi-monitor support has been totally revamped."
+      },
+      {
+        "start": 4200,
+        "stop": 4656,
+        "text": " KDE developer Marco Martin wrote a blog post outlining the multi-monitor work that's been"
+      },
+      {
+        "start": 4656,
+        "stop": 4940,
+        "text": " done in Plasma 5.27 so far."
+      },
+      {
+        "start": 4940,
+        "stop": 5596,
+        "text": " Overall, the goal was to provide a more predictable experience when plugging in a new or existing"
+      },
+      {
+        "start": 5596,
+        "stop": 6124,
+        "text": " way, as well as updates to other areas of Plasma to improve how they handled display"
+      },
+      {
+        "start": 6124,
+        "stop": 6224,
+        "text": " change."
+      },
+      {
+        "start": 6224,
+        "stop": 6580,
+        "text": " Oh, that is the people's work there, Wes."
+      },
+      {
+        "start": 6580,
+        "stop": 7012,
+        "text": " And you know, there's things like no more default empty desktops after connecting a"
+      },
+      {
+        "start": 7012,
+        "stop": 7224,
+        "text": " screen that you've already connected in the past."
+      },
+      {
+        "start": 7224,
+        "stop": 7324,
+        "text": " That's great."
+      },
+      {
+        "start": 7324,
+        "stop": 7800,
+        "text": " And huge for us laptop users that are unplugging and replugging external monitors."
+      },
+      {
+        "start": 7800,
+        "stop": 8364,
+        "text": " And also another significant improvement in that area, there will be a nice quality of"
+      },
+      {
+        "start": 8364,
+        "stop": 8996,
+        "text": " life improvement if you use a USB-C dock, seemingly, and no difference in desktops between"
+      },
+      {
+        "start": 8996,
+        "stop": 9376,
+        "text": " X11 displays and Wayland displays."
+      },
+      {
+        "start": 9376,
+        "stop": 9764,
+        "text": " That all sounds well worth the upgrade right there."
+      },
+      {
+        "start": 9764,
+        "stop": 10192,
+        "text": " But on top of that, there's all the other nice-to-see fixes and improvements you can"
+      },
+      {
+        "start": 10192,
+        "stop": 10704,
+        "text": " find in Neat's weekly write-up, which we'll have a link to in the notes."
+      },
+      {
+        "start": 10704,
+        "stop": 11372,
+        "text": " As of this recording, the KDE Wiki shows Plasma 5.27 targeting a February 14th release."
+      },
+      {
+        "start": 11372,
+        "stop": 11900,
+        "text": " I'm having a hard time waiting."
+      },
+      {
+        "start": 11900,
+        "stop": 12100,
+        "text": " Gnome users, don't feel left out."
+      },
+      {
+        "start": 12100,
+        "stop": 12582,
+        "text": " The project is targeting March 22nd for Gnome's 44 release."
+      },
+      {
+        "start": 12582,
+        "stop": 12994,
+        "text": " And it's probably still too early in the development cycle to really know for sure what features"
+      },
+      {
+        "start": 12994,
+        "stop": 13288,
+        "text": " are a lock and actually will ship."
+      },
+      {
+        "start": 13288,
+        "stop": 13750,
+        "text": " But there is one patch set that we've been watching with some anticipation."
+      },
+      {
+        "start": 13750,
+        "stop": 14048,
+        "text": " It's the dynamic triple buffering patch."
+      },
+      {
+        "start": 14048,
+        "stop": 14538,
+        "text": " Are you tired of sluggish desktop performance, especially on systems with Intel integrated"
+      },
+      {
+        "start": 14538,
+        "stop": 14784,
+        "text": " graphics or a Raspberry Pi?"
+      },
+      {
+        "start": 14784,
+        "stop": 15396,
+        "text": " Well, the solution may be in the implementation of triple buffering when needed."
+      },
+      {
+        "start": 15396,
+        "stop": 15884,
+        "text": " This technique has the potential to dramatically boost the overall performance of your Linux"
+      },
+      {
+        "start": 15884,
+        "stop": 16116,
+        "text": " desktop experience."
+      },
+      {
+        "start": 16116,
+        "stop": 16560,
+        "text": " Intel's Daniel van Vogt recently shared some exciting news in this week's Ubuntu Desktop"
+      },
+      {
+        "start": 16560,
+        "stop": 17124,
+        "text": " Status Update, saying that after overcoming some challenges and delving deeper into the"
+      },
+      {
+        "start": 17124,
+        "stop": 17542,
+        "text": " conversation about triple buffering, they are making steady progress and are getting"
+      },
+      {
+        "start": 17542,
+        "stop": 17908,
+        "text": " closer to landing in mother 44."
+      },
+      {
+        "start": 17908,
+        "stop": 18036,
+        "text": " I hope so."
+      },
+      {
+        "start": 18036,
+        "stop": 18432,
+        "text": " Anything that just makes the desktop experience smoother and more performant on integrated"
+      },
+      {
+        "start": 18432,
+        "stop": 18676,
+        "text": " graphics, I'm all about that."
+      },
+      {
+        "start": 18676,
+        "stop": 19128,
+        "text": " I'm not positive, but I think there is some work that also has to happen outside of Mutter"
+      },
+      {
+        "start": 19128,
+        "stop": 19340,
+        "text": " for this to land everywhere."
+      },
+      {
+        "start": 19340,
+        "stop": 19876,
+        "text": " But we can be pretty confident that the basics of this work, because Canonical's been applying"
+      },
+      {
+        "start": 19876,
+        "stop": 20224,
+        "text": " this to their version of Gnome for almost two years now."
+      },
+      {
+        "start": 20224,
+        "stop": 20362,
+        "text": " But I really have to be clear."
+      },
+      {
+        "start": 20362,
+        "stop": 20468,
+        "text": " This is not a done deal."
+      },
+      {
+        "start": 20468,
+        "stop": 20640,
+        "text": " We don't know for sure this is going to make it in 44."
+      },
+      {
+        "start": 20640,
+        "stop": 21134,
+        "text": " In fact, there is a chance not everything required will land in time for the 44 cycle"
+      },
+      {
+        "start": 21134,
+        "stop": 21234,
+        "text": " feature freeze."
+      },
+      {
+        "start": 21234,
+        "stop": 21576,
+        "text": " But we'll keep an eye on it because I'm pretty optimistic."
+      },
+      {
+        "start": 21576,
+        "stop": 21908,
+        "text": " And there's been a lot of hard work that's gone into this that could finally pay off"
+      },
+      {
+        "start": 21908,
+        "stop": 22336,
+        "text": " for end users and make the experience even better and create a lot of excitement around"
+      },
+      {
+        "start": 22336,
+        "stop": 22764,
+        "text": " Gnome 44."
+      },
+      {
+        "start": 22764,
+        "stop": 23448,
+        "text": " Alexander Moten with IxSystems has submitted a pull request to open ZFS that could result"
+      },
+      {
+        "start": 23448,
+        "stop": 23652,
+        "text": " in some nice performance gains."
+      },
+      {
+        "start": 23652,
+        "stop": 23836,
+        "text": " This is pretty clever."
+      },
+      {
+        "start": 23836,
+        "stop": 24452,
+        "text": " So the patch set enables an improved method of handling uncacheable buffers in the file"
+      },
+      {
+        "start": 24452,
+        "stop": 24552,
+        "text": " system."
+      },
+      {
+        "start": 24552,
+        "stop": 25124,
+        "text": " This method allows for ARC, the ZFS ARC, to have knowledge about these uncacheable buffers,"
+      },
+      {
+        "start": 25124,
+        "stop": 25364,
+        "text": " which then can improve read and write speeds."
+      },
+      {
+        "start": 25364,
+        "stop": 26052,
+        "text": " It also means less CPU cycles by up to 22% while getting the same or better throughput."
+      },
+      {
+        "start": 26052,
+        "stop": 26648,
+        "text": " And since uncacheable buffers should no longer stay in the ARC or adaptive replacement cache"
+      },
+      {
+        "start": 26648,
+        "stop": 27284,
+        "text": " for too long, this patch also tries to optimize I/O by allocating the ARC's physical buffers"
+      },
+      {
+        "start": 27284,
+        "stop": 27808,
+        "text": " as linear, which allows those buffers to be shared and avoids creating two memory copies"
+      },
+      {
+        "start": 27808,
+        "stop": 28132,
+        "text": " for uncompressed data for both reads and writes."
+      },
+      {
+        "start": 28132,
+        "stop": 28484,
+        "text": " Just like I've always said, you got to have linear buffers, Wes."
+      },
+      {
+        "start": 28484,
+        "stop": 28736,
+        "text": " I mean, everybody knows that."
+      },
+      {
+        "start": 28736,
+        "stop": 29164,
+        "text": " Joking aside, though, with the combination of these improvements, you're going to actually"
+      },
+      {
+        "start": 29164,
+        "stop": 29514,
+        "text": " get considerably improved sequential single-threaded read speeds."
+      },
+      {
+        "start": 29514,
+        "stop": 29952,
+        "text": " And then when you combine that with the fact that there's a 22% CPU overhead reduction"
+      },
+      {
+        "start": 29952,
+        "stop": 30442,
+        "text": " that I mentioned, well, overall, this is a really nice optimization."
+      },
+      {
+        "start": 30442,
+        "stop": 30932,
+        "text": " And you don't got to do anything because the good news is it's already been merged."
+      },
+      {
+        "start": 30932,
+        "stop": 31424,
+        "text": " So it's just a matter of time until it makes it to a distro near you."
+      },
+      {
+        "start": 31424,
+        "stop": 32544,
+        "text": " Linux 4.9 was released way back in 2016, celebrated then for its batch of Intel drivers and hardware"
+      },
+      {
+        "start": 32544,
+        "stop": 32652,
+        "text": " support."
+      },
+      {
+        "start": 32652,
+        "stop": 33244,
+        "text": " But in fact, by today's standards, it was really kind of a basic release."
+      },
+      {
+        "start": 33244,
+        "stop": 33614,
+        "text": " Basic yes, but also kind of great."
+      },
+      {
+        "start": 33614,
+        "stop": 34552,
+        "text": " This week, Greg H. released Linux 4.9.337 as the final update to this widely deployed"
+      },
+      {
+        "start": 34552,
+        "stop": 34860,
+        "text": " LTS series."
+      },
+      {
+        "start": 34860,
+        "stop": 35376,
+        "text": " As for the current version of the kernel, Linux 6.1, well, it's expected to be named"
+      },
+      {
+        "start": 35376,
+        "stop": 35584,
+        "text": " the next LTS."
+      },
+      {
+        "start": 35584,
+        "stop": 35996,
+        "text": " So that has not yet been officially announced."
+      },
+      {
+        "start": 35996,
+        "stop": 36452,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 36452,
+        "stop": 36732,
+        "text": " That's where you go to get $100 in 60-day credit on a new account."
+      },
+      {
+        "start": 36732,
+        "stop": 37142,
+        "text": " And it's a great way to support the show while you are checking out fast, reliable cloud"
+      },
+      {
+        "start": 37142,
+        "stop": 37696,
+        "text": " hosting built with Linux users in mind and the best support in the biz, like real humans"
+      },
+      {
+        "start": 37696,
+        "stop": 37848,
+        "text": " every single day."
+      },
+      {
+        "start": 37848,
+        "stop": 38204,
+        "text": " And I suppose you can also appreciate the fact that they're 30 to 50% cheaper than the"
+      },
+      {
+        "start": 38204,
+        "stop": 38680,
+        "text": " hyperscalers that have their crazy esoteric platforms that are single-purpose learning"
+      },
+      {
+        "start": 38680,
+        "stop": 38780,
+        "text": " situations."
+      },
+      {
+        "start": 38780,
+        "stop": 39404,
+        "text": " But on top of that, besides the great support, the Linux mindset in everything, and the fantastic"
+      },
+      {
+        "start": 39404,
+        "stop": 39902,
+        "text": " pricing, they also have the best performance with 11 data centers today and a dozen more"
+      },
+      {
+        "start": 39902,
+        "stop": 40052,
+        "text": " coming online this year."
+      },
+      {
+        "start": 40052,
+        "stop": 40700,
+        "text": " And they feature great, great things like S3 compatible object storage, 40 gigabit connections,"
+      },
+      {
+        "start": 40700,
+        "stop": 41352,
+        "text": " NVMe disks if you want them, AMD epic CPUs if you need it, integrated transparent backups,"
+      },
+      {
+        "start": 41352,
+        "stop": 41824,
+        "text": " Kubernetes terraform, Ansible support, great documentation, etc."
+      },
+      {
+        "start": 41824,
+        "stop": 41984,
+        "text": " That's why you need the $100."
+      },
+      {
+        "start": 41984,
+        "stop": 42360,
+        "text": " Because there's so much to explore, and if you're a beginner or a pro, you're going to"
+      },
+      {
+        "start": 42360,
+        "stop": 42580,
+        "text": " find a groove that's great for you."
+      },
+      {
+        "start": 42580,
+        "stop": 42680,
+        "text": " Really go try it."
+      },
+      {
+        "start": 42680,
+        "stop": 42962,
+        "text": " Go kick the tires, go build something, go learn something."
+      },
+      {
+        "start": 42962,
+        "stop": 43324,
+        "text": " It's a great opportunity to support the show and try out something really awesome."
+      },
+      {
+        "start": 43324,
+        "stop": 43576,
+        "text": " Go to Linode.com/lan."
+      },
+      {
+        "start": 43576,
+        "stop": 43788,
+        "text": " It's what we use for everything we deploy to the public."
+      },
+      {
+        "start": 43788,
+        "stop": 44044,
+        "text": " It's what our brand new website runs on."
+      },
+      {
+        "start": 44044,
+        "stop": 44144,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 44144,
+        "stop": 44900,
+        "text": " And thank you to Collide."
+      },
+      {
+        "start": 44900,
+        "stop": 45500,
+        "text": " Endpoint security doesn't have to be a battle between IT admins and end users."
+      },
+      {
+        "start": 45500,
+        "stop": 45804,
+        "text": " Because Collide does things differently."
+      },
+      {
+        "start": 45804,
+        "stop": 46342,
+        "text": " Collide provides user-centered solutions for companies that slack."
+      },
+      {
+        "start": 46342,
+        "stop": 46760,
+        "text": " Users will receive security recommendations and Collide will automatically notify your"
+      },
+      {
+        "start": 46760,
+        "stop": 47368,
+        "text": " team when their devices are insecure and give them step-by-step instructions to fix the"
+      },
+      {
+        "start": 47368,
+        "stop": 47540,
+        "text": " problem."
+      },
+      {
+        "start": 47540,
+        "stop": 48180,
+        "text": " And Collide's dashboard allows IT admins to easily monitor the security of the entire fleet,"
+      },
+      {
+        "start": 48180,
+        "stop": 48602,
+        "text": " whether they're on Mac, Windows, or yes, Linux."
+      },
+      {
+        "start": 48602,
+        "stop": 49212,
+        "text": " With Collide, you can build a culture of security and meet your compliance goals."
+      },
+      {
+        "start": 49212,
+        "stop": 50048,
+        "text": " So go try it out for free at Collide.com/lan and get a goodie bag just for activating your"
+      },
+      {
+        "start": 50048,
+        "stop": 50168,
+        "text": " trial."
+      },
+      {
+        "start": 50168,
+        "stop": 50596,
+        "text": " It's time to put users first with Collide."
+      },
+      {
+        "start": 50596,
+        "stop": 51376,
+        "text": " That's K-O-L-I-D-E.com/lan."
+      },
+      {
+        "start": 51376,
+        "stop": 51804,
+        "text": " And for our final story this week, Michael Larable over at Pharaonics has an update on"
+      },
+      {
+        "start": 51804,
+        "stop": 52280,
+        "text": " the state of the Open Source NVIDIA Vulcan driver known as NVK."
+      },
+      {
+        "start": 52280,
+        "stop": 52694,
+        "text": " I think the big news over there is that the driver can now play some video games like"
+      },
+      {
+        "start": 52694,
+        "stop": 52880,
+        "text": " the Talos Principle."
+      },
+      {
+        "start": 52880,
+        "stop": 53520,
+        "text": " That is a Vulcan 1.0 game, and the recent progress on the NVK driver means it's possible"
+      },
+      {
+        "start": 53520,
+        "stop": 53764,
+        "text": " to render those games now."
+      },
+      {
+        "start": 53764,
+        "stop": 54336,
+        "text": " Longtime Open Source NUO developer and growing Rust enthusiast Karl Herbst recently showed"
+      },
+      {
+        "start": 54336,
+        "stop": 54860,
+        "text": " off this work on chaos.social and had some screenshots of the game up and going."
+      },
+      {
+        "start": 54860,
+        "stop": 55036,
+        "text": " Yeah, that's pretty exciting."
+      },
+      {
+        "start": 55036,
+        "stop": 55632,
+        "text": " Although he did follow up in another post saying, \"Performance is terrible, but that"
+      },
+      {
+        "start": 55632,
+        "stop": 56024,
+        "text": " hopefully will be resolved with the GSP work, which is still ongoing.\""
+      },
+      {
+        "start": 56024,
+        "stop": 56792,
+        "text": " Yeah, that's due to the NUO DRM kernel driver not supporting re-clocking for modern NVIDIA"
+      },
+      {
+        "start": 56792,
+        "stop": 56892,
+        "text": " GPUs."
+      },
+      {
+        "start": 56892,
+        "stop": 57368,
+        "text": " Being able to re-clock the GPU from low frequencies up to the higher performance states, well,"
+      },
+      {
+        "start": 57368,
+        "stop": 57862,
+        "text": " not only improves power draw on average, but of course also lets the system achieve that"
+      },
+      {
+        "start": 57862,
+        "stop": 58160,
+        "text": " boost in performance when you need it for a game."
+      },
+      {
+        "start": 58160,
+        "stop": 58640,
+        "text": " Yes, but there is good news on that front on being able to control those clock speeds."
+      },
+      {
+        "start": 58640,
+        "stop": 59288,
+        "text": " The GPU system processor is found in the RTX 2000 series and newer graphics cards."
+      },
+      {
+        "start": 59288,
+        "stop": 59744,
+        "text": " Getting the driver to work with that solves this re-clocking challenge that they face"
+      },
+      {
+        "start": 59744,
+        "stop": 60024,
+        "text": " really, I mean, for years now."
+      },
+      {
+        "start": 60024,
+        "stop": 60500,
+        "text": " And it's exciting because that work is active and underway right now."
+      },
+      {
+        "start": 60500,
+        "stop": 60968,
+        "text": " Before we get too excited, of course the reality here is there's a rather long list of work"
+      },
+      {
+        "start": 60968,
+        "stop": 61196,
+        "text": " that still needs to be done."
+      },
+      {
+        "start": 61196,
+        "stop": 61896,
+        "text": " And perhaps NUO kernel interface changes are also needed for proper NVK support."
+      },
+      {
+        "start": 61896,
+        "stop": 62306,
+        "text": " In the meantime, it's probably a safe bet that if you're looking for a smooth out of"
+      },
+      {
+        "start": 62306,
+        "stop": 62940,
+        "text": " box experience with graphics on Linux, you should probably stick to Intel or AMD GPUs,"
+      },
+      {
+        "start": 62940,
+        "stop": 63208,
+        "text": " at least for the next year or two."
+      },
+      {
+        "start": 63208,
+        "stop": 63332,
+        "text": " I think that's a great point."
+      },
+      {
+        "start": 63332,
+        "stop": 63954,
+        "text": " I think it's pretty easy for those of us outside the project to lose kind of a picture of how"
+      },
+      {
+        "start": 63954,
+        "stop": 64496,
+        "text": " hard and complicated this must be and really appreciate the magnitude really of work ahead"
+      },
+      {
+        "start": 64496,
+        "stop": 64596,
+        "text": " of them."
+      },
+      {
+        "start": 64596,
+        "stop": 65240,
+        "text": " Because not only are these graphics cards just crazy complex hardware devices, but it's"
+      },
+      {
+        "start": 65240,
+        "stop": 65658,
+        "text": " possible the software around them might be even more so, especially when you consider"
+      },
+      {
+        "start": 65658,
+        "stop": 65900,
+        "text": " the entire desktop stack."
+      },
+      {
+        "start": 65900,
+        "stop": 66282,
+        "text": " But it does get me hopeful for the state of Linux graphics down the road a bit, maybe"
+      },
+      {
+        "start": 66282,
+        "stop": 66854,
+        "text": " a year or so, maybe two years, between today where you have things like the Intel Arc GPUs"
+      },
+      {
+        "start": 66854,
+        "stop": 67430,
+        "text": " coming out, the AMD GPUs that have upstream drivers, and now this NVK driver, things are"
+      },
+      {
+        "start": 67430,
+        "stop": 67848,
+        "text": " going to be much smoother and a lot more accessible for future Linux users."
+      },
+      {
+        "start": 67848,
+        "stop": 68002,
+        "text": " Things are just going to get better and better."
+      },
+      {
+        "start": 68002,
+        "stop": 68276,
+        "text": " And you know we're going to keep an eye on that and everything else going on in the world"
+      },
+      {
+        "start": 68276,
+        "stop": 68518,
+        "text": " of Linux and open source."
+      },
+      {
+        "start": 68518,
+        "stop": 68678,
+        "text": " So don't miss a single episode."
+      },
+      {
+        "start": 68678,
+        "stop": 69228,
+        "text": " Go over to LinuxActionNews.com/subscribe for all the ways to get each and every episode."
+      },
+      {
+        "start": 69228,
+        "stop": 69802,
+        "text": " And LinuxActionNews.com/contact to let us know which graphics driver you're using."
+      },
+      {
+        "start": 69802,
+        "stop": 69938,
+        "text": " Did we miss the story?"
+      },
+      {
+        "start": 69938,
+        "stop": 70204,
+        "text": " Was there something you wanted us to cover that you didn't hear?"
+      },
+      {
+        "start": 70204,
+        "stop": 70582,
+        "text": " You can boost it and let us know what we missed with a new podcast app over at NewPodcastApps.com."
+      },
+      {
+        "start": 70582,
+        "stop": 70876,
+        "text": " Maybe we'll cover it in a future episode."
+      },
+      {
+        "start": 70876,
+        "stop": 70976,
+        "text": " And don't worry."
+      },
+      {
+        "start": 70976,
+        "stop": 71502,
+        "text": " We'll be back here next week with our take on the latest Linux and open source news."
+      },
+      {
+        "start": 71502,
+        "stop": 71662,
+        "text": " Thanks for joining us."
+      },
+      {
+        "start": 71662,
+        "stop": 71838,
+        "text": " And that's all the news for this week."
+      },
+      {
+        "start": 71838,
+        "stop": 71938,
+        "text": " We'll see you next time."
+      },
+      {
+        "start": 71938,
+        "stop": 71938,
+        "text": " [Music]"
+      },
+      {
+        "start": 71938,
+        "stop": 73738,
+        "text": " [Music]"
+      },
+      {
+        "start": 73738,
+        "stop": 73938,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 275,
+      "nanos": 170453310
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 275",
+    "pictures": [],
+    "duration": {
+      "secs": 737,
+      "nanos": 750000000
+    },
+    "unique_id": "http://linuxactionnews.com/275"
+  },
+  "episode": {
+    "title": "Linux Action News 275",
+    "description": "OpenZFS has performance gains inbound, the end of a Linux era, and the achievement unlocked by the open-source NVIDIA driver.",
+    "content": "<p><p>OpenZFS has performance gains inbound, the end of a Linux era, and the achievement unlocked by the open-source NVIDIA driver.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.phoronix.com/news/KDE-Plasma-5.27-Multi-Monitor\" title=\"KDE Plasma 5.27 To Provide Better Multi-Monitor Support\" rel=\"nofollow\">KDE Plasma 5.27 To Provide Better Multi-Monitor Support</a> &mdash; KDE developer Marco Martin wrote a blog post today outlining some of the multi-monitor work that's been going into Plasma 5.27</li><li><a href=\"https://pointieststick.com/2023/01/06/this-week-in-kde-big-ui-improvements/\" title=\"This week in KDE: big UI improvements!\" rel=\"nofollow\">This week in KDE: big UI improvements!</a></li><li><a href=\"https://community.kde.org/Schedules/Plasma_5\" title=\"Schedules/Plasma 5 - KDE Community Wiki\" rel=\"nofollow\">Schedules/Plasma 5 - KDE Community Wiki</a></li><li><a href=\"https://www.phoronix.com/news/KDE-Starts-2023\" title=\"KDE Kicks Off 2023 With UI Refinements, More Fixes\" rel=\"nofollow\">KDE Kicks Off 2023 With UI Refinements, More Fixes</a></li><li><a href=\"https://9to5linux.com/gnome-44-release-date\" title=\"GNOME 44 Hopes and Dreams\" rel=\"nofollow\">GNOME 44 Hopes and Dreams</a> &mdash; GNOME devs are already working hard on the next major release, GNOME 44, due out in late March 2023 with more new features and enhancements.</li><li><a href=\"https://www.phoronix.com/news/GNOME-44-Hopes-Triple-Buffering\" title=\"Dynamic Triple Buffering Hopefully Will Land For GNOME 44\" rel=\"nofollow\">Dynamic Triple Buffering Hopefully Will Land For GNOME 44</a></li><li><a href=\"https://github.com/openzfs/zfs/pull/14243\" title=\"OpenZFS Performance Gains\" rel=\"nofollow\">OpenZFS Performance Gains</a> &mdash; With the combination of enabled prefetch and avoided memory copy this change improves sequential single-threaded read speed from a wide NVMe pool from 2049 to 3932 MiB/s. During write profiler shows 22% reduction of unhalted CPU cycles at the same throughput of 3653 MiB/s.</li><li><a href=\"https://lore.kernel.org/lkml/Y7lbu6%2F0P7Q%2FP3oj@kroah.com/T/\" title=\"End of the 4.9 Series\" rel=\"nofollow\">End of the 4.9 Series</a> &mdash; Greg KH: I'm announcing the release of the 4.9.337 kernel. All users of the 4.9 kernel series must upgrade.</li><li><a href=\"https://lore.kernel.org/lkml/1673088312205135@kroah.com/T/#t\" title=\"Linux 6.1.4\" rel=\"nofollow\">Linux 6.1.4</a></li><li><a href=\"https://www.phoronix.com/news/Linux-4.9.337-LTS-Over\" title=\"Linux 4.9.337 Released To End Out The 2016 LTS Series\" rel=\"nofollow\">Linux 4.9.337 Released To End Out The 2016 LTS Series</a></li><li><a href=\"https://www.phoronix.com/news/NVK-Running-Talos-Game\" title=\"Open-Source NVIDIA Driver Starts to Play Games\" rel=\"nofollow\">Open-Source NVIDIA Driver Starts to Play Games</a> &mdash; Red Hat engineer and longtime open-source Nouveau developer Karol Herbst wrote on his chaos.social account about NVK running games and showing off a screenshot of The Talos Principle running with this open-source, \"community\" Vulkan driver.</li><li><a href=\"https://chaos.social/@karolherbst/109666048560595911\" title=\"karolherbst on Social\" rel=\"nofollow\">karolherbst on Social</a></li><li><a href=\"http://www.croteam.com/talosprinciple/\" title=\"The Talos Principle\" rel=\"nofollow\">The Talos Principle</a> &mdash; The Talos Principle is a philosophical first-person puzzle game from Croteam, the creators of the legendary Serious Sam series, written by Tom Jubert (FTL, The Swapper) and Jonas Kyratzes (The Sea Will Claim Everything).</p>\n\n<p></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9239",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15900947/73b2739b-f0d2-4d46-9bbe-ec4aadd9ce52.mp3",
+      "length": "10739756",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2023-01-12T09:45:00+01:00"
+  },
+  "speedup": 2.6810656
+}

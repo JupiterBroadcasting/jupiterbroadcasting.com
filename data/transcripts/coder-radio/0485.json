@@ -1,0 +1,2652 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 184,
+        "stop": 712,
+        "text": " this is coder radio episode 405 for september 26 2022"
+      },
+      {
+        "start": 712,
+        "stop": 1928,
+        "text": " hello friends and welcome into jupiter broadcasting's weekly talk show taking a"
+      },
+      {
+        "start": 1928,
+        "stop": 2464,
+        "text": " pragmatic look at the art and the business of software development and the world of technology"
+      },
+      {
+        "start": 2464,
+        "stop": 2984,
+        "text": " from sacra rometto california my name is chris and joining us from his podcasting base it's our"
+      },
+      {
+        "start": 2984,
+        "stop": 3776,
+        "text": " host mr dominic hello mike hello chris how are you in sunny ca warm it is warm here it is like in the"
+      },
+      {
+        "start": 3776,
+        "stop": 4256,
+        "text": " mid 90s you know so i'm getting like the last little surge of summer but we're doing all right"
+      },
+      {
+        "start": 4256,
+        "stop": 4768,
+        "text": " because listener jeff hooked us up with a great little spot and some power hookup so i got the"
+      },
+      {
+        "start": 4768,
+        "stop": 5320,
+        "text": " air conditioners going i really can't complain you know it's pretty it's pretty comfortable as far as"
+      },
+      {
+        "start": 5320,
+        "stop": 5768,
+        "text": " mid 90s go and it's been a good trip we've already done two of the meetups so we're halfway done"
+      },
+      {
+        "start": 5832,
+        "stop": 6440,
+        "text": " and that's been really exciting they've gone well at one of them i got there early and managed to"
+      },
+      {
+        "start": 6440,
+        "stop": 6872,
+        "text": " get a whole dinner too which was great you know a little barbecue and we're doing breweries the"
+      },
+      {
+        "start": 6872,
+        "stop": 7440,
+        "text": " whole way so there's always great drinks nice yeah yeah our next meetup is this friday as"
+      },
+      {
+        "start": 7440,
+        "stop": 8128,
+        "text": " we release 6 p.m at the congregation ale house in pasadena which will be just after our jpl meetup"
+      },
+      {
+        "start": 8128,
+        "stop": 8680,
+        "text": " so there's just so much going on i have been running non-stop i'm talking like getting up at"
+      },
+      {
+        "start": 8680,
+        "stop": 9552,
+        "text": " 345 am 330 am 6 am since we got off the air last week it's been a mad dash vacation it is not"
+      },
+      {
+        "start": 9552,
+        "stop": 10520,
+        "text": " but guess what we did get an email into the show and uh it's a little spicy so why don't we just"
+      },
+      {
+        "start": 10520,
+        "stop": 11064,
+        "text": " kick the show off with a spicy take let's do some spice thrill 64 i'm sorry thrill 46 via matrix"
+      },
+      {
+        "start": 11064,
+        "stop": 11704,
+        "text": " wrote in hey mike and chris long time first time have i been duped i bought a pinephone pro and"
+      },
+      {
+        "start": 11704,
+        "stop": 12328,
+        "text": " their rock pro 64 and i own a pinebook pro wow you're all in and all of them have been sold as"
+      },
+      {
+        "start": 12328,
+        "stop": 12800,
+        "text": " basically developer editions i bought them thinking an army of developers would be creating"
+      },
+      {
+        "start": 12800,
+        "stop": 13312,
+        "text": " software for these devices and then soon after we'd see a generation of consumer devices ship"
+      },
+      {
+        "start": 13312,
+        "stop": 13928,
+        "text": " that would create a user base here we are years later and most everything they make is still in"
+      },
+      {
+        "start": 13928,
+        "stop": 14368,
+        "text": " beta mode i'm not sure anything is close to mainstream adoption and i feel silly for buying"
+      },
+      {
+        "start": 14368,
+        "stop": 15184,
+        "text": " these quote developer devices developer for who has it all been a scam is it a scam no right it's"
+      },
+      {
+        "start": 15184,
+        "stop": 15960,
+        "text": " not a scam it's really really hard to start a developer ecosystem in the age of the giant"
+      },
+      {
+        "start": 15960,
+        "stop": 16808,
+        "text": " shall we say oligopoly ecosystems that exist and i kind of think the pinebook i don't know much"
+      },
+      {
+        "start": 16808,
+        "stop": 17344,
+        "text": " about the phone but i feel like a lot of the energy behind the pinebook has kind of been taken"
+      },
+      {
+        "start": 17344,
+        "stop": 17920,
+        "text": " by the framework laptop too in recent years is that a fair assessment chris of the kind of the"
+      },
+      {
+        "start": 17920,
+        "stop": 18520,
+        "text": " tinkerer crowd or yeah i could see that you know the the dream of the pinebook was that rock pro 64"
+      },
+      {
+        "start": 18520,
+        "stop": 19328,
+        "text": " platform yeah i kind of feel what what they're saying here like for example they're selling the"
+      },
+      {
+        "start": 19328,
+        "stop": 20072,
+        "text": " pinephone pro explorer edition but it really isn't any more refined than the previous pinephone that"
+      },
+      {
+        "start": 20072,
+        "stop": 20488,
+        "text": " wasn't a pro that they called the developer edition like nothing really changed the software"
+      },
+      {
+        "start": 20488,
+        "stop": 21032,
+        "text": " state is really kind of the same and they kind of always wave it away by saying with a little note"
+      },
+      {
+        "start": 21032,
+        "stop": 21488,
+        "text": " on there say well you know we're we're really transparent and up front the pine phone pro"
+      },
+      {
+        "start": 21488,
+        "stop": 21968,
+        "text": " explorer edition is aimed at linux developers with extensive knowledge of embedded systems"
+      },
+      {
+        "start": 21968,
+        "stop": 22408,
+        "text": " or experience on mobile linux and i kind of see what he's saying it's like they always are"
+      },
+      {
+        "start": 22408,
+        "stop": 22896,
+        "text": " promising well these are for the developers today you'll get your hands on it and then later down"
+      },
+      {
+        "start": 22896,
+        "stop": 23504,
+        "text": " the road we'll make better versions that regular people can buy normals except for that never comes"
+      },
+      {
+        "start": 23504,
+        "stop": 24000,
+        "text": " it's just this perpetual beta for all of the products and it's kind of like they've just"
+      },
+      {
+        "start": 24000,
+        "stop": 24488,
+        "text": " come up with this way of saying well but if we just tell them it's just aimed at early adopters"
+      },
+      {
+        "start": 24488,
+        "stop": 25016,
+        "text": " then it's fine that it's not ever a complete product maybe that's true maybe but you know"
+      },
+      {
+        "start": 25016,
+        "stop": 25544,
+        "text": " all right this could have happened with other platforms too right and i feel like if you're"
+      },
+      {
+        "start": 25544,
+        "stop": 26184,
+        "text": " jumping in super early you're taking the risk reward of i'm coming in super early probably"
+      },
+      {
+        "start": 26184,
+        "stop": 26752,
+        "text": " going to be a nothing burger this new platform but if it does take off then i'm in there on the"
+      },
+      {
+        "start": 26752,
+        "stop": 27432,
+        "text": " ground floor right and you could really if you're a developer yourself for the writer take huge"
+      },
+      {
+        "start": 27432,
+        "stop": 27880,
+        "text": " advantage of that and if you're a user well then you know you get to be one of the first users on"
+      },
+      {
+        "start": 27880,
+        "stop": 28376,
+        "text": " the platform which is kind of cool having said that but basically if you're looking for like"
+      },
+      {
+        "start": 28376,
+        "stop": 28936,
+        "text": " an app store ecosystem i don't think you're going to get that i i do think the alternative to the"
+      },
+      {
+        "start": 28936,
+        "stop": 29648,
+        "text": " big oligopolies or the duopoly is going to be like the web right pwas or yeah i still have dreams"
+      },
+      {
+        "start": 29648,
+        "stop": 30592,
+        "text": " about web assembly um more you know literally websites right web apps that are just posted"
+      },
+      {
+        "start": 30592,
+        "stop": 31296,
+        "text": " somewhere the future you mean the future is the future is 2006 you know one thing that does strike"
+      },
+      {
+        "start": 31296,
+        "stop": 31840,
+        "text": " me uh kiron i'm probably saying that kiron actually uh in the matrix chat says developing for the"
+      },
+      {
+        "start": 31840,
+        "stop": 32408,
+        "text": " pine phone is a nightmare all of the os providers have done things differently yeah give that a ding"
+      },
+      {
+        "start": 32464,
+        "stop": 32992,
+        "text": " i wrote a hack for a for posh that meant that the phone would wake on call properly but it only"
+      },
+      {
+        "start": 32992,
+        "stop": 33528,
+        "text": " works on mobian and postmarket os everything else is weird the battle between cute and gnome is one"
+      },
+      {
+        "start": 33528,
+        "stop": 34304,
+        "text": " that needs to be won as well that's also a great point that that that terror between gtk and cute"
+      },
+      {
+        "start": 34304,
+        "stop": 34832,
+        "text": " on mobile is even more acute and there's there's a lot of effort on both sides and they're not"
+      },
+      {
+        "start": 34832,
+        "stop": 35320,
+        "text": " really super compatible environments in terms of look flow and feel like pine could never"
+      },
+      {
+        "start": 35408,
+        "stop": 35808,
+        "text": " never make that off right they're not going to be able to change that and all they're so they have"
+      },
+      {
+        "start": 35808,
+        "stop": 36224,
+        "text": " to wait for upstream and upstream is too busy fighting between toolkits they're not really"
+      },
+      {
+        "start": 36224,
+        "stop": 36688,
+        "text": " fighting but they're just too busy really doing their own things to make something cohesive that"
+      },
+      {
+        "start": 36688,
+        "stop": 37144,
+        "text": " a hardware manufacturer like pine could ship right so this sounds like the android fragmentation"
+      },
+      {
+        "start": 37144,
+        "stop": 37688,
+        "text": " issues on steroids basically i think so i mean over time things in android have gotten better"
+      },
+      {
+        "start": 37688,
+        "stop": 38392,
+        "text": " but that took the commercial hands of google to like work with vendors to create the treble"
+      },
+      {
+        "start": 38392,
+        "stop": 39064,
+        "text": " project to work on the ab boot system um you know it's funny last night listener jeff and i"
+      },
+      {
+        "start": 39064,
+        "stop": 39968,
+        "text": " flashed my pixel 3 to graphing os which is an alternative did you get any beads no maybe maybe"
+      },
+      {
+        "start": 39968,
+        "stop": 40488,
+        "text": " once i once i get a few more apps working that's when i unlock the beads it's not bad man it's not"
+      },
+      {
+        "start": 40488,
+        "stop": 41000,
+        "text": " bad it you know you're definitely limited without google play services but if you wanted just a basic"
+      },
+      {
+        "start": 41000,
+        "stop": 41424,
+        "text": " smartphone with some you know i mean there's eftroid and aurora store there's some i have"
+      },
+      {
+        "start": 41424,
+        "stop": 42040,
+        "text": " next cloud on here i've got vlc i've got canine mail element chat i've got an open source fork of"
+      },
+      {
+        "start": 42040,
+        "stop": 42960,
+        "text": " telegram i've got a chrome fork that's degoogled i got an open source keyboard that's pretty good"
+      },
+      {
+        "start": 42960,
+        "stop": 43616,
+        "text": " you know i honestly it's not that bad they can really do something with i don't know how far"
+      },
+      {
+        "start": 43616,
+        "stop": 43928,
+        "text": " they can really ever get away from google they're always going to be subject to google"
+      },
+      {
+        "start": 43992,
+        "stop": 44320,
+        "text": " but this just seems like the way we should have gone this is where the community should have"
+      },
+      {
+        "start": 44320,
+        "stop": 44808,
+        "text": " focused is things like graphing os we should have just acknowledged it i don't know if these"
+      },
+      {
+        "start": 44808,
+        "stop": 45256,
+        "text": " linux native environments or this linux native hardware like the pine stuff is ever going to have"
+      },
+      {
+        "start": 45256,
+        "stop": 45744,
+        "text": " more than a few thousand users you know tens of thousands of users at most it just never going to"
+      },
+      {
+        "start": 45744,
+        "stop": 46192,
+        "text": " get that it's never going to get that critical mess i've just had to come to accept that and"
+      },
+      {
+        "start": 46192,
+        "stop": 46560,
+        "text": " so now i'm kind of looking at things like graphing os and thinking boy probably should have just gone"
+      },
+      {
+        "start": 46560,
+        "stop": 47032,
+        "text": " this way all along i'm still waiting for my firefox phone are you getting a 14 did you tell"
+      },
+      {
+        "start": 47032,
+        "stop": 47648,
+        "text": " you did you are you skipping it i am i i mean i'm not getting one now right uh you know i could"
+      },
+      {
+        "start": 47648,
+        "stop": 48232,
+        "text": " always drop my phone but why haven't you just gotten their uh their upgrade program you know"
+      },
+      {
+        "start": 48232,
+        "stop": 48688,
+        "text": " i've been avoiding the upgrades i'm still on a 12 pro i bet you that upgrade program would be a"
+      },
+      {
+        "start": 48688,
+        "stop": 49400,
+        "text": " write-off for you it would but honestly the last time i upgraded i think i upgraded from an 11 to a"
+      },
+      {
+        "start": 49400,
+        "stop": 50392,
+        "text": " 12 pro and i screwed up one of my tfa apps and that created such a hassle so and i use my phone"
+      },
+      {
+        "start": 50392,
+        "stop": 51016,
+        "text": " as an actual phone slash overcast player i just don't care that much right like i am noticing the"
+      },
+      {
+        "start": 51016,
+        "stop": 51392,
+        "text": " battery health you know over the two and a half years whatever it's been it's telling me it's"
+      },
+      {
+        "start": 51392,
+        "stop": 52136,
+        "text": " like not it's 80 now if i got one i think i'd want the max in purple which one is i did i did have one"
+      },
+      {
+        "start": 52136,
+        "stop": 53024,
+        "text": " in the car i did look but it's like it's late october and it's also like 1100 bucks so it just"
+      },
+      {
+        "start": 53024,
+        "stop": 53368,
+        "text": " doesn't feel worth it to me how about you or you're on the upgrade thing aren't you yeah i"
+      },
+      {
+        "start": 53368,
+        "stop": 53744,
+        "text": " decided to do it but i actually intentionally waited because i don't want it to arrive until"
+      },
+      {
+        "start": 53744,
+        "stop": 54224,
+        "text": " end of october because i'm on this trip right yeah i think it's good you know they get they got me"
+      },
+      {
+        "start": 54224,
+        "stop": 54824,
+        "text": " they'll go they'll almost always get me with the camera and they got me with the satellite calling"
+      },
+      {
+        "start": 54824,
+        "stop": 55192,
+        "text": " and then i'm actually downsizing so i think i'm actually going to save a little bit of money"
+      },
+      {
+        "start": 55192,
+        "stop": 55912,
+        "text": " because the payment scales to the size of phone you get but uh we'll see we'll see maybe graphene"
+      },
+      {
+        "start": 55912,
+        "stop": 56640,
+        "text": " os will work out i'm skeptical but i am hopeful i really like the original pixel 3 is the perfect"
+      },
+      {
+        "start": 56640,
+        "stop": 57304,
+        "text": " size phone it's perfect it fits in my hand so well it fits in my pocket it's a little tall it's"
+      },
+      {
+        "start": 57304,
+        "stop": 57904,
+        "text": " a little narrow it's such a thing of beauty it it i think it might be the best pixel ever the"
+      },
+      {
+        "start": 57904,
+        "stop": 58488,
+        "text": " pixel 3 not the 3a 3a is fine but i have the pixel 3 i'm telling you if i could replace the battery"
+      },
+      {
+        "start": 58488,
+        "stop": 58896,
+        "text": " in this and be happy with graphene os i would try to make this my primary phone it's just such a"
+      },
+      {
+        "start": 58896,
+        "stop": 59456,
+        "text": " beautiful size so i'm hopeful we'll see maybe maybe maybe the iphone 14 will be my last iphone"
+      },
+      {
+        "start": 59456,
+        "stop": 59936,
+        "text": " here's my here's my spicy prediction uh-huh nope"
+      },
+      {
+        "start": 60120,
+        "stop": 60304,
+        "text": " yeah i think you're probably right on that one"
+      },
+      {
+        "start": 60304,
+        "stop": 61056,
+        "text": " linode.com slash coder go there to get a hundred dollars in 60-day credit on a new account and it's"
+      },
+      {
+        "start": 61056,
+        "stop": 61616,
+        "text": " just a great way to support the show linode makes cloud computing simple affordable and accessible"
+      },
+      {
+        "start": 61616,
+        "stop": 62072,
+        "text": " linode is our cloud hosting provider it's where we deploy everything we've built in the last few"
+      },
+      {
+        "start": 62072,
+        "stop": 62744,
+        "text": " years and we love the fact that linode's performance price and support are all there just the way we"
+      },
+      {
+        "start": 62744,
+        "stop": 63224,
+        "text": " like them and we love the fact that you can tell they're linux geeks too that's really what got"
+      },
+      {
+        "start": 63224,
+        "stop": 63736,
+        "text": " them to build linode nearly 19 years ago and now today here they are 30 to 50 percent cheaper than"
+      },
+      {
+        "start": 63736,
+        "stop": 64184,
+        "text": " the hyperscalers out there that have really specific platforms with specific features and"
+      },
+      {
+        "start": 64184,
+        "stop": 64656,
+        "text": " languages that really just want to lock you in linode's an alternative cloud provider massive"
+      },
+      {
+        "start": 64656,
+        "stop": 65248,
+        "text": " infrastructure 11 data centers around the world they are their own isp they have a fully functional"
+      },
+      {
+        "start": 65248,
+        "stop": 65728,
+        "text": " clean easy to use api they integrate with your infrastructure management and they can give you a"
+      },
+      {
+        "start": 65728,
+        "stop": 66208,
+        "text": " full linux platform that you can manage and on top of that they have one click deployment"
+      },
+      {
+        "start": 66208,
+        "stop": 66632,
+        "text": " applications that are really simple and they have a bunch of great services on the back end"
+      },
+      {
+        "start": 66632,
+        "stop": 67280,
+        "text": " that you might want to use too i personally i use the snot out of the f3 storage they have"
+      },
+      {
+        "start": 67280,
+        "stop": 67896,
+        "text": " s3 compatible object storage and i've just discovered yet another use for it i have duplicati"
+      },
+      {
+        "start": 67896,
+        "stop": 68432,
+        "text": " which is a great linux backup application and you can just point it directly at s3 object storage"
+      },
+      {
+        "start": 68432,
+        "stop": 68936,
+        "text": " like linodes and it's just so fantastic the flexibility you get with that you combine that"
+      },
+      {
+        "start": 68936,
+        "stop": 69464,
+        "text": " with the api and the command line client that lets you easily create buckets and move files around"
+      },
+      {
+        "start": 69464,
+        "stop": 69896,
+        "text": " it's it's just a great way to share files in general for us here at jp but on top of that"
+      },
+      {
+        "start": 69896,
+        "stop": 70528,
+        "text": " the performance of their systems is just absolutely fantastic if you google search cloud cpu benchmarks"
+      },
+      {
+        "start": 70528,
+        "stop": 70976,
+        "text": " and you look at the results that linode has put out from an independent study provider but linodes"
+      },
+      {
+        "start": 70976,
+        "stop": 71504,
+        "text": " hosting it up on their website the report reveals how the different vps's and cloud providers stack"
+      },
+      {
+        "start": 71504,
+        "stop": 72192,
+        "text": " up and how much faster linode systems are it's a great report it's from cloud spectator it's"
+      },
+      {
+        "start": 72192,
+        "stop": 72792,
+        "text": " their cpu benchmark report you can go look that up or you can find on linode's website and you can see"
+      },
+      {
+        "start": 72792,
+        "stop": 73280,
+        "text": " how linode's performance stacks up then you combine that with pcie mv storage the fact that"
+      },
+      {
+        "start": 73280,
+        "stop": 73928,
+        "text": " they are their own isp means their connection scream right and then you realize the pricing"
+      },
+      {
+        "start": 73968,
+        "stop": 74488,
+        "text": " it all comes together with linode that's why we use it i think you'll love it go try it out it's"
+      },
+      {
+        "start": 74488,
+        "stop": 74944,
+        "text": " fast reliable cloud hosting you got to try it for yourself or your next project so go get that"
+      },
+      {
+        "start": 74944,
+        "stop": 75528,
+        "text": " hundred dollars support the show and kick the tires for yourself linode.com slash coder that's"
+      },
+      {
+        "start": 75528,
+        "stop": 76424,
+        "text": " linode.com slash coder all right mr dominic you are back on the linux train been using it for just"
+      },
+      {
+        "start": 76424,
+        "stop": 76912,
+        "text": " over a month full time i believe you know you've gotten some hardware so i think that's definitely"
+      },
+      {
+        "start": 76912,
+        "stop": 77504,
+        "text": " played a factor the dev one and the thalia which we'll talk about in a little bit so uh tell me"
+      },
+      {
+        "start": 77504,
+        "stop": 78072,
+        "text": " what it's been like living the linux life full time again uh you know it's been pretty smooth"
+      },
+      {
+        "start": 78072,
+        "stop": 78664,
+        "text": " i'm i'm living that papa west life the uh the thalia of course and the dev one come pre-installed"
+      },
+      {
+        "start": 78664,
+        "stop": 79352,
+        "text": " with it um i am mastering the tiling keyboard shortcuts which is a just a much better way to"
+      },
+      {
+        "start": 79352,
+        "stop": 79952,
+        "text": " handle the whole tiling thing in path um i'm liking it you know it's funny i was getting"
+      },
+      {
+        "start": 79952,
+        "stop": 80632,
+        "text": " irritated with monterey mac os monterey and some of the weird changes that mac continues to make"
+      },
+      {
+        "start": 80632,
+        "stop": 81400,
+        "text": " to the unix tools because they they have to i don't know why right they always they always are"
+      },
+      {
+        "start": 81400,
+        "stop": 81896,
+        "text": " making changes they're always making like strange apple specific things i think a lot of it has to"
+      },
+      {
+        "start": 81896,
+        "stop": 82424,
+        "text": " do with their developer toolchain goes through xcode every time you update xcode crazy happens"
+      },
+      {
+        "start": 82424,
+        "stop": 83392,
+        "text": " to like your your c headers but yeah so decided i'd try it out again and honestly a a big factor"
+      },
+      {
+        "start": 83392,
+        "stop": 84136,
+        "text": " in me purchasing this the earlier was i did briefly try a review unit and i kind of missed"
+      },
+      {
+        "start": 84136,
+        "stop": 85016,
+        "text": " tactical strategy rpgs and of course mtg arena which also runs on mac but i love it so far i"
+      },
+      {
+        "start": 85016,
+        "stop": 85536,
+        "text": " mean it's been very good i wrote a review of it it's pretty it's pretty fast that's it's"
+      },
+      {
+        "start": 85536,
+        "stop": 86400,
+        "text": " i mean it's got to be the fastest machine i've ever owned for day-to-day what i do well starting"
+      },
+      {
+        "start": 86400,
+        "stop": 86888,
+        "text": " with the linux e side right the papa west side the only thing i'm noticing is some of the more"
+      },
+      {
+        "start": 86888,
+        "stop": 87464,
+        "text": " interesting newer tools like in particular warp terminal don't have linux versions"
+      },
+      {
+        "start": 87464,
+        "stop": 88648,
+        "text": " and that's been kind of a minor annoyance having said that the version of bash on but i think i'm"
+      },
+      {
+        "start": 88648,
+        "stop": 89360,
+        "text": " on 2204 does autocomplete significantly better than the version of z shell and mac os so it's"
+      },
+      {
+        "start": 89360,
+        "stop": 89792,
+        "text": " less of a hole in my day-to-day life but it's still there i mean every once in a while i'll get"
+      },
+      {
+        "start": 89792,
+        "stop": 90216,
+        "text": " the like some of the jet brains tools i feel like they render the fonts too small"
+      },
+      {
+        "start": 90216,
+        "stop": 90856,
+        "text": " but other than that i mean i have been very happy i have notably not installed any additional"
+      },
+      {
+        "start": 90856,
+        "stop": 91368,
+        "text": " extensions on gnome oh yeah okay because i just decided to avoid that problem and stick with one"
+      },
+      {
+        "start": 91368,
+        "stop": 91864,
+        "text": " desktop background have you ever played around with the fish show i have we covered it like"
+      },
+      {
+        "start": 91864,
+        "stop": 92288,
+        "text": " for yeah okay yeah yeah i mean that's pretty great on linux you know a lot of good auto completion in"
+      },
+      {
+        "start": 92288,
+        "stop": 92992,
+        "text": " there and stuff like that it's great but i'm lazy right yeah i'm having a i am having a tougher time"
+      },
+      {
+        "start": 92992,
+        "stop": 93552,
+        "text": " with pop i mean i love our friends over at system 76 but i am having a i have i have a harder time"
+      },
+      {
+        "start": 93552,
+        "stop": 94192,
+        "text": " because i i've been using traditional gnome for a while now so switching back to cosmic and like not"
+      },
+      {
+        "start": 94192,
+        "stop": 94560,
+        "text": " having the gestures to swipe to horizontal workspaces i have found has been a little"
+      },
+      {
+        "start": 94560,
+        "stop": 95040,
+        "text": " tricky because one of the things that i have really ingrained with my gnome shell usage is"
+      },
+      {
+        "start": 95096,
+        "stop": 95528,
+        "text": " every major application window should probably have its own virtual desktop and that's really"
+      },
+      {
+        "start": 95528,
+        "stop": 95976,
+        "text": " doable on like a laptop screen when you're swiping sideways between virtual desktops and i just kind"
+      },
+      {
+        "start": 95976,
+        "stop": 96640,
+        "text": " of i find that workflow falls down with the cosmic layout but um so you've been so you've you've now"
+      },
+      {
+        "start": 96640,
+        "stop": 97048,
+        "text": " you've been using desktop linux on the dev one you've now used it on the thalia which is a beast"
+      },
+      {
+        "start": 97048,
+        "stop": 97512,
+        "text": " i'll talk more about my experience with the thalia because i got one for review as well and i ran a"
+      },
+      {
+        "start": 97512,
+        "stop": 98136,
+        "text": " ton of tests against it but i'm just curious to to just get to capture what is it for you that or is"
+      },
+      {
+        "start": 98136,
+        "stop": 98640,
+        "text": " there a difference between using desktop linux on the dev one and using desktop linux on the thalia"
+      },
+      {
+        "start": 98640,
+        "stop": 99088,
+        "text": " just the form factor differences anything i was thinking actually in performance and if you can"
+      },
+      {
+        "start": 99088,
+        "stop": 99464,
+        "text": " feel a difference if you can tell between the hardware or if it kind of the interface is just"
+      },
+      {
+        "start": 99464,
+        "stop": 99912,
+        "text": " sort of fast regardless just that kind of impressions i mean the dev one is pretty fast"
+      },
+      {
+        "start": 99992,
+        "stop": 100704,
+        "text": " i would say this is kind of horrible this is maybe damning with faint praise but the reason i'm able"
+      },
+      {
+        "start": 100704,
+        "stop": 101240,
+        "text": " to use the dev one instead of a macbook finally as my day-to-day driver for a laptop you know when"
+      },
+      {
+        "start": 101240,
+        "stop": 101888,
+        "text": " i'm like working at a bar coffee shop or whatever is or even just like in my kitchen because six"
+      },
+      {
+        "start": 101888,
+        "stop": 102416,
+        "text": " year old these speakers the onboard speakers don't make me want to stab myself in the ears"
+      },
+      {
+        "start": 102416,
+        "stop": 102888,
+        "text": " they are the they are the best linux laptop speakers i think right which i would even say"
+      },
+      {
+        "start": 102888,
+        "stop": 103544,
+        "text": " like i had the gen 1 xps and then i had a later generation xps was not the case um"
+      },
+      {
+        "start": 103544,
+        "stop": 104064,
+        "text": " you know i kind of use the thalia of different things right like the dev one"
+      },
+      {
+        "start": 104064,
+        "stop": 104568,
+        "text": " it's kind of sad because i spent uh well we could you you have the link in the notes well you could"
+      },
+      {
+        "start": 104568,
+        "stop": 105392,
+        "text": " see the uh neo fetch for the thalia i spent like 21 2200 on the thalia and i use it a lot less"
+      },
+      {
+        "start": 105392,
+        "stop": 106208,
+        "text": " than i do the dev one ah sure but when i'm using it it's definitely heavier workloads it's usually"
+      },
+      {
+        "start": 106208,
+        "stop": 106888,
+        "text": " something where i'm you know using a windows client application that we developed hooking into a"
+      },
+      {
+        "start": 106888,
+        "stop": 107640,
+        "text": " local host version of some python or ruby api that we wrote running on the linux host vm right so"
+      },
+      {
+        "start": 107640,
+        "stop": 108304,
+        "text": " it's a like a windows 10 i'm still using windows 10 for my vm because you know why not and a"
+      },
+      {
+        "start": 108392,
+        "stop": 108952,
+        "text": " linux and the pop os host to do local api testing without you know touching the actual database on"
+      },
+      {
+        "start": 108952,
+        "stop": 109768,
+        "text": " any staging server or production i think that's great i mean i like that workflow that's a little"
+      },
+      {
+        "start": 109768,
+        "stop": 110440,
+        "text": " much to ask of the dev one i feel though i'm sure it's possible it would just lag a bit right yeah"
+      },
+      {
+        "start": 110440,
+        "stop": 111000,
+        "text": " i think your your impression is correct i was shocked at a couple of the jobs that i tested"
+      },
+      {
+        "start": 111000,
+        "stop": 111568,
+        "text": " just how much faster the thalia was that i thought the failure failed to do the test but you know"
+      },
+      {
+        "start": 111568,
+        "stop": 112000,
+        "text": " when you look at the benchmarks and i'll link to a couple of them in the show notes and the cool"
+      },
+      {
+        "start": 112000,
+        "stop": 112480,
+        "text": " thing about these is you can actually then there's a command in that link where you can run that"
+      },
+      {
+        "start": 112480,
+        "stop": 112928,
+        "text": " exact benchmark against your system and see how it compares to the dev one and the failure that"
+      },
+      {
+        "start": 112928,
+        "stop": 113544,
+        "text": " i tested against and you when you look at those benchmarks it's almost what you'd expect the dev"
+      },
+      {
+        "start": 113544,
+        "stop": 114264,
+        "text": " one delivers a lot for eleven hundred dollars the dev one is just like very impressive it just can't"
+      },
+      {
+        "start": 114264,
+        "stop": 114720,
+        "text": " touch what the thaleo can deliver for like twenty five hundred dollars or twenty seven hundred dollars"
+      },
+      {
+        "start": 114720,
+        "stop": 115336,
+        "text": " or however you configure it right and you just that really bears out in the testing i mean the"
+      },
+      {
+        "start": 115336,
+        "stop": 115992,
+        "text": " the just there's that reality of it in fact when i was looking at it the dev one and the thaleo"
+      },
+      {
+        "start": 116048,
+        "stop": 116728,
+        "text": " were pretty neck and neck on things that were like disk io related so if your job involves a lot of"
+      },
+      {
+        "start": 116728,
+        "stop": 117160,
+        "text": " iops and disk io stuff you're not going to see a huge increase with the thaleo unless you bought"
+      },
+      {
+        "start": 117160,
+        "stop": 117608,
+        "text": " like a very fast drive for the thaleo but if you go with like the stock parts on both of them"
+      },
+      {
+        "start": 117608,
+        "stop": 118080,
+        "text": " when it comes to things that are disk bound they're just about match the thaleo is a little"
+      },
+      {
+        "start": 118080,
+        "stop": 118680,
+        "text": " bit faster obviously when it comes to cpu bound stuff that's where the thaleo can really really"
+      },
+      {
+        "start": 118680,
+        "stop": 119368,
+        "text": " really really pull ahead that's not the whole story though i found so i i have some negatives"
+      },
+      {
+        "start": 119368,
+        "stop": 119944,
+        "text": " in fact i have uh kind of like a killer for me perhaps on the thaleo a fatal flaw if you will"
+      },
+      {
+        "start": 119944,
+        "stop": 120360,
+        "text": " but i'll get to that in a moment i'm just curious to know now that you've kind of deep dived into"
+      },
+      {
+        "start": 120360,
+        "stop": 120800,
+        "text": " linux again just before we move to finalize on the hardware stuff what have you found that isn't"
+      },
+      {
+        "start": 120800,
+        "stop": 121192,
+        "text": " working for you very well what have you found that still seems to be busticated so i'd say a few"
+      },
+      {
+        "start": 121192,
+        "stop": 121800,
+        "text": " things i did so i was playing civ 5 with some of the system 76 folks and some other community people"
+      },
+      {
+        "start": 121800,
+        "stop": 122552,
+        "text": " and i think this is not pop or booboo too small i think this is more the developers of the siv"
+      },
+      {
+        "start": 122552,
+        "stop": 123024,
+        "text": " 5 port of linux because it was the native version not the windows version just like never imagined"
+      },
+      {
+        "start": 123024,
+        "stop": 123656,
+        "text": " gpc use with more than eight threads or eight cores uh yeah had to go in there edit an ini file"
+      },
+      {
+        "start": 123656,
+        "stop": 124080,
+        "text": " which it just feels very linuxy right having to vim in to get a game to work i remember doing that"
+      },
+      {
+        "start": 124080,
+        "stop": 124672,
+        "text": " for world of warcraft years ago having to just change a bunch of settings via vim you know"
+      },
+      {
+        "start": 124672,
+        "stop": 125248,
+        "text": " everything was kind of working out of the box i'd say a big thing i've done differently is i gave up"
+      },
+      {
+        "start": 125248,
+        "stop": 125976,
+        "text": " on my irrational hatred of flatpak and i've just embraced the flatpak lifestyle with attaboy with"
+      },
+      {
+        "start": 125976,
+        "stop": 126544,
+        "text": " the exception of vs code still yeah yeah vs code i agree because i need i need it to be able to hit"
+      },
+      {
+        "start": 126544,
+        "stop": 127120,
+        "text": " parts of the system that right yep i agree with you on that yeah if you embrace flatpak and you're"
+      },
+      {
+        "start": 127120,
+        "stop": 127744,
+        "text": " on gnome it is just an easier life things are just a little simpler and those applications break less"
+      },
+      {
+        "start": 127744,
+        "stop": 128160,
+        "text": " too because they're not tied to all the other system dependencies yeah i would say like the"
+      },
+      {
+        "start": 128160,
+        "stop": 128832,
+        "text": " only the only okay i had two issues so far in about a month one is literally right before we"
+      },
+      {
+        "start": 128832,
+        "stop": 129360,
+        "text": " came on the air i had plugged in the i don't know what you call it chris the u22 thing the zoom uh"
+      },
+      {
+        "start": 129360,
+        "stop": 129992,
+        "text": " oh yeah yep u22 the little yep the u22 and for whatever reason pop couldn't pick it up so i just"
+      },
+      {
+        "start": 129992,
+        "stop": 130576,
+        "text": " had to reboot and then i picked it up i have no idea why yeah yeah yeah that's it could be you"
+      },
+      {
+        "start": 130576,
+        "stop": 131016,
+        "text": " know pop is using pipe wire now okay and we've also hit a couple of issues with pipe wire it's"
+      },
+      {
+        "start": 131016,
+        "stop": 131720,
+        "text": " just new stuff i occasionally notice that it incorrectly and this is only on the thalio so"
+      },
+      {
+        "start": 131720,
+        "stop": 132320,
+        "text": " i'm not sure what's up with that will take my wi-fi to 2.4 megahertz or gigahertz whatever it is"
+      },
+      {
+        "start": 132320,
+        "stop": 132856,
+        "text": " instead of five which cuts the speed in half but again i disconnect the wi-fi and reconnect it's"
+      },
+      {
+        "start": 132856,
+        "stop": 133528,
+        "text": " fine it only seems to happen after like i let it go to sleep but i haven't been able it's only"
+      },
+      {
+        "start": 133528,
+        "stop": 134264,
+        "text": " happened like twice in a month so i'm not sure if that's yeah like interference because i don't know"
+      },
+      {
+        "start": 134264,
+        "stop": 134712,
+        "text": " how well this will age but we there's currently a hurricane coming to where i live in florida"
+      },
+      {
+        "start": 134712,
+        "stop": 135288,
+        "text": " so all the kids are out of school and so everybody right now every both kids are like gaming away"
+      },
+      {
+        "start": 135288,
+        "stop": 135856,
+        "text": " right once on a nintendo once on an xbox you know everything's got an online connected drm bull"
+      },
+      {
+        "start": 135856,
+        "stop": 136432,
+        "text": " thing so it might just be my router is currently getting smacked around a little bit i've had that"
+      },
+      {
+        "start": 136432,
+        "stop": 136952,
+        "text": " on the dev one recently okay i've had the wi-fi not reconnecting and i'm on nyx too i'm not on"
+      },
+      {
+        "start": 136952,
+        "stop": 137824,
+        "text": " pop anymore okay so that's weird yeah maybe it's a kernel driver issue tailscale.com slash coder"
+      },
+      {
+        "start": 137824,
+        "stop": 138376,
+        "text": " that's where you go to get a personal account for up to 20 devices for free and that's not just like"
+      },
+      {
+        "start": 138376,
+        "stop": 138880,
+        "text": " a limited time thing and it's a great way to support the show as well so tailscale is a zero"
+      },
+      {
+        "start": 138880,
+        "stop": 139352,
+        "text": " config vpn just about everybody must know about tailscale right now because i feel like it's been"
+      },
+      {
+        "start": 139352,
+        "stop": 139920,
+        "text": " changing the remote networking landscape for the last year just changing the way people do work it"
+      },
+      {
+        "start": 139920,
+        "stop": 140520,
+        "text": " manages firewalls for you it takes care of nat for you and you can get it installed on your device be"
+      },
+      {
+        "start": 140520,
+        "stop": 141544,
+        "text": " it a computer a server a phone a raspberry pi i don't know a vps a vm a container home assistant"
+      },
+      {
+        "start": 141544,
+        "stop": 142120,
+        "text": " i mean you can get it up and running within minutes you quickly and easily create a secure"
+      },
+      {
+        "start": 142120,
+        "stop": 142888,
+        "text": " flat mesh network between your systems powered by wireguards noise protocol yep it's a wireguard"
+      },
+      {
+        "start": 142888,
+        "stop": 143376,
+        "text": " mesh network and they have a bunch of great features inside of there as well like tailscale"
+      },
+      {
+        "start": 143376,
+        "stop": 144008,
+        "text": " send you can use tailscale send is sort of like airdrop for all of your tailscale devices so you"
+      },
+      {
+        "start": 144008,
+        "stop": 144672,
+        "text": " can send files between them easily and then there's tailscale ssh that also just part of tailscale"
+      },
+      {
+        "start": 144672,
+        "stop": 145224,
+        "text": " allows you to establish an ssh connection between your devices you're not moving around ssh keys like"
+      },
+      {
+        "start": 145224,
+        "stop": 145936,
+        "text": " an animal no you're you're actually authenticating your ssh connection using wireguard it's pretty"
+      },
+      {
+        "start": 145936,
+        "stop": 146432,
+        "text": " awesome you guys and you can try it up for free to 20 devices to really get a sense of this thing"
+      },
+      {
+        "start": 146432,
+        "stop": 146832,
+        "text": " and see how intelligent it's like when you're moving files between devices if they're on the"
+      },
+      {
+        "start": 146832,
+        "stop": 147344,
+        "text": " same land tailscale knows that and it does it over the land you can use your tailscale ip's it'll be"
+      },
+      {
+        "start": 147344,
+        "stop": 147816,
+        "text": " protected but they can transfer directly to each other and it's not going to just route all of your"
+      },
+      {
+        "start": 147816,
+        "stop": 148272,
+        "text": " traffic over the tunnel tailscale intelligently chooses what traffic is supposed to go to the"
+      },
+      {
+        "start": 148272,
+        "stop": 148840,
+        "text": " tailscale network you know it's tcpip it knows how this can work you just needed software to do it"
+      },
+      {
+        "start": 148840,
+        "stop": 149312,
+        "text": " right that's tailscale then you combine that with their single sign-on support you combine that with"
+      },
+      {
+        "start": 149312,
+        "stop": 149704,
+        "text": " the fact that they have acl controls that allow you to share certain machines or just certain"
+      },
+      {
+        "start": 149704,
+        "stop": 150408,
+        "text": " ports with individuals it's so powerful it'll change how you do vpns forever so go try it out"
+      },
+      {
+        "start": 150408,
+        "stop": 150976,
+        "text": " tailscale.com slash coder one more time tailscale.com slash coder"
+      },
+      {
+        "start": 150976,
+        "stop": 151728,
+        "text": " the big thing that we haven't mentioned is the thalio has seen a redesign of its case you touch"
+      },
+      {
+        "start": 151728,
+        "stop": 152136,
+        "text": " on this in your review they've taken away that wood veneer side and they've replaced it with more"
+      },
+      {
+        "start": 152136,
+        "stop": 152800,
+        "text": " of a customizable strip that you can put different looks on it's a clean sharp look i like it i could"
+      },
+      {
+        "start": 152800,
+        "stop": 153448,
+        "text": " see wanting one that's custom branded for events you know what i'm talking about yes i do yeah"
+      },
+      {
+        "start": 153448,
+        "stop": 154144,
+        "text": " so i like the new design i was sent the the thalio the regular small thalio did you end up now but"
+      },
+      {
+        "start": 154144,
+        "stop": 154472,
+        "text": " you got a review unit let's talk about this for a moment you got a review unit i think you got a"
+      },
+      {
+        "start": 154472,
+        "stop": 154992,
+        "text": " similar one with a different graphics card and you turned around and said okay great i'll buy one so"
+      },
+      {
+        "start": 154992,
+        "stop": 155464,
+        "text": " which one did you actually get and what made you decide to pull the trigger on buying it so i"
+      },
+      {
+        "start": 155464,
+        "stop": 155936,
+        "text": " actually got the wrong review unit oh interesting i got somebody else's review unit so i had to send"
+      },
+      {
+        "start": 155936,
+        "stop": 156344,
+        "text": " it back anyway but i'm like you know what i'm just gonna buy one anyway so i'll just buy it i"
+      },
+      {
+        "start": 156344,
+        "stop": 156840,
+        "text": " literally bought the first production one off the line i was told i bet yeah well if you're buying"
+      },
+      {
+        "start": 156840,
+        "stop": 157312,
+        "text": " it when the review units are going out yeah since i bought it before it came out the difference"
+      },
+      {
+        "start": 157312,
+        "stop": 157856,
+        "text": " between this and the review unit is the review unit was more of a base model this is slightly"
+      },
+      {
+        "start": 157856,
+        "stop": 158632,
+        "text": " upgraded i went for a slightly bigger gpu and i went up to 32 gigs of ram obviously you can max"
+      },
+      {
+        "start": 158632,
+        "stop": 159048,
+        "text": " it out at 64. i know i've already heard from people who want to know why i didn't just do that"
+      },
+      {
+        "start": 159048,
+        "stop": 159560,
+        "text": " the answer is i didn't feel like spending the money that second sure while you're looking it"
+      },
+      {
+        "start": 159560,
+        "stop": 160136,
+        "text": " up i'll tell you what my review unit was so mine came with the AMD ryzen 9 5900x 12 core"
+      },
+      {
+        "start": 160200,
+        "stop": 160840,
+        "text": " uh base clock of three seven they can peak up to like four something though 32 gigs of ram"
+      },
+      {
+        "start": 160840,
+        "stop": 161648,
+        "text": " uh one terabyte samsung ssd 980 pro i had the nvidia geforce rtx 3060 ti eight gigabyte card"
+      },
+      {
+        "start": 161648,
+        "stop": 162128,
+        "text": " in there and for most of my review i was running nyx for some of i was running pop"
+      },
+      {
+        "start": 162128,
+        "stop": 163144,
+        "text": " but nyx os with kernel 5 19.6 so the latest kernel butter fs on the hard drive and nvidia 5 15.48.07"
+      },
+      {
+        "start": 163144,
+        "stop": 163864,
+        "text": " as my video driver and so it's a pretty beefy rig you know that 3060 ti is no slouch and that ryzen"
+      },
+      {
+        "start": 163864,
+        "stop": 164592,
+        "text": " 9 5900 12 core is no slouch either so how are you finding it for i'd be very curious for like video"
+      },
+      {
+        "start": 164592,
+        "stop": 165256,
+        "text": " encoding if you're doing any of that oh yeah oh it's a screamer for sure it exceeds any of like"
+      },
+      {
+        "start": 165256,
+        "stop": 165800,
+        "text": " my requirements by far it really does i i really pushed this thing i was very very impressed"
+      },
+      {
+        "start": 165864,
+        "stop": 166504,
+        "text": " i don't know if you notice this but it gets warm to the touch let me see if you really push it if"
+      },
+      {
+        "start": 166504,
+        "stop": 167272,
+        "text": " you push both the gpu and the cpu it gets really warm really and if you look at the internal design"
+      },
+      {
+        "start": 167272,
+        "stop": 167760,
+        "text": " of the thing and i'm not saying it's dangerous but i'm saying it's warm if you look at the"
+      },
+      {
+        "start": 167760,
+        "stop": 168168,
+        "text": " internal design of the thing there's an intake fan on the bottom that's blowing upwards from"
+      },
+      {
+        "start": 168168,
+        "stop": 168888,
+        "text": " the bottom of the case yes and it's blowing over the gpu and then there's an intake fan above the"
+      },
+      {
+        "start": 168888,
+        "stop": 169680,
+        "text": " gpu that's sucking in for the cpu so i reason that you're essentially blowing hot gpu air into the"
+      },
+      {
+        "start": 169680,
+        "stop": 170472,
+        "text": " cpu air intake and so you get to a point where the cpu just cannot fully cool itself so it begins to"
+      },
+      {
+        "start": 170472,
+        "stop": 171144,
+        "text": " thermal throttle pretty quickly when you're pushing both systems now even thermal throttle this thing"
+      },
+      {
+        "start": 171176,
+        "stop": 171808,
+        "text": " and i have it in the benchmarks it's a killer but it is nonetheless thermal throttling and if you"
+      },
+      {
+        "start": 171808,
+        "stop": 172312,
+        "text": " stress the cpu and the gpu like maybe you're doing a machine learning analysis job something like that"
+      },
+      {
+        "start": 172312,
+        "stop": 173016,
+        "text": " training some models the whole case gets warm to the touch um you know that the ram gets in the"
+      },
+      {
+        "start": 173016,
+        "stop": 173624,
+        "text": " 80 celsius degrees temperature uh the cpus are getting to their max all of it is within spec i"
+      },
+      {
+        "start": 173624,
+        "stop": 174152,
+        "text": " want to stress that but it got a lot warmer than i expected and when you're when you're pushing that"
+      },
+      {
+        "start": 174152,
+        "stop": 175104,
+        "text": " 30 60 it's no joke man that machine is taking over 300 watts of power to run the cpu and the gpu at"
+      },
+      {
+        "start": 175104,
+        "stop": 175592,
+        "text": " full tilt so it is a massive draw and when it's idle when you're not running the gpu and you're"
+      },
+      {
+        "start": 175592,
+        "stop": 176096,
+        "text": " just kind of doing your day-to-day stuff it's still in the 100 watt range and that's just the"
+      },
+      {
+        "start": 176096,
+        "stop": 176576,
+        "text": " reality still of the x86 platform this is not a knock against the thalio that's just the nature"
+      },
+      {
+        "start": 176576,
+        "stop": 177368,
+        "text": " of this platform it's just striking when you're comparing it to like say a macbook pro ultra max"
+      },
+      {
+        "start": 177368,
+        "stop": 178176,
+        "text": " whatever and you run some of the same tests and the macbook max ultra pro whatever never"
+      },
+      {
+        "start": 178176,
+        "stop": 178888,
+        "text": " audibly kicks its fans up never gets warm to the touch and still does really well in the benchmarks"
+      },
+      {
+        "start": 178888,
+        "stop": 179472,
+        "text": " and it's uh using maybe 30 watts to do all of that and the thali is using 300 watts it's getting"
+      },
+      {
+        "start": 179472,
+        "stop": 180328,
+        "text": " better performance but it's not like in the next galaxy better and so for me ultimately i think i"
+      },
+      {
+        "start": 180328,
+        "stop": 180928,
+        "text": " would want a bigger thalio i'd want a larger thalio so there was more maybe room between"
+      },
+      {
+        "start": 180928,
+        "stop": 181400,
+        "text": " the components to cool things not that i think that i think it's really a problem but if i'm"
+      },
+      {
+        "start": 181400,
+        "stop": 181872,
+        "text": " buying a machine like this i want it to last eight years and i don't necessarily want to heat soak"
+      },
+      {
+        "start": 181872,
+        "stop": 182408,
+        "text": " the ram the north bridge and some of the cpu components so i would probably get a little bit"
+      },
+      {
+        "start": 182408,
+        "stop": 182944,
+        "text": " bigger thalio and for me that was kind of a the fatal flaw and why i didn't order one because i"
+      },
+      {
+        "start": 182944,
+        "stop": 183672,
+        "text": " am in desperate need of a of a improved studio setup i am going to spend some time running this"
+      },
+      {
+        "start": 183672,
+        "stop": 184144,
+        "text": " as an obs machine and just putting it under that workload where it's doing streaming it's doing"
+      },
+      {
+        "start": 184144,
+        "stop": 184672,
+        "text": " some capture but it's not going to max it out and i want to see what the thermals are under that load"
+      },
+      {
+        "start": 184672,
+        "stop": 185280,
+        "text": " they may be completely acceptable in that scenario because i want to underscore when i'm looking at"
+      },
+      {
+        "start": 185280,
+        "stop": 185768,
+        "text": " these high thermals i'm rendering what i did is for an example is i had ffmpeg rendering a video"
+      },
+      {
+        "start": 185768,
+        "stop": 186296,
+        "text": " on a couple of cores while i played a video game not like a crazy video game like csgo right and"
+      },
+      {
+        "start": 186296,
+        "stop": 186848,
+        "text": " this machine can easily oh yeah easily handle that kind of load and i could get i could get into"
+      },
+      {
+        "start": 186848,
+        "stop": 187400,
+        "text": " thermal throttling territory within five minutes in that scenario just things like that and then"
+      },
+      {
+        "start": 187400,
+        "stop": 187840,
+        "text": " i just tried different benchmarks and different tests again even thermal throttled it's still a"
+      },
+      {
+        "start": 187840,
+        "stop": 188336,
+        "text": " monster but you know it's just something to be aware of and i i think it's in part because it's"
+      },
+      {
+        "start": 188336,
+        "stop": 189088,
+        "text": " just it's a small unit the base thalio is adorably small it's kind of like peak pc design in a way"
+      },
+      {
+        "start": 189088,
+        "stop": 189736,
+        "text": " it's a great case it's a great size the revisions to this case with that with that new replaceable"
+      },
+      {
+        "start": 189736,
+        "stop": 190376,
+        "text": " strip but also the back paneling just is cleaner they've labeled the ports they've really embraced"
+      },
+      {
+        "start": 190376,
+        "stop": 190968,
+        "text": " the ports on this thalio and the case is really solid and they've also included brackets and"
+      },
+      {
+        "start": 190968,
+        "stop": 191520,
+        "text": " and things that really clamp the gear down like the gpu and stuff like that so it doesn't fall"
+      },
+      {
+        "start": 191520,
+        "stop": 192216,
+        "text": " off in shipping so it's a really solidly built pc it's just also very small with extremely powerful"
+      },
+      {
+        "start": 192216,
+        "stop": 192688,
+        "text": " components packed in there and they're all running within spec they're all absolutely within spec but"
+      },
+      {
+        "start": 192688,
+        "stop": 193296,
+        "text": " it's a little hotter than i expected and over 300 watts is a little more than i expected it's all"
+      },
+      {
+        "start": 193296,
+        "stop": 193792,
+        "text": " it's all doable yeah it's interesting because they also make a different body and i wonder one of my"
+      },
+      {
+        "start": 193792,
+        "stop": 194408,
+        "text": " questions when you figure out mine was how what effect because it's the same case do the different"
+      },
+      {
+        "start": 194408,
+        "stop": 194840,
+        "text": " gpu's have on thermals i care less about thermals than you because you know what i care about right"
+      },
+      {
+        "start": 194840,
+        "stop": 195560,
+        "text": " speed and no sound no sound yeah fan noise yeah now the last dailio i tested was the first first"
+      },
+      {
+        "start": 195560,
+        "stop": 196056,
+        "text": " gen thalio and that definitely i think i had a i had a whole blog post you could it sounded like"
+      },
+      {
+        "start": 196056,
+        "stop": 196960,
+        "text": " an aircraft carrier this is much improved but i would note that my gpu is an amd ati also neofetch"
+      },
+      {
+        "start": 196960,
+        "stop": 197720,
+        "text": " terrible terrible output here device 743 f that means nothing except it just means that it's like"
+      },
+      {
+        "start": 197720,
+        "stop": 198376,
+        "text": " the baby amd gpu so i'm not seeing no i have my hand on i'm not feeling any kind of thermal"
+      },
+      {
+        "start": 198376,
+        "stop": 198888,
+        "text": " pressure right again we're just doing squad cast right now so and i have what yeah not not bad"
+      },
+      {
+        "start": 198888,
+        "stop": 199456,
+        "text": " right and exactly if you're just pushing one of the subsystems like most video games once they're"
+      },
+      {
+        "start": 199456,
+        "stop": 199952,
+        "text": " loaded up they don't really push the cpu a whole bunch and when you've got like 24 virtual cores"
+      },
+      {
+        "start": 199952,
+        "stop": 200360,
+        "text": " to work with only a couple of them are doing anything but you know what i noticed mike is"
+      },
+      {
+        "start": 200360,
+        "stop": 201016,
+        "text": " the thalio may mira and major and the mega and the massive those are the other bigger thalios that are"
+      },
+      {
+        "start": 201016,
+        "stop": 201544,
+        "text": " physically larger as well they all have side venting and and maybe that's just because they"
+      },
+      {
+        "start": 201544,
+        "stop": 201984,
+        "text": " haven't like they haven't gone back and redesigned those cases or i don't know maybe they have but"
+      },
+      {
+        "start": 201984,
+        "stop": 202592,
+        "text": " i've noticed they seem to have a beefier cooling system like the mega and the massive especially"
+      },
+      {
+        "start": 202592,
+        "stop": 203288,
+        "text": " have a lot beefier side cooling maybe there's something there i'm sure we'll find out i it's"
+      },
+      {
+        "start": 203288,
+        "stop": 203672,
+        "text": " something i want to experiment more with and i think they could probably rightfully argue that"
+      },
+      {
+        "start": 203672,
+        "stop": 204096,
+        "text": " it's not actually a problem because you know they've tested these things just to say that"
+      },
+      {
+        "start": 204096,
+        "stop": 204648,
+        "text": " they are intricate and obsessive over details it's is understating how much they look at this"
+      },
+      {
+        "start": 204648,
+        "stop": 205232,
+        "text": " i mean they made a panel that's the that's the pcp the chips in their damn uh keyboard for the"
+      },
+      {
+        "start": 205232,
+        "stop": 205920,
+        "text": " yeah yeah it looks so great actually i may still end up buying one once i do the obs test if it you"
+      },
+      {
+        "start": 205920,
+        "stop": 206304,
+        "text": " know everything works out fine there in a real world usage like when i used it as my desktop for"
+      },
+      {
+        "start": 206304,
+        "stop": 206920,
+        "text": " a couple of weeks totally fine totally fine good solid device you know you you got to live with"
+      },
+      {
+        "start": 206920,
+        "stop": 207408,
+        "text": " uh certain quirks of linux when you have a large device like that like hooking up multiple displays"
+      },
+      {
+        "start": 207408,
+        "stop": 208064,
+        "text": " can still be a little glitchy but all manageable and just such a rocking system you can really just"
+      },
+      {
+        "start": 208064,
+        "stop": 208600,
+        "text": " push it and it just takes it so uh i really enjoyed my time with the thali i'll give it i'll"
+      },
+      {
+        "start": 208600,
+        "stop": 209112,
+        "text": " give it a chance as an obs machine but i haven't pulled the trigger yet i'm glad you got one i i"
+      },
+      {
+        "start": 209112,
+        "stop": 209680,
+        "text": " think it's i think it's gonna be good yeah it's nice i you know it's funny i i'm i'm i just went"
+      },
+      {
+        "start": 209680,
+        "stop": 210400,
+        "text": " down a rabbit hole on this weird AMD GPU that i bought mostly because i'm very sure that GPU"
+      },
+      {
+        "start": 210400,
+        "stop": 210816,
+        "text": " prices are going down soon i just feel pretty strongly about that i wrote that in my review"
+      },
+      {
+        "start": 210816,
+        "stop": 211712,
+        "text": " but i didn't realize how low end this beige gobby again awful name i mean seriously AMD just crap"
+      },
+      {
+        "start": 211712,
+        "stop": 212320,
+        "text": " it's holding up pretty well i mean i was playing spider-man remastered on it getting decent frame"
+      },
+      {
+        "start": 212320,
+        "stop": 212904,
+        "text": " rates uh it looked bad as good as it would on a ps4 like my ps5 you know pumped all the way up"
+      },
+      {
+        "start": 212904,
+        "stop": 213264,
+        "text": " could could probably beat it then maybe there's tweaks i can make and be a little more aggressive"
+      },
+      {
+        "start": 213264,
+        "stop": 213824,
+        "text": " right in lutris to make it run better i'm kind of interested in what this new AMD architecture is"
+      },
+      {
+        "start": 213824,
+        "stop": 214608,
+        "text": " going to do failure aside to be honest this is uh very affordable this was a a 200 upgrade and"
+      },
+      {
+        "start": 214608,
+        "stop": 215064,
+        "text": " the the you know the great thing about those AMD cards they're going to work great with your linux"
+      },
+      {
+        "start": 215064,
+        "stop": 215440,
+        "text": " desktop it's not going to be a struggle you're not going to go get some sort of weird nvidia package"
+      },
+      {
+        "start": 215440,
+        "stop": 215768,
+        "text": " and run through some sort of install script you just plug it in if you got a modern kernel and"
+      },
+      {
+        "start": 215768,
+        "stop": 216184,
+        "text": " they've upstreamed the drivers just works and well and usually for a couple years they're the same"
+      },
+      {
+        "start": 216184,
+        "stop": 216768,
+        "text": " drivers so you just buy another one a bigger one when you have the money and you can almost always"
+      },
+      {
+        "start": 216768,
+        "stop": 217304,
+        "text": " just swap it in yeah if i were buying now i think i'd probably go with a with a you know a medium"
+      },
+      {
+        "start": 217304,
+        "stop": 217760,
+        "text": " mid of the road mid road that i could get by with i'd be happy with today gpu but i don't think i'd"
+      },
+      {
+        "start": 217760,
+        "stop": 218264,
+        "text": " i'd go for like the biggest high-end purchase you could just yet i agree with you wait a little bit"
+      },
+      {
+        "start": 218264,
+        "stop": 218800,
+        "text": " save a few hundred bucks yeah i think so that's the way to do it but failure it's a really solid"
+      },
+      {
+        "start": 218800,
+        "stop": 219512,
+        "text": " system it made for a great nyx box and obviously it ran pop great as well so i clearly i i want to"
+      },
+      {
+        "start": 219512,
+        "stop": 219976,
+        "text": " say i was tempted do i want to say it's the best desktop pc right now that i know of and i i think"
+      },
+      {
+        "start": 219976,
+        "stop": 220592,
+        "text": " it might be when you consider the unique case design the work that goes into the internals"
+      },
+      {
+        "start": 220592,
+        "stop": 221192,
+        "text": " just how slick of a system overall is and like the quality of like the corners the port holes just"
+      },
+      {
+        "start": 221192,
+        "stop": 221952,
+        "text": " the button even for the power all of it is so refined so obsessed over i just don't know of"
+      },
+      {
+        "start": 221952,
+        "stop": 222520,
+        "text": " any other desktop pc with that kind of care that kind of uniqueness to it it's a pretty special"
+      },
+      {
+        "start": 222520,
+        "stop": 223344,
+        "text": " machine boostagram let's do a few boosts what do you say boostagram boostagram woden501 boosted"
+      },
+      {
+        "start": 223344,
+        "stop": 223944,
+        "text": " with 5 000 sats he says i got a future trip idea once the new intel fab opens in columbus get a"
+      },
+      {
+        "start": 223944,
+        "stop": 224584,
+        "text": " tour set up and then take a trip way over on the i-70 to meet us midwest folk we've got craft beer"
+      },
+      {
+        "start": 224584,
+        "stop": 225400,
+        "text": " and hotels some of them have beer taps right in the rooms he writes what that sounds very dangerous"
+      },
+      {
+        "start": 225400,
+        "stop": 226120,
+        "text": " holy crap i would wreck myself that's amazing i okay woden you got to boost it and tell me"
+      },
+      {
+        "start": 226120,
+        "stop": 226648,
+        "text": " which hotels specifically that i i do want to get to the midwest so we're doing our west coast tour"
+      },
+      {
+        "start": 226648,
+        "stop": 227224,
+        "text": " right now i'm in sacramento as we record because you know we did the east coast we did the we did"
+      },
+      {
+        "start": 227224,
+        "stop": 227824,
+        "text": " the we did like denver area so it seemed like it was time to the west coast but i you know there's"
+      },
+      {
+        "start": 227824,
+        "stop": 228264,
+        "text": " so there's still so much room in between so midwest is definitely on my list so send me the"
+      },
+      {
+        "start": 228264,
+        "stop": 229272,
+        "text": " deets sergeant apple boosted in with 250 sats boost oh i'm sorry 2500 sats he says on the future is"
+      },
+      {
+        "start": 229272,
+        "stop": 229824,
+        "text": " the web idea you guys have been kicking around do we think apple will ever come around and get on"
+      },
+      {
+        "start": 229824,
+        "stop": 230352,
+        "text": " board with the web looking at icloud web apps they're definitely short on web skills won't they"
+      },
+      {
+        "start": 230352,
+        "stop": 230872,
+        "text": " just fight and stay native until the end yes yes they'll totally fight and stay native till the bit"
+      },
+      {
+        "start": 230872,
+        "stop": 231408,
+        "text": " around so yeah why would they do that why would they not do that i mean and do you think long-term"
+      },
+      {
+        "start": 231408,
+        "stop": 231840,
+        "text": " this is what i mean like i'm talking long term maybe this is what makes their platform less"
+      },
+      {
+        "start": 231840,
+        "stop": 232272,
+        "text": " relevant you gotta remember like the vast majority of software that gets written is for businesses"
+      },
+      {
+        "start": 232272,
+        "stop": 232976,
+        "text": " and other you know organizations not the whizbang a let's blog about it uh you know indie apps right"
+      },
+      {
+        "start": 232976,
+        "stop": 233840,
+        "text": " so i i guess both things can kind of be true right like i i think they're super cool roga"
+      },
+      {
+        "start": 233840,
+        "stop": 234432,
+        "text": " meba panic they can still exist and that's awesome uh as native uh apple platform developers for"
+      },
+      {
+        "start": 234432,
+        "stop": 234920,
+        "text": " example and i'm sure although there really isn't the equivalent on windows right that's kind of the"
+      },
+      {
+        "start": 234920,
+        "stop": 235640,
+        "text": " weird part but okay but the vast majority of us who are either you know doing contracting or are"
+      },
+      {
+        "start": 235640,
+        "stop": 236256,
+        "text": " writing you know business type applications or even utility applications are probably going to"
+      },
+      {
+        "start": 236256,
+        "stop": 236800,
+        "text": " be better suited targeting web technologies uh the big pink elephant in the gin bar here is"
+      },
+      {
+        "start": 236976,
+        "stop": 237536,
+        "text": " what the hell happened to web assembly like i'm on a carmen san diego level mission here"
+      },
+      {
+        "start": 237536,
+        "stop": 237984,
+        "text": " yeah like i i've i've i did dip my toes into certain subreddits"
+      },
+      {
+        "start": 237984,
+        "stop": 238800,
+        "text": " and it just seems like there's like some zealotry but not a lot getting done who would have thought"
+      },
+      {
+        "start": 238800,
+        "stop": 239280,
+        "text": " who would have thought okay all right well let me know if you ever do find where in the hell web"
+      },
+      {
+        "start": 239280,
+        "stop": 239696,
+        "text": " assembly is i sure would like to know well i'm hoping it's not like that weird spin-off of"
+      },
+      {
+        "start": 239696,
+        "stop": 240192,
+        "text": " carmen san diego where it's where in time this web assembly i guess you mean a couple dinosaurs and"
+      },
+      {
+        "start": 240192,
+        "stop": 240568,
+        "text": " richard stallman having to go get it you know that's where it goes that's where it ends up"
+      },
+      {
+        "start": 240568,
+        "stop": 241368,
+        "text": " it always ends up with rms tire boosts in with 2100 sats and he says what is mike and your opinion"
+      },
+      {
+        "start": 241368,
+        "stop": 241984,
+        "text": " on what is better web apps or electron apps from what i can tell most electron apps are just web"
+      },
+      {
+        "start": 241984,
+        "stop": 242448,
+        "text": " apps and browsers that have lack security also he says shame on you for getting him back into magic"
+      },
+      {
+        "start": 242448,
+        "stop": 242952,
+        "text": " the gathering he'd sold his cards six months ago but you talking about it is making him regret"
+      },
+      {
+        "start": 242952,
+        "stop": 243520,
+        "text": " selling them out and he says on the uniform topic pearl snap shirts are awesome and boots are where"
+      },
+      {
+        "start": 243520,
+        "stop": 244328,
+        "text": " it's at so uh if you had to pick web app or electron app do you have a choice do you have a preference"
+      },
+      {
+        "start": 244328,
+        "stop": 245128,
+        "text": " i should say yeah um i would say web app but my my revealed behavior seems to be electronic"
+      },
+      {
+        "start": 245224,
+        "stop": 245832,
+        "text": " for like things like slack and element io or element whatever yeah me too i i would answer"
+      },
+      {
+        "start": 245832,
+        "stop": 246304,
+        "text": " web app but then of course i like having i like having things as their own i just like the proper"
+      },
+      {
+        "start": 246304,
+        "stop": 246848,
+        "text": " notifications yeah that too yeah yeah but by the way on the magic gathering you don't need to buy"
+      },
+      {
+        "start": 246848,
+        "stop": 247320,
+        "text": " a big collection my man buy singles you'll be fine there you go yeah you'll be fine just get"
+      },
+      {
+        "start": 247320,
+        "stop": 247792,
+        "text": " a few singles where can it go from there nowhere it's not gonna go anywhere after that oh but the"
+      },
+      {
+        "start": 247792,
+        "stop": 248296,
+        "text": " beer taps in the hotel rooms were great that's fine everybody's gonna be okay okay you got me"
+      },
+      {
+        "start": 248296,
+        "stop": 249040,
+        "text": " amar boostin with 1024 sats he says hello chris hello mike i wanted to be a hipster too i looked"
+      },
+      {
+        "start": 249040,
+        "stop": 249480,
+        "text": " into fleet as soon as they announced it but i i saw that they say in their faq section that"
+      },
+      {
+        "start": 249480,
+        "stop": 250128,
+        "text": " it's mainly written in cotland which means it runs on a jvm all their stuff does yeah that's true"
+      },
+      {
+        "start": 250128,
+        "stop": 250560,
+        "text": " they're considering open sourcing parts of the product or the technology behind it"
+      },
+      {
+        "start": 250560,
+        "stop": 251160,
+        "text": " both of those points are a big no to me especially today in the vs code era but thanks for the show"
+      },
+      {
+        "start": 251160,
+        "stop": 251864,
+        "text": " yeah it seems like uh amar also wanted to be a hipster didn't work for him i'm concerned"
+      },
+      {
+        "start": 251864,
+        "stop": 252544,
+        "text": " about jet brains if before fleet even officially ships as a product you and others are saying"
+      },
+      {
+        "start": 252544,
+        "stop": 253056,
+        "text": " where does this fit and why are they doing it like this that seems like a bad sign i know your point"
+      },
+      {
+        "start": 253056,
+        "stop": 253592,
+        "text": " was the business market may keep it alive but i don't know man just a little bit of a red flaggy"
+      },
+      {
+        "start": 253592,
+        "stop": 254280,
+        "text": " you know what i mean just a little red flaggy oh yeah i mean the the ie6 level dominance of vs code"
+      },
+      {
+        "start": 254280,
+        "stop": 255216,
+        "text": " is uh it's nothing to sneeze at and optimus gray rounds this out with a big old row of uh mcducks"
+      },
+      {
+        "start": 255216,
+        "stop": 255904,
+        "text": " 22 222 sets quacka it's a treasure yippee and we're gonna see optimus gray at jpl too he says"
+      },
+      {
+        "start": 255904,
+        "stop": 256512,
+        "text": " i'm not a cpa but i have a program for them you may want to see if you can write off the recording"
+      },
+      {
+        "start": 256512,
+        "stop": 257000,
+        "text": " mobile office when you're on a work trip again not a cpa he says i also gave a listen to the"
+      },
+      {
+        "start": 257000,
+        "stop": 257456,
+        "text": " drew cleaned up version and it's weird because he always listens live i miss the post show title"
+      },
+      {
+        "start": 257456,
+        "stop": 258056,
+        "text": " talks but you know i'm a member of the qa feed so perhaps i'll get it that way i need to be smarter"
+      },
+      {
+        "start": 258056,
+        "stop": 258424,
+        "text": " about this kind of stuff he's right i could probably write off my mobile office there's"
+      },
+      {
+        "start": 258424,
+        "stop": 259056,
+        "text": " probably a lot of things i could be writing off that i'm not i i hate to solicit advice over the"
+      },
+      {
+        "start": 259056,
+        "stop": 259416,
+        "text": " internet on this kind of thing but if this is your area specifically if you're kind of familiar with"
+      },
+      {
+        "start": 259416,
+        "stop": 260152,
+        "text": " what i do as a business reach out my tax bill is crushing and i need every defense i have so and i"
+      },
+      {
+        "start": 260152,
+        "stop": 260896,
+        "text": " say that with no joke you wouldn't believe it you know you just would not believe how reamed i get as"
+      },
+      {
+        "start": 260896,
+        "stop": 261560,
+        "text": " a small business owner so uh i i i believe it oh yeah no i know you would oh and the cpa's out"
+      },
+      {
+        "start": 261560,
+        "stop": 262440,
+        "text": " there they know but i think the people who just work nine to fives have no idea have no idea how"
+      },
+      {
+        "start": 262440,
+        "stop": 262896,
+        "text": " much money uh we end up paying it's credit it's incredible also i just want to give a shout out"
+      },
+      {
+        "start": 262896,
+        "stop": 263456,
+        "text": " to techoff 751 who said go check out web 3 is doing great it's the number three web 3 is doing"
+      },
+      {
+        "start": 263456,
+        "stop": 264168,
+        "text": " great where the author is doing a fantastic job of documenting all of the ridiculous things happening"
+      },
+      {
+        "start": 264168,
+        "stop": 264968,
+        "text": " in the stupid world of crypto and web 3 and it's brutal didn't like the irs dude or the head of the"
+      },
+      {
+        "start": 264968,
+        "stop": 265456,
+        "text": " fed it'd be like this is all taxable security sec said that about ethereum the day after ethereum"
+      },
+      {
+        "start": 265456,
+        "stop": 266080,
+        "text": " announced their proof of work no i'm sorry proof of stake merge that you know for a security that"
+      },
+      {
+        "start": 266080,
+        "stop": 266464,
+        "text": " one of the basic tests is is there a group of people managing it and is it something you're"
+      },
+      {
+        "start": 266464,
+        "stop": 266928,
+        "text": " investing in expecting a return based on the actions of those group of people that's ethereum"
+      },
+      {
+        "start": 266928,
+        "stop": 267400,
+        "text": " i mean a lot of these cryptos have a group of people that are asking you to invest in their"
+      },
+      {
+        "start": 267400,
+        "stop": 267832,
+        "text": " thing implying that you're going to get a return and it's called the howie test there's a there's"
+      },
+      {
+        "start": 267832,
+        "stop": 268232,
+        "text": " multiple aspects of it but that's one of the things that makes you a security and when you're"
+      },
+      {
+        "start": 268232,
+        "stop": 268776,
+        "text": " a security it's a totally different ball game and you can't promote it like you can say like"
+      },
+      {
+        "start": 268776,
+        "stop": 269352,
+        "text": " property or real estate you know like software right right you can say anything yeah so no but"
+      },
+      {
+        "start": 269352,
+        "stop": 269936,
+        "text": " this is on this guy's site web 3 is going great this is the story september 22nd irs gets permission"
+      },
+      {
+        "start": 269936,
+        "stop": 270416,
+        "text": " for john doe summons for taxpayers who don't report crypto transactions yeah now that's for"
+      },
+      {
+        "start": 270416,
+        "stop": 271016,
+        "text": " a particular exchange but yeah that's what's going to happen now oh okay oh yeah oh yeah this is you"
+      },
+      {
+        "start": 271016,
+        "stop": 271856,
+        "text": " know potentially long term a good thing we need a hunger games kind of cleaning out of these crappy"
+      },
+      {
+        "start": 271856,
+        "stop": 272608,
+        "text": " crypto scams we need somebody to come through and just take them all out because so many of them are"
+      },
+      {
+        "start": 272608,
+        "stop": 273072,
+        "text": " pump and dump schemes where there is i was just super brief because i think people need to know"
+      },
+      {
+        "start": 273072,
+        "stop": 273720,
+        "text": " this all of these cryptos after bitcoin have a group of people behind them ethereum is included"
+      },
+      {
+        "start": 273720,
+        "stop": 274216,
+        "text": " in this list and the way that it all worked is that now all of them have a small group of"
+      },
+      {
+        "start": 274216,
+        "stop": 274720,
+        "text": " developers and they got what's called a pre-mine so before the crypto even went live to the rest"
+      },
+      {
+        "start": 274720,
+        "stop": 275256,
+        "text": " of the public maybe they get like 20 million coins or a million coins or whatever their setup is"
+      },
+      {
+        "start": 275256,
+        "stop": 275832,
+        "text": " so they get what's called a pre-mine they get access to the coins before anyone else does then"
+      },
+      {
+        "start": 275832,
+        "stop": 276272,
+        "text": " once the crypto goes public on exchanges people start buying and trading it well if you got"
+      },
+      {
+        "start": 276272,
+        "stop": 276840,
+        "text": " something a million of something for free and now it's worth a dollar right it doesn't have to go"
+      },
+      {
+        "start": 276840,
+        "stop": 277296,
+        "text": " big that's why some of these cryptos are worth pennies if it goes worth 50 cents and you had a"
+      },
+      {
+        "start": 277296,
+        "stop": 277928,
+        "text": " million of it you're doing great and so now you sell and so you got the crypto token for nothing"
+      },
+      {
+        "start": 277928,
+        "stop": 278416,
+        "text": " and then you dump it on the market and it's just this process that you repeat over and over again"
+      },
+      {
+        "start": 278416,
+        "stop": 278840,
+        "text": " ethereum is just a more complex version of this because they've done all of these little things"
+      },
+      {
+        "start": 278840,
+        "stop": 279344,
+        "text": " to constrain liquidity to make it easier for them to sell without causing the price to dump"
+      },
+      {
+        "start": 279344,
+        "stop": 279904,
+        "text": " and now they've launched proof of staking where you take your ethereum and you give it to a"
+      },
+      {
+        "start": 279904,
+        "stop": 280456,
+        "text": " coinbase or a crack and you give it to a third party and they stake it in the network and you"
+      },
+      {
+        "start": 280456,
+        "stop": 281240,
+        "text": " get yield off of that the funny thing is the developers have literally not written the code"
+      },
+      {
+        "start": 281240,
+        "stop": 281936,
+        "text": " or published the code to unstake once you stake your ethereum it seems very suspicious right it's"
+      },
+      {
+        "start": 281936,
+        "stop": 282400,
+        "text": " locked up until they write the code and it won't be until some big releases down the road and"
+      },
+      {
+        "start": 282400,
+        "stop": 283048,
+        "text": " software is always on time even in the most honest case yeah dude the proof of stake merger was"
+      },
+      {
+        "start": 283048,
+        "stop": 283480,
+        "text": " delayed by seven years they were trying to get it out for it took them seven years to ship the proof"
+      },
+      {
+        "start": 283480,
+        "stop": 283944,
+        "text": " of stake merger and now they're saying with the next merge that's or the next merger too that's"
+      },
+      {
+        "start": 283944,
+        "stop": 284512,
+        "text": " when you'll be able to unstake in the meantime the founders that got all their pre-mined coins"
+      },
+      {
+        "start": 284512,
+        "stop": 285088,
+        "text": " can sell sell sell and you can't sell your ethereum because it's locked up staked you cannot"
+      },
+      {
+        "start": 285088,
+        "stop": 285688,
+        "text": " withdraw it so they can now sell on the market with impunity and people can't pull out so it"
+      },
+      {
+        "start": 285688,
+        "stop": 286256,
+        "text": " locks the liquidity and it locks the price in it is a brilliant scam they are pulling all the users"
+      },
+      {
+        "start": 286256,
+        "stop": 286936,
+        "text": " of ethereum and everybody oh i want yield i want yield i want yield and they're all fallen for it"
+      },
+      {
+        "start": 286984,
+        "stop": 287440,
+        "text": " but i just i can't believe we're watching this go down and bitcoin suffers from none of this"
+      },
+      {
+        "start": 287440,
+        "stop": 288056,
+        "text": " there's no central person there was no pre-mine there's no staking it's not a security it has been"
+      },
+      {
+        "start": 288056,
+        "stop": 288784,
+        "text": " declared by the sec and the irs as property years ago reaffirmed by gary ginsler the chairman of the"
+      },
+      {
+        "start": 288784,
+        "stop": 289576,
+        "text": " sec multiple times but yet we still see all these horrible scams that take grandma's savings and"
+      },
+      {
+        "start": 289576,
+        "stop": 290184,
+        "text": " they just need to be washed out they all need to go so maybe we'll see some of them some of them"
+      },
+      {
+        "start": 290184,
+        "stop": 290832,
+        "text": " fade away in the meantime i remain here skeptical keeping an eye on all things to call it out as i"
+      },
+      {
+        "start": 290832,
+        "stop": 291632,
+        "text": " see it i'm watching them i've got their number i know what they're up to i see that if you buy"
+      },
+      {
+        "start": 291632,
+        "stop": 292104,
+        "text": " some of these crazy cryptos you are their liquidity for exiting you understand that"
+      },
+      {
+        "start": 292104,
+        "stop": 292624,
+        "text": " you're providing them exit liquidity that's how all of this works my old man taught me something"
+      },
+      {
+        "start": 292624,
+        "stop": 293048,
+        "text": " a long time ago if you're sitting down at the poker table and you don't know who the sucker is"
+      },
+      {
+        "start": 293048,
+        "stop": 293936,
+        "text": " you're the sucker you're the sucker kicking it out yeah yep that's pretty much it so that's chris's"
+      },
+      {
+        "start": 293936,
+        "stop": 294456,
+        "text": " little pro tip for the internet so web 3 is doing just great you can go check that out jpegs who"
+      },
+      {
+        "start": 294456,
+        "stop": 294864,
+        "text": " would have thought they'd be so easy to sell right god damn it i should have thought of this"
+      },
+      {
+        "start": 295024,
+        "stop": 295648,
+        "text": " yeah that could have been our that could have been us dude jay coin mr here yeah mr"
+      },
+      {
+        "start": 295648,
+        "stop": 296192,
+        "text": " we could have done it dude we were on the air we could have done it we could still do robe coin we"
+      },
+      {
+        "start": 296192,
+        "stop": 296744,
+        "text": " could do robe coin yeah maybe maybe you know i know i knew i was in a good place because uh"
+      },
+      {
+        "start": 296744,
+        "stop": 297256,
+        "text": " listener jeff here where he's put us up he's got a coat of robe so i knew he was good people you"
+      },
+      {
+        "start": 297256,
+        "stop": 297792,
+        "text": " know you know he's a man of taste and distinction at least yeah right right well i want to say thank"
+      },
+      {
+        "start": 297792,
+        "stop": 298176,
+        "text": " you to our members for investing in our content production for literally keeping us on the road"
+      },
+      {
+        "start": 298176,
+        "stop": 298584,
+        "text": " this week we'll have a new coterie pretty soon for you because the quarter is coming up so if"
+      },
+      {
+        "start": 298584,
+        "stop": 299072,
+        "text": " you'd like to become a member coderqa.co is where you go or you can be like optimus and become a"
+      },
+      {
+        "start": 299072,
+        "stop": 299616,
+        "text": " member to all the shows get all the special features at jupiter.party anywhere you want"
+      },
+      {
+        "start": 299616,
+        "stop": 300256,
+        "text": " to send the good people mr dominic go to dominic m.com and read all my linux c updates and we should"
+      },
+      {
+        "start": 300256,
+        "stop": 300752,
+        "text": " say if we didn't make it clear enough your written thalia review is up there as well it is and uh"
+      },
+      {
+        "start": 300752,
+        "stop": 301272,
+        "text": " there might be something this weekend depending on how whacked i get by this hurricane oh man i"
+      },
+      {
+        "start": 301272,
+        "stop": 301744,
+        "text": " hope everything goes okay you let me know hey listen if not it would you know we actually did"
+      },
+      {
+        "start": 301744,
+        "stop": 302224,
+        "text": " a show do you remember when i was up in jersey yes we did one during sandy i remember pretty sure"
+      },
+      {
+        "start": 302224,
+        "stop": 303016,
+        "text": " we'll be back monday at noon yeah yep noon eastern 9 a.m pacific over at jupiter.tube you can follow"
+      },
+      {
+        "start": 303016,
+        "stop": 303480,
+        "text": " the show at coda radio show and the network is at jupiter signal links to what we talked about today"
+      },
+      {
+        "start": 303480,
+        "stop": 303952,
+        "text": " our coder.show slash 485 our contact form is over there send us an email it's a big part of the show"
+      },
+      {
+        "start": 303952,
+        "stop": 304368,
+        "text": " we need your emails we're running low and of course you can subscribe there as well and last"
+      },
+      {
+        "start": 304368,
+        "stop": 305056,
+        "text": " but not least you can boost with a new podcast app at newpodcastapps.com see you next week"
+      },
+      {
+        "start": 305056,
+        "stop": 306056,
+        "text": " so"
+      }
+    ],
+    "processing_time": {
+      "secs": 1729,
+      "nanos": 217442864
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 485: Going All In on Linux",
+    "pictures": [],
+    "duration": {
+      "secs": 3048,
+      "nanos": 994000000
+    },
+    "unique_id": "http://coder.show/485"
+  },
+  "episode": {
+    "title": "Going All In on Linux | Coder Radio 485",
+    "description": "Mike has spent just over a month living in Linux full-time, and Chris wants to check in and see how he’s doing. Plus we both have the new Thelio from System76 in-house, and our takeaways might surprise you.",
+    "content": "<p><p>Mike has spent just over a month living in Linux full-time, and Chris wants to check in and see how he’s doing. Plus we both have the new Thelio from System76 in-house, and our takeaways might surprise you.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://www.meetup.com/jupiterbroadcasting/events/287248082/\" title=\"Southern California Meet up this Friday\" rel=\"nofollow\">Southern California Meet up this Friday</a> &mdash; Come join us! We’ll be hanging out from 6pm-8pm. This place has everything you need, great food, great beer, a great atmosphere, and phenomenal company. Also, the patio is dog friendly!</li><li><a href=\"https://clivethompson.medium.com/linux-on-the-laptop-works-so-damn-well-that-its-boring-29014b347941\" title=\"Linux On The Laptop Works So Damn Well That It’s Boring\" rel=\"nofollow\">Linux On The Laptop Works So Damn Well That It’s Boring</a> &mdash; Honestly, when I use my Linux computer, very little is different from my Mac or Windows machines. It works so well that it’s essentially kind of boring. Which is what you want, right? You don’t want to have to think about your operating system, or worry about it. You just want it to work.</li><li><a href=\"https://system76.com/desktops\" title=\"System76 Thelio\" rel=\"nofollow\">System76 Thelio</a> &mdash; We’ve slimmed down Thelio’s wood wrapping into a swappable accent on the front of the system. Style your Thelio with a variety of wood or powder-coated aluminum accents to empower any mindset.</li><li><a href=\"https://dominickm.com/thelio-2022-redesign-review/\" title=\"Thelio 2022 Redesign Review - dominickm.com\" rel=\"nofollow\">Thelio 2022 Redesign Review - dominickm.com</a> &mdash; Proudly proclaiming “real computers have ports”, it comes with a variety of HDMI, Display Port (depending on your GPU) and UBS-C ports. Whether your a developer who needs to connect IOT devices for debugging or a content creator preaching the gospel of Objective Binks, you’ll have the ports you need for your audio devices and (in my case) your mute pedal. Keen observers will notice that the back panel is slightly less styled than previous model, but that hardly detracts from the overall aesthetic appeal.</li><li><a href=\"https://openbenchmarking.org/result/2209158-NE-SYSTEM76T69\" title=\"Thelio Timed Linux Kernel Compilation\" rel=\"nofollow\">Thelio Timed Linux Kernel Compilation</a> &mdash; This test times how long it takes to build the Linux kernel in a default configuration (defconfig) for the architecture being tested or alternatively an allmodconfig for building all possible kernel modules for the build.</li><li><a href=\"https://openbenchmarking.org/result/2209158-NE-2209147NE68\" title=\"Parboil  DevOne Benchmarks\" rel=\"nofollow\">Parboil  DevOne Benchmarks</a> &mdash; The Parboil Benchmarks from the IMPACT Research Group at University of Illinois are a set of throughput computing applications for looking at computing architecture and compilers. Parboil test-cases support OpenMP, OpenCL, and CUDA multi-processing environments. However, at this time the test profile is just making use of the OpenMP and OpenCL test workloads.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Grab a New Podcast App\" rel=\"nofollow\">Grab a New Podcast App</a> &mdash; Send a Boost into the show with a Podcasting 2.0 compatible app.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8860",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15668572/3156af2e-f13f-4b74-9389-69613405dff7.mp3",
+      "length": "43377384",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-28T03:05:00+02:00"
+  },
+  "speedup": 1.7632219
+}

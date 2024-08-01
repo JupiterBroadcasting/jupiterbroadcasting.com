@@ -1,0 +1,4122 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 78,
+        "stop": 864,
+        "text": " this is coder radio episode 493 for November 21st 2022"
+      },
+      {
+        "start": 864,
+        "stop": 1872,
+        "text": " hello friends and welcome back to Jupiter broadcastings weekly talk show"
+      },
+      {
+        "start": 1872,
+        "stop": 2268,
+        "text": " taking a pragmatic look at the art and the business of software development and"
+      },
+      {
+        "start": 2268,
+        "stop": 2708,
+        "text": " the whole world of technology my name is Chris and joining us every single week"
+      },
+      {
+        "start": 2708,
+        "stop": 3270,
+        "text": " with his u22 crank to the max it's our host mr. Dominic hello Mike Roger that"
+      },
+      {
+        "start": 3270,
+        "stop": 3662,
+        "text": " hope everything's plugged in this time are you in a new location right now I"
+      },
+      {
+        "start": 3662,
+        "stop": 4198,
+        "text": " am NOT yet so we have the internet being re hooked up on Wednesday oh that means"
+      },
+      {
+        "start": 4198,
+        "stop": 4842,
+        "text": " the next Monday's coder will be the first official plant city coder radio in"
+      },
+      {
+        "start": 4842,
+        "stop": 5380,
+        "text": " years that's pretty exciting mm-hmm that feels that feels like almost going back"
+      },
+      {
+        "start": 5380,
+        "stop": 5730,
+        "text": " to the way things were for a moment we'll see about that though we'll see"
+      },
+      {
+        "start": 5730,
+        "stop": 6178,
+        "text": " that too now you have me worried about the H faxes after your comments less"
+      },
+      {
+        "start": 6178,
+        "stop": 6556,
+        "text": " about is it really loud like yeah you know it's always tricky when you"
+      },
+      {
+        "start": 6556,
+        "stop": 6876,
+        "text": " especially an empty office space because there's nothing that what you need is to"
+      },
+      {
+        "start": 6876,
+        "stop": 7236,
+        "text": " just load a ton of junk in there that'll cut down on the sound reflection which"
+      },
+      {
+        "start": 7236,
+        "stop": 7728,
+        "text": " is great for podcasting just get like what a cartons yeah yeah that'll work"
+      },
+      {
+        "start": 7728,
+        "stop": 8110,
+        "text": " too and movers blankets actually that's the real trick just blankets and pillows"
+      },
+      {
+        "start": 8110,
+        "stop": 8594,
+        "text": " I had to do an Airbnb recording one time and there was like six or seven bedrooms"
+      },
+      {
+        "start": 8594,
+        "stop": 8962,
+        "text": " it was a big Airbnb because you know most the team was down there and so we"
+      },
+      {
+        "start": 8962,
+        "stop": 9422,
+        "text": " just literally took blankets and sheets and the mattresses and the pillows out"
+      },
+      {
+        "start": 9422,
+        "stop": 9834,
+        "text": " of every single room and stuff them all into the dining room and made like a"
+      },
+      {
+        "start": 9834,
+        "stop": 10286,
+        "text": " cave for recording in there it worked pretty well actually the only issue is"
+      },
+      {
+        "start": 10286,
+        "stop": 10554,
+        "text": " then you had to put it all back and remember everything went and that we"
+      },
+      {
+        "start": 10554,
+        "stop": 10980,
+        "text": " weren't so good at I think some people got the wrong bed I've been playing"
+      },
+      {
+        "start": 10980,
+        "stop": 11626,
+        "text": " around with stable diffusion to just generate the thumbnails for our Jupiter"
+      },
+      {
+        "start": 11626,
+        "stop": 12108,
+        "text": " tube streaming server and if you go over there you can see some of them I don't"
+      },
+      {
+        "start": 12108,
+        "stop": 12518,
+        "text": " think I've mentioned it to you but I've been using this app called diffusion B"
+      },
+      {
+        "start": 12518,
+        "stop": 13150,
+        "text": " that just runs on the m1 or m2 max and it uses the neural processors to do the"
+      },
+      {
+        "start": 13150,
+        "stop": 13746,
+        "text": " generation you need some RAM but the results that this thing can produce are"
+      },
+      {
+        "start": 13746,
+        "stop": 14546,
+        "text": " just mind-blowing and I finally feel like I have a reason to have a MacBook"
+      },
+      {
+        "start": 14546,
+        "stop": 15156,
+        "text": " with the Mac CPU in there and all the RAM because this app will use you know"
+      },
+      {
+        "start": 15156,
+        "stop": 15828,
+        "text": " 35 gigs of RAM you know has 8 gig and 10 gig models of its loading in there it"
+      },
+      {
+        "start": 15828,
+        "stop": 16284,
+        "text": " will use all of the neural code processors whatever they call that it'll"
+      },
+      {
+        "start": 16284,
+        "stop": 16896,
+        "text": " use some CPUs and GPU but it's really impressive because I can sit there and I"
+      },
+      {
+        "start": 16896,
+        "stop": 17156,
+        "text": " can crank out these images pretty much all day I'll just sit there and run"
+      },
+      {
+        "start": 17156,
+        "stop": 17676,
+        "text": " batches until I get a good one that I can use for a live stream and I still go"
+      },
+      {
+        "start": 17676,
+        "stop": 18408,
+        "text": " about using that MacBook with three monitors attached multiple virtual"
+      },
+      {
+        "start": 18408,
+        "stop": 19240,
+        "text": " desktops on each monitor probably for chromium based applications and five"
+      },
+      {
+        "start": 19240,
+        "stop": 19768,
+        "text": " Firefox windows six terminals and a VM all the chat apps and I still can go"
+      },
+      {
+        "start": 19768,
+        "stop": 20120,
+        "text": " around cranking things out on that it's really pretty remarkable if you haven't"
+      },
+      {
+        "start": 20120,
+        "stop": 20664,
+        "text": " checked out diffusion B at diffusion be calm I will put a link in the notes"
+      },
+      {
+        "start": 20664,
+        "stop": 21292,
+        "text": " because this app it's open source it's free and it is it is a lot of fun if"
+      },
+      {
+        "start": 21292,
+        "stop": 21772,
+        "text": " you've got one of these m1 or m2 systems I guess they also make an Intel version"
+      },
+      {
+        "start": 21772,
+        "stop": 22172,
+        "text": " which is kind of new and I have no idea how that works have you played around"
+      },
+      {
+        "start": 22172,
+        "stop": 22814,
+        "text": " with any of these AI image generators or fusion stuff not really no I did one"
+      },
+      {
+        "start": 22814,
+        "stop": 23308,
+        "text": " web-based one but it's not the same thing I don't think I of course I've"
+      },
+      {
+        "start": 23308,
+        "stop": 23900,
+        "text": " seen some of the press coverage of it it's kind of creepy yeah I made a really"
+      },
+      {
+        "start": 23900,
+        "stop": 24462,
+        "text": " creepy one for today's live stream oh god it's a it's SPF as the Joker is that"
+      },
+      {
+        "start": 24462,
+        "stop": 24848,
+        "text": " what I saw on Twitter yeah that's that that's SPF that I had the island just"
+      },
+      {
+        "start": 24848,
+        "stop": 25088,
+        "text": " thought that was the Joker you'll kind of is really because there's more"
+      },
+      {
+        "start": 25088,
+        "stop": 25712,
+        "text": " pictures of the Joker but it's kind of one in the same then SPF yeah yeah the"
+      },
+      {
+        "start": 25712,
+        "stop": 26152,
+        "text": " it's fun man you can just do it and they have a little link in the app to bring"
+      },
+      {
+        "start": 26152,
+        "stop": 26488,
+        "text": " up like community ideas so you can see the prompts people use and play with"
+      },
+      {
+        "start": 26488,
+        "stop": 26952,
+        "text": " that and tweak the look of it and you can really produce some cool stuff so"
+      },
+      {
+        "start": 26952,
+        "stop": 27436,
+        "text": " let's get into the feedback because we got an email along those names I don't I"
+      },
+      {
+        "start": 27436,
+        "stop": 27704,
+        "text": " guess they didn't grab their name somehow how did I how did I mess that up"
+      },
+      {
+        "start": 27704,
+        "stop": 28118,
+        "text": " but we had a listener right in that said hey guys longtime listener joined the"
+      },
+      {
+        "start": 28118,
+        "stop": 28876,
+        "text": " party and I'm also a PHP dev sorry Mike you should be I'm sorry I'm sorry I"
+      },
+      {
+        "start": 28876,
+        "stop": 29204,
+        "text": " didn't grab your name listening they write as we seem to be witnessing the"
+      },
+      {
+        "start": 29204,
+        "stop": 29660,
+        "text": " rise of AI being available to the masses I'm curious what you see as the"
+      },
+      {
+        "start": 29660,
+        "stop": 30056,
+        "text": " opportunity as us developers to put it into our products I'm not talking about"
+      },
+      {
+        "start": 30056,
+        "stop": 30544,
+        "text": " developer tools like copilot but more like what AI driven features will our"
+      },
+      {
+        "start": 30544,
+        "stop": 31004,
+        "text": " customers want to see I'd actually kind of written this off as a toy until Chris"
+      },
+      {
+        "start": 31004,
+        "stop": 31416,
+        "text": " mentioned that they use AI to generate the video thumbnails it got me thinking"
+      },
+      {
+        "start": 31416,
+        "stop": 31756,
+        "text": " that someday you could have something like a software as a service that could"
+      },
+      {
+        "start": 31756,
+        "stop": 32060,
+        "text": " generate your course image for you as part of a feature curious what your"
+      },
+      {
+        "start": 32060,
+        "stop": 32524,
+        "text": " thoughts are on real-world software implications of this technology cheers I"
+      },
+      {
+        "start": 32524,
+        "stop": 33182,
+        "text": " think in the foreseeable future it's gonna be a lot of things like AI error"
+      },
+      {
+        "start": 33182,
+        "stop": 33542,
+        "text": " correction again I tend to think about the enterprise space for a lot of like"
+      },
+      {
+        "start": 33542,
+        "stop": 34056,
+        "text": " financial type analysis stuff like that there are codified rules that unless"
+      },
+      {
+        "start": 34056,
+        "stop": 34540,
+        "text": " you're I don't know in the Bahamas or happen to work for Enron there's just"
+      },
+      {
+        "start": 34540,
+        "stop": 34938,
+        "text": " not that much creativity right and doing a balance sheet except for one or two"
+      },
+      {
+        "start": 34938,
+        "stop": 35446,
+        "text": " it's totally reasonable that some AI system could as part of the program"
+      },
+      {
+        "start": 35446,
+        "stop": 35860,
+        "text": " right like I'm thinking when eventually into it gets screwed by the government"
+      },
+      {
+        "start": 35860,
+        "stop": 36258,
+        "text": " because they decide that they can just file people's taxes for them and has to"
+      },
+      {
+        "start": 36258,
+        "stop": 36624,
+        "text": " find a way to sell their products this would be the value add right like if you"
+      },
+      {
+        "start": 36624,
+        "stop": 36940,
+        "text": " own a small business where your taxes are a little more complicated right the"
+      },
+      {
+        "start": 36940,
+        "stop": 37386,
+        "text": " built-in QuickBooks auditor right it basically stop you from making silly"
+      },
+      {
+        "start": 37386,
+        "stop": 37746,
+        "text": " mistakes yeah and those those could be things like I don't know have you ever"
+      },
+      {
+        "start": 37746,
+        "stop": 38088,
+        "text": " transpose the number on a form by accident right and then you get the"
+      },
+      {
+        "start": 38088,
+        "stop": 38560,
+        "text": " letter from the IRS like what we don't think so buddy it's almost like next"
+      },
+      {
+        "start": 38560,
+        "stop": 38984,
+        "text": " generation spellcheck only now it's checking your numbers yes I'm super"
+      },
+      {
+        "start": 38984,
+        "stop": 39386,
+        "text": " spellcheck yeah super spellcheck we should title suggestion I could see that"
+      },
+      {
+        "start": 39386,
+        "stop": 39816,
+        "text": " yeah totally right I could see like if you know anybody who works in retail"
+      },
+      {
+        "start": 39816,
+        "stop": 40268,
+        "text": " they will tell you that there are even hospitality managers can be capricious"
+      },
+      {
+        "start": 40268,
+        "stop": 40752,
+        "text": " and frankly stupid when making people schedules there's absolutely no reason"
+      },
+      {
+        "start": 40752,
+        "stop": 41312,
+        "text": " that can't be a self-service AI system running that an Amazon does this a bit"
+      },
+      {
+        "start": 41312,
+        "stop": 41708,
+        "text": " but they do it in a way to very aggressively like screw over their own"
+      },
+      {
+        "start": 41708,
+        "stop": 42240,
+        "text": " place I could totally see like a restaurant focus system or a bar focus"
+      },
+      {
+        "start": 42240,
+        "stop": 42686,
+        "text": " system that was like listen we'll manage your floor we already see things where"
+      },
+      {
+        "start": 42686,
+        "stop": 43032,
+        "text": " AI can automatically call I forgot the name of the Google thing but they can"
+      },
+      {
+        "start": 43032,
+        "stop": 43456,
+        "text": " call and make like reservations well why can't you have AI call and so you know"
+      },
+      {
+        "start": 43456,
+        "stop": 43976,
+        "text": " John is canceling out big so we're gonna call Jim to be the bartender today or"
+      },
+      {
+        "start": 43976,
+        "stop": 44432,
+        "text": " just another spiff for another riff on this doctor's office right how much time"
+      },
+      {
+        "start": 44432,
+        "stop": 44816,
+        "text": " does the quote-unquote proverbial lady the front of your doctor's office take"
+      },
+      {
+        "start": 44816,
+        "stop": 45256,
+        "text": " calling every single appointment your doctor has I know my doctor her assistant"
+      },
+      {
+        "start": 45256,
+        "stop": 45932,
+        "text": " is constantly on the phone why can't that be an AI system that says you know"
+      },
+      {
+        "start": 45932,
+        "stop": 46276,
+        "text": " we're calling you we got an answer they can understand basic language right yes"
+      },
+      {
+        "start": 46276,
+        "stop": 46702,
+        "text": " no confirm or it could even be a touch something you know text message type 1"
+      },
+      {
+        "start": 46702,
+        "stop": 47048,
+        "text": " to confirm your appointment that'd be great probably not gonna happen now that"
+      },
+      {
+        "start": 47048,
+        "stop": 47712,
+        "text": " Amazon is gutting their Alexa division cancel but I've my my soapbox and I"
+      },
+      {
+        "start": 47712,
+        "stop": 48024,
+        "text": " think you're talking to it you're speaking to it right now man has always"
+      },
+      {
+        "start": 48024,
+        "stop": 48656,
+        "text": " been these smart speakers these supposed assistants will be useful when my"
+      },
+      {
+        "start": 48656,
+        "stop": 49064,
+        "text": " assistant can contact your assistant and we can schedule something no cat when"
+      },
+      {
+        "start": 49064,
+        "stop": 49536,
+        "text": " Calendary is dead because people have lady cylinders and these lady cylinders"
+      },
+      {
+        "start": 49536,
+        "stop": 49848,
+        "text": " can auto schedule between each other using some kind of AI I'd love to see"
+      },
+      {
+        "start": 49848,
+        "stop": 50268,
+        "text": " that I think that'd be so useful I've wanted that for years they don't do it"
+      },
+      {
+        "start": 50268,
+        "stop": 50752,
+        "text": " just scheduling I mean how about this I never show up anyway but we have to go"
+      },
+      {
+        "start": 50752,
+        "stop": 51260,
+        "text": " through to schedule events right yeah yeah or even just when we were trying to"
+      },
+      {
+        "start": 51260,
+        "stop": 51712,
+        "text": " get the coderly sorted I mean I was my fault last time but you know but the two"
+      },
+      {
+        "start": 51712,
+        "stop": 52132,
+        "text": " times before it was mine so it was the right if our lady bots could just be"
+      },
+      {
+        "start": 52132,
+        "stop": 52624,
+        "text": " like hey Mike says he's free but I know for a fact he's not because he has this"
+      },
+      {
+        "start": 52624,
+        "stop": 53060,
+        "text": " you know demo he has to do or his kid has a doctor's appointment whatever the"
+      },
+      {
+        "start": 53060,
+        "stop": 53508,
+        "text": " reason happens to be well and again this is where like having my data like if"
+      },
+      {
+        "start": 53508,
+        "stop": 53900,
+        "text": " Google had my data like my location information and they knew my route from"
+      },
+      {
+        "start": 53900,
+        "stop": 54308,
+        "text": " like you know the dropping off the kid to home and they knew I'm 35 minutes out"
+      },
+      {
+        "start": 54308,
+        "stop": 54640,
+        "text": " and I have a meeting starting in 10 minutes they could have figured that out"
+      },
+      {
+        "start": 54640,
+        "stop": 54984,
+        "text": " and they could even send you a push notification first saying hey would you"
+      },
+      {
+        "start": 54984,
+        "stop": 55288,
+        "text": " like to notify Chris you're gonna be 35 minutes late or would you like to"
+      },
+      {
+        "start": 55288,
+        "stop": 55564,
+        "text": " reschedule you know and then the our assistants would communicate with each"
+      },
+      {
+        "start": 55564,
+        "stop": 55984,
+        "text": " other update my calendar it'd be simple and they have all the data and they have"
+      },
+      {
+        "start": 55984,
+        "stop": 56348,
+        "text": " all the resources but we just haven't connected the pieces and you know"
+      },
+      {
+        "start": 56348,
+        "stop": 56716,
+        "text": " they'll talk about this as AI I think you could also see it integrated into"
+      },
+      {
+        "start": 56716,
+        "stop": 57080,
+        "text": " something like WordPress or blogging platforms or something like peer tube"
+      },
+      {
+        "start": 57080,
+        "stop": 57708,
+        "text": " when you're doing your post you could just maybe even from the description"
+      },
+      {
+        "start": 57708,
+        "stop": 58172,
+        "text": " maybe it reads the article I don't know but it could generate imagery for you"
+      },
+      {
+        "start": 58172,
+        "stop": 58748,
+        "text": " because I think stock imagery it's AI generated is going to be very popular"
+      },
+      {
+        "start": 58748,
+        "stop": 58988,
+        "text": " and Shutterstock and others are already getting in on this game I mean that's"
+      },
+      {
+        "start": 58988,
+        "stop": 59376,
+        "text": " what I'm using it for I'm generating what is essentially stock imagery but"
+      },
+      {
+        "start": 59376,
+        "stop": 59696,
+        "text": " I'm just doing it for our peer tube instance because I just have a really"
+      },
+      {
+        "start": 59696,
+        "stop": 60252,
+        "text": " low-key approach to managing our peer tube setup and for me just generating a"
+      },
+      {
+        "start": 60252,
+        "stop": 60760,
+        "text": " unique AI image that maybe kind of implies what the shows about but"
+      },
+      {
+        "start": 60760,
+        "stop": 61236,
+        "text": " sometimes doesn't good enough I just need an image there yep I I briefly used"
+      },
+      {
+        "start": 61236,
+        "stop": 61708,
+        "text": " I forget the name of the platform but an AI service to do before I started using"
+      },
+      {
+        "start": 61708,
+        "stop": 62072,
+        "text": " my own account for everything that the Madbotter accounts Twitter crap right"
+      },
+      {
+        "start": 62072,
+        "stop": 62448,
+        "text": " like the you know the jokes the memes whatever to try to drum up followership"
+      },
+      {
+        "start": 62448,
+        "stop": 63132,
+        "text": " back when that was easier I would say it was good like 90% of the time every once"
+      },
+      {
+        "start": 63132,
+        "stop": 63576,
+        "text": " in a while it would get confused and like tweet the same thing twice but it"
+      },
+      {
+        "start": 63576,
+        "stop": 63932,
+        "text": " was pretty good right it was fine like the keywords I had were like Star Wars"
+      },
+      {
+        "start": 63932,
+        "stop": 64452,
+        "text": " and pH burden Python right or Star Wars and Ruby and some of them I did by hand"
+      },
+      {
+        "start": 64452,
+        "stop": 65008,
+        "text": " like I created a library of my hand for it to fall back on but it's it was good"
+      },
+      {
+        "start": 65008,
+        "stop": 65456,
+        "text": " for the 10 bucks a month I paid for it yeah the more I think about this the"
+      },
+      {
+        "start": 65456,
+        "stop": 65832,
+        "text": " more I think I'll use it as a tool myself yeah I just used it recently"
+      },
+      {
+        "start": 65832,
+        "stop": 66316,
+        "text": " because I want to rename office hours and if I rename it I have to come up"
+      },
+      {
+        "start": 66316,
+        "stop": 66700,
+        "text": " with new album art and trying to communicate especially when there's a"
+      },
+      {
+        "start": 66700,
+        "stop": 67328,
+        "text": " language barrier concepts when I don't really have a really sound idea myself"
+      },
+      {
+        "start": 67328,
+        "stop": 67684,
+        "text": " just not was not working I just wasn't making any progress so this is actually"
+      },
+      {
+        "start": 67684,
+        "stop": 68100,
+        "text": " why I was cranking through a ton of images recently with diffusion be is I"
+      },
+      {
+        "start": 68100,
+        "stop": 68620,
+        "text": " was just riffing on different ideas of trying to create album art of for the"
+      },
+      {
+        "start": 68620,
+        "stop": 69060,
+        "text": " new for the rename of office hours and you know took me a couple of hours of"
+      },
+      {
+        "start": 69060,
+        "stop": 69420,
+        "text": " tweaking it as a sort of a secondary thing I was doing while waited on other"
+      },
+      {
+        "start": 69420,
+        "stop": 70064,
+        "text": " things and it got us there it's not what we're gonna use but it got me a concept"
+      },
+      {
+        "start": 70064,
+        "stop": 70424,
+        "text": " that we could then communicate to the artist of kind of what we're going for"
+      },
+      {
+        "start": 70424,
+        "stop": 71024,
+        "text": " and that was huge for me because I was really struggling for days trying to"
+      },
+      {
+        "start": 71024,
+        "stop": 71386,
+        "text": " communicate with this individual and then you know after one afternoon I had"
+      },
+      {
+        "start": 71386,
+        "stop": 71708,
+        "text": " an image that really conveyed my whole idea and then they're gonna come back"
+      },
+      {
+        "start": 71708,
+        "stop": 72064,
+        "text": " ideally with something that's professional and actually usable we'll"
+      },
+      {
+        "start": 72064,
+        "stop": 72560,
+        "text": " see and I could see like just that kind of stuff you know even ideas of like"
+      },
+      {
+        "start": 72560,
+        "stop": 72908,
+        "text": " housing property like like you know pre rendering what something might look like"
+      },
+      {
+        "start": 72908,
+        "stop": 73296,
+        "text": " or a UI what it might look like who knows all right now get ready for this"
+      },
+      {
+        "start": 73296,
+        "stop": 73804,
+        "text": " one this is I think an El Spiso take and I I don't know why I was bad at grabbing"
+      },
+      {
+        "start": 73804,
+        "stop": 74240,
+        "text": " names this week I'll try to do better at that guys I apologize but we got an"
+      },
+      {
+        "start": 74240,
+        "stop": 74736,
+        "text": " email in and it was about gnome and getting a Mac this is quite the journey"
+      },
+      {
+        "start": 74736,
+        "stop": 75336,
+        "text": " says hey Chris and Mike as part of the perpetual I love this it is true as part"
+      },
+      {
+        "start": 75336,
+        "stop": 76000,
+        "text": " of the perpetual Apple arm saga today I have a story for you stay a while and"
+      },
+      {
+        "start": 76000,
+        "stop": 76420,
+        "text": " listen I've been a Linux user for 12 years at this point originally switched"
+      },
+      {
+        "start": 76420,
+        "stop": 77044,
+        "text": " from using Mac OS and as Mike does I to have fond memories of snow leopard"
+      },
+      {
+        "start": 77044,
+        "stop": 77700,
+        "text": " anyway I got a new job and they're giving us m2 MacBook pros I was kind of"
+      },
+      {
+        "start": 77700,
+        "stop": 78044,
+        "text": " afraid of this new Apple platform I was afraid it could really be a problem for"
+      },
+      {
+        "start": 78044,
+        "stop": 78488,
+        "text": " desktop Linux adoption too but since getting my hands on this Mac all my"
+      },
+      {
+        "start": 78488,
+        "stop": 79220,
+        "text": " fears are gone Mac OS is a train wreck he says it's a train wreck of usability"
+      },
+      {
+        "start": 79220,
+        "stop": 79780,
+        "text": " and overall it's a UX nightmare everything is out of place and things"
+      },
+      {
+        "start": 79780,
+        "stop": 80160,
+        "text": " you'd expect to behave in a certain way do a completely different thing I bet"
+      },
+      {
+        "start": 80160,
+        "stop": 80524,
+        "text": " he's thinking of maximize I could go on about everything the Mac does wrong but"
+      },
+      {
+        "start": 80524,
+        "stop": 80960,
+        "text": " I'll go with this one mission control is useless it doesn't show minimized"
+      },
+      {
+        "start": 80960,
+        "stop": 81632,
+        "text": " windows I'm happy to acknowledge that to this day gnome represents the pinnacle"
+      },
+      {
+        "start": 81632,
+        "stop": 82112,
+        "text": " of desktop UI and UX across the board and proprietary platforms like Mac OS"
+      },
+      {
+        "start": 82112,
+        "stop": 82644,
+        "text": " and Windows don't even come close I don't think we'll see any longtime Linux"
+      },
+      {
+        "start": 82644,
+        "stop": 83230,
+        "text": " users switch to a Mac anytime soon that said the m2 performance is actually"
+      },
+      {
+        "start": 83230,
+        "stop": 83776,
+        "text": " quite decent and it made me wish for a proper arm Linux laptop oh and fedora"
+      },
+      {
+        "start": 83776,
+        "stop": 84424,
+        "text": " runs great inside UTM by the way UTM is the free virtualization software on Mac"
+      },
+      {
+        "start": 84424,
+        "stop": 84756,
+        "text": " OS that I think uses the built-in hypervisor not as good as parallels but"
+      },
+      {
+        "start": 84756,
+        "stop": 85324,
+        "text": " quite good my personal opinion the pinnacle of desktop UI is gonna oh my"
+      },
+      {
+        "start": 85324,
+        "stop": 85960,
+        "text": " got to sit with that one for a moment I think you're right yep I think you're"
+      },
+      {
+        "start": 85960,
+        "stop": 86472,
+        "text": " right I think gnome is better designed than Mac OS and Windows by a wide margin"
+      },
+      {
+        "start": 86472,
+        "stop": 87528,
+        "text": " in fact gnome 43 is a real gem and I have no problems now putting it down in"
+      },
+      {
+        "start": 87528,
+        "stop": 87888,
+        "text": " front of family members and having them work with it that's my hot take I'm sure"
+      },
+      {
+        "start": 87888,
+        "stop": 88504,
+        "text": " Mike completely agrees I think it's pretty good right I will say switching"
+      },
+      {
+        "start": 88504,
+        "stop": 89076,
+        "text": " back and forth all the time now I find gnome cosmic to be much snappier"
+      },
+      {
+        "start": 89076,
+        "stop": 89616,
+        "text": " overall there's a lot of weirdness in Mac I think part of that is they I sort"
+      },
+      {
+        "start": 89616,
+        "stop": 89896,
+        "text": " of like Apple doesn't know what they want to do with it you know I mean"
+      },
+      {
+        "start": 89896,
+        "stop": 90456,
+        "text": " they're struggling to find that where does I iPad OS and Mac again yeah have"
+      },
+      {
+        "start": 90456,
+        "stop": 90860,
+        "text": " you tried stage manager in Ventura at all on the Mac I have not talented"
+      },
+      {
+        "start": 90860,
+        "stop": 91460,
+        "text": " venture I just upgraded my MacBook to venture last week and you know to"
+      },
+      {
+        "start": 91460,
+        "stop": 91836,
+        "text": " Apple's credit the upgrade went so dang smooth that it just seemed like a lot of"
+      },
+      {
+        "start": 91836,
+        "stop": 92276,
+        "text": " long reboots and then everything came back all my apps work all everything's in"
+      },
+      {
+        "start": 92276,
+        "stop": 92716,
+        "text": " the same spot all my all my settings remain the same so in that way it's nice"
+      },
+      {
+        "start": 92716,
+        "stop": 93128,
+        "text": " because that's really what you want on an update like that I turned on mission"
+      },
+      {
+        "start": 93128,
+        "stop": 93504,
+        "text": " no not mission control I'm sorry a stage manager for a hot minute just to see"
+      },
+      {
+        "start": 93504,
+        "stop": 93940,
+        "text": " what that's like and that is so ridiculous on large screen max it's so"
+      },
+      {
+        "start": 93940,
+        "stop": 94506,
+        "text": " stupid I don't know what they're thinking to me it's a sign that they"
+      },
+      {
+        "start": 94506,
+        "stop": 94976,
+        "text": " have no idea what to do with the Mac and that the Mac might have great hardware"
+      },
+      {
+        "start": 94976,
+        "stop": 95588,
+        "text": " right now but the software side is doomed it was ridiculous I could I'd"
+      },
+      {
+        "start": 95588,
+        "stop": 96084,
+        "text": " like to try it on an iPad say you have like a 27 inch wide monitor or larger I"
+      },
+      {
+        "start": 96084,
+        "stop": 96776,
+        "text": " do you can only have one window on that entire screen yeah that's that doesn't"
+      },
+      {
+        "start": 96776,
+        "stop": 97224,
+        "text": " make a ton of sense it's silly it's so silly and then you try to combine it"
+      },
+      {
+        "start": 97224,
+        "stop": 97748,
+        "text": " with the like other window manager features which are lacking and it's what"
+      },
+      {
+        "start": 97748,
+        "stop": 98264,
+        "text": " I would have loved for stage manager to be is basically baby's first window"
+      },
+      {
+        "start": 98264,
+        "stop": 98704,
+        "text": " tiling and you could just turn on baby's first window tiling the Fisher Price"
+      },
+      {
+        "start": 98704,
+        "stop": 99148,
+        "text": " window tiling on the space or whatever they call it but the virtual desktop"
+      },
+      {
+        "start": 99148,
+        "stop": 99532,
+        "text": " that you want it on and then you could have all your other virtual desktops"
+      },
+      {
+        "start": 99532,
+        "stop": 100040,
+        "text": " like regular Mac windows like they've been since the 80s but on one of your"
+      },
+      {
+        "start": 100040,
+        "stop": 100560,
+        "text": " desktops or on one of your monitors spaces or whatever they call it that one"
+      },
+      {
+        "start": 100560,
+        "stop": 100980,
+        "text": " would essentially auto tile whatever you put on there and stage manager would let"
+      },
+      {
+        "start": 100980,
+        "stop": 101214,
+        "text": " you flow through those somehow real easily I don't know what it would do"
+      },
+      {
+        "start": 101214,
+        "stop": 101820,
+        "text": " maybe you collect windows I don't know that is not what it is yeah so I just"
+      },
+      {
+        "start": 101820,
+        "stop": 102252,
+        "text": " have an upgraded for the very lame reason of when I upgrade Mac OS that"
+      },
+      {
+        "start": 102252,
+        "stop": 102618,
+        "text": " tends to break my Xcode install and home improvements oh yeah yeah it does I do"
+      },
+      {
+        "start": 102618,
+        "stop": 103000,
+        "text": " think you'll have to you know do the rigmarole there so right now I mainly"
+      },
+      {
+        "start": 103000,
+        "stop": 103710,
+        "text": " use this iMac Pro for iOS see Swifty stuff and it's really a very pretty"
+      },
+      {
+        "start": 103710,
+        "stop": 104276,
+        "text": " build machine in a lot of ways I I wait I wait till the absolute half to for my"
+      },
+      {
+        "start": 104276,
+        "stop": 104772,
+        "text": " work max I have one work back and I have that that laptop is like I decided to go"
+      },
+      {
+        "start": 104772,
+        "stop": 105092,
+        "text": " for it this time because I wanted to see if there was something worth talking"
+      },
+      {
+        "start": 105092,
+        "stop": 105604,
+        "text": " about on coder and I did it and I never brought it up until now because I just"
+      },
+      {
+        "start": 105604,
+        "stop": 105964,
+        "text": " didn't there's just nothing right and I was like all right there's a right stop"
+      },
+      {
+        "start": 105964,
+        "stop": 106348,
+        "text": " it I don't I don't use Xcode but if I did I I also would wait I just want the"
+      },
+      {
+        "start": 106348,
+        "stop": 106698,
+        "text": " emission tiling on the Mac it's five bucks but it's really good the magnet"
+      },
+      {
+        "start": 106698,
+        "stop": 107108,
+        "text": " app which has all kinds of tiling features and what I use on my max you"
+      },
+      {
+        "start": 107108,
+        "stop": 107440,
+        "text": " know I do have magnet I just never use the tiling stuff I should try that you"
+      },
+      {
+        "start": 107440,
+        "stop": 107886,
+        "text": " should try it once you learn the keyboard shortcuts it's really slick but again"
+      },
+      {
+        "start": 107886,
+        "stop": 108252,
+        "text": " it's you know it's something that you could tell it's not built into the OS"
+      },
+      {
+        "start": 108252,
+        "stop": 108664,
+        "text": " right like every once in a while you'll get a little that was a little spicy"
+      },
+      {
+        "start": 108664,
+        "stop": 109116,
+        "text": " what yeah yeah I would totally be down for that if I could also buy magnet and"
+      },
+      {
+        "start": 109116,
+        "stop": 109600,
+        "text": " installed on the Linux desktop quick recap I have three kids and they each"
+      },
+      {
+        "start": 109600,
+        "stop": 110046,
+        "text": " have laptops running Linux and my daughters run elementary OS just because"
+      },
+      {
+        "start": 110046,
+        "stop": 110516,
+        "text": " they're older installs based on 1804 so it's a pretty old original elementary"
+      },
+      {
+        "start": 110516,
+        "stop": 111072,
+        "text": " and then my son's on fedora because he has a newer gaming laptop that needed a"
+      },
+      {
+        "start": 111072,
+        "stop": 111528,
+        "text": " newer kernel for the Nvidia stuff and all the other crap that's in his machine"
+      },
+      {
+        "start": 111528,
+        "stop": 112068,
+        "text": " 1804 based systems don't even boot on it and it has steadily been falling apart"
+      },
+      {
+        "start": 112068,
+        "stop": 112676,
+        "text": " on me and it's kind of been an interesting examination of the Linux"
+      },
+      {
+        "start": 112676,
+        "stop": 113090,
+        "text": " desktop on modern hardware where I told him to go ahead and install all the"
+      },
+      {
+        "start": 113090,
+        "stop": 113608,
+        "text": " updates and he has like a copper repository for Java and that's about it"
+      },
+      {
+        "start": 113608,
+        "stop": 114028,
+        "text": " but even in that just sort of fairly vanilla setup with that exception of"
+      },
+      {
+        "start": 114028,
+        "stop": 114492,
+        "text": " that one copper repository overtime is installed has just been falling apart it"
+      },
+      {
+        "start": 114492,
+        "stop": 114950,
+        "text": " doesn't sleep anymore when you close the lid it's constantly got processes pegging"
+      },
+      {
+        "start": 114950,
+        "stop": 115560,
+        "text": " one of the cores it won't actually it'll hang it shut down now and no matter what"
+      },
+      {
+        "start": 115560,
+        "stop": 116050,
+        "text": " I do aside from just a new can pave I cannot get the Nvidia driver to work in"
+      },
+      {
+        "start": 116050,
+        "stop": 116548,
+        "text": " his install it just segfault at boot for some reason doesn't do this on other"
+      },
+      {
+        "start": 116548,
+        "stop": 116930,
+        "text": " distros it wasn't doing this for months and all of a sudden his Nvidia driver"
+      },
+      {
+        "start": 116930,
+        "stop": 117316,
+        "text": " literally crashes at boot and then the system falls back to the open source"
+      },
+      {
+        "start": 117316,
+        "stop": 117734,
+        "text": " driver and it's just completely unacceptable I mean I love the fedora"
+      },
+      {
+        "start": 117734,
+        "stop": 118044,
+        "text": " project but I just I'm not gonna use this as a family system maybe it'll"
+      },
+      {
+        "start": 118044,
+        "stop": 118464,
+        "text": " still be one of my favorite desktops but I don't think it's gonna work for my"
+      },
+      {
+        "start": 118464,
+        "stop": 118788,
+        "text": " kids and I've been trying to think about what to do here and listener Chris wrote"
+      },
+      {
+        "start": 118788,
+        "stop": 119176,
+        "text": " in it's our last email today he says hey Mike and Chris longtime listener first"
+      },
+      {
+        "start": 119176,
+        "stop": 119492,
+        "text": " time caller I completely agree with everything Chris has been talking about"
+      },
+      {
+        "start": 119492,
+        "stop": 119972,
+        "text": " with Nick's OS and I'm fully on the bandwagon as a few months ago what I"
+      },
+      {
+        "start": 119972,
+        "stop": 120552,
+        "text": " didn't expect however was from my mother in her early 60s to find gnome on Nick's"
+      },
+      {
+        "start": 120552,
+        "stop": 121080,
+        "text": " to be intuitive and easier to use than Windows I work for an MSP and there was"
+      },
+      {
+        "start": 121080,
+        "stop": 121516,
+        "text": " an older HP Elite book in the recycle pile from a company that is one of our"
+      },
+      {
+        "start": 121516,
+        "stop": 121890,
+        "text": " clients so I was able to repurpose it with Nick's for myself and when my mom"
+      },
+      {
+        "start": 121890,
+        "stop": 122294,
+        "text": " needed a new machine I thought to myself well the next laptop with a ton IO would"
+      },
+      {
+        "start": 122294,
+        "stop": 122786,
+        "text": " be amazing so I thought let's try it next on my list now is to be an"
+      },
+      {
+        "start": 122786,
+        "stop": 123176,
+        "text": " experiment with podcasting to Rado and send some sats your way next time well"
+      },
+      {
+        "start": 123176,
+        "stop": 123424,
+        "text": " thank you Chris love all the shows appreciate the work you do for the"
+      },
+      {
+        "start": 123424,
+        "stop": 123924,
+        "text": " community here's what I'm thinking with Nick's OS you can build a really lean"
+      },
+      {
+        "start": 123924,
+        "stop": 124488,
+        "text": " mean purpose-built machine and it could just be a static base OS that maybe dad"
+      },
+      {
+        "start": 124488,
+        "stop": 124908,
+        "text": " upgrades I come in there every couple of months even maybe I don't touch it for"
+      },
+      {
+        "start": 124908,
+        "stop": 125564,
+        "text": " three months at a time and I I build the base OS for them and they just install"
+      },
+      {
+        "start": 125564,
+        "stop": 125828,
+        "text": " everything through flat packs and essentially run it as an immutable"
+      },
+      {
+        "start": 125828,
+        "stop": 126396,
+        "text": " system and I don't know but that might be the direction I might go for like my"
+      },
+      {
+        "start": 126396,
+        "stop": 126796,
+        "text": " OBS machine - this might become like my new setup is kind of this immutable"
+      },
+      {
+        "start": 126796,
+        "stop": 127476,
+        "text": " setup that supports rollbacks and the base system can be pretty consistent"
+      },
+      {
+        "start": 127476,
+        "stop": 127832,
+        "text": " especially if you use something like the LTS kernel I'm not installing updates"
+      },
+      {
+        "start": 127832,
+        "stop": 128176,
+        "text": " constantly via the base package manager I'm mostly updating the user land via"
+      },
+      {
+        "start": 128176,
+        "stop": 128704,
+        "text": " flat pack which means the libraries are self-contained frameworks are"
+      },
+      {
+        "start": 128704,
+        "stop": 129116,
+        "text": " self-contained the binary self-contained it's independent of the base OS it's"
+      },
+      {
+        "start": 129116,
+        "stop": 129596,
+        "text": " kind of like the idea that you do for a lot of container based workloads where"
+      },
+      {
+        "start": 129596,
+        "stop": 129944,
+        "text": " you have a bare OS and you run everything in containers only in this"
+      },
+      {
+        "start": 129944,
+        "stop": 130340,
+        "text": " scenario for desktops the flat pack is the containers that is instead of"
+      },
+      {
+        "start": 130340,
+        "stop": 130836,
+        "text": " something like Docker and I think with Linux you could get near damn"
+      },
+      {
+        "start": 130836,
+        "stop": 131164,
+        "text": " bulletproof with this as long as your hardware solid and you got drivers for"
+      },
+      {
+        "start": 131164,
+        "stop": 131592,
+        "text": " everything if you do something like a silver blue or a Nick's OS immutable"
+      },
+      {
+        "start": 131592,
+        "stop": 132304,
+        "text": " base and then you roll your user land applications this could really be solid"
+      },
+      {
+        "start": 132304,
+        "stop": 132672,
+        "text": " and the nice thing of the reason why I tip towards Nick's it's because I"
+      },
+      {
+        "start": 132672,
+        "stop": 133080,
+        "text": " believe you could come in a month or two later with never touching any updates"
+      },
+      {
+        "start": 133080,
+        "stop": 133820,
+        "text": " and just roll it rebuild it pull in all the updates and it won't kick over"
+      },
+      {
+        "start": 133820,
+        "stop": 134444,
+        "text": " unless everything passes go it will do a sanity check on everything but if"
+      },
+      {
+        "start": 134444,
+        "stop": 134784,
+        "text": " something is like incompatible so say everything technically is fine it passes"
+      },
+      {
+        "start": 134784,
+        "stop": 135152,
+        "text": " checks and it installs but then there's just some technical incompatibility"
+      },
+      {
+        "start": 135152,
+        "stop": 135680,
+        "text": " between applications in a library or or some made-up scenario at the grub menu"
+      },
+      {
+        "start": 135680,
+        "stop": 136000,
+        "text": " you can just go to your last good instance you just roll back one and"
+      },
+      {
+        "start": 136000,
+        "stop": 136364,
+        "text": " you're instantly back in the environment that worked I just recently had a kernel"
+      },
+      {
+        "start": 136364,
+        "stop": 136948,
+        "text": " update that broke my Intel sound card on my thinkpad and I thought about trying"
+      },
+      {
+        "start": 136948,
+        "stop": 137184,
+        "text": " to fix it I was like you know it's great I don't got time for this I just reboot"
+      },
+      {
+        "start": 137184,
+        "stop": 137720,
+        "text": " it I went back one revision of my system and my sound card worked and it was"
+      },
+      {
+        "start": 137720,
+        "stop": 138056,
+        "text": " completely clean everything was just fine man that's I think that's the way"
+      },
+      {
+        "start": 138056,
+        "stop": 138348,
+        "text": " to go that's why I'm so hyped about Nick's right now and they have a"
+      },
+      {
+        "start": 138348,
+        "stop": 139016,
+        "text": " graphical installer so you can download a gnome or plasma ISO and you can choose"
+      },
+      {
+        "start": 139016,
+        "stop": 139400,
+        "text": " basically any desktop you want they give you a long list and it will set up a"
+      },
+      {
+        "start": 139400,
+        "stop": 140016,
+        "text": " real basic Nick's OS config for you and a basic desktop environment and I I do"
+      },
+      {
+        "start": 140016,
+        "stop": 140340,
+        "text": " have to warn you it's very very different kind of Linux it's a totally"
+      },
+      {
+        "start": 140340,
+        "stop": 140604,
+        "text": " different kind of file system totally different way of installing applications"
+      },
+      {
+        "start": 140604,
+        "stop": 141156,
+        "text": " you don't just download binaries and run them or anything like that but what you"
+      },
+      {
+        "start": 141156,
+        "stop": 141532,
+        "text": " get is a totally controllable system that is a that is like something you"
+      },
+      {
+        "start": 141532,
+        "stop": 142072,
+        "text": " could use as an IOT device as well or I think a VPS instance we have a Knicks our"
+      },
+      {
+        "start": 142072,
+        "stop": 142680,
+        "text": " Jupiter tube peer tube server is running on a Knicks OS server on Linux so I'm"
+      },
+      {
+        "start": 142680,
+        "stop": 143148,
+        "text": " really I really feel like this is a good direction for Linux and it really"
+      },
+      {
+        "start": 143148,
+        "stop": 143536,
+        "text": " compensates for some of the compromises you have to make when using Linux so I'm"
+      },
+      {
+        "start": 143536,
+        "stop": 144324,
+        "text": " very excited very bullish oh careful Kramer"
+      },
+      {
+        "start": 144324,
+        "stop": 144892,
+        "text": " linode.com slash coder that's where you go to get $100 in 60-day credit on a new"
+      },
+      {
+        "start": 144892,
+        "stop": 145164,
+        "text": " account and it's a great way to support the show while you're checking out the"
+      },
+      {
+        "start": 145164,
+        "stop": 145540,
+        "text": " cloud that has been built for developers and businesses that just don't want the"
+      },
+      {
+        "start": 145540,
+        "stop": 145976,
+        "text": " complexities of hyperscalers and don't need their endless options you want"
+      },
+      {
+        "start": 145976,
+        "stop": 146400,
+        "text": " something that is laser focused simple affordable and accessible to deploy and"
+      },
+      {
+        "start": 146400,
+        "stop": 146788,
+        "text": " manage your projects in the cloud or maybe it's your customers projects or"
+      },
+      {
+        "start": 146788,
+        "stop": 147312,
+        "text": " maybe it's just a small site for yourself Leno does it at a better price"
+      },
+      {
+        "start": 147312,
+        "stop": 147932,
+        "text": " and better performance you know I was mentioning diffusion be on my m1 well"
+      },
+      {
+        "start": 147932,
+        "stop": 148288,
+        "text": " the real experience is actually using one of the many containers that are out"
+      },
+      {
+        "start": 148288,
+        "stop": 148972,
+        "text": " there and deploying that deep fusion stuff on the Leno GPU rig holy smokes"
+      },
+      {
+        "start": 148972,
+        "stop": 149504,
+        "text": " does it just scream I mean it is way faster than doing it on the m1 max book"
+      },
+      {
+        "start": 149504,
+        "stop": 149940,
+        "text": " ultra whatever and you know little it has fantastic customer support so if you"
+      },
+      {
+        "start": 149940,
+        "stop": 150302,
+        "text": " want to put your business infrastructure on there like we do you're gonna be"
+      },
+      {
+        "start": 150302,
+        "stop": 150610,
+        "text": " covered there but maybe you just want to do a gaming system maybe you just want"
+      },
+      {
+        "start": 150610,
+        "stop": 151124,
+        "text": " to practice running gitlab lots of educational opportunities it's great for"
+      },
+      {
+        "start": 151124,
+        "stop": 151396,
+        "text": " that you get that hundred dollars and you can really kick the tires and build"
+      },
+      {
+        "start": 151396,
+        "stop": 151736,
+        "text": " anything you want they got great performance they have 11 data centers"
+      },
+      {
+        "start": 151736,
+        "stop": 152174,
+        "text": " next year they're gonna add another dozen they are their own ISP so their"
+      },
+      {
+        "start": 152174,
+        "stop": 152520,
+        "text": " connections are super fast and they have great features like object storage and"
+      },
+      {
+        "start": 152520,
+        "stop": 153076,
+        "text": " cloud firewall really clear easy to use backups a nice clean API all of that"
+      },
+      {
+        "start": 153076,
+        "stop": 153516,
+        "text": " stuff we use just more and more all the time that's the stuff that as we've used"
+      },
+      {
+        "start": 153516,
+        "stop": 153912,
+        "text": " Linode over the last few years that's the stuff I really appreciated and the"
+      },
+      {
+        "start": 153912,
+        "stop": 154336,
+        "text": " performance and the reliability is just so solid there so go build something go"
+      },
+      {
+        "start": 154336,
+        "stop": 154692,
+        "text": " learn something and try it for yourself while you support the show go to linode.com/coder"
+      },
+      {
+        "start": 154692,
+        "stop": 155148,
+        "text": " get that hundred dollars and sixty day credit and support the show"
+      },
+      {
+        "start": 155148,
+        "stop": 155492,
+        "text": " it's linode.com/coder"
+      },
+      {
+        "start": 155492,
+        "stop": 155936,
+        "text": " alright we've debated covering this but we"
+      },
+      {
+        "start": 155936,
+        "stop": 156356,
+        "text": " discussed in the coderly and we kind of came to a conclusion that the story"
+      },
+      {
+        "start": 156356,
+        "stop": 157072,
+        "text": " around FTX and Sam Bankman-Fried does have a coder tie-in in fact I think you"
+      },
+      {
+        "start": 157072,
+        "stop": 157536,
+        "text": " could argue it represents the peak of what we've been talking about since"
+      },
+      {
+        "start": 157536,
+        "stop": 158044,
+        "text": " about August when it comes to tech funding weak leadership that didn't have"
+      },
+      {
+        "start": 158044,
+        "stop": 158668,
+        "text": " to pass any kind of actual structural checks and of course web3 scams that"
+      },
+      {
+        "start": 158668,
+        "stop": 159262,
+        "text": " we've been talking about regulation moats all of it spinning narratives to"
+      },
+      {
+        "start": 159262,
+        "stop": 159766,
+        "text": " the media it all comes together in FTX and I've noticed you've kind of taken"
+      },
+      {
+        "start": 159766,
+        "stop": 160206,
+        "text": " the route of going into the docks you're like reading the receipts reading the"
+      },
+      {
+        "start": 160206,
+        "stop": 160708,
+        "text": " affidavits I know you're finding some spicy stuff in there yeah the problem is"
+      },
+      {
+        "start": 160708,
+        "stop": 161182,
+        "text": " it's so spicy that I don't even know where the meat is it's just spice at"
+      },
+      {
+        "start": 161182,
+        "stop": 161856,
+        "text": " this point so the affidavit from the guy who is taken over to restructure it i.e."
+      },
+      {
+        "start": 161856,
+        "stop": 162252,
+        "text": " the dude who had to do this for Enron we talked about this a little last week but"
+      },
+      {
+        "start": 162252,
+        "stop": 162738,
+        "text": " he basically comes out and says this is worse than Enron a lot worse what the"
+      },
+      {
+        "start": 162738,
+        "stop": 163620,
+        "text": " hell yeah then because I'm a sick puppy like my barking dogs out there I decided"
+      },
+      {
+        "start": 163620,
+        "stop": 164662,
+        "text": " to read the so-called balance sheet that they put out FTX put out first of all"
+      },
+      {
+        "start": 164662,
+        "stop": 165168,
+        "text": " wow well you know what let's just read you the quote they owe more than three"
+      },
+      {
+        "start": 165168,
+        "stop": 165600,
+        "text": " billion dollars to their 50 biggest creditors well first of all they don't"
+      },
+      {
+        "start": 165600,
+        "stop": 165930,
+        "text": " know who their top creditors are yeah which is amazing for someone filing"
+      },
+      {
+        "start": 165930,
+        "stop": 166396,
+        "text": " things well do they do they now they've said they will reveal them so there's"
+      },
+      {
+        "start": 166396,
+        "stop": 166768,
+        "text": " like there's a lot of bullshit going on here right right there's a lot of"
+      },
+      {
+        "start": 166768,
+        "stop": 167368,
+        "text": " misdirection where to start everything about this is weird right it's weird"
+      },
+      {
+        "start": 167368,
+        "stop": 167784,
+        "text": " that it took so long for them to file this affidavit yeah and the reason given"
+      },
+      {
+        "start": 167784,
+        "stop": 168224,
+        "text": " it it's just that it was so forked up that this dude couldn't figure out what"
+      },
+      {
+        "start": 168224,
+        "stop": 168728,
+        "text": " was going on this dude whose entire long you know 20-something long career doing"
+      },
+      {
+        "start": 168728,
+        "stop": 169096,
+        "text": " this is dealing with screwed up mismanaged fraudulent companies right"
+      },
+      {
+        "start": 169096,
+        "stop": 169644,
+        "text": " including Enron again yes Enron well-known awesome accounting company"
+      },
+      {
+        "start": 169644,
+        "stop": 170376,
+        "text": " you know super good with their books all right so they had a loss in this"
+      },
+      {
+        "start": 170376,
+        "stop": 171100,
+        "text": " balance sheet this is their label this is what FBX put themselves not under"
+      },
+      {
+        "start": 171100,
+        "stop": 171768,
+        "text": " duress hidden poorly internally labeled fiat currency accounts that's their"
+      },
+      {
+        "start": 171768,
+        "stop": 172170,
+        "text": " that's their balance sheet label for it it for poorly hidden fiat accounts or"
+      },
+      {
+        "start": 172170,
+        "stop": 172908,
+        "text": " something hidden comma poorly poorly internally labeled fiat currency hidden"
+      },
+      {
+        "start": 172908,
+        "stop": 173480,
+        "text": " from whom first of all from yourself which seems to be the answer like they"
+      },
+      {
+        "start": 173480,
+        "stop": 173964,
+        "text": " didn't know where the accounts were but they're all apparently in the red it's"
+      },
+      {
+        "start": 173964,
+        "stop": 174404,
+        "text": " only it's not a lot of money it's only eight billion dollars so that's fabulous"
+      },
+      {
+        "start": 174404,
+        "stop": 175144,
+        "text": " that's just great and some of the the related party transactions regarding"
+      },
+      {
+        "start": 175144,
+        "stop": 175826,
+        "text": " Alameda Research which was owned by FSB controlled at least by FSB FTX the FSB"
+      },
+      {
+        "start": 175826,
+        "stop": 176264,
+        "text": " is your Russian buddies no you know it they would not have messed this up I"
+      },
+      {
+        "start": 176264,
+        "stop": 176594,
+        "text": " just want to give it to the call right yeah what do you mean you don't know"
+      },
+      {
+        "start": 176594,
+        "stop": 177040,
+        "text": " where the account is we don't everybody's account is that it was not"
+      },
+      {
+        "start": 177040,
+        "stop": 177634,
+        "text": " the Russian Secret Service fair enough he thought it was okay to dip into"
+      },
+      {
+        "start": 177634,
+        "stop": 178552,
+        "text": " customer accounts effectively deposits right send that money to Alameda"
+      },
+      {
+        "start": 178552,
+        "stop": 179154,
+        "text": " Research his own hedgie fund right it's a little hedge fund like thing and go"
+      },
+      {
+        "start": 179154,
+        "stop": 179816,
+        "text": " super long super bullish on crypto yeah really crap dude just junk everything"
+      },
+      {
+        "start": 179816,
+        "stop": 180416,
+        "text": " about that is wrong right everything about that's wrong it gets worse when"
+      },
+      {
+        "start": 180416,
+        "stop": 180790,
+        "text": " you listen or read some of the transcripts of recent interviews that"
+      },
+      {
+        "start": 180790,
+        "stop": 181514,
+        "text": " mean that SFB did very different than FSB SFB yes so you got SBF Sam Bankman"
+      },
+      {
+        "start": 181514,
+        "stop": 182096,
+        "text": " freed and FTX or it's just Sam I guess you could just call him Sam let's just"
+      },
+      {
+        "start": 182096,
+        "stop": 182490,
+        "text": " call him let's just call him Sammy burn burn the benny's that's what Sam Bank"
+      },
+      {
+        "start": 182490,
+        "stop": 183224,
+        "text": " fraud yeah say a bank fraud this is Jersey Street in this interview he goes"
+      },
+      {
+        "start": 183224,
+        "stop": 183902,
+        "text": " the interviewer asked why did you bail out this other you know a token token"
+      },
+      {
+        "start": 183902,
+        "stop": 184410,
+        "text": " company he said well what I like to do and he's just like swinging a big"
+      },
+      {
+        "start": 184410,
+        "stop": 184938,
+        "text": " rooster around what I like to do is I like to wait till they're just about at"
+      },
+      {
+        "start": 184938,
+        "stop": 185424,
+        "text": " zero and they're desperate and then I buy him out you know and then what"
+      },
+      {
+        "start": 185424,
+        "stop": 185786,
+        "text": " happens if you don't do that the reporter correctly asked and he says well"
+      },
+      {
+        "start": 185786,
+        "stop": 186182,
+        "text": " you know they might like you know dump in a customer dip in a customer accounts"
+      },
+      {
+        "start": 186182,
+        "stop": 186610,
+        "text": " for liquidity or ie take their customers deposits and use them for operations"
+      },
+      {
+        "start": 186610,
+        "stop": 187362,
+        "text": " which is bad he quickly fumbles on that because turns out at the time he was"
+      },
+      {
+        "start": 187362,
+        "stop": 187894,
+        "text": " giving this interview talking about how much of a baller he was he was doing"
+      },
+      {
+        "start": 187894,
+        "stop": 188402,
+        "text": " exactly the thing that you're not supposed to do don't we we always hear"
+      },
+      {
+        "start": 188402,
+        "stop": 188778,
+        "text": " that in these stories right that they are they almost end up essentially it's"
+      },
+      {
+        "start": 188778,
+        "stop": 189306,
+        "text": " a form of projection that they're doing right it's it's just the like you know a"
+      },
+      {
+        "start": 189306,
+        "stop": 189614,
+        "text": " lot of people a lot of journalists like going off on the whole weird orgy stuff"
+      },
+      {
+        "start": 189614,
+        "stop": 190094,
+        "text": " I don't give a crap what he does in his bedroom really but one he might get away"
+      },
+      {
+        "start": 190094,
+        "stop": 190606,
+        "text": " with this he may not have committed any actual crimes here which that's up for"
+      },
+      {
+        "start": 190606,
+        "stop": 191014,
+        "text": " many angry you know Southern District of New York lawyers to figure out a way to"
+      },
+      {
+        "start": 191014,
+        "stop": 191422,
+        "text": " prosecute if they want to and I think we have to remember this is in the Bahamas"
+      },
+      {
+        "start": 191422,
+        "stop": 191862,
+        "text": " right so yeah but the money if the money flew through the u.s. they they could"
+      },
+      {
+        "start": 191862,
+        "stop": 192758,
+        "text": " still get them so it's just a complete failure of both basic you're in junior"
+      },
+      {
+        "start": 192758,
+        "stop": 193410,
+        "text": " college first year remedial business class and also what the hell was Kleiner"
+      },
+      {
+        "start": 193410,
+        "stop": 194042,
+        "text": " doing in this deal what it's wild because it I honestly think and I hate I"
+      },
+      {
+        "start": 194042,
+        "stop": 194494,
+        "text": " hate to be that guy so I was starting to sound a lot like Scott Galloway that is"
+      },
+      {
+        "start": 194494,
+        "stop": 194978,
+        "text": " because he looks the part he looks like Michael Cera Mark Zuckerberg and they"
+      },
+      {
+        "start": 194978,
+        "stop": 195466,
+        "text": " and he talked about oh I forgot let's not forget his wonderful DMS on Twitter"
+      },
+      {
+        "start": 195466,
+        "stop": 195786,
+        "text": " to the journalists where he talks about it's all shit and he has to say the"
+      },
+      {
+        "start": 195786,
+        "stop": 196202,
+        "text": " right quote shivalets to you know pull the wool over everybody's eyes"
+      },
+      {
+        "start": 196202,
+        "stop": 196730,
+        "text": " effectively like he's just admitting it just straight up yeah it was all bull"
+      },
+      {
+        "start": 196730,
+        "stop": 197138,
+        "text": " it's almost braggadocious about it I don't even understand and this is just"
+      },
+      {
+        "start": 197138,
+        "stop": 197766,
+        "text": " the iceberg and yet Elizabeth Holmes is going to prison for over 11 years this"
+      },
+      {
+        "start": 197766,
+        "stop": 198310,
+        "text": " guy's probably not Adam Neumann got nothing right actually he made money I"
+      },
+      {
+        "start": 198310,
+        "stop": 198826,
+        "text": " don't know like I I this is I know I got a lot of crap for saying this before but"
+      },
+      {
+        "start": 198826,
+        "stop": 199218,
+        "text": " there's a difference between trying to actually do something and build"
+      },
+      {
+        "start": 199218,
+        "stop": 199562,
+        "text": " something and ending up in a situation where you went over the line and did"
+      },
+      {
+        "start": 199562,
+        "stop": 200182,
+        "text": " commit fraud then just being a straight-up open fraud right literally I"
+      },
+      {
+        "start": 200182,
+        "stop": 200882,
+        "text": " it was a it was a scam from cradle to grave yes yeah let's at least we work"
+      },
+      {
+        "start": 200882,
+        "stop": 201602,
+        "text": " and Theranos tried right and I would argue that yeah you know if you can"
+      },
+      {
+        "start": 201602,
+        "stop": 202046,
+        "text": " because remember Elizabeth Holmes did not get convicted of anything to do"
+      },
+      {
+        "start": 202046,
+        "stop": 202342,
+        "text": " that's what people will say right that's what they always say well she could have"
+      },
+      {
+        "start": 202342,
+        "stop": 202710,
+        "text": " hurt patients it wasn't even charged with that because there's no case there"
+      },
+      {
+        "start": 202710,
+        "stop": 203198,
+        "text": " it's I mean I think it should have been illegal but it's not from what I can see"
+      },
+      {
+        "start": 203198,
+        "stop": 203808,
+        "text": " this guy he might only get indicted because he lost rich people money he"
+      },
+      {
+        "start": 203808,
+        "stop": 204180,
+        "text": " lost a bunch of VCs and hedge funds money if he pulled an Adam Neumann and"
+      },
+      {
+        "start": 204180,
+        "stop": 204686,
+        "text": " they all got their money back I think he does it again you're talking about Sam"
+      },
+      {
+        "start": 204686,
+        "stop": 205128,
+        "text": " you think Sam I'm talking about Sammy Sammy yeah Sammy to Sammy bank fraud yeah"
+      },
+      {
+        "start": 205128,
+        "stop": 205738,
+        "text": " I yeah I wonder you know he gave something like 70 mil to Democrats and"
+      },
+      {
+        "start": 205738,
+        "stop": 206154,
+        "text": " FTX gave something like 30 mil to Republicans so they really greased a lot"
+      },
+      {
+        "start": 206154,
+        "stop": 206634,
+        "text": " of pockets always a great choice I feel like we've lost touch with the numbers"
+      },
+      {
+        "start": 206634,
+        "stop": 207156,
+        "text": " on this story a little bit I mean the dollar amounts I just rattled off are"
+      },
+      {
+        "start": 207156,
+        "stop": 207796,
+        "text": " unbelievable right like they could probably provide housing for homeless in"
+      },
+      {
+        "start": 207796,
+        "stop": 208176,
+        "text": " some state somewhere in the country like it's an unbelievable amount of money"
+      },
+      {
+        "start": 208176,
+        "stop": 208548,
+        "text": " we're talking about here oh yeah he was in Congress right as the face of"
+      },
+      {
+        "start": 208548,
+        "stop": 208888,
+        "text": " responsible crypto or whatever they yeah so that seems like there's two routes"
+      },
+      {
+        "start": 208888,
+        "stop": 209472,
+        "text": " one route you know he he gets some of the money back he gets a slap on the"
+      },
+      {
+        "start": 209472,
+        "stop": 210060,
+        "text": " wrist and he goes out continues to do his thing basically kind of becomes some"
+      },
+      {
+        "start": 210060,
+        "stop": 210844,
+        "text": " kind of weird gross celebrity route two is like your Maxine Waters and your"
+      },
+      {
+        "start": 210844,
+        "stop": 211546,
+        "text": " other politicians who were photographed with Sam a lot may want to make an"
+      },
+      {
+        "start": 211546,
+        "stop": 211950,
+        "text": " example out of them and show that they can't be bought and they may want to go"
+      },
+      {
+        "start": 211950,
+        "stop": 212338,
+        "text": " hard they may really go after him I doubt it because his parents are well"
+      },
+      {
+        "start": 212338,
+        "stop": 212912,
+        "text": " connected to but it's a possible theory but you're betting on he essentially"
+      },
+      {
+        "start": 212912,
+        "stop": 213322,
+        "text": " just gets a slap on the wrist scenario well so the most analogous case that"
+      },
+      {
+        "start": 213322,
+        "stop": 213848,
+        "text": " we've had recently is is farmer bro who did something very similar to this right"
+      },
+      {
+        "start": 213848,
+        "stop": 214360,
+        "text": " took one money out of the profitable enterprise to cover his what do you know"
+      },
+      {
+        "start": 214360,
+        "stop": 214836,
+        "text": " investment gambling that's right if he had a little hedge fund bull to his ex"
+      },
+      {
+        "start": 214836,
+        "stop": 215284,
+        "text": " partners I mean I said at the time and I still think if he had shut up and"
+      },
+      {
+        "start": 215284,
+        "stop": 215842,
+        "text": " not like bought a Wu Tang client CD and not been so gleefully raising prices on"
+      },
+      {
+        "start": 215842,
+        "stop": 216250,
+        "text": " insulin and other life-saving medications he probably never would have"
+      },
+      {
+        "start": 216250,
+        "stop": 216664,
+        "text": " been indicted right so to me I don't know what's gonna happen here I don't"
+      },
+      {
+        "start": 216664,
+        "stop": 217284,
+        "text": " have a good prediction I think this is a test case for again to use a Sammy Boyes"
+      },
+      {
+        "start": 217284,
+        "stop": 217796,
+        "text": " phrasing are the shibboleths gonna protect him I think they might there's"
+      },
+      {
+        "start": 217796,
+        "stop": 218280,
+        "text": " also the clear regulatory moat that he seemed to be attempting to build with"
+      },
+      {
+        "start": 218280,
+        "stop": 218608,
+        "text": " this money I think that's what this money was the Bahamas right he's he's"
+      },
+      {
+        "start": 218608,
+        "stop": 218968,
+        "text": " trying to say that being in the Bahamas is a shield well and he was also I mean"
+      },
+      {
+        "start": 218968,
+        "stop": 219272,
+        "text": " he was he's living in the Bahamas working at the Bahamas but he's"
+      },
+      {
+        "start": 219272,
+        "stop": 219600,
+        "text": " spending like 60 million dollars on politicians in the last year and he's"
+      },
+      {
+        "start": 219600,
+        "stop": 220076,
+        "text": " visiting with Gary of the SEC the guy that runs the SEC he's trying to build a"
+      },
+      {
+        "start": 220076,
+        "stop": 220700,
+        "text": " regulatory moat that basically makes FTX the blessed crypto exchange of the"
+      },
+      {
+        "start": 220700,
+        "stop": 221124,
+        "text": " regulated crypto industry and that's why he was attacked that's why all of this"
+      },
+      {
+        "start": 221124,
+        "stop": 221484,
+        "text": " began that's why his competitor leaked the balance sheet is because Sam was"
+      },
+      {
+        "start": 221484,
+        "stop": 221952,
+        "text": " attempting to build a regulatory moat around him and his competition knew that"
+      },
+      {
+        "start": 221952,
+        "stop": 222440,
+        "text": " he had paper hands and so they took their shot and unfortunately he was a"
+      },
+      {
+        "start": 222440,
+        "stop": 222748,
+        "text": " head it was a headshot and I don't think I think they were going for like a leg"
+      },
+      {
+        "start": 222748,
+        "stop": 223264,
+        "text": " shot and they instead got a headshot and you know that's it was this whole"
+      },
+      {
+        "start": 223264,
+        "stop": 223624,
+        "text": " regulatory strategy that Sam was embarking on that triggered this whole"
+      },
+      {
+        "start": 223624,
+        "stop": 223984,
+        "text": " fiasco well reveal the whole fiasco right he wanted he wanted to lock it's"
+      },
+      {
+        "start": 223984,
+        "stop": 224312,
+        "text": " like Facebook's asking for regulation right you want to stop anyone from"
+      },
+      {
+        "start": 224312,
+        "stop": 224864,
+        "text": " challenging the problem was I mean okay devil's advocate it might be true that"
+      },
+      {
+        "start": 224864,
+        "stop": 225440,
+        "text": " this guy really didn't know just how horrible shape his business was in right"
+      },
+      {
+        "start": 225440,
+        "stop": 225880,
+        "text": " like that's his defense well it's very possible their books were crap they were"
+      },
+      {
+        "start": 225880,
+        "stop": 226260,
+        "text": " mixing funds they were mixing business and customer funds in some just one"
+      },
+      {
+        "start": 226260,
+        "stop": 226716,
+        "text": " large account well he knew he knew he was doing that though so at that"
+      },
+      {
+        "start": 226716,
+        "stop": 226984,
+        "text": " juncture when you already know that you're you're doing that kind of"
+      },
+      {
+        "start": 226984,
+        "stop": 227544,
+        "text": " commingling how could you think things were going well like I feel like you're"
+      },
+      {
+        "start": 227544,
+        "stop": 228196,
+        "text": " right that the the CZ dude did this on purpose but I don't think anybody he"
+      },
+      {
+        "start": 228196,
+        "stop": 228592,
+        "text": " certainly CZ certainly didn't know quite how bad things were over there right they"
+      },
+      {
+        "start": 228592,
+        "stop": 229332,
+        "text": " had some data because by Nance which CZ runs was one of the largest inbound"
+      },
+      {
+        "start": 229332,
+        "stop": 229748,
+        "text": " sources of funds to Alameda research the Alameda research folks and FTX folks"
+      },
+      {
+        "start": 229748,
+        "stop": 230248,
+        "text": " were moving funds between FTX Alameda research and finance and finance does"
+      },
+      {
+        "start": 230248,
+        "stop": 230590,
+        "text": " have on-chain data that shows the amount of funds that are coming and going so"
+      },
+      {
+        "start": 230590,
+        "stop": 230964,
+        "text": " they probably had some indication that something was going on plus they were an"
+      },
+      {
+        "start": 230964,
+        "stop": 231472,
+        "text": " early investor in FTX so they may have had access to financials that others"
+      },
+      {
+        "start": 231472,
+        "stop": 231900,
+        "text": " didn't not have well they did right because an FTX tried to merge with them"
+      },
+      {
+        "start": 231900,
+        "stop": 232356,
+        "text": " to save themselves yeah and then they looked at the books and said no look at"
+      },
+      {
+        "start": 232356,
+        "stop": 232944,
+        "text": " the books were like hell no so there is a silver lining though hmm"
+      },
+      {
+        "start": 232944,
+        "stop": 233480,
+        "text": " transparency on the blockchain to a comical level in this in this case just"
+      },
+      {
+        "start": 233480,
+        "stop": 233880,
+        "text": " like watching the money flows on the chain yeah if somebody was paying more"
+      },
+      {
+        "start": 233880,
+        "stop": 234384,
+        "text": " attention before they might have noticed it was going the wrong way nobody was"
+      },
+      {
+        "start": 234384,
+        "stop": 234778,
+        "text": " paying attention they were too busy just latching onto a narrative and you know"
+      },
+      {
+        "start": 234778,
+        "stop": 235228,
+        "text": " it's to me it's ironic that not to really hit this point too hard but"
+      },
+      {
+        "start": 235228,
+        "stop": 235762,
+        "text": " you've got you've got Elon who builds who who's who's made EVs popular again"
+      },
+      {
+        "start": 235762,
+        "stop": 236176,
+        "text": " he's single-handedly like dragging a hundred-year-old industry with him to"
+      },
+      {
+        "start": 236176,
+        "stop": 236590,
+        "text": " switch to EVs now every car manufacturer is falling over themselves to build an"
+      },
+      {
+        "start": 236590,
+        "stop": 237332,
+        "text": " EV he's had a ton of success with SpaceX it's a really remarkable company and now"
+      },
+      {
+        "start": 237332,
+        "stop": 237840,
+        "text": " he's going into Twitter and he's basically calling the herd for better or"
+      },
+      {
+        "start": 237840,
+        "stop": 238296,
+        "text": " for worse he's he's taking actual action and not just you know sitting on his"
+      },
+      {
+        "start": 238296,
+        "stop": 239068,
+        "text": " hands and he is personified as an absolute villain as a monster he has"
+      },
+      {
+        "start": 239068,
+        "stop": 239428,
+        "text": " created huge debates in our chat rooms over the last couple of days just"
+      },
+      {
+        "start": 239428,
+        "stop": 239820,
+        "text": " because everybody is so emotionally invested and every little thing he"
+      },
+      {
+        "start": 239820,
+        "stop": 240296,
+        "text": " tweets and it's he's become the absolute supervillain of so many people's actual"
+      },
+      {
+        "start": 240296,
+        "stop": 240792,
+        "text": " life story right now that's not even hyperbole it's actually happening and"
+      },
+      {
+        "start": 240792,
+        "stop": 241708,
+        "text": " SPF was branded as a king as a genius as somebody who was gonna bring crypto to"
+      },
+      {
+        "start": 241708,
+        "stop": 242060,
+        "text": " the masses and be the next place you spend every dollar a different kind of"
+      },
+      {
+        "start": 242060,
+        "stop": 242768,
+        "text": " entrepreneur you know yep and it turned out he was living a you know a life of"
+      },
+      {
+        "start": 242768,
+        "stop": 243428,
+        "text": " lies and total BS to top to bottom from the tokens to the business practices to"
+      },
+      {
+        "start": 243428,
+        "stop": 243782,
+        "text": " the crap he was saying you know all the right he said all the right things he's"
+      },
+      {
+        "start": 243782,
+        "stop": 244164,
+        "text": " that the ship a let's baby you really have to kind of stop and think about"
+      },
+      {
+        "start": 244164,
+        "stop": 244824,
+        "text": " that for a moment he manipulated the investment industry he manipulated the"
+      },
+      {
+        "start": 244824,
+        "stop": 245396,
+        "text": " crypto industry he manipulated the press with his words and everybody bought it"
+      },
+      {
+        "start": 245396,
+        "stop": 245816,
+        "text": " and look where it got us I don't think they buy it right now either they buy it"
+      },
+      {
+        "start": 245816,
+        "stop": 246248,
+        "text": " they didn't even attempt to protect themselves or look I mean you know I was"
+      },
+      {
+        "start": 246248,
+        "stop": 246588,
+        "text": " thinking about that this morning the New York Times wrote about him Forbes wrote"
+      },
+      {
+        "start": 246588,
+        "stop": 246920,
+        "text": " about him the Wall Street Journal wrote about him and there's another one in"
+      },
+      {
+        "start": 246920,
+        "stop": 247480,
+        "text": " there I'm forgetting that he was on the cover of there's a fourth magazine and"
+      },
+      {
+        "start": 247480,
+        "stop": 248012,
+        "text": " none of them could be bothered to just send one reporter to the office I would"
+      },
+      {
+        "start": 248012,
+        "stop": 248352,
+        "text": " imagine if a New York Times reporter walked through the office of FTX it"
+      },
+      {
+        "start": 248352,
+        "stop": 248904,
+        "text": " probably would have set off a few red flags it probably would have suggested"
+      },
+      {
+        "start": 248904,
+        "stop": 249272,
+        "text": " to them that perhaps they should look just underneath the surface but they"
+      },
+      {
+        "start": 249272,
+        "stop": 249784,
+        "text": " couldn't even be bothered to do the basic bit of journalism because they got"
+      },
+      {
+        "start": 249784,
+        "stop": 250384,
+        "text": " the message they wanted and I actually think this all feeds into Twitter and I"
+      },
+      {
+        "start": 250384,
+        "stop": 250724,
+        "text": " think it feeds into what so many dark matter developers are about to go"
+      },
+      {
+        "start": 250724,
+        "stop": 251488,
+        "text": " through and it's really gonna hit hard in q1 I think tailscale comm slash"
+      },
+      {
+        "start": 251488,
+        "stop": 251860,
+        "text": " coder that's where you go to get a free personal account for up to 20 devices"
+      },
+      {
+        "start": 251860,
+        "stop": 252308,
+        "text": " it's a great way to support the show tail scale is an easy to use zero"
+      },
+      {
+        "start": 252308,
+        "stop": 252664,
+        "text": " config VPN you get it loaded on your device you authenticate it with your"
+      },
+      {
+        "start": 252664,
+        "stop": 253032,
+        "text": " single sign-on provider and then you're off to the races it manages firewall"
+      },
+      {
+        "start": 253032,
+        "stop": 253528,
+        "text": " rules it takes care of your double nets if you're on LTE Wi-Fi at a coffee shop"
+      },
+      {
+        "start": 253528,
+        "stop": 253904,
+        "text": " where you just have a standard residential connection or you're in a"
+      },
+      {
+        "start": 253904,
+        "stop": 254352,
+        "text": " data center it's gonna make it all work seamlessly because devices actually"
+      },
+      {
+        "start": 254352,
+        "stop": 254768,
+        "text": " connect to each other using wire guards noise protocol for encryption and it"
+      },
+      {
+        "start": 254768,
+        "stop": 255252,
+        "text": " builds out a mesh flat VPN and it's the best in the business and not only does"
+      },
+      {
+        "start": 255252,
+        "stop": 255632,
+        "text": " it let you quickly and easily create and secure a network between your servers"
+      },
+      {
+        "start": 255632,
+        "stop": 256208,
+        "text": " your phone your devices your I don't I use it on my VMS even but tail scale has"
+      },
+      {
+        "start": 256208,
+        "stop": 256526,
+        "text": " been rolling out new features like tail scale SSH which is gonna help manage"
+      },
+      {
+        "start": 256526,
+        "stop": 256976,
+        "text": " the keys for you and now they also have tail scale funnel which using some"
+      },
+      {
+        "start": 256976,
+        "stop": 257436,
+        "text": " really clever security can let you connect a machine to the internet and"
+      },
+      {
+        "start": 257436,
+        "stop": 257880,
+        "text": " there's more details on the tail scale blog about that it's one of the many"
+      },
+      {
+        "start": 257880,
+        "stop": 258176,
+        "text": " features they've been rolling out recently including some improved DNS"
+      },
+      {
+        "start": 258176,
+        "stop": 258564,
+        "text": " support when you're done you have connections between all your machines"
+      },
+      {
+        "start": 258564,
+        "stop": 259076,
+        "text": " they have consistent IPS that can you can do name resolution now as well it's"
+      },
+      {
+        "start": 259076,
+        "stop": 259356,
+        "text": " how I keep all my family's computers connected I had to work on my son's"
+      },
+      {
+        "start": 259356,
+        "stop": 259852,
+        "text": " laptop I use tail scale to connect to it I have it turned on on all of my VPS is"
+      },
+      {
+        "start": 259852,
+        "stop": 260442,
+        "text": " all my systems at home I love I am a I'm a tail scale power user and I really"
+      },
+      {
+        "start": 260442,
+        "stop": 260702,
+        "text": " recommend it I think you're gonna love it it's a great way to support the show"
+      },
+      {
+        "start": 260702,
+        "stop": 261042,
+        "text": " why you try out something really great so go try it for yourself for free for"
+      },
+      {
+        "start": 261042,
+        "stop": 261682,
+        "text": " up to 20 machines by visiting tail scale comm slash coder it's just so wonderful"
+      },
+      {
+        "start": 261682,
+        "stop": 262338,
+        "text": " really really great product you're gonna love it tail scale comm slash coder"
+      },
+      {
+        "start": 262338,
+        "stop": 263042,
+        "text": " I think we're witnessing and Antonio Garcia put it probably more eloquently"
+      },
+      {
+        "start": 263042,
+        "stop": 263688,
+        "text": " than I could a professional management class warfare happening here's what"
+      },
+      {
+        "start": 263688,
+        "stop": 264224,
+        "text": " Antonio tweeted quote what Elon is doing is a revolt by entrepreneurial capital"
+      },
+      {
+        "start": 264224,
+        "stop": 264710,
+        "text": " against the professional manager managerial class regime that otherwise"
+      },
+      {
+        "start": 264710,
+        "stop": 265252,
+        "text": " everywhere dominates including and especially large tech companies and that"
+      },
+      {
+        "start": 265252,
+        "stop": 265790,
+        "text": " same PMC again PMC stands for professional managerial class and that"
+      },
+      {
+        "start": 265790,
+        "stop": 266392,
+        "text": " same PMC which includes the media is treating it like an act of I guess war"
+      },
+      {
+        "start": 266392,
+        "stop": 267078,
+        "text": " he uses a fan he uses fancy French and ease so the point that he's making is"
+      },
+      {
+        "start": 267078,
+        "stop": 267894,
+        "text": " that tech companies are filled with the a modern the modern elite middle class"
+      },
+      {
+        "start": 267894,
+        "stop": 268758,
+        "text": " the higher up middle class that doesn't really have any trade skills they get"
+      },
+      {
+        "start": 268758,
+        "stop": 269178,
+        "text": " their value by the work on the computer that they do they sit in front of"
+      },
+      {
+        "start": 269178,
+        "stop": 269510,
+        "text": " computers and some of those are developers and you can really argue that"
+      },
+      {
+        "start": 269510,
+        "stop": 269888,
+        "text": " there's high quality value it's essential for the product and a lot of"
+      },
+      {
+        "start": 269888,
+        "stop": 270472,
+        "text": " them are this professional management class and I know you guys out there know"
+      },
+      {
+        "start": 270472,
+        "stop": 270940,
+        "text": " this because every single tech company I've ever worked for as a contractor or"
+      },
+      {
+        "start": 270940,
+        "stop": 271580,
+        "text": " as an employee has had way too many of these and they're this middle management"
+      },
+      {
+        "start": 271580,
+        "stop": 271996,
+        "text": " layer and I have made the observation that it feels like our government is"
+      },
+      {
+        "start": 271996,
+        "stop": 272660,
+        "text": " full of these people and it feels like Google and Twitter are full of these"
+      },
+      {
+        "start": 272660,
+        "stop": 273216,
+        "text": " people Mike did you know that when the news that Elon was thinking about buying"
+      },
+      {
+        "start": 273216,
+        "stop": 273728,
+        "text": " Twitter was announced the Twitter staff were so distraught that the company"
+      },
+      {
+        "start": 273728,
+        "stop": 274176,
+        "text": " leadership announced a day of rest and they basically end up having a day of"
+      },
+      {
+        "start": 274176,
+        "stop": 274702,
+        "text": " rest during the week where nobody works so that way people have time to"
+      },
+      {
+        "start": 274702,
+        "stop": 275152,
+        "text": " emotionally recoup what are we talking about here what has happened with all of"
+      },
+      {
+        "start": 275152,
+        "stop": 275688,
+        "text": " this mediocre crap leadership and that's what FTX represented - there's no"
+      },
+      {
+        "start": 275688,
+        "stop": 276256,
+        "text": " due diligence the company doesn't survive by good leadership it's just all"
+      },
+      {
+        "start": 276256,
+        "stop": 276848,
+        "text": " bogus and Twitter is loaded with this stuff and what Elon is doing and I've"
+      },
+      {
+        "start": 276848,
+        "stop": 277188,
+        "text": " talked about it before is he's moving fast and breaking things and everything's"
+      },
+      {
+        "start": 277188,
+        "stop": 277540,
+        "text": " a test when he sends out a deadline saying have this done by the seventh or"
+      },
+      {
+        "start": 277540,
+        "stop": 278036,
+        "text": " he says say yes to this or you're fired he is trying to come up with excuses to"
+      },
+      {
+        "start": 278036,
+        "stop": 278416,
+        "text": " fire people he's looking for reasons to let people go they're getting"
+      },
+      {
+        "start": 278416,
+        "stop": 278888,
+        "text": " severances he's looking for reasons yeah that's super clear right he well first"
+      },
+      {
+        "start": 278888,
+        "stop": 279668,
+        "text": " of all as a talk of 751 sounds like he might be you know FSB over there joking"
+      },
+      {
+        "start": 279668,
+        "stop": 280104,
+        "text": " it says in the chat what the hell were all those people doing you know the"
+      },
+      {
+        "start": 280104,
+        "stop": 280548,
+        "text": " thousands of Twitter employees you tell me right I mean I think I know you've"
+      },
+      {
+        "start": 280548,
+        "stop": 280892,
+        "text": " you've really benefited because you've been you know you've been working on"
+      },
+      {
+        "start": 280892,
+        "stop": 281220,
+        "text": " your own for a long time but I know you interface with these companies you must"
+      },
+      {
+        "start": 281220,
+        "stop": 281732,
+        "text": " see this sometimes just these all these people that are doing nothing I I'm this"
+      },
+      {
+        "start": 281732,
+        "stop": 282156,
+        "text": " is a real story but just a quick aside a real story I worked at a bank they kind"
+      },
+      {
+        "start": 282156,
+        "stop": 282580,
+        "text": " of had like this management takeover by ex-employees from another local bank and"
+      },
+      {
+        "start": 282580,
+        "stop": 283272,
+        "text": " they brought in all of their own cronies and the CTO brought in like the chief"
+      },
+      {
+        "start": 283272,
+        "stop": 283714,
+        "text": " guy underneath him his number is like his his number one his Riker his name"
+      },
+      {
+        "start": 283714,
+        "stop": 284204,
+        "text": " was Harry and Harry did two things I sat right next to Harry I shared a cubicle"
+      },
+      {
+        "start": 284204,
+        "stop": 284776,
+        "text": " with Harry and Harry did two things well actually three things he went to"
+      },
+      {
+        "start": 284776,
+        "stop": 285200,
+        "text": " meetings and he would go to really long meetings and then he would come back to"
+      },
+      {
+        "start": 285200,
+        "stop": 285828,
+        "text": " his desk and he would and I'm not exaggerating he would spend every time"
+      },
+      {
+        "start": 285828,
+        "stop": 286236,
+        "text": " every minute that he wasn't in a meeting either inside outlook rearranging his"
+      },
+      {
+        "start": 286236,
+        "stop": 286624,
+        "text": " calendar or sending a few emails or going out and having a smoke and a"
+      },
+      {
+        "start": 286624,
+        "stop": 287264,
+        "text": " coffee and that's all Harry did and Harry probably made $300,000 I know"
+      },
+      {
+        "start": 287264,
+        "stop": 287616,
+        "text": " there's folks out there that are working like two jobs right now and they're"
+      },
+      {
+        "start": 287616,
+        "stop": 288172,
+        "text": " still only put it in like 20-25 hours a week because there's just not a lot of"
+      },
+      {
+        "start": 288172,
+        "stop": 288444,
+        "text": " work for them and so they're working remote there's not and they're getting"
+      },
+      {
+        "start": 288444,
+        "stop": 288788,
+        "text": " the work done that's were this expected of them they're making great money and"
+      },
+      {
+        "start": 288788,
+        "stop": 289316,
+        "text": " they got time to take on a side hustle the even even combines 25 30 hours I'm"
+      },
+      {
+        "start": 289316,
+        "stop": 289736,
+        "text": " not I have a very specific person and you know it works for them but that also"
+      },
+      {
+        "start": 289736,
+        "stop": 290152,
+        "text": " means that that company probably doesn't really have enough work for them and we"
+      },
+      {
+        "start": 290152,
+        "stop": 290848,
+        "text": " see this so many places and it it's easy to do when the money is easy and free"
+      },
+      {
+        "start": 290848,
+        "stop": 291512,
+        "text": " flowing and balance sheets are looking great but it has to change when we"
+      },
+      {
+        "start": 291512,
+        "stop": 292208,
+        "text": " tighten and we raise rates and money is scarce just has to change and you have"
+      },
+      {
+        "start": 292208,
+        "stop": 292820,
+        "text": " SPF and FTX as the example of the worst version of what the loose money and"
+      },
+      {
+        "start": 292820,
+        "stop": 293412,
+        "text": " crappy managerial class has done that's on one end of the spectrum and on the"
+      },
+      {
+        "start": 293412,
+        "stop": 293756,
+        "text": " other end of the spectrum you have Elon and what he's doing at Twitter and we"
+      },
+      {
+        "start": 293756,
+        "stop": 294316,
+        "text": " are literally at the same frickin time watching two of the most extreme"
+      },
+      {
+        "start": 294316,
+        "stop": 294824,
+        "text": " examples go down and I gotta say if I was gonna pick one site I actually think"
+      },
+      {
+        "start": 294824,
+        "stop": 295212,
+        "text": " what's going on at Twitter is probably more reasonable now I think you could"
+      },
+      {
+        "start": 295212,
+        "stop": 295420,
+        "text": " argue with you know you everybody can have their own position on the"
+      },
+      {
+        "start": 295420,
+        "stop": 295756,
+        "text": " moderation stuff which everybody's been freaking out this whole weekend Mike"
+      },
+      {
+        "start": 295756,
+        "stop": 296162,
+        "text": " this whole weekend everybody was was screaming that Twitter was gonna crash"
+      },
+      {
+        "start": 296162,
+        "stop": 296520,
+        "text": " and that it was gonna go down over the weekend and people were screaming like"
+      },
+      {
+        "start": 296520,
+        "stop": 296972,
+        "text": " just screaming about it like I couldn't believe it just absolute rage quits"
+      },
+      {
+        "start": 296972,
+        "stop": 297472,
+        "text": " exclamation marks all capital letters and and it wasn't just just people it"
+      },
+      {
+        "start": 297472,
+        "stop": 297904,
+        "text": " was like professional news organizations in light of the uncertainty around"
+      },
+      {
+        "start": 297904,
+        "stop": 298344,
+        "text": " Twitter and out of an abundance of caution CBS News is pausing its"
+      },
+      {
+        "start": 298344,
+        "stop": 298772,
+        "text": " activity on the social media site as it continues to monitor the platform major"
+      },
+      {
+        "start": 298772,
+        "stop": 299296,
+        "text": " Johnson Vigliati thank you like what Phil Schiller deleted his Twitter"
+      },
+      {
+        "start": 299296,
+        "stop": 299788,
+        "text": " account from Apple CBS is back on Twitter now took him about two days but"
+      },
+      {
+        "start": 299788,
+        "stop": 300380,
+        "text": " it's the absolute freakout that's happening is really remarkable because"
+      },
+      {
+        "start": 300380,
+        "stop": 301008,
+        "text": " if you were to go back in time just a few weeks ago you know make it easy 30"
+      },
+      {
+        "start": 301008,
+        "stop": 301376,
+        "text": " days ago these same people that are freaking out about Elon and the future"
+      },
+      {
+        "start": 301376,
+        "stop": 301796,
+        "text": " of Twitter are the same people that was telling you SPF is the future of crypto"
+      },
+      {
+        "start": 301796,
+        "stop": 302372,
+        "text": " and the crypto King and the next Warren Buffett the same exact people that are"
+      },
+      {
+        "start": 302372,
+        "stop": 302736,
+        "text": " freaking out about what's happening at Twitter are the same type of people that"
+      },
+      {
+        "start": 302736,
+        "stop": 303328,
+        "text": " were all in on SPF come on it's possible for them just to have other biases that"
+      },
+      {
+        "start": 303328,
+        "stop": 303740,
+        "text": " make them make silly decisions right I guess when I think about how bad we blew"
+      },
+      {
+        "start": 303740,
+        "stop": 304236,
+        "text": " the SPF stuff and how bad things have gotten out there and then to see just"
+      },
+      {
+        "start": 304236,
+        "stop": 304772,
+        "text": " the absolute panic over I got to me it's just like pop the popcorn let's see what"
+      },
+      {
+        "start": 304772,
+        "stop": 305024,
+        "text": " happens people are leaving for Mastodon if they don't like it I think that's"
+      },
+      {
+        "start": 305024,
+        "stop": 305364,
+        "text": " great actually I think that's a great thing getting more people off of a"
+      },
+      {
+        "start": 305364,
+        "stop": 305680,
+        "text": " centralized platform is probably a good thing I mean I kind of feel like it's"
+      },
+      {
+        "start": 305680,
+        "stop": 306044,
+        "text": " the old put a cop behind someone for 50 miles still eventually get a ticket kind"
+      },
+      {
+        "start": 306044,
+        "stop": 306392,
+        "text": " of thing if if you're just investigating and investigating and investigating and"
+      },
+      {
+        "start": 306392,
+        "stop": 306746,
+        "text": " every reporter in the world and it doesn't help you know that every night"
+      },
+      {
+        "start": 306746,
+        "stop": 307048,
+        "text": " you decide to get loaded and go on Twitter and say crazy things"
+      },
+      {
+        "start": 307048,
+        "stop": 307600,
+        "text": " Elon you're eventually gonna have a problem and the difference is not only"
+      },
+      {
+        "start": 307600,
+        "stop": 308152,
+        "text": " was SPF not being investigated he was effectively having a police escort right"
+      },
+      {
+        "start": 308152,
+        "stop": 308740,
+        "text": " now to the regulatory moat on Twitter side Twitter's former chief of"
+      },
+      {
+        "start": 308740,
+        "stop": 309144,
+        "text": " moderation I don't know what her or their name was but she wrote an op-ed"
+      },
+      {
+        "start": 309144,
+        "stop": 309548,
+        "text": " for the New York Times and outlined how Apple and Google could stop Elon and"
+      },
+      {
+        "start": 309548,
+        "stop": 310044,
+        "text": " Twitter she basically outlines and Mark Gurman wrote a similar piece that an"
+      },
+      {
+        "start": 310044,
+        "stop": 310468,
+        "text": " unmoderated Twitter is gonna be the same grounds that Apple and Google used to"
+      },
+      {
+        "start": 310468,
+        "stop": 311004,
+        "text": " pull parlor and they set a precedence with parlor and then she goes on to say"
+      },
+      {
+        "start": 311004,
+        "stop": 311420,
+        "text": " that if that doesn't work regulators have quote significant tools at their"
+      },
+      {
+        "start": 311420,
+        "stop": 311884,
+        "text": " disposal to enforce their will on Twitter and mr. musk I'm gonna link to"
+      },
+      {
+        "start": 311884,
+        "stop": 312540,
+        "text": " the article because it is a nice little overview of the machinery that works to"
+      },
+      {
+        "start": 312540,
+        "stop": 313164,
+        "text": " lock in a moat around regulation or works to suppress a business it"
+      },
+      {
+        "start": 313164,
+        "stop": 313532,
+        "text": " basically just calls for Apple and Google to use their app store powers to"
+      },
+      {
+        "start": 313532,
+        "stop": 313952,
+        "text": " ban the Twitter app I don't think that's realistic right like I've also been"
+      },
+      {
+        "start": 313952,
+        "stop": 314274,
+        "text": " watching this stuff on Twitter and I'm seeing a lot of definitely overheated"
+      },
+      {
+        "start": 314274,
+        "stop": 314948,
+        "text": " takes writing downright crazy I don't even know how to say it nicely like that"
+      },
+      {
+        "start": 314948,
+        "stop": 315546,
+        "text": " crazy opinions it's important I think emotionally into a lot of tech and maybe"
+      },
+      {
+        "start": 315546,
+        "stop": 316120,
+        "text": " media folks because we all tend to live there but like try it try to only check"
+      },
+      {
+        "start": 316120,
+        "stop": 316698,
+        "text": " Twitter three times a day yeah how about once a day or one right like and I was"
+      },
+      {
+        "start": 316698,
+        "stop": 316928,
+        "text": " the biggest Twitter addict you know what you know why I don't like Twitter I'll"
+      },
+      {
+        "start": 316928,
+        "stop": 317274,
+        "text": " tell you why because when I go on Twitter I see people that I know and"
+      },
+      {
+        "start": 317274,
+        "stop": 317672,
+        "text": " like I haven't seen in a long time or maybe I do see them all the time I can"
+      },
+      {
+        "start": 317672,
+        "stop": 318096,
+        "text": " think of at least five guys right now who are the biggest jackasses when"
+      },
+      {
+        "start": 318096,
+        "stop": 318604,
+        "text": " they're on Twitter like complete jerks and you would never if that was your"
+      },
+      {
+        "start": 318604,
+        "stop": 319108,
+        "text": " first introduction you would never want to speak to these people but get them in"
+      },
+      {
+        "start": 319108,
+        "stop": 319490,
+        "text": " a normal situation even with someone they might vehemently disagree with"
+      },
+      {
+        "start": 319490,
+        "stop": 320428,
+        "text": " right they're normal rational people so I don't know I maybe it's a I it's been a"
+      },
+      {
+        "start": 320428,
+        "stop": 320756,
+        "text": " long journey for me but I think the Twitter stuff you got to cut back like"
+      },
+      {
+        "start": 320756,
+        "stop": 321146,
+        "text": " post positive things if you're gonna post post fun things but don't uh I just"
+      },
+      {
+        "start": 321146,
+        "stop": 321460,
+        "text": " don't think it matters maybe don't take it so seriously and you got to remember"
+      },
+      {
+        "start": 321460,
+        "stop": 322108,
+        "text": " it's a tiny tiny small fraction of society that's actually on there right"
+      },
+      {
+        "start": 322108,
+        "stop": 322674,
+        "text": " Twitter Twitter is in lots of ways not the country or the world in so many ways"
+      },
+      {
+        "start": 322674,
+        "stop": 323228,
+        "text": " Mike in so many ways it's yeah I think in fact Twitter as a platform itself is"
+      },
+      {
+        "start": 323228,
+        "stop": 323636,
+        "text": " not that interesting what's happening to Twitter as a business and the two"
+      },
+      {
+        "start": 323636,
+        "stop": 323980,
+        "text": " extremes that we see on both ends of the spectrum I find that kind of interesting"
+      },
+      {
+        "start": 323980,
+        "stop": 324374,
+        "text": " well but it's also like people take the Twitter when they're at their worst"
+      },
+      {
+        "start": 324374,
+        "stop": 324800,
+        "text": " right no no one if someone's having a good time with their family and friends"
+      },
+      {
+        "start": 324800,
+        "stop": 325252,
+        "text": " or their colleagues they're probably not like tweeting unless they're just bored"
+      },
+      {
+        "start": 325252,
+        "stop": 325836,
+        "text": " or or me and waiting for Xcode to freaking compile Swift damn it but other"
+      },
+      {
+        "start": 325836,
+        "stop": 326360,
+        "text": " than those cases I put you this way think about Twitter has anybody ever"
+      },
+      {
+        "start": 326360,
+        "stop": 326840,
+        "text": " changed your mind on Twitter you know where Twitter is good the only time I"
+      },
+      {
+        "start": 326840,
+        "stop": 327372,
+        "text": " really think Twitter is really great is when something a live event or some"
+      },
+      {
+        "start": 327372,
+        "stop": 327860,
+        "text": " breaking thing is happening and you know like you can find out about it first on"
+      },
+      {
+        "start": 327860,
+        "stop": 328310,
+        "text": " Twitter but also it's fun like during some major television event or something"
+      },
+      {
+        "start": 328310,
+        "stop": 328720,
+        "text": " just or maybe an Apple event or a Google event to see people's reactions it's"
+      },
+      {
+        "start": 328720,
+        "stop": 329088,
+        "text": " good in those moments and outside of that not so good it could be good for"
+      },
+      {
+        "start": 329088,
+        "stop": 329492,
+        "text": " could be good for Google and Apple though if they decide to keep the apps"
+      },
+      {
+        "start": 329492,
+        "stop": 330012,
+        "text": " because Twitter is currently trending towards 250 million daily active users"
+      },
+      {
+        "start": 330012,
+        "stop": 330684,
+        "text": " and German rights if you assume that 1% of that user base so 2.5 million people"
+      },
+      {
+        "start": 330684,
+        "stop": 331144,
+        "text": " subscribe on either iOS or Android and excluding any other additional"
+      },
+      {
+        "start": 331144,
+        "stop": 331736,
+        "text": " subscription products that Twitter might offer just the base $8 a month blue if"
+      },
+      {
+        "start": 331736,
+        "stop": 332548,
+        "text": " 1% of the user base subscribes would be 72 million dollars in annual revenue for"
+      },
+      {
+        "start": 332548,
+        "stop": 333084,
+        "text": " Apple and 36 million for Google because Google already has a 15% cut and apples"
+      },
+      {
+        "start": 333084,
+        "stop": 333584,
+        "text": " is 30% Google's like money because money yeah so it's pretty big you know pretty"
+      },
+      {
+        "start": 333584,
+        "stop": 333908,
+        "text": " big money for them I mean it's not huge they've kicked out things like Fortnight"
+      },
+      {
+        "start": 333908,
+        "stop": 334160,
+        "text": " which brought in 100 million so I mean they've you know it's not gonna make or"
+      },
+      {
+        "start": 334160,
+        "stop": 334784,
+        "text": " break Apple but if Twitter blue is successful their cuts gonna be noteworthy"
+      },
+      {
+        "start": 334784,
+        "stop": 335096,
+        "text": " it's gonna be a good little tick up on the App Store revenue on the services"
+      },
+      {
+        "start": 335096,
+        "stop": 335396,
+        "text": " revenue when they need it right now so I don't know if they can kick them out"
+      },
+      {
+        "start": 335396,
+        "stop": 335864,
+        "text": " we'll see all right I think we got out of our system you know we I think we"
+      },
+      {
+        "start": 335864,
+        "stop": 336320,
+        "text": " really the the reality is this is what's dominating the tech cycle right now it"
+      },
+      {
+        "start": 336320,
+        "stop": 336732,
+        "text": " truly is what's dominating it but you could you could always boost in a story"
+      },
+      {
+        "start": 336732,
+        "stop": 337224,
+        "text": " or a link or email us at coded out show slash contact or something you like to"
+      },
+      {
+        "start": 337224,
+        "stop": 337568,
+        "text": " hear us talk about you can save us from ourselves the feedback is a big part of"
+      },
+      {
+        "start": 337568,
+        "stop": 337852,
+        "text": " the show we got some great feedback today we also we did get some great"
+      },
+      {
+        "start": 337852,
+        "stop": 338084,
+        "text": " boost today too so let's do a couple of those and then we'll get out of here"
+      },
+      {
+        "start": 338084,
+        "stop": 338588,
+        "text": " we'll get get get out of here boost a grand we got 10,000 sats from anonymous"
+      },
+      {
+        "start": 338588,
+        "stop": 339020,
+        "text": " says the big tech companies are already working on the passwordless future with"
+      },
+      {
+        "start": 339020,
+        "stop": 339548,
+        "text": " multi dot device web auth keys that sync via Apple or Microsoft or your Google"
+      },
+      {
+        "start": 339548,
+        "stop": 339940,
+        "text": " account the backup will be a device notification and our phone numbers most"
+      },
+      {
+        "start": 339940,
+        "stop": 340284,
+        "text": " of it will be single-factor login with your fingerprint or face and no two"
+      },
+      {
+        "start": 340284,
+        "stop": 340792,
+        "text": " factor this is the main reason Windows 11 requires a TPM chip for Windows hello"
+      },
+      {
+        "start": 340792,
+        "stop": 341172,
+        "text": " and at the end of the day it will be tied to your cryptographic decentralized"
+      },
+      {
+        "start": 341172,
+        "stop": 341980,
+        "text": " identity your did your DID maybe even your government CBDC wallet oh I bet it"
+      },
+      {
+        "start": 341980,
+        "stop": 342496,
+        "text": " will be won't that be fantastic have you seen these decentralized identities that"
+      },
+      {
+        "start": 342496,
+        "stop": 343076,
+        "text": " the web standards group is working on the did's yeah yeah I need to I do I"
+      },
+      {
+        "start": 343076,
+        "stop": 343488,
+        "text": " need to know more about it I got to get a more educated I I'm super skeptical I"
+      },
+      {
+        "start": 343488,
+        "stop": 343940,
+        "text": " just see so many potential vulnerabilities yeah I use a couple of"
+      },
+      {
+        "start": 343940,
+        "stop": 344364,
+        "text": " services that use a similar principle right now and the onus is on me in that"
+      },
+      {
+        "start": 344364,
+        "stop": 344724,
+        "text": " scenario to like back up all my identity information so if I like try from a new"
+      },
+      {
+        "start": 344724,
+        "stop": 345152,
+        "text": " browser I clear my cookies I can come back and re-identify myself but it's not"
+      },
+      {
+        "start": 345152,
+        "stop": 345684,
+        "text": " like a username it's also it is a username tied to a hash which has been"
+      },
+      {
+        "start": 345684,
+        "stop": 346272,
+        "text": " randomly generated anyways I get it but it just seems it basically seems like"
+      },
+      {
+        "start": 346272,
+        "stop": 346676,
+        "text": " you're bringing the traceability of your ID to basically like the traceability of"
+      },
+      {
+        "start": 346676,
+        "stop": 347076,
+        "text": " Bitcoin it's like you're gonna have it might not be your exact name but it's"
+      },
+      {
+        "start": 347076,
+        "stop": 347452,
+        "text": " gonna be an identifiable ID that with enough data points people could tie back"
+      },
+      {
+        "start": 347452,
+        "stop": 347980,
+        "text": " to you I'm not sure but I you know what I'd also would appreciate anybody else's"
+      },
+      {
+        "start": 347980,
+        "stop": 348240,
+        "text": " opinion maybe somebody else has a better take"
+      },
+      {
+        "start": 348240,
+        "stop": 348742,
+        "text": " m-m-m-m-Mississippi mayhem boosted in with 7,000 sats coming in hot with the"
+      },
+      {
+        "start": 348742,
+        "stop": 349244,
+        "text": " boobs I'm happy to see some go love he's talking about that NSA report that we"
+      },
+      {
+        "start": 349244,
+        "stop": 349716,
+        "text": " talked about last week spooks love go baby yeah yeah since I really do see it"
+      },
+      {
+        "start": 349716,
+        "stop": 350172,
+        "text": " as better than rust Oh over the past few years go has replaced both Python and"
+      },
+      {
+        "start": 350172,
+        "stop": 350564,
+        "text": " PHP and projects where I have the choice definitely worth the effort to learn"
+      },
+      {
+        "start": 350564,
+        "stop": 350968,
+        "text": " it's almost as friendly as Python and almost as fast as C++ I mean once you"
+      },
+      {
+        "start": 350968,
+        "stop": 351550,
+        "text": " factor in real-world bottlenecks better than rust there you go there is a hot"
+      },
+      {
+        "start": 351550,
+        "stop": 352420,
+        "text": " take HPC Morgan boosted in with a row of ducks 2222 sats my first row of ducks I"
+      },
+      {
+        "start": 352420,
+        "stop": 352956,
+        "text": " was wondering what you two would suggest for an HPC that's high performance"
+      },
+      {
+        "start": 352956,
+        "stop": 353368,
+        "text": " computing sysadmin who is looking to transition into a software dev career"
+      },
+      {
+        "start": 353368,
+        "stop": 353796,
+        "text": " coming into about five years as a sysadmin now I went to school though for"
+      },
+      {
+        "start": 353796,
+        "stop": 354196,
+        "text": " infosec when I was greener I got to do more coding but now that I am a lead"
+      },
+      {
+        "start": 354196,
+        "stop": 354544,
+        "text": " admin on multiple clusters I have to pawn that kind of work off but I really"
+      },
+      {
+        "start": 354544,
+        "stop": 355204,
+        "text": " miss it and want to go full-time coding in the future interesting so he's a HPC"
+      },
+      {
+        "start": 355204,
+        "stop": 355734,
+        "text": " sysadmin he's got a formal training in infosec right I wonder if there is a"
+      },
+      {
+        "start": 355734,
+        "stop": 356028,
+        "text": " crossover between some sort of development work in the info sec world"
+      },
+      {
+        "start": 356028,
+        "stop": 356378,
+        "text": " there's got to be there's got to be something there hardening systems taking"
+      },
+      {
+        "start": 356378,
+        "stop": 356702,
+        "text": " that NSA report to tell people to rewrite their stuff seems like something"
+      },
+      {
+        "start": 356702,
+        "stop": 357216,
+        "text": " you could try half joking writing tools or meta sploit scripts I mean the only"
+      },
+      {
+        "start": 357216,
+        "stop": 357960,
+        "text": " reason I go that direction is I mean I am a big fan of a generalist who you"
+      },
+      {
+        "start": 357960,
+        "stop": 358316,
+        "text": " know it's kind of a jack-of-all-trades those people can be a wealth of knowledge"
+      },
+      {
+        "start": 358316,
+        "stop": 358608,
+        "text": " but when you're looking at the employment market I think somebody would"
+      },
+      {
+        "start": 358608,
+        "stop": 358904,
+        "text": " look at that and go that's pretty spread out you know you got several different"
+      },
+      {
+        "start": 358904,
+        "stop": 359296,
+        "text": " things here so even if even if you didn't think it was a long-term thing if"
+      },
+      {
+        "start": 359296,
+        "stop": 359748,
+        "text": " you could kind of tie it all together a little bit to kind of to kind of build a"
+      },
+      {
+        "start": 359748,
+        "stop": 360116,
+        "text": " uniform story there and the reason why I bring that up is good then you could"
+      },
+      {
+        "start": 360116,
+        "stop": 360368,
+        "text": " think about projects and what you could work on and what you could learn in that"
+      },
+      {
+        "start": 360368,
+        "stop": 360812,
+        "text": " space to help kind of create a bit of a back of a brand for yourself in a way"
+      },
+      {
+        "start": 360812,
+        "stop": 361420,
+        "text": " that'd be my my advice but if you have anything specific HPC Morgan send us your"
+      },
+      {
+        "start": 361420,
+        "stop": 362084,
+        "text": " next boost we'd love to answer it okay we got a 5,000 SAP boost from wise Papa"
+      },
+      {
+        "start": 362084,
+        "stop": 362716,
+        "text": " John not sure if it's available on iOS but offy is a two-factor app that"
+      },
+      {
+        "start": 362716,
+        "stop": 363088,
+        "text": " supports syncing with a phone number and password it's non GPL as far as I know"
+      },
+      {
+        "start": 363088,
+        "stop": 363480,
+        "text": " but for the normies it's better than losing everything"
+      },
+      {
+        "start": 363480,
+        "stop": 364088,
+        "text": " y'all plus one offy for the normies for sure I think the key thing with offy"
+      },
+      {
+        "start": 364088,
+        "stop": 364702,
+        "text": " that really makes it work is before you wipe your old device you get offy set up"
+      },
+      {
+        "start": 364702,
+        "stop": 365016,
+        "text": " on your new device and make sure everything sinks over I think that's"
+      },
+      {
+        "start": 365016,
+        "stop": 365568,
+        "text": " that's really the trick not saying that I know from experience or anything"
+      },
+      {
+        "start": 365568,
+        "stop": 366292,
+        "text": " trevdev boosts in with 2,000 sets to factor is not too strict if you followed"
+      },
+      {
+        "start": 366292,
+        "stop": 366624,
+        "text": " the directions every time you activate it you get fallback codes you were"
+      },
+      {
+        "start": 366624,
+        "stop": 367470,
+        "text": " warned you were all warned but sorry you got burned yeah I just again sure but"
+      },
+      {
+        "start": 367470,
+        "stop": 367940,
+        "text": " let's be I think your point was regular users right like yeah maybe maybe Mike"
+      },
+      {
+        "start": 367940,
+        "stop": 368384,
+        "text": " the developer should have done better but he's a busy guy right I could I"
+      },
+      {
+        "start": 368384,
+        "stop": 368876,
+        "text": " could have sucked less sure but I didn't and I'm pretty sure that lots of other"
+      },
+      {
+        "start": 368876,
+        "stop": 369300,
+        "text": " people will suck just as much I think I can almost think it could be a"
+      },
+      {
+        "start": 369300,
+        "stop": 370140,
+        "text": " guaranteed thing it seems super likely to me Todd boosting with 31,000 415 sets"
+      },
+      {
+        "start": 370140,
+        "stop": 370660,
+        "text": " which yep you guessed it be oh oh st that's a pie boost that's a pie boost"
+      },
+      {
+        "start": 370660,
+        "stop": 371318,
+        "text": " thanks Todd and then John a finishes off with 10,000 sets camel case is the way"
+      },
+      {
+        "start": 371318,
+        "stop": 371696,
+        "text": " thank you John nice to see you John was in the studio yesterday for Linux"
+      },
+      {
+        "start": 371696,
+        "stop": 372152,
+        "text": " unplugged as I record he brought us some beverages which I'm still recovering"
+      },
+      {
+        "start": 372152,
+        "stop": 372788,
+        "text": " from I'm an old man I had way too much champagne ah it also was like a two-hour"
+      },
+      {
+        "start": 372788,
+        "stop": 373322,
+        "text": " Linux unplugged you know just do but we had a great time and John was a good guy"
+      },
+      {
+        "start": 373322,
+        "stop": 373708,
+        "text": " and hung out for a bit after the show and a good conversation so thanks for"
+      },
+      {
+        "start": 373708,
+        "stop": 374018,
+        "text": " the boost John you'd like to send us a boost go grab a new podcast app a new"
+      },
+      {
+        "start": 374018,
+        "stop": 374544,
+        "text": " podcast apps calm you go get one of them boost agram compatible ones and load it"
+      },
+      {
+        "start": 374544,
+        "stop": 374870,
+        "text": " up with some sats which are cheap super cheap probably gonna be cheap for a"
+      },
+      {
+        "start": 374870,
+        "stop": 375232,
+        "text": " while too so my advice would you know buy like 10 bucks worth play around with"
+      },
+      {
+        "start": 375232,
+        "stop": 375548,
+        "text": " it just see it just to play around because they're cheap right now it's a"
+      },
+      {
+        "start": 375548,
+        "stop": 375972,
+        "text": " good time load them in a podcasting to dot up and send your message in or"
+      },
+      {
+        "start": 375972,
+        "stop": 376586,
+        "text": " become a member at coder QA co we have a new coder Lee recorded I will either get"
+      },
+      {
+        "start": 376586,
+        "stop": 376988,
+        "text": " it posted shortly after this episode or shortly before this episode hits the"
+      },
+      {
+        "start": 376988,
+        "stop": 377378,
+        "text": " main feed so if you become a member you get access to this coder Lee I think it"
+      },
+      {
+        "start": 377378,
+        "stop": 377880,
+        "text": " was a banger you know if you know you had your survey we have the clips we"
+      },
+      {
+        "start": 377880,
+        "stop": 378246,
+        "text": " have the hot take oh yeah even Drew said it was a good one you know and he"
+      },
+      {
+        "start": 378246,
+        "stop": 378724,
+        "text": " doesn't fluff yeah yeah so loving it you can get access to all the coder Lee's"
+      },
+      {
+        "start": 378724,
+        "stop": 379124,
+        "text": " and the new one all the way ever done when you become a coder Lee supporter"
+      },
+      {
+        "start": 379124,
+        "stop": 379564,
+        "text": " no something else I don't know you come a member at coder QA co the thing you"
+      },
+      {
+        "start": 379564,
+        "stop": 379944,
+        "text": " can do I take these words and I make them with the mouth and sometimes it's"
+      },
+      {
+        "start": 379944,
+        "stop": 380476,
+        "text": " hard because coder and coder Lee and quarterly are all very similar and what"
+      },
+      {
+        "start": 380476,
+        "stop": 380872,
+        "text": " we did is we went made something that is hard for me to say but it is a coder Lee"
+      },
+      {
+        "start": 380872,
+        "stop": 381340,
+        "text": " quarterly haha I got it I got it mr. Dominic is there anywhere you want to"
+      },
+      {
+        "start": 381340,
+        "stop": 381644,
+        "text": " send the people at do you wanna go on Twitter you know well that's still a"
+      },
+      {
+        "start": 381644,
+        "stop": 382220,
+        "text": " thing yeah sure sure you know why not sure I'm over there I guess sure at"
+      },
+      {
+        "start": 382220,
+        "stop": 382696,
+        "text": " Chris le s sure why not go to radio show at coder radio show you know a better"
+      },
+      {
+        "start": 382696,
+        "stop": 383252,
+        "text": " place the Fedevers this show is being streamed to the Fedevers right now over"
+      },
+      {
+        "start": 383252,
+        "stop": 383752,
+        "text": " at jupiter.to yep we're in the Fedevers pretty cool jupiter.to you can follow us"
+      },
+      {
+        "start": 383752,
+        "stop": 384292,
+        "text": " with your Fedevers account and we go live on Mondays at 9 a.m. Pacific noon"
+      },
+      {
+        "start": 384292,
+        "stop": 384632,
+        "text": " Eastern and you can stream and help us title to the show and you know I don't"
+      },
+      {
+        "start": 384632,
+        "stop": 385048,
+        "text": " know I don't know see how it's made maybe you don't want to do that just"
+      },
+      {
+        "start": 385048,
+        "stop": 385456,
+        "text": " download it coder.show/subscribe that's way better actually I would do that I"
+      },
+      {
+        "start": 385456,
+        "stop": 385800,
+        "text": " would definitely do that then you get Drew's nice touches too alright everyone"
+      },
+      {
+        "start": 385800,
+        "stop": 386168,
+        "text": " thanks so much for tuning this week's episode of the coder radio program we'll"
+      },
+      {
+        "start": 386168,
+        "stop": 386532,
+        "text": " see you right back here next week"
+      },
+      {
+        "start": 386532,
+        "stop": 386738,
+        "text": " you"
+      },
+      {
+        "start": 386738,
+        "stop": 386944,
+        "text": " you"
+      },
+      {
+        "start": 386944,
+        "stop": 387150,
+        "text": " you"
+      },
+      {
+        "start": 387150,
+        "stop": 387356,
+        "text": " you"
+      },
+      {
+        "start": 387356,
+        "stop": 387562,
+        "text": " you"
+      },
+      {
+        "start": 387562,
+        "stop": 387768,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 1280,
+      "nanos": 873678895
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 493: Super Spellcheck",
+    "pictures": [],
+    "duration": {
+      "secs": 3858,
+      "nanos": 712000000
+    },
+    "unique_id": "http://coder.show/493"
+  },
+  "episode": {
+    "title": "Super Spellcheck | Coder Radio 493",
+    "description": "We will discuss the practical implementations of AI embedded in future products, then take a look at FTX's books and have a few highlights to share.",
+    "content": "<p>We will discuss the practical implementations of AI embedded in future products, then take a look at FTX&#39;s books and have a few highlights to share. </p>\n\n<p><p>Plus, we lay out the PMC warfare theory, which might explain what bloated tech companies have coming.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"https://diffusionbee.com/\" title=\"DiffusionBee - Stable Diffusion GUI App\" rel=\"nofollow\">DiffusionBee - Stable Diffusion GUI App</a> &mdash;  DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Comes with a one-click installer. No dependencies or technical knowledge needed.</li><li><a href=\"https://www.bloomberg.com/news/articles/2022-11-20/ftx-owes-its-biggest-unsecured-creditor-more-than-226-million\" title=\"FTX Owes Its 50 Biggest Unsecured Creditors More Than $3 Billion\" rel=\"nofollow\">FTX Owes Its 50 Biggest Unsecured Creditors More Than $3 Billion</a> &mdash; Sam Bankman-Fried’s bankrupt crypto empire owes its 50 biggest unsecured creditors a total of $3.1 billion, new court papers show, with a pair of customers owed more than $200 million each.</li><li><a href=\"https://nitter.net/kadhim/status/1594045512029999108\" title=\"kadhim on Twitter\" rel=\"nofollow\">kadhim on Twitter</a></li><li><a href=\"https://twitter.com/antoniogm/status/1593606745955348481\" title=\"Antonio García PMC Warfare Theory\" rel=\"nofollow\">Antonio García PMC Warfare Theory</a> &mdash; What Elon is doing is a revolt by entrepreneurial capital against the professional-managerial class regime that otherwise everywhere dominates (including and especially large tech companies), and that same PMC (which includes the media) is treating it as an act of lèse-majesté.</li><li><a href=\"https://www.bloomberg.com/news/articles/2022-11-17/musk-softens-remote-work-mandate-to-retain-twitter-staffers\" title=\"Elon Musk's ‘Hardcore’ Ultimatum Sparks Exodus, Leaving Twitter at Risk\" rel=\"nofollow\">Elon Musk's ‘Hardcore’ Ultimatum Sparks Exodus, Leaving Twitter at Risk</a> &mdash; Musk aims to retain workers, softening work from home policy</li><li><a href=\"http://web.archive.org/web/20221118190930/https://www.nytimes.com/2022/11/18/opinion/twitter-yoel-roth-elon-musk.html\" title=\"Twitters top former Censor Yoel Roth Outlines How Apple/Google could Stop Elon/Twitter\" rel=\"nofollow\">Twitters top former Censor Yoel Roth Outlines How Apple/Google could Stop Elon/Twitter</a> &mdash; There is one more source of power on the web — one that most people don’t think much about, but which may be the most significant check on unrestrained speech on the mainstream internet: the app stores operated by Google and Apple.</li><li><a href=\"https://www.nationalreview.com/news/cbs-news-quits-twitter-for-a-few-hours/\" title=\"CBS Quits Twitter, then Returns \" rel=\"nofollow\">CBS Quits Twitter, then Returns </a> &mdash; On Friday, one of the media outlet’s national correspondents stated that “in light of the uncertainty around Twitter and out of an abundance of caution, CBS News is pausing its activity on the social media site as it continues to monitor the platform.”</li><li><a href=\"https://www.macrumors.com/2022/11/20/phil-schiller-deactivates-twitter-account/\" title=\"Apple Executive Phil Schiller Deactivates Twitter Account\" rel=\"nofollow\">Apple Executive Phil Schiller Deactivates Twitter Account</a> &mdash; Schiller often used his account to promote new Apple products, services, software, and initiatives and interact with customers. As noted on Twitter by Bloomberg's Mark Gurman, however, Schiller's account no longer exists. The account had over 200,000 followers and was created in November 2008 according to a web archive of the account dated November 4. </li><li><a href=\"https://www.bloomberg.com/news/newsletters/2022-11-20/apple-google-to-serve-as-gatekeepers-and-beneficiaries-of-8-twitter-blue-laph0obf\" title=\"Apple, Google to Serve as Gatekeepers and Beneficiaries of $8 Twitter Blue\" rel=\"nofollow\">Apple, Google to Serve as Gatekeepers and Beneficiaries of $8 Twitter Blue</a> &mdash; Twitter is trending toward 250 million daily active users. Let’s assume that 1% of that user base—2.5 million people—subscribe on either iOS or Android. Excluding additional subscription products within Twitter, that adds up to $72 million in year one revenue for Apple and $36 million for Google. </li><li><a href=\"https://twitter.com/markgurman/status/1594361405402071040\" title=\"Mark Gurman on Twitter\" rel=\"nofollow\">Mark Gurman on Twitter</a> &mdash; While I expect lots of leeway, there is a real scenario in which Apple/Google remove Twitter because of content moderation issues or because Twitter decides to bypass the 15%-30% cuts. Notably, we appear to now know how Apple’s App Store chief feels about the new Twitter.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Send a Boost into the Show\" rel=\"nofollow\">Send a Boost into the Show</a> &mdash; Upgrade to a Podcasting 2.0 app, and send a Boost into the show!</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9076",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15804444/d7103aed-e745-4961-a8b3-718b36482dc6.mp3",
+      "length": "54766729",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-23T03:20:00+01:00"
+  },
+  "speedup": 3.0125625
+}

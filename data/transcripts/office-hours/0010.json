@@ -1,0 +1,2797 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 1200,
+        "text": " PeerTube's one of my favorite new tools right now, I think. The minimum viable PeerTube implementation that I didn't necessarily come up with at launch, but now weeks into it, it's been great."
+      },
+      {
+        "start": 1200,
+        "stop": 1800,
+        "text": " It's just an archive of our live shows, and it's just a great way to watch the shows live when we're doing them."
+      },
+      {
+        "start": 1800,
+        "stop": 2900,
+        "text": " And now with the new website, and the integration with the embedded player on the new website so it can just ping the PeerTube API, and get the latest livestream, and then auto-embed that on the webpage."
+      },
+      {
+        "start": 2900,
+        "stop": 4200,
+        "text": " It's now getting integrated and automated, it's so great. And it's all laying the plumbing so that way when we're generating our own RSS feeds, we can do livestreaming in the podcasting 2.0 app."
+      },
+      {
+        "start": 4200,
+        "stop": 4800,
+        "text": " So you can just listen to our live shows in your regular podcasting app. That's also going to be powered by PeerTube."
+      },
+      {
+        "start": 4800,
+        "stop": 5800,
+        "text": " There's a real net effect, I think, of going with PeerTube again. I debated it because we did it once, I had issues with it, I don't think it was the right take, and then we shut it down, and then we relaunched,"
+      },
+      {
+        "start": 5800,
+        "stop": 6400,
+        "text": " and we kind of did this minimum viable PeerTube, and it's been so much better. It's been a great tool. Very happy with it."
+      },
+      {
+        "start": 6400,
+        "stop": 7100,
+        "text": " So if you haven't checked out JupiterTube, you've got to go over there to jupiter.tube, you can get archive versions of this livestream and all the other live shows."
+      },
+      {
+        "start": 7100,
+        "stop": 7500,
+        "text": " It's Office Hours, with me, Chris!"
+      },
+      {
+        "start": 7500,
+        "stop": 8300,
+        "text": " Well hello everybody, welcome into the office. Come on Brent, sit down, it's showtime. Hello, how are you doing?"
+      },
+      {
+        "start": 8300,
+        "stop": 8500,
+        "text": " Hey, do you still have my butt groove here?"
+      },
+      {
+        "start": 8500,
+        "stop": 9200,
+        "text": " Yeah, yeah, I keep that just right. I got a little model of your... nevermind. You don't want to know how I do that."
+      },
+      {
+        "start": 9200,
+        "stop": 9800,
+        "text": " Let's just, we'll just move on. I just want you to feel at home, you know? It's a safe space here in the office."
+      },
+      {
+        "start": 9800,
+        "stop": 11000,
+        "text": " We have so much going on behind the scenes this week that we could make the week of shows just about the work we've been doing, but we're going to kind of condense some of it down right here into Office Hours this week."
+      },
+      {
+        "start": 11000,
+        "stop": 11300,
+        "text": " Brent, would you say it's fair to say it's the final countdown?"
+      },
+      {
+        "start": 11300,
+        "stop": 12300,
+        "text": " I think we're slightly past our optimistic final countdown, but yeah, it certainly is the actual dead deadline is really coming up. It's getting me a little nervous."
+      },
+      {
+        "start": 12300,
+        "stop": 12900,
+        "text": " Now, you've been at Alex's house for I think about seven years, right? You've been there now?"
+      },
+      {
+        "start": 12900,
+        "stop": 13100,
+        "text": " Yeah, six or seven."
+      },
+      {
+        "start": 13100,
+        "stop": 14800,
+        "text": " And the opportunity came up for you two to work together on some infrastructure, and we saw a whole new, I think, push of work getting done, and so we wanted to update everybody because there's been so many developments since our last episode that we just had to kind of stop and kind of do a sync up."
+      },
+      {
+        "start": 14800,
+        "stop": 16200,
+        "text": " And so we had a chance to sit down with Alex and Wes after Linux unplugged last week, and I wanted to play a little bit of our chat with you just to give you an update on where we're at and some of the infrastructure decisions that we've made for the new Jupyter Broadcasting website."
+      },
+      {
+        "start": 16400,
+        "stop": 17800,
+        "text": " Thank you for being a friend. Travel down the road and back again. Your heart is true. You're a pal and a confidant."
+      },
+      {
+        "start": 17800,
+        "stop": 18000,
+        "text": " And if you threw a heart in my hand, I'd be a man."
+      },
+      {
+        "start": 18000,
+        "stop": 19000,
+        "text": " We sent out an invite saying, \"Let's build a website,\" and they came to our party. It is going incredible. It's a really special day because Wes Payne's here. It's been a bit. Hello, Wes."
+      },
+      {
+        "start": 19000,
+        "stop": 19900,
+        "text": " Hello. Good to have you in the office. It's nice to be here. Sorry we didn't have a seat for you, but... Hey, I'm happy just to sit right on top of Brent."
+      },
+      {
+        "start": 19900,
+        "stop": 20600,
+        "text": " I don't know why he has to collect all those seats. I think it's totally fair. I think it's fair. And Brent, I hope you brought the candy because Alex is here and we did promise candy."
+      },
+      {
+        "start": 20600,
+        "stop": 21300,
+        "text": " Hello, Alex. Welcome back to the office if you've been on the office before. I think you have once, maybe. But it's good to have you here."
+      },
+      {
+        "start": 21300,
+        "stop": 21700,
+        "text": " I definitely interrupted an episode with the \"No Touchy the Chair\" sticker a while back."
+      },
+      {
+        "start": 21700,
+        "stop": 22100,
+        "text": " That is very true. He also interrupted one by turning the internet on."
+      },
+      {
+        "start": 22100,
+        "stop": 22200,
+        "text": " Oh, that's also true. Yes."
+      },
+      {
+        "start": 22200,
+        "stop": 22500,
+        "text": " Okay, good. Good. So your presence has been felt."
+      },
+      {
+        "start": 22500,
+        "stop": 22600,
+        "text": " Definitely."
+      },
+      {
+        "start": 22600,
+        "stop": 23900,
+        "text": " Right. Good. Well, actually, this week we've got a lot to talk about because I've gotten the sense that there has been a lot of work to get the new Jupyter Broadcasting website ready to go from an infrastructure standpoint."
+      },
+      {
+        "start": 23900,
+        "stop": 24700,
+        "text": " I know we have a new domain, we have some changes, and it sounds like we're getting a lot closer to actually having this thing finished."
+      },
+      {
+        "start": 24700,
+        "stop": 24900,
+        "text": " So what are we going to talk about, Brent? What's the latest?"
+      },
+      {
+        "start": 24900,
+        "stop": 26100,
+        "text": " Well, a heck of a lot of stuff has been happening on the website this week. So much that I... it seems I can't ever get caught up on all of the sort of action that's happening there, which is a really good problem to have. I'm not complaining at all."
+      },
+      {
+        "start": 26100,
+        "stop": 26300,
+        "text": " Totally. We're going to need another Brent."
+      },
+      {
+        "start": 26300,
+        "stop": 27500,
+        "text": " The team that we've amassed has been really impressive in the work they've been doing, and the discussions that have been happening have been super fascinating to watch. Chris, I know you got involved in one or two of them this week as well, and you got some features that were really cool."
+      },
+      {
+        "start": 27500,
+        "stop": 28500,
+        "text": " You know, every now and then I've needed to jump in, but for the most part, I feel like it's rare where something hits a... hits like a roadblock that needs me to make a decision."
+      },
+      {
+        "start": 28500,
+        "stop": 29300,
+        "text": " But one area I was providing some feedback just recently was how we are doing the live embed on the new website."
+      },
+      {
+        "start": 29300,
+        "stop": 30200,
+        "text": " When you go to new.JupiterBroadcasting.com, you'll see there's a live link. When you go there, we now have a dynamically inserted PeerTube livestream."
+      },
+      {
+        "start": 30200,
+        "stop": 31200,
+        "text": " So on the back end, using the PeerTube API, when the new... whatever we're streaming, maybe it's Coder, maybe it's Office Hours, maybe it's Linux Unplugged, maybe it's self-hosted."
+      },
+      {
+        "start": 31200,
+        "stop": 31900,
+        "text": " Whatever we're streaming, the API actually... you can get that. You can query that information. It makes all of it available."
+      },
+      {
+        "start": 31900,
+        "stop": 32600,
+        "text": " So when a new stream goes live, the API registers that, and then on the back end... I don't even know really how they're doing this. Maybe you can tell me."
+      },
+      {
+        "start": 32600,
+        "stop": 32700,
+        "text": " I can give you a..."
+      },
+      {
+        "start": 32700,
+        "stop": 33600,
+        "text": " Yeah, we're getting on the back end basically the latest PeerTube livestream auto-embedded now on the new website. We don't have to do anything. Tell us how it's happening, Wes."
+      },
+      {
+        "start": 33600,
+        "stop": 34700,
+        "text": " Yeah, I mean there's a little bit of JavaScript right here in the page that's going to go reach out to the PeerTube API, figure out the latest livestream that's happening, and then dynamically pull the embed code and toss that into your page."
+      },
+      {
+        "start": 34700,
+        "stop": 35300,
+        "text": " Oh, so it doesn't unload. Oh, so whatever the livestream is at that moment will automatically get embedded."
+      },
+      {
+        "start": 35300,
+        "stop": 36700,
+        "text": " Also, just major props to Arawan Foran. I probably messed that name up, but just an awesome example. Not only did they make this functionality work in really quick time, but also added some helpful sort of just improve the general doc system."
+      },
+      {
+        "start": 36700,
+        "stop": 37600,
+        "text": " The code itself is really well documented, and it's just a nice case where they're not otherwise super active on GitHub, but just showed up to help us out."
+      },
+      {
+        "start": 37600,
+        "stop": 38700,
+        "text": " Well, and there were a few complicated ways to solve this problem thrown around, where we were trying to come up with ways where we would maybe add a feature to a chatbot that would then auto-embed it on the thing and then kick off a build."
+      },
+      {
+        "start": 38700,
+        "stop": 39300,
+        "text": " Like, we were kind of coming up with rather complicated solutions, and this is a rather elegant way to pull this off."
+      },
+      {
+        "start": 39300,
+        "stop": 39500,
+        "text": " Nice, simple, easy."
+      },
+      {
+        "start": 39500,
+        "stop": 39900,
+        "text": " Yeah, I like that a lot, and it means we don't have to go edit the page every time we go live."
+      },
+      {
+        "start": 39900,
+        "stop": 40100,
+        "text": " One last thing we can mess up, right?"
+      },
+      {
+        "start": 40100,
+        "stop": 40200,
+        "text": " That's so cool."
+      },
+      {
+        "start": 40200,
+        "stop": 42100,
+        "text": " You know, Arawan actually created a GitHub account specifically to commit that idea to our repo, which was really great, and then unfortunately ran into getting flagged as spam because of the way they had their email set up and vanished along with the changes that they submitted."
+      },
+      {
+        "start": 42100,
+        "stop": 43100,
+        "text": " So it was a day or so that we were trying to get them back, and they figured it out. They fixed their email, I think, and we got all those changes back, and we were like, \"Oh, no, that code was so great. It's gone forever now.\""
+      },
+      {
+        "start": 43100,
+        "stop": 43600,
+        "text": " But yeah, it came back, thank you, and is now part of the production."
+      },
+      {
+        "start": 43600,
+        "stop": 44100,
+        "text": " Doubly thank you for actually pushing through all those trials and tribulations to actually get it across the finish line too."
+      },
+      {
+        "start": 44100,
+        "stop": 44300,
+        "text": " Yeah, yeah."
+      },
+      {
+        "start": 44300,
+        "stop": 44400,
+        "text": " We appreciate it."
+      },
+      {
+        "start": 44400,
+        "stop": 46900,
+        "text": " It's been great to see a lot of new people who have maybe worked on a lot of projects solo but haven't really worked in an open source community kind of project, and so there's been some really neat mentoring happening as well, which I think has been another one of those features that we didn't really expect to happen and has been really great to watch, and everybody's been super, super nice and handholding."
+      },
+      {
+        "start": 46900,
+        "stop": 48500,
+        "text": " I'll tell you what I found actually really interesting this week as I started to get involved in the project is it's my first time dealing with an open source project where almost all the discussion happens almost exclusively on GitHub."
+      },
+      {
+        "start": 48500,
+        "stop": 51100,
+        "text": " When I was involved with Linux server back in the day, we did all the chat in IRC or Discord, and we had private team channels where we took all the decisions and stuff like that, but the thing that I've really started to appreciate is just how difficult it is to communicate all of your thoughts in such a low bandwidth conversation without either sounding a little bit rude and dismissive of, \"Well, we shouldn't do it that way because of X.\""
+      },
+      {
+        "start": 51100,
+        "stop": 52700,
+        "text": " Unless you phrase things carefully, it can sound like you're being a little bit up yourself, but I've been really impressed with the, I guess, the level of discourse that's been happening in all of the issues that I've certainly been involved with."
+      },
+      {
+        "start": 52700,
+        "stop": 53800,
+        "text": " There is some discussion happens in the matrix room, but not a lot. I wouldn't say the majority happens there. It pretty much all happens on GitHub, which is, I think, very, very interesting."
+      },
+      {
+        "start": 53800,
+        "stop": 54800,
+        "text": " Yeah, we've been actively trying to encourage it to happen on GitHub for, I think, two reasons, one that I've made public and the other one that I've kind of kept to myself, but it worked on you, Alex."
+      },
+      {
+        "start": 54800,
+        "stop": 56200,
+        "text": " The first reason is then we can all work sort of asynchronously because it seems like almost half the people that are committing ideas and pull requests aren't from anywhere near the North American time zones."
+      },
+      {
+        "start": 56200,
+        "stop": 57200,
+        "text": " And so there's work happening at night, and so if you haven't been in the matrix chat all day, whichever time zone you're in, you're not missing stuff."
+      },
+      {
+        "start": 57200,
+        "stop": 58500,
+        "text": " And so if you're working on a specific issue, then everything's there. The other reason is it forces you to write your ideas in a really concise and clear way, and it forces you to also make them very clear for others."
+      },
+      {
+        "start": 58500,
+        "stop": 60600,
+        "text": " And I think sometimes if you're doing real-time chat, that's not always the case. You can't sort of sit for 10 minutes even--I've done this on certain issues--sit for 10 minutes and really think about how do I communicate this very clearly so that there's no question about what my idea is, and even go in and edit it an hour later when you're like, \"Oh, I forgot to mention this other thing.\""
+      },
+      {
+        "start": 60600,
+        "stop": 61100,
+        "text": " Thank goodness for that edit button because stuff does occur to me an hour later all the time."
+      },
+      {
+        "start": 61100,
+        "stop": 62100,
+        "text": " Yeah, so I think that's actually another feature of using the--of tracking all of those conversations, hopefully quite concisely, but really with some quality in the GitHub issues."
+      },
+      {
+        "start": 62100,
+        "stop": 64000,
+        "text": " And so I just implore anybody that's listening to this--I don't know who's listening, but if you are, hello--if you are on the fence about contributing to an open source project, this is the perfect one to get started because there are so many people who this is their first one, and you will be in good company."
+      },
+      {
+        "start": 64000,
+        "stop": 64300,
+        "text": " Yeah, and that also doesn't mean that the quality of work has been low."
+      },
+      {
+        "start": 64300,
+        "stop": 64400,
+        "text": " No, not at all."
+      },
+      {
+        "start": 64400,
+        "stop": 65500,
+        "text": " I've been very, very, very impressed with people who have been new to this kind of GitHub workflow even, who have had extremely high quality of contributions."
+      },
+      {
+        "start": 65500,
+        "stop": 66000,
+        "text": " That's been super impressive to me. I feel like it's a treat to just watch all the activity happen."
+      },
+      {
+        "start": 66000,
+        "stop": 67600,
+        "text": " I totally agree with that, and I also appreciate that when I have been required to provide some input, somebody has been willing to tag me in Matrix because I'm not watching all the GitHub threads all the time, so there is that space to be like, \"Hey, can you go look at this?\""
+      },
+      {
+        "start": 67600,
+        "stop": 68100,
+        "text": " And then they just link me to the issue on GitHub that I need to take a look at, and I think that has been a useful combination."
+      },
+      {
+        "start": 68100,
+        "stop": 68500,
+        "text": " Yeah, it's nice. It feels like kind of one community and not disparate places."
+      },
+      {
+        "start": 68500,
+        "stop": 69400,
+        "text": " You see a lot of folks kind of onboarding in Matrix, getting tips for stuff, maybe throwing out pie-in-the-sky ideas, or talking about sort of vaguer things before they're ready to shape it into a specific issue. It's really nice."
+      },
+      {
+        "start": 69400,
+        "stop": 70300,
+        "text": " And I think the reason why it's working well for people who have never contributed to an open source project before is a lot of them have contributed to their own projects before, and that's absolutely a factor."
+      },
+      {
+        "start": 70300,
+        "stop": 72400,
+        "text": " And I think a big part of it is Brent and Stefan's stewardship. I think they've helped integrate people and kind of act as that PMO, because you need somebody who can, especially in our situation where there's sometimes business requirements, that we just have certain things we want done, or we want to make sure we have certain features or things like that, and so you need somebody who can interface all of that."
+      },
+      {
+        "start": 72400,
+        "stop": 72700,
+        "text": " And I think that's also helped make it a successful project."
+      },
+      {
+        "start": 72700,
+        "stop": 73700,
+        "text": " It kind of makes them the spirit of the project in a way, too. You know, sort of the ambassadors of the culture and how things get done and welcoming new users, and that's really nice to have established."
+      },
+      {
+        "start": 73700,
+        "stop": 74300,
+        "text": " Although, are we celebrating too soon? I mean, we kind of have like a mission accomplished sign behind us right now. We're not actually done yet."
+      },
+      {
+        "start": 74300,
+        "stop": 76200,
+        "text": " Careful. There are some very large subprojects that still need some work, sort of like the archive, for instance, and some people are working on that in the background. But one of the main thrusts of my being here at Alex's place for the last, what, three weeks, something like that, has been to try to get Alex involved in the project."
+      },
+      {
+        "start": 76200,
+        "stop": 77000,
+        "text": " And he did mention that he has been involved. But Alex, you did some crazy neat stuff that I only understand about 50 percent of. Can you walk us through that?"
+      },
+      {
+        "start": 77000,
+        "stop": 78400,
+        "text": " Well, for the last couple of years, we've been running the Jupyter Broadcasting infrastructure sort of here, there, and everywhere. I think it was about a couple of years ago that we started deploying some infrastructure for the self-hosted show."
+      },
+      {
+        "start": 78400,
+        "stop": 79200,
+        "text": " And I wanted to use infrastructure as code to do that. You know, things like Ansible and Terraform to do that, to manage things like DNS records."
+      },
+      {
+        "start": 79200,
+        "stop": 80400,
+        "text": " Why would we want to log in manually to the Cloudflare interface? For example, type in some numbers like cavemen and every time we make a change. That doesn't really thrill me, that kind of stuff."
+      },
+      {
+        "start": 80400,
+        "stop": 82900,
+        "text": " What does thrill me is having a specific label in my Docker compose file and having the code have the ability to pass through that entire compose file, pull out the text from those specific labels in Ansible, and then use an Ansible module to update the Cloudflare DNS record to match the IP address with the DNS entry that I'm looking for."
+      },
+      {
+        "start": 82900,
+        "stop": 84400,
+        "text": " So that's one of the things that we've done is the website has moved from JupyterBroadcasting.net. Now it's at new.JupyterBroadcasting.com."
+      },
+      {
+        "start": 84400,
+        "stop": 85400,
+        "text": " And there it will stay until we're MVP version 1.0, whatever you're calling it. Once it's in production, obviously that will turn into JupyterBroadcasting.com."
+      },
+      {
+        "start": 85400,
+        "stop": 86700,
+        "text": " The other thing that we've done is automated using GitHub Actions. So for those that aren't familiar, GitHub Actions is a free continuous integration platform that's kind of built into GitHub."
+      },
+      {
+        "start": 86700,
+        "stop": 87400,
+        "text": " It honestly has made tools like Jenkins almost kind of irrelevant overnight for projects like ours."
+      },
+      {
+        "start": 87400,
+        "stop": 89400,
+        "text": " So I mentioned Linux server a few minutes ago, but back when I was involved in that project, we had our own Jenkins server that had remote workers at team members' houses, and it would SSH in and run jobs on their Raspberry Pis, for example, to build Pi images and super neat stuff."
+      },
+      {
+        "start": 89400,
+        "stop": 90800,
+        "text": " But let's be honest, that's kind of a pain in the bum. And so what GitHub Actions gives us is the ability to run jobs on their infrastructure. And GitHub's owned by Microsoft, so everything runs on Azure, so it's reasonably performant."
+      },
+      {
+        "start": 90800,
+        "stop": 92100,
+        "text": " And most importantly, it's free. So why wouldn't we use it? It's not completely open source. That's one argument. But free and open-ish. I don't know. I think it's fine."
+      },
+      {
+        "start": 92100,
+        "stop": 93000,
+        "text": " And not irreplaceable either, to be honest, Alex. If we needed to eventually change where we build the site at, it would take us an evening, right? It's not the end of the world."
+      },
+      {
+        "start": 93000,
+        "stop": 94400,
+        "text": " So here's the thing. We're building this Hugo site, and it's 20-odd thousand pages. I think nearly 21,000 pages at this time. On my MacBook Pro, which is one of the M1 chips, it takes nine seconds to build the website."
+      },
+      {
+        "start": 94400,
+        "stop": 94600,
+        "text": " No, really?"
+      },
+      {
+        "start": 94600,
+        "stop": 95000,
+        "text": " Nine seconds."
+      },
+      {
+        "start": 95000,
+        "stop": 95200,
+        "text": " But I want it now."
+      },
+      {
+        "start": 95200,
+        "stop": 96500,
+        "text": " However, what we're doing is building it on one of the Linode boxes that we use for the self-hosted infrastructure. And this box is hosting quite a few things now, actually. It's hosting the new JB website. It's hosting our..."
+      },
+      {
+        "start": 96500,
+        "stop": 96600,
+        "text": " Notes infrastructure?"
+      },
+      {
+        "start": 96600,
+        "stop": 98400,
+        "text": " Our Notes infrastructure. So HedgeDoc is up there. There's a bunch of stuff. There's probably about 15 or 20 services up there between all the various things. And just throwing another Nginx container on there hosting a Hugo site is absolutely no sweat for this thing."
+      },
+      {
+        "start": 98400,
+        "stop": 100000,
+        "text": " What does make it break a sweat, though, is building the Hugo website. So when it's building the site, it's engaging all four cores of this box, and it takes 44 seconds. So not the nine seconds of an M1 MacBook Pro, but 44 seconds is still plenty good enough."
+      },
+      {
+        "start": 100000,
+        "stop": 100600,
+        "text": " Faster than I could have manually created the WordPress post and posted the episode still. So that's something."
+      },
+      {
+        "start": 100600,
+        "stop": 101800,
+        "text": " And the real nice thing about it is, as part of the workflow that happens in the GitHub action, everything happens declaratively and sequentially. So you say, right, first of all, I want to clone the new code onto the box."
+      },
+      {
+        "start": 101800,
+        "stop": 103500,
+        "text": " And then I'm going to SSH into the box and do... We're using a makefile, which is another thing I'll touch on in a minute that we simplified. It builds the website, and then only once the build is successful does it actually pull down the old container and replace it with the new one."
+      },
+      {
+        "start": 103500,
+        "stop": 104200,
+        "text": " So the downtime when it performs an update is about a second or two, which I think is perfectly acceptable."
+      },
+      {
+        "start": 104200,
+        "stop": 105600,
+        "text": " Now, something I alluded to a moment ago is the makefile updates that we'd done. The version that was there before was... Brent confided in me that the chap that submitted those changes had never written a makefile before."
+      },
+      {
+        "start": 105600,
+        "stop": 105800,
+        "text": " It did pretty good, considering."
+      },
+      {
+        "start": 105800,
+        "stop": 106700,
+        "text": " Indeed. However, I think one of the principles I like to apply to this sort of project is simplicity is best. Keep it simple, stupid."
+      },
+      {
+        "start": 106700,
+        "stop": 107700,
+        "text": " And the makefile that was there was trying to do a couple of things. It was trying to cater to local build environments and also Docker build environments."
+      },
+      {
+        "start": 107700,
+        "stop": 109900,
+        "text": " And so we've taken the decision to just standardize on Docker as the build environment for everything. That way people across all architectures, all servers, all places, it doesn't matter where, you know exactly which version of Hugo you're running, you know exactly which encapsulated version of libraries you have, etc, etc."
+      },
+      {
+        "start": 109900,
+        "stop": 110600,
+        "text": " So hopefully it should make things for people across the world who want to contribute to this thing easier to contribute to."
+      },
+      {
+        "start": 110600,
+        "stop": 111000,
+        "text": " Or move it if we ever needed to move it to a new server or a new location too."
+      },
+      {
+        "start": 111000,
+        "stop": 112400,
+        "text": " Absolutely. Yeah. And then we were talking about, well, once we've built the site, do we push it to a Docker registry somewhere like Docker Hub or GitHub Container Registry or GitLab or any, you know, there's lots of options."
+      },
+      {
+        "start": 112400,
+        "stop": 113700,
+        "text": " And ultimately because of the way we've actually decided to do it, we're just SSHing into the server using the GitHub action, fetching the latest changes from Git, doing the build and we don't actually push an image to a registry at all."
+      },
+      {
+        "start": 113700,
+        "stop": 114900,
+        "text": " Yeah. Simplicity. I mean, there were some great ideas of how to accomplish that and many of them had multiple parts. And I think landing on simplicity is going to be good for future proofing this thing."
+      },
+      {
+        "start": 114900,
+        "stop": 116000,
+        "text": " Again, it keeps costs down, it makes the deployment time faster and we don't actually need versioned artifacts of the website. If you think about it, we already have that by the commits in the repo."
+      },
+      {
+        "start": 116000,
+        "stop": 116200,
+        "text": " Yeah, that's true. That's actually really nice."
+      },
+      {
+        "start": 116200,
+        "stop": 117200,
+        "text": " That's one of the things I love about this system. It's great. And I also feel like I have to be more accountable. Like I have to explain my changes now too because you got to say, you know, what is this commit about?"
+      },
+      {
+        "start": 117200,
+        "stop": 117900,
+        "text": " I'm like, well, here's what I'm updating and why I'm doing it. And I never did that before with the WordPress website, I'll tell you that."
+      },
+      {
+        "start": 117900,
+        "stop": 118300,
+        "text": " Sometimes plugging would start working, stop working. You never knew what was happening."
+      },
+      {
+        "start": 118300,
+        "stop": 120300,
+        "text": " That's the thing, right? I mean, there are several principles in software development which we're trying to inject into this project. One of which is feature branches. So any new feature for the website goes to feature/name of feature, you know, let's say update host image, whatever it is."
+      },
+      {
+        "start": 120300,
+        "stop": 121700,
+        "text": " And then that goes through a peer review process. So any changes that make it to production are now automatically built and applied, but only once they've been reviewed by two or three people, whatever the processes we land on looks like."
+      },
+      {
+        "start": 121700,
+        "stop": 123100,
+        "text": " And then for infrastructure changes, we have a similar thing. So it'd be infra/update IP address, for example, that kind of thing. And then myself, maybe Wes or Brent could review that and merge that stuff."
+      },
+      {
+        "start": 123100,
+        "stop": 123700,
+        "text": " Yeah, and you did create a separate repository for the infrastructure stuff. I think that's an important distinction as well."
+      },
+      {
+        "start": 123700,
+        "stop": 124500,
+        "text": " Yeah, we didn't actually create it. It was actually the old self-hosted show GitHub organization, and we've migrated that infra repo across."
+      },
+      {
+        "start": 124500,
+        "stop": 125600,
+        "text": " So the really nice thing about doing it this way is I haven't really had to build hardly anything at all. All the code was already there, and I've been using it to manage my personal infrastructure for the last five or six years."
+      },
+      {
+        "start": 125600,
+        "stop": 126600,
+        "text": " And so it's pretty battle tested. There's a couple of things in it that I know how it works, and I'll document those things, but for the most part, it's all in the makefile."
+      },
+      {
+        "start": 126600,
+        "stop": 129400,
+        "text": " So I have a question in terms of performance. So we have it on a Linode box. One advantage that Scale Engine had as a host is Alan builds a CDN, and he puts a lot of the PHP files and the CSS files and the image files across this CDN, which theoretically helps with performance, although I think performance has not been fantastic because the flaw has been the database isn't super fast. It all has to connect to that database."
+      },
+      {
+        "start": 129400,
+        "stop": 130000,
+        "text": " So what are we doing for performance in terms of global audience and reaching this all on one Linode box and that kind of stuff?"
+      },
+      {
+        "start": 130000,
+        "stop": 130200,
+        "text": " Right now, diddly squat."
+      },
+      {
+        "start": 130200,
+        "stop": 130900,
+        "text": " Yeah, right now. Well, yeah, we should be clear. Right now, it's a test site. It's a development site, but we would like people to look at it. New.JupiterBroadcasting.com."
+      },
+      {
+        "start": 130900,
+        "stop": 133000,
+        "text": " There were some ideas floated in the GitHub around using S3 to host the Hugo site rather than a container. Ran into some issues, which we may be able to work around some other way. I don't know yet, but it took about 17 minutes to upload the website to an S3 bucket versus the less than one minute to build and deploy it as a container."
+      },
+      {
+        "start": 133000,
+        "stop": 134700,
+        "text": " Now, I am a Cloudflare noob. I've only just recently accepted Cloudflare into my life after resisting for a long time, but I know you're more familiar with it, Alex, but I'm pretty sure there's some caching tricks we could do at the Cloudflare level as well, too, right?"
+      },
+      {
+        "start": 134700,
+        "stop": 135800,
+        "text": " They do have a proxy service, which should help protect us against things like DDoSes as well as provide us with more of a CDN-style caching layer."
+      },
+      {
+        "start": 135800,
+        "stop": 136200,
+        "text": " And since it's a flat file site, maybe that's sufficient?"
+      },
+      {
+        "start": 136200,
+        "stop": 137600,
+        "text": " Yeah, in theory, but the issue is when you enable the caching button on Cloudflare, it changes the IP addresses so you end up being load balanced between a couple of things and then the headers don't quite root properly."
+      },
+      {
+        "start": 137600,
+        "stop": 138600,
+        "text": " I haven't quite figured that out yet, and if anybody is an expert on that, please jump into the GitHub issue open for this issue right now and come and help me figure it out, please."
+      },
+      {
+        "start": 138600,
+        "stop": 139600,
+        "text": " I could see that being one problem, especially on release day. That was an issue we had before, is on release day the site would get slammed for the first few hours and then the file, this page doesn't load and stuff like that."
+      },
+      {
+        "start": 139600,
+        "stop": 140100,
+        "text": " Now, the files will be hosted on a different CDN for the MP3s and whatnot, so that'll help."
+      },
+      {
+        "start": 140100,
+        "stop": 141400,
+        "text": " Because the Cloudflare release, I can't remember what it's called, R2, I think, as like a layer that sits in front of S3 and caches everything there, so maybe in time that's something we can investigate, but for the MVP, I think we'll stick with what we've got."
+      },
+      {
+        "start": 141400,
+        "stop": 142400,
+        "text": " Yeah, I mean, there's also a lot of ways we could pull that off, because we could also use Linode's object storage, and maybe it builds on that Linode and then it uploads to object storage and then R2 sits in front of that or something like that."
+      },
+      {
+        "start": 142400,
+        "stop": 143500,
+        "text": " I mean, there's a lot we could play with, but I think we'll have to just get a feel for how the performance is, because the component that I don't really know, and I'm sure was always a factor in the past, was the database."
+      },
+      {
+        "start": 143500,
+        "stop": 144800,
+        "text": " I think for us, the bottleneck was when people would come to the website after Linux Unplugged came out or Linux Action Show came out, the database would just get absolutely slammed with page loads, and then you're generating that WordPress page every single time the page generates."
+      },
+      {
+        "start": 144800,
+        "stop": 145200,
+        "text": " Even with some of those caching plugins, there's still a lot you're dynamically generating."
+      },
+      {
+        "start": 145200,
+        "stop": 145400,
+        "text": " Not a problem with Hugo, of course."
+      },
+      {
+        "start": 145400,
+        "stop": 146900,
+        "text": " Another issue you've got to solve for with S3 is TLS certificates. So the S3 object storage that Linode provide, they provide an out-of-the-box TLS certificate for linodeobjects.com, whatever the bucket name is."
+      },
+      {
+        "start": 146900,
+        "stop": 147400,
+        "text": " But you would then have to figure out how to configure your own jupyterbroadcasting.com TLS stuff."
+      },
+      {
+        "start": 147400,
+        "stop": 147500,
+        "text": " Right, right."
+      },
+      {
+        "start": 147500,
+        "stop": 148000,
+        "text": " And at the moment, with the containerized version that's deployed, that's all handled through traffic and Let's Encrypt."
+      },
+      {
+        "start": 148000,
+        "stop": 148800,
+        "text": " Yeah, I mean, maybe that'll be performing enough. We'll just see, right? I mean, I would prefer to leave all the S3 stuff out if we don't need it, because it just keeps it simpler."
+      },
+      {
+        "start": 148800,
+        "stop": 149100,
+        "text": " I guess we'll find out when this episode releases, huh?"
+      },
+      {
+        "start": 149100,
+        "stop": 149300,
+        "text": " Yeah, we just need more people trying it, is what we need."
+      },
+      {
+        "start": 149300,
+        "stop": 149400,
+        "text": " A little mini stress test."
+      },
+      {
+        "start": 149400,
+        "stop": 150900,
+        "text": " Yeah, we just got to build more traffic, and then, because when we flip it live, what I'm thinking is eventually we just start de-emphasizing the fireside pages, and we stop sending people to the individual fireside pages, and we start sending people to jupyterbroadcasting.com/office."
+      },
+      {
+        "start": 150900,
+        "stop": 151000,
+        "text": " Just one great place to go."
+      },
+      {
+        "start": 151000,
+        "stop": 152200,
+        "text": " So, and then that'll start sending more and more of the traffic back to our main site again, because we've spent the last three and a half, four years sending people to our fireside pages, because that's where we could really apply leverage at that time."
+      },
+      {
+        "start": 152200,
+        "stop": 153400,
+        "text": " But this is a way better setup, so thank you for all the work on the Infra, guys. I feel like we're in a way better position to go live now, but also, we're in a better position to maintain it over the long term as well."
+      },
+      {
+        "start": 153400,
+        "stop": 153800,
+        "text": " So, it's good to be figuring that out before we've even gone into production."
+      },
+      {
+        "start": 153800,
+        "stop": 154400,
+        "text": " Everything is in Git, and everything is in for its code, which just gives me the warm fuzzies, you know?"
+      },
+      {
+        "start": 154400,
+        "stop": 155000,
+        "text": " All right, thank you gentlemen for coming into the office, I appreciate your time, appreciate you being here."
+      },
+      {
+        "start": 155000,
+        "stop": 155400,
+        "text": " Brent, where do we want to send people that are listening if they want to participate?"
+      },
+      {
+        "start": 155400,
+        "stop": 156000,
+        "text": " Yeah, I think we'll put a few links in the show notes, but a good place to go if you just want to see what the heck we're talking about."
+      },
+      {
+        "start": 156000,
+        "stop": 156700,
+        "text": " New.jupyterbroadcasting.com, and I think our Jupyter Broadcasting GitHub page is probably the place to go."
+      },
+      {
+        "start": 156900,
+        "stop": 157500,
+        "text": " So now is the time to really put this thing through its paces!"
+      },
+      {
+        "start": 157500,
+        "stop": 158100,
+        "text": " And Minimik, you had a suggestion regarding the GitHub aspect of this, and how you can actually integrate GitLab too if one wants."
+      },
+      {
+        "start": 158100,
+        "stop": 159000,
+        "text": " Yeah, indeed, in fact. So, for those who don't want to use Git because it's owned by a company that you don't want to mention your name,"
+      },
+      {
+        "start": 159000,
+        "stop": 159800,
+        "text": " so all the GitLab users know that they have the possibility to create their own homepage on GitLab, hosted on GitLab."
+      },
+      {
+        "start": 159800,
+        "stop": 160800,
+        "text": " And there is a possibility to, in fact, deploy a Hugo website similar to Git Actions within GitLab."
+      },
+      {
+        "start": 160800,
+        "stop": 161800,
+        "text": " So you are limited to these GitLab homepage services, but you can in fact do the same thing as you do now on Jupyter Broadcasting."
+      },
+      {
+        "start": 161800,
+        "stop": 162400,
+        "text": " You can do it in combination with GitHub and then have your own GitLab homepage based on Hugo,"
+      },
+      {
+        "start": 162400,
+        "stop": 163000,
+        "text": " and then you can just redirect your favorite domain to that GitLab homepage and you're good."
+      },
+      {
+        "start": 163000,
+        "stop": 163600,
+        "text": " And I don't really have an excuse, but I feel like we don't give enough plugs for GitT as well, which is also a GitHub alternative."
+      },
+      {
+        "start": 163600,
+        "stop": 164100,
+        "text": " It doesn't necessarily do some of the stuff we're talking about right now, but GitT is also a great solution."
+      },
+      {
+        "start": 164100,
+        "stop": 164300,
+        "text": " I've heard really good things about Sourcehead as well."
+      },
+      {
+        "start": 164300,
+        "stop": 164800,
+        "text": " Oh, yeah. I noticed GitT also just has an app you can one-click install an umbral."
+      },
+      {
+        "start": 164800,
+        "stop": 165100,
+        "text": " Ooh, I bet you they got a Linode something something or other."
+      },
+      {
+        "start": 165100,
+        "stop": 165400,
+        "text": " I bet you they got a Linode something something one click as well."
+      },
+      {
+        "start": 165400,
+        "stop": 165900,
+        "text": " In fact, I want to say holler over to Linode. Linode.com/Jupyter."
+      },
+      {
+        "start": 165900,
+        "stop": 166500,
+        "text": " Linode is investing right here in Office Hours because they want to invest in the community."
+      },
+      {
+        "start": 166500,
+        "stop": 167100,
+        "text": " I mean, this isn't like, come on, this isn't going to be JB's biggest show, and Linode is savvy enough to know that."
+      },
+      {
+        "start": 167100,
+        "stop": 167600,
+        "text": " But they also know that the community is worth investing in, that it pays dividends."
+      },
+      {
+        "start": 167600,
+        "stop": 168000,
+        "text": " And that's also why they're making our road trip possible again this year."
+      },
+      {
+        "start": 168000,
+        "stop": 168700,
+        "text": " So go to Linode.com/Jupyter and get one hundred dollars and sixty day credit over at Linode and you support the show."
+      },
+      {
+        "start": 168700,
+        "stop": 169400,
+        "text": " It's where we host everything that we do publicly now. Linode also has a bunch, a bunch of really nice advanced features."
+      },
+      {
+        "start": 169400,
+        "stop": 170600,
+        "text": " They support Terraform, Kubernetes, Ansible. They have a really clean, simple API that already has a bunch of pre-created libraries for Python and for Rust and for all the things."
+      },
+      {
+        "start": 170600,
+        "stop": 171000,
+        "text": " They also have a command line client that is choice. I really love that."
+      },
+      {
+        "start": 171000,
+        "stop": 171800,
+        "text": " In fact, a little pro tip, install the Linode command line client on your actual Linode machine. Right?"
+      },
+      {
+        "start": 171800,
+        "stop": 172700,
+        "text": " So then when you're SSH'd into your Linode box, you could create a snapshot of that very box on that box before you do a system update."
+      },
+      {
+        "start": 172700,
+        "stop": 173000,
+        "text": " Just take it to the next level, guys. It's really easy."
+      },
+      {
+        "start": 173000,
+        "stop": 173800,
+        "text": " And of course, they have great things like S3 compatible object storage, which you could always use as the seed for, I don't know, R2."
+      },
+      {
+        "start": 173800,
+        "stop": 174700,
+        "text": " And then you could just like have the most insane, great CDN with incredible reach at great prices."
+      },
+      {
+        "start": 174700,
+        "stop": 175200,
+        "text": " Oh, and by the way, Linode, 30 to 50 percent cheaper than the hyperscalers out there."
+      },
+      {
+        "start": 175200,
+        "stop": 175600,
+        "text": " But there's a lot of ways you can host. None of them are as good as Linode."
+      },
+      {
+        "start": 175600,
+        "stop": 175900,
+        "text": " They've got the best support. They've got the best performance. They've got 11 data centers."
+      },
+      {
+        "start": 175900,
+        "stop": 176800,
+        "text": " And nobody else invests deep into the community, into the media, into the events, into the projects."
+      },
+      {
+        "start": 176800,
+        "stop": 177500,
+        "text": " Even the things like road trips that just connect all of us together. Who else is doing that? Nobody."
+      },
+      {
+        "start": 177500,
+        "stop": 178000,
+        "text": " So go to Linode dot com slash Jupiter. Support the show."
+      },
+      {
+        "start": 178000,
+        "stop": 178800,
+        "text": " Say thanks for your support and get that hundred dollars to mess around. It's pretty fun. Linode dot com slash Jupiter."
+      },
+      {
+        "start": 178800,
+        "stop": 179400,
+        "text": " And, you know, we like it because we're rebuilding this whole thing from scratch. We could have hosted this stuff anywhere."
+      },
+      {
+        "start": 179400,
+        "stop": 180100,
+        "text": " You know, we could have put it anywhere. And we went with Linode. We choose Linode over and over again."
+      },
+      {
+        "start": 180100,
+        "stop": 180600,
+        "text": " You know, like a good marriage with your loved one where you choose to be their partner over and over again."
+      },
+      {
+        "start": 180600,
+        "stop": 181100,
+        "text": " We choose Linode over and over again. Linode dot com slash Jupiter."
+      },
+      {
+        "start": 181100,
+        "stop": 181500,
+        "text": " Speaking of Linode, you know what else we have hosted on Linode?"
+      },
+      {
+        "start": 181500,
+        "stop": 181600,
+        "text": " What's that?"
+      },
+      {
+        "start": 181600,
+        "stop": 181800,
+        "text": " Our massive Matrix server."
+      },
+      {
+        "start": 181800,
+        "stop": 182400,
+        "text": " Oh, yeah. Alex was showing me just how massive that server is. And it's a lot of triple digits."
+      },
+      {
+        "start": 182400,
+        "stop": 182500,
+        "text": " Yeah."
+      },
+      {
+        "start": 182500,
+        "stop": 183200,
+        "text": " Yeah. You know, you don't need the 96 gigs of RAM to run Matrix, but it helps."
+      },
+      {
+        "start": 183200,
+        "stop": 183500,
+        "text": " How many cores?"
+      },
+      {
+        "start": 183500,
+        "stop": 183900,
+        "text": " I think it's got 48 cores or something like that. It's a."
+      },
+      {
+        "start": 183900,
+        "stop": 184200,
+        "text": " You know, here's the problem."
+      },
+      {
+        "start": 184200,
+        "stop": 185300,
+        "text": " You know where you end up using all 48 cores is if you have 40 people logging in at once, because every time a user logs in and syncs their element client, it pegs one of the cores to 100 percent."
+      },
+      {
+        "start": 185300,
+        "stop": 186100,
+        "text": " So if you have a dozen people logging in at once, that's a dozen cores locked up, but can't do anything else."
+      },
+      {
+        "start": 186100,
+        "stop": 186800,
+        "text": " And so ultimately, we're like, well, there's a lot of ways we can solve this and we need to make this better and we need to use workers better."
+      },
+      {
+        "start": 186800,
+        "stop": 187400,
+        "text": " There's a lot still to do, but there is a way we can just throw hardware at this and it will survive."
+      },
+      {
+        "start": 187400,
+        "stop": 187800,
+        "text": " And the server has been great. It's been it's and the community is continuing to grow."
+      },
+      {
+        "start": 187800,
+        "stop": 188900,
+        "text": " We just launched another Matrix room that we wanted to let people know about. It's for the Ohio Linux Fest that's coming up in December, December 2nd and third."
+      },
+      {
+        "start": 188900,
+        "stop": 189400,
+        "text": " You can find out info at OLF conference dot org. We'll have a link in the notes."
+      },
+      {
+        "start": 189400,
+        "stop": 189800,
+        "text": " And this has been a thing that's happening more and more. And we just want to encourage the hell out of it."
+      },
+      {
+        "start": 189800,
+        "stop": 190600,
+        "text": " Somebody contacted us and said, hey, I'd like to organize my own meetup with fellow Jupiter broadcasting listeners in the Columbus area."
+      },
+      {
+        "start": 190600,
+        "stop": 191000,
+        "text": " So we said that's a great frickin idea. So we created the Columbus Club."
+      },
+      {
+        "start": 191000,
+        "stop": 192200,
+        "text": " So if you'd like to join our Matrix room and coordinate for a Linux Fest meetup in Ohio, you can go to bit dot L Y slash Columbus Club."
+      },
+      {
+        "start": 192200,
+        "stop": 192500,
+        "text": " And there's already people in there organizing right now. It's already happening."
+      },
+      {
+        "start": 192500,
+        "stop": 193000,
+        "text": " I noticed a bunch of venue suggestions. This stuff is like it's like months away."
+      },
+      {
+        "start": 193000,
+        "stop": 193500,
+        "text": " It's amazing. We said we would set something up, but did we actually tell anybody? Like, did they just find it?"
+      },
+      {
+        "start": 193500,
+        "stop": 194200,
+        "text": " I think we only mentioned it in Linux Unplugged quickly. And I think it was only on the pre pre show or something crazy like that."
+      },
+      {
+        "start": 194200,
+        "stop": 194800,
+        "text": " Well, it's a thing. It's official bit dot L Y slash Columbus Club. And another shout out for Ohio Linux Fest."
+      },
+      {
+        "start": 194800,
+        "stop": 195300,
+        "text": " I really enjoyed it. I've only made it once. And it was like before two of my children were born."
+      },
+      {
+        "start": 195300,
+        "stop": 196000,
+        "text": " But I really enjoyed it. And I think it's a great crew out there. And it's going to be at a brand new venue this year."
+      },
+      {
+        "start": 196000,
+        "stop": 196700,
+        "text": " The brand new Tower of Hilton Columbus Downtown Hotel. I don't know if that's a good thing or not."
+      },
+      {
+        "start": 196700,
+        "stop": 197500,
+        "text": " But new seems nice. I'm not sure it's completely done being built. I heard rumors in our little room that they were finishing some stuff."
+      },
+      {
+        "start": 197500,
+        "stop": 198200,
+        "text": " Really? That is a new hotel. Well, I mean, it's in December, so brand brand new. It's got that new hotel smell."
+      },
+      {
+        "start": 198200,
+        "stop": 198800,
+        "text": " Either way, I love a brand new hotel. I really wish I could go. There's so many events this year that it just hasn't worked out for me."
+      },
+      {
+        "start": 198800,
+        "stop": 199500,
+        "text": " And it's really stinging me in my, you know, my my missing events open wound. Your events feels. Yeah."
+      },
+      {
+        "start": 199500,
+        "stop": 200300,
+        "text": " If this goes well, you know, I think we could have a meetup room for every major city like some in Europe."
+      },
+      {
+        "start": 200300,
+        "stop": 201000,
+        "text": " Why not? We've got one already. I think we should have some more. I shouldn't say this, but I got to document it while I'm thinking about it."
+      },
+      {
+        "start": 201000,
+        "stop": 201400,
+        "text": " But I shouldn't say it while we're in the middle of this project. But we need a website."
+      },
+      {
+        "start": 201400,
+        "stop": 202000,
+        "text": " We need a website people can go and organize meetups. That's not meetup dot com."
+      },
+      {
+        "start": 202000,
+        "stop": 202500,
+        "text": " We need something specifically for JB audience members to sort of self organize in their areas."
+      },
+      {
+        "start": 202500,
+        "stop": 203000,
+        "text": " So you're feeling like these matrix rooms maybe aren't quite enough. And so I'm curious of the features."
+      },
+      {
+        "start": 203000,
+        "stop": 204000,
+        "text": " I think they're supplemental, right? They're supplemental to meeting a meetup organized because you could have most people would use the web web page and they'd have some people that want to help organize the details or have questions."
+      },
+      {
+        "start": 204000,
+        "stop": 205000,
+        "text": " They join the matrix room like like you have with the regular meetups. But this would be one specifically for Jupiter broadcasting members to create their own."
+      },
+      {
+        "start": 205000,
+        "stop": 205700,
+        "text": " I know there are a few open source like options, meetup alternatives, let's call them. I wonder if we can embed something like that."
+      },
+      {
+        "start": 205700,
+        "stop": 206600,
+        "text": " Me too. I wonder if anybody out there knows. I believe the the no agenda show had a community member create the no agenda meetups page at no agenda meetups dot com."
+      },
+      {
+        "start": 206600,
+        "stop": 207100,
+        "text": " And then you can either find a meetup or submit a meetup. I don't know exactly how it works. I've never done it."
+      },
+      {
+        "start": 207100,
+        "stop": 208100,
+        "text": " But it seems like it's a tool that's built specifically. Maybe maybe it's forked. I don't know. I can't really tell looking at it, but it's it's for their community to self organize and do their own meetups."
+      },
+      {
+        "start": 208100,
+        "stop": 209100,
+        "text": " And maybe that's taking it too far. But it seems like that's the next step. I'd really I encourage this kind of thing because number one, if these things started picking up momentum every now and then we could drop in like rock stars."
+      },
+      {
+        "start": 209100,
+        "stop": 209700,
+        "text": " Be like, hey, what's up, everybody? Brent's here. Just a surprise visit. Yeah, I think that'd be pretty great."
+      },
+      {
+        "start": 209700,
+        "stop": 210200,
+        "text": " So anyways, but it starts it starts with just a good old community chat room."
+      },
+      {
+        "start": 210200,
+        "stop": 211000,
+        "text": " Hit dot LY Columbus Club. If you have suggestions for other areas, if you're interested in starting a meetup in your area, let us know."
+      },
+      {
+        "start": 211000,
+        "stop": 211600,
+        "text": " What do you think? Should they just hit us up on Matrix? How should maybe boost it in? What, Brent? So many options."
+      },
+      {
+        "start": 211600,
+        "stop": 212500,
+        "text": " It's a good question. You know, it brings me to the idea of like feature requests. And we've been trying to figure out a good place for that."
+      },
+      {
+        "start": 212500,
+        "stop": 213600,
+        "text": " But I feel like any official channel, like if you want to send it into one of the email addresses, I think you could probably go to new Jupiter broadcasting dot com slash contact."
+      },
+      {
+        "start": 213600,
+        "stop": 214500,
+        "text": " Contact form there. That'd be a good way to do it. Seems on topic. Otherwise, just hit us up somehow. But keep it brief, please."
+      },
+      {
+        "start": 214500,
+        "stop": 215100,
+        "text": " Boost a Graham. It's time to get to some of the great boosts that have come into the show. And man, did we get a bunch of great boosts."
+      },
+      {
+        "start": 215100,
+        "stop": 216000,
+        "text": " We got a stack of boosts. We got a boost bank that's busting. Last week, we talked about why we didn't trust crypto and how there's crypto."
+      },
+      {
+        "start": 216000,
+        "stop": 216800,
+        "text": " And then there's Bitcoin. And we talked a little bit about the future of boosts and how we're considering keeping the segments tight and flowing and all of that."
+      },
+      {
+        "start": 216800,
+        "stop": 217300,
+        "text": " We got a lot of responses. So we are going to consolidate some of the boost."
+      },
+      {
+        "start": 217300,
+        "stop": 217900,
+        "text": " So if your boost doesn't get directly read this week, I would 100 percent promise you we did read it. We went through all of them before the show."
+      },
+      {
+        "start": 217900,
+        "stop": 218600,
+        "text": " We're just kind of paring it down a little bit for reasons I think will become clear as we go along."
+      },
+      {
+        "start": 218600,
+        "stop": 219000,
+        "text": " So Bradley, why don't you kick us off with our first from Mr. Casta Versa."
+      },
+      {
+        "start": 219000,
+        "stop": 219400,
+        "text": " Sure. Rusta Casta Versa wrote in thousand cents."
+      },
+      {
+        "start": 219400,
+        "stop": 219800,
+        "text": " Getting involved with crypto in general is hard, and I don't trust things that make it easier."
+      },
+      {
+        "start": 219800,
+        "stop": 220800,
+        "text": " I also don't want to give my I.D. and thanks to your suggestion of Fountain, I earn SAS through listening and can send them back without giving up what I consider to be private info."
+      },
+      {
+        "start": 220800,
+        "stop": 221800,
+        "text": " I think this is great that Rusta is thinking about the privacy and the KYC stuff so that know your customer regulations are just kind of like what you got to do if you're going to be a financial institution in the U.S."
+      },
+      {
+        "start": 221800,
+        "stop": 222200,
+        "text": " It's not necessarily this way outside the U.S., although I imagine it's probably pretty similar."
+      },
+      {
+        "start": 222200,
+        "stop": 222400,
+        "text": " It's got to be similar up in Canada, right?"
+      },
+      {
+        "start": 222400,
+        "stop": 222700,
+        "text": " I believe it totally is. Yeah. Yes."
+      },
+      {
+        "start": 222700,
+        "stop": 223200,
+        "text": " Welcome to the West, where we're going to track all of your financial info just in case you might be a terrorist."
+      },
+      {
+        "start": 223200,
+        "stop": 224300,
+        "text": " And so if you don't like that, and I can understand why you wouldn't, because you don't necessarily want to have your I.D. attached to a Bitcoin address, then I recommend Robosats."
+      },
+      {
+        "start": 224300,
+        "stop": 224700,
+        "text": " You need the Tor browser, but Robosats is fantastic. Just take your time with it."
+      },
+      {
+        "start": 224700,
+        "stop": 225500,
+        "text": " You can anonymously buy Bitcoin. You find a seller, you can read reviews about the seller, and then you pick the one that supports the payment method you want."
+      },
+      {
+        "start": 225500,
+        "stop": 226200,
+        "text": " Maybe you want cash. Maybe you want a check. Maybe you want PayPal. Maybe you want Cash App. Maybe you want whatever, Apple Pay."
+      },
+      {
+        "start": 226200,
+        "stop": 227100,
+        "text": " Robosats will let you do that, and then they'll help you escrow it and make sure everything's safe and good to go, and it's all done over the Lightning Network, so the privacy is just absolutely outstanding."
+      },
+      {
+        "start": 227100,
+        "stop": 227600,
+        "text": " It's how I'm going to be buying all of my long-time holding sats going forward."
+      },
+      {
+        "start": 227600,
+        "stop": 228300,
+        "text": " As far as spending money goes, like the ones I'm just boosting around town like a maniac, I think Strike's fine for that, because you're sending it over the Lightning Network."
+      },
+      {
+        "start": 228300,
+        "stop": 228800,
+        "text": " They're going into a Node wallet. They're getting mixed with everybody else's. And then shout out to Fountain."
+      },
+      {
+        "start": 228800,
+        "stop": 229300,
+        "text": " In the last three months, I have earned 36,084 sats."
+      },
+      {
+        "start": 229300,
+        "stop": 229400,
+        "text": " That is not trivial."
+      },
+      {
+        "start": 229400,
+        "stop": 229600,
+        "text": " Yeah, just by listening to podcasts."
+      },
+      {
+        "start": 229600,
+        "stop": 229700,
+        "text": " That is impressive."
+      },
+      {
+        "start": 229700,
+        "stop": 230300,
+        "text": " I play their game. I listen to some of the supported clips and the popular clips, but I don't mind that. I would have done that anyways."
+      },
+      {
+        "start": 230300,
+        "stop": 230800,
+        "text": " And I boost and support some of the clips, and that helps you earn more."
+      },
+      {
+        "start": 230800,
+        "stop": 231900,
+        "text": " And then I've also referred some friends, and that helps you earn more as well, but that's 36,000 sats in the last three months, and I can just send those around to different shows that I listen to without ever buying anything."
+      },
+      {
+        "start": 231900,
+        "stop": 232000,
+        "text": " All I'm doing is just listening."
+      },
+      {
+        "start": 232000,
+        "stop": 232200,
+        "text": " Getting paid for what you already do."
+      },
+      {
+        "start": 232200,
+        "stop": 232600,
+        "text": " Al Carnie wrote in with 1,024 sats."
+      },
+      {
+        "start": 232600,
+        "stop": 232800,
+        "text": " B-O-O-S-T!"
+      },
+      {
+        "start": 232800,
+        "stop": 233400,
+        "text": " From my limited understanding, Lightning is not Bitcoin, but rather a layer on top of it."
+      },
+      {
+        "start": 233400,
+        "stop": 234300,
+        "text": " I would assume that the extra convenience comes at the cost of fewer protections from bad actors that the slower moving blockchain would provide?"
+      },
+      {
+        "start": 234300,
+        "stop": 235300,
+        "text": " This is a good question, Al Carnie, because in blockchain world you can have fast and less secure, and you can have decentralized and more secure, but then you get slower."
+      },
+      {
+        "start": 235300,
+        "stop": 235500,
+        "text": " And so that's kind of the tradeoff."
+      },
+      {
+        "start": 235500,
+        "stop": 235700,
+        "text": " Lightning is sending sats."
+      },
+      {
+        "start": 235700,
+        "stop": 236000,
+        "text": " It is sats that are being sent over the Lightning network."
+      },
+      {
+        "start": 236000,
+        "stop": 236100,
+        "text": " It's not a derivative."
+      },
+      {
+        "start": 236100,
+        "stop": 236600,
+        "text": " And Lightning does its finalization on the Bitcoin blockchain."
+      },
+      {
+        "start": 236600,
+        "stop": 237100,
+        "text": " So all the transactions that are finalized are using Bitcoin and the security in there."
+      },
+      {
+        "start": 237100,
+        "stop": 237800,
+        "text": " The reason why you can send them instantly, you don't have to wait for the blocks to get processed, is because Lightning is based around channels."
+      },
+      {
+        "start": 237800,
+        "stop": 238400,
+        "text": " These channels open up between nodes directly, and they lock funds, it's called liquidity, into these channels."
+      },
+      {
+        "start": 238400,
+        "stop": 239300,
+        "text": " And so if you want to send a 5000 sat boost, we need to have a channel that has at least a 5000 sat capacity that the two ends have agreed to."
+      },
+      {
+        "start": 239300,
+        "stop": 239900,
+        "text": " Because those sats are locked to that channel, and that's been settled on the blockchain, you can actually use that to move these around."
+      },
+      {
+        "start": 239900,
+        "stop": 241000,
+        "text": " And so you get instant settlement with Lightning, it's private, it's peer-to-peer, and it's actually using sats, and it's inheriting the security of the layer 1 blockchain, which is Bitcoin."
+      },
+      {
+        "start": 241000,
+        "stop": 241200,
+        "text": " So Lightning is layer 2, rides on top."
+      },
+      {
+        "start": 241200,
+        "stop": 241300,
+        "text": " It's a beautiful system."
+      },
+      {
+        "start": 241300,
+        "stop": 242000,
+        "text": " And it's, I think, one of the bigger innovations that's coming out of Bitcoin, and it'll eventually be used for other things besides Bitcoin, I would imagine."
+      },
+      {
+        "start": 242000,
+        "stop": 242500,
+        "text": " And we have some pretty good channels open with some important players too, don't we?"
+      },
+      {
+        "start": 242500,
+        "stop": 243100,
+        "text": " Yeah, we have like a big million sat channel open to Fountain FM, so people, if they're using that app, boost directly in."
+      },
+      {
+        "start": 243100,
+        "stop": 244200,
+        "text": " I got a channel open to your nodes, so you get a split on office hours, and instead of having to route all around the network and take those little tiny fees, which are like fractions of a penny, you just get it directly from my node."
+      },
+      {
+        "start": 244200,
+        "stop": 244600,
+        "text": " In fact, when I look at my stats, I see it all the time."
+      },
+      {
+        "start": 244600,
+        "stop": 245300,
+        "text": " My node is communicating directly with your node, nobody in between us, a boost comes in, it lands on our node, you get part of the split, and our node helps route it."
+      },
+      {
+        "start": 245300,
+        "stop": 245400,
+        "text": " It's so great."
+      },
+      {
+        "start": 245400,
+        "stop": 245500,
+        "text": " Node-to-node network."
+      },
+      {
+        "start": 245500,
+        "stop": 245600,
+        "text": " Yeah, it is."
+      },
+      {
+        "start": 245600,
+        "stop": 245800,
+        "text": " It's one big happy node network."
+      },
+      {
+        "start": 245800,
+        "stop": 246400,
+        "text": " We got a row of McDucks, that's 22,222 sats from Marcel."
+      },
+      {
+        "start": 246400,
+        "stop": 246500,
+        "text": " Thank you kindly."
+      },
+      {
+        "start": 246500,
+        "stop": 247200,
+        "text": " He says, \"It's easy to dismiss rel when 99.9% of all the distros out there are HANA Montana Linux."
+      },
+      {
+        "start": 247200,
+        "stop": 247700,
+        "text": " I don't think any amount of sats should automatically get a message onto the show either, by the way."
+      },
+      {
+        "start": 247700,
+        "stop": 247900,
+        "text": " It should just be based on the quality of the comment."
+      },
+      {
+        "start": 247900,
+        "stop": 248400,
+        "text": " You shouldn't be able to advertise your own thing for a thousand sats, for example.\""
+      },
+      {
+        "start": 248400,
+        "stop": 249300,
+        "text": " You know, as a team, Marcel, we have been kicking this around because we want to keep the productions tight, we don't necessarily want to run long every single week."
+      },
+      {
+        "start": 249300,
+        "stop": 249600,
+        "text": " And we've been floating around different ideas."
+      },
+      {
+        "start": 249600,
+        "stop": 250600,
+        "text": " One idea we're currently having is we'll just read the top four boosts in every show, and the top is just in terms of comment quality, not necessarily sat amount."
+      },
+      {
+        "start": 250600,
+        "stop": 251200,
+        "text": " We'll read the top four boosts every show, and then we'll also read the baller boosts in the show."
+      },
+      {
+        "start": 251200,
+        "stop": 252100,
+        "text": " So you get your baller boosts read, and otherwise we'll just read all of them, because we read 100% of them, and we'll just pull forward the top four, is what I'm thinking."
+      },
+      {
+        "start": 252100,
+        "stop": 252500,
+        "text": " And I don't know, it's new, maybe it's a practice we should try here first."
+      },
+      {
+        "start": 252500,
+        "stop": 253100,
+        "text": " It seems like something we'd probably want to standardize on all the shows, just to make it consistent."
+      },
+      {
+        "start": 253100,
+        "stop": 253300,
+        "text": " What are your thoughts, Brent?"
+      },
+      {
+        "start": 253300,
+        "stop": 253600,
+        "text": " Yeah, I think it's actually a surprisingly good problem to have."
+      },
+      {
+        "start": 253600,
+        "stop": 254200,
+        "text": " You know, I remember months ago we were just trying this out for the first time, and we weren't sure if this was going to take off."
+      },
+      {
+        "start": 254200,
+        "stop": 254400,
+        "text": " But clearly it has, and people are loving it."
+      },
+      {
+        "start": 254400,
+        "stop": 254800,
+        "text": " There's like, you know, so many little games and like nifty little inside jokes and stuff."
+      },
+      {
+        "start": 254800,
+        "stop": 255600,
+        "text": " I love that about the boosts. But, you know, we don't want the shows to be like, just boosts."
+      },
+      {
+        "start": 255600,
+        "stop": 256000,
+        "text": " I think that would actually take away from the content we've been working so hard to produce."
+      },
+      {
+        "start": 256000,
+        "stop": 256200,
+        "text": " So yeah, I think we should try it."
+      },
+      {
+        "start": 256200,
+        "stop": 256600,
+        "text": " This show is a good way, you know, a good place to try that stuff."
+      },
+      {
+        "start": 256600,
+        "stop": 256900,
+        "text": " But it doesn't mean we're going to land on the right solution right away."
+      },
+      {
+        "start": 256900,
+        "stop": 257300,
+        "text": " So keep sending in your suggestions and I guess your opinions in this case."
+      },
+      {
+        "start": 257300,
+        "stop": 257600,
+        "text": " Let us know what you think of the top four idea plus baller."
+      },
+      {
+        "start": 257600,
+        "stop": 257900,
+        "text": " Top four plus baller boosts read on each show."
+      },
+      {
+        "start": 257900,
+        "stop": 258300,
+        "text": " Let's, if we can remember, let's try it next Office Hours and see how it goes."
+      },
+      {
+        "start": 258300,
+        "stop": 258700,
+        "text": " And, you know, boost in your feedback because we're just kind of figuring this out."
+      },
+      {
+        "start": 258700,
+        "stop": 259100,
+        "text": " This is the show where we run with scissors, for sure."
+      },
+      {
+        "start": 259100,
+        "stop": 259600,
+        "text": " DFJ225 boosts in with 8,192 sets."
+      },
+      {
+        "start": 259600,
+        "stop": 259800,
+        "text": " Coming in hot with the boost!"
+      },
+      {
+        "start": 259800,
+        "stop": 260000,
+        "text": " Love that one."
+      },
+      {
+        "start": 260000,
+        "stop": 260300,
+        "text": " He says, \"I appreciate the boost and the crypto conversation last week."
+      },
+      {
+        "start": 260300,
+        "stop": 260700,
+        "text": " I can see the positives with Bitcoin and podcasting and other independent efforts."
+      },
+      {
+        "start": 260700,
+        "stop": 261200,
+        "text": " But guys, I think it's hard to separate out the use cases from all the other, quote,"
+      },
+      {
+        "start": 261200,
+        "stop": 261600,
+        "text": " 'crypto bros' who are hyping things up in order to just make a profit."
+      },
+      {
+        "start": 261600,
+        "stop": 261900,
+        "text": " And they largely look at Bitcoin as just an investment vehicle."
+      },
+      {
+        "start": 261900,
+        "stop": 262200,
+        "text": " Sadly, I think it's hard to stand out from this noise."
+      },
+      {
+        "start": 262200,
+        "stop": 262600,
+        "text": " To me, this is a key difference from the early days of Linux."
+      },
+      {
+        "start": 262600,
+        "stop": 262900,
+        "text": " The hype was not from people looking to get rich quick.\""
+      },
+      {
+        "start": 263100,
+        "stop": 263300,
+        "text": " I agree and disagree, DFJ."
+      },
+      {
+        "start": 263300,
+        "stop": 263700,
+        "text": " I think you were probably just hanging out in the good crowds."
+      },
+      {
+        "start": 263700,
+        "stop": 264300,
+        "text": " There was, in the late 90s, in the early aughts, a mad gold rush in corporate Linux."
+      },
+      {
+        "start": 264300,
+        "stop": 264800,
+        "text": " And there was a culture shift where we stopped calling things free software"
+      },
+      {
+        "start": 264800,
+        "stop": 265000,
+        "text": " and we started using the term \"open source\" more,"
+      },
+      {
+        "start": 265000,
+        "stop": 265400,
+        "text": " and then it kind of became like this big deal when different companies would start"
+      },
+      {
+        "start": 265400,
+        "stop": 265600,
+        "text": " switching to use the word \"open source.\""
+      },
+      {
+        "start": 265600,
+        "stop": 265900,
+        "text": " Like when Red Hat did it, it was this big upset in the community."
+      },
+      {
+        "start": 265900,
+        "stop": 266100,
+        "text": " \"Oh, they've gone so corporate!\""
+      },
+      {
+        "start": 266100,
+        "stop": 266400,
+        "text": " And there was a genuine gold rush."
+      },
+      {
+        "start": 266400,
+        "stop": 266800,
+        "text": " The story of how Linux got to the x86 server market is a fascinating one,"
+      },
+      {
+        "start": 266800,
+        "stop": 267600,
+        "text": " and maybe one we should dig into someday, just for a little bit of context, I suppose."
+      },
+      {
+        "start": 267600,
+        "stop": 267800,
+        "text": " Revolution OS isn't bad to check out."
+      },
+      {
+        "start": 267800,
+        "stop": 268200,
+        "text": " It's on YouTube, and I'll have a link in the show notes to kind of just give you an idea"
+      },
+      {
+        "start": 268200,
+        "stop": 268700,
+        "text": " of how far things have come from those early, radical thinkers"
+      },
+      {
+        "start": 268700,
+        "stop": 269000,
+        "text": " to today's corporately deployed and managed Linux."
+      },
+      {
+        "start": 269000,
+        "stop": 269300,
+        "text": " There was a huge gold rush in the early days of Linux."
+      },
+      {
+        "start": 269300,
+        "stop": 269700,
+        "text": " And I think a lot of us in the desktop and just enthusiast space"
+      },
+      {
+        "start": 269700,
+        "stop": 269900,
+        "text": " managed to stay fairly well insulated from that,"
+      },
+      {
+        "start": 269900,
+        "stop": 270500,
+        "text": " just like those Bitcoin stackers who are just stacking sats and staying humble"
+      },
+      {
+        "start": 270500,
+        "stop": 270600,
+        "text": " and going to work every day."
+      },
+      {
+        "start": 270600,
+        "stop": 270800,
+        "text": " They're not really making a big deal about it."
+      },
+      {
+        "start": 270800,
+        "stop": 271200,
+        "text": " That's a huge percentage of the Bitcoiners out there."
+      },
+      {
+        "start": 271200,
+        "stop": 271500,
+        "text": " Friar Tech boosted him with 2,000 sats."
+      },
+      {
+        "start": 271500,
+        "stop": 271800,
+        "text": " He's going to send in an email, too, but, you know,"
+      },
+      {
+        "start": 271800,
+        "stop": 272200,
+        "text": " he had a message for those who are experiencing, quote, \"boost fatigue.\""
+      },
+      {
+        "start": 272200,
+        "stop": 272400,
+        "text": " And this is not our message."
+      },
+      {
+        "start": 272400,
+        "stop": 272600,
+        "text": " This is a message from Friar Tech."
+      },
+      {
+        "start": 272600,
+        "stop": 273000,
+        "text": " But I think I feel like Friar Tech at some point has been a business owner."
+      },
+      {
+        "start": 273000,
+        "stop": 273400,
+        "text": " He writes, \"I hope someday you have the luxury of running your own business"
+      },
+      {
+        "start": 273400,
+        "stop": 273600,
+        "text": " where the hours of work never end."
+      },
+      {
+        "start": 273600,
+        "stop": 273900,
+        "text": " You have to ensure you deliver a quality product to your customers,"
+      },
+      {
+        "start": 273900,
+        "stop": 274300,
+        "text": " and you have to make it a safe space and place for your employees to thrive."
+      },
+      {
+        "start": 274300,
+        "stop": 274700,
+        "text": " If you feel like you're hearing too much about how you can keep supporting a business"
+      },
+      {
+        "start": 274700,
+        "stop": 274900,
+        "text": " that you kind of depend on every day,"
+      },
+      {
+        "start": 274900,
+        "stop": 275400,
+        "text": " maybe you don't realize how much value for value is actually helping you."
+      },
+      {
+        "start": 275400,
+        "stop": 275600,
+        "text": " Stop complaining, Karen!\""
+      },
+      {
+        "start": 275600,
+        "stop": 275800,
+        "text": " Spicy."
+      },
+      {
+        "start": 275800,
+        "stop": 276300,
+        "text": " There's, you know, a bit of -- I had this realization, too."
+      },
+      {
+        "start": 276300,
+        "stop": 276700,
+        "text": " Like, I think I know what somebody's job is like or what an industry is like,"
+      },
+      {
+        "start": 276700,
+        "stop": 277400,
+        "text": " and then this is like when, for example, I became an IT contractor for doctors"
+      },
+      {
+        "start": 277400,
+        "stop": 278000,
+        "text": " and lawyers and an airline, and I thought I knew what those businesses were beforehand,"
+      },
+      {
+        "start": 278000,
+        "stop": 278400,
+        "text": " and then I get inside and I realize I knew 10%."
+      },
+      {
+        "start": 278400,
+        "stop": 278700,
+        "text": " They end up spending way more time on stuff I never knew about,"
+      },
+      {
+        "start": 278700,
+        "stop": 279300,
+        "text": " and the cost to run a business, you can never understand how wildly expensive"
+      },
+      {
+        "start": 279300,
+        "stop": 279600,
+        "text": " and ridiculously costly it is to run a business until you've run one,"
+      },
+      {
+        "start": 279600,
+        "stop": 279900,
+        "text": " especially here in the States right now. It's incredible."
+      },
+      {
+        "start": 279900,
+        "stop": 280200,
+        "text": " So I appreciate the sentiment, FriarTech. Thank you very much."
+      },
+      {
+        "start": 280200,
+        "stop": 280400,
+        "text": " You know, it's not our audience's problem, though."
+      },
+      {
+        "start": 280400,
+        "stop": 280700,
+        "text": " We just try to produce a great product, give them something that they want to support,"
+      },
+      {
+        "start": 280700,
+        "stop": 281000,
+        "text": " and the ones that get it that do participate in the value-for-value system,"
+      },
+      {
+        "start": 281000,
+        "stop": 281600,
+        "text": " they are so, so critical to the long-term survival of both the network"
+      },
+      {
+        "start": 281600,
+        "stop": 281900,
+        "text": " but also our passion and our enthusiasm, because when we do see somebody get it"
+      },
+      {
+        "start": 281900,
+        "stop": 282200,
+        "text": " and they're contributing to the website or they're sending in a boost"
+      },
+      {
+        "start": 282200,
+        "stop": 282500,
+        "text": " or maybe they're sharing the show with somebody, you know,"
+      },
+      {
+        "start": 282500,
+        "stop": 282800,
+        "text": " and they're participating in a livestream in a way that contributes value,"
+      },
+      {
+        "start": 282800,
+        "stop": 283200,
+        "text": " it's like that's what keeps us going, that's what makes us keep going after 15 years,"
+      },
+      {
+        "start": 283200,
+        "stop": 283500,
+        "text": " and so the people who do get it are super valuable to us."
+      },
+      {
+        "start": 283500,
+        "stop": 283800,
+        "text": " Dylan wrote in with 3,500 sats."
+      },
+      {
+        "start": 283800,
+        "stop": 284000,
+        "text": " Boost!"
+      },
+      {
+        "start": 284000,
+        "stop": 284300,
+        "text": " You know, actually, as an aside, this is Brent."
+      },
+      {
+        "start": 284300,
+        "stop": 284700,
+        "text": " I feel like Dylan wrote in and mentioned how to pronounce their name,"
+      },
+      {
+        "start": 284700,
+        "stop": 285100,
+        "text": " and I totally forget, so apologies there. Oops, sorry."
+      },
+      {
+        "start": 285100,
+        "stop": 285300,
+        "text": " Okay, here we go with the boost."
+      },
+      {
+        "start": 285300,
+        "stop": 285600,
+        "text": " Fun fact, you have to be invited to a matrix space to enjoy it,"
+      },
+      {
+        "start": 285600,
+        "stop": 286200,
+        "text": " so unless JB provides a link to it on, say, their site, you can't reach it."
+      },
+      {
+        "start": 286200,
+        "stop": 286600,
+        "text": " I can browse the rooms on your server in an app, but it's not as great in my opinion."
+      },
+      {
+        "start": 286600,
+        "stop": 287000,
+        "text": " Yeah. So a space. Let's back up a little bit."
+      },
+      {
+        "start": 287000,
+        "stop": 287300,
+        "text": " A space is kind of what it sounds like."
+      },
+      {
+        "start": 287300,
+        "stop": 287700,
+        "text": " It's an area, a place to organize all of your other rooms."
+      },
+      {
+        "start": 287700,
+        "stop": 288100,
+        "text": " So we've got rooms for the shows and different meetups and Bitcoin and all that stuff,"
+      },
+      {
+        "start": 288100,
+        "stop": 288400,
+        "text": " and so you need one directory to organize it all."
+      },
+      {
+        "start": 288400,
+        "stop": 288600,
+        "text": " That's what a space is."
+      },
+      {
+        "start": 288600,
+        "stop": 289000,
+        "text": " And so we have a Jupyter Broadcasting space where you can get an overview of all of our matrix rooms"
+      },
+      {
+        "start": 289000,
+        "stop": 289400,
+        "text": " when you go to bit.ly/jupytercolony."
+      },
+      {
+        "start": 289400,
+        "stop": 289700,
+        "text": " But better than that, we're going to have the matrix linked, we're going to have the mumble linked,"
+      },
+      {
+        "start": 289700,
+        "stop": 289900,
+        "text": " we're going to have all this stuff linked on the new website."
+      },
+      {
+        "start": 289900,
+        "stop": 290100,
+        "text": " In fact, it's already there if you want to check it out."
+      },
+      {
+        "start": 290100,
+        "stop": 290500,
+        "text": " Heck yeah, new.jupyterbroadcasting.com."
+      },
+      {
+        "start": 290500,
+        "stop": 290800,
+        "text": " Pete Ira wrote in with 5,000 sats."
+      },
+      {
+        "start": 290800,
+        "stop": 291000,
+        "text": " Boost!"
+      },
+      {
+        "start": 291000,
+        "stop": 291300,
+        "text": " You guys get it! Crypto equals scam!"
+      },
+      {
+        "start": 291300,
+        "stop": 291700,
+        "text": " Those initial feelings of distrust is a healthy sign of a critical mind."
+      },
+      {
+        "start": 291700,
+        "stop": 292000,
+        "text": " I think people should be critical of this stuff as well."
+      },
+      {
+        "start": 292000,
+        "stop": 292600,
+        "text": " And I hope that our position that Bitcoin is not like the rest of crypto"
+      },
+      {
+        "start": 292600,
+        "stop": 292900,
+        "text": " will be the signal through the noise long term."
+      },
+      {
+        "start": 292900,
+        "stop": 293200,
+        "text": " Yeah, I think that critical mind and the distrust is good,"
+      },
+      {
+        "start": 293200,
+        "stop": 293800,
+        "text": " but I also think there's some really cool technology behind, say, Bitcoin and Lightning"
+      },
+      {
+        "start": 293800,
+        "stop": 294000,
+        "text": " and some of the open source projects happening there."
+      },
+      {
+        "start": 294000,
+        "stop": 294500,
+        "text": " So I think I would suggest, you know, be cautious, but also stay curious and go check those out."
+      },
+      {
+        "start": 294500,
+        "stop": 294700,
+        "text": " They're worth looking at."
+      },
+      {
+        "start": 294700,
+        "stop": 294900,
+        "text": " True Grits wrote in 6,000 sats."
+      },
+      {
+        "start": 294900,
+        "stop": 295100,
+        "text": " Coming in hot with the boost!"
+      },
+      {
+        "start": 295100,
+        "stop": 295300,
+        "text": " Every time, every time."
+      },
+      {
+        "start": 295300,
+        "stop": 295500,
+        "text": " I love that one."
+      },
+      {
+        "start": 295500,
+        "stop": 295900,
+        "text": " I'm very much not tired of the boosts, nor of the sound bites."
+      },
+      {
+        "start": 295900,
+        "stop": 296100,
+        "text": " I very much enjoy them."
+      },
+      {
+        "start": 296100,
+        "stop": 296400,
+        "text": " Fountain is getting better and better and better as a podcast player."
+      },
+      {
+        "start": 296400,
+        "stop": 296800,
+        "text": " And many of the early bugs have been well sorted out."
+      },
+      {
+        "start": 296800,
+        "stop": 297200,
+        "text": " Are there chapter markers set for the beginning and the end of boosts?"
+      },
+      {
+        "start": 297200,
+        "stop": 297400,
+        "text": " Maybe if people are tired of them, they could just skip them."
+      },
+      {
+        "start": 297400,
+        "stop": 297900,
+        "text": " Absolutely. In fact, Drew goes to the hard work of chapter-ing every single boost individually."
+      },
+      {
+        "start": 297900,
+        "stop": 298400,
+        "text": " And might I add, very creatively and hilariously sometimes, which I appreciate."
+      },
+      {
+        "start": 298400,
+        "stop": 298600,
+        "text": " Yeah."
+      },
+      {
+        "start": 298600,
+        "stop": 298800,
+        "text": " Oh, we got a double boost from True Grits."
+      },
+      {
+        "start": 298800,
+        "stop": 299000,
+        "text": " Set of Leetsats."
+      },
+      {
+        "start": 299000,
+        "stop": 299300,
+        "text": " You mentioned that the boosts have a split that goes to Brent."
+      },
+      {
+        "start": 299300,
+        "stop": 299500,
+        "text": " How does that work?"
+      },
+      {
+        "start": 299500,
+        "stop": 299800,
+        "text": " How about the sat streams? Does that get split with Brent as well?"
+      },
+      {
+        "start": 299800,
+        "stop": 300000,
+        "text": " Yeah, it's the same system."
+      },
+      {
+        "start": 300000,
+        "stop": 300800,
+        "text": " So when you boost in one boost-o-gram with a sum, or you just stream, on the back end, that's all the same splits."
+      },
+      {
+        "start": 300800,
+        "stop": 301100,
+        "text": " Because it just goes by what we define in the RSS feed."
+      },
+      {
+        "start": 301100,
+        "stop": 301800,
+        "text": " So the part of Podcasting 2.0, amongst the many features it's bringing to podcasting, is a value tag that you add to the RSS feed."
+      },
+      {
+        "start": 301800,
+        "stop": 302700,
+        "text": " And in there, you just say, you know, this X amount, this percent goes to this person, this percent goes to this person, this percent goes to this person."
+      },
+      {
+        "start": 302700,
+        "stop": 303400,
+        "text": " And it automatically figures it out if you're doing a one-time big boost or you're doing a stream in the back end."
+      },
+      {
+        "start": 303400,
+        "stop": 304400,
+        "text": " It's all the same tech. And what's beautiful is, because the Lightning Network is so cheap for transactions, you could actually do one, two, three sats at a time, and that still works."
+      },
+      {
+        "start": 304400,
+        "stop": 305000,
+        "text": " So Chris, the way I understand that the Lightning Network works is on these Lightning invoices."
+      },
+      {
+        "start": 305000,
+        "stop": 305900,
+        "text": " So whenever you send, you know, a certain amount of sats, it automatically creates an invoice. Is that how these streaming works? That doesn't seem very efficient."
+      },
+      {
+        "start": 305900,
+        "stop": 306900,
+        "text": " Generally, the way it would work is, for you to send me sats, right, you would invoice me, and then I would scan the invoice, like with a mobile app, it would just autofill the information, and it would send you those sats."
+      },
+      {
+        "start": 306900,
+        "stop": 307300,
+        "text": " And it's nice and quick. But it doesn't actually have to be invoice-based."
+      },
+      {
+        "start": 307300,
+        "stop": 307800,
+        "text": " The Lightning spec does allow for just sending, just spraying sats in a direction as well."
+      },
+      {
+        "start": 307800,
+        "stop": 308000,
+        "text": " Without qualifying, though. That's awesome."
+      },
+      {
+        "start": 308000,
+        "stop": 308200,
+        "text": " Yeah. Here you go! Here's some sats! Yeah."
+      },
+      {
+        "start": 308200,
+        "stop": 309000,
+        "text": " But you know what? It's great for these types of things, because you could also see how, like, you could use it for car rentals, scooter rentals when you're in the city."
+      },
+      {
+        "start": 309000,
+        "stop": 309300,
+        "text": " Ooh, that is a great idea. Nice."
+      },
+      {
+        "start": 309300,
+        "stop": 309600,
+        "text": " Yeah. I could see it go in places, Brent. I really could."
+      },
+      {
+        "start": 309600,
+        "stop": 310300,
+        "text": " Alright, we got 2,222 sats, a row of ducks from #Recloyce."
+      },
+      {
+        "start": 310300,
+        "stop": 310500,
+        "text": " And Smirny Hottles, potential alumia!"
+      },
+      {
+        "start": 310500,
+        "stop": 310900,
+        "text": " He says, \"A cold shower in Raleigh is more like a warm shower, really. Let's be honest.\""
+      },
+      {
+        "start": 310900,
+        "stop": 311000,
+        "text": " So true."
+      },
+      {
+        "start": 311000,
+        "stop": 311600,
+        "text": " We both were talking about our cold showers. I did get the water heater fixed. Thursday. Last week."
+      },
+      {
+        "start": 311600,
+        "stop": 312900,
+        "text": " You know, it's been, I think, over here, it's been three, two, at least two weeks now, maybe three of trying to get contractors over here on some kind of home warranty that Alex is trying to take advantage of, and it's not fixed."
+      },
+      {
+        "start": 312900,
+        "stop": 313200,
+        "text": " And they're all back now! So you're all taking cold showers?"
+      },
+      {
+        "start": 313200,
+        "stop": 314500,
+        "text": " Well, we're taking somewhat warm showers occasionally, you know. It's actually kind of embarrassing for the contractors. Alex had a firm talking with them this morning, so we'll see what happens."
+      },
+      {
+        "start": 314500,
+        "stop": 315100,
+        "text": " Oh, maybe something will happen. You know, this is just prepping you for #VanLife where these kinds of things happen on the regular. You're just getting ready."
+      },
+      {
+        "start": 315100,
+        "stop": 315500,
+        "text": " I think I much prefer getting my own hands dirty and being responsible."
+      },
+      {
+        "start": 315500,
+        "stop": 316100,
+        "text": " Yeah, really. #Recloyce says, \"I had some thoughts about donating versus buying, too.\""
+      },
+      {
+        "start": 316100,
+        "stop": 317400,
+        "text": " He writes, \"I donate as a member because I want to support the show, and I'm buying the ad-free feed. I boost because it's fun, and I'm buying a potential shout-out on a future show."
+      },
+      {
+        "start": 317400,
+        "stop": 318300,
+        "text": " Possibly this is another way to reframe the buying versus donating argument. A thousand-sat boost minimum would probably make sense, or something more.\" He says maybe even ten thousand-sats."
+      },
+      {
+        "start": 318300,
+        "stop": 319100,
+        "text": " \"But I want to back up. The part that I liked that I thought made a lot of sense. I boost because it's fun, and I'm buying a potential shout-out on a future show."
+      },
+      {
+        "start": 319100,
+        "stop": 319800,
+        "text": " I donate because I want to support the show, and I'm buying the ad-free feed.\" That's a really smart way to look at it."
+      },
+      {
+        "start": 319800,
+        "stop": 320400,
+        "text": " Yeah, it's a neat way to frame things, and I really appreciate that perspective as well. Got me thinking."
+      },
+      {
+        "start": 320400,
+        "stop": 321000,
+        "text": " #OptimusGray boosted in with a row of McDucks. That's 22,222 sets."
+      },
+      {
+        "start": 321000,
+        "stop": 321200,
+        "text": " This old duck still got it!"
+      },
+      {
+        "start": 321200,
+        "stop": 321600,
+        "text": " Brent, I hope you're ready for the cottonwood cleanup at the studio."
+      },
+      {
+        "start": 321600,
+        "stop": 321800,
+        "text": " Oh no, there's still cleanup to do."
+      },
+      {
+        "start": 321800,
+        "stop": 322000,
+        "text": " There is some. It's much better."
+      },
+      {
+        "start": 322000,
+        "stop": 322100,
+        "text": " Oh, Chris!"
+      },
+      {
+        "start": 322100,
+        "stop": 323100,
+        "text": " It's fine, it's fine, it's fine. I'm purging some of my non-JB podcasts, and I've been thinking about unfollowing any podcaster that does the dynamically-inserted ads."
+      },
+      {
+        "start": 323100,
+        "stop": 323700,
+        "text": " Guys, I'm getting Spanish ads from an English podcaster."
+      },
+      {
+        "start": 323700,
+        "stop": 323800,
+        "text": " What?"
+      },
+      {
+        "start": 323800,
+        "stop": 324800,
+        "text": " Why? The podcast is okay. I mean, it's no JB, it's okay. But I'm thinking about maybe we should just start unfollowing the podcasters who have the auto-inserted ads."
+      },
+      {
+        "start": 324800,
+        "stop": 325600,
+        "text": " You know, this is probably gonna cause some backlash. People are gonna hate this stuff, especially if they're coming in in a different language."
+      },
+      {
+        "start": 325600,
+        "stop": 326700,
+        "text": " You know, one thing I've noticed since being here at Alex's, because he's got all these gizmos, is he's got this fancy system on his television that skips ads on the YouTube app that he's got on there."
+      },
+      {
+        "start": 326700,
+        "stop": 326800,
+        "text": " Yeah, it's like a separate app."
+      },
+      {
+        "start": 326800,
+        "stop": 327100,
+        "text": " That is crazy cool. I don't quite know how it works."
+      },
+      {
+        "start": 327100,
+        "stop": 327200,
+        "text": " Oh man."
+      },
+      {
+        "start": 327200,
+        "stop": 327500,
+        "text": " Yeah, tell me how it works, you know?"
+      },
+      {
+        "start": 327500,
+        "stop": 328800,
+        "text": " It's crazy, right? Because it even skips their Patreon plugs, it skips their swag plugs, it skips when they're asking for likes, and of course it skips the ads because it's community-contributed."
+      },
+      {
+        "start": 328800,
+        "stop": 329400,
+        "text": " People watch, and then they also use this extension or this app, and then they contribute it in real time."
+      },
+      {
+        "start": 329400,
+        "stop": 330300,
+        "text": " And so by the time you sit down, which after a video's been out for a little bit, everybody's filled out all the info, and you sit down to watch it, and it just glides over all that stuff."
+      },
+      {
+        "start": 330300,
+        "stop": 330400,
+        "text": " That is amazing."
+      },
+      {
+        "start": 330400,
+        "stop": 330900,
+        "text": " I mean, if this thing took off, it would screw YouTubers. It really would."
+      },
+      {
+        "start": 330900,
+        "stop": 331500,
+        "text": " Well, but if this keeps up with podcasts, it might actually come to podcasting as well, and I wonder how that would change things."
+      },
+      {
+        "start": 331500,
+        "stop": 332600,
+        "text": " That's why you gotta be careful. And it's like with these dynamically-inserted ads, the other thing is, how successful is that ad gonna be? How good of an ad is that for the audience? How good of a fit is it?"
+      },
+      {
+        "start": 332600,
+        "stop": 334400,
+        "text": " The reason why Linode sponsors this show is because Linode's a great fit for our audience, right? And we're users of Linode. And that doesn't just happen accidentally. It's like we analyze what we use and what we think our audience would use and what we think is a good company and who we can feel comfortable about recommending, and then we carefully approach that."
+      },
+      {
+        "start": 334400,
+        "stop": 335300,
+        "text": " And the dynamically-inserted ads are the opposite of that. And it just, yeah, I agree, Brent. It feels like it's gonna create backlash. And here we have Optimus Gray. Sounds like it is creating backlash."
+      },
+      {
+        "start": 335300,
+        "stop": 337400,
+        "text": " I feel, Chris, like we're so lucky that we are super passionate about our sponsors and have been able, you know, in great thanks to the memberships and to everyone who sends in memberships. Thank you. It allows us to be passionate about those ads, you know? Although I do have this mattress that I just got that I want to talk about."
+      },
+      {
+        "start": 337400,
+        "stop": 338500,
+        "text": " We should get into this. Let's hold on now. We'll talk about this off air. Maybe we can get a mattress, maybe like some Squarespace and a toothbrush or something. Maybe some underwear."
+      },
+      {
+        "start": 338500,
+        "stop": 340000,
+        "text": " No, you know, I actually am super grateful for the members. And I feel like looking back over the last two and a half, two years or so when we went independent again, I think launching the memberships might have been one of the more critical maneuvers we made because it gave us this runway that we find today."
+      },
+      {
+        "start": 340000,
+        "stop": 341200,
+        "text": " The ad market sucks and the kind of pitches we're getting from some of these companies, you guys would never want to hear us do. And so the members have given us that insurance policy that we don't even have to be worrying about that right now."
+      },
+      {
+        "start": 341200,
+        "stop": 342200,
+        "text": " And I don't know how bad things are gonna get, but right now we're getting by thanks to our members. And also the support from the boosts and other way people's. It's just great. It really is."
+      },
+      {
+        "start": 342200,
+        "stop": 342500,
+        "text": " Yeah, all around. It's great. It's super great. So thanks to everyone."
+      },
+      {
+        "start": 342500,
+        "stop": 343800,
+        "text": " Cdubs boosted in with 10,101 sats, which is a binary boost, I'm thinking. And we don't have a binary boost set. Yeah. I think that's Morse code. I don't know if that's binary."
+      },
+      {
+        "start": 343800,
+        "stop": 343900,
+        "text": " Well, what's the difference?"
+      },
+      {
+        "start": 343900,
+        "stop": 344800,
+        "text": " Yeah, I guess. Yeah. But we need a binary soundbite, maybe something from the Binars episode at TNG. But in the meantime, Cdubs, you get a hard drive."
+      },
+      {
+        "start": 344800,
+        "stop": 345300,
+        "text": " [BINARS BEEPING]"
+      },
+      {
+        "start": 345300,
+        "stop": 346600,
+        "text": " Cdubs also sent this in either using boost CLI or something based around it, which is super geeky. He says Bitcoin is not crypto. I sent this from my own node using a program I wrote myself using the hardest money ever."
+      },
+      {
+        "start": 346600,
+        "stop": 346700,
+        "text": " That is impressive."
+      },
+      {
+        "start": 346700,
+        "stop": 348200,
+        "text": " That's the other thing, right? It's a monetary network. It is both a store of value and a way to... it is also the remittance and payment network. And it's all open source and free and you can build stuff on top of it, just like you can free software and Linux. It is so cool."
+      },
+      {
+        "start": 348200,
+        "stop": 349800,
+        "text": " He says, I love the fact that there's no Visa or PayPal that is selling my purchase history to the highest bidder. There's no authoritarian that can just say who I can or cannot receive funds or send funds to. And there's no Fed diluting the supply. Let's go Bitcoin and let's go podcasting!"
+      },
+      {
+        "start": 349800,
+        "stop": 349900,
+        "text": " Nice."
+      },
+      {
+        "start": 349900,
+        "stop": 350100,
+        "text": " B-O-O-S-T!"
+      },
+      {
+        "start": 350100,
+        "stop": 351700,
+        "text": " Thank you Cdubs. Also a big thank you to Gene Bean who sent some lead sats to say, plus one on the member chat channel ideas, Wooden501 sent in 3.5 thousand sats to say, hey, don't let the cheap boost die. Well, don't worry, we have a plan, Wooden. Tell us what you think about the top four."
+      },
+      {
+        "start": 351700,
+        "stop": 353100,
+        "text": " And Trevdev sent in 2.5 thousand sats to say that the boosts are his favorite way to send feedback. And we got more boosts as well. We just couldn't get to all of them in the show, but we did try to consolidate the ones that had sort of a shared message and we 100% read all of them."
+      },
+      {
+        "start": 353100,
+        "stop": 354200,
+        "text": " Thank you everybody. If you'd like to send a boost into the show, go to newpodcastapps.com. You can grab a new podcast app there. Or maybe you don't want to switch apps. I know like a lot of you out there, you love your antenna pod."
+      },
+      {
+        "start": 354200,
+        "stop": 355400,
+        "text": " Well guess what? There's Breeze. B-R-E-E-Z dot technology or boost CLI. All of it's listed over at newpodcastapps.com. That's all you got to do. Grab that, get yourself going. Don't forget we also have the matrix room. You can participate there."
+      },
+      {
+        "start": 355400,
+        "stop": 356700,
+        "text": " And then last but not least, the thing that you always got to check out is that web page where we got the links, the subscribe feed, and the contact form at office hours dot hair. And then Brantley, why don't you give them one good solid plug for the new website and then I think we're out of here."
+      },
+      {
+        "start": 356700,
+        "stop": 358500,
+        "text": " Yeah, I'm going to do a plug for Podverse. I think their embedded player on the website has been amazing and you can do some cool stuff with that thing like chapter support is right there on the web page, which is awesome. So if you want to check that out, go to new.jupiter broadcasting.com. Give it a try. Try to break it and we'll fix it. Hopefully before launch."
+      },
+      {
+        "start": 358500,
+        "stop": 360100,
+        "text": " Now is the time to dog food so let us know what you think. And with that we're all done. Thank you everybody for joining us on this week's office hours and that's it. You got to get out of here. I need this room back. Office hours are closed."
+      },
+      {
+        "start": 360100,
+        "stop": 360300,
+        "text": " Bye."
+      }
+    ],
+    "processing_time": {
+      "secs": 2261,
+      "nanos": 339742177
+    }
+  },
+  "metadata": {
+    "title": "Office Hours 10: Coming in Hot with the Code!",
+    "pictures": [],
+    "duration": {
+      "secs": 3585,
+      "nanos": 504000000
+    },
+    "unique_id": "http://www.officehours.hair/10"
+  },
+  "episode": {
+    "title": "Coming in Hot with the Code! | Office Hours 10",
+    "description": "We've built up some incredible backend infrastructure for our new website. We run through the big improvements, and where we still need some help.",
+    "content": "<p><p>We&#39;ve built up some incredible backend infrastructure for our new website. We run through the big improvements, and where we still need some help.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/jupiter\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/jupiter\" rel=\"nofollow\">Get $100 to check out a rocking Linode system, and support the show!</a></li><li><a href=\"https://www.jupiter.party/\" rel=\"nofollow\">Join the Party! The Jupiter Membership Party</a>: <a href=\"https://www.jupiter.party/\" rel=\"nofollow\">Join the party and get exclusive content. </a></li></ul><p>Links:</p><ul><li><a href=\"https://new.jupiterbroadcasting.com/\" title=\"Our new site: Jupiter Broadcasting\" rel=\"nofollow\">Our new site: Jupiter Broadcasting</a> &mdash; Check it out and give us your feedback.</li><li><a href=\"https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pulse/monthly\" title=\"GitHug Pulse for our new site\" rel=\"nofollow\">GitHug Pulse for our new site</a></li><li><a href=\"https://bit.ly/columbusclub\" title=\"Columbus Club Matrix Chat\" rel=\"nofollow\">Columbus Club Matrix Chat</a> &mdash; Organize for Ohio LinuxFest.</li><li><a href=\"https://olfconference.org/\" title=\"OLF Conference 2022\" rel=\"nofollow\">OLF Conference 2022</a> &mdash; Ohio LinuxFest 2022 is coming December 2 &amp; 3!</li><li><a href=\"https://www.youtube.com/watch?v=Eluzi70O-P4\" title=\"Revolution OS - 2001\" rel=\"nofollow\">Revolution OS - 2001</a> &mdash; Synopsis: Revolution OS is a 2001 documentary film that traces the twenty-year history of GNU, Linux, open source, and the free software movement.</li><li><a href=\"https://bit.ly/jupitercolony\" title=\"Jupiter Broadcasting Matrix Space\" rel=\"nofollow\">Jupiter Broadcasting Matrix Space</a> &mdash; Find all our rooms in one place.</li><li><a href=\"https://github.com/Reckless-Satoshi/robosats\" title=\"Robosats: A simple and private bitcoin exchange\" rel=\"nofollow\">Robosats: A simple and private bitcoin exchange</a> &mdash; RoboSats is a simple and private way to exchange bitcoin for national currencies. Robosats simplifies the peer-to-peer user experience and uses lightning hold invoices to minimize custody and trust requirements. The deterministically generated avatars help users stick to best privacy practices.</li><li><a href=\"https://learn.robosats.com/\" title=\"Learn RoboSats\" rel=\"nofollow\">Learn RoboSats</a> &mdash; A simple and private way to exchange bitcoin for national currencies.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8720",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15581170/5c0563dd-9246-42a0-9cf0-a8344030456b.mp3",
+      "length": "50799594",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-08-19T03:01:00+02:00"
+  },
+  "speedup": 1.5855662
+}

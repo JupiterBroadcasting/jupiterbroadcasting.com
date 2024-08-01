@@ -1,0 +1,1252 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 844,
+        "text": " hello and welcome to Linux action news episode 257 recorded on September 6th"
+      },
+      {
+        "start": 844,
+        "stop": 1360,
+        "text": " 2022 I am Chris and I'm Wes hello Wes let's do the news"
+      },
+      {
+        "start": 1360,
+        "stop": 1904,
+        "text": " Linux users living the enterprise lifestyle in a Windows shop felt the"
+      },
+      {
+        "start": 1904,
+        "stop": 2400,
+        "text": " sting of the Microsoft strategy tax this week when they discovered the team's app"
+      },
+      {
+        "start": 2400,
+        "stop": 3044,
+        "text": " for Linux has been discontinued yeah that stings for a lot of users because it"
+      },
+      {
+        "start": 3044,
+        "stop": 3404,
+        "text": " can already be pretty tough as a Linux user to exist in that kind of"
+      },
+      {
+        "start": 3404,
+        "stop": 3900,
+        "text": " environment and apps like teams can be sort of like a cold drink of water to a"
+      },
+      {
+        "start": 3900,
+        "stop": 4432,
+        "text": " user stuck in a compatibility desert I guess I'm just slightly surprised by"
+      },
+      {
+        "start": 4432,
+        "stop": 4764,
+        "text": " this I'm not shocked but I am slightly surprised since a big deal was made"
+      },
+      {
+        "start": 4764,
+        "stop": 5272,
+        "text": " about teams coming to Linux in the first place but when you realize that"
+      },
+      {
+        "start": 5272,
+        "stop": 5716,
+        "text": " Microsoft doesn't even make a native version of teams for Windows how much"
+      },
+      {
+        "start": 5716,
+        "stop": 6144,
+        "text": " support can you really expect for their Linux port in the announcement Microsoft"
+      },
+      {
+        "start": 6144,
+        "stop": 6508,
+        "text": " informed Linux users that they had figured out what their next best option"
+      },
+      {
+        "start": 6508,
+        "stop": 6900,
+        "text": " would be saying quote we found the best way to act on this is to offer a team's"
+      },
+      {
+        "start": 6900,
+        "stop": 7432,
+        "text": " progressive web app a PWA on Linux as a new feature of our current web client"
+      },
+      {
+        "start": 7432,
+        "stop": 7876,
+        "text": " which will be making available to our Linux customers in the coming months"
+      },
+      {
+        "start": 7876,
+        "stop": 8524,
+        "text": " well that was a considerably insufficient answer to many and the upset"
+      },
+      {
+        "start": 8524,
+        "stop": 9264,
+        "text": " here has been notable the real story is why Microsoft is making this change it"
+      },
+      {
+        "start": 9264,
+        "stop": 9868,
+        "text": " appears to be related to moving teams off of electron and onto Microsoft's"
+      },
+      {
+        "start": 9868,
+        "stop": 10778,
+        "text": " edge-based web view - which at least as of this recording has no Linux or Mac OS"
+      },
+      {
+        "start": 10778,
+        "stop": 11348,
+        "text": " support yeah and I think a lot of people felt okay well then just keep supporting"
+      },
+      {
+        "start": 11348,
+        "stop": 11824,
+        "text": " the Linux version until the web view to port is ready and I don't know a lot of"
+      },
+      {
+        "start": 11824,
+        "stop": 12180,
+        "text": " Linux users that love electron and I don't really know if web view - is"
+      },
+      {
+        "start": 12180,
+        "stop": 12648,
+        "text": " significantly better because it's still web technologies although indication"
+      },
+      {
+        "start": 12648,
+        "stop": 13064,
+        "text": " seem to be that it is at least notably better than electron I think for some"
+      },
+      {
+        "start": 13064,
+        "stop": 13548,
+        "text": " just losing an application like this isn't a great answer for them and while"
+      },
+      {
+        "start": 13548,
+        "stop": 13918,
+        "text": " they were hoping for something other than electron this isn't what they were"
+      },
+      {
+        "start": 13918,
+        "stop": 14386,
+        "text": " asking for but you know I guess the question I have to the audience is it"
+      },
+      {
+        "start": 14386,
+        "stop": 15034,
+        "text": " such a bad pill to swallow to use a web app if it means long-term better"
+      },
+      {
+        "start": 15034,
+        "stop": 15668,
+        "text": " technology will be used Microsoft notes quote teams PWA is an evolution of our"
+      },
+      {
+        "start": 15668,
+        "stop": 16122,
+        "text": " Linux web experience it offers the best of the web with key functionalities of"
+      },
+      {
+        "start": 16122,
+        "stop": 16630,
+        "text": " client things like zero install lightweight and a rich set of features"
+      },
+      {
+        "start": 16630,
+        "stop": 17314,
+        "text": " but it's still in a web browser which is a deal breaker for some and has led"
+      },
+      {
+        "start": 17314,
+        "stop": 17870,
+        "text": " to a sizable amount of online pushback maybe this will accelerate Microsoft's"
+      },
+      {
+        "start": 17870,
+        "stop": 18414,
+        "text": " Linux port of web view - and they do currently list that as a major update"
+      },
+      {
+        "start": 18414,
+        "stop": 19086,
+        "text": " they plan for the future but in the meantime I'm afraid your web app is"
+      },
+      {
+        "start": 19086,
+        "stop": 19978,
+        "text": " now a web app arch users took another one in the face this week so the rest of"
+      },
+      {
+        "start": 19978,
+        "stop": 20396,
+        "text": " the Linux world doesn't have to it seems a recent grub issue impacts many"
+      },
+      {
+        "start": 20396,
+        "stop": 21014,
+        "text": " arch and arch derivative eyes this takes a little bit of setup to understand but"
+      },
+      {
+        "start": 21014,
+        "stop": 21510,
+        "text": " it all started when some grub developers were trying to improve support for EFI"
+      },
+      {
+        "start": 21510,
+        "stop": 22046,
+        "text": " systems specifically a handy-dandy menu option that allows users to reboot"
+      },
+      {
+        "start": 22046,
+        "stop": 22466,
+        "text": " directly into the system firmware maybe you've seen it on your system in fact"
+      },
+      {
+        "start": 22466,
+        "stop": 22882,
+        "text": " you've got your Linux mint entry you've got your next OS entry and then maybe if"
+      },
+      {
+        "start": 22882,
+        "stop": 23202,
+        "text": " your system supports it you've got a little menu entry that just reboots us"
+      },
+      {
+        "start": 23202,
+        "stop": 23812,
+        "text": " right into the BIOS interface now before this most recent series of patches to"
+      },
+      {
+        "start": 23812,
+        "stop": 24284,
+        "text": " grub this firmware reboot option was only really available if grub had"
+      },
+      {
+        "start": 24284,
+        "stop": 24938,
+        "text": " detected that your system supported it at grub installation time not at runtime"
+      },
+      {
+        "start": 24938,
+        "stop": 25414,
+        "text": " not at boot time but whenever you happen to have installed grub and this meant"
+      },
+      {
+        "start": 25414,
+        "stop": 25706,
+        "text": " that if your system happened to have grub installed when you were booting via"
+      },
+      {
+        "start": 25706,
+        "stop": 26112,
+        "text": " legacy boot maybe you'd copied things over or you'd switched to EFI down the"
+      },
+      {
+        "start": 26112,
+        "stop": 26652,
+        "text": " road well even if your system supported it you weren't gonna get that option to"
+      },
+      {
+        "start": 26652,
+        "stop": 27166,
+        "text": " address that this series of grub updates change that behavior to instead check at"
+      },
+      {
+        "start": 27166,
+        "stop": 27634,
+        "text": " runtime see if the system booted through EFI see if it supported rebooting into"
+      },
+      {
+        "start": 27634,
+        "stop": 28262,
+        "text": " the firmware and if it did display the menu entry okay all good and do this grub"
+      },
+      {
+        "start": 28262,
+        "stop": 28738,
+        "text": " relies on a command known as FW setup now previously this command was only"
+      },
+      {
+        "start": 28738,
+        "stop": 29146,
+        "text": " available if you EFI support was found at the installation time like Wes had"
+      },
+      {
+        "start": 29146,
+        "stop": 29714,
+        "text": " said as part of these recent updates and patches grub started using this command"
+      },
+      {
+        "start": 29714,
+        "stop": 30390,
+        "text": " in just more scenarios and as such it made it so that and as such it was"
+      },
+      {
+        "start": 30390,
+        "stop": 30870,
+        "text": " enabled for all installations rather than only systems where you EFI support had"
+      },
+      {
+        "start": 30870,
+        "stop": 31386,
+        "text": " been detected during install unfortunately the result of all of these"
+      },
+      {
+        "start": 31386,
+        "stop": 31934,
+        "text": " different changes meant that on some arch and arch type systems after you did"
+      },
+      {
+        "start": 31934,
+        "stop": 32340,
+        "text": " a system update it was possible that your grub configuration would reflect"
+      },
+      {
+        "start": 32340,
+        "stop": 32842,
+        "text": " this new pattern of having FW setup available but unless you'd intervened"
+      },
+      {
+        "start": 32842,
+        "stop": 33276,
+        "text": " and manually run grub install yourself or if a friendly package manager out"
+      },
+      {
+        "start": 33276,
+        "stop": 33702,
+        "text": " there had done it for you you might not actually have FW setup available and"
+      },
+      {
+        "start": 33702,
+        "stop": 34308,
+        "text": " that of course could break your boot that's not good nobody wants a broken"
+      },
+      {
+        "start": 34308,
+        "stop": 34930,
+        "text": " boot and the thing is this was kind of tricky maybe nearly impossible to catch"
+      },
+      {
+        "start": 34930,
+        "stop": 35410,
+        "text": " in testing and didn't really get discovered until a larger user base"
+      },
+      {
+        "start": 35410,
+        "stop": 35918,
+        "text": " started using it in production because this issue just simply did not impact"
+      },
+      {
+        "start": 35918,
+        "stop": 36412,
+        "text": " all grub users it did not impact new installs and to make things even more"
+      },
+      {
+        "start": 36412,
+        "stop": 36832,
+        "text": " problematic a lot of arch users especially the cutting-edge arch users"
+      },
+      {
+        "start": 36832,
+        "stop": 37386,
+        "text": " aren't even using grub but you know it is what it is and thankfully the issue"
+      },
+      {
+        "start": 37386,
+        "stop": 37908,
+        "text": " now has been caught and if you wound up with an unbootable system first of all"
+      },
+      {
+        "start": 37908,
+        "stop": 38318,
+        "text": " thank you for taking it in the face so we don't have to and second of all we"
+      },
+      {
+        "start": 38318,
+        "stop": 38856,
+        "text": " have what seems to be the most popular fix linked in our show notes"
+      },
+      {
+        "start": 38966,
+        "stop": 39590,
+        "text": " it's been a few releases since we last highlighted a new pipe wire release but"
+      },
+      {
+        "start": 39590,
+        "stop": 40434,
+        "text": " zero 357 just shipped this week with a few fantastic features as an opus fan I"
+      },
+      {
+        "start": 40434,
+        "stop": 40902,
+        "text": " was really happy to see the pipe wire can now send and receive opus data over"
+      },
+      {
+        "start": 40902,
+        "stop": 41494,
+        "text": " bluetooth that's great but perhaps even better or at least immediately practical"
+      },
+      {
+        "start": 41494,
+        "stop": 42072,
+        "text": " an AAC decoder was added so that pipe wire can now also function as an a2 DP"
+      },
+      {
+        "start": 42072,
+        "stop": 42662,
+        "text": " AAC receiver that seems really useful for little gadgets you might want to"
+      },
+      {
+        "start": 42662,
+        "stop": 43138,
+        "text": " build turn a Raspberry Pi into an a2 DP receiver I can also imagine there's a"
+      },
+      {
+        "start": 43138,
+        "stop": 43584,
+        "text": " lot of uses for that in automotive Linux and of course you got the list of always"
+      },
+      {
+        "start": 43584,
+        "stop": 43984,
+        "text": " good to see bug fixes every single time and like you said Wes we don't cover"
+      },
+      {
+        "start": 43984,
+        "stop": 44514,
+        "text": " every pipe wire release but they tend to be so great that we debate doing so"
+      },
+      {
+        "start": 44514,
+        "stop": 44806,
+        "text": " every time and this one just got put over the top with those two new features"
+      },
+      {
+        "start": 44806,
+        "stop": 45166,
+        "text": " alone and there's been a lot of improvements to tooling around pipe wire"
+      },
+      {
+        "start": 45166,
+        "stop": 45544,
+        "text": " various module improvements and of course fixes going into pipe wire corn"
+      },
+      {
+        "start": 45544,
+        "stop": 46042,
+        "text": " the great thing is is the API and the ABI are compatible with previous"
+      },
+      {
+        "start": 46042,
+        "stop": 46478,
+        "text": " releases of pipe wire in the three series"
+      },
+      {
+        "start": 46638,
+        "stop": 47470,
+        "text": " some big milestones to report this week starting with nmap 7.93 the 25th"
+      },
+      {
+        "start": 47470,
+        "stop": 48046,
+        "text": " anniversary edition that's just been released Gordon Leon founder and lead"
+      },
+      {
+        "start": 48046,
+        "stop": 48750,
+        "text": " nmap developer wrote quote 25 years ago I released the first version of nmap in"
+      },
+      {
+        "start": 48750,
+        "stop": 49424,
+        "text": " a frack article named the art of port scanning I never thought I'd still be"
+      },
+      {
+        "start": 49424,
+        "stop": 50000,
+        "text": " at it a quarter of a century later but that's because I also didn't anticipate"
+      },
+      {
+        "start": 50000,
+        "stop": 50634,
+        "text": " such a wonderful community of users and contributors spanning those decades"
+      },
+      {
+        "start": 50634,
+        "stop": 51100,
+        "text": " you've helped and Matt blossom from a fairly simple port scanner to a"
+      },
+      {
+        "start": 51100,
+        "stop": 51544,
+        "text": " full-featured network discovery application trusted by millions of users"
+      },
+      {
+        "start": 51544,
+        "stop": 52470,
+        "text": " every day so thanks for that and another milestone is a big happy birthday to"
+      },
+      {
+        "start": 52470,
+        "stop": 53296,
+        "text": " SUSE which turned 30 this week and as a gift we're reminded just what SUSE"
+      },
+      {
+        "start": 53296,
+        "stop": 53920,
+        "text": " stands for its software owned system and big lung or software and systems"
+      },
+      {
+        "start": 53920,
+        "stop": 54278,
+        "text": " development in English"
+      },
+      {
+        "start": 54346,
+        "stop": 54876,
+        "text": " Linode comm slash land go there to get a hundred dollars in 60-day credit on a"
+      },
+      {
+        "start": 54876,
+        "stop": 55162,
+        "text": " new account it's just a great way to support the show too because you're"
+      },
+      {
+        "start": 55162,
+        "stop": 55492,
+        "text": " getting yourself something trying out something cool support in the show"
+      },
+      {
+        "start": 55492,
+        "stop": 55950,
+        "text": " Linode is fast reliable cloud hosting it's the best option out there with the"
+      },
+      {
+        "start": 55950,
+        "stop": 56386,
+        "text": " best support in the business real humans all the time every day nobody else is"
+      },
+      {
+        "start": 56386,
+        "stop": 56816,
+        "text": " structured like Linode Linode's how we run everything we've built including our"
+      },
+      {
+        "start": 56816,
+        "stop": 57340,
+        "text": " new website that builds and is published on Linode Linode s3 compatible objects"
+      },
+      {
+        "start": 57340,
+        "stop": 57734,
+        "text": " storage is how we run the back end for our next cloud storage so we're not"
+      },
+      {
+        "start": 57734,
+        "stop": 58156,
+        "text": " constantly worried about checking disk space and undeleted files and things"
+      },
+      {
+        "start": 58156,
+        "stop": 58592,
+        "text": " like that and Linode is 30 to 50 percent cheaper than the major hyperscalers out"
+      },
+      {
+        "start": 58592,
+        "stop": 58984,
+        "text": " there that just want to adopt you and basically make you one of their own"
+      },
+      {
+        "start": 58984,
+        "stop": 59386,
+        "text": " assimilate you into the collective you will become one with the Borg but with"
+      },
+      {
+        "start": 59386,
+        "stop": 59844,
+        "text": " Linode resistance is futile they can be part of your multi cloud strategy since"
+      },
+      {
+        "start": 59844,
+        "stop": 60292,
+        "text": " they are 30 to 50 percent cheaper after all so go build something go learn"
+      },
+      {
+        "start": 60292,
+        "stop": 60712,
+        "text": " something go try one of their 11 data centers around the world maybe their"
+      },
+      {
+        "start": 60712,
+        "stop": 61164,
+        "text": " cloud firewall their simple backups or their kubernetes support go try it for"
+      },
+      {
+        "start": 61164,
+        "stop": 61672,
+        "text": " yourself and support the show so go to Linode.com/lan get that $100 in 60"
+      },
+      {
+        "start": 61672,
+        "stop": 62008,
+        "text": " credit and kick the tires for yourself there's a reason they've been around for"
+      },
+      {
+        "start": 62008,
+        "stop": 62516,
+        "text": " a long time on this show our listeners love Linode I know you will too so go"
+      },
+      {
+        "start": 62516,
+        "stop": 62716,
+        "text": " support the show and try it out one more time"
+      },
+      {
+        "start": 62716,
+        "stop": 63152,
+        "text": " Linode.com/lan"
+      },
+      {
+        "start": 63248,
+        "stop": 63768,
+        "text": " collide.com/lan. Collide is endpoint security that uses the most powerful"
+      },
+      {
+        "start": 63768,
+        "stop": 64280,
+        "text": " untapped resource in IT. It's end users so if you're trying to achieve security"
+      },
+      {
+        "start": 64280,
+        "stop": 64696,
+        "text": " goals for yourself or a third-party audit maybe the new boss whatever it is"
+      },
+      {
+        "start": 64696,
+        "stop": 65052,
+        "text": " the conventional wisdom in the past would have been to deploy some sort of"
+      },
+      {
+        "start": 65052,
+        "stop": 65484,
+        "text": " device management software lock every device down like it's Fort Knox employ"
+      },
+      {
+        "start": 65484,
+        "stop": 65920,
+        "text": " these policies from afar and of course put a little performance overhead on"
+      },
+      {
+        "start": 65920,
+        "stop": 66336,
+        "text": " their system introduce possible new points of security vulnerabilities and"
+      },
+      {
+        "start": 66336,
+        "stop": 66904,
+        "text": " end users hate it. Well Collide does things differently instead of forcing"
+      },
+      {
+        "start": 66904,
+        "stop": 67364,
+        "text": " changes on the users Collide sends them security recommendations via slack"
+      },
+      {
+        "start": 67364,
+        "stop": 67760,
+        "text": " Collide will automatically notify your team when their devices are insecure and"
+      },
+      {
+        "start": 67760,
+        "stop": 68220,
+        "text": " give them a step-by-step instruction on how to solve that problem and by"
+      },
+      {
+        "start": 68220,
+        "stop": 68656,
+        "text": " reaching out to employees via friendly slack DM and then educating about"
+      },
+      {
+        "start": 68656,
+        "stop": 69036,
+        "text": " company policies Collide can help you build a culture in which everyone"
+      },
+      {
+        "start": 69036,
+        "stop": 69576,
+        "text": " contributes to security because everyone understands how and why to do it and for"
+      },
+      {
+        "start": 69576,
+        "stop": 69896,
+        "text": " IT admins Collide provides a single dashboard that lets you monitor the"
+      },
+      {
+        "start": 69896,
+        "stop": 70288,
+        "text": " security of your entire fleet whether they're running on a Mac Windows or yeah"
+      },
+      {
+        "start": 70288,
+        "stop": 70684,
+        "text": " you bet Linux you can see at a glance which employees have their"
+      },
+      {
+        "start": 70684,
+        "stop": 71160,
+        "text": " disencrypted their OS up-to-date and a password manager installed make it easy"
+      },
+      {
+        "start": 71160,
+        "stop": 71632,
+        "text": " to prove compliance to your auditors customers and leadership so that's"
+      },
+      {
+        "start": 71632,
+        "stop": 72164,
+        "text": " Collide user-centered cross-platform endpoint security for teams that slack"
+      },
+      {
+        "start": 72164,
+        "stop": 72696,
+        "text": " you can meet your compliance goals by putting users first visit collide.com/lan"
+      },
+      {
+        "start": 72696,
+        "stop": 73144,
+        "text": " to find out how and you go to that link you try it out they're gonna hook"
+      },
+      {
+        "start": 73144,
+        "stop": 73630,
+        "text": " you up with a goodie bag which includes a free t-shirt which is basically how"
+      },
+      {
+        "start": 73630,
+        "stop": 73976,
+        "text": " I've built out my entire wardrobe and you know what I ain't hating that game"
+      },
+      {
+        "start": 73976,
+        "stop": 74364,
+        "text": " get a free t-shirt just for activating the free trials to go to Collide.com/lan"
+      },
+      {
+        "start": 74364,
+        "stop": 75364,
+        "text": " that's Collide.com/lan"
+      },
+      {
+        "start": 75364,
+        "stop": 75904,
+        "text": " for our last story this week we're going underwater"
+      },
+      {
+        "start": 75904,
+        "stop": 76420,
+        "text": " subsea cloud the company proposing to put commercial data centers in deep"
+      },
+      {
+        "start": 76420,
+        "stop": 77076,
+        "text": " ocean waters has moved closer to a physical launch the company plans to"
+      },
+      {
+        "start": 77076,
+        "stop": 77644,
+        "text": " install a pod near Port Angeles in Washington State that very first pod"
+      },
+      {
+        "start": 77644,
+        "stop": 78120,
+        "text": " will start with a 20-foot shipping container at around 30 feet underwater"
+      },
+      {
+        "start": 78120,
+        "stop": 78720,
+        "text": " holding 800 servers although eventually hoping to scale that operation to 100"
+      },
+      {
+        "start": 78720,
+        "stop": 79304,
+        "text": " such pods now this might sound familiar because another local company tried this"
+      },
+      {
+        "start": 79304,
+        "stop": 80016,
+        "text": " before Microsoft wrapped up a multi-year experiment in 2020 the overarching goal"
+      },
+      {
+        "start": 80016,
+        "stop": 80394,
+        "text": " of project native is to evaluate the feasibility of underwater data centers"
+      },
+      {
+        "start": 80394,
+        "stop": 80744,
+        "text": " phase one was just to be able to figure out can we get computers into a"
+      },
+      {
+        "start": 80744,
+        "stop": 81080,
+        "text": " container and can we deploy them in the water without it leaking and do the"
+      },
+      {
+        "start": 81080,
+        "stop": 81582,
+        "text": " computer survive and how well do they last phase two was to show that we can"
+      },
+      {
+        "start": 81582,
+        "stop": 82336,
+        "text": " make it in a manufacturable production scale component so the container behind"
+      },
+      {
+        "start": 82336,
+        "stop": 82802,
+        "text": " me it fits on a it fits on a trailer it fits on a cargo ship and it allows us to"
+      },
+      {
+        "start": 82802,
+        "stop": 83340,
+        "text": " actually build up this data center to any size that we want and Microsoft's"
+      },
+      {
+        "start": 83340,
+        "stop": 83834,
+        "text": " tests found the underwater data center had a lower failure rate than the"
+      },
+      {
+        "start": 83834,
+        "stop": 84360,
+        "text": " identical test unit on land so far as we've been monitoring this and the data"
+      },
+      {
+        "start": 84360,
+        "stop": 84812,
+        "text": " center that we have on land that you're using the same components we see 1/8 the"
+      },
+      {
+        "start": 84812,
+        "stop": 85280,
+        "text": " failure rate in the ocean data center than we do on land now Microsoft"
+      },
+      {
+        "start": 85280,
+        "stop": 85644,
+        "text": " attributes that difference in failure rate primarily to just the very stable"
+      },
+      {
+        "start": 85644,
+        "stop": 86282,
+        "text": " temperatures and humidity conditions under the sea but also frankly no humans"
+      },
+      {
+        "start": 86282,
+        "stop": 86750,
+        "text": " to make mistakes and bump things plays a factor as well but unlike Microsoft"
+      },
+      {
+        "start": 86750,
+        "stop": 87254,
+        "text": " subsea cloud does not use a pressure vessel instead it uses a more"
+      },
+      {
+        "start": 87254,
+        "stop": 87648,
+        "text": " conventional shipping container with pressure equalized between the inside"
+      },
+      {
+        "start": 87648,
+        "stop": 88070,
+        "text": " and outside that not only lowers costs but it actually turns out to be more"
+      },
+      {
+        "start": 88070,
+        "stop": 88510,
+        "text": " effective in dissipating thermal load as well and now subsea cloud wants to"
+      },
+      {
+        "start": 88510,
+        "stop": 88978,
+        "text": " commercialize this idea so the company is starting small both in scope and depth"
+      },
+      {
+        "start": 88978,
+        "stop": 89424,
+        "text": " that first data center pod in Port Angeles will be known as Jules Verne"
+      },
+      {
+        "start": 89424,
+        "stop": 89954,
+        "text": " inside Jules Verne there's space for about 16 standard issue data center racks"
+      },
+      {
+        "start": 89954,
+        "stop": 90574,
+        "text": " accommodating about 800 servers additional capacity if and when required"
+      },
+      {
+        "start": 90574,
+        "stop": 91122,
+        "text": " is delivered by just adding another pod and don't worry they're not skimping"
+      },
+      {
+        "start": 91122,
+        "stop": 91538,
+        "text": " on the connection the pod to shore link in this deployment provides a hundred"
+      },
+      {
+        "start": 91538,
+        "stop": 92182,
+        "text": " gigabits I can't help but kind of love this idea because as a sysadmin as a"
+      },
+      {
+        "start": 92182,
+        "stop": 92802,
+        "text": " as a deployer you get to pick and choose what goes into the pod it's your systems"
+      },
+      {
+        "start": 92802,
+        "stop": 93326,
+        "text": " and you get an idea of that from the subsea CEO maxi Reynolds who says quote"
+      },
+      {
+        "start": 93326,
+        "stop": 93750,
+        "text": " data center space rental is similar to just leasing an office space our"
+      },
+      {
+        "start": 93750,
+        "stop": 94110,
+        "text": " leaseable spaces provide our tenants network connections stable power supply"
+      },
+      {
+        "start": 94110,
+        "stop": 94622,
+        "text": " cooling and security systems and then she goes on to say quote we ensure the"
+      },
+      {
+        "start": 94622,
+        "stop": 94954,
+        "text": " facility is capable of providing the required IT services when being"
+      },
+      {
+        "start": 94954,
+        "stop": 95454,
+        "text": " underwater we build deploy and maintain the subsea data centers and you just"
+      },
+      {
+        "start": 95454,
+        "stop": 95902,
+        "text": " know there's not gonna be very many windows boxes down there nobody wants a"
+      },
+      {
+        "start": 95902,
+        "stop": 96422,
+        "text": " windows underwater maybe like us though you're wondering what the environmental"
+      },
+      {
+        "start": 96422,
+        "stop": 96926,
+        "text": " impact of an underwater data center might be well both Microsoft and subsea"
+      },
+      {
+        "start": 96926,
+        "stop": 97534,
+        "text": " clouds say it's a net positive according to subsea there are significant savings"
+      },
+      {
+        "start": 97534,
+        "stop": 98106,
+        "text": " in electrical use which matters because at 3% of the global electricity supply"
+      },
+      {
+        "start": 98106,
+        "stop": 98542,
+        "text": " data centers have the same carbon footprint as the aviation industry"
+      },
+      {
+        "start": 98542,
+        "stop": 99090,
+        "text": " subsea claims their data centers reduce the typical co2 a traditional data"
+      },
+      {
+        "start": 99090,
+        "stop": 100090,
+        "text": " center emits by 40% 40% at scale is a massive difference and for one thing"
+      },
+      {
+        "start": 100090,
+        "stop": 100530,
+        "text": " that's achieved because there's no air conditioning and the entire thing is"
+      },
+      {
+        "start": 100530,
+        "stop": 101086,
+        "text": " passively cooled that's massive right there the other thing is they don't use"
+      },
+      {
+        "start": 101086,
+        "stop": 101682,
+        "text": " any water in fact the focus is keeping water out inside the servers are also"
+      },
+      {
+        "start": 101682,
+        "stop": 102194,
+        "text": " immersed in a dielectric coolant an oil which conducts heat but not electricity"
+      },
+      {
+        "start": 102194,
+        "stop": 102614,
+        "text": " and the subsea pods are designed to passively disperse heat rather than"
+      },
+      {
+        "start": 102614,
+        "stop": 103038,
+        "text": " using pumps to move the oil around which you typically would see in a land-based"
+      },
+      {
+        "start": 103038,
+        "stop": 103514,
+        "text": " immersion cooling system and I think what's kind of tragic and ironic about"
+      },
+      {
+        "start": 103514,
+        "stop": 103978,
+        "text": " land-based data centers you know all of them is that they actually use millions"
+      },
+      {
+        "start": 103978,
+        "stop": 104442,
+        "text": " of gallons of water a day and studies have shown that over half of that water"
+      },
+      {
+        "start": 104442,
+        "stop": 105114,
+        "text": " is estimated to be potable water the subsea data center uses no water but"
+      },
+      {
+        "start": 105114,
+        "stop": 105566,
+        "text": " what happens if something goes wrong or a customer wants to replace one of their"
+      },
+      {
+        "start": 105566,
+        "stop": 106018,
+        "text": " servers well according to subsea customers can schedule periodic"
+      },
+      {
+        "start": 106018,
+        "stop": 106594,
+        "text": " maintenance including server replacement and they say it should take between 4 to"
+      },
+      {
+        "start": 106594,
+        "stop": 107142,
+        "text": " 16 hours for a team to get to the site bring up the required pod or pods and"
+      },
+      {
+        "start": 107142,
+        "stop": 107690,
+        "text": " then replace any equipment as for the lifespan of these underwater server"
+      },
+      {
+        "start": 107690,
+        "stop": 108206,
+        "text": " rooms though subsea says the lifespan of the actual data center pod itself the"
+      },
+      {
+        "start": 108206,
+        "stop": 108702,
+        "text": " environment containing the servers that should be around 20 years but of course"
+      },
+      {
+        "start": 108702,
+        "stop": 109146,
+        "text": " in line with a typical server lifespan and deployment each pod would likely"
+      },
+      {
+        "start": 109146,
+        "stop": 109554,
+        "text": " live on the seafloor for three to five years as they're gonna need to rotate"
+      },
+      {
+        "start": 109554,
+        "stop": 110094,
+        "text": " the hardware in and out to keep up with the times and subsea says they build"
+      },
+      {
+        "start": 110094,
+        "stop": 110526,
+        "text": " this with one or two failures being totally fine and they can continue on"
+      },
+      {
+        "start": 110526,
+        "stop": 110826,
+        "text": " but yeah they have to build it so they can pull it out and when they pull it"
+      },
+      {
+        "start": 110826,
+        "stop": 111366,
+        "text": " out they also have to drain it of all of that oil so it's a big job subsea hopes"
+      },
+      {
+        "start": 111366,
+        "stop": 111822,
+        "text": " that Jules Verne's gonna kind of prove all of this stuff out for customers and"
+      },
+      {
+        "start": 111822,
+        "stop": 112242,
+        "text": " maybe attract the attention of some of the big hyperscalers out there I think"
+      },
+      {
+        "start": 112242,
+        "stop": 112658,
+        "text": " that's one of their strategies it seems that this is really all just a first"
+      },
+      {
+        "start": 112658,
+        "stop": 113082,
+        "text": " step with deployments in the Gulf of Mexico and other locations already being"
+      },
+      {
+        "start": 113082,
+        "stop": 113582,
+        "text": " considered but we can't help find the entire idea of Linux underwater totally"
+      },
+      {
+        "start": 113582,
+        "stop": 113994,
+        "text": " fascinating we'll keep an eye on it see where it goes so don't miss any updates"
+      },
+      {
+        "start": 113994,
+        "stop": 114378,
+        "text": " to this or anything going on in the world of Linux but at Linux action news"
+      },
+      {
+        "start": 114378,
+        "stop": 114960,
+        "text": " calm subscribe for all the ways to get new episodes and Linux action news.com"
+      },
+      {
+        "start": 114960,
+        "stop": 115514,
+        "text": " slash contact for ways to get in touch the new Jupiter broadcasting website has"
+      },
+      {
+        "start": 115514,
+        "stop": 115958,
+        "text": " launched if you haven't checked it out Jupiter broadcasting calm look at it"
+      },
+      {
+        "start": 115958,
+        "stop": 116418,
+        "text": " find what's broken and then go submit a github issue please we'd appreciate the"
+      },
+      {
+        "start": 116418,
+        "stop": 116882,
+        "text": " feedback as for this show well don't worry we'll be back next week with our"
+      },
+      {
+        "start": 116882,
+        "stop": 117406,
+        "text": " take on the latest Linux and open source news thanks for joining us and that's"
+      },
+      {
+        "start": 117406,
+        "stop": 117766,
+        "text": " all the news for this week"
+      },
+      {
+        "start": 117766,
+        "stop": 117972,
+        "text": " you"
+      },
+      {
+        "start": 117972,
+        "stop": 118178,
+        "text": " you"
+      },
+      {
+        "start": 118178,
+        "stop": 118384,
+        "text": " you"
+      },
+      {
+        "start": 118384,
+        "stop": 118590,
+        "text": " you"
+      },
+      {
+        "start": 118590,
+        "stop": 118796,
+        "text": " you"
+      },
+      {
+        "start": 118796,
+        "stop": 119002,
+        "text": " you"
+      },
+      {
+        "start": 119002,
+        "stop": 119208,
+        "text": " you"
+      },
+      {
+        "start": 119306,
+        "stop": 119512,
+        "text": " you"
+      },
+      {
+        "start": 119512,
+        "stop": 119718,
+        "text": " you"
+      },
+      {
+        "start": 119718,
+        "stop": 119924,
+        "text": " you"
+      }
+    ],
+    "processing_time": {
+      "secs": 720,
+      "nanos": 7044909
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 257",
+    "pictures": [],
+    "duration": {
+      "secs": 1192,
+      "nanos": 698000000
+    },
+    "unique_id": "http://linuxactionnews.com/257"
+  },
+  "episode": {
+    "title": "Linux Action News 257",
+    "description": "Linux goes underwater, Microsoft kills the Teams' Linux app, and the nasty GRUB bug some of us could not avoid.",
+    "content": "<p><p>Linux goes underwater, Microsoft kills the Teams&#39; Linux app, and the nasty GRUB bug some of us could not avoid.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.reddit.com/r/linux/comments/x3c1sk/mircosoft_teams_desktop_client_on_linux_is_being/\" title=\"Mircosoft Teams desktop client on Linux is being retired\" rel=\"nofollow\">Mircosoft Teams desktop client on Linux is being retired</a> &mdash;  We are updating this message to indicate we will be retiring the Microsoft Teams desktop client on Linux in 90 days</li><li><a href=\"https://twitter.com/TandonRish/status/1408085784016539653\" title=\"Rish Tandon on Twitter\" rel=\"nofollow\">Rish Tandon on Twitter</a> &mdash; “With this change, we are taking a major step in #MicrosoftTeams Teams architecture. We are moving away from Electron to Edge Webview2. Teams will continue to remain a hybrid app but now it will be powered by #MicrosoftEdge. Also Angular is gone. We are now 100% on reactjs” </li><li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-teams/teams-2-0-moves-away-from-electron-to-embrace-edge-webview2/m-p/2484565\" title=\"Teams 2.0 Moves Away from Electron to Embrace Edge WebView2\" rel=\"nofollow\">Teams 2.0 Moves Away from Electron to Embrace Edge WebView2</a></li><li><a href=\"https://endeavouros.com/news/full-transparency-on-the-grub-issue/\" title=\"Full transparency on the Grub issue\" rel=\"nofollow\">Full transparency on the Grub issue</a> &mdash; After updating to grub 2.06.r322 many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.</li><li><a href=\"https://bbs.archlinux.org/viewtopic.php?id=279334\" title=\"Problem with booting after last upgrade to Grub 2.06.r322 \" rel=\"nofollow\">Problem with booting after last upgrade to Grub 2.06.r322 </a></li><li><a href=\"https://archlinux.org/news/grub-bootloader-upgrade-and-configuration-incompatibilities/\" title=\"Grub bootloader upgrade and configuration incompatibilities - Arch News\" rel=\"nofollow\">Grub bootloader upgrade and configuration incompatibilities - Arch News</a></li><li><a href=\"https://www.reddit.com/r/archlinux/comments/wx90x4/latest_grub_update_testing_repo_couldnt_boot/\" title=\"Latest Grub update - Testing Repo - couldnt boot\" rel=\"nofollow\">Latest Grub update - Testing Repo - couldnt boot</a></li><li><a href=\"https://git.savannah.gnu.org/cgit/grub.git/commit/?id=26031d3b101648352e4e427f04bf69d320088e77\" title=\"grub.git - GNU GRUB\" rel=\"nofollow\">grub.git - GNU GRUB</a></li><li><a href=\"https://forum.endeavouros.com/t/grub-2-2-06-r322-gd9b4638c5-1-wont-boot-and-goes-straight-to-the-bios-after-update/30653/60\" title=\"Possible Fix for those Impacted\" rel=\"nofollow\">Possible Fix for those Impacted</a></li><li><a href=\"https://gitlab.freedesktop.org/pipewire/pipewire/-/tags/0.3.57\" title=\"PipeWire 0.3.57 Released\" rel=\"nofollow\">PipeWire 0.3.57 Released</a> &mdash; An AAC decoder was added so that PipeWire can now also function as an A2DP AAC receiver.</li><li><a href=\"https://www.phoronix.com/news/PipeWire-0.3.57-Released\" title=\"PipeWire 0.3.57 Adds AAC Decoder, Opus For Bluetooth\" rel=\"nofollow\">PipeWire 0.3.57 Adds AAC Decoder, Opus For Bluetooth</a></li><li><a href=\"https://www.helpnetsecurity.com/2022/09/05/nmap-7-93-released/\" title=\"Nmap 7.93 the 25th anniversary edition has been released\" rel=\"nofollow\">Nmap 7.93 the 25th anniversary edition has been released</a> &mdash; Twenty five years ago, I released the first version of Nmap in a Phrack article named The Art of Port Scanning.</li><li><a href=\"https://www.suse.com/c/30-fun-facts-about-suse/\" title=\"SUSE turns 30\" rel=\"nofollow\">SUSE turns 30</a> &mdash; From our start in Nuremberg on September 2, 1992 to our record-breaking IPO in 2021 and continued growth, SUSE has always put community first, including our employee community. </li><li><a href=\"https://www.theregister.com/2022/09/01/subsea_cloud_underwater_datacenter/\" title=\"Commercial underwater datacenter goes online this year\" rel=\"nofollow\">Commercial underwater datacenter goes online this year</a> &mdash; The company claims that placing its datacenter modules underwater can reduce power consumption and carbon dioxide emissions by 40 percent, as well as lowering latency by allowing the datacenter to be located closer to metropolitan areas, many of which are located near the coast.</li><li><a href=\"https://www.datacenterdynamics.com/en/news/subsea-cloud-announces-three-underwater-data-center-projects/\" title=\"Subsea Cloud announces three underwater data center projects - DCD\" rel=\"nofollow\">Subsea Cloud announces three underwater data center projects - DCD</a></li><li><a href=\"https://www.euronews.com/next/2022/08/31/underwater-data-centres-are-coming-can-they-slash-co2-emissions-and-make-the-internet-fast?utm_medium=Social&utm_source=Twitter#Echobox=1661962231\" title=\"Underwater data centres are coming. Can they slash CO2 emissions and make the Internet faster? | Euronews\" rel=\"nofollow\">Underwater data centres are coming. Can they slash CO2 emissions and make the Internet faster? | Euronews</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8789",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15629100/50bb6f83-5d02-46ec-801a-46faba627b79.mp3",
+      "length": "14741936",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-09-08T12:52:00+02:00"
+  },
+  "speedup": 1.6565088
+}

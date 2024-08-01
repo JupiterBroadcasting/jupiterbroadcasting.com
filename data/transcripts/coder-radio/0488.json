@@ -1,0 +1,3757 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 200,
+        "stop": 700,
+        "text": " This is Coder Radio, Episode 488 for October 17th, 2022."
+      },
+      {
+        "start": 700,
+        "stop": 1500,
+        "text": " [Music]"
+      },
+      {
+        "start": 1500,
+        "stop": 1600,
+        "text": " Hey, good buddy."
+      },
+      {
+        "start": 1600,
+        "stop": 1900,
+        "text": " Welcome back to Jupyter Broadcasting's weekly talk show."
+      },
+      {
+        "start": 1900,
+        "stop": 2400,
+        "text": " Taking a pragmatic look at the art and the business, software development, and the world of technology."
+      },
+      {
+        "start": 2400,
+        "stop": 2700,
+        "text": " My name is Chris and joining us every single week."
+      },
+      {
+        "start": 2700,
+        "stop": 2900,
+        "text": " And I smell a little Linux."
+      },
+      {
+        "start": 2900,
+        "stop": 3100,
+        "text": " It's our host, Mr. Dominic."
+      },
+      {
+        "start": 3100,
+        "stop": 3200,
+        "text": " Hello, Mike."
+      },
+      {
+        "start": 3200,
+        "stop": 3400,
+        "text": " You will all be assimilated into tux."
+      },
+      {
+        "start": 3400,
+        "stop": 3600,
+        "text": " So you're still, are you on the Thaleo still?"
+      },
+      {
+        "start": 3600,
+        "stop": 3800,
+        "text": " I'm on the Thaleo right now, yep."
+      },
+      {
+        "start": 3800,
+        "stop": 4000,
+        "text": " You know, I can tell."
+      },
+      {
+        "start": 4000,
+        "stop": 4200,
+        "text": " I can almost tell there's a slight sound."
+      },
+      {
+        "start": 4200,
+        "stop": 4300,
+        "text": " It's not bad."
+      },
+      {
+        "start": 4300,
+        "stop": 4500,
+        "text": " There's just a difference."
+      },
+      {
+        "start": 4500,
+        "stop": 4800,
+        "text": " It's actually a step up in quality, so I like it."
+      },
+      {
+        "start": 4800,
+        "stop": 5100,
+        "text": " But it doesn't make any difference because you record locally also."
+      },
+      {
+        "start": 5100,
+        "stop": 5500,
+        "text": " But I can tell now when you're on the Mac, usually, or when you're on the Linux box,"
+      },
+      {
+        "start": 5500,
+        "stop": 5700,
+        "text": " just by the sound of the remote connection. How about that?"
+      },
+      {
+        "start": 5700,
+        "stop": 5800,
+        "text": " Really?"
+      },
+      {
+        "start": 5800,
+        "stop": 6000,
+        "text": " Yeah, it's a little slightly different."
+      },
+      {
+        "start": 6000,
+        "stop": 6200,
+        "text": " Slightly different."
+      },
+      {
+        "start": 6200,
+        "stop": 6400,
+        "text": " But it's sticking, it sounds like."
+      },
+      {
+        "start": 6400,
+        "stop": 6600,
+        "text": " Yeah, it's sticking. You know, you never know."
+      },
+      {
+        "start": 6600,
+        "stop": 6900,
+        "text": " Apple could release a shiny tablet. You know how I am."
+      },
+      {
+        "start": 6900,
+        "stop": 7200,
+        "text": " But it's been Thaleo and Dev1 exclusively for a while."
+      },
+      {
+        "start": 7200,
+        "stop": 7300,
+        "text": " Ha!"
+      },
+      {
+        "start": 7300,
+        "stop": 7800,
+        "text": " I'm packing up my Thaleo and sending it back because I just have the review unit."
+      },
+      {
+        "start": 7800,
+        "stop": 8000,
+        "text": " It's a little sad. It's a little sad."
+      },
+      {
+        "start": 8000,
+        "stop": 8300,
+        "text": " I think if I were to build my perfect Thaleo..."
+      },
+      {
+        "start": 8300,
+        "stop": 8600,
+        "text": " I talked about this on LUP this week."
+      },
+      {
+        "start": 8600,
+        "stop": 8800,
+        "text": " I think I might actually, although I love the Ryzen system,"
+      },
+      {
+        "start": 8800,
+        "stop": 9100,
+        "text": " I might actually go for an all Intel box."
+      },
+      {
+        "start": 9100,
+        "stop": 9900,
+        "text": " Intel 12th Gen i7 and these new Intel Arc GPUs that are actual hardware,"
+      },
+      {
+        "start": 9900,
+        "stop": 10200,
+        "text": " dedicated GPUs that you plug into a PCI slot."
+      },
+      {
+        "start": 10200,
+        "stop": 10400,
+        "text": " Have you seen these?"
+      },
+      {
+        "start": 10400,
+        "stop": 10800,
+        "text": " They basically iterated on their integrated GPU."
+      },
+      {
+        "start": 10800,
+        "stop": 11000,
+        "text": " They've made it way more powerful."
+      },
+      {
+        "start": 11000,
+        "stop": 11200,
+        "text": " It's the same open source graphic stack."
+      },
+      {
+        "start": 11200,
+        "stop": 11400,
+        "text": " It's based on the same open source code."
+      },
+      {
+        "start": 11400,
+        "stop": 11800,
+        "text": " So it's fully, if you have Linux 6.0 and the latest Mesa,"
+      },
+      {
+        "start": 11800,
+        "stop": 12100,
+        "text": " you just plug this thing in, you've got 100% Linux compatibility."
+      },
+      {
+        "start": 12100,
+        "stop": 12400,
+        "text": " You don't have to do anything else other than just plug it in."
+      },
+      {
+        "start": 12400,
+        "stop": 12600,
+        "text": " And it's gameable!"
+      },
+      {
+        "start": 12600,
+        "stop": 13000,
+        "text": " I don't know if I'd compare it to a high-end Nvidia or Ryzen,"
+      },
+      {
+        "start": 13000,
+        "stop": 13200,
+        "text": " or I mean AMD, but it is gameable."
+      },
+      {
+        "start": 13200,
+        "stop": 13400,
+        "text": " It's a new era."
+      },
+      {
+        "start": 13400,
+        "stop": 13800,
+        "text": " And, like the mid-level one, it's like 280 bucks."
+      },
+      {
+        "start": 13800,
+        "stop": 14200,
+        "text": " It's not bad when the new Nvidia stuff is 600 up."
+      },
+      {
+        "start": 14200,
+        "stop": 14400,
+        "text": " So I'm excited about that."
+      },
+      {
+        "start": 14400,
+        "stop": 14600,
+        "text": " I think they're going to make for some really great workstations,"
+      },
+      {
+        "start": 14600,
+        "stop": 14900,
+        "text": " because you've got to give it this, that Intel stuff is rock solid."
+      },
+      {
+        "start": 14900,
+        "stop": 15400,
+        "text": " An all Intel system, maybe it's not the absolute edge cutting performance thing,"
+      },
+      {
+        "start": 15400,
+        "stop": 15700,
+        "text": " but the 12th Gens are pretty good."
+      },
+      {
+        "start": 15700,
+        "stop": 16100,
+        "text": " And with Linux you just get absolute rock solid stability."
+      },
+      {
+        "start": 16100,
+        "stop": 16400,
+        "text": " You combine that stack with something like ECC RAM."
+      },
+      {
+        "start": 16400,
+        "stop": 16600,
+        "text": " Oh baby."
+      },
+      {
+        "start": 16600,
+        "stop": 16900,
+        "text": " Oh, crash would be a thing of the past, no doubt about it."
+      },
+      {
+        "start": 16900,
+        "stop": 17000,
+        "text": " No doubt about it."
+      },
+      {
+        "start": 17000,
+        "stop": 17200,
+        "text": " So yeah, it's a little sad to send it back,"
+      },
+      {
+        "start": 17200,
+        "stop": 17400,
+        "text": " but I'm going to box it up and then I'm going to think on it."
+      },
+      {
+        "start": 17400,
+        "stop": 17900,
+        "text": " I may end up replacing my OBS machine with an all Intel Thaleo."
+      },
+      {
+        "start": 17900,
+        "stop": 18100,
+        "text": " That may be my route I go."
+      },
+      {
+        "start": 18100,
+        "stop": 18300,
+        "text": " You're all Intel, I'm all AMD."
+      },
+      {
+        "start": 18300,
+        "stop": 18500,
+        "text": " It's like a civil war."
+      },
+      {
+        "start": 18500,
+        "stop": 18800,
+        "text": " So would that make, yeah, I guess that would be I'm team blue,"
+      },
+      {
+        "start": 18800,
+        "stop": 19000,
+        "text": " you're team red, something like that."
+      },
+      {
+        "start": 19000,
+        "stop": 19200,
+        "text": " I don't know if he has comrades."
+      },
+      {
+        "start": 19200,
+        "stop": 19800,
+        "text": " Alright, so Sean asked for our thoughts on something going up in Canada right now."
+      },
+      {
+        "start": 19800,
+        "stop": 20100,
+        "text": " The term software engineer is under attack."
+      },
+      {
+        "start": 20100,
+        "stop": 20300,
+        "text": " An Alberta regulator says,"
+      },
+      {
+        "start": 20300,
+        "stop": 20600,
+        "text": " Calm down Jordan Peterson, you can't do this every time."
+      },
+      {
+        "start": 20600,
+        "stop": 20900,
+        "text": " I know, it's got to be, it must have been Peterson."
+      },
+      {
+        "start": 20900,
+        "stop": 21000,
+        "text": " An Alberta regulator says,"
+      },
+      {
+        "start": 21000,
+        "stop": 21500,
+        "text": " No, you can't just go around, slap an engineer at the end of a developer's title"
+      },
+      {
+        "start": 21500,
+        "stop": 21700,
+        "text": " and make them an engineer."
+      },
+      {
+        "start": 21700,
+        "stop": 22000,
+        "text": " In order to be a quote \"software engineer\""
+      },
+      {
+        "start": 22000,
+        "stop": 22600,
+        "text": " they must hold a permit and they must pay fees for that right."
+      },
+      {
+        "start": 22600,
+        "stop": 23000,
+        "text": " This is coming, I think this was started by the Association of Professional Engineers"
+      },
+      {
+        "start": 23000,
+        "stop": 23400,
+        "text": " and Geoscientists of Alberta, APEGA for short."
+      },
+      {
+        "start": 23400,
+        "stop": 23900,
+        "text": " They asked the court to order one of the province's leading software companies"
+      },
+      {
+        "start": 23900,
+        "stop": 24400,
+        "text": " known as Jobber to stop using the term engineer in job titles and postings"
+      },
+      {
+        "start": 24400,
+        "stop": 24600,
+        "text": " unless they get a permit from the regulator."
+      },
+      {
+        "start": 24600,
+        "stop": 25200,
+        "text": " And over in Quebec they've successfully sued Microsoft in the early aughts"
+      },
+      {
+        "start": 25200,
+        "stop": 25600,
+        "text": " to stop them from calling their graduates of the Microsoft certified systems engineers"
+      },
+      {
+        "start": 25600,
+        "stop": 25700,
+        "text": " engineers."
+      },
+      {
+        "start": 25700,
+        "stop": 25900,
+        "text": " They can't use it."
+      },
+      {
+        "start": 25900,
+        "stop": 26100,
+        "text": " And they gave them a thousand dollar fine,"
+      },
+      {
+        "start": 26100,
+        "stop": 26400,
+        "text": " maybe, I don't know if it was per person or in total,"
+      },
+      {
+        "start": 26400,
+        "stop": 26600,
+        "text": " pretty minor fee."
+      },
+      {
+        "start": 26600,
+        "stop": 26900,
+        "text": " But they cannot use the term software engineer"
+      },
+      {
+        "start": 26900,
+        "stop": 27400,
+        "text": " without actually being an engineer and then getting licensed and paying a fee."
+      },
+      {
+        "start": 27400,
+        "stop": 27800,
+        "text": " And this is, I guess, happening in Alberta and over in Quebec."
+      },
+      {
+        "start": 27800,
+        "stop": 28300,
+        "text": " And I think there is some truth to this."
+      },
+      {
+        "start": 28300,
+        "stop": 28500,
+        "text": " I mean, I hate to be this guy, but..."
+      },
+      {
+        "start": 28500,
+        "stop": 28600,
+        "text": " Okay, be this guy."
+      },
+      {
+        "start": 28600,
+        "stop": 29100,
+        "text": " I have participated in the watering down of the term engineer."
+      },
+      {
+        "start": 29100,
+        "stop": 29400,
+        "text": " You know, I think we had people when I was at Linux Academy"
+      },
+      {
+        "start": 29400,
+        "stop": 29600,
+        "text": " on my department's team that were like..."
+      },
+      {
+        "start": 29600,
+        "stop": 29800,
+        "text": " Audio engineer? Yeah, I knew you were going to go there."
+      },
+      {
+        "start": 29800,
+        "stop": 30300,
+        "text": " Audio engineer, podcast content engineer, you know, that kind of stuff."
+      },
+      {
+        "start": 30300,
+        "stop": 30600,
+        "text": " And I've also seen it really abused."
+      },
+      {
+        "start": 30600,
+        "stop": 31100,
+        "text": " You know, somebody goes and takes a couple of basic Microsoft certifications."
+      },
+      {
+        "start": 31100,
+        "stop": 31300,
+        "text": " And I don't mean to demean it because they're part of building a career,"
+      },
+      {
+        "start": 31300,
+        "stop": 31600,
+        "text": " but, you know, Microsoft starts throwing around the term engineer"
+      },
+      {
+        "start": 31600,
+        "stop": 32000,
+        "text": " pretty much out of the gate if you learn how to manage a Windows box."
+      },
+      {
+        "start": 32000,
+        "stop": 32400,
+        "text": " Now you're an engineer and you're certified by Microsoft as such."
+      },
+      {
+        "start": 32400,
+        "stop": 32700,
+        "text": " So I think it has been watered down, I think in part, maybe,"
+      },
+      {
+        "start": 32700,
+        "stop": 33200,
+        "text": " to help with wages, you know, to help justify high tech wages"
+      },
+      {
+        "start": 33200,
+        "stop": 33400,
+        "text": " and things like that."
+      },
+      {
+        "start": 33400,
+        "stop": 33700,
+        "text": " But I'm curious, do you consider developers engineers?"
+      },
+      {
+        "start": 33700,
+        "stop": 34200,
+        "text": " And should we be able to use this term without big guvy coming down and demanding fines?"
+      },
+      {
+        "start": 34200,
+        "stop": 34700,
+        "text": " So I went back when I saw you put this in the show notes."
+      },
+      {
+        "start": 34700,
+        "stop": 35000,
+        "text": " We have literally covered not this exact case because, of course,"
+      },
+      {
+        "start": 35000,
+        "stop": 35400,
+        "text": " the Tim Hortons drinkers decided to, I guess..."
+      },
+      {
+        "start": 35400,
+        "stop": 35600,
+        "text": " They don't have a First Amendment per se, right?"
+      },
+      {
+        "start": 35600,
+        "stop": 36000,
+        "text": " So if you really want to hear all about this, listen to old Jordan Peterson."
+      },
+      {
+        "start": 36000,
+        "stop": 36200,
+        "text": " But I would caution you on the newer stuff."
+      },
+      {
+        "start": 36200,
+        "stop": 36500,
+        "text": " Something weird happened to him."
+      },
+      {
+        "start": 36500,
+        "stop": 36700,
+        "text": " You know, he spent some time in Russia."
+      },
+      {
+        "start": 36700,
+        "stop": 37000,
+        "text": " Yeah, I don't know what happened. He came back a little different."
+      },
+      {
+        "start": 37000,
+        "stop": 37300,
+        "text": " I mean, I know some would argue he was always like that."
+      },
+      {
+        "start": 37300,
+        "stop": 37500,
+        "text": " But, yeah."
+      },
+      {
+        "start": 37500,
+        "stop": 38000,
+        "text": " We've actually covered this topic several times because there was a bunch of prominent..."
+      },
+      {
+        "start": 38000,
+        "stop": 38200,
+        "text": " Really? Am I that old?"
+      },
+      {
+        "start": 38200,
+        "stop": 38700,
+        "text": " Not this exact case, but there is a very prominent,"
+      },
+      {
+        "start": 38700,
+        "stop": 39200,
+        "text": " particularly in the older engineering developer community,"
+      },
+      {
+        "start": 39200,
+        "stop": 39600,
+        "text": " that was suggesting that there should be some kind of exam."
+      },
+      {
+        "start": 39600,
+        "stop": 39900,
+        "text": " Way, way, way... Are you ready for this?"
+      },
+      {
+        "start": 39900,
+        "stop": 40200,
+        "text": " 2013 we were talking about this."
+      },
+      {
+        "start": 40200,
+        "stop": 40300,
+        "text": " Oof!"
+      },
+      {
+        "start": 40300,
+        "stop": 40700,
+        "text": " And one of the very prominent .NET developers in that community"
+      },
+      {
+        "start": 40700,
+        "stop": 40900,
+        "text": " was hinting that there should be..."
+      },
+      {
+        "start": 40900,
+        "stop": 41400,
+        "text": " This is a person who's big into agile certifications and stuff like that."
+      },
+      {
+        "start": 41400,
+        "stop": 41500,
+        "text": " Okay."
+      },
+      {
+        "start": 41500,
+        "stop": 41700,
+        "text": " And you and I both took a giant dump on it."
+      },
+      {
+        "start": 41700,
+        "stop": 42000,
+        "text": " You know, maybe I've changed my mind over the years then."
+      },
+      {
+        "start": 42000,
+        "stop": 42300,
+        "text": " I'm going to say I think we've both kind of changed our mind"
+      },
+      {
+        "start": 42300,
+        "stop": 42500,
+        "text": " because I think there's a big difference in age."
+      },
+      {
+        "start": 42500,
+        "stop": 42800,
+        "text": " I think this is one of those things."
+      },
+      {
+        "start": 42800,
+        "stop": 43300,
+        "text": " You know what? Let's talk about prominent software engineer Tucker Carlson for a moment."
+      },
+      {
+        "start": 43300,
+        "stop": 43700,
+        "text": " Everyone is familiar with his software engineering prowess."
+      },
+      {
+        "start": 43700,
+        "stop": 44200,
+        "text": " But I was reminded, thanks weirdly enough to Ezra Klein's podcast,"
+      },
+      {
+        "start": 44200,
+        "stop": 44800,
+        "text": " that early Tucker Carlson was a hilarious libertarian party boy."
+      },
+      {
+        "start": 44800,
+        "stop": 45200,
+        "text": " Okay, okay. I kind of remember him on that Crossfire show with his little bow tie."
+      },
+      {
+        "start": 45200,
+        "stop": 45500,
+        "text": " Yeah, well even before that he was on MSNBC and he was like,"
+      },
+      {
+        "start": 45500,
+        "stop": 45700,
+        "text": " \"I want to have three girls.\""
+      },
+      {
+        "start": 45700,
+        "stop": 46000,
+        "text": " He's like, \"Let's drink some girls, baby, all day long.\""
+      },
+      {
+        "start": 46000,
+        "stop": 46500,
+        "text": " And now he's like, \"You know, the family, blah, blah, blah. I don't like you, but whatever."
+      },
+      {
+        "start": 46500,
+        "stop": 46700,
+        "text": " Conservative stuff.\""
+      },
+      {
+        "start": 46700,
+        "stop": 46800,
+        "text": " It's just age."
+      },
+      {
+        "start": 46800,
+        "stop": 47100,
+        "text": " Right? You and I were like... We were pretty hardcore."
+      },
+      {
+        "start": 47100,
+        "stop": 47300,
+        "text": " I mean, Alex, I'm sure will find it."
+      },
+      {
+        "start": 47300,
+        "stop": 47700,
+        "text": " We were pretty hardcore against this idea to like..."
+      },
+      {
+        "start": 47700,
+        "stop": 48000,
+        "text": " I think some of that on my part was straight up fear."
+      },
+      {
+        "start": 48000,
+        "stop": 48400,
+        "text": " Right? Like that I could just simply be disqualified out of my own business"
+      },
+      {
+        "start": 48400,
+        "stop": 48700,
+        "text": " if they passed a law that said you had to have the credentials."
+      },
+      {
+        "start": 48700,
+        "stop": 48800,
+        "text": " Sure, yeah."
+      },
+      {
+        "start": 48800,
+        "stop": 49200,
+        "text": " I'm going to have an actual nuanced take for once."
+      },
+      {
+        "start": 49200,
+        "stop": 49400,
+        "text": " So part of this is just like Canada is not America, right?"
+      },
+      {
+        "start": 49400,
+        "stop": 49700,
+        "text": " In America, this lawsuit could never really happen"
+      },
+      {
+        "start": 49700,
+        "stop": 50000,
+        "text": " because First Amendment, you can say whatever the hell you want."
+      },
+      {
+        "start": 50000,
+        "stop": 50300,
+        "text": " Unless you say it on Twitter and then they will shut down your business."
+      },
+      {
+        "start": 50300,
+        "stop": 50500,
+        "text": " But that's not the government. That's just..."
+      },
+      {
+        "start": 50500,
+        "stop": 50600,
+        "text": " Yay."
+      },
+      {
+        "start": 50600,
+        "stop": 51100,
+        "text": " I don't think this matters as much as people want it to matter."
+      },
+      {
+        "start": 51100,
+        "stop": 51900,
+        "text": " I understand why to a certain mindset saying you're an engineer might sound better."
+      },
+      {
+        "start": 51900,
+        "stop": 52400,
+        "text": " I would even avoid the title altogether"
+      },
+      {
+        "start": 52400,
+        "stop": 52700,
+        "text": " because if you look at the salary wages,"
+      },
+      {
+        "start": 52700,
+        "stop": 53200,
+        "text": " right now people are hiring developers, engineers, coders, code monkeys,"
+      },
+      {
+        "start": 53200,
+        "stop": 53600,
+        "text": " JavaScript ninjas if you're doing node apparently."
+      },
+      {
+        "start": 53600,
+        "stop": 53800,
+        "text": " And they're paying, right?"
+      },
+      {
+        "start": 53800,
+        "stop": 54200,
+        "text": " There are also tons of layoffs happening so we're in this weird transition state."
+      },
+      {
+        "start": 54200,
+        "stop": 54700,
+        "text": " But this is a fight that I understand"
+      },
+      {
+        "start": 54700,
+        "stop": 55300,
+        "text": " why if you're maybe super early or just like getting to that intermediate stage and things"
+      },
+      {
+        "start": 55300,
+        "stop": 55800,
+        "text": " that you feel visceral like, \"Well, don't screw me over\" reaction to."
+      },
+      {
+        "start": 55800,
+        "stop": 56100,
+        "text": " But it really doesn't matter, right?"
+      },
+      {
+        "start": 56100,
+        "stop": 56600,
+        "text": " Your salary is not going to be different if you're working at Dark Matter Dev Inc"
+      },
+      {
+        "start": 56600,
+        "stop": 57100,
+        "text": " and your Software Engineer level 2 or your Software Developer level 2"
+      },
+      {
+        "start": 57100,
+        "stop": 57300,
+        "text": " or your Code Monkey, Java Milwaukee level 2."
+      },
+      {
+        "start": 57300,
+        "stop": 57600,
+        "text": " They're going to pay you the same because they have to compete with everybody else."
+      },
+      {
+        "start": 57600,
+        "stop": 58100,
+        "text": " Now this might matter for things like Microsoft certification, right?"
+      },
+      {
+        "start": 58100,
+        "stop": 58400,
+        "text": " What is it? MCSE, Microsoft Certified Software Engineer, isn't that?"
+      },
+      {
+        "start": 58400,
+        "stop": 58600,
+        "text": " Yeah, there's a few of them but that's one of them."
+      },
+      {
+        "start": 58600,
+        "stop": 58900,
+        "text": " Yeah, that might be problematic in good old Canada."
+      },
+      {
+        "start": 58900,
+        "stop": 59200,
+        "text": " I don't know. I'm not Canadian. I don't know how the law works."
+      },
+      {
+        "start": 59200,
+        "stop": 59500,
+        "text": " I'm not a lawyer nor Canadian nor am I a Canadian lawyer."
+      },
+      {
+        "start": 59500,
+        "stop": 59900,
+        "text": " I have a friend who's a traffic engineer and she's always like dunking on me that"
+      },
+      {
+        "start": 59900,
+        "stop": 60200,
+        "text": " coders aren't engineers. Sure."
+      },
+      {
+        "start": 60200,
+        "stop": 60500,
+        "text": " But it's getting close, right?"
+      },
+      {
+        "start": 60500,
+        "stop": 60800,
+        "text": " I think the question you really want to ask is should they be?"
+      },
+      {
+        "start": 60800,
+        "stop": 61400,
+        "text": " Should there be some type of software development that you actually have to"
+      },
+      {
+        "start": 61400,
+        "stop": 61800,
+        "text": " acquire and maintain an engineering license for?"
+      },
+      {
+        "start": 61800,
+        "stop": 62200,
+        "text": " And if so, what is that process like?"
+      },
+      {
+        "start": 62200,
+        "stop": 62800,
+        "text": " Is it like a CPA license or like an engineering license?"
+      },
+      {
+        "start": 62800,
+        "stop": 63100,
+        "text": " Like you have to take ongoing classes every couple of years."
+      },
+      {
+        "start": 63100,
+        "stop": 63400,
+        "text": " You have to, you know, re-qualify."
+      },
+      {
+        "start": 63400,
+        "stop": 64000,
+        "text": " I don't know. That gets real messy and real tough because we're not, you know,"
+      },
+      {
+        "start": 64000,
+        "stop": 64400,
+        "text": " just think of like the 20 JavaScript frameworks that have been released since"
+      },
+      {
+        "start": 64400,
+        "stop": 64700,
+        "text": " we started the show 15 minutes ago."
+      },
+      {
+        "start": 64700,
+        "stop": 65000,
+        "text": " How the hell do you properly license people?"
+      },
+      {
+        "start": 65000,
+        "stop": 65500,
+        "text": " Or is it more abstract? Okay, well then we go the thing that I hate,"
+      },
+      {
+        "start": 65500,
+        "stop": 66000,
+        "text": " the low-level algorithms and design patterns trivia test where it's,"
+      },
+      {
+        "start": 66000,
+        "stop": 66500,
+        "text": " all right, man, we have this set of data and I want you to pierce 10 sorting"
+      },
+      {
+        "start": 66500,
+        "stop": 66900,
+        "text": " algorithms, pick the fastest one. Okay."
+      },
+      {
+        "start": 66900,
+        "stop": 67300,
+        "text": " It's still stupid, still impractical because it usually doesn't matter when I"
+      },
+      {
+        "start": 67300,
+        "stop": 67600,
+        "text": " say usually one out of like 10 million times."
+      },
+      {
+        "start": 67600,
+        "stop": 68100,
+        "text": " And we're already, I think hand, I think this is one case where shocking,"
+      },
+      {
+        "start": 68100,
+        "stop": 68500,
+        "text": " Mike thinks the free market works, right? I think the market has worked in that,"
+      },
+      {
+        "start": 68500,
+        "stop": 68900,
+        "text": " you know, Google needs those dudes. And the way Google does it is they make"
+      },
+      {
+        "start": 68900,
+        "stop": 69500,
+        "text": " their interview process an incredibly arduous, painful, somewhat maybe overboard"
+      },
+      {
+        "start": 69500,
+        "stop": 69900,
+        "text": " experience. I think you could argue too, they're paying an engineer salary over there."
+      },
+      {
+        "start": 69900,
+        "stop": 70200,
+        "text": " And they're paying it right. And they're paying, well, it's, although not all"
+      },
+      {
+        "start": 70200,
+        "stop": 70600,
+        "text": " engineers make that much money, right? So it's, I think the money argument's a"
+      },
+      {
+        "start": 70600,
+        "stop": 71200,
+        "text": " little weaker, but it, we're already doing it. But you know, your, your bank or"
+      },
+      {
+        "start": 71200,
+        "stop": 71500,
+        "text": " banks probably a bad example, but you're, you know, you're Dunder Mifflin up in"
+      },
+      {
+        "start": 71500,
+        "stop": 71900,
+        "text": " Scranton who just needs another Java developer to keep their damn HR system"
+      },
+      {
+        "start": 71900,
+        "stop": 72400,
+        "text": " running, kind of doesn't care if you use the less efficient sort algorithm."
+      },
+      {
+        "start": 72400,
+        "stop": 72800,
+        "text": " You know, I, I agree with everything you're saying in principle. I think where"
+      },
+      {
+        "start": 72800,
+        "stop": 73400,
+        "text": " I get hung up is human behavior shows us that we do place value on certain terms."
+      },
+      {
+        "start": 73400,
+        "stop": 73800,
+        "text": " And the word engineer has just kind of become one of those respected terms,"
+      },
+      {
+        "start": 73800,
+        "stop": 74300,
+        "text": " kind of like a doctor. So it makes sense that we would have kind of co-opted its"
+      },
+      {
+        "start": 74300,
+        "stop": 74900,
+        "text": " use to bring some of that official shininess over to this new field to"
+      },
+      {
+        "start": 74900,
+        "stop": 75400,
+        "text": " legitimize it a little bit. And I think in doing so, we got away with applying"
+      },
+      {
+        "start": 75400,
+        "stop": 75800,
+        "text": " engineer to one thing and then we tried applying it to another type of work and"
+      },
+      {
+        "start": 75800,
+        "stop": 76100,
+        "text": " then another, and now it's just sort of, anyone's an engineer. You just actually"
+      },
+      {
+        "start": 76100,
+        "stop": 76400,
+        "text": " literally just put engineer in the job title and that's just human behavior."
+      },
+      {
+        "start": 76400,
+        "stop": 76800,
+        "text": " Do you think it was intentional though, or was it because in the fifties and"
+      },
+      {
+        "start": 76800,
+        "stop": 77200,
+        "text": " sixties, like the original, you know, software developers, engineers, whatever,"
+      },
+      {
+        "start": 77200,
+        "stop": 77700,
+        "text": " maybe more so the early seventies, it was a lot more related to actual engineering,"
+      },
+      {
+        "start": 77700,
+        "stop": 78100,
+        "text": " right? To like, you were working on these circuits, you were, you know, I think,"
+      },
+      {
+        "start": 78100,
+        "stop": 78500,
+        "text": " I mean, it's just, it's JavaScript's fault."
+      },
+      {
+        "start": 78500,
+        "stop": 78900,
+        "text": " Yeah. Well, there's that maybe a little bit of real basic and visual basic in"
+      },
+      {
+        "start": 78900,
+        "stop": 79000,
+        "text": " there as well."
+      },
+      {
+        "start": 79000,
+        "stop": 79600,
+        "text": " The problem is the craft or art, or I firmly, I mean, this is an argument"
+      },
+      {
+        "start": 79600,
+        "stop": 80000,
+        "text": " against calling it engineering. It is in no way a science. Like I, I, it's just"
+      },
+      {
+        "start": 80000,
+        "stop": 80400,
+        "text": " not a science. I know people get pissy when I say that. The reason you know,"
+      },
+      {
+        "start": 80400,
+        "stop": 80800,
+        "text": " it's not a science is because there are many different ways to do the same thing."
+      },
+      {
+        "start": 80800,
+        "stop": 81300,
+        "text": " And most importantly, you improve over time and practice,"
+      },
+      {
+        "start": 81300,
+        "stop": 81800,
+        "text": " which makes it an art. That's how that works, right? If this, the very, you know,"
+      },
+      {
+        "start": 81800,
+        "stop": 82300,
+        "text": " Renaissance way to think about it, but that's generally where you go."
+      },
+      {
+        "start": 82300,
+        "stop": 82700,
+        "text": " So I don't know, is the term developer less offensive to you?"
+      },
+      {
+        "start": 82700,
+        "stop": 83100,
+        "text": " Well, it clearly hasn't been enough, you know, they've clearly felt the market,"
+      },
+      {
+        "start": 83100,
+        "stop": 83500,
+        "text": " I'm speaking that they broadly just have felt like, because otherwise we would"
+      },
+      {
+        "start": 83500,
+        "stop": 83700,
+        "text": " just work on software developer instead of software engineer."
+      },
+      {
+        "start": 83700,
+        "stop": 83900,
+        "text": " All right, I'm going to fry some Klingon bacon here."
+      },
+      {
+        "start": 83900,
+        "stop": 84400,
+        "text": " Oh, all right. Oh, geez. You know, the targs have particularly tough bacon."
+      },
+      {
+        "start": 84400,
+        "stop": 84700,
+        "text": " Yeah, we're really going to get that oil hot. You know why it's called,"
+      },
+      {
+        "start": 84700,
+        "stop": 85100,
+        "text": " why it's called engineering? I'm just going to go with this because we're all"
+      },
+      {
+        "start": 85100,
+        "stop": 85400,
+        "text": " nerds. And when it started, a bunch of Star Trek nerds were like, which,"
+      },
+      {
+        "start": 85400,
+        "stop": 85800,
+        "text": " which section of the enterprise would we be? Engineering, of course."
+      },
+      {
+        "start": 85800,
+        "stop": 86200,
+        "text": " I'd be Scotty. Scotty. Right. Yeah. Yeah, I guess that could be it."
+      },
+      {
+        "start": 86200,
+        "stop": 86800,
+        "text": " I mean, I think it's just, I don't think there's a sinister cabal of white coated"
+      },
+      {
+        "start": 86800,
+        "stop": 87500,
+        "text": " 1960s guys who were like, hey, we'll make $400 more a year if we say we're engineers."
+      },
+      {
+        "start": 87500,
+        "stop": 88100,
+        "text": " And maybe what we're seeing up there in Quebec and in Alberta is a swing back"
+      },
+      {
+        "start": 88100,
+        "stop": 88400,
+        "text": " to kind of reclaiming the sanctity of the engineer term."
+      },
+      {
+        "start": 88400,
+        "stop": 88800,
+        "text": " Every actual licensed engineer I know hates, hates this."
+      },
+      {
+        "start": 88800,
+        "stop": 89100,
+        "text": " Right. And could you imagine, though, if we did bring some sort of licensing to"
+      },
+      {
+        "start": 89100,
+        "stop": 89400,
+        "text": " software engineering, it just seems like it would stifle innovation. Like, I wonder."
+      },
+      {
+        "start": 89400,
+        "stop": 89800,
+        "text": " It would be great for me. How does something like Rust come along in this"
+      },
+      {
+        "start": 89800,
+        "stop": 90200,
+        "text": " license world? Is Rust recognized by a board? And then you can be."
+      },
+      {
+        "start": 90200,
+        "stop": 90800,
+        "text": " You and I both know someone who would gleefully go on Twitter and say that"
+      },
+      {
+        "start": 90800,
+        "stop": 91200,
+        "text": " if you are not a licensed Rust engineer, then you are not a real developer."
+      },
+      {
+        "start": 91200,
+        "stop": 91800,
+        "text": " We know this dude. It's not me. Yeah."
+      },
+      {
+        "start": 91900,
+        "stop": 92400,
+        "text": " Linode.com/coder. Linode makes the cloud simple, affordable and accessible to"
+      },
+      {
+        "start": 92400,
+        "stop": 93000,
+        "text": " anyone at any skill level. And when you go to Linode.com/coder, you'll get $100"
+      },
+      {
+        "start": 93000,
+        "stop": 93500,
+        "text": " and 60 day credit to try it out, to really get a feel for what Linode is like."
+      },
+      {
+        "start": 93500,
+        "stop": 94000,
+        "text": " Fast, reliable. Those are words that come to my mind and honestly, a great deal."
+      },
+      {
+        "start": 94000,
+        "stop": 94400,
+        "text": " 30 to 50 percent less than the hypervisors out there. Linode's app marketplace"
+      },
+      {
+        "start": 94400,
+        "stop": 94900,
+        "text": " makes it super easy to deploy a lot of popular open source software."
+      },
+      {
+        "start": 94900,
+        "stop": 95200,
+        "text": " And the Nextcloud deployment has been taken to the next level. In fact, Linode"
+      },
+      {
+        "start": 95200,
+        "stop": 95700,
+        "text": " seems to be working directly with the Nextcloud project. And they just published"
+      },
+      {
+        "start": 95700,
+        "stop": 96200,
+        "text": " a really great interview and background on Frank, the founder of Nextcloud and"
+      },
+      {
+        "start": 96200,
+        "stop": 96600,
+        "text": " Nextcloud, the company, and kind of how they're organized as a group."
+      },
+      {
+        "start": 96600,
+        "stop": 96900,
+        "text": " That's not a super long read either. So I'll link to this in the show notes."
+      },
+      {
+        "start": 96900,
+        "stop": 97300,
+        "text": " If you're not familiar, Nextcloud provides like a open source productivity suite"
+      },
+      {
+        "start": 97300,
+        "stop": 97600,
+        "text": " now closer to Office 365 with their hub three that they just announced, which"
+      },
+      {
+        "start": 97600,
+        "stop": 98100,
+        "text": " will be released soon. You basically have an alternative to the Google"
+      },
+      {
+        "start": 98100,
+        "stop": 98800,
+        "text": " workplace product, Office 365, Slack, all of that in one self hostable package"
+      },
+      {
+        "start": 98800,
+        "stop": 99300,
+        "text": " that you can deploy with just a couple of clicks on Linode. Same with GitLab"
+      },
+      {
+        "start": 99300,
+        "stop": 99700,
+        "text": " and other just absolutely essential tools, including some cloud IDEs."
+      },
+      {
+        "start": 99700,
+        "stop": 100100,
+        "text": " Or if you prefer, which is honestly the route I often take if time allows,"
+      },
+      {
+        "start": 100100,
+        "stop": 100500,
+        "text": " you can build it up from the ground on Linode. And today they have 11 data centers"
+      },
+      {
+        "start": 100500,
+        "stop": 100900,
+        "text": " and throughout next year, they're going to fire up a dozen more."
+      },
+      {
+        "start": 100900,
+        "stop": 101200,
+        "text": " They are their own ISP, so their connections are super fast. They've got"
+      },
+      {
+        "start": 101200,
+        "stop": 101700,
+        "text": " dedicated CPU rigs with AMD epic CPUs. They've got dedicated GPU rigs with the"
+      },
+      {
+        "start": 101700,
+        "stop": 102300,
+        "text": " super high end NVIDIA data center GPUs in there. And they've got systems that"
+      },
+      {
+        "start": 102300,
+        "stop": 102700,
+        "text": " will just be what you need to run a blog. Maybe something simple for yourself,"
+      },
+      {
+        "start": 102700,
+        "stop": 103100,
+        "text": " like a gallery site, or maybe your own next cloud instance just for a couple"
+      },
+      {
+        "start": 103100,
+        "stop": 103400,
+        "text": " of people. Like the whole range is there. Our matrix server for Jupiter"
+      },
+      {
+        "start": 103400,
+        "stop": 104000,
+        "text": " broadcasting is a 48 core Linode. It's a monster. It won't always be that way."
+      },
+      {
+        "start": 104000,
+        "stop": 104700,
+        "text": " In fact, we started I think like maybe a four core and we scaled up as demand"
+      },
+      {
+        "start": 104700,
+        "stop": 105200,
+        "text": " needed. The same rig, the same install all the way up to 48 cores. I think it's"
+      },
+      {
+        "start": 105200,
+        "stop": 105700,
+        "text": " like 128 gigs of RAM. It's something just astronomical mind blowing. And you"
+      },
+      {
+        "start": 105700,
+        "stop": 106000,
+        "text": " know, for somebody who like was super happy when his computer had two megs of"
+      },
+      {
+        "start": 106000,
+        "stop": 106400,
+        "text": " RAM and that was after I put an upgrade stick in, right? And we're just scaling"
+      },
+      {
+        "start": 106400,
+        "stop": 106800,
+        "text": " back down once we've reconfigured it with more workers and whatnot. It's so"
+      },
+      {
+        "start": 106800,
+        "stop": 107100,
+        "text": " powerful. What you can do with Linode, the tooling, the backups, the snapshots."
+      },
+      {
+        "start": 107100,
+        "stop": 107600,
+        "text": " I mean, it's truly one of our secret weapons here at JB that lets us have the"
+      },
+      {
+        "start": 107600,
+        "stop": 108000,
+        "text": " reach and the infrastructure of the billion dollar companies when we're just"
+      },
+      {
+        "start": 108000,
+        "stop": 108600,
+        "text": " a small little bespoke podcast shop. Go try it for yourself. Go try it for your"
+      },
+      {
+        "start": 108600,
+        "stop": 109000,
+        "text": " business and go get that hundred dollars. Linode.com/coder."
+      },
+      {
+        "start": 109000,
+        "stop": 109600,
+        "text": " So the Internet's pretty upset this week because it seems with a little bit of"
+      },
+      {
+        "start": 109600,
+        "stop": 110300,
+        "text": " tweaking you can, quote, block public code that copilot emits and what you end"
+      },
+      {
+        "start": 110300,
+        "stop": 110700,
+        "text": " up with, surprise, surprise, seems to be quite a bit of copywritten code when you"
+      },
+      {
+        "start": 110700,
+        "stop": 111200,
+        "text": " change that setting. And this was noticed over, I don't know, was it the weekend?"
+      },
+      {
+        "start": 111200,
+        "stop": 111800,
+        "text": " By Tim Davis on Twitter and he writes, with @githubcopilot and the public code"
+      },
+      {
+        "start": 111800,
+        "stop": 112200,
+        "text": " block setting, it now emits large chunks of my copywritten code with no"
+      },
+      {
+        "start": 112200,
+        "stop": 112700,
+        "text": " attribution and no LGPL license. For example, and he shows a simple prompt"
+      },
+      {
+        "start": 112700,
+        "stop": 113400,
+        "text": " with a sparse matrix transpose CS. It produces his exact code. And he has his"
+      },
+      {
+        "start": 113400,
+        "stop": 113900,
+        "text": " original code in the screenshot up and then he pulls up the copilot produced"
+      },
+      {
+        "start": 113900,
+        "stop": 114400,
+        "text": " code and it's line for line identical. And it seems clearly like it's just"
+      },
+      {
+        "start": 114400,
+        "stop": 114900,
+        "text": " reproducing his code without his permission. And this has provoked the"
+      },
+      {
+        "start": 114900,
+        "stop": 115400,
+        "text": " conversation that copilot, much to, I think, your concern, is actually"
+      },
+      {
+        "start": 115400,
+        "stop": 115900,
+        "text": " happening. It is enabling copyright laundering, code laundering, essentially."
+      },
+      {
+        "start": 115900,
+        "stop": 116400,
+        "text": " And you can just use somebody's copywritten code and then when somebody"
+      },
+      {
+        "start": 116400,
+        "stop": 117000,
+        "text": " comes after you, you can just put your hands up and say, I didn't, a copilot,"
+      },
+      {
+        "start": 117000,
+        "stop": 117400,
+        "text": " I didn't, I had no idea. People are getting pissed."
+      },
+      {
+        "start": 117400,
+        "stop": 117900,
+        "text": " Yes, we should define our terms real fast though, right? So apparently public"
+      },
+      {
+        "start": 117900,
+        "stop": 118400,
+        "text": " code in code pilot parlance means permissive licenses, I think. That's what"
+      },
+      {
+        "start": 118400,
+        "stop": 118900,
+        "text": " it sounds like. All right. And when they say, when you say copywritten code,"
+      },
+      {
+        "start": 118900,
+        "stop": 119300,
+        "text": " we are not talking private repos here. We are talking code that is in fact"
+      },
+      {
+        "start": 119300,
+        "stop": 119800,
+        "text": " public, is in fact open source, but is under a more aggressive license, you"
+      },
+      {
+        "start": 119800,
+        "stop": 120300,
+        "text": " could say, right? Like a GPL, LGPL, whatever. Before I get into some concerns"
+      },
+      {
+        "start": 120300,
+        "stop": 120900,
+        "text": " on this, I have some really bad news for you guys. Uh-oh. People are doing this"
+      },
+      {
+        "start": 120900,
+        "stop": 121400,
+        "text": " all the time. People who even like engineering developers, code monkeys,"
+      },
+      {
+        "start": 121400,
+        "stop": 121900,
+        "text": " whatever we're calling them now, who don't involve themselves in the Linux"
+      },
+      {
+        "start": 121900,
+        "stop": 122500,
+        "text": " community, I know for a fact, routinely just steal GPL code. Oh, oh sure. Yeah."
+      },
+      {
+        "start": 122500,
+        "stop": 122900,
+        "text": " I, I, yeah, I, yeah, yeah, yeah. Right. So, so this isn't like a big change."
+      },
+      {
+        "start": 122900,
+        "stop": 123400,
+        "text": " In fact, I would say, you know, your dumb sort algorithm when I, this Tim Davis"
+      },
+      {
+        "start": 123400,
+        "stop": 123800,
+        "text": " guy is actually an academic, so his stuff is real, but like your, your dumb,"
+      },
+      {
+        "start": 123800,
+        "stop": 124200,
+        "text": " like, you know, iterating through some dictionary. If somebody happens to copy"
+      },
+      {
+        "start": 124200,
+        "stop": 124900,
+        "text": " that via CodePilot unwittingly, eh, come on buddy. You didn't, you know, come on."
+      },
+      {
+        "start": 124900,
+        "stop": 125400,
+        "text": " The other thing is I'm going to push back a little, even though I'm, was one"
+      },
+      {
+        "start": 125400,
+        "stop": 126000,
+        "text": " of the early persons concerned about this. If you put a prompt that looks, first"
+      },
+      {
+        "start": 126000,
+        "stop": 126400,
+        "text": " of all, the prompt thing in CodePilot is super, super problematic. I agree with"
+      },
+      {
+        "start": 126400,
+        "stop": 126800,
+        "text": " that. You shouldn't be able to ask the code genie to generate you code. It"
+      },
+      {
+        "start": 126800,
+        "stop": 127200,
+        "text": " should just do it intuitively for lots of reasons. One, if you do it intuitively,"
+      },
+      {
+        "start": 127200,
+        "stop": 127700,
+        "text": " it looks at your own code first locally, which code cohesion is the thing you"
+      },
+      {
+        "start": 127700,
+        "stop": 128200,
+        "text": " want that it's good for you. It's good for your organization and different, but"
+      },
+      {
+        "start": 128200,
+        "stop": 128900,
+        "text": " if you, you know, string together a prompt intentionally trying to get your code"
+      },
+      {
+        "start": 128900,
+        "stop": 129500,
+        "text": " back and succeed, that's a little, that's a little sus as the kids would say,"
+      },
+      {
+        "start": 129500,
+        "stop": 129800,
+        "text": " right? That's a, I mean, fair point, you've made your point, but you've made"
+      },
+      {
+        "start": 129800,
+        "stop": 130200,
+        "text": " your point, you know, in the way that lots of lawyers make their point that if"
+      },
+      {
+        "start": 130200,
+        "stop": 130500,
+        "text": " the glove fits, you must acquit and if wookies live on it or like it's a"
+      },
+      {
+        "start": 130500,
+        "stop": 130700,
+        "text": " totally contrived argument."
+      },
+      {
+        "start": 130700,
+        "stop": 131200,
+        "text": " What about Jeremy Soller's argument that you could basically use this for"
+      },
+      {
+        "start": 131200,
+        "stop": 131500,
+        "text": " illegal source code laundering that's just automated by GitHub? So you could"
+      },
+      {
+        "start": 131500,
+        "stop": 131900,
+        "text": " just literally find any piece of code you want under an incompatible license"
+      },
+      {
+        "start": 131900,
+        "stop": 132300,
+        "text": " and then you just keep probing Copilot until it reproduces it and then you have"
+      },
+      {
+        "start": 132300,
+        "stop": 132700,
+        "text": " plausible deniability later. Now this is a way to kind of copy that GPL code like"
+      },
+      {
+        "start": 132700,
+        "stop": 133000,
+        "text": " you were saying people do already and put it in there like, you know, closed"
+      },
+      {
+        "start": 133000,
+        "stop": 133600,
+        "text": " source company app or whatever operating system, but now you can do that with"
+      },
+      {
+        "start": 133600,
+        "stop": 134100,
+        "text": " this tool and also have legal deniability. So it's like, it just makes it even"
+      },
+      {
+        "start": 134100,
+        "stop": 134300,
+        "text": " easier to get away with it now."
+      },
+      {
+        "start": 134300,
+        "stop": 134800,
+        "text": " Okay. So what I would say generally is that there's a lot of overheated takes on"
+      },
+      {
+        "start": 134800,
+        "stop": 135600,
+        "text": " this and I think that's a little silly calling it code laundering is a one of"
+      },
+      {
+        "start": 135600,
+        "stop": 135900,
+        "text": " the things. So this is a little dangerous territory that I think pushes people"
+      },
+      {
+        "start": 135900,
+        "stop": 136400,
+        "text": " away from the false community is the more militant aspects of it. People aren't"
+      },
+      {
+        "start": 136400,
+        "stop": 136900,
+        "text": " just running around looking to rip off rip off your open source project. They're"
+      },
+      {
+        "start": 136900,
+        "stop": 137600,
+        "text": " doing it by accident because either they don't know or in I guess very, very few"
+      },
+      {
+        "start": 137600,
+        "stop": 138000,
+        "text": " cases, it's a business decision made by some startup who I hate to break it to"
+      },
+      {
+        "start": 138000,
+        "stop": 138400,
+        "text": " you, but when you sue them, they're probably by the time the lawsuit hits a"
+      },
+      {
+        "start": 138400,
+        "stop": 139100,
+        "text": " judge, they'll probably be bankrupt for other reasons. Right? So this is like the"
+      },
+      {
+        "start": 139100,
+        "stop": 139600,
+        "text": " biggest tempest in the littlest teapot. And I know there's going to be a visceral"
+      },
+      {
+        "start": 139600,
+        "stop": 140000,
+        "text": " reaction to that because I understand the people who truly philosophically believe"
+      },
+      {
+        "start": 140000,
+        "stop": 140500,
+        "text": " in false for its own sake. This is like, you know, the Virgin Mary being the"
+      },
+      {
+        "start": 140500,
+        "stop": 141000,
+        "text": " centerfold and Playboy, but not only does this not matter to be honest, reading"
+      },
+      {
+        "start": 141000,
+        "stop": 141500,
+        "text": " some of these takes put me off. It is one of those things that every time I come"
+      },
+      {
+        "start": 141500,
+        "stop": 141900,
+        "text": " into this community, I kind of get like, all right, you guys need to like, have a"
+      },
+      {
+        "start": 141900,
+        "stop": 142500,
+        "text": " shot of reality. Most code that I've seen code pilot generate is actually bad."
+      },
+      {
+        "start": 142500,
+        "stop": 143100,
+        "text": " I'm just saying like, it's, it's not good. So if some super, you know, I'll get"
+      },
+      {
+        "start": 143100,
+        "stop": 143500,
+        "text": " accused of gatekeeping here, but super like newbie person who just came out of a"
+      },
+      {
+        "start": 143500,
+        "stop": 144200,
+        "text": " bootcamp wants to rip off some code I have on a public repo or adjust and just"
+      },
+      {
+        "start": 144200,
+        "stop": 144800,
+        "text": " like try to shoehorn it into their project. What would you like me to do?"
+      },
+      {
+        "start": 144800,
+        "stop": 145400,
+        "text": " Should I sue them? Should I sue GitHub? I mean, I'm pretty sure GitHub has in that"
+      },
+      {
+        "start": 145400,
+        "stop": 145900,
+        "text": " EULA that you indemnify them. So here's something I've noticed recently."
+      },
+      {
+        "start": 145900,
+        "stop": 146400,
+        "text": " And all of this is prefaced with, I think Twitter is pretty much a dumpster fire."
+      },
+      {
+        "start": 146400,
+        "stop": 146900,
+        "text": " And in all of these cases, if people just stayed the fuck off Twitter, they would"
+      },
+      {
+        "start": 146900,
+        "stop": 147200,
+        "text": " have a lot easier, simpler life and a lot less stress and things would be a lot"
+      },
+      {
+        "start": 147200,
+        "stop": 147700,
+        "text": " smoother professionally. And you know, an example of this is Hector Martin, who I"
+      },
+      {
+        "start": 147700,
+        "stop": 148200,
+        "text": " have a lot of respect for because Hector has led the charge on porting Linux over"
+      },
+      {
+        "start": 148200,
+        "stop": 148700,
+        "text": " to Apple's M1 hardware and the Asahi Linux projects has incredible success."
+      },
+      {
+        "start": 148700,
+        "stop": 149100,
+        "text": " But Hector is also involved in this culture of like, got to have a hot take."
+      },
+      {
+        "start": 149100,
+        "stop": 149800,
+        "text": " And it seems GitHub, GitHub has entered this, this size and territory now where"
+      },
+      {
+        "start": 149800,
+        "stop": 150200,
+        "text": " every single action GitHub takes."
+      },
+      {
+        "start": 150200,
+        "stop": 150400,
+        "text": " Wow. TM, ActionTM. Yeah."
+      },
+      {
+        "start": 150400,
+        "stop": 151000,
+        "text": " Yeah. There is a both a massively positive reaction and a massively negative"
+      },
+      {
+        "start": 151000,
+        "stop": 151500,
+        "text": " reaction. And GitHub is so large that when they do something, anything, they end"
+      },
+      {
+        "start": 151500,
+        "stop": 151900,
+        "text": " up touching things with negative consequences. And so on October 14th,"
+      },
+      {
+        "start": 151900,
+        "stop": 152300,
+        "text": " GitHub tweets, this handy action flag issues and PRs that go untouched for a"
+      },
+      {
+        "start": 152300,
+        "stop": 152700,
+        "text": " certain amount of time. Try it with your repo today and start closing out those"
+      },
+      {
+        "start": 152700,
+        "stop": 153100,
+        "text": " old stale issues. And it's an action that, you know, you could set an X amount of"
+      },
+      {
+        "start": 153100,
+        "stop": 153400,
+        "text": " time and it will go through and close certain issues and PRs that have been"
+      },
+      {
+        "start": 153400,
+        "stop": 153700,
+        "text": " untouched. So it's an issue of Janitor effectively."
+      },
+      {
+        "start": 153700,
+        "stop": 154300,
+        "text": " Yeah. Hector Martin quote, retreats that don't do this ever. This is insulting"
+      },
+      {
+        "start": 154300,
+        "stop": 154800,
+        "text": " and disrespectful to your users. Nobody is entitled support from volunteers and"
+      },
+      {
+        "start": 154800,
+        "stop": 155300,
+        "text": " FOSS projects, and they absolutely do deserve not to have the issues they took"
+      },
+      {
+        "start": 155300,
+        "stop": 155800,
+        "text": " time to file actively thrown away. If you haven't fixed this bug, it stays open."
+      },
+      {
+        "start": 155800,
+        "stop": 156300,
+        "text": " This then kicks off a conversation that between Hector and other people that"
+      },
+      {
+        "start": 156300,
+        "stop": 156800,
+        "text": " essentially devolves into if you use this action, you hate free software and you"
+      },
+      {
+        "start": 156800,
+        "stop": 157300,
+        "text": " hate free software users. And it goes from like, you know, like here's a"
+      },
+      {
+        "start": 157300,
+        "stop": 157700,
+        "text": " person, here's the thing, here's a perfectly reasonable way to tweet this."
+      },
+      {
+        "start": 157700,
+        "stop": 158100,
+        "text": " You could tweet, hey guys, here's a suggestion, you know, quote, retweet and"
+      },
+      {
+        "start": 158100,
+        "stop": 158500,
+        "text": " say, in my experience, this actually can discourage future contributions. You"
+      },
+      {
+        "start": 158500,
+        "stop": 159100,
+        "text": " might want to consider not using this. But the reality is every project is"
+      },
+      {
+        "start": 159100,
+        "stop": 159400,
+        "text": " unique. Everybody has different use cases because you could argue that also in a"
+      },
+      {
+        "start": 159400,
+        "stop": 159800,
+        "text": " free software project, people open up a lot of bogus PRs and a lot of bogus"
+      },
+      {
+        "start": 159800,
+        "stop": 160100,
+        "text": " issues that the project's never going to touch. And they pile up and they"
+      },
+      {
+        "start": 160100,
+        "stop": 160500,
+        "text": " pile up and they become overwhelming and demotivating to the developers because"
+      },
+      {
+        "start": 160500,
+        "stop": 160800,
+        "text": " they have hundreds of open issues that they're never going to touch, but they"
+      },
+      {
+        "start": 160800,
+        "stop": 161200,
+        "text": " don't know what to do. Like we have a small GitHub for Jupyter broadcasting,"
+      },
+      {
+        "start": 161200,
+        "stop": 161500,
+        "text": " and that's already come up a couple of times. It's like, well, what do you do"
+      },
+      {
+        "start": 161500,
+        "stop": 161700,
+        "text": " with these issues that don't really fit here? They're not really a problem."
+      },
+      {
+        "start": 161700,
+        "stop": 162000,
+        "text": " They're more of somebody's opinion. Like what do you do? Do you just close it?"
+      },
+      {
+        "start": 162000,
+        "stop": 162400,
+        "text": " Do you say thanks for your contribution, then close it? Do you just let something"
+      },
+      {
+        "start": 162400,
+        "stop": 162700,
+        "text": " come along and clean it up? Like there really is never a right answer. And so"
+      },
+      {
+        "start": 162700,
+        "stop": 163100,
+        "text": " when you go in so hard and so hot on these takes, I can't help but lose"
+      },
+      {
+        "start": 163100,
+        "stop": 163500,
+        "text": " respect for somebody a little bit because it's just you boil it down to this"
+      },
+      {
+        "start": 163500,
+        "stop": 163900,
+        "text": " sort of like don't do this ever. And it's like, well, wait a minute. Now, that's"
+      },
+      {
+        "start": 163900,
+        "stop": 164100,
+        "text": " just never the right recommendation."
+      },
+      {
+        "start": 164100,
+        "stop": 164500,
+        "text": " Well, it's funny because, you know, we follow many of the same people on"
+      },
+      {
+        "start": 164500,
+        "stop": 165100,
+        "text": " Twitter. I also follow this very large, I would say larger than the kind of more"
+      },
+      {
+        "start": 165100,
+        "stop": 165600,
+        "text": " experienced FOSS developers we're talking about community of love you guys, but"
+      },
+      {
+        "start": 165600,
+        "stop": 166100,
+        "text": " super newbie developers that have just come out of bootcamp and they love"
+      },
+      {
+        "start": 166100,
+        "stop": 166400,
+        "text": " copilot. You know why? Because they literally don't know how to do that"
+      },
+      {
+        "start": 166400,
+        "stop": 167000,
+        "text": " iterate through the dictionary thing I was joking about. Right. And I don't know,"
+      },
+      {
+        "start": 167000,
+        "stop": 167400,
+        "text": " we always talk about accessibility and not, you know, quote unquote,"
+      },
+      {
+        "start": 167400,
+        "stop": 167900,
+        "text": " gatekeeping, which is a term I fricking hate. But, but is that as soon as you slap"
+      },
+      {
+        "start": 167900,
+        "stop": 168500,
+        "text": " like a license on it? I also don't think you should want to leave violate open"
+      },
+      {
+        "start": 168500,
+        "stop": 169000,
+        "text": " source licenses. I don't. But the idea that this wasn't going on before"
+      },
+      {
+        "start": 169000,
+        "stop": 169700,
+        "text": " copilot and the idea that the answer is to codify some militant force of angry"
+      },
+      {
+        "start": 169700,
+        "stop": 170100,
+        "text": " senior developers who are going to scold you, like you're in a British boarding"
+      },
+      {
+        "start": 170100,
+        "stop": 170700,
+        "text": " school seems stupid to be honest. It seems really dumb because you know what"
+      },
+      {
+        "start": 170700,
+        "stop": 171200,
+        "text": " the biggest threat to open source projects is on average? Not being bringing"
+      },
+      {
+        "start": 171200,
+        "stop": 171600,
+        "text": " enough people in to maintain them over the long haul. Not a problem if you're the"
+      },
+      {
+        "start": 171600,
+        "stop": 172000,
+        "text": " Linux kernel. Sure. Cause everybody, you know, that's prestige and you have big"
+      },
+      {
+        "start": 172000,
+        "stop": 172600,
+        "text": " money behind you, but I'm not sure that our response, and I truly believe that"
+      },
+      {
+        "start": 172600,
+        "stop": 173100,
+        "text": " code pilot is being used by a lot of these junior just out of bootcamp devs as"
+      },
+      {
+        "start": 173100,
+        "stop": 173500,
+        "text": " a crutch. And maybe that's not good for their learning. Maybe it is. I think we're"
+      },
+      {
+        "start": 173500,
+        "stop": 174000,
+        "text": " going to need a couple of years to figure that out, but regardless of whatever"
+      },
+      {
+        "start": 174000,
+        "stop": 174600,
+        "text": " mistakes they may make, I don't think having, you know, an openly hostile kind"
+      },
+      {
+        "start": 174600,
+        "stop": 175200,
+        "text": " of honestly condescending D bag reaction is the way to go. I, I, and I feel bad"
+      },
+      {
+        "start": 175200,
+        "stop": 175600,
+        "text": " because I like some of these people, but I, and I used to do a lot of this angry"
+      },
+      {
+        "start": 175600,
+        "stop": 176000,
+        "text": " crap on Twitter and it never gets you the result you want. I would say."
+      },
+      {
+        "start": 176200,
+        "stop": 176600,
+        "text": " Tailscale.com/coder. Go there to get a free personal account for up to 20"
+      },
+      {
+        "start": 176600,
+        "stop": 177000,
+        "text": " devices. And it's a great way to support the show. Tailscale is a zero config"
+      },
+      {
+        "start": 177000,
+        "stop": 177400,
+        "text": " VPN. It'll get on any device in like minutes. It's impressive. It'll manage"
+      },
+      {
+        "start": 177400,
+        "stop": 177700,
+        "text": " your firewall rules and it works from anywhere. Devices connect directly to"
+      },
+      {
+        "start": 177700,
+        "stop": 178100,
+        "text": " each other using WireGuard's noise protocol. So it builds you a flat mesh"
+      },
+      {
+        "start": 178100,
+        "stop": 178700,
+        "text": " network with the absolute best VPN in the business. And you can quickly and"
+      },
+      {
+        "start": 178700,
+        "stop": 179200,
+        "text": " easily create a secure network between your machines. I'm talking servers, VMs,"
+      },
+      {
+        "start": 179200,
+        "stop": 179900,
+        "text": " iPad, Android phone, Raspberry Pi cluster, a single Raspberry Pi, you name it."
+      },
+      {
+        "start": 179900,
+        "stop": 180400,
+        "text": " And Tailscale will manage the firewall. It'll take care of the NAT if you have"
+      },
+      {
+        "start": 180400,
+        "stop": 180800,
+        "text": " it or even carrier grade double NAT. It even manages to work with that. And"
+      },
+      {
+        "start": 180800,
+        "stop": 181200,
+        "text": " Tailscale will support DNS in that flat network. And they just announced a"
+      },
+      {
+        "start": 181200,
+        "stop": 181700,
+        "text": " partnership with NextDNS. So now you can put a DNS resolver using NextDNS in"
+      },
+      {
+        "start": 181700,
+        "stop": 182100,
+        "text": " there or you could use something like Pi-hole or just straight up bind. It'll"
+      },
+      {
+        "start": 182100,
+        "stop": 182400,
+        "text": " let you choose exactly how you want to manage it. And then you can do name"
+      },
+      {
+        "start": 182400,
+        "stop": 182700,
+        "text": " resolution for all your machines in the Tailscale network. And there's"
+      },
+      {
+        "start": 182700,
+        "stop": 183000,
+        "text": " TailscaleSend, which is like AirDrop. But for all of your machines that have"
+      },
+      {
+        "start": 183000,
+        "stop": 183400,
+        "text": " Tailscale, including your Linux boxes, of course, there's things like Tailscale"
+      },
+      {
+        "start": 183400,
+        "stop": 183800,
+        "text": " SSH that helps you manage your SSH keys. You log in with your Tailscale"
+      },
+      {
+        "start": 183800,
+        "stop": 184300,
+        "text": " credentials. It's powerful stuff and it's surprisingly simple to get going."
+      },
+      {
+        "start": 184300,
+        "stop": 184900,
+        "text": " And you can use it for free up to 20 devices when you go to Tailscale.com/coder."
+      },
+      {
+        "start": 184900,
+        "stop": 185200,
+        "text": " This is truly one of those tools that I advocate in my personal life to my"
+      },
+      {
+        "start": 185200,
+        "stop": 185500,
+        "text": " friends and my family. Literally this weekend I was getting my dad set up"
+      },
+      {
+        "start": 185500,
+        "stop": 185900,
+        "text": " with Tailscale. I'm surprised I hadn't done it earlier. I just hadn't had a"
+      },
+      {
+        "start": 185900,
+        "stop": 186300,
+        "text": " chance to see him. Now he's got it set up, though. Go try it out. See why I"
+      },
+      {
+        "start": 186300,
+        "stop": 186800,
+        "text": " love it. See why everybody around us, everyone at JB uses it. Tailscale.com/coder."
+      },
+      {
+        "start": 186800,
+        "stop": 187600,
+        "text": " So the Wall Street Journal and Business Insider have been hitting meta week"
+      },
+      {
+        "start": 187600,
+        "stop": 188100,
+        "text": " after week on a scheduled attack. And I've grabbed a couple of pieces because"
+      },
+      {
+        "start": 188100,
+        "stop": 188700,
+        "text": " they're just eviscerating. The first one that I noticed, Metasunk $15 billion"
+      },
+      {
+        "start": 188700,
+        "stop": 189200,
+        "text": " building the metaverse. Where did the money go? They say that precise details"
+      },
+      {
+        "start": 189200,
+        "stop": 189600,
+        "text": " of where the money has gone remain fuzzy. Some experts express disappointment"
+      },
+      {
+        "start": 189600,
+        "stop": 190300,
+        "text": " in the updates that Meta announced last week with their meta keynote, which"
+      },
+      {
+        "start": 190300,
+        "stop": 190900,
+        "text": " I watched parts of. The biggest thing they announced was legs for avatars"
+      },
+      {
+        "start": 190900,
+        "stop": 191600,
+        "text": " and the new Quest hardware, which is not even... I don't even have a tinge"
+      },
+      {
+        "start": 191600,
+        "stop": 192000,
+        "text": " of desire to buy. And we're still using the Quest one. We just used it this"
+      },
+      {
+        "start": 192000,
+        "stop": 192300,
+        "text": " weekend. We really enjoyed it. But I don't even have the slightest tinge to"
+      },
+      {
+        "start": 192300,
+        "stop": 192800,
+        "text": " buy the $1200 Quest hardware. So they are kind of a disappointment in that"
+      },
+      {
+        "start": 192800,
+        "stop": 193600,
+        "text": " regard. And then next, this one is super damning, I think. Most metaverse"
+      },
+      {
+        "start": 193600,
+        "stop": 194100,
+        "text": " users don't even last a month. Internal documents show that Meta's"
+      },
+      {
+        "start": 194100,
+        "stop": 194600,
+        "text": " Horizon Worlds platform is struggling bad to retain users. This is the kiss"
+      },
+      {
+        "start": 194600,
+        "stop": 195200,
+        "text": " of death for these platforms. So if you can get the hardware, you know, like"
+      },
+      {
+        "start": 195200,
+        "stop": 195800,
+        "text": " you can maybe pick up a Quest one now for $400, most metaverse users don't"
+      },
+      {
+        "start": 195800,
+        "stop": 196300,
+        "text": " return to the Horizon Worlds platform after the first month of usage. They"
+      },
+      {
+        "start": 196300,
+        "stop": 196700,
+        "text": " are losing users. So people buy the hardware. And I have to say, that is"
+      },
+      {
+        "start": 196700,
+        "stop": 197100,
+        "text": " absolutely the way it worked for us. The very first thing my kid wanted to"
+      },
+      {
+        "start": 197100,
+        "stop": 197400,
+        "text": " do when I gave it to my oldest is he wanted to check out the metaverse. He"
+      },
+      {
+        "start": 197400,
+        "stop": 197900,
+        "text": " checked it out for one night. I don't think they've ever gone back. My middle"
+      },
+      {
+        "start": 197900,
+        "stop": 198200,
+        "text": " child is the same. She checked it out for one night and then she's never"
+      },
+      {
+        "start": 198200,
+        "stop": 198700,
+        "text": " gone back. They'll play Beat Saber. You know, they'll do that stuff. Metaverse"
+      },
+      {
+        "start": 198700,
+        "stop": 198900,
+        "text": " sucked for them though. What are your thoughts?"
+      },
+      {
+        "start": 198900,
+        "stop": 199300,
+        "text": " Oh, no, this is exactly what my experience was. I mean, I have the Quest"
+      },
+      {
+        "start": 199300,
+        "stop": 199900,
+        "text": " as well. I think I went in the metaverse for a whopping 10 minutes. Then I"
+      },
+      {
+        "start": 199900,
+        "stop": 200200,
+        "text": " went back and fought Darth Vader. I apologize, I don't remember the name of"
+      },
+      {
+        "start": 200200,
+        "stop": 200700,
+        "text": " the game. I mean, I'm sure if you have a Quest and you listen to the show,"
+      },
+      {
+        "start": 200700,
+        "stop": 200900,
+        "text": " you've probably fought Darth Vader too."
+      },
+      {
+        "start": 200900,
+        "stop": 201000,
+        "text": " Yeah, that is good times."
+      },
+      {
+        "start": 201000,
+        "stop": 201600,
+        "text": " Yeah, but then I was like, \"Okay, let me buy this other game.\" It was garbage."
+      },
+      {
+        "start": 201600,
+        "stop": 202000,
+        "text": " My stepdaughter, honestly, it looked like she was taking some sort of seizure,"
+      },
+      {
+        "start": 202000,
+        "stop": 202400,
+        "text": " but she did the Beat Saber game to Lady Gaga quite a bit until she almost"
+      },
+      {
+        "start": 202400,
+        "stop": 203000,
+        "text": " busted her ass. That pretty much put an end to that. And it is sitting in my"
+      },
+      {
+        "start": 203000,
+        "stop": 203400,
+        "text": " closet, I joke you not, wrapped in my coderly robe."
+      },
+      {
+        "start": 203400,
+        "stop": 203800,
+        "text": " Something meta about that, actually."
+      },
+      {
+        "start": 203800,
+        "stop": 204200,
+        "text": " Yeah, I don't know. I know you and I talk a lot about this being for virtual"
+      },
+      {
+        "start": 204200,
+        "stop": 204700,
+        "text": " meetings or virtual events. I don't know that I could actually tolerate wearing"
+      },
+      {
+        "start": 204700,
+        "stop": 205000,
+        "text": " it for more than 15, 20 minutes."
+      },
+      {
+        "start": 205000,
+        "stop": 205300,
+        "text": " Yeah, this is definitely not the one, right? You know, when I see people who"
+      },
+      {
+        "start": 205300,
+        "stop": 205800,
+        "text": " have stuck with the Quest, like they use it actively, they've replaced the"
+      },
+      {
+        "start": 205800,
+        "stop": 206200,
+        "text": " headgear stuff, they've replaced the straps, they've added a ton of stuff to"
+      },
+      {
+        "start": 206200,
+        "stop": 206700,
+        "text": " make it more comfortable. Part of the problem is that there is a heavy duty"
+      },
+      {
+        "start": 206700,
+        "stop": 207200,
+        "text": " set of lenses and a smartphone on the front of this thing, and so it's pulling"
+      },
+      {
+        "start": 207200,
+        "stop": 207800,
+        "text": " down on your face constantly. And I already am getting what I call a tranche"
+      },
+      {
+        "start": 207800,
+        "stop": 208000,
+        "text": " in my hair, which is a real tragedy."
+      },
+      {
+        "start": 208000,
+        "stop": 208200,
+        "text": " Oh yeah, from headphones."
+      },
+      {
+        "start": 208200,
+        "stop": 208700,
+        "text": " From the headphones and from my CPAP. So I wear a strap all night that goes in"
+      },
+      {
+        "start": 208700,
+        "stop": 209000,
+        "text": " the same place my headphones do, and then I wear headphones all day. And then"
+      },
+      {
+        "start": 209000,
+        "stop": 209300,
+        "text": " when I play on the Quest, I'm putting a strap on again. And so I get this"
+      },
+      {
+        "start": 209300,
+        "stop": 209900,
+        "text": " tranche. It's like I'm basically, I have a strip of balding in the center of my"
+      },
+      {
+        "start": 209900,
+        "stop": 210400,
+        "text": " head. It's just the hair has parted like the ocean from straps all the time."
+      },
+      {
+        "start": 210400,
+        "stop": 211000,
+        "text": " And so the last thing I want to do is put another strap on. It needs to be a"
+      },
+      {
+        "start": 211000,
+        "stop": 211400,
+        "text": " lighter device, and it needs to be more comfortable than I could see it. I"
+      },
+      {
+        "start": 211400,
+        "stop": 211800,
+        "text": " still love the idea. The one thing they touched on more in their more recent"
+      },
+      {
+        "start": 211800,
+        "stop": 212200,
+        "text": " keynote, to back up just a moment to kind of set the context. You remember how"
+      },
+      {
+        "start": 212200,
+        "stop": 212600,
+        "text": " we talked about recently the first couple of Apple watches, they really hadn't"
+      },
+      {
+        "start": 212600,
+        "stop": 213000,
+        "text": " figured out fitness, and then they really honed in on fitness? I feel like"
+      },
+      {
+        "start": 213000,
+        "stop": 213600,
+        "text": " maybe they're going that direction with the Quest and home offices and work"
+      },
+      {
+        "start": 213600,
+        "stop": 214000,
+        "text": " from anywhere setups where you have an awesome virtual office. Because they"
+      },
+      {
+        "start": 214000,
+        "stop": 214400,
+        "text": " made a couple of references to how they're putting a lot of work into a new"
+      },
+      {
+        "start": 214400,
+        "stop": 214800,
+        "text": " virtual office space where they're creating their own first party app. You"
+      },
+      {
+        "start": 214800,
+        "stop": 215200,
+        "text": " have a virtual office, you pull your desktop screens in, and you can do"
+      },
+      {
+        "start": 215200,
+        "stop": 215600,
+        "text": " conferencing in there as well. They made a reference to down the road, their"
+      },
+      {
+        "start": 215600,
+        "stop": 216400,
+        "text": " goal would be your entire computer is in that Quest headset. And I actually"
+      },
+      {
+        "start": 216400,
+        "stop": 216700,
+        "text": " think that could work. So you put, you know, it's powerful enough. I mean,"
+      },
+      {
+        "start": 216700,
+        "stop": 217100,
+        "text": " imagine if you had, you know, iPad Pro hardware in there. You put that thing"
+      },
+      {
+        "start": 217100,
+        "stop": 217500,
+        "text": " on, it is your entire computer, so you don't need to like bring in the screens"
+      },
+      {
+        "start": 217500,
+        "stop": 217900,
+        "text": " from your laptop or your desktop. It has all your screens, it has all your apps,"
+      },
+      {
+        "start": 217900,
+        "stop": 218500,
+        "text": " and you just put it on and you're in your perfect workspace wherever you're"
+      },
+      {
+        "start": 218500,
+        "stop": 218900,
+        "text": " at. And you and I played with this a little bit, and it was early days when we"
+      },
+      {
+        "start": 218900,
+        "stop": 219400,
+        "text": " looked at it, but if somebody like Meta or Apple really focused on that idea, I"
+      },
+      {
+        "start": 219400,
+        "stop": 219800,
+        "text": " think that could be the killer app, like fitness was the killer app for the"
+      },
+      {
+        "start": 219800,
+        "stop": 220300,
+        "text": " watch. Because that, with work from home and work from anywhere, because work"
+      },
+      {
+        "start": 220300,
+        "stop": 220700,
+        "text": " from home is really just work from the internet. And so if you could, like, for"
+      },
+      {
+        "start": 220700,
+        "stop": 221100,
+        "text": " me, I could be sitting in my passenger seat of the RV, I put that headset on,"
+      },
+      {
+        "start": 221100,
+        "stop": 221400,
+        "text": " boom, I'm in my office. I've got all my screens, I've got all my apps, I've got"
+      },
+      {
+        "start": 221400,
+        "stop": 221800,
+        "text": " all my messages in their current state. That sounds super powerful to me. And I"
+      },
+      {
+        "start": 221800,
+        "stop": 222100,
+        "text": " can't be the only one that would use the crap out of that."
+      },
+      {
+        "start": 222100,
+        "stop": 222400,
+        "text": " Yeah, I don't know."
+      },
+      {
+        "start": 222400,
+        "stop": 223100,
+        "text": " Yeah, I know, I agree. It seems just as sketch as it did two, three years ago."
+      },
+      {
+        "start": 223100,
+        "stop": 223400,
+        "text": " I feel like for the last three to five years, the industry has been searching"
+      },
+      {
+        "start": 223400,
+        "stop": 223900,
+        "text": " for the next new thing, right? The next mobile, the next iPhone, whatever it is."
+      },
+      {
+        "start": 223900,
+        "stop": 224400,
+        "text": " And these were all solutions desperately searching for a problem. Like, I work in"
+      },
+      {
+        "start": 224400,
+        "stop": 224700,
+        "text": " a home office, it's fine."
+      },
+      {
+        "start": 224700,
+        "stop": 225000,
+        "text": " Yeah, although as homes get smaller, and we all get packed into smaller and"
+      },
+      {
+        "start": 225000,
+        "stop": 225400,
+        "text": " smaller Japanese-style apartments, maybe you don't have room for a computer desk."
+      },
+      {
+        "start": 225400,
+        "stop": 225800,
+        "text": " I honestly think you and I will live to an age where the computer desk is looked"
+      },
+      {
+        "start": 225800,
+        "stop": 226300,
+        "text": " at as like those antique TVs that were like an entire credenza. I think that's"
+      },
+      {
+        "start": 226300,
+        "stop": 226800,
+        "text": " how we'll view the computer desk. And the idea that you had a room that had a desk"
+      },
+      {
+        "start": 226800,
+        "stop": 227300,
+        "text": " with screens that you just sat at all day will look archaic. And, well, no wonder"
+      },
+      {
+        "start": 227300,
+        "stop": 227600,
+        "text": " everybody was so overweight. That's how I think, honestly, where hopefully by the"
+      },
+      {
+        "start": 227600,
+        "stop": 227900,
+        "text": " time you and I are dying, that's how the world will look at computer desks."
+      },
+      {
+        "start": 227900,
+        "stop": 228200,
+        "text": " Well, but isn't this what we've been hoping for for a long time, right? The"
+      },
+      {
+        "start": 228200,
+        "stop": 228600,
+        "text": " Star Trek tablets. I mean, Microsoft is the closest to what I think is actually"
+      },
+      {
+        "start": 228600,
+        "stop": 229100,
+        "text": " going to happen. They are just Microsoft and are cursed to never succeed in the"
+      },
+      {
+        "start": 229100,
+        "stop": 229400,
+        "text": " consumer space other than Xbox, right?"
+      },
+      {
+        "start": 229400,
+        "stop": 229900,
+        "text": " Yeah, you know where the HoloLens is alive and well? JPL. When you walk the JPL"
+      },
+      {
+        "start": 229900,
+        "stop": 230400,
+        "text": " campus, which I had the opportunity to do recently, they have HoloLens, they're"
+      },
+      {
+        "start": 230400,
+        "stop": 230900,
+        "text": " kind of like QR codes, but more complicated throughout the campus. So that"
+      },
+      {
+        "start": 230900,
+        "stop": 231200,
+        "text": " way you can sync up your HoloLens to different areas as you're walking the JPL"
+      },
+      {
+        "start": 231200,
+        "stop": 231300,
+        "text": " campus."
+      },
+      {
+        "start": 231300,
+        "stop": 231700,
+        "text": " Yeah. I mean, I was even thinking of just like the surface, the idea that your"
+      },
+      {
+        "start": 231700,
+        "stop": 232100,
+        "text": " main device, I mean, you know, most of the time I'm not working at my Thaleo, I'm"
+      },
+      {
+        "start": 232100,
+        "stop": 232400,
+        "text": " working on the DevOne because you hit the nail on the head. The idea of just"
+      },
+      {
+        "start": 232400,
+        "stop": 233100,
+        "text": " sitting at a desk and like in my case, my bedroom, you know, and being totally"
+      },
+      {
+        "start": 233100,
+        "stop": 233600,
+        "text": " locked in is not conducive to the new world of work from home when you have"
+      },
+      {
+        "start": 233600,
+        "stop": 233800,
+        "text": " kiddies running around."
+      },
+      {
+        "start": 233800,
+        "stop": 234200,
+        "text": " Yeah, it's not conducive to flow and it's not good for the body. And now that I'm"
+      },
+      {
+        "start": 234200,
+        "stop": 234800,
+        "text": " getting old, it's like I notice that if I just work a few extra hours a day, so"
+      },
+      {
+        "start": 234800,
+        "stop": 235200,
+        "text": " say, so I've been staying at the studio since last Coder because I'm getting"
+      },
+      {
+        "start": 235200,
+        "stop": 235600,
+        "text": " some work done on Jupes and I pick her up after today's episode. Because I'm"
+      },
+      {
+        "start": 235600,
+        "stop": 236400,
+        "text": " here, I work longer. I work basically from like 6 a.m. to like 637 p.m. And I"
+      },
+      {
+        "start": 236400,
+        "stop": 236800,
+        "text": " notice that my RSI is significantly worse just by adding a couple of hours more to"
+      },
+      {
+        "start": 236800,
+        "stop": 237100,
+        "text": " my day or just consistently working longer. Like it's not unusual for me to"
+      },
+      {
+        "start": 237100,
+        "stop": 237500,
+        "text": " work those hours, but maybe it's unusual for me to work those hours like seven"
+      },
+      {
+        "start": 237500,
+        "stop": 237900,
+        "text": " days in a row. And as I do that, I can feel my hands are starting to hurt. It's"
+      },
+      {
+        "start": 237900,
+        "stop": 238300,
+        "text": " my body is just getting old. I got to take more breaks and I got to move about"
+      },
+      {
+        "start": 238300,
+        "stop": 238700,
+        "text": " more. And I think part of the way to do that is using different equipment and"
+      },
+      {
+        "start": 238700,
+        "stop": 239000,
+        "text": " working in different work positions. So I got to wrap my head around like what is"
+      },
+      {
+        "start": 239000,
+        "stop": 239300,
+        "text": " the best tool when I want to do this kind of thing and where should I do that"
+      },
+      {
+        "start": 239300,
+        "stop": 239600,
+        "text": " from? I think I'm going to spend a little bit of time this winter kind of"
+      },
+      {
+        "start": 239600,
+        "stop": 240300,
+        "text": " figuring that stuff out just to kind of try to habitualize a new routine of"
+      },
+      {
+        "start": 240300,
+        "stop": 240700,
+        "text": " working. And what I'm hoping for, although who knows, is sort of like train myself"
+      },
+      {
+        "start": 240700,
+        "stop": 241200,
+        "text": " like a dog. Like when I'm in this area and I'm using this equipment, I'm doing"
+      },
+      {
+        "start": 241200,
+        "stop": 241700,
+        "text": " this task and so maybe I get into flow a little bit easier because it's like I'm"
+      },
+      {
+        "start": 241700,
+        "stop": 242300,
+        "text": " training my body, my mind, this place, this equipment, these apps, go. You know,"
+      },
+      {
+        "start": 242300,
+        "stop": 242700,
+        "text": " I could see it working. I don't know. Why not? If you can work from the"
+      },
+      {
+        "start": 242700,
+        "stop": 242900,
+        "text": " Internet, you can work from anywhere."
+      },
+      {
+        "start": 242900,
+        "stop": 243100,
+        "text": " Well, unless you have a data cap."
+      },
+      {
+        "start": 243100,
+        "stop": 243300,
+        "text": " Yeah. Oh, man."
+      },
+      {
+        "start": 243300,
+        "stop": 243500,
+        "text": " Let's not forget about Comcast."
+      },
+      {
+        "start": 243500,
+        "stop": 243700,
+        "text": " Or like, you know, technical issues like this last road trip was just"
+      },
+      {
+        "start": 243700,
+        "stop": 243800,
+        "text": " horrendous."
+      },
+      {
+        "start": 243800,
+        "stop": 244100,
+        "text": " Or it's, you know, three months out of the year in Florida. Yeah."
+      },
+      {
+        "start": 244100,
+        "stop": 244700,
+        "text": " Ask not what your podcast can boost for you, but what you can boost for your"
+      },
+      {
+        "start": 244700,
+        "stop": 244800,
+        "text": " podcast."
+      },
+      {
+        "start": 244800,
+        "stop": 245200,
+        "text": " We got some boosts into the show this week. Thank you, everybody who boosted."
+      },
+      {
+        "start": 245200,
+        "stop": 245500,
+        "text": " We do just select some of them to come onto the show, but we read all of them."
+      },
+      {
+        "start": 245500,
+        "stop": 246100,
+        "text": " Appreciate all of them. And our first one came in from Soham with 1984 sats."
+      },
+      {
+        "start": 246100,
+        "stop": 246800,
+        "text": " Hmm. Hmm. I see what you did there. Boost! He says, \"Every episode you all get so"
+      },
+      {
+        "start": 246800,
+        "stop": 247300,
+        "text": " close to realizing capitalism is doomed by definition. Come on over to the red"
+      },
+      {
+        "start": 247300,
+        "stop": 247900,
+        "text": " side.\" Do we? Is that what we do? I don't know if I agree with that. I feel like"
+      },
+      {
+        "start": 247900,
+        "stop": 248300,
+        "text": " we recognize that it's sick. It's definitely sick."
+      },
+      {
+        "start": 248300,
+        "stop": 248600,
+        "text": " I don't know what else is doing so well either."
+      },
+      {
+        "start": 248600,
+        "stop": 248800,
+        "text": " I like how we have a communist underground that listens to the show."
+      },
+      {
+        "start": 248800,
+        "stop": 248900,
+        "text": " I know. I know."
+      },
+      {
+        "start": 248900,
+        "stop": 249200,
+        "text": " It's really kind of, it's very Dostoevsky. It's like..."
+      },
+      {
+        "start": 249200,
+        "stop": 249400,
+        "text": " It's kind of perfect, isn't it?"
+      },
+      {
+        "start": 249400,
+        "stop": 249600,
+        "text": " We appreciate you, comrades."
+      },
+      {
+        "start": 249600,
+        "stop": 249900,
+        "text": " Yeah, we can reach across to all sides."
+      },
+      {
+        "start": 249900,
+        "stop": 250300,
+        "text": " \"Works from home boosts in with a thousand sats.\" B-O-O-S-T!"
+      },
+      {
+        "start": 250300,
+        "stop": 250600,
+        "text": " \"Regarding Chris's uniform, I have two words for you."
+      },
+      {
+        "start": 250600,
+        "stop": 250800,
+        "text": " Shoulder pads.\""
+      },
+      {
+        "start": 250800,
+        "stop": 251200,
+        "text": " Yes, it's 1980s. 1984! It's perfect!"
+      },
+      {
+        "start": 251200,
+        "stop": 251500,
+        "text": " You know they're going to come back, right? You know they're going to come back,"
+      },
+      {
+        "start": 251500,
+        "stop": 251700,
+        "text": " so let's just get ahead of the trend."
+      },
+      {
+        "start": 251700,
+        "stop": 252200,
+        "text": " So now that I am back from the road trip, I have been considering this a lot."
+      },
+      {
+        "start": 252200,
+        "stop": 252500,
+        "text": " I'm giving it some thought. I've been looking for where I can source stuff."
+      },
+      {
+        "start": 252500,
+        "stop": 252800,
+        "text": " So I am beginning the process of figuring out the uniform."
+      },
+      {
+        "start": 252800,
+        "stop": 252900,
+        "text": " Oh my god."
+      },
+      {
+        "start": 252900,
+        "stop": 253100,
+        "text": " Yeah, it's happening. It's happening."
+      },
+      {
+        "start": 253100,
+        "stop": 253400,
+        "text": " \"Optimus Grey boosts in with 2048 sats.\""
+      },
+      {
+        "start": 253400,
+        "stop": 253600,
+        "text": " Coming in hot with the boost!"
+      },
+      {
+        "start": 253600,
+        "stop": 253900,
+        "text": " \"I'm boosting Coder because this has to do with Chris's wardrobe and uniform.\""
+      },
+      {
+        "start": 253900,
+        "stop": 254000,
+        "text": " Jesus Christ."
+      },
+      {
+        "start": 254000,
+        "stop": 254200,
+        "text": " Velcro, guys!"
+      },
+      {
+        "start": 254200,
+        "stop": 254600,
+        "text": " Okay, let me say Velcro sleeves and upper left chest. I mean, maybe."
+      },
+      {
+        "start": 254600,
+        "stop": 254900,
+        "text": " \"You could wear the same shirt but have Velcro patches for LuP.\""
+      },
+      {
+        "start": 254900,
+        "stop": 255000,
+        "text": " Oh my god."
+      },
+      {
+        "start": 255000,
+        "stop": 255300,
+        "text": " \"For Coder and for self-hosted.\""
+      },
+      {
+        "start": 255300,
+        "stop": 255500,
+        "text": " That's great."
+      },
+      {
+        "start": 255500,
+        "stop": 255700,
+        "text": " I'd buy a self-hosted Velcro patch all day."
+      },
+      {
+        "start": 255700,
+        "stop": 256000,
+        "text": " And then the Bitcoin dad talks, \"You can wear a patch for that show.\""
+      },
+      {
+        "start": 256000,
+        "stop": 256200,
+        "text": " This is a great idea."
+      },
+      {
+        "start": 256200,
+        "stop": 256600,
+        "text": " Just one shirt with different Velcro patches depending on the show you're doing."
+      },
+      {
+        "start": 256600,
+        "stop": 257100,
+        "text": " That means we'd have to launch a whole patchline investigation."
+      },
+      {
+        "start": 257100,
+        "stop": 257400,
+        "text": " You'll be like the Thaleo of shirts. You have all the different faceplates."
+      },
+      {
+        "start": 257400,
+        "stop": 257600,
+        "text": " [laughter]"
+      },
+      {
+        "start": 257600,
+        "stop": 258000,
+        "text": " Also, keeping in with our 80s theme, because now Velcro is back."
+      },
+      {
+        "start": 258000,
+        "stop": 258200,
+        "text": " Yeah, right."
+      },
+      {
+        "start": 258200,
+        "stop": 258400,
+        "text": " I mean, there's something to this here."
+      },
+      {
+        "start": 258400,
+        "stop": 258700,
+        "text": " Shoulder pads and Velcro and patches."
+      },
+      {
+        "start": 258700,
+        "stop": 259200,
+        "text": " John A. came in with, I think, our biggest boost of the episode with 7,000 sets."
+      },
+      {
+        "start": 259200,
+        "stop": 259300,
+        "text": " [boing boing boing]"
+      },
+      {
+        "start": 259300,
+        "stop": 259600,
+        "text": " 7,000 for the 7% interest rate."
+      },
+      {
+        "start": 259600,
+        "stop": 259700,
+        "text": " Ouch!"
+      },
+      {
+        "start": 259700,
+        "stop": 259800,
+        "text": " Yeah, mortgage rates are..."
+      },
+      {
+        "start": 259800,
+        "stop": 259900,
+        "text": " Ooh."
+      },
+      {
+        "start": 259900,
+        "stop": 260200,
+        "text": " And CPI was up since we got together again."
+      },
+      {
+        "start": 260200,
+        "stop": 260300,
+        "text": " Every seven days?"
+      },
+      {
+        "start": 260300,
+        "stop": 260600,
+        "text": " Oh, it's bad. It is something, man."
+      },
+      {
+        "start": 260600,
+        "stop": 261100,
+        "text": " We are watching some incredible times and also it really shows you just how long all of this has been going on."
+      },
+      {
+        "start": 261100,
+        "stop": 261400,
+        "text": " Just how long all of this stuff takes to work its way through the economy, right?"
+      },
+      {
+        "start": 261400,
+        "stop": 261800,
+        "text": " Because the Fed has basically been hawkish since November of last year."
+      },
+      {
+        "start": 261800,
+        "stop": 262300,
+        "text": " We're almost a year now into hawkish action by the Fed and inflation is still increasing."
+      },
+      {
+        "start": 262300,
+        "stop": 262800,
+        "text": " Hey, question. If you go to the unemployment line, you say you're an engineer or developer, which is better."
+      },
+      {
+        "start": 262800,
+        "stop": 262900,
+        "text": " [laughter]"
+      },
+      {
+        "start": 262900,
+        "stop": 263100,
+        "text": " Might be something to think about."
+      },
+      {
+        "start": 263100,
+        "stop": 263200,
+        "text": " Yeah, think about that everybody."
+      },
+      {
+        "start": 263200,
+        "stop": 263500,
+        "text": " Bond boosted in with one, two, three, four sets."
+      },
+      {
+        "start": 263500,
+        "stop": 263600,
+        "text": " [boing]"
+      },
+      {
+        "start": 263600,
+        "stop": 264000,
+        "text": " Love the truthful take on crypto. That's right. No BS here."
+      },
+      {
+        "start": 264000,
+        "stop": 264500,
+        "text": " By the way, since we've been live, top of Hacker News, or at least it was a half hour ago,"
+      },
+      {
+        "start": 264500,
+        "stop": 265200,
+        "text": " former FBI director says they actually loved crypto the whole time because it was far easier to track than real money."
+      },
+      {
+        "start": 265200,
+        "stop": 266100,
+        "text": " 100% underscored. Anybody that tells you that Bitcoin is great for cybercrime and criminals has no idea what they're talking about."
+      },
+      {
+        "start": 266100,
+        "stop": 266500,
+        "text": " Every single transaction is traceable on the blockchain."
+      },
+      {
+        "start": 266500,
+        "stop": 266900,
+        "text": " Especially if you're using a centralized wallet, kids. Yeah."
+      },
+      {
+        "start": 266900,
+        "stop": 267400,
+        "text": " Well, and just about every Bitcoin you buy today, unless you use something like Robosats, is tracked from the moment you buy it."
+      },
+      {
+        "start": 267400,
+        "stop": 267700,
+        "text": " They have your name, your ID, your information when you buy that Bitcoin."
+      },
+      {
+        "start": 267700,
+        "stop": 268000,
+        "text": " They know that address is associated with your identity."
+      },
+      {
+        "start": 268000,
+        "stop": 268500,
+        "text": " The exchanges will hand that over immediately to the authorities when they want it."
+      },
+      {
+        "start": 268500,
+        "stop": 269500,
+        "text": " The most private, secure, untraceable way to pay for crime is cash, art, precious metals."
+      },
+      {
+        "start": 269500,
+        "stop": 269800,
+        "text": " And that's truly what the criminals use. They don't use Bitcoin."
+      },
+      {
+        "start": 269800,
+        "stop": 270500,
+        "text": " Monero, potentially, but the value of Monero is so low that you, and the liquidity of Monero is so low that you can't move really anything serious."
+      },
+      {
+        "start": 270500,
+        "stop": 270700,
+        "text": " You can't do like a big drug deal in Monero."
+      },
+      {
+        "start": 270700,
+        "stop": 271100,
+        "text": " You know, I guess that depends on your definition of big, but there's just not enough."
+      },
+      {
+        "start": 271100,
+        "stop": 271400,
+        "text": " There's also not a lot of liquidity in crypto."
+      },
+      {
+        "start": 271400,
+        "stop": 271700,
+        "text": " It's not a huge market, so you can't move millions of illegal dollars."
+      },
+      {
+        "start": 271700,
+        "stop": 272700,
+        "text": " And if you did, it would fundamentally shift the price like the entire community would notice if like 10 million dollars of illicit funds move through the Bitcoin network."
+      },
+      {
+        "start": 272700,
+        "stop": 273100,
+        "text": " And it would be so obvious, and it would be so traceable."
+      },
+      {
+        "start": 273100,
+        "stop": 273500,
+        "text": " It's not what you want to use for illegal activity."
+      },
+      {
+        "start": 273500,
+        "stop": 274200,
+        "text": " So, this is your PSA. If you want to join the heights of organized crime, as Chris and I apparently have, buy some Van Gogh."
+      },
+      {
+        "start": 274200,
+        "stop": 274300,
+        "text": " There you go."
+      },
+      {
+        "start": 274300,
+        "stop": 274400,
+        "text": " In cash."
+      },
+      {
+        "start": 274400,
+        "stop": 274700,
+        "text": " Hunter's got pictures he'll sell. He takes diamonds as payments."
+      },
+      {
+        "start": 274700,
+        "stop": 275300,
+        "text": " I joke, but that does give you a little insight into how the elite do that kind of business off the record."
+      },
+      {
+        "start": 275300,
+        "stop": 275700,
+        "text": " It's fascinating stuff. If you put the political stuff aside, it's fascinating."
+      },
+      {
+        "start": 275700,
+        "stop": 276600,
+        "text": " Just a couple of thank yous out there. We got 2048 Sats from our 30s."
+      },
+      {
+        "start": 276600,
+        "stop": 277200,
+        "text": " He says sending in some thanks with the Sats he earned just listening to podcasts in Fountain.fm."
+      },
+      {
+        "start": 277200,
+        "stop": 277700,
+        "text": " And we've got a classic row of ducks from Mr. Quackers."
+      },
+      {
+        "start": 277700,
+        "stop": 277900,
+        "text": " Quacker, Wacker, it's a treasure."
+      },
+      {
+        "start": 277900,
+        "stop": 278000,
+        "text": " Yippee!"
+      },
+      {
+        "start": 278000,
+        "stop": 278300,
+        "text": " Coming in once again. We see you out there, Mr. Quackers, and appreciate you."
+      },
+      {
+        "start": 278300,
+        "stop": 278900,
+        "text": " Appreciate everybody who boosts in. You can go get yourself a brand new spanking new podcast app at newpodcastapps.com."
+      },
+      {
+        "start": 278900,
+        "stop": 279100,
+        "text": " These are podcasting 2.0 compatible."
+      },
+      {
+        "start": 279100,
+        "stop": 280000,
+        "text": " Along with the boosting, there's a bunch of other great, 30 other fantastic features that a really brilliant, really fast-moving community are developing."
+      },
+      {
+        "start": 280000,
+        "stop": 280500,
+        "text": " It's really exciting times. We talk about it actually a lot on Office Hours, if you're curious. Office Hours, not here."
+      },
+      {
+        "start": 280500,
+        "stop": 281000,
+        "text": " I try to get it all out over there so I don't fill these shows up with something I'm just so super excited about."
+      },
+      {
+        "start": 281000,
+        "stop": 281700,
+        "text": " I think it's just really time the podcast industry had some improvements that were done decentralized that aren't tied to Apple or Spotify."
+      },
+      {
+        "start": 281700,
+        "stop": 282300,
+        "text": " It's a movement that you can join by upgrading to a podcasting 2.0 compatible app at newpodcastapps.com."
+      },
+      {
+        "start": 282300,
+        "stop": 282800,
+        "text": " I want to say a big thank you to our members, too. You invest in the ongoing production of these shows."
+      },
+      {
+        "start": 282800,
+        "stop": 283400,
+        "text": " And as a thank you, we have created an ad-free feed for you so you get a nice tight coder still produced by Drew."
+      },
+      {
+        "start": 283400,
+        "stop": 284100,
+        "text": " Just no ads in there. And of course, you get the Coderly Report when a fresh one is available for you every single quarter, which will be coming up soon."
+      },
+      {
+        "start": 284100,
+        "stop": 284800,
+        "text": " You can join at coderqa.co or you can support every show and get every show on the network ad-free at jupiter.party."
+      },
+      {
+        "start": 284800,
+        "stop": 285200,
+        "text": " Mr. Dominic, is there anywhere you want to send the good people this week?"
+      },
+      {
+        "start": 285200,
+        "stop": 285500,
+        "text": " Well, after your admonishment about Twitter."
+      },
+      {
+        "start": 285500,
+        "stop": 285700,
+        "text": " You're right."
+      },
+      {
+        "start": 285700,
+        "stop": 286600,
+        "text": " Let's challenge ourselves for seven days. Let's just be nice to the other tech nerds. There's not that many of us."
+      },
+      {
+        "start": 286600,
+        "stop": 286800,
+        "text": " We could do it for seven days."
+      },
+      {
+        "start": 286800,
+        "stop": 287400,
+        "text": " You know where people are actually genuinely nice? Our Matrix chat. Coder.show/Matrix."
+      },
+      {
+        "start": 287400,
+        "stop": 287900,
+        "text": " Going 24/7. Good people. Not a huge crowd, but a really good crowd in there."
+      },
+      {
+        "start": 287900,
+        "stop": 288200,
+        "text": " That's a spot, too. And sometimes Mr. Dominic pops in."
+      },
+      {
+        "start": 288200,
+        "stop": 288500,
+        "text": " I do, and sometimes I play Magic the Gathering with the people in there."
+      },
+      {
+        "start": 288500,
+        "stop": 288700,
+        "text": " I saw that. That's so great."
+      },
+      {
+        "start": 288700,
+        "stop": 289000,
+        "text": " I believe I've thus far gone undefeated, so yay."
+      },
+      {
+        "start": 289000,
+        "stop": 289800,
+        "text": " Ooh, very nice. If you are on the Twitter, you can check out @TheMadBotterInk or the podcast @CoderRadioShow."
+      },
+      {
+        "start": 289800,
+        "stop": 290000,
+        "text": " You could do that, I suppose."
+      },
+      {
+        "start": 290000,
+        "stop": 290400,
+        "text": " I mean, there is the whole network, too, @JupiterSignal. I don't know. I don't know. It's weird."
+      },
+      {
+        "start": 290400,
+        "stop": 290900,
+        "text": " You know, we have the Telegram group. That's not Twitter. jupiterbroadcasting.com/telegram. I don't know."
+      },
+      {
+        "start": 290900,
+        "stop": 291200,
+        "text": " Most people who listen just want to listen. They don't even need any of this social crap."
+      },
+      {
+        "start": 291200,
+        "stop": 291400,
+        "text": " God, that's so nice. So simple."
+      },
+      {
+        "start": 291400,
+        "stop": 291700,
+        "text": " But then again, I'm part of the problem because I like talking to people."
+      },
+      {
+        "start": 291700,
+        "stop": 292000,
+        "text": " You know? Just don't know what to do with that."
+      },
+      {
+        "start": 292000,
+        "stop": 292200,
+        "text": " I like posting memes on Twitter."
+      },
+      {
+        "start": 292200,
+        "stop": 292300,
+        "text": " Yeah, that is fun."
+      },
+      {
+        "start": 292300,
+        "stop": 292900,
+        "text": " Well, links to what we talked about, including any memes or hot Twitter threads, are over at coder.show/488."
+      },
+      {
+        "start": 292900,
+        "stop": 293300,
+        "text": " You'll find our contact form there. We want your emails. We need more emails into the show."
+      },
+      {
+        "start": 293300,
+        "stop": 293600,
+        "text": " And we say you should probably get the RSS feed. I mean, just to be a pro."
+      },
+      {
+        "start": 293600,
+        "stop": 293800,
+        "text": " Go grab that RSS feed. That's what we say."
+      },
+      {
+        "start": 293800,
+        "stop": 294000,
+        "text": " You can join us live at jupiter.tube."
+      },
+      {
+        "start": 294000,
+        "stop": 294300,
+        "text": " Mondays at 9 a.m. noon Pacific."
+      },
+      {
+        "start": 294300,
+        "stop": 294400,
+        "text": " See you next week."
+      },
+      {
+        "start": 294400,
+        "stop": 295400,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 1378,
+      "nanos": 695536850
+    }
+  },
+  "metadata": {
+    "title": "Coder Radio 488: Code Laundering",
+    "pictures": [],
+    "duration": {
+      "secs": 2940,
+      "nanos": 522000000
+    },
+    "unique_id": "http://coder.show/488"
+  },
+  "episode": {
+    "title": "Code Laundering | Coder Radio 488",
+    "description": "We debate if GitHub's Copilot enables automated code laundering after a developer makes a startling discovery. Then we dispense some seriously old-school wisdom.",
+    "content": "<p><p>We debate if GitHub&#39;s Copilot enables automated code laundering after a developer makes a startling discovery. Then we dispense some seriously old-school wisdom.</p><p>Sponsored By:</p><ul><li><a href=\"https://linode.com/coder\" rel=\"nofollow\">Linode</a>: <a href=\"https://linode.com/coder\" rel=\"nofollow\">Receive a $100 60-day credit towards your new account. </a> Promo Code: linode.com/coder</li><li><a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale</a>: <a href=\"https://tailscale.com/coder\" rel=\"nofollow\">Tailscale is the easiest way to create a peer-to-peer network with the power of Wireguard. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=53334\" rel=\"payment\">Support Coder Radio</a></p><p>Links:</p><ul><li><a href=\"http://web.archive.org/web/20221014214823/https://www.theglobeandmail.com/business/technology/article-is-a-software-engineer-an-engineer-alberta-regulator-says-no-riling-2/\" title=\"Is a ‘software engineer’ an engineer? Alberta regulator says no.\" rel=\"nofollow\">Is a ‘software engineer’ an engineer? Alberta regulator says no.</a> &mdash; The Association of Professional Engineers and Geoscientists of Alberta (APEGA), has asked a court to order one of the province’s leading software companies, Octopusapp Inc., known as Jobber, to stop using the term “engineer” in job titles and postings unless it gets a permit from the regulator.</li><li><a href=\"https://www.linode.com/content/nextcloud-frank-karlitschek/\" title=\"Frank Karlitschek | Nextcloud\" rel=\"nofollow\">Frank Karlitschek | Nextcloud</a> &mdash; Frank Karlitschek started Nextcloud as an open source project to power a decentralized internet, believing that companies should control their own data. As an engineer in computer science, he worked on many open source projects throughout his career.</li><li><a href=\"https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-visual-studio-code#enabling-or-disabling-duplication-detection\" title=\"Configuring GitHub Copilot in Visual Studio Code \" rel=\"nofollow\">Configuring GitHub Copilot in Visual Studio Code </a> &mdash; GitHub Copilot includes a filter which detects code suggestions matching public code on GitHub. You can choose to enable or disable the filter. When the filter is enabled, GitHub Copilot checks code suggestions with their surrounding code of about 150 characters against public code on GitHub. If there is a match or near match, the suggestion will not be shown to you.</li><li><a href=\"https://twitter.com/DocSparse/status/1581461734665367554\" title=\"Tim Davis on Twitter\" rel=\"nofollow\">Tim Davis on Twitter</a> &mdash; @github copilot, with \"public code\" blocked, emits large chunks of my  copyrighted code, with no attribution, no LGPL license.  For example, the simple prompt \"sparse matrix transpose, cs<em>\" produces my cs</em>transpose in CSparse. My code on left, github on right. Not OK.</li><li><a href=\"https://twitter.com/jeremy_soller/status/1581638803697332226?s=46&t=Z1dp0CQz8_GmfH1cQpUR5w\" title=\"Jeremy Soller on Twitter\" rel=\"nofollow\">Jeremy Soller on Twitter</a> &mdash; Illegal source code laundering, automated by GitHub\n</li><li><a href=\"https://twitter.com/marcan42/status/1581244983528820741\" title=\"Hector Martin on Twitter\" rel=\"nofollow\">Hector Martin on Twitter</a> &mdash; Don't do this. Ever. This is insulting and disrespectful to your users.</p>\n\n<p>Nobody is entitled to support from volunteer FOSS projects, but they absolutely <em>do</em> deserve not to have the issues they took time to file actively thrown away. If you haven't fixed the bug, it stays open.</li><li><a href=\"https://www.businessinsider.com/meta-lost-15-billion-building-the-metaverse-reality-labs-money-2022-10\" title=\"Meta Sunk $15 Billion Building the Metaverse. Where Did the Money Go?\" rel=\"nofollow\">Meta Sunk $15 Billion Building the Metaverse. Where Did the Money Go?</a> &mdash; Meta has sunk more than $15 billion into its metaverse project since the start of last year.\n</li><li><a href=\"https://www.businessinsider.com/most-metaverse-users-dont-even-make-it-a-month-wsj-2022-10\" title=\"Most Metaverse Users Don't Even Make It a Month\" rel=\"nofollow\">Most Metaverse Users Don't Even Make It a Month</a> &mdash; Most Metaverse users don't return to the Horizon Worlds platform after the first month, WSJ reported.</li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Upgrade to a Podcasting 2.0 App\" rel=\"nofollow\">Upgrade to a Podcasting 2.0 App</a> &mdash; Grab a Podcasting 2.0 compatible app, send Boosts, and keep podcasting decentralized. </li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-8939",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15725523/b67aa661-b99d-4d2f-a8dd-4f17f48defbf.mp3",
+      "length": "41851638",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-10-19T03:05:00+02:00"
+  },
+  "speedup": 2.1328292
+}

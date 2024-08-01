@@ -1,0 +1,3772 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 100,
+        "stop": 1500,
+        "text": " We've been keeping an eye on the Steam Deck. And it seems Valve has updated their Arch install to be basically fully up to date. They're syncing it up with Upstream Arch. Some people started to speculate it might never happen."
+      },
+      {
+        "start": 1500,
+        "stop": 1700,
+        "text": " Wait, they are going to do updates, right?"
+      },
+      {
+        "start": 1800,
+        "stop": 3500,
+        "text": " KDE 5.26 is landing in there. There's new themes and new wallpapers. That new fancy update to KRunner. I wonder, guys, do you think we're getting close to an actual public release of SteamOS for regular PCs? Do you think they'll get there before the end of the year?"
+      },
+      {
+        "start": 3500,
+        "stop": 3800,
+        "text": " No. I mean, come on. This is Valve time."
+      },
+      {
+        "start": 3800,
+        "stop": 4000,
+        "text": " Save it for your prediction, Chris."
+      },
+      {
+        "start": 4000,
+        "stop": 4300,
+        "text": " I predict it's going to come out before our predictions episode, actually."
+      },
+      {
+        "start": 4300,
+        "stop": 4500,
+        "text": " Whoa. Prediction prediction?"
+      },
+      {
+        "start": 4600,
+        "stop": 5100,
+        "text": " I think it's going to come out around Christmas break time for schools and stuff."
+      },
+      {
+        "start": 5100,
+        "stop": 5300,
+        "text": " What are you basing this on? Just this one update?"
+      },
+      {
+        "start": 5300,
+        "stop": 6400,
+        "text": " Well, I mean, because why else go through all the trouble of getting everything all synced up with Upstream at this point and not do an update? Because otherwise you're going to have to do this all over again before you release."
+      },
+      {
+        "start": 6400,
+        "stop": 6800,
+        "text": " So you think this is the hurry up, you know, little quick spit shine and then..."
+      },
+      {
+        "start": 6900,
+        "stop": 8100,
+        "text": " And then they release the public ISO around like a week or two before Christmas and people that are home for the holidays get to play around with it. I mean, it's a Valve kind of thing to do. Right? Smells Valve-y to me."
+      },
+      {
+        "start": 8100,
+        "stop": 9800,
+        "text": " Hello, friends, and welcome back to your weekly Linux talk show. My name is Chris."
+      },
+      {
+        "start": 9800,
+        "stop": 10000,
+        "text": " My name is Wes. And my name is Brent."
+      },
+      {
+        "start": 10000,
+        "stop": 11400,
+        "text": " Well, hello, gentlemen. Coming up on the show today, we're taking a look at Fedora 37. Is this the one that breaks their streak? We'll chat about that. Plus, it seems Ubuntu is quietly moving away from ZFS."
+      },
+      {
+        "start": 11400,
+        "stop": 12300,
+        "text": " We'll see what's going on there. And then we'll take a test and see if these two can tell the difference between real Chris and AI-generated Chris."
+      },
+      {
+        "start": 12400,
+        "stop": 12800,
+        "text": " And then we'll round it all out with some great boosts, some feedback, some picks, and a lot more."
+      },
+      {
+        "start": 12800,
+        "stop": 13400,
+        "text": " So before we go any further, let's say time-appropriate greetings to our virtual lug. Hello, mumbleroo!"
+      },
+      {
+        "start": 13400,
+        "stop": 13600,
+        "text": " Hi, friends! Greetings."
+      },
+      {
+        "start": 13600,
+        "stop": 14400,
+        "text": " Hello. Thank you for being here. Very nice, very nice. Got a good crew in there. Good crew up in the quiet listening as well."
+      },
+      {
+        "start": 14400,
+        "stop": 15000,
+        "text": " I also want to say good morning to our friends over at Tailscale, a mesh VPN powered by Wireguard. It's a game changer."
+      },
+      {
+        "start": 15100,
+        "stop": 15800,
+        "text": " If you were early to Linux, you remember that time when people didn't know about how great Linux was and you knew you were onto something great and everybody else hadn't figured it out yet?"
+      },
+      {
+        "start": 15800,
+        "stop": 16500,
+        "text": " That's how I feel about Tailscale. So go over to Tailscale and try it out. Say good morning. You get it for free up to 20 devices at tailscale.com."
+      },
+      {
+        "start": 16500,
+        "stop": 16800,
+        "text": " If you get a chance, tell me. Unplugged program sent you."
+      },
+      {
+        "start": 16800,
+        "stop": 17100,
+        "text": " Wes Payne, you're running Fedora 37 right there."
+      },
+      {
+        "start": 17100,
+        "stop": 17300,
+        "text": " Of course. What else would I be running?"
+      },
+      {
+        "start": 17300,
+        "stop": 18000,
+        "text": " I've got Fedora 37 right here. On's the dev one, which has been an interesting journey. We'll get to that."
+      },
+      {
+        "start": 18000,
+        "stop": 18500,
+        "text": " And, Brentley, you've been running Fedora 37, but a slightly different spin. You've been using the Plasma edition."
+      },
+      {
+        "start": 18500,
+        "stop": 18700,
+        "text": " It's true."
+      },
+      {
+        "start": 18700,
+        "stop": 18900,
+        "text": " I assume you went Gnome."
+      },
+      {
+        "start": 18900,
+        "stop": 19100,
+        "text": " Oh, yeah."
+      },
+      {
+        "start": 19100,
+        "stop": 19300,
+        "text": " So Wes and I went Gnome and Brentley went the Plasma edition."
+      },
+      {
+        "start": 19300,
+        "stop": 19600,
+        "text": " Well, he protests when we make him use Gnome, so it's just simple."
+      },
+      {
+        "start": 19600,
+        "stop": 19800,
+        "text": " He needed a break."
+      },
+      {
+        "start": 19800,
+        "stop": 20400,
+        "text": " And, honestly, we need to try to represent the Plasma users out there that are considering these updates."
+      },
+      {
+        "start": 20500,
+        "stop": 21000,
+        "text": " Because I realized we kind of had a blind spot with the Ubuntu MATE spin. We just really focused on the main Ubuntu release."
+      },
+      {
+        "start": 21000,
+        "stop": 21300,
+        "text": " And, you know, sometimes the spins have something really great in there."
+      },
+      {
+        "start": 21300,
+        "stop": 21400,
+        "text": " True."
+      },
+      {
+        "start": 21400,
+        "stop": 22200,
+        "text": " So Fedora 37 was pretty delayed. I don't think they like that term because they basically have a window."
+      },
+      {
+        "start": 22200,
+        "stop": 22400,
+        "text": " It spans several weeks."
+      },
+      {
+        "start": 22400,
+        "stop": 22600,
+        "text": " You know, it's ready when it's ready."
+      },
+      {
+        "start": 22600,
+        "stop": 23100,
+        "text": " And in this case, things got delayed by a flaw in OpenSSL."
+      },
+      {
+        "start": 23200,
+        "stop": 23800,
+        "text": " So the Fedora team decided to delay the release so that way they could fix that and get the updated package in there."
+      },
+      {
+        "start": 23800,
+        "stop": 24000,
+        "text": " More like slow sockets."
+      },
+      {
+        "start": 24000,
+        "stop": 24300,
+        "text": " Super slow, right?"
+      },
+      {
+        "start": 24300,
+        "stop": 24800,
+        "text": " It pushed it to this week. As this episode is coming out, what, is it like Wednesday?"
+      },
+      {
+        "start": 24800,
+        "stop": 25000,
+        "text": " I don't know. The ISOs are final."
+      },
+      {
+        "start": 25000,
+        "stop": 25700,
+        "text": " And we've been kicking the tires throughout the entire beta process, and then we kind of go in deep in this last week or so."
+      },
+      {
+        "start": 25800,
+        "stop": 26500,
+        "text": " Fedora 37, I'd say off the top, is a tricky blank canvas to talk about."
+      },
+      {
+        "start": 26500,
+        "stop": 27000,
+        "text": " This is hard to review because, quite frankly, not a lot going on in here."
+      },
+      {
+        "start": 27000,
+        "stop": 27400,
+        "text": " But there's some good bones. It is a showcase for Gnome 43."
+      },
+      {
+        "start": 27400,
+        "stop": 27900,
+        "text": " Yeah, it's been a little bit since I used super up-to-date Gnome."
+      },
+      {
+        "start": 28000,
+        "stop": 28800,
+        "text": " Ooh, this just feels solid. Everything is snappy AF. It feels like a very first-class desktop."
+      },
+      {
+        "start": 28800,
+        "stop": 29000,
+        "text": " It's got that new quick settings menu."
+      },
+      {
+        "start": 29000,
+        "stop": 29200,
+        "text": " Which I love. That's super handy."
+      },
+      {
+        "start": 29200,
+        "stop": 29900,
+        "text": " And then several iterations now really all come together in the Gnome system settings where there's just a bunch of good new stuff in there."
+      },
+      {
+        "start": 29900,
+        "stop": 30600,
+        "text": " And like you said, this is GTK4. We're doing a lot of video acceleration now there for that stuff when we can."
+      },
+      {
+        "start": 30800,
+        "stop": 31100,
+        "text": " And they also shipped Raspberry Pi 4 support."
+      },
+      {
+        "start": 31100,
+        "stop": 31700,
+        "text": " Unfortunately, every time I went to test that, there were issues with the images either not being available or whatever."
+      },
+      {
+        "start": 31700,
+        "stop": 32000,
+        "text": " Which happens as we try to pre-review a release."
+      },
+      {
+        "start": 32000,
+        "stop": 32300,
+        "text": " But I will give it a go when I can."
+      },
+      {
+        "start": 32300,
+        "stop": 32800,
+        "text": " My take is a little darker, a little sadder, a little more disappointed than it normally is."
+      },
+      {
+        "start": 32800,
+        "stop": 33500,
+        "text": " I think really since Fedora 32, I've been coming on here after a Fedora release and I've been saying,"
+      },
+      {
+        "start": 33600,
+        "stop": 33800,
+        "text": " \"This is probably worth updating to.\""
+      },
+      {
+        "start": 33800,
+        "stop": 34700,
+        "text": " And I cannot really articulate a reason to upgrade to Fedora 37 outside of the update to Gnome 43."
+      },
+      {
+        "start": 34700,
+        "stop": 35400,
+        "text": " And that's even with a pretty big caveat. Because if you've got a good Gnome setup right now on 35 or 36 and you've got extensions you like,"
+      },
+      {
+        "start": 35400,
+        "stop": 36100,
+        "text": " I'd just stick there for a while because most of my extensions broke. Very few of them are working at this point."
+      },
+      {
+        "start": 36200,
+        "stop": 36600,
+        "text": " So I don't have some basic things like status menu icons and things like that."
+      },
+      {
+        "start": 36600,
+        "stop": 37200,
+        "text": " So I really am not really a big fan of this release because it felt like they tooketh more than they gaveth in some regards."
+      },
+      {
+        "start": 37200,
+        "stop": 37900,
+        "text": " This is the release where we lose hardware video acceleration for H.264 and some other codecs."
+      },
+      {
+        "start": 37900,
+        "stop": 38500,
+        "text": " And unfortunately the change to remove the flat hub filtering doesn't land in 37, it's been postponed to 38."
+      },
+      {
+        "start": 38600,
+        "stop": 39200,
+        "text": " So the software situation in this release of Fedora is a major step back."
+      },
+      {
+        "start": 39200,
+        "stop": 40200,
+        "text": " And it makes the software ecosystem on Ubuntu with PPAs and DEB files and snaps seem simple compared to what Fedora offers now."
+      },
+      {
+        "start": 40200,
+        "stop": 40600,
+        "text": " I had a horrendous experience. It was just a huge hot mess."
+      },
+      {
+        "start": 40600,
+        "stop": 41300,
+        "text": " Because I went to go set up my machine and I searched for Slack and I got nothing in Gnome software."
+      },
+      {
+        "start": 41400,
+        "stop": 42000,
+        "text": " Then I searched for Telegram and I got a Gnome web link that it would install for me."
+      },
+      {
+        "start": 42000,
+        "stop": 42500,
+        "text": " I closed the application. This is my new days after I've been using it. It's not like the first time I ran Gnome software."
+      },
+      {
+        "start": 42500,
+        "stop": 43300,
+        "text": " I closed the application, I relaunch it again. This time I do the same search and I get a flat hub result."
+      },
+      {
+        "start": 43300,
+        "stop": 44200,
+        "text": " Totally different set of results. And it's just really just confusing because the icons are missing, they don't have the right vendor icons,"
+      },
+      {
+        "start": 44300,
+        "stop": 44900,
+        "text": " I don't know who published it. It's hard to trust if any of it's legit when I just searched a minute ago and got a web link."
+      },
+      {
+        "start": 44900,
+        "stop": 45500,
+        "text": " And now I get an application but the application is missing the icon and I can't tell who the publisher is."
+      },
+      {
+        "start": 45500,
+        "stop": 46200,
+        "text": " And this is just a hot mess of software. And there's some things that are on flat hub that I search for that I can't get really common stuff,"
+      },
+      {
+        "start": 46200,
+        "stop": 46700,
+        "text": " really basic stuff that you'd want to get off of flat hub that are just not available in Gnome software."
+      },
+      {
+        "start": 46800,
+        "stop": 47500,
+        "text": " And then they've chosen to partake in parts of RPM Fusion but not all of RPM Fusion."
+      },
+      {
+        "start": 47500,
+        "stop": 48100,
+        "text": " So for some reason I can install the NVIDIA proprietary driver from RPM Fusion but nothing else works."
+      },
+      {
+        "start": 48100,
+        "stop": 48800,
+        "text": " And for some reason that's okay but yet raw access to flat hub has to be protected."
+      },
+      {
+        "start": 48800,
+        "stop": 49100,
+        "text": " So why can't we just set up all of RPM Fusion or all of flat hub?"
+      },
+      {
+        "start": 49200,
+        "stop": 49800,
+        "text": " If you're working on a proposal to bring all of flat hub unfiltered to Fedora 38, why can't I have RPM Fusion too?"
+      },
+      {
+        "start": 49800,
+        "stop": 50100,
+        "text": " What's the difference? There is no difference."
+      },
+      {
+        "start": 50100,
+        "stop": 50800,
+        "text": " The difference is, and you can see it in their discussion thread, the legal team just tells them no."
+      },
+      {
+        "start": 50800,
+        "stop": 51200,
+        "text": " Nope, you can do flat hub but you can't do RPM Fusion. Why? We can't tell you."
+      },
+      {
+        "start": 51200,
+        "stop": 51900,
+        "text": " And it's another example of how this distribution gets jerked around by lawyers at IBM"
+      },
+      {
+        "start": 52000,
+        "stop": 52200,
+        "text": " that decide what features can and cannot ship in Fedora."
+      },
+      {
+        "start": 52200,
+        "stop": 52700,
+        "text": " And it's really disappointing because it affects even this experience of using software,"
+      },
+      {
+        "start": 52700,
+        "stop": 53000,
+        "text": " not to mention the issue we have with video codecs."
+      },
+      {
+        "start": 53000,
+        "stop": 53500,
+        "text": " So the software situation is just sort of this result of the Fedora project has been making transitions,"
+      },
+      {
+        "start": 53500,
+        "stop": 54300,
+        "text": " there's been a focus on flat packs, there has been a discussion internally if they should be using their own flat pack repo"
+      },
+      {
+        "start": 54300,
+        "stop": 54800,
+        "text": " and then putting that in front of flat hub and then defaulting after that to flat hub and then after that to RPMs"
+      },
+      {
+        "start": 54900,
+        "stop": 55100,
+        "text": " and sorting this whole thing out, they couldn't get it figured out in time for release."
+      },
+      {
+        "start": 55100,
+        "stop": 55700,
+        "text": " And the end result is, it's a mess and it's just not a good experience as an end user."
+      },
+      {
+        "start": 55700,
+        "stop": 56500,
+        "text": " And it's really frustrating because between the video codecs missing and this software experience being so subpar,"
+      },
+      {
+        "start": 56500,
+        "stop": 57100,
+        "text": " it feels like we just took five, six years back in terms of usability there."
+      },
+      {
+        "start": 57100,
+        "stop": 57300,
+        "text": " And that's my downside with it."
+      },
+      {
+        "start": 57400,
+        "stop": 57900,
+        "text": " The upside is that it is a great blank slate in which you can build a fantastic workstation on,"
+      },
+      {
+        "start": 57900,
+        "stop": 58200,
+        "text": " and so I'm curious if you guys got to that point. How far did you make it?"
+      },
+      {
+        "start": 58200,
+        "stop": 58800,
+        "text": " Yeah, I mean I just sort of, I think you're right, the flat hub stuff is confusing,"
+      },
+      {
+        "start": 58800,
+        "stop": 59200,
+        "text": " especially if you want to come in for a, like I just expect this to work."
+      },
+      {
+        "start": 59200,
+        "stop": 59800,
+        "text": " I sort of assumed I would just have to, like I do on most places, end up having to get maybe flat pack itself going,"
+      },
+      {
+        "start": 59800,
+        "stop": 60100,
+        "text": " but at least flat hub as a repository enabled."
+      },
+      {
+        "start": 60200,
+        "stop": 60500,
+        "text": " So once I was over that hurdle, it kind of got working pretty well."
+      },
+      {
+        "start": 60500,
+        "stop": 61200,
+        "text": " I was actually outside of the initial setup problems, I was kind of surprised by how few problems I had with GNOME software these days."
+      },
+      {
+        "start": 61200,
+        "stop": 61800,
+        "text": " Like it feels way faster than it used to feel, like I can switch back and forth, it finds the search goes pretty quick."
+      },
+      {
+        "start": 61800,
+        "stop": 62200,
+        "text": " I still love the integration with the various parts of my system, it feels like a nice,"
+      },
+      {
+        "start": 62200,
+        "stop": 62800,
+        "text": " I don't know if I, I don't think I've installed any software on the command line this time around,"
+      },
+      {
+        "start": 62900,
+        "stop": 63300,
+        "text": " but it's not my normal go to, I mean I just pop up a terminal most times because I'm lazy and I know how to do it that way."
+      },
+      {
+        "start": 63300,
+        "stop": 63900,
+        "text": " I was also, I continue to be pleased with just, as everything keeps getting updated and revved in the last couple of Fedora releases,"
+      },
+      {
+        "start": 63900,
+        "stop": 64400,
+        "text": " it feels like more and more of the little edge cases have been worked out."
+      },
+      {
+        "start": 64400,
+        "stop": 65000,
+        "text": " Like I think like where Pipewire and some of the GNOME plumbing and just on the desktop as a whole feels, feels really nice."
+      },
+      {
+        "start": 65000,
+        "stop": 65600,
+        "text": " Like Pulse, who cares anymore? Like I just, this stuff works so well, it feels, I don't feel limited."
+      },
+      {
+        "start": 65700,
+        "stop": 66100,
+        "text": " There was a time where I was like, \"Fadora, can I make it like a creator space for me?\""
+      },
+      {
+        "start": 66100,
+        "stop": 66500,
+        "text": " It felt like maybe there's some hurdles, but with Pipewire, like there's tons of stuff in the repos,"
+      },
+      {
+        "start": 66500,
+        "stop": 67300,
+        "text": " like Helvum, the Rust GTK patch bay thing that lets you drag inputs and outputs around that works with Pipewire, packaged in Fedora."
+      },
+      {
+        "start": 67300,
+        "stop": 67800,
+        "text": " And if it's packaged in Fedora, like you know it's recent, it's new, I don't have to complain about it, so that made it."
+      },
+      {
+        "start": 67800,
+        "stop": 68100,
+        "text": " That does make it nice as a workstation."
+      },
+      {
+        "start": 68200,
+        "stop": 68800,
+        "text": " Once I got over a little bit and you know I had to go remind myself, \"How do I get Nix packages going on Fedora without disabling SELinux?\""
+      },
+      {
+        "start": 68800,
+        "stop": 69200,
+        "text": " And some of that, you know, so there's a couple things, but once I got all the initial setup, you're right."
+      },
+      {
+        "start": 69200,
+        "stop": 69800,
+        "text": " Like I like the system, everything feels real solid, you know, they've got systemd tuned really nicely,"
+      },
+      {
+        "start": 69800,
+        "stop": 70300,
+        "text": " they've got the desktop plumbed really nicely, up-to-date software, so you know."
+      },
+      {
+        "start": 70300,
+        "stop": 71000,
+        "text": " There's more hurdles now I guess, but if you are an experienced user, you probably expect that already."
+      },
+      {
+        "start": 71100,
+        "stop": 71700,
+        "text": " Yeah, I think Fedora 37 benefits from years of good choices under the hood, and so there's a lot there to work with."
+      },
+      {
+        "start": 71700,
+        "stop": 72300,
+        "text": " I'll talk more about how sometimes it doesn't always come together in the end, but I wanted to ask you,"
+      },
+      {
+        "start": 72300,
+        "stop": 72800,
+        "text": " did you end up getting Nix packages working on Fedora 37, are you using that to manage software right now?"
+      },
+      {
+        "start": 72800,
+        "stop": 73100,
+        "text": " Yeah, I didn't do, I just wanted to see, you know, go through the process."
+      },
+      {
+        "start": 73100,
+        "stop": 73800,
+        "text": " I didn't install a bunch of stuff through Nix or anything, mostly, I mostly have flatpacks on this because I've been using it as a, you know, casual desktop,"
+      },
+      {
+        "start": 73800,
+        "stop": 74000,
+        "text": " getting a little bit of work done here and there."
+      },
+      {
+        "start": 74000,
+        "stop": 74800,
+        "text": " I think the one thing, I installed VS Code just as a raw dog RPM, actually because, I don't know, sometimes the flatpack doesn't feel worth it for that one,"
+      },
+      {
+        "start": 74800,
+        "stop": 75300,
+        "text": " just because if you want to dump a bunch of runtimes on your system, dealing with that layer is sometimes more trouble than it's worth."
+      },
+      {
+        "start": 75300,
+        "stop": 75500,
+        "text": " I agree."
+      },
+      {
+        "start": 75500,
+        "stop": 76000,
+        "text": " Other than that, it's been flatpacks in the repo, and you know, I just wanted to play around with Nix because these days I just install it everywhere."
+      },
+      {
+        "start": 76000,
+        "stop": 76200,
+        "text": " So you enabled flat hub, just full flat hub?"
+      },
+      {
+        "start": 76200,
+        "stop": 76800,
+        "text": " Yeah, I tried it at first, I was like, oh, this is not getting me the results I want, and I figure on most, you know, some desktops,"
+      },
+      {
+        "start": 76900,
+        "stop": 77200,
+        "text": " I can install flatpack itself first and then enable flat hub, so by comparison,"
+      },
+      {
+        "start": 77200,
+        "stop": 77400,
+        "text": " Yeah, it's quicker."
+      },
+      {
+        "start": 77400,
+        "stop": 77900,
+        "text": " And they have a Fedora specific section on the site, and you can just download the repo thing and it installs it graphically, so."
+      },
+      {
+        "start": 77900,
+        "stop": 78500,
+        "text": " Yeah, I took it on as a challenge to not add the full RPM Fusion repo or flat hub repo for a while,"
+      },
+      {
+        "start": 78500,
+        "stop": 78800,
+        "text": " just to see what that experience was, to see what they were shipping."
+      },
+      {
+        "start": 78800,
+        "stop": 79700,
+        "text": " And it's not great, because if you do want to get to that stuff, if there's no instructions on how to actually officially do it,"
+      },
+      {
+        "start": 79800,
+        "stop": 80300,
+        "text": " all you've got to do is just follow some random instructions on Reddit that tell you to install these packages from RPM Fusion,"
+      },
+      {
+        "start": 80300,
+        "stop": 80800,
+        "text": " and supposedly they'll add hardware accelerated decoding back, but it's like, which Reddit thread do you pick?"
+      },
+      {
+        "start": 80800,
+        "stop": 81400,
+        "text": " I mean, I picked the one I picked, I'll put in the show notes, but I can't believe as a Fedora user, that's what I'm being reduced to,"
+      },
+      {
+        "start": 81400,
+        "stop": 81600,
+        "text": " is finding random Reddit threads, but."
+      },
+      {
+        "start": 81600,
+        "stop": 82100,
+        "text": " I did notice there was a codec section at the Gstreamer one in the store."
+      },
+      {
+        "start": 82100,
+        "stop": 82500,
+        "text": " I don't know if that's only there if you enable third-party repositories at the install, but."
+      },
+      {
+        "start": 82600,
+        "stop": 83100,
+        "text": " Yeah, I think so, but the nice thing is also, is it will take you there when you first go to play,"
+      },
+      {
+        "start": 83100,
+        "stop": 83600,
+        "text": " so I'll walk you through the scenario, because here's the scenario I recreated, and then I want to hear Brent's Plasma experience."
+      },
+      {
+        "start": 83600,
+        "stop": 84100,
+        "text": " But the scenario I created is, I filmed a video on my phone, and then I took that video."
+      },
+      {
+        "start": 84100,
+        "stop": 84300,
+        "text": " Was it a Levi video?"
+      },
+      {
+        "start": 84300,
+        "stop": 84700,
+        "text": " I took that video and I put it on my laptop, and I wanted to watch the video on my laptop."
+      },
+      {
+        "start": 84700,
+        "stop": 85400,
+        "text": " It's 2022, everybody has a smartphone with a camera, all of those cameras are recording in HD64,"
+      },
+      {
+        "start": 85500,
+        "stop": 85700,
+        "text": " and when I transfer it to my laptop, it does not play."
+      },
+      {
+        "start": 85700,
+        "stop": 86400,
+        "text": " That's a failure. However, it does then walk you through the process of searching GNOME software,"
+      },
+      {
+        "start": 86400,
+        "stop": 86900,
+        "text": " and if you have the third-party repos installed, you can install the Gstreamer codec that has HD64 playback."
+      },
+      {
+        "start": 86900,
+        "stop": 87900,
+        "text": " I don't believe it's hardware accelerated, because I got a Dev1 here, and I was like pegging out like 40-50%,"
+      },
+      {
+        "start": 87900,
+        "stop": 88100,
+        "text": " watching a video from my phone."
+      },
+      {
+        "start": 88200,
+        "stop": 88500,
+        "text": " But it installs it, and then it begins playing immediately."
+      },
+      {
+        "start": 88500,
+        "stop": 89100,
+        "text": " It's slightly smoother than it used to be back in the old days when I used to buy my Fluendo codecs and then add them,"
+      },
+      {
+        "start": 89100,
+        "stop": 89400,
+        "text": " back when we used to not have codecs on Linux. It's a little bit smoother than that."
+      },
+      {
+        "start": 89400,
+        "stop": 90100,
+        "text": " I had to restart Firefox to get it. I just installed it right now as we were doing it to check."
+      },
+      {
+        "start": 90100,
+        "stop": 90400,
+        "text": " But after that, I mean, I'm watching JupiterTube."
+      },
+      {
+        "start": 90400,
+        "stop": 90800,
+        "text": " Right. So, Brent, I want to hear about your experience."
+      },
+      {
+        "start": 90900,
+        "stop": 91400,
+        "text": " I don't know if you've tried Plasma, I don't know if any of this stuff bit you, if maybe you're sticking with Fedora 37. How'd it go, sir?"
+      },
+      {
+        "start": 91400,
+        "stop": 92100,
+        "text": " Yeah, well, one of our parameters that we kind of toyed with was not changing any of the repos, not adding FlatHub, things like that."
+      },
+      {
+        "start": 92100,
+        "stop": 92700,
+        "text": " So I thought, that's a great challenge. But then I kind of suffered for it."
+      },
+      {
+        "start": 92700,
+        "stop": 93000,
+        "text": " So I had actually quite a hard time."
+      },
+      {
+        "start": 93000,
+        "stop": 93200,
+        "text": " He's on to us."
+      },
+      {
+        "start": 93200,
+        "stop": 93800,
+        "text": " I actually really suffered with that, and I didn't expect that, because I was just trying to do really simple stuff."
+      },
+      {
+        "start": 93800,
+        "stop": 94600,
+        "text": " Like, I wasn't able to find VLC. I don't know, maybe I'm broken. I couldn't find it anywhere to install, which seems odd."
+      },
+      {
+        "start": 94600,
+        "stop": 94900,
+        "text": " I don't know why that is."
+      },
+      {
+        "start": 94900,
+        "stop": 96100,
+        "text": " But to test the video playing, like you mentioned, Chris, I installed MPV, and it must have taken care of everything, because H.264 played just fine for me, actually, which was good."
+      },
+      {
+        "start": 96200,
+        "stop": 97100,
+        "text": " But I just ran into a whole bunch of issues, even from the very beginning, which was unfortunate. I was really looking forward to having a great experience."
+      },
+      {
+        "start": 97100,
+        "stop": 97900,
+        "text": " And some of it was like a day or two before those official releases were out. Some of it was after and just continued, which is sort of unfortunate."
+      },
+      {
+        "start": 97900,
+        "stop": 98500,
+        "text": " So one of the main things I ran into, well, I guess I should give some stats first."
+      },
+      {
+        "start": 98600,
+        "stop": 99800,
+        "text": " It was running Plasma 5262, as far as I can find. The latest is 5263, so pretty darn recent. I think 5263 just got released on the 8th, so a few days ago."
+      },
+      {
+        "start": 99800,
+        "stop": 100900,
+        "text": " But I ran into some issues that have sort of been my experience with KDE the last six months on various OSes, unfortunately."
+      },
+      {
+        "start": 101000,
+        "stop": 101900,
+        "text": " So one of the main ones was that the lock screen, after being suspended, when you try to wake it up, was just a complete mess of distortion."
+      },
+      {
+        "start": 101900,
+        "stop": 102500,
+        "text": " And Chris, I included a few screenshots for you in our doc there, so that you could kind of have a look at them."
+      },
+      {
+        "start": 102500,
+        "stop": 103000,
+        "text": " And it was bizarre, because the mouse pointer was perfectly fine, but everything else was like this terrible mess."
+      },
+      {
+        "start": 103100,
+        "stop": 104100,
+        "text": " I was able to find a workaround, so I was able to use the old Ctrl-Alt-F1 and F2s and F3s to kind of bounce between terminals and get back to the screen."
+      },
+      {
+        "start": 104100,
+        "stop": 105000,
+        "text": " And then it presented just fine. So that was an interesting experience, and it just kind of persisted between restarts."
+      },
+      {
+        "start": 105100,
+        "stop": 106200,
+        "text": " It was unfortunate. And I had just application crashes out of nowhere, and some notifications that came up immediately just suggesting that things were broken."
+      },
+      {
+        "start": 106200,
+        "stop": 106900,
+        "text": " And so I actually didn't get very far before losing all of my enthusiasm. And that got me thinking about spins in a bigger context."
+      },
+      {
+        "start": 106900,
+        "stop": 108000,
+        "text": " And I feel like the main release, especially with their release window, tends to focus on the GNOME implementation, which is logical."
+      },
+      {
+        "start": 108000,
+        "stop": 108400,
+        "text": " But it gets me thinking about spins and how they're at kind of the mercy of that release cycle."
+      },
+      {
+        "start": 108400,
+        "stop": 109100,
+        "text": " And sometimes they have to release maybe when they're not quite ready. I would be interested in knowing a little bit more about how that works on the backend."
+      },
+      {
+        "start": 109100,
+        "stop": 109900,
+        "text": " But I feel like using the spins on release day is just rough. Really, really rough. Maybe it's better in a month or two, and I'd be interested in looking at that."
+      },
+      {
+        "start": 110000,
+        "stop": 111100,
+        "text": " I don't disagree with you on that. I know that Neil would tell us that the Fedora project has made critical bugs in Plasma a release blocker for all the spins."
+      },
+      {
+        "start": 111100,
+        "stop": 111800,
+        "text": " But my experience has also just been that it doesn't have the same focus. I think that probably could be a topic we could dig down on in the future."
+      },
+      {
+        "start": 111800,
+        "stop": 112200,
+        "text": " You mentioned errors. Do you think they were SELinux errors that you were getting?"
+      },
+      {
+        "start": 112300,
+        "stop": 113100,
+        "text": " No, they were not SELinux errors. I think I meant to screen grab them, and then I had the other issues and they got lost in the mix."
+      },
+      {
+        "start": 113100,
+        "stop": 114200,
+        "text": " But yeah, I can't speak to them. Maybe I'll have another look and find them. But they didn't seem to affect at least what I can tell the operation of the OS. It seemed just fine."
+      },
+      {
+        "start": 114200,
+        "stop": 114500,
+        "text": " It might have been a notification subsystem error."
+      },
+      {
+        "start": 114500,
+        "stop": 114800,
+        "text": " Hey, I'll take viewer notifications as a good thing."
+      },
+      {
+        "start": 114800,
+        "stop": 115100,
+        "text": " Yeah, you still want to get the important ones though, don't you?"
+      },
+      {
+        "start": 115100,
+        "stop": 116200,
+        "text": " This is an interesting sort of pause in what has been, in my opinion, really strong releases, especially starting at 32 and 33 when ButterFS came in."
+      },
+      {
+        "start": 116200,
+        "stop": 117100,
+        "text": " And I think it's still a really solid base. I don't know if it's worth upgrading today. If it was me, I'd probably wait a month or two at least."
+      },
+      {
+        "start": 117200,
+        "stop": 118500,
+        "text": " Unfortunately, sort of ironically timed, after the show today, I am playing tech support for my son. I installed Fedora 36 on his Asus laptop."
+      },
+      {
+        "start": 118500,
+        "stop": 119500,
+        "text": " It's been working great for a long time, until about a month or two ago, and it started to slowly have issue after issue."
+      },
+      {
+        "start": 119600,
+        "stop": 120400,
+        "text": " One of the problems that crept up was his Nvidia binary driver just broke. It seems to almost segfault during boot or something, and then the nouveau driver has to load."
+      },
+      {
+        "start": 120400,
+        "stop": 120800,
+        "text": " So it does fall back. It's not like it totally fails to come up with it."
+      },
+      {
+        "start": 120800,
+        "stop": 121100,
+        "text": " But he uses it to game, so it's kind of a downside."
+      },
+      {
+        "start": 121100,
+        "stop": 121500,
+        "text": " So then it starts up and you're like, \"Wait, why is my gaming suddenly way worse?\""
+      },
+      {
+        "start": 121500,
+        "stop": 121900,
+        "text": " And of course he's always paying attention to the frames per second and whatnot."
+      },
+      {
+        "start": 122000,
+        "stop": 122900,
+        "text": " So this weekend, this is on Fedora 36, I just took all the Nvidia stuff off, went totally back to a free driver stack, completely back to stock."
+      },
+      {
+        "start": 122900,
+        "stop": 123800,
+        "text": " And then went into the GNOME software, made sure I had the repos enabled and all that kind of stuff, and reinstalled it from following their prescribed process."
+      },
+      {
+        "start": 123800,
+        "stop": 124800,
+        "text": " And I'm still having issues with it. But on top of that, when he shuts down now, it hangs at like KVM trying to do some sort of KVM hardware shutdown process."
+      },
+      {
+        "start": 124900,
+        "stop": 125300,
+        "text": " And his system just hangs there forever, and he has to hard physically turn it off."
+      },
+      {
+        "start": 125300,
+        "stop": 125700,
+        "text": " And of course he's doing that more and more because it also doesn't sleep anymore when he closes the lid."
+      },
+      {
+        "start": 125700,
+        "stop": 126100,
+        "text": " It did when he first started using it, but it no longer does."
+      },
+      {
+        "start": 126100,
+        "stop": 126800,
+        "text": " And this morning I found out that now some sort of process in the background is just going absolutely crazy."
+      },
+      {
+        "start": 126800,
+        "stop": 127100,
+        "text": " I would not be surprised if it isn't related to KVM."
+      },
+      {
+        "start": 127100,
+        "stop": 127500,
+        "text": " And his fans are going crazy, his CPU is getting pegged."
+      },
+      {
+        "start": 127600,
+        "stop": 128700,
+        "text": " It just seems to me that Fedora 36 just didn't turn out to be as durable as I wanted because he only installs stuff from Steam, and he just does the system updates."
+      },
+      {
+        "start": 128700,
+        "stop": 129400,
+        "text": " That's all he's doing. And he had elementary OS for like three years, and it was fine."
+      },
+      {
+        "start": 129400,
+        "stop": 129700,
+        "text": " We just moved because it was an old base and he was getting a new machine."
+      },
+      {
+        "start": 129700,
+        "stop": 130000,
+        "text": " And at the time I was like, \"Fidora seems to be working really well.\""
+      },
+      {
+        "start": 130100,
+        "stop": 130600,
+        "text": " But I'm concerned about this durability issue because I'm not really clear what he's done other than..."
+      },
+      {
+        "start": 130600,
+        "stop": 131000,
+        "text": " I've looked at it, it's just updates. And things broke."
+      },
+      {
+        "start": 131000,
+        "stop": 131500,
+        "text": " And I think that means it's probably not going to be the family OS for me."
+      },
+      {
+        "start": 131500,
+        "stop": 132000,
+        "text": " And I really hate that because I like just that clean blank slate that I can build a little family setup on."
+      },
+      {
+        "start": 132000,
+        "stop": 132300,
+        "text": " I mean obviously right there's LTF, there's lots of options here."
+      },
+      {
+        "start": 132400,
+        "stop": 133200,
+        "text": " But I felt like in a certain stride, the update process itself, just everything coming together, reaching a very cohesive whole,"
+      },
+      {
+        "start": 133200,
+        "stop": 133700,
+        "text": " even though yes there are more updates in the Fedora model, you can still feel kind of comfortable being like..."
+      },
+      {
+        "start": 133700,
+        "stop": 134400,
+        "text": " You know, I'm glad you brought that up because I say elementary OS was fine, but we were starting to have packages that were like..."
+      },
+      {
+        "start": 134400,
+        "stop": 134800,
+        "text": " You can no longer get an updated enough version from the repo to support this."
+      },
+      {
+        "start": 134900,
+        "stop": 135400,
+        "text": " The repo was no longer online, because it was probably a four year old distro by that point."
+      },
+      {
+        "start": 135400,
+        "stop": 135600,
+        "text": " Yeah, was that the 1804?"
+      },
+      {
+        "start": 135600,
+        "stop": 136000,
+        "text": " Probably, yeah it was probably the 1804 base. And it was about a year ago."
+      },
+      {
+        "start": 136000,
+        "stop": 136800,
+        "text": " And everything still installs. DNF completes, everything's good, every package is still working, all the dependencies are resolved,"
+      },
+      {
+        "start": 136800,
+        "stop": 137300,
+        "text": " there's nothing broken in regards to package management. Which is obviously what I was trying to solve for,"
+      },
+      {
+        "start": 137300,
+        "stop": 137800,
+        "text": " because I was very frustrated because ultimately what happened to elementary OS, I couldn't update Chrome,"
+      },
+      {
+        "start": 137800,
+        "stop": 138000,
+        "text": " I couldn't use something you needed for school, blah blah blah."
+      },
+      {
+        "start": 138000,
+        "stop": 138400,
+        "text": " One too many PPAs, some weird stuff happens, who knows anymore."
+      },
+      {
+        "start": 138400,
+        "stop": 139000,
+        "text": " I solved for that with Fedora, and it's working well, but it's just disappointed me in this way."
+      },
+      {
+        "start": 139000,
+        "stop": 139600,
+        "text": " My exit interview for Fedora 36 is, if you're a sysadmin, you're set, it's going to be fine,"
+      },
+      {
+        "start": 139600,
+        "stop": 140100,
+        "text": " but I can't recommend it for the set and forget it family type computers, because it has not been that."
+      },
+      {
+        "start": 140200,
+        "stop": 140800,
+        "text": " It has not been problem free the entire install, about once every couple of months I'm fixing something for him."
+      },
+      {
+        "start": 140800,
+        "stop": 141600,
+        "text": " Two or three times, not the end of the world. But it's also I think honestly it shook his confidence a little bit in desktop Linux as a result."
+      },
+      {
+        "start": 141600,
+        "stop": 142000,
+        "text": " Which was not great, because we were doing really good."
+      },
+      {
+        "start": 142000,
+        "stop": 142600,
+        "text": " But when he sees the frame rate drop and he's having issues with it not shutting down,"
+      },
+      {
+        "start": 142700,
+        "stop": 143200,
+        "text": " he closes the lid, puts it in his bag, and he pulls it out and it's like 110 degrees and the battery is drained."
+      },
+      {
+        "start": 143200,
+        "stop": 143800,
+        "text": " That's a bad experience. And now if I were to put Fedora 37 on there and not set it up for him,"
+      },
+      {
+        "start": 143800,
+        "stop": 144600,
+        "text": " if he were to just try upgrading to fix it, he would upgrade and he would lose video accelerated playback,"
+      },
+      {
+        "start": 144600,
+        "stop": 144900,
+        "text": " and he has an AMD graphics in there too, he's got both."
+      },
+      {
+        "start": 144900,
+        "stop": 145400,
+        "text": " And that's just, that's a hard sell. Could you imagine trying to tell him that?"
+      },
+      {
+        "start": 145500,
+        "stop": 145800,
+        "text": " How do I even explain that to him? I don't think you would, you'd probably just end up in stock."
+      },
+      {
+        "start": 145800,
+        "stop": 146200,
+        "text": " But you've got to do a couple maintenance upgrades real quick before you use this, bud."
+      },
+      {
+        "start": 146200,
+        "stop": 146700,
+        "text": " Now I have a question for you both, or maybe it's more of a pondering."
+      },
+      {
+        "start": 146700,
+        "stop": 147200,
+        "text": " We've seen some of the major distributions, like Fedora for instance, we were excited about it for a long time,"
+      },
+      {
+        "start": 147200,
+        "stop": 147500,
+        "text": " and now it seems maybe this one's a slump for a little bit."
+      },
+      {
+        "start": 147500,
+        "stop": 148200,
+        "text": " But we saw the exact same thing with Ubuntu in recent years, kind of some maybe less exciting releases,"
+      },
+      {
+        "start": 148300,
+        "stop": 149000,
+        "text": " and it seems maybe they're on a trend now for us. In that context, how do we choose, well I'm going to make it personal,"
+      },
+      {
+        "start": 149000,
+        "stop": 149400,
+        "text": " how do we choose an OS for my dev one? Because I need something and I'm finding it really difficult,"
+      },
+      {
+        "start": 149400,
+        "stop": 150200,
+        "text": " you know, in the shoes of a listener to just say, well, what does JB recommend as the OS that I should run for the next year or two?"
+      },
+      {
+        "start": 150200,
+        "stop": 150600,
+        "text": " God, it really comes back to like, what problem do you want to solve for?"
+      },
+      {
+        "start": 150700,
+        "stop": 151400,
+        "text": " And in a simple way, the problem I was trying to solve with Dylan's laptop was system updates that worked every time and didn't break,"
+      },
+      {
+        "start": 151400,
+        "stop": 152000,
+        "text": " and I was sick of fixing a broken app to install. That if you run an Ubuntu install long enough,"
+      },
+      {
+        "start": 152000,
+        "stop": 152500,
+        "text": " eventually just doing updates, something breaks to install, right? It just happens. At least on all of mine it has over time."
+      },
+      {
+        "start": 152500,
+        "stop": 153000,
+        "text": " And it happened on his. And I was solving for that. So it's like, what problem are you willing to put up with?"
+      },
+      {
+        "start": 153000,
+        "stop": 153500,
+        "text": " And then there's this other element that I don't think we talk about, but it matters a lot,"
+      },
+      {
+        "start": 153600,
+        "stop": 154500,
+        "text": " and it's what's the corporate influence? Because a lot of what we're complaining about today is not really because of a technical issue,"
+      },
+      {
+        "start": 154500,
+        "stop": 155000,
+        "text": " it's because of legal issues. So what is the corporate governance look like? And what do the corporate politics look like?"
+      },
+      {
+        "start": 155000,
+        "stop": 155600,
+        "text": " And that's a whole other element you have to consider too if you really get into it. And I don't know how you explain that to people."
+      },
+      {
+        "start": 155600,
+        "stop": 156000,
+        "text": " And it's going to be different at different thresholds and different preferences for each individual."
+      },
+      {
+        "start": 156100,
+        "stop": 156900,
+        "text": " So I think the option is DistroHop for a while. I think that's why DistroHopping is so popular. It's why it's such a meme."
+      },
+      {
+        "start": 156900,
+        "stop": 157400,
+        "text": " I'm not convinced that solves it because you could try one version and have a terrible experience six months later,"
+      },
+      {
+        "start": 157400,
+        "stop": 157700,
+        "text": " have a great experience on the very same distro."
+      },
+      {
+        "start": 157700,
+        "stop": 158200,
+        "text": " I don't know. Is that true though? I mean, I think that's true for people trying it, but I don't know."
+      },
+      {
+        "start": 158200,
+        "stop": 158700,
+        "text": " I think you either have to be willing to accept what you get or be hands-on in the Linux world."
+      },
+      {
+        "start": 158800,
+        "stop": 159400,
+        "text": " Like you can't be that picky and you got to just like take what the LTS gives you and realize sometimes you're going to get old slow stuff."
+      },
+      {
+        "start": 159400,
+        "stop": 160400,
+        "text": " Or you're going to be running something like Fedora or Arch because you know how to take backups or know how to roll back software or how to deal with the paper cuts that come."
+      },
+      {
+        "start": 160400,
+        "stop": 161000,
+        "text": " I mean, maybe not, but that's usually the way I end up as a extremely jaded, using Linux for way too long person."
+      },
+      {
+        "start": 161000,
+        "stop": 161600,
+        "text": " I end up kind of approaching it. Like either this is a kiosk or it's somewhere that I fiddle."
+      },
+      {
+        "start": 161700,
+        "stop": 162300,
+        "text": " Right. It's a tinker toy or it's an appliance or another way people like to put it is a pet or it's cattle."
+      },
+      {
+        "start": 162300,
+        "stop": 162800,
+        "text": " I think what it is is when you pick a Linux distro, it's what set of problems do you want to solve for?"
+      },
+      {
+        "start": 162800,
+        "stop": 163700,
+        "text": " And Fedora has, I think, in whole, when you look at all the different distro options, a pretty good understandable set of compromises."
+      },
+      {
+        "start": 163700,
+        "stop": 164400,
+        "text": " NixOS is the one that seems to be kind of hitting my sweet spot right now."
+      },
+      {
+        "start": 164500,
+        "stop": 164700,
+        "text": " Yeah, I was just waiting for that."
+      },
+      {
+        "start": 164700,
+        "stop": 165600,
+        "text": " But there's another set of compromises there, and that is complexity in installing software and just a new paradigm that you kind of have to wrap your head around."
+      },
+      {
+        "start": 165600,
+        "stop": 166300,
+        "text": " And there's just sometimes an extra step or two. Like I downloaded a piece of software the other day."
+      },
+      {
+        "start": 166300,
+        "stop": 166900,
+        "text": " It was actually the first time I, this sounds weird, but first time I ever tried an app image on my NixOS desktop."
+      },
+      {
+        "start": 167000,
+        "stop": 167500,
+        "text": " And I was like, well, maybe just don't really use app images that much. No offense, but just don't really use them that much."
+      },
+      {
+        "start": 167500,
+        "stop": 168700,
+        "text": " And I discovered there's an app image run package in Nix that essentially creates the necessary environment for an app image to run successfully and then lets you execute the app image."
+      },
+      {
+        "start": 168700,
+        "stop": 169000,
+        "text": " It meant I don't just download an app image and double click it."
+      },
+      {
+        "start": 169000,
+        "stop": 169200,
+        "text": " Right."
+      },
+      {
+        "start": 169200,
+        "stop": 169600,
+        "text": " And it meant that when I double clicked it, because I was curious what would happen, and nothing happened."
+      },
+      {
+        "start": 169700,
+        "stop": 170600,
+        "text": " And my response can't be, well, this damn thing, God, you know, it has to be, all right, well, let's go Google this, you know, because that's what I'm going to be doing for a few minutes."
+      },
+      {
+        "start": 170600,
+        "stop": 171000,
+        "text": " And usually the solution can be found in a few minutes. And that's a different set of compromises."
+      },
+      {
+        "start": 171000,
+        "stop": 171900,
+        "text": " But those are the ones I'm living with right now, you know? That's the real, that's the success to Linux."
+      },
+      {
+        "start": 171900,
+        "stop": 172500,
+        "text": " Well, it is nice, I think, at least too, that we can, you know, distro hopping is something that does work."
+      },
+      {
+        "start": 172600,
+        "stop": 172700,
+        "text": " Yeah."
+      },
+      {
+        "start": 172700,
+        "stop": 173700,
+        "text": " So you can have backup, you can dual boot if you like, you know, find one OS that you really like for X activity and want some other LTS set up for, you know, this workflow doesn't change a lot and I just don't want to ever have to mess with it again."
+      },
+      {
+        "start": 173700,
+        "stop": 174400,
+        "text": " And since so many of our tools, especially with flatbacks and app images and containers, you can bring them with you at least."
+      },
+      {
+        "start": 174400,
+        "stop": 175100,
+        "text": " And you got the choice. And if one distro maker chooses to do something that bugs you, there's several other ones you can try."
+      },
+      {
+        "start": 175100,
+        "stop": 175300,
+        "text": " There's always Arch."
+      },
+      {
+        "start": 175500,
+        "stop": 176000,
+        "text": " linode.com/unplugged. Go there to get $100 in 60 day credit on a new account."
+      },
+      {
+        "start": 176000,
+        "stop": 177100,
+        "text": " It's a great way to support the show while you're checking out fast and reliable cloud hosting. The best in the business with real human beings behind the support number and a solid Linux infrastructure."
+      },
+      {
+        "start": 177100,
+        "stop": 178200,
+        "text": " Over 11 data centers today, right? But they're working on another dozen for next year and a whole new concept for a micro data center, too, which I'm sure we'll talk about at some point."
+      },
+      {
+        "start": 178200,
+        "stop": 179100,
+        "text": " Everything we've built for the last couple of years, we've built it on Linode in part because it's great pricing, 30 to 50 percent cheaper than the hyperscalers out there."
+      },
+      {
+        "start": 179100,
+        "stop": 179700,
+        "text": " But also the performance is better. It's not just me saying that. There's been benchmarks out there, but I've also just tested it."
+      },
+      {
+        "start": 179700,
+        "stop": 180400,
+        "text": " It really is just truly great for the price and the performance and the mix of machine that you can build."
+      },
+      {
+        "start": 180500,
+        "stop": 181200,
+        "text": " Nobody gets it. Nobody gets it like Linode. And you know, they've been at it for like 19 years practically, so that's kind of why they've really dialed it in."
+      },
+      {
+        "start": 181200,
+        "stop": 182200,
+        "text": " And I bet some of you are thinking about potentially setting up your own presence in the Fediverse, maybe deploying a matrix server or a Mastodon server."
+      },
+      {
+        "start": 182200,
+        "stop": 182800,
+        "text": " Linode's got a guide on how to set up Mastodon on Linode in a way that's going to work perfect for you."
+      },
+      {
+        "start": 182900,
+        "stop": 183600,
+        "text": " And what I love about this guide is they actually make it available for one, two, three, four different distributions."
+      },
+      {
+        "start": 183600,
+        "stop": 184400,
+        "text": " I'll link to the Ubuntu 2004 one. I don't know, personally for myself, I think that's, I'd probably be considering CentOS Stream."
+      },
+      {
+        "start": 184400,
+        "stop": 184800,
+        "text": " They have a guide for that as well. That's what I love about Linode. They're really distro agnostic."
+      },
+      {
+        "start": 184800,
+        "stop": 185200,
+        "text": " Whichever distro is going to work best for you, they're going to try to work with that."
+      },
+      {
+        "start": 185300,
+        "stop": 185900,
+        "text": " If anybody ever gets stuck, they got the best support in the business that's available 365, seven days a week."
+      },
+      {
+        "start": 185900,
+        "stop": 186600,
+        "text": " I think it's probably the best out there. Nobody else has built that because nobody else had to compete at that level."
+      },
+      {
+        "start": 186600,
+        "stop": 187300,
+        "text": " And when you get that $100 by going to linode.com/unplugged, you can actually try out the different features of Linode and see why we love it so much."
+      },
+      {
+        "start": 187300,
+        "stop": 187600,
+        "text": " See why we deploy stuff on there all the time."
+      },
+      {
+        "start": 187700,
+        "stop": 189400,
+        "text": " Honestly, the one way you can really, one of the ways, not the one way, but one of the ways you can really tell that we trust Linode is when we do live things like Deep Fusion image generation or SSHing into a box publicly and having everyone on a livestream try to figure out how we broke Docker."
+      },
+      {
+        "start": 189400,
+        "stop": 190000,
+        "text": " We always do those events on Linode hardware because it's the only thing that holds up to it."
+      },
+      {
+        "start": 190100,
+        "stop": 191100,
+        "text": " And it just, it's so impressive every single time. So go try it, support the show, build something or learn something. It's a great platform for learning things as well."
+      },
+      {
+        "start": 191100,
+        "stop": 191800,
+        "text": " Linode.com/unplugged. Get the $100, try it out, support the show. Linode.com/unplugged."
+      },
+      {
+        "start": 192300,
+        "stop": 193200,
+        "text": " We got some baller boost this week to support the show. Wise Papa John came in with our first big boost, 40,000. Sats?"
+      },
+      {
+        "start": 193200,
+        "stop": 193500,
+        "text": " Keep the change, you filthy animal."
+      },
+      {
+        "start": 193500,
+        "stop": 194400,
+        "text": " Here's 40,000 for a hard G in GIF. And also, Matrix can be a little intimidating for new users."
+      },
+      {
+        "start": 194500,
+        "stop": 195500,
+        "text": " I feel something that's like more mainstream type social apps, aka Mastodon, might make the audience interaction a little more approachable for the newbies."
+      },
+      {
+        "start": 195500,
+        "stop": 196400,
+        "text": " It also could be another way to discover old show topics. I'm thinking a social media post for each new episode with a comments thread and whatnot."
+      },
+      {
+        "start": 196400,
+        "stop": 196900,
+        "text": " Yeah, this Mastodon topic is going to come up again today later in the show."
+      },
+      {
+        "start": 197000,
+        "stop": 197700,
+        "text": " It's a big hot topic right now because as we record this episode, Twitter's a fiasco. People are trying out Mastodon in numbers."
+      },
+      {
+        "start": 197700,
+        "stop": 197900,
+        "text": " The whole Pandora Zoo, not just the box."
+      },
+      {
+        "start": 197900,
+        "stop": 198800,
+        "text": " Yeah, Pandora Zoo is a good way to put it. And so I've noticed that the Podcasting 2.0 show does this. They do a Mastodon post as a comments thread section."
+      },
+      {
+        "start": 198800,
+        "stop": 199000,
+        "text": " Oh yeah, sure."
+      },
+      {
+        "start": 199100,
+        "stop": 200400,
+        "text": " We could probably talk to Alex Gates, the Podcasting 2.0 consultant on Office Hours more about this, but there is also work on cross podcasting app comments using ActivityPub."
+      },
+      {
+        "start": 200400,
+        "stop": 200600,
+        "text": " I like that. That sounds like a nice idea."
+      },
+      {
+        "start": 200600,
+        "stop": 201200,
+        "text": " Yeah, so they could be like \"Power to the Federation!\" Which I think would be really cool."
+      },
+      {
+        "start": 201300,
+        "stop": 202400,
+        "text": " So we'll keep an eye on that development and maybe that kind of stuff could pull us in. Or maybe I should just start using my Mastodon account on the Podcasting 2.0 social thing."
+      },
+      {
+        "start": 202400,
+        "stop": 203100,
+        "text": " I mean I could. I don't know. Matrix has worked so well for me because I can dip in and dip out, but I realize that's the exact opposite for some people."
+      },
+      {
+        "start": 203100,
+        "stop": 203600,
+        "text": " They don't want something that's moving all the time. Me, I just dip in."
+      },
+      {
+        "start": 203700,
+        "stop": 204300,
+        "text": " Sometimes you feel real chatty or broadcasty and you want to follow up on what's been going on. Some days you don't."
+      },
+      {
+        "start": 204300,
+        "stop": 204900,
+        "text": " But I get it. I get it. And then we got another Baller Boost from John A. He's back!"
+      },
+      {
+        "start": 204900,
+        "stop": 205200,
+        "text": " Hey Rich Lifestyle!"
+      },
+      {
+        "start": 205200,
+        "stop": 205900,
+        "text": " 25,000 sats and he says \"I'm back baby.\" Yes you are John A. It's nice to see you again. Thank you for the support."
+      },
+      {
+        "start": 205900,
+        "stop": 206600,
+        "text": " I hope you can make it over here before the snow gets too high. It's going to be tricky over those passes soon."
+      },
+      {
+        "start": 206600,
+        "stop": 207400,
+        "text": " I also want to mention that the Baller support has really been great for the show in terms of discovery."
+      },
+      {
+        "start": 207400,
+        "stop": 207900,
+        "text": " We've got new listeners that find us because your boosts put us high on the Fountain charts."
+      },
+      {
+        "start": 207900,
+        "stop": 209000,
+        "text": " And pretty neat is I have a call scheduled with some of the Fountain FM leadership on Tuesday next week because they've noticed we're so frequently on the top boosted charts."
+      },
+      {
+        "start": 209000,
+        "stop": 209300,
+        "text": " And they're like \"Well we've got to talk to Chris more.\" That's wonderful."
+      },
+      {
+        "start": 209400,
+        "stop": 209700,
+        "text": " I'm going to take some feedback that I've been hearing from the audience and talk with them about it."
+      },
+      {
+        "start": 209700,
+        "stop": 211000,
+        "text": " But as a podcaster that does this for a living, where my actual livelihood depends on this, having these channels of communications with the app developers are kind of really important and critical."
+      },
+      {
+        "start": 211000,
+        "stop": 211800,
+        "text": " And so your boosts put us up on those charts. We had new audience find us and the developers of Fountain FM we got their attention to."
+      },
+      {
+        "start": 211800,
+        "stop": 212200,
+        "text": " And now we're going to have an ongoing dialogue with them thanks to your support and the boosts."
+      },
+      {
+        "start": 212300,
+        "stop": 212500,
+        "text": " I really love how it's working. I really appreciate it."
+      },
+      {
+        "start": 212500,
+        "stop": 212700,
+        "text": " It's like a little audience vouch."
+      },
+      {
+        "start": 212700,
+        "stop": 213600,
+        "text": " Yeah. It's a real clear signal is what it is. It's better than any algorithm that the platform maker could come up with."
+      },
+      {
+        "start": 213600,
+        "stop": 213800,
+        "text": " It's better than upvotes."
+      },
+      {
+        "start": 213800,
+        "stop": 214000,
+        "text": " Yeah upvotes are cheap."
+      },
+      {
+        "start": 214000,
+        "stop": 215000,
+        "text": " Yeah it's better than a thumbs up or a retweet. It's a real signal because people use their sats and it's a data point of enthusiasm and people take note. It's really cool."
+      },
+      {
+        "start": 215100,
+        "stop": 216100,
+        "text": " And we appreciate it. The sats are cheap. They'll probably be cheap for a while. Don't buy a bunch but just grab a handful and send them our way with a new podcast app at newpodcastapps.com."
+      },
+      {
+        "start": 216100,
+        "stop": 217400,
+        "text": " I wanted to follow up on a couple of items and one that just I haven't really seen much discussion and it's kind of been developing I think for about a year."
+      },
+      {
+        "start": 217500,
+        "stop": 219100,
+        "text": " And I've been hoping that we'd get some sort of official announcement from Canonical on the state of ZFS in Ubuntu because it seems that they are transitioning away from some of the tooling that they have created to manage ZFS, specifically the Z-SYS tooling."
+      },
+      {
+        "start": 219100,
+        "stop": 219600,
+        "text": " And it's even kind of in a deprecated, barely maintained state."
+      },
+      {
+        "start": 219700,
+        "stop": 220800,
+        "text": " There's even potentially some bugs that are impacting data and it doesn't really seem advisable to continue to use Z-SYS with ZFS on Ubuntu."
+      },
+      {
+        "start": 220800,
+        "stop": 221200,
+        "text": " I don't know what it means for the long term ZFS on Ubuntu in general."
+      },
+      {
+        "start": 221200,
+        "stop": 221600,
+        "text": " Wes I know you sniffed around a little bit. Can you kind of summarize what you found?"
+      },
+      {
+        "start": 221700,
+        "stop": 222900,
+        "text": " Yeah it just seems like internally at least at Canonical there's no longer a lot of prioritization around Z-SYS so it hasn't had any active development."
+      },
+      {
+        "start": 222900,
+        "stop": 223900,
+        "text": " And then people started noticing that there had been various issues in launchpads suggesting like \"well we're not working on this, we're still installing it with the installer. We should probably update this. We should clean this up. We're not going to be maintaining it though and probably shouldn't be installing it.\""
+      },
+      {
+        "start": 224100,
+        "stop": 225300,
+        "text": " So it doesn't seem like there's any indication of like so far anything changing in terms of shipping the ZFS precompiled module, keeping that in sync with the kernels they deliver, all of that good stuff we had since 2016."
+      },
+      {
+        "start": 225300,
+        "stop": 226900,
+        "text": " But in terms of their more ambitious sort of deeply integrating ZFS with the desktop experience with the base underpinnings of the system, not a bright future there at least at the moment would be my guess."
+      },
+      {
+        "start": 227000,
+        "stop": 228000,
+        "text": " Yeah it seems that the team has just been reprioritized. They're focused on other things and this tooling just isn't a big priority. But it's funny because these things come triumphantly."
+      },
+      {
+        "start": 228000,
+        "stop": 229100,
+        "text": " We get this big triumphant introduction of a feature set and it's really cool and we talk about it and then sometimes things change and they just quietly fade away."
+      },
+      {
+        "start": 229200,
+        "stop": 230600,
+        "text": " It's like no one's really been working on this since late 2021 and there's just been a couple of wham bam fixes to just kind of cram into the installer, but now like you say, there's a launchpad ticket right here to just remove ZSIS from the installer altogether."
+      },
+      {
+        "start": 230700,
+        "stop": 233600,
+        "text": " That feels like a downgrade to me. And I wonder what your opinion is in terms of, well they should have gone with ButterFS, because that was the first thing I thought of. Not just because of the kernel module stuff and the licensing stuff, but to me it felt like if Fedora and Ubuntu were working on tooling together around ButterFS and SUSE is out there working on tooling around ButterFS and we have these three large distro makers that just standardized on ButterFS."
+      },
+      {
+        "start": 233600,
+        "stop": 234600,
+        "text": " Not only would that likely help us improve ButterFS even further, but then if one of them faded, we still have other vendors in the mix."
+      },
+      {
+        "start": 234600,
+        "stop": 236300,
+        "text": " But now what we have is we have Ubuntu with ZFS with tooling that's just kind of being deprecated. We've got SUSE that's doing their own thing integrated with their own package installer with their own setup on ButterFS, which is probably the most mature."
+      },
+      {
+        "start": 236400,
+        "stop": 237800,
+        "text": " And then we've got Fedora that's moved the ball forward since '33, but not significantly. We're not seeing after you complete a DNF install snapshots that you can then go boot from Grub or anything like that, which it clearly could be if they continue to iterate on it."
+      },
+      {
+        "start": 237800,
+        "stop": 239000,
+        "text": " We've just got three different kinds of hodgepodge with OpenSUSE in the best condition. And I just look at this whole thing and I go, well, you know, when they announced this my first thought was, boy it'd be great if they all just went in on ButterFS."
+      },
+      {
+        "start": 239100,
+        "stop": 239800,
+        "text": " And now we're at the end where they're apparently deprecating ZSIS and my thought is, God, it would have been great if they just would have gone with ButterFS."
+      },
+      {
+        "start": 239800,
+        "stop": 240700,
+        "text": " Yeah, but does it ever work that way? ZFS is kind of their sauce, their thing that they know they can bring that other distros can't or won't."
+      },
+      {
+        "start": 240800,
+        "stop": 242400,
+        "text": " Plus, I mean, we know, not necessarily in a bad way, they've made some very nice tools that I like a lot, but Canonical has a particular way that they build tooling and approach and tool chains that they want to use, right? They've got people who know how to use, you know, it seems they use Go a lot for a lot of these tools, but they've got, you know, particular ways to go about and build these things."
+      },
+      {
+        "start": 242400,
+        "stop": 243600,
+        "text": " To me it just makes me think it's kind of that ebb and flow that we see, you know, at a time maybe there's a little more interest in some of this like enterprise-y desktop and that space, and maybe that's just kind of faded a bit recently."
+      },
+      {
+        "start": 243700,
+        "stop": 245100,
+        "text": " Well, you know how I found out about this is if you ask the folks at the Open ZFS project, they'll just tell you to just avoid Ubuntu now. And they have on their front page like news about, at least they did this weekend, news about how this is being deprecated and don't use it."
+      },
+      {
+        "start": 245100,
+        "stop": 246400,
+        "text": " It doesn't seem like that's in a good place, that relationship, that doesn't seem like a healthy thing because when you have like the upstream project saying, \"Oh, yeah, just don't use Ubuntu,\" even though they're still shipping the kernel module, that's the..."
+      },
+      {
+        "start": 246500,
+        "stop": 246700,
+        "text": " It should be probably one of the better experiences."
+      },
+      {
+        "start": 246700,
+        "stop": 246900,
+        "text": " I think it actually is."
+      },
+      {
+        "start": 246900,
+        "stop": 248100,
+        "text": " We'll have links to the launchpad issue as well as the issue on the ZSIS project itself where the user ran into a data loss bug."
+      },
+      {
+        "start": 248100,
+        "stop": 248700,
+        "text": " But I want to do another follow-up story. I'd be curious to know what the audience thinks and what their experiences with ZFS there."
+      },
+      {
+        "start": 248800,
+        "stop": 250000,
+        "text": " And honestly, if anybody's impacted by the deprecation of the ZSIS tooling, did that really take off? Maybe that's an element. Maybe it just got really low adoption or something. I don't know if they could measure that."
+      },
+      {
+        "start": 250000,
+        "stop": 251000,
+        "text": " I did see some folks in the various discourses and stuff wondering like, \"What are the KPIs you want to see? How do we tell you? Some people really like this.\" I don't know if we have a clear signal on that."
+      },
+      {
+        "start": 251100,
+        "stop": 252300,
+        "text": " I think that could be part of it too. Well, send us some signal if you have an opinion out there, dear audience. And then I want to go back to the topic of these Deep Fusion generated images and the Deepfake audio."
+      },
+      {
+        "start": 252400,
+        "stop": 254200,
+        "text": " Listener CB had a lot of fun generating some images that are creepy, eerie, close to me. Like the first one in this album that I'll link to in the show notes, I think if I sent that to you, you would think that actually was me riding a penguin."
+      },
+      {
+        "start": 254200,
+        "stop": 254500,
+        "text": " Totally would. I'm disappointed it wasn't you."
+      },
+      {
+        "start": 254600,
+        "stop": 256100,
+        "text": " There's me talking to a penguin. There's also me watching myself on the screen. Also happens. Very, very interesting stuff. But of course, this here is an Audia podcast and Listener CB generated something that is pretty close to the real thing."
+      },
+      {
+        "start": 256100,
+        "stop": 256700,
+        "text": " So are you ready to hear what the current state of Deepfake Chris after it's been trained on our podcast sounds like?"
+      },
+      {
+        "start": 256800,
+        "stop": 257600,
+        "text": " I decided to create a virtual Chris Fisher. So I'm going forward. I do not need to do these podcasts anymore. And I can just go on vacation the real likes."
+      },
+      {
+        "start": 257600,
+        "stop": 258400,
+        "text": " Ah, I mean, you can kind of understand it right after you started listening for a few seconds. It starts to make sense that vacation day might be coming there, Wes."
+      },
+      {
+        "start": 258400,
+        "stop": 258800,
+        "text": " It kind of sounds like a Chris Fisher on his third podcast of the day."
+      },
+      {
+        "start": 258800,
+        "stop": 259100,
+        "text": " I thought you were going to say third drink of the day."
+      },
+      {
+        "start": 259100,
+        "stop": 259700,
+        "text": " Well, you know, that's also the third drink. What are you doing a show without any fun? Come on."
+      },
+      {
+        "start": 259700,
+        "stop": 260400,
+        "text": " And then here CB sent in what he believes is the value for value exchange for this experiment he engaged in."
+      },
+      {
+        "start": 260400,
+        "stop": 260800,
+        "text": " So I need to acknowledge some value that will listen or send in over and down."
+      },
+      {
+        "start": 260800,
+        "stop": 261400,
+        "text": " The little sir Chris had created some Deepfake some and I just want to say that his contribution is worth more than nine hundred thousand."
+      },
+      {
+        "start": 261400,
+        "stop": 261700,
+        "text": " Coming in hot with the booth."
+      },
+      {
+        "start": 261700,
+        "stop": 262000,
+        "text": " Over nine thousand. It's obviously a little rough."
+      },
+      {
+        "start": 262000,
+        "stop": 262300,
+        "text": " But what about in a year? Right."
+      },
+      {
+        "start": 262300,
+        "stop": 262600,
+        "text": " What about even in a year? Isn't that something?"
+      },
+      {
+        "start": 262600,
+        "stop": 262900,
+        "text": " A little more effort, you know, it's a more build a bigger, bigger data set."
+      },
+      {
+        "start": 262900,
+        "stop": 263600,
+        "text": " I'm going to play the first one again, and I think it does actually capture some of my tone."
+      },
+      {
+        "start": 263600,
+        "stop": 263900,
+        "text": " Lissert Chris decided to create a virtual Chris Fisher."
+      },
+      {
+        "start": 263900,
+        "stop": 264200,
+        "text": " So going forward, I do not need to do these podcasts anymore."
+      },
+      {
+        "start": 264200,
+        "stop": 264800,
+        "text": " And I can just go on vacation the real likes. Isn't that remarkable? That's a lot of fun."
+      },
+      {
+        "start": 264800,
+        "stop": 265000,
+        "text": " I would let that guy like guide me through a phone tree."
+      },
+      {
+        "start": 265000,
+        "stop": 265400,
+        "text": " Yeah, you could totally see that. Welcome to people to bring anything."
+      },
+      {
+        "start": 265500,
+        "stop": 265800,
+        "text": " Press one like a version where you get Linux action news, but you have to call the hotline."
+      },
+      {
+        "start": 265800,
+        "stop": 266200,
+        "text": " Like like telephone banking, but it's telephone Linux news."
+      },
+      {
+        "start": 266200,
+        "stop": 266500,
+        "text": " Yeah, exactly. Member special."
+      },
+      {
+        "start": 266500,
+        "stop": 266700,
+        "text": " Yeah. Press two if you're a member."
+      },
+      {
+        "start": 266700,
+        "stop": 266900,
+        "text": " Enter your member code."
+      },
+      {
+        "start": 266900,
+        "stop": 267400,
+        "text": " You guys will have to if you I mean, if you care, you'll have to look at that handsome gentleman."
+      },
+      {
+        "start": 267400,
+        "stop": 267700,
+        "text": " I know some of the images that generated are really something."
+      },
+      {
+        "start": 267700,
+        "stop": 268000,
+        "text": " Me talking to penguins is a theme, which is great."
+      },
+      {
+        "start": 268100,
+        "stop": 269200,
+        "text": " One thing that I do really appreciate about the AI is that it the one thing it really honed in on that's consistent is wait, I'm overweight, but two, the hair."
+      },
+      {
+        "start": 269200,
+        "stop": 269700,
+        "text": " The hair is consistently good. It really really it really does that quite well."
+      },
+      {
+        "start": 269700,
+        "stop": 270100,
+        "text": " Also, you could learn a couple styling tips from AI Chris, I think."
+      },
+      {
+        "start": 270100,
+        "stop": 270400,
+        "text": " I am also I was just gonna say I look good in a military uniform."
+      },
+      {
+        "start": 270400,
+        "stop": 270800,
+        "text": " Like this is the right look for me. Hoodie, not so great."
+      },
+      {
+        "start": 270900,
+        "stop": 271300,
+        "text": " Military uniform. Editor in chief or commander in chief."
+      },
+      {
+        "start": 271300,
+        "stop": 271700,
+        "text": " Yeah, I guess my I guess my uniform left. I've been working on building a personal uniform."
+      },
+      {
+        "start": 271700,
+        "stop": 272300,
+        "text": " I'm gonna have to just go for like the you know, like the actual like military style, you know, because it looks good."
+      },
+      {
+        "start": 272300,
+        "stop": 272900,
+        "text": " It looks good. Yeah, I feel like I want to set up another one of these deep fusion instances."
+      },
+      {
+        "start": 272900,
+        "stop": 273100,
+        "text": " Oh, yeah. We're not as too much fun."
+      },
+      {
+        "start": 273100,
+        "stop": 273400,
+        "text": " It was a lot of fun. It was a lot of fun for screwing around."
+      },
+      {
+        "start": 273500,
+        "stop": 274500,
+        "text": " We use it for just low key stuff like over at Jupiter.Tube all of the you know, instead of doing like silly YouTube thumbnails, we just generate a silly AI image."
+      },
+      {
+        "start": 274500,
+        "stop": 274700,
+        "text": " Why not? It's been working pretty good."
+      },
+      {
+        "start": 274700,
+        "stop": 275900,
+        "text": " bitwarden.com/linux. Go there right now to get started with a free trial for a team or an enterprise or try it as an individual by going to bitwarden.com/linux."
+      },
+      {
+        "start": 276000,
+        "stop": 276500,
+        "text": " I haven't mentioned this before, but enterprise plans include complementary family plans."
+      },
+      {
+        "start": 276500,
+        "stop": 277200,
+        "text": " So that's a great way to extend security not only to your entire organization, but to also to your team members, your co workers at home."
+      },
+      {
+        "start": 277200,
+        "stop": 277800,
+        "text": " So if you haven't advocated for bitwarden at your organization yet, that might be a great direction to go and send them to bitwarden.com/linux."
+      },
+      {
+        "start": 277800,
+        "stop": 278400,
+        "text": " It's the easiest way to store, share and sync your sensitive data and bitwarden is open source."
+      },
+      {
+        "start": 278400,
+        "stop": 278700,
+        "text": " It's trusted by millions of us in the community. It's what Wes and I use all the time."
+      },
+      {
+        "start": 278800,
+        "stop": 279400,
+        "text": " I'm using it now for my two factor codes as well, which makes that so much more reliable for me, especially the way I move machines."
+      },
+      {
+        "start": 279400,
+        "stop": 280200,
+        "text": " You can use it for other sensitive data too, like account recovery keys or other types of secrets that either want to store in one secure central place that you can trust."
+      },
+      {
+        "start": 280200,
+        "stop": 280900,
+        "text": " Or also something maybe like a secret you might need to share with a team member or a friend or a family member at some point or a spouse."
+      },
+      {
+        "start": 280900,
+        "stop": 281500,
+        "text": " Bitwarden is fantastic for that while not messing up your whole opsec, as they say."
+      },
+      {
+        "start": 281600,
+        "stop": 282600,
+        "text": " And the mobile clients have made it really feasible to have secure passwords, unique usernames and unique email addresses for every site, service or even app you use."
+      },
+      {
+        "start": 282600,
+        "stop": 283200,
+        "text": " Which is fantastic since I'm moving between my desktop and my mobile devices all the time."
+      },
+      {
+        "start": 283200,
+        "stop": 284400,
+        "text": " And bitwarden's rolling out features every single month, including they just recently rolled out DuckDuckGo email aliasing, support for fast mails, email alias, password protected encrypted exports."
+      },
+      {
+        "start": 284500,
+        "stop": 284900,
+        "text": " I'd love to see them working more with DuckDuckGo too. I think that's a real positive sign."
+      },
+      {
+        "start": 284900,
+        "stop": 285400,
+        "text": " So go try it out for free right now by going to bitwarden.com/linux."
+      },
+      {
+        "start": 285400,
+        "stop": 286700,
+        "text": " You sign up there or if you've already taken care of this, and I hope you have because a password manager and something like Bitwarden that can help you store your secrets and all your sensitive data very securely that you can trust,"
+      },
+      {
+        "start": 286700,
+        "stop": 287200,
+        "text": " that's just an absolute critical tool for staying safe and secure online."
+      },
+      {
+        "start": 287300,
+        "stop": 287700,
+        "text": " I don't know about this. You probably do, but I bet you have a friend or a family member."
+      },
+      {
+        "start": 287700,
+        "stop": 288100,
+        "text": " Maybe it's a branch. Maybe it's somewhere you work. I don't know. Maybe they need a little convincing."
+      },
+      {
+        "start": 288100,
+        "stop": 289100,
+        "text": " So have them go try it. bitwarden.com/linux. It's good for you. It's good for the Internet. It's true too. bitwarden.com/linux."
+      },
+      {
+        "start": 289400,
+        "stop": 290300,
+        "text": " As always, we got some great feedback this week, but we do have a special little something from listener Jeff. Let's just call it a geocache update for the Folsom location."
+      },
+      {
+        "start": 290300,
+        "stop": 291500,
+        "text": " Captain, I am on location at the Sacramento geocache. It is missing. I repeat, missing. Abort the search. It is no longer here. It has been found. Data conclusive."
+      },
+      {
+        "start": 291600,
+        "stop": 293000,
+        "text": " Thank you, Jeff. So, of course, for those of you who just need to be caught up, Chris was right all along. Folsom was one of our first successful, maybe the second successful geocache that was found by an audience member."
+      },
+      {
+        "start": 293000,
+        "stop": 294400,
+        "text": " That's clearly what happened. And Jeff went on location to verify and he confirmed via visual data that the Folsom Linux unplugged cache has been discovered, like I knew all along."
+      },
+      {
+        "start": 294500,
+        "stop": 294900,
+        "text": " But there was kind of another kind of funny coincidence while he was there, Brent."
+      },
+      {
+        "start": 294900,
+        "stop": 295700,
+        "text": " Yeah, he ran into listener Jared again and his family. And that's the second time that happens at that particular location, which I think is super fun."
+      },
+      {
+        "start": 295700,
+        "stop": 296700,
+        "text": " That is so great. Jeff mentioned that listener Jared's daughter, I think, or son ran up, one of the kids. Are you looking for the JBG?"
+      },
+      {
+        "start": 296700,
+        "stop": 296900,
+        "text": " That's adorable."
+      },
+      {
+        "start": 296900,
+        "stop": 297200,
+        "text": " Second time that happens. So good."
+      },
+      {
+        "start": 297300,
+        "stop": 297600,
+        "text": " I mean, if you're going to meet strangers in the woods, I would hope they're fans."
+      },
+      {
+        "start": 297600,
+        "stop": 298900,
+        "text": " I think we got to do more of these. We should have given Jeff a geocache. We needed, you know, oh, oh, what we need are geocache bundles that we can mail out to listeners that they could stash in their general areas."
+      },
+      {
+        "start": 298900,
+        "stop": 299100,
+        "text": " Now you're talking."
+      },
+      {
+        "start": 299100,
+        "stop": 299300,
+        "text": " That's what we need to do."
+      },
+      {
+        "start": 299300,
+        "stop": 299500,
+        "text": " I bet the listeners will be way better at hiding geocaches than we are."
+      },
+      {
+        "start": 299600,
+        "stop": 300700,
+        "text": " So what we need to do is we could have somebody email into the show and let us know if you want to do this, see if anybody's interested. And what we could do is we basically send you a little Tupperware container full of swag that you hide in your area."
+      },
+      {
+        "start": 300700,
+        "stop": 301600,
+        "text": " Then you've got to send us video of you, like kind of in the area, hiding it. But we don't want to give away the location exactly. So you just give us a little narration of where it's at."
+      },
+      {
+        "start": 301600,
+        "stop": 302100,
+        "text": " You know, this is what you'd have to do if you want to participate in this. So that way we can play the clip to give people a hint."
+      },
+      {
+        "start": 302100,
+        "stop": 302300,
+        "text": " Yeah, craft your clue."
+      },
+      {
+        "start": 302400,
+        "stop": 302700,
+        "text": " And then let us know. And we could send a few of these out, I think."
+      },
+      {
+        "start": 302700,
+        "stop": 303100,
+        "text": " Oh, it's great to know I was right about the Folsom cache. That's good. That's good."
+      },
+      {
+        "start": 303100,
+        "stop": 305100,
+        "text": " We also got some mail this week. Benjamin wrote in about Jupiter.Tube. And I think he's looking for some peers. He writes, \"For me over here in the UK, I rarely see more than two peers, usually one, and I get about 15K down if I'm lucky during live LUP streams."
+      },
+      {
+        "start": 305200,
+        "stop": 305900,
+        "text": " So it's usually two seconds of video playback, a minute or so of buffering, and just repeat that cycle."
+      },
+      {
+        "start": 305900,
+        "stop": 306600,
+        "text": " None of the other RTMP, RTSP, or radio streams seem to work for me either, so I rely on the YouTube streams for the most part."
+      },
+      {
+        "start": 306600,
+        "stop": 307400,
+        "text": " I can, however, watch the published stream the next day without any problems from JupiterTube, so just not when it's live.\""
+      },
+      {
+        "start": 307400,
+        "stop": 307600,
+        "text": " Well now that is interesting."
+      },
+      {
+        "start": 307600,
+        "stop": 307800,
+        "text": " Yeah, strange."
+      },
+      {
+        "start": 307800,
+        "stop": 308100,
+        "text": " You're able to pull data from that server."
+      },
+      {
+        "start": 308100,
+        "stop": 309000,
+        "text": " How does that make any sense? Because when it's live, it's doing a web torrent from that server anyways, so it's still coming from the server if there's no peers."
+      },
+      {
+        "start": 309000,
+        "stop": 309300,
+        "text": " So how does that make any sense?"
+      },
+      {
+        "start": 309300,
+        "stop": 309600,
+        "text": " Yeah, and it should just grab the HLS files at the end of the day, right?"
+      },
+      {
+        "start": 309600,
+        "stop": 309700,
+        "text": " Yeah."
+      },
+      {
+        "start": 309800,
+        "stop": 311500,
+        "text": " This feels to me like one of those pieces of mail that gets us trying to figure out a problem that we didn't know existed, because we've had listeners, especially in the Mumble Room, who have used JupiterTube while we're live for the most part, and it's not, you know, we've had to add a peer or two, but it's for the most part, I think, working."
+      },
+      {
+        "start": 311500,
+        "stop": 312100,
+        "text": " Yeah, it would be nice to have more people kind of taking us up on the JupiterTube peering stuff."
+      },
+      {
+        "start": 312200,
+        "stop": 314300,
+        "text": " I understand it's tricky, because in some circumstances YouTube or Twitch just works better, or it's what you have an app for or whatever, but, you know, these self-hosted open source platforms are only as successful as the user base for them, and it's like if anybody's going to use them, it's probably going to be us, so we should try to actually be there to be customers for these things and demonstrate a demand."
+      },
+      {
+        "start": 314400,
+        "stop": 316000,
+        "text": " And we could use more people peering, but the other thing that I think is doable, and maybe somebody out there knows the way, we've gotten close, is a way to essentially set up our own peers, like maybe a headless linode that we deploy somewhere in the world that's just adding a peer over there."
+      },
+      {
+        "start": 316100,
+        "stop": 317400,
+        "text": " And it's not just as simple as a web torrent, it is also, so at PeerTube, it uses torrents to distribute the HLS files, and it uses WebRTC to communicate something in some data channel."
+      },
+      {
+        "start": 317400,
+        "stop": 318700,
+        "text": " So you have to have a WebRTC communications channel as well, and there is an Electron app there that does, like, that does seeding and does the WebRTC stuff, but you can't run that headless."
+      },
+      {
+        "start": 318800,
+        "stop": 319400,
+        "text": " Maybe we can. Anyways, if people out there have tips for us or want to just participate..."
+      },
+      {
+        "start": 319400,
+        "stop": 319700,
+        "text": " But we need to update it with each new livestream too, huh?"
+      },
+      {
+        "start": 319700,
+        "stop": 320700,
+        "text": " Jupyter.Tube, though, that's our perTube instance, where we video stream the recording of our shows and then we archive them over there for playback if people would like."
+      },
+      {
+        "start": 320800,
+        "stop": 322300,
+        "text": " So, Roden with a potential Odroid killer, he says, \"What do you guys think of this particular single-board computer? Has Intel Nix, six serial ATA ports, doesn't quite have RAID support, but might just be an option for JB?\""
+      },
+      {
+        "start": 322300,
+        "stop": 323600,
+        "text": " The N5105 or the N6005 NAS board, it does look really good. You know what is nice? It's Intel Nix, and way more SATA."
+      },
+      {
+        "start": 323700,
+        "stop": 324700,
+        "text": " Yeah, that's pretty sweet. So the base price is 195 US greenbacks, then it looks like it goes up to about 480, depending on when you buy it and what you spec it with."
+      },
+      {
+        "start": 324700,
+        "stop": 325300,
+        "text": " Yeah, you can either get a Celeron N5105 or a Pentium N6005."
+      },
+      {
+        "start": 325300,
+        "stop": 325900,
+        "text": " It's got NVMe, that looks good, DDR4, that looks good, lots of SATA."
+      },
+      {
+        "start": 325900,
+        "stop": 326100,
+        "text": " Yeah, dual M.2s, looks like."
+      },
+      {
+        "start": 326200,
+        "stop": 326800,
+        "text": " There's so many USB ports that this freaking thing have too or whatever, there's just a ton of ports on this thing. Yeah, this looks really nice."
+      },
+      {
+        "start": 326800,
+        "stop": 327700,
+        "text": " This is always the problem, there's always so many options. And this came up with the Raspberry Pi too, as soon as you mentioned you got a Raspberry Pi, there's like, \"Oh, have you tried this?\""
+      },
+      {
+        "start": 327700,
+        "stop": 328400,
+        "text": " And sometimes it's like there are better ones, and this could be a better one. And then sometimes you want to get behind the one that has a bit of an ecosystem."
+      },
+      {
+        "start": 328400,
+        "stop": 329100,
+        "text": " Right, do you have case option, what's the form factor, what do you know about the manufacturer, are they going to stick around?"
+      },
+      {
+        "start": 329100,
+        "stop": 330100,
+        "text": " Yeah, yeah, ugh, it's hard. This is a hard choice to make. And we're not even done yet because we want to replace a couple machines here in the studio too. We don't want big computers."
+      },
+      {
+        "start": 330100,
+        "stop": 330700,
+        "text": " I think we've got to crowdsource it, right? People just got to start buying these things and let us know. Does it work really well?"
+      },
+      {
+        "start": 330700,
+        "stop": 331100,
+        "text": " Yeah, we just have people buy a whole bunch of different ones and we can get feedback."
+      },
+      {
+        "start": 331100,
+        "stop": 331400,
+        "text": " We can all run the Phronix test suite on them, get a big comparison suite going."
+      },
+      {
+        "start": 331500,
+        "stop": 332400,
+        "text": " Well, I think to add one more to the pile, Matthew also wrote in just about at the same time and suggested a Nexcom mini PC. He writes,"
+      },
+      {
+        "start": 332400,
+        "stop": 333100,
+        "text": " \"Chris has been talking about that O-Droid on Linux Unplugged and self-hosted quite a bit, and I wanted to suggest the Nexcom devices."
+      },
+      {
+        "start": 333100,
+        "stop": 334000,
+        "text": " They're an industrial, mostly fanless x86 platform for a variety of applications. In particular, I use the Nexcom NDIS device."
+      },
+      {
+        "start": 334100,
+        "stop": 334800,
+        "text": " It's meant to be a signage player, but I use the device as a fanless application server running Ubuntu Server, and I love the thing."
+      },
+      {
+        "start": 334800,
+        "stop": 335700,
+        "text": " Mine is an i5 based PC and it's gone as far as testing 4k Plex transcodes, and it handles a couple of the transcodes at the same time without issue."
+      },
+      {
+        "start": 335700,
+        "stop": 336300,
+        "text": " Praise Quicksync! The device can be had on eBay relatively cheaply. You should give them a gander.\""
+      },
+      {
+        "start": 336400,
+        "stop": 337100,
+        "text": " Alright, jeez. Yeah, this is the way, if you ever want to find out what's really great out there, you buy something, get really hyped about it, and then you'll discover all the other options."
+      },
+      {
+        "start": 337100,
+        "stop": 338000,
+        "text": " But some of these are really cool. I dig the built-in heatsink and the mounts and the DC power. Oh man, that's checking a box."
+      },
+      {
+        "start": 338000,
+        "stop": 338200,
+        "text": " We could just screw that onto the back of you."
+      },
+      {
+        "start": 338200,
+        "stop": 338700,
+        "text": " I feel like we almost need a tiny PC library. You can just check one out for a week or two. Give it a try."
+      },
+      {
+        "start": 338800,
+        "stop": 340000,
+        "text": " I am really enjoying the small, low power PC. It's one thing to get a crazy fast, I mean that's great, I absolutely love that too, but there's just something about these that are just enough machine."
+      },
+      {
+        "start": 340000,
+        "stop": 341000,
+        "text": " Just enough machine, not drawing too much power, which is another big thing for me. I feel like there's a big future in playing around with that kind of hardware and seeing how much Linux you can get."
+      },
+      {
+        "start": 341000,
+        "stop": 341400,
+        "text": " You're just going to try to fill all of your places with as many tiny little PCs now, aren't you?"
+      },
+      {
+        "start": 341500,
+        "stop": 342200,
+        "text": " Yeah man, yeah. I mean, why have big computers when you can have lots of small little computers? That's my thinking there, right?"
+      },
+      {
+        "start": 342200,
+        "stop": 342500,
+        "text": " Swarm, swarm! Boost to Graham."
+      },
+      {
+        "start": 342500,
+        "stop": 343400,
+        "text": " Alright, we got some big ol' boosts into the show this week that we want to cover, and then I kind of also want to talk about, just as an aside, this whole FTX situation."
+      },
+      {
+        "start": 343500,
+        "stop": 345100,
+        "text": " If you're curious what's going on there, why this whole ****coin casino crashed around them, we just published an episode of the Bitcoin Dad Pod, and you can find that at BitcoinDadPod.fireside.fm, and it's slash episode 50, so slash 50."
+      },
+      {
+        "start": 345100,
+        "stop": 346300,
+        "text": " Effective scam tourism, and we break it all down in plain English, what's going on there, why the price of Bitcoin goes down with it, which is essentially people have to sell to cover their positions."
+      },
+      {
+        "start": 346400,
+        "stop": 347400,
+        "text": " Turns out that FTX was sitting on two Bitcoin, so they didn't have a lot of Bitcoin, they were mostly dealing around with these scam coins."
+      },
+      {
+        "start": 347400,
+        "stop": 348400,
+        "text": " But if you have questions or you'd just like to know a recap that's just a common sense recap, go check it out in episode 50 of the Bitcoin Dad Pod."
+      },
+      {
+        "start": 348400,
+        "stop": 349100,
+        "text": " And then we get to, I think it's going to be Mentat, I think. I don't know if I have that right, but we're going to go with Mentat."
+      },
+      {
+        "start": 349200,
+        "stop": 349600,
+        "text": " And Mentat sends in a row of ducks, 2,222."
+      },
+      {
+        "start": 349600,
+        "stop": 351100,
+        "text": " Since you guys started talking about the shift in podcast advertising, I have noticed several podcasts and podcast networks I listen to doubling or even tripling up on ads, as well as starting up membership subscriptions at the same time."
+      },
+      {
+        "start": 351200,
+        "stop": 352500,
+        "text": " Man, that's rough. I hope that this goes smoothly. I've been following the financial news of some of the big podcast sponsors in this space, and they are having a rough time of it."
+      },
+      {
+        "start": 352500,
+        "stop": 353700,
+        "text": " The tech sector in general. So I think it is, if there's a podcast out there that you really like and you've been considering joining the membership, it might be time to consider, because I think some of these podcasters are probably panicking."
+      },
+      {
+        "start": 353800,
+        "stop": 355300,
+        "text": " If I were trying to get a membership program launched right now, I would be in disaster mode. It would be really scary. I am so grateful for our members, because that's how we know our ongoing production is covered."
+      },
+      {
+        "start": 355300,
+        "stop": 356000,
+        "text": " We may have to make big changes, but the shows will continue. And the members are the insurance program for that."
+      },
+      {
+        "start": 356000,
+        "stop": 356600,
+        "text": " I'm very, very grateful, especially now. Marcel Boussin with some enterprise sets, 1701."
+      },
+      {
+        "start": 356700,
+        "stop": 357600,
+        "text": " As a one-off during a busy week, I think I actually would listen to a fully AI-generated show. I think it'd actually be pretty good, but I don't think I'd want it every week."
+      },
+      {
+        "start": 357600,
+        "stop": 357800,
+        "text": " Well, that'll be if you can tell."
+      },
+      {
+        "start": 357800,
+        "stop": 359000,
+        "text": " That would be the benchmark, I think. I think an AI-generated show would only make sense for a holiday show where you're trying to do essentially a best of, but with new content generated from the old content."
+      },
+      {
+        "start": 359100,
+        "stop": 359700,
+        "text": " And you'd have to have editorial control, and it would take so much more work than just doing a show."
+      },
+      {
+        "start": 359700,
+        "stop": 360200,
+        "text": " Would we be able to generate the whole thing, or would we have to edit together some of the stuff that did pop out?"
+      },
+      {
+        "start": 360200,
+        "stop": 360400,
+        "text": " Would this part be generated? How do you have that?"
+      },
+      {
+        "start": 360400,
+        "stop": 360900,
+        "text": " How does the AI know how to give Chris enough sass? That's finely tuned."
+      },
+      {
+        "start": 360900,
+        "stop": 361400,
+        "text": " Yeah, you really gotta figure it out. Well, it's gonna be a couple years, at least."
+      },
+      {
+        "start": 361500,
+        "stop": 362200,
+        "text": " And then Rusticastoverse came in with A Row of Ducks, and just simply says, \"Boost!\""
+      },
+      {
+        "start": 362200,
+        "stop": 362400,
+        "text": " B-O-O-S-T!"
+      },
+      {
+        "start": 362400,
+        "stop": 362800,
+        "text": " 4.12 Linux boosts in with 2,048 sets."
+      },
+      {
+        "start": 362800,
+        "stop": 364000,
+        "text": " Regarding packaging on distributions, Ubuntu MATE enabled Flatpak along with Snaps in 2204. This has been a fantastic experience for me."
+      },
+      {
+        "start": 364100,
+        "stop": 364900,
+        "text": " Initially, I found it beneficial to quickly switch Firefox from Snap to Flatpak. Now I can use whatever packaging system works best for the application I am installing."
+      },
+      {
+        "start": 364900,
+        "stop": 365400,
+        "text": " The Ubuntu MATE team have made this easy. It's a really underappreciated feature."
+      },
+      {
+        "start": 365400,
+        "stop": 366300,
+        "text": " That is nice. Flatpaks on an Ubuntu system out of the box, that's just giving your users what they need and want. You gotta respect that."
+      },
+      {
+        "start": 366400,
+        "stop": 367300,
+        "text": " And then I think to 4.12's point too, if you're already sold on some Snaps, maybe you're doing the next cloud Snap, whatever, you've got the best of all them worlds."
+      },
+      {
+        "start": 367300,
+        "stop": 367800,
+        "text": " The facial hair boosts in with 6,000 sets."
+      },
+      {
+        "start": 367800,
+        "stop": 368000,
+        "text": " B-O-O-S-T!"
+      },
+      {
+        "start": 368000,
+        "stop": 368700,
+        "text": " I recall Chris mentioned he got his hands on a popcorn pocket PC. I was wondering, what ever happened to it?"
+      },
+      {
+        "start": 368800,
+        "stop": 369400,
+        "text": " Well, we have it in house. I kind of fire it up from time to time. I dust it off and play around and see how things are."
+      },
+      {
+        "start": 369400,
+        "stop": 370200,
+        "text": " This is one of those things that's tricky to talk about on air because it's got a lot of promise, but it isn't quite there yet."
+      },
+      {
+        "start": 370200,
+        "stop": 370700,
+        "text": " There's not a firmware that is really, I could just say, \"Hey, go grab this and throw this firmware on.\""
+      },
+      {
+        "start": 370800,
+        "stop": 371900,
+        "text": " And I don't want to come on air and talk negatively about it and sort of undercut any progress, but at the same time there's nothing really to say that's positive yet."
+      },
+      {
+        "start": 371900,
+        "stop": 372200,
+        "text": " So I'm kind of in a waiting phase and I have been for a long time."
+      },
+      {
+        "start": 372200,
+        "stop": 372500,
+        "text": " Hasn't found its way actually into your life in a meaningful way yet?"
+      },
+      {
+        "start": 372600,
+        "stop": 374000,
+        "text": " Yeah, so if you're not familiar with the popcorn computer, it's about the size of a Game Boy, but a little wider and it's got a full QWERTY keyboard, LCD screen, some USB-C ports, and yeah, it's supposed to run Linux."
+      },
+      {
+        "start": 374000,
+        "stop": 375000,
+        "text": " You grab a video out port and you can hook it up and now you've got a full computer and you disconnect it and you're just walking around with a little tiny 5-inch screen kind of a thing."
+      },
+      {
+        "start": 375100,
+        "stop": 375600,
+        "text": " But so far, so far I have not really found the firmware that really brings it home."
+      },
+      {
+        "start": 375600,
+        "stop": 376600,
+        "text": " But I'm keeping an eye out there, so if anybody out there wants an update or you hear something, maybe I missed it, shoot me a boost or shoot me an email or something, let me know and all. I'll give it a go again."
+      },
+      {
+        "start": 376600,
+        "stop": 377400,
+        "text": " Now we got quite a bit of feedback about Mastodon. We got a bunch of boosts in and we also got a bunch of +1s via, you know, the old email."
+      },
+      {
+        "start": 377400,
+        "stop": 378000,
+        "text": " TechOps 7.5.1 specifically boosted in with a mini row of ducks, 222 sats."
+      },
+      {
+        "start": 378000,
+        "stop": 378900,
+        "text": " I tried to build out a smaller Mastodon server for a small community of about 50 or so people. Later though, I had to kill it in the beta trial."
+      },
+      {
+        "start": 378900,
+        "stop": 379600,
+        "text": " It was obvious that even if I was really to put hours and automation into place, it was just going to be too much."
+      },
+      {
+        "start": 379600,
+        "stop": 380400,
+        "text": " The instance needs a load of resources, mostly for storage, and the bigger issue is that massive moderation is required."
+      },
+      {
+        "start": 380400,
+        "stop": 380700,
+        "text": " At least a couple people with good moral compass to make it happen."
+      },
+      {
+        "start": 380800,
+        "stop": 381900,
+        "text": " Yeah, there's that whole element of having to manage that whenever you run a community thing, but I was wondering about what it is to run a Mastodon instance on the backend."
+      },
+      {
+        "start": 381900,
+        "stop": 382400,
+        "text": " Because my experience with Matrix is that the federation aspect actually is quite a bit of traffic."
+      },
+      {
+        "start": 382400,
+        "stop": 383700,
+        "text": " And if you're following people across multiple instances, your home server has to be pulling all of that in and subscribing to that on ActivityPub, I would imagine."
+      },
+      {
+        "start": 383700,
+        "stop": 384700,
+        "text": " And so if you have hundreds or thousands of users that are doing that across multiple servers, the backend has got to be managing all of that."
+      },
+      {
+        "start": 384700,
+        "stop": 385900,
+        "text": " It's got to be quite the load, actually, I would think, to run a Mastodon server. Maybe I'm wrong. Maybe it's simpler than I'm picturing because I'm basing my experience on Matrix, which this is a pretty big amount of data with Matrix."
+      },
+      {
+        "start": 385900,
+        "stop": 386600,
+        "text": " But I'd love any insight people have from running a Mastodon instance. Not that I'm thinking about doing it."
+      },
+      {
+        "start": 386600,
+        "stop": 388400,
+        "text": " CineMotive also boosted in with 2048 sats. Another plug for Mastodon. I never use the JB Matrix due to chat and having to be there live. I hang out one to two times a week and when I do I just never know what's going on."
+      },
+      {
+        "start": 388400,
+        "stop": 388900,
+        "text": " That's fair. I hear a call in that same vein for a discourse or something."
+      },
+      {
+        "start": 388900,
+        "stop": 389200,
+        "text": " A place for offline chatting."
+      },
+      {
+        "start": 389300,
+        "stop": 390300,
+        "text": " We also got a thousand sats from OP 1984, just a plus one for Mastodon. Just moved to podcastindex.social and already follow Chris there. Hey Chris, you have followers already."
+      },
+      {
+        "start": 390300,
+        "stop": 390600,
+        "text": " Hey! How about that?"
+      },
+      {
+        "start": 390600,
+        "stop": 390900,
+        "text": " He talks about that podcast in 2.0 nonsense."
+      },
+      {
+        "start": 391000,
+        "stop": 392800,
+        "text": " And another 128 sats from Paul Astoluck who says, \"Can JB set up a social network that keeps me social? So far you're batting a thousand with your recommendations. I'm still on Matrix admittedly, only in JB general chat. Great show as always. Thank you.\""
+      },
+      {
+        "start": 392800,
+        "stop": 393300,
+        "text": " He also tosses a few sats for, \"Well Chris, how am I supposed to read this?\""
+      },
+      {
+        "start": 393300,
+        "stop": 393500,
+        "text": " I don't know. Jeff?"
+      },
+      {
+        "start": 393600,
+        "stop": 394300,
+        "text": " Yeah, but isn't that supposed to be a vote for how to say it? It just is written."
+      },
+      {
+        "start": 394300,
+        "stop": 395200,
+        "text": " I don't know how anybody's supposed to know because when you're reading it it's hard to tell. This is part of the problem with the whole GIF thing."
+      },
+      {
+        "start": 395200,
+        "stop": 395500,
+        "text": " Maybe this is a meta vote for a better name."
+      },
+      {
+        "start": 395600,
+        "stop": 396700,
+        "text": " I mean I don't know how anybody's going to beat Wise Papa John. He put 40,000 sats behind a hard G. So until somebody surpasses that, then officially on the show it has a hard G and that's how it is."
+      },
+      {
+        "start": 396700,
+        "stop": 396900,
+        "text": " Yeah, boost decide I guess."
+      },
+      {
+        "start": 396900,
+        "stop": 397400,
+        "text": " Awesome Matt wrote in with 6969 sats as a boost."
+      },
+      {
+        "start": 397400,
+        "stop": 398200,
+        "text": " Haven't really used Mastodon but I've used Pleroma. Have you guys used Pleroma? I haven't even heard of it actually."
+      },
+      {
+        "start": 398200,
+        "stop": 398400,
+        "text": " Heard of it?"
+      },
+      {
+        "start": 398500,
+        "stop": 399700,
+        "text": " Never used it. I've actually kind of heard disparaging things about it but whenever a technology gets cast in one way or another I always think, \"Well is it the technology or is it the people or is it just marketing?\""
+      },
+      {
+        "start": 399700,
+        "stop": 401000,
+        "text": " But it looks like a leaner, lighter Mastodon essentially. It lets you participate in the Fetaverse but just is a little cleaner, maybe simpler to implement on the backend as well, maybe a little more suited for a smaller group."
+      },
+      {
+        "start": 401100,
+        "stop": 401500,
+        "text": " Tire boost in with 2023 sats, a little future boost."
+      },
+      {
+        "start": 401500,
+        "stop": 402500,
+        "text": " I predict that JB will start its own Mastodon server in 2023. I'm calling it. I know how Chris thinks. The seed has been planted."
+      },
+      {
+        "start": 402500,
+        "stop": 403400,
+        "text": " Yeah it's our first 2023 boost. Nice. All right future prediction there. So a Mastodon instance in 2023."
+      },
+      {
+        "start": 403400,
+        "stop": 403900,
+        "text": " Viridian boost in with another 1701 satoshis."
+      },
+      {
+        "start": 404000,
+        "stop": 405300,
+        "text": " Life forms. You tiny little life forms. You precious little life forms. Where are you?"
+      },
+      {
+        "start": 405300,
+        "stop": 405600,
+        "text": " I assume it's in reference to Viridian 3."
+      },
+      {
+        "start": 405700,
+        "stop": 407100,
+        "text": " Must be right? Your discussion about Signal was poignant as I've been eyeing alternatives. The lack of support for CarPlay, backups, and HTTP proxies along with the devs attitude make it abrasive."
+      },
+      {
+        "start": 407200,
+        "stop": 409200,
+        "text": " The 4th step solves all of these issues but meta. I hadn't considered switching the family to Matrix. Intriguing but as far as I know no clients support CarPlay. I'm also concerned about not being able to move accounts between home servers. Any suggestions? Otherwise I'll just keep waiting for the one chat app."
+      },
+      {
+        "start": 409300,
+        "stop": 410900,
+        "text": " I've been giving more thought to the Matrix one. I've been really considering if I were to move the whole family to another chat platform. My first thought actually was maybe I'll just stand up and XMPP server."
+      },
+      {
+        "start": 411000,
+        "stop": 412400,
+        "text": " That feels like a great idea until you think all the clients are not really as featureful now. That's a real challenge because I think your family now expects stickers and emoji reactions and all that stuff."
+      },
+      {
+        "start": 412500,
+        "stop": 414200,
+        "text": " And while Matrix doesn't have all of the things that those apps do it's adding more stuff that people expect in a feature set. So I think that's another plus one for moving this family to a private Matrix instance. I think the question just becomes which app? Which front end?"
+      },
+      {
+        "start": 414200,
+        "stop": 414400,
+        "text": " And that might take a little experimentation."
+      },
+      {
+        "start": 414400,
+        "stop": 414900,
+        "text": " Dreams void boosts in with a row of duck."
+      },
+      {
+        "start": 414900,
+        "stop": 415300,
+        "text": " I'm a duck. D-U-K, duck. Loaded with talent."
+      },
+      {
+        "start": 415400,
+        "stop": 415600,
+        "text": " I'm finally caught up with luck now."
+      },
+      {
+        "start": 415600,
+        "stop": 416400,
+        "text": " On to Office Hours episode 9, self-hosted episode 81, and LAN episode 259."
+      },
+      {
+        "start": 416400,
+        "stop": 417000,
+        "text": " That's nice. I wondered were you on a road trip? Did you go through a tear? What happened?"
+      },
+      {
+        "start": 417000,
+        "stop": 417200,
+        "text": " We haven't got all that up."
+      },
+      {
+        "start": 417200,
+        "stop": 417400,
+        "text": " It's nice. Welcome."
+      },
+      {
+        "start": 417400,
+        "stop": 417600,
+        "text": " Nice to have you here."
+      },
+      {
+        "start": 417600,
+        "stop": 417800,
+        "text": " Whatever the reason. Keep it up."
+      },
+      {
+        "start": 417900,
+        "stop": 419200,
+        "text": " Dreams void boosts in with 3141 sats. Well as the influencer that inspired me to buy my own Raspberry Pi I'm saddened to hear you've moved on. I'm also saddened that I now have a new toy that I desire."
+      },
+      {
+        "start": 419200,
+        "stop": 419500,
+        "text": " Yeah, we're all feeling that. Don't worry."
+      },
+      {
+        "start": 419500,
+        "stop": 419900,
+        "text": " Feel free to ship me all your unused Pis. I'll throw them in my micro-K8s cluster."
+      },
+      {
+        "start": 420000,
+        "stop": 421000,
+        "text": " You know, I wonder. I guess I actually do have a couple that are not currently in use, but I don't imagine I'll stop using the Raspberry Pis. I just don't know if I'm going to buy any more Pi 4s."
+      },
+      {
+        "start": 421000,
+        "stop": 421500,
+        "text": " Although I did hear some rumors that there's some new Pi hardware we're going to get teased with."
+      },
+      {
+        "start": 421600,
+        "stop": 423400,
+        "text": " You know, for me, if they didn't have a huge increase in CPU performance on the Pi, if they just had a moderate CPU increase and a moderate memory increase, but had a big increase on storage in terms of I/O, not size, I think that would put the Pi in contender category again."
+      },
+      {
+        "start": 423400,
+        "stop": 424200,
+        "text": " I mean, it's nice being on x86 again. There is that whole element as well. But we'll see. Maybe we'll get a tease."
+      },
+      {
+        "start": 424200,
+        "stop": 424500,
+        "text": " Soham boosted in live last week with a row of ducks."
+      },
+      {
+        "start": 424500,
+        "stop": 424600,
+        "text": " Thank you kindly."
+      },
+      {
+        "start": 424600,
+        "stop": 425100,
+        "text": " And it was a live boost, so that's pretty neat. But what is even more rad about it is he used Boost CLI."
+      },
+      {
+        "start": 425100,
+        "stop": 425300,
+        "text": " Oh, you delightful nerd."
+      },
+      {
+        "start": 425300,
+        "stop": 426200,
+        "text": " That's pretty awesome. And he says Nyx is the greatest package manager ever created. That may be true. We'll have to have someone confirm that. We'll put somebody on that."
+      },
+      {
+        "start": 426200,
+        "stop": 426400,
+        "text": " Truly, there's research going on."
+      },
+      {
+        "start": 426400,
+        "stop": 427200,
+        "text": " And then our last boost this week came in from JPC, who sent us a row of grandpa ducks, 22,222 sats."
+      },
+      {
+        "start": 427300,
+        "stop": 427500,
+        "text": " This old duck still got it!"
+      },
+      {
+        "start": 427500,
+        "stop": 428200,
+        "text": " Says he loves the show and he's also using Boost CLI. Well done, JPC. Thank you everyone for the support. We really appreciate it."
+      },
+      {
+        "start": 428200,
+        "stop": 428900,
+        "text": " We still love the sats. Sats are sats to us. So grab a handful on the cheap using something like Strike or the Cash app."
+      },
+      {
+        "start": 428900,
+        "stop": 429600,
+        "text": " If you're outside the US, Blue Wallet. I really like RoboSats too if you want to get really geeky. But then you gotta have Tor Browser."
+      },
+      {
+        "start": 429700,
+        "stop": 430600,
+        "text": " I was wondering if we had a fancy downtown SF JB office or whatever, we could have a little Boost CLI terminal set up and ready to go. It's got like retro term on there, right?"
+      },
+      {
+        "start": 430600,
+        "stop": 431200,
+        "text": " Oh man! Try your first boost! Retro term or just a really old CRT."
+      },
+      {
+        "start": 431200,
+        "stop": 431600,
+        "text": " It could go all clacky, IBM, PS2 keyboard as well."
+      },
+      {
+        "start": 431600,
+        "stop": 431800,
+        "text": " Someday, with enough boost. We'll get there."
+      },
+      {
+        "start": 431800,
+        "stop": 432000,
+        "text": " That would be pretty neat. That would be."
+      },
+      {
+        "start": 432100,
+        "stop": 432700,
+        "text": " Hey everybody, if you'd like to send a boost into the show, new podcastapps.com. That's where you go to upgrade to a podcasting 2.0 app."
+      },
+      {
+        "start": 432700,
+        "stop": 433500,
+        "text": " We got more in the works there too as far as podcasting 2.0 features. So go check out Office Hours 16 where we talk about some of that stuff we'll be working on."
+      },
+      {
+        "start": 433500,
+        "stop": 434100,
+        "text": " Also just a random shout out because we got some boost in that we don't make it on the show but we still just wanted to pick a handful to say thank you."
+      },
+      {
+        "start": 434100,
+        "stop": 434700,
+        "text": " And thank you everybody else if we didn't call out your name or read your message. We still got it and we really appreciate your support."
+      },
+      {
+        "start": 434800,
+        "stop": 435100,
+        "text": " I wanted to do this one because let's see if I got this right. Let me know if I got your name right."
+      },
+      {
+        "start": 435100,
+        "stop": 436000,
+        "text": " 1000Sats from Thirg Hasbals. Something like that."
+      },
+      {
+        "start": 436000,
+        "stop": 436200,
+        "text": " Is this Deepfay Chris?"
+      },
+      {
+        "start": 436200,
+        "stop": 437100,
+        "text": " We got 100Sats from The Boosh asking about our thoughts on Signal adding stories, which is actually Office Hours as well."
+      },
+      {
+        "start": 437200,
+        "stop": 438000,
+        "text": " So go check out Office Hours 16 for that, The Boosh. And then Oppy1984 says that it's GIF. GIF is peanut butter."
+      },
+      {
+        "start": 438000,
+        "stop": 438500,
+        "text": " Well you're going to have to send in more than 100Sats buddy. And then Nacho Linux sent a row of sticks."
+      },
+      {
+        "start": 438500,
+        "stop": 439000,
+        "text": " He says I cranked through my Fountain FM subscriptions to earn some Sats so I could boost in."
+      },
+      {
+        "start": 439000,
+        "stop": 439300,
+        "text": " That's very awesome. Thank you everybody."
+      },
+      {
+        "start": 439300,
+        "stop": 439800,
+        "text": " And we appreciate the members out there too who support the show. They invest in our ongoing production."
+      },
+      {
+        "start": 439900,
+        "stop": 440300,
+        "text": " You can go to core.com if you want to become a member of this show or jupiter.party if you want all the shows."
+      },
+      {
+        "start": 440300,
+        "stop": 440800,
+        "text": " And as a thank you we give it to you ad free. And we also package up the livestream and we make it available to you."
+      },
+      {
+        "start": 440800,
+        "stop": 441000,
+        "text": " We put lots of extra content in there."
+      },
+      {
+        "start": 441000,
+        "stop": 441200,
+        "text": " Sometimes too much."
+      },
+      {
+        "start": 441200,
+        "stop": 442000,
+        "text": " Jeff who went out on location to look at the Folsom geocache, specifically left the live show, the Mumble Room today."
+      },
+      {
+        "start": 442000,
+        "stop": 442300,
+        "text": " So that way he could listen to the livestream while he's road tripping."
+      },
+      {
+        "start": 442400,
+        "stop": 442900,
+        "text": " That's a thing. At the meetups some of the listeners that drove quite a ways to make it to the meetups were like,"
+      },
+      {
+        "start": 442900,
+        "stop": 443400,
+        "text": " \"Yeah I just listened to the live version on the way up here. It kills like a few hours.\" Sometimes it is that long."
+      },
+      {
+        "start": 443400,
+        "stop": 443700,
+        "text": " You know there's only so much content in a week. The more the better."
+      },
+      {
+        "start": 443700,
+        "stop": 444400,
+        "text": " Yeah it's pretty wild. Links to what we talked about today and all that kind of stuff are over at LinuxUnplugged.com/484."
+      },
+      {
+        "start": 444400,
+        "stop": 444600,
+        "text": " Is that where we're at?"
+      },
+      {
+        "start": 444700,
+        "stop": 445400,
+        "text": " You heard our Mumble Room. We got a Mumble Room. It's over there if you'd like to join it. It's a great way to listen in real time or participate in the show if something strikes your fancy."
+      },
+      {
+        "start": 445400,
+        "stop": 446200,
+        "text": " We have details for that at JupiterBroadcasting.com. You can find the Mumble stuff. It's a /Mumble. Same with the Matrix details."
+      },
+      {
+        "start": 446200,
+        "stop": 446800,
+        "text": " Yeah shout out to our buddy Carl George who got the latest and greatest Mumble packaged up in Fedora 37."
+      },
+      {
+        "start": 446800,
+        "stop": 447200,
+        "text": " So you know, Pipewire, Mumble, it's a great setup to join the show. All I'm saying."
+      },
+      {
+        "start": 447300,
+        "stop": 447700,
+        "text": " If you're going to upgrade, might as well upgrade in style and go Mumble with Pipewire."
+      },
+      {
+        "start": 447700,
+        "stop": 448400,
+        "text": " You know what else, speaking of adding Pipewire support, as we record today a new version of MPV is out that has a Pipewire back in too."
+      },
+      {
+        "start": 448400,
+        "stop": 449000,
+        "text": " Mmmhmm. Loving that MPV. I'm glad we gave it a mention today because we just don't talk about it enough."
+      },
+      {
+        "start": 449000,
+        "stop": 450000,
+        "text": " And then last but not least, if you're not doing anything on your Sunday and you want to hang out with your Linux buddies, head over to Jupiter.Tube around noon Pacific 3 p.m. Eastern."
+      },
+      {
+        "start": 450100,
+        "stop": 450900,
+        "text": " And you know, watch the show. We stream it live over there and you can see how handsome Brent is, see how we make the sausage, hear all our mistakes."
+      },
+      {
+        "start": 450900,
+        "stop": 451300,
+        "text": " Noon Pacific 3 p.m. Eastern, Jupiter.Tube."
+      },
+      {
+        "start": 451300,
+        "stop": 451700,
+        "text": " See you next week. Same bad time, same bad station."
+      },
+      {
+        "start": 451700,
+        "stop": 452000,
+        "text": " Alright gentlemen. Did we do it? Is that it?"
+      },
+      {
+        "start": 452000,
+        "stop": 452500,
+        "text": " I don't know if any of us are, oh, I don't know if any of us are sticking with Fedora 37 after this. I don't think I am."
+      },
+      {
+        "start": 452500,
+        "stop": 452800,
+        "text": " I might give Fedora 36 a go."
+      },
+      {
+        "start": 452900,
+        "stop": 453100,
+        "text": " Yeah, I gotta go fix Fedora 36."
+      },
+      {
+        "start": 453100,
+        "stop": 453700,
+        "text": " Right? I'm gonna see how long it sticks. I'm not gonna get rid of it like right away. We'll see though."
+      },
+      {
+        "start": 453700,
+        "stop": 453900,
+        "text": " We'll see. We'll see."
+      },
+      {
+        "start": 453900,
+        "stop": 454100,
+        "text": " I am really enjoying this GNOME, so."
+      },
+      {
+        "start": 454100,
+        "stop": 454800,
+        "text": " It is nice. They are doing great. Don't miss Linux Action News. There's more at LinuxActionNews.com."
+      },
+      {
+        "start": 454800,
+        "stop": 455600,
+        "text": " Thanks so much for joining us on this week's episode of the Unplugged program. And we'll see you right back here next Sunday."
+      },
+      {
+        "start": 455600,
+        "stop": 455700,
+        "text": " Bye."
+      },
+      {
+        "start": 455800,
+        "stop": 456000,
+        "text": " [Music]"
+      },
+      {
+        "start": 456200,
+        "stop": 456400,
+        "text": " [Music]"
+      },
+      {
+        "start": 456400,
+        "stop": 459000,
+        "text": " [Music]"
+      },
+      {
+        "start": 459100,
+        "stop": 459500,
+        "text": " Minimak, you had a question though during the Deepfake talk earlier."
+      },
+      {
+        "start": 459500,
+        "stop": 460200,
+        "text": " Yeah, I want to learn something today. So the idea is how does it work with it? I try to imagine how it works."
+      },
+      {
+        "start": 460200,
+        "stop": 461000,
+        "text": " Like you have a love episode and then first you have to define the voice patterns. So this is Chris, this is Brent, this is Wes."
+      },
+      {
+        "start": 461100,
+        "stop": 462100,
+        "text": " Once the AI has recognized these voice patterns, you can probably pause other love episodes and just let them separate the voice streams."
+      },
+      {
+        "start": 462100,
+        "stop": 462600,
+        "text": " I would think it's more like he has to cut me out and just only supply it with my cuts."
+      },
+      {
+        "start": 462700,
+        "stop": 464000,
+        "text": " Maybe we will have an answer afterwards. Then I would probably you will have to pass a voice to text pattern to have a text database with the words."
+      },
+      {
+        "start": 464000,
+        "stop": 464600,
+        "text": " Like on the bottom you have a database with like 50 ears and 50 home and I don't know what."
+      },
+      {
+        "start": 464600,
+        "stop": 465400,
+        "text": " Then probably if that is possible, I would try to level that thing so that the ears is always like the same kind."
+      },
+      {
+        "start": 465500,
+        "stop": 466900,
+        "text": " And once you have like if you have 50 times the same birds so that that AI engine could level it so it would define Chris normally uses the bird home like this."
+      },
+      {
+        "start": 466900,
+        "stop": 467500,
+        "text": " And then once you have it leveled, then you can start to make some sentences."
+      },
+      {
+        "start": 467600,
+        "stop": 468600,
+        "text": " Well, I used a tool that is actually developed originally by Mozilla. It's called CoQI. C-O-Q-U-I."
+      },
+      {
+        "start": 468600,
+        "stop": 469100,
+        "text": " And the way it works actually is you feed it lots of samples."
+      },
+      {
+        "start": 469100,
+        "stop": 469800,
+        "text": " Generally between one second and up to ten seconds. That really depends on your training hardware."
+      },
+      {
+        "start": 469900,
+        "stop": 471400,
+        "text": " I have a RTX Titan that I use for training. And so at 24 gigs you kind of top out at about ten seconds with, what did I use, batch size of I believe I used 48 samples per batch."
+      },
+      {
+        "start": 471400,
+        "stop": 471900,
+        "text": " And what you do is you get as many samples as you can."
+      },
+      {
+        "start": 471900,
+        "stop": 472800,
+        "text": " And what I did was a very painstaking process. I went through a whole bunch of episodes including LUP Coder and SSH."
+      },
+      {
+        "start": 472800,
+        "stop": 473600,
+        "text": " And I manually went and found clips of Chris speaking. I got about 48 minutes worth."
+      },
+      {
+        "start": 473600,
+        "stop": 474500,
+        "text": " Broke it up into various clips. Then I ran a speech to text parser over all of it."
+      },
+      {
+        "start": 474600,
+        "stop": 475800,
+        "text": " Then I re-listened to everything just to ensure that the transcoded text is correct. And then that gets fed into the AI trainer."
+      },
+      {
+        "start": 475800,
+        "stop": 476900,
+        "text": " And then as it goes along it spits out the model after various steps. And then you use that model to feed it a line of text to work out."
+      },
+      {
+        "start": 477000,
+        "stop": 477900,
+        "text": " The problem is I just did not have the time or patience to get any more audio. 48 minutes is way too low."
+      },
+      {
+        "start": 477900,
+        "stop": 478900,
+        "text": " You need minimum two, three hours. Some of the larger data sets that actually are used to build these XSSpeech models are in the range of 20 plus hours worth."
+      },
+      {
+        "start": 479000,
+        "stop": 480000,
+        "text": " If I had the time and I went through all of the back catalog of the shows of Chris talking I could probably build a very comprehensible model."
+      },
+      {
+        "start": 480000,
+        "stop": 480500,
+        "text": " I would not waste time on anyone. I don't do that."
+      },
+      {
+        "start": 480500,
+        "stop": 480700,
+        "text": " A JB intern."
+      },
+      {
+        "start": 480800,
+        "stop": 482500,
+        "text": " If you had some snippets of Chris reading some text, like some pages of text, it would be much easier. Right now you have to really cut the speech pieces of Chris from the show and feed it manually."
+      },
+      {
+        "start": 482500,
+        "stop": 482700,
+        "text": " Yeah, exactly."
+      },
+      {
+        "start": 482700,
+        "stop": 483500,
+        "text": " I think really you just need a few topics that Chris can rant about on his soapbox and then you got enough content right there."
+      },
+      {
+        "start": 483600,
+        "stop": 484100,
+        "text": " That's a great point because you actually need a variety of phenoms, I think. Is that the right word?"
+      },
+      {
+        "start": 484100,
+        "stop": 485400,
+        "text": " Basically, you know, like the individual parts of words. You need a large range of that for the AI to be able to learn how the individual speaker says that to then be able to reproduce it."
+      },
+      {
+        "start": 485400,
+        "stop": 485700,
+        "text": " Yeah, if you don't have enough variability in the base set, right?"
+      },
+      {
+        "start": 485800,
+        "stop": 486900,
+        "text": " In the clip I generated, I didn't write one million sats, I wrote 900,000 sats because none of the clips I had pulled out had Chris saying the word million."
+      },
+      {
+        "start": 486900,
+        "stop": 487600,
+        "text": " So whenever I tried actually doing million in the generated speech, it just sounded kind of garbled. It didn't actually make sense."
+      },
+      {
+        "start": 487600,
+        "stop": 488000,
+        "text": " Very interesting. Thank you for the information."
+      },
+      {
+        "start": 488100,
+        "stop": 488900,
+        "text": " I'll just put a finer point on it. If you've seen the show Kenobi, the voice of Darth Vader was not actually voiced by James Earl Jones."
+      },
+      {
+        "start": 488900,
+        "stop": 489800,
+        "text": " That was actually the same thing. It was an AI generated model that they had built from James Earl Jones' voice."
+      },
+      {
+        "start": 489900,
+        "stop": 491100,
+        "text": " And I don't know if you've seen the news, but he has signed basically a perpetual permission for Disney to now use his likeness, his voice for Darth Vader going forward."
+      },
+      {
+        "start": 491100,
+        "stop": 491800,
+        "text": " So going forward, any appearances of Darth Vader are going to be AI generated voices, not James Earl himself recording it."
+      },
+      {
+        "start": 491800,
+        "stop": 492000,
+        "text": " Probably most people would."
+      },
+      {
+        "start": 492000,
+        "stop": 492200,
+        "text": " Yeah, I'll take it about that. Yeah."
+      },
+      {
+        "start": 492300,
+        "stop": 493400,
+        "text": " CB, it strikes me too that, say we were serious about ever doing something like this, if you were working with JB, we have stems of just my track."
+      },
+      {
+        "start": 493400,
+        "stop": 494600,
+        "text": " To a degree. We don't have a lot of them, but we have probably weeks worth of just my track in the episodes too, which would probably make it easier, I would think, to sample from, because then you could just drop the silences and essentially just have..."
+      },
+      {
+        "start": 494700,
+        "stop": 495800,
+        "text": " It would be incredibly easier if someone had just handed me these pristine audio files with nothing else mixed in, because I had to cut past some of the other speakers and..."
+      },
+      {
+        "start": 495800,
+        "stop": 496300,
+        "text": " Overspeaking and someone using the soundboard."
+      },
+      {
+        "start": 496300,
+        "stop": 496500,
+        "text": " Yeah, soundboard mixed in."
+      },
+      {
+        "start": 496600,
+        "stop": 498500,
+        "text": " Would the Mozilla organization feed some example text that makes it easier? Because if they're working on that, it would be also cool if they hand out some example text that someone could read and somehow you get really a good sample of the voice."
+      },
+      {
+        "start": 498500,
+        "stop": 498800,
+        "text": " Like a script that helps train it a little bit."
+      },
+      {
+        "start": 498900,
+        "stop": 501200,
+        "text": " That's true too. For example, even doing some of the visual deep fakes, so deep faking a person's face. If you're trying to do it of a celebrity, for whatever reason, it's harder to find all the different angles and the different movements of the mouth and the expressions."
+      },
+      {
+        "start": 501300,
+        "stop": 502400,
+        "text": " However, if you're doing it yourself, you want to deep fake yourself or you're doing it for a movie or whatever, you basically stand somebody in front of a camera and you have them..."
+      },
+      {
+        "start": 502400,
+        "stop": 503200,
+        "text": " I don't know what they're called, but there is these phrases that you can say that force the speaker to move their mouth in a particular pattern."
+      },
+      {
+        "start": 503200,
+        "stop": 503400,
+        "text": " And to capture that."
+      },
+      {
+        "start": 503500,
+        "stop": 505000,
+        "text": " Exactly. And so, in the same thing with doing the audio, if you had a script, you have a variety of words, something that forces the voice to do the expressions and the different ranges that you would normally say in regular conversation."
+      },
+      {
+        "start": 505000,
+        "stop": 505200,
+        "text": " Now read it again as a prospector."
+      },
+      {
+        "start": 505200,
+        "stop": 506200,
+        "text": " Yeah, get the prospector voice. You gotta get all the different iterations. And you gotta make sure you capture all the terms that we use a lot. ZFS, Linux, you know, that kind of stuff."
+      },
+      {
+        "start": 506300,
+        "stop": 506500,
+        "text": " It actually did pretty well with all that stuff."
+      },
+      {
+        "start": 506500,
+        "stop": 507100,
+        "text": " Did it? I was going to ask you, how does it handle those kinds of terms? Is it just because I say it and so it just learns it?"
+      },
+      {
+        "start": 507100,
+        "stop": 507900,
+        "text": " Well, yes, because you say it, but also because when it does the learning, it doesn't learn individual words. It learns the little parts of the words, right?"
+      },
+      {
+        "start": 507900,
+        "stop": 508600,
+        "text": " So you say ZFS or Zebra, you still have that \"z\" sound in there that it's going to learn and then piece it together."
+      }
+    ],
+    "processing_time": {
+      "secs": 2216,
+      "nanos": 115453811
+    }
+  },
+  "metadata": {
+    "title": "LINUX Unplugged 484: Fedora Falls Flat",
+    "pictures": [],
+    "duration": {
+      "secs": 5062,
+      "nanos": 902000000
+    },
+    "unique_id": "http://linuxunplugged.com/484"
+  },
+  "episode": {
+    "title": "Fedora Falls Flat | LINUX Unplugged 484",
+    "description": "Why this latest release of Fedora misses the mark, and Ubuntu's quiet backing away from ZFS.",
+    "content": "<p><p>Why this latest release of Fedora misses the mark, and Ubuntu&#39;s quiet backing away from ZFS.</p><p>Sponsored By:</p><ul><li><a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden</a>: <a href=\"https://bitwarden.com/linux\" rel=\"nofollow\">Bitwarden is the easiest way for businesses and individuals to store, share, and sync sensitive data.</a></li><li><a href=\"https://linode.com/unplugged\" rel=\"nofollow\">Linode Cloud Hosting</a>: <a href=\"https://linode.com/unplugged\" rel=\"nofollow\">A special offer for all Linux Unplugged Podcast listeners and new Linode customers, visit linode.com/unplugged, and receive $100 towards your new account. </a></li><li><a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale</a>: <a href=\"http://tailscale.com/\" rel=\"nofollow\">Tailscale is a Zero config VPN. It installs on any device in minutes, manages firewall rules for you, and works from anywhere. Get 20 devices for free for a personal account. </a></li></ul><p><a href=\"https://jupitersignal.memberful.com/checkout?plan=52946\" rel=\"payment\">Support LINUX Unplugged</a></p><p>Links:</p><ul><li><a href=\"https://linuxgamingcentral.com/posts/steamos-3.4-preview-updates-arch-base/\" title=\"SteamOS Has Finally Been Rebased to the Latest Version of Arch Linux!\" rel=\"nofollow\">SteamOS Has Finally Been Rebased to the Latest Version of Arch Linux!</a></li><li><a href=\"https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/4D6GBXOYRJZRB5JRZF762U727EQOJXXQ/\" title=\"Fedora 37 is GO\" rel=\"nofollow\">Fedora 37 is GO</a> &mdash; The Fedora Linux 37 Final RC 1.7 compose is GO and will be shipped live on Tuesday, 15 November.</li><li><a href=\"https://fedoraproject.org/wiki/Releases/37/ChangeSet\" title=\"Fedora 37 ChangeSet\" rel=\"nofollow\">Fedora 37 ChangeSet</a></li><li><a href=\"https://fedoramagazine.org/announcing-fedora-37-beta/\" title=\"Announcing the release of Fedora Linux 37 Beta\" rel=\"nofollow\">Announcing the release of Fedora Linux 37 Beta</a></li><li><a href=\"https://gist.github.com/matthewpi/08c3d652e7879e4c4c30bead7021ff73\" title=\"NixOS on Fedora\" rel=\"nofollow\">NixOS on Fedora</a></li><li><a href=\"https://old.reddit.com/r/Fedora/comments/ytxps7/is_it_true_that_mesafreeworld_hasnt_been/\" title=\"Is it true that mesa-freeworld hasn't been published on RPM Fusion yet?\" rel=\"nofollow\">Is it true that mesa-freeworld hasn't been published on RPM Fusion yet?</a></li><li><a href=\"https://community.kde.org/Schedules/Plasma_5\" title=\"Schedules/Plasma 5 - KDE Community Wiki\" rel=\"nofollow\">Schedules/Plasma 5 - KDE Community Wiki</a></li><li><a href=\"https://imgur.com/a/gguCkD2\" title=\"Fedora 37 Plasma Login Fuzzzz\" rel=\"nofollow\">Fedora 37 Plasma Login Fuzzzz</a></li><li><a href=\"https://www.linode.com/docs/guides/install-mastodon-on-ubuntu-2004/\" title=\"How to Install a Mastodon Server on Ubuntu 20.04 on Linode\" rel=\"nofollow\">How to Install a Mastodon Server on Ubuntu 20.04 on Linode</a></li><li><a href=\"https://github.com/ubuntu/zsys/issues/230\" title=\"Don’s use ZSYS · Issue #230 · ubuntu/zsys\" rel=\"nofollow\">Don’s use ZSYS · Issue #230 · ubuntu/zsys</a> &mdash; Finally I just want to say I regret having to say this. ZFS and ZSYS are both great technologies. They're ideal solutions to big problems and really move the state of the art forward. Unfortunately, their implementations are both 90% ideal but 10% incomplete.</li><li><a href=\"https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1968150\" title=\"Bug #1968150 “[FFe] Remove zsys from installer” : Bugs : ubiquity package : Ubuntu\" rel=\"nofollow\">Bug #1968150 “[FFe] Remove zsys from installer” : Bugs : ubiquity package : Ubuntu</a></li><li><a href=\"https://imgur.com/a/4BQK7Zn\" title=\"Chris B’s Deep Fake funny and crazy ChrisLAS images.\" rel=\"nofollow\">Chris B’s Deep Fake funny and crazy ChrisLAS images.</a></li><li><a href=\"https://www.aliexpress.com/item/1005004757954007.html\" title=\"NAS Board ODROID Killer N5105/N6005\" rel=\"nofollow\">NAS Board ODROID Killer N5105/N6005</a></li><li><a href=\"https://www.nexcom.com/Products/industrial-computing-solutions/industrial-fanless-computer/core-i-performance\" title=\"Nexcom Industrial Low Power Rigs\" rel=\"nofollow\">Nexcom Industrial Low Power Rigs</a></li><li><a href=\"https://bitcoindadpod.fireside.fm/50\" title=\"Bitcoin Dad Pod Episode 50: Effective Scam-Truism\" rel=\"nofollow\">Bitcoin Dad Pod Episode 50: Effective Scam-Truism</a></li><li><a href=\"https://bit.ly/bitcoinroom\" title=\"Bitcoin General Chat on Matrix\" rel=\"nofollow\">Bitcoin General Chat on Matrix</a></li><li><a href=\"https://bit.ly/bitcoinqa\" title=\"Bitcoin Q&A Room\" rel=\"nofollow\">Bitcoin Q&amp;A Room</a></li><li><a href=\"https://pocket.popcorncomputer.com/\" title=\"Pocket Popcorn Computer\" rel=\"nofollow\">Pocket Popcorn Computer</a> &mdash; Finally, a handheld Linux device with a high-definition 1080p display and large battery life.</li><li><a href=\"https://pleroma.social/\" title=\"Pleroma — a lightweight fediverse server\" rel=\"nofollow\">Pleroma — a lightweight fediverse server</a></li><li><a href=\"https://podcastindex.org/apps?appTypes=app&elements=Value\" title=\"Podcasting 2.0 Apps\" rel=\"nofollow\">Podcasting 2.0 Apps</a></li><li><a href=\"https://github.com/coqui-ai/TTS\" title=\"Coqui TTS\" rel=\"nofollow\">Coqui TTS</a> &mdash; A deep learning toolkit for Text-to-Speech, battle-tested in research and production.</li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9034",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15778647/d2362ea2-9398-4e48-858e-b1e01c674d99.mp3",
+      "length": "71893038",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-11-13T18:50:00+01:00"
+  },
+  "speedup": 2.284584
+}

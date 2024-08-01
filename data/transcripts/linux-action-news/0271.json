@@ -1,0 +1,1457 @@
+{
+  "transcript": {
+    "utterances": [
+      {
+        "start": 0,
+        "stop": 984,
+        "text": " Hello, and welcome to Linux Action News, Episode 271, recorded on December 14, 2022."
+      },
+      {
+        "start": 984,
+        "stop": 1084,
+        "text": " I'm Chris."
+      },
+      {
+        "start": 1084,
+        "stop": 1184,
+        "text": " And I'm Wes."
+      },
+      {
+        "start": 1184,
+        "stop": 1284,
+        "text": " Hello, Wes."
+      },
+      {
+        "start": 1284,
+        "stop": 1524,
+        "text": " Let's do the news."
+      },
+      {
+        "start": 1524,
+        "stop": 2200,
+        "text": " Way back in December 2020, if you can remember that far, Collabra announced a Wayland driver"
+      },
+      {
+        "start": 2200,
+        "stop": 2372,
+        "text": " for Wine."
+      },
+      {
+        "start": 2372,
+        "stop": 2968,
+        "text": " At the time, Wayland used its X11 driver to interface with the display server."
+      },
+      {
+        "start": 2968,
+        "stop": 3412,
+        "text": " That setup worked on Wayland, but it adds complexity and possible inefficiencies."
+      },
+      {
+        "start": 3412,
+        "stop": 3936,
+        "text": " It would really be ideal if Wine could just talk directly to Wayland."
+      },
+      {
+        "start": 3936,
+        "stop": 4224,
+        "text": " If only someone would do the work."
+      },
+      {
+        "start": 4224,
+        "stop": 4776,
+        "text": " Well, Alexandros Francis decided to take that challenge on."
+      },
+      {
+        "start": 4776,
+        "stop": 4938,
+        "text": " Take it on, they did."
+      },
+      {
+        "start": 4938,
+        "stop": 5416,
+        "text": " Two years later, things are going from good to great."
+      },
+      {
+        "start": 5416,
+        "stop": 5774,
+        "text": " On the Collabra blog, they have a new post that highlights some of the work over this"
+      },
+      {
+        "start": 5774,
+        "stop": 5874,
+        "text": " last year."
+      },
+      {
+        "start": 5874,
+        "stop": 6080,
+        "text": " This is kind of becoming an annual tradition."
+      },
+      {
+        "start": 6080,
+        "stop": 6348,
+        "text": " Towards the end of the year, we get one of these posts."
+      },
+      {
+        "start": 6348,
+        "stop": 6816,
+        "text": " And this year, it focuses a lot on the work that went into making Wine gaming just absolutely"
+      },
+      {
+        "start": 6816,
+        "stop": 7376,
+        "text": " fantastic on Wayland, but it actually goes beyond just games and covers some essential"
+      },
+      {
+        "start": 7376,
+        "stop": 7536,
+        "text": " desktop apps as well."
+      },
+      {
+        "start": 7536,
+        "stop": 8252,
+        "text": " Yeah, we got to say Chrome and Chromium-based apps, those are right on the top of the list."
+      },
+      {
+        "start": 8252,
+        "stop": 8848,
+        "text": " A significant improvement was actually just recently added to support cross-process rendering."
+      },
+      {
+        "start": 8848,
+        "stop": 9538,
+        "text": " Chrome is also now supported without any special flags and is entirely GPU accelerated on both"
+      },
+      {
+        "start": 9538,
+        "stop": 9746,
+        "text": " OpenGL and Vulkan."
+      },
+      {
+        "start": 9746,
+        "stop": 10186,
+        "text": " Yeah, if you've seen something like dash dash, I can't remember exactly, but it's like dash"
+      },
+      {
+        "start": 10186,
+        "stop": 10830,
+        "text": " dash process something after your Chrome executable in your process list, that's essentially their"
+      },
+      {
+        "start": 10830,
+        "stop": 11302,
+        "text": " workaround for this missing capability that's just going to be baked in now."
+      },
+      {
+        "start": 11302,
+        "stop": 11664,
+        "text": " And then Chrome could just start like any old regular application and other things that"
+      },
+      {
+        "start": 11664,
+        "stop": 11828,
+        "text": " are based on Chromium."
+      },
+      {
+        "start": 11828,
+        "stop": 12396,
+        "text": " But long term, there's also some work that Collabr is doing so that way desktop compositors"
+      },
+      {
+        "start": 12396,
+        "stop": 13102,
+        "text": " can take advantage of some tooling to communicate about optional formats about the screen, modifiers"
+      },
+      {
+        "start": 13102,
+        "stop": 13640,
+        "text": " like maybe rotated, maybe it's in tablet mode, you know, that kind of information that it's"
+      },
+      {
+        "start": 13640,
+        "stop": 13840,
+        "text": " good for the application running."
+      },
+      {
+        "start": 13840,
+        "stop": 14236,
+        "text": " And of course, if the compositor is aware of any of that information, if it could relay"
+      },
+      {
+        "start": 14236,
+        "stop": 14748,
+        "text": " it to a running application so that application can respond, then that's just a better experience"
+      },
+      {
+        "start": 14748,
+        "stop": 14900,
+        "text": " for the end user."
+      },
+      {
+        "start": 14900,
+        "stop": 15124,
+        "text": " That groundwork has been laid in there now."
+      },
+      {
+        "start": 15124,
+        "stop": 15484,
+        "text": " And of course, we just need the other side of the work to get done on the compositor"
+      },
+      {
+        "start": 15484,
+        "stop": 15584,
+        "text": " side."
+      },
+      {
+        "start": 15584,
+        "stop": 16240,
+        "text": " Gosh, all these recent changes really makes one wonder, how good could Windows app and"
+      },
+      {
+        "start": 16240,
+        "stop": 16760,
+        "text": " game compatibility, how good could that be in a couple more years, you know?"
+      },
+      {
+        "start": 16760,
+        "stop": 17316,
+        "text": " I mean, thinking about the last five or 10 years, it's come a long way already."
+      },
+      {
+        "start": 17316,
+        "stop": 18332,
+        "text": " And a little more polish, I think we get that next set of people ready to switch to Linux."
+      },
+      {
+        "start": 18332,
+        "stop": 18856,
+        "text": " Linus released Linux 6.1 this week, and the big headline feature is the initial support"
+      },
+      {
+        "start": 18856,
+        "stop": 19080,
+        "text": " for the Rust programming language."
+      },
+      {
+        "start": 19080,
+        "stop": 19384,
+        "text": " But \"initial\" is really the key word there."
+      },
+      {
+        "start": 19384,
+        "stop": 19852,
+        "text": " Indeed, it really is a basic implementation at this stage."
+      },
+      {
+        "start": 19852,
+        "stop": 20242,
+        "text": " There's actually nothing but test code that's actually shipping."
+      },
+      {
+        "start": 20242,
+        "stop": 20686,
+        "text": " We haven't seen something like a GPU driver or file system written in Rust actually make"
+      },
+      {
+        "start": 20686,
+        "stop": 20820,
+        "text": " it to the mainline kernel."
+      },
+      {
+        "start": 20820,
+        "stop": 21044,
+        "text": " At least, not quite yet."
+      },
+      {
+        "start": 21044,
+        "stop": 21616,
+        "text": " No, but we do believe both a file system and GPU Rust driver are in development."
+      },
+      {
+        "start": 21616,
+        "stop": 22108,
+        "text": " And we've even heard Linus voice support for a file system driver or some other system"
+      },
+      {
+        "start": 22108,
+        "stop": 22530,
+        "text": " driver as a good place to start with Rust because it's relatively isolated from the"
+      },
+      {
+        "start": 22530,
+        "stop": 22674,
+        "text": " rest of the kernel."
+      },
+      {
+        "start": 22674,
+        "stop": 22984,
+        "text": " And so in that sense, it kind of makes a great starting point."
+      },
+      {
+        "start": 22984,
+        "stop": 23358,
+        "text": " There's so many great updates in 6.1 for just everyday devices."
+      },
+      {
+        "start": 23358,
+        "stop": 23670,
+        "text": " The PinePhone keyboard driver, that chips in there."
+      },
+      {
+        "start": 23670,
+        "stop": 23950,
+        "text": " The fancy Xbox controller driver, that chips in there."
+      },
+      {
+        "start": 23950,
+        "stop": 24572,
+        "text": " There's like a whole bunch of hardware from really cool new processor features, new video"
+      },
+      {
+        "start": 24572,
+        "stop": 24932,
+        "text": " card features, game controller stuff."
+      },
+      {
+        "start": 24932,
+        "stop": 25310,
+        "text": " It's just nice to see all this stuff kind of land for everyday folk out there."
+      },
+      {
+        "start": 25310,
+        "stop": 25516,
+        "text": " And the kernel got a new superpower as well."
+      },
+      {
+        "start": 25516,
+        "stop": 26028,
+        "text": " It is now capable of decompressing and launching itself independent of the hardware architecture"
+      },
+      {
+        "start": 26028,
+        "stop": 26128,
+        "text": " it's on."
+      },
+      {
+        "start": 26128,
+        "stop": 26454,
+        "text": " At least, on EFI systems."
+      },
+      {
+        "start": 26454,
+        "stop": 26656,
+        "text": " For some reason, that excites me."
+      },
+      {
+        "start": 26656,
+        "stop": 27172,
+        "text": " I don't know quite how yet, but surely some K-exec madness to come."
+      },
+      {
+        "start": 27172,
+        "stop": 27708,
+        "text": " There's also some significant I/O U-ring performance improvements in 6.1."
+      },
+      {
+        "start": 27708,
+        "stop": 28374,
+        "text": " And it looks like 6.1 is on target to end up as the next LTS kernel, or at least there's"
+      },
+      {
+        "start": 28374,
+        "stop": 28552,
+        "text": " a pretty good chance."
+      },
+      {
+        "start": 28552,
+        "stop": 29116,
+        "text": " Which probably makes 6.1 a kernel we'll be talking about for years to come."
+      },
+      {
+        "start": 29116,
+        "stop": 29234,
+        "text": " I think so."
+      },
+      {
+        "start": 29234,
+        "stop": 29736,
+        "text": " And so with 6.1 out, that means the \"merge window from hell\" has opened up."
+      },
+      {
+        "start": 29736,
+        "stop": 30304,
+        "text": " At least that's what Linus calls it, because of course this cycle is just before the holidays,"
+      },
+      {
+        "start": 30304,
+        "stop": 30542,
+        "text": " or perhaps just right on the holidays."
+      },
+      {
+        "start": 30542,
+        "stop": 31132,
+        "text": " And like many of us, Linus has some holiday travel to do as well, so that'll be challenging."
+      },
+      {
+        "start": 31132,
+        "stop": 31232,
+        "text": " It sure will."
+      },
+      {
+        "start": 31232,
+        "stop": 31850,
+        "text": " It looks like Linux 6.2 will have its stockings stuffed full of features as well."
+      },
+      {
+        "start": 31850,
+        "stop": 32386,
+        "text": " First and foremost, at least for us, a stable version of Intel's Arc graphics driver should"
+      },
+      {
+        "start": 32386,
+        "stop": 32822,
+        "text": " end up in 6.2, along with more support for Apple hardware."
+      },
+      {
+        "start": 32822,
+        "stop": 33326,
+        "text": " Yeah, it seems like we're seeing that Apple hardware support every single release."
+      },
+      {
+        "start": 33326,
+        "stop": 33696,
+        "text": " And all right, that's great, let's just keep building towards that."
+      },
+      {
+        "start": 33696,
+        "stop": 34088,
+        "text": " They also solved a so-called \"tasty target for attackers.\""
+      },
+      {
+        "start": 34088,
+        "stop": 34306,
+        "text": " I wouldn't be surprised if this gets backported."
+      },
+      {
+        "start": 34306,
+        "stop": 34888,
+        "text": " It refers to work that's gone into some new patches for Linux 6.2's memory management,"
+      },
+      {
+        "start": 34888,
+        "stop": 35068,
+        "text": " at least on x86 systems."
+      },
+      {
+        "start": 35068,
+        "stop": 35454,
+        "text": " It's based on work discovered by a Google researcher, and they found that the CPU entry"
+      },
+      {
+        "start": 35454,
+        "stop": 35972,
+        "text": " area -- that's a piece of per-CPU data that is mapped into userspace page tables -- well,"
+      },
+      {
+        "start": 35972,
+        "stop": 36542,
+        "text": " it wasn't subject to any randomization, irrespective of what the kernel address space layout randomization"
+      },
+      {
+        "start": 36542,
+        "stop": 36678,
+        "text": " settings were."
+      },
+      {
+        "start": 36678,
+        "stop": 37198,
+        "text": " Now, the work to actually solve that problem and add in some randomization on the per-CPU"
+      },
+      {
+        "start": 37198,
+        "stop": 37650,
+        "text": " entry areas has been done, and that was contributed by developers at Intel, and that is ready"
+      },
+      {
+        "start": 37650,
+        "stop": 38016,
+        "text": " to go in 6.2."
+      },
+      {
+        "start": 38016,
+        "stop": 38694,
+        "text": " And perhaps a little less appealing, the driver to support Intel's software-defined silicon,"
+      },
+      {
+        "start": 38694,
+        "stop": 38922,
+        "text": " now known as Intel On Demand."
+      },
+      {
+        "start": 38922,
+        "stop": 39304,
+        "text": " Well, it's getting an update in 6.2."
+      },
+      {
+        "start": 39304,
+        "stop": 39952,
+        "text": " In addition to updating that branding and a few new features, most notably, it's getting"
+      },
+      {
+        "start": 39952,
+        "stop": 40436,
+        "text": " metered support ready for what they call the consumption activation model."
+      },
+      {
+        "start": 40436,
+        "stop": 40584,
+        "text": " Oh, great."
+      },
+      {
+        "start": 40584,
+        "stop": 41308,
+        "text": " Well, coming to a Xeon near you, and then who knows from where after that or to."
+      },
+      {
+        "start": 41308,
+        "stop": 41492,
+        "text": " There is some good news, though, in 6.2 still."
+      },
+      {
+        "start": 41492,
+        "stop": 41616,
+        "text": " It's not all bad news."
+      },
+      {
+        "start": 41616,
+        "stop": 42240,
+        "text": " But our first users, you're getting a big performance improvement and reliability improvements"
+      },
+      {
+        "start": 42240,
+        "stop": 42544,
+        "text": " to ButterFS's native RAID 5 and RAID 6 modes."
+      },
+      {
+        "start": 42544,
+        "stop": 43020,
+        "text": " They're starting to talk very serious about their RAID 5 and RAID 6 improvements."
+      },
+      {
+        "start": 43020,
+        "stop": 43128,
+        "text": " It's good to see."
+      },
+      {
+        "start": 43128,
+        "stop": 43834,
+        "text": " And you can rest assured, we'll dig more into that as it gets closer."
+      },
+      {
+        "start": 43834,
+        "stop": 44472,
+        "text": " The AlmaLinux team received a big vote of confidence from a significant industry player this week."
+      },
+      {
+        "start": 44472,
+        "stop": 45050,
+        "text": " CERN, the European Center for Nuclear Research based in Switzerland, and the Fermi National"
+      },
+      {
+        "start": 45050,
+        "stop": 45752,
+        "text": " Accelerator Laboratory, or Fermilab, based in Illinois, both said they would offer AlmaLinux"
+      },
+      {
+        "start": 45752,
+        "stop": 46318,
+        "text": " as the standard Linux distribution for experiments in their labs."
+      },
+      {
+        "start": 46318,
+        "stop": 46788,
+        "text": " The organization said in a joint statement, quote, \"AlmaLinux has recently been gaining"
+      },
+      {
+        "start": 46788,
+        "stop": 47280,
+        "text": " traction among the community due to its long lifecycle for each major version, extended"
+      },
+      {
+        "start": 47280,
+        "stop": 47824,
+        "text": " architecture support, rapid release cycle, and upstream community contributions and support"
+      },
+      {
+        "start": 47824,
+        "stop": 48074,
+        "text": " for security advisory metadata.\""
+      },
+      {
+        "start": 48074,
+        "stop": 48590,
+        "text": " They go on to say, \"In testing, it is demonstrated to be perfectly compatible with other rebuilds"
+      },
+      {
+        "start": 48590,
+        "stop": 48768,
+        "text": " of Red Hat Enterprise Linux.\""
+      },
+      {
+        "start": 48768,
+        "stop": 49536,
+        "text": " Now, like all complex real world networks, there are other versions of Linux in use,"
+      },
+      {
+        "start": 49536,
+        "stop": 49876,
+        "text": " including a limited number of RHEL and CentOS servers."
+      },
+      {
+        "start": 49876,
+        "stop": 50234,
+        "text": " And those will probably remain in production for a couple of years to come."
+      },
+      {
+        "start": 50234,
+        "stop": 50406,
+        "text": " Well, that's kind of understandable."
+      },
+      {
+        "start": 50406,
+        "stop": 50638,
+        "text": " They're not going to switch overnight."
+      },
+      {
+        "start": 50638,
+        "stop": 51070,
+        "text": " I bet if you looked hard enough, you'd also find some Suess and Debbie in there too, at"
+      },
+      {
+        "start": 51070,
+        "stop": 51490,
+        "text": " least from what some little birdies have told me."
+      },
+      {
+        "start": 51490,
+        "stop": 51934,
+        "text": " But if you just kind of go by the headline here, just their recommendation, just saying,"
+      },
+      {
+        "start": 51934,
+        "stop": 52072,
+        "text": " \"This is the one we're going behind."
+      },
+      {
+        "start": 52072,
+        "stop": 52562,
+        "text": " This is the one we recommend,\" that has significant implications for the scientific community."
+      },
+      {
+        "start": 52562,
+        "stop": 53062,
+        "text": " And it does seem like a great fit from an organizational structure standpoint on homicide"
+      },
+      {
+        "start": 53062,
+        "stop": 53310,
+        "text": " and the goals of the scientific community."
+      },
+      {
+        "start": 53310,
+        "stop": 53762,
+        "text": " And they say in their joint announcement that they came to this conclusion based on the"
+      },
+      {
+        "start": 53762,
+        "stop": 54220,
+        "text": " particular requirements and researcher feedback."
+      },
+      {
+        "start": 54220,
+        "stop": 54894,
+        "text": " So it seems there was some demand from Alma from their local community as well."
+      },
+      {
+        "start": 54894,
+        "stop": 55550,
+        "text": " The GNU Compiler Collection, or GCC for short, the popular free software compiler system,"
+      },
+      {
+        "start": 55550,
+        "stop": 55902,
+        "text": " has added support for the Rust programming language."
+      },
+      {
+        "start": 55902,
+        "stop": 56578,
+        "text": " Now, the GCC Rust frontend, as it's known, provides preliminary support for Rust, and"
+      },
+      {
+        "start": 56578,
+        "stop": 57010,
+        "text": " it's now been merged into the GCC 13 codebase."
+      },
+      {
+        "start": 57010,
+        "stop": 57194,
+        "text": " That's kind of great."
+      },
+      {
+        "start": 57194,
+        "stop": 57714,
+        "text": " Although it'll likely take until the next stable release of GCC 13 for most users to"
+      },
+      {
+        "start": 57714,
+        "stop": 58342,
+        "text": " get their hands on this, and that's expected to be in March or April of next year, 2023,"
+      },
+      {
+        "start": 58342,
+        "stop": 58746,
+        "text": " in the form of GCC 13.1."
+      },
+      {
+        "start": 58746,
+        "stop": 59398,
+        "text": " And just to continue to temper your expectations, we gotta note that this new frontend is still"
+      },
+      {
+        "start": 59398,
+        "stop": 59794,
+        "text": " very early in development, and it's gonna take some time before it's fully functional"
+      },
+      {
+        "start": 59794,
+        "stop": 59970,
+        "text": " and feature complete."
+      },
+      {
+        "start": 59970,
+        "stop": 60542,
+        "text": " Like for instance, Rust's famous memory safety feature, the borrow checker, that has"
+      },
+      {
+        "start": 60542,
+        "stop": 60662,
+        "text": " yet to be implemented."
+      },
+      {
+        "start": 60662,
+        "stop": 60994,
+        "text": " So that kind of gives you an idea of how far along this is."
+      },
+      {
+        "start": 60994,
+        "stop": 61586,
+        "text": " But despite those limitations, I think the addition of Rust support to GCC in general,"
+      },
+      {
+        "start": 61586,
+        "stop": 62030,
+        "text": " that's a big step forward, and it's really nice to have an alternative implementation"
+      },
+      {
+        "start": 62030,
+        "stop": 62322,
+        "text": " to the official LLVM-based compiler."
+      },
+      {
+        "start": 62422,
+        "stop": 62866,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 62866,
+        "stop": 63206,
+        "text": " That's where you go to get $100 in 60-day credit on a new account, and it's a great"
+      },
+      {
+        "start": 63206,
+        "stop": 63630,
+        "text": " way to support the show while you're checking out fast, reliable cloud hosting with the"
+      },
+      {
+        "start": 63630,
+        "stop": 63792,
+        "text": " best support in the business."
+      },
+      {
+        "start": 63792,
+        "stop": 63968,
+        "text": " Real humans all day, every day."
+      },
+      {
+        "start": 63968,
+        "stop": 64106,
+        "text": " Not chatbots."
+      },
+      {
+        "start": 64106,
+        "stop": 64246,
+        "text": " Real human beings."
+      },
+      {
+        "start": 64246,
+        "stop": 64718,
+        "text": " And Linode is 30 to 50% cheaper than the hyperscalers that are out there with their crazy platforms"
+      },
+      {
+        "start": 64718,
+        "stop": 65026,
+        "text": " and their crazy terms that wanna lock you in an upsell every turn you make."
+      },
+      {
+        "start": 65026,
+        "stop": 65182,
+        "text": " It's ridiculous."
+      },
+      {
+        "start": 65182,
+        "stop": 65302,
+        "text": " Linode doesn't play that game."
+      },
+      {
+        "start": 65302,
+        "stop": 65930,
+        "text": " The game that they're playing is good product, good support, good documentation, great dashboard,"
+      },
+      {
+        "start": 65930,
+        "stop": 66458,
+        "text": " an API for days, and 11 data centers around the world for you to choose from, with another"
+      },
+      {
+        "start": 66458,
+        "stop": 66702,
+        "text": " dozen coming on next year."
+      },
+      {
+        "start": 66702,
+        "stop": 67202,
+        "text": " I am passionate, passionate about Linode, three years into being a customer."
+      },
+      {
+        "start": 67202,
+        "stop": 67302,
+        "text": " I love it."
+      },
+      {
+        "start": 67302,
+        "stop": 67578,
+        "text": " I love the performance, I love the flexibility, and I love the support."
+      },
+      {
+        "start": 67578,
+        "stop": 67734,
+        "text": " So go build something."
+      },
+      {
+        "start": 67734,
+        "stop": 67906,
+        "text": " Go learn something."
+      },
+      {
+        "start": 67906,
+        "stop": 68114,
+        "text": " Try it for yourself and support the show."
+      },
+      {
+        "start": 68114,
+        "stop": 68322,
+        "text": " Linode's what we use and I know you're gonna love it."
+      },
+      {
+        "start": 68322,
+        "stop": 68526,
+        "text": " So go get 100 bucks and try it out."
+      },
+      {
+        "start": 68526,
+        "stop": 68726,
+        "text": " Linode.com/lan."
+      },
+      {
+        "start": 68726,
+        "stop": 69294,
+        "text": " And thank you to Collide."
+      },
+      {
+        "start": 69294,
+        "stop": 69826,
+        "text": " Collide is an endpoint security solution that uses the most powerful untapped resource in"
+      },
+      {
+        "start": 69826,
+        "stop": 70166,
+        "text": " IT, end users."
+      },
+      {
+        "start": 70166,
+        "stop": 70674,
+        "text": " When you're trying to achieve security goals, whether a third party audit or your own compliance"
+      },
+      {
+        "start": 70674,
+        "stop": 71226,
+        "text": " standards, the conventional wisdom is to treat every device like Fort Knox."
+      },
+      {
+        "start": 71226,
+        "stop": 71778,
+        "text": " Old school device management tools like MDMs force disruptive agents onto employee devices"
+      },
+      {
+        "start": 71778,
+        "stop": 72270,
+        "text": " that slow performance and treat privacy as an afterthought."
+      },
+      {
+        "start": 72270,
+        "stop": 72814,
+        "text": " That way of doing things turns IT admins and end users into enemies and creates its own"
+      },
+      {
+        "start": 72814,
+        "stop": 73398,
+        "text": " security problems because users turn to shadow IT just to do their jobs."
+      },
+      {
+        "start": 73398,
+        "stop": 73690,
+        "text": " Collide does things differently."
+      },
+      {
+        "start": 73690,
+        "stop": 74398,
+        "text": " Instead of forcing changes on users, Collide sends them security recommendations via Slack."
+      },
+      {
+        "start": 74398,
+        "stop": 74846,
+        "text": " Collide will automatically notify your team when their devices are insecure and give them"
+      },
+      {
+        "start": 74846,
+        "stop": 75206,
+        "text": " step-by-step instructions on how to solve the problem."
+      },
+      {
+        "start": 75206,
+        "stop": 75706,
+        "text": " By reaching out to employees via a friendly Slack DM and educating them about company"
+      },
+      {
+        "start": 75706,
+        "stop": 76254,
+        "text": " policies, Collide can help you build a culture in which everyone contributes to security"
+      },
+      {
+        "start": 76254,
+        "stop": 76694,
+        "text": " because everyone understands how and why to do it."
+      },
+      {
+        "start": 76694,
+        "stop": 77202,
+        "text": " For IT admins, Collide provides a single dashboard that lets you monitor the security of your"
+      },
+      {
+        "start": 77202,
+        "stop": 77674,
+        "text": " entire fleet, whether they're running on Mac, Windows, or Linux."
+      },
+      {
+        "start": 77674,
+        "stop": 78164,
+        "text": " You can see at a glance which employees have their disk encrypted, OS up to date, and password"
+      },
+      {
+        "start": 78164,
+        "stop": 78738,
+        "text": " manager installed, making it easy to prove compliance to your auditors, customers, and"
+      },
+      {
+        "start": 78738,
+        "stop": 78838,
+        "text": " leadership."
+      },
+      {
+        "start": 78838,
+        "stop": 79134,
+        "text": " So, that's Collide."
+      },
+      {
+        "start": 79134,
+        "stop": 79666,
+        "text": " User-centered cross-platform endpoint security for teams that Slack."
+      },
+      {
+        "start": 79666,
+        "stop": 80010,
+        "text": " You can meet your compliance goals by putting users first."
+      },
+      {
+        "start": 80010,
+        "stop": 80314,
+        "text": " Visit Collide.com/lan to find out how."
+      },
+      {
+        "start": 80314,
+        "stop": 80856,
+        "text": " If you follow that link, they'll hook you up with a goodie bag, including a T-shirt,"
+      },
+      {
+        "start": 80856,
+        "stop": 81134,
+        "text": " just for activating a free trial."
+      },
+      {
+        "start": 81134,
+        "stop": 81886,
+        "text": " That's K-O-L-I-D-E dot com slash lan."
+      },
+      {
+        "start": 81886,
+        "stop": 82450,
+        "text": " The PeerTube team announced version 5 this week, which they say is the result of five"
+      },
+      {
+        "start": 82450,
+        "stop": 82718,
+        "text": " years of handcrafted development."
+      },
+      {
+        "start": 82718,
+        "stop": 83282,
+        "text": " If you don't remember, PeerTube is a decentralized, federated alternative to YouTube."
+      },
+      {
+        "start": 83282,
+        "stop": 83718,
+        "text": " Some of the new features they're highlighting in version 5 is private and internal video"
+      },
+      {
+        "start": 83718,
+        "stop": 84122,
+        "text": " files, and they're now more secure than they were previously, held a little bit differently"
+      },
+      {
+        "start": 84122,
+        "stop": 84476,
+        "text": " on the file system, and there's better authentication checks as well."
+      },
+      {
+        "start": 84476,
+        "stop": 84810,
+        "text": " There is a migration script you'll have to use if you have private videos, so watch"
+      },
+      {
+        "start": 84810,
+        "stop": 84950,
+        "text": " out for that."
+      },
+      {
+        "start": 84950,
+        "stop": 85326,
+        "text": " Also, they've introduced and expanded object storage support."
+      },
+      {
+        "start": 85326,
+        "stop": 85794,
+        "text": " In the last version, we got object storage support for uploaded stored videos."
+      },
+      {
+        "start": 85794,
+        "stop": 86202,
+        "text": " Now they've introduced object storage support for live streams, which is a fantastic feature"
+      },
+      {
+        "start": 86202,
+        "stop": 86766,
+        "text": " for us because that's how we use it, and lovely to see two-factor authentication landing"
+      },
+      {
+        "start": 86766,
+        "stop": 86866,
+        "text": " as well."
+      },
+      {
+        "start": 86866,
+        "stop": 87334,
+        "text": " I'm sure if you do have a lot of private videos, that'll be especially nice to see."
+      },
+      {
+        "start": 87334,
+        "stop": 87798,
+        "text": " There's also a few other improvements to the user experience generally, like a better"
+      },
+      {
+        "start": 87798,
+        "stop": 88244,
+        "text": " indication of live streams when they're happening, and some fixes to network issues"
+      },
+      {
+        "start": 88244,
+        "stop": 88472,
+        "text": " in the video player."
+      },
+      {
+        "start": 88472,
+        "stop": 88986,
+        "text": " This new version also introduces a new studio feature, which lets you do some light video"
+      },
+      {
+        "start": 88986,
+        "stop": 89714,
+        "text": " editing and replay publications if you want a Twitch-like live stream experience."
+      },
+      {
+        "start": 89714,
+        "stop": 90090,
+        "text": " PeerTube 5 also comes with the usual set of bug fixes and improvements we've come to"
+      },
+      {
+        "start": 90090,
+        "stop": 90754,
+        "text": " expect, including some nice API endpoint improvements that the developers say should enable PeerTube"
+      },
+      {
+        "start": 90754,
+        "stop": 91430,
+        "text": " contributors to develop an even more powerful set of future plugins."
+      },
+      {
+        "start": 91430,
+        "stop": 91938,
+        "text": " And something that stood out to me, some nice updates to their open telemetry documentation,"
+      },
+      {
+        "start": 91938,
+        "stop": 92334,
+        "text": " which should make it much simpler if you want to use tools like Prometheus and Grafana to"
+      },
+      {
+        "start": 92334,
+        "stop": 92530,
+        "text": " monitor your PeerTube."
+      },
+      {
+        "start": 92530,
+        "stop": 92786,
+        "text": " Actually, that is kind of nice."
+      },
+      {
+        "start": 92786,
+        "stop": 93166,
+        "text": " We've been a little unhappy with some of the metric tracking at times with PeerTube"
+      },
+      {
+        "start": 93166,
+        "stop": 93734,
+        "text": " so far, so it'd be nice just to have that second set of data analytics."
+      },
+      {
+        "start": 93734,
+        "stop": 94414,
+        "text": " I gave this upgrade a go on our jupyter.tube instance, and well, there have been a few"
+      },
+      {
+        "start": 94414,
+        "stop": 94582,
+        "text": " issues on the admin side."
+      },
+      {
+        "start": 94582,
+        "stop": 94850,
+        "text": " I've opened a bug about that."
+      },
+      {
+        "start": 94850,
+        "stop": 95238,
+        "text": " And I think maybe we have a few problems with some of our pages not showing any videos,"
+      },
+      {
+        "start": 95238,
+        "stop": 95518,
+        "text": " even though there's videos on the system."
+      },
+      {
+        "start": 95518,
+        "stop": 95922,
+        "text": " I'd be curious if our listeners could give us feedback on that because I'm coming from"
+      },
+      {
+        "start": 95922,
+        "stop": 96138,
+        "text": " a cache system, I'm logged in all the time."
+      },
+      {
+        "start": 96138,
+        "stop": 96490,
+        "text": " I'd like to know what the experience for them is like on jupyter.tube right now."
+      },
+      {
+        "start": 96490,
+        "stop": 97006,
+        "text": " Yeah, we should call out here that there are some minor but breaking changes included in"
+      },
+      {
+        "start": 97006,
+        "stop": 97258,
+        "text": " the 5.0 release."
+      },
+      {
+        "start": 97258,
+        "stop": 97566,
+        "text": " Before you upgrade, definitely go over to their GitHub release page where they've got"
+      },
+      {
+        "start": 97566,
+        "stop": 97694,
+        "text": " some instructions documented."
+      },
+      {
+        "start": 97694,
+        "stop": 97794,
+        "text": " It's not a big deal."
+      },
+      {
+        "start": 97794,
+        "stop": 98282,
+        "text": " They give you a command to run what has Docker-specific instructions if you're doing it that way"
+      },
+      {
+        "start": 98282,
+        "stop": 98430,
+        "text": " like we are."
+      },
+      {
+        "start": 98430,
+        "stop": 98880,
+        "text": " There's also a configuration file update that you need to do manually."
+      },
+      {
+        "start": 98880,
+        "stop": 99192,
+        "text": " But take care of that first."
+      },
+      {
+        "start": 99192,
+        "stop": 99292,
+        "text": " Should have an easy time."
+      },
+      {
+        "start": 99292,
+        "stop": 99718,
+        "text": " Yeah, yeah, as long as you do it before the upgrade."
+      },
+      {
+        "start": 99718,
+        "stop": 99830,
+        "text": " It should be really smooth."
+      },
+      {
+        "start": 99830,
+        "stop": 100026,
+        "text": " Don't ask me how I know."
+      },
+      {
+        "start": 100026,
+        "stop": 100542,
+        "text": " I do hope, though, that the overall polish and feature set of PeerTube 5.0 will start"
+      },
+      {
+        "start": 100542,
+        "stop": 101274,
+        "text": " to draw the eye of Linux and open source events and projects to use PeerTube because it's"
+      },
+      {
+        "start": 101274,
+        "stop": 101726,
+        "text": " basically an open source YouTube platform in a box."
+      },
+      {
+        "start": 101726,
+        "stop": 102228,
+        "text": " It does the channel stuff, you can upload videos, you can even import videos from YouTube"
+      },
+      {
+        "start": 102228,
+        "stop": 102606,
+        "text": " into it directly, and of course it does the live streaming."
+      },
+      {
+        "start": 102606,
+        "stop": 103120,
+        "text": " And I think having used it on and off for a couple of years and now we're using it consistently"
+      },
+      {
+        "start": 103120,
+        "stop": 103814,
+        "text": " multiple times a week, it could easily address the need of most fast expos and projects."
+      },
+      {
+        "start": 103814,
+        "stop": 104112,
+        "text": " The open source community could be embracing this, I think, in a lot bigger way and it"
+      },
+      {
+        "start": 104112,
+        "stop": 104650,
+        "text": " just seems like such a natural fit and a great way for us to help contribute to decentralizing"
+      },
+      {
+        "start": 104650,
+        "stop": 104978,
+        "text": " video distribution on the web."
+      },
+      {
+        "start": 104978,
+        "stop": 105582,
+        "text": " We should note here that for the past five years, PeerTube has really only had one developer"
+      },
+      {
+        "start": 105582,
+        "stop": 105806,
+        "text": " directly dedicated to it."
+      },
+      {
+        "start": 105806,
+        "stop": 106250,
+        "text": " There's also a small team of volunteers at Framusoft that sort of get together and release"
+      },
+      {
+        "start": 106250,
+        "stop": 106926,
+        "text": " one new major version per year, all of that funded solely by user contributions."
+      },
+      {
+        "start": 106926,
+        "stop": 107376,
+        "text": " Yes, in fact, we'll put a link to that in the show notes because I think this is definitely"
+      },
+      {
+        "start": 107376,
+        "stop": 107746,
+        "text": " a project worth keeping an eye on."
+      },
+      {
+        "start": 107746,
+        "stop": 108168,
+        "text": " We will do just that as well as an eye on everything else going on in the world of Linux"
+      },
+      {
+        "start": 108168,
+        "stop": 108296,
+        "text": " and open source."
+      },
+      {
+        "start": 108296,
+        "stop": 108396,
+        "text": " So don't miss an episode."
+      },
+      {
+        "start": 108396,
+        "stop": 108862,
+        "text": " Go to LinuxActionNews.com/subscribe for all the ways to get each release."
+      },
+      {
+        "start": 108862,
+        "stop": 109366,
+        "text": " And LinuxActionNews.com/contact for ways to get in touch."
+      },
+      {
+        "start": 109366,
+        "stop": 109804,
+        "text": " And just for a little longer, we have a special promo at Jupiter.Party, the membership program"
+      },
+      {
+        "start": 109804,
+        "stop": 110230,
+        "text": " that supports all the show and gets them all for you ad free, including this here Linux"
+      },
+      {
+        "start": 110230,
+        "stop": 110364,
+        "text": " Action News."
+      },
+      {
+        "start": 110364,
+        "stop": 110982,
+        "text": " Just use the promo code 2022 to take $2 off the monthly subscription for the lifetime"
+      },
+      {
+        "start": 110982,
+        "stop": 111082,
+        "text": " of the subscription."
+      },
+      {
+        "start": 111082,
+        "stop": 111476,
+        "text": " That's promo code 2022 at Jupiter.Party."
+      },
+      {
+        "start": 111476,
+        "stop": 111998,
+        "text": " As for us, we'll be partying on right here next week with our take on the latest Linux"
+      },
+      {
+        "start": 111998,
+        "stop": 112162,
+        "text": " and open source news."
+      },
+      {
+        "start": 112162,
+        "stop": 112270,
+        "text": " Thanks for joining us."
+      },
+      {
+        "start": 112270,
+        "stop": 112446,
+        "text": " And that's all the news for this week."
+      },
+      {
+        "start": 112446,
+        "stop": 114246,
+        "text": " [Music]"
+      },
+      {
+        "start": 114246,
+        "stop": 114446,
+        "text": " [Music]"
+      },
+      {
+        "start": 114446,
+        "stop": 114646,
+        "text": " [Music]"
+      }
+    ],
+    "processing_time": {
+      "secs": 702,
+      "nanos": 170499269
+    }
+  },
+  "metadata": {
+    "title": "Linux Action News: Linux Action News 271",
+    "pictures": [],
+    "duration": {
+      "secs": 1141,
+      "nanos": 972000000
+    },
+    "unique_id": "http://linuxactionnews.com/271"
+  },
+  "episode": {
+    "title": "Linux Action News 271",
+    "description": "Why the next kernel will be \"the merge window from hell,\" a holiday gift for Wayland users, and how the open source community could do more to take on YouTube.",
+    "content": "<p><p>Why the next kernel will be &quot;the merge window from hell,&quot; a holiday gift for Wayland users, and how the open source community could do more to take on YouTube.</p><p>Sponsored By:</p><ul><li><a href=\"http://linode.com/lan\" rel=\"nofollow\">Linode</a>: <a href=\"http://linode.com/lan\" rel=\"nofollow\">Sign up using the link on this page and receive a $100 60-day credit towards your new account. </a></li><li><a href=\"https://kolide.com/lan\" rel=\"nofollow\">Kolide</a>: <a href=\"https://kolide.com/lan\" rel=\"nofollow\">User-centered, cross-platform endpoint security for teams that Slack. </a></li></ul><p><a href=\"https://www.jupiter.party/\" rel=\"payment\">Support Linux Action News</a></p><p>Links:</p><ul><li><a href=\"https://www.collabora.com/news-and-blog/news-and-events/wine-on-wayland-2022-updatye-more-games-more-apps-more-fun.html\" title=\"Wine on Wayland 2022 update: more games, more apps, more fun!\" rel=\"nofollow\">Wine on Wayland 2022 update: more games, more apps, more fun!</a> &mdash; Significant improvement compared to last year is support for cross-process rendering, which is required by Chromium/CEF applications. Last year the driver was able to run Chrome with the \"--in-process\" command-line option. Chrome is now supported without any special flags, and is fully GPU accelerated on both OpenGL and Vulkan!</li><li><a href=\"https://www.collabora.com/news-and-blog/news-and-events/a-wayland-driver-for-wine.html\" title=\"A Wayland driver for Wine\" rel=\"nofollow\">A Wayland driver for Wine</a></li><li><a href=\"https://www.collabora.com/news-and-blog/blog/2021/12/22/wine-on-wayland-year-end-update-improved-functionality-stability/\" title=\"Wine on Wayland year-end update: improved functionality & stability\" rel=\"nofollow\">Wine on Wayland year-end update: improved functionality &amp; stability</a></li><li><a href=\"https://www.phoronix.com/news/Wine-Wayland-2022\" title=\"Wine’s Wayland Driver Is Becoming Mature, May Aim For Upstreaming Early Next Year\" rel=\"nofollow\">Wine’s Wayland Driver Is Becoming Mature, May Aim For Upstreaming Early Next Year</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.1-Released\" title=\"Linux 6.1 Released With MGLRU, Initial Rust Code\" rel=\"nofollow\">Linux 6.1 Released With MGLRU, Initial Rust Code</a> &mdash; Linux 6.1 integrates the exciting Multi-Gen LRU (MGLRU) overhaul of the page reclamation code, the initial Rust programming language support</li><li><a href=\"https://lwn.net/Articles/917504/\" title=\"The 6.1 kernel is out [LWN.net]\" rel=\"nofollow\">The 6.1 kernel is out [LWN.net]</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.2-DRM\" title=\"Linux 6.2 Graphics Changes: Intel Arc Graphics Stable, Initial NVIDIA RTX 30 Acceleration\" rel=\"nofollow\">Linux 6.2 Graphics Changes: Intel Arc Graphics Stable, Initial NVIDIA RTX 30 Acceleration</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.2-x86-mm\" title=\"Linux 6.2 Addresses Another “Tasty Target For Attackers”\" rel=\"nofollow\">Linux 6.2 Addresses Another “Tasty Target For Attackers”</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.2-Arm-SoC-Updates\" title=\"Linux 6.2 Expands Support For More Qualcomm Snapdragon SoCs, Apple M1 Pro/Ultra/Max\" rel=\"nofollow\">Linux 6.2 Expands Support For More Qualcomm Snapdragon SoCs, Apple M1 Pro/Ultra/Max</a></li><li><a href=\"https://www.phoronix.com/news/Intel-On-Demand-Linux-6.2\" title=\"Intel On Demand Driver Ready To Activate Your Licensed CPU Features With Linux 6.2\" rel=\"nofollow\">Intel On Demand Driver Ready To Activate Your Licensed CPU Features With Linux 6.2</a></li><li><a href=\"https://www.phoronix.com/news/Linux-6.2-Btrfs-EXT4\" title=\"Btrfs With Linux 6.2 Bringing Performance Improvements, Better RAID 5/6 Reliability\" rel=\"nofollow\">Btrfs With Linux 6.2 Bringing Performance Improvements, Better RAID 5/6 Reliability</a></li><li><a href=\"https://news.fnal.gov/2022/12/fermilab-cern-recommendation-for-linux-distribution/\" title=\"CERN recommendation for Linux distribution\" rel=\"nofollow\">CERN recommendation for Linux distribution</a> &mdash; CERN and Fermilab jointly plan to provide AlmaLinux as the standard distribution for experiments at our facilities, reflecting recent experience and discussions with experiments and other stakeholders</li><li><a href=\"https://www.theregister.com/2022/12/08/cern_fermilab_almalinux/\" title=\"CERN, Fermilab select AlmaLinux as standard for big science\" rel=\"nofollow\">CERN, Fermilab select AlmaLinux as standard for big science</a></li><li><a href=\"https://almalinux.org/blog/almalinux-91-now-available/\" title=\"AlmaLinux 9.1 - Now Available - AlmaLinux OS Blog\" rel=\"nofollow\">AlmaLinux 9.1 - Now Available - AlmaLinux OS Blog</a></li><li><a href=\"https://twitter.com/doener_tech/status/1600732093771816960\" title=\"Stephan Dörner (in English) on Twitter\" rel=\"nofollow\">Stephan Dörner (in English) on Twitter</a> &mdash; CERN and Fermilab jointly plan to provide AlmaLinux as the standard distribution for experiments at our facilities</li><li><a href=\"https://www.phoronix.com/news/GCC-13-Rust-Merged\" title=\"GCC Rust “gccrs” Code Merged Into Mainline GCC 13\" rel=\"nofollow\">GCC Rust “gccrs” Code Merged Into Mainline GCC 13</a> &mdash;  Following last week's approval with the GCC Rust v4 patches for them to be merged, all of the \"gccrs\" code was upstreamed this morning for GNU Compiler Collection 13. </li><li><a href=\"https://framablog.org/2022/12/13/peertube-v5-the-result-of-5-years-handcrafting/\" title=\"PeerTube v5: the result of 5 years’ handcrafting\" rel=\"nofollow\">PeerTube v5: the result of 5 years’ handcrafting</a> &mdash; Five years later, we are releasing PeerTube v5, a tool used by hundreds of thousands people on a thousand interconnected platforms to share over 850,000 videos.</li><li><a href=\"https://soutenir.framasoft.org/en/\" title=\"Support Framasoft\" rel=\"nofollow\">Support Framasoft</a></li><li><a href=\"https://github.com/Chocobozzz/PeerTube/issues/5459\" title=\"Settings Link Missing after 5.0 Upgrade\" rel=\"nofollow\">Settings Link Missing after 5.0 Upgrade</a></li></ul></p>\n",
+    "link": "https://feed.jupiter.zone/allshows#entry-9150",
+    "enclosure": {
+      "url": "https://feed.jupiter.zone/link/19057/15847439/0a0e9adc-413e-40ab-af5a-b7d105a3ca3e.mp3",
+      "length": "16425483",
+      "mime_type": "audio/mpeg"
+    },
+    "pub_date": "2022-12-15T06:25:00+01:00"
+  },
+  "speedup": 1.6263459
+}
