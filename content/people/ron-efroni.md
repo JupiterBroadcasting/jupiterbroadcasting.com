@@ -1,10 +1,10 @@
 ---
 avatar: /images/people/ron-efroni.jpg
 avatar_small: /images/people/ron-efroni_small.jpg
-bio: CEO at Flox
-homepage: https://flox.dev/
+bio: null
+homepage: null
 instagram: null
-linkedin: https://www.linkedin.com/in/ronefroni/
+linkedin: null
 title: Ron Efroni
 twitter: null
 type: guest
