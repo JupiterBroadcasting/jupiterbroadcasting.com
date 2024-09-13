@@ -33,10 +33,11 @@ jobs:
         run: script -e -c "docker compose exec testing pytest -m 'not periodic' --base-url http://jb-com --junitxml report.xml"
 
       - name: Save screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots/
+          overwrite: true
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
