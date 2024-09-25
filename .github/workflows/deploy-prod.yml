@@ -29,12 +29,25 @@ jobs:
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci
 
+      #- name: Do the deploy thing
+      #  run: |
+      #    ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
+      #      cd ${{ secrets.VPS_PROJECT_PATH }}
+      #      git pull
+      #      docker build -t jb-jbcom .
+      #      docker compose -f ~/docker-compose.yml up -d jb-jbcom
+      #      docker image prune -af
+      #    "
+
       - name: Do the deploy thing
         run: |
           ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_TOKEN }}
             cd ${{ secrets.VPS_PROJECT_PATH }}
             git pull
-            docker build -t jb-jbcom .
-            docker compose -f ~/docker-compose.yml up -d jb-jbcom
-            docker image prune -af
+            docker build -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
+            docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
+            docker container prune -f
+            docker image prune -f
+            docker compose up -d jb-jbcom
           "
