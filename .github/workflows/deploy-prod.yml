@@ -49,5 +49,5 @@ jobs:
             docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
             docker container prune -f
             docker image prune -f
-            docker compose up -f ~/docker-compose.yml -d jb-jbcom
+            docker compose -f ~/docker-compose.yml up -d jb-jbcom
           "
