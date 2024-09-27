@@ -6,7 +6,7 @@ homepage: https://ubports.com/
 instagram: null
 linkedin: null
 title: Dalton Durst
-twitter: null
+twitter: https://twitter.com/univrsalsuprbox
 type: guest
 username: daltondurst
 youtube: null
