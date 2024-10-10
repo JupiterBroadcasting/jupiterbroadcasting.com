@@ -1,7 +1,6 @@
 ---
-description: Take $2 a month off for the lifetime of your membership and contribute
-  to our show directly
-link: https://jupitersignal.memberful.com/checkout?plan=53334&coupon=jarjar
+description: Put your support on auto-pilot and get one month for free!
+link: https://jupitersignal.memberful.com/checkout?plan=117630
 shortname: memberful.com-cr
-title: Coder QA
+title: Annual Membership - Jupiter Party
 ---
