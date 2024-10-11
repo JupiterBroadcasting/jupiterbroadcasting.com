@@ -1,7 +1,6 @@
 ---
-description: Put your support on automatic with our annual plan, and get one month
-  of membership for free!
-link: https://jupitersignal.memberful.com/checkout?plan=117630r
+description: Take $1 a month of your membership for a lifetime!
+link: https://jupitersignal.memberful.com/checkout?plan=52946&coupon=summer
 shortname: memberful.com-lup
-title: Jupiter Signal Network Membership
+title: Core Contributor Membership
 ---
