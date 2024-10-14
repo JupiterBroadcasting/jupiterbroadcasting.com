@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <div class="container">
+        <h1 class="title is-3">{{.Title }}</h1>
+
+        <div class="hero mb-5">
+            <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+            <script src="/pagefind/pagefind-ui.js"></script>
+            <div id="search"></div>
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    new PagefindUI({
+                        element: "#search",
+                        showSubResults: true,
+                        sort: {
+                            date: "desc"
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+{{ end }}
