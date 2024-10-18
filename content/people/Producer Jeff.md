@@ -1,5 +1,5 @@
 ---
-avatar: images/people/Producer Jeff.jpg
+avatar: /images/people/Producer Jeff.jpg
 avatar_small: null
 bio: null
 homepage: https://www.jupiterbroadcasting.com/hosts/jeff/
