@@ -4,7 +4,7 @@
   {{ else }}
     {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .CurrentSection.Title) }}
   {{ end }}
-  <div class="container p-4">
+  <div class="container p-4" data-pagefind-body>
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ .Section | safeURL | absURL }}/">Shows</a></li>
@@ -16,7 +16,7 @@
       <div class="columns">
         <div class="column is-8">
           <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
-          <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
+          <h6 style="font-style: italic" data-pagefind-sort="date">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
           <br />
           <p>{{ .Description }} </p>
           </div>
