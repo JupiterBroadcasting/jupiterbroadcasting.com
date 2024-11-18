@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-content">
+    <div class="content">
+      {{ $base_url := .ctx.Site.Params.episode.node_link_base_url }}
+      {{ range (sort .recipients "split" "desc") }}
+        <div class="columns is-mobile">
+          <div class="column is-flex is-align-items-center">
+            <progress class="progress is-primary mb-0" value="{{ .split }}" max="100"></progress>
+            <span class="ml-2 has-text-grey">{{ .split }}%</span>
+          </div>
+          <div class="column">
+            <a href="{{ printf "%s%s" $base_url .address }}" target="_blank" rel="noopener noreferrer">
+              {{ .name }}
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
