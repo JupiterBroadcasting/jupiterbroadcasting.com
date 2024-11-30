@@ -1,6 +1,6 @@
 ---
-description: 30% off the lifetime of your membership!
-link: https://jupitersignal.memberful.com/checkout?plan=53334&coupon=blackfriday
+description: Put your support on auto-pilot and get one month for free!
+link: https://jupitersignal.memberful.com/checkout?plan=117630
 shortname: memberful.com-cr
-title: Coder QA
+title: Annual Membership - Jupiter Party
 ---
