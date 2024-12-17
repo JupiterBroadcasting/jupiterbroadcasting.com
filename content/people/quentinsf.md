@@ -7,7 +7,7 @@ homepage: http://quentinsf.com
 instagram: null
 linkedin: null
 title: Quentin Stafford-Fraser
-twitter: https://twitter.com/quentinsf
+twitter: https://x.com/quentinsf
 type: guest
 username: quentinsf
 youtube: null

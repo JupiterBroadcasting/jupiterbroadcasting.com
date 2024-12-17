@@ -6,7 +6,7 @@ homepage: https://lauracowen.co.uk
 instagram: null
 linkedin: null
 title: Dr Laura Cowen
-twitter: https://twitter.com/lauracowen
+twitter: https://x.com/lauracowen
 type: guest
 username: dr-laura
 youtube: null

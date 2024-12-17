@@ -8,7 +8,7 @@ homepage: https://wimpysworld.com/
 instagram: null
 linkedin: https://www.linkedin.com/in/martinwimpress/
 title: Martin Wimpress
-twitter: https://twitter.com/m_wimpress
+twitter: https://x.com/m_wimpress
 type: guest
 username: wimpy
 youtube: null

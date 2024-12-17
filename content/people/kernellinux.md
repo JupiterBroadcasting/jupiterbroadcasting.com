@@ -10,7 +10,7 @@ homepage: http://asknoahshow.com
 instagram: https://instagram.com/kernellinux
 linkedin: null
 title: Noah J. Chelliah
-twitter: https://twitter.com/kernellinux
+twitter: https://x.com/kernellinux
 type: guest
 username: kernellinux
 youtube: null

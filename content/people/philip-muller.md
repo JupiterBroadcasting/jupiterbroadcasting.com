@@ -6,7 +6,7 @@ homepage: https://manjaro.org/
 instagram: null
 linkedin: null
 title: Philip Müller
-twitter: https://twitter.com/manjarolinux
+twitter: https://x.com/manjarolinux
 type: guest
 username: philip-muller
 youtube: null

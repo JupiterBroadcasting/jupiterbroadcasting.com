@@ -6,7 +6,7 @@ homepage: http://dominickm.com/
 instagram: https://instagram.com/dominucco
 linkedin: null
 title: Michael Dominick
-twitter: https://twitter.com/dominucco
+twitter: https://x.com/dominucco
 type: host
 username: michael
 youtube: null

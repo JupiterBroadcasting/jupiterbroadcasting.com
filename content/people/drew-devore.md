@@ -9,7 +9,7 @@ homepage: https://www.jupiterbroadcasting.com/
 instagram: https://instagram.com/drewofdoom
 linkedin: null
 title: Drew DeVore
-twitter: https://twitter.com/drewofdoom
+twitter: https://x.com/drewofdoom
 type: host
 username: drew-devore
 youtube: null

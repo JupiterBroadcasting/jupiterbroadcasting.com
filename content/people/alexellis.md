@@ -6,7 +6,7 @@ homepage: https://www.alexellis.io/
 instagram: null
 linkedin: null
 title: Alex Ellis
-twitter: https://twitter.com/alexellisuk
+twitter: https://x.com/alexellisuk
 type: guest
 username: alexellis
 youtube: null

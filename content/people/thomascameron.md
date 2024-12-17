@@ -9,7 +9,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Thomas Cameron
-twitter: https://twitter.com/thomasdcameron
+twitter: https://x.com/thomasdcameron
 type: guest
 username: thomascameron
 youtube: null

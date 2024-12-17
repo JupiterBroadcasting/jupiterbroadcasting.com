@@ -7,7 +7,7 @@ homepage: http://ryanleesipes.me/
 instagram: null
 linkedin: null
 title: Ryan Sipes
-twitter: https://twitter.com/ryanleesipes
+twitter: https://x.com/ryanleesipes
 type: guest
 username: ryan
 youtube: null
