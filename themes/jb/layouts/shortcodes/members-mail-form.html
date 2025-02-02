@@ -1,0 +1,10 @@
+{{ $memberlyAuth := resources.Get "js/memberly-auth.js" }}
+{{ if hugo.IsProduction }}
+    {{ $memberlyAuth := $memberlyAuth | minify | fingerprint }}
+{{ end }}
+
+<script type="text/javascript" src="{{ $memberlyAuth.Permalink }}" integrity="{{ $memberlyAuth.Data.Integrity }}"></script> 
+
+<button class="btn btn-primary" onclick="memberlyLogin()">
+    <i class="fa fa-sign-in"></i> Login via Memberly
+</button>
