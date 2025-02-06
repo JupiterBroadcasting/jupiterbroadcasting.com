@@ -1,13 +1,13 @@
 ---
 avatar: /images/people/michael.jpg
 avatar_small: /images/people/michael_small.jpg
-bio: Software Developer & entrepreneur working on a startup in the AI bots space.
-homepage: http://dominickm.com/
-instagram: https://instagram.com/dominucco
+bio: ''
+homepage: https://themadbotter.com
+instagram: null
 linkedin: null
 title: Michael Dominick
 twitter: https://x.com/dominucco
-type: host
+type: guest
 username: michael
 youtube: null
 ---
