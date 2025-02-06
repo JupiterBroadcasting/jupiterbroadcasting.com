@@ -129,6 +129,12 @@ paginate = 12
     identifier = "membership"
     url = "/membership/"
     weight =70
+    [[Menu.Main]]
+        name = "Member's Mail"
+        identifier = "members-mail"
+        url = "/membership/members-mail/"
+        weight =71
+        parent = "membership"
 
 [[Menu.Main]]
     name = "People"

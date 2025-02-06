@@ -1,6 +1,8 @@
 +++
 title = "Member's Mail"
 description = "Member's Mail is a way to be heard as a member of the Jupiter Broadcasting community."
+
+active = true
 +++
 
 ## Be Heard
