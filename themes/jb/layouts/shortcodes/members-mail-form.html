@@ -1,12 +1,61 @@
 {{ $memberfulAuth := resources.Get "js/memberful-auth.js" }}
 
 {{ if hugo.IsProduction }}
-    {{ $memberfulAuth = $memberfulAuth | resources.Minify | resources.Fingerprint }}
+{{ $memberfulAuth = $memberfulAuth | resources.Minify | resources.Fingerprint }}
 {{ end }}
 
 
-<script type="text/javascript" src="{{ $memberfulAuth.Permalink }}" integrity="{{ $memberfulAuth.Data.Integrity }}"></script> 
+<script type="text/javascript" src="{{ $memberfulAuth.Permalink }}"
+    integrity="{{ $memberfulAuth.Data.Integrity }}"></script>
 
-<button class="btn btn-primary" onclick="memberlyLogin()">
-    <i class="fa fa-sign-in"></i> Login via Memberly
+<button class="btn btn-primary" onclick="memberfulLogin()">
+    <i class="fa fa-sign-in"></i> Login via memberful
 </button>
+
+<!-- Hidden until memberful auth is successful -->
+<form id="memberfulForm">
+    <div class="field">
+        <label class="label">From</label>
+        <div class="control">
+            <!-- This field gets populated with the current user's data -->
+            <input class="input" type="text" readonly value="test@test.com">
+        </div>
+    </div>
+
+    <!-- Show selector - defines which show the message is sent to -->
+    <!-- Shows all available shows, but disables ones current user is not a member of -->
+    <div class="field">
+        <label class="label">To</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option disabled selected>Select a show</option>
+                    {{ range where
+                    (where (where .Site.Pages "Kind" "section") "Params.active" true)
+                    "Params.type" "show"
+                    }}
+                    <option value="{{ .RelPermalink }}">{{ .Title }}</option>
+                    {{ end }}
+                </select>
+            </div>
+
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+            </div>
+</form>
