@@ -8,28 +8,39 @@
 <script type="text/javascript" src="{{ $memberfulAuth.Permalink }}"
     integrity="{{ $memberfulAuth.Data.Integrity }}"></script>
 
-<button class="btn btn-primary" onclick="memberfulLogin()">
-    <i class="fa fa-sign-in"></i> Login via memberful
-</button>
+<noscript>
+    <p>Please enable JavaScript to use this form.</p>
+    <style>
+        #memberfulLogin {
+            display: none;
+        }
+    </style>
+</noscript>
 
-<!-- Hidden until memberful auth is successful -->
-<form id="memberfulForm">
-    <div class="field">
-        <label class="label">From</label>
-        <div class="control">
-            <!-- This field gets populated with the current user's data -->
-            <input class="input" type="text" readonly value="test@test.com">
-        </div>
+<div id="memberfulLogin">
+    <div id="memberfulLoginButton" class="is-flex is-justify-content-center">
+        <button class="button is-primary" onclick="memberfulLogin()">
+            <i class="fa fa-sign-in mr-3"></i> Login via memberful
+        </button>
     </div>
 
-    <!-- Show selector - defines which show the message is sent to -->
-    <!-- Shows all available shows, but disables ones current user is not a member of -->
-    <div class="field">
-        <label class="label">To</label>
-        <div class="control">
+    <!-- Hidden until memberful auth is successful -->
+    <form id="memberfulForm" class="is-hidden">
+        <div class="field">
+            <label class="label">From</label>
+            <div class="control">
+                <!-- This field gets populated with the current user's data -->
+                <input class="input" type="text" readonly name="from" placeholder="From">
+            </div>
+        </div>
+
+        <!-- Show selector - defines which show the message is sent to -->
+        <!-- Shows all available shows, but disables ones current user is not a member of -->
+        <div class="field">
+            <label class="label">To</label>
             <div class="select">
                 <select>
-                    <option disabled selected>Select a show</option>
+                    <option disabled selected>Select show</option>
                     {{ range where
                     (where (where .Site.Pages "Kind" "section") "Params.active" true)
                     "Params.type" "show"
@@ -38,24 +49,26 @@
                     {{ end }}
                 </select>
             </div>
+        </div>
 
-            <div class="field">
-                <label class="label">Subject</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="Subject">
-                </div>
+        <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Subject">
             </div>
+        </div>
 
-            <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="Your Message"></textarea>
-                </div>
+        <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Your Message"></textarea>
             </div>
+        </div>
 
-            <div class="field">
-                <div class="control">
-                    <button class="button is-link">Submit</button>
-                </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-link">Submit</button>
             </div>
-</form>
+        </div>
+    </form>
+</div>
