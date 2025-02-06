@@ -1,3 +1,5 @@
+//@see https://memberful.com/help/custom-development-and-api/sign-in-for-apps-via-oauth/
+
 function currentUrl() {
   return new URL(window.location.href)
 }
