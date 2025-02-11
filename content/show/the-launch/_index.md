@@ -17,13 +17,13 @@ podverse_podcast_id = "7vbU3baydv"
 
 # TODO
 [links.email]
-  url="https://selfhosted.show/contact"
+  url="https://www.weeklylaunch.rocks/contact"
 [links.shownotes]
-  url="https://selfhosted.show"
-[links.youtube]
-  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
-[links.matrix]
-  url="https://matrix.to/#/#self-hosted:matrix.org"
+  url="https://www.weeklylaunch.rocks/"
+#[links.youtube]
+#  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
+#[links.matrix]
+#  url="https://matrix.to/#/#self-hosted:matrix.org"
 
 +++
 
