@@ -32,11 +32,7 @@
           </div>
         </div>
       {{ if .Params.podcast_file }}
-        {{ if eq .Params.show_slug "the-launch" }}
-          {{ partial "episode/podhomeplayer.html" . }}
-        {{ else }}
-          {{ partial "episode/podverseplayer.html" . }}
-        {{ end }}
+      {{ partial "episode/podverseplayer.html" . }}
       {{else}}
       <div>
         <audio controls class="my-4" style="width: 100%;">
