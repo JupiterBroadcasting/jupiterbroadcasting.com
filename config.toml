@@ -45,19 +45,47 @@ paginate = 12
     url = "/show/"
     weight =-90
 
+    [[Menu.Main]]
+        name = "Jupiter EXTRAS"
+        identifier = "jupiter-extras"
+        url = "/show/jupiter-extras/"
+        weight =99
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "LINUX Unplugged"
+        identifier = "linux-unplugged"
+        url = "/show/linux-unplugged/"
+        weight =91
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "Self-Hosted"
+        identifier = "self-hosted"
+        url = "/show/self-hosted/"
+        weight =92
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "This Week in Bitcoin"
+        identifier = "this-week-in-bitcoin"
+        url = "/show/this-week-in-bitcoin/"
+        weight =93
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "The Launch 🚀"
+        identifier = "the-launch"
+        url = "/show/the-launch/"
+        weight =94
+        parent = "shows"
+
 #    [[Menu.Main]]
 #        name = "Coder Radio"
 #        identifier = "coder-radio"
 #        url = "/show/coder-radio/"
 #        weight =91
 #        parent = "shows"
-
-    [[Menu.Main]]
-        name = "Jupiter EXTRAS"
-        identifier = "jupiter-extras"
-        url = "/show/jupiter-extras/"
-        weight =92
-        parent = "shows"
 
 #    [[Menu.Main]]
 #        name = "Linux Action News"
@@ -66,40 +94,12 @@ paginate = 12
 #        weight =93
 #        parent = "shows"
 
-    [[Menu.Main]]
-        name = "LINUX Unplugged"
-        identifier = "linux-unplugged"
-        url = "/show/linux-unplugged/"
-        weight =94
-        parent = "shows"
-
 #    [[Menu.Main]]
 #        name = "Office Hours"
 #        identifier = "office-hours"
 #        url = "/show/office-hours/"
 #        weight =95
 #        parent = "shows"
-
-    [[Menu.Main]]
-        name = "Self-Hosted"
-        identifier = "self-hosted"
-        url = "/show/self-hosted/"
-        weight =96
-        parent = "shows"
-
-    [[Menu.Main]]
-        name = "This Week in Bitcoin"
-        identifier = "this-week-in-bitcoin"
-        url = "/show/this-week-in-bitcoin/"
-        weight =97
-        parent = "shows"
-
-    [[Menu.Main]]
-        name = "The Launch 🚀"
-        identifier = "the-launch"
-        url = "/show/the-launch/"
-        weight =98
-        parent = "shows"
 
 [[Menu.Main]]
     name = "Sponsors"
