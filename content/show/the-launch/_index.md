@@ -5,12 +5,11 @@ date = "2025-02-10T17:09:11-08:00"
 draft = false
 categories = ["The Launch 🚀"]
 show = "the-launch"
-hosts = ["chris"]
+hosts = ["chris","angela-fisher"]
 sponsors = []
 type = "show"
 active = true
 
-# TODO
 header_image = "/images/shows/the-launch.png"
 
 podverse_podcast_id = "7vbU3baydv"
