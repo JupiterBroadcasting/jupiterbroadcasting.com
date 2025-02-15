@@ -45,12 +45,12 @@ paginate = 12
     url = "/show/"
     weight =-90
 
-    [[Menu.Main]]
-        name = "Coder Radio"
-        identifier = "coder-radio"
-        url = "/show/coder-radio/"
-        weight =91
-        parent = "shows"
+#    [[Menu.Main]]
+#        name = "Coder Radio"
+#        identifier = "coder-radio"
+#        url = "/show/coder-radio/"
+#        weight =91
+#        parent = "shows"
 
     [[Menu.Main]]
         name = "Jupiter EXTRAS"
@@ -59,12 +59,12 @@ paginate = 12
         weight =92
         parent = "shows"
 
-    [[Menu.Main]]
-        name = "Linux Action News"
-        identifier = "linux-action-news"
-        url = "/show/linux-action-news/"
-        weight =93
-        parent = "shows"
+#    [[Menu.Main]]
+#        name = "Linux Action News"
+#        identifier = "linux-action-news"
+#        url = "/show/linux-action-news/"
+#        weight =93
+#        parent = "shows"
 
     [[Menu.Main]]
         name = "LINUX Unplugged"
@@ -73,12 +73,12 @@ paginate = 12
         weight =94
         parent = "shows"
 
-    [[Menu.Main]]
-        name = "Office Hours"
-        identifier = "office-hours"
-        url = "/show/office-hours/"
-        weight =95
-        parent = "shows"
+#    [[Menu.Main]]
+#        name = "Office Hours"
+#        identifier = "office-hours"
+#        url = "/show/office-hours/"
+#        weight =95
+#        parent = "shows"
 
     [[Menu.Main]]
         name = "Self-Hosted"
@@ -157,11 +157,11 @@ paginate = 12
         weight =82
         parent = "people"
 
-#[[Menu.Main]]
-    #name = "Archive"
-    #identifier = "archive"
-    #url = "/archive/"
-    #weight =90
+[[Menu.Main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/archive/"
+    weight =90
 
 [[Menu.Main]]
     name = "Community"
