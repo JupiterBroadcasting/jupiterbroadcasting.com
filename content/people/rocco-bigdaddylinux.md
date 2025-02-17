@@ -7,7 +7,7 @@ homepage: https://bigdaddylinux.com
 instagram: null
 linkedin: null
 title: Rocco (BigDaddyLinux)
-twitter: https://twitter.com/bigdaddylinux
+twitter: https://x.com/bigdaddylinux
 type: guest
 username: rocco-bigdaddylinux
 youtube: https://youtube.com/bigdaddylinux

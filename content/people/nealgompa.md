@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Neal Gompa
-twitter: https://twitter.com/det_conan_kudo
+twitter: https://x.com/det_conan_kudo
 type: guest
 username: nealgompa
 youtube: null

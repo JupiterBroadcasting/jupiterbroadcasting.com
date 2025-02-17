@@ -6,7 +6,7 @@ homepage: https://unraid.net
 instagram: null
 linkedin: null
 title: Jonathan Panozzo
-twitter: https://twitter.com/jonpanozzo
+twitter: https://x.com/jonpanozzo
 type: guest
 username: jonp
 youtube: null

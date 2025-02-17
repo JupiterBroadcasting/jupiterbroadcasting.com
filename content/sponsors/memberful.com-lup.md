@@ -1,6 +1,7 @@
 ---
-description: Take $1 a month of your membership for a lifetime!
-link: https://jupitersignal.memberful.com/checkout?plan=52946&coupon=summer
+description: 30% Off for the lifetime of your Membership!
+episode: 591
+link: https://jupitersignal.memberful.com/checkout?plan=52946&coupon=blackfriday
 shortname: memberful.com-lup
-title: Summer Member Discount
+title: Black Friday Member Sale
 ---

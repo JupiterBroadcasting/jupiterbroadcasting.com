@@ -22,11 +22,12 @@
         {{- $all_most_recent := slice -}}
         {{- range where .Site.Sections ".Title" "Shows" -}}
          {{- range .Pages -}}
-          {{ $all_most_recent = $all_most_recent | append ((where .Pages "Type" "episode").ByDate.Reverse | first 1)  }}
+            {{ $all_most_recent = $all_most_recent | append ((where .Pages "Type" "episode" ).ByDate.Reverse | first 1)  }}
+          {{- end -}}
          {{- end -}}
-        {{- end -}}
         {{- range $all_most_recent.ByDate.Reverse -}}
          {{ with .Parent }}
+         {{ if .Params.active}}
                <div class="swiper-slide">
                  <div class="card-image">
                    <figure class="image">
@@ -40,6 +41,7 @@
                    </figure>
                  </div>
                </div>
+           {{- end -}}
            {{- end -}}
          {{ end }}
       </div>

@@ -94,26 +94,28 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
         { 'href': 'http://feeds2.feedburner.com/JupiterBroadcasting', 'title': 'All Shows Feed - Audio'},
         { 'href': 'http://feeds2.feedburner.com/AllJupiterVideos', 'title': 'All Shows Feed - Video'},
         { 'href': 'https://jupiterstation.live/rss', 'title': 'Jupiter Station'},
-        { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
+        # { 'href': 'https://coder.show/rss', 'title': 'Coder Radio'},
         { 'href': 'https://extras.show/rss', 'title': 'Jupiter EXTRAS'},
-        { 'href': 'https://linuxactionnews.com/rss', 'title': 'Linux Action News'},
+        # { 'href': 'https://linuxactionnews.com/rss', 'title': 'Linux Action News'},
         { 'href': 'https://linuxunplugged.com/rss', 'title': 'LINUX Unplugged'},
-        { 'href': 'https://www.officehours.hair/rss', 'title': 'Office Hours'},
+        # { 'href': 'https://www.officehours.hair/rss', 'title': 'Office Hours'},
         { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'},
         { 'href': 'https://serve.podhome.fm/rss/55b53584-4219-4fb0-b916-075ce23f714e', 'title': 'This Week in Bitcoin'},
+        { 'href': 'https://serve.podhome.fm/rss/04b078f9-b3e8-4363-a576-98e668231306', 'title': 'The Launch 🚀'},
     ]
 
 @fixture
 def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
     return {
         "Shows": [
-            {'href': '/show/coder-radio/', 'title': 'Coder Radio'},
+            # {'href': '/show/coder-radio/', 'title': 'Coder Radio'},
             {'href': '/show/jupiter-extras/', 'title': 'Jupiter EXTRAS'},
-            {'href': '/show/linux-action-news/', 'title': 'Linux Action News'},
+            # {'href': '/show/linux-action-news/', 'title': 'Linux Action News'},
             {'href': '/show/linux-unplugged/', 'title': 'LINUX Unplugged'},
-            {'href': '/show/office-hours/', 'title': 'Office Hours'},
+            # {'href': '/show/office-hours/', 'title': 'Office Hours'},
             {'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
             {'href': '/show/this-week-in-bitcoin/', 'title': 'This Week in Bitcoin'},
+            {'href': '/show/the-launch/', 'title': 'The Launch 🚀'},
         ],
         "People": [
             {'href': '/hosts/', 'title': 'Hosts'},
@@ -152,7 +154,7 @@ def expect_nav_items() -> List[Dict[str,str]]:
         {'title': 'Garage Sale', 'href': 'https://www.jupitergarage.com/'},
         {'title': 'Membership', 'href': '/membership/'},
         # commenting out for now PR #399
-        # {'title': 'Archive', 'href': '/archive'},
+        {'title': 'Archive', 'href': '/archive/'},
         # failing on tests here: https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/runs/8254156209?check_suite_focus=true#step:9:26
         {'title': 'Contact', 'href': '/contact/'},
         {'title': 'Search', 'href': '/search/'},

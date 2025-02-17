@@ -126,6 +126,19 @@
               </div>
             </div>
           {{ end }}
+          <!-- Value for Value splits -->
+          {{ if .Params.value }}
+            <div class="tile is-child columns is-flex-grow-0" >
+              <div class="column px-0">
+                {{ with .Params.value.recipients }}
+                  <h3>Boost Splits</h3>
+                  <section class="section px-0 valueforvalue">
+                    {{ partial "episode/valueforvalue.html" (dict "recipients" . "ctx" $) }}
+                  </section>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
           <!-- Tags -->
           {{ if .Params.tags }}
             <div class="tile is-child is-flex-grow-0">

@@ -7,7 +7,7 @@ homepage: https://danlynch.org/
 instagram: null
 linkedin: null
 title: Dan Lynch
-twitter: https://twitter.com/methoddan
+twitter: https://x.com/methoddan
 type: guest
 username: dan-lynch
 youtube: null

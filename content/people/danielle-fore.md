@@ -6,7 +6,7 @@ homepage: https://blog.elementary.io/
 instagram: https://instagram.com/danrabbit
 linkedin: null
 title: Danielle Foré
-twitter: https://twitter.com/danielfore
+twitter: https://x.com/danielfore
 type: guest
 username: danielle-fore
 youtube: null

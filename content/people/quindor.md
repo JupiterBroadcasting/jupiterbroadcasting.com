@@ -7,7 +7,7 @@ homepage: https://blog.quindorian.org
 instagram: null
 linkedin: null
 title: Andries Faassen
-twitter: https://twitter.com/quindor
+twitter: https://x.com/quindor
 type: guest
 username: quindor
 youtube: https://www.youtube.com/channel/ucv7uohz2xupwm9sn5ojscja/videos

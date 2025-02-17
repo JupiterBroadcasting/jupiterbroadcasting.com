@@ -7,7 +7,7 @@ homepage: https://blog.briancmoses.com
 instagram: null
 linkedin: null
 title: Brian Moses
-twitter: https://twitter.com/briancmoses
+twitter: https://x.com/briancmoses
 type: guest
 username: briancmoses
 youtube: null

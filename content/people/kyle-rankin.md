@@ -12,7 +12,7 @@ homepage: http://kylerank.in/
 instagram: null
 linkedin: null
 title: Kyle Rankin
-twitter: https://twitter.com/kylerankin
+twitter: https://x.com/kylerankin
 type: guest
 username: kyle-rankin
 youtube: null

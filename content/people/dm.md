@@ -8,7 +8,7 @@ homepage: https://powershellonlinux.com
 instagram: null
 linkedin: null
 title: DM
-twitter: https://twitter.com/posh4linux
+twitter: https://x.com/posh4linux
 type: guest
 username: dm
 youtube: null

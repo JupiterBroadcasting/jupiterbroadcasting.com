@@ -9,4 +9,4 @@ header_image = "/images/logo.png"
 
 +++
 
-Here are archived Shows
+Here are archived shows.

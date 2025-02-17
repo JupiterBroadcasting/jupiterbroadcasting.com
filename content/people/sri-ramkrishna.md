@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Sri Ramkrishna
-twitter: https://twitter.com/sramkrishna
+twitter: https://x.com/sramkrishna
 type: guest
 username: sri-ramkrishna
 youtube: null

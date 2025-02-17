@@ -32,9 +32,13 @@ jobs:
       - name: Do the deploy thing
         run: |
           ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_TOKEN }}
             cd ${{ secrets.VPS_PROJECT_PATH }}
             git pull
-            docker build -t jb-jbcom .
+            docker build -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
+            docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
+            docker container prune -f
+            docker image prune -f
+            docker builder prune -f
             docker compose -f ~/docker-compose.yml up -d jb-jbcom
-            docker image prune -af
           "

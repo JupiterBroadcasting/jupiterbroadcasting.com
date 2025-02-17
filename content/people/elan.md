@@ -19,7 +19,7 @@ homepage: https://github.com/elan
 instagram: null
 linkedin: null
 title: Elan Feingold
-twitter: https://twitter.com/leafmuncher
+twitter: https://x.com/leafmuncher
 type: guest
 username: elan
 youtube: null

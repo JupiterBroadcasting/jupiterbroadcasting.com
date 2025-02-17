@@ -8,7 +8,7 @@ homepage: null
 instagram: https://instagram.com/raid.owl
 linkedin: null
 title: Raid Owl
-twitter: https://twitter.com/raidowltweets
+twitter: https://x.com/raidowltweets
 type: guest
 username: raidowl
 youtube: null

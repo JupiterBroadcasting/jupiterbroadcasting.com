@@ -8,7 +8,7 @@ homepage: http://www.peteradamsphoto.com
 instagram: https://instagram.com/peteradamsphoto
 linkedin: null
 title: Peter Adams
-twitter: https://twitter.com/facesopensource
+twitter: https://x.com/facesopensource
 type: guest
 username: peter-adams
 youtube: null
