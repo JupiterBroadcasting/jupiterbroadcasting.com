@@ -1,12 +1,13 @@
 ---
 avatar: /images/people/michaeltunnell.jpg
-avatar_small: null
-bio: null
+avatar_small: /images/people/michaetunnell_small.jpg
+bio: Content Creator / Podcaster for Tux Digital. Linux Enthusiast. I also do Design
+  work occasionally.
 homepage: https://tuxdigital.com/
 instagram: null
 linkedin: null
 title: Michael Tunnell
-twitter: null
+twitter: https://x.com/michaeltunnell
 type: guest
 username: michaeltunnell
 youtube: null
