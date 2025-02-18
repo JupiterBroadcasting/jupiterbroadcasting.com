@@ -7,7 +7,7 @@ instagram: null
 linkedin: null
 title: Michael Dominick
 twitter: https://x.com/dominucco
-type: guest
+type: host
 username: michael
 youtube: null
 ---
