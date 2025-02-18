@@ -10,10 +10,16 @@ WORKDIR /site
 #   set -x : changes the shell's default verbosity and puts it in "debug" mode
 RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
     && hugo --gc \
-    || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 ) \ 
-    # Build search indexing
-# RUN apk add --no-cache nodejs npm \
-#     && npx -y pagefind --site
+    || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 )
+
+
+FROM python:3.12-slim AS indexer
+ARG PAGEFIND_VERSION=1.3.0
+WORKDIR /site
+COPY --from=builder /site/public /site/public
+RUN pip install --no-cache-dir pagefind[extended]==${PAGEFIND_VERSION} && \
+    python3 -m pagefind --site public
+
 
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
@@ -24,4 +30,4 @@ RUN sed -i 's/#error_page/error_page/' /etc/nginx/conf.d/default.conf
 # episodes.json need no override: stock mime.types already serve .txt as
 # text/plain and .json as application/json.)
 RUN sed -i '/listen  /i\    location ~ \\.md$ { root /usr/share/nginx/html; default_type text/markdown; }' /etc/nginx/conf.d/default.conf
-COPY --from=builder /site/public /usr/share/nginx/html
+COPY --from=indexer /site/public /usr/share/nginx/html
