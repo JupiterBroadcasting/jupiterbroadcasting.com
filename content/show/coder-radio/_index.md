@@ -8,7 +8,7 @@ show = "coder-radio"
 hosts = ["chris","michael", "wes"]
 
 type = "show"
-active = true
+active = false
 
 header_image = "/images/shows/coder-radio.png"
 

@@ -8,7 +8,7 @@ show = "office-hours"
 hosts = ["chris","brent"]
 
 type = "show"
-active = true
+active = false
 
 header_image = "/images/shows/office-hours.png"
 
