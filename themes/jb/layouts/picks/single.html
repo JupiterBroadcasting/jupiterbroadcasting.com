@@ -1,0 +1,40 @@
+{{ define "main" }}
+    <section class="spnosor-list px-4 mb-5">
+        <div class="container">
+            <div class="column is-full content">
+                <h1 class="title">Pick Pen</h1>
+                <p>Picks from JB Shows, please feel free to make a PR to submit past picks.</p>
+                <style>
+
+                </style>
+                <div class="pick-grid">
+
+                    {{ range .Site.Data.picks }}
+                    <div class="pick card">
+                        <div class="card-content">
+
+                            <h4><a href="{{ .url }}" target="_blank">{{ .title }}</a></h4> {{ if .license}} <span class="tag is-black pick__license">{{.license}}</span> {{ end }}
+                            <p>
+                                {{ .description }}
+                            </p>
+
+                            <div class="field is-grouped is-grouped-multiline">
+
+                                {{ range .shows }}
+                                <a  href="/show/{{.slug }}/{{.episode}}" class="control">
+                                    <div class="tags has-addons">
+                                      <span class="tag is-dark">{{ .show }}</span>
+                                      <span class="tag is-black">{{ .episode }}</span>
+                                    </div>
+                                </a>
+
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
