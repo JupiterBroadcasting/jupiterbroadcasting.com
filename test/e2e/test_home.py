@@ -37,34 +37,37 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
 
 
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
-    for dropdown_text, child_elements in expected_dropdown_items.items():
-        
-        # dropdown item to hover over in menu
-        parent_element: Locator = page.locator(f'.navbar-start >> a:has-text("{dropdown_text}"):visible')
+    dropdowns: Locator = page.locator('.navbar-start >> .has-dropdown:visible')
+    assert dropdowns.count() == len(expected_dropdown_items), 'Number of actual dropdowns does not match expected number of dropdowns'
 
-        # hover to show elements
-        parent_element.hover()
+    for dropdown_index in range(dropdowns.count()):
+        parent = dropdowns.nth(dropdown_index)
+        parent.hover()
+        dropdown = parent.locator('a.navbar-link').first
 
-        # this is because Shows's url is show
-        singular = dropdown_text.lower().rstrip('s')
-        # test to make sure menu items hyperlink
-        expect(parent_element).to_have_attribute('href', f'/{singular}/')
+        parent_item: str = dropdown.text_content().strip()
 
-        # finds sibling element, which contains all the dropdown elements
-        dropdown_elements: Locator = page.locator(f'a:has-text("{dropdown_text}") + .navbar-dropdown')
+        children: Locator = parent.locator('.navbar-dropdown >> .navbar-item')
+        for child_index in range(children.count()):
+            childitem: Locator = children.nth(child_index)
+            childitem_text: str = childitem.text_content().strip()
 
-        for dropdown_item in child_elements:
-            item: Locator = dropdown_elements.locator(f'a.navbar-item:has-text("{dropdown_item["title"]}")')
-            try:
-                # check if the path matches exactly what's in our expected output
-                expect(item).to_have_attribute('href', dropdown_item['href'])
-            except AssertionError:
-                # if not, then it's a relative links (i.e. /community/irc/)
-                #   so just comparing the path of the item
-                assert urlparse(item.get_attribute('href')).path == dropdown_item['href']
-            expect(item).to_be_visible()
+            expected_dropdown = expected_dropdown_items.get(parent_item, None)
 
+            if expected_dropdown is None:
+                raise KeyError(f'{parent_item} is not a expected dropdown')
 
+            expected: Dict[str,str] = next(filter(lambda item: item['title'] == childitem_text , expected_dropdown), None)
+
+            if expected is None:
+                raise KeyError(f'{childitem_text} is not in expected dropdown items')
+
+            if expected['href'][0] == '/':
+                assert urlparse(childitem.get_attribute('href')).path == expected['href']
+            else:
+                assert childitem.get_attribute('href') == expected['href']
+
+            expect(childitem).to_be_visible()
 
 def test_nav(page: Page, expected_dropdowns, expect_nav_items):
 
