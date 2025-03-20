@@ -38,18 +38,24 @@ def test_rss_feeds(page: Page, expected_rss_feeds: List[Dict[str,str]]):
 
 def test_dropdowns(page: Page, expected_dropdown_items: Dict[str,List[Dict[str,str]]]):
     dropdowns: Locator = page.locator('.navbar-start >> .has-dropdown:visible')
-    assert dropdowns.count() == len(expected_dropdown_items), 'Number of actual dropdowns does not match expected number of dropdowns'
+    dropdowns_list: List[str] = [dropdown.locator('> a.navbar-link').text_content().strip() for dropdown in dropdowns.all()]
+    expected_list = [dropdown for dropdown in expected_dropdown_items]
 
-    for dropdown_index in range(dropdowns.count()):
-        parent = dropdowns.nth(dropdown_index)
+    if (len(difference:=set(dropdowns_list) ^ set(expected_list))):
+        if (len(unexpected:={dropdown for dropdown in dropdowns_list if dropdown in difference})):
+            raise KeyError (f'Dropdown(s) {list(unexpected)} missing from expected list')
+        else:
+            unexpected = {dropdown for dropdown in expected_list if dropdown in difference}
+            raise KeyError (f'Expected Dropdown(s) {list(unexpected)} missing from the page')
+
+    for parent in dropdowns.all():
         parent.hover()
         dropdown = parent.locator('a.navbar-link').first
 
         parent_item: str = dropdown.text_content().strip()
 
         children: Locator = parent.locator('.navbar-dropdown >> .navbar-item')
-        for child_index in range(children.count()):
-            childitem: Locator = children.nth(child_index)
+        for childitem in children.all():
             childitem_text: str = childitem.text_content().strip()
 
             expected_dropdown = expected_dropdown_items.get(parent_item, None)
