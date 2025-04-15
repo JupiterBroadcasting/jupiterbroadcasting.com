@@ -1,7 +1,7 @@
 ---
-description: Manage features and change your software configuration using ConfigCat
-  feature flags, without the need to re-deploy code.
-episode: 609
+description: ConfigCat is a cross-platform LaunchDarkly alternative that's easy to
+  learn and quick to set up. Manage feature flags without redeploying code.
+episode: 610
 link: https://configcat.com/unplugged
 shortname: configcat.com-lup
 title: ConfigCat Feature Flags
