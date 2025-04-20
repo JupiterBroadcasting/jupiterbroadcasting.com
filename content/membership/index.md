@@ -13,6 +13,7 @@ Your memberships keeps our production going and gives us the ability to run fewe
 Access special features of every single show on the network, at a discount!
 
 * [Jupiter.party](https://www.jupiter.party/) - Join the party!
+* [Jupiter.party | Annual Membership](https://jupitersignal.memberful.com/checkout?plan=117630) - Put your support on automatic with our annual plan.
 
 
 ### A-La-Carte Show Memberships
@@ -21,24 +22,17 @@ Access special features of an individual show only.
 
 * [Self-Hosted SRE](https://jupitersignal.memberful.com/checkout?plan=53744)
 
-* [Coder QA](https://jupitersignal.memberful.com/checkout?plan=53334)
-
-
 ### Gift Memberships
 [Gift Memberships](https://jupitersignal.memberful.com/gift?plan=74364) are also available!
 
 ### Special Features Available via Memberships
 #### [LINUX Unplugged]({{< ref "/show/linux-unplugged" >}})
 * The LINUX Unplugged Bootleg Stream
-	* The full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
+    * The full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
 * Ad-free version
 
 #### [Self-Hosted]({{< ref "/show/self-hosted" >}})
 * The Self-Hosted Post Show
-* Ad-free version
-
-#### [Coder Radio]({{< ref "/show/coder-radio" >}})
-* The Coderly Report
 * Ad-free version
 
 #### [Linux Action News]({{< ref "/show/linux-action-news" >}})
@@ -50,4 +44,9 @@ Access special features of an individual show only.
 
 
 #### [Office Hours]({{< ref "/show/office-hours" >}})
+* Ad-free version
+
+#### [The Launch]({{< ref "/show/the-launch" >}})
+* The Launch Bootleg Stream
+    * The full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
 * Ad-free version

@@ -1,6 +1,6 @@
 help:
 		@echo "Jupiter Broadcasting Hugo Project"
-		@echo 
+		@echo
 		@echo "Help for using this Makefile"
 		@echo
 		@echo "For detailed help about this project please visit:"
@@ -8,7 +8,7 @@ help:
 		@echo
 		@echo "------------------------------------------------------------------"
 		@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort  | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m - %s\n", $$1, $$2}'
- 
+
 dev-build: ## Generate the development docker container
 	docker build --rm -f Dockerfile.dev -t jb_hugo:latest .
 
@@ -26,4 +26,5 @@ deploy-prod: ## Deploy everything to production
 
 tests: ## Run the test suite
 	docker build --rm -f Dockerfile.tests -t jb_tests:latest .
+	if [ -d screenshots ]; then rm -rf screenshots/; fi
 	docker run --rm --net=host --user 1000:1000 --volume "$${PWD}":/app -w /app jb_tests:latest

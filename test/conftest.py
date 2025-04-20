@@ -133,6 +133,8 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             {'href': '/community/matrix/', 'title': 'Matrix'},
             {'href': '/community/mumble/', 'title': 'Mumble'},
             {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
+            {'href':'https://twitch.tv/jupiterbroadcasting', 'title': 'Twitch'},
+            {'href': '/community/picks/', 'title': 'Picks'},
         ]
     }
 
