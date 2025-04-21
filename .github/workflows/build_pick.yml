@@ -40,20 +40,20 @@ jobs:
           import yaml
 
           output_data = {
-            "title": ${{ steps.issue-parser.outputs.title }},
-            "url": ${{ steps.issue-parser.outputs.url }},
-            "license": ${{ steps.issue-parser.outputs.license }},
+            "title": "${{ steps.issue-parser.outputs.title }}",
+            "url": "${{ steps.issue-parser.outputs.url }}",
+            "license": "${{ steps.issue-parser.outputs.license }}",
             "shows": [
               {
-                "episode": ${{ steps.issue-parser.outputs.episode }},
-                "show": ${{ steps.issue-parser.outputs.shows }},
-                "slug": ${{ steps.issue-parser.outputs.shows | lower | replace(" ", "-") }}
+                "episode": "${{ steps.issue-parser.outputs.episode }}",
+                "show": "${{ steps.issue-parser.outputs.shows }}",
+                "slug": "${{ steps.issue-parser.outputs.shows }}".lower().replace(" ", "-"),
               }
             ],
-            "description": ${{ steps.issue-parser.outputs.description }}
+            "description": "${{ steps.issue-parser.outputs.description }}"
           }
 
-          file_name = ${{ steps.issue-parser.outputs.title | lower | replace(" ", "-") }}.yaml
+          file_name = "${{ steps.issue-parser.outputs.title }}.yaml".lower().replace(" ", "-"),
 
           with open(f"./data/{file_name}", 'w') as outfile:
             yaml.dump(output_data, outfile, default_flow_style=False, sort_keys=True)
@@ -69,5 +69,7 @@ jobs:
           base: main
           add-paths: |
             data/*
-          branch: pick/${{ steps.issue-parser.outputs.title | lower | replace(" ", "-") }}_${{ github.event.issue.number }}
+          labels: |
+            pick
+          branch: pick/${{ steps.issue-parser.outputs.title }}_${{ github.event.issue.number }}
           delete-branch: true
