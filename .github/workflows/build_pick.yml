@@ -28,7 +28,6 @@ jobs:
         with:
           python-version: '3.10'
           architecture: 'x64'
-          cache: "pipenv"
 
       - name: Install Python deps
         run: |
