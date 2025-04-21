@@ -1,0 +1,74 @@
+name: Build Pick Pen File
+
+on:
+  issues:
+    types: [opened, edited]
+    label:
+      - "pick"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pick-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Parse pick form
+        uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/pick.yml
+
+      - name: 'Setup Python'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          architecture: 'x64'
+          cache: "pipenv"
+
+      - name: Install Python deps
+        run: |
+          pip install pyyaml
+    
+      - name: Build Pick Pen File
+        shell: python
+        run: |
+          import yaml
+
+          output_data = {
+            "title": ${{ steps.issue-parser.outputs.title }},
+            "url": ${{ steps.issue-parser.outputs.url }},
+            "license": ${{ steps.issue-parser.outputs.license }},
+            "shows": [
+              {
+                "episode": ${{ steps.issue-parser.outputs.episode }},
+                "show": ${{ steps.issue-parser.outputs.shows }},
+                "slug": ${{ steps.issue-parser.outputs.shows | lower | replace(" ", "-") }}
+              }
+            ],
+            "description": ${{ steps.issue-parser.outputs.description }}
+          }
+
+          file_name = ${{ steps.issue-parser.outputs.title | lower | replace(" ", "-") }}.yaml
+
+          with open(f"./data/{file_name}", 'w') as outfile:
+            yaml.dump(output_data, outfile, default_flow_style=False, sort_keys=True)
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PICK_PAT }}
+          commit-message: generate pick file
+          title: Add pick ${{ steps.issue-parser.outputs.title }}
+          body: |
+            Add pick ${{ steps.issue-parser.outputs.title }} from issue #${{ github.event.issue.number }}.
+            This was automatically generated from the issue template.
+          base: main
+          add-paths: |
+            data/*
+          branch: pick/${{ steps.issue-parser.outputs.title | lower | replace(" ", "-") }}_${{ github.event.issue.number }}
+          delete-branch: true
