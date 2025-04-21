@@ -61,7 +61,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.PICK_PAT }}
           commit-message: generate pick file
           title: Add pick ${{ steps.issue-parser.outputs.title }}
           body: |
