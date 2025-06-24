@@ -14,10 +14,10 @@ header_image = "/images/shows/this-week-in-bitcoin.png"
 
 podverse_podcast_id = "MxEmZU_zDt"
 
-[links.shownotes]
-  url="https://www.thisweekinbitcoin.show"
-[links.email]
-  url="/contact"
+[links.episodesfm]
+  url="https://episodes.fm/1733733790"
+[links.feed]
+  url="https://feeds.jupiterbroadcasting.com/twib"
 
 +++
 

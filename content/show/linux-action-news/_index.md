@@ -15,6 +15,8 @@ header_image = "/images/shows/linux-action-news.png"
 podverse_podcast_id = "haAiVbD1N9"
 
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/linuxactionnews"
 [links.email]

@@ -14,6 +14,8 @@ header_image = "/images/shows/coder-radio.png"
 
 podverse_podcast_id = "ZXd_1Ojd9"
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
 [links.email]
