@@ -8,7 +8,7 @@ show = "self-hosted"
 hosts = ["chris","alex"]
 sponsors = ["cloudfree.shop-ssh"]
 type = "show"
-active = true
+active = false
 
 header_image = "/images/shows/self-hosted.png"
 
