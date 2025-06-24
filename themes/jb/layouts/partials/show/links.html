@@ -3,14 +3,13 @@
   <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `subscribe.md`).Permalink }}" title="subscribe">
     <div class="title fa fa-bell-ringing-o fa-3x"><span class="sr-only">subscribe</span></div>
   </a>
-  <a class="link level-item pr-3" target="_blank" href="{{ (.GetPage `/membership`).Permalink }}" title="support">
-    <div class="title fa fa-usd fa-3x"><span class="sr-only">support</span></div>
-  </a>
   {{with .Params.links}}
     {{ range $key, $value := . }}
       <a class="link level-item pr-3" target="_blank" href="{{$value.url}}" title="{{$key}}">
         {{ if eq $key "email" }}
           <div class="title fa fa-envelope fa-3x center"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "support" }}
+          <div class="title fa fa-usd fa-3x"><span class="sr-only">{{$key}}</span></div>
         {{ else if eq $key "shownotes" }}
           <div class="title fa fa-pencil-square fa-3x"><span class="sr-only">{{$key}}</span></div>
         {{ else if eq $key "matrix" }}
@@ -21,6 +20,10 @@
           <div class="title fa fa-{{$key}} fa-3x"><span class="sr-only">{{$key}}</span></div>
         {{ else if eq $key "wiki" }}
           <div class="title fa fa-book fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "episodesfm" }}
+          <div class="title fa fa-podcast fa-3x"><span class="sr-only">{{$key}}</span></div>
+        {{ else if eq $key "feed" }}
+          <div class="title fa fa-rss fa-3x"><span class="sr-only">{{$key}}</span></div>
         {{ else if eq $key "blog" }}
           <div class="title fa fa-paragraph fa-3x"><span class="sr-only">{{$key}}</span></div>
         {{ else }}

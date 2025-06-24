@@ -14,6 +14,8 @@ header_image = "/images/shows/jupiter-extras.png"
 
 podverse_podcast_id = "0vaTwihG1R"
 
+[links.support]
+  url = "/membership"
 [links.shownotes]
   url="https://extras.show"
 [links.email]

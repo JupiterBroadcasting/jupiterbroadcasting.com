@@ -15,6 +15,8 @@ header_image = "/images/shows/the-launch.png"
 podverse_podcast_id = "7vbU3baydv"
 
 # TODO
+[links.support]
+  url = "/membership"
 [links.email]
   url="https://www.weeklylaunch.rocks/contact"
 [links.shownotes]
