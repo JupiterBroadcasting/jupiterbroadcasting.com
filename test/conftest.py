@@ -123,18 +123,19 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
         ],
         "Community": [
             {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
-            {'href': 'https://jupiter.tube', 'title': 'Peertube'},
+            # {'href': 'https://jupiter.tube', 'title': 'Peertube'},
             {'href': 'https://www.meetup.com/jupiterbroadcasting/', 'title': 'Meetup'},
             {'href': 'https://www.youtube.com/user/jupiterbroadcasting', 'title': 'YouTube'},
             {'href': 'https://twitter.com/jupitersignal', 'title': 'Twitter'},
             {'href': '/community/irc/', 'title': 'IRC'},
             {'href': 'http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615', 'title': 'Facebook'},
-            {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
+            # {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
             {'href': '/community/matrix/', 'title': 'Matrix'},
             {'href': '/community/mumble/', 'title': 'Mumble'},
             {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
             {'href':'https://twitch.tv/jupiterbroadcasting', 'title': 'Twitch'},
             {'href': '/community/picks/', 'title': 'Picks'},
+            {'href': 'https://colonyevents.com/events/', 'title': 'Gathio'},
         ]
     }
 
