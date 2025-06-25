@@ -129,7 +129,7 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             {'href': 'https://twitter.com/jupitersignal', 'title': 'Twitter'},
             {'href': '/community/irc/', 'title': 'IRC'},
             {'href': 'http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615', 'title': 'Facebook'},
-            # {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
+            {'href': 'https://discord.com/invite/n49fgkp', 'title': 'Self-Hosted Discord'},
             {'href': '/community/matrix/', 'title': 'Matrix'},
             {'href': '/community/mumble/', 'title': 'Mumble'},
             {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
