@@ -14,6 +14,8 @@ header_image = "/images/shows/office-hours.png"
 
 podverse_podcast_id = "GLuztlxs0-"
 
+[links.support]
+  url = "/membership"
 [links.shownotes]
   url="https://www.officehours.hair"
 [links.email]
