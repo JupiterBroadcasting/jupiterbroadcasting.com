@@ -14,6 +14,11 @@ header_image = "/images/shows/linux-unplugged.png"
 
 podverse_podcast_id = "g40Um-HP1"
 
+[live]
+  type = "weekly"
+  day = 0
+  hour = 12
+
 [links.twitter]
   url = "https://twitter.com/LINUXUnplugged"
 [links.email]

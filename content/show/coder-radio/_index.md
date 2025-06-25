@@ -14,6 +14,11 @@ header_image = "/images/shows/coder-radio.png"
 
 podverse_podcast_id = "ZXd_1Ojd9"
 
+[live]
+  type = "weekly"
+  day = 1
+  hour = 9
+
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
 [links.email]

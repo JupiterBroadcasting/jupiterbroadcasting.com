@@ -14,6 +14,11 @@ header_image = "/images/shows/office-hours.png"
 
 podverse_podcast_id = "GLuztlxs0-"
 
+[live]
+  type = "odd-weeks"
+  day = 2
+  hour = 12
+
 [links.shownotes]
   url="https://www.officehours.hair"
 [links.email]
