@@ -27,6 +27,8 @@ podverse_podcast_id = "haAiVbD1N9"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxyaQeHQuMrDq94CT2ZZm9F"
 [links.matrix]
   url="https://matrix.to/#/#linux-action-news:matrix.org"
+[links.smart-link]
+  url="https://episodes.fm/160075139"
 
 +++
 

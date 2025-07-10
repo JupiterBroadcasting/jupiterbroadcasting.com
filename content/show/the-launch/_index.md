@@ -21,6 +21,8 @@ podverse_podcast_id = "7vbU3baydv"
   url="https://www.weeklylaunch.rocks/contact"
 [links.shownotes]
   url="https://www.weeklylaunch.rocks/"
+[links.smart-link]
+  url="https://episodes.fm/1477997392"
 #[links.youtube]
 #  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
 #[links.matrix]

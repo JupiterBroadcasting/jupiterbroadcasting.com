@@ -32,6 +32,8 @@ podverse_podcast_id = "nUl1ZCL76"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
 [links.matrix]
   url="https://matrix.to/#/#self-hosted:matrix.org"
+[links.smart-link]
+  url="https://episodes.fm/1477997392"
 
 +++
 
