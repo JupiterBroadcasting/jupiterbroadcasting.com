@@ -15,6 +15,8 @@ header_image = "/images/shows/linux-action-news.png"
 podverse_podcast_id = "haAiVbD1N9"
 
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/linuxactionnews"
 [links.email]
@@ -25,6 +27,8 @@ podverse_podcast_id = "haAiVbD1N9"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxyaQeHQuMrDq94CT2ZZm9F"
 [links.matrix]
   url="https://matrix.to/#/#linux-action-news:matrix.org"
+[links.smart-link]
+  url="https://episodes.fm/160075139"
 
 +++
 

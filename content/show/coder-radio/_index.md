@@ -14,6 +14,8 @@ header_image = "/images/shows/coder-radio.png"
 
 podverse_podcast_id = "ZXd_1Ojd9"
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
 [links.email]
@@ -26,6 +28,8 @@ podverse_podcast_id = "ZXd_1Ojd9"
   url="https://www.youtube.com/playlist?list=PLCB9545FD2C26E547"
 [links.matrix]
   url="https://matrix.to/#/#coder-radio:matrix.org"
+[links.smart-link]
+  url="https://episodes.fm/534941512"
 
 +++
 
