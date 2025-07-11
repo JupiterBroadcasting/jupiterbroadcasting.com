@@ -20,8 +20,6 @@ Access special features of every single show on the network, at a discount!
 Access special features of an individual show only.
 * [LINUX Unplugged Core Contributor](https://jupitersignal.memberful.com/checkout?plan=52946)
 
-* [Self-Hosted SRE](https://jupitersignal.memberful.com/checkout?plan=53744)
-
 ### Gift Memberships
 [Gift Memberships](https://jupitersignal.memberful.com/gift?plan=74364) are also available!
 
@@ -31,19 +29,8 @@ Access special features of an individual show only.
     * The full live version of the show, which is often packed full of exclusive content. For that raw, no-edits, straight-to-tape, extended-recording feel.
 * Ad-free version
 
-#### [Self-Hosted]({{< ref "/show/self-hosted" >}})
-* The Self-Hosted Post Show
-* Ad-free version
-
-#### [Linux Action News]({{< ref "/show/linux-action-news" >}})
-* Ad-free version
-
 
 #### [Jupiter Extras]({{< ref "/show/jupiter-extras" >}})
-* Ad-free version
-
-
-#### [Office Hours]({{< ref "/show/office-hours" >}})
 * Ad-free version
 
 #### [The Launch]({{< ref "/show/the-launch" >}})

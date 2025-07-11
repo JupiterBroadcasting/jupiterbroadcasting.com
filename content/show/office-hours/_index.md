@@ -14,6 +14,8 @@ header_image = "/images/shows/office-hours.png"
 
 podverse_podcast_id = "GLuztlxs0-"
 
+[links.support]
+  url = "/membership"
 [links.shownotes]
   url="https://www.officehours.hair"
 [links.email]
@@ -22,6 +24,8 @@ podverse_podcast_id = "GLuztlxs0-"
   url="https://twitter.com/ChrisLAS"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxr9-RTGmzRcDs7bqsI1rSP"
+[links.smart-link]
+  url="https://episodes.fm/aHR0cHM6Ly9mZWVkcy51cy1lYXN0LTEubGlub2Rlb2JqZWN0cy5jb20vb2ZmaWNlL29mZmljZS54bWw"
 
 +++
 
