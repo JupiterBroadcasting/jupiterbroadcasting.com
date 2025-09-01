@@ -1,13 +1,26 @@
 {{ define "main" }}
-  {{.Content}}
+{{ $liveJS := resources.Get "js/live.js" | js.Build "live.js" }}
+<script src="{{ $liveJS.Permalink }}"></script>
 
-    <div class="container">
-      {{ partial "live/jb-tube.html" . }}
+<div class="container live-container">
+  <h1>{{ .Title }}</h1>
+  <div class="player-container">
+    <div id="audio-player" class="audio-player">
+      <audio controls autoplay>
+        <source src="{{ .Site.Params.live.audio_url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
-    <div class="container">
-      {{ partial "live/links.html" . }}
+    <div id="video-player" class="video-player live-hidden">
+      <div class="video-wrapper">
+        <iframe src="" data-video-src="{{ .Site.Params.live.video_url }}" allow="autoplay; fullscreen" allowfullscreen frameborder="0"></iframe>
+      </div>
     </div>
-    <div class="container">
-      {{ partial "live/irc.html" . }}
-    </div>
+  </div>
+  <button id="toggle-button" aria-pressed="false">Switch to Video</button>
+</div>
+
+<div class="container">
+  {{ partial "live/links.html" . }}
+</div>
 {{ end }}
