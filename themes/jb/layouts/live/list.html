@@ -11,13 +11,13 @@
         Your browser does not support the audio element.
       </audio>
     </div>
-    <div id="video-player" class="video-player live-hidden">
-      <div class="video-wrapper">
-        <iframe src="" data-video-src="{{ .Site.Params.live.video_url }}" allow="autoplay; fullscreen" allowfullscreen frameborder="0"></iframe>
+    <div id="video-player" class="video-player live-hidden2">
+      <div class="video-wrapper" style="display:none;">
+        <iframe src="" data-video-src="{{ .Site.Params.live.video_url }}" height="756" width="1344" allow="autoplay; fullscreen" allowfullscreen frameborder="0"></iframe>
       </div>
     </div>
   </div>
-  <button id="toggle-button" aria-pressed="false">Switch to Video</button>
+  <button id="toggle-button" class="button is-info" aria-pressed="false">Switch to Video</button>
 </div>
 
 <div class="container">
