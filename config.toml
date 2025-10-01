@@ -7,6 +7,10 @@ theme = 'jb'
 
 paginate = 12
 
+[params.live]
+  audio_url = "https://n12.radiojar.com/0uk94cu0xrquv?rj-ttl=5&rj-tok=AAABlr_HIYcADeN2rSDaevNY4g"
+  video_url = "https://player.restream.io/?token=7a0f9cf638004b8c9d3702120f98a300"
+
 # Footer logo and menu title config
 # footer menus are further down
 [params.footer.logo]
@@ -60,13 +64,6 @@ paginate = 12
         parent = "shows"
 
     [[Menu.Main]]
-        name = "Self-Hosted"
-        identifier = "self-hosted"
-        url = "/show/self-hosted/"
-        weight =92
-        parent = "shows"
-
-    [[Menu.Main]]
         name = "This Week in Bitcoin"
         identifier = "this-week-in-bitcoin"
         url = "/show/this-week-in-bitcoin/"
@@ -79,6 +76,13 @@ paginate = 12
         url = "/show/the-launch/"
         weight =94
         parent = "shows"
+
+#    [[Menu.Main]]
+#        name = "Self-Hosted"
+#        identifier = "self-hosted"
+#        url = "/show/self-hosted/"
+#        weight =92
+#        parent = "shows"
 
 #    [[Menu.Main]]
 #        name = "Coder Radio"

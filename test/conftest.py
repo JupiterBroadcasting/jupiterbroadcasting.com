@@ -99,7 +99,7 @@ def expected_rss_feeds() -> List[Dict[str,str,]]:
         # { 'href': 'https://linuxactionnews.com/rss', 'title': 'Linux Action News'},
         { 'href': 'https://linuxunplugged.com/rss', 'title': 'LINUX Unplugged'},
         # { 'href': 'https://www.officehours.hair/rss', 'title': 'Office Hours'},
-        { 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'},
+        #{ 'href': 'https://selfhosted.show/rss', 'title': 'Self-Hosted'},
         { 'href': 'https://serve.podhome.fm/rss/55b53584-4219-4fb0-b916-075ce23f714e', 'title': 'This Week in Bitcoin'},
         { 'href': 'https://serve.podhome.fm/rss/04b078f9-b3e8-4363-a576-98e668231306', 'title': 'The Launch 🚀'},
     ]
@@ -113,7 +113,7 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             # {'href': '/show/linux-action-news/', 'title': 'Linux Action News'},
             {'href': '/show/linux-unplugged/', 'title': 'LINUX Unplugged'},
             # {'href': '/show/office-hours/', 'title': 'Office Hours'},
-            {'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
+            #{'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
             {'href': '/show/this-week-in-bitcoin/', 'title': 'This Week in Bitcoin'},
             {'href': '/show/the-launch/', 'title': 'The Launch 🚀'},
         ],
@@ -123,7 +123,7 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
         ],
         "Community": [
             {'href': 'https://github.com/JupiterBroadcasting/', 'title': 'GitHub'},
-            {'href': 'https://jupiter.tube', 'title': 'Peertube'},
+            # {'href': 'https://jupiter.tube', 'title': 'Peertube'},
             {'href': 'https://www.meetup.com/jupiterbroadcasting/', 'title': 'Meetup'},
             {'href': 'https://www.youtube.com/user/jupiterbroadcasting', 'title': 'YouTube'},
             {'href': 'https://twitter.com/jupitersignal', 'title': 'Twitter'},
@@ -133,6 +133,9 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             {'href': '/community/matrix/', 'title': 'Matrix'},
             {'href': '/community/mumble/', 'title': 'Mumble'},
             {'href': 'https://t.me/jupitertelegram', 'title': 'Telegram'},
+            {'href':'https://twitch.tv/jupiterbroadcasting', 'title': 'Twitch'},
+            {'href': '/community/picks/', 'title': 'Picks'},
+            {'href': 'https://colonyevents.com/events/', 'title': 'Gathio'},
         ]
     }
 
