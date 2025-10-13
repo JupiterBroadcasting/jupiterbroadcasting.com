@@ -1,7 +1,8 @@
 ---
-description: 30% Off for the lifetime of your Membership!
-episode: 591
-link: https://jupitersignal.memberful.com/checkout?plan=52946&coupon=blackfriday
+description: Put your support on automatic with our annual plan, and get one month
+  of membership for free!
+episode: 636
+link: https://jupitersignal.memberful.com/checkout?plan=117630r
 shortname: memberful.com-lup
-title: Black Friday Member Sale
+title: Jupiter Signal Network Membership
 ---
