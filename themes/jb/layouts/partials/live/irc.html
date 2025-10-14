@@ -1,13 +1,41 @@
-<iframe src="https://kiwiirc.com/nextclient/irc.geekshed.net/?nick=JBLive_?&theme=dark#jupiterbroadcasting" style="border:0; width:100%; height:510px;"></iframe>
-
-<div class="card my-2">
-    <div class="card-content">
-      <div class="content">
-        <p class="card-header-title">
-            Prefer to use your own IRC client?
-        </p>
-        Server: <strong>irc.geekshed.net</strong><br>
-        Channel: <strong>#jupiterbroadcasting</strong>
-      </div>
-    </div>
+<div class="card my-4 irc-card" style="margin: 0 auto; max-width: 70%;">
+  <div class="card-content" style="padding: 0;">
+    <iframe
+      src="https://kiwiirc.com/nextclient/irc.geekshed.net/?nick=JBLive_??&theme=dark#jupiterbroadcasting"
+      title="Jupiter Broadcasting IRC Chat"
+      style="border:0; width:100%; height:700px;"
+      loading="lazy"
+      class="irc-iframe"
+    ></iframe>
   </div>
+  <footer class="card-footer" style="justify-content:center; text-align:center;">
+    <p class="card-footer-item" style="flex-direction: column; line-height: 1.4;">
+      <span>Prefer your own IRC client?</span>
+      <strong>irc.geekshed.net</strong><br>
+      <strong>#jupiterbroadcasting</strong>
+    </p>
+  </footer>
+</div>
+
+<style>
+/* Desktop max-width & height */
+.irc-card {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.irc-card .irc-iframe {
+  height: 700px; /* desktop height */
+}
+
+/* Mobile: full width, height fits viewport */
+@media (max-width: 768px) {
+  .irc-card {
+    max-width: 100% !important;
+  }
+
+  .irc-card .irc-iframe {
+    height: 50vh !important; /* 50% of viewport height on mobile */
+  }
+}
+</style>
