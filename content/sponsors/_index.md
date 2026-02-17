@@ -2,8 +2,6 @@
 title: Sponsors
 ---
 
-# Sponsors
-
 We partner with sponsors we trust. Supporting them helps sustain our shows.
 
 ## Jupiter Signal Network Membership
