@@ -14,6 +14,7 @@
                             {{ partial "sponsor/medium.html" $sponsor }}
                     {{- end -}}
                 {{ end }}
+                {{ end }}
                 {{range where .Site.Sections "Title" "Shows" -}}
                     {{- range .Pages -}}
                         {{- $show_sponsors := slice -}}
