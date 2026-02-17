@@ -10,10 +10,10 @@ We partner with sponsors we trust. Supporting them helps sustain our shows.
 
 Put your support on automatic with our annual plan and get one month free.
 
-[Join for $84/year →](https://jupitersignal.memberful.com/checkout?plan=117630r)
+[**Join for $84/year →**](https://jupitersignal.memberful.com/checkout?plan=117630r)
 
 ### Defined Networking (Nebula)
 
 Managed Nebula is a decentralized VPN built on the open-source Nebula platform we trust for secure networking.
 
-[Learn more →](https://defined.net/unplugged)
+[**Learn more →**](https://defined.net/unplugged)
