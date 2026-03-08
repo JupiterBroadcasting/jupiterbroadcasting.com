@@ -1,7 +1,4 @@
 +++
-title = "Sponsors "
-description = "Our Sponsors"
-date = "2022-07-03T03:35:01-05:00"
+date = "2024-01-01T00:00:00Z"
 draft = false
-sponsors = ["linode.com-jb"]
 +++
