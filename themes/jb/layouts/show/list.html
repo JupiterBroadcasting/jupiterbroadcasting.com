@@ -31,17 +31,17 @@
     </div>
   </section>
 {{ else }}
-<div class="container p-4">
+<div class="container p-4" data-pagefind-body>
   <h1 class="title">{{.Title}}</h1>
 </div>
 <div class="container p-4">
   <div class="columns">
     {{ if isset .Params "hosts" }}
-      <div class="column is-half">
+      <div class="column is-half" data-pagefind-body>
         {{.Content}}
         {{ partial "show/links.html" . }}
       </div>
-      <div class="column is-half host-list">
+      <div class="column is-half host-list" data-pagefind-body>
         <h2 class="subtitle has-text-centered-mobile">Your Hosts</h2>
         <div class="columns is-multiline">
         {{ $currentPeopleSlice := where $peoplePages "Params.username" "in" .Params.hosts }}
@@ -53,7 +53,7 @@
         </div>
       </div>
     {{else}}
-        <div class="column is-full">
+        <div class="column is-full" data-pagefind-body>
           {{.Content}}
         </div>
     {{end}}
