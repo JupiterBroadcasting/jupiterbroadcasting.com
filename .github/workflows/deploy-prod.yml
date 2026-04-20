@@ -35,7 +35,7 @@ jobs:
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_TOKEN }}
             cd ${{ secrets.VPS_PROJECT_PATH }}
             git pull
-            docker build -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
+            docker build --no-cache -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
             docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
             docker container prune -f
             docker image prune -f
