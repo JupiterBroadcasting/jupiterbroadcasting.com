@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+
       # deploys using JB GitHub tailnet
       - name: Connect Tailscale
         uses: tailscale/github-action@v2
