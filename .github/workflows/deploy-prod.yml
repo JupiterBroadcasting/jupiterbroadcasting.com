@@ -20,8 +20,9 @@ on:
 jobs:
   deploy-via-tailscale:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      # deploys using alexktz tailnet
+      # deploys using JB GitHub tailnet
       - name: Connect Tailscale
         uses: tailscale/github-action@v2
         with:
@@ -31,14 +32,5 @@ jobs:
 
       - name: Do the deploy thing
         run: |
-          ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
-            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_TOKEN }}
-            cd ${{ secrets.VPS_PROJECT_PATH }}
-            git pull
-            docker build --no-cache -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
-            docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
-            docker container prune -f
-            docker image prune -f
-            docker builder prune -f
-            docker compose -f ~/docker-compose.yml up -d jb-jbcom
-          "
+          ssh -o "StrictHostKeyChecking=no" -o "ConnectTimeout=30" ironicbadger@jb-core \
+            "PROJECT_PATH='${{ secrets.VPS_PROJECT_PATH }}' GH_ACTOR='${{ github.actor }}' GH_TOKEN='${{ secrets.GHCR_TOKEN }}' bash -s" < scripts/deploy.sh
