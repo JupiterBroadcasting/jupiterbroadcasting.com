@@ -1,23 +1,24 @@
 {{ define "main" }}
 {{ $liveJS := resources.Get "js/live.js" | js.Build "live.js" }}
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.6.16" integrity="sha384-5E8B0pTlZZJMabWpC0fyYf6OUpe15jJij34BqBAh4NXoHAlLNOjCPRrwtOXOQFAn" crossorigin="anonymous"></script>
 <script src="{{ $liveJS.Permalink }}"></script>
 
 <div class="container live-container">
   <h1>{{ .Title }}</h1>
   <div class="player-container">
-    <div id="audio-player" class="audio-player">
-      <audio controls autoplay>
+    <div id="audio-player" class="audio-player" style="display:none;">
+      <audio controls>
         <source src="{{ .Site.Params.live.audio_url }}" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </div>
-    <div id="video-player" class="video-player live-hidden2">
-      <div class="video-wrapper" style="display:none;">
-        <iframe src="" data-video-src="{{ .Site.Params.live.video_url }}" height="756" width="1344" allow="autoplay; fullscreen" allowfullscreen frameborder="0"></iframe>
+    <div id="video-player" class="video-player">
+      <div class="video-wrapper">
+        <video id="hls-video" controls autoplay muted playsinline webkit-playsinline data-video-src="{{ .Site.Params.live.video_url }}"></video>
       </div>
     </div>
   </div>
-  <button id="toggle-button" class="button is-info" aria-pressed="false">Switch to Video</button>
+  <button id="toggle-button" class="button is-info" role="switch" aria-checked="false">Switch to Audio</button>
 </div>
 
 <div class="container">
