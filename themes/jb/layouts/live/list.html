@@ -15,6 +15,13 @@
     <div id="video-player" class="video-player">
       <div class="video-wrapper">
         <video id="hls-video" controls autoplay muted playsinline webkit-playsinline data-video-src="{{ .Site.Params.live.video_url }}"></video>
+        <div id="stream-offline" class="stream-offline" role="status" aria-live="polite">
+          <div class="offline-content">
+            <p class="offline-title">Currently Off Air</p>
+            <p class="offline-sub">Check the <a href="/calendar/">calendar</a> for the next live show.</p>
+            <button id="retry-button" class="button is-info">Try Again</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
