@@ -1,0 +1,14 @@
+---
+description: 'dn-tool is a control-plane CLI that enrolls and unenrolls Linux hosts
+  in a defined.net Managed Nebula network. It calls the defined.net REST API to create
+  and delete host records and obtain single-use enrollment codes, then orchestrates
+  the proprietary dnclient daemon  which it downloads and verifies at runtime. It
+  is strictly control plane: it never reimplements Nebula and never replaces dnclient.'
+license: null
+shows:
+- episode: 673
+  show: LINUX Unplugged
+  slug: linux-unplugged
+title: dn-tool
+url: https://github.com/andreswebs/dn-tool
+---
