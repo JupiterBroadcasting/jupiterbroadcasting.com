@@ -25,8 +25,8 @@ podverse_podcast_id = "7vbU3baydv"
   url="https://episodes.fm/1729662641"
 #[links.youtube]
 #  url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxit4XMxUNW3qrRFmgP_aaT"
-#[links.matrix]
-#  url="https://matrix.to/#/#self-hosted:matrix.org"
+[links.matrix]
+  url="https://matrix.to/#/#launch:jupiterbroadcasting.com"
 
 +++
 
