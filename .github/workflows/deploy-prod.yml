@@ -19,7 +19,9 @@ on:
 
 jobs:
   deploy-via-tailscale:
-    runs-on: ubuntu-latest
+    # As of 2026-10-25 ubuntu-latest is 26.04, whose sudo-rs ignores the
+    # `sudo -E` tailscale/github-action depends on — trifectatechfoundation/sudo-rs#1299
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Checkout Repo
