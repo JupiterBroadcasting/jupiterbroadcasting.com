@@ -33,13 +33,26 @@ def test_llms_full_txt(page: Page):
 
 def test_per_show_llms_and_markdown_twins(page: Page):
     body = _body(page, "/show/linux-unplugged/llms.txt")
-    assert "## Episodes" in body
+    assert "## Most recent episodes" in body
+    assert "## Episode archive" in body
+    # curated file stays small: full enumeration lives in the sitemap
+    assert len(body) < 20_000, "per-show llms.txt should be curated, not a full index"
+    assert "/show/linux-unplugged/episodes.json" in body
     m = re.search(r"\]\((https?://[^)]+/show/linux-unplugged/\d+/index\.md)\)", body)
     assert m, "episode entries must link to markdown twins"
     # fetch the twin relative to the base url (tests run with baseURL "/")
     twin = m.group(1).replace("https://www.jupiterbroadcasting.com", "")
     body = _body(page, twin)
     assert "Episode Links" in body or "URL:" in body
+
+
+def test_episodes_json_exists(page: Page):
+    resp = page.goto("/show/linux-unplugged/episodes.json")
+    assert resp is not None and resp.ok
+    import json
+    data = json.loads(page.inner_text("body"))
+    assert data["count"] >= 1
+    assert "/show/linux-unplugged/" in data["episodes"][0]["url"]
 
 
 def test_discovery_links_on_html_pages(page: Page):

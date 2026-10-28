@@ -268,8 +268,10 @@ paginate = 12
     baseName = "llmsdump"
 
 [outputs]
-  home = ["html", "rss", "json", "llmsdump"]
+  home = ["html", "rss", "json", "sitemap", "llmsdump"]
   page = ["html", "markdown"]
   # page = ["json","html","webplayer"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
+  taxonomy = ["html", "markdown"]
+  term = ["html", "markdown"]

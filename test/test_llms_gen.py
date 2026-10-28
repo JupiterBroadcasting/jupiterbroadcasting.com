@@ -100,7 +100,7 @@ def test_root_llms_spec_format(tmp_path):
 def test_per_show_index_newest_first(tmp_path):
     public = build(tmp_path)
     text = (public / "show/linux-unplugged/llms.txt").read_text()
-    validate_root_llms(text, section="## Episodes", min_links=2)
+    validate_root_llms(text, section="## Most recent episodes", min_links=3)
     assert "# LINUX Unplugged" in text
     assert "> A weekly show about Linux." in text
     i_new = text.index("Nix in the Cold")
@@ -109,6 +109,23 @@ def test_per_show_index_newest_first(tmp_path):
     # guest annotation + markdown twin URLs
     assert "Nix in the Cold (guest: jane)" in text
     assert "https://www.jupiterbroadcasting.com/show/linux-unplugged/0650/index.md" in text
+    # archive section: range + pattern + episodes.json pointer (full list NOT inlined)
+    assert "## Episode archive" in text
+    assert "numbered 1-650" in text
+    assert "/show/linux-unplugged/<number>/" in text
+    assert "/show/linux-unplugged/episodes.json" in text
+    epj = json.loads((public / "show/linux-unplugged/episodes.json").read_text())
+    assert epj["count"] == 2
+    assert {e["number"] for e in epj["episodes"]} == {1, 650}
+    assert epj["episodes"][0]["url"].endswith("/show/linux-unplugged/0001/")
+
+
+def test_recent_cap(tmp_path, monkeypatch):
+    monkeypatch.setattr(gen_llms, "RECENT_COUNT", 1)
+    public = build(tmp_path)
+    text = (public / "show/linux-unplugged/llms.txt").read_text()
+    assert "Nix in the Cold" in text
+    assert "Too Much Choice" not in text, "only RECENT_COUNT episodes belong in the index"
 
 
 def test_llms_full_excludes_episodes(tmp_path):

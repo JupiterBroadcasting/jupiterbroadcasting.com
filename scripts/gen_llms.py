@@ -113,8 +113,9 @@ def root_llms(episodes, sections):
         "The site hosts episode show notes plus pages about membership, live shows, sponsors, and community.",
         "",
         "Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llms.txt`) "
-        "listing every episode with its show-notes description. Any page on the site is available "
-        "as markdown by appending `index.md` to its URL (e.g. `/show/linux-unplugged/0650/index.md`).",
+        "describing the show and linking its ten most recent episodes; the complete episode URL list "
+        "for each show is JSON at `/show/<slug>/episodes.json`. Any page on the site is available "
+        "as markdown by appending `index.md` to its URL (e.g. `/show/linux-unplugged/650/index.md`).",
         "",
         "## Shows",
         "",
@@ -139,22 +140,67 @@ def root_llms(episodes, sections):
     return "\n".join(lines) + "\n"
 
 
+def episode_numbers(eps):
+    """(oldest, newest) episode numbers from numeric stems, e.g. (1, 650)."""
+    nums = []
+    for r in eps:
+        try:
+            nums.append(int(Path(r.get("path", "")).stem))
+        except ValueError:
+            pass
+    return (min(nums), max(nums)) if nums else (None, None)
+
+
+RECENT_COUNT = 10
+
+
 def per_show_llms(slug, rows, sections):
     sec = sections.get(f"show/{slug}/_index.md", {})
     title = sec.get("title") or slug
-    desc = (sec.get("desc") or SHOW_BLURBS.get(slug) or "").strip()
+    desc = (sec.get("desc") or SHOW_BLURBS.get(slug) or "").strip().replace("\n", " ")
+    base = f"{SITE_BASE}/show/{slug}"
     lines = [f"# {title}", ""]
     if desc:
         lines += [f"> {desc}", ""]
     lines += [
-        f"{len(rows)} episodes of {title} from Jupiter Broadcasting. Newest first. "
-        "Each entry links to full markdown show notes: description, episode links, hosts, and guests.",
+        "## The show",
         "",
-        f"## Episodes ({len(rows)})",
+        f"- [{title} - show page]({base}/index.md): description, hosts, and show notes",
+        "",
+        f"## Most recent episodes (of {len(rows)})",
         "",
     ]
-    lines += [episode_line(r) for r in rows]
+    for r in rows[:RECENT_COUNT]:
+        lines.append(episode_line(r))
+    lo, hi = episode_numbers(rows)
+    lines += ["", "## Episode archive", ""]
+    if lo is not None:
+        lines += [
+            f"{len(rows)} episodes, numbered {lo}-{hi}.",
+            "",
+            f"Episode URL pattern: `{base}/<number>/` — append `index.md` for the markdown twin.",
+            f"Newest: `{base}/{hi}/index.md` · Oldest: `{base}/{lo}/index.md`",
+            "",
+            f"- [Complete episode list]({base}/episodes.json): JSON list of every {title} episode (number, date, URL).",
+        ]
+    else:
+        lines.append(f"- [Complete episode list]({base}/episodes.json): JSON list of every {title} episode.")
     return "\n".join(lines) + "\n"
+
+
+def episodes_json(slug, rows):
+    """Machine-readable full episode list for a show (Hugo 0.105 emits no
+    per-section sitemap, so we generate the enumeration ourselves)."""
+    import json as _json
+    eps = []
+    for r in rows:
+        try:
+            n = int(Path(r.get("path", "")).stem)
+        except ValueError:
+            continue
+        eps.append({"number": n, "date": r.get("date") or "", "url": SITE_BASE + r.get("url", "")})
+    eps.sort(key=lambda e: e["number"])
+    return _json.dumps({"show": slug, "count": len(eps), "episodes": eps}, indent=1) + "\n"
 
 
 def llms_full(core, sections):
@@ -189,6 +235,7 @@ def main(repo_root="."):
         out_dir = public / "show" / slug
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "llms.txt").write_text(per_show_llms(slug, rows, sections), encoding="utf-8")
+        (out_dir / "episodes.json").write_text(episodes_json(slug, rows), encoding="utf-8")
         total_eps += len(rows)
     print(f"gen_llms: llms.txt + llms-full.txt + {len(episodes)} show indexes ({total_eps} episodes)")
 
