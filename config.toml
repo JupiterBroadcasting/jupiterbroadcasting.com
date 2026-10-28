@@ -244,13 +244,32 @@ paginate = 12
 
 # Output formats
 
+[mediaTypes]
+  # markdown twins of pages, for llms.txt consumers (see llmstxt.org spec v2)
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+
 [outputFormats]
   [outputFormats.webplayer]
   mediatype ="application/json"
   baseName = "webplayer"
 
+  # Every page/section also emitted as markdown: /show/x/0650/ -> /show/x/0650/index.md
+  [outputFormats.markdown]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "index"
+
+  # Intermediate NDJSON dump consumed by scripts/gen_llms.py after the build
+  # (writes public/llmsdump.json; the Dockerfile removes it after generation)
+  [outputFormats.llmsdump]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "llmsdump"
+
 [outputs]
-  page = ["html"]
+  home = ["html", "rss", "json", "llmsdump"]
+  page = ["html", "markdown"]
   # page = ["json","html","webplayer"]
   # section = ["html","rss"]
-  section = ["html"]
+  section = ["html", "markdown"]
