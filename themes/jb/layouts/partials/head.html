@@ -4,6 +4,12 @@
 
   {{ partial "meta.html" . }}
 
+  <!-- llms.txt discovery (llmstxt.org v2 link relations) -->
+  <link rel="describedby" href="/llms.txt">
+  {{- with .OutputFormats.Get "markdown" }}
+  <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+  {{- end }}
+
   {{ $sass := resources.Get "css/main.sass" }}
   <!-- Defining options that production & development should have -->
   {{ $options := (dict "enableSourceMap" true ) }}

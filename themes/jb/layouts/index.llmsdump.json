@@ -1,0 +1,7 @@
+{{- /* NDJSON dump consumed by scripts/gen_llms.py (removed from public/ after generation).
+       One JSON object per line: every regular page and every section page. */ -}}
+{{- range .Site.Pages -}}
+{{- if or (eq .Kind "page") (eq .Kind "section") -}}
+{{- dict "kind" .Kind "path" (print .File.Dir .File.LogicalName) "url" .RelPermalink "title" .Title "desc" .Description "date" (.Date.Format "2006-01-02") "guests" (.Params.guests | default (slice)) "hosts" (.Params.hosts | default (slice)) "show" (.Params.show_slug | default "") "show_name" (.Params.show_name | default "") "body" .RawContent | jsonify }}
+{{ end -}}
+{{- end -}}
