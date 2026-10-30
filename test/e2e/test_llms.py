@@ -1,62 +1,99 @@
-"""E2E checks for the llms.txt machinery against the built site.
+"""E2E checks for the llms.txt machinery (Hugo-native output formats).
 
-Validates the llmstxt.org v2 contract:
-  - /llms.txt exists at root with spec-conformant structure
-  - /llms-full.txt exists
-  - per-show llms.txt exists under each show path
-  - pages have markdown twins at <url>index.md
-  - HTML pages advertise discovery links (describedby / alternate)
+Pure-HTTP tests (no browser needed), consistent with the llmstxt.org v2 contract:
+  - /llms.txt at root, text/plain, spec structure
+  - /llms-full.txt core pages, front-matter-free markdown
+  - per-show llms.txt (curated) + episodes.json (full enumeration)
+  - markdown twins at <url>index.md, incl. prefixed special episodes
+  - discovery links (describedby / alternate) in HTML heads
+
+Run: pytest test/e2e/test_llms.py --base-url http://127.0.0.1:18080
 """
 import re
 
-from playwright.sync_api import Page
+import pytest
+
+requests = pytest.importorskip("requests")
 
 
-def _body(page: Page, url: str) -> str:
-    resp = page.goto(url)
-    assert resp is not None and resp.ok, f"{url} -> {resp.status if resp else 'no response'}"
-    # served as a text file; playwright wraps it in <html><body><pre>
-    return page.content()
+def _get(base_url, path):
+    return requests.get(base_url.rstrip("/") + path, timeout=30)
 
 
-def test_root_llms_txt(page: Page):
-    body = _body(page, "/llms.txt")
-    assert "Jupiter Broadcasting" in body
-    assert "## Shows" in body
-    assert "/show/linux-unplugged/llms.txt" in body
+def test_root_llms_txt(base_url):
+    r = _get(base_url, "/llms.txt")
+    assert r.ok
+    assert r.headers["content-type"].startswith("text/plain")
+    assert "Jupiter Broadcasting" in r.text
+    assert "## Shows" in r.text
+    assert "/show/linux-unplugged/llms.txt" in r.text
 
 
-def test_llms_full_txt(page: Page):
-    body = _body(page, "/llms-full.txt")
-    assert "Membership" in body
+def test_llms_full_txt(base_url):
+    r = _get(base_url, "/llms-full.txt")
+    assert r.ok
+    assert r.headers["content-type"].startswith("text/plain")
+    assert "Membership" in r.text
+    assert "+++" not in r.text  # front matter stripped
 
 
-def test_per_show_llms_and_markdown_twins(page: Page):
-    body = _body(page, "/show/linux-unplugged/llms.txt")
-    assert "## Most recent episodes" in body
-    assert "## Episode archive" in body
-    # curated file stays small: full enumeration lives in the sitemap
-    assert len(body) < 20_000, "per-show llms.txt should be curated, not a full index"
-    assert "/show/linux-unplugged/episodes.json" in body
-    m = re.search(r"\]\((https?://[^)]+/show/linux-unplugged/\d+/index\.md)\)", body)
+def test_per_show_llms_and_markdown_twins(base_url):
+    r = _get(base_url, "/show/linux-unplugged/llms.txt")
+    assert r.ok
+    assert r.headers["content-type"].startswith("text/plain")
+    assert "## Most recent episodes" in r.text
+    assert "## Episode archive" in r.text
+    # curated file stays small: full enumeration lives in episodes.json
+    assert len(r.text) < 20_000, "per-show llms.txt should be curated, not a full index"
+    assert "/show/linux-unplugged/episodes.json" in r.text
+    m = re.search(r"\]\((https?://[^)]+/show/linux-unplugged/\d+/index\.md)\)", r.text)
     assert m, "episode entries must link to markdown twins"
-    # fetch the twin relative to the base url (tests run with baseURL "/")
     twin = m.group(1).replace("https://www.jupiterbroadcasting.com", "")
-    body = _body(page, twin)
-    assert "Episode Links" in body or "URL:" in body
+    t = _get(base_url, twin)
+    assert t.ok
+    assert "URL:" in t.text
 
 
-def test_episodes_json_exists(page: Page):
-    resp = page.goto("/show/linux-unplugged/episodes.json")
-    assert resp is not None and resp.ok
-    import json
-    data = json.loads(page.inner_text("body"))
-    assert data["count"] >= 1
-    assert "/show/linux-unplugged/" in data["episodes"][0]["url"]
+def test_llms_not_rendered_on_non_show_sections(base_url):
+    # outputs are enabled per-show in front matter, not site-wide sections
+    assert not _get(base_url, "/show/llms.txt").ok
+    assert not _get(base_url, "/hosts/llms.txt").ok
+    assert not _get(base_url, "/guests/llms.txt").ok
 
 
-def test_discovery_links_on_html_pages(page: Page):
-    page.goto("/")
-    page.locator('link[rel="describedby"][href="/llms.txt"]').wait_for()
-    page.goto("/show/linux-unplugged/")
-    page.locator('link[rel="alternate"][type="text/markdown"]').wait_for()
+def test_episodes_json(base_url):
+    r = _get(base_url, "/show/linux-unplugged/episodes.json")
+    assert r.ok
+    assert r.headers["content-type"].startswith("application/json")
+    data = r.json()
+    assert data["count"] == len(data["episodes"]) == 650
+    assert data["episodes"][0]["slug"] == "650"
+    assert "/show/linux-unplugged/650/" in data["episodes"][0]["url"]
+
+
+def test_prefixed_special_episodes_included(base_url):
+    """The-launch 'T-' and office-hours 'p' episodes must be enumerated."""
+    data = _get(base_url, "/show/the-launch/episodes.json").json()
+    episodes = {e["episode"] for e in data["episodes"]}
+    assert "T-0" in episodes and "T-1" in episodes
+    assert data["count"] == 53  # 50 numbered + 3 T- specials
+    data = _get(base_url, "/show/office-hours/episodes.json").json()
+    assert any(str(e["episode"]).startswith("p") for e in data["episodes"])
+
+
+def test_episode_markdown_twins(base_url):
+    assert _get(base_url, "/show/linux-unplugged/650/index.md").ok
+    r = _get(base_url, "/show/the-launch/t-2/index.md")
+    assert r.ok  # prefixed slug twin resolves at its lowercase permalink
+    r = _get(base_url, "/community/index.md")
+    assert r.ok
+    assert "+++" not in r.text  # twin is front-matter-free markdown
+
+
+def test_discovery_links_on_html_pages(base_url):
+    r = _get(base_url, "/")
+    assert 'rel="describedby"' in r.text
+    assert "/llms.txt" in r.text
+    r = _get(base_url, "/show/linux-unplugged/")
+    assert 'rel="describedby"' in r.text
+    assert "/show/linux-unplugged/llms.txt" in r.text

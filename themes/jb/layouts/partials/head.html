@@ -5,7 +5,12 @@
   {{ partial "meta.html" . }}
 
   <!-- llms.txt discovery (llmstxt.org v2 link relations) -->
-  <link rel="describedby" href="/llms.txt">
+  {{- $llms := "/llms.txt" -}}
+  {{- $s := .CurrentSection -}}
+  {{- if and $s (isset $s.Params "show") -}}
+  {{- with $s.OutputFormats.Get "llms" }}{{ $llms = .Permalink }}{{ end -}}
+  {{- end -}}
+  <link rel="describedby" href="{{ $llms }}">
   {{- with .OutputFormats.Get "markdown" }}
   <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
   {{- end }}

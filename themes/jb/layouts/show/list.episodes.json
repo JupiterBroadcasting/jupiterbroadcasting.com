@@ -1,0 +1,10 @@
+{{- $eps := where .Pages "Type" "episode" -}}
+{
+  "show": {{ .Params.show | jsonify }},
+  "title": {{ .Title | jsonify }},
+  "count": {{ len $eps }},
+  "episodes": [
+{{ range $i, $p := $eps.ByDate.Reverse }}{{ if $i }},
+{{ end }}    {"slug": {{ $p.Params.slug | default $p.File.TranslationBaseName | jsonify }}, "episode": {{ $p.Params.episode | jsonify }}, "date": "{{ $p.Date.Format "2006-01-02" }}", "url": {{ $p.Permalink | jsonify }}}{{ end }}
+  ]
+}
