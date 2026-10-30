@@ -1,0 +1,24 @@
+{{- $core := where site.RegularPages "Type" "ne" "episode" -}}
+# Jupiter Broadcasting - core site pages (llms-full)
+
+All non-episode site pages, concatenated. Episode show notes are not included: each show's episode index lives at /show/<slug>/llms.txt and individual episodes are markdown at /show/<slug>/<number>/index.md.
+{{ range $p := where site.Sections "Type" "ne" "show" }}
+---
+
+# {{ trim $p.Title " " }}
+
+URL: {{ $p.Permalink }}
+{{ with $p.Description }}> {{ . }}
+{{ end }}
+{{ partial "llms-body.html" $p }}
+{{- end }}
+{{ range $p := $core.ByTitle }}
+---
+
+# {{ trim $p.Title " " }}
+
+URL: {{ $p.Permalink }}
+{{ with $p.Description }}> {{ . }}
+{{ end }}
+{{ partial "llms-body.html" $p }}
+{{- end }}

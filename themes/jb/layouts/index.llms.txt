@@ -1,0 +1,23 @@
+# Jupiter Broadcasting
+
+> Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, and Jupiter EXTRAS. The site hosts episode show notes plus pages about membership, live shows, sponsors, and community.
+
+Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llms.txt`) describing the show and linking its ten most recent episodes; the complete episode URL list for each show is JSON at `/show/<slug>/episodes.json`. Any page on the site is available as markdown by appending `index.md` to its URL (e.g. `/show/linux-unplugged/650/index.md`).
+
+## Shows
+
+{{ range (site.GetPage "/show").Pages.ByTitle }}- [{{ trim .Title " " }}]({{ .Permalink }}llms.txt): {{ len (where .Pages "Type" "episode") }} episodes. {{ .Description }}
+{{ end }}
+## Site
+
+{{ range $path := slice "/membership" "/live" "/community" "/hosts" "/sponsors" "/contact" }}
+{{- with site.GetPage $path }}
+- [{{ trim .Title " " }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+{{- end }}
+{{ end }}
+## Optional
+
+{{ with site.GetPage "/archive" }}
+- [{{ trim .Title " " }}]({{ .Permalink }}index.md): Legacy shows and old content.
+{{ end }}
+- [llms-full.txt]({{ "/llms-full.txt" | relURL }}): All core (non-episode) site pages concatenated.

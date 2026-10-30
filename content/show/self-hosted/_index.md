@@ -1,4 +1,5 @@
 +++
+outputs = ["html", "markdown", "llms", "episodes"]
 title = "Self-Hosted"
 description = "Discover new software and hardware to get the best out of your network, control smart devices, and secure your data on cloud services."
 date = "2022-05-10T04:10:01-05:00"

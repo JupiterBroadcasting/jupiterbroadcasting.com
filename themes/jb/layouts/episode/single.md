@@ -12,4 +12,4 @@ URL: {{ .Permalink }}
 {{ end }}{{ with .Params.podcast_file }}- Audio: {{ . }}
 {{ end }}{{ with .Params.youtube_link }}- YouTube: {{ . }}
 {{ end }}
-{{ .RawContent }}
+{{ partial "llms-body.html" . }}

@@ -12,21 +12,13 @@ RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
     && hugo --gc \
     || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 )
 
-# Generate llms.txt, llms-full.txt, and per-show llms.txt indexes from the
-# build's public/llmsdump.json (see layouts/index.llmsdump.json), then drop
-# the intermediate dump. Regenerated on every deploy, so indexes always match
-# content -- including scraper auto-commits. Separate stage because the pinned
-# hugo image's apk repos resolve to current Alpine (incompatible python3).
-FROM python:3.12-alpine AS llms
-WORKDIR /site
-COPY --from=builder /site /site
-RUN python3 scripts/gen_llms.py && rm -f public/llmsdump.json
-
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 RUN sed -i 's/#error_page/error_page/' /etc/nginx/conf.d/default.conf
 # nginx:alpine ships no text/markdown mime type; llms.txt spec wants it on .md twins.
-# (root is repeated: the stock conf declares it inside `location /`, and these
-# location blocks replace it for matching paths.)
-RUN sed -i '/listen  /i\    location ~ \\.md$ { root /usr/share/nginx/html; default_type text/markdown; }\n    location = /llms.txt { root /usr/share/nginx/html; default_type text/markdown; }\n    location = /llms-full.txt { root /usr/share/nginx/html; default_type text/markdown; }' /etc/nginx/conf.d/default.conf
-COPY --from=llms /site/public /usr/share/nginx/html
+# (root is repeated: the stock conf declares it inside `location /`, and this
+# location block replaces it for matching paths. llms.txt, llms-full.txt and
+# episodes.json need no override: stock mime.types already serve .txt as
+# text/plain and .json as application/json.)
+RUN sed -i '/listen  /i\    location ~ \\.md$ { root /usr/share/nginx/html; default_type text/markdown; }' /etc/nginx/conf.d/default.conf
+COPY --from=builder /site/public /usr/share/nginx/html
