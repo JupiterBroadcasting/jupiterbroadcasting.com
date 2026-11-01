@@ -3,6 +3,7 @@
 URL: {{ .Permalink }}
 {{ with .Description }}> {{ . }}
 {{ end }}
-Episode index for this show: [llms.txt](/show/{{ .File.ContentBaseName }}/llms.txt)
+{{ with .OutputFormats.Get "llms" }}Episode index for this show: [llms.txt]({{ .Permalink }})
+{{ end }}
 
-{{ partial "llms-body.html" . }}
+{{ partial "llms-body.md" . }}

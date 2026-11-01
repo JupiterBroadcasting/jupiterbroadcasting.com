@@ -97,3 +97,37 @@ def test_discovery_links_on_html_pages(base_url):
     r = _get(base_url, "/show/linux-unplugged/")
     assert 'rel="describedby"' in r.text
     assert "/show/linux-unplugged/llms.txt" in r.text
+
+
+def test_root_shows_active_archived_split(base_url):
+    r = _get(base_url, "/llms.txt").text
+    shows = r.split("## Shows")[1].split("## Site")[0]
+    assert "LINUX Unplugged" in shows
+    assert "Coder Radio" not in shows  # archived: not in nav, not in ## Shows
+    optional = r.split("## Optional")[1]
+    assert "Coder Radio" in optional and "Self-Hosted" in optional
+    # llms-full link is absolute like every other link
+    assert "](https://www.jupiterbroadcasting.com/llms-full.txt)" in r
+
+
+def test_hosts_twin_lists_hosts(base_url):
+    r = _get(base_url, "/hosts/index.md")
+    assert r.ok
+    for h in ("brent", "chris", "wes"):
+        assert f"/hosts/{h}/index.md" in r.text
+    # individual host term twin lists episodes
+    r = _get(base_url, "/hosts/brent/index.md")
+    assert r.ok
+    assert "/show/" in r.text
+    # people twin carries front-matter facts, not just a slug
+    r = _get(base_url, "/people/brent/index.md")
+    assert r.ok
+    assert "brentgervais.com" in r.text
+    assert "Username: brent" in r.text
+
+
+def test_llms_full_no_leaked_yaml_frontmatter(base_url):
+    r = _get(base_url, "/llms-full.txt").text
+    assert "avatar_small" not in r  # YAML front matter stripped
+    assert "&#43;" not in r and "&amp;" not in r  # no HTML escaping in text output
+    assert "Brent Gervais" in r

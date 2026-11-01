@@ -6,7 +6,7 @@ Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llm
 
 ## Shows
 
-{{ range (site.GetPage "/show").Pages.ByTitle }}- [{{ trim .Title " " }}]({{ .Permalink }}llms.txt): {{ len (where .Pages "Type" "episode") }} episodes. {{ .Description }}
+{{ range where (site.GetPage "/show").Pages.ByTitle "Params.active" true }}- [{{ trim .Title " " }}]({{ .Permalink }}llms.txt): {{ len (where .Pages "Type" "episode") }} episodes. {{ .Description }}
 {{ end }}
 ## Site
 
@@ -17,7 +17,9 @@ Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llm
 {{ end }}
 ## Optional
 
-{{ with site.GetPage "/archive" }}
-- [{{ trim .Title " " }}]({{ .Permalink }}index.md): Legacy shows and old content.
+- [llms-full.txt]({{ .Permalink }}llms-full.txt): All core (non-episode) site pages concatenated.
+
+Archived shows (no longer in the site navigation; content remains available):
+
+{{ range where (site.GetPage "/show").Pages.ByTitle "Params.active" false }}- [{{ trim .Title " " }}]({{ .Permalink }}index.md): {{ len (where .Pages "Type" "episode") }} episodes. {{ .Description }}
 {{ end }}
-- [llms-full.txt]({{ "/llms-full.txt" | relURL }}): All core (non-episode) site pages concatenated.

@@ -10,7 +10,10 @@ All non-episode site pages, concatenated. Episode show notes are not included: e
 URL: {{ $p.Permalink }}
 {{ with $p.Description }}> {{ . }}
 {{ end }}
-{{ partial "llms-body.html" $p }}
+{{- with $p.Params.bio }}
+{{ . }}
+{{- end }}
+{{ partial "llms-body.md" $p }}
 {{- end }}
 {{ range $p := $core.ByTitle }}
 ---
@@ -20,5 +23,8 @@ URL: {{ $p.Permalink }}
 URL: {{ $p.Permalink }}
 {{ with $p.Description }}> {{ . }}
 {{ end }}
-{{ partial "llms-body.html" $p }}
+{{- with $p.Params.bio }}
+{{ . }}
+{{- end }}
+{{ partial "llms-body.md" $p }}
 {{- end }}

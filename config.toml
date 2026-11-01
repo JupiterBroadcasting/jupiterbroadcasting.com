@@ -285,7 +285,7 @@ paginate = 12
     baseName = "episodes"
 
 [outputs]
-  home = ["html", "rss", "json", "sitemap", "llms", "llmsfull"]
+  home = ["html", "rss", "llms", "llmsfull"]
   page = ["html", "markdown"]
   # page = ["json","html","webplayer"]
   # section = ["html","rss"]

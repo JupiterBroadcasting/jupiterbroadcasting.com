@@ -3,4 +3,4 @@
 URL: {{ .Permalink }}
 {{ with .Description }}> {{ . }}
 {{ end }}
-{{ partial "llms-body.html" . }}
+{{ partial "llms-body.md" . }}
