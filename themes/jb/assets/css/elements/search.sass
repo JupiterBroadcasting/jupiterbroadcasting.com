@@ -1,15 +1,77 @@
-#search
-    --pagefind-ui-scale: 1
-    --pagefind-ui-primary: $jb-dark
-    --pagefind-ui-text: $text
-    --pagefind-ui-background: $jb-grey
-    // --pagefind-ui-border: #eeeeee
-    // --pagefind-ui-tag: #eeeeee
-    // --pagefind-ui-border-width: 2px
-    // --pagefind-ui-border-radius: 8px
-    // --pagefind-ui-image-border-radius: 8px
-    // --pagefind-ui-image-box-ratio: 3 / 2
-    // --pagefind-ui-font: sans-serif
+.search-input
+    color: $jb-darkest
 
-    // input
-    //     color: $jb-grey-dark
+.search-status
+    color: $jb-grey-light
+    margin-bottom: 1rem
+
+.search-result
+    background-color: $jb-darker
+    border-radius: 12px
+    margin-bottom: 12px
+    transition: all .3s ease-in-out
+
+    &:hover
+        box-shadow: rgba(0, 0, 0, .22) 0 19px 43px
+        transform: translate3d(0, -1px, 0)
+
+    .card-content
+        display: flex
+        flex-direction: column
+        gap: 6px
+
+    h4
+        margin: 0
+        font-size: 1.1rem
+        font-weight: 600
+        line-height: 1.25
+
+    a
+        color: $jb-blue-light
+
+    p
+        margin: 0
+
+    .tags
+        margin-bottom: 0
+
+        .tag
+            margin-bottom: 0
+
+    mark
+        background-color: rgba($jb-gold, .3)
+        color: inherit
+        border-radius: 2px
+        padding: 0 1px
+
+.search-muted
+    color: $jb-grey-light
+    font-size: .8rem
+
+.search-excerpt
+    color: $jb-grey-light
+
+.search-type
+    &.is-pick
+        background-color: $jb-gold
+        color: $jb-dark
+    &.is-sponsor
+        background-color: $jb-orange
+        color: #fff
+    &.is-episode
+        background-color: $jb-blue
+        color: #fff
+    &.is-show
+        background-color: $jb-grey-dark
+        color: #fff
+    &.is-person
+        background-color: $jb-pink
+        color: #fff
+
+.search-result .tag.is-black
+    background-color: $jb-darkest
+    color: #fff
+
+.search-result .tag.is-dark
+    background-color: $jb-grey-dark
+    color: #fff
