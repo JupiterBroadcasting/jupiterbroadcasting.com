@@ -5,6 +5,9 @@ services:
     name: jb-deploy-prv
     env: static
     buildCommand: hugo --minify --gc --baseURL '/'
+    envVars:
+      - key: HUGO_VERSION
+        value: 0.169.0
     staticPublishPath: public/
     pullRequestPreviewsEnabled: true
     # should have auto deploy enabled by default

@@ -1,8 +1,8 @@
-FROM registry.gitlab.com/pages/hugo/hugo_extended:0.105.0 AS builder
+FROM ghcr.io/gohugoio/hugo:v0.169.0 AS builder
 # this defaults to an empty variable
 ARG BASE_URL
+COPY --chown=hugo:hugo . /site
 WORKDIR /site
-COPY . /site
 # when the argument is empty or PROD, do a normal production build
 #   else if it's TESTS_WEB use the specified baseURL "/", or
 #   exit 1, because that use case hasn't been provided
@@ -12,7 +12,7 @@ RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
     && hugo --gc \
     || ( [ "${BASE_URL}" == 'TESTS_WEB' ] && hugo --gc --baseURL "/" || exit 1 )
 
-FROM nginx:alpine
+FROM nginx:1.31.8-alpine
 RUN rm -rf /usr/share/nginx/html/*
 RUN sed -i 's/#error_page/error_page/' /etc/nginx/conf.d/default.conf
 # nginx:alpine ships no text/markdown mime type; llms.txt spec wants it on .md twins.
