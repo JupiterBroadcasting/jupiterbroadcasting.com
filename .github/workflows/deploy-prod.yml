@@ -19,9 +19,15 @@ on:
 
 jobs:
   deploy-via-tailscale:
-    runs-on: ubuntu-latest
+    # As of 2026-10-25 ubuntu-latest is 26.04, whose sudo-rs ignores the
+    # `sudo -E` tailscale/github-action depends on — trifectatechfoundation/sudo-rs#1299
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
-      # deploys using alexktz tailnet
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+
+      # deploys using JB GitHub tailnet
       - name: Connect Tailscale
         uses: tailscale/github-action@v2
         with:
@@ -31,14 +37,5 @@ jobs:
 
       - name: Do the deploy thing
         run: |
-          ssh -o "StrictHostKeyChecking no" ironicbadger@jb-core "
-            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_TOKEN }}
-            cd ${{ secrets.VPS_PROJECT_PATH }}
-            git pull
-            docker build -t ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest .
-            docker push ghcr.io/jupiterbroadcasting/jupiterbroadcasting.com:latest
-            docker container prune -f
-            docker image prune -f
-            docker builder prune -f
-            docker compose -f ~/docker-compose.yml up -d jb-jbcom
-          "
+          ssh -o "StrictHostKeyChecking=no" -o "ConnectTimeout=30" ironicbadger@jb-core \
+            "PROJECT_PATH='${{ secrets.VPS_PROJECT_PATH }}' GH_ACTOR='${{ github.actor }}' GH_TOKEN='${{ secrets.GHCR_TOKEN }}' bash -s" < scripts/deploy.sh
