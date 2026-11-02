@@ -27,7 +27,7 @@
             border-top: 0
     & .dropdown-menu
         background-color: v.$jb-darkest !important
-        @media screen and (max-width: 768px)
+        @media screen and (max-width: v.$mobile-max)
             position: initial
             margin: 0
         
@@ -40,7 +40,7 @@
                 &:hover,
                 &:focus
                     background-color: v.$grey-dark
-                @media screen and (max-width: 768px)
+                @media screen and (max-width: v.$mobile-max)
                     padding-inline: 1.5rem
 
 // .nested.dropdown .dropdown-trigger button::after {

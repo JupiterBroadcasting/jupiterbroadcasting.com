@@ -49,7 +49,7 @@ a.navbar-item,
       background-color: v.$grey-dark
       color: v.$white
 
-@media screen and (min-width: 1220px)
+@media screen and (min-width: v.$navbar-breakpoint)
   .navbar-dropdown
     background-color: v.$jb-darkest
     a.navbar-item
@@ -69,6 +69,8 @@ a.navbar-item,
   border-width: 0 0 3px 3px
   border-radius: 2px
 
+// The inner dropdown only wraps the RSS flyout in header.html. It has to stay in
+// flow at every width; the flyout itself is positioned by nested_menu.sass.
 .navbar-dropdown .navbar-dropdown
   background-color: transparent
   border: 0

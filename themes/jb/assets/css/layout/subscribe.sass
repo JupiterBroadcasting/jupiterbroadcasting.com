@@ -1,7 +1,9 @@
+@use "../variables" as v
+
 .subscribe
     &-logos
         flex: 0 1 20%
-        @media screen and (min-width: 1024px)
+        @media screen and (min-width: v.$desktop)
             flex: 0 1 15%
-        @media screen and (max-width: 768px)
+        @media screen and (max-width: v.$mobile-max)
             flex: 0 1 30%
