@@ -45,10 +45,11 @@
       {{ partial "episode/downloadlinks.html" . }}
 
       {{ $people_sections := where site.RegularPages "Section" "people" }}
-      <div class="tile is-ancestor mt-5">
-        <div class="tile is-parent is-vertical is-8">
+      <div class="fixed-grid has-1-cols has-12-cols-tablet mt-5 pt-3">
+      <div class="grid" style="--bulma-grid-gap: 1.5rem">
+        <div class="cell is-col-span-8-tablet">
           <!-- Hosts Section -->
-          <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0 hosts">
+          <div class="mx-0 mt-0 mb-5 columns is-multiline hosts">
             <div class="column px-0">
               <h2 class="has-text-centered-mobile">Hosts</h2>
               <section class="section host-list">
@@ -82,7 +83,7 @@
           </div>
           <!-- Sponsors: will be shown on mobile to promote sponsors -->
           {{ if .Params.sponsors }}
-            <div class="tile is-child columns is-flex-grow-0 is-hidden-tablet">
+            <div class="mx-0 mt-0 mb-5 columns is-hidden-tablet">
               <div class="column px-0">
                 {{ with .Params.sponsors }}
                   <h2>Sponsors</h2>
@@ -100,16 +101,16 @@
             </div>
           {{ end }}
           <!-- Episode Links -->
-          <div class="tile is-child columns is-flex-grow-0">
+          <div class="mx-0 mt-0 mb-5 columns">
             <div class="column px-0">
               {{ .Content }}
             </div>
           </div>
         </div>
-        <div class="tile is-parent is-vertical is-4">
+        <div class="cell is-col-span-4-tablet">
           <!-- Sponsors: will hide on mobile so sponsors can be shown above episode links -->
           {{ if .Params.sponsors }}
-            <div class="tile is-child columns is-flex-grow-0 is-hidden-mobile">
+            <div class="mx-0 mt-0 mb-5 columns is-hidden-mobile">
               <div class="column px-0">
                 {{ with .Params.sponsors }}
                   <h2>Sponsors</h2>
@@ -128,7 +129,7 @@
           {{ end }}
           <!-- Value for Value splits -->
           {{ if .Params.value }}
-            <div class="tile is-child columns is-flex-grow-0" >
+            <div class="mx-0 mt-0 mb-5 columns">
               <div class="column px-0">
                 {{ with .Params.value.recipients }}
                   <h3>Boost Splits</h3>
@@ -141,7 +142,7 @@
           {{ end }}
           <!-- Tags -->
           {{ if .Params.tags }}
-            <div class="tile is-child is-flex-grow-0">
+            <div class="mb-5">
               <h3>Tags</h3>
               {{ with .Params.tags }}
                 <div class="tags">
@@ -151,6 +152,7 @@
             </div>
           {{ end }}
         </div>
+      </div>
       </div>
     </div>
   </div>

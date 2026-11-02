@@ -1,0 +1,22 @@
+@use "variables" as v
+
+// Site is always dark: pin Bulma's dark theme regardless of the OS preference
+html[data-theme="dark"]
+  --bulma-body-background-color: #{v.$jb-dark}
+  --bulma-scheme-main: #{v.$jb-dark}
+  --bulma-text: #{#fff}
+  --bulma-text-strong: #{#fff}
+  --bulma-background: #{v.$jb-grey}
+  --bulma-card-background-color: #{v.$jb-darker}
+  --bulma-card-color: #{#fff}
+  --bulma-navbar-background-color: #{v.$jb-darkest}
+  --bulma-footer-background-color: #{v.$jb-darkest}
+  --bulma-navbar-item-color: #fff
+  --bulma-navbar-dropdown-arrow: #fff
+  --bulma-navbar-item-hover-color: #fff
+  --bulma-navbar-item-active-color: #fff
+  --bulma-card-radius: 12px
+  --bulma-breadcrumb-item-active-color: #fff
+
+.breadcrumb li.is-active a
+  color: #fff

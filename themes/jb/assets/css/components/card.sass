@@ -12,13 +12,13 @@
       background-position: center
       position: relative
 
-    @include from($tablet)
-      border-top-left-radius: $card-radius
-      border-bottom-left-radius: $card-radius
+    @media screen and (min-width: 769px)
+      border-top-left-radius: 12px
+      border-bottom-left-radius: 12px
 
-    @include until($tablet)
-      border-top-right-radius: $card-radius
-      border-bottom-right-radius: $card-radius
+    @media screen and (max-width: 768px)
+      border-top-right-radius: 12px
+      border-bottom-right-radius: 12px
 
     .image
       height: 100%
@@ -35,13 +35,13 @@
       flex-grow: 1
 
 .card
-  background-color: $card-background-color
+  background-color: #181C22
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px
   transition: all .3s ease-in-out
   .content
-    background-color: $card-content-background-color
+    background-color: #181C22
     h1,h2,h3,h4,h5,h6,strong
-      color: $card-header-color
+      color: #fff
 
   &-people
     width: 100%

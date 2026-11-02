@@ -1,9 +1,7 @@
-@import "../libs/bulma/sass/utilities/mixins"
-
 .subscribe
     &-logos
         flex: 0 1 20%
-        +desktop
+        @media screen and (min-width: 1024px)
             flex: 0 1 15%
-        +mobile
+        @media screen and (max-width: 768px)
             flex: 0 1 30%

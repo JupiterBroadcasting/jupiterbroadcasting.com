@@ -17,24 +17,28 @@
         font-size: 14px
         font-weight: 400
     & .navbar-link
-        background-color: $navbar-background-color !important
+        background-color: #0a0b0c !important
 
         &:after
-            border-right: 3px solid $white
+            border-right: 3px solid #fff
             border-left: 0
             border-top: 0
     & .dropdown-menu
-        background-color: $navbar-background-color !important
-        @include mobile
+        background-color: #0a0b0c !important
+        @media screen and (max-width: 768px)
             position: initial
             margin: 0
         
         & .dropdown-content
-            background-color: $navbar-background-color !important
+            background-color: #0a0b0c !important
 
             & .dropdown-item
-                color: $white
-                @include mobile
+                color: #fff
+                background-color: transparent
+                &:hover,
+                &:focus
+                    background-color: #4a4a4a
+                @media screen and (max-width: 768px)
                     padding-inline: 1.5rem
 
 // .nested.dropdown .dropdown-trigger button::after {

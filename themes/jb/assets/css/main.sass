@@ -1,5 +1,7 @@
-@import "variables"
-@import "libs/bulma/bulma"
+@use "variables" as v
+@use "libs/bulma/sass" with ($radius: 4px, $scheme-h: 216, $scheme-s: 16%, $primary: v.$jb-blue, $link: v.$jb-blue-light, $info: v.$jb-blue-light, $warning: v.$jb-orange, $danger: v.$jb-red, $custom-colors: v.$custom-colors, $navbar-breakpoint: 1220px, $card-radius: 12px, $navbar-background-color: v.$jb-darkest, $footer-background-color: v.$jb-darkest, $card-background-color: v.$jb-darker, $card-content-background-color: v.$jb-darker, $card-color: #fff, $card-header-color: #fff, $body-background-color: v.$jb-dark, $text: #fff, $text-strong: #fff, $background: v.$jb-grey, $code: #fff)
+@use "theme"
+
 @import "components"
 @import "libs"
 @import "elements"
@@ -15,7 +17,7 @@ body
   min-height: 100dvh
 
 .host-list .columns
-  @include until(600px)
+  @media screen and (max-width: 599px)
     display: grid
     grid-template-columns: repeat(2, 1fr)
     .column:first-child:last-child
