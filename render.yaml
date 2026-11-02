@@ -4,8 +4,10 @@ services:
     plan: starter
     name: jb-deploy-prv
     env: static
-    buildCommand: hugo --minify --gc --baseURL '/'
+    buildCommand: bash build.sh
     envVars:
+      - key: DART_SASS_VERSION
+        value: 1.79.3
       - key: HUGO_VERSION
         value: 0.169.0
     staticPublishPath: public/

@@ -46,7 +46,7 @@ When upgrading the hugo version these are the locations whicht it needs to be up
 
 * `Dockerfile`
 * `Dockerfile.dev`
-* `render.yaml` (`HUGO_VERSION`)
+* `render.yaml` (`HUGO_VERSION`, and `DART_SASS_VERSION` to match the Sass bundled in the Hugo image)
 
 Currently we're at hugo version `0.169.0`
 
