@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 @keyframes pulse
   0%
     opacity: .75
@@ -35,7 +37,7 @@
 a.navbar-item,
 .navbar-link
   cursor: pointer
-  color: #fff
+  color: v.$white
 
 .navbar-menu
   a.navbar-item,
@@ -44,26 +46,26 @@ a.navbar-item,
     &:focus-within,
     &:hover,
     &.is-active
-      background-color: #4a4a4a
-      color: #fff
+      background-color: v.$grey-dark
+      color: v.$white
 
 @media screen and (min-width: 1220px)
   .navbar-dropdown
-    background-color: #0a0b0c
+    background-color: v.$jb-darkest
     a.navbar-item
       &:focus,
       &:hover
-        background-color: #4a4a4a
-        color: #fff
+        background-color: v.$grey-dark
+        color: v.$white
   .navbar-item.has-dropdown
     &:focus,
     &:hover,
     &.is-active
       .navbar-link
-        background-color: #4a4a4a
+        background-color: v.$grey-dark
 
 .navbar-link:not(.is-arrowless)::after
-  border-color: #fff
+  border-color: v.$white
   border-width: 0 0 3px 3px
   border-radius: 2px
 
@@ -87,7 +89,7 @@ a.navbar-item,
   gap: 0
 
 .navbar-burger
-  color: #fff
+  color: v.$white
   height: 3.25rem
   width: 3.25rem
   margin-inline-start: auto

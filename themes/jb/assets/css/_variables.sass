@@ -1,22 +1,20 @@
-/*******************************************************************************
- * Libs:
- ******************************************************************************/
+// Libs:
 
 // While Bulma has to be imported after this file in order to properly override
 // the its variables, the `findColorInvert` function is required here below.
 @use "sass:color"
 
+// Base colors (functions below and the sections after this one rely on these):
+$white: #fff
+$black: #000
+
 @function invert($c)
-  @return if(color.channel($c, "lightness", $space: hsl) > 60%, rgba(#000, 0.7), #fff)
+  @return if(color.channel($c, "lightness", $space: hsl) > 60%, rgba($black, 0.7), $white)
 
 
-/*******************************************************************************
- * Custom Colors:
- ******************************************************************************/
+// Custom Colors:
 
-/*
- * JB Brand Colors and Custom Colors:
- ******************************************************************************/
+// JB Brand Colors and Custom Colors:
 $jb-grey-dark: #2a2a2a // aka "DARK GRAY"
 $jb-grey: #6a6a6a // aka "COOL GRAY"
 $jb-grey-light: #cccccc // aka "SUBTLE GREY"
@@ -34,9 +32,18 @@ $jb-darker: #181C22
 $jb-darkest: #0a0b0c
 
 
-/*
- * JB Show Colors (current shows only):
- ******************************************************************************/
+// Neutral UI colors (formerly Bulma 0.9 defaults, now pinned explicitly):
+$grey-light: #b5b5b5
+$grey-lighter: #dbdbdb
+$grey-dark: #4a4a4a
+$border-light: #ededed
+$tag-background: #363636
+$tag-hover-background: #424242
+$text-on-light: rgba($black, 0.7)
+
+
+
+// JB Show Colors (current shows only):
 $ssh-orange: $jb-orange
 $lup-blue: $jb-blue
 $lup-blue-light: $jb-blue-light
@@ -45,12 +52,10 @@ $je-grey: $jb-grey-light
 $extras-grey: $je-grey // aliased, because "je" isn't a commonly known acronym
 
 
-/*
- * This `$custom-colors` map allows using the string keys as a css class.
- * For example:
- *      <button class="button is-jb-pink">Orange</button>
- *
- * All the colors under this "Custom Colors" should be included in a similar
- * fashion.
- */  
+// This `$custom-colors` map allows using the string keys as a css class.
+// For example:
+//      <button class="button is-jb-pink">Orange</button>
+//
+// All the colors under this "Custom Colors" should be included in a similar
+// fashion.
 $custom-colors: ( "jb-grey-dark": ($jb-grey-dark, invert($jb-grey-dark)), "jb-grey": ($jb-grey, invert($jb-grey)), "jb-grey-light": ($jb-grey-light, invert($jb-grey-light)), "jb-orange": ($jb-orange, invert($jb-orange)), "jb-gold": ($jb-gold, invert($jb-gold)), "jb-green": ($jb-green, invert($jb-green)), "jb-blue": ($jb-blue, invert($jb-blue)), "jb-blue-light": ($jb-blue-light, invert($jb-blue-light)), "jb-pink": ($jb-pink, invert($jb-pink)), "jb-red": ($jb-red, invert($jb-red)), "ssh-orange": ($ssh-orange, invert($ssh-orange)), "lup-blue": ($lup-blue, invert($lup-blue)), "lup-blue-light": ($lup-blue-light, invert($lup-blue-light)), "lan-red": ($lan-red, invert($lan-red)), "je-grey": ($je-grey, invert($je-grey)), "extras-grey": ($extras-grey, invert($extras-grey)), "jb-dark": ($jb-dark, invert($jb-dark)), "jb-darker": ($jb-darker, invert($jb-darker)), "jb-darkest": ($jb-darkest, invert($jb-darkest)) )

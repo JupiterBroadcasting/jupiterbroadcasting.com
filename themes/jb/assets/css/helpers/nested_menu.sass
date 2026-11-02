@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 // based on this: https://github.com/jgthms/bulma/issues/1404#issuecomment-770477580
 
 .nested.dropdown
@@ -17,27 +19,27 @@
         font-size: 14px
         font-weight: 400
     & .navbar-link
-        background-color: #0a0b0c !important
+        background-color: v.$jb-darkest !important
 
         &:after
-            border-right: 3px solid #fff
+            border-right: 3px solid v.$white
             border-left: 0
             border-top: 0
     & .dropdown-menu
-        background-color: #0a0b0c !important
+        background-color: v.$jb-darkest !important
         @media screen and (max-width: 768px)
             position: initial
             margin: 0
         
         & .dropdown-content
-            background-color: #0a0b0c !important
+            background-color: v.$jb-darkest !important
 
             & .dropdown-item
-                color: #fff
+                color: v.$white
                 background-color: transparent
                 &:hover,
                 &:focus
-                    background-color: #4a4a4a
+                    background-color: v.$grey-dark
                 @media screen and (max-width: 768px)
                     padding-inline: 1.5rem
 

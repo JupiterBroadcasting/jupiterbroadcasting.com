@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 .card.is-horizontal
   display: flex
   flex-direction: column
@@ -35,13 +37,13 @@
       flex-grow: 1
 
 .card
-  background-color: #181C22
+  background-color: v.$jb-darker
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px
   transition: all .3s ease-in-out
   .content
-    background-color: #181C22
+    background-color: v.$jb-darker
     h1,h2,h3,h4,h5,h6,strong
-      color: #fff
+      color: v.$white
 
   &-people
     width: 100%
@@ -66,10 +68,10 @@
 
 // Bulma 1.0 dropped these Bulma 0.9 title/footer details
 .card-footer
-  border-top-color: #ededed
+  border-top-color: v.$border-light
 
 .card-footer-item:not(:last-child)
-  border-inline-end-color: #ededed
+  border-inline-end-color: v.$border-light
 
 .title:not(:last-child),
 .title:not(.is-spaced):has(+ .subtitle)

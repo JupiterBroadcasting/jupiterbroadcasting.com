@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 // Bulma 1.0 pagination reads control vars that are undefined outside controls
 .pagination
   margin: -0.25rem
@@ -9,8 +11,8 @@
   height: 2.5em
   margin: 0.25rem
   padding: calc(0.5em - 1px) 0.5em
-  color: #fff
-  border: 1px solid #dbdbdb
+  color: v.$white
+  border: 1px solid v.$grey-lighter
   border-radius: 4px
 
 .pagination-previous,
@@ -19,6 +21,6 @@
   padding-right: 0.75em
 
 .pagination-link.is-current
-  color: rgba(#000, 0.7)
+  color: v.$text-on-light
   border-color: var(--bulma-link)
   background-color: var(--bulma-link)

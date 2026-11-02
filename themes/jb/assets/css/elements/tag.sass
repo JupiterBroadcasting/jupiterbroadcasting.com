@@ -1,15 +1,14 @@
-$tag-new-bg-color: #363636
-$tag-new-color: #dbdbdb
+@use "../variables" as v
 
 .tag:not(body):not([class*="is-"])
-  background-color: $tag-new-bg-color
+  background-color: v.$tag-background
   &:hover,
   &:focus
-    background-color: #424242
+    background-color: v.$tag-hover-background
 
 .tags
   margin-top: 0.5rem
   .tag
     margin: 0.25rem !important
     a
-      color: $tag-new-color 
+      color: v.$grey-lighter 
