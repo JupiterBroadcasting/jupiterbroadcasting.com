@@ -131,3 +131,45 @@ def test_llms_full_no_leaked_yaml_frontmatter(base_url):
     assert "avatar_small" not in r  # YAML front matter stripped
     assert "&#43;" not in r and "&amp;" not in r  # no HTML escaping in text output
     assert "Brent Gervais" in r
+
+
+def test_show_rss_feed_links(base_url):
+    root = _get(base_url, "/llms.txt").text
+    shows = root.split("## Shows")[1].split("## Site")[0]
+    assert "](https://linuxunplugged.com/rss)" in shows
+    optional = root.split("## Optional")[1]
+    assert "](https://coder.show/rss)" in optional  # archived shows too
+    show_twin = _get(base_url, "/show/linux-unplugged/index.md").text
+    assert "RSS feed: [https://linuxunplugged.com/rss]" in show_twin
+
+
+def test_episode_twin_sponsors_and_transcripts(base_url):
+    r = _get(base_url, "/show/linux-unplugged/650/index.md")
+    assert r.ok
+    assert "Sponsors:" in r.text
+    assert "defined.net" in r.text
+    assert "Transcripts:" in r.text
+    assert ".vtt" in r.text
+
+
+def test_episodes_json_rich_fields(base_url):
+    import json as _json
+    r = _get(base_url, "/show/linux-unplugged/episodes.json")
+    data = _json.loads(r.text)
+    ep = data["episodes"][0]
+    assert ep["title"]  # titles, not just slugs
+    assert isinstance(ep["hosts"], list)
+    assert isinstance(ep["transcripts"], list)
+    assert ep["transcripts"] and ep["transcripts"][0]["url"].endswith(".vtt")
+
+
+def test_person_details_on_term_twins(base_url):
+    r = _get(base_url, "/hosts/brent/index.md")
+    assert r.ok
+    assert "Username: brent" in r.text
+    assert "brentgervais.com" in r.text  # bio/homepage rendered, not just episodes
+    g = _get(base_url, "/guests/")
+    if g.ok:  # guests taxonomy present on this build
+        gt = _get(base_url, "/guests/index.md")
+        assert gt.ok
+        assert "{{" not in gt.text  # no template errors
