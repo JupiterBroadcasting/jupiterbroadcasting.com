@@ -8,7 +8,7 @@
         $person := index (
           where (
             where site.RegularPages "Section" "people"
-          ) ".Params.username" .Title
+          ) ".Params.username" .Data.Term
         ) 0
       }}
 

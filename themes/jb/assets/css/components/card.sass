@@ -63,3 +63,20 @@
 
 .card-episode
   width: 100%
+
+// Bulma 1.0 dropped these Bulma 0.9 title/footer details
+.card-footer
+  border-top-color: #ededed
+
+.card-footer-item:not(:last-child)
+  border-inline-end-color: #ededed
+
+.title:not(:last-child),
+.title:not(.is-spaced):has(+ .subtitle)
+  margin-bottom: 1.5rem
+
+.title + .subtitle
+  margin-top: -1.25rem
+
+.subtitle:not(:last-child)
+  margin-bottom: 1.5rem
