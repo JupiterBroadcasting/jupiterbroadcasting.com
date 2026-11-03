@@ -1,14 +1,9 @@
-# {{ .Title }}
+{{ $person := "" }}{{ if eq .Kind "term" }}{{ $person = site.GetPage (printf "/people/%s" .Title) }}{{ end }}# {{ with $person }}{{ .Title }}{{ else }}{{ .Title }}{{ end }}
 
 URL: {{ .Permalink }}
 {{ with .Description }}> {{ . }}
 {{ end }}
-{{ if eq .Kind "term" }}
-{{ with site.GetPage (printf "/people/%s" .Title) }}{{ partial "person-details.md" . }}
+{{ if $person }}{{ partial "person-details.md" $person }}
 {{ end }}
 {{ range .Pages }}- [{{ .Title }}]({{ .Permalink }}index.md)
-{{ end }}
-{{ else }}
-{{ range .Pages }}- [{{ .Title }}]({{ .Permalink }}index.md)
-{{ end }}
 {{ end }}
