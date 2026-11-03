@@ -3,8 +3,8 @@
 
 name: Scrape and commit
 on:
-  schedule:
-    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+  # schedule:
+  #   - cron:  '0 0,12 * * *'  # At midnight & noon UTC
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         path: ./show-scraper
 
     - name: 'Setup Python'
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
         architecture: 'x64'

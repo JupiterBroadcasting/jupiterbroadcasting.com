@@ -7,7 +7,7 @@ homepage: https://blogs.gnome.org/uraeus/
 instagram: null
 linkedin: https://www.linkedin.com/in/cschalle1973/
 title: Christian F.K. Schaller
-twitter: https://twitter.com/cfkschaller
+twitter: https://x.com/cfkschaller
 type: guest
 username: christianschaller
 youtube: null

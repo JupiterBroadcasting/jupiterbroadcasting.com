@@ -6,7 +6,7 @@ homepage: http://carl.george.computer/
 instagram: null
 linkedin: null
 title: Carl George
-twitter: https://twitter.com/carlwgeorge
+twitter: https://x.com/carlwgeorge
 type: guest
 username: carlgeorge
 youtube: null

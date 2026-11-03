@@ -7,7 +7,7 @@ homepage: https://technotim.live/
 instagram: null
 linkedin: null
 title: Techno Tim
-twitter: https://twitter.com/technotimlive
+twitter: https://x.com/technotimlive
 type: guest
 username: technotim
 youtube: https://www.youtube.com/c/technotimlive

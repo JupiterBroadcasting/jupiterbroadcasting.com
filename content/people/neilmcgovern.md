@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Neil McGovern
-twitter: https://twitter.com/nmcgovern
+twitter: https://x.com/nmcgovern
 type: guest
 username: neilmcgovern
 youtube: null

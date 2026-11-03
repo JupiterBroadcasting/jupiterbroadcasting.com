@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Brandon Bruce
-twitter: https://twitter.com/netcromancer
+twitter: https://x.com/netcromancer
 type: guest
 username: brandon-bruce
 youtube: null

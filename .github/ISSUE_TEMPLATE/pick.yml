@@ -1,0 +1,55 @@
+name: Adding a Pick
+description: For adding a pick from the back catalog to the Pick Pen
+labels:
+  - "pick"
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Name
+      description: What is the name of the pick?
+      placeholder: Pick Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: What is the URL of the pick? This will probably match the link in the show notes.
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Describe the pick in a single sentence. This will probably match the description in the show notes.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: What is the license of the pick?
+  - type: dropdown
+    id: shows
+    attributes:
+      label: Show
+      multiple: true
+      default: 0
+      options:
+        - LINUX Unplugged
+        - Self-Hosted
+        - Coder Radio
+        - This Week in Bitcoin
+        - The Launch
+      description: Which show(s) is this pick from?
+    validations:
+      required: true
+  - type: input
+    id: episode
+    attributes:
+      label: Episode
+      description: What is the episode this pick is from?
+    validations:
+      required: true
+  

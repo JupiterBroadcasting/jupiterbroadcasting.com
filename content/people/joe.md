@@ -6,7 +6,7 @@ homepage: https://joeress.com/
 instagram: null
 linkedin: null
 title: Joe Ressington
-twitter: https://twitter.com/joeressington
+twitter: https://x.com/joeressington
 type: host
 username: joe
 youtube: null

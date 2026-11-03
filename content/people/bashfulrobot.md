@@ -5,7 +5,7 @@ bio: Historically an open source consumer (Enterprise operations), now also an o
   source contributor. An active Ubuntu Budgie team member since December of 2016 assisting
   with infrastructure, community, packaging, etc. Also a co-host of the Vancouver
   Linux Desktop User Group.
-homepage: null
+homepage: https://twitter.com/bashfulrobot
 instagram: null
 linkedin: null
 title: Dustin Krysak

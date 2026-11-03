@@ -8,7 +8,7 @@ homepage: https://elrey.casa/me
 instagram: null
 linkedin: null
 title: Alex Rodriguez
-twitter: https://twitter.com/ronjonarod
+twitter: https://x.com/ronjonarod
 type: guest
 username: elrey
 youtube: null

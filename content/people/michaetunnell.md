@@ -7,7 +7,7 @@ homepage: https://tuxdigital.com/
 instagram: null
 linkedin: null
 title: Michael Tunnell
-twitter: https://twitter.com/michaeltunnell
+twitter: https://x.com/michaeltunnell
 type: guest
 username: michaetunnell
 youtube: null

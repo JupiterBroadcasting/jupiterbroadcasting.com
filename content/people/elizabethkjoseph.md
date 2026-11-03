@@ -12,7 +12,7 @@ homepage: https://princessleia.com/
 instagram: null
 linkedin: null
 title: Elizabeth K. Joseph
-twitter: https://twitter.com/pleia2
+twitter: https://x.com/pleia2
 type: guest
 username: elizabethkjoseph
 youtube: null

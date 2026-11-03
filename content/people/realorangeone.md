@@ -6,7 +6,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: "Jake Howard \U0001F34A"
-twitter: https://twitter.com/realorangeone
+twitter: https://x.com/realorangeone
 type: guest
 username: realorangeone
 youtube: null

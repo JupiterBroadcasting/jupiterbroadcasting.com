@@ -7,6 +7,10 @@ theme = 'jb'
 
 paginate = 12
 
+[params.live]
+  audio_url = "https://n12.radiojar.com/0uk94cu0xrquv?rj-ttl=5&rj-tok=AAABlr_HIYcADeN2rSDaevNY4g"
+  video_url = "https://jupiter-hls.secdn.net/jupiter-channel/play/jupiter.smil/playlist.m3u8"
+
 # Footer logo and menu title config
 # footer menus are further down
 [params.footer.logo]
@@ -46,46 +50,60 @@ paginate = 12
     weight =-90
 
     [[Menu.Main]]
-        name = "Coder Radio"
-        identifier = "coder-radio"
-        url = "/show/coder-radio/"
-        weight =91
-        parent = "shows"
-
-    [[Menu.Main]]
         name = "Jupiter EXTRAS"
         identifier = "jupiter-extras"
         url = "/show/jupiter-extras/"
-        weight =92
-        parent = "shows"
-
-    [[Menu.Main]]
-        name = "Linux Action News"
-        identifier = "linux-action-news"
-        url = "/show/linux-action-news/"
-        weight =93
+        weight =99
         parent = "shows"
 
     [[Menu.Main]]
         name = "LINUX Unplugged"
         identifier = "linux-unplugged"
         url = "/show/linux-unplugged/"
+        weight =91
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "This Week in Bitcoin"
+        identifier = "this-week-in-bitcoin"
+        url = "/show/this-week-in-bitcoin/"
+        weight =93
+        parent = "shows"
+
+    [[Menu.Main]]
+        name = "The Launch 🚀"
+        identifier = "the-launch"
+        url = "/show/the-launch/"
         weight =94
         parent = "shows"
 
-    [[Menu.Main]]
-        name = "Office Hours"
-        identifier = "office-hours"
-        url = "/show/office-hours/"
-        weight =95
-        parent = "shows"
+#    [[Menu.Main]]
+#        name = "Self-Hosted"
+#        identifier = "self-hosted"
+#        url = "/show/self-hosted/"
+#        weight =92
+#        parent = "shows"
 
-    [[Menu.Main]]
-        name = "Self-Hosted"
-        identifier = "self-hosted"
-        url = "/show/self-hosted/"
-        weight =96
-        parent = "shows"
+#    [[Menu.Main]]
+#        name = "Coder Radio"
+#        identifier = "coder-radio"
+#        url = "/show/coder-radio/"
+#        weight =91
+#        parent = "shows"
+
+#    [[Menu.Main]]
+#        name = "Linux Action News"
+#        identifier = "linux-action-news"
+#        url = "/show/linux-action-news/"
+#        weight =93
+#        parent = "shows"
+
+#    [[Menu.Main]]
+#        name = "Office Hours"
+#        identifier = "office-hours"
+#        url = "/show/office-hours/"
+#        weight =95
+#        parent = "shows"
 
 [[Menu.Main]]
     name = "Sponsors"
@@ -143,11 +161,11 @@ paginate = 12
         weight =82
         parent = "people"
 
-#[[Menu.Main]]
-    #name = "Archive"
-    #identifier = "archive"
-    #url = "/archive/"
-    #weight =90
+[[Menu.Main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/archive/"
+    weight =90
 
 [[Menu.Main]]
     name = "Community"

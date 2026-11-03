@@ -1,7 +1,8 @@
 ---
-description: Use promo code summer - Support the show, and take $1 off the lifetime
-  of your membership!
-link: https://jupitersignal.memberful.com/checkout?plan=52946&coupon=summer
+description: Put your support on automatic with our annual plan, and get one month
+  of membership for free!
+episode: 689
+link: https://jupitersignal.memberful.com/checkout?plan=117630r
 shortname: memberful.com-lup
-title: Core Contributor Membership
+title: Jupiter Signal Network Membership
 ---

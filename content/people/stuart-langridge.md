@@ -7,7 +7,7 @@ homepage: https://kryogenix.org/
 instagram: null
 linkedin: null
 title: Stuart Langridge
-twitter: https://twitter.com/sil
+twitter: https://x.com/sil
 type: guest
 username: stuart-langridge
 youtube: null

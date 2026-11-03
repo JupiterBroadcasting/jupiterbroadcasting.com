@@ -7,7 +7,7 @@ homepage: https://about.me/joshua.lowe
 instagram: null
 linkedin: null
 title: Josh Lowe
-twitter: https://twitter.com/all_about_code
+twitter: https://x.com/all_about_code
 type: guest
 username: josh-lowe
 youtube: null

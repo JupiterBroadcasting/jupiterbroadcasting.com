@@ -6,7 +6,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Moritz Kaminski
-twitter: https://twitter.com/moritzkaminski
+twitter: https://x.com/moritzkaminski
 type: guest
 username: moritz
 youtube: null

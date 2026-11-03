@@ -9,7 +9,7 @@ homepage: https://parkingthought.com/
 instagram: null
 linkedin: https://www.linkedin.com/in/roecker/
 title: Jacob Roecker
-twitter: https://twitter.com/parkingthought
+twitter: https://x.com/parkingthought
 type: guest
 username: jacob-roecker
 youtube: null

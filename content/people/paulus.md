@@ -6,7 +6,7 @@ homepage: https://www.nabucasa.com/
 instagram: null
 linkedin: null
 title: Paulus Schoutsen
-twitter: https://twitter.com/balloob
+twitter: https://x.com/balloob
 type: guest
 username: paulus
 youtube: null

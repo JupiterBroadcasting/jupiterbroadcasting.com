@@ -7,6 +7,12 @@
 @import "helpers/_all"
 #wrapper
   padding-top: 4rem
+  flex-grow: 1
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100dvh
 
 .host-list .columns
   @include until(600px)

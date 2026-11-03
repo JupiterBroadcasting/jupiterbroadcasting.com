@@ -11,7 +11,7 @@ homepage: http://jrs-s.net/
 instagram: null
 linkedin: null
 title: Jim Salter
-twitter: https://twitter.com/jrssnet
+twitter: https://x.com/jrssnet
 type: guest
 username: jim-salter
 youtube: null

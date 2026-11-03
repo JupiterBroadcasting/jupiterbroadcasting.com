@@ -6,7 +6,7 @@ homepage: https://linuxchixla.org
 instagram: null
 linkedin: null
 title: Jill Bryant Ryniker
-twitter: https://twitter.com/jill_linuxgirl
+twitter: https://x.com/jill_linuxgirl
 type: guest
 username: jill-linuxgirl
 youtube: null

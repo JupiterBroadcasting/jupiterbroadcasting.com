@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # using docker-compose, so we can re-use local Dockerfiles
+      # using docker compose, so we can re-use local Dockerfiles
       - name: starting up containers
         working-directory: ./test/
         env:
@@ -20,12 +20,12 @@ jobs:
           DOCKER_BUILDKIT: 1
           # https://stackoverflow.com/a/69500575
           BUILDKIT_PROGRESS: plain
-        run: docker-compose up -d --build
+        run: docker compose up -d --build
 
       - name: Run your tests
         working-directory: ./test/
         # https://github.com/actions/runner/issues/241#issuecomment-577360161
-        run: script -e -c "docker-compose exec testing pytest -m periodic --base-url http://jb-com --junitxml report.xml"
+        run: script -e -c "docker compose exec testing pytest -m periodic --base-url http://jb-com --junitxml report.xml"
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v1

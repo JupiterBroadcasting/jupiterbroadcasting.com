@@ -7,7 +7,7 @@ homepage: http://www.peterkretzman.com/
 instagram: null
 linkedin: https://www.linkedin.com/in/pkretzman/
 title: Peter Kretzman
-twitter: https://twitter.com/peterkretzman
+twitter: https://x.com/peterkretzman
 type: guest
 username: peterkretzman
 youtube: null

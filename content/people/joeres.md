@@ -8,7 +8,7 @@ homepage: https://2.5admins.com/
 instagram: null
 linkedin: null
 title: Joe Resington
-twitter: https://twitter.com/joeressington
+twitter: https://x.com/joeressington
 type: guest
 username: joeres
 youtube: null

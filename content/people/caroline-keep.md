@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Caroline Keep
-twitter: https://twitter.com/ka81
+twitter: https://x.com/ka81
 type: guest
 username: caroline-keep
 youtube: null

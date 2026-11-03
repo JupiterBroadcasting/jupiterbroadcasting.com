@@ -6,7 +6,7 @@ homepage: https://system76.com
 instagram: null
 linkedin: null
 title: Emma Marshall
-twitter: https://twitter.com/socialhappiness
+twitter: https://x.com/socialhappiness
 type: guest
 username: emma-marshall
 youtube: null

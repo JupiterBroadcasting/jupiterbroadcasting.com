@@ -7,7 +7,7 @@ homepage: https://uselessprogress.com/
 instagram: https://instagram.com/jackietherobot
 linkedin: null
 title: Jackie DeVore
-twitter: https://twitter.com/jackietherobot
+twitter: https://x.com/jackietherobot
 type: guest
 username: jackiebot
 youtube: null

@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div class="container">
+  <div class="section">
   <div class="columns">
     <div class="column is-two-thirds">
       {{ $current_page_type := .Data.Singular }}
@@ -47,9 +48,10 @@
       </div>
     </div>
   </div>
+</div>
 
-  <h2 class="title is-3">Latest Episodes with {{ $name }}</h2>
-
+  <h2 class="title is-3 px-5">Latest Episodes with {{ $name }}</h2>
+  <div class="section">
   <div class="columns is-multiline">
     {{ range .RegularPages }}
     <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
@@ -58,5 +60,6 @@
 
     {{ end }}
   </div>
+</div>
 </div>
 {{end}}

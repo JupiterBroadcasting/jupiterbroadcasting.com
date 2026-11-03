@@ -7,7 +7,7 @@ homepage: http://about.gitlab.com
 instagram: null
 linkedin: null
 title: Sid Sijbrandij
-twitter: https://twitter.com/sytses
+twitter: https://x.com/sytses
 type: guest
 username: sid
 youtube: null

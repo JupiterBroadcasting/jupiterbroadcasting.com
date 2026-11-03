@@ -18,26 +18,24 @@ on:
       - completed
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  deploy-via-tailscale:
+    # As of 2026-10-25 ubuntu-latest is 26.04, whose sudo-rs ignores the
+    # `sudo -E` tailscale/github-action depends on — trifectatechfoundation/sudo-rs#1299
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v2
-           
-      # Build
-      - name: Pull latest changes on VPS
-        uses: appleboy/ssh-action@master
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+
+      # deploys using JB GitHub tailnet
+      - name: Connect Tailscale
+        uses: tailscale/github-action@v2
         with:
-            host: ${{ secrets.VPS_HOST }}
-            USERNAME: ${{ secrets.VPS_DEPLOY_USER }}
-            PORT: ${{ secrets.VPS_SSH_PORT }}
-            KEY: ${{ secrets.VPS_SSHKEY }}
-            script: cd ${{ secrets.VPS_PROJECT_PATH }} && git pull
-            
-      - name: Deploy
-        uses: appleboy/ssh-action@master
-        with:
-            host: ${{ secrets.VPS_HOST }}
-            USERNAME: ${{ secrets.VPS_DEPLOY_USER }}
-            PORT: ${{ secrets.VPS_SSH_PORT }}
-            KEY: ${{ secrets.VPS_SSHKEY }}
-            script: cd ${{ secrets.VPS_PROJECT_PATH }} && make deploy-prod
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+
+      - name: Do the deploy thing
+        run: |
+          ssh -o "StrictHostKeyChecking=no" -o "ConnectTimeout=30" ironicbadger@jb-core \
+            "PROJECT_PATH='${{ secrets.VPS_PROJECT_PATH }}' GH_ACTOR='${{ github.actor }}' GH_TOKEN='${{ secrets.GHCR_TOKEN }}' bash -s" < scripts/deploy.sh

@@ -7,7 +7,7 @@ homepage: null
 instagram: null
 linkedin: null
 title: Jscar_Hawk
-twitter: https://twitter.com/jscar_hawk
+twitter: https://x.com/jscar_hawk
 type: guest
 username: jscar
 youtube: null

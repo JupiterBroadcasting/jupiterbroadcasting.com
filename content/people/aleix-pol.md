@@ -9,7 +9,7 @@ homepage: http://www.proli.net/
 instagram: null
 linkedin: null
 title: Aleix Pol
-twitter: https://twitter.com/aleixpol
+twitter: https://x.com/aleixpol
 type: guest
 username: aleix-pol
 youtube: null

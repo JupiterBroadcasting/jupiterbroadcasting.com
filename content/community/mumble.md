@@ -29,7 +29,8 @@ aliases = [
 
 ### Speaking up during a Show:
 
-In the main chat room (not the Mumble chat) flag Chris with:
+In [JB Chat](https://matrix.to/#/#general:jupiterbroadcasting.com) (the main Matrix chat room,
+not the Mumble chat) flag Chris with:
 
 > ChrisLAS Mum: brief description of what you want to say.
 

@@ -6,7 +6,7 @@ homepage: https://www.phoronix.com/
 instagram: null
 linkedin: null
 title: Michael Larabel
-twitter: https://twitter.com/michaellarabel
+twitter: https://x.com/michaellarabel
 type: guest
 username: larabel
 youtube: null

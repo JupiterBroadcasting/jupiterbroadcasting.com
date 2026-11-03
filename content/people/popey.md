@@ -7,7 +7,7 @@ homepage: https://popey.com
 instagram: null
 linkedin: null
 title: Alan Pope
-twitter: https://twitter.com/popey
+twitter: https://x.com/popey
 type: guest
 username: popey
 youtube: null

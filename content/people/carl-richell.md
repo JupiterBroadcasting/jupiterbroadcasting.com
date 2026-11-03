@@ -6,7 +6,7 @@ homepage: https://system76.com/
 instagram: null
 linkedin: null
 title: Carl Richell
-twitter: https://twitter.com/carlrichell
+twitter: https://x.com/carlrichell
 type: guest
 username: carl-richell
 youtube: null

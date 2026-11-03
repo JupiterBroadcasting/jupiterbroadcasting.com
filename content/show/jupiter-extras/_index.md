@@ -14,6 +14,8 @@ header_image = "/images/shows/jupiter-extras.png"
 
 podverse_podcast_id = "0vaTwihG1R"
 
+[links.support]
+  url = "/membership"
 [links.shownotes]
   url="https://extras.show"
 [links.email]
@@ -22,6 +24,8 @@ podverse_podcast_id = "0vaTwihG1R"
   url="https://twitter.com/jupiterextras"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegzkMxcqW0dslRJmumg6WrZi"
+[links.smart-link]
+  url="https://episodes.fm/1476447125"
 
 +++
 

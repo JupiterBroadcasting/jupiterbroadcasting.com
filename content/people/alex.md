@@ -1,7 +1,7 @@
 ---
 avatar: /images/hosts/alex_kretzschmar.jpeg
 avatar_small: /images/people/alex_kretzschmar.jpeg
-bio: Father. Dog lover. Podcaster. Red Hatter.
+bio: Father. Podcaster @selfhostedshow podcast. Tailscalar.
 gplus: null
 homepage: https://blog.ktz.me/
 instagram: https://www.instagram.com/al_ktz/

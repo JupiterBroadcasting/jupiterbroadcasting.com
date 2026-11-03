@@ -14,6 +14,8 @@ header_image = "/images/shows/linux-unplugged.png"
 
 podverse_podcast_id = "g40Um-HP1"
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/LINUXUnplugged"
 [links.email]
@@ -30,6 +32,8 @@ podverse_podcast_id = "g40Um-HP1"
   url="https://linuxunplugged.com/articles"
 [links.youtube]
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxVckkyK5dyyARdfjwGY-cw"
+[links.smart-link]
+  url="https://episodes.fm/687598126"
 
 +++
 

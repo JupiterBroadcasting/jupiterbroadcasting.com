@@ -5,16 +5,18 @@ date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["Linux Action News"]
 show = "linux-action-news"
-hosts = ["chris","wes", "drew-devore", "joe"]
+hosts = ["chris","wes"]
 
 type = "show"
-active = true
+active = false
 
 header_image = "/images/shows/linux-action-news.png"
 
 podverse_podcast_id = "haAiVbD1N9"
 
 
+[links.support]
+  url = "/membership"
 [links.twitter]
   url = "https://twitter.com/linuxactionnews"
 [links.email]
@@ -25,6 +27,8 @@ podverse_podcast_id = "haAiVbD1N9"
   url="https://www.youtube.com/playlist?list=PLUW3LUwQvegxyaQeHQuMrDq94CT2ZZm9F"
 [links.matrix]
   url="https://matrix.to/#/#linux-action-news:matrix.org"
+[links.smart-link]
+  url="https://episodes.fm/160075139"
 
 +++
 
