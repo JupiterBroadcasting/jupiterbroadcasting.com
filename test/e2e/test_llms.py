@@ -159,6 +159,7 @@ def test_episodes_json_rich_fields(base_url):
     ep = data["episodes"][0]
     assert ep["title"]  # titles, not just slugs
     assert isinstance(ep["hosts"], list)
+    assert "guests" in ep and isinstance(ep["guests"], list)
     assert isinstance(ep["transcripts"], list)
     assert ep["transcripts"] and ep["transcripts"][0]["url"].endswith(".vtt")
 
@@ -166,6 +167,7 @@ def test_episodes_json_rich_fields(base_url):
 def test_person_details_on_term_twins(base_url):
     r = _get(base_url, "/hosts/brent/index.md")
     assert r.ok
+    assert r.text.startswith("# Brent Gervais")  # real name, not the term slug
     assert "Username: brent" in r.text
     assert "brentgervais.com" in r.text  # bio/homepage rendered, not just episodes
     g = _get(base_url, "/guests/")
