@@ -1,126 +1,150 @@
-import os
 import re
 
-from pytest import fixture, mark
-from playwright.sync_api import Page, FrameLocator, expect
+from pytest import mark, param
+from playwright.sync_api import APIRequestContext, Locator, Page, expect
+
+from episode_data import CONTENT_SHOW, Episode, person_type, sample_episodes, sponsor_exists
+
+SAMPLE_EPISODES: list[Episode] = sample_episodes()
 
 
-"""
-Dictionary of episodes that contain known edge cases
-"""
-EXTRA_EPISODES: list[dict[str, str]] = [
-    {  # 3 Hosts and 3 Guests
-        "show": "linux-unplugged",
-        "number": "434"
-    },
-    {  # No Sponsor
-        "show": "coder-radio",
-        "number": "343"
-    },
-    {  # Emoji tags
-        "show": "linux-unplugged",
-        "number": "489"
-    }
-]
+def episode_params():
+    return mark.parametrize("ep", [param(e, id=e.url, marks=mark.episodes) for e in SAMPLE_EPISODES])
 
 
-@fixture()
-def episodes() -> list[str]:
+def test_sample_episodes_shape():
     """
-    Generate list of episode URLS for testing. This list consists of the following
-    * For each show:
-        * 5 oldest episodes
-        * 5 newest episodes
-    * A specified set of episodes that contain "out of the ordinary" things for an episode (an example being a high
-    number of guests)
+    Sample has no duplicates, covers every show, and includes the hand-picked edge cases
     """
-    test_episodes: list[str] = []
-    shows_dir: str = "content/show"
-    meta_files: [str] = ["_index.md", "subscribe.md"]
-
-    # Fist and last 5 episodes for each show
-    for show in os.listdir(shows_dir):
-        show_url: str = f"/show/{show}"
-        all_episodes: list[str] = [
-            e for e in os.listdir(f"{shows_dir}/{show}")
-            if os.path.isfile(f"{shows_dir}/{show}/{e}") and e not in meta_files
-        ]
-        all_episodes.sort()
-
-        # First 5 episodes of a show
-        test_episodes += [
-            f"{show_url}/{os.path.splitext(e)[0].lstrip('0') or '0'}"
-            for e in all_episodes[:5:] if e not in test_episodes
-        ]
-        # 5 most recent episodes of a show
-        test_episodes += [
-            f"{show_url}/{os.path.splitext(e)[0].lstrip('0') or '0'}"
-            for e in all_episodes[-5::] if e not in test_episodes
-        ]
-
-    # Defined list of edge case episodes
-    test_episodes += [
-        f"/show/{e['show']}/{e['number']}"
-        for e in EXTRA_EPISODES if e not in test_episodes
-    ]
-
-    return test_episodes
+    urls = [e.url for e in SAMPLE_EPISODES]
+    assert len(set(urls)) == len(urls)
+    assert "/show/linux-unplugged/434/" in urls
+    assert {e.show for e in SAMPLE_EPISODES} == {p.name for p in CONTENT_SHOW.iterdir() if p.is_dir()}
 
 
-def test_episode_page_title(page: Page, episodes: list[str]):
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_page_title(page: Page, ep: Episode):
     """
-    Make sure the title (text in the tab) contains the show name, episode number, and
-    network name (Jupiter Broadcasting)
+    Tab title is "<title> | <show> <number> | Jupiter Broadcasting", or "<show> <number> | Jupiter Broadcasting"
+    when the episode title is just the show name and number (themes/jb/layouts/partials/meta.html)
     """
-    # TODO figure out how to call this loop async
-    for url in episodes:
-        show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
-        page.goto(url)
-        # print(f"{show} - {episode_number}")
-        expect(page).to_have_title(re.compile(f".* | {show} {episode_number} | Jupiter Broadcasting"))
+    page.goto(ep.url, wait_until="domcontentloaded")
+    show_and_number = re.escape(f"{ep.data['show_name']} {ep.number}")
+    expect(page).to_have_title(re.compile(rf"^(.+ \| )?{show_and_number} \| Jupiter Broadcasting$"))
 
 
-def test_episodes_podverse_player(page: Page, episodes: list[str]):
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_player(page: Page, ep: Episode):
     """
-    Test podverse player to and make sure the correct show is displayed
+    Podverse embed for episodes with a podcast_file, otherwise a plain <audio> player
     """
-    def check_title(page: Page, url: str):
-        show, episode_number = url.split('/')[2:4]  # This skips the empty string and 'show' in the url
-        page.goto(url)
-        pv_player: FrameLocator = page.frame_locator("#pv-embed-player")
-        # expect(pv_player).to_be_visible()  # TODO: Need to look into why this fails
-        pv_player_show_text: str = pv_player.locator(".embed-player-header-top-text").text_content()
-        assert pv_player_show_text.replace('-', ' ').lower() == show.replace('-', ' ').lower(), \
-            f"Podverse player show for {url} says {pv_player_show_text}"
-
-    # TODO figure out how to call this loop async
-    for url in episodes:
-        check_title(page, url)
+    page.goto(ep.url, wait_until="domcontentloaded")
+    if ep.data.get("podcast_file"):
+        player = page.locator("#pv-embed-player")
+        expect(player).to_be_attached()
+        expect(player).to_have_attribute("src", re.compile(re.escape(ep.data["episode_guid"])))
+    else:
+        expect(page.locator("audio source")).not_to_have_count(0)
 
 
-@mark.skip("Issue #534 as well as issue with gnome software vs gnome-software")
-def test_episode_tag_broken_link_spaces(page: Page, episodes: list[str]):
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_support_subscribe(page: Page, ep: Episode):
+    page.goto(ep.url, wait_until="domcontentloaded")
+    expect(page.locator("a.button", has_text="Support")).to_have_attribute("href", re.compile(r"/membership/$"))
+    expect(page.locator("a.button", has_text="Subscribe to")).to_be_visible()
+
+
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_header_image(page: Page, ep: Episode):
+    page.goto(ep.url, wait_until="domcontentloaded")
+    expect(page.locator(f'img[src="{ep.data["header_image"]}"]')).to_be_visible()
+
+
+def _people_column(page: Page, heading: str) -> Locator:
+    return page.locator(".hosts > .column").filter(has=page.locator(f'h2:text-is("{heading}")'))
+
+
+def _expected_people_hrefs(usernames: list[str]) -> list[str]:
+    # template silently skips usernames without a people page, and links by the person's type, not the role
+    return [f"/{person_type(u)}s/{u}/" for u in usernames if person_type(u)]
+
+
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_hosts_guests(page: Page, ep: Episode):
+    page.goto(ep.url, wait_until="domcontentloaded")
+    for heading, key in (("Hosts", "hosts"), ("Guests", "guests")):
+        expected = _expected_people_hrefs(ep.data.get(key) or [])
+        column = _people_column(page, heading)
+        if key == "guests" and not ep.data.get("guests"):
+            expect(column).to_have_count(0)
+            continue
+        links = column.locator("a[href]")
+        assert [links.nth(i).get_attribute("href") for i in range(links.count())] == expected
+
+
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_sponsors(page: Page, ep: Episode):
     """
-    Checks for tags with spaces in the name. If there is a space in that tag name, it render the tags page to make sure
-    it exists.
+    Sponsors render in a mobile and a desktop block; only the visible one is counted
     """
-    checked_tags: list[str] = []  # List of tag pages that were already tested
-    for url in episodes:
-        page.goto(url)
-        tags: list[str] = [t for t in page.locator(".tag > a").all_text_contents() if ' ' in t]
-        for tag in tags:
-            if tag in checked_tags:
-                continue
-            # print(f"{tag} at http://localhost:1313{url}")
-            page.locator(".tag > a", has_text=tag).click()
-            expect(page.locator("h1.title", has_text=f"Tag: {tag}")).to_be_visible()
-            checked_tags.append(tag)
-            page.goto(url)  # Go back to episode page to click on the next tag
+    page.goto(ep.url, wait_until="domcontentloaded")
+    expected = [s for s in ep.data.get("sponsors") or [] if sponsor_exists(s)]
+    sponsor_list = page.locator(".sponsor-list:visible")
+    if not ep.data.get("sponsors"):
+        expect(page.locator('h2:text-is("Sponsors")')).to_have_count(0)
+        return
+    expect(sponsor_list).to_have_count(1)
+    expect(sponsor_list.locator(".card")).to_have_count(len(expected))
+
+
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_tags(page: Page, ep: Episode, api_request_context: APIRequestContext):
+    """
+    Every front matter tag is shown, and its tag page exists (covers spaces and apostrophes, issue #534)
+    """
+    page.goto(ep.url, wait_until="domcontentloaded")
+    tags = page.locator(".tags .tag a")
+    assert sorted(t.strip() for t in tags.all_text_contents()) == sorted(ep.data.get("tags") or [])
+    broken = [href for href in (tags.nth(i).get_attribute("href") for i in range(tags.count()))
+              if not api_request_context.get(href).ok]
+    assert broken == []
+
+
+@mark.only_browser("chromium")
+@episode_params()
+def test_episode_links(page: Page, ep: Episode, api_request_context: APIRequestContext):
+    """
+    Links in the episode body have an href, and same-site ones resolve. External links are not fetched.
+    """
+    page.goto(ep.url, wait_until="domcontentloaded")
+    hrefs = page.locator(".tile.is-parent.is-8 > .tile.is-child:last-child a").evaluate_all(
+        "els => els.map(e => e.getAttribute('href'))"
+    )
+    assert all(hrefs), f"empty href in {hrefs}"
+    internal = [h for h in hrefs if h.startswith("/") and not h.startswith("//")]
+    assert [h for h in internal if not api_request_context.get(h).ok] == []
+
+
+def test_episode_lup434_all_browsers(page: Page):
+    """
+    One known-rich episode (3 hosts, 3 guests, sponsors) on every browser
+    """
+    page.goto("/show/linux-unplugged/434/", wait_until="domcontentloaded")
+    expect(page.locator("#pv-embed-player")).to_be_attached()
+    expect(_people_column(page, "Hosts").locator("a[href]")).to_have_count(3)
+    expect(_people_column(page, "Guests").locator("a[href]")).to_have_count(3)
+    expect(page.locator(".sponsor-list:visible .card")).not_to_have_count(0)
 
 
 @mark.skip("Issue #516")
-def test_episode_emoji_tags(page: Page, episodes: list[str]):
+def test_episode_emoji_tags():
     """
-    Check to see if emoji tags are on the episode and renders tag page of that emoji to make sure it exitsts
+    Emoji tags render a tag page. No sample episode has emoji tags today; add one when #516 is fixed.
     """
-    pass
