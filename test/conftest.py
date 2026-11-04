@@ -6,6 +6,25 @@ from _pytest.fixtures import SubRequest
 from pytest_base_url.plugin import base_url
 from playwright.sync_api import Playwright, APIRequestContext, Page, Browser
 
+def pytest_collection_modifyitems(config, items):
+    """
+    Deselect (rather than skip) browser copies of tests marked only_browser/skip_browser,
+    so the summary doesn't report hundreds of skips that aren't real
+    """
+    keep, drop = [], []
+    for item in items:
+        browser = getattr(item, "callspec", None) and item.callspec.params.get("browser_name")
+        only = {b for m in item.iter_markers("only_browser") for b in m.args}
+        skip = {b for m in item.iter_markers("skip_browser") for b in m.args}
+        if browser and ((only and browser not in only) or browser in skip):
+            drop.append(item)
+        else:
+            keep.append(item)
+    if drop:
+        config.hook.pytest_deselected(items=drop)
+        items[:] = keep
+
+
 @fixture
 def get_test_dir() -> Path:
     return Path(__file__).parent.absolute()
