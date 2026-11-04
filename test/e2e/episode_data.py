@@ -7,6 +7,8 @@ from pathlib import Path
 CONTENT: Path = Path(__file__).parents[2] / "content"
 CONTENT_SHOW: Path = CONTENT / "show"
 META_FILES: set[str] = {"_index.md", "subscribe.md"}
+ACTIVE_SAMPLE: int = 3
+ARCHIVED_SAMPLE: int = 3
 
 EXTRA_EPISODES: list[tuple[str, str]] = [
     ("linux-unplugged", "434"),  # 3 hosts and 3 guests
@@ -42,14 +44,20 @@ def _published(date: str) -> datetime:
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
+def _is_active(show_dir: Path) -> bool:
+    return re.search(r"^\s*active\s*=\s*true\b", (show_dir / "_index.md").read_text(), re.M) is not None
+
+
 def sample_episodes() -> list[Episode]:
     """
-    5 oldest + 5 newest episodes of every show, plus EXTRA_EPISODES (known edge cases)
+    Oldest + newest episodes of every show (ACTIVE_SAMPLE each for active shows, ARCHIVED_SAMPLE for archived),
+    plus EXTRA_EPISODES (known edge cases)
     """
     selected: list[Episode] = []
     for show_dir in sorted(p for p in CONTENT_SHOW.iterdir() if p.is_dir()):
         by_date = _episodes_by_date(show_dir)
-        selected += by_date[:5] + by_date[-5:]
+        n = ACTIVE_SAMPLE if _is_active(show_dir) else ARCHIVED_SAMPLE
+        selected += by_date[:n] + by_date[-n:]
     selected += [load_episode(CONTENT_SHOW / show / f"{int(number):04d}.md") for show, number in EXTRA_EPISODES]
 
     episodes: dict[str, Episode] = {}
