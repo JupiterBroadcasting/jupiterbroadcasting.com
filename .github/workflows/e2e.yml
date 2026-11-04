@@ -22,17 +22,29 @@ jobs:
 
       - name: Select tests
         id: select
+        # Per-episode tests run unless EVERY changed file is known not to affect episode pages.
+        #   Anything not listed in SAFE (Hugo version, config.toml, base layouts, CSS/JS, new paths...) runs them.
         run: |
           markers="not periodic"
-          if [ "${{ github.event_name }}" = "pull_request" ] && ! git diff --name-only \
-              ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- \
-              content/show content/people content/sponsors \
-              themes/jb/layouts/episode themes/jb/layouts/partials/episode \
-              themes/jb/layouts/partials/people themes/jb/layouts/partials/sponsor \
-              themes/jb/layouts/partials/meta.html \
-              test/e2e/test_episode.py test/e2e/episode_data.py test/conftest.py pytest.ini \
-              | grep -q .; then
-            markers="not periodic and not episodes"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            SAFE='^(docs/|archetypes/|scripts/|data/picks/|[^/]+\.md$|render\.yaml$'
+            SAFE+='|content/'
+            SAFE+='|themes/jb/layouts/(archive|calendar|community|contact|live|picks|sponsors|tags|taxonomy|people|show|section)/'
+            SAFE+='|themes/jb/layouts/(index|404)\.html$|themes/jb/layouts/partials/(live|community|show)/'
+            SAFE+='|themes/jb/assets/js/(live|jb-live)\.js$'
+            SAFE+='|test/|\.github/)'
+            # carve-outs from SAFE that do feed episode pages
+            UNSAFE='^(content/(show|people|sponsors|membership)/'
+            UNSAFE+='|test/(conftest\.py|e2e/test_episode\.py|e2e/episode_data\.py|Pipfile|Pipfile\.lock|docker-compose\.yml)$'
+            UNSAFE+='|\.github/workflows/e2e\.yml$)'
+            changed=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+            affecting=$(printf '%s\n' "$changed" | grep -v '^$' | grep -E "$UNSAFE" ; printf '%s\n' "$changed" | grep -v '^$' | grep -vE "$SAFE")
+            if [ -z "$affecting" ]; then
+              markers="not periodic and not episodes"
+            else
+              echo "Running episode tests; changed files that can affect episode pages:"
+              printf '%s\n' "$affecting" | sort -u | head -20
+            fi
           fi
           echo "markers=$markers" >> "$GITHUB_OUTPUT"
 
