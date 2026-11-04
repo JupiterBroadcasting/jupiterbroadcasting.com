@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 from pytest import fixture
 from playwright.sync_api import Page, expect
 
@@ -7,7 +9,8 @@ def setup(page: Page):
     """
     Code here will run for every test in this file
     """
-    page.goto("/404.html")  # TODO: Change to random address once #483 is merged
+    response = page.goto(f"/this-page-does-not-exist-{uuid4()}/")
+    assert response.status == 404
 
 
 def test_404_contents(page: Page):
