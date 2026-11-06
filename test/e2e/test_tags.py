@@ -31,7 +31,7 @@ DOUBLE_HYPHEN = mark.xfail(
     "which leaves a double hyphen where Hugo 0.105's term permalink has one",
 )
 HASH = mark.xfail(reason="partials/episode/tags.html leaves '#' unescaped, so the link ends at a URL fragment")
-EMOJI = mark.xfail(reason="emoji-only tags get no tag page (issue #516)")
+EMOJI = mark.skip(reason="Issue #516: emoji-only tags get no tag page")
 
 # (category, matches, marks for /tags/ index test, marks for the link from an episode page)
 CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
