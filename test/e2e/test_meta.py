@@ -63,20 +63,14 @@ def _show_header_image(slug: str) -> str:
     return re.search(r'^header_image\s*=\s*"([^"]+)"', (CONTENT_SHOW / slug / "_index.md").read_text(), re.M).group(1)
 
 
-MISSING_OGIMAGE = mark.xfail(
-    strict=True,
-    reason=f"ogimage in config/_default/params.toml is {OGIMAGE}, which doesn't exist (404 in production too)",
-)
-
-
 def _meta_params() -> list:
     lup = EPISODES["linux-unplugged"][-1]
     return [
-        param("/", None, id="home", marks=MISSING_OGIMAGE),
+        param("/", None, id="home"),
         param("/show/linux-unplugged/", _show_header_image("linux-unplugged"), id="show"),
         param(lup.url, lup.data.get("header_image"), id="episode"),
-        param("/hosts/chris/", None, id="host", marks=MISSING_OGIMAGE),
-        param("/community/irc/", None, id="community", marks=MISSING_OGIMAGE),
+        param("/hosts/chris/", None, id="host"),
+        param("/community/irc/", None, id="community"),
     ]
 
 
