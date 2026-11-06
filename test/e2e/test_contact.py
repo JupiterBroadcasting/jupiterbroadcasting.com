@@ -1,6 +1,7 @@
+import re
 from pathlib import Path
 from pytest import fixture
-from playwright.sync_api import Page, FrameLocator, Locator
+from playwright.sync_api import Page, FrameLocator, Locator, expect
 
 
 @fixture(autouse=True)
@@ -43,3 +44,14 @@ def test_contect_submit_button_visible(page: Page):
     button_bottom: float = button_location.get("y") + button_location.get("height")
 
     assert button_bottom <= frame_height, "Form content is running off the iframe"
+
+
+def test_contact_form_fields(page: Page):
+    """
+    The embedded Wufoo form loads with somewhere to put an email address and a message
+    """
+    frame = page.locator("#contact-frame")
+    expect(frame).to_have_attribute("src", re.compile(r"^https://jblive\.wufoo\.com/embed/\w+/$"))
+    form = page.frame_locator("#contact-frame")
+    expect(form.locator('input[type="email"]')).to_have_count(1)
+    expect(form.locator("textarea")).not_to_have_count(0)

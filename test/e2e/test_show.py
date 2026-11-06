@@ -133,3 +133,59 @@ def test_show_pagination(page: Page, show: dict, request):
     assert f"/show/{slug}/page/2" in page.url
     first_card_second_page = page.locator(".episode-list .card").nth(0).text_content()
     assert first_card != first_card_second_page
+
+
+def _show_card_links(page: Page) -> set[str]:
+    links = page.locator(".episode-list .card-episode a")
+    return {re.sub(r"^https?://[^/]+", "", links.nth(i).get_attribute("href")) for i in range(links.count())}
+
+
+@mark.only_browser("chromium")
+def test_show_list_active_shows(page: Page):
+    """
+    /show/ lists exactly the active shows
+    """
+    page.goto("/show/")
+    assert _show_card_links(page) == {f"/show/{slug}/" for slug, fm in SHOWS.items() if fm.get("active")}
+
+
+@mark.only_browser("chromium")
+def test_archive_lists_archived_shows(page: Page):
+    """
+    /archive/ lists exactly the shows that are no longer active
+    """
+    page.goto("/archive/")
+    assert _show_card_links(page) == {f"/show/{slug}/" for slug, fm in SHOWS.items() if not fm.get("active")}
+
+
+def _subscribe_front_matter(slug: str) -> tuple[str, dict[str, str]]:
+    # flat YAML with one nested map; the test image has no YAML parser
+    text = (SHOW_DIR / slug / "subscribe.md").read_text()
+    rss = re.search(r'^rss:\s*"?([^"\s]+)"?', text, re.M).group(1)
+    block = re.search(r"^direct_links:\n((?:[ \t]+.*\n)*)", text, re.M)
+    links = dict(re.findall(r"^[ \t]+(\w+):\s*(\S+)", block.group(1), re.M)) if block else {}
+    return rss, links
+
+
+SUBSCRIBE_SHOWS = [slug for slug in SHOWS if (SHOW_DIR / slug / "subscribe.md").exists()]
+PODCAST_PLAYER_ICONS: dict[str, str] = json.loads((REPO_ROOT / "data/podcast_player.json").read_text())
+
+
+@mark.only_browser("chromium")
+@mark.parametrize("slug", SUBSCRIBE_SHOWS)
+def test_subscribe_page(page: Page, slug: str):
+    """
+    Subscribe page has the show's RSS button and one icon link per direct_links entry in subscribe.md
+    """
+    rss, direct_links = _subscribe_front_matter(slug)
+    page.goto(f"/show/{slug}/subscribe/")
+    expect(page.locator("a.button", has_text="RSS Feed")).to_have_attribute("href", rss)
+
+    unknown = set(direct_links) - set(PODCAST_PLAYER_ICONS)
+    assert not unknown, f"direct_links keys without an icon in data/podcast_player.json: {unknown}"
+    icons = page.locator(".subscribe-logos a")
+    expect(icons).to_have_count(len(direct_links))
+    for key, url in direct_links.items():
+        link = page.locator(f'.subscribe-logos a:has(img[alt="{key} subscription link"])')
+        expect(link).to_have_attribute("href", url)
+        expect(link.locator("img")).to_have_attribute("src", PODCAST_PLAYER_ICONS[key])
