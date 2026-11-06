@@ -1,4 +1,5 @@
 +++
+outputs = ["html", "markdown", "llms", "episodes"]
 title = "LINUX Unplugged"
 description = "An open show powered by community LINUX Unplugged takes the best attributes of open collaboration and turns it into a weekly show about Linux."
 date = "2022-05-10T04:10:01-05:00"
