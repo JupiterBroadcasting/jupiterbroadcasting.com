@@ -1,0 +1,21 @@
+{{ define "headcontent" }}
+  {{ $search := resources.Get "js/search.js" }}
+  {{ if hugo.IsProduction }}
+    {{ $search = $search | minify | fingerprint }}
+  {{ end }}
+  <script type="module" src="{{ $search.Permalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }}></script>
+{{ end }}
+
+{{ define "main" }}
+    <div class="container px-4">
+        <h1 class="title is-3">{{ .Title }}</h1>
+
+        <div class="field mb-5">
+            <div class="control">
+                <input id="search-input" class="input is-medium search-input" type="search" placeholder="Search episodes, picks, sponsors and people" autocomplete="off" autofocus aria-label="Search">
+            </div>
+        </div>
+        <p id="search-status" class="search-status" role="status"></p>
+        <div id="search-results" class="search-results"></div>
+    </div>
+{{ end }}
