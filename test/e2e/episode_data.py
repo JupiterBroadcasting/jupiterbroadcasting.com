@@ -32,7 +32,7 @@ def load_episode(path: Path) -> Episode:
     return Episode(show=show, number=number, url=f"/show/{show}/{str(data['slug']).lower()}/", data=data)
 
 
-def _episodes_by_date(show_dir: Path) -> list[Episode]:
+def episodes_by_date(show_dir: Path) -> list[Episode]:
     # filenames aren't chronological (e.g. the-launch T-0.md sorts after 0097.md)
     episodes = [load_episode(p) for p in show_dir.glob("*.md") if p.name not in META_FILES]
     return sorted(episodes, key=lambda e: _published(e.data["date"]))
@@ -44,7 +44,7 @@ def _published(date: str) -> datetime:
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
-def _is_active(show_dir: Path) -> bool:
+def is_active(show_dir: Path) -> bool:
     return re.search(r"^\s*active\s*=\s*true\b", (show_dir / "_index.md").read_text(), re.M) is not None
 
 
@@ -55,8 +55,8 @@ def sample_episodes() -> list[Episode]:
     """
     selected: list[Episode] = []
     for show_dir in sorted(p for p in CONTENT_SHOW.iterdir() if p.is_dir()):
-        by_date = _episodes_by_date(show_dir)
-        n = ACTIVE_SAMPLE if _is_active(show_dir) else ARCHIVED_SAMPLE
+        by_date = episodes_by_date(show_dir)
+        n = ACTIVE_SAMPLE if is_active(show_dir) else ARCHIVED_SAMPLE
         selected += by_date[:n] + by_date[-n:]
     selected += [load_episode(CONTENT_SHOW / show / f"{int(number):04d}.md") for show, number in EXTRA_EPISODES]
 
