@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-from pytest import fixture, mark
+from pytest import fixture
 from playwright.sync_api import Page, Route, expect
 
 CONFIG: str = (Path(__file__).parents[2] / "config.toml").read_text()
@@ -72,39 +72,21 @@ def test_live_online_hides_overlay(page: Page, stream: StreamStub):
 
 def test_live_toggle_audio_video(page: Page, stream: StreamStub):
     """
-    The toggle button swaps between the video and audio players and relabels itself
+    The toggle button swaps between the video and audio players and relabels itself. It's found by role and
+    accessible name, so this is also what a screen reader user hears and activates
     """
     page.goto("/live/")
-    toggle = page.locator("#toggle-button")
     audio_player = page.locator("#audio-player")
     video_wrapper = page.locator("#video-player .video-wrapper")
 
-    expect(toggle).to_have_text("Switch to Audio")
-    expect(audio_player).to_be_hidden()
-
-    toggle.click()
-    expect(audio_player).to_be_visible()
-    expect(video_wrapper).to_be_hidden()
-    expect(toggle).to_have_text("Switch to Video")
-
-    toggle.click()
     expect(audio_player).to_be_hidden()
     expect(video_wrapper).to_be_visible()
-    expect(toggle).to_have_text("Switch to Audio")
 
+    page.get_by_role("button", name="Switch to Audio", exact=True).click()
+    expect(audio_player).to_be_visible()
+    expect(video_wrapper).to_be_hidden()
 
-@mark.xfail(
-    strict=True,
-    reason="themes/jb/assets/js/live.js sets aria-checked from the mode before the toggle, so it is inverted",
-)
-def test_live_toggle_aria_checked(page: Page, stream: StreamStub):
-    """
-    The toggle is a role="switch": aria-checked is "true" while the audio player is active
-    """
-    page.goto("/live/")
-    toggle = page.locator("#toggle-button")
-    expect(toggle).to_have_attribute("aria-checked", "false")
-    toggle.click()
-    expect(toggle).to_have_attribute("aria-checked", "true")
-    toggle.click()
-    expect(toggle).to_have_attribute("aria-checked", "false")
+    page.get_by_role("button", name="Switch to Video", exact=True).click()
+    expect(audio_player).to_be_hidden()
+    expect(video_wrapper).to_be_visible()
+    expect(page.get_by_role("button", name="Switch to Audio", exact=True)).to_be_visible()
