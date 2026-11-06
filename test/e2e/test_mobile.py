@@ -46,14 +46,17 @@ def test_mobile_burger_menu(mobile_device_tuple: Tuple[Page, str]):
     contact = menu.locator('a.navbar-item[href$="/contact/"]')
 
     expect(burger).to_be_visible()
+    expect(burger).to_have_attribute("aria-expanded", "false")
     expect(contact).to_be_hidden()
 
     burger.click()
     expect(menu).to_have_class("navbar-menu is-active")
+    expect(burger).to_have_attribute("aria-expanded", "true")
     expect(contact).to_be_visible()
     expect(menu.locator('a.navbar-item[href$="/show/linux-unplugged/"]')).to_be_visible()
 
     burger.click()
+    expect(burger).to_have_attribute("aria-expanded", "false")
     expect(contact).to_be_hidden()
 
 
