@@ -1,4 +1,5 @@
 +++
+outputs = ["html", "markdown", "llms", "episodes"]
 title = "Linux Action News"
 description = "Weekly Linux news and analysis by Chris and Wes. The show every week we hope you'll go to when you want to hear an informed discussion about what’s happening."
 date = "2022-05-10T04:10:01-05:00"

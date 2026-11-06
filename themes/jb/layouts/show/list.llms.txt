@@ -1,0 +1,28 @@
+{{- $eps := where .Pages "Type" "episode" -}}
+{{- $sorted := $eps.ByDate.Reverse -}}
+{{- $lo := 0 }}{{ $hi := 0 }}{{ $nums := 0 }}{{ $specials := 0 -}}
+{{- range $eps }}{{ $e := .Params.episode -}}
+{{- if or (eq (printf "%T" $e) "int") (eq (printf "%T" $e) "float64") }}{{ $nums = add $nums 1 -}}
+{{- if eq $lo 0 }}{{ $lo = $e }}{{ $hi = $e }}{{ else }}{{ if lt $e $lo }}{{ $lo = $e }}{{ end }}{{ if gt $e $hi }}{{ $hi = $e }}{{ end }}{{ end -}}
+{{- else }}{{ $specials = add $specials 1 }}{{ end -}}
+{{- end -}}
+# {{ .Title }}
+
+> {{ .Description }}
+
+## The show
+
+- [{{ .Title }} - show page]({{ .Permalink }}index.md): description, hosts, and show notes
+- [Complete episode list]({{ .Permalink }}episodes.json): JSON list of every {{ .Title }} episode (slug, episode, date, URL)
+
+## Most recent episodes (of {{ len $eps }})
+
+{{ range first 10 $sorted -}}
+- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ .Permalink }}index.md){{ with .Params.guests }} (guest: {{ delimit . ", " }}){{ end }} - {{ .Description }}
+{{ end }}
+## Episode archive
+
+{{ $nums }} numbered episodes, {{ $lo }}-{{ $hi }}.{{ if $specials }} Plus {{ $specials }} special episodes with prefixed slugs (not plain numbers).{{ end }}
+
+Episode URL pattern: `{{ .Permalink }}<number>/` — append `index.md` for the markdown twin.
+Newest: `{{ .Permalink }}{{ with $sorted }}{{ (index . 0).Params.slug | default (index . 0).File.TranslationBaseName | lower }}/index.md{{ end }}` · Oldest: `{{ .Permalink }}{{ with $sorted }}{{ (index . (sub (len .) 1)).Params.slug | default (index . (sub (len .) 1)).File.TranslationBaseName | lower }}/index.md{{ end }}`
