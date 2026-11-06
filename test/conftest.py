@@ -1,10 +1,34 @@
 
+import re
 from pathlib import Path
 from typing import Dict, Generator, List, Tuple
-from pytest import fixture
+from pytest import fixture, hookimpl
 from _pytest.fixtures import SubRequest
 from pytest_base_url.plugin import base_url
 from playwright.sync_api import Playwright, APIRequestContext, Page, Browser
+
+# device -> the engine it really ships with (all iOS browsers are WebKit), so each device
+#   only runs on that browser instead of all three
+MOBILE_DEVICES = {
+    # phones: narrowest, current iPhone width, newest Pixel in Playwright 1.50
+    "Galaxy S9+": "chromium",
+    "iPhone 15": "webkit",
+    "Pixel 7": "chromium",
+    # tablets: 768 is Bulma's last mobile px, 834 is Bulma tablet,
+    #   1194 is desktop layout but still under $navbar-breakpoint (1220px) so the burger shows
+    "iPad Mini": "webkit",
+    "iPad Pro 11": "webkit",
+    "iPad Pro 11 landscape": "webkit",
+}
+
+@hookimpl(wrapper=True)
+def pytest_runtest_makereport(item, call):
+    # exposes the call-phase result to fixtures, so mobile_device_tuple can screenshot on failure
+    report = yield
+    if report.when == "call":
+        item.rep_call = report
+    return report
+
 
 def pytest_collection_modifyitems(config, items):
     """
@@ -15,6 +39,9 @@ def pytest_collection_modifyitems(config, items):
     for item in items:
         browser = getattr(item, "callspec", None) and item.callspec.params.get("browser_name")
         only = {b for m in item.iter_markers("only_browser") for b in m.args}
+        device = getattr(item, "callspec", None) and item.callspec.params.get("mobile_device_tuple")
+        if device:
+            only = {MOBILE_DEVICES[device]}
         skip = {b for m in item.iter_markers("skip_browser") for b in m.args}
         if browser and ((only and browser not in only) or browser in skip):
             drop.append(item)
@@ -46,14 +73,8 @@ jq '. | keys' devices.json| less
 # also should be able to view them here:
 # https://github.com/microsoft/playwright/blob/v1.25.2/packages/playwright-core/src/server/deviceDescriptorsSource.json
 @fixture(
-    # doing session so it doesn't have to be re-created for each usage
-    scope="session",
-    # some example phone sizes to use
-    params=[
-        "iPhone 13",
-        "Pixel 5",
-        "Galaxy S9+",
-    ]
+    # function scope so menu state from one test can't leak into the next
+    params=list(MOBILE_DEVICES),
 )
 def mobile_device_tuple(
     # how to access the params
@@ -67,20 +88,19 @@ def mobile_device_tuple(
     base_url: base_url,
 ) -> Tuple[Page,str]:
 
-    params = dict(playwright.devices[request.param])
-    if browser.browser_type.name == "firefox":
-        # firefox doesn't support is_mobile: https://github.com/microsoft/playwright/issues/16622
-        del params['is_mobile']
-
     context = browser.new_context(
         base_url=base_url,
-        **params
+        **playwright.devices[request.param]
     )
+    page = context.new_page()
     try:
         # essentially a "return", but used with generators
-        yield (context.new_page(), request.param)
-    except Exception as excpt:
-        raise excpt
+        yield (page, request.param)
+        # pytest-playwright's --screenshot only covers its own page fixture, not contexts made here
+        report = getattr(request.node, "rep_call", None)
+        if report and report.failed:
+            slug = re.sub(r"[^\w.-]+", "-", request.node.nodeid).strip("-")
+            page.screenshot(path=Path(request.config.getoption("--output")) / slug / "screenshot.png")
     finally:
         # supposed to get rid of coookies/other stored info after generator is done
         # https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-dispose
