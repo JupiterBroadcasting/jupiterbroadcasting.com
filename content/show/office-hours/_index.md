@@ -1,4 +1,5 @@
 +++
+outputs = ["html", "markdown", "llms", "episodes"]
 title = "Office Hours"
 description = "A podcast for the community of Jupiter Broadcasting, the Open Source media powerhouse of the Internet. Get the inside scope on our projects, the future of independent media, and decentralized community."
 date = "2022-05-10T04:10:01-05:00"

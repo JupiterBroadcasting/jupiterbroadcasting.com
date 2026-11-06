@@ -15,4 +15,10 @@ RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 RUN sed -i 's/#error_page/error_page/' /etc/nginx/conf.d/default.conf
+# nginx:alpine ships no text/markdown mime type; llms.txt spec wants it on .md twins.
+# (root is repeated: the stock conf declares it inside `location /`, and this
+# location block replaces it for matching paths. llms.txt, llms-full.txt and
+# episodes.json need no override: stock mime.types already serve .txt as
+# text/plain and .json as application/json.)
+RUN sed -i '/listen  /i\    location ~ \\.md$ { root /usr/share/nginx/html; default_type text/markdown; }' /etc/nginx/conf.d/default.conf
 COPY --from=builder /site/public /usr/share/nginx/html
