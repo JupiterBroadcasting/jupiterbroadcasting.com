@@ -1,7 +1,5 @@
 name: E2E Tests
-
 on:
-
   pull_request:
   push:
     branches:
@@ -15,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
         with:
           # full history so the PR base commit is available to diff against
           fetch-depth: 0
@@ -64,14 +62,15 @@ jobs:
         run: script -e -c "docker compose exec testing pytest -m '${{ steps.select.outputs.markers }}' --base-url http://jb-com --junitxml report.xml"
 
       - name: Save screenshots
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: screenshots
           path: screenshots/
           overwrite: true
+          if-no-files-found: ignore
 
       - name: Publish Test Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v3
         # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
         if: always() && github.event_name != 'pull_request'
         with:

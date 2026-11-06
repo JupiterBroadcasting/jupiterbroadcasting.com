@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       # using docker compose, so we can re-use local Dockerfiles
       - name: starting up containers
@@ -28,7 +28,7 @@ jobs:
         run: script -e -c "docker compose exec testing pytest -m periodic --base-url http://jb-com --junitxml report.xml"
 
       - name: Publish Test Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v3
         with:
           name: Periodic Tests
           path: './report.xml'
