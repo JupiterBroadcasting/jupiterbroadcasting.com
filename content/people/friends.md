@@ -5,7 +5,7 @@ avatar_small: /images/people/friends_small.jpg
 bio: No bio provided.
 homepage: http://www.jupiterbroadcasting.com
 instagram: null
-is_archived: true
+is_hidden: true
 linkedin: null
 title: Friends of Jupiter Broadcasting
 twitter: https://twitter.com/jupitersignal

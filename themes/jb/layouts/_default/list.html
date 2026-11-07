@@ -12,7 +12,7 @@
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
 {{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
-  {{ $people := where (where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) ".Type" ($lastUrlElement | singularize) }}
+  {{ $people := where (where (where site.RegularPages "Section" "people") ".Params.is_hidden" "!=" true) ".Type" ($lastUrlElement | singularize) }}
   {{ $former := slice }}
   {{ if eq $lastUrlElement "hosts" }}
     {{ $former = where $people ".Params.active" "==" false }}

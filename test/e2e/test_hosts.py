@@ -19,3 +19,7 @@ def test_former_hosts_section_at_bottom(page: Page):
     expect(former).to_contain_text("Jim Salter")
     expect(former).not_to_contain_text("Chris Fisher")
     assert page.locator(".hosts-list ~ .former-hosts-list").count() == 1
+
+
+def test_hidden_people_not_listed(page: Page):
+    expect(page.locator("main, #wrapper")).not_to_contain_text("Friends of Jupiter Broadcasting")
