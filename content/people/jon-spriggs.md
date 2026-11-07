@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/jon-spriggs.jpg
+avatar_small: /images/people/jon-spriggs_small.jpg
 bio: null
 homepage: https://jon.sprig.gs/blog/
 instagram: null

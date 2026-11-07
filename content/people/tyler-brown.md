@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/tyler-brown.jpg
+avatar_small: /images/people/tyler-brown_small.jpg
 bio: null
 homepage: null
 instagram: null

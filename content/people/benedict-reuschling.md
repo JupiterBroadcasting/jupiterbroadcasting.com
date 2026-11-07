@@ -1,7 +1,7 @@
 ---
 active: false
-avatar: null
-avatar_small: null
+avatar: /images/people/benedict-reuschling.jpg
+avatar_small: /images/people/benedict-reuschling_small.jpg
 bio: null
 homepage: null
 instagram: null

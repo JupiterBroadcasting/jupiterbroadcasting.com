@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/trenton-shulz.jpg
+avatar_small: /images/people/trenton-shulz_small.jpg
 bio: null
 homepage: https://www.norwegianrockcat.com/
 instagram: null

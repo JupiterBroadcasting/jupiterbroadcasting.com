@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/amy-marrich.jpg
+avatar_small: /images/people/amy-marrich_small.jpg
 bio: null
 homepage: null
 instagram: null

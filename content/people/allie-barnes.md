@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/allie-barnes.jpg
+avatar_small: /images/people/allie-barnes_small.jpg
 bio: null
 homepage: null
 instagram: null
