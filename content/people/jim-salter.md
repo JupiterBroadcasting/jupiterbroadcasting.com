@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/jim-salter.jpg
 avatar_small: /images/people/jim-salter_small.jpg
 bio: Jim Salter is an author, public speaker, small business owner, mercenary sysadmin,
@@ -12,7 +13,7 @@ instagram: null
 linkedin: null
 title: Jim Salter
 twitter: https://x.com/jrssnet
-type: guest
+type: host
 username: jim-salter
 youtube: null
 ---

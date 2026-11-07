@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/jason.jpg
 avatar_small: /images/people/jason_small.jpg
 bio: ''
@@ -7,7 +8,7 @@ instagram: null
 linkedin: null
 title: Jason Evangelho
 twitter: https://twitter.com/killyourfm
-type: guest
+type: host
 username: jason
 youtube: null
 ---
