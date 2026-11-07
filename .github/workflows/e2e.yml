@@ -1,7 +1,5 @@
 name: E2E Tests
-
 on:
-
   pull_request:
   push:
     branches:
@@ -15,7 +13,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
+        with:
+          # full history so the PR base commit is available to diff against
+          fetch-depth: 0
+
+      - name: Select tests
+        id: select
+        # Per-episode tests run unless EVERY changed file is known not to affect episode pages.
+        #   Anything not listed in SAFE (Hugo version, config.toml, base layouts, CSS/JS, new paths...) runs them.
+        run: |
+          markers="not periodic"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            SAFE='^(docs/|archetypes/|scripts/|data/picks/|[^/]+\.md$|render\.yaml$'
+            SAFE+='|content/'
+            SAFE+='|themes/jb/layouts/(archive|calendar|community|contact|live|picks|sponsors|tags|taxonomy|people|show|section)/'
+            SAFE+='|themes/jb/layouts/(index|404)\.html$|themes/jb/layouts/partials/(live|community|show)/'
+            SAFE+='|themes/jb/assets/js/(live|jb-live)\.js$'
+            SAFE+='|test/|\.github/)'
+            # carve-outs from SAFE that do feed episode pages
+            UNSAFE='^(content/(show|people|sponsors|membership)/'
+            UNSAFE+='|test/(conftest\.py|e2e/test_episode\.py|e2e/episode_data\.py|Pipfile|Pipfile\.lock|docker-compose\.yml)$'
+            UNSAFE+='|\.github/workflows/e2e\.yml$)'
+            changed=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+            affecting=$(printf '%s\n' "$changed" | grep -v '^$' | grep -E "$UNSAFE" ; printf '%s\n' "$changed" | grep -v '^$' | grep -vE "$SAFE")
+            if [ -z "$affecting" ]; then
+              markers="not periodic and not episodes"
+            else
+              echo "Running episode tests; changed files that can affect episode pages:"
+              printf '%s\n' "$affecting" | sort -u | head -20
+            fi
+          fi
+          echo "markers=$markers" >> "$GITHUB_OUTPUT"
 
       # using docker compose, so we can re-use local Dockerfiles
       - name: starting up containers
@@ -30,17 +59,20 @@ jobs:
       - name: Run your tests
         working-directory: ./test/
         # https://github.com/actions/runner/issues/241#issuecomment-577360161
-        run: script -e -c "docker compose exec testing pytest -m 'not periodic' --base-url http://jb-com --junitxml report.xml"
+        run: script -e -c "docker compose exec testing pytest -m '${{ steps.select.outputs.markers }}' --base-url http://jb-com --junitxml report.xml"
 
       - name: Save screenshots
-        uses: actions/upload-artifact@v4
+        # screenshots are only taken on failure, so this has to run when the test step fails
+        if: always()
+        uses: actions/upload-artifact@v7
         with:
           name: screenshots
           path: screenshots/
           overwrite: true
+          if-no-files-found: ignore
 
       - name: Publish Test Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v3
         # TODO: potential solution in the future: https://stackoverflow.com/a/70448851
         if: always() && github.event_name != 'pull_request'
         with:
