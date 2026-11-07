@@ -1,5 +1,5 @@
 ---
-active: true
+active: false
 avatar: /images/people/allanjude.jpg
 avatar_small: /images/people/allanjude_small.jpg
 bio: "FreeBSD Developer, ZFS Expert, Co-Founder of @KlaraSystems, Host of BSD Now
