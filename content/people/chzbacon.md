@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/chzbacon.jpg
 avatar_small: /images/people/chzbacon_small.jpg
 bio: A graphic artist with a passion for Linux.
@@ -10,5 +11,4 @@ twitter: https://twitter.com/chzbacon
 type: host
 username: chzbacon
 youtube: null
-is_archived: true
 ---

@@ -1,4 +1,5 @@
 ---
+active: true
 avatar: /images/people/angela-fisher.jpg
 avatar_small: null
 bio: null

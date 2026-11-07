@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/drew-devore.jpg
 avatar_small: /images/people/drew-devore_small.jpg
 bio: Drew is an audio editing engineer for Jupiter Broadcasting. He has worked in
