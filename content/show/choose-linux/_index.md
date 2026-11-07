@@ -6,7 +6,7 @@ date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["Choose Linux"]
 show = "choose-linux"
-hosts = ["joe","ell","drew-devore","jason"]
+hosts = ["ell","drew-devore","jason"]
 
 type = "show"
 active = false
