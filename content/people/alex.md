@@ -1,5 +1,5 @@
 ---
-active: false
+active: true
 avatar: /images/hosts/alex_kretzschmar.jpeg
 avatar_small: /images/people/alex_kretzschmar.jpeg
 bio: Father. Podcaster @selfhostedshow podcast. Tailscalar.
