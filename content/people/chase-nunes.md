@@ -1,7 +1,7 @@
 ---
 active: false
-avatar: null
-avatar_small: null
+avatar: /images/people/chase-nunes.jpg
+avatar_small: /images/people/chase-nunes_small.jpg
 bio: null
 homepage: null
 instagram: null
