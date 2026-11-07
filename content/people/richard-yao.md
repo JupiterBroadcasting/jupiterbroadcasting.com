@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/richard-yao.jpg
+avatar_small: /images/people/richard-yao_small.jpg
 bio: null
 homepage: https://github.com/ryao
 instagram: null

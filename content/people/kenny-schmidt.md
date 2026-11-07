@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/kenny-schmidt.jpg
+avatar_small: /images/people/kenny-schmidt_small.jpg
 bio: null
 homepage: https://altispeed.com/
 instagram: null

@@ -1,7 +1,7 @@
 ---
 active: false
-avatar: null
-avatar_small: null
+avatar: /images/people/kris-moore.jpg
+avatar_small: /images/people/kris-moore_small.jpg
 bio: null
 homepage: https://wiki.freebsd.org/KrisMoore
 instagram: null

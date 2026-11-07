@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/steve-ovens.jpg
+avatar_small: /images/people/steve-ovens_small.jpg
 bio: null
 homepage: null
 instagram: null

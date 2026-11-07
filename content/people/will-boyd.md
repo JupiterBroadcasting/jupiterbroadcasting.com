@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/will-boyd.jpg
+avatar_small: /images/people/will-boyd_small.jpg
 bio: null
 homepage: null
 instagram: null

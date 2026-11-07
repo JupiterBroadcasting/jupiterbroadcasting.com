@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/mike-mcclaren.jpg
+avatar_small: /images/people/mike-mcclaren_small.jpg
 bio: null
 homepage: null
 instagram: null

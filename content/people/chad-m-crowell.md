@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/chad-m-crowell.jpg
+avatar_small: /images/people/chad-m-crowell_small.jpg
 bio: null
 homepage: http://cmcrowell.com/
 instagram: null

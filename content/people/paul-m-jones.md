@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/paul-m-jones.jpg
+avatar_small: /images/people/paul-m-jones_small.jpg
 bio: null
 homepage: http://paul-m-jones.com/
 instagram: null

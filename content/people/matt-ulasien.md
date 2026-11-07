@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/matt-ulasien.jpg
+avatar_small: /images/people/matt-ulasien_small.jpg
 bio: null
 homepage: null
 instagram: null

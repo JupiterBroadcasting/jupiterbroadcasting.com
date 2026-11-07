@@ -1,6 +1,6 @@
 ---
-avatar: null
-avatar_small: null
+avatar: /images/people/michael-w-lucas.jpg
+avatar_small: /images/people/michael-w-lucas_small.jpg
 bio: null
 homepage: null
 instagram: null
