@@ -5,7 +5,7 @@ description = "New ideas, great interviews, events, and other content you will l
 date = "2022-05-10T04:10:01-05:00"
 draft = false
 show = "jupiter-extras"
-hosts = ["chris","brent","wes", "allanjude", "alex", "friends"]
+hosts = ["chris","brent","wes"]
 
 type = "show"
 active = true
