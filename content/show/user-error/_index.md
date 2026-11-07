@@ -6,7 +6,7 @@ date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["User Error"]
 show = "user-error"
-hosts = ["joe","popey","danielle-fore"]
+hosts = ["popey","danielle-fore"]
 
 type = "show"
 active = false
