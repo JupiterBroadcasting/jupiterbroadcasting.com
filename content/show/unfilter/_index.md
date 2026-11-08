@@ -13,6 +13,8 @@ active = false
 
 header_image = "/images/shows/unfilter.png"
 
+podverse_podcast_id = "LuyvdD8JNX"
+
 [links.shownotes]
   url = "https://www.unfilter.show"
 

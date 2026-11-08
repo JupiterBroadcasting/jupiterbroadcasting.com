@@ -13,6 +13,8 @@ active = false
 
 header_image = "/images/shows/ask-noah-show.png"
 
+podverse_podcast_id = "LZEdeTvK5"
+
 [links.shownotes]
   url = "https://podcast.asknoahshow.com"
 

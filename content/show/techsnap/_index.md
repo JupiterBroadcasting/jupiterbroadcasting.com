@@ -6,12 +6,14 @@ date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["TechSNAP"]
 show = "techsnap"
-hosts = ["chris","allanjude","wes","jim-salter"]
+hosts = ["chris","allanjude","wes","dan-langille","jim-salter"]
 
 type = "show"
 active = false
 
 header_image = "/images/shows/techsnap.png"
+
+podverse_podcast_id = "McRFIKXY"
 
 [links.shownotes]
   url = "https://techsnap.systems"

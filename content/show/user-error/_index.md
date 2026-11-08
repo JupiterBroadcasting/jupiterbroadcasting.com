@@ -13,6 +13,8 @@ active = false
 
 header_image = "/images/shows/user-error.png"
 
+podverse_podcast_id = "iYG_JyaOO8M"
+
 [links.shownotes]
   url = "https://error.show"
 

@@ -13,6 +13,8 @@ active = false
 
 header_image = "/images/shows/the-friday-stream.png"
 
+podverse_podcast_id = "-vOak11waV"
+
 [links.shownotes]
   url = "https://fridaystream.com"
 
