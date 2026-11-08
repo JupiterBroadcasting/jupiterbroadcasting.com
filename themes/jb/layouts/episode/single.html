@@ -20,6 +20,9 @@
           <br />
           <p>{{ .Description }} </p>
           <span class="is-sr-only" data-pagefind-meta="show:{{ .CurrentSection.Title }}"></span>
+          {{- if not .CurrentSection.Params.active }}
+          <span class="is-sr-only" data-pagefind-meta="archived:true"></span>
+          {{- end }}
           <span class="is-sr-only">
             {{ range .Params.tags }}{{ . }}, {{ end }}
             {{ range .Params.sponsors }}

@@ -116,3 +116,13 @@ def test_sponsor_cards_show_their_show(page: Page):
     chips = sorted(sponsors.nth(i).locator(".tag").nth(1).inner_text() for i in range(3))
     assert chips == ["Coder Radio", "LINUX Unplugged", "Self-Hosted"], chips
 
+
+ARCHIVED_SHOWS = {"Coder Radio", "Linux Action News", "Office Hours", "Self-Hosted"}
+
+
+@pytest.mark.parametrize("query", ["home assistant", "zfs"])
+def test_live_show_episodes_rank_above_archived(page: Page, query: str):
+    search(page, query)
+    first = page.locator('.search-result[data-type="episode"]').first
+    expect(first).to_be_visible()
+    assert first.locator(".tag").nth(1).inner_text() not in ARCHIVED_SHOWS

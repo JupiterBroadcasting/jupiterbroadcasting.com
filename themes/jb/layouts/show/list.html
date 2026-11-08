@@ -36,6 +36,9 @@
 <div {{ if eq $episode_paginator.PageNumber 1 }}data-pagefind-body data-pagefind-meta="type:show" data-pagefind-filter="type:show"{{ end }}>
 <div class="container p-4">
   <h1 class="title">{{.Title}}</h1>
+  {{- if not .Params.active }}
+  <span class="is-sr-only" data-pagefind-meta="archived:true"></span>
+  {{- end }}
 </div>
 <div class="container p-4">
   <div class="columns">
