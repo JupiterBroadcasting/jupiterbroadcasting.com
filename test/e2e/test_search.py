@@ -1,4 +1,5 @@
 from pathlib import Path
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -78,3 +79,19 @@ def test_newer_episodes_rank_above_older(page: Page):
     expect(dates.first).to_be_visible()
     texts = dates.all_inner_texts()
     assert texts[0] >= "2020-01-01", texts[:5]
+
+
+@pytest.mark.parametrize("query,type_", [
+    ("linux unplugged", "show"),
+    ("coder radio", "show"),
+    ("alex kretzschmar", "person"),
+    ("brent gervais", "person"),
+])
+def test_show_and_person_title_matches_rank_first(page: Page, query: str, type_: str):
+    search(page, query)
+    expect(page.locator(".search-result").first).to_have_attribute("data-type", type_)
+
+
+def test_pick_ranks_above_show(page: Page):
+    search(page, "tailscale")
+    expect(page.locator(".search-result").first).to_have_attribute("data-type", "sponsor")

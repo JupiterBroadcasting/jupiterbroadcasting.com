@@ -3,6 +3,8 @@ const CANDIDATES = 60
 const RECENCY_WEIGHT = 0.8
 const RECENCY_HALF_LIFE_YEARS = 2
 const TYPES = ['pick', 'sponsor', 'episode', 'show', 'person']
+// Pagefind 1.5+ boosts title matches, so episodes titled "... Unplugged" outrank the show page itself.
+const PROMOTED_TYPES = ['pick', 'sponsor', 'show', 'person']
 const decoder = document.createElement('textarea')
 
 let pagefind = null
@@ -29,7 +31,7 @@ function rankResults(results, query) {
     const top = Math.max(...results.map(r => r.score), 1)
     const adjusted = r => r.score / top + (r.meta.type === 'episode' ? RECENCY_WEIGHT * recency(r.meta.date) : 0)
     results = results.slice().sort((a, b) => adjusted(b) - adjusted(a))
-    const promoted = results.filter(r => ['pick', 'sponsor'].includes(r.meta.type) && titleMatches(r.meta.title, query))
+    const promoted = PROMOTED_TYPES.flatMap(type => results.filter(r => r.meta.type === type && titleMatches(r.meta.title, query)))
     return promoted.concat(results.filter(r => !promoted.includes(r)))
 }
 
