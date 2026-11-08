@@ -14,7 +14,7 @@ RUN set -x && ( [ -z "${BASE_URL}" ] || [ "${BASE_URL}" == "PROD" ] ) \
 
 
 FROM alpine AS indexer
-ARG PAGEFIND_VERSION=1.3.0
+ARG PAGEFIND_VERSION=1.6.0
 WORKDIR /site
 RUN wget -qO- "https://github.com/Pagefind/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind_extended-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz" \
     | tar xz -C /usr/local/bin pagefind_extended
