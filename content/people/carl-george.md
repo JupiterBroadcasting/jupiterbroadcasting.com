@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/carl-george.jpg
 avatar_small: null
-bio: null
+bio: Engineer at Red Hat working on EPEL, CentOS and Fedora. Texas forever.
 homepage: https://carl.george.computer/
 instagram: null
 linkedin: null

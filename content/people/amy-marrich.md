@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/amy-marrich.jpg
 avatar_small: /images/people/amy-marrich_small.jpg
-bio: null
+bio: OpenStack and Open Source Fanatic working to bring more people into the fold. Dalmatian and Connemara Pony trainer, yes sometimes at the same time!
 homepage: null
 instagram: null
 linkedin: null

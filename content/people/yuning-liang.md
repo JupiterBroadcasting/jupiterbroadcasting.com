@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/yuning-liang.jpg
 avatar_small: null
-bio: null
+bio: Founder and CEO of DeepComputing
 homepage: https://deepcomputing.io/
 instagram: null
 linkedin: null

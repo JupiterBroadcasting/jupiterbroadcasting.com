@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/tristan-ross.jpg
 avatar_small: null
-bio: null
+bio: I like computers and cats.
 homepage: https://tristanxr.com/
 instagram: null
 linkedin: null
