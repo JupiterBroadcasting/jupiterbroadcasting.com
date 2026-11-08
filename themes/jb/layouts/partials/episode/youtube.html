@@ -1,3 +1,5 @@
-<div class="video-container">
-  <iframe src="{{.Params.youtube_link}}"  frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+{{ $id := replaceRE `^.*(?:[?&]v=|youtu\.be/|/embed/)([A-Za-z0-9_-]{11}).*$` "$1" .Params.youtube_link }}
+<div class="episode-player my-4" style="aspect-ratio: 16 / 9; width: 100%;">
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="{{ .Title }}" style="width: 100%; height: 100%; border: 0;"
+    allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
