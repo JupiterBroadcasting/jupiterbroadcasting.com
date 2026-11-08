@@ -13,6 +13,8 @@ active = false
 
 header_image = "/images/shows/bsd-now.png"
 
+podverse_podcast_id = "e_Uvb_Y5w"
+
 [links.shownotes]
   url = "https://www.bsdnow.tv"
 
