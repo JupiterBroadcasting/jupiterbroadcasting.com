@@ -107,3 +107,12 @@ def test_host_who_was_guest_indexed_once(page: Page):
     search(page, "wes payne")
     expect(page.locator(".search-result").first).to_have_attribute("data-type", "person")
     expect(page.locator('.search-result[data-type="person"]')).to_have_count(1)
+
+
+def test_sponsor_cards_show_their_show(page: Page):
+    search(page, "tailscale")
+    sponsors = page.locator('.search-result[data-type="sponsor"]')
+    expect(sponsors).to_have_count(3)
+    chips = sorted(sponsors.nth(i).locator(".tag").nth(1).inner_text() for i in range(3))
+    assert chips == ["Coder Radio", "LINUX Unplugged", "Self-Hosted"], chips
+

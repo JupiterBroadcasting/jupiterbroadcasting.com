@@ -67,7 +67,7 @@ function renderResult(result) {
 
     const tags = el('div', 'tags')
     tags.append(el('span', `tag search-type is-${type}`, type.toUpperCase()))
-    if (type === 'episode' && result.meta.show) {
+    if (['episode', 'sponsor'].includes(type) && result.meta.show) {
         tags.append(el('span', 'tag is-dark', result.meta.show))
     }
     if (type === 'pick' && result.meta.license) {
