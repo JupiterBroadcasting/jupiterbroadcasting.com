@@ -21,5 +21,19 @@ def test_former_hosts_section_at_bottom(page: Page):
     assert page.locator(".hosts-list ~ .former-hosts-list").count() == 1
 
 
+def test_former_hosts_title_spaced_from_cards(page: Page):
+    former = page.locator(".former-hosts-list")
+    title = former.locator("h2").bounding_box()
+    first_card = former.locator(".column").first.locator("> *").first.bounding_box()
+    assert first_card["y"] - (title["y"] + title["height"]) >= 8
+
+
+def test_rule_separates_active_and_former_hosts(page: Page):
+    rule = page.locator(".former-hosts-list hr").bounding_box()
+    last_active = page.locator(".hosts-list .column").last.bounding_box()
+    title = page.locator(".former-hosts-list h2").bounding_box()
+    assert last_active["y"] + last_active["height"] <= rule["y"] < title["y"]
+
+
 def test_hidden_people_not_listed(page: Page):
     expect(page.locator("main, #wrapper")).not_to_contain_text("Friends of Jupiter Broadcasting")
