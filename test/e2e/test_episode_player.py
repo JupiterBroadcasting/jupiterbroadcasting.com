@@ -8,9 +8,10 @@ def test_podverse_player_when_show_has_podverse_id(page: Page):
     expect(page.locator("#pv-embed-player")).to_have_count(1)
 
 
-def test_youtube_player_without_podverse_id(page: Page):
+def test_youtube_player_when_podcast_file_is_mp4(page: Page):
     page.goto("/show/linux-action-show/300/")
     expect(page.locator("#pv-embed-player")).to_have_count(0)
+    expect(page.locator("audio.episode-player")).to_have_count(0)
     expect(page.locator(".episode-player iframe")).to_have_attribute(
         "src", "https://www.youtube-nocookie.com/embed/ktySRTnT2ZE")
 
