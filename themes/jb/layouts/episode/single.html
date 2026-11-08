@@ -31,14 +31,12 @@
             </center>
           </div>
         </div>
-      {{/* LAS podcast_file is an http-only ScaleEngine MP4, which the https site can't play */}}
-      {{ $mp3 := cond (strings.HasSuffix (.Params.podcast_file | default "") ".mp4") "" .Params.podcast_file }}
       {{ if and .Params.podcast_file .CurrentSection.Params.podverse_podcast_id }}
       {{ partial "episode/podverseplayer.html" . }}
-      {{ else if or $mp3 .Params.podcast_ogg_file .Params.podcast_alt_file }}
+      {{ else if or .Params.podcast_file .Params.podcast_ogg_file .Params.podcast_alt_file }}
       <div>
         <audio controls class="episode-player my-4" style="width: 100%;">
-          {{ with $mp3 }}<source src='{{ . }}' type="audio/mpeg">{{ end }}
+          {{ with .Params.podcast_file }}<source src='{{ . }}' type="audio/mpeg">{{ end }}
           {{ with .Params.podcast_ogg_file }}<source src='{{ . }}' type="audio/ogg">{{ end }}
           {{ with .Params.podcast_alt_file }}<source src='{{ . }}' type="audio/mpeg">{{ end }}
         </audio>

@@ -1,5 +1,5 @@
 {{ $links := slice }}
-{{ with .Params.podcast_file }}{{ if not (strings.HasSuffix . ".mp4") }}{{ $links = $links | append (dict "url" . "label" "MP3") }}{{ end }}{{ end }}
+{{ with .Params.podcast_file }}{{ $links = $links | append (dict "url" . "label" "MP3") }}{{ end }}
 {{ with .Params.podcast_alt_file }}{{ $links = $links | append (dict "url" . "label" "MP3 mirror") }}{{ end }}
 {{ with .Params.podcast_ogg_file }}{{ $links = $links | append (dict "url" . "label" "OGG") }}{{ end }}
 {{ with .Params.video_file }}{{ $links = $links | append (dict "url" . "label" "Video") }}{{ end }}
