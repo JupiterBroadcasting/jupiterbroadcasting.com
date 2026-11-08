@@ -2,7 +2,8 @@
 <div class="container">
   <div class="section">
   <div class="columns">
-    <div class="column is-two-thirds" data-pagefind-body data-pagefind-meta="type:person" data-pagefind-filter="type:person">
+    {{/* People who are also hosts are indexed once, via their host page. */}}
+    <div class="column is-two-thirds" {{ if not (index site.Taxonomies.hosts .Data.Term) }}data-pagefind-body data-pagefind-meta="type:person" data-pagefind-filter="type:person"{{ end }}>
       {{ $current_page_type := .Data.Singular }}
       {{
         $person := index (

@@ -95,3 +95,15 @@ def test_show_and_person_title_matches_rank_first(page: Page, query: str, type_:
 def test_pick_ranks_above_show(page: Page):
     search(page, "tailscale")
     expect(page.locator(".search-result").first).to_have_attribute("data-type", "sponsor")
+
+
+def test_show_indexed_once(page: Page):
+    search(page, "linux unplugged")
+    expect(page.locator(".search-result").first).to_have_attribute("data-type", "show")
+    expect(page.locator('.search-result[data-type="show"] a[href*="/show/linux-unplugged"]')).to_have_count(1)
+
+
+def test_host_who_was_guest_indexed_once(page: Page):
+    search(page, "wes payne")
+    expect(page.locator(".search-result").first).to_have_attribute("data-type", "person")
+    expect(page.locator('.search-result[data-type="person"]')).to_have_count(1)
