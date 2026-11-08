@@ -1,5 +1,5 @@
 ---
-avatar: /images/people/jon-seager.jpg
+avatar: null
 avatar_small: null
 bio: I’m a technical leader and software engineer working for Canonical as VP Engineering.
 homepage: https://jnsgr.uk/
