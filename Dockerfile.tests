@@ -1,6 +1,8 @@
 # python version pinned in test/Pipfile as well (noble image ships python3.12)
 FROM mcr.microsoft.com/playwright/python:v1.64.1-noble
 
+# image runs as root by design; silence pip's root and upgrade notices
+ENV PIP_ROOT_USER_ACTION=ignore PIP_DISABLE_PIP_VERSION_CHECK=1
 RUN pip install pipenv==2026.10.5
 
 CMD [ "--base-url", "http://localhost:1313", "-m", "not periodic" ]
