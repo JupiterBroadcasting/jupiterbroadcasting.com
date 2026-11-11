@@ -1,5 +1,6 @@
 import json
 import re
+from functools import cache
 from datetime import datetime, timezone
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -64,6 +65,21 @@ def sample_episodes() -> list[Episode]:
     for episode in selected:
         episodes.setdefault(episode.url, episode)
     return list(episodes.values())
+
+
+@cache
+def dotted_tag_bases() -> frozenset[str]:
+    """
+    Tags that also exist with a trailing dot (e.g. "podcast" and "podcast."). Hugo 0.105 merges them into one
+    term page at the dotted path, so the plain tag's link 404s
+    """
+    return frozenset(
+        tag.rstrip(".")
+        for path in CONTENT_SHOW.glob("*/*.md")
+        if path.name not in META_FILES
+        for tag in load_episode(path).data.get("tags") or []
+        if tag.endswith(".")
+    )
 
 
 def person_type(username: str) -> str | None:

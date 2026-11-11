@@ -32,7 +32,7 @@ def _load_person(path: Path) -> Person:
         username=_field(text, "username") or path.stem,
         type=_field(text, "type") or "",
         title=_field(text, "title") or "",
-        archived=_field(text, "is_archived") == "true",
+        archived=_field(text, "is_hidden") == "true",
     )
 
 
