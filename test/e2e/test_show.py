@@ -3,7 +3,7 @@ import math
 import re
 from pathlib import Path
 
-from pytest import fixture, mark, param
+from pytest import fixture, mark
 from playwright.sync_api import Page, expect
 
 REPO_ROOT = Path(__file__).parents[2]
@@ -49,19 +49,6 @@ SHOWS = {
     if (show_dir / "_index.md").exists()
 }
 SHOWS_WITH_HOSTS = [slug for slug, fm in SHOWS.items() if "hosts" in fm]
-HOST_PARAMS = [
-    param(
-        slug,
-        id=slug,
-        marks=mark.xfail(
-            reason="content/people/michael.md has type: guest, so the Coder Radio host "
-            "list links him to /guests/michael/ instead of /hosts/michael/"
-        ),
-    )
-    if slug == "coder-radio"
-    else param(slug, id=slug)
-    for slug in SHOWS_WITH_HOSTS
-]
 
 
 def _episode_count(slug: str) -> int:
@@ -81,7 +68,7 @@ def show(page: Page, request) -> dict:
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("show", HOST_PARAMS, indirect=True)
+@mark.parametrize("show", SHOWS_WITH_HOSTS, ids=SHOWS_WITH_HOSTS, indirect=True)
 def test_show_hosts(page: Page, show: dict):
     """
     Ensure every host in the show's front matter has a people page and is
