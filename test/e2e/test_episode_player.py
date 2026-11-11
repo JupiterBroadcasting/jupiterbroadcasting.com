@@ -4,8 +4,14 @@ LAS_MP4 = "http://201402.jb-dl.cdn.scaleengine.net/las/2014/linuxactionshowep300
 
 
 def test_podverse_player_when_show_has_podverse_id(page: Page):
-    page.goto("/show/techsnap/300/")
+    page.goto("/show/coder-radio/343/")
     expect(page.locator("#pv-embed-player")).to_have_count(1)
+
+
+def test_native_audio_player_without_podverse_id(page: Page):
+    page.goto("/show/techsnap/191/")
+    expect(page.locator("#pv-embed-player")).to_have_count(0)
+    expect(page.locator("audio.episode-player source")).to_have_count(1)
 
 
 def test_youtube_player_without_audio(page: Page):

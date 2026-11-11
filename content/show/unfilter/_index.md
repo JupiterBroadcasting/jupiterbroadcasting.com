@@ -13,7 +13,8 @@ active = false
 
 header_image = "/images/shows/unfilter.png"
 
-podverse_podcast_id = "LuyvdD8JNX"
+# Podverse only plays media URLs it has approved; re-enable once this show's are added
+# podverse_podcast_id = "LuyvdD8JNX"
 
 [links.shownotes]
   url = "https://www.unfilter.show"
