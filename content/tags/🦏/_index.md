@@ -1,4 +1,0 @@
----
-title: "🦏"
-slug: "rhinoceros-emoji"
----

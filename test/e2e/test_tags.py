@@ -3,12 +3,13 @@ import re
 import unicodedata
 from collections import defaultdict
 from functools import cache
+from pathlib import Path
 from typing import Callable
 
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, Page
 
-from episode_data import CONTENT, CONTENT_SHOW, META_FILES, load_episode
+from episode_data import CONTENT_SHOW, META_FILES, load_episode
 
 HOST = r"(?:https?://[^/\"]+)?"
 
@@ -25,6 +26,7 @@ def _episodes_by_tag() -> dict[str, list[str]]:
 
 
 EPISODES_BY_TAG = _episodes_by_tag()
+EMOJI_SLUGS = Path(__file__).parents[2] / "data" / "emoji_slugs.toml"
 
 DOUBLE_HYPHEN = mark.xfail(
     reason="partials/episode/tags.html builds the URL by hand (spaces to hyphens, then urlize), "
@@ -90,19 +92,20 @@ def test_tag_categories_found():
     assert found == expected, f"no tag in content for: {expected - found}"
 
 
-def test_tags_without_text_have_a_term_file():
+def test_tags_without_text_have_a_slug():
     """
     An emoji-only tag has an empty URL slug, so Hugo writes its term page to /tags/ and overwrites the index
-    (Issue #516). content/tags/<tag>/_index.md gives it a slug of its own.
+    (Issue #516). data/emoji_slugs.toml gives it a slug of its own.
     """
+    slugs = set(re.findall(r'^"(.+)" = ".+"$', EMOJI_SLUGS.read_text(), re.M))
     missing = [
         tag
         for tag in EPISODES_BY_TAG
         if any(unicodedata.category(c) == "So" for c in tag)
         and not re.search(r"[^\W_]", tag)
-        and not (CONTENT / "tags" / tag / "_index.md").exists()
+        and tag not in slugs
     ]
-    assert not missing, f"add content/tags/<tag>/_index.md with a slug for: {missing}"
+    assert not missing, f"add a line to data/emoji_slugs.toml for: {missing}"
 
 
 @mark.parametrize("tag", INDEX_PARAMS)
