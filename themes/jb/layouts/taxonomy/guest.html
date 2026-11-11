@@ -53,7 +53,7 @@
   <h2 class="title is-3 px-5">Latest Episodes with {{ $name }}</h2>
   <div class="section">
   <div class="columns is-multiline">
-    {{ range .RegularPages }}
+    {{ range where .Pages "Kind" "page" }}
     <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
       {{ partial "episode/preview.html" . }}
     </div>

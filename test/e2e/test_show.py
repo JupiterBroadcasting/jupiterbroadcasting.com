@@ -34,7 +34,7 @@ except ImportError:
 
 
 PAGINATE = int(
-    re.search(r"^paginate\s*=\s*(\d+)", (REPO_ROOT / "config.toml").read_text(), re.M).group(1)
+    re.search(r"^(?:paginate|pagerSize)\s*=\s*(\d+)", (REPO_ROOT / "config.toml").read_text(), re.M).group(1)
 )
 
 
