@@ -48,6 +48,10 @@ def is_active(show_dir: Path) -> bool:
     return re.search(r"^\s*active\s*=\s*true\b", (show_dir / "_index.md").read_text(), re.M) is not None
 
 
+def has_podverse(show_dir: Path) -> bool:
+    return re.search(r"^podverse_podcast_id\s*=", (show_dir / "_index.md").read_text(), re.M) is not None
+
+
 def sample_episodes() -> list[Episode]:
     """
     Oldest + newest episodes of every show (ACTIVE_SAMPLE each for active shows, ARCHIVED_SAMPLE for archived),

@@ -13,7 +13,8 @@ active = false
 
 header_image = "/images/shows/user-error.png"
 
-podverse_podcast_id = "iYG_JyaOO8M"
+# Podverse only plays media URLs it has approved; re-enable once this show's are added
+# podverse_podcast_id = "iYG_JyaOO8M"
 
 [links.shownotes]
   url = "https://error.show"

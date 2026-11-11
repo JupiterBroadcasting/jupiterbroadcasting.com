@@ -13,7 +13,8 @@ active = false
 
 header_image = "/images/shows/techsnap.png"
 
-podverse_podcast_id = "McRFIKXY"
+# Podverse only plays media URLs it has approved; re-enable once this show's are added
+# podverse_podcast_id = "McRFIKXY"
 
 [links.shownotes]
   url = "https://techsnap.systems"

@@ -13,7 +13,8 @@ active = false
 
 header_image = "/images/shows/ask-noah-show.png"
 
-podverse_podcast_id = "LZEdeTvK5"
+# Podverse only plays media URLs it has approved; re-enable once this show's are added
+# podverse_podcast_id = "LZEdeTvK5"
 
 [links.shownotes]
   url = "https://podcast.asknoahshow.com"

@@ -13,7 +13,8 @@ active = false
 
 header_image = "/images/shows/choose-linux.png"
 
-podverse_podcast_id = "SHCmXnWfT"
+# Podverse only plays media URLs it has approved; re-enable once this show's are added
+# podverse_podcast_id = "SHCmXnWfT"
 
 [links.shownotes]
   url = "https://chooselinux.show"
