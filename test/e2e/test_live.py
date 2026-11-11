@@ -1,91 +1,92 @@
+import re
 from pathlib import Path
-from typing import Tuple, Callable
-from playwright.sync_api import Page, expect, Locator, FrameLocator, Route
 
-# def test_live_indicator(
-#     page: Page,
-#     set_live: Callable,
-#     screenshot_dir: Path,
-# ):
-#     # intercepting reponses for live event, and make live
-#     set_live(page)
+from pytest import fixture
+from playwright.sync_api import Page, Route, expect
 
-#     # go to the live page
-#     page.goto("/live")
+CONFIG: str = (Path(__file__).parents[2] / "config.toml").read_text()
+VIDEO_URL: str = re.search(r'^\s*video_url\s*=\s*"([^"]+)"', CONFIG, re.M).group(1)
+AUDIO_URL: str = re.search(r'^\s*audio_url\s*=\s*"([^"]+)"', CONFIG, re.M).group(1)
+STREAM_HOST: str = re.match(r"https?://[^/]+", VIDEO_URL).group(0)
 
-#     # validate live button is red
-#     expect(page.locator("#mainnavigation.is-live").locator("#livebutton"),).to_have_css(
-#         name="background-color",
-#         value="rgb(255, 0, 0)",  # red
-#     )
+# a live (no ENDLIST) media playlist; segment requests are left pending so hls.js never sees a segment error
+LIVE_PLAYLIST: str = "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:6\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:6.0,\nseg0.ts\n"
 
-#     # waiting for peertube iframe to load
-#     jbtube_video: FrameLocator = page.frame_locator("#liveStream")
-#     video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
-#     expect(video_player_peertube_icon).to_be_visible()
-
-#     page.evaluate("window.scrollTo(0, 0)")
-
-#     page.screenshot(path=f"{screenshot_dir}/live.png", full_page=True)
+# hls.js retries a failed manifest before declaring the stream offline
+OFFLINE_TIMEOUT_MS: int = 20_000
 
 
-# def test_mobile_live_indicator(
-#     mobile_device_tuple: Tuple[Page, str],
-#     set_live: Callable,
-#     screenshot_dir: Path,
-# ):
-#     # set mobile page to variable
-#     mobile_device = mobile_device_tuple[0]
-#     # set screenshot dir for mobile device
-#     screenshot_dir = Path(
-#         screenshot_dir / f"mobile/{mobile_device_tuple[1].replace(' ','-')}/"
-#     )
+class StreamStub:
+    """
+    Answers every request to the live stream host, so tests never touch the real stream
+    """
 
-#     # intercepting reponses for live event, and make live
-#     set_live(mobile_device)
+    def __init__(self) -> None:
+        self.live = False
+        self.playlist_requests = 0
 
-#     mobile_device.goto("/live")
+    def handle(self, route: Route) -> None:
+        if not route.request.url.startswith(VIDEO_URL):
+            return  # segments: leave pending
+        self.playlist_requests += 1
+        if self.live:
+            route.fulfill(status=200, content_type="application/vnd.apple.mpegurl", body=LIVE_PLAYLIST)
+        else:
+            route.abort()
 
-#     navbar: Locator = mobile_device.locator("#mainnavigation.is-live",).locator(
-#         ".navbar-burger",
-#     )
 
-#     # wait for navbar to be visible
-#     expect(navbar).to_be_visible()
+@fixture
+def stream(page: Page) -> StreamStub:
+    stub = StreamStub()
+    page.route(f"{STREAM_HOST}/**", stub.handle)
+    page.route(f"{AUDIO_URL.split('?')[0]}*", lambda route: route.abort())
+    return stub
 
-#     # check if live indicator is red
-#     assert (
-#         navbar.evaluate(
-#             # integrated docs for python evaluate function: https://github.com/microsoft/playwright/blob/a30aac56687598c373c51255308ef5833de0c9bb/docs/src/api/class-jshandle.md?plain=1#L77-L80
-#             # use evaluate function in python: https://playwright.dev/python/docs/api/class-page#page-evaluate
-#             # use getComputerStyle w/playwright: https://stackoverflow.com/a/71433333
-#             "element => window.getComputedStyle(element, ':before').backgroundColor"
-#         )
-#         == "rgb(255, 0, 0)"
-#     )
 
-#     # waiting for peertube iframe to load
-#     jbtube_video: FrameLocator = mobile_device.frame_locator("#liveStream")
-#     video_player_peertube_icon: Locator = jbtube_video.locator(".peertube-dock-avatar")
-#     expect(video_player_peertube_icon).to_be_visible()
+def test_live_offline_overlay(page: Page, stream: StreamStub):
+    """
+    When the stream can't be reached, the "Currently Off Air" overlay is shown
+    """
+    page.goto("/live/")
+    overlay = page.locator("#stream-offline")
+    expect(overlay).to_have_class(re.compile(r"\bis-visible\b"), timeout=OFFLINE_TIMEOUT_MS)
+    expect(overlay).to_contain_text("Currently Off Air")
+    expect(overlay.locator('a[href="/calendar/"]')).to_be_visible()
 
-#     mobile_device.evaluate("window.scrollTo(0, 0)")
 
-#     mobile_device.screenshot(path=f"{screenshot_dir}/live-mobile.png", full_page=True)
+def test_live_online_hides_overlay(page: Page, stream: StreamStub):
+    """
+    "Try Again" reconnects, and once the stream answers the off-air overlay is hidden
+    """
+    page.goto("/live/")
+    overlay = page.locator("#stream-offline")
+    expect(overlay).to_have_class(re.compile(r"\bis-visible\b"), timeout=OFFLINE_TIMEOUT_MS)
 
-#     # click navbar to expand
-#     navbar.click()
+    stream.live = True
+    requests_before = stream.playlist_requests
+    page.locator("#retry-button").click()
 
-#     # repeat test_live_indicator for mobile device
-#     expect(
-#         mobile_device.locator("#mainnavigation.is-live",).locator(
-#             "#livebutton",
-#         ),
-#     ).to_have_css(
-#         name="background-color",
-#         value="rgb(255, 0, 0)",  # red
-#     )
+    expect(overlay).not_to_have_class(re.compile(r"\bis-visible\b"), timeout=OFFLINE_TIMEOUT_MS)
+    assert stream.playlist_requests > requests_before
 
-#     mobile_device.locator("#mainnavigation").locator(
-#         ".navbar-menu.is-active"
-#     ).screenshot(path=f"{screenshot_dir}/live-mobile_navbar.png")
+
+def test_live_toggle_audio_video(page: Page, stream: StreamStub):
+    """
+    The toggle button swaps between the video and audio players and relabels itself. It's found by role and
+    accessible name, so this is also what a screen reader user hears and activates
+    """
+    page.goto("/live/")
+    audio_player = page.locator("#audio-player")
+    video_wrapper = page.locator("#video-player .video-wrapper")
+
+    expect(audio_player).to_be_hidden()
+    expect(video_wrapper).to_be_visible()
+
+    page.get_by_role("button", name="Switch to Audio", exact=True).click()
+    expect(audio_player).to_be_visible()
+    expect(video_wrapper).to_be_hidden()
+
+    page.get_by_role("button", name="Switch to Video", exact=True).click()
+    expect(audio_player).to_be_hidden()
+    expect(video_wrapper).to_be_visible()
+    expect(page.get_by_role("button", name="Switch to Audio", exact=True)).to_be_visible()
