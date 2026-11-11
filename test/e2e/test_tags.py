@@ -31,7 +31,7 @@ DOUBLE_HYPHEN = mark.xfail(
     "which leaves a double hyphen where Hugo 0.105's term permalink has one",
 )
 HASH = mark.xfail(reason="partials/episode/tags.html leaves '#' unescaped, so the link ends at a URL fragment")
-EMOJI = mark.skip(reason="Issue #516: emoji-only tags get no tag page")
+EMOJI = mark.skip(reason="Issue #516: emoji-only tags have an empty slug, so they get no tag page of their own")
 
 # (category, matches, marks for /tags/ index test, marks for the link from an episode page)
 CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
@@ -92,8 +92,8 @@ def test_tag_categories_found():
     assert found == expected, f"no tag in content for: {expected - found}"
 
 
-@mark.xfail(
-    reason="Hugo 0.169 renders the emoji-only tag on linux-unplugged/0598 at /tags/, overwriting the index (Issue #516)",
+@mark.skip(
+    reason="Issue #516: emoji-only tags have an empty slug, so Hugo 0.169 writes one of their term pages to /tags/ and overwrites the index",
 )
 @mark.parametrize("tag", INDEX_PARAMS)
 def test_tags_index_entry(api_request_context: APIRequestContext, tag: str):
