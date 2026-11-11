@@ -92,6 +92,9 @@ def test_tag_categories_found():
     assert found == expected, f"no tag in content for: {expected - found}"
 
 
+@mark.xfail(
+    reason="Hugo 0.169 renders the emoji-only tag on linux-unplugged/0598 at /tags/, overwriting the index (Issue #516)",
+)
 @mark.parametrize("tag", INDEX_PARAMS)
 def test_tags_index_entry(api_request_context: APIRequestContext, tag: str):
     """
