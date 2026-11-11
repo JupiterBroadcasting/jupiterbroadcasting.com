@@ -10,8 +10,10 @@ on:
       - main
       - develop
     paths:
-      - ./Dockerfile.tests
-      - ./tests/Pipfile.lock
+      - Dockerfile.tests
+      - test/Pipfile
+      - test/Pipfile.lock
+      - .github/workflows/build_container-tests.yml
 
   workflow_dispatch:
 
@@ -27,12 +29,12 @@ jobs:
       # used for tagging the container with the current date down to the seconds
       #   since we have so many changes down to the seconds was required. Example: 2022-09-08T05_42_23-04_00
       - id: date
-        run: echo "::set-output name=date_fmt::$(date -Isec | tr ':' '_' | tr '+' '-' )"
+        run: echo "date_fmt=$(date -Isec | tr ':' '_' | tr '+' '-' )" >> "$GITHUB_OUTPUT"
       # the username for the quay registry, since it can be derived from the quay secret's robot username
       - id: registry_user
-        run: echo "::set-output name=username::$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})"
+        run: echo "username=$(cut -d '+' -f 1 <<< ${{ secrets.REGISTRY_USER }})" >> "$GITHUB_OUTPUT"
       - id: current_branch
-        run: echo "::set-output name=current_branch::$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_REF_NAME:-}" )"
+        run: echo "current_branch=$( [ "${GITHUB_REF_NAME}" != "main" ] && echo "-${GITHUB_REF_NAME:-}" )" >> "$GITHUB_OUTPUT"
 
   tests:
     runs-on: ubuntu-latest
@@ -40,10 +42,10 @@ jobs:
     # location where the credentials are stored for quay
     environment: production_containers
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - name: Build Image
         id: build-image
-        uses: redhat-actions/buildah-build@v2
+        uses: redhat-actions/buildah-build@v3
         with:
           image: jb_web_container
           # tagging with 2 different tags, this will let us have a consistent target of prod-latest or tests_web-latest,
@@ -55,7 +57,7 @@ jobs:
 
       - name: Push To quay.io
         id: push-to-quay
-        uses: redhat-actions/push-to-registry@v2
+        uses: redhat-actions/push-to-registry@v3
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}

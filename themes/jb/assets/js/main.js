@@ -3,6 +3,9 @@ const swiper = new Swiper(".show-slider", {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    // a held drag (> longSwipesMs) must cross this fraction of a whole group (up to 3 slides), but with only a
+    //   few shows the slider can scroll far less than that, so the default 0.5 springs back at most widths
+    longSwipesRatio: 0.1,
     slidesPerGroup: 1,
     slidesPerView: 1.1,
     spaceBetween: 12,
