@@ -1,9 +1,9 @@
 import re
 
-from pytest import mark, param, xfail
+from pytest import mark, param
 from playwright.sync_api import APIRequestContext, Locator, Page, expect
 
-from episode_data import CONTENT_SHOW, Episode, dotted_tag_bases, is_active, person_type, sample_episodes, sponsor_exists
+from episode_data import CONTENT_SHOW, Episode, is_active, person_type, sample_episodes, sponsor_exists
 
 SAMPLE_EPISODES: list[Episode] = sample_episodes()
 
@@ -118,10 +118,8 @@ def test_episode_tags(page: Page, ep: Episode, api_request_context: APIRequestCo
     page.goto(ep.url, wait_until="domcontentloaded")
     tags = page.locator(".tags .tag a")
     assert sorted(t.strip() for t in tags.all_text_contents()) == sorted(ep.data.get("tags") or [])
-    links = [(tags.nth(i).inner_text().strip(), tags.nth(i).get_attribute("href")) for i in range(tags.count())]
-    broken = [(tag, href) for tag, href in links if not api_request_context.get(href).ok]
-    if broken and all("." in tag or tag in dotted_tag_bases() for tag, _ in broken):
-        xfail("dotted tags: partials/episode/tags.html urlizes away the dot, and Hugo 0.105 merges \"x\" and \"x.\" into one page")
+    broken = [href for href in (tags.nth(i).get_attribute("href") for i in range(tags.count()))
+              if not api_request_context.get(href).ok]
     assert broken == []
 
 

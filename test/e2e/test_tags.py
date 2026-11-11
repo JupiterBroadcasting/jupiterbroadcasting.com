@@ -31,7 +31,6 @@ DOUBLE_HYPHEN = mark.xfail(
     "which leaves a double hyphen where Hugo 0.105's term permalink has one",
 )
 HASH = mark.xfail(reason="partials/episode/tags.html leaves '#' unescaped, so the link ends at a URL fragment")
-DOT = mark.xfail(reason="partials/episode/tags.html urlizes away trailing dots, so the link misses the tag page Hugo 0.105 builds")
 EMOJI = mark.skip(reason="Issue #516: emoji-only tags get no tag page")
 
 # (category, matches, marks for /tags/ index test, marks for the link from an episode page)
@@ -42,7 +41,7 @@ CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
     ("space-hyphen", lambda t: " -" in t, [], [DOUBLE_HYPHEN]),
     ("plus", lambda t: "+" in t and "#" not in t, [], []),
     ("hash", lambda t: "#" in t, [], [HASH]),
-    ("dot", lambda t: "." in t, [DOT], [DOT]),
+    ("dot", lambda t: "." in t, [], []),
     ("curly-quote", lambda t: any(c in "‘’“”" for c in t), [], []),
     ("emoji", lambda t: any(unicodedata.category(c) == "So" for c in t), [EMOJI], [EMOJI]),
 ]
