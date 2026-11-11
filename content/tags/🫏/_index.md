@@ -1,0 +1,4 @@
+---
+title: "🫏"
+slug: "donkey-emoji"
+---

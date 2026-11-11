@@ -1,0 +1,4 @@
+---
+title: "🐔"
+slug: "chicken-emoji"
+---

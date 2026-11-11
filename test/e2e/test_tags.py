@@ -8,7 +8,7 @@ from typing import Callable
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, Page
 
-from episode_data import CONTENT_SHOW, META_FILES, load_episode
+from episode_data import CONTENT, CONTENT_SHOW, META_FILES, load_episode
 
 HOST = r"(?:https?://[^/\"]+)?"
 
@@ -31,8 +31,6 @@ DOUBLE_HYPHEN = mark.xfail(
     "which leaves a double hyphen where Hugo 0.105's term permalink has one",
 )
 HASH = mark.xfail(reason="partials/episode/tags.html leaves '#' unescaped, so the link ends at a URL fragment")
-EMOJI = mark.skip(reason="Issue #516: emoji-only tags have an empty slug, so they get no tag page of their own")
-
 # (category, matches, marks for /tags/ index test, marks for the link from an episode page)
 CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
     ("space", lambda t: re.fullmatch(r"[a-z0-9]+( [a-z0-9]+)+", t) is not None, [], []),
@@ -43,7 +41,7 @@ CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
     ("hash", lambda t: "#" in t, [], [HASH]),
     ("dot", lambda t: "." in t, [], []),
     ("curly-quote", lambda t: any(c in "‘’“”" for c in t), [], []),
-    ("emoji", lambda t: any(unicodedata.category(c) == "So" for c in t), [EMOJI], [EMOJI]),
+    ("emoji", lambda t: any(unicodedata.category(c) == "So" for c in t), [], []),
 ]
 
 
@@ -92,9 +90,21 @@ def test_tag_categories_found():
     assert found == expected, f"no tag in content for: {expected - found}"
 
 
-@mark.skip(
-    reason="Issue #516: emoji-only tags have an empty slug, so Hugo 0.169 writes one of their term pages to /tags/ and overwrites the index",
-)
+def test_tags_without_text_have_a_term_file():
+    """
+    An emoji-only tag has an empty URL slug, so Hugo writes its term page to /tags/ and overwrites the index
+    (Issue #516). content/tags/<tag>/_index.md gives it a slug of its own.
+    """
+    missing = [
+        tag
+        for tag in EPISODES_BY_TAG
+        if any(unicodedata.category(c) == "So" for c in tag)
+        and not re.search(r"[^\W_]", tag)
+        and not (CONTENT / "tags" / tag / "_index.md").exists()
+    ]
+    assert not missing, f"add content/tags/<tag>/_index.md with a slug for: {missing}"
+
+
 @mark.parametrize("tag", INDEX_PARAMS)
 def test_tags_index_entry(api_request_context: APIRequestContext, tag: str):
     """
