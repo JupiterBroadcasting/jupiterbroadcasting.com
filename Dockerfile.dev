@@ -1,7 +1,6 @@
 ARG HUGO_VERSION=0.169.0
 FROM ghcr.io/gohugoio/hugo:v${HUGO_VERSION}
 ARG PAGEFIND_VERSION=1.6.0
-# The image's apk points at edge, whose inotify-tools segfaults on this base's musl; use the v3.17 build.
-RUN apk add --no-cache --repositories-file /dev/null -X https://dl-cdn.alpinelinux.org/alpine/v3.17/main inotify-tools \
- && wget -qO- https://github.com/Pagefind/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind_extended-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz | tar -xz -C /usr/local/bin pagefind_extended
-ENTRYPOINT [ "sh", "-c", "D=${TMPDIR:-/tmp}/jb-public; hugo server -D --bind 0.0.0.0 --renderToDisk --disableFastRender --destination $D 2>&1 | tee $D.log & until grep -q 'Web Server is available' $D.log 2>/dev/null; do sleep 1; done; pagefind_extended --site $D; while inotifywait -r -q -e modify,create,delete content data themes; do sleep 3; until tail -n1 $D.log | grep -q 'Total in\\|Press Ctrl'; do sleep 1; done; pagefind_extended --site $D; done" ]
+RUN wget -qO- https://github.com/Pagefind/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind_extended-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz | tar -xz -C /var/hugo/bin pagefind_extended
+# Re-index after each completed build: Hugo prints "Press Ctrl+C" after the first and "Total in" after each rebuild.
+ENTRYPOINT [ "sh", "-c", "hugo server -D --bind 0.0.0.0 --disableFastRender --destination /tmp/public | while IFS= read -r line; do echo \"$line\"; case $line in *'Press Ctrl+C'*|*'Total in'*) pagefind_extended --site /tmp/public;; esac; done" ]
