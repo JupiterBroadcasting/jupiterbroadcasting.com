@@ -17,16 +17,16 @@
 
   {{ $sass := resources.Get "css/main.sass" }}
   <!-- Defining options that production & development should have -->
-  {{ $options := (dict "enableSourceMap" true ) }}
+  {{ $options := (dict "enableSourceMap" true "transpiler" "dartsass") }}
   {{ $style := "" }}
 
   {{ if hugo.IsProduction }}
     {{ $options = merge $options (dict "outputStyle" "compressed") }}
-    {{ $style = $sass | toCSS $options | minify | fingerprint }}
+    {{ $style = $sass | css.Sass $options | minify | fingerprint }}
 
   {{ else }}
     {{ $options = merge $options (dict "outputStyle" "expanded") }}
-    {{ $style = $sass | toCSS $options }}
+    {{ $style = $sass | css.Sass $options }}
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 

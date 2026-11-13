@@ -1,0 +1,15 @@
+@use "../variables" as v
+
+.grid.episode-grid
+  --bulma-grid-column-gap: 1.5rem
+  --bulma-grid-row-gap: 0
+  margin-bottom: -1.5rem
+
+// Bulma 1.0's has-12-cols-tablet is a container query on the grid's own width, which is narrower than the
+// viewport, so the sidebar stacked below the content between 769px and ~810px. Key the column count to the viewport.
+@media screen and (min-width: v.$tablet)
+  .fixed-grid.has-1-cols > .grid.episode-grid
+    --bulma-grid-column-count: 12
+
+.columns.episode-block
+  margin: 0 0 1.5rem
