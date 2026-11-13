@@ -1,11 +1,12 @@
 baseURL = 'https://www.jupiterbroadcasting.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Jupiter Broadcasting'
 # enableGitInfo = true
 
 theme = 'jb'
 
-paginate = 12
+[pagination]
+  pagerSize = 12
 
 [params.live]
   audio_url = "https://n12.radiojar.com/0uk94cu0xrquv?rj-ttl=5&rj-tok=AAABlr_HIYcADeN2rSDaevNY4g"

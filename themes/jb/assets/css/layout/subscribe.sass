@@ -1,9 +1,9 @@
-@import "../libs/bulma/sass/utilities/mixins"
+@use "../variables" as v
 
 .subscribe
     &-logos
         flex: 0 1 20%
-        +desktop
+        @media screen and (min-width: v.$desktop)
             flex: 0 1 15%
-        +mobile
+        @media screen and (max-width: v.$mobile-max)
             flex: 0 1 30%

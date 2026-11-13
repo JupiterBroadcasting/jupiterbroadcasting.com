@@ -1,9 +1,7 @@
-{{ $person := "" }}{{ if eq .Kind "term" }}{{ $person = site.GetPage (printf "/people/%s" .Title) }}{{ end }}# {{ with $person }}{{ .Title }}{{ else }}{{ .Title }}{{ end }}
+# {{ .Title }}
 
 URL: {{ .Permalink }}
 {{ with .Description }}> {{ . }}
-{{ end }}
-{{ if $person }}{{ partial "person-details.md" $person }}
 {{ end }}
 {{ range .Pages }}- [{{ .Title }}]({{ .Permalink }}index.md)
 {{ end }}

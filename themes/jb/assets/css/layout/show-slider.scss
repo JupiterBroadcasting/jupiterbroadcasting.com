@@ -1,3 +1,4 @@
+@use "../variables" as v;
 
 .show-img {
 //  height: 170px !important;
@@ -11,7 +12,7 @@
 .show-slider {
   margin-bottom: 2rem;
   display: block;
-  border-radius: 12px;
+  border-radius: v.$card-radius;
 }
 
 .swiper-button-prev,
