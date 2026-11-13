@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <section class="px-4 mb-5">
+        <div class="container">
+            <div class="column is-full content" data-pagefind-body data-pagefind-meta="type:sponsor" data-pagefind-filter="type:sponsor">
+                <h1 class="title" data-pagefind-meta="title">{{ .Title }}</h1>
+                <p>{{ .Params.description }}</p>
+                <p><a data-pagefind-meta="link[href]" href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Params.link }}</a></p>
+                {{- $episodes := where (where site.RegularPages "Type" "episode") "Params.sponsors" "intersect" (slice .Params.shortname) }}
+                {{- $shows := slice }}
+                {{- range $episodes }}{{ $shows = $shows | append .CurrentSection.Title }}{{ end }}
+                {{- with uniq $shows }}
+                <span class="is-sr-only" data-pagefind-meta="show">{{ delimit (sort .) ", " }}</span>
+                {{- end }}
+                {{- with .Params.episode }}
+                <span data-pagefind-meta="episode">{{ . }}</span>
+                {{- end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

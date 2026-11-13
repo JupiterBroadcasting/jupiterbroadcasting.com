@@ -37,7 +37,8 @@
   </div>
 {{ else }}
 
-    <div class="column is-full content">
+    <div class="column is-full content"{{ with .Params.search_type }} data-pagefind-body data-pagefind-meta="type:{{ . }}" data-pagefind-filter="type:{{ . }}"{{ end }}>
+      {{ with .Params.search_type }}<span class="is-sr-only" data-pagefind-meta="title">{{ trim $.Title " " }}</span>{{ end }}
       {{.Content}}
     </div>
 

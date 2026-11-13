@@ -4,7 +4,7 @@
   {{ else }}
     {{ .Scratch.Set "fullTitle" (print .Params.episode ": " .CurrentSection.Title) }}
   {{ end }}
-  <div class="container p-4">
+  <div class="container p-4" data-pagefind-body data-pagefind-meta="type:episode" data-pagefind-filter="type:episode">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ .Section | safeURL | absURL }}/">Shows</a></li>
@@ -16,9 +16,26 @@
       <div class="columns">
         <div class="column is-8">
           <h1 style="display: inline">{{ .Scratch.Get "fullTitle" }}</h1>
-          <h6 style="font-style: italic">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
+          <h6 style="font-style: italic" data-pagefind-meta="date:{{ .Date.Format "2006-01-02" }}" data-pagefind-sort="date:{{ .Date.Format "2006-01-02" }}">{{ .Date.Day }}  {{ .Date.Month }} {{ .Date.Year }}</h6>
           <br />
           <p>{{ .Description }} </p>
+          <span class="is-sr-only" data-pagefind-meta="show:{{ .CurrentSection.Title }}"></span>
+          {{- if not .CurrentSection.Params.active }}
+          <span class="is-sr-only" data-pagefind-meta="archived:true"></span>
+          {{- end }}
+          <span class="is-sr-only">
+            {{ range .Params.tags }}{{ . }}, {{ end }}
+            {{ range .Params.sponsors }}
+              {{ with index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}{{ .Title }}, {{ end }}
+            {{ end }}
+            {{ $ep := . }}
+            {{ range hugo.Data.picks }}
+              {{ $pick := . }}
+              {{ range .shows }}
+                {{ if and (eq .slug $ep.Params.show_slug) (eq (int .episode) (int $ep.Params.episode)) }}{{ $pick.title }}, {{ end }}
+              {{ end }}
+            {{ end }}
+          </span>
           </div>
           <div class="column is-4">
             <center>

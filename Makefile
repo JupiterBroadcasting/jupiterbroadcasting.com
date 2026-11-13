@@ -12,11 +12,11 @@ help:
 dev-build: ## Generate the development docker container
 	docker build --rm -f Dockerfile.dev -t jb_hugo:latest .
 
-dev: dev-build ## Run the development hugo container
+dev: dev-build ## Run the development hugo container (serves /search/; first start indexes the site, edits re-index automatically)
 	docker run --rm -it -v "$${PWD}":/app -w /app -p $${HOST_IP:-127.0.0.1}:1313:1313 jb_hugo:latest
 
 dev-metrics: dev-build ## Run the development hugo container with metrics
-	docker run --rm -it -v "$${PWD}":/app -w /app -p $${HOST_IP:-127.0.0.1}:1313:1313 jb_hugo:latest serve -D --bind 0.0.0.0 --templateMetrics --templateMetricsHints
+	docker run --rm -it --entrypoint hugo -v "$${PWD}":/app -w /app -p $${HOST_IP:-127.0.0.1}:1313:1313 jb_hugo:latest serve -D --bind 0.0.0.0 --templateMetrics --templateMetricsHints
 
 dev-tests: dev-build ## Run the development hugo container with every page pre-rendered (for `make tests` with parallel workers)
 	docker run --rm -it -v "$${PWD}":/app -w /app -p $${HOST_IP:-127.0.0.1}:1313:1313 jb_hugo:latest serve -D --bind 0.0.0.0 --disableFastRender

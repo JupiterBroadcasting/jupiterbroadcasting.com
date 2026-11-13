@@ -3,6 +3,7 @@ title = "Membership "
 description = "Support Jupiter Broadcasting"
 date = "2022-07-03T03:35:01-05:00"
 draft = false
+search_type = "support"
 type=""
 +++
 

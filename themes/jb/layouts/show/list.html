@@ -31,8 +31,14 @@
     </div>
   </section>
 {{ else }}
+{{ $episode_paginator := .Paginate (where .Pages "Type" "episode") }}
+{{/* Only page 1 is indexed so paginated copies of the show page do not show up as duplicate results. */}}
+<div {{ if eq $episode_paginator.PageNumber 1 }}data-pagefind-body data-pagefind-meta="type:show" data-pagefind-filter="type:show"{{ end }}>
 <div class="container p-4">
   <h1 class="title">{{.Title}}</h1>
+  {{- if not .Params.active }}
+  <span class="is-sr-only" data-pagefind-meta="archived:true"></span>
+  {{- end }}
 </div>
 <div class="container p-4">
   <div class="columns">
@@ -59,6 +65,7 @@
     {{end}}
   </div>
 </div>
+</div>
 
 <section class="section episode-list">
   <div class="container p-4">
@@ -69,7 +76,6 @@
         </div>
       {{ end }}
 
-        {{ $episode_paginator := .Paginate (where .Pages "Type" "episode") }}
         {{ range $episode_paginator.Pages }}
         <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
           {{ partial "episode/preview.html" . }}

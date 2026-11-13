@@ -1,0 +1,23 @@
+{{- $pick := index hugo.Data.picks .Params.slug_key -}}
+{{- if not $pick }}{{ errorf "pick stub %s has no data" .File.Path }}{{ end -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>{{ $pick.title }}</title>
+</head>
+<body>
+<main data-pagefind-body data-pagefind-meta="type:pick" data-pagefind-filter="type:pick">
+    <h1 data-pagefind-meta="title">{{ $pick.title }}</h1>
+    <p>{{ $pick.description }}</p>
+    <a data-pagefind-meta="link[href]" href="{{ $pick.url }}">{{ $pick.url }}</a>
+    {{- with $pick.license }}
+    <span data-pagefind-meta="license" data-pagefind-filter="license">{{ . }}</span>
+    {{- end }}
+    {{- range $pick.shows }}
+    <span data-pagefind-meta="episodes:{{ .slug }}/{{ .episode }}" data-pagefind-filter="show">{{ .show }} {{ .episode }}</span>
+    {{- end }}
+</main>
+</body>
+</html>
