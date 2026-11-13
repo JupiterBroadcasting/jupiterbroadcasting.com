@@ -2,6 +2,10 @@
 # Hugo's Render guide installs both tools at build time: https://gohugo.io/host-and-deploy/host-on-render/
 set -euo pipefail
 
+# Pinned here, not in render.yaml envVars: a dashboard-configured Render service ignores those, and its own
+# HUGO_VERSION may still name the old Hugo
+DART_SASS_VERSION=1.79.3
+HUGO_VERSION=0.169.0
 tools="${HOME}/.local"
 mkdir -p "${tools}/hugo"
 
