@@ -2,6 +2,6 @@
 title: "vtunnel"
 type: search-index
 slug_key: vtunnel
-_build:
+build:
   list: never
 ---

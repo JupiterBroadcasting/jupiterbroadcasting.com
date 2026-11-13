@@ -2,6 +2,6 @@
 title: "jellify-music"
 type: search-index
 slug_key: jellify-music
-_build:
+build:
   list: never
 ---

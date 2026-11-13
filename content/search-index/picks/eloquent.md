@@ -2,6 +2,6 @@
 title: "eloquent"
 type: search-index
 slug_key: eloquent
-_build:
+build:
   list: never
 ---

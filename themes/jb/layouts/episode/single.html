@@ -29,7 +29,7 @@
               {{ with index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}{{ .Title }}, {{ end }}
             {{ end }}
             {{ $ep := . }}
-            {{ range site.Data.picks }}
+            {{ range hugo.Data.picks }}
               {{ $pick := . }}
               {{ range .shows }}
                 {{ if and (eq .slug $ep.Params.show_slug) (eq (int .episode) (int $ep.Params.episode)) }}{{ $pick.title }}, {{ end }}

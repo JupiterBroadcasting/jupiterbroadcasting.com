@@ -2,6 +2,6 @@
 title: "cdemu"
 type: search-index
 slug_key: cdemu
-_build:
+build:
   list: never
 ---

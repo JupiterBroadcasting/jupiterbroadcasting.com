@@ -2,6 +2,6 @@
 title: "planify"
 type: search-index
 slug_key: planify
-_build:
+build:
   list: never
 ---

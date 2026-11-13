@@ -2,6 +2,6 @@
 title: "ulauncher"
 type: search-index
 slug_key: ulauncher
-_build:
+build:
   list: never
 ---

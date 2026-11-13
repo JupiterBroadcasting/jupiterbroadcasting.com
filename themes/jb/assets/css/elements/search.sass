@@ -1,12 +1,14 @@
+@use "../variables" as v
+
 .search-input
-    color: $jb-darkest
+    color: v.$jb-darkest
 
 .search-status
-    color: $jb-grey-light
+    color: v.$jb-grey-light
     margin-bottom: 1rem
 
 .search-result
-    background-color: $jb-darker
+    background-color: v.$jb-darker
     border-radius: 12px
     margin-bottom: 12px
     transition: all .3s ease-in-out
@@ -27,7 +29,7 @@
         line-height: 1.25
 
     a
-        color: $jb-blue-light
+        color: v.$jb-blue-light
 
     p
         margin: 0
@@ -39,39 +41,39 @@
             margin-bottom: 0
 
     mark
-        background-color: rgba($jb-gold, .3)
+        background-color: rgba(v.$jb-gold, .3)
         color: inherit
         border-radius: 2px
         padding: 0 1px
 
 .search-muted
-    color: $jb-grey-light
+    color: v.$jb-grey-light
     font-size: .8rem
 
 .search-excerpt
-    color: $jb-grey-light
+    color: v.$jb-grey-light
 
 .search-type
     &.is-pick
-        background-color: $jb-gold
-        color: $jb-dark
+        background-color: v.$jb-gold
+        color: v.$jb-dark
     &.is-sponsor
-        background-color: $jb-orange
+        background-color: v.$jb-orange
         color: #fff
     &.is-episode
-        background-color: $jb-blue
+        background-color: v.$jb-blue
         color: #fff
     &.is-show
-        background-color: $jb-grey-dark
+        background-color: v.$jb-grey-dark
         color: #fff
     &.is-person
-        background-color: $jb-pink
+        background-color: v.$jb-pink
         color: #fff
 
 .search-result .tag.is-black
-    background-color: $jb-darkest
+    background-color: v.$jb-darkest
     color: #fff
 
 .search-result .tag.is-dark
-    background-color: $jb-grey-dark
+    background-color: v.$jb-grey-dark
     color: #fff

@@ -2,6 +2,6 @@
 title: "linuxinexcel"
 type: search-index
 slug_key: linuxinexcel
-_build:
+build:
   list: never
 ---

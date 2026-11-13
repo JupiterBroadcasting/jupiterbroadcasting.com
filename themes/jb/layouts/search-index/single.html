@@ -1,4 +1,4 @@
-{{- $pick := index site.Data.picks .Params.slug_key -}}
+{{- $pick := index hugo.Data.picks .Params.slug_key -}}
 {{- if not $pick }}{{ errorf "pick stub %s has no data" .File.Path }}{{ end -}}
 <!DOCTYPE html>
 <html lang="en">

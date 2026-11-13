@@ -2,6 +2,6 @@
 title: "bpftune"
 type: search-index
 slug_key: bpftune
-_build:
+build:
   list: never
 ---

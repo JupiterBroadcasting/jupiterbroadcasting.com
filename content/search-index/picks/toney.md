@@ -2,6 +2,6 @@
 title: "toney"
 type: search-index
 slug_key: toney
-_build:
+build:
   list: never
 ---

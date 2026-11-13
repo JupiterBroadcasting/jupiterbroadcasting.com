@@ -2,6 +2,6 @@
 title: "isd"
 type: search-index
 slug_key: isd
-_build:
+build:
   list: never
 ---

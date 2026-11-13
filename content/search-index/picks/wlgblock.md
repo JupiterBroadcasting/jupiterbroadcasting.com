@@ -2,6 +2,6 @@
 title: "wlgblock"
 type: search-index
 slug_key: wlgblock
-_build:
+build:
   list: never
 ---

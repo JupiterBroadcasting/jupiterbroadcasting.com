@@ -2,6 +2,6 @@
 title: "switcheroo"
 type: search-index
 slug_key: switcheroo
-_build:
+build:
   list: never
 ---

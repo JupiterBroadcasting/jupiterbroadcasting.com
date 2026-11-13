@@ -2,6 +2,6 @@
 title: "kairpods"
 type: search-index
 slug_key: kairpods
-_build:
+build:
   list: never
 ---

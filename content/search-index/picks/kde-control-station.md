@@ -2,6 +2,6 @@
 title: "kde-control-station"
 type: search-index
 slug_key: kde-control-station
-_build:
+build:
   list: never
 ---

@@ -2,6 +2,6 @@
 title: "rustnet"
 type: search-index
 slug_key: rustnet
-_build:
+build:
   list: never
 ---

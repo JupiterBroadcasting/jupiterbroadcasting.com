@@ -2,6 +2,6 @@
 title: "duf"
 type: search-index
 slug_key: duf
-_build:
+build:
   list: never
 ---

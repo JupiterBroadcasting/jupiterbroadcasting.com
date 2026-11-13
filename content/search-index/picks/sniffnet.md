@@ -2,6 +2,6 @@
 title: "sniffnet"
 type: search-index
 slug_key: sniffnet
-_build:
+build:
   list: never
 ---

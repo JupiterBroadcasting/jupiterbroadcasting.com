@@ -2,6 +2,6 @@
 title: "poweriso"
 type: search-index
 slug_key: poweriso
-_build:
+build:
   list: never
 ---

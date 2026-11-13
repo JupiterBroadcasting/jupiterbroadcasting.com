@@ -2,6 +2,6 @@
 title: "gopher64"
 type: search-index
 slug_key: gopher64
-_build:
+build:
   list: never
 ---

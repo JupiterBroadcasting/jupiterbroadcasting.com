@@ -1,6 +1,6 @@
 ---
 title: "search-index"
-_build:
+build:
   render: never
   list: never
 ---
