@@ -19,6 +19,7 @@ def test_sample_episodes_shape():
     urls = [e.url for e in SAMPLE_EPISODES]
     assert len(set(urls)) == len(urls)
     assert "/show/linux-unplugged/434/" in urls
+    assert "/show/linux-unplugged/604/" in urls
     assert {e.show for e in SAMPLE_EPISODES} == {p.name for p in CONTENT_SHOW.iterdir() if p.is_dir()}
 
 
@@ -115,6 +116,8 @@ def test_episode_tags(page: Page, ep: Episode, api_request_context: APIRequestCo
     broken = [href for href in (tags.nth(i).get_attribute("href") for i in range(tags.count()))
               if not api_request_context.get(href).ok]
     assert broken == []
+    # an emoji-only tag without a slug links to the /tags/ index, which resolves (issue #516)
+    assert "/tags/" not in [tags.nth(i).get_attribute("href") for i in range(tags.count())]
 
 
 @mark.only_browser("chromium")
@@ -142,9 +145,3 @@ def test_episode_lup434_all_browsers(page: Page):
     expect(_people_column(page, "Guests").locator("a[href]")).to_have_count(3)
     expect(page.locator(".sponsor-list:visible .card")).not_to_have_count(0)
 
-
-@mark.skip("Issue #516")
-def test_episode_emoji_tags():
-    """
-    Emoji tags render a tag page. No sample episode has emoji tags today; add one when #516 is fixed.
-    """

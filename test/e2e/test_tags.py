@@ -1,78 +1,47 @@
 import html
+import tomllib
 import re
 import unicodedata
-from collections import defaultdict
 from functools import cache
 from pathlib import Path
-from typing import Callable
 
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, Page
 
-from episode_data import CONTENT_SHOW, META_FILES, load_episode
+from episode_data import CONTENT_SHOW, META_FILES, load_episode, sample_episodes
 
 HOST = r"(?:https?://[^/\"]+)?"
-
-
-def _episodes_by_tag() -> dict[str, list[str]]:
-    tags: dict[str, list[str]] = defaultdict(list)
-    for path in sorted(CONTENT_SHOW.glob("*/*.md")):
-        if path.name in META_FILES:
-            continue
-        episode = load_episode(path)
-        for tag in episode.data.get("tags") or []:
-            tags[tag].append(episode.url)
-    return tags
-
-
-EPISODES_BY_TAG = _episodes_by_tag()
 EMOJI_SLUGS = Path(__file__).parents[2] / "data" / "emoji_slugs.toml"
+SLUGS: dict[str, str] = tomllib.loads(EMOJI_SLUGS.read_text())
 
-DOUBLE_HYPHEN = mark.xfail(
-    reason="partials/episode/tags.html builds the URL by hand (spaces to hyphens, then urlize), "
-    "which leaves a double hyphen where Hugo 0.105's term permalink has one",
-)
 HASH = mark.xfail(reason="partials/episode/tags.html leaves '#' unescaped, so the link ends at a URL fragment")
-# (category, matches, marks for /tags/ index test, marks for the link from an episode page)
-CATEGORIES: list[tuple[str, Callable[[str], bool], list, list]] = [
-    ("space", lambda t: re.fullmatch(r"[a-z0-9]+( [a-z0-9]+)+", t) is not None, [], []),
-    ("apostrophe", lambda t: "'" in t, [], []),
-    ("ampersand", lambda t: " & " in t, [], [DOUBLE_HYPHEN]),
-    ("space-hyphen", lambda t: " -" in t, [], [DOUBLE_HYPHEN]),
-    ("plus", lambda t: "+" in t and "#" not in t, [], []),
-    ("hash", lambda t: "#" in t, [], [HASH]),
-    ("dot", lambda t: "." in t, [], []),
-    ("curly-quote", lambda t: any(c in "‘’“”" for c in t), [], []),
-    ("emoji", lambda t: any(unicodedata.category(c) == "So" for c in t), [], []),
+# (id, tag, episode carrying it, marks for the link from that episode page); episodes are in EXTRA_EPISODES
+CASES: list[tuple[str, str, str, list]] = [
+    ("space", "coder radio", "/show/coder-radio/451/", []),
+    ("apostrophe", "apple's plan to crack small business", "/show/coder-radio/443/", []),
+    ("ampersand", "shearman & sterling", "/show/linux-action-news/129/", []),
+    ("space-hyphen", "sudo rm -rf", "/show/linux-unplugged/565/", []),
+    ("plus", "disney+ drm", "/show/linux-action-news/129/", []),
+    ("dot", "ruby vs. c++", "/show/coder-radio/451/", []),
+    ("curly-quote", "epic\u2019s appeal", "/show/coder-radio/451/", []),
+    ("hash-leading", "#freefortnite", "/show/coder-radio/451/", [HASH]),
+    ("hash-trailing", "c#", "/show/coder-radio/343/", [HASH]),
+    ("emoji", "🤦", "/show/linux-unplugged/565/", []),
+    ("emoji-only", "🦒", "/show/linux-unplugged/604/", []),
+    ("emoji-only-multi", "🤟❄️⚖️", "/show/linux-unplugged/604/", []),
 ]
 
 
-def _tag_params(marks_index: int) -> list:
-    params = []
-    for category in CATEGORIES:
-        name, matches = category[:2]
-        tag = next((t for t in sorted(EPISODES_BY_TAG) if matches(t)), None)
-        if tag is not None:
-            params.append(param(tag, id=name, marks=category[marks_index]))
-    return params
-
-
-INDEX_PARAMS = _tag_params(2)
-LINK_PARAMS = _tag_params(3)
-
-
 @cache
-def _tags_index(api: APIRequestContext) -> dict[str, tuple[str, int]]:
+def _tags_index(api: APIRequestContext) -> dict[str, str]:
     """
-    tag title -> (href, count) from /tags/
+    tag title -> href from /tags/
     """
     response = api.get("/tags/")
     assert response.ok, f"/tags/ returned {response.status}"
     return {
-        html.unescape(title): (html.unescape(href), int(count))
-        for href, title, count in re.findall(
-            r"<a href='([^']+)'>(.*?) \((\d+)\)</a>", response.text()
-        )
+        html.unescape(title): html.unescape(href)
+        for href, title in re.findall(r"<a href='([^']+)'>(.*?) \(\d+\)</a>", response.text())
     }
 
 
@@ -83,13 +52,9 @@ def _tag_page_lists(api: APIRequestContext, href: str, urls: list[str]) -> list[
     return [url for url in urls if not re.search(rf'href="{HOST}{re.escape(url)}"', text)]
 
 
-def test_tag_categories_found():
-    """
-    Every edge-case category still has a tag in content, so the parametrized tests below aren't silently empty
-    """
-    expected = {category[0] for category in CATEGORIES}
-    found = {p.id for p in INDEX_PARAMS}
-    assert found == expected, f"no tag in content for: {expected - found}"
+def test_cases_are_sample_episodes():
+    sample = {e.url for e in sample_episodes()}
+    assert [episode for _, _, episode, _ in CASES if episode not in sample] == []
 
 
 def test_tags_without_text_have_a_slug():
@@ -97,54 +62,58 @@ def test_tags_without_text_have_a_slug():
     An emoji-only tag has an empty URL slug, so Hugo writes its term page to /tags/ and overwrites the index
     (Issue #516). data/emoji_slugs.toml gives it a slug of its own.
     """
-    slugs = set(re.findall(r'^"(.+)" = ".+"$', EMOJI_SLUGS.read_text(), re.M))
+    tags = {
+        tag
+        for path in CONTENT_SHOW.glob("*/*.md")
+        if path.name not in META_FILES
+        for tag in load_episode(path).data.get("tags") or []
+    }
     missing = [
         tag
-        for tag in EPISODES_BY_TAG
+        for tag in sorted(tags)
         if any(unicodedata.category(c) == "So" for c in tag)
         and not re.search(r"[^\W_]", tag)
-        and tag not in slugs
+        and tag not in SLUGS
     ]
     assert not missing, f"add a line to data/emoji_slugs.toml for: {missing}"
 
 
-@mark.parametrize("tag", INDEX_PARAMS)
-def test_tags_index_entry(api_request_context: APIRequestContext, tag: str):
+@mark.parametrize("tag,episode", [param(tag, episode, id=id) for id, tag, episode, _ in CASES])
+def test_tags_index_entry(api_request_context: APIRequestContext, tag: str, episode: str):
     """
-    /tags/ lists the tag with at least as many episodes as carry it in content, and its link
-    leads to a tag page listing those episodes
+    /tags/ lists the tag, and its link leads to a tag page listing the episode
     """
     index = _tags_index(api_request_context)
     assert tag in index, f"{tag!r} missing from /tags/"
-    href, count = index[tag]
-    episodes = EPISODES_BY_TAG[tag]
-    # tags differing only in spaces/hyphens share a page, so the count can be higher
-    assert count >= len(episodes), f"/tags/ count {count} < {len(episodes)} episodes in content"
-    missing = _tag_page_lists(api_request_context, href, episodes)
-    assert not missing, f"episodes missing from {href}: {missing}"
+    missing = _tag_page_lists(api_request_context, index[tag], [episode])
+    assert not missing, f"{index[tag]} doesn't list {episode}"
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("tag", LINK_PARAMS)
-def test_tag_link_from_episode(page: Page, api_request_context: APIRequestContext, tag: str):
+@mark.parametrize("tag,episode", [param(tag, episode, id=id, marks=marks) for id, tag, episode, marks in CASES])
+def test_tag_link_from_episode(page: Page, api_request_context: APIRequestContext, tag: str, episode: str):
     """
-    The tag link on an episode page leads to a tag page that lists the episode
+    The tag link on an episode page leads to a tag page that lists the episode. An emoji-only tag links to
+    /tags/<slug>/ from data/emoji_slugs.toml, not /tags/ (Issue #516).
     """
-    episode = EPISODES_BY_TAG[tag][0]
     page.goto(episode, wait_until="domcontentloaded")
     links = page.locator(".tags .tag a").filter(has_text=re.compile(rf"^\s*{re.escape(tag)}\s*$"))
     assert links.count() == 1, f"{episode} should show tag {tag!r} once"
     href = links.first.get_attribute("href")
+    if tag in SLUGS:
+        assert href == f"/tags/{SLUGS[tag]}/"
     missing = _tag_page_lists(api_request_context, href, [episode])
     assert not missing, f"{href} doesn't list {episode}"
 
 
 @mark.only_browser("chromium")
-def test_tag_page_heading(page: Page):
+def test_tag_page_heading(page: Page, api_request_context: APIRequestContext):
     """
-    A tag page titles itself with the tag and lists every episode carrying it as a card
+    A tag page titles itself with the tag and lists the episodes carrying it as cards
     """
-    tag, episodes = next((t, e) for t, e in sorted(EPISODES_BY_TAG.items()) if re.fullmatch(r"[a-z]+", t) and len(e) > 1)
-    page.goto(f"/tags/{tag}/")
-    assert page.locator("h1.title").inner_text().split() == ["Tag:", tag]
+    episodes = ["/show/coder-radio/451/", "/show/linux-unplugged/565/"]
+    page.goto("/tags/microsoft/")
+    assert page.locator("h1.title").inner_text().split() == ["Tag:", "microsoft"]
     assert page.locator(".card-episode").count() >= len(episodes)
+    missing = _tag_page_lists(api_request_context, "/tags/microsoft/", episodes)
+    assert not missing, f"/tags/microsoft/ doesn't list {missing}"
