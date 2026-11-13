@@ -3,9 +3,10 @@ const CANDIDATES = 60
 const RECENCY_WEIGHT = 0.8
 const RECENCY_HALF_LIFE_YEARS = 2
 const ARCHIVED_FACTOR = 0.8
-const TYPES = ['pick', 'sponsor', 'episode', 'show', 'person']
+const TYPES = ['pick', 'sponsor', 'episode', 'show', 'person', 'support', 'community']
 // Pagefind 1.5+ boosts title matches, so episodes titled "... Unplugged" outrank the show page itself.
-const PROMOTED_TYPES = ['pick', 'sponsor', 'show', 'person']
+// support leads so /membership/ and /boost/ beat JB's own membership and Boost ads, which are indexed as sponsors.
+const PROMOTED_TYPES = ['support', 'pick', 'sponsor', 'show', 'person', 'community']
 const decoder = document.createElement('textarea')
 
 let pagefind = null
@@ -60,7 +61,7 @@ function renderExcerpt(excerpt) {
 
 function renderResult(result) {
     const type = TYPES.includes(result.meta.type) ? result.meta.type : 'episode'
-    const external = Boolean(result.meta.link) && ['pick', 'sponsor'].includes(type)
+    const external = Boolean(result.meta.link) && ['pick', 'sponsor', 'community'].includes(type)
     const href = external ? result.meta.link : result.url
 
     const card = el('div', 'search-result card')

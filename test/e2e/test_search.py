@@ -37,6 +37,28 @@ def test_person_found(page: Page):
     expect(page.locator('.search-result[data-type="person"]').first).to_be_visible()
 
 
+@pytest.mark.parametrize("query,href", [("membership", "/membership/"), ("boost", "/boost/")])
+def test_support_page_ranks_first(page: Page, query: str, href: str):
+    search(page, query)
+    first = page.locator(".search-result").first
+    expect(first).to_have_attribute("data-type", "support")
+    expect(first.locator("a").first).to_have_attribute("href", href)
+
+
+@pytest.mark.parametrize("query,href", [
+    ("matrix", "/community/matrix/"),
+    ("telegram", "https://t.me/jupitertelegram"),
+])
+def test_community_ranks_first(page: Page, query: str, href: str):
+    """
+    Community results link to the platform when the page has a direct_link, otherwise to the page itself
+    """
+    search(page, query)
+    first = page.locator(".search-result").first
+    expect(first).to_have_attribute("data-type", "community")
+    expect(first.locator("a").first).to_have_attribute("href", href)
+
+
 def test_empty_query_shows_nothing(page: Page):
     search(page, "add water")
     expect(page.locator(".search-result").first).to_be_visible()

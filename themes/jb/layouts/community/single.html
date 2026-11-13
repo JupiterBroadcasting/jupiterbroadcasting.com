@@ -1,9 +1,12 @@
 {{ define "main" }}
 
+<div data-pagefind-body data-pagefind-meta="type:community" data-pagefind-filter="type:community">
 <div class="section">
   <h1 class="title">
-    {{ if ne .Params.comms_type "network" }}{{ .Params.comms_type }} | {{ end }}{{.Title}} 
+    {{ if ne .Params.comms_type "network" }}{{ .Params.comms_type }} | {{ end }}<span data-pagefind-meta="title">{{.Title}}</span>
   </h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  {{ with .Params.direct_link }}<span class="is-sr-only" data-pagefind-meta="link">{{ . }}</span>{{ end }}
 </div>
 
 <div class="section">
@@ -12,6 +15,7 @@
       {{.Content}}
     </div>
 
+</div>
 </div>
 
 {{ end }}
