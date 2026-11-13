@@ -5,11 +5,6 @@ services:
     name: jb-deploy-prv
     env: static
     buildCommand: bash build.sh
-    envVars:
-      - key: DART_SASS_VERSION
-        value: 1.79.3
-      - key: HUGO_VERSION
-        value: 0.169.0
     staticPublishPath: public/
     pullRequestPreviewsEnabled: true
     # should have auto deploy enabled by default
