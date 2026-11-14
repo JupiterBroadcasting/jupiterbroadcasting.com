@@ -141,8 +141,15 @@ def test_archive_lists_archived_shows(page: Page):
     """
     /archive/ lists exactly the shows that are no longer active
     """
-    page.goto("/archive/")
-    assert _show_card_links(page) == {f"/show/{slug}/" for slug, fm in SHOWS.items() if not fm.get("active")}
+    archived = {f"/show/{slug}/" for slug, fm in SHOWS.items() if not fm.get("active")}
+    found: set[str] = set()
+    for n in range(1, math.ceil(len(archived) / PAGINATE) + 1):
+        response = page.goto("/archive/" if n == 1 else f"/archive/page/{n}/")
+        assert response.status == 200
+        links = _show_card_links(page)
+        assert len(links) <= PAGINATE
+        found |= links
+    assert found == archived
 
 
 def _subscribe_front_matter(slug: str) -> tuple[str, dict[str, str]]:

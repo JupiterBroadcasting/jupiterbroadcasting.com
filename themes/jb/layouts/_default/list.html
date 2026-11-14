@@ -18,6 +18,38 @@
     {{ $former = where $people ".Params.active" "==" false }}
     {{ $people = where $people ".Params.active" "!=" false }}
   {{ end }}
+  {{ if $former }}
+  {{/* Hosts: former hosts are paginated; page links jump to their heading */}}
+  {{ $paginator := .Paginate $former.ByTitle }}
+  <section class="{{ $lastUrlElement }}-list mb-5">
+    <div class="container px-4">
+       <div class="columns is-multiline">
+        {{ range $people }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "people/small.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="former-hosts-list mb-5" id="former-hosts">
+    <div class="container px-4">
+      <hr class="my-5">
+      <h2 class="title is-3 mt-3 mb-5 px-0">Former Hosts</h2>
+      <div class="columns is-multiline">
+        {{ range $paginator.Pages }}
+          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
+            {{ partial "people/small.html" . }}
+          </div>
+        {{ end }}
+        <div class="container px-4">
+          {{ .Store.Set "pagination_anchor" "#former-hosts" }}
+          {{ partial "helper/pagination" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ else }}
   {{ $paginator := .Paginate $people }}
   <section class="{{ $lastUrlElement }}-list mb-5">
     <div class="container px-4">
@@ -30,20 +62,6 @@
         <div class="container px-4">
           {{ partial "helper/pagination" . }}
         </div>
-      </div>
-    </div>
-  </section>
-  {{ if and $former (not $paginator.HasNext) }}
-  <section class="former-hosts-list mb-5">
-    <div class="container px-4">
-      <hr class="my-5">
-      <h2 class="title is-3 mt-3 mb-5 px-0">Former Hosts</h2>
-      <div class="columns is-multiline">
-        {{ range $former.ByTitle }}
-          <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile"  style="display: flex;">
-            {{ partial "people/small.html" . }}
-          </div>
-        {{ end }}
       </div>
     </div>
   </section>
