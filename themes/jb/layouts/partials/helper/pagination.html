@@ -4,6 +4,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 -->
 {{ $paginator := .Paginator }}
+{{ $anchor := .Store.Get "pagination_anchor" | default "" }}
 
 <!-- Number of links either side of the current page. -->
 {{ $adjacent_links := 4 }}
@@ -24,7 +25,7 @@
   <!-- Next page. -->
   {{ if $paginator.HasNext }}
 
-    <a href="{{ $paginator.Next.URL }}" class="pagination-next">
+    <a href="{{ $paginator.Next.URL }}{{ $anchor }}" class="pagination-next">
       Next page
     </a>
 
@@ -33,7 +34,7 @@
   <!-- Last page. -->
   {{ if ne $paginator.PageNumber $paginator.TotalPages }}
 
-    <a class="pagination-next" href="{{ $paginator.Last.URL }}">
+    <a class="pagination-next" href="{{ $paginator.Last.URL }}{{ $anchor }}">
       Last Page
     </a>
 
@@ -42,14 +43,14 @@
 
   <!-- First page. -->
   {{ if ne $paginator.PageNumber 1 }}
-    <a class="pagination-previous" href="{{ $paginator.First.URL }}">
+    <a class="pagination-previous" href="{{ $paginator.First.URL }}{{ $anchor }}">
       First Page
     </a>
   {{ end }}
 
   <!-- Previous page. -->
   {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL }}" class="pagination-previous">
+    <a href="{{ $paginator.Prev.URL }}{{ $anchor }}" class="pagination-previous">
       Previous page
     </a>
   {{ end }}
@@ -109,7 +110,7 @@
       <!-- Output page numbers. -->
       {{ if eq ($.Scratch.Get "page_number_flag") true }}
         <li>
-          <a href="{{ .URL }}" class="pagination-link{{ if eq . $paginator }} is-current{{ end }}">
+          <a href="{{ .URL }}{{ $anchor }}" class="pagination-link{{ if eq . $paginator }} is-current{{ end }}">
             {{ .PageNumber }}
           </a>
         </li>
