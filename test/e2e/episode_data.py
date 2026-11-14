@@ -8,7 +8,7 @@ CONTENT: Path = Path(__file__).parents[2] / "content"
 CONTENT_SHOW: Path = CONTENT / "show"
 META_FILES: set[str] = {"_index.md", "subscribe.md"}
 ACTIVE_SAMPLE: int = 5  # the scraper can rewrite an active show's last 5 episodes
-ARCHIVED_SAMPLE: int = 2
+ARCHIVED_SAMPLE: int = 1
 
 EXTRA_EPISODES: list[tuple[str, str]] = [
     ("linux-unplugged", "434"),  # 3 hosts and 3 guests
@@ -50,6 +50,10 @@ def _published(date: str) -> datetime:
 
 def is_active(show_dir: Path) -> bool:
     return re.search(r"^\s*active\s*=\s*true\b", (show_dir / "_index.md").read_text(), re.M) is not None
+
+
+def has_podverse(show_dir: Path) -> bool:
+    return re.search(r"^podverse_podcast_id\s*=", (show_dir / "_index.md").read_text(), re.M) is not None
 
 
 def sample_episodes() -> list[Episode]:

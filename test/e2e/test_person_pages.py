@@ -32,7 +32,7 @@ def _load_person(path: Path) -> Person:
         username=_field(text, "username") or path.stem,
         type=_field(text, "type") or "",
         title=_field(text, "title") or "",
-        archived=_field(text, "is_archived") == "true",
+        archived=_field(text, "is_hidden") == "true",
     )
 
 
@@ -47,18 +47,6 @@ SHOW_HOSTS: dict[str, list[str]] = {
 }
 
 
-# people with no episodes (so no taxonomy page) re-added by the people scraper; their removal is tracked
-#   on another branch. Named, not inferred, so any new episode-less person still fails.
-NO_EPISODE_PEOPLE = {"jnsgruk", "joe", "joeres", "michaetunnell"}
-
-
-def _link_param(person: Person):
-    marks = []
-    if person.username in NO_EPISODE_PEOPLE:
-        marks = [mark.xfail(strict=True, reason="no episodes, so no taxonomy page (people scraper, fixed on another branch)")]
-    return param(person, id=person.username, marks=marks)
-
-
 # who /people/ links to (themes/jb/layouts/people/list.html)
 LISTED_PEOPLE = [
     p for p in PEOPLE.values() if p.type == "guest" or (p.type == "host" and not p.archived)
@@ -70,7 +58,7 @@ SAMPLE_GUESTS = sorted(
 )[:GUEST_SAMPLE]
 
 
-@mark.parametrize("person", [_link_param(p) for p in LISTED_PEOPLE])
+@mark.parametrize("person", [param(p, id=p.username) for p in LISTED_PEOPLE])
 def test_people_list_link_target(api_request_context: APIRequestContext, person: Person):
     """
     Every host/guest card on /people/ links to a page that exists

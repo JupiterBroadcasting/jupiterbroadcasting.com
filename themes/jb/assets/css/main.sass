@@ -20,6 +20,8 @@ body
   // below 376px two cards don't fit next to each other, so Bulma's one-per-row is-12-mobile applies
   @media screen and (min-width: 376px) and (max-width: 599px)
     display: grid
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    .card-people .content
+      overflow-wrap: anywhere
     .column:first-child:last-child
       grid-column: 1 / span 2
