@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/heather.jpg
 avatar_small: /images/people/heather_small.jpg
 bio: ''
@@ -7,7 +8,7 @@ instagram: null
 linkedin: null
 title: Heather
 twitter: https://x.com/scibyte_heather
-type: guest
+type: host
 username: heather
 youtube: null
 ---
