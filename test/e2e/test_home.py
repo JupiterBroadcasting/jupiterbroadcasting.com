@@ -65,7 +65,7 @@ def test_show_slider_slides(page: Page):
 
 
 def _slider_at_start(page: Page):
-    expect(page.locator(".show-slider .swiper-button-prev")).to_have_class(re.compile(r"\bswiper-button-disabled\b"))
+    page.wait_for_function("() => document.querySelector('.show-slider').swiper.isBeginning")
     expect(page.locator(".show-slider .swiper-button-next")).not_to_have_class(re.compile(r"\bswiper-button-disabled\b"))
 
 
@@ -101,3 +101,28 @@ def test_show_slider_drag(page: Page):
     page.mouse.move(box["x"] + box["width"] * 0.2, y, steps=5)
     page.mouse.up()
     expect(page.locator(".show-slider .swiper-button-prev")).not_to_have_class(re.compile(r"\bswiper-button-disabled\b"))
+
+
+def test_show_slider_wraps_around(page: Page):
+    """
+    Next at the last slide goes back to the first, and neither button is disabled at either end
+    """
+    slider = page.locator(".show-slider")
+    next_button = slider.locator(".swiper-button-next")
+    not_disabled = re.compile(r"^(?!.*\bswiper-button-disabled\b).*$")
+    settled = "() => !document.querySelector('.show-slider').swiper.animating"
+    slides = slider.locator(".swiper-slide").count()
+
+    for _ in range(slides):
+        if slider.evaluate("el => el.swiper.isEnd"):
+            break
+        next_button.click()
+        page.wait_for_function(settled)
+    assert slider.evaluate("el => el.swiper.isEnd")
+    expect(next_button).to_have_class(not_disabled)
+    expect(slider.locator(".swiper-button-prev")).to_have_class(not_disabled)
+
+    next_button.click()
+    page.wait_for_function("() => document.querySelector('.show-slider').swiper.isBeginning")
+    expect(next_button).to_have_class(not_disabled)
+    expect(slider.locator(".swiper-button-prev")).to_have_class(not_disabled)
