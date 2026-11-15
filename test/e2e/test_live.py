@@ -102,3 +102,11 @@ def test_live_fallback_content(page: Page, stream: StreamStub):
     expect(fallback.get_by_role("link", name="All Shows feed")).to_be_visible()
     expect(fallback.locator(".card-episode").first).to_be_visible()
     assert fallback.locator(".card-episode").count() == 3
+
+
+def test_live_fallback_clears_footer(page: Page, stream: StreamStub):
+    page.goto("/live/")
+    card = page.locator("#live-fallback .card-episode").last.bounding_box()
+    footer = page.locator("footer").bounding_box()
+    gap = footer["y"] - (card["y"] + card["height"])
+    assert gap >= 32, f"episode cards end {gap}px above the footer"
