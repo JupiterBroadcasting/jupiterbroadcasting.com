@@ -90,3 +90,15 @@ def test_live_toggle_audio_video(page: Page, stream: StreamStub):
     expect(audio_player).to_be_hidden()
     expect(video_wrapper).to_be_visible()
     expect(page.get_by_role("button", name="Switch to Audio", exact=True)).to_be_visible()
+
+
+def test_live_fallback_content(page: Page, stream: StreamStub):
+    """
+    The page is never blank while the stream is down: it points at the schedule, the feed and the latest episodes
+    """
+    page.goto("/live/")
+    fallback = page.locator("#live-fallback")
+    expect(fallback.locator('a[href="/calendar/"]')).to_be_visible()
+    expect(fallback.get_by_role("link", name="All Shows feed")).to_be_visible()
+    expect(fallback.locator(".card-episode").first).to_be_visible()
+    assert fallback.locator(".card-episode").count() == 3
