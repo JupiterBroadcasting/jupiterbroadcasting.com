@@ -135,6 +135,17 @@ def test_episode_links(page: Page, ep: Episode, api_request_context: APIRequestC
     assert [h for h in internal if not api_request_context.get(h).ok] == []
 
 
+def test_episode_office_hours_12_live_indicator_link(page: Page):
+    """
+    A link title containing double quotes must not break the markdown link (issue #426)
+    """
+    page.goto("/show/office-hours/12/", wait_until="domcontentloaded")
+    link = page.locator('a[href="https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/378"]')
+    expect(link).to_have_count(1)
+    expect(link).to_contain_text("indicator - on page load")
+    expect(page.locator("body")).not_to_contain_text("](")
+
+
 def test_episode_lup434_all_browsers(page: Page):
     """
     One known-rich episode (3 hosts, 3 guests, sponsors) on every browser
