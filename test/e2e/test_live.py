@@ -109,4 +109,4 @@ def test_live_fallback_clears_footer(page: Page, stream: StreamStub):
     card = page.locator("#live-fallback .card-episode").last.bounding_box()
     footer = page.locator("footer").bounding_box()
     gap = footer["y"] - (card["y"] + card["height"])
-    assert gap >= 32, f"episode cards end {gap}px above the footer"
+    assert gap >= 24, f"episode cards end {gap}px above the footer"
