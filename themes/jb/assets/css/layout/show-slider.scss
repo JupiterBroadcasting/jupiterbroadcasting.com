@@ -25,39 +25,11 @@
 .swiper-button-prev {
   color: white;
   left: 0;
-
-  &:before {
-    content: '';
-    background: linear-gradient(90deg, #333333dd, transparent);
-    inset: 0;
-    position: absolute;
-    z-index: -1;
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
-
-  }
-  &:hover:before {
-    opacity: 1;
-  }
 }
 
 .swiper-button-next {
   color: white;
   right: 0;
-
-  &:before {
-    content: '';
-    background: linear-gradient(-90deg, #333333dd, transparent);
-    inset: 0;
-    position: absolute;
-    z-index: -1;
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
-
-  }
-  &:hover:before {
-    opacity: 1;
-  }
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
