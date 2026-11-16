@@ -1,12 +1,12 @@
 ---
 avatar: /images/people/paulus-schoutsen.jpg
-avatar_small: null
-bio: null
+avatar_small: /images/people/paulus_small.jpg
+bio: Founder of Home Assistant.
 homepage: https://www.nabucasa.com/
 instagram: null
 linkedin: null
 title: Paulus Schoutsen
-twitter: null
+twitter: https://x.com/balloob
 type: guest
 username: paulus-schoutsen
 youtube: null
