@@ -146,6 +146,22 @@ def test_episode_office_hours_12_live_indicator_link(page: Page):
     expect(page.locator("body")).not_to_contain_text("](")
 
 
+def test_link_titles_have_no_unescaped_quotes():
+    """
+    A bare " inside a link title ends the title early and the whole link renders as literal text (issue #426)
+    """
+    link = re.compile(r'\]\([^\s)]+ "(.*?)"\)(?= — |\s*$)')
+    bare_quote = re.compile(r'(?<!\\)"')
+    bad = [
+        f"{path.relative_to(CONTENT_SHOW)}:{n}"
+        for path in CONTENT_SHOW.rglob("*.md")
+        for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
+        for m in link.finditer(line)
+        if bare_quote.search(m[1])
+    ]
+    assert bad == []
+
+
 def test_episode_lup434_all_browsers(page: Page):
     """
     One known-rich episode (3 hosts, 3 guests, sponsors) on every browser
