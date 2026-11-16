@@ -101,3 +101,37 @@ def test_show_slider_drag(page: Page):
     page.mouse.move(box["x"] + box["width"] * 0.2, y, steps=5)
     page.mouse.up()
     expect(page.locator(".show-slider .swiper-button-prev")).not_to_have_class(re.compile(r"\bswiper-button-disabled\b"))
+
+
+def _slide_to_end(page: Page):
+    page.locator(".show-slider").evaluate("el => el.swiper.slideTo(el.swiper.slides.length - 1, 0)")
+    page.wait_for_function("() => document.querySelector('.show-slider').swiper.isEnd")
+
+
+def test_show_slider_next_wraps_to_start(page: Page):
+    """
+    Next at the last slide goes back to the first, and stays enabled at the end. Prev still stops at the start
+    """
+    _slide_to_end(page)
+    next_button = page.locator(".show-slider .swiper-button-next")
+    expect(next_button).not_to_have_class(re.compile(r"\bswiper-button-disabled\b"))
+
+    next_button.click()
+    _slider_at_start(page)
+
+
+def test_show_slider_drag_stops_at_end(page: Page):
+    """
+    Only the Next button wraps: a drag past the last slide stays on the last slide
+    """
+    _slide_to_end(page)
+    box = page.locator(".show-slider").bounding_box()
+    y = box["y"] + box["height"] / 2
+    page.mouse.move(box["x"] + box["width"] * 0.8, y)
+    page.mouse.down()
+    page.mouse.move(box["x"] + box["width"] * 0.5, y, steps=5)
+    page.wait_for_timeout(600)
+    page.mouse.move(box["x"] + box["width"] * 0.2, y, steps=5)
+    page.mouse.up()
+    page.wait_for_timeout(800)
+    assert page.locator(".show-slider").evaluate("el => el.swiper.isEnd")
