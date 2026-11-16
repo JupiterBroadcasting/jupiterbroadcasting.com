@@ -162,6 +162,19 @@ def test_link_titles_have_no_unescaped_quotes():
     assert bad == []
 
 
+def test_no_show_notes_use_the_dead_fountain_referral():
+    """
+    ChrisLAS's Fountain referral link returns 404; show notes link to his profile instead (issue #448)
+    """
+    dead = "fountain.fm/refer/chrislas-e72160c3c5"
+    bad = [
+        str(path.relative_to(CONTENT_SHOW))
+        for path in CONTENT_SHOW.rglob("*.md")
+        if dead in path.read_text(encoding="utf-8")
+    ]
+    assert bad == []
+
+
 def test_episode_lup434_all_browsers(page: Page):
     """
     One known-rich episode (3 hosts, 3 guests, sponsors) on every browser
