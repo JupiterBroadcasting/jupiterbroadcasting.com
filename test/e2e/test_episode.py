@@ -135,6 +135,18 @@ def test_episode_links(page: Page, ep: Episode, api_request_context: APIRequestC
     assert [h for h in internal if not api_request_context.get(h).ok] == []
 
 
+@mark.only_browser("chromium")
+def test_episode_lup480_geocache_coordinates(page: Page):
+    """
+    LUP 480 show notes carry the Washington Pass geocache coordinates (#477)
+    """
+    page.goto("/show/linux-unplugged/480/", wait_until="domcontentloaded")
+    link = page.locator("a", has_text="Washington Pass Geocache Location")
+    expect(link).to_have_attribute("href", re.compile(r"48\.52576,-120\.64774"))
+    expect(page.get_by_text("48.52576° N, 120.64774° W")).to_be_visible()
+    expect(page.get_by_text("Washington Pass Overlook - North Cascades Highway")).to_be_visible()
+
+
 def test_episode_office_hours_12_live_indicator_link(page: Page):
     """
     A link title containing double quotes must not break the markdown link (issue #426)
