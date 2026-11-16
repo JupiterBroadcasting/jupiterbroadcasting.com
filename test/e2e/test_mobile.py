@@ -60,6 +60,30 @@ def test_mobile_burger_menu(mobile_device_tuple: Tuple[Page, str]):
     expect(contact).to_be_hidden()
 
 
+def test_mobile_menu_scrolls_within_short_viewport(mobile_device_tuple: Tuple[Page, str]):
+    """
+    #356: a menu taller than the visible viewport must scroll itself, so the last item is reachable.
+    Emulation can't shrink the dynamic viewport the way iOS Safari's address bar does; a short window stands in for it
+    """
+    page, _ = mobile_device_tuple
+    page.set_viewport_size({"width": page.viewport_size["width"], "height": 500})
+    page.goto("/")
+    page.locator(".navbar-burger").click()
+    menu = page.locator("#navbarBasicExample")
+    last = menu.locator("a.navbar-item:visible").last
+
+    expect(menu).to_have_css("overscroll-behavior-y", "contain")
+    menu_box = menu.bounding_box()
+    assert menu_box["y"] + menu_box["height"] <= 500 + 1, menu_box
+    assert menu.evaluate("e => e.scrollHeight > e.clientHeight")
+
+    last.scroll_into_view_if_needed()
+    box = last.bounding_box()
+    menu_box = menu.bounding_box()
+    assert box["y"] + box["height"] <= menu_box["y"] + menu_box["height"] + 1, (box, menu_box)
+    assert box["y"] >= menu_box["y"] - 1, (box, menu_box)
+
+
 @mark.parametrize("path", OVERFLOW_PAGES)
 def test_mobile_no_horizontal_overflow(mobile_device_tuple: Tuple[Page, str], path: str):
     page, _ = mobile_device_tuple

@@ -42,6 +42,22 @@ def test_sitemap(api_request_context: APIRequestContext):
     assert not missing, f"{len(missing)} pages missing from sitemap.xml, e.g. {missing[:5]}"
 
 
+def test_sitemap_has_no_categories(api_request_context: APIRequestContext):
+    """
+    The unused categories taxonomy is not generated, so sitemap.xml has no /categories/ URLs
+    """
+    locs = [_path(loc.text) for loc in _xml(api_request_context, "/sitemap.xml").iterfind("s:url/s:loc", SITEMAP_NS)]
+    assert not [loc for loc in locs if loc.startswith("/categories")]
+
+
+@mark.parametrize("path", ["/categories/", "/categories/linux-unplugged/", "/categories/coder-radio/"])
+def test_categories_pages_not_generated(api_request_context: APIRequestContext, path: str):
+    """
+    /categories/ and per-show category pages 404
+    """
+    assert api_request_context.get(path).status == 404
+
+
 def test_rss_feed(api_request_context: APIRequestContext):
     """
     /index.xml is RSS 2.0 with complete items, newest first, starting at the newest episode

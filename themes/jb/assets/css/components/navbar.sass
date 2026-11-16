@@ -90,6 +90,13 @@ a.navbar-item,
 .navbar-link
   gap: 0
 
+// Bulma sizes this with 100vh, which on iOS Safari / Android Firefox is the viewport with the
+// address bar collapsed, so the last items sit under the bar; 100dvh tracks the visible area
+@media screen and (max-width: v.$navbar-breakpoint - 1px)
+  .navbar.is-fixed-top .navbar-menu
+    max-height: calc(100dvh - var(--bulma-navbar-height))
+    overscroll-behavior: contain
+
 .navbar-burger
   color: v.$white
   height: 3.25rem
