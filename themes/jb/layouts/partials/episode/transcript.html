@@ -25,7 +25,8 @@
     {{- $joined := delimit $cue " " -}}
     {{- $who := "" -}}
     {{- with findRESubmatch `<v ([^>]+)>` $joined 1 }}{{ $who = index (index . 0) 1 }}{{ end -}}
-    {{- $plain := $joined | replaceRE "<[^>]+>" "" | htmlUnescape | strings.TrimSpace -}}
+    {{- if eq $who "Unknown" }}{{ $who = "" }}{{ end -}}
+    {{- $plain := $joined | replaceRE "<[^>]+>" "" | htmlUnescape | strings.TrimSpace | strings.TrimPrefix "Unknown: " -}}
     {{- if and $text (or (ne $who $speaker) (and (gt (len $text) 500) (findRE `[.!?]$` $text))) -}}
       {{- $paras = $paras | append (dict "time" $start "speaker" $speaker "text" $text) -}}
       {{- $text = "" -}}
