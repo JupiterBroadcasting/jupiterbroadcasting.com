@@ -76,10 +76,12 @@ def test_transcript_is_downweighted_and_labels_are_not_indexed(page: Page):
     page.goto(LUP)
     expect(page.locator(".transcript-body")).to_have_attribute("data-pagefind-weight", "0.2")
     labels = page.locator(".transcript-time, .transcript-speaker")
+    expect(labels).not_to_have_count(0)
     for i in range(labels.count()):
         expect(labels.nth(i)).to_have_attribute("data-pagefind-ignore", "")
 
 
 def test_cue_text_has_no_markup_children(page: Page):
     page.goto(LUP)
+    expect(page.locator(".transcript-text")).not_to_have_count(0)
     expect(page.locator(".transcript-text > *")).to_have_count(0)
