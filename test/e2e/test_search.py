@@ -1,3 +1,4 @@
+import re
 from pathlib import Path
 import pytest
 from playwright.sync_api import Page, expect
@@ -163,3 +164,22 @@ def test_live_show_episodes_rank_above_archived(page: Page, query: str):
     first = page.locator('.search-result[data-type="episode"]').first
     expect(first).to_be_visible()
     assert first.locator(".tag").nth(1).inner_text() not in ARCHIVED_SHOWS
+
+
+TRANSCRIPT_ONLY_PHRASE = "built to connect slack"
+
+
+def test_transcript_text_is_searchable(page: Page):
+    search(page, TRANSCRIPT_ONLY_PHRASE)
+    episode = page.locator('.search-result[data-type="episode"] a[href*="/show/linux-unplugged/691"]')
+    expect(episode.first).to_be_visible()
+
+
+def test_speaker_names_in_transcripts_do_not_hijack_person_search(page: Page):
+    search(page, "Wes Payne")
+    expect(page.locator(".search-result").first).to_have_attribute("data-type", "person")
+
+
+def test_title_match_outranks_transcript_only_match(page: Page):
+    search(page, "All Your Kernels Belong to Rust")
+    expect(page.locator(".search-result").first.locator("a").first).to_have_attribute("href", re.compile(r"/show/linux-unplugged/603"))
