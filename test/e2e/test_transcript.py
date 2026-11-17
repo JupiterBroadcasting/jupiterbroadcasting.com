@@ -40,17 +40,25 @@ def test_transcript_text_is_plain_text(page: Page):
     expect(page.locator(".transcript-body")).not_to_contain_text("<v ")
 
 
-def test_transcript_source_link_points_at_vtt(page: Page):
+def test_transcript_links_every_available_file_type(page: Page):
     page.goto(LUP)
-    link = page.locator("a.transcript-source")
-    expect(link).to_have_attribute("href", "https://feeds.jupiterbroadcasting.com/transcripts/lup/b13bcff0-5d43-46c9-af4e-b21fd70d4c88.vtt")
-    expect(link).to_have_text("Transcript file (VTT)")
-    assert link.evaluate("a => a.previousElementSibling.tagName") == "SUMMARY"
+    links = page.locator("details.transcript > .transcript-files a.transcript-source")
+    expect(links).to_have_text(["VTT", "SRT"])
+    base = "https://feeds.jupiterbroadcasting.com/transcripts/lup/b13bcff0-5d43-46c9-af4e-b21fd70d4c88"
+    expect(links.nth(0)).to_have_attribute("href", base + ".vtt")
+    expect(links.nth(1)).to_have_attribute("href", base + ".srt")
+    assert page.locator(".transcript-files").evaluate("e => e.previousElementSibling.tagName") == "SUMMARY"
+
+
+def test_transcript_links_include_html_files(page: Page):
+    page.goto("/show/the-launch/90/")
+    links = page.locator("details.transcript .transcript-files a")
+    expect(links).to_have_text(["SRT", "VTT", "HTML"])
 
 
 def test_srt_transcript_has_no_speaker(page: Page):
     page.goto("/show/this-week-in-bitcoin/129/")
-    expect(page.locator("a.transcript-source")).to_have_text("Transcript file (SRT)")
+    expect(page.locator("a.transcript-source")).to_have_text(["SRT"])
     page.locator("details.transcript summary").click()
     first = page.locator(".transcript-para").first
     expect(first.locator(".transcript-time")).to_have_text("0:00")
