@@ -55,7 +55,7 @@
 <details class="transcript">
   <summary data-pagefind-ignore>Transcript</summary>
   <a class="transcript-source" href="{{ $url }}" data-pagefind-ignore>Transcript file ({{ $kind }})</a>
-  <div class="transcript-body" data-pagefind-weight="0.2">
+  <div class="transcript-body" data-pagefind-weight="0.2" tabindex="0" role="region" aria-label="Transcript text">
     {{- range $paras }}
     <p class="transcript-para"><span class="transcript-time" data-pagefind-ignore>{{ .time }}</span> {{ with .speaker }}<span class="transcript-speaker" data-pagefind-ignore>{{ . }}</span> {{ end }}<span class="transcript-text">{{ .text }}</span></p>
     {{- end }}

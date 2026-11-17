@@ -85,6 +85,16 @@ def test_transcript_is_downweighted_and_labels_are_not_indexed(page: Page):
         expect(labels.nth(i)).to_have_attribute("data-pagefind-ignore", "")
 
 
+def test_transcript_body_is_a_bounded_scroll_box(page: Page):
+    page.goto(LUP)
+    page.locator("details.transcript > summary").click()
+    body = page.locator(".transcript-body")
+    expect(body).to_have_css("overflow-y", "auto")
+    box = body.evaluate("e => [e.clientHeight, e.scrollHeight, innerHeight]")
+    assert box[0] <= box[2] * 0.61
+    assert box[1] > box[0]
+
+
 def test_cue_text_has_no_markup_children(page: Page):
     page.goto(LUP)
     expect(page.locator(".transcript-text")).not_to_have_count(0)
