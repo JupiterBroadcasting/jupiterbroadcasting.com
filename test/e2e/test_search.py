@@ -187,3 +187,11 @@ def test_notes_match_outranks_transcript_only_match(page: Page):
     expect(results.first).to_be_visible()
     hrefs = [results.nth(i).get_attribute("href") for i in range(results.count())]
     assert hrefs.index("/show/linux-unplugged/357/") < hrefs.index("/show/linux-unplugged/646/")
+
+
+@pytest.mark.parametrize("chrome_phrase", ['"transcript file srt"', '"transcript welcome in to"'], ids=["source-link", "summary"])
+def test_transcript_ui_text_is_not_indexed(page: Page, chrome_phrase: str):
+    search(page, '"welcome in to this week in bitcoin"')
+    expect(page.locator('.search-result a[href*="/show/this-week-in-bitcoin/129/"]').first).to_be_visible()
+    page.fill("#search-input", chrome_phrase)
+    expect(page.locator("#search-status")).to_have_text("No results")
