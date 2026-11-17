@@ -1,4 +1,3 @@
-import re
 from pathlib import Path
 import pytest
 from playwright.sync_api import Page, expect
@@ -175,11 +174,16 @@ def test_transcript_text_is_searchable(page: Page):
     expect(episode.first).to_be_visible()
 
 
-def test_speaker_names_in_transcripts_do_not_hijack_person_search(page: Page):
-    search(page, "Wes Payne")
-    expect(page.locator(".search-result").first).to_have_attribute("data-type", "person")
+def test_speaker_labels_are_not_indexed(page: Page):
+    search(page, "bikeable")
+    expect(page.locator('.search-result a[href*="/show/linux-unplugged/664/"]').first).to_be_visible()
+    page.fill("#search-input", "audience bikeable")
+    expect(page.locator("#search-status")).to_have_text("No results")
 
 
-def test_title_match_outranks_transcript_only_match(page: Page):
-    search(page, "All Your Kernels Belong to Rust")
-    expect(page.locator(".search-result").first.locator("a").first).to_have_attribute("href", re.compile(r"/show/linux-unplugged/603"))
+def test_notes_match_outranks_transcript_only_match(page: Page):
+    search(page, "contender")
+    results = page.locator('.search-result[data-type="episode"] a:first-of-type')
+    expect(results.first).to_be_visible()
+    hrefs = [results.nth(i).get_attribute("href") for i in range(results.count())]
+    assert hrefs.index("/show/linux-unplugged/357/") < hrefs.index("/show/linux-unplugged/646/")
