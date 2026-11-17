@@ -1,3 +1,5 @@
+import re
+
 from playwright.sync_api import Page, expect
 
 LUP = "/show/linux-unplugged/691/"
@@ -25,8 +27,11 @@ def test_transcript_groups_cues_into_paragraphs(page: Page):
     page.goto(LUP)
     page.locator("details.transcript summary").click()
     chris = page.locator(".transcript-para").first.locator(".transcript-text")
-    expect(chris).to_contain_text("My name is Chris")
-    assert page.locator(".transcript-para").count() < 800
+    expect(chris).to_contain_text("weekly Linux talk show. My name is Chris.")
+    paras = page.locator(".transcript-para")
+    expect(paras.nth(3).locator(".transcript-text")).to_have_text(re.compile(r"^Hello, gentlemen\..*time-appropriate greetings to that virtual lug\.$"))
+    expect(paras.nth(4).locator(".transcript-text")).to_have_text("Hello, my room.")
+    expect(paras.nth(4).locator(".transcript-speaker")).to_have_text("Chris")
 
 
 def test_transcript_text_is_plain_text(page: Page):

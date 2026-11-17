@@ -6,12 +6,9 @@
 {{- $url := (index . 0).url -}}
 {{- with try (resources.GetRemote $url) -}}
 {{- $res := . -}}
-{{- with .Err -}}
-{{- warnf "transcript: could not fetch %s for %s: %s" $url $page.File.Path . -}}
-<p class="transcript-unavailable">Transcript could not be loaded. <a class="transcript-source" href="{{ $url }}">Open the source file</a></p>
-{{- else with $res.Value -}}
-{{- $raw := .Content | replaceRE "\r\n?" "\n" | strings.TrimPrefix "\uFEFF" -}}
 {{- $paras := slice -}}
+{{- with $res.Value -}}
+{{- $raw := .Content | replaceRE "\r\n?" "\n" | strings.TrimPrefix "\uFEFF" -}}
 {{- $speaker := "" -}}
 {{- $start := "" -}}
 {{- $text := "" -}}
@@ -51,6 +48,8 @@
   {{- end -}}
 {{- end -}}
 {{- if $text }}{{ $paras = $paras | append (dict "time" $start "speaker" $speaker "text" $text) }}{{ end -}}
+{{- end -}}
+{{- if $paras -}}
 <details class="transcript">
   <summary>Transcript</summary>
   <div class="transcript-body" data-pagefind-weight="0.2">
@@ -60,6 +59,11 @@
   </div>
   <a class="transcript-source" href="{{ $url }}">Source file</a>
 </details>
+{{- else -}}
+{{- $why := "empty or missing response" -}}
+{{- with $res.Err }}{{ $why = . }}{{ end -}}
+{{- warnf "transcript: could not fetch %s for %s: %s" $url $page.File.Path $why -}}
+<p class="transcript-unavailable">Transcript could not be loaded. <a class="transcript-source" href="{{ $url }}">Open the source file</a></p>
 {{- end -}}
 {{- end -}}
 {{- end -}}
