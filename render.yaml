@@ -1,7 +1,7 @@
 services:
 # A static site
   - type: web
-    plan: hobby
+    plan: free
     name: jb-deploy-prv
     env: static
     buildCommand: bash build.sh
