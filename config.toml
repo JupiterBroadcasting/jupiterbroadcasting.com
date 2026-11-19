@@ -299,3 +299,10 @@ theme = 'jb'
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
   term = ["html", "markdown"]
+
+[[cascade]]
+  [cascade.build]
+    list = "never"
+  [cascade.target]
+    path = "/search-index"
+    kind = "section"

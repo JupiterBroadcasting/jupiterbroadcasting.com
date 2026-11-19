@@ -21,6 +21,13 @@ def test_pick_ranks_first(page: Page):
     expect(first.locator("a").first).to_have_attribute("href", "https://flathub.org/apps/dev.qwery.AddWater")
 
 
+def test_pick_is_found_without_a_hand_written_page(page: Page):
+    search(page, "abcde")
+    first = page.locator(".search-result").first
+    expect(first).to_have_attribute("data-type", "pick")
+    expect(first.locator("a").first).to_have_attribute("href", "https://abcde.einval.com/wiki/")
+
+
 def test_sponsor_ranks_first(page: Page):
     search(page, "1password")
     expect(page.locator(".search-result").first).to_have_attribute("data-type", "sponsor")
