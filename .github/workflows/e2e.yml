@@ -36,7 +36,8 @@ jobs:
             UNSAFE+='|test/(conftest\.py|e2e/test_episode\.py|e2e/episode_data\.py|Pipfile|Pipfile\.lock|docker-compose\.yml)$'
             UNSAFE+='|\.github/workflows/e2e\.yml$)'
             changed=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
-            affecting=$(printf '%s\n' "$changed" | grep -v '^$' | grep -E "$UNSAFE" ; printf '%s\n' "$changed" | grep -v '^$' | grep -vE "$SAFE")
+            # || true: the last grep exits 1 when every changed file matches SAFE (e.g. only content/show/), and bash -e would abort the step
+            affecting=$(printf '%s\n' "$changed" | grep -v '^$' | grep -E "$UNSAFE" ; printf '%s\n' "$changed" | grep -v '^$' | grep -vE "$SAFE" || true)
             if [ -z "$affecting" ]; then
               markers="not periodic and not episodes"
             else

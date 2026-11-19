@@ -135,6 +135,58 @@ def test_episode_links(page: Page, ep: Episode, api_request_context: APIRequestC
     assert [h for h in internal if not api_request_context.get(h).ok] == []
 
 
+@mark.only_browser("chromium")
+def test_episode_lup480_geocache_coordinates(page: Page):
+    """
+    LUP 480 show notes carry the Washington Pass geocache coordinates (#477)
+    """
+    page.goto("/show/linux-unplugged/480/", wait_until="domcontentloaded")
+    link = page.locator("a", has_text="Washington Pass Geocache Location")
+    expect(link).to_have_attribute("href", re.compile(r"48\.52576,-120\.64774"))
+    expect(page.get_by_text("48.52576° N, 120.64774° W")).to_be_visible()
+    expect(page.get_by_text("Washington Pass Overlook - North Cascades Highway")).to_be_visible()
+
+
+def test_episode_office_hours_12_live_indicator_link(page: Page):
+    """
+    A link title containing double quotes must not break the markdown link (issue #426)
+    """
+    page.goto("/show/office-hours/12/", wait_until="domcontentloaded")
+    link = page.locator('a[href="https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/pull/378"]')
+    expect(link).to_have_count(1)
+    expect(link).to_contain_text("indicator - on page load")
+    expect(page.locator("body")).not_to_contain_text("](")
+
+
+def test_link_titles_have_no_unescaped_quotes():
+    """
+    A bare " inside a link title ends the title early and the whole link renders as literal text (issue #426)
+    """
+    link = re.compile(r'\]\([^\s)]+ "(.*?)"\)(?= — |\s*$)')
+    bare_quote = re.compile(r'(?<!\\)"')
+    bad = [
+        f"{path.relative_to(CONTENT_SHOW)}:{n}"
+        for path in CONTENT_SHOW.rglob("*.md")
+        for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
+        for m in link.finditer(line)
+        if bare_quote.search(m[1])
+    ]
+    assert bad == []
+
+
+def test_no_show_notes_use_the_dead_fountain_referral():
+    """
+    ChrisLAS's Fountain referral link returns 404; show notes link to his profile instead (issue #448)
+    """
+    dead = "fountain.fm/refer/chrislas-e72160c3c5"
+    bad = [
+        str(path.relative_to(CONTENT_SHOW))
+        for path in CONTENT_SHOW.rglob("*.md")
+        if dead in path.read_text(encoding="utf-8")
+    ]
+    assert bad == []
+
+
 def test_episode_lup434_all_browsers(page: Page):
     """
     One known-rich episode (3 hosts, 3 guests, sponsors) on every browser

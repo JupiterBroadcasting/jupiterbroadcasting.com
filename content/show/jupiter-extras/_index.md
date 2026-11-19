@@ -4,7 +4,6 @@ title = "Jupiter EXTRAS"
 description = "New ideas, great interviews, events, and other content you will love. We bring you the Extras."
 date = "2022-05-10T04:10:01-05:00"
 draft = false
-categories = ["Jupiter EXTRAS"]
 show = "jupiter-extras"
 hosts = ["chris","brent","wes", "allanjude", "alex", "friends"]
 

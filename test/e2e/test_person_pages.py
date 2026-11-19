@@ -47,16 +47,19 @@ SHOW_HOSTS: dict[str, list[str]] = {
 }
 
 
-# people with no episodes (so no taxonomy page) re-added by the people scraper; their removal is tracked
-#   on another branch. Named, not inferred, so any new episode-less person still fails.
-NO_EPISODE_PEOPLE = {"jnsgruk", "joe", "joeres", "michaetunnell"}
-
-
-def _link_param(person: Person):
-    marks = []
-    if person.username in NO_EPISODE_PEOPLE:
-        marks = [mark.xfail(strict=True, reason="no episodes, so no taxonomy page (people scraper, fixed on another branch)")]
-    return param(person, id=person.username, marks=marks)
+# slugs the people scraper re-creates from Fireside: Joe asked to be removed (#586), the rest are
+#   duplicates (#1047)
+REMOVED_PEOPLE = {"joe", "joeres"}
+DUPLICATE_SLUGS = {
+    "carlgeorge": "carl-george",
+    "dusty": "dustymabe",
+    "jeremysoller": "jeremy-soller",
+    "jnsgruk": "jon-seager",
+    "kentoverstreet": "kent-overstreet",
+    "matthewmiller": "matthew-miller",
+    "michaetunnell": "michaeltunnell",
+    "paulus": "paulus-schoutsen",
+}
 
 
 # who /people/ links to (themes/jb/layouts/people/list.html)
@@ -70,7 +73,7 @@ SAMPLE_GUESTS = sorted(
 )[:GUEST_SAMPLE]
 
 
-@mark.parametrize("person", [_link_param(p) for p in LISTED_PEOPLE])
+@mark.parametrize("person", [param(p, id=p.username) for p in LISTED_PEOPLE])
 def test_people_list_link_target(api_request_context: APIRequestContext, person: Person):
     """
     Every host/guest card on /people/ links to a page that exists
@@ -115,3 +118,39 @@ def test_guest_page(page: Page, username: str):
     shows = {e.show for e in EPISODES if username in (e.data.get("guests") or [])}
     page.goto(f"/guests/{username}/")
     _expect_person_page(page, person, shows, GUESTED[username])
+
+
+def test_no_duplicate_people():
+    """
+    One page per person: no two people share a name or a slug differing only by dashes/case
+    """
+    by_name: dict[str, list[str]] = {}
+    for username, person in PEOPLE.items():
+        by_name.setdefault(re.sub(r"[^a-z0-9]", "", person.title.lower()), []).append(username)
+        by_name.setdefault(re.sub(r"[^a-z0-9]", "", username.lower()), []).append(username)
+    duplicates = sorted({tuple(sorted(set(v))) for v in by_name.values() if len(set(v)) > 1})
+    assert not duplicates, f"duplicate people: {duplicates}"
+
+
+def test_episode_people_exist():
+    """
+    Every host and guest an episode lists has a page in content/people
+    """
+    missing = sorted({
+        (e.url, name)
+        for e in EPISODES
+        for name in [*(e.data.get("hosts") or []), *(e.data.get("guests") or [])]
+        if name not in PEOPLE
+    })
+    assert not missing, f"episodes reference people with no page: {missing}"
+
+
+def test_scraper_leftovers_stay_removed():
+    """
+    The scraper re-adds Joe and alias slugs from Fireside; none of them may come back (#1047)
+    """
+    gone = REMOVED_PEOPLE | DUPLICATE_SLUGS.keys()
+    assert not gone & PEOPLE.keys(), f"scraper re-added people pages: {sorted(gone & PEOPLE.keys())}"
+    assert all(canonical in PEOPLE for canonical in DUPLICATE_SLUGS.values())
+    referenced = gone & (set(HOSTED) | set(GUESTED))
+    assert not referenced, f"episodes reference removed slugs: {sorted(referenced)}"
