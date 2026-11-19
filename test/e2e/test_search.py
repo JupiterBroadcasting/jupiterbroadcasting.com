@@ -149,6 +149,14 @@ def test_sponsor_cards_show_their_show(page: Page):
 ARCHIVED_SHOWS = {"Coder Radio", "Linux Action News", "Office Hours", "Self-Hosted"}
 
 
+def test_live_show_sponsor_ranks_above_archived(page: Page):
+    search(page, "tailscale")
+    sponsors = page.locator('.search-result[data-type="sponsor"]')
+    expect(sponsors).to_have_count(3)
+    chips = [sponsors.nth(i).locator(".tag").nth(1).inner_text() for i in range(3)]
+    assert chips[0] == "LINUX Unplugged", chips
+
+
 @pytest.mark.parametrize("query", ["home assistant", "zfs"])
 def test_live_show_episodes_rank_above_archived(page: Page, query: str):
     search(page, query)
