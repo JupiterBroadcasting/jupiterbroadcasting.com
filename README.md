@@ -36,6 +36,12 @@ To build and run the site run
 
 This will build the site (all 28000+ pages) and takes anywhere from 30s - 5 minutes depending on your hardware. This is expected due to the size of the site.
 
+#### Search
+
+Search is [Pagefind](https://pagefind.app), run against the built site (`pagefind_extended --site`) in both the production `Dockerfile` and `make dev`. In `make dev` the first start also builds the index, so `/search/` works after about 2 to 5 minutes, and edits to `content`, `data` or `themes` re-index automatically (a few minutes after each change).
+
+Picks (`data/picks/*.yaml`) and sponsors have no pages of their own to index, so `content/search-index/_content.gotmpl` (a content adapter) renders one index-only page per `data/picks/*.yaml`, and sponsors use their `/sponsors/<name>/` page. The pick pages are removed from the production image after indexing; a new pick is indexed with no extra file.
+
 #### Deployment
 
 Deployment is done with Github Actions, see workflow file in `.github/workflows/deploy-prod.yml`

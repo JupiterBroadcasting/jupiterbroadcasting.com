@@ -179,6 +179,12 @@ theme = 'jb'
     url = "/contact/"
     weight =110
 
+[[Menu.Main]]
+    name = "Search"
+    identifier = "search"
+    url = "/search/"
+    weight =120
+
 # Footer Menu (left)
 [[Menu.FooterLeft]]
     name = "PeerTube"
@@ -292,3 +298,10 @@ theme = 'jb'
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
   term = ["html", "markdown"]
+
+[[cascade]]
+  [cascade.build]
+    list = "never"
+  [cascade.target]
+    path = "/search-index"
+    kind = "section"

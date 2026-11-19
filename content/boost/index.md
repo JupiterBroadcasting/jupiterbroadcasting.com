@@ -3,6 +3,7 @@ title = "Boost "
 description = "Boost with a Podcasting 2.0 App"
 date = "2022-07-03T03:35:01-05:00"
 draft = false
+search_type = "support"
 +++
 
 Boosts are a new way to send value into the shows while including a personal message. We feature as many Boosts as we can on the shows as a thank you, and to add a bit of value to your Boost.
