@@ -18,7 +18,7 @@
     <h2 class="title is-3 my-3 px-0">Hosts</h2>
     <div class="columns is-multiline">
 
-      {{ range where (where (where site.RegularPages "Section" "people") ".Params.is_archived" "!=" true) "Type" "host" }}
+      {{ range where (where (where site.RegularPages "Section" "people") ".Params.is_hidden" "!=" true) "Type" "host" }}
       <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
         {{ partial "people/small.html" . }}
       </div>

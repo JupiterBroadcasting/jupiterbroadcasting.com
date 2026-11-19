@@ -59,7 +59,7 @@ SHOW_PARAMS = [param(s, id=s.slug) for s in SHOWS]
 ACTIVE_HOSTS: list[str] = sorted(
     p.stem
     for p in (CONTENT / "people").glob("*.md")
-    if _yaml_field(p, "type") == "host" and _yaml_field(p, "is_archived") != "true"
+    if _yaml_field(p, "type") == "host" and _yaml_field(p, "is_hidden") != "true"
 )
 
 # a hosts term only exists once the person hosts an episode
