@@ -165,7 +165,7 @@ def test_live_show_episodes_rank_above_archived(page: Page, query: str):
     assert first.locator(".tag").nth(1).inner_text() not in ARCHIVED_SHOWS
 
 
-TRANSCRIPT_ONLY_PHRASE = "built to connect slack"
+TRANSCRIPT_ONLY_PHRASE = '"built to connect slack"'
 
 
 def test_transcript_text_is_searchable(page: Page):
