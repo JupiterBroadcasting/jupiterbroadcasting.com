@@ -23,7 +23,7 @@
     {{ with .Params.direct_links }}
       <p>You can also subscribe with your favorite app directly using the buttons below:</p>
       <div class="is-flex is-flex-wrap-wrap is-justify-content-flex-start is-align-content-center">
-      {{ $icons_map := $.Site.Data.podcast_player }}
+      {{ $icons_map := hugo.Data.podcast_player }}
       {{ range $key, $value := . }}
       <!-- currently 90% of images grabbed from: https://linuxunplugged.com/subscribe -->
         <div class="p-1 is-flex subscribe-logos">
@@ -37,7 +37,8 @@
   </div>
 {{ else }}
 
-    <div class="column is-full content">
+    <div class="column is-full content"{{ with .Params.search_type }} data-pagefind-body data-pagefind-meta="type:{{ . }}" data-pagefind-filter="type:{{ . }}"{{ end }}>
+      {{ with .Params.search_type }}<span class="is-sr-only" data-pagefind-meta="title">{{ trim $.Title " " }}</span>{{ end }}
       {{.Content}}
     </div>
 

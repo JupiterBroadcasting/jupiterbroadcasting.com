@@ -25,10 +25,20 @@
       </div>
     </div>
   </div>
-  <button id="toggle-button" class="button is-info" role="switch" aria-checked="false">Switch to Audio</button>
+  <button id="toggle-button" class="button is-info">Switch to Audio</button>
 </div>
 
 <div class="container">
   {{ partial "live/links.html" . }}
 </div>
+<section id="live-fallback" class="container live-fallback">
+  <p>Live shows are announced on the <a href="/calendar/">calendar</a>. When we're off air, catch up on the latest episodes below or subscribe to the <a href="{{ .Site.Params.feed.rss }}">All Shows feed</a> in your podcast app.</p>
+  <div class="columns is-multiline">
+    {{ range first 3 (where .Site.RegularPages "Type" "episode").ByDate.Reverse }}
+      <div class="column is-4-desktop is-12-mobile" style="display: flex;">
+        {{ partial "episode/preview.html" . }}
+      </div>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

@@ -1,11 +1,12 @@
 baseURL = 'https://www.jupiterbroadcasting.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Jupiter Broadcasting'
 # enableGitInfo = true
 
 theme = 'jb'
 
-paginate = 12
+[pagination]
+  pagerSize = 12
 
 [params.live]
   audio_url = "https://n12.radiojar.com/0uk94cu0xrquv?rj-ttl=5&rj-tok=AAABlr_HIYcADeN2rSDaevNY4g"
@@ -32,7 +33,6 @@ paginate = 12
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
   host = "hosts"
   guest = "guests"
 
@@ -179,6 +179,12 @@ paginate = 12
     url = "/contact/"
     weight =110
 
+[[Menu.Main]]
+    name = "Search"
+    identifier = "search"
+    url = "/search/"
+    weight =120
+
 # Footer Menu (left)
 [[Menu.FooterLeft]]
     name = "PeerTube"
@@ -244,13 +250,58 @@ paginate = 12
 
 # Output formats
 
+[mediaTypes]
+  # markdown twins of pages, for llms.txt consumers (see llmstxt.org spec v2)
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
 [outputFormats]
   [outputFormats.webplayer]
   mediatype ="application/json"
   baseName = "webplayer"
 
+  # Every page/section also emitted as markdown: /show/x/0650/ -> /show/x/0650/index.md
+  [outputFormats.markdown]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "index"
+
+  # llmstxt.org spec files (see https://llmstxt.org). Rendered by Hugo from
+  # layouts/index.llms.txt / show/list.llms.txt -- enabled on home below, and
+  # on individual show sections via `outputs` in their _index.md front matter
+  # (so they do NOT render for /show/, /hosts/, /guests/, etc).
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "llms"
+
+  # /llms-full.txt: core (non-episode) pages concatenated
+  [outputFormats.llmsfull]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "llms-full"
+
+  # /show/<slug>/episodes.json: full episode enumeration per show
+  # (Hugo 0.105 predates per-section sitemaps, so this is the machine list)
+  [outputFormats.episodes]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "episodes"
+
 [outputs]
-  page = ["html"]
+  home = ["html", "rss", "llms", "llmsfull"]
+  page = ["html", "markdown"]
   # page = ["json","html","webplayer"]
   # section = ["html","rss"]
-  section = ["html"]
+  section = ["html", "markdown"]
+  taxonomy = ["html", "markdown"]
+  term = ["html", "markdown"]
+
+[[cascade]]
+  [cascade.build]
+    list = "never"
+  [cascade.target]
+    path = "/search-index"
+    kind = "section"

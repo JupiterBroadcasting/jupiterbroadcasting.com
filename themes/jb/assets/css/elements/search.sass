@@ -1,0 +1,82 @@
+@use "../variables" as v
+
+.search-status
+    color: v.$jb-grey-light
+    margin-bottom: 1rem
+
+.search-result
+    background-color: v.$jb-darker
+    border-radius: 12px
+    margin-bottom: 12px
+    transition: all .3s ease-in-out
+
+    &:hover
+        box-shadow: rgba(0, 0, 0, .22) 0 19px 43px
+        transform: translate3d(0, -1px, 0)
+
+    .card-content
+        display: flex
+        flex-direction: column
+        gap: 6px
+
+    h4
+        margin: 0
+        font-size: 1.1rem
+        font-weight: 600
+        line-height: 1.25
+
+    a
+        color: v.$jb-blue-light
+
+    p
+        margin: 0
+
+    .tags
+        margin-bottom: 0
+
+        .tag
+            margin-bottom: 0
+
+    mark
+        background-color: rgba(v.$jb-gold, .3)
+        color: inherit
+        border-radius: 2px
+        padding: 0 1px
+
+.search-muted
+    color: v.$jb-grey-light
+    font-size: .8rem
+
+.search-excerpt
+    color: v.$jb-grey-light
+
+.search-type
+    &.is-pick
+        background-color: v.$jb-gold
+        color: v.$jb-dark
+    &.is-sponsor
+        background-color: v.$jb-orange
+        color: #fff
+    &.is-episode
+        background-color: v.$jb-blue
+        color: #fff
+    &.is-show
+        background-color: v.$jb-grey-dark
+        color: #fff
+    &.is-person
+        background-color: v.$jb-pink
+        color: #fff
+    &.is-support
+        background-color: v.$jb-green
+        color: v.$jb-dark
+    &.is-community
+        background-color: v.$jb-blue-light
+        color: v.$jb-dark
+
+.search-result .tag.is-black
+    background-color: v.$jb-darkest
+    color: #fff
+
+.search-result .tag.is-dark
+    background-color: v.$jb-grey-dark
+    color: #fff

@@ -1,4 +1,4 @@
-@import "../libs/bulma/sass/utilities/mixins"
+@use "../variables" as v
 
 $section-css-padding: 0.5rem 1.5rem !default
 $section-css-padding-medium: 9rem 1.5rem !default
@@ -7,7 +7,7 @@ $section-css-padding-large: 18rem 1.5rem !default
 .section
   padding: $section-css-padding
   // Responsiveness
-  +desktop
+  @media screen and (min-width: v.$desktop)
     // Sizes
     &.is-medium
       padding: $section-css-padding-medium

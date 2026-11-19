@@ -1,0 +1,4 @@
+{{/* Emoji-only tags have an empty URL slug and would overwrite /tags/ (Issue #516); data/emoji_slugs.toml gives each a slug. */}}
+{{ range $tag, $slug := hugo.Data.emoji_slugs }}
+  {{ $.AddPage (dict "path" $tag "kind" "term" "title" $tag "slug" $slug) }}
+{{ end }}

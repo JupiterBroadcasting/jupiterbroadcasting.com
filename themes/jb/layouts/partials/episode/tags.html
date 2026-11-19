@@ -1,6 +1,9 @@
 {{ range $tag := . }}
   <span class="tag">
-    <!-- urlquery found here: https://discourse.gohugo.io/t/url-encoding-percent-encoding-with-hugo/16546/13 -->
-    <a href="{{ `/tags/` }}{{ cond (ne (replace $tag " " "-" | urlize ) "") (replace $tag " " "-" | urlize) (replace $tag " " "-" | urlquery) }}/">{{$tag}}</a>
+    {{ $href := printf "/tags/%s/" (cond (ne (replace $tag " " "-" | urlize ) "") (replace $tag " " "-" | urlize) (replace $tag " " "-" | urlquery)) }}
+    {{ if not (findRE `[\p{L}\p{N}]` $tag) }}
+      {{ with site.GetPage (printf "/tags/%s" $tag) }}{{ $href = .RelPermalink }}{{ end }}
+    {{ end }}
+    <a href="{{ $href }}">{{$tag}}</a>
   </span>
 {{ end }}

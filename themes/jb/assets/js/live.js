@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
       audioPlayer.play().catch(function (e) { console.warn("Autoplay prevented:", e); });
       toggleButton.textContent = "Switch to Video";
     }
-    toggleButton.setAttribute("aria-checked", currentMode == 'audio');
   }
 
   if (toggleButton) {

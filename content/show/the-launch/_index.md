@@ -1,9 +1,9 @@
 +++
+outputs = ["html", "markdown", "llms", "episodes"]
 title = "The Launch 🚀"
 description = "Let’s warm up for the week together with the best stories and clips that set the stage for the rest of your week."
 date = "2025-02-10T17:09:11-08:00"
 draft = false
-categories = ["The Launch 🚀"]
 show = "the-launch"
 hosts = ["chris","angela-fisher"]
 sponsors = []

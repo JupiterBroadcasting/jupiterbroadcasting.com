@@ -1,10 +1,9 @@
 services:
 # A static site
   - type: web
-    plan: starter
     name: jb-deploy-prv
-    env: static
-    buildCommand: hugo --minify --gc --baseURL '/'
+    runtime: static
+    buildCommand: bash build.sh
     staticPublishPath: public/
     pullRequestPreviewsEnabled: true
     # should have auto deploy enabled by default

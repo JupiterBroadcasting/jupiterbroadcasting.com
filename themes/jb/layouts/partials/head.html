@@ -4,18 +4,29 @@
 
   {{ partial "meta.html" . }}
 
+  <!-- llms.txt discovery (llmstxt.org v2 link relations) -->
+  {{- $llms := "/llms.txt" -}}
+  {{- $s := .CurrentSection -}}
+  {{- if and $s (isset $s.Params "show") -}}
+  {{- with $s.OutputFormats.Get "llms" }}{{ $llms = .Permalink }}{{ end -}}
+  {{- end -}}
+  <link rel="describedby" href="{{ $llms }}">
+  {{- with .OutputFormats.Get "markdown" }}
+  <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+  {{- end }}
+
   {{ $sass := resources.Get "css/main.sass" }}
   <!-- Defining options that production & development should have -->
-  {{ $options := (dict "enableSourceMap" true ) }}
+  {{ $options := (dict "enableSourceMap" true "transpiler" "dartsass") }}
   {{ $style := "" }}
 
   {{ if hugo.IsProduction }}
     {{ $options = merge $options (dict "outputStyle" "compressed") }}
-    {{ $style = $sass | toCSS $options | minify | fingerprint }}
+    {{ $style = $sass | css.Sass $options | minify | fingerprint }}
 
   {{ else }}
     {{ $options = merge $options (dict "outputStyle" "expanded") }}
-    {{ $style = $sass | toCSS $options }}
+    {{ $style = $sass | css.Sass $options }}
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 

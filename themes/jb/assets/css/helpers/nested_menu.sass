@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 // based on this: https://github.com/jgthms/bulma/issues/1404#issuecomment-770477580
 
 .nested.dropdown
@@ -17,24 +19,28 @@
         font-size: 14px
         font-weight: 400
     & .navbar-link
-        background-color: $navbar-background-color !important
+        background-color: v.$jb-darkest !important
 
         &:after
-            border-right: 3px solid $white
+            border-right: 3px solid v.$white
             border-left: 0
             border-top: 0
     & .dropdown-menu
-        background-color: $navbar-background-color !important
-        @include mobile
+        background-color: v.$jb-darkest !important
+        @media screen and (max-width: v.$mobile-max)
             position: initial
             margin: 0
         
         & .dropdown-content
-            background-color: $navbar-background-color !important
+            background-color: v.$jb-darkest !important
 
             & .dropdown-item
-                color: $white
-                @include mobile
+                color: v.$white
+                background-color: transparent
+                &:hover,
+                &:focus
+                    background-color: v.$grey-dark
+                @media screen and (max-width: v.$mobile-max)
                     padding-inline: 1.5rem
 
 // .nested.dropdown .dropdown-trigger button::after {

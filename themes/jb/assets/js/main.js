@@ -1,8 +1,12 @@
 const swiper = new Swiper(".show-slider", {
+    // nextEl is wired by hand below: Swiper would disable it at the end, and the last slide has to wrap to the
+    //   first on a click while a drag stops at the end
     navigation: {
-      nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    // a held drag (> longSwipesMs) must cross this fraction of a whole group (up to 3 slides), but with only a
+    //   few shows the slider can scroll far less than that, so the default 0.5 springs back at most widths
+    longSwipesRatio: 0.1,
     slidesPerGroup: 1,
     slidesPerView: 1.1,
     spaceBetween: 12,
@@ -43,3 +47,11 @@ const swiper = new Swiper(".show-slider", {
     }
   }
   });
+
+document.querySelector('.show-slider .swiper-button-next')?.addEventListener('click', function () {
+  if (swiper.isEnd) {
+    swiper.slideTo(0);
+  } else {
+    swiper.slideNext();
+  }
+});

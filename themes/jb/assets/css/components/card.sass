@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 .card.is-horizontal
   display: flex
   flex-direction: column
@@ -12,13 +14,13 @@
       background-position: center
       position: relative
 
-    @include from($tablet)
-      border-top-left-radius: $card-radius
-      border-bottom-left-radius: $card-radius
+    @media screen and (min-width: v.$tablet)
+      border-top-left-radius: v.$card-radius
+      border-bottom-left-radius: v.$card-radius
 
-    @include until($tablet)
-      border-top-right-radius: $card-radius
-      border-bottom-right-radius: $card-radius
+    @media screen and (max-width: v.$mobile-max)
+      border-top-right-radius: v.$card-radius
+      border-bottom-right-radius: v.$card-radius
 
     .image
       height: 100%
@@ -35,13 +37,13 @@
       flex-grow: 1
 
 .card
-  background-color: $card-background-color
+  background-color: v.$jb-darker
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px
   transition: all .3s ease-in-out
   .content
-    background-color: $card-content-background-color
+    background-color: v.$jb-darker
     h1,h2,h3,h4,h5,h6,strong
-      color: $card-header-color
+      color: v.$white
 
   &-people
     width: 100%
@@ -63,3 +65,20 @@
 
 .card-episode
   width: 100%
+
+// Bulma 1.0 dropped these Bulma 0.9 title/footer details
+.card-footer
+  border-top-color: v.$border-light
+
+.card-footer-item:not(:last-child)
+  border-inline-end-color: v.$border-light
+
+.title:not(:last-child),
+.title:not(.is-spaced):has(+ .subtitle)
+  margin-bottom: 1.5rem
+
+.title + .subtitle
+  margin-top: -1.25rem
+
+.subtitle:not(:last-child)
+  margin-bottom: 1.5rem
