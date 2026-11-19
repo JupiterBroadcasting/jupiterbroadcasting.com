@@ -3,6 +3,8 @@
         <div class="container">
             <div class="column is-full content">
                 <h1 class="title">Sponsors</h1>
+                {{ .Content | safeHTML }}
+                {{ if not .Content }}
                 <h4>We have many sponsors we love who support each show, and we hope you'll enjoy them too:</h4>
                 {{- $sponsor_pages := where site.Pages "Section" "sponsors" -}}
                 {{ if .Params.Sponsors -}}
