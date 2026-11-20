@@ -174,6 +174,17 @@ def test_transcript_text_is_searchable(page: Page):
     expect(episode.first).to_be_visible()
 
 
+def test_transcript_only_match_has_a_transcript_chip(page: Page):
+    search(page, TRANSCRIPT_ONLY_PHRASE)
+    episode = page.locator('.search-result[data-type="episode"]', has=page.locator('a[href*="/show/linux-unplugged/691"]'))
+    expect(episode.locator(".tag", has_text="TRANSCRIPT")).to_have_count(1)
+
+
+def test_notes_match_has_no_transcript_chip(page: Page):
+    search(page, "contender")
+    expect(page.locator(".search-result .tag", has_text="TRANSCRIPT")).to_have_count(0)
+
+
 def test_speaker_labels_are_not_indexed(page: Page):
     search(page, "bikeable")
     expect(page.locator('.search-result a[href*="/show/linux-unplugged/664/"]').first).to_be_visible()

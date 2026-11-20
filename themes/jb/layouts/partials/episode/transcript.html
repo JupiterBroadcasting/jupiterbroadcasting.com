@@ -56,7 +56,7 @@
 {{- if $paras -}}
 <details class="transcript mt-5">
   <summary class="is-clickable mb-3" data-pagefind-ignore><h2 class="is-inline">Transcript</h2></summary>
-  <p class="transcript-files mb-3" data-pagefind-ignore>Transcript files: {{ delimit $links " · " | safeHTML }}</p>
+  <h5 class="transcript-files mb-3" data-pagefind-ignore>Transcript files: {{ delimit $links " · " | safeHTML }}</h5>
   <div class="transcript-body pr-3" data-pagefind-weight="0.2" tabindex="0" role="region" aria-label="Transcript text">
     {{- range $paras }}
     <p class="transcript-para mb-3"><span class="transcript-time has-text-grey" data-pagefind-ignore>{{ .time }}</span> {{ with .speaker }}<span class="transcript-speaker has-text-weight-bold" data-pagefind-ignore>{{ . }}:</span> {{ end }}<span class="transcript-text">{{ .text }}</span></p>
