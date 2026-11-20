@@ -3,6 +3,8 @@ const CANDIDATES = 60
 const RECENCY_WEIGHT = 0.8
 const RECENCY_HALF_LIFE_YEARS = 2
 const ARCHIVED_FACTOR = 0.8
+// Pagefind rescales data-pagefind-weight; the 0.2 transcript body comes back as ~0.04, everything else is 0.5 or more.
+const TRANSCRIPT_MAX_WEIGHT = 0.1
 const TYPES = ['pick', 'sponsor', 'episode', 'show', 'person', 'support', 'community']
 // Pagefind 1.5+ boosts title matches, so episodes titled "... Unplugged" outrank the show page itself.
 // support leads so /membership/ and /boost/ beat JB's own membership and Boost ads, which are indexed as sponsors.
@@ -72,6 +74,9 @@ function renderResult(result) {
     tags.append(el('span', `tag search-type is-${type}`, type.toUpperCase()))
     if (['episode', 'sponsor'].includes(type) && result.meta.show) {
         tags.append(el('span', 'tag is-dark', result.meta.show))
+    }
+    if (type === 'episode' && result.weighted_locations.every(l => l.weight < TRANSCRIPT_MAX_WEIGHT)) {
+        tags.append(el('span', 'tag is-white', 'TRANSCRIPT'))
     }
     if (type === 'pick' && result.meta.license) {
         tags.append(el('span', 'tag is-black', result.meta.license))

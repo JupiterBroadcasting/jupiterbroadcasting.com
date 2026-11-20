@@ -42,6 +42,12 @@ Search is [Pagefind](https://pagefind.app), run against the built site (`pagefin
 
 Picks (`data/picks/*.yaml`) and sponsors have no pages of their own to index, so `content/search-index/_content.gotmpl` (a content adapter) renders one index-only page per `data/picks/*.yaml`, and sponsors use their `/sponsors/<name>/` page. The pick pages are removed from the production image after indexing; a new pick is indexed with no extra file.
 
+#### Transcripts
+
+Episode pages render a collapsed transcript when the episode's front matter has a `transcripts` list, which comes from the RSS `podcast:transcript` tags. The files are fetched at build time with `resources.GetRemote`; VTT is preferred over SRT, and HTML or plain-text transcripts are not parsed. The block links every transcript file the episode lists (VTT, SRT, HTML, text). A failed or empty fetch is a build warning, and the page shows those links instead of the text. Transcript text is indexed by Pagefind at a low weight, so title matches still rank first.
+
+Builds need network access, since every build fetches the transcript files (about 170). `make dev` runs with `docker run --rm`, so each start loses Hugo's remote cache and re-fetches them all; hot reloads reuse the in-memory copy. A host that accepts the connection but never answers delays the build by about 110 seconds per affected file (Hugo's `timeout` setting has no effect on this), but the build still finishes with a warning.
+
 #### Deployment
 
 Deployment is done with Github Actions, see workflow file in `.github/workflows/deploy-prod.yml`

@@ -163,3 +163,46 @@ def test_live_show_episodes_rank_above_archived(page: Page, query: str):
     first = page.locator('.search-result[data-type="episode"]').first
     expect(first).to_be_visible()
     assert first.locator(".tag").nth(1).inner_text() not in ARCHIVED_SHOWS
+
+
+TRANSCRIPT_ONLY_PHRASE = '"built to connect slack"'
+
+
+def test_transcript_text_is_searchable(page: Page):
+    search(page, TRANSCRIPT_ONLY_PHRASE)
+    episode = page.locator('.search-result[data-type="episode"] a[href*="/show/linux-unplugged/691"]')
+    expect(episode.first).to_be_visible()
+
+
+def test_transcript_only_match_has_a_transcript_chip(page: Page):
+    search(page, TRANSCRIPT_ONLY_PHRASE)
+    episode = page.locator('.search-result[data-type="episode"]', has=page.locator('a[href*="/show/linux-unplugged/691"]'))
+    expect(episode.locator(".tag", has_text="TRANSCRIPT")).to_have_count(1)
+
+
+def test_notes_match_has_no_transcript_chip(page: Page):
+    search(page, "contender")
+    expect(page.locator(".search-result .tag", has_text="TRANSCRIPT")).to_have_count(0)
+
+
+def test_speaker_labels_are_not_indexed(page: Page):
+    search(page, "bikeable")
+    expect(page.locator('.search-result a[href*="/show/linux-unplugged/664/"]').first).to_be_visible()
+    page.fill("#search-input", "audience bikeable")
+    expect(page.locator("#search-status")).to_have_text("No results")
+
+
+def test_notes_match_outranks_transcript_only_match(page: Page):
+    search(page, "contender")
+    results = page.locator('.search-result[data-type="episode"] a:first-of-type')
+    expect(results.first).to_be_visible()
+    hrefs = [results.nth(i).get_attribute("href") for i in range(results.count())]
+    assert hrefs.index("/show/linux-unplugged/357/") < hrefs.index("/show/linux-unplugged/646/")
+
+
+@pytest.mark.parametrize("chrome_phrase", ['"transcript files srt"', '"transcript welcome in to"'], ids=["source-link", "summary"])
+def test_transcript_ui_text_is_not_indexed(page: Page, chrome_phrase: str):
+    search(page, '"welcome in to this week in bitcoin"')
+    expect(page.locator('.search-result a[href*="/show/this-week-in-bitcoin/129/"]').first).to_be_visible()
+    page.fill("#search-input", chrome_phrase)
+    expect(page.locator("#search-status")).to_have_text("No results")
