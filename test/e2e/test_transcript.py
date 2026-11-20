@@ -19,7 +19,7 @@ def test_vtt_transcript_opens_with_speaker_time_and_text(page: Page):
     page.locator("details.transcript summary").click()
     first = page.locator(".transcript-para").first
     expect(first.locator(".transcript-time")).to_have_text("0:11")
-    expect(first.locator(".transcript-speaker")).to_have_text("Chris")
+    expect(first.locator(".transcript-speaker")).to_have_text("Chris:")
     expect(first.locator(".transcript-text")).to_contain_text("welcome back to your weekly Linux talk show")
 
 
@@ -31,7 +31,7 @@ def test_transcript_groups_cues_into_paragraphs(page: Page):
     paras = page.locator(".transcript-para")
     expect(paras.nth(3).locator(".transcript-text")).to_have_text(re.compile(r"^Hello, gentlemen\..*time-appropriate greetings to that virtual lug\.$"))
     expect(paras.nth(4).locator(".transcript-time")).to_have_text("0:45")
-    expect(paras.nth(4).locator(".transcript-speaker")).to_have_text("Chris")
+    expect(paras.nth(4).locator(".transcript-speaker")).to_have_text("Chris:")
 
 
 def test_transcript_text_is_plain_text(page: Page):
