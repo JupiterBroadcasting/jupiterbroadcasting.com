@@ -1,0 +1,73 @@
+{{- $page := . -}}
+{{- $all := .Params.transcripts | default slice -}}
+{{- $found := where $all "type" "text/vtt" -}}
+{{- if not $found }}{{ $found = where $all "type" "application/x-subrip" }}{{ end -}}
+{{- $labels := dict "text/vtt" "VTT" "application/x-subrip" "SRT" "text/html" "HTML" "text/plain" "Text" "application/json" "JSON" -}}
+{{- $links := slice -}}
+{{- range $all }}{{ $links = $links | append (printf `<a class="transcript-source" href="%s">%s</a>` (.url | htmlEscape) (index $labels .type | default (.type | htmlEscape))) }}{{ end -}}
+{{- with $found -}}
+{{- $url := (index . 0).url -}}
+{{- with try (resources.GetRemote $url) -}}
+{{- $res := . -}}
+{{- $paras := slice -}}
+{{- with $res.Value -}}
+{{- $raw := .Content | replaceRE "\r\n?" "\n" | strings.TrimPrefix "\uFEFF" -}}
+{{- $speaker := "" -}}
+{{- $start := "" -}}
+{{- $text := "" -}}
+{{- range split $raw "\n\n" -}}
+  {{- $timing := index (findRE `(\d+:)?\d\d:\d\d[.,]\d{3} --> ` . 1) 0 -}}
+  {{- if $timing -}}
+    {{- $lines := split . "\n" -}}
+    {{- $cue := slice -}}
+    {{- $seen := false -}}
+    {{- range $lines -}}
+      {{- if $seen }}{{ $cue = $cue | append . }}{{ end -}}
+      {{- if in . $timing }}{{ $seen = true }}{{ end -}}
+    {{- end -}}
+    {{- $joined := delimit $cue " " -}}
+    {{- $who := "" -}}
+    {{- with findRESubmatch `<v ([^>]+)>` $joined 1 }}{{ $who = index (index . 0) 1 | htmlUnescape }}{{ end -}}
+    {{- if eq $who "Unknown" }}{{ $who = "" }}{{ end -}}
+    {{- $plain := $joined | replaceRE "<[^>]+>" "" | htmlUnescape | strings.TrimSpace | strings.TrimPrefix "Unknown: " -}}
+    {{- if and $text (or (ne $who $speaker) (and (gt (len $text) 500) (findRE `[.!?]$` $text))) -}}
+      {{- $paras = $paras | append (dict "time" $start "speaker" $speaker "text" $text) -}}
+      {{- $text = "" -}}
+    {{- end -}}
+    {{- if not $text -}}
+      {{- $ts := replaceRE `[.,]\d{3} --> $` "" $timing -}}
+      {{- $parts := split $ts ":" -}}
+      {{- if eq (len $parts) 3 -}}
+        {{- $h := strings.TrimLeft "0" (index $parts 0) -}}
+        {{- if $h }}{{ $start = printf "%s:%s:%s" $h (index $parts 1) (index $parts 2) }}
+        {{- else }}{{ $start = printf "%s:%s" (strings.TrimLeft "0" (index $parts 1) | default "0") (index $parts 2) }}{{ end -}}
+      {{- else -}}
+        {{- $start = printf "%s:%s" (strings.TrimLeft "0" (index $parts 0) | default "0") (index $parts 1) -}}
+      {{- end -}}
+      {{- $speaker = $who -}}
+      {{- $text = $plain -}}
+    {{- else -}}
+      {{- $text = print $text " " $plain -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $text }}{{ $paras = $paras | append (dict "time" $start "speaker" $speaker "text" $text) }}{{ end -}}
+{{- end -}}
+{{- if $paras -}}
+<details class="transcript mt-5">
+  <summary class="is-clickable mb-3" data-pagefind-ignore><h2 class="is-inline">Transcript</h2></summary>
+  <h5 class="transcript-files mb-3" data-pagefind-ignore>Transcript files: {{ delimit $links " · " | safeHTML }}</h5>
+  <div class="transcript-body pr-3" data-pagefind-weight="0.2" tabindex="0" role="region" aria-label="Transcript text">
+    {{- range $paras }}
+    <p class="transcript-para mb-3"><span class="transcript-time has-text-grey" data-pagefind-ignore>{{ .time }}</span> {{ with .speaker }}<span class="transcript-speaker has-text-weight-bold" data-pagefind-ignore>{{ . }}:</span> {{ end }}<span class="transcript-text">{{ .text }}</span></p>
+    {{- end }}
+  </div>
+</details>
+{{- else -}}
+{{- $why := "empty or missing response" -}}
+{{- with $res.Err }}{{ $why = . }}{{ end -}}
+{{- warnf "transcript: could not fetch %s for %s: %s" $url $page.File.Path $why -}}
+<p class="transcript-unavailable mt-3" data-pagefind-ignore>Transcript could not be loaded. Transcript files: {{ delimit $links " · " | safeHTML }}</p>
+{{- end -}}
+{{- end -}}
+{{- end -}}
