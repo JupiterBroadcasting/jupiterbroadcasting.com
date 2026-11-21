@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/wimpy.jpg
 avatar_small: /images/people/wimpy_small.jpg
 bio: "Passionate open source advocate, Linux \U0001F427 enthusiast & podcaster \U0001F3A4
@@ -9,7 +10,7 @@ instagram: null
 linkedin: https://www.linkedin.com/in/martinwimpress/
 title: Martin Wimpress
 twitter: https://x.com/m_wimpress
-type: guest
+type: host
 username: wimpy
 youtube: null
 ---

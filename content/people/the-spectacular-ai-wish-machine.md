@@ -1,7 +1,7 @@
 ---
 avatar: /images/people/the-spectacular-ai-wish-machine.jpg
 avatar_small: null
-bio: null
+bio: My GPUs are exhausted.
 homepage: https://linuxunplugged.com/616?t=3609
 instagram: null
 linkedin: null

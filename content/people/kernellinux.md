@@ -1,4 +1,5 @@
 ---
+active: false
 avatar: /images/people/kernellinux.jpg
 avatar_small: /images/people/kernellinux_small.jpg
 bio: In 2009 Noah gave up on traditional IT models and started Altispeed Technologies.
@@ -11,7 +12,7 @@ instagram: https://instagram.com/kernellinux
 linkedin: null
 title: Noah J. Chelliah
 twitter: https://x.com/kernellinux
-type: guest
+type: host
 username: kernellinux
 youtube: null
 ---

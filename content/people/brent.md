@@ -1,4 +1,5 @@
 ---
+active: true
 avatar: /images/people/brent.jpg
 avatar_small: /images/people/brent_small.jpg
 bio: Commercial, Editorial & Documentary Photography -- local food, sustainability,

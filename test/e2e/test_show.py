@@ -3,7 +3,7 @@ import math
 import re
 from pathlib import Path
 
-from pytest import fixture, mark, param
+from pytest import fixture, mark
 from playwright.sync_api import Page, expect
 
 REPO_ROOT = Path(__file__).parents[2]
@@ -49,19 +49,6 @@ SHOWS = {
     if (show_dir / "_index.md").exists()
 }
 SHOWS_WITH_HOSTS = [slug for slug, fm in SHOWS.items() if "hosts" in fm]
-HOST_PARAMS = [
-    param(
-        slug,
-        id=slug,
-        marks=mark.xfail(
-            reason="content/people/michael.md has type: guest, so the Coder Radio host "
-            "list links him to /guests/michael/ instead of /hosts/michael/"
-        ),
-    )
-    if slug == "coder-radio"
-    else param(slug, id=slug)
-    for slug in SHOWS_WITH_HOSTS
-]
 
 
 def _episode_count(slug: str) -> int:
@@ -81,7 +68,7 @@ def show(page: Page, request) -> dict:
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("show", HOST_PARAMS, indirect=True)
+@mark.parametrize("show", SHOWS_WITH_HOSTS, ids=SHOWS_WITH_HOSTS, indirect=True)
 def test_show_hosts(page: Page, show: dict):
     """
     Ensure every host in the show's front matter has a people page and is
@@ -154,8 +141,15 @@ def test_archive_lists_archived_shows(page: Page):
     """
     /archive/ lists exactly the shows that are no longer active
     """
-    page.goto("/archive/")
-    assert _show_card_links(page) == {f"/show/{slug}/" for slug, fm in SHOWS.items() if not fm.get("active")}
+    archived = {f"/show/{slug}/" for slug, fm in SHOWS.items() if not fm.get("active")}
+    found: set[str] = set()
+    for n in range(1, math.ceil(len(archived) / PAGINATE) + 1):
+        response = page.goto("/archive/" if n == 1 else f"/archive/page/{n}/")
+        assert response.status == 200
+        links = _show_card_links(page)
+        assert len(links) <= PAGINATE
+        found |= links
+    assert found == archived
 
 
 def _subscribe_front_matter(slug: str) -> tuple[str, dict[str, str]]:

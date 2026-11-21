@@ -3,7 +3,7 @@ import re
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, Locator, Page, expect
 
-from episode_data import CONTENT_SHOW, Episode, person_type, sample_episodes, sponsor_exists
+from episode_data import CONTENT_SHOW, Episode, has_podverse, is_active, person_type, sample_episodes, sponsor_exists
 
 SAMPLE_EPISODES: list[Episode] = sample_episodes()
 
@@ -39,15 +39,19 @@ def test_episode_page_title(page: Page, ep: Episode):
 @episode_params()
 def test_episode_player(page: Page, ep: Episode):
     """
-    Podverse embed for episodes with a podcast_file, otherwise a plain <audio> player
+    Podverse embed for episodes with a podcast_file in a show with a Podverse ID, otherwise a plain <audio> player
     """
     page.goto(ep.url, wait_until="domcontentloaded")
-    if ep.data.get("podcast_file"):
+    show_dir = CONTENT_SHOW / ep.show
+    has_audio = any(ep.data.get(k) for k in ("podcast_file", "podcast_ogg_file", "podcast_alt_file"))
+    if ep.data.get("podcast_file") and has_podverse(show_dir):
         player = page.locator("#pv-embed-player")
         expect(player).to_be_attached()
         expect(player).to_have_attribute("src", re.compile(re.escape(ep.data["episode_guid"])))
-    else:
+    elif has_audio or is_active(show_dir):
         expect(page.locator("audio source")).not_to_have_count(0)
+    else:
+        expect(page.locator("audio source")).to_have_count(0)
 
 
 @mark.only_browser("chromium")
@@ -55,7 +59,11 @@ def test_episode_player(page: Page, ep: Episode):
 def test_episode_support_subscribe(page: Page, ep: Episode):
     page.goto(ep.url, wait_until="domcontentloaded")
     expect(page.locator("a.button", has_text="Support")).to_have_attribute("href", re.compile(r"/membership/$"))
-    expect(page.locator("a.button", has_text="Subscribe to")).to_be_visible()
+    subscribe = page.locator("a.button", has_text="Subscribe to")
+    if is_active(CONTENT_SHOW / ep.show) or (CONTENT_SHOW / ep.show / "subscribe.md").exists():
+        expect(subscribe).to_be_visible()
+    else:
+        expect(subscribe).to_have_count(0)
 
 
 @mark.only_browser("chromium")

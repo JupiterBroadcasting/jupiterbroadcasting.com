@@ -1,19 +1,13 @@
-<b>Direct Download: </b><a href="{{.Params.podcast_file}}">MP3</a>
-{{ if (not (eq .Params.podcast_alt_file nil)) }}
-| <a href="{{.Params.podcast_alt_file}}">MP3 mirror</a>
-{{ end }}
-{{ if (not (eq  .Params.podcast_ogg_file nil)) }}
-| <a href="{{.Params.podcast_ogg_file}}">OGG</a>
-{{ end }}
-{{ if (not (eq .Params.video_file nil)) }}
-| <a href="{{.Params.video_file}}">Video</a>
-{{ end }}
-{{ if (not (eq .Params.video_hd_file nil)) }}
-| <a href="{{.Params.video_hd_file}}">HD Video</a>
-{{ end }}
-{{ if (not (eq .Params.video_mobile_file nil)) }}
-| <a href="{{.Params.video_mobile_file}}">Mobile Video</a>
-{{ end }}
-{{ if (not (eq .Params.youtube_link nil)) }}
-| <a href="{{.Params.youtube_link}}">YouTube</a>
+{{ $links := slice }}
+{{ with .Params.podcast_file }}{{ $links = $links | append (dict "url" . "label" "MP3") }}{{ end }}
+{{ with .Params.podcast_alt_file }}{{ $links = $links | append (dict "url" . "label" "MP3 mirror") }}{{ end }}
+{{ with .Params.podcast_ogg_file }}{{ $links = $links | append (dict "url" . "label" "OGG") }}{{ end }}
+{{ with .Params.video_file }}{{ $links = $links | append (dict "url" . "label" "Video") }}{{ end }}
+{{ with .Params.video_hd_file }}{{ $links = $links | append (dict "url" . "label" "HD Video") }}{{ end }}
+{{ with .Params.video_mobile_file }}{{ $links = $links | append (dict "url" . "label" "Mobile Video") }}{{ end }}
+{{ with .Params.youtube_link }}{{ $links = $links | append (dict "url" . "label" "YouTube") }}{{ end }}
+{{ with $links }}
+<div class="download-links">
+<b>Direct Download: </b>{{ range $i, $l := . }}{{ if $i }} | {{ end }}<a href="{{ $l.url }}">{{ $l.label }}</a>{{ end }}
+</div>
 {{ end }}

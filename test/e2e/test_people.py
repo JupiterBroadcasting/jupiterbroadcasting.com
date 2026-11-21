@@ -19,7 +19,7 @@ def active_host_usernames() -> set[str]:
         text = path.read_text(encoding="utf-8")
         if front_matter_field(text, "type") != "host":
             continue
-        if front_matter_field(text, "is_archived") == "true":
+        if front_matter_field(text, "is_hidden") == "true":
             continue
         usernames.add(front_matter_field(text, "username"))
     return usernames
@@ -35,7 +35,7 @@ def setup(page: Page):
 
 def test_people_all_hosts(page: Page):
     """
-    Ensure the host list shows exactly the non-archived hosts in content/people
+    Ensure the host list shows exactly the non-hidden hosts in content/people
     """
     expected = {f"/hosts/{username}" for username in active_host_usernames()}
     assert expected
