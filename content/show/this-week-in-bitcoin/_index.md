@@ -1,5 +1,5 @@
 +++
-outputs = ["html", "markdown", "llms", "episodes"]
+outputs = ["html", "showmd", "llms", "episodes", "show"]
 title = "This Week in Bitcoin"
 description = "A high-signal Bitcoin news podcast focused on analysis you'll find valuable."
 date = "2024-03-22T04:10:01-05:00"

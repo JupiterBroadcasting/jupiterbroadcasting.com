@@ -12,17 +12,17 @@
 
 ## The show
 
-- [{{ .Title }} - show page]({{ .Permalink }}index.md): description, hosts, and show notes
+- [{{ .Title }} - show page]({{ partial "markdown-url.html" . }}): description, hosts, and show notes
 - [Complete episode list]({{ .Permalink }}episodes.json): JSON list of every {{ .Title }} episode (slug, episode, date, URL)
 
 ## Most recent episodes (of {{ len $eps }})
 
 {{ range first 10 $sorted -}}
-- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ .Permalink }}index.md){{ with .Params.guests }} (guest: {{ delimit . ", " }}){{ end }} - {{ .Description }}
+- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Params.guests }} (guest: {{ delimit . ", " }}){{ end }} - {{ .Description }}
 {{ end }}
 ## Episode archive
 
 {{ $nums }} numbered episodes, {{ $lo }}-{{ $hi }}.{{ if $specials }} Plus {{ $specials }} special episodes with prefixed slugs (not plain numbers).{{ end }}
 
-Episode URL pattern: `{{ .Permalink }}<number>/` — append `index.md` for the markdown twin.
-Newest: `{{ .Permalink }}{{ with $sorted }}{{ (index . 0).Params.slug | default (index . 0).File.TranslationBaseName | lower }}/index.md{{ end }}` · Oldest: `{{ .Permalink }}{{ with $sorted }}{{ (index . (sub (len .) 1)).Params.slug | default (index . (sub (len .) 1)).File.TranslationBaseName | lower }}/index.md{{ end }}`
+Episode URL pattern: `{{ .Permalink }}<number>/` — replace the trailing `/` with `.md` for the markdown twin.
+Newest: `{{ .Permalink }}{{ with $sorted }}{{ (index . 0).Params.slug | default (index . 0).File.TranslationBaseName | lower }}.md{{ end }}` · Oldest: `{{ .Permalink }}{{ with $sorted }}{{ (index . (sub (len .) 1)).Params.slug | default (index . (sub (len .) 1)).File.TranslationBaseName | lower }}.md{{ end }}`

@@ -33,7 +33,7 @@ jobs:
             SAFE+='|test/|\.github/)'
             # carve-outs from SAFE that do feed episode pages
             UNSAFE='^(content/(show|people|sponsors|membership)/'
-            UNSAFE+='|test/(conftest\.py|e2e/test_episode\.py|e2e/episode_data\.py|Pipfile|Pipfile\.lock|docker-compose\.yml)$'
+            UNSAFE+='|test/(conftest\.py|e2e/test_(episode|json|llms)\.py|e2e/episode_data\.py|Pipfile|Pipfile\.lock|docker-compose\.yml)$'
             UNSAFE+='|\.github/workflows/e2e\.yml$)'
             changed=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
             # || true: the last grep exits 1 when every changed file matches SAFE (e.g. only content/show/), and bash -e would abort the step

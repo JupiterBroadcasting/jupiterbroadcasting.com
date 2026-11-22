@@ -1,0 +1,17 @@
+{{- $eps := where .Pages "Type" "episode" -}}
+{{- $m := dict "schema_version" 1 "type" "show" "slug" .Params.show "name" .Title "url" .Permalink "active" (.Params.active | default false) "episode_count" (len $eps) -}}
+{{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
+{{- with .Params.header_image }}{{ $m = merge $m (dict "header_image" (absURL .)) }}{{ end -}}
+{{- with .Params.podverse_podcast_id }}{{ $m = merge $m (dict "podverse_url" (print "https://podverse.fm/podcast/" .)) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{- with .OutputFormats.Get "episodes" }}{{ $m = merge $m (dict "episodes_url" .Permalink) }}{{ end -}}
+{{- with .OutputFormats.Get "llms" }}{{ $m = merge $m (dict "llms_url" .Permalink) }}{{ end -}}
+{{- $hosts := slice -}}
+{{- range .Params.hosts }}{{ $hosts = $hosts | append (partial "json-person-ref.html" .) }}{{ end -}}
+{{- $links := dict -}}
+{{- range $name, $link := .Params.links -}}
+  {{- with $link.url }}{{ $links = merge $links (dict $name (cond (hasPrefix . "/") (absURL .) .)) }}{{ end -}}
+{{- end -}}
+{{- $m = merge $m (dict "hosts" $hosts "links" $links) -}}
+{{- range first 1 $eps.ByDate.Reverse }}{{ $m = merge $m (dict "latest_episode" (partial "json-episode-ref.html" .)) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

@@ -1,0 +1,3 @@
+{{- $url := "" -}}
+{{- range .OutputFormats }}{{ if eq .MediaType.Type "text/markdown" }}{{ $url = .Permalink }}{{ end }}{{ end -}}
+{{- return $url -}}

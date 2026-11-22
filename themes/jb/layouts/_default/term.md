@@ -5,5 +5,5 @@ URL: {{ .Permalink }}
 {{ end }}
 {{ if $person }}{{ partial "person-details.md" $person }}
 {{ end }}
-{{ range .Pages }}- [{{ .Title }}]({{ .Permalink }}index.md)
+{{ range .Pages }}- [{{ .Title }}]({{ partial "markdown-url.html" . }})
 {{ end }}

@@ -3,5 +3,5 @@
 URL: {{ .Permalink }}
 {{ with .Description }}> {{ . }}
 {{ end }}
-{{ range .Pages }}- [{{ .Title }}]({{ .Permalink }}index.md)
+{{ range .Pages }}- [{{ .Title }}]({{ partial "markdown-url.html" . }})
 {{ end }}

@@ -1,0 +1,24 @@
+{{- /* Splits a show's episodes into the numbered range and the special (non-numeric) ones.
+       Returns dict: "special" (episode pages, oldest first), and "numbered" {first, last, missing (only when non-empty)} when any exist. */ -}}
+{{- $numbers := slice -}}
+{{- $special := slice -}}
+{{- range (where .Pages "Type" "episode").ByDate -}}
+  {{- if in (slice "int" "int64" "float64") (printf "%T" .Params.episode) -}}
+    {{- $numbers = $numbers | append (int .Params.episode) -}}
+  {{- else -}}
+    {{- $special = $special | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $summary := dict "special" $special -}}
+{{- with sort $numbers -}}
+  {{- $first := index . 0 -}}
+  {{- $last := index . (sub (len .) 1) -}}
+  {{- $have := dict -}}
+  {{- range . }}{{ $have = merge $have (dict (string .) true) }}{{ end -}}
+  {{- $missing := slice -}}
+  {{- range seq $first $last }}{{ if not (isset $have (string .)) }}{{ $missing = $missing | append . }}{{ end }}{{ end -}}
+  {{- $numbered := dict "first" $first "last" $last -}}
+  {{- with $missing }}{{ $numbered = merge $numbered (dict "missing" .) }}{{ end -}}
+  {{- $summary = merge $summary (dict "numbered" $numbered) -}}
+{{- end -}}
+{{- return $summary -}}

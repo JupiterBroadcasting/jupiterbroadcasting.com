@@ -258,15 +258,31 @@ theme = 'jb'
     suffixes = ["txt"]
 
 [outputFormats]
-  [outputFormats.webplayer]
-  mediatype ="application/json"
-  baseName = "webplayer"
+  # /show/<slug>/<NNNN>.json: episode metadata. `ugly` writes <NNNN>.json beside the page directory
+  # (enabled on episode pages by the cascade below)
+  [outputFormats.json]
+    mediaType = "application/json"
+    isPlainText = true
+    ugly = true
 
-  # Every page/section also emitted as markdown: /show/x/0650/ -> /show/x/0650/index.md
+  # Every page/section also emitted as markdown: /people/x/ -> /people/x/index.md
+  # (episodes and shows use the two formats below instead, named like their JSON)
   [outputFormats.markdown]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "index"
+
+  # episode markdown: /show/x/0650/ -> /show/x/0650.md
+  [outputFormats.episodemd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    ugly = true
+
+  # show markdown: /show/x/ -> /show/x/show.md (enabled per show via `outputs` in its _index.md)
+  [outputFormats.showmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "show"
 
   # llmstxt.org spec files (see https://llmstxt.org). Rendered by Hugo from
   # layouts/index.llms.txt / show/list.llms.txt -- enabled on home below, and
@@ -290,10 +306,15 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
+  # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
+  [outputFormats.show]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "show"
+
 [outputs]
   home = ["html", "rss", "llms", "llmsfull"]
   page = ["html", "markdown"]
-  # page = ["json","html","webplayer"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
@@ -305,3 +326,9 @@ theme = 'jb'
   [cascade.target]
     path = "/search-index"
     kind = "section"
+
+[[cascade]]
+  outputs = ["html", "episodemd", "json"]
+  [cascade.target]
+    path = "/show/**"
+    kind = "page"
