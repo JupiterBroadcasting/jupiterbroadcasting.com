@@ -4,8 +4,10 @@ JSON twins of shows and episodes: /show/<slug>/show.json and /show/<slug>/<NNNN>
 Expected values come from content/ so the tests hold for any content snapshot.
 Links may be absolute (production) or site-relative (CI builds with baseURL "/").
 """
+import json
 import re
-from dataclasses import dataclass
+import tomllib
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -23,6 +25,7 @@ from episode_data import (
     person_type,
     sample_episodes,
     sponsor_exists,
+    yaml_title,
 )
 
 HOST = r"(?:https?://[^/)\s]+)?"
@@ -31,18 +34,22 @@ HOST = r"(?:https?://[^/)\s]+)?"
 @dataclass(frozen=True)
 class Show:
     slug: str
-    title: str
-    episodes: tuple[Episode, ...]  # oldest first
+    params: dict = field(compare=False, hash=False, repr=False)
+    episodes: tuple[Episode, ...] = field(compare=False, hash=False, repr=False)  # oldest first
+
+    @property
+    def title(self) -> str:
+        return self.params["title"]
 
 
-def _toml_field(path: Path, key: str) -> str:
-    return re.search(rf'^{key}\s*=\s*"(.*)"\s*$', path.read_text(), re.M).group(1)
+def _toml_front_matter(path: Path) -> dict:
+    return tomllib.loads(path.read_text().split("+++")[1])
 
 
 SHOWS: list[Show] = [
     Show(
         slug=d.name,
-        title=_toml_field(d / "_index.md", "title"),
+        params=_toml_front_matter(d / "_index.md"),
         episodes=tuple(e for e in episodes_by_date(d) if e.data.get("type") == "episode"),
     )
     for d in sorted(CONTENT_SHOW.iterdir())
@@ -60,13 +67,29 @@ def get_json(api: APIRequestContext, path: str) -> dict:
     return response.json()
 
 
+def site_url(path: str) -> str:
+    """
+    Pattern for a site path rendered through absURL/Permalink
+    """
+    return rf"{HOST}{re.escape(path)}"
+
+
+def assert_person_ref(ref: dict, where: str):
+    if person_type(ref["slug"]) is None:
+        assert set(ref) == {"slug"}, f"{where} {ref}: no people page, so only the slug"
+    else:
+        assert ref["name"] == yaml_title(CONTENT / "people" / f"{ref['slug']}.md"), f"{where} {ref}: name"
+        assert re.fullmatch(site_url(f"/people/{ref['slug']}/"), ref["url"]), f"{where} {ref}: url"
+
+
 @mark.parametrize("show", SHOW_PARAMS)
 def test_show_json(api_request_context: APIRequestContext, show: Show):
     """
-    show.json carries the show facts, counts match content, and links to the other twins
+    show.json carries the show facts from _index.md, counts match content, and links to the other twins
     """
     base = f"/show/{show.slug}"
     data = get_json(api_request_context, f"{base}/show.json")
+    p = show.params
     newest = show.episodes[-1]
 
     assert find_nulls(data) == [], "null fields must be omitted at every depth"
@@ -74,33 +97,50 @@ def test_show_json(api_request_context: APIRequestContext, show: Show):
     assert data["type"] == "show"
     assert data["slug"] == show.slug
     assert data["name"] == show.title
+    assert re.fullmatch(site_url(f"{base}/"), data["url"])
+    assert data["active"] == p.get("active", False)
+    assert data.get("description") == (p.get("description") or None)
+    if p.get("header_image"):
+        assert re.fullmatch(site_url(p["header_image"]), data["header_image"])
+    else:
+        assert "header_image" not in data
     assert data["episode_count"] == len(show.episodes)
-    assert data["latest_episode"]["episode"] == int(newest.number)
-    assert re.fullmatch(rf"{HOST}{re.escape(newest.url)}", data["latest_episode"]["url"])
-    assert re.fullmatch(rf"{HOST}{re.escape(newest.url.rstrip('/'))}\.md", data["latest_episode"]["markdown_url"])
+    assert data["latest_episode"]["episode"] == newest.data["episode"]
+    assert re.fullmatch(site_url(newest.url), data["latest_episode"]["url"])
+    assert re.fullmatch(site_url(f"{newest.url.rstrip('/')}.md"), data["latest_episode"]["markdown_url"])
     assert "json_url" not in data, "a show's own JSON URL is the URL it was fetched from"
-    assert re.fullmatch(rf"{HOST}{base}/show\.md", data["markdown_url"])
-    assert re.fullmatch(rf"{HOST}{base}/episodes\.json", data["episodes_url"])
-    assert isinstance(data["hosts"], list) and data["hosts"], "show has hosts in front matter"
+    assert re.fullmatch(site_url(f"{base}/show.md"), data["markdown_url"])
+    assert re.fullmatch(site_url(f"{base}/episodes.json"), data["episodes_url"])
+    assert re.fullmatch(site_url(f"{base}/llms.txt"), data["llms_url"])
+
+    assert [h["slug"] for h in data["hosts"]] == p["hosts"], "hosts keep front matter order"
     for host in data["hosts"]:
-        resolved = person_type(host["slug"]) is not None
-        assert ("url" in host and bool(host.get("name"))) == resolved, f"host {host} vs people page"
+        assert_person_ref(host, "host")
+
     assert "numbered_episodes" not in data and "special_episodes" not in data, "episodes.json lists every episode"
     assert "podverse_podcast_id" not in data
-    assert data.get("podverse_url") == (f"https://podverse.fm/podcast/{podverse_id(show.slug)}" if podverse_id(show.slug) else None)
-    assert isinstance(data["links"], dict) and all(isinstance(v, str) and v for v in data["links"].values())
+    podverse = p.get("podverse_podcast_id")
+    assert data.get("podverse_url") == (f"https://podverse.fm/podcast/{podverse}" if podverse else None)
+
+    links = {name: link["url"] for name, link in (p.get("links") or {}).items() if link.get("url")}
+    assert data["links"].keys() == links.keys()
+    for name, url in links.items():
+        expected = site_url(url) if url.startswith("/") else re.escape(url)
+        assert re.fullmatch(expected, data["links"][name]), f"link {name}: {data['links'][name]}"
 
 
-# the-launch T-0: uppercase slug, non-numeric episode number
+# the-launch T-0: uppercase slug, non-numeric episode number; coder-radio 3: video, alt and ogg audio
 CORE_EPISODES: list[Episode] = list(
-    {e.url: e for e in [*sample_episodes(), load_episode(CONTENT_SHOW / "the-launch" / "T-0.md")]}.values()
+    {
+        e.url: e
+        for e in [
+            *sample_episodes(),
+            load_episode(CONTENT_SHOW / "the-launch" / "T-0.md"),
+            load_episode(CONTENT_SHOW / "coder-radio" / "0003.md"),
+        ]
+    }.values()
 )
 EPISODE_PARAMS = [param(e, id=e.url, marks=mark.episodes) for e in CORE_EPISODES]
-
-
-def podverse_id(show_slug: str) -> str | None:
-    match = re.search(r'^podverse_podcast_id\s*=\s*"(.*)"', (CONTENT_SHOW / show_slug / "_index.md").read_text(), re.M)
-    return match.group(1) if match else None
 
 
 def sponsor_link(shortname: str) -> str:
@@ -152,32 +192,86 @@ def test_episode_json_core(api_request_context: APIRequestContext, ep: Episode):
 
     if d.get("podcast_file"):
         assert data["audio"]["url"] == d["podcast_file"]
-        assert data["audio"].get("bytes") == d.get("podcast_bytes")
-        assert data["audio"].get("duration") == d.get("podcast_duration")
+        assert data["audio"].get("bytes") == (d.get("podcast_bytes") or None)
+        assert data["audio"].get("duration") == (d.get("podcast_duration") or None)
     else:
         assert "audio" not in data
+    assert data.get("audio_alt_url") == (d.get("podcast_alt_file") or None)
+    assert data.get("audio_ogg_url") == (d.get("podcast_ogg_file") or None)
+    video = {
+        out: d[key]
+        for out, key in (("url", "video_file"), ("hd_url", "video_hd_file"), ("mobile_url", "video_mobile_file"))
+        if d.get(key)
+    }
+    assert data.get("video") == (video or None)
+    if d.get("header_image"):
+        assert re.fullmatch(site_url(d["header_image"]), data["header_image"])
+    else:
+        assert "header_image" not in data
 
-    assert re.fullmatch(rf"{HOST}{re.escape(ep.url)}", data["url"])
+    assert re.fullmatch(site_url(ep.url), data["url"])
     assert "json_url" not in data, "an episode's own JSON URL is the URL it was fetched from"
-    assert re.fullmatch(rf"{HOST}{re.escape(ep.url.rstrip('/'))}\.md", data["markdown_url"])
+    assert re.fullmatch(site_url(f"{ep.url.rstrip('/')}.md"), data["markdown_url"])
+    show = f"/show/{ep.show}"
     assert data["show"]["slug"] == ep.show
-    assert re.fullmatch(rf"{HOST}/show/{ep.show}/show\.json", data["show"]["json_url"])
-    assert re.fullmatch(rf"{HOST}/show/{ep.show}/show\.md", data["show"]["markdown_url"])
-    assert re.fullmatch(rf"{HOST}/show/{ep.show}/llms\.txt", data["show"]["llms_url"])
+    assert data["show"]["name"] == _toml_front_matter(CONTENT_SHOW / ep.show / "_index.md")["title"]
+    assert re.fullmatch(site_url(f"{show}/"), data["show"]["url"])
+    assert re.fullmatch(site_url(f"{show}/show.json"), data["show"]["json_url"])
+    assert re.fullmatch(site_url(f"{show}/show.md"), data["show"]["markdown_url"])
+    assert re.fullmatch(site_url(f"{show}/llms.txt"), data["show"]["llms_url"])
     assert find_nulls(data) == [], "null fields must be omitted at every depth"
 
     assert "podverse_url" not in data, "podverse.fm episode pages use Podverse's own id, which the guid cannot give us"
 
 
-@mark.parametrize("show", SHOW_PARAMS)
-def test_show_latest_episode_json_resolves(api_request_context: APIRequestContext, show: Show):
+def test_core_episodes_cover_every_optional_field():
     """
-    The show's latest_episode.json_url leads to that episode's JSON
+    Guard: the core sample must exercise each optional episode field, or test_episode_json_core checks it only as absent
+    """
+    keys = ("podcast_alt_file", "podcast_ogg_file", "video_file", "header_image", "podcast_chapters", "transcripts", "youtube_link")
+    missing = [k for k in keys if not any(e.data.get(k) for e in CORE_EPISODES)]
+    assert not missing, f"no core episode has {missing}"
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_json_links_resolve(api_request_context: APIRequestContext, show: Show):
+    """
+    show.json latest_episode.json_url and the oldest episodes.json entry's json_url lead to that episode's JSON
     """
     latest = get_json(api_request_context, f"/show/{show.slug}/show.json")["latest_episode"]
-    episode = get_json(api_request_context, urlparse(latest["json_url"]).path)
-    assert episode["type"] == "episode"
-    assert episode["episode"] == latest["episode"]
+    oldest = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"][-1]
+    for ref in (latest, oldest):
+        episode = get_json(api_request_context, urlparse(ref["json_url"]).path)
+        assert episode["type"] == "episode"
+        assert episode["episode"] == ref["episode"]
+
+
+@mark.episodes
+@mark.parametrize("show", SHOW_PARAMS)
+def test_every_episode_json_is_valid(api_request_context: APIRequestContext, show: Show):
+    """
+    Every episode listed in episodes.json serves parseable JSON with schema_version 1 and type "episode"
+    """
+    entries = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"]
+    problems = []
+    for entry in entries:
+        path = urlparse(entry["json_url"]).path
+        response = api_request_context.get(path)
+        content_type = response.headers.get("content-type", "")
+        if response.status != 200 or not content_type.startswith("application/json"):
+            problems.append(f"{path}: {response.status} {content_type}")
+            continue
+        try:
+            data = json.loads(response.text())
+        except ValueError as e:
+            problems.append(f"{path}: unparseable: {e}")
+            continue
+        if not isinstance(data, dict):
+            problems.append(f"{path}: top level is {type(data).__name__}, not an object")
+        elif (data.get("schema_version"), data.get("type"), data.get("episode")) != (1, "episode", entry["episode"]):
+            problems.append(f"{path}: schema_version={data.get('schema_version')!r} type={data.get('type')!r} episode={data.get('episode')!r}")
+    assert len(entries) == len(show.episodes)
+    assert not problems, f"{len(problems)} bad file(s):\n" + "\n".join(problems[:20])
 
 
 @mark.parametrize("ep", EPISODE_PARAMS)
@@ -190,50 +284,45 @@ def test_episode_json_refs(api_request_context: APIRequestContext, ep: Episode):
     for key in ("hosts", "guests"):
         assert [r["slug"] for r in data[key]] == (ep.data.get(key) or [])
         for ref in data[key]:
-            resolved = person_type(ref["slug"]) is not None
-            assert ("url" in ref and bool(ref.get("name"))) == resolved, f"{key} {ref} vs people page"
+            assert_person_ref(ref, key)
 
     assert [s["shortname"] for s in data["sponsors"]] == (ep.data.get("sponsors") or [])
     for sponsor in data["sponsors"]:
-        resolved = sponsor_exists(sponsor["shortname"])
-        assert ("url" in sponsor) == resolved, f"sponsor {sponsor} vs sponsors page"
-        if resolved:
+        if sponsor_exists(sponsor["shortname"]):
+            page = CONTENT / "sponsors" / f"{sponsor['shortname']}.md"
+            assert sponsor["name"] == yaml_title(page), f"sponsor {sponsor}: name"
             assert sponsor["url"] == sponsor_link(sponsor["shortname"]), "sponsor url is the sponsor's own link, not the site stub page"
+        else:
+            assert set(sponsor) == {"shortname"}, f"sponsor {sponsor}: no sponsors page, so only the shortname"
 
     people = [r for r in data["hosts"] + data["guests"] if "url" in r]
     for ref in people[:1]:
         assert api_request_context.get(urlparse(ref["url"]).path).status == 200, f"{ref['url']} does not resolve"
 
 
-@mark.parametrize("show", SHOW_PARAMS)
-def test_episodes_json_entries_link_to_episode_json(api_request_context: APIRequestContext, show: Show):
-    """
-    Every episodes.json entry carries a json_url; the newest and oldest resolve to that episode's JSON
-    """
-    entries = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"]
-    for entry in entries:
-        slug = entry["url"].rstrip("/").rsplit("/", 1)[-1]
-        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", entry["json_url"]), entry["json_url"]
-
-    for entry in (entries[0], entries[-1]):
-        episode = get_json(api_request_context, urlparse(entry["json_url"]).path)
-        assert episode["type"] == "episode"
-        assert episode["episode"] == entry["episode"]
-
-
-def test_json_text_is_not_html_escaped(api_request_context: APIRequestContext):
+@mark.parametrize(
+    "path, raw, escaped",
+    [
+        param(CONTENT_SHOW / "linux-action-news" / "0129.md", " & ", "\\u0026", id="ampersand"),
+        param(CONTENT_SHOW / "jupiter-extras" / "0028.md", "<3", "\\u003c", id="less-than"),
+        param(CONTENT_SHOW / "office-hours" / "0011.md", " > ", "\\u003e", id="greater-than"),
+    ],
+)
+def test_json_text_is_not_html_escaped(api_request_context: APIRequestContext, path: Path, raw: str, escaped: str):
     """
     '&', '<' and '>' appear as themselves in the raw text, not as \\u0026 and friends, so grep and agents can read it
     """
-    ep = load_episode(CONTENT_SHOW / "linux-action-news" / "0129.md")
-    assert any("&" in tag for tag in ep.data["tags"]), "fixture episode must have an '&' in a tag"
-    text = api_request_context.get(episode_json_path(ep)).text()
-    assert " & " in text
-    assert "\\u0026" not in text
+    ep = load_episode(path)
+    assert raw in json.dumps(ep.data, ensure_ascii=False), f"fixture episode must contain {raw!r}"
+    response = api_request_context.get(episode_json_path(ep))
+    assert response.status == 200
+    text = response.text()
+    assert raw in text
+    assert escaped not in text
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("ep", [param(e, id=e.url, marks=mark.episodes) for e in CORE_EPISODES])
+@mark.parametrize("ep", EPISODE_PARAMS)
 def test_episode_page_links_to_its_json(page: Page, ep: Episode):
     """
     The episode HTML head advertises its JSON twin, so a crawler or agent can find it from the page
@@ -241,7 +330,7 @@ def test_episode_page_links_to_its_json(page: Page, ep: Episode):
     page.goto(ep.url)
     links = page.locator('link[rel="alternate"][type="application/json"]')
     expect(links).to_have_count(1)
-    expect(links).to_have_attribute("href", re.compile(rf"^{HOST}{re.escape(ep.url.rstrip('/'))}\.json$"))
+    expect(links).to_have_attribute("href", re.compile(rf"^{site_url(episode_json_path(ep))}$"))
 
 
 @mark.only_browser("chromium")
@@ -258,5 +347,8 @@ def test_show_page_links_to_show_and_episode_list_json(page: Page, show: Show):
 @mark.only_browser("chromium")
 @mark.parametrize("path", ["/", "/community/", "/show/", "/people/chris/"])
 def test_pages_without_json_advertise_none(page: Page, path: str):
+    """
+    Only shows and episodes have JSON twins; other pages must not advertise one
+    """
     page.goto(path)
     expect(page.locator('link[rel="alternate"][type="application/json"]')).to_have_count(0)

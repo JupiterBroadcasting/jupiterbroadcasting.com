@@ -85,3 +85,11 @@ def person_type(username: str) -> str | None:
 
 def sponsor_exists(shortname: str) -> bool:
     return (CONTENT / "sponsors" / f"{shortname}.md").exists()
+
+
+def yaml_title(path: Path) -> str:
+    # flat YAML front matter; the test image has no YAML parser, and a few titles are double-quoted with \U escapes
+    match = re.search(r"""^title: *(?:"(.*)"|'(.*)'|(.*?))\s*$""", path.read_text(), re.M)
+    if match.group(1) is None:
+        return match.group(2) or match.group(3)
+    return re.sub(r"\\U([0-9A-Fa-f]{8})|\\u([0-9A-Fa-f]{4})", lambda m: chr(int(m.group(1) or m.group(2), 16)), match.group(1))

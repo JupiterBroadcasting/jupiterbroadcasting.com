@@ -18,6 +18,7 @@ from episode_data import (
     Episode,
     episodes_by_date,
     is_active,
+    load_episode,
     person_type,
     sample_episodes,
     sponsor_exists,
@@ -262,6 +263,27 @@ def test_show_markdown_twin(api_request_context: APIRequestContext, show: Show):
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
 
+@mark.parametrize(
+    "path, first_note",
+    [
+        param(CONTENT_SHOW / "coder-radio" / "0000.md", None, id="episode-links-heading-only"),
+        param(CONTENT_SHOW / "coder-radio" / "0001.md", "#### What is Coder Radio?", id="episode-links-heading-then-notes"),
+        param(CONTENT_SHOW / "coder-radio" / "0055.md", None, id="empty-body"),
+    ],
+)
+def test_episode_markdown_show_notes(api_request_context: APIRequestContext, path: Path, first_note: str | None):
+    """
+    The body's leading Episode Links heading is replaced by ## Show Notes; a body that is only that heading, or empty, gets no section
+    """
+    ep = load_episode(path)
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    assert "Episode Links" not in text
+    if first_note is None:
+        assert "## Show Notes" not in text
+    else:
+        assert re.search(rf"^## Show Notes\n+{re.escape(first_note)}$", text, re.M), "notes must follow the heading directly"
+
+
 @mark.parametrize("ep", [param(e, id=e.url, marks=mark.episodes) for e in SAMPLE_EPISODES])
 def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episode):
     """
@@ -286,8 +308,8 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     assert ("\n## Transcripts\n" in text) == bool(transcripts)
     for transcript in transcripts:
         assert f"- [{transcript.get('type') or 'transcript'}]({transcript['url']})\n" in text, f"missing transcript {transcript['url']}"
-    notes = re.sub(r"\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\Z))+", "", ep.body).strip()
-    assert ("\n## Show Notes\n" in text) == bool(notes)
+    if not ep.body:
+        assert "\n## Show Notes\n" not in text, "no body, no Show Notes"
     assert "Episode Links" not in text, "the Show Notes heading replaces the body's own Episode Links heading"
     sponsors = [s for s in ep.data.get("sponsors") or [] if sponsor_exists(s)]
     assert ("\n## Sponsors\n" in text) == bool(sponsors)
@@ -389,9 +411,10 @@ def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIReq
     assert f"- Episodes: {data['episode_count']}\n" in text
     if data.get("description"):
         assert f"> {data['description']}\n" in text
-    for key in ("podverse_url", "episodes_url", "llms_url"):
-        if key in data:
-            assert data[key] in text, f"{key} missing"
+    for key in ("episodes_url", "llms_url"):
+        assert data[key] in text, f"{key} missing"
+    if "podverse_url" in data:
+        assert data["podverse_url"] in text, "podverse_url missing"
     assert data["markdown_url"] not in text.replace(f"URL: {data['url']}", ""), "no self link to show.md"
     for host in data["hosts"]:
         assert host.get("name", host["slug"]) in text, f"host {host['slug']} missing"
