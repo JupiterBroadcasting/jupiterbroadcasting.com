@@ -25,6 +25,8 @@ from episode_data import (
     person_type,
     sample_episodes,
     sponsor_exists,
+    sponsor_link,
+    sponsor_path,
     yaml_title,
 )
 
@@ -141,10 +143,6 @@ CORE_EPISODES: list[Episode] = list(
     }.values()
 )
 EPISODE_PARAMS = [param(e, id=e.url, marks=mark.episodes) for e in CORE_EPISODES]
-
-
-def sponsor_link(shortname: str) -> str:
-    return re.search(r"^link: *(\S+)", (CONTENT / "sponsors" / f"{shortname}.md").read_text(), re.M).group(1)
 
 
 def strip_nulls(value):
@@ -289,8 +287,7 @@ def test_episode_json_refs(api_request_context: APIRequestContext, ep: Episode):
     assert [s["shortname"] for s in data["sponsors"]] == (ep.data.get("sponsors") or [])
     for sponsor in data["sponsors"]:
         if sponsor_exists(sponsor["shortname"]):
-            page = CONTENT / "sponsors" / f"{sponsor['shortname']}.md"
-            assert sponsor["name"] == yaml_title(page), f"sponsor {sponsor}: name"
+            assert sponsor["name"] == yaml_title(sponsor_path(sponsor["shortname"])), f"sponsor {sponsor}: name"
             assert sponsor["url"] == sponsor_link(sponsor["shortname"]), "sponsor url is the sponsor's own link, not the site stub page"
         else:
             assert set(sponsor) == {"shortname"}, f"sponsor {sponsor}: no sponsors page, so only the shortname"

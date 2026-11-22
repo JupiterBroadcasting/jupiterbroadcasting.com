@@ -8,10 +8,10 @@
 {{- $sponsors := slice -}}
 {{- range .Params.sponsors -}}
   {{- $sponsor := dict "shortname" . -}}
-  {{- with site.GetPage (printf "/sponsors/%s" .) -}}
-    {{- $sponsor = merge $sponsor (dict "name" .Title) -}}
-    {{- with .Params.link }}{{ $sponsor = merge $sponsor (dict "url" .) }}{{ end -}}
-    {{- with .Description }}{{ $sponsor = merge $sponsor (dict "description" .) }}{{ end -}}
+  {{- with index hugo.Data.sponsors . -}}
+    {{- $sponsor = merge $sponsor (dict "name" .title) -}}
+    {{- with .link }}{{ $sponsor = merge $sponsor (dict "url" .) }}{{ end -}}
+    {{- with .description }}{{ $sponsor = merge $sponsor (dict "description" .) }}{{ end -}}
   {{- end -}}
   {{- $sponsors = $sponsors | append $sponsor -}}
 {{- end -}}
