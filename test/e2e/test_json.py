@@ -343,10 +343,10 @@ def test_show_page_links_to_show_and_episode_list_json(page: Page, show: Show):
 
 def test_membership_json(api_request_context: APIRequestContext):
     """
-    /membership/index.json carries the plans and perks from content/membership/index.md front matter
+    /membership.json carries the plans and perks from content/membership/index.md front matter
     """
     params = _toml_front_matter(CONTENT / "membership" / "index.md")
-    data = get_json(api_request_context, "/membership/index.json")
+    data = get_json(api_request_context, "/membership.json")
     assert data["schema_version"] == 1 and data["type"] == "membership"
     assert re.fullmatch(site_url("/membership/"), data["url"])
     assert re.fullmatch(site_url("/membership/index.md"), data["markdown_url"])
@@ -369,9 +369,9 @@ def test_membership_json(api_request_context: APIRequestContext):
 @mark.only_browser("chromium")
 def test_sponsors_json_matches_page(page: Page, api_request_context: APIRequestContext):
     """
-    /sponsors/index.json lists the same sections and sponsor links as the /sponsors/ page, with data/sponsors fields
+    /sponsors.json lists the same sections and sponsor links as the /sponsors/ page, with data/sponsors fields
     """
-    data = get_json(api_request_context, "/sponsors/index.json")
+    data = get_json(api_request_context, "/sponsors.json")
     assert data["schema_version"] == 1 and data["type"] == "sponsors"
     assert data["lookback_days"] > 0
     page.goto("/sponsors/")
@@ -395,23 +395,109 @@ def test_sponsors_json_matches_page(page: Page, api_request_context: APIRequestC
     assert not find_nulls(data)
 
 
-@mark.only_browser("chromium")
-@mark.parametrize("path", ["/membership/", "/sponsors/"])
-def test_site_page_links_to_its_json(page: Page, path: str):
+PEOPLE_DIR = CONTENT / "people"
+TERM_PARAMS = [
+    param("hosts", "chris", id="host-many-shows"),
+    param("hosts", "brent", id="host"),
+    param("guests", "brent", id="host-as-guest"),
+    param("guests", "alessandro", id="guest"),
+    param("hosts", "allanjude", id="archived"),
+]
+
+
+def person_front_matter(slug: str) -> dict[str, str]:
     """
-    Site pages with a JSON twin advertise index.json beside index.md
+    Top-level scalar fields of a people page's flat YAML front matter (the test image has no YAML parser)
+    """
+    text = (PEOPLE_DIR / f"{slug}.md").read_text().split("---")[1]
+    return {k: v.strip().strip("'\"") for k, v in re.findall(r"^(\w+): *(.*)$", text, re.M) if v.strip() not in ("", "null")}
+
+
+def episode_counts(key: str) -> dict[str, dict[str, int]]:
+    """
+    person slug -> {show slug: number of episodes listing them under key ("hosts"/"guests")}
+    """
+    counts: dict[str, dict[str, int]] = {}
+    for show in SHOWS:
+        for ep in show.episodes:
+            for slug in ep.data.get(key) or []:
+                per_show = counts.setdefault(slug, {})
+                per_show[show.slug] = per_show.get(show.slug, 0) + 1
+    return counts
+
+
+EPISODE_COUNTS = {key: episode_counts(key) for key in ("hosts", "guests")}
+
+
+@mark.parametrize("taxonomy, slug", TERM_PARAMS)
+def test_person_term_json(api_request_context: APIRequestContext, taxonomy: str, slug: str):
+    """
+    /hosts/<slug>.json and /guests/<slug>.json carry the people page profile and that role's per-show episode counts
+    """
+    fm = person_front_matter(slug)
+    data = get_json(api_request_context, f"/{taxonomy}/{slug}.json")
+    assert data["schema_version"] == 1 and data["type"] == taxonomy.removesuffix("s")
+    assert data["slug"] == slug and data["role"] == fm["type"]
+    assert data["name"] == yaml_title(PEOPLE_DIR / f"{slug}.md")
+    assert re.fullmatch(site_url(f"/{taxonomy}/{slug}/"), data["url"])
+    assert re.fullmatch(site_url(f"/{taxonomy}/{slug}/index.md"), data["markdown_url"])
+    assert re.fullmatch(site_url(f"/people/{slug}/"), data["profile_url"])
+    assert data.get("archived", False) == (fm.get("is_archived") == "true")
+    assert data["links"] == {k: fm[k] for k in ("twitter", "mastodon", "linkedin", "instagram", "youtube") if k in fm}
+    expected = EPISODE_COUNTS[taxonomy][slug]
+    assert {s["slug"]: s["episode_count"] for s in data["shows"]} == expected
+    assert data["episode_count"] == sum(expected.values()), "show pages listing hosts are not episodes"
+    for show in data["shows"]:
+        assert re.fullmatch(site_url(f"/show/{show['slug']}/"), show["url"])
+    assert api_request_context.get(urlparse(data["latest_episode"]["json_url"]).path).status == 200
+    assert not find_nulls(data)
+
+
+@mark.parametrize("taxonomy", ["hosts", "guests"])
+def test_people_taxonomy_json(api_request_context: APIRequestContext, taxonomy: str):
+    """
+    /hosts.json and /guests.json list everyone in that role by name, each with episode count and a JSON twin that resolves
+    """
+    data = get_json(api_request_context, f"/{taxonomy}.json")
+    assert data["schema_version"] == 1 and data["type"] == taxonomy
+    assert re.fullmatch(site_url(f"/{taxonomy}/"), data["url"])
+    counts = EPISODE_COUNTS[taxonomy]
+    assert {p["slug"]: p["episode_count"] for p in data["people"]} == {k: sum(v.values()) for k, v in counts.items()}
+    assert data["count"] == len(data["people"])
+    for person in data["people"]:
+        assert person.get("role") == person_type(person["slug"]), person["slug"]
+        assert re.fullmatch(site_url(f"/{taxonomy}/{person['slug']}.json"), person["json_url"])
+    assert api_request_context.get(urlparse(data["people"][0]["json_url"]).path).status == 200
+    assert not find_nulls(data)
+
+
+@mark.only_browser("chromium")
+@mark.parametrize(
+    "path, json_path",
+    [
+        ("/membership/", "/membership.json"),
+        ("/sponsors/", "/sponsors.json"),
+        ("/hosts/", "/hosts.json"),
+        ("/guests/", "/guests.json"),
+        ("/hosts/chris/", "/hosts/chris.json"),
+        ("/guests/alessandro/", "/guests/alessandro.json"),
+    ],
+)
+def test_site_page_links_to_its_json(page: Page, path: str, json_path: str):
+    """
+    Site pages with a JSON twin advertise <page>.json, named like the episode twins
     """
     page.goto(path)
     links = page.locator('link[rel="alternate"][type="application/json"]')
     expect(links).to_have_count(1)
-    expect(links).to_have_attribute("href", re.compile(rf"^{site_url(path + 'index.json')}$"))
+    expect(links).to_have_attribute("href", re.compile(rf"^{site_url(json_path)}$"))
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("path", ["/", "/community/", "/show/", "/people/chris/"])
+@mark.parametrize("path", ["/", "/community/", "/show/", "/people/", "/people/chris/", "/tags/zfs/"])
 def test_pages_without_json_advertise_none(page: Page, path: str):
     """
-    Only shows, episodes, /membership/ and /sponsors/ have JSON twins; other pages must not advertise one
+    Only shows, episodes, hosts, guests, /membership/ and /sponsors/ have JSON twins; other pages must not advertise one
     """
     page.goto(path)
     expect(page.locator('link[rel="alternate"][type="application/json"]')).to_have_count(0)

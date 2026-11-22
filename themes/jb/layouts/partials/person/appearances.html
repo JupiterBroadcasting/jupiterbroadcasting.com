@@ -1,0 +1,11 @@
+{{- /* Episodes on a hosts/guests term page (show _index pages that list hosts are also tagged, so filter to episodes): {episode_count, shows: [{slug, name, url, episode_count}], latest_episode} */ -}}
+{{- $eps := where .Pages "Type" "episode" -}}
+{{- $shows := slice -}}
+{{- range $eps.GroupByParam "show_slug" -}}
+  {{- $show := dict "slug" .Key "episode_count" (len .Pages) -}}
+  {{- with site.GetPage (print "/show/" .Key) }}{{ $show = merge $show (dict "name" .Title "url" .Permalink) }}{{ end -}}
+  {{- $shows = $shows | append $show -}}
+{{- end -}}
+{{- $result := dict "episode_count" (len $eps) "shows" $shows -}}
+{{- with $eps.ByDate.Reverse }}{{ $result = merge $result (dict "latest_episode" (partial "json-episode-ref.html" (index . 0))) }}{{ end -}}
+{{- return $result -}}

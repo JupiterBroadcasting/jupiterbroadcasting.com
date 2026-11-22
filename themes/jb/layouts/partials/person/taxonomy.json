@@ -1,0 +1,15 @@
+{{- /* /hosts.json and /guests.json: everyone tagged in this taxonomy, by name */ -}}
+{{- $people := slice -}}
+{{- range .Data.Terms.Alphabetical -}}
+  {{- $term := .Page -}}
+  {{- $p := dict "slug" $term.Data.Term "name" $term.Title "url" $term.Permalink "episode_count" (len (where .Pages "Type" "episode")) -}}
+  {{- with site.GetPage (print "/people/" $term.Data.Term) -}}
+    {{- $p = merge $p (dict "name" .Title "role" .Type) -}}
+    {{- if .Params.is_archived }}{{ $p = merge $p (dict "archived" true) }}{{ end -}}
+  {{- end -}}
+  {{- with $term.OutputFormats.Get "json" }}{{ $p = merge $p (dict "json_url" .Permalink) }}{{ end -}}
+  {{- $people = $people | append $p -}}
+{{- end -}}
+{{- $m := dict "schema_version" 1 "type" .Data.Plural "title" (trim .Title " ") "url" .Permalink "count" (len $people) "people" $people -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

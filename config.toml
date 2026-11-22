@@ -259,7 +259,7 @@ theme = 'jb'
 
 [outputFormats]
   # /show/<slug>/<NNNN>.json: episode metadata. `ugly` writes <NNNN>.json beside the page directory
-  # (enabled on episode pages by the cascade below)
+  # (enabled on episode pages and hosts/guests by the cascades below, and per page via `outputs`: /membership.json, /sponsors.json)
   [outputFormats.json]
     mediaType = "application/json"
     isPlainText = true
@@ -306,11 +306,20 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
-  # /<page>/index.json: JSON twin of a site page, beside its index.md (enabled per page via `outputs`)
-  [outputFormats.pagejson]
+  # /sponsors.json, /hosts.json, /guests.json: list pages ignore `ugly`, so the home page renders these at the site root
+  # (layouts/index.<format>.json); the list page's head links to its file
+  [outputFormats.sponsorsjson]
     mediaType = "application/json"
     isPlainText = true
-    baseName = "index"
+    baseName = "sponsors"
+  [outputFormats.hostsjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "hosts"
+  [outputFormats.guestsjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "guests"
 
   # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
   [outputFormats.show]
@@ -319,7 +328,7 @@ theme = 'jb'
     baseName = "show"
 
 [outputs]
-  home = ["html", "rss", "llms", "llmsfull"]
+  home = ["html", "rss", "llms", "llmsfull", "sponsorsjson", "hostsjson", "guestsjson"]
   page = ["html", "markdown"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
@@ -338,3 +347,10 @@ theme = 'jb'
   [cascade.target]
     path = "/show/**"
     kind = "page"
+
+# /hosts/<slug>.json, /guests/<slug>.json
+[[cascade]]
+  outputs = ["html", "markdown", "json"]
+  [cascade.target]
+    path = "{/hosts/**,/guests/**}"
+    kind = "term"

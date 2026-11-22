@@ -9,6 +9,9 @@ Homepage: {{ . }}
 {{- with .Params.twitter }}
 Twitter: {{ . }}
 {{- end }}
+{{- with .Params.mastodon }}
+Mastodon: {{ . }}
+{{- end }}
 {{- with .Params.linkedin }}
 LinkedIn: {{ . }}
 {{- end }}
