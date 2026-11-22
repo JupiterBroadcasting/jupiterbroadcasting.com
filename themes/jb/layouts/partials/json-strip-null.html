@@ -1,0 +1,11 @@
+{{- $result := . -}}
+{{- if reflect.IsMap . -}}
+  {{- $result = dict -}}
+  {{- range $k, $v := . -}}
+    {{- if ne $v nil }}{{ $result = merge $result (dict $k (partial "json-strip-null.html" $v)) }}{{ end -}}
+  {{- end -}}
+{{- else if reflect.IsSlice . -}}
+  {{- $result = slice -}}
+  {{- range . }}{{ $result = $result | append (slice (partial "json-strip-null.html" .)) }}{{ end -}}
+{{- end -}}
+{{- return $result -}}

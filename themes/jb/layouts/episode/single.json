@@ -1,48 +1,46 @@
-{
-  "version": 5,
-      "show": {
-        "title": "{{.CurrentSection.Title}}",
-        "subtitle": "{{.CurrentSection.Description}}",
-        "summary": "{{.CurrentSection.Description}}",
-        "poster": "{{.CurrentSection.Params.header_image}}",
-        "link": "{{.CurrentSection.Permalink}}"
-      },
-  {{ $summary := index (split .Description ".") 0 }}
-  "title": "{{.Title}} {{.Params.episode}}",
-  "subtitle": "{{$summary}}.",
-  "summary": "{{.Description}} ",
-  "publicationDate": "{{ dateFormat "Mon, 2 Jan 2006 15:04:05 -0700" .Date }}",
-  "duration": "{{.Params.podcast_duration}}",
-  "poster": "{{.Params.header_image}}",
-  "link": "{{replace .RelPermalink "json" "html"}}",
-  "chapters": [
-    {
-      "start": "00:00:00.000",
-      "title": "Intro",
-      "href": "",
-      "image": ""
-    },
-    {
-      "start": "00:00:13",
-      "title": "Nvidia OpenSource Kernel Driver",
-      "href": "",
-      "image": ""
-    }
-  ],
-  "audio": [
-    {
-      "url": "{{.Params.podcast_file}}",
-      "size": "{{.Params.podcast_bytes}}",
-      "title": "MP3 Audio (mp3)",
-      "mimeType": "audio\/mpeg"
-    }
-  ],
-  "files": [
-    {
-      "url": "{{.Params.podcast_file}}",
-      "size": "{{.Params.podcast_bytes}}",
-      "title": "MP3 Audio",
-      "mimeType": "audio\/mpeg"
-    }
-  ]
-}
+{{- $m := dict "schema_version" 1 "type" "episode" "episode" .Params.episode "title" .Title "date" (.Date.Format "2006-01-02T15:04:05Z07:00") "url" .Permalink "tags" (.Params.tags | default (slice)) -}}
+{{- $params := .Params -}}
+{{- range $key := slice "hosts" "guests" -}}
+  {{- $refs := slice -}}
+  {{- range index $params $key }}{{ $refs = $refs | append (partial "json-person-ref.html" .) }}{{ end -}}
+  {{- $m = merge $m (dict $key $refs) -}}
+{{- end -}}
+{{- $sponsors := slice -}}
+{{- range .Params.sponsors -}}
+  {{- $sponsor := dict "shortname" . -}}
+  {{- with site.GetPage (printf "/sponsors/%s" .) -}}
+    {{- $sponsor = merge $sponsor (dict "name" .Title) -}}
+    {{- with .Params.link }}{{ $sponsor = merge $sponsor (dict "url" .) }}{{ end -}}
+    {{- with .Description }}{{ $sponsor = merge $sponsor (dict "description" .) }}{{ end -}}
+  {{- end -}}
+  {{- $sponsors = $sponsors | append $sponsor -}}
+{{- end -}}
+{{- $m = merge $m (dict "sponsors" $sponsors) -}}
+{{- range $out, $in := dict "description" "description" "youtube_url" "youtube_link" "audio_alt_url" "podcast_alt_file" "audio_ogg_url" "podcast_ogg_file" "transcripts" "transcripts" -}}
+  {{- with index $params $in }}{{ $m = merge $m (dict $out .) }}{{ end -}}
+{{- end -}}
+{{- with .Params.podcast_chapters }}{{ with .chapters }}{{ $m = merge $m (dict "chapters" .) }}{{ end }}{{ end -}}
+{{- with .Params.header_image }}{{ $m = merge $m (dict "header_image" (absURL .)) }}{{ end -}}
+{{- with .OutputFormats.Get "markdown" }}{{ $m = merge $m (dict "markdown_url" .Permalink) }}{{ end -}}
+{{- $show := dict "slug" .Params.show_slug -}}
+{{- with site.GetPage (printf "/show/%s" .Params.show_slug) -}}
+  {{- $show = merge $show (dict "name" .Title "url" .Permalink) -}}
+  {{- $showPage := . -}}
+  {{- range $key, $format := dict "json_url" "show" "markdown_url" "markdown" "llms_url" "llms" -}}
+    {{- with $showPage.OutputFormats.Get $format }}{{ $show = merge $show (dict $key .Permalink) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $m = merge $m (dict "show" $show) -}}
+{{- with .Params.podcast_file -}}
+  {{- $audio := dict "url" . -}}
+  {{- range $out, $in := dict "bytes" "podcast_bytes" "duration" "podcast_duration" -}}
+    {{- with index $params $in }}{{ $audio = merge $audio (dict $out .) }}{{ end -}}
+  {{- end -}}
+  {{- $m = merge $m (dict "audio" $audio) -}}
+{{- end -}}
+{{- $video := dict -}}
+{{- range $out, $in := dict "url" "video_file" "hd_url" "video_hd_file" "mobile_url" "video_mobile_file" -}}
+  {{- with index $params $in }}{{ $video = merge $video (dict $out .) }}{{ end -}}
+{{- end -}}
+{{- with $video }}{{ $m = merge $m (dict "video" .) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

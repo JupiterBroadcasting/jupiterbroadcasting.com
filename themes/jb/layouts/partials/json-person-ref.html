@@ -1,0 +1,5 @@
+{{- $ref := dict "slug" . -}}
+{{- with site.GetPage (printf "/people/%s" .) -}}
+  {{- $ref = merge $ref (dict "name" .Title "url" .Permalink) -}}
+{{- end -}}
+{{- return $ref -}}

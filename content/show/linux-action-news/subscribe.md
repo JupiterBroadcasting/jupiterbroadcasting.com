@@ -2,6 +2,7 @@
 title: "Subscribe"
 date: 2022-08-25
 draft: false
+outputs: [html, markdown]
 rss: "https://linuxactionnews.com/rss"
 direct_links:
     apple: https://itunes.apple.com/us/podcast/linux-action-news/id1235143849

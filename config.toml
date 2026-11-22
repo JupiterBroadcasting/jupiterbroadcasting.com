@@ -258,9 +258,12 @@ theme = 'jb'
     suffixes = ["txt"]
 
 [outputFormats]
-  [outputFormats.webplayer]
-  mediatype ="application/json"
-  baseName = "webplayer"
+  # /show/<slug>/<NNNN>.json: episode metadata. `ugly` writes <NNNN>.json beside the page directory
+  # (enabled on episode pages by the cascade below)
+  [outputFormats.json]
+    mediaType = "application/json"
+    isPlainText = true
+    ugly = true
 
   # Every page/section also emitted as markdown: /show/x/0650/ -> /show/x/0650/index.md
   [outputFormats.markdown]
@@ -290,10 +293,15 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
+  # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
+  [outputFormats.show]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "show"
+
 [outputs]
   home = ["html", "rss", "llms", "llmsfull"]
   page = ["html", "markdown"]
-  # page = ["json","html","webplayer"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
@@ -305,3 +313,9 @@ theme = 'jb'
   [cascade.target]
     path = "/search-index"
     kind = "section"
+
+[[cascade]]
+  outputs = ["html", "markdown", "json"]
+  [cascade.target]
+    path = "/show/**"
+    kind = "page"
