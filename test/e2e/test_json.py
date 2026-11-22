@@ -341,11 +341,77 @@ def test_show_page_links_to_show_and_episode_list_json(page: Page, show: Show):
     assert sorted(urlparse(h).path for h in hrefs) == [f"/show/{show.slug}/episodes.json", f"/show/{show.slug}/show.json"]
 
 
+def test_membership_json(api_request_context: APIRequestContext):
+    """
+    /membership/index.json carries the plans and perks from content/membership/index.md front matter
+    """
+    params = _toml_front_matter(CONTENT / "membership" / "index.md")
+    data = get_json(api_request_context, "/membership/index.json")
+    assert data["schema_version"] == 1 and data["type"] == "membership"
+    assert re.fullmatch(site_url("/membership/"), data["url"])
+    assert re.fullmatch(site_url("/membership/index.md"), data["markdown_url"])
+    assert [g["title"] for g in data["plan_groups"]] == [g["title"] for g in params["plan_groups"]]
+    for group, source in zip(data["plan_groups"], params["plan_groups"]):
+        assert [(p["name"], p["url"]) for p in group["plans"]] == [(p["name"], p["url"]) for p in source["plans"]]
+        for plan, src in zip(group["plans"], source["plans"]):
+            assert plan.get("description") == src.get("description"), plan["name"]
+            if "show" in src:
+                assert plan["show"]["slug"] == src["show"]
+                assert re.fullmatch(site_url(f"/show/{src['show']}/"), plan["show"]["url"])
+    assert [p["show"]["slug"] for p in data["perks"]] == [p["show"] for p in params["perks"]]
+    for perk, source in zip(data["perks"], params["perks"]):
+        show = next(s for s in SHOWS if s.slug == source["show"])
+        assert perk["show"]["name"] == show.title
+        assert perk["items"] == source["items"]
+    assert not find_nulls(data)
+
+
+@mark.only_browser("chromium")
+def test_sponsors_json_matches_page(page: Page, api_request_context: APIRequestContext):
+    """
+    /sponsors/index.json lists the same sections and sponsor links as the /sponsors/ page, with data/sponsors fields
+    """
+    data = get_json(api_request_context, "/sponsors/index.json")
+    assert data["schema_version"] == 1 and data["type"] == "sponsors"
+    assert data["lookback_days"] > 0
+    page.goto("/sponsors/")
+    rendered = page.evaluate(
+        """() => {
+            const sections = [];
+            for (const el of document.querySelectorAll('.spnosor-list .content > *')) {
+                if (el.tagName === 'H2') sections.push([el.textContent.trim(), []]);
+                else if (sections.length) el.querySelectorAll('a[href]').forEach(a => sections.at(-1)[1].push(a.getAttribute('href')));
+            }
+            return sections;
+        }"""
+    )
+    assert [[s["title"], [sp["url"] for sp in s["sponsors"]]] for s in data["sections"]] == rendered
+    for section in data["sections"]:
+        if "show" in section:
+            assert section["show"]["name"] == section["title"]
+            assert re.fullmatch(site_url(f"/show/{section['show']['slug']}/"), section["show"]["url"])
+        for sponsor in section["sponsors"]:
+            assert sponsor["title"] and sponsor["description"], sponsor
+    assert not find_nulls(data)
+
+
+@mark.only_browser("chromium")
+@mark.parametrize("path", ["/membership/", "/sponsors/"])
+def test_site_page_links_to_its_json(page: Page, path: str):
+    """
+    Site pages with a JSON twin advertise index.json beside index.md
+    """
+    page.goto(path)
+    links = page.locator('link[rel="alternate"][type="application/json"]')
+    expect(links).to_have_count(1)
+    expect(links).to_have_attribute("href", re.compile(rf"^{site_url(path + 'index.json')}$"))
+
+
 @mark.only_browser("chromium")
 @mark.parametrize("path", ["/", "/community/", "/show/", "/people/chris/"])
 def test_pages_without_json_advertise_none(page: Page, path: str):
     """
-    Only shows and episodes have JSON twins; other pages must not advertise one
+    Only shows, episodes, /membership/ and /sponsors/ have JSON twins; other pages must not advertise one
     """
     page.goto(path)
     expect(page.locator('link[rel="alternate"][type="application/json"]')).to_have_count(0)

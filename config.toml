@@ -306,6 +306,12 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
+  # /<page>/index.json: JSON twin of a site page, beside its index.md (enabled per page via `outputs`)
+  [outputFormats.pagejson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "index"
+
   # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
   [outputFormats.show]
     mediaType = "application/json"

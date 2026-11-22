@@ -165,12 +165,37 @@ def test_root_site_links(api_request_context: APIRequestContext):
         _get(api_request_context, f"{path}index.md", "text/markdown")
 
 
+@mark.parametrize("path", SITE_PAGES)
+def test_site_page_markdown_has_no_shortcodes(api_request_context: APIRequestContext, path: str):
+    """
+    {{< ref >}} shortcodes in page bodies become absolute links in the markdown twin
+    """
+    text = _get(api_request_context, f"{path}index.md", "text/markdown").text()
+    assert "{{" not in text, "unrendered shortcode"
+
+
+def test_boost_markdown_ref_resolves(api_request_context: APIRequestContext):
+    text = _get(api_request_context, "/boost/index.md", "text/markdown").text()
+    assert re.search(rf"\[Member\]\({HOST}/membership/\)", text), "ref shortcode not converted to a link"
+
+
+def test_sponsors_markdown_lists_sponsors(api_request_context: APIRequestContext):
+    """
+    /sponsors/index.md lists sponsors from data/sponsors under section headings, linking to each sponsor's site
+    """
+    text = _get(api_request_context, "/sponsors/index.md", "text/markdown").text()
+    assert "\n## Jupiter Broadcasting\n" in text
+    links = re.findall(r"^- \[.+\]\((\S+)\)", text, re.M)
+    assert links and all(not re.match(rf"{HOST}/sponsors/", link) for link in links), "links go to sponsors' own sites"
+
+
 def test_llms_full_txt(api_request_context: APIRequestContext):
     """
     /llms-full.txt concatenates core pages as plain markdown: no front matter, no HTML escaping
     """
     text = _get(api_request_context, "/llms-full.txt", "text/plain").text()
     assert "Membership" in text
+    assert "jupitersignal.memberful.com/checkout" in text, "membership plans from front matter missing"
     assert "Brent Gervais" in text
     assert "+++" not in text, "TOML front matter leaked"
     assert "avatar_small" not in text, "YAML front matter leaked"

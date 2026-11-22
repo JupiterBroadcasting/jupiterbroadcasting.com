@@ -1,0 +1,20 @@
+{{- $groups := slice -}}
+{{- range .Params.plan_groups -}}
+  {{- $plans := slice -}}
+  {{- range .plans -}}
+    {{- $plan := dict "name" .name "url" .url "description" .description -}}
+    {{- with .show }}{{ $plan = merge $plan (dict "show" (partial "membership/show-ref.html" .)) }}{{ end -}}
+    {{- $plans = $plans | append $plan -}}
+  {{- end -}}
+  {{- $groups = $groups | append (dict "title" .title "description" .description "plans" $plans) -}}
+{{- end -}}
+{{- $perks := slice -}}
+{{- range .Params.perks -}}
+  {{- $items := slice -}}
+  {{- range .items }}{{ $items = $items | append (dict "name" .name "description" .description) }}{{ end -}}
+  {{- $perks = $perks | append (dict "show" (partial "membership/show-ref.html" .show) "items" $items) -}}
+{{- end -}}
+{{- $m := dict "schema_version" 1 "type" "membership" "title" (trim .Title " ") "url" .Permalink "plan_groups" $groups "perks" $perks -}}
+{{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

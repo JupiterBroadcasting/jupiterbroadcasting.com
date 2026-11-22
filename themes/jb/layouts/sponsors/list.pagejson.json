@@ -1,0 +1,16 @@
+{{- $sections := slice -}}
+{{- range partial "sponsor/sections.html" . -}}
+  {{- $sponsors := slice -}}
+  {{- range .sponsors -}}
+    {{- with index hugo.Data.sponsors . -}}
+      {{- $sponsors = $sponsors | append (dict "title" .title "url" .link "description" .description) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $section := dict "title" .title "sponsors" $sponsors -}}
+  {{- with .show }}{{ $section = merge $section (dict "show" (dict "slug" .Params.show "name" .Title "url" .Permalink)) }}{{ end -}}
+  {{- $sections = $sections | append $section -}}
+{{- end -}}
+{{- $m := dict "schema_version" 1 "type" "sponsors" "title" (trim .Title " ") "url" .Permalink "lookback_days" (sub 0 (int site.Params.sponsors.lookbackdays)) "sections" $sections -}}
+{{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}
