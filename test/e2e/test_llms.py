@@ -12,7 +12,7 @@ from pathlib import Path
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, APIResponse, Page, expect
 
-from episode_data import CONTENT, CONTENT_SHOW, Episode, episodes_by_date, is_active, sample_episodes, sponsor_exists
+from episode_data import CONTENT, CONTENT_SHOW, Episode, episodes_by_date, is_active, sample_episodes, sponsor_exists, sponsor_link
 
 HOST = r"(?:https?://[^/)\s]+)?"
 LLMS_SECTIONS = ["/show/", "/hosts/", "/guests/"]
@@ -267,7 +267,8 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     sponsors = [s for s in ep.data.get("sponsors") or [] if sponsor_exists(s)]
     if sponsors:
         assert "\nSponsors:\n" in text
-        assert len(re.findall(rf"^- \[.+\]\({HOST}/sponsors/[^)]+index\.md\)", text, re.M)) == len(sponsors)
+        for shortname in sponsors:
+            assert re.search(rf"^- \[.+\]\({re.escape(sponsor_link(shortname))}\)", text, re.M), f"{shortname}: links to the sponsor's own site"
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
 

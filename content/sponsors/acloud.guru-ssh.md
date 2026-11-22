@@ -1,7 +1,0 @@
----
-description: This course covers the various software, tools, and utilities used to
-  configure web services on a Linux host.
-link: https://learn.acloud.guru/course/21d201a8-1ec5-4076-bd74-8836d87cb9f1/overview/?utm_source=jupiter&utm_medium=cpc
-shortname: acloud.guru-ssh
-title: A Cloud Guru
----

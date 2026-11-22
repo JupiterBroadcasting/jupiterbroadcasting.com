@@ -1,7 +1,0 @@
----
-description: Try out MailRoute today and get 10% off the lifetime of your account
-  and start with a 30-day free trial, no credit card required.
-link: http://mailroute.net/linux
-shortname: mailroute.net-lup
-title: MailRoute
----

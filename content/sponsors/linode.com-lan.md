@@ -1,7 +1,0 @@
----
-description: Sign up using the link on this page and receive a $100 60-day credit
-  towards your new account.
-link: http://linode.com/lan
-shortname: linode.com-lan
-title: Linode
----
