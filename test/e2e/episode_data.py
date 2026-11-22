@@ -6,6 +6,7 @@ from pathlib import Path
 
 CONTENT: Path = Path(__file__).parents[2] / "content"
 CONTENT_SHOW: Path = CONTENT / "show"
+SPONSORS_DATA: Path = CONTENT.parent / "data" / "sponsors"
 META_FILES: set[str] = {"_index.md", "subscribe.md"}
 ACTIVE_SAMPLE: int = 5  # the scraper can rewrite an active show's last 5 episodes
 ARCHIVED_SAMPLE: int = 2
@@ -81,5 +82,13 @@ def person_type(username: str) -> str | None:
     return match.group(1) if match else None
 
 
+def sponsor_path(shortname: str) -> Path:
+    return SPONSORS_DATA / f"{shortname}.yaml"
+
+
 def sponsor_exists(shortname: str) -> bool:
-    return (CONTENT / "sponsors" / f"{shortname}.md").exists()
+    return sponsor_path(shortname).exists()
+
+
+def sponsor_link(shortname: str) -> str:
+    return re.search(r"^link: *(\S+)", sponsor_path(shortname).read_text(), re.M).group(1)

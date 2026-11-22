@@ -1,4 +1,7 @@
-{{/* Picks have no pages; this renders one index-only page each (layouts/search-index/single.html). Prod deletes public/search-index after indexing. */}}
+{{/* Picks and sponsors have no pages; this renders one index-only page each (layouts/search-index/single.html). Prod deletes public/search-index after indexing. */}}
 {{ range $name, $pick := hugo.Data.picks }}
   {{ $.AddPage (dict "path" $name "title" $pick.title "params" (dict "slug_key" $name) "build" (dict "render" "always" "list" "never")) }}
+{{ end }}
+{{ range $name, $sponsor := hugo.Data.sponsors }}
+  {{ $.AddPage (dict "path" (print "sponsors/" $name) "title" $sponsor.title "params" (dict "sponsor_key" $name) "build" (dict "render" "always" "list" "never")) }}
 {{ end }}

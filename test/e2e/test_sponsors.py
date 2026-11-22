@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pytest import mark
 from playwright.sync_api import Page
 
-from episode_data import CONTENT, CONTENT_SHOW, META_FILES, load_episode
+from episode_data import CONTENT, CONTENT_SHOW, META_FILES, SPONSORS_DATA, load_episode, sponsor_link
 
 REPO_ROOT = CONTENT.parent
 LOOKBACK_DAYS = -int(
@@ -15,18 +15,7 @@ LOOKBACK_DAYS = -int(
 CUTOFF_SLACK = timedelta(days=2)
 
 
-def _sponsor_links() -> dict[str, str]:
-    links = {}
-    for path in (CONTENT / "sponsors").glob("*.md"):
-        text = path.read_text()
-        shortname = re.search(r"^shortname:\s*(\S+)", text, re.M)
-        link = re.search(r"^link:\s*(\S+)", text, re.M)
-        if shortname and link:
-            links[shortname.group(1)] = link.group(1)
-    return links
-
-
-SPONSOR_LINKS = _sponsor_links()
+SPONSOR_LINKS = {path.stem: sponsor_link(path.stem) for path in SPONSORS_DATA.glob("*.yaml")}
 
 
 def _toml_list(text: str, key: str) -> list[str]:
@@ -89,3 +78,13 @@ def test_sponsors_page(page: Page):
     assert set(required) <= set(rendered) <= set(allowed), f"sections: {sorted(rendered)}"
     for title, links in rendered.items():
         assert required.get(title, set()) <= links <= allowed[title], f"{title}: unexpected sponsor links"
+
+
+@mark.only_browser("chromium")
+def test_sponsor_pages_not_built(page: Page):
+    """
+    Sponsors are data, not pages: search links straight to each sponsor's site
+    """
+    shortname = next(SPONSORS_DATA.glob("*.yaml")).stem
+    for path in (f"/sponsors/{shortname}/", f"/sponsors/{shortname}/index.md"):
+        assert page.goto(path).status == 404, path

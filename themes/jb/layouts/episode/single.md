@@ -17,7 +17,7 @@ Transcripts:{{ range . }} [{{ or .type "transcript" }}]({{ .url }}){{ end }}
 {{ end }}
 {{ with .Params.sponsors }}
 Sponsors:
-{{ range . }}{{ $sp := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}{{ with $sp }}- [{{ .Title }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+{{ range . }}{{ with index hugo.Data.sponsors . }}- [{{ .title }}]({{ .link }}){{ with .description }}: {{ . }}{{ end }}
 {{ end }}{{ end }}
 {{ end }}
 {{ partial "llms-body.md" . }}
