@@ -119,12 +119,12 @@ def _slug(ep: Episode) -> str:
 
 def test_root_llms_txt(api_request_context: APIRequestContext):
     """
-    /llms.txt follows the spec layout: H1, summary blockquote, then Shows / Site / Optional sections in order
+    /llms.txt follows the spec layout: H1, summary blockquote, then Shows / Site / Data / Optional sections in order
     """
     text = _get(api_request_context, "/llms.txt", "text/plain").text()
     assert text.startswith("# Jupiter Broadcasting\n"), "H1 must be the first line"
     assert "\n> " in text, "missing summary blockquote"
-    positions = [text.find(h) for h in ("## Shows", "## Site", "## Optional")]
+    positions = [text.find(h) for h in ("## Shows", "## Site", "## Data (JSON)", "## Optional")]
     assert -1 not in positions and positions == sorted(positions), "sections missing or out of order"
     assert re.search(rf"\]\({HOST}/llms-full\.txt\)", text), "Optional must link llms-full.txt"
 
@@ -196,6 +196,40 @@ def test_sponsors_markdown_lists_sponsors(api_request_context: APIRequestContext
     assert "\n## Jupiter Broadcasting\n" in text
     links = re.findall(r"^- \[.+\]\((\S+)\)", text, re.M)
     assert links and all(not re.match(rf"{HOST}/sponsors/", link) for link in links), "links go to sponsors' own sites"
+
+
+def test_root_data_links_are_json(api_request_context: APIRequestContext):
+    """
+    ## Data (JSON) links resolve to JSON, and every ## Site entry's (JSON: ...) twin does too
+    """
+    text = _get(api_request_context, "/llms.txt", "text/plain").text()
+    data = _section(text, "## Data (JSON)", "## Optional")
+    links = re.findall(rf"\]\({HOST}(/[^)]+\.json)\)", data)
+    assert len(links) >= 10, f"Data section lists too few JSON links: {links}"
+    site_json = re.findall(rf"\(JSON: {HOST}(/\S+\.json)\)", _section(text, "## Site", "## Data (JSON)"))
+    assert len(site_json) == len(SITE_PAGES) + 5, site_json
+    for path in links + site_json:
+        _get(api_request_context, path, "application/json")
+    assert "&#39;" not in text and "&amp;" not in text, "plain text must not be HTML-escaped"
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_llms_txt_links_twins_and_hosts(api_request_context: APIRequestContext, show: Show):
+    """
+    Per-show llms.txt points at show.json, the subscribe twins and each host's markdown/JSON, all resolving
+    """
+    text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
+    the_show = _section(text, "## The show")
+    assert re.search(rf"\]\({HOST}/show/{show.slug}/show\.json\)", the_show), "missing show.json"
+    assert re.search(rf"\]\({HOST}/show/{show.slug}/subscribe\.md\)", the_show), "missing subscribe twin"
+    assert ".json` for the JSON twin" in text, "episode JSON pattern not explained"
+    hosts = re.findall(rf"^- \[[^\]]+\]\({HOST}(/hosts/[^)]+)\.md\).*\(JSON: {HOST}(/hosts/[^)]+)\.json\)$", text, re.M)
+    assert hosts, "no hosts listed"
+    for md, js in hosts[:2]:
+        assert md == js
+        _get(api_request_context, f"{md}.md", "text/markdown")
+        _get(api_request_context, f"{js}.json", "application/json")
+    assert "&#39;" not in text and "&amp;" not in text, "plain text must not be HTML-escaped"
 
 
 def test_picks_markdown(api_request_context: APIRequestContext):
