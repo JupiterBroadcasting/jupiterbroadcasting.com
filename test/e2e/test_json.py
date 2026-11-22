@@ -577,9 +577,15 @@ def test_people_json(api_request_context: APIRequestContext):
     assert data["type"] == "people"
     assert sorted(p["slug"] for p in data["people"]) == sorted(p.stem for p in PEOPLE_DIR.glob("*.md"))
     assert data["count"] == len(data["people"])
-    for person in data["people"][:5]:
-        assert person["role"] == person_type(person["slug"])
-        assert api_request_context.get(json_twin(person["url"])).status == 200
+    for person in data["people"]:
+        slug = person["slug"]
+        assert person["role"] == person_type(slug), slug
+        assert re.fullmatch(site_url(f"/people/{slug}/"), person["url"]), slug
+        assert re.fullmatch(site_url(f"/people/{slug}.json"), person["json_url"]), slug
+        assert re.fullmatch(site_url(f"/people/{slug}.md"), person["markdown_url"]), slug
+    for person in data["people"][:3]:
+        assert get_json(api_request_context, urlparse(person["json_url"]).path)["slug"] == person["slug"]
+        assert api_request_context.get(urlparse(person["markdown_url"]).path).status == 200
     assert not find_nulls(data)
 
 

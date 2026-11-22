@@ -12,6 +12,8 @@
   {{- $people := slice -}}
   {{- range (where site.RegularPages "Section" "people").ByTitle -}}
     {{- $p := dict "slug" .Params.username "name" .Title "role" .Type "url" .Permalink -}}
+    {{- with .OutputFormats.Get "json" }}{{ $p = merge $p (dict "json_url" .Permalink) }}{{ end -}}
+    {{- with partial "markdown-url.html" . }}{{ $p = merge $p (dict "markdown_url" .) }}{{ end -}}
     {{- if .Params.is_archived }}{{ $p = merge $p (dict "archived" true) }}{{ end -}}
     {{- $people = $people | append $p -}}
   {{- end -}}
