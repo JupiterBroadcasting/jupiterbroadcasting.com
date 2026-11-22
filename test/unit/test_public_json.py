@@ -22,16 +22,15 @@ def test_every_emitted_json_parses():
     assert not failures, f"{len(failures)} invalid JSON file(s):\n" + "\n".join(failures[:20])
 
 
-def test_every_episode_and_show_json_has_schema_version():
-    # episodes.json is a list index with its own shape, not part of the versioned schema
+def test_every_json_has_schema_version_and_type():
     problems = []
-    shows = episodes = 0
+    shows = episodes = lists = 0
     for path in JSON_FILES:
-        if path.name == "episodes.json":
-            continue
-        expected = "show" if path.name == "show.json" else "episode"
+        expected = {"show.json": "show", "episodes.json": "episodes"}.get(path.name, "episode")
         if expected == "show":
             shows += 1
+        elif expected == "episodes":
+            lists += 1
         else:
             episodes += 1
         try:

@@ -19,7 +19,7 @@ URLs in the payloads follow the site `baseURL` (absolute on production).
 
 ## Versioning
 
-`schema_version` is an integer present on episode and show records. Additive changes (new fields) keep it at `1`; consumers must ignore unknown fields. Removing or renaming a field, or changing a type, bumps it.
+`schema_version` is an integer present on every episode, show and `episodes.json` record. Additive changes (new fields) keep it at `1`; consumers must ignore unknown fields. Removing or renaming a field, or changing a type, bumps it.
 
 ## Omission rules
 
@@ -76,13 +76,11 @@ Keys inside `audio` and `video` are omitted individually when absent. Host and g
 | `links` | object `{name: url}`, `{}` when the show has none | always |
 | `podverse_url` | string (`https://podverse.fm/podcast/<id>`) | omitted when absent |
 | `episode_count` | integer | always |
-| `latest_episode` | object: `episode`, `title`, `date`, `url`, `json_url` | omitted when the show has no episodes |
-| `numbered_episodes` | object: `first`, `last` (integers), `missing` (array of integers, omitted when none) | omitted when the show has no numbered episodes |
-| `special_episodes` | array of `{episode, title, date, url, json_url}`, oldest first | always |
+| `latest_episode` | object: `episode`, `title`, `date`, `url`, `json_url`, `markdown_url` | omitted when the show has no episodes |
 
 ## `episodes.json`
 
-Pre-existing format; the only change is a new `json_url` on each entry pointing at that episode's JSON. Top level: `show`, `title`, `count`, `episodes`. Each entry: `slug`, `episode`, `title`, `hosts`, `guests`, `duration`, `date`, `url`, `json_url`, `transcripts`. It does not carry `schema_version`.
+Top level: `schema_version` (`1`), `type` (`"episodes"`), `slug`, `title`, `count`, `episodes` (newest first). Each entry is the same small object used for `latest_episode`: `episode`, `title`, `date` (RFC 3339), `url`, `json_url`, `markdown_url`. Hosts, guests, duration and transcripts are in the episode's own JSON.
 
 ## Examples
 
@@ -106,4 +104,4 @@ curl -s https://jupiterbroadcasting.com/show/linux-unplugged/0693.json | jq '{ti
 
 ## Finding every episode of a show
 
-Numbered episodes `first` through `last` each live at `/show/<slug>/<n>.json`, except the numbers listed in `missing`. Numbering does not always start at 1 (Coder Radio, Linux Action News and Self-Hosted start at 0) and can have gaps (Jupiter Extras). Episodes without a number (`T-0`, `p01`, `hurricanehelene`) are not covered by that range; each has an entry in `special_episodes` with its own `json_url`. `episode_count` counts both kinds.
+Fetch `/show/<slug>/episodes.json`: it lists every episode (numbered and special) with its `json_url` and `markdown_url`. Numbering does not always start at 1 (Coder Radio, Linux Action News and Self-Hosted start at 0), can have gaps (Jupiter Extras), and some episodes have no number (`T-0`, `p01`, `hurricanehelene`), so use the listed URLs rather than counting up from 1. `show.json`'s `episode_count` matches the list length.

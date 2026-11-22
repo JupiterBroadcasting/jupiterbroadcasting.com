@@ -14,10 +14,4 @@
 {{- end -}}
 {{- $m = merge $m (dict "hosts" $hosts "links" $links) -}}
 {{- range first 1 $eps.ByDate.Reverse }}{{ $m = merge $m (dict "latest_episode" (partial "json-episode-ref.html" .)) }}{{ end -}}
-{{- /* episodes numbered first..last exist at /show/<slug>/<n>.json except `missing`; the rest are listed in special_episodes */ -}}
-{{- $summary := partial "show-episode-summary.html" . -}}
-{{- $special := slice -}}
-{{- range $summary.special }}{{ $special = $special | append (slice (partial "json-episode-ref.html" .)) }}{{ end -}}
-{{- $m = merge $m (dict "special_episodes" $special) -}}
-{{- with $summary.numbered }}{{ $m = merge $m (dict "numbered_episodes" .) }}{{ end -}}
 {{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

@@ -215,21 +215,25 @@ def test_show_episodes_json(api_request_context: APIRequestContext, show: Show):
     episodes.json enumerates every episode in content (incl. prefixed specials like the-launch T-0), newest first
     """
     data = _get(api_request_context, f"/show/{show.slug}/episodes.json", "application/json").json()
-    assert data["show"] == show.slug
+    assert data["schema_version"] == 1
+    assert data["type"] == "episodes"
+    assert data["slug"] == show.slug
+    assert "show" not in data
     assert data["title"] == show.title
     assert data["count"] == len(show.episodes), "count differs from content"
     assert len(data["episodes"]) == data["count"]
-    assert {e["slug"] for e in data["episodes"]} == {_slug(e) for e in show.episodes}
+    assert {e["url"].rstrip("/").rsplit("/", 1)[-1] for e in data["episodes"]} == {_slug(e).lower() for e in show.episodes}
 
     dates = [e["date"] for e in data["episodes"]]
     assert dates == sorted(dates, reverse=True), "episodes must be newest first"
 
     for ep in data["episodes"]:
-        assert ep["title"], f"{ep['slug']}: empty title"
-        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(ep['slug'].lower())}/", ep["url"]), ep["url"]
-        assert isinstance(ep["hosts"], (list, type(None))), f"{ep['slug']}: hosts"
-        assert isinstance(ep["guests"], (list, type(None))), f"{ep['slug']}: guests"
-        assert all(t["url"] for t in ep["transcripts"] or []), f"{ep['slug']}: transcript without url"
+        slug = ep["url"].rstrip("/").rsplit("/", 1)[-1]
+        assert set(ep) == {"episode", "title", "date", "url", "json_url", "markdown_url"}, f"{slug}: {sorted(ep)}"
+        assert ep["title"], f"{slug}: empty title"
+        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}/", ep["url"]), ep["url"]
+        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", ep["json_url"]), ep["json_url"]
+        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.md", ep["markdown_url"]), ep["markdown_url"]
 
 
 @mark.parametrize("show", SHOW_PARAMS)
@@ -240,7 +244,8 @@ def test_show_llms_newest_oldest_match_json(api_request_context: APIRequestConte
     text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
     episodes = _get(api_request_context, f"/show/{show.slug}/episodes.json", "application/json").json()["episodes"]
     for label, ep in (("Newest", episodes[0]), ("Oldest", episodes[-1])):
-        assert re.search(rf"{label}: `{HOST}/show/{show.slug}/{re.escape(ep['slug'].lower())}\.md`", text), label
+        slug = ep["url"].rstrip("/").rsplit("/", 1)[-1]
+        assert re.search(rf"{label}: `{HOST}/show/{show.slug}/{re.escape(slug)}\.md`", text), label
 
 
 @mark.parametrize("show", SHOW_PARAMS)
@@ -395,12 +400,14 @@ def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIReq
     for name, url in data["links"].items():
         assert f"- {name}: {url}\n" in text, f"link {name} missing"
 
-    numbered = data.get("numbered_episodes")
-    if numbered:
-        assert f"- Numbered episodes: {numbered['first']} to {numbered['last']}" in text
-        missing = ", ".join(str(n) for n in numbered.get("missing", []))
+    listed = _get(api_request_context, f"/show/{show.slug}/episodes.json", "application/json").json()["episodes"]
+    numbers = sorted(e["episode"] for e in listed if isinstance(e["episode"], int))
+    special = [e for e in reversed(listed) if not isinstance(e["episode"], int)]
+    if numbers:
+        assert f"- Numbered episodes: {numbers[0]} to {numbers[-1]}" in text
+        missing = ", ".join(str(n) for n in sorted(set(range(numbers[0], numbers[-1] + 1)) - set(numbers)))
         assert (f"- Missing numbers: {missing}\n" in text) == bool(missing)
-    for episode in data["special_episodes"]:
+    for episode in special:
         line = re.search(rf"^  - {re.escape(str(episode['episode']))} · (\d{{4}}-\d{{2}}-\d{{2}}) · \[(.*)\]\((.*)\)$", text, re.M)
         assert line, f"special episode {episode['episode']} missing"
         assert line.group(1) == episode["date"][:10]
@@ -408,5 +415,5 @@ def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIReq
         assert line.group(3) == episode["url"].rstrip("/") + ".md"
     latest = data["latest_episode"]
     assert f"- Latest episode: {latest['episode']} · {latest['date'][:10]} · [{latest['title'].strip()}]({latest['url'].rstrip('/')}.md)\n" in text
-    if not data["special_episodes"]:
+    if not special:
         assert "Special episodes" not in text

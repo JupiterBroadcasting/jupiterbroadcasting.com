@@ -77,6 +77,7 @@ def test_show_json(api_request_context: APIRequestContext, show: Show):
     assert data["episode_count"] == len(show.episodes)
     assert data["latest_episode"]["episode"] == int(newest.number)
     assert re.fullmatch(rf"{HOST}{re.escape(newest.url)}", data["latest_episode"]["url"])
+    assert re.fullmatch(rf"{HOST}{re.escape(newest.url.rstrip('/'))}\.md", data["latest_episode"]["markdown_url"])
     assert "json_url" not in data, "a show's own JSON URL is the URL it was fetched from"
     assert re.fullmatch(rf"{HOST}{base}/show\.md", data["markdown_url"])
     assert re.fullmatch(rf"{HOST}{base}/episodes\.json", data["episodes_url"])
@@ -84,14 +85,7 @@ def test_show_json(api_request_context: APIRequestContext, show: Show):
     for host in data["hosts"]:
         resolved = person_type(host["slug"]) is not None
         assert ("url" in host and bool(host.get("name"))) == resolved, f"host {host} vs people page"
-    numbers = [e.data["episode"] for e in show.episodes if isinstance(e.data["episode"], int)]
-    special = [e for e in show.episodes if not isinstance(e.data["episode"], int)]
-    assert data["numbered_episodes"]["first"] == min(numbers)
-    assert data["numbered_episodes"]["last"] == max(numbers)
-    assert data["numbered_episodes"].get("missing", []) == sorted(set(range(min(numbers), max(numbers) + 1)) - set(numbers))
-    assert [s["episode"] for s in data["special_episodes"]] == [e.data["episode"] for e in special], "oldest first"
-    for entry in data["special_episodes"][:1]:
-        assert get_json(api_request_context, urlparse(entry["json_url"]).path)["episode"] == entry["episode"]
+    assert "numbered_episodes" not in data and "special_episodes" not in data, "episodes.json lists every episode"
     assert "podverse_podcast_id" not in data
     assert data.get("podverse_url") == (f"https://podverse.fm/podcast/{podverse_id(show.slug)}" if podverse_id(show.slug) else None)
     assert isinstance(data["links"], dict) and all(isinstance(v, str) and v for v in data["links"].values())
@@ -218,8 +212,8 @@ def test_episodes_json_entries_link_to_episode_json(api_request_context: APIRequ
     """
     entries = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"]
     for entry in entries:
-        expected = rf"{HOST}/show/{show.slug}/{re.escape(str(entry['slug']).lower())}\.json"
-        assert re.fullmatch(expected, entry["json_url"]), f"{entry['slug']}: {entry.get('json_url')}"
+        slug = entry["url"].rstrip("/").rsplit("/", 1)[-1]
+        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", entry["json_url"]), entry["json_url"]
 
     for entry in (entries[0], entries[-1]):
         episode = get_json(api_request_context, urlparse(entry["json_url"]).path)

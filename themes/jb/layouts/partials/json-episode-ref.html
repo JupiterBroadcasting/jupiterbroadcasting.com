@@ -1,3 +1,4 @@
 {{- $ref := dict "episode" .Params.episode "title" .Title "date" (.Date.Format "2006-01-02T15:04:05Z07:00") "url" .Permalink -}}
 {{- with .OutputFormats.Get "json" }}{{ $ref = merge $ref (dict "json_url" .Permalink) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $ref = merge $ref (dict "markdown_url" .) }}{{ end -}}
 {{- return $ref -}}
