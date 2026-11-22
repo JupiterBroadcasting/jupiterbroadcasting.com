@@ -1,0 +1,12 @@
+{{- /* Generic page JSON: base fields plus what the page shows from front matter */ -}}
+{{- $m := partial "json/base.html" . -}}
+{{- if eq .Section "community" -}}
+  {{- $m = merge $m (dict "kind" .Params.comms_type "link" .Params.direct_link) -}}
+  {{- with .Params.logo }}{{ $m = merge $m (dict "logo" (absURL .)) }}{{ end -}}
+{{- else if and .File (eq .File.BaseFileName "subscribe") -}}
+  {{- $m = merge $m (dict "type" "subscribe" "rss" .Params.rss "apps" .Params.direct_links) -}}
+  {{- with .Parent }}{{ $m = merge $m (dict "show" (dict "slug" .Params.show "name" .Title "url" .Permalink)) }}{{ end -}}
+{{- else if eq .Type "calendar" -}}
+  {{- $m = merge $m (dict "ical_url" site.Params.calendar.rss) -}}
+{{- end -}}
+{{- return $m -}}

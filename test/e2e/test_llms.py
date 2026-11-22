@@ -1,6 +1,6 @@
 """
 llms.txt machinery (llmstxt.org v2): /llms.txt, /llms-full.txt, per-show llms.txt + episodes.json,
-markdown twins (<slug>.md for pages, <url>index.md for sections), and discovery links in HTML heads.
+markdown twins (<slug>.md, sections at the root), and discovery links in HTML heads.
 
 Expected values come from content/ so the tests hold for any content snapshot.
 Links may be absolute (production) or site-relative (CI builds with baseURL "/").
@@ -28,12 +28,11 @@ from episode_data import (
 HOST = r"(?:https?://[^/)\s]+)?"
 LLMS_SECTIONS = ["/show/", "/hosts/", "/guests/"]
 SITE_PAGES = ["/membership/", "/live/", "/community/", "/hosts/", "/sponsors/", "/contact/"]
-# pages are <slug>.md like <slug>.json; sections stay <url>index.md (list pages ignore `ugly`),
-# except /hosts/ and /sponsors/, whose markdown the home page renders at the root beside their JSON
+# every page's markdown is <slug>.md like its <slug>.json; sections' are rendered by the home page at the root
 SITE_MARKDOWN = {
     "/membership/": "/membership.md",
-    "/live/": "/live/index.md",
-    "/community/": "/community/index.md",
+    "/live/": "/live.md",
+    "/community/": "/community.md",
     "/hosts/": "/hosts.md",
     "/sponsors/": "/sponsors.md",
     "/contact/": "/contact.md",
@@ -214,6 +213,25 @@ def test_picks_markdown(api_request_context: APIRequestContext):
     assert not broken, f"picked-on episode twins that 404: {broken}"
 
 
+@mark.parametrize(
+    "path, expected",
+    [
+        param("/community.md", "/community/github.md) (https://github.com/", id="community"),
+        param("/people.md", "/people/chris.md) (host)", id="people"),
+        param("/show.md", "/show/linux-unplugged/show.md)", id="shows"),
+        param("/archive.md", "/show/coder-radio/show.md)", id="archive"),
+        param("/live.md", "- Audio stream: http", id="live"),
+        param("/calendar.md", "iCalendar: http", id="calendar"),
+        param("/community/github.md", "Link: https://github.com/", id="community-page"),
+        param("/show/linux-unplugged/subscribe.md", "RSS: http", id="subscribe"),
+    ],
+)
+def test_page_markdown_lists_what_the_page_shows(api_request_context: APIRequestContext, path: str, expected: str):
+    text = _get(api_request_context, path, "text/markdown").text()
+    assert expected in text, f"{path} missing {expected!r}"
+    assert "{{" not in text
+
+
 def test_llms_full_txt(api_request_context: APIRequestContext):
     """
     /llms-full.txt concatenates core pages as plain markdown: no front matter, no HTML escaping
@@ -281,10 +299,9 @@ def test_show_episodes_json(api_request_context: APIRequestContext, show: Show):
 
     for ep in data["episodes"]:
         slug = ep["url"].rstrip("/").rsplit("/", 1)[-1]
-        assert set(ep) == {"episode", "title", "date", "url", "json_url", "markdown_url"}, f"{slug}: {sorted(ep)}"
+        assert set(ep) == {"episode", "title", "date", "url", "markdown_url"}, f"{slug}: {sorted(ep)} (no json_url: it is the url with .json)"
         assert ep["title"], f"{slug}: empty title"
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}/", ep["url"]), ep["url"]
-        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", ep["json_url"]), ep["json_url"]
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.md", ep["markdown_url"]), ep["markdown_url"]
 
 
@@ -421,7 +438,7 @@ def test_home_discovery_link(page: Page):
 @mark.only_browser("chromium")
 @mark.parametrize(
     "path, llms, markdown",
-    [param("/community/", "/llms.txt", "/community/index.md", id="community")]
+    [param("/community/", "/llms.txt", "/community.md", id="community")]
     + [param("/membership/", "/llms.txt", "/membership.md", id="page")]
     + [param("/sponsors/", "/llms.txt", "/sponsors.md", id="root-list")]
     + [param("/show/linux-unplugged/subscribe/", "/show/linux-unplugged/llms.txt", "/show/linux-unplugged/subscribe.md", id="subscribe")]
@@ -457,6 +474,13 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
         "/hosts/index.md",
         "/guests/index.md",
         "/show/linux-unplugged/subscribe/index.md",
+        "/community/index.md",
+        "/community/github/index.md",
+        "/live/index.md",
+        "/archive/index.md",
+        "/people/index.md",
+        "/show/index.md",
+        "/search-index/index.md",
     ],
 )
 def test_old_page_twin_urls_are_gone(api_request_context: APIRequestContext, path: str):

@@ -69,6 +69,13 @@ def get_json(api: APIRequestContext, path: str) -> dict:
     return response.json()
 
 
+def json_twin(url: str) -> str:
+    """
+    Path of a page's JSON twin: its URL with .json for the trailing slash (refs carry no json_url)
+    """
+    return urlparse(url).path.rstrip("/") + ".json"
+
+
 def site_url(path: str) -> str:
     """
     Pattern for a site path rendered through absURL/Permalink
@@ -234,12 +241,13 @@ def test_core_episodes_cover_every_optional_field():
 @mark.parametrize("show", SHOW_PARAMS)
 def test_show_json_links_resolve(api_request_context: APIRequestContext, show: Show):
     """
-    show.json latest_episode.json_url and the oldest episodes.json entry's json_url lead to that episode's JSON
+    show.json latest_episode and the oldest episodes.json entry lead to that episode's JSON at <url>.json
     """
     latest = get_json(api_request_context, f"/show/{show.slug}/show.json")["latest_episode"]
     oldest = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"][-1]
     for ref in (latest, oldest):
-        episode = get_json(api_request_context, urlparse(ref["json_url"]).path)
+        assert "json_url" not in ref, "an episode's JSON is its url with .json"
+        episode = get_json(api_request_context, json_twin(ref["url"]))
         assert episode["type"] == "episode"
         assert episode["episode"] == ref["episode"]
 
@@ -253,7 +261,7 @@ def test_every_episode_json_is_valid(api_request_context: APIRequestContext, sho
     entries = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"]
     problems = []
     for entry in entries:
-        path = urlparse(entry["json_url"]).path
+        path = json_twin(entry["url"])
         response = api_request_context.get(path)
         content_type = response.headers.get("content-type", "")
         if response.status != 200 or not content_type.startswith("application/json"):
@@ -504,6 +512,115 @@ def test_picks_json(api_request_context: APIRequestContext):
     assert not find_nulls(data)
 
 
+COMMUNITY_DIR = CONTENT / "community"
+COMMUNITY_PAGES = sorted(
+    p.stem
+    for p in COMMUNITY_DIR.glob("*.md")
+    if p.name != "_index.md" and not re.search(r"^draft\s*=\s*true", p.read_text(), re.M)
+)
+
+
+@mark.parametrize("slug", [s for s in COMMUNITY_PAGES if s != "picks"])
+def test_community_page_json(api_request_context: APIRequestContext, slug: str):
+    """
+    /community/<slug>.json carries the link and kind the community card shows
+    """
+    params = _toml_front_matter(COMMUNITY_DIR / f"{slug}.md")
+    data = get_json(api_request_context, f"/community/{slug}.json")
+    assert data["schema_version"] == 1 and data["type"] == "community"
+    assert data["title"] == params["title"].strip()
+    assert data.get("link") == params.get("direct_link")
+    assert data.get("kind") == params.get("comms_type")
+    assert re.fullmatch(site_url(f"/community/{slug}/"), data["url"])
+    assert re.fullmatch(site_url(f"/community/{slug}.md"), data["markdown_url"])
+    assert not find_nulls(data)
+
+
+def test_community_json(api_request_context: APIRequestContext):
+    data = get_json(api_request_context, "/community.json")
+    assert data["type"] == "community" and re.fullmatch(site_url("/community/"), data["url"])
+    assert sorted(urlparse(p["url"]).path for p in data["pages"]) == sorted(f"/community/{s}/" for s in COMMUNITY_PAGES)
+    assert not find_nulls(data)
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_subscribe_json(api_request_context: APIRequestContext, show: Show):
+    """
+    /show/<slug>/subscribe.json carries the RSS feed and the podcast app links from subscribe.md
+    """
+    text = (CONTENT_SHOW / show.slug / "subscribe.md").read_text()
+    data = get_json(api_request_context, f"/show/{show.slug}/subscribe.json")
+    assert data["type"] == "subscribe"
+    assert data["rss"] == re.search(r'^rss: *"?([^"\n]+)"?', text, re.M).group(1)
+    assert data["show"]["slug"] == show.slug and data["show"]["name"] == show.title
+    assert data.get("apps") and all(v.startswith("http") for v in data["apps"].values())
+    assert not find_nulls(data)
+
+
+@mark.parametrize("taxonomy, slug", [param("hosts", "chris", id="host"), param("guests", "alessandro", id="guest")])
+def test_person_page_json(api_request_context: APIRequestContext, taxonomy: str, slug: str):
+    """
+    /people/<slug>.json is the profile, pointing at the hosts/guests page that lists their episodes
+    """
+    fm = person_front_matter(slug)
+    data = get_json(api_request_context, f"/people/{slug}.json")
+    assert data["type"] == "person" and data["slug"] == slug and data["role"] == fm["type"]
+    assert data["name"] == yaml_title(PEOPLE_DIR / f"{slug}.md")
+    assert re.fullmatch(site_url(f"/{taxonomy}/{slug}/"), data[f"{taxonomy}_url"])
+    assert "profile_url" not in data, "the profile is this page"
+    assert data["links"] == {k: fm[k] for k in ("twitter", "mastodon", "linkedin", "instagram", "youtube") if k in fm}
+    assert not find_nulls(data)
+
+
+def test_people_json(api_request_context: APIRequestContext):
+    data = get_json(api_request_context, "/people.json")
+    assert data["type"] == "people"
+    assert sorted(p["slug"] for p in data["people"]) == sorted(p.stem for p in PEOPLE_DIR.glob("*.md"))
+    assert data["count"] == len(data["people"])
+    for person in data["people"][:5]:
+        assert person["role"] == person_type(person["slug"])
+        assert api_request_context.get(json_twin(person["url"])).status == 200
+    assert not find_nulls(data)
+
+
+@mark.parametrize("path, active", [param("/show.json", None, id="shows"), param("/archive.json", False, id="archive")])
+def test_shows_json(api_request_context: APIRequestContext, path: str, active: bool | None):
+    """
+    /show.json lists every show; /archive.json only the inactive ones
+    """
+    data = get_json(api_request_context, path)
+    expected = [s for s in SHOWS if active is None or bool(s.params.get("active")) == active]
+    assert sorted(s["slug"] for s in data["shows"]) == sorted(s.slug for s in expected)
+    for show in data["shows"]:
+        source = next(s for s in SHOWS if s.slug == show["slug"])
+        assert show["name"] == source.title
+        assert show["active"] == bool(source.params.get("active"))
+        assert show["episode_count"] == len(source.episodes)
+        assert re.fullmatch(site_url(f"/show/{show['slug']}/show.md"), show["markdown_url"])
+    assert not find_nulls(data)
+
+
+def test_live_json(api_request_context: APIRequestContext):
+    data = get_json(api_request_context, "/live.json")
+    assert data["type"] == "live"
+    assert data["audio_url"].startswith("http") and data["video_url"].startswith("http")
+    assert len(data["latest_episodes"]) == 3
+    for ref in data["latest_episodes"]:
+        assert "json_url" not in ref
+    assert api_request_context.get(json_twin(data["latest_episodes"][0]["url"])).status == 200
+
+
+@mark.parametrize("path, field", [param("/calendar.json", "ical_url", id="calendar"), param("/boost.json", "content", id="boost")])
+def test_page_json(api_request_context: APIRequestContext, path: str, field: str):
+    """
+    Plain pages carry their markdown body as content, plus what the page shows from site params
+    """
+    data = get_json(api_request_context, path)
+    assert data["schema_version"] == 1 and data[field]
+    assert re.fullmatch(site_url(path.removesuffix(".json") + ".md"), data["markdown_url"])
+    assert "{{" not in json.dumps(data)
+
+
 @mark.only_browser("chromium")
 @mark.parametrize(
     "path, json_path",
@@ -515,6 +632,17 @@ def test_picks_json(api_request_context: APIRequestContext):
         ("/hosts/chris/", "/hosts/chris.json"),
         ("/guests/alessandro/", "/guests/alessandro.json"),
         ("/community/picks/", "/community/picks.json"),
+        ("/community/", "/community.json"),
+        ("/community/github/", "/community/github.json"),
+        ("/live/", "/live.json"),
+        ("/archive/", "/archive.json"),
+        ("/people/", "/people.json"),
+        ("/people/chris/", "/people/chris.json"),
+        ("/show/", "/show.json"),
+        ("/contact/", "/contact.json"),
+        ("/calendar/", "/calendar.json"),
+        ("/boost/", "/boost.json"),
+        ("/show/linux-unplugged/subscribe/", "/show/linux-unplugged/subscribe.json"),
     ],
 )
 def test_site_page_links_to_its_json(page: Page, path: str, json_path: str):
@@ -528,10 +656,10 @@ def test_site_page_links_to_its_json(page: Page, path: str, json_path: str):
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("path", ["/", "/community/", "/community/github/", "/show/", "/people/", "/people/chris/", "/tags/zfs/"])
+@mark.parametrize("path", ["/", "/tags/zfs/", "/search/"])
 def test_pages_without_json_advertise_none(page: Page, path: str):
     """
-    Only shows, episodes, hosts, guests, /membership/ and /sponsors/ have JSON twins; other pages must not advertise one
+    The home page (llms.txt covers it), tags and search have no JSON twin and must not advertise one
     """
     page.goto(path)
     expect(page.locator('link[rel="alternate"][type="application/json"]')).to_have_count(0)

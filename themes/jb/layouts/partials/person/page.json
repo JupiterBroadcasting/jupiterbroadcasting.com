@@ -1,0 +1,9 @@
+{{- /* /people/<slug>.json: the profile, plus the hosts/guests pages that list their episodes */ -}}
+{{- $slug := .Params.username -}}
+{{- $m := merge (dict "schema_version" 1 "type" "person" "slug" $slug "url" .Permalink) (partial "person/profile.html" .) -}}
+{{- $m = merge $m (dict "profile_url" nil) -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{- range $key, $taxonomy := dict "hosts_url" "hosts" "guests_url" "guests" -}}
+  {{- with site.GetPage (print "/" $taxonomy "/" $slug) }}{{ $m = merge $m (dict $key .Permalink) }}{{ end -}}
+{{- end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

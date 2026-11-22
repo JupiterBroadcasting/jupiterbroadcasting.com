@@ -1,0 +1,10 @@
+{{- /* Profile fields from a people page: {name, profile_url, role, bio, homepage, archived, avatar, links} */ -}}
+{{- $person := . -}}
+{{- $m := dict "name" .Title "profile_url" .Permalink "role" .Type "bio" .Params.bio "homepage" .Params.homepage -}}
+{{- if .Params.is_archived }}{{ $m = merge $m (dict "archived" true) }}{{ end -}}
+{{- with .Params.avatar }}{{ $m = merge $m (dict "avatar" (absURL .)) }}{{ end -}}
+{{- $links := dict -}}
+{{- range $site := slice "twitter" "mastodon" "linkedin" "instagram" "youtube" -}}
+  {{- with index $person.Params $site }}{{ $links = merge $links (dict $site .) }}{{ end -}}
+{{- end -}}
+{{- return merge $m (dict "links" $links) -}}

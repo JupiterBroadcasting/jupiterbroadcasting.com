@@ -1,0 +1,24 @@
+{{- /* /community.json, /live.json, /archive.json, /people.json, /show.json */ -}}
+{{- $m := merge (partial "json/base.html" .) (dict "type" (cond (eq .Section "show") "shows" .Section)) -}}
+{{- if eq .Section "community" -}}
+  {{- $pages := slice -}}
+  {{- range .Pages }}{{ $pages = $pages | append (dict "title" .Title "url" .Permalink "description" .Description "kind" .Params.comms_type "link" .Params.direct_link) }}{{ end -}}
+  {{- $m = merge $m (dict "pages" $pages) -}}
+{{- else if eq .Section "live" -}}
+  {{- $latest := slice -}}
+  {{- range first 3 (where site.RegularPages "Type" "episode").ByDate.Reverse }}{{ $latest = $latest | append (partial "json-episode-ref.html" .) }}{{ end -}}
+  {{- $m = merge $m (dict "audio_url" site.Params.live.audio_url "video_url" site.Params.live.video_url "latest_episodes" $latest) -}}
+{{- else if eq .Section "people" -}}
+  {{- $people := slice -}}
+  {{- range (where site.RegularPages "Section" "people").ByTitle -}}
+    {{- $p := dict "slug" .Params.username "name" .Title "role" .Type "url" .Permalink -}}
+    {{- if .Params.is_archived }}{{ $p = merge $p (dict "archived" true) }}{{ end -}}
+    {{- $people = $people | append $p -}}
+  {{- end -}}
+  {{- $m = merge $m (dict "count" (len $people) "people" $people) -}}
+{{- else if eq .Section "show" -}}
+  {{- $m = merge $m (dict "shows" (partial "json/shows.html" true)) -}}
+{{- else if eq .Section "archive" -}}
+  {{- $m = merge $m (dict "shows" (partial "json/shows.html" false)) -}}
+{{- end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

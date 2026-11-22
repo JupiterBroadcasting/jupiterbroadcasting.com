@@ -2,16 +2,6 @@
 {{- $slug := .Data.Term -}}
 {{- $m := dict "schema_version" 1 "type" (.Data.Singular) "slug" $slug "name" .Title "url" .Permalink -}}
 {{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
-{{- with site.GetPage (print "/people/" $slug) -}}
-  {{- $person := . -}}
-  {{- $m = merge $m (dict "name" .Title "profile_url" .Permalink "role" .Type "bio" .Params.bio "homepage" .Params.homepage) -}}
-  {{- if .Params.is_archived }}{{ $m = merge $m (dict "archived" true) }}{{ end -}}
-  {{- with .Params.avatar }}{{ $m = merge $m (dict "avatar" (absURL .)) }}{{ end -}}
-  {{- $links := dict -}}
-  {{- range $site := slice "twitter" "mastodon" "linkedin" "instagram" "youtube" -}}
-    {{- with index $person.Params $site }}{{ $links = merge $links (dict $site .) }}{{ end -}}
-  {{- end -}}
-  {{- $m = merge $m (dict "links" $links) -}}
-{{- end -}}
+{{- with site.GetPage (print "/people/" $slug) }}{{ $m = merge $m (partial "person/profile.html" .) }}{{ end -}}
 {{- $m = merge $m (partial "person/appearances.html" .) -}}
 {{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

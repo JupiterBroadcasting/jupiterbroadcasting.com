@@ -307,33 +307,72 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
-  # /sponsors.json, /hosts.json, /guests.json: list pages ignore `ugly`, so the home page renders these at the site root
-  # (layouts/index.<format>.json); the list page's head links to its file
-  [outputFormats.sponsorsjson]
+  # Section twins at the site root: /sponsors.json, /hosts.md, /community.json, ... List pages ignore `ugly`, so the
+  # home page renders these (layouts/index.<section>rootjson.json / index.<section>rootmd.md) and the section's head links them
+  [outputFormats.sponsorsrootjson]
     mediaType = "application/json"
     isPlainText = true
     baseName = "sponsors"
-  [outputFormats.hostsjson]
-    mediaType = "application/json"
-    isPlainText = true
-    baseName = "hosts"
-  [outputFormats.guestsjson]
-    mediaType = "application/json"
-    isPlainText = true
-    baseName = "guests"
-  # ...and their markdown twins: /sponsors.md, /hosts.md, /guests.md
-  [outputFormats.sponsorsmd]
+  [outputFormats.sponsorsrootmd]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "sponsors"
-  [outputFormats.hostsmd]
+  [outputFormats.hostsrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "hosts"
+  [outputFormats.hostsrootmd]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "hosts"
-  [outputFormats.guestsmd]
+  [outputFormats.guestsrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "guests"
+  [outputFormats.guestsrootmd]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "guests"
+  [outputFormats.communityrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "community"
+  [outputFormats.communityrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "community"
+  [outputFormats.liverootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "live"
+  [outputFormats.liverootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "live"
+  [outputFormats.archiverootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "archive"
+  [outputFormats.archiverootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "archive"
+  [outputFormats.peoplerootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "people"
+  [outputFormats.peoplerootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "people"
+  [outputFormats.showrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "show"
+  [outputFormats.showrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "show"
 
   # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
   [outputFormats.show]
@@ -342,19 +381,26 @@ theme = 'jb'
     baseName = "show"
 
 [outputs]
-  home = ["html", "rss", "llms", "llmsfull", "sponsorsjson", "hostsjson", "guestsjson", "sponsorsmd", "hostsmd", "guestsmd"]
-  page = ["html", "pagemd"]
+  home = ["html", "rss", "llms", "llmsfull", "sponsorsrootjson", "sponsorsrootmd", "hostsrootjson", "hostsrootmd", "guestsrootjson", "guestsrootmd", "communityrootjson", "communityrootmd", "liverootjson", "liverootmd", "archiverootjson", "archiverootmd", "peoplerootjson", "peoplerootmd", "showrootjson", "showrootmd"]
+  page = ["html", "pagemd", "json"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
   term = ["html", "markdown"]
 
 [[cascade]]
+  outputs = ["html"]
   [cascade.build]
     list = "never"
   [cascade.target]
     path = "/search-index"
     kind = "section"
+
+# index-only pages, deleted after indexing: no twins
+[[cascade]]
+  outputs = ["html"]
+  [cascade.target]
+    path = "/search-index/**"
 
 [[cascade]]
   outputs = ["html", "pagemd", "json"]
@@ -362,12 +408,17 @@ theme = 'jb'
     path = "/show/**"
     kind = "page"
 
-# /sponsors/, /hosts/, /guests/: markdown is /sponsors.md etc. from the home page, so no index.md
+# sections with root twins (/community.json, /community.md, ...; see the output formats above): no index.md
 [[cascade]]
   outputs = ["html"]
   [cascade.target]
     path = "{/hosts,/guests}"
     kind = "taxonomy"
+[[cascade]]
+  outputs = ["html"]
+  [cascade.target]
+    path = "{/community,/live,/archive,/people,/show}"
+    kind = "section"
 
 # /hosts/<slug>.json, /guests/<slug>.json and .md
 [[cascade]]

@@ -17,7 +17,7 @@
   {{- if not .IsHome }}{{ range .OutputFormats }}{{ if eq .MediaType.Type "application/json" }}
   <link rel="alternate" type="application/json" href="{{ .Permalink }}" title="{{ if eq .Name "episodes" }}Episode list{{ else }}JSON{{ end }}">
   {{- end }}{{ end }}{{ end }}
-  {{- if and (not .IsPage) (eq .RelPermalink (print "/" .Section "/")) }}{{ with site.Home.OutputFormats.Get (print .Section "json") }}
+  {{- if and (not .IsPage) (eq .RelPermalink (print "/" .Section "/")) }}{{ with site.Home.OutputFormats.Get (print .Section "rootjson") }}
   <link rel="alternate" type="application/json" href="{{ .Permalink }}" title="JSON">
   {{- end }}{{ end }}
 

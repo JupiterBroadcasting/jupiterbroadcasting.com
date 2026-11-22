@@ -1,0 +1,12 @@
+{{- /* Shows under /show/ by title: [{slug, name, url, markdown_url, active, episode_count, description}]. Argument: true for every show, false for archived (inactive) only. */ -}}
+{{- $all := . -}}
+{{- $shows := slice -}}
+{{- range (site.GetPage "/show").Sections.ByTitle -}}
+  {{- $active := .Params.active | default false -}}
+  {{- if or $all (not $active) -}}
+    {{- $s := dict "slug" .Params.show "name" .Title "url" .Permalink "active" $active "episode_count" (len (where .Pages "Type" "episode")) "description" .Description -}}
+    {{- with partial "markdown-url.html" . }}{{ $s = merge $s (dict "markdown_url" .) }}{{ end -}}
+    {{- $shows = $shows | append $s -}}
+  {{- end -}}
+{{- end -}}
+{{- return $shows -}}

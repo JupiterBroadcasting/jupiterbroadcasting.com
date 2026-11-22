@@ -2,7 +2,7 @@
 title: "Subscribe"
 date: 2022-08-25
 draft: false
-outputs: [html, pagemd]
+outputs: [html, pagemd, json]
 rss: "https://extras.show/rss"
 direct_links:
     apple: https://podcasts.apple.com/us/podcast/jupiter-extras/id1476447125
