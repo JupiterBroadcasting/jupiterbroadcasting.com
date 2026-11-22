@@ -1,6 +1,6 @@
 """
 llms.txt machinery (llmstxt.org v2): /llms.txt, /llms-full.txt, per-show llms.txt + episodes.json,
-markdown twins (<slug>.md for episodes and people, <url>index.md elsewhere), and discovery links in HTML heads.
+markdown twins (<slug>.md for pages, <url>index.md for sections), and discovery links in HTML heads.
 
 Expected values come from content/ so the tests hold for any content snapshot.
 Links may be absolute (production) or site-relative (CI builds with baseURL "/").
@@ -28,6 +28,16 @@ from episode_data import (
 HOST = r"(?:https?://[^/)\s]+)?"
 LLMS_SECTIONS = ["/show/", "/hosts/", "/guests/"]
 SITE_PAGES = ["/membership/", "/live/", "/community/", "/hosts/", "/sponsors/", "/contact/"]
+# pages are <slug>.md like <slug>.json; sections stay <url>index.md (list pages ignore `ugly`),
+# except /hosts/ and /sponsors/, whose markdown the home page renders at the root beside their JSON
+SITE_MARKDOWN = {
+    "/membership/": "/membership.md",
+    "/live/": "/live/index.md",
+    "/community/": "/community/index.md",
+    "/hosts/": "/hosts.md",
+    "/sponsors/": "/sponsors.md",
+    "/contact/": "/contact.md",
+}
 
 
 def _yaml_field(path: Path, key: str) -> str | None:
@@ -161,8 +171,8 @@ def test_root_site_links(api_request_context: APIRequestContext):
     """
     site = _section(_get(api_request_context, "/llms.txt", "text/plain").text(), "## Site", "## Optional")
     for path in SITE_PAGES:
-        assert re.search(rf"\]\({HOST}{re.escape(path)}index\.md\)", site), f"{path} not linked"
-        _get(api_request_context, f"{path}index.md", "text/markdown")
+        assert re.search(rf"\]\({HOST}{re.escape(SITE_MARKDOWN[path])}\)", site), f"{path} not linked"
+        _get(api_request_context, SITE_MARKDOWN[path], "text/markdown")
 
 
 @mark.parametrize("path", SITE_PAGES)
@@ -170,23 +180,38 @@ def test_site_page_markdown_has_no_shortcodes(api_request_context: APIRequestCon
     """
     {{< ref >}} shortcodes in page bodies become absolute links in the markdown twin
     """
-    text = _get(api_request_context, f"{path}index.md", "text/markdown").text()
+    text = _get(api_request_context, SITE_MARKDOWN[path], "text/markdown").text()
     assert "{{" not in text, "unrendered shortcode"
 
 
 def test_boost_markdown_ref_resolves(api_request_context: APIRequestContext):
-    text = _get(api_request_context, "/boost/index.md", "text/markdown").text()
+    text = _get(api_request_context, "/boost.md", "text/markdown").text()
     assert re.search(rf"\[Member\]\({HOST}/membership/\)", text), "ref shortcode not converted to a link"
 
 
 def test_sponsors_markdown_lists_sponsors(api_request_context: APIRequestContext):
     """
-    /sponsors/index.md lists sponsors from data/sponsors under section headings, linking to each sponsor's site
+    /sponsors.md lists sponsors from data/sponsors under section headings, linking to each sponsor's site
     """
-    text = _get(api_request_context, "/sponsors/index.md", "text/markdown").text()
+    text = _get(api_request_context, "/sponsors.md", "text/markdown").text()
     assert "\n## Jupiter Broadcasting\n" in text
     links = re.findall(r"^- \[.+\]\((\S+)\)", text, re.M)
     assert links and all(not re.match(rf"{HOST}/sponsors/", link) for link in links), "links go to sponsors' own sites"
+
+
+def test_picks_markdown(api_request_context: APIRequestContext):
+    """
+    /community/picks.md lists every pick with its link, and every "Picked on" episode twin resolves
+    """
+    from test_community import PICKS
+
+    text = _get(api_request_context, "/community/picks.md", "text/markdown").text()
+    for pick in PICKS:
+        assert f"]({pick.url})" in text, pick.title
+    episodes = set(re.findall(rf"\]\({HOST}(/show/[^/]+/[^/)]+\.md)\)", text))
+    assert episodes == {f"{e}.md" for p in PICKS for e in p.episodes}
+    broken = [e for e in sorted(episodes) if api_request_context.get(e).status != 200]
+    assert not broken, f"picked-on episode twins that 404: {broken}"
 
 
 def test_llms_full_txt(api_request_context: APIRequestContext):
@@ -346,9 +371,9 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
 
 
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
-    text = _get(api_request_context, "/hosts/index.md", "text/markdown").text()
+    text = _get(api_request_context, "/hosts.md", "text/markdown").text()
     missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]
-    assert not missing, f"active hosts missing from /hosts/index.md: {missing}"
+    assert not missing, f"active hosts missing from /hosts.md: {missing}"
 
 
 @mark.parametrize("username", HOST_TERMS)
@@ -378,7 +403,7 @@ def test_people_twin(api_request_context: APIRequestContext, username: str):
 
 
 def test_guests_twin(api_request_context: APIRequestContext):
-    text = _get(api_request_context, "/guests/index.md", "text/markdown").text()
+    text = _get(api_request_context, "/guests.md", "text/markdown").text()
     assert re.search(rf"\]\({HOST}/guests/[^/)]+\.md\)", text), "guests twin lists no guests"
     assert "{{" not in text, "template error"
 
@@ -397,6 +422,9 @@ def test_home_discovery_link(page: Page):
 @mark.parametrize(
     "path, llms, markdown",
     [param("/community/", "/llms.txt", "/community/index.md", id="community")]
+    + [param("/membership/", "/llms.txt", "/membership.md", id="page")]
+    + [param("/sponsors/", "/llms.txt", "/sponsors.md", id="root-list")]
+    + [param("/show/linux-unplugged/subscribe/", "/show/linux-unplugged/llms.txt", "/show/linux-unplugged/subscribe.md", id="subscribe")]
     + [param(f"/show/{s.slug}/", f"/show/{s.slug}/llms.txt", f"/show/{s.slug}/show.md", id=s.slug) for s in SHOWS]
     + [
         param(
@@ -416,6 +444,26 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
     expect(page.locator('link[rel="alternate"][type="text/markdown"]')).to_have_attribute(
         "href", re.compile(rf"^{HOST}{re.escape(markdown)}$")
     )
+
+
+@mark.parametrize(
+    "path",
+    [
+        "/membership/index.md",
+        "/contact/index.md",
+        "/boost/index.md",
+        "/community/picks/index.md",
+        "/sponsors/index.md",
+        "/hosts/index.md",
+        "/guests/index.md",
+        "/show/linux-unplugged/subscribe/index.md",
+    ],
+)
+def test_old_page_twin_urls_are_gone(api_request_context: APIRequestContext, path: str):
+    """
+    Page markdown twins are <slug>.md like their <slug>.json; the old <url>index.md must not linger
+    """
+    assert api_request_context.get(path).status == 404, f"{path} should no longer exist"
 
 
 @mark.parametrize("show", SHOW_PARAMS)

@@ -2,7 +2,7 @@
 
 > Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, and Jupiter EXTRAS. The site hosts episode show notes plus pages about membership, live shows, sponsors, and community.
 
-Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llms.txt`) describing the show and linking its ten most recent episodes; the complete episode URL list for each show is JSON at `/show/<slug>/episodes.json`. Episodes, people, hosts and guests are available as markdown at their URL with `.md` in place of the trailing slash (e.g. `/show/linux-unplugged/650.md`, `/hosts/chris.md`); other pages by appending `index.md` (e.g. `/membership/index.md`).
+Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llms.txt`) describing the show and linking its ten most recent episodes; the complete episode URL list for each show is JSON at `/show/<slug>/episodes.json`. Pages are available as markdown at their URL with `.md` in place of the trailing slash (e.g. `/show/linux-unplugged/650.md`, `/membership.md`, `/hosts/chris.md`), and some as JSON with `.json`; other sections by appending `index.md` (e.g. `/community/index.md`). Each HTML page links its markdown and JSON with `<link rel="alternate">`.
 
 ## Shows
 
@@ -12,7 +12,7 @@ Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llm
 
 {{ range $path := slice "/membership" "/live" "/community" "/hosts" "/sponsors" "/contact" }}
 {{- with site.GetPage $path }}
-- [{{ trim .Title " " }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+- [{{ trim .Title " " }}]({{ partial "markdown-url.html" . }}){{ with .Description }}: {{ . }}{{ end }}
 {{- end }}
 {{ end }}
 ## Optional

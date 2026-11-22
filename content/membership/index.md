@@ -4,9 +4,9 @@ description = "Support Jupiter Broadcasting"
 date = "2022-07-03T03:35:01-05:00"
 draft = false
 search_type = "support"
-outputs = ["html", "markdown", "json"]
+outputs = ["html", "pagemd", "json"]
 
-# Plans and perks are rendered by layouts/membership/ into the HTML page, index.md and /membership.json
+# Plans and perks are rendered by layouts/membership/ into the HTML page, /membership.md and /membership.json
 
 [[plan_groups]]
   title = "Network Membership"

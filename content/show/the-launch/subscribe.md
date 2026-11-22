@@ -2,7 +2,7 @@
 title: "Subscribe"
 date: 2025-02-10
 draft: false
-outputs: [html, markdown]
+outputs: [html, pagemd]
 rss: "https://serve.podhome.fm/rss/04b078f9-b3e8-4363-a576-98e668231306"
 direct_links:
     # TODO: Add more podcasting 2.0? (fountain, podverse, etc?)

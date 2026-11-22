@@ -2,7 +2,7 @@
 title: "Subscribe"
 date: 2022-08-25
 draft: false
-outputs: [html, markdown]
+outputs: [html, pagemd]
 rss: "https://selfhosted.show/rss"
 direct_links:
     apple: https://podcasts.apple.com/us/podcast/self-hosted/id1477997392

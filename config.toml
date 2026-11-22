@@ -265,15 +265,15 @@ theme = 'jb'
     isPlainText = true
     ugly = true
 
-  # Every page/section also emitted as markdown: /people/x/ -> /people/x/index.md
-  # (episodes and shows use the two formats below instead, named like their JSON)
+  # Sections and lists emitted as markdown: /community/ -> /community/index.md (list pages ignore `ugly`;
+  # pages, episodes and shows use pagemd/showmd below instead, named like their JSON)
   [outputFormats.markdown]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "index"
 
-  # <slug>.md markdown beside the page directory: /show/x/0650/ -> /show/x/0650.md,
-  # /people/chris/ -> /people/chris.md, /hosts/chris/ -> /hosts/chris.md (enabled by the cascades below)
+  # <slug>.md markdown beside the page directory, for every regular page (see [outputs]) and hosts/guests terms:
+  # /show/x/0650/ -> /show/x/0650.md, /membership/ -> /membership.md, /hosts/chris/ -> /hosts/chris.md
   [outputFormats.pagemd]
     mediaType = "text/markdown"
     isPlainText = true
@@ -321,6 +321,19 @@ theme = 'jb'
     mediaType = "application/json"
     isPlainText = true
     baseName = "guests"
+  # ...and their markdown twins: /sponsors.md, /hosts.md, /guests.md
+  [outputFormats.sponsorsmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "sponsors"
+  [outputFormats.hostsmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "hosts"
+  [outputFormats.guestsmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "guests"
 
   # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
   [outputFormats.show]
@@ -329,8 +342,8 @@ theme = 'jb'
     baseName = "show"
 
 [outputs]
-  home = ["html", "rss", "llms", "llmsfull", "sponsorsjson", "hostsjson", "guestsjson"]
-  page = ["html", "markdown"]
+  home = ["html", "rss", "llms", "llmsfull", "sponsorsjson", "hostsjson", "guestsjson", "sponsorsmd", "hostsmd", "guestsmd"]
+  page = ["html", "pagemd"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
@@ -349,12 +362,12 @@ theme = 'jb'
     path = "/show/**"
     kind = "page"
 
-# /people/<slug>.md
+# /sponsors/, /hosts/, /guests/: markdown is /sponsors.md etc. from the home page, so no index.md
 [[cascade]]
-  outputs = ["html", "pagemd"]
+  outputs = ["html"]
   [cascade.target]
-    path = "/people/**"
-    kind = "page"
+    path = "{/hosts,/guests}"
+    kind = "taxonomy"
 
 # /hosts/<slug>.json, /guests/<slug>.json and .md
 [[cascade]]

@@ -49,9 +49,9 @@ def test_membership_perks(membership: Page, perk: dict):
 
 def test_membership_markdown(api_request_context: APIRequestContext):
     """
-    index.md carries every plan and perk from the front matter, not raw shortcodes
+    /membership.md carries every plan and perk from the front matter, not raw shortcodes
     """
-    text = api_request_context.get("/membership/index.md").text()
+    text = api_request_context.get("/membership.md").text()
     for plan in PLANS:
         assert f"- [{plan['name']}]({plan['url']})" in text, plan["name"]
     for perk in MEMBERSHIP["perks"]:

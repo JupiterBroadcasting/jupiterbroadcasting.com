@@ -349,7 +349,7 @@ def test_membership_json(api_request_context: APIRequestContext):
     data = get_json(api_request_context, "/membership.json")
     assert data["schema_version"] == 1 and data["type"] == "membership"
     assert re.fullmatch(site_url("/membership/"), data["url"])
-    assert re.fullmatch(site_url("/membership/index.md"), data["markdown_url"])
+    assert re.fullmatch(site_url("/membership.md"), data["markdown_url"])
     assert [g["title"] for g in data["plan_groups"]] == [g["title"] for g in params["plan_groups"]]
     for group, source in zip(data["plan_groups"], params["plan_groups"]):
         assert [(p["name"], p["url"]) for p in group["plans"]] == [(p["name"], p["url"]) for p in source["plans"]]
@@ -480,6 +480,30 @@ def test_people_taxonomy_json(api_request_context: APIRequestContext, taxonomy: 
     assert not find_nulls(data)
 
 
+def test_picks_json(api_request_context: APIRequestContext):
+    """
+    /community/picks.json lists every data/picks file with its link, license and the episodes it was picked on
+    """
+    from test_community import PICKS
+
+    data = get_json(api_request_context, "/community/picks.json")
+    assert data["schema_version"] == 1 and data["type"] == "picks"
+    assert re.fullmatch(site_url("/community/picks/"), data["url"])
+    assert data["count"] == len(PICKS) == len(data["picks"])
+    expected = {p.url: (p.title, p.episodes) for p in PICKS}
+    assert {p["slug"] for p in data["picks"]} == {p.stem for p in (CONTENT.parent / "data" / "picks").glob("*.yaml")}
+    for pick in data["picks"]:
+        _, episodes = expected[pick["url"]]
+        title = yaml_title(CONTENT.parent / "data" / "picks" / f"{pick['slug']}.yaml").lstrip("'\"")
+        assert pick["title"].startswith(title), "yaml_title keeps only a wrapped title's first line"
+        assert [urlparse(e["url"]).path.rstrip("/") for e in pick["episodes"]] == list(episodes), pick["slug"]
+        assert all(e["show_name"] for e in pick["episodes"]), pick["slug"]
+    licenses = [p for p in data["picks"] if "license" in p]
+    assert licenses and len(licenses) < len(data["picks"]), "null licenses are omitted, set ones kept"
+    assert "json_url" not in json.dumps(data)
+    assert not find_nulls(data)
+
+
 @mark.only_browser("chromium")
 @mark.parametrize(
     "path, json_path",
@@ -490,6 +514,7 @@ def test_people_taxonomy_json(api_request_context: APIRequestContext, taxonomy: 
         ("/guests/", "/guests.json"),
         ("/hosts/chris/", "/hosts/chris.json"),
         ("/guests/alessandro/", "/guests/alessandro.json"),
+        ("/community/picks/", "/community/picks.json"),
     ],
 )
 def test_site_page_links_to_its_json(page: Page, path: str, json_path: str):
@@ -503,7 +528,7 @@ def test_site_page_links_to_its_json(page: Page, path: str, json_path: str):
 
 
 @mark.only_browser("chromium")
-@mark.parametrize("path", ["/", "/community/", "/show/", "/people/", "/people/chris/", "/tags/zfs/"])
+@mark.parametrize("path", ["/", "/community/", "/community/github/", "/show/", "/people/", "/people/chris/", "/tags/zfs/"])
 def test_pages_without_json_advertise_none(page: Page, path: str):
     """
     Only shows, episodes, hosts, guests, /membership/ and /sponsors/ have JSON twins; other pages must not advertise one

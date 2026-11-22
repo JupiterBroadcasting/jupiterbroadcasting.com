@@ -2,7 +2,7 @@
 title: "Subscribe"
 date: 2022-08-25
 draft: false
-outputs: [html, markdown]
+outputs: [html, pagemd]
 rss: "https://www.officehours.hair/rss"
 direct_links:
     google_podcast: https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub2ZmaWNlaG91cnMuaGFpci9yc3M
