@@ -22,6 +22,7 @@ from episode_data import (
     person_type,
     sample_episodes,
     sponsor_exists,
+    sponsor_link,
 )
 
 HOST = r"(?:https?://[^/)\s]+)?"
@@ -314,7 +315,8 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     sponsors = [s for s in ep.data.get("sponsors") or [] if sponsor_exists(s)]
     assert ("\n## Sponsors\n" in text) == bool(sponsors)
     if sponsors:
-        assert len(re.findall(rf"^- \[.+\]\({HOST}/sponsors/[^)]+index\.md\)", text, re.M)) == len(sponsors)
+        for shortname in sponsors:
+            assert re.search(rf"^- \[.+\]\({re.escape(sponsor_link(shortname))}\)", text, re.M), f"{shortname}: links to the sponsor's own site"
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
 

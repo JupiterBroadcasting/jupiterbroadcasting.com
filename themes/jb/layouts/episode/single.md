@@ -20,7 +20,7 @@ URL: {{ .Permalink }}
 {{ with .Params.sponsors }}
 ## Sponsors
 
-{{ range . }}{{ $sp := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}{{ with $sp }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Description }}: {{ . }}{{ end }}
+{{ range . }}{{ with index hugo.Data.sponsors . }}- [{{ .title }}]({{ .link }}){{ with .description }}: {{ . }}{{ end }}
 {{ end }}{{ end }}
 {{ end }}
 {{ with trim (replaceRE `\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\z))+` "" (trim (partial "llms-body.md" .) "\n\r\t ")) "\n\r\t " }}## Show Notes

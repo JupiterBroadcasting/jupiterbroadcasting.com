@@ -1,8 +1,0 @@
----
-description: By the end of this course, you will feel comfortable working with a large
-  variety of networking tools and configurations to manage complex Linux networking
-  implementations.
-link: https://linuxacademy.com/cp/modules/view/id/262/?utm_source=jupiter&utm_medium=cpc
-shortname: linuxacademy.com-lup
-title: A Cloud Guru
----
