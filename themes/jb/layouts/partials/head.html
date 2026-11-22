@@ -14,6 +14,9 @@
   {{- with partial "markdown-url.html" . }}
   <link rel="alternate" type="text/markdown" href="{{ . }}">
   {{- end }}
+  {{- range .OutputFormats }}{{ if eq .MediaType.Type "application/json" }}
+  <link rel="alternate" type="application/json" href="{{ .Permalink }}" title="{{ if eq .Name "episodes" }}Episode list{{ else }}JSON{{ end }}">
+  {{- end }}{{ end }}
 
   {{ $sass := resources.Get "css/main.sass" }}
   <!-- Defining options that production & development should have -->

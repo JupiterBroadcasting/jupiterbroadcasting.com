@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from pytest import mark, param
-from playwright.sync_api import APIRequestContext
+from playwright.sync_api import APIRequestContext, Page, expect
 
 from episode_data import (
     CONTENT,
@@ -230,3 +230,33 @@ def test_json_text_is_not_html_escaped(api_request_context: APIRequestContext):
     text = api_request_context.get(episode_json_path(ep)).text()
     assert " & " in text
     assert "\\u0026" not in text
+
+
+@mark.only_browser("chromium")
+@mark.parametrize("ep", [param(e, id=e.url, marks=mark.episodes) for e in CORE_EPISODES])
+def test_episode_page_links_to_its_json(page: Page, ep: Episode):
+    """
+    The episode HTML head advertises its JSON twin, so a crawler or agent can find it from the page
+    """
+    page.goto(ep.url)
+    links = page.locator('link[rel="alternate"][type="application/json"]')
+    expect(links).to_have_count(1)
+    expect(links).to_have_attribute("href", re.compile(rf"^{HOST}{re.escape(ep.url.rstrip('/'))}\.json$"))
+
+
+@mark.only_browser("chromium")
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_page_links_to_show_and_episode_list_json(page: Page, show: Show):
+    """
+    The show HTML head advertises show.json and the full episodes.json
+    """
+    page.goto(f"/show/{show.slug}/")
+    hrefs = page.locator('link[rel="alternate"][type="application/json"]').evaluate_all("els => els.map(e => e.href)")
+    assert sorted(urlparse(h).path for h in hrefs) == [f"/show/{show.slug}/episodes.json", f"/show/{show.slug}/show.json"]
+
+
+@mark.only_browser("chromium")
+@mark.parametrize("path", ["/", "/community/", "/show/", "/people/chris/"])
+def test_pages_without_json_advertise_none(page: Page, path: str):
+    page.goto(path)
+    expect(page.locator('link[rel="alternate"][type="application/json"]')).to_have_count(0)

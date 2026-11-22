@@ -15,6 +15,8 @@ Static JSON generated at build time for every show and episode. No auth, no serv
 Navigation: `episodes.json` entries carry `json_url` -> episode JSON -> its `show.json_url` -> show JSON.
 Show JSON links back to `episodes.json` via `episodes_url` and to its newest episode via `latest_episode.json_url`.
 
+Discovery from the HTML pages: every episode page has `<link rel="alternate" type="application/json">` to its JSON and `<link rel="alternate" type="text/markdown">` to its markdown; a show page has the markdown link plus two JSON links, `show.json` and `episodes.json` (title "Episode list").
+
 URLs in the payloads follow the site `baseURL` (absolute on production).
 
 ## Versioning
