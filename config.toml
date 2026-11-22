@@ -272,8 +272,9 @@ theme = 'jb'
     isPlainText = true
     baseName = "index"
 
-  # episode markdown: /show/x/0650/ -> /show/x/0650.md
-  [outputFormats.episodemd]
+  # <slug>.md markdown beside the page directory: /show/x/0650/ -> /show/x/0650.md,
+  # /people/chris/ -> /people/chris.md, /hosts/chris/ -> /hosts/chris.md (enabled by the cascades below)
+  [outputFormats.pagemd]
     mediaType = "text/markdown"
     isPlainText = true
     ugly = true
@@ -343,14 +344,21 @@ theme = 'jb'
     kind = "section"
 
 [[cascade]]
-  outputs = ["html", "episodemd", "json"]
+  outputs = ["html", "pagemd", "json"]
   [cascade.target]
     path = "/show/**"
     kind = "page"
 
-# /hosts/<slug>.json, /guests/<slug>.json
+# /people/<slug>.md
 [[cascade]]
-  outputs = ["html", "markdown", "json"]
+  outputs = ["html", "pagemd"]
+  [cascade.target]
+    path = "/people/**"
+    kind = "page"
+
+# /hosts/<slug>.json, /guests/<slug>.json and .md
+[[cascade]]
+  outputs = ["html", "pagemd", "json"]
   [cascade.target]
     path = "{/hosts/**,/guests/**}"
     kind = "term"

@@ -7,7 +7,6 @@
     {{- $p = merge $p (dict "name" .Title "role" .Type) -}}
     {{- if .Params.is_archived }}{{ $p = merge $p (dict "archived" true) }}{{ end -}}
   {{- end -}}
-  {{- with $term.OutputFormats.Get "json" }}{{ $p = merge $p (dict "json_url" .Permalink) }}{{ end -}}
   {{- $people = $people | append $p -}}
 {{- end -}}
 {{- $m := dict "schema_version" 1 "type" .Data.Plural "title" (trim .Title " ") "url" .Permalink "count" (len $people) "people" $people -}}

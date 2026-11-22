@@ -1,6 +1,6 @@
 """
 llms.txt machinery (llmstxt.org v2): /llms.txt, /llms-full.txt, per-show llms.txt + episodes.json,
-markdown twins at <url>index.md, and discovery links in HTML heads.
+markdown twins (<slug>.md for episodes and people, <url>index.md elsewhere), and discovery links in HTML heads.
 
 Expected values come from content/ so the tests hold for any content snapshot.
 Links may be absolute (production) or site-relative (CI builds with baseURL "/").
@@ -325,7 +325,7 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
         line = re.search(rf"^- {label}: (.*)$", text, re.M)
         assert bool(line) == bool(slugs), f"{label} line presence"
         for slug in slugs:
-            link = rf"\[[^\]]+\]\({HOST}/people/{re.escape(slug)}/index\.md\)"
+            link = rf"\[[^\]]+\]\({HOST}/people/{re.escape(slug)}\.md\)"
             if person_type(slug):
                 assert re.search(link, line.group(1)), f"{slug} should link to its people page"
             else:
@@ -347,7 +347,7 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
 
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
     text = _get(api_request_context, "/hosts/index.md", "text/markdown").text()
-    missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}/index\.md\)", text)]
+    missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]
     assert not missing, f"active hosts missing from /hosts/index.md: {missing}"
 
 
@@ -357,7 +357,7 @@ def test_host_term_twin(api_request_context: APIRequestContext, username: str):
     Host term twin shows the person's real name and people-page details, then their episodes
     """
     person = CONTENT / "people" / f"{username}.md"
-    text = _get(api_request_context, f"/hosts/{username}/index.md", "text/markdown").text()
+    text = _get(api_request_context, f"/hosts/{username}.md", "text/markdown").text()
     assert text.startswith(f"# {_yaml_field(person, 'title')}\n"), "H1 must be the real name, not the slug"
     assert f"Username: {username}\n" in text
     homepage = _yaml_field(person, "homepage")
@@ -369,15 +369,17 @@ def test_host_term_twin(api_request_context: APIRequestContext, username: str):
 @mark.parametrize("username", ACTIVE_HOSTS)
 def test_people_twin(api_request_context: APIRequestContext, username: str):
     person = CONTENT / "people" / f"{username}.md"
-    text = _get(api_request_context, f"/people/{username}/index.md", "text/markdown").text()
+    text = _get(api_request_context, f"/people/{username}.md", "text/markdown").text()
     assert text.startswith(f"# {_yaml_field(person, 'title')}\n")
     assert f"Username: {username}\n" in text
-    assert re.search(rf"\]\({HOST}/hosts/{username}/index\.md\)", text), "missing link to hosts term twin"
+    assert re.search(rf"\]\({HOST}/hosts/{username}\.md\)", text), "missing link to hosts term twin"
+    for old in (f"/people/{username}/index.md", f"/hosts/{username}/index.md"):
+        assert api_request_context.get(old).status == 404, f"{old}: people twins are <slug>.md, like episodes"
 
 
 def test_guests_twin(api_request_context: APIRequestContext):
     text = _get(api_request_context, "/guests/index.md", "text/markdown").text()
-    assert re.search(rf"\]\({HOST}/guests/[^/]+/index\.md\)", text), "guests twin lists no guests"
+    assert re.search(rf"\]\({HOST}/guests/[^/)]+\.md\)", text), "guests twin lists no guests"
     assert "{{" not in text, "template error"
 
 
@@ -446,7 +448,7 @@ def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIReq
     for host in data["hosts"]:
         assert host.get("name", host["slug"]) in text, f"host {host['slug']} missing"
         if "url" in host:
-            assert f"{host['url']}index.md)" in text, f"host {host['slug']} should link its markdown twin"
+            assert f"{host['url'].rstrip('/')}.md)" in text, f"host {host['slug']} should link its markdown twin"
     for name, url in data["links"].items():
         assert f"- {name}: {url}\n" in text, f"link {name} missing"
 

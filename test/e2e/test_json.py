@@ -440,7 +440,7 @@ def test_person_term_json(api_request_context: APIRequestContext, taxonomy: str,
     assert data["slug"] == slug and data["role"] == fm["type"]
     assert data["name"] == yaml_title(PEOPLE_DIR / f"{slug}.md")
     assert re.fullmatch(site_url(f"/{taxonomy}/{slug}/"), data["url"])
-    assert re.fullmatch(site_url(f"/{taxonomy}/{slug}/index.md"), data["markdown_url"])
+    assert re.fullmatch(site_url(f"/{taxonomy}/{slug}.md"), data["markdown_url"])
     assert re.fullmatch(site_url(f"/people/{slug}/"), data["profile_url"])
     assert data.get("archived", False) == (fm.get("is_archived") == "true")
     assert data["links"] == {k: fm[k] for k in ("twitter", "mastodon", "linkedin", "instagram", "youtube") if k in fm}
@@ -449,14 +449,22 @@ def test_person_term_json(api_request_context: APIRequestContext, taxonomy: str,
     assert data["episode_count"] == sum(expected.values()), "show pages listing hosts are not episodes"
     for show in data["shows"]:
         assert re.fullmatch(site_url(f"/show/{show['slug']}/"), show["url"])
-    assert api_request_context.get(urlparse(data["latest_episode"]["json_url"]).path).status == 200
+    episodes = data["episodes"]
+    assert len(episodes) == data["episode_count"], "every episode is listed, like the markdown twin"
+    dates = [datetime.fromisoformat(e["date"]) for e in episodes]
+    assert dates == sorted(dates, reverse=True), "newest first"
+    assert {e["show"] for e in episodes} == set(expected)
+    assert "json_url" not in episodes[0], "json_url is the url with .json for the trailing slash"
+    newest = urlparse(episodes[0]["url"]).path
+    assert re.fullmatch(rf"/show/{episodes[0]['show']}/[^/]+/", newest)
+    assert api_request_context.get(newest.rstrip("/") + ".json").status == 200
     assert not find_nulls(data)
 
 
 @mark.parametrize("taxonomy", ["hosts", "guests"])
 def test_people_taxonomy_json(api_request_context: APIRequestContext, taxonomy: str):
     """
-    /hosts.json and /guests.json list everyone in that role by name, each with episode count and a JSON twin that resolves
+    /hosts.json and /guests.json list everyone in that role by name, each with episode count; their JSON is the url with .json
     """
     data = get_json(api_request_context, f"/{taxonomy}.json")
     assert data["schema_version"] == 1 and data["type"] == taxonomy
@@ -466,8 +474,9 @@ def test_people_taxonomy_json(api_request_context: APIRequestContext, taxonomy: 
     assert data["count"] == len(data["people"])
     for person in data["people"]:
         assert person.get("role") == person_type(person["slug"]), person["slug"]
-        assert re.fullmatch(site_url(f"/{taxonomy}/{person['slug']}.json"), person["json_url"])
-    assert api_request_context.get(urlparse(data["people"][0]["json_url"]).path).status == 200
+        assert "json_url" not in person, person["slug"]
+        assert re.fullmatch(site_url(f"/{taxonomy}/{person['slug']}/"), person["url"])
+    assert api_request_context.get(f"/{taxonomy}/{data['people'][0]['slug']}.json").status == 200
     assert not find_nulls(data)
 
 
