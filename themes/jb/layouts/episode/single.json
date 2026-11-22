@@ -21,12 +21,13 @@
 {{- end -}}
 {{- with .Params.podcast_chapters }}{{ with .chapters }}{{ $m = merge $m (dict "chapters" .) }}{{ end }}{{ end -}}
 {{- with .Params.header_image }}{{ $m = merge $m (dict "header_image" (absURL .)) }}{{ end -}}
-{{- with .OutputFormats.Get "markdown" }}{{ $m = merge $m (dict "markdown_url" .Permalink) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
 {{- $show := dict "slug" .Params.show_slug -}}
 {{- with site.GetPage (printf "/show/%s" .Params.show_slug) -}}
   {{- $show = merge $show (dict "name" .Title "url" .Permalink) -}}
   {{- $showPage := . -}}
-  {{- range $key, $format := dict "json_url" "show" "markdown_url" "markdown" "llms_url" "llms" -}}
+  {{- with partial "markdown-url.html" . }}{{ $show = merge $show (dict "markdown_url" .) }}{{ end -}}
+  {{- range $key, $format := dict "json_url" "show" "llms_url" "llms" -}}
     {{- with $showPage.OutputFormats.Get $format }}{{ $show = merge $show (dict $key .Permalink) }}{{ end -}}
   {{- end -}}
 {{- end -}}

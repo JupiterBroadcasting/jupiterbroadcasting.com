@@ -9,6 +9,8 @@ Static JSON generated at build time for every show and episode. No auth, no serv
 | Episode list | `/show/<slug>/episodes.json` | All episodes of a show, newest first |
 | Show | `/show/<slug>/show.json` | One show |
 | Episode | `/show/<slug>/<slug>.json` | One episode; the slug is the lowercase episode slug, usually the episode number (`693.json`, or `t-0.json` for special episodes) |
+| Episode markdown | `/show/<slug>/<slug>.md` | Markdown version of the episode page (same slug as the JSON) |
+| Show markdown | `/show/<slug>/show.md` | Markdown version of the show page |
 
 Navigation: `episodes.json` entries carry `json_url` -> episode JSON -> its `show.json_url` -> show JSON.
 Show JSON links back to `episodes.json` via `episodes_url` and to its newest episode via `latest_episode.json_url`.

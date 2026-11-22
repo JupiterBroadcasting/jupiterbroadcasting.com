@@ -12,7 +12,16 @@ from pathlib import Path
 from pytest import mark, param
 from playwright.sync_api import APIRequestContext, APIResponse, Page, expect
 
-from episode_data import CONTENT, CONTENT_SHOW, Episode, episodes_by_date, is_active, sample_episodes, sponsor_exists
+from episode_data import (
+    CONTENT,
+    CONTENT_SHOW,
+    Episode,
+    episodes_by_date,
+    is_active,
+    person_type,
+    sample_episodes,
+    sponsor_exists,
+)
 
 HOST = r"(?:https?://[^/)\s]+)?"
 LLMS_SECTIONS = ["/show/", "/hosts/", "/guests/"]
@@ -130,7 +139,7 @@ def test_root_show_entry(api_request_context: APIRequestContext, show: Show):
     if show.active:
         section, target = _section(text, "## Shows", "## Site"), "llms.txt"
     else:
-        section, target = _section(text, "## Optional"), "index.md"
+        section, target = _section(text, "## Optional"), "show.md"
 
     entry = re.search(
         rf"^- \[{re.escape(show.title.strip())}\]\({HOST}/show/{show.slug}/{re.escape(target)}\): "
@@ -184,10 +193,10 @@ def test_show_llms_txt(api_request_context: APIRequestContext, show: Show):
     assert text.startswith(f"# {show.title}\n"), "H1 must be the show title"
     assert len(text) < 20_000, "per-show llms.txt should be curated, not a full index"
     assert re.search(rf"\]\({HOST}/show/{show.slug}/episodes\.json\)", text), "missing episodes.json link"
-    assert re.search(rf"\]\({HOST}/show/{show.slug}/index\.md\)", text), "missing show twin link"
+    assert re.search(rf"\]\({HOST}/show/{show.slug}/show\.md\)", text), "missing show twin link"
 
     recent = _section(text, f"## Most recent episodes (of {len(show.episodes)})", "## Episode archive")
-    entries = re.findall(rf"^- \[(\d{{4}}-\d{{2}}-\d{{2}}) · .*\]\({HOST}(/show/{show.slug}/[^/]+/)index\.md\)", recent, re.M)
+    entries = re.findall(rf"^- \[(\d{{4}}-\d{{2}}-\d{{2}}) · .*\]\({HOST}(/show/{show.slug}/[^/]+)\.md\)", recent, re.M)
     assert [d for d, _ in entries] == [_episode_date(e) for e in show.newest_first[:10]], (
         "recent episodes must be the 10 newest, newest first"
     )
@@ -231,7 +240,7 @@ def test_show_llms_newest_oldest_match_json(api_request_context: APIRequestConte
     text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
     episodes = _get(api_request_context, f"/show/{show.slug}/episodes.json", "application/json").json()["episodes"]
     for label, ep in (("Newest", episodes[0]), ("Oldest", episodes[-1])):
-        assert re.search(rf"{label}: `{HOST}/show/{show.slug}/{re.escape(ep['slug'].lower())}/index\.md`", text), label
+        assert re.search(rf"{label}: `{HOST}/show/{show.slug}/{re.escape(ep['slug'].lower())}\.md`", text), label
 
 
 @mark.parametrize("show", SHOW_PARAMS)
@@ -239,7 +248,7 @@ def test_show_markdown_twin(api_request_context: APIRequestContext, show: Show):
     """
     Show twin has the title, its URL, links to the show llms.txt and the RSS feed
     """
-    text = _get(api_request_context, f"/show/{show.slug}/index.md", "text/markdown").text()
+    text = _get(api_request_context, f"/show/{show.slug}/show.md", "text/markdown").text()
     assert text.startswith(f"# {show.title}\n"), "H1 must be the show title"
     assert re.search(rf"^URL: {HOST}/show/{show.slug}/$", text, re.M), "missing URL line"
     assert re.search(rf"\[llms\.txt\]\({HOST}/show/{show.slug}/llms\.txt\)", text), "missing llms.txt link"
@@ -253,20 +262,31 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     """
     Episode twin resolves at the lowercase permalink and carries the front matter facts
     """
-    text = _get(api_request_context, f"{ep.url}index.md", "text/markdown").text()
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
     assert text.splitlines()[0].strip() == f"# {ep.data['title']}".strip(), "H1 must be the episode title"
     assert re.search(rf"^URL: {HOST}{re.escape(ep.url)}$", text, re.M), "missing URL line"
     assert f"- Episode: {ep.number}\n" in text
     assert f"- Date: {_episode_date(ep)}\n" in text
-    if ep.data.get("hosts"):
-        assert f"- Hosts: {', '.join(ep.data['hosts'])}\n" in text
-    if ep.data.get("guests"):
-        assert f"- Guests: {', '.join(ep.data['guests'])}\n" in text
-    for transcript in ep.data.get("transcripts") or []:
-        assert f"]({transcript['url']})" in text, f"missing transcript {transcript['url']}"
+    for label, key in (("Hosts", "hosts"), ("Guests", "guests")):
+        slugs = ep.data.get(key) or []
+        line = re.search(rf"^- {label}: (.*)$", text, re.M)
+        assert bool(line) == bool(slugs), f"{label} line presence"
+        for slug in slugs:
+            link = rf"\[[^\]]+\]\({HOST}/people/{re.escape(slug)}/index\.md\)"
+            if person_type(slug):
+                assert re.search(link, line.group(1)), f"{slug} should link to its people page"
+            else:
+                assert slug in line.group(1) and not re.search(link, line.group(1)), f"{slug} has no people page"
+    transcripts = ep.data.get("transcripts") or []
+    assert ("\n## Transcripts\n" in text) == bool(transcripts)
+    for transcript in transcripts:
+        assert f"- [{transcript.get('type') or 'transcript'}]({transcript['url']})\n" in text, f"missing transcript {transcript['url']}"
+    notes = re.sub(r"\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\Z))+", "", ep.body).strip()
+    assert ("\n## Show Notes\n" in text) == bool(notes)
+    assert "Episode Links" not in text, "the Show Notes heading replaces the body's own Episode Links heading"
     sponsors = [s for s in ep.data.get("sponsors") or [] if sponsor_exists(s)]
+    assert ("\n## Sponsors\n" in text) == bool(sponsors)
     if sponsors:
-        assert "\nSponsors:\n" in text
         assert len(re.findall(rf"^- \[.+\]\({HOST}/sponsors/[^)]+index\.md\)", text, re.M)) == len(sponsors)
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
@@ -289,7 +309,7 @@ def test_host_term_twin(api_request_context: APIRequestContext, username: str):
     homepage = _yaml_field(person, "homepage")
     if homepage and homepage != "null":
         assert f"Homepage: {homepage}" in text
-    assert re.search(rf"\]\({HOST}/show/[^)]+/index\.md\)", text), "term twin must list episodes"
+    assert re.search(rf"\]\({HOST}/show/[^)/]+/(?!show\.md)[^)/]+\.md\)", text), "term twin must list episodes"
 
 
 @mark.parametrize("username", ACTIVE_HOSTS)
@@ -319,17 +339,74 @@ def test_home_discovery_link(page: Page):
 
 @mark.only_browser("chromium")
 @mark.parametrize(
-    "path, llms",
-    [param("/community/", "/llms.txt", id="community")]
-    + [param(f"/show/{s.slug}/", f"/show/{s.slug}/llms.txt", id=s.slug) for s in SHOWS]
-    + [param(SAMPLE_EPISODES[0].url, f"/show/{SAMPLE_EPISODES[0].show}/llms.txt", id="episode")],
+    "path, llms, markdown",
+    [param("/community/", "/llms.txt", "/community/index.md", id="community")]
+    + [param(f"/show/{s.slug}/", f"/show/{s.slug}/llms.txt", f"/show/{s.slug}/show.md", id=s.slug) for s in SHOWS]
+    + [
+        param(
+            SAMPLE_EPISODES[0].url,
+            f"/show/{SAMPLE_EPISODES[0].show}/llms.txt",
+            f"{SAMPLE_EPISODES[0].url.rstrip('/')}.md",
+            id="episode",
+        )
+    ],
 )
-def test_discovery_links(page: Page, path: str, llms: str):
+def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
     """
     Every page points at its nearest llms.txt (describedby) and its markdown twin (alternate)
     """
     page.goto(path)
     expect(page.locator('link[rel="describedby"]')).to_have_attribute("href", re.compile(rf"^{HOST}{re.escape(llms)}$"))
     expect(page.locator('link[rel="alternate"][type="text/markdown"]')).to_have_attribute(
-        "href", re.compile(rf"^{HOST}{re.escape(path)}index\.md$")
+        "href", re.compile(rf"^{HOST}{re.escape(markdown)}$")
     )
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_old_show_and_episode_twin_urls_are_gone(api_request_context: APIRequestContext, show: Show):
+    """
+    Show and episode markdown twins moved from <url>index.md to show.md and <slug>.md; the old URLs must not linger
+    """
+    newest = show.newest_first[0]
+    for path in (f"/show/{show.slug}/index.md", f"{newest.url}index.md"):
+        assert api_request_context.get(path).status == 404, f"{path} should no longer exist"
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIRequestContext, show: Show):
+    """
+    An LLM reading show.md instead of show.json gets the main facts: status, hosts, links, feeds, and which episodes exist
+    """
+    data = _get(api_request_context, f"/show/{show.slug}/show.json", "application/json").json()
+    text = _get(api_request_context, f"/show/{show.slug}/show.md", "text/markdown").text()
+
+    assert f"- Status: {'active' if data['active'] else 'archived'}\n" in text
+    assert f"- Episodes: {data['episode_count']}\n" in text
+    if data.get("description"):
+        assert f"> {data['description']}\n" in text
+    for key in ("podverse_url", "episodes_url", "llms_url"):
+        if key in data:
+            assert data[key] in text, f"{key} missing"
+    assert data["markdown_url"] not in text.replace(f"URL: {data['url']}", ""), "no self link to show.md"
+    for host in data["hosts"]:
+        assert host.get("name", host["slug"]) in text, f"host {host['slug']} missing"
+        if "url" in host:
+            assert f"{host['url']}index.md)" in text, f"host {host['slug']} should link its markdown twin"
+    for name, url in data["links"].items():
+        assert f"- {name}: {url}\n" in text, f"link {name} missing"
+
+    numbered = data.get("numbered_episodes")
+    if numbered:
+        assert f"- Numbered episodes: {numbered['first']} to {numbered['last']}" in text
+        missing = ", ".join(str(n) for n in numbered.get("missing", []))
+        assert (f"- Missing numbers: {missing}\n" in text) == bool(missing)
+    for episode in data["special_episodes"]:
+        line = re.search(rf"^  - {re.escape(str(episode['episode']))} · (\d{{4}}-\d{{2}}-\d{{2}}) · \[(.*)\]\((.*)\)$", text, re.M)
+        assert line, f"special episode {episode['episode']} missing"
+        assert line.group(1) == episode["date"][:10]
+        assert line.group(2) == episode["title"].strip()
+        assert line.group(3) == episode["url"].rstrip("/") + ".md"
+    latest = data["latest_episode"]
+    assert f"- Latest episode: {latest['episode']} · {latest['date'][:10]} · [{latest['title'].strip()}]({latest['url'].rstrip('/')}.md)\n" in text
+    if not data["special_episodes"]:
+        assert "Special episodes" not in text

@@ -11,8 +11,8 @@
   {{- with $s.OutputFormats.Get "llms" }}{{ $llms = .Permalink }}{{ end -}}
   {{- end -}}
   <link rel="describedby" href="{{ $llms }}">
-  {{- with .OutputFormats.Get "markdown" }}
-  <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+  {{- with partial "markdown-url.html" . }}
+  <link rel="alternate" type="text/markdown" href="{{ . }}">
   {{- end }}
 
   {{ $sass := resources.Get "css/main.sass" }}

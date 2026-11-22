@@ -1,0 +1,4 @@
+{{- /* Markdown link to a person's markdown twin; the bare slug when there is no people page. */ -}}
+{{- $out := . -}}
+{{- with site.GetPage (printf "/people/%s" .) }}{{ $out = printf "[%s](%s)" .Title (partial "markdown-url.html" .) }}{{ end -}}
+{{- return $out -}}

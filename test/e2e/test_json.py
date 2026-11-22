@@ -78,7 +78,7 @@ def test_show_json(api_request_context: APIRequestContext, show: Show):
     assert data["latest_episode"]["episode"] == int(newest.number)
     assert re.fullmatch(rf"{HOST}{re.escape(newest.url)}", data["latest_episode"]["url"])
     assert "json_url" not in data, "a show's own JSON URL is the URL it was fetched from"
-    assert re.fullmatch(rf"{HOST}{base}/index\.md", data["markdown_url"])
+    assert re.fullmatch(rf"{HOST}{base}/show\.md", data["markdown_url"])
     assert re.fullmatch(rf"{HOST}{base}/episodes\.json", data["episodes_url"])
     assert isinstance(data["hosts"], list) and data["hosts"], "show has hosts in front matter"
     for host in data["hosts"]:
@@ -165,10 +165,10 @@ def test_episode_json_core(api_request_context: APIRequestContext, ep: Episode):
 
     assert re.fullmatch(rf"{HOST}{re.escape(ep.url)}", data["url"])
     assert "json_url" not in data, "an episode's own JSON URL is the URL it was fetched from"
-    assert re.fullmatch(rf"{HOST}{re.escape(ep.url)}index\.md", data["markdown_url"])
+    assert re.fullmatch(rf"{HOST}{re.escape(ep.url.rstrip('/'))}\.md", data["markdown_url"])
     assert data["show"]["slug"] == ep.show
     assert re.fullmatch(rf"{HOST}/show/{ep.show}/show\.json", data["show"]["json_url"])
-    assert re.fullmatch(rf"{HOST}/show/{ep.show}/index\.md", data["show"]["markdown_url"])
+    assert re.fullmatch(rf"{HOST}/show/{ep.show}/show\.md", data["show"]["markdown_url"])
     assert re.fullmatch(rf"{HOST}/show/{ep.show}/llms\.txt", data["show"]["llms_url"])
     assert find_nulls(data) == [], "null fields must be omitted at every depth"
 

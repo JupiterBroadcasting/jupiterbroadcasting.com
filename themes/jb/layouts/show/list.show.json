@@ -3,7 +3,7 @@
 {{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
 {{- with .Params.header_image }}{{ $m = merge $m (dict "header_image" (absURL .)) }}{{ end -}}
 {{- with .Params.podverse_podcast_id }}{{ $m = merge $m (dict "podverse_url" (print "https://podverse.fm/podcast/" .)) }}{{ end -}}
-{{- with .OutputFormats.Get "markdown" }}{{ $m = merge $m (dict "markdown_url" .Permalink) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
 {{- with .OutputFormats.Get "episodes" }}{{ $m = merge $m (dict "episodes_url" .Permalink) }}{{ end -}}
 {{- with .OutputFormats.Get "llms" }}{{ $m = merge $m (dict "llms_url" .Permalink) }}{{ end -}}
 {{- $hosts := slice -}}
@@ -15,25 +15,9 @@
 {{- $m = merge $m (dict "hosts" $hosts "links" $links) -}}
 {{- range first 1 $eps.ByDate.Reverse }}{{ $m = merge $m (dict "latest_episode" (partial "json-episode-ref.html" .)) }}{{ end -}}
 {{- /* episodes numbered first..last exist at /show/<slug>/<n>.json except `missing`; the rest are listed in special_episodes */ -}}
-{{- $numbers := slice -}}
+{{- $summary := partial "show-episode-summary.html" . -}}
 {{- $special := slice -}}
-{{- range $eps.ByDate -}}
-  {{- if in (slice "int" "int64" "float64") (printf "%T" .Params.episode) -}}
-    {{- $numbers = $numbers | append (int .Params.episode) -}}
-  {{- else -}}
-    {{- $special = $special | append (slice (partial "json-episode-ref.html" .)) -}}
-  {{- end -}}
-{{- end -}}
+{{- range $summary.special }}{{ $special = $special | append (slice (partial "json-episode-ref.html" .)) }}{{ end -}}
 {{- $m = merge $m (dict "special_episodes" $special) -}}
-{{- with sort $numbers -}}
-  {{- $first := index . 0 -}}
-  {{- $last := index . (sub (len .) 1) -}}
-  {{- $have := dict -}}
-  {{- range . }}{{ $have = merge $have (dict (string .) true) }}{{ end -}}
-  {{- $missing := slice -}}
-  {{- range seq $first $last }}{{ if not (isset $have (string .)) }}{{ $missing = $missing | append . }}{{ end }}{{ end -}}
-  {{- $numbered := dict "first" $first "last" $last -}}
-  {{- with $missing }}{{ $numbered = merge $numbered (dict "missing" .) }}{{ end -}}
-  {{- $m = merge $m (dict "numbered_episodes" $numbered) -}}
-{{- end -}}
+{{- with $summary.numbered }}{{ $m = merge $m (dict "numbered_episodes" .) }}{{ end -}}
 {{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}
