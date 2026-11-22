@@ -52,7 +52,7 @@
       {{ partial "episode/podverseplayer.html" . }}
       {{else}}
       <div>
-        <audio controls class="my-4" style="width: 100%;">
+        <audio controls class="episode-audio">
           <source src='{{ .Params.podcast_ogg_file }}' type="audio/ogg">
           <source src='{{ .Params.podcast_alt_file }}' type="audio/mpeg">
         </audio>

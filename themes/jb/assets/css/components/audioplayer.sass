@@ -1,3 +1,5 @@
+@use "../variables" as v
+
 #pv-embed-player
   margin: 24px auto
   padding: 0
@@ -5,3 +7,14 @@
   height: 170px
   width: 100%
   display: flex
+
+.episode-audio
+  display: block
+  width: 100%
+  margin: 24px 0
+  border-radius: 30px
+  color-scheme: dark
+
+  // Chrome ignores color-scheme for the panel fill; Firefox has no pseudo-elements, so it stays on its dark default
+  &::-webkit-media-controls-panel
+    background-color: v.$jb-darker
