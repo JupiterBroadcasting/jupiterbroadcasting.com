@@ -4,4 +4,4 @@ URL: {{ .Permalink }}
 
 {{ partial "person-details.md" . }}
 
-Episodes: [{{ .Params.username }} on hosts]({{ .Site.BaseURL }}hosts/{{ .Params.username }}/index.md)
+{{ with site.GetPage (print "/hosts/" .Params.username) }}Episodes: [{{ $.Params.username }} on hosts]({{ partial "markdown-url.html" . }}){{ end }}

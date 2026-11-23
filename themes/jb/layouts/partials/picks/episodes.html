@@ -1,0 +1,6 @@
+{{- /* A pick's episodes: [{show, show_name, episode, url}]; url is the episode page the /community/picks/ badges link to */ -}}
+{{- $eps := slice -}}
+{{- range .shows -}}
+  {{- $eps = $eps | append (dict "show" .slug "show_name" .show "episode" .episode "url" (absURL (printf "/show/%s/%v/" .slug .episode))) -}}
+{{- end -}}
+{{- return $eps -}}

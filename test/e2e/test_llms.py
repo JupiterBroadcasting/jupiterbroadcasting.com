@@ -1,6 +1,6 @@
 """
 llms.txt machinery (llmstxt.org v2): /llms.txt, /llms-full.txt, per-show llms.txt + episodes.json,
-markdown twins at <url>index.md, and discovery links in HTML heads.
+markdown twins (<slug>.md, sections at the root), and discovery links in HTML heads.
 
 Expected values come from content/ so the tests hold for any content snapshot.
 Links may be absolute (production) or site-relative (CI builds with baseURL "/").
@@ -28,6 +28,15 @@ from episode_data import (
 HOST = r"(?:https?://[^/)\s]+)?"
 LLMS_SECTIONS = ["/show/", "/hosts/", "/guests/"]
 SITE_PAGES = ["/membership/", "/live/", "/community/", "/hosts/", "/sponsors/", "/contact/"]
+# every page's markdown is <slug>.md like its <slug>.json; sections' are rendered by the home page at the root
+SITE_MARKDOWN = {
+    "/membership/": "/membership.md",
+    "/live/": "/live.md",
+    "/community/": "/community.md",
+    "/hosts/": "/hosts.md",
+    "/sponsors/": "/sponsors.md",
+    "/contact/": "/contact.md",
+}
 
 
 def _yaml_field(path: Path, key: str) -> str | None:
@@ -110,12 +119,12 @@ def _slug(ep: Episode) -> str:
 
 def test_root_llms_txt(api_request_context: APIRequestContext):
     """
-    /llms.txt follows the spec layout: H1, summary blockquote, then Shows / Site / Optional sections in order
+    /llms.txt follows the spec layout: H1, summary blockquote, then Shows / Site / Data / Optional sections in order
     """
     text = _get(api_request_context, "/llms.txt", "text/plain").text()
     assert text.startswith("# Jupiter Broadcasting\n"), "H1 must be the first line"
     assert "\n> " in text, "missing summary blockquote"
-    positions = [text.find(h) for h in ("## Shows", "## Site", "## Optional")]
+    positions = [text.find(h) for h in ("## Shows", "## Site", "## Data (JSON)", "## Optional")]
     assert -1 not in positions and positions == sorted(positions), "sections missing or out of order"
     assert re.search(rf"\]\({HOST}/llms-full\.txt\)", text), "Optional must link llms-full.txt"
 
@@ -161,8 +170,100 @@ def test_root_site_links(api_request_context: APIRequestContext):
     """
     site = _section(_get(api_request_context, "/llms.txt", "text/plain").text(), "## Site", "## Optional")
     for path in SITE_PAGES:
-        assert re.search(rf"\]\({HOST}{re.escape(path)}index\.md\)", site), f"{path} not linked"
-        _get(api_request_context, f"{path}index.md", "text/markdown")
+        assert re.search(rf"\]\({HOST}{re.escape(SITE_MARKDOWN[path])}\)", site), f"{path} not linked"
+        _get(api_request_context, SITE_MARKDOWN[path], "text/markdown")
+
+
+@mark.parametrize("path", SITE_PAGES)
+def test_site_page_markdown_has_no_shortcodes(api_request_context: APIRequestContext, path: str):
+    """
+    {{< ref >}} shortcodes in page bodies become absolute links in the markdown twin
+    """
+    text = _get(api_request_context, SITE_MARKDOWN[path], "text/markdown").text()
+    assert "{{" not in text, "unrendered shortcode"
+
+
+def test_boost_markdown_ref_resolves(api_request_context: APIRequestContext):
+    text = _get(api_request_context, "/boost.md", "text/markdown").text()
+    assert re.search(rf"\[Member\]\({HOST}/membership/\)", text), "ref shortcode not converted to a link"
+
+
+def test_sponsors_markdown_lists_sponsors(api_request_context: APIRequestContext):
+    """
+    /sponsors.md lists sponsors from data/sponsors under section headings, linking to each sponsor's site
+    """
+    text = _get(api_request_context, "/sponsors.md", "text/markdown").text()
+    assert "\n## Jupiter Broadcasting\n" in text
+    links = re.findall(r"^- \[.+\]\((\S+)\)", text, re.M)
+    assert links and all(not re.match(rf"{HOST}/sponsors/", link) for link in links), "links go to sponsors' own sites"
+
+
+def test_root_data_links_are_json(api_request_context: APIRequestContext):
+    """
+    ## Data (JSON) links resolve to JSON, and every ## Site entry's (JSON: ...) twin does too
+    """
+    text = _get(api_request_context, "/llms.txt", "text/plain").text()
+    data = _section(text, "## Data (JSON)", "## Optional")
+    links = re.findall(rf"\]\({HOST}(/[^)]+\.json)\)", data)
+    assert len(links) >= 10, f"Data section lists too few JSON links: {links}"
+    site_json = re.findall(rf"\(JSON: {HOST}(/\S+\.json)\)", _section(text, "## Site", "## Data (JSON)"))
+    assert len(site_json) == len(SITE_PAGES) + 5, site_json
+    for path in links + site_json:
+        _get(api_request_context, path, "application/json")
+    assert "&#39;" not in text and "&amp;" not in text, "plain text must not be HTML-escaped"
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_llms_txt_links_twins_and_hosts(api_request_context: APIRequestContext, show: Show):
+    """
+    Per-show llms.txt points at show.json, the subscribe twins and each host's markdown/JSON, all resolving
+    """
+    text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
+    the_show = _section(text, "## The show")
+    assert re.search(rf"\]\({HOST}/show/{show.slug}/show\.json\)", the_show), "missing show.json"
+    assert re.search(rf"\]\({HOST}/show/{show.slug}/subscribe\.md\)", the_show), "missing subscribe twin"
+    assert ".json` for the JSON twin" in text, "episode JSON pattern not explained"
+    hosts = re.findall(rf"^- \[[^\]]+\]\({HOST}(/hosts/[^)]+)\.md\).*\(JSON: {HOST}(/hosts/[^)]+)\.json\)$", text, re.M)
+    assert hosts, "no hosts listed"
+    for md, js in hosts[:2]:
+        assert md == js
+        _get(api_request_context, f"{md}.md", "text/markdown")
+        _get(api_request_context, f"{js}.json", "application/json")
+    assert "&#39;" not in text and "&amp;" not in text, "plain text must not be HTML-escaped"
+
+
+def test_picks_markdown(api_request_context: APIRequestContext):
+    """
+    /community/picks.md lists every pick with its link, and every "Picked on" episode twin resolves
+    """
+    from test_community import PICKS
+
+    text = _get(api_request_context, "/community/picks.md", "text/markdown").text()
+    for pick in PICKS:
+        assert f"]({pick.url})" in text, pick.title
+    episodes = set(re.findall(rf"\]\({HOST}(/show/[^/]+/[^/)]+\.md)\)", text))
+    assert episodes == {f"{e}.md" for p in PICKS for e in p.episodes}
+    broken = [e for e in sorted(episodes) if api_request_context.get(e).status != 200]
+    assert not broken, f"picked-on episode twins that 404: {broken}"
+
+
+@mark.parametrize(
+    "path, expected",
+    [
+        param("/community.md", "/community/github.md) (https://github.com/", id="community"),
+        param("/people.md", "/people/chris.md) (host)", id="people"),
+        param("/show.md", "/show/linux-unplugged/show.md)", id="shows"),
+        param("/archive.md", "/show/coder-radio/show.md)", id="archive"),
+        param("/live.md", "- Audio stream: http", id="live"),
+        param("/calendar.md", "iCalendar: http", id="calendar"),
+        param("/community/github.md", "Link: https://github.com/", id="community-page"),
+        param("/show/linux-unplugged/subscribe.md", "RSS: http", id="subscribe"),
+    ],
+)
+def test_page_markdown_lists_what_the_page_shows(api_request_context: APIRequestContext, path: str, expected: str):
+    text = _get(api_request_context, path, "text/markdown").text()
+    assert expected in text, f"{path} missing {expected!r}"
+    assert "{{" not in text
 
 
 def test_llms_full_txt(api_request_context: APIRequestContext):
@@ -171,6 +272,7 @@ def test_llms_full_txt(api_request_context: APIRequestContext):
     """
     text = _get(api_request_context, "/llms-full.txt", "text/plain").text()
     assert "Membership" in text
+    assert "jupitersignal.memberful.com/checkout" in text, "membership plans from front matter missing"
     assert "Brent Gervais" in text
     assert "+++" not in text, "TOML front matter leaked"
     assert "avatar_small" not in text, "YAML front matter leaked"
@@ -231,10 +333,9 @@ def test_show_episodes_json(api_request_context: APIRequestContext, show: Show):
 
     for ep in data["episodes"]:
         slug = ep["url"].rstrip("/").rsplit("/", 1)[-1]
-        assert set(ep) == {"episode", "title", "date", "url", "json_url", "markdown_url"}, f"{slug}: {sorted(ep)}"
+        assert set(ep) == {"episode", "title", "date", "url", "markdown_url"}, f"{slug}: {sorted(ep)} (no json_url: it is the url with .json)"
         assert ep["title"], f"{slug}: empty title"
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}/", ep["url"]), ep["url"]
-        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", ep["json_url"]), ep["json_url"]
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.md", ep["markdown_url"]), ep["markdown_url"]
 
 
@@ -300,7 +401,7 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
         line = re.search(rf"^- {label}: (.*)$", text, re.M)
         assert bool(line) == bool(slugs), f"{label} line presence"
         for slug in slugs:
-            link = rf"\[[^\]]+\]\({HOST}/people/{re.escape(slug)}/index\.md\)"
+            link = rf"\[[^\]]+\]\({HOST}/people/{re.escape(slug)}\.md\)"
             if person_type(slug):
                 assert re.search(link, line.group(1)), f"{slug} should link to its people page"
             else:
@@ -321,9 +422,9 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
 
 
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
-    text = _get(api_request_context, "/hosts/index.md", "text/markdown").text()
-    missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}/index\.md\)", text)]
-    assert not missing, f"active hosts missing from /hosts/index.md: {missing}"
+    text = _get(api_request_context, "/hosts.md", "text/markdown").text()
+    missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]
+    assert not missing, f"active hosts missing from /hosts.md: {missing}"
 
 
 @mark.parametrize("username", HOST_TERMS)
@@ -332,7 +433,7 @@ def test_host_term_twin(api_request_context: APIRequestContext, username: str):
     Host term twin shows the person's real name and people-page details, then their episodes
     """
     person = CONTENT / "people" / f"{username}.md"
-    text = _get(api_request_context, f"/hosts/{username}/index.md", "text/markdown").text()
+    text = _get(api_request_context, f"/hosts/{username}.md", "text/markdown").text()
     assert text.startswith(f"# {_yaml_field(person, 'title')}\n"), "H1 must be the real name, not the slug"
     assert f"Username: {username}\n" in text
     homepage = _yaml_field(person, "homepage")
@@ -344,15 +445,17 @@ def test_host_term_twin(api_request_context: APIRequestContext, username: str):
 @mark.parametrize("username", ACTIVE_HOSTS)
 def test_people_twin(api_request_context: APIRequestContext, username: str):
     person = CONTENT / "people" / f"{username}.md"
-    text = _get(api_request_context, f"/people/{username}/index.md", "text/markdown").text()
+    text = _get(api_request_context, f"/people/{username}.md", "text/markdown").text()
     assert text.startswith(f"# {_yaml_field(person, 'title')}\n")
     assert f"Username: {username}\n" in text
-    assert re.search(rf"\]\({HOST}/hosts/{username}/index\.md\)", text), "missing link to hosts term twin"
+    assert re.search(rf"\]\({HOST}/hosts/{username}\.md\)", text), "missing link to hosts term twin"
+    for old in (f"/people/{username}/index.md", f"/hosts/{username}/index.md"):
+        assert api_request_context.get(old).status == 404, f"{old}: people twins are <slug>.md, like episodes"
 
 
 def test_guests_twin(api_request_context: APIRequestContext):
-    text = _get(api_request_context, "/guests/index.md", "text/markdown").text()
-    assert re.search(rf"\]\({HOST}/guests/[^/]+/index\.md\)", text), "guests twin lists no guests"
+    text = _get(api_request_context, "/guests.md", "text/markdown").text()
+    assert re.search(rf"\]\({HOST}/guests/[^/)]+\.md\)", text), "guests twin lists no guests"
     assert "{{" not in text, "template error"
 
 
@@ -369,7 +472,10 @@ def test_home_discovery_link(page: Page):
 @mark.only_browser("chromium")
 @mark.parametrize(
     "path, llms, markdown",
-    [param("/community/", "/llms.txt", "/community/index.md", id="community")]
+    [param("/community/", "/llms.txt", "/community.md", id="community")]
+    + [param("/membership/", "/llms.txt", "/membership.md", id="page")]
+    + [param("/sponsors/", "/llms.txt", "/sponsors.md", id="root-list")]
+    + [param("/show/linux-unplugged/subscribe/", "/show/linux-unplugged/llms.txt", "/show/linux-unplugged/subscribe.md", id="subscribe")]
     + [param(f"/show/{s.slug}/", f"/show/{s.slug}/llms.txt", f"/show/{s.slug}/show.md", id=s.slug) for s in SHOWS]
     + [
         param(
@@ -389,6 +495,33 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
     expect(page.locator('link[rel="alternate"][type="text/markdown"]')).to_have_attribute(
         "href", re.compile(rf"^{HOST}{re.escape(markdown)}$")
     )
+
+
+@mark.parametrize(
+    "path",
+    [
+        "/membership/index.md",
+        "/contact/index.md",
+        "/boost/index.md",
+        "/community/picks/index.md",
+        "/sponsors/index.md",
+        "/hosts/index.md",
+        "/guests/index.md",
+        "/show/linux-unplugged/subscribe/index.md",
+        "/community/index.md",
+        "/community/github/index.md",
+        "/live/index.md",
+        "/archive/index.md",
+        "/people/index.md",
+        "/show/index.md",
+        "/search-index/index.md",
+    ],
+)
+def test_old_page_twin_urls_are_gone(api_request_context: APIRequestContext, path: str):
+    """
+    Page markdown twins are <slug>.md like their <slug>.json; the old <url>index.md must not linger
+    """
+    assert api_request_context.get(path).status == 404, f"{path} should no longer exist"
 
 
 @mark.parametrize("show", SHOW_PARAMS)
@@ -421,7 +554,7 @@ def test_show_markdown_twin_has_every_show_json_fact(api_request_context: APIReq
     for host in data["hosts"]:
         assert host.get("name", host["slug"]) in text, f"host {host['slug']} missing"
         if "url" in host:
-            assert f"{host['url']}index.md)" in text, f"host {host['slug']} should link its markdown twin"
+            assert f"{host['url'].rstrip('/')}.md)" in text, f"host {host['slug']} should link its markdown twin"
     for name, url in data["links"].items():
         assert f"- {name}: {url}\n" in text, f"link {name} missing"
 

@@ -13,16 +13,25 @@
 ## The show
 
 - [{{ .Title }} - show page]({{ partial "markdown-url.html" . }}): description, hosts, and show notes
-- [Complete episode list]({{ .Permalink }}episodes.json): JSON list of every {{ .Title }} episode (slug, episode, date, URL)
+- [Show JSON]({{ with .OutputFormats.Get "show" }}{{ .Permalink }}{{ end }}): status, hosts, links, feeds and latest episode
+- [Complete episode list]({{ .Permalink }}episodes.json): JSON list of every {{ .Title }} episode (episode, title, date, URL), newest first
+{{- with site.GetPage (printf "/show/%s/subscribe" .Params.show) }}
+- [Subscribe]({{ partial "markdown-url.html" . }}): {{ with .Params.rss }}RSS feed {{ . }} and {{ end }}podcast app links (JSON: {{ with .OutputFormats.Get "json" }}{{ .Permalink }}{{ end }})
+{{- end }}
+{{ with .Params.hosts }}
+## Hosts
 
+{{ range . }}{{ with site.GetPage (print "/hosts/" .) }}{{ $person := site.GetPage (print "/people/" .Data.Term) -}}
+- [{{ with $person }}{{ .Title }}{{ else }}{{ .Title }}{{ end }}]({{ partial "markdown-url.html" . }}): {{ len (where .Pages "Type" "episode") }} episodes hosted across the network{{ with $person }}{{ with .Params.bio }}. {{ . }}{{ end }}{{ end }} (JSON: {{ with .OutputFormats.Get "json" }}{{ .Permalink }}{{ end }})
+{{ end }}{{ end }}{{ end }}
 ## Most recent episodes (of {{ len $eps }})
 
 {{ range first 10 $sorted -}}
-- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Params.guests }} (guest: {{ delimit . ", " }}){{ end }} - {{ .Description }}
+- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Params.guests }} (guests: {{ range $i, $g := . }}{{ if $i }}, {{ end }}{{ partial "person-md-link.html" $g }}{{ end }}){{ end }} - {{ .Description }}
 {{ end }}
 ## Episode archive
 
 {{ $nums }} numbered episodes, {{ $lo }}-{{ $hi }}.{{ if $specials }} Plus {{ $specials }} special episodes with prefixed slugs (not plain numbers).{{ end }}
 
-Episode URL pattern: `{{ .Permalink }}<number>/` — replace the trailing `/` with `.md` for the markdown twin.
+Episode URL pattern: `{{ .Permalink }}<number>/` — replace the trailing `/` with `.md` for the markdown twin or `.json` for the JSON twin (hosts, guests, sponsors, chapters, audio/video, transcripts).
 Newest: `{{ .Permalink }}{{ with $sorted }}{{ (index . 0).Params.slug | default (index . 0).File.TranslationBaseName | lower }}.md{{ end }}` · Oldest: `{{ .Permalink }}{{ with $sorted }}{{ (index . (sub (len .) 1)).Params.slug | default (index . (sub (len .) 1)).File.TranslationBaseName | lower }}.md{{ end }}`

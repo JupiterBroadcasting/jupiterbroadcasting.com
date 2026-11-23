@@ -1,0 +1,14 @@
+{{- /* Sections of /sponsors/: the network's own sponsors, then each show with a sponsor on an episode in the last |lookbackdays| days (it is negative) (plus the show's front matter sponsors). Returns [{title, show, sponsors: [shortname]}]; show is the show page, or nil for the network. */ -}}
+{{- $sections := slice -}}
+{{- with .Params.sponsors }}{{ $sections = $sections | append (dict "title" "Jupiter Broadcasting" "show" nil "sponsors" .) }}{{ end -}}
+{{- $since := now.AddDate 0 0 (int site.Params.sponsors.lookbackdays) -}}
+{{- range where site.Sections "Title" "Shows" -}}
+  {{- range .Pages -}}
+    {{- $recent := slice -}}
+    {{- range where (where .Pages "Type" "episode") "Date" "ge" $since }}{{ $recent = $recent | append .Params.sponsors }}{{ end -}}
+    {{- if $recent -}}
+      {{- $sections = $sections | append (dict "title" .Title "show" . "sponsors" (uniq ($recent | append (.Params.sponsors | default (slice))))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $sections -}}

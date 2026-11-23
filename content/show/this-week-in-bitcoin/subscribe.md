@@ -2,7 +2,7 @@
 title: "Subscribe"
 date: 2024-03-24
 draft: false
-outputs: [html, markdown]
+outputs: [html, pagemd, json]
 rss: "https://serve.podhome.fm/rss/55b53584-4219-4fb0-b916-075ce23f714e"
 direct_links:
     apple: https://podcasts.apple.com/us/podcast/this-week-in-bitcoin/id1733733790

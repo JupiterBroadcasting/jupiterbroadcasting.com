@@ -1,8 +1,11 @@
+{{- define "partials/llms-json-url.txt" }}{{ with .OutputFormats.Get "json" }}{{ .Permalink }}{{ else }}{{ with site.Home.OutputFormats.Get (print .Section "rootjson") }}{{ .Permalink }}{{ end }}{{ end }}{{ end -}}
 # Jupiter Broadcasting
 
-> Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, and Jupiter EXTRAS. The site hosts episode show notes plus pages about membership, live shows, sponsors, and community.
+> Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, and Jupiter EXTRAS. The site hosts episode show notes plus pages about the hosts and guests, membership, live shows, sponsors, picks, and community.
 
-Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llms.txt`) describing the show and linking its ten most recent episodes; the complete episode URL list for each show is JSON at `/show/<slug>/episodes.json`. Any page on the site is available as markdown by appending `index.md` to its URL (e.g. `/show/linux-unplugged/650/index.md`).
+Every page has a markdown twin and a JSON twin: take the page URL and put `.md` or `.json` in place of the trailing slash (`{{ absURL "/membership/" }}` → `{{ absURL "/membership.md" }}`, `{{ absURL "/membership.json" }}`; `{{ absURL "/hosts/chris/" }}` → `{{ absURL "/hosts/chris.md" }}`; `{{ absURL "/show/linux-unplugged/650/" }}` → `{{ absURL "/show/linux-unplugged/650.json" }}`). Shows are the exception: `/show/<slug>/show.md` and `/show/<slug>/show.json`. Prefer the markdown to read a page and the JSON to look things up; JSON references between pages carry a `url`, from which both twins follow. Each HTML page also links its twins with `<link rel="alternate">`.
+
+Each show has its own `llms.txt` (e.g. `{{ absURL "/show/linux-unplugged/llms.txt" }}`) with its hosts, feeds and ten most recent episodes; every episode of a show is listed in `/show/<slug>/episodes.json`.
 
 ## Shows
 
@@ -10,11 +13,24 @@ Each show has its own `llms.txt` under its path (e.g. `/show/linux-unplugged/llm
 {{ end }}
 ## Site
 
-{{ range $path := slice "/membership" "/live" "/community" "/hosts" "/sponsors" "/contact" }}
-{{- with site.GetPage $path }}
-- [{{ trim .Title " " }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
-{{- end }}
-{{ end }}
+{{ range $path := slice "/membership" "/live" "/calendar" "/community" "/community/picks" "/hosts" "/guests" "/people" "/sponsors" "/boost" "/contact" }}{{ with site.GetPage $path -}}
+- [{{ trim .Title " " }}]({{ partial "markdown-url.html" . }}){{ with .Description }}: {{ . }}{{ end }}{{ with partial "llms-json-url.txt" . }} (JSON: {{ . }}){{ end }}
+{{ end }}{{ end }}
+## Data (JSON)
+
+Machine-readable indexes; each entry's `url` is the HTML page, so its twins are `url` with `.md` / `.json` in place of the trailing slash.
+
+- [Shows]({{ absURL "/show.json" }}): every show with slug, name, active flag, episode count and markdown URL ([archived only]({{ absURL "/archive.json" }}))
+- `/show/<slug>/show.json`: one show's hosts, links, feeds and latest episode; `/show/<slug>/episodes.json`: every episode of that show, newest first
+- `/show/<slug>/<episode>.json`: one episode with hosts, guests, sponsors, chapters, audio/video and transcripts
+- [Hosts]({{ absURL "/hosts.json" }}) and [guests]({{ absURL "/guests.json" }}): everyone by role with episode counts; `/hosts/<slug>.json` and `/guests/<slug>.json` add the profile, per-show counts and every episode
+- [People]({{ absURL "/people.json" }}): all {{ len (where site.RegularPages "Section" "people") }} people with each one's `url`, `json_url` and `markdown_url`; `/people/<slug>.json` is the profile
+- [Picks]({{ absURL "/community/picks.json" }}): {{ len hugo.Data.picks }} software and hardware picks with license and the episodes they were picked on
+- [Sponsors]({{ absURL "/sponsors.json" }}): current sponsors by show, with links and descriptions
+- [Membership]({{ absURL "/membership.json" }}): membership plans with checkout links, and the perks for each show
+- [Community]({{ absURL "/community.json" }}): chat, social and event links
+- [Live]({{ absURL "/live.json" }}): live audio/video stream URLs and the latest episodes
+
 ## Optional
 
 - [llms-full.txt]({{ .Permalink }}llms-full.txt): All core (non-episode) site pages concatenated.

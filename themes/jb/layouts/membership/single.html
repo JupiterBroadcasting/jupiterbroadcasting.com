@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">{{ .Title }}</h1>
+</div>
+
+<div class="container">
+  <div class="column is-full content"{{ with .Params.search_type }} data-pagefind-body data-pagefind-meta="type:{{ . }}" data-pagefind-filter="type:{{ . }}"{{ end }}>
+    {{ with .Params.search_type }}<span class="is-sr-only" data-pagefind-meta="title">{{ trim $.Title " " }}</span>{{ end }}
+    {{ .Content }}
+
+    {{ range .Params.plan_groups }}
+    <h3>{{ .title }}</h3>
+    {{ with .description }}<p>{{ . }}</p>{{ end }}
+    <ul>
+      {{ range .plans }}
+      <li><a href="{{ .url }}">{{ .name }}</a>{{ with .description }} - {{ . }}{{ end }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    <h3>Special Features Available via Memberships</h3>
+    {{ range .Params.perks }}
+    {{ $show := site.GetPage (print "/show/" .show) }}
+    <h4><a href="{{ $show.RelPermalink }}">{{ $show.Title }}</a></h4>
+    <ul>
+      {{ range .items }}
+      <li>{{ .name }}{{ with .description }}<ul><li>{{ . }}</li></ul>{{ end }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

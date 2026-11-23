@@ -1,0 +1,7 @@
+{{- /* /hosts/<slug>.json and /guests/<slug>.json: the people page profile plus this role's episodes */ -}}
+{{- $slug := .Data.Term -}}
+{{- $m := dict "schema_version" 1 "type" (.Data.Singular) "slug" $slug "name" .Title "url" .Permalink -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{- with site.GetPage (print "/people/" $slug) }}{{ $m = merge $m (partial "person/profile.html" .) }}{{ end -}}
+{{- $m = merge $m (partial "person/appearances.html" .) -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

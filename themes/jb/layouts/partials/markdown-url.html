@@ -1,3 +1,9 @@
 {{- $url := "" -}}
-{{- range .OutputFormats }}{{ if eq .MediaType.Type "text/markdown" }}{{ $url = .Permalink }}{{ end }}{{ end -}}
+{{- if not .IsHome -}}
+  {{- range .OutputFormats }}{{ if eq .MediaType.Type "text/markdown" }}{{ $url = .Permalink }}{{ end }}{{ end -}}
+  {{- /* /sponsors/, /hosts/, /guests/: list pages ignore `ugly`, so the home page renders /<section>.md */ -}}
+  {{- if and (not $url) (not .IsPage) (eq .RelPermalink (print "/" .Section "/")) -}}
+    {{- with site.Home.OutputFormats.Get (print .Section "rootmd") }}{{ $url = .Permalink }}{{ end -}}
+  {{- end -}}
+{{- end -}}
 {{- return $url -}}

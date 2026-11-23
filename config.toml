@@ -259,21 +259,22 @@ theme = 'jb'
 
 [outputFormats]
   # /show/<slug>/<NNNN>.json: episode metadata. `ugly` writes <NNNN>.json beside the page directory
-  # (enabled on episode pages by the cascade below)
+  # (enabled on episode pages and hosts/guests by the cascades below, and per page via `outputs`: /membership.json, /sponsors.json)
   [outputFormats.json]
     mediaType = "application/json"
     isPlainText = true
     ugly = true
 
-  # Every page/section also emitted as markdown: /people/x/ -> /people/x/index.md
-  # (episodes and shows use the two formats below instead, named like their JSON)
+  # Sections and lists emitted as markdown: /community/ -> /community/index.md (list pages ignore `ugly`;
+  # pages, episodes and shows use pagemd/showmd below instead, named like their JSON)
   [outputFormats.markdown]
     mediaType = "text/markdown"
     isPlainText = true
     baseName = "index"
 
-  # episode markdown: /show/x/0650/ -> /show/x/0650.md
-  [outputFormats.episodemd]
+  # <slug>.md markdown beside the page directory, for every regular page (see [outputs]) and hosts/guests terms:
+  # /show/x/0650/ -> /show/x/0650.md, /membership/ -> /membership.md, /hosts/chris/ -> /hosts/chris.md
+  [outputFormats.pagemd]
     mediaType = "text/markdown"
     isPlainText = true
     ugly = true
@@ -306,6 +307,73 @@ theme = 'jb'
     isPlainText = true
     baseName = "episodes"
 
+  # Section twins at the site root: /sponsors.json, /hosts.md, /community.json, ... List pages ignore `ugly`, so the
+  # home page renders these (layouts/index.<section>rootjson.json / index.<section>rootmd.md) and the section's head links them
+  [outputFormats.sponsorsrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "sponsors"
+  [outputFormats.sponsorsrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "sponsors"
+  [outputFormats.hostsrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "hosts"
+  [outputFormats.hostsrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "hosts"
+  [outputFormats.guestsrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "guests"
+  [outputFormats.guestsrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "guests"
+  [outputFormats.communityrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "community"
+  [outputFormats.communityrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "community"
+  [outputFormats.liverootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "live"
+  [outputFormats.liverootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "live"
+  [outputFormats.archiverootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "archive"
+  [outputFormats.archiverootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "archive"
+  [outputFormats.peoplerootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "people"
+  [outputFormats.peoplerootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "people"
+  [outputFormats.showrootjson]
+    mediaType = "application/json"
+    isPlainText = true
+    baseName = "show"
+  [outputFormats.showrootmd]
+    mediaType = "text/markdown"
+    isPlainText = true
+    baseName = "show"
+
   # /show/<slug>/show.json: show metadata (enabled per show via `outputs` in its _index.md)
   [outputFormats.show]
     mediaType = "application/json"
@@ -313,22 +381,48 @@ theme = 'jb'
     baseName = "show"
 
 [outputs]
-  home = ["html", "rss", "llms", "llmsfull"]
-  page = ["html", "markdown"]
+  home = ["html", "rss", "llms", "llmsfull", "sponsorsrootjson", "sponsorsrootmd", "hostsrootjson", "hostsrootmd", "guestsrootjson", "guestsrootmd", "communityrootjson", "communityrootmd", "liverootjson", "liverootmd", "archiverootjson", "archiverootmd", "peoplerootjson", "peoplerootmd", "showrootjson", "showrootmd"]
+  page = ["html", "pagemd", "json"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
   taxonomy = ["html", "markdown"]
   term = ["html", "markdown"]
 
 [[cascade]]
+  outputs = ["html"]
   [cascade.build]
     list = "never"
   [cascade.target]
     path = "/search-index"
     kind = "section"
 
+# index-only pages, deleted after indexing: no twins
 [[cascade]]
-  outputs = ["html", "episodemd", "json"]
+  outputs = ["html"]
+  [cascade.target]
+    path = "/search-index/**"
+
+[[cascade]]
+  outputs = ["html", "pagemd", "json"]
   [cascade.target]
     path = "/show/**"
     kind = "page"
+
+# sections with root twins (/community.json, /community.md, ...; see the output formats above): no index.md
+[[cascade]]
+  outputs = ["html"]
+  [cascade.target]
+    path = "{/hosts,/guests}"
+    kind = "taxonomy"
+[[cascade]]
+  outputs = ["html"]
+  [cascade.target]
+    path = "{/community,/live,/archive,/people,/show}"
+    kind = "section"
+
+# /hosts/<slug>.json, /guests/<slug>.json and .md
+[[cascade]]
+  outputs = ["html", "pagemd", "json"]
+  [cascade.target]
+    path = "{/hosts/**,/guests/**}"
+    kind = "term"
