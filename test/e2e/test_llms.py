@@ -421,6 +421,122 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
 
+def _notes(ep: Episode) -> str:
+    return re.sub(r"\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\Z))+", "", ep.body).lstrip("\r\n")
+
+
+def _spread(episodes: list[Episode], n: int = 8) -> list[Episode]:
+    step = max(1, len(episodes) // n)
+    return episodes[::step][:n]
+
+
+ALL_EPISODES: list[Episode] = [e for show in SHOWS for e in show.episodes]
+INDENTED_NOTES = _spread([e for e in ALL_EPISODES if re.match(r"[ \t]+[*-] ", _notes(e))])
+MULTILINE_DESCRIPTIONS = _spread([e for e in ALL_EPISODES if "\n" in (e.data.get("description") or "").strip()])
+ESCAPED_ENTITIES = _spread([e for e in ALL_EPISODES if re.search(r"&(?:#x27|#39|quot|amp);", e.body)])
+ENTITY = re.compile(r"&(?:#x27|#39|quot|amp);")
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in INDENTED_NOTES])
+def test_episode_markdown_show_notes_keep_list_indent(api_request_context: APIRequestContext, ep: Episode):
+    """
+    A Show Notes list indented in the source keeps every item at the same depth, the first included
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    first = _section(text, "\n## Show Notes\n").lstrip("\r\n").splitlines()[0]
+    indent = lambda line: len(line) - len(line.lstrip())
+    assert indent(first) == indent(_notes(ep).splitlines()[0]), f"first Show Notes line {first!r} lost its indent"
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in MULTILINE_DESCRIPTIONS])
+def test_episode_markdown_multiparagraph_description_stays_quoted(api_request_context: APIRequestContext, ep: Episode):
+    """
+    Every line of a multi-line description sits inside the blockquote, with no stray carriage returns
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    quoted = [line[1:].strip() for line in text.splitlines() if line.startswith(">")]
+    for line in ep.data["description"].replace("\r\n", "\n").splitlines():
+        if line.strip():
+            assert line.strip() in quoted, f"description line {line.strip()!r} is outside the blockquote"
+    assert "\r" not in text
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in ESCAPED_ENTITIES])
+def test_episode_markdown_has_no_escaped_entities(api_request_context: APIRequestContext, ep: Episode):
+    """
+    &#x27; &#39; &quot; and &amp; in the source body appear as the characters themselves in the markdown twin
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    assert not ENTITY.findall(text), ENTITY.findall(text)[:5]
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_llms_txt_recent_entries_are_single_lines(api_request_context: APIRequestContext, show: Show):
+    """
+    A multi-line episode description never breaks an llms.txt list item
+    """
+    text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
+    recent = _section(text, "## Most recent episodes", "## Episode archive")
+    stray = [line for line in recent.splitlines()[1:] if line.strip() and not line.startswith("- [")]
+    assert not stray, stray[:3]
+
+
+SPREAD_EPISODES = _spread(ALL_EPISODES, 40)
+
+
+@mark.parametrize("ep", SPREAD_EPISODES, ids=lambda e: f"{e.show}-{e.url.rstrip('/').rsplit('/', 1)[-1]}")
+def test_episode_markdown_twin_has_every_episode_json_fact(api_request_context: APIRequestContext, ep: Episode):
+    """
+    An LLM reading <slug>.md instead of <slug>.json still gets tags, image, every audio and video URL, and chapters
+    """
+    base = ep.url.rstrip("/")
+    data = _get(api_request_context, f"{base}.json", "application/json").json()
+    text = _get(api_request_context, f"{base}.md", "text/markdown").text()
+
+    for key, label in (
+        ("audio_alt_url", "Audio (alternate)"),
+        ("audio_ogg_url", "Audio (OGG)"),
+        ("youtube_url", "YouTube"),
+        ("header_image", "Image"),
+    ):
+        if key in data:
+            assert f"- {label}: {data[key]}\n" in text, f"{key} missing"
+    for key, label in (("url", "Video"), ("hd_url", "Video (HD)"), ("mobile_url", "Video (mobile)")):
+        if key in data.get("video", {}):
+            assert f"- {label}: {data['video'][key]}\n" in text, f"video.{key} missing"
+    if data["tags"]:
+        assert f"- Tags: {', '.join(data['tags'])}\n" in text
+    else:
+        assert "- Tags:" not in text
+    chapters = data.get("chapters", [])
+    assert ("## Chapters" in text) == bool(chapters)
+    for chapter in chapters:
+        t = int(chapter["startTime"])
+        stamp = f"{t // 3600:02d}:{t // 60 % 60:02d}:{t % 60:02d}"
+        assert re.search(rf"^- {stamp} .*{re.escape(chapter['title'])}", text, re.M), f"chapter {stamp} missing"
+
+
+def test_show_root_markdown_lists_every_show_grouped_by_status(api_request_context: APIRequestContext):
+    """
+    /show.md is the show directory: active shows first, then archived
+    """
+    text = _get(api_request_context, "/show.md", "text/markdown").text()
+    assert "- Status:" not in text
+    for active, heading, until in ((True, "## Active shows", "## Archived shows"), (False, "## Archived shows", None)):
+        block = _section(text, heading, until)
+        for show in SHOWS:
+            line = rf"^- \[.*\]\({HOST}/show/{show.slug}/show\.md\): {len(show.episodes)} episodes"
+            assert bool(re.search(line, block, re.M)) == (show.active == active), f"{show.slug} in wrong group"
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_markdown_about_has_no_html_or_repeated_description(api_request_context: APIRequestContext, show: Show):
+    text = _get(api_request_context, f"/show/{show.slug}/show.md", "text/markdown").text()
+    assert "<br" not in text
+    description = _get(api_request_context, f"/show/{show.slug}/show.json", "application/json").json().get("description", "").strip()
+    assert not description or text.count(description) == 1, "description repeated in About"
+
+
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
     text = _get(api_request_context, "/hosts.md", "text/markdown").text()
     missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]

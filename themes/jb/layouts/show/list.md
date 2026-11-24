@@ -33,6 +33,8 @@ URL: {{ .Permalink }}
 {{- with $summary.special }}- Special episodes (not plain numbers):
 {{ range . }}  - {{ .Params.episode }} · {{ .Date.Format "2006-01-02" }} · [{{ trim .Title " " }}]({{ partial "markdown-url.html" . }})
 {{ end }}{{ end }}
-## About
+{{/* the description already sits in the blockquote above, so About keeps only what follows it */ -}}
+{{ with trim (strings.TrimPrefix (trim $.Description " \t\r\n") (trim (replaceRE `<br\s*/?>` "" (partial "llms-body.md" .)) " \t\r\n")) " \t\r\n" }}## About
 
-{{ partial "llms-body.md" . }}
+{{ . }}
+{{ end }}
