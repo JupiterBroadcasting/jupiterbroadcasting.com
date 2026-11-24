@@ -1,12 +1,3 @@
-{{ if not .Params.show -}}
-# {{ .Title }}
-
-URL: {{ .Permalink }}
-{{ $sections := .Sections }}{{ range slice (dict "title" "Active shows" "active" true) (dict "title" "Archived shows" "active" false) }}{{ $title := .title }}{{ $want := .active }}
-## {{ $title }}
-
-{{ range $sections }}{{ if eq (.Params.active | default false) $want }}{{ $n := len (where .Pages "Type" "episode") }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}) ({{ $n }} episodes){{ with .Description }}: {{ replaceRE `\s+` " " (trim . " \t\r\n") }}{{ end }}
-{{ end }}{{ end }}{{ end }}{{ else -}}
 # {{ .Title }}
 
 URL: {{ .Permalink }}
@@ -46,4 +37,4 @@ URL: {{ .Permalink }}
 {{ with trim (strings.TrimPrefix (trim $.Description " \t\r\n") (trim (replaceRE `<br\s*/?>` "" (partial "llms-body.md" .)) " \t\r\n")) " \t\r\n" }}## About
 
 {{ . }}
-{{ end }}{{ end }}
+{{ end }}

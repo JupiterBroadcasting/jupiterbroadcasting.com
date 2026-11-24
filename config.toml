@@ -279,12 +279,6 @@ theme = 'jb'
     isPlainText = true
     ugly = true
 
-  # show directory markdown: /show/ -> /show/shows.md (enabled by content/show/_index.md)
-  [outputFormats.showsmd]
-    mediaType = "text/markdown"
-    isPlainText = true
-    baseName = "shows"
-
   # show markdown: /show/x/ -> /show/x/show.md (enabled per show via `outputs` in its _index.md)
   [outputFormats.showmd]
     mediaType = "text/markdown"

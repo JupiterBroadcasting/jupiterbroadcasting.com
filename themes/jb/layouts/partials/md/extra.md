@@ -27,7 +27,10 @@ Latest episodes:
 {{ range (where site.RegularPages "Section" "people").ByTitle }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}) ({{ .Type }}{{ if .Params.is_archived }}, archived{{ end }})
 {{ end }}
 {{- else if and (eq .Section "show") .IsSection (eq .RelPermalink "/show/") -}}
-{{ range partial "json/shows.html" true }}- [{{ .name }}]({{ .markdown_url }}){{ if not .active }} (archived){{ end }}: {{ .episode_count }} episodes{{ with .description }}. {{ . }}{{ end }}
+{{ $shows := partial "json/shows.html" true }}{{ range slice (dict "title" "Active shows" "active" true) (dict "title" "Archived shows" "active" false) }}{{ $title := .title }}{{ $want := .active }}## {{ $title }}
+
+{{ range $shows }}{{ if eq (.active | default false) $want }}- [{{ .name }}]({{ .markdown_url }}): {{ .episode_count }} episodes{{ with .description }}. {{ . }}{{ end }}
+{{ end }}{{ end }}
 {{ end }}
 {{- else if and (eq .Section "archive") .IsSection -}}
 {{ range partial "json/shows.html" false }}- [{{ .name }}]({{ .markdown_url }}): {{ .episode_count }} episodes{{ with .description }}. {{ . }}{{ end }}
