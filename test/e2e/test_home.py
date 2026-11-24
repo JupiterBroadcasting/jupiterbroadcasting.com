@@ -135,3 +135,19 @@ def test_show_slider_drag_stops_at_end(page: Page):
     page.mouse.up()
     page.wait_for_timeout(800)
     assert page.locator(".show-slider").evaluate("el => el.swiper.isEnd")
+
+
+def test_terminal_clients_get_ansi_home(page: Page):
+    for agent in ("curl/8.5.0", "Wget/1.21.4", "HTTPie/3.2.2"):
+        response = page.request.get("/", headers={"User-Agent": agent})
+        assert response.ok
+        assert response.headers["content-type"].startswith("text/plain"), agent
+        body = response.text()
+        assert "B  R  O  A  D  C  A  S  T  I  N  G" in body
+        for show in (p for p in CONTENT_SHOW.iterdir() if p.is_dir() and is_active(p)):
+            assert f"/show/{show.name}/" in body, show.name
+
+
+def test_browsers_get_html_home(page: Page):
+    response = page.request.get("/", headers={"User-Agent": "Mozilla/5.0"})
+    assert response.headers["content-type"].startswith("text/html")

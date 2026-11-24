@@ -1,0 +1,41 @@
+{{- $e := "\x1b[" -}}
+{{- $o := printf "%s1;38;2;0;112;189m" $e -}}
+{{- $b := printf "%s1m" $e -}}
+{{- $d := printf "%s2m" $e -}}
+{{- $c := printf "%s36m" $e -}}
+{{- $l := printf "%s1;38;2;110;207;245m" $e -}}
+{{- $i := printf "%s1;30;48;2;110;207;245m" $e -}}
+{{- $r := printf "%s0m" $e }}
+  {{ $b }}⠀⠀⠀⠀⠀⢀⣦⡀⠀⠀⠀⠀{{ $r }}
+  {{ $b }}⠀⠀⠀⠀⢀⣾⣿⣧⠀⠀⠀⠀{{ $r }}  {{ $l }}     ██╗██╗   ██╗██████╗ ██╗████████╗███████╗██████╗{{ $r }}
+  {{ $b }}⠀⠀⠀⠀⣼⣿⣿⣿⣇⠀⠀⠀{{ $r }}  {{ $l }}     ██║██║   ██║██╔══██╗██║╚══██╔══╝██╔════╝██╔══██╗{{ $r }}
+  {{ $b }}⠀⠀⠀⢰⣿⣿⣿⣿⣿⡀⠀⠀{{ $r }}  {{ $l }}     ██║██║   ██║██████╔╝██║   ██║   █████╗  ██████╔╝{{ $r }}
+  {{ $b }}⠀⠀⠀⢸⣿⣿⣿⣿⣿⡇⠀⠀{{ $r }}  {{ $l }}██   ██║██║   ██║██╔═══╝ ██║   ██║   ██╔══╝  ██╔══██╗{{ $r }}
+  {{ $b }}⠀⠀⠀⢺⣿⣿⣿⣿⣿⡇⠀⠀{{ $r }}  {{ $l }}╚█████╔╝╚██████╔╝██║     ██║   ██║   ███████╗██║  ██║{{ $r }}
+  {{ $b }}⠀⢀⣤⢸⣿⣿⣿⣿⣿⣇⣤⠀{{ $r }}  {{ $l }} ╚════╝  ╚═════╝ ╚═╝     ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝{{ $r }}
+  {{ $b }}⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷{{ $r }}  {{ $l }}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄{{ $r }}
+  {{ $b }}⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿{{ $r }}  {{ $i }}         B  R  O  A  D  C  A  S  T  I  N  G          {{ $r }}
+  {{ $b }}⣿⣿⠟⠋⣿⣿⣿⣿⡟⠙⢿⣿{{ $r }}  {{ $l }}▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀{{ $r }}
+
+  Linux and open source podcasts since 2008.
+
+{{ $b }}SHOWS{{ $r }}
+{{ range where (site.GetPage "/show").Pages.ByTitle "Params.active" true }}
+  {{ $o }}{{ trim .Title " " }}{{ $r }}  {{ $c }}{{ .Permalink }}{{ $r }}
+{{- with index (where .Pages "Type" "episode").ByDate.Reverse 0 }}
+    {{ $d }}latest:{{ $r }} {{ with .Params.episode }}#{{ . }} {{ end }}{{ .Title }} {{ $d }}({{ .Date.Format "2006-01-02" }}){{ $r }}
+{{- end }}
+{{ end }}
+{{ $b }}LINKS{{ $r }}
+{{- range $path := slice "/live" "/membership" "/community" "/contact" }}
+{{- with site.GetPage $path }}
+  {{ printf "%-12s" (trim .Title " ") }} {{ $c }}{{ .Permalink }}{{ $r }}
+{{- end }}
+{{- end }}
+
+{{ $b }}FOR MACHINES{{ $r }}
+  {{ $c }}curl -sL {{ .Permalink }}llms.txt{{ $r }}
+
+{{ $d }}You got this page because your client looks like a terminal.
+Open {{ .Permalink }} in a browser for the full site.{{ $r }}
+
