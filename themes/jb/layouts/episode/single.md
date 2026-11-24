@@ -1,7 +1,7 @@
 # {{ .Title }}
 
 URL: {{ .Permalink }}
-{{ with .Description }}> {{ . }}
+{{ with .Description }}> {{ replaceRE `(?m)^> $` ">" (replaceRE `[ \t]*\r?\n` "\n> " (trim . " \t\r\n")) }}
 {{ end }}
 - Show: [{{ .Params.show_name }}]({{ .Site.BaseURL }}show/{{ .Params.show_slug }}/)
 - Episode: {{ .Params.episode }}
@@ -23,7 +23,8 @@ URL: {{ .Permalink }}
 {{ range . }}{{ with index hugo.Data.sponsors . }}- [{{ .title }}]({{ .link }}){{ with .description }}: {{ . }}{{ end }}
 {{ end }}{{ end }}
 {{ end }}
-{{ with trim (replaceRE `\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\z))+` "" (trim (partial "llms-body.md" .) "\n\r\t ")) "\n\r\t " }}## Show Notes
+{{/* only newlines are trimmed from the left: the first list item's indent must match the rest or Markdown nests them */ -}}
+{{ with strings.TrimRight "\n\r\t " (strings.TrimLeft "\r\n" (replaceRE `\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\z))+` "" (strings.TrimLeft "\r\n" (partial "llms-body.md" .)))) }}## Show Notes
 
 {{ . }}
 {{ end }}

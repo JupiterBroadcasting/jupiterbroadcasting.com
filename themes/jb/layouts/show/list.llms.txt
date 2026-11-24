@@ -27,7 +27,7 @@
 ## Most recent episodes (of {{ len $eps }})
 
 {{ range first 10 $sorted -}}
-- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Params.guests }} (guests: {{ range $i, $g := . }}{{ if $i }}, {{ end }}{{ partial "person-md-link.html" $g }}{{ end }}){{ end }} - {{ .Description }}
+- [{{ .Date.Format "2006-01-02" }} · {{ .Title }}]({{ partial "markdown-url.html" . }}){{ with .Params.guests }} (guests: {{ range $i, $g := . }}{{ if $i }}, {{ end }}{{ partial "person-md-link.html" $g }}{{ end }}){{ end }} - {{ replaceRE `\s+` " " (trim .Description " \t\r\n") }}
 {{ end }}
 ## Episode archive
 

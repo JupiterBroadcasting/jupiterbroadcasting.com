@@ -421,6 +421,66 @@ def test_episode_markdown_twin(api_request_context: APIRequestContext, ep: Episo
     assert "{{" not in text and "+++" not in text, "template or front matter leaked"
 
 
+def _notes(ep: Episode) -> str:
+    return re.sub(r"\A(?:\s*(?:#{1,6}\s*|\*\*)Episode Links(?:\*\*)?:?[ \t]*(?:\n|\Z))+", "", ep.body).lstrip("\r\n")
+
+
+def _spread(episodes: list[Episode], n: int = 8) -> list[Episode]:
+    step = max(1, len(episodes) // n)
+    return episodes[::step][:n]
+
+
+ALL_EPISODES: list[Episode] = [e for show in SHOWS for e in show.episodes]
+INDENTED_NOTES = _spread([e for e in ALL_EPISODES if re.match(r"[ \t]+[*-] ", _notes(e))])
+MULTILINE_DESCRIPTIONS = _spread([e for e in ALL_EPISODES if "\n" in (e.data.get("description") or "").strip()])
+ESCAPED_ENTITIES = _spread([e for e in ALL_EPISODES if re.search(r"&(?:#x27|#39|quot|amp);", e.body)])
+ENTITY = re.compile(r"&(?:#x27|#39|quot|amp);")
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in INDENTED_NOTES])
+def test_episode_markdown_show_notes_keep_list_indent(api_request_context: APIRequestContext, ep: Episode):
+    """
+    A Show Notes list indented in the source keeps every item at the same depth, the first included
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    first = _section(text, "\n## Show Notes\n").lstrip("\r\n").splitlines()[0]
+    indent = lambda line: len(line) - len(line.lstrip())
+    assert indent(first) == indent(_notes(ep).splitlines()[0]), f"first Show Notes line {first!r} lost its indent"
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in MULTILINE_DESCRIPTIONS])
+def test_episode_markdown_multiparagraph_description_stays_quoted(api_request_context: APIRequestContext, ep: Episode):
+    """
+    Every line of a multi-line description sits inside the blockquote, with no stray carriage returns
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    quoted = [line[1:].strip() for line in text.splitlines() if line.startswith(">")]
+    for line in ep.data["description"].replace("\r\n", "\n").splitlines():
+        if line.strip():
+            assert line.strip() in quoted, f"description line {line.strip()!r} is outside the blockquote"
+    assert "\r" not in text
+
+
+@mark.parametrize("ep", [param(e, id=e.url) for e in ESCAPED_ENTITIES])
+def test_episode_markdown_has_no_escaped_entities(api_request_context: APIRequestContext, ep: Episode):
+    """
+    &#x27; &#39; &quot; and &amp; in the source body appear as the characters themselves in the markdown twin
+    """
+    text = _get(api_request_context, f"{ep.url.rstrip('/')}.md", "text/markdown").text()
+    assert not ENTITY.findall(text), ENTITY.findall(text)[:5]
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_llms_txt_recent_entries_are_single_lines(api_request_context: APIRequestContext, show: Show):
+    """
+    A multi-line episode description never breaks an llms.txt list item
+    """
+    text = _get(api_request_context, f"/show/{show.slug}/llms.txt", "text/plain").text()
+    recent = _section(text, "## Most recent episodes", "## Episode archive")
+    stray = [line for line in recent.splitlines()[1:] if line.strip() and not line.startswith("- [")]
+    assert not stray, stray[:3]
+
+
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
     text = _get(api_request_context, "/hosts.md", "text/markdown").text()
     missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]
