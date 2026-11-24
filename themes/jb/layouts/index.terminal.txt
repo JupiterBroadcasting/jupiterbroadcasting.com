@@ -20,7 +20,9 @@
   Linux and open source podcasts since 2008.
 
 {{ $b }}SHOWS{{ $r }}
-{{ range where (site.GetPage "/show").Pages.ByTitle "Params.active" true }}
+{{- $active := where (site.GetPage "/show").Pages.ByTitle "Params.active" true }}
+{{- $extras := where $active "Params.show" "jupiter-extras" }}
+{{ range union (where $active "Params.show" "ne" "jupiter-extras") $extras }}
   {{ $o }}{{ trim .Title " " }}{{ $r }}  {{ $c }}{{ .Permalink }}{{ $r }}
 {{- with index (where .Pages "Type" "episode").ByDate.Reverse 0 }}
     {{ $d }}latest:{{ $r }} {{ with .Params.episode }}#{{ . }} {{ end }}{{ .Title }} {{ $d }}({{ .Date.Format "2006-01-02" }}){{ $r }}
