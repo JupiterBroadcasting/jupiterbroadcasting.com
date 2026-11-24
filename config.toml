@@ -386,6 +386,10 @@ theme = 'jb'
     isPlainText = true
     baseName = "terminal"
 
+# Without this, `hugo --minify` rewrites 50108000 as 50108e3, which JSON parsers read as a float
+[minify.tdewolff.json]
+  keepNumbers = true
+
 [outputs]
   home = ["html", "rss", "llms", "llmsfull", "sponsorsrootjson", "sponsorsrootmd", "hostsrootjson", "hostsrootmd", "guestsrootjson", "guestsrootmd", "communityrootjson", "communityrootmd", "liverootjson", "liverootmd", "archiverootjson", "archiverootmd", "peoplerootjson", "peoplerootmd", "showrootjson", "showrootmd", "terminal"]
   page = ["html", "pagemd", "json"]
