@@ -40,6 +40,7 @@
   <span class="is-sr-only" data-pagefind-meta="archived:true"></span>
   {{- end }}
 </div>
+{{ if or (isset .Params "hosts") .Content }}
 <div class="container p-4">
   <div class="columns">
     {{ if isset .Params "hosts" }}
@@ -65,6 +66,7 @@
     {{end}}
   </div>
 </div>
+{{ end }}
 </div>
 
 <section class="section episode-list">
