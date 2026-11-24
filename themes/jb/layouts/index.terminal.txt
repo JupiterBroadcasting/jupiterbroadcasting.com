@@ -17,7 +17,7 @@
   {{ $b }}⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿{{ $r }}  {{ $i }}         B  R  O  A  D  C  A  S  T  I  N  G          {{ $r }}
   {{ $b }}⣿⣿⠟⠋⣿⣿⣿⣿⡟⠙⢿⣿{{ $r }}  {{ $l }}▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀{{ $r }}
 
-  Linux and open source podcasts since 2008.
+   Home to the best shows on Linux, Open Source, Security, Privacy, Community, Development, and News.
 
 {{ $b }}SHOWS{{ $r }}
 {{- $active := where (site.GetPage "/show").Pages.ByTitle "Params.active" true }}
