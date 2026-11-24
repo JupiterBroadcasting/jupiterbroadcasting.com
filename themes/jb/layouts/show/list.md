@@ -2,11 +2,11 @@
 # {{ .Title }}
 
 URL: {{ .Permalink }}
-{{ with .Sections }}
-## Shows
+{{ $sections := .Sections }}{{ range slice (dict "title" "Active shows" "active" true) (dict "title" "Archived shows" "active" false) }}{{ $title := .title }}{{ $want := .active }}
+## {{ $title }}
 
-{{ range . }}{{ $n := len (where .Pages "Type" "episode") }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}) ({{ if .Params.active }}active{{ else }}archived{{ end }}, {{ $n }} episodes){{ with .Description }}: {{ replaceRE `\s+` " " (trim . " \t\r\n") }}{{ end }}
-{{ end }}{{ end }}{{ else -}}
+{{ range $sections }}{{ if eq (.Params.active | default false) $want }}{{ $n := len (where .Pages "Type" "episode") }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}) ({{ $n }} episodes){{ with .Description }}: {{ replaceRE `\s+` " " (trim . " \t\r\n") }}{{ end }}
+{{ end }}{{ end }}{{ end }}{{ else -}}
 # {{ .Title }}
 
 URL: {{ .Permalink }}

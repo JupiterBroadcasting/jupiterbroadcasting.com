@@ -516,14 +516,18 @@ def test_episode_markdown_twin_has_every_episode_json_fact(api_request_context: 
         assert re.search(rf"^- {stamp} .*{re.escape(chapter['title'])}", text, re.M), f"chapter {stamp} missing"
 
 
-def test_show_root_markdown_lists_every_show(api_request_context: APIRequestContext):
+def test_show_root_markdown_lists_every_show_grouped_by_status(api_request_context: APIRequestContext):
     """
-    /show/index.md is the show directory, not an empty 'archived, 0 episodes' show page
+    /show/shows.md is the show directory (active shows first, then archived), not an empty 'archived, 0 episodes' show page
     """
-    text = _get(api_request_context, "/show/index.md", "text/markdown").text()
+    text = _get(api_request_context, "/show/shows.md", "text/markdown").text()
     assert "- Status:" not in text
-    for show in SHOWS:
-        assert re.search(rf"^- \[.*\]\({HOST}/show/{show.slug}/show\.md\) \((active|archived), {len(show.episodes)} episodes\)", text, re.M), show.slug
+    assert api_request_context.get("/show/index.md").status == 404
+    for active, heading, until in ((True, "## Active shows", "## Archived shows"), (False, "## Archived shows", None)):
+        block = _section(text, heading, until)
+        for show in SHOWS:
+            line = rf"^- \[.*\]\({HOST}/show/{show.slug}/show\.md\) \({len(show.episodes)} episodes\)"
+            assert bool(re.search(line, block, re.M)) == (show.active == active), f"{show.slug} in wrong group"
 
 
 @mark.parametrize("show", SHOW_PARAMS)
