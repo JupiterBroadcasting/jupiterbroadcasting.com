@@ -380,8 +380,14 @@ theme = 'jb'
     isPlainText = true
     baseName = "show"
 
+  # /terminal.txt: ANSI home page for curl/wget, served at / by nginx on User-Agent (see Dockerfile)
+  [outputFormats.terminal]
+    mediaType = "text/plain"
+    isPlainText = true
+    baseName = "terminal"
+
 [outputs]
-  home = ["html", "rss", "llms", "llmsfull", "sponsorsrootjson", "sponsorsrootmd", "hostsrootjson", "hostsrootmd", "guestsrootjson", "guestsrootmd", "communityrootjson", "communityrootmd", "liverootjson", "liverootmd", "archiverootjson", "archiverootmd", "peoplerootjson", "peoplerootmd", "showrootjson", "showrootmd"]
+  home = ["html", "rss", "llms", "llmsfull", "sponsorsrootjson", "sponsorsrootmd", "hostsrootjson", "hostsrootmd", "guestsrootjson", "guestsrootmd", "communityrootjson", "communityrootmd", "liverootjson", "liverootmd", "archiverootjson", "archiverootmd", "peoplerootjson", "peoplerootmd", "showrootjson", "showrootmd", "terminal"]
   page = ["html", "pagemd", "json"]
   # section = ["html","rss"]
   section = ["html", "markdown"]
