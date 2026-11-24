@@ -101,9 +101,9 @@ curl -s https://jupiterbroadcasting.com/show/linux-unplugged/show.json | jq '{na
 One episode: title, audio URL and host names:
 
 ```sh
-curl -s https://jupiterbroadcasting.com/show/linux-unplugged/0693.json | jq '{title, audio: .audio.url, hosts: [.hosts[].name]}'
+curl -s https://jupiterbroadcasting.com/show/linux-unplugged/693.json | jq '{title, audio: .audio.url, hosts: [.hosts[].name]}'
 ```
 
 ## Finding every episode of a show
 
-Fetch `/show/<slug>/episodes.json`: it lists every episode (numbered and special) with its `json_url` and `markdown_url`. Numbering does not always start at 1 (Coder Radio, Linux Action News and Self-Hosted start at 0), can have gaps (Jupiter Extras), and some episodes have no number (`T-0`, `p01`, `hurricanehelene`), so use the listed URLs rather than counting up from 1. `show.json`'s `episode_count` matches the list length.
+Fetch `/show/<slug>/episodes.json`: it lists every episode (numbered and special) with its `json_url` and `markdown_url`. Numbering does not always start at 1 (Coder Radio, Linux Action News and Self-Hosted start at 0), can have gaps (Jupiter Extras), and some episodes have no number (`T-0` in The Launch, `p01` in Office Hours, `hurricanehelene` in Coder Radio), so use the listed URLs rather than counting up from 1. `show.json`'s `episode_count` matches the list length.

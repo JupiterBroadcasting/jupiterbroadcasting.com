@@ -31,7 +31,7 @@
 {{ end }}
 ## Episode archive
 
-{{ $nums }} numbered episodes, {{ $lo }}-{{ $hi }}.{{ if $specials }} Plus {{ $specials }} special episodes with prefixed slugs (not plain numbers).{{ end }}
+{{ $nums }} numbered episodes, {{ $lo }}-{{ $hi }}.{{ with (partial "show-episode-summary.html" .).numbered.missing }} Missing numbers: {{ delimit . ", " }}.{{ end }}{{ if $specials }} Plus {{ $specials }} special episodes with prefixed slugs (not plain numbers).{{ end }}
 
 Episode URL pattern: `{{ .Permalink }}<number>/` — replace the trailing `/` with `.md` for the markdown twin or `.json` for the JSON twin (hosts, guests, sponsors, chapters, audio/video, transcripts).
 Newest: `{{ .Permalink }}{{ with $sorted }}{{ (index . 0).Params.slug | default (index . 0).File.TranslationBaseName | lower }}.md{{ end }}` · Oldest: `{{ .Permalink }}{{ with $sorted }}{{ (index . (sub (len .) 1)).Params.slug | default (index . (sub (len .) 1)).File.TranslationBaseName | lower }}.md{{ end }}`

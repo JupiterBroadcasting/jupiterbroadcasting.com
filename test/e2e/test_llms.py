@@ -481,6 +481,59 @@ def test_show_llms_txt_recent_entries_are_single_lines(api_request_context: APIR
     assert not stray, stray[:3]
 
 
+SPREAD_EPISODES = _spread(ALL_EPISODES, 40)
+
+
+@mark.parametrize("ep", SPREAD_EPISODES, ids=lambda e: f"{e.show}-{e.url.rstrip('/').rsplit('/', 1)[-1]}")
+def test_episode_markdown_twin_has_every_episode_json_fact(api_request_context: APIRequestContext, ep: Episode):
+    """
+    An LLM reading <slug>.md instead of <slug>.json still gets tags, image, every audio and video URL, and chapters
+    """
+    base = ep.url.rstrip("/")
+    data = _get(api_request_context, f"{base}.json", "application/json").json()
+    text = _get(api_request_context, f"{base}.md", "text/markdown").text()
+
+    for key, label in (
+        ("audio_alt_url", "Audio (alternate)"),
+        ("audio_ogg_url", "Audio (OGG)"),
+        ("youtube_url", "YouTube"),
+        ("header_image", "Image"),
+    ):
+        if key in data:
+            assert f"- {label}: {data[key]}\n" in text, f"{key} missing"
+    for key, label in (("url", "Video"), ("hd_url", "Video (HD)"), ("mobile_url", "Video (mobile)")):
+        if key in data.get("video", {}):
+            assert f"- {label}: {data['video'][key]}\n" in text, f"video.{key} missing"
+    if data["tags"]:
+        assert f"- Tags: {', '.join(data['tags'])}\n" in text
+    else:
+        assert "- Tags:" not in text
+    chapters = data.get("chapters", [])
+    assert ("## Chapters" in text) == bool(chapters)
+    for chapter in chapters:
+        t = int(chapter["startTime"])
+        stamp = f"{t // 3600:02d}:{t // 60 % 60:02d}:{t % 60:02d}"
+        assert re.search(rf"^- {stamp} .*{re.escape(chapter['title'])}", text, re.M), f"chapter {stamp} missing"
+
+
+def test_show_root_markdown_lists_every_show(api_request_context: APIRequestContext):
+    """
+    /show/index.md is the show directory, not an empty 'archived, 0 episodes' show page
+    """
+    text = _get(api_request_context, "/show/index.md", "text/markdown").text()
+    assert "- Status:" not in text
+    for show in SHOWS:
+        assert re.search(rf"^- \[.*\]\({HOST}/show/{show.slug}/show\.md\) \((active|archived), {len(show.episodes)} episodes\)", text, re.M), show.slug
+
+
+@mark.parametrize("show", SHOW_PARAMS)
+def test_show_markdown_about_has_no_html_or_repeated_description(api_request_context: APIRequestContext, show: Show):
+    text = _get(api_request_context, f"/show/{show.slug}/show.md", "text/markdown").text()
+    assert "<br" not in text
+    description = _get(api_request_context, f"/show/{show.slug}/show.json", "application/json").json().get("description", "").strip()
+    assert not description or text.count(description) == 1, "description repeated in About"
+
+
 def test_hosts_twin_lists_active_hosts(api_request_context: APIRequestContext):
     text = _get(api_request_context, "/hosts.md", "text/markdown").text()
     missing = [h for h in HOST_TERMS if not re.search(rf"\]\({HOST}/hosts/{h}\.md\)", text)]

@@ -1,7 +1,7 @@
 {{- define "partials/llms-json-url.txt" }}{{ with .OutputFormats.Get "json" }}{{ .Permalink }}{{ else }}{{ with site.Home.OutputFormats.Get (print .Section "rootjson") }}{{ .Permalink }}{{ end }}{{ end }}{{ end -}}
 # Jupiter Broadcasting
 
-> Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, and Jupiter EXTRAS. The site hosts episode show notes plus pages about the hosts and guests, membership, live shows, sponsors, picks, and community.
+> Jupiter Broadcasting (JB) is a network of Linux and open source technology podcasts, including LINUX Unplugged, Linux Action News, Coder Radio, Self-Hosted, Office Hours, The Launch, This Week in Bitcoin, and Jupiter EXTRAS. The site hosts episode show notes plus pages about the hosts and guests, membership, live shows, sponsors, picks, and community.
 
 Every page has a markdown twin and a JSON twin: take the page URL and put `.md` or `.json` in place of the trailing slash (`{{ absURL "/membership/" }}` → `{{ absURL "/membership.md" }}`, `{{ absURL "/membership.json" }}`; `{{ absURL "/hosts/chris/" }}` → `{{ absURL "/hosts/chris.md" }}`; `{{ absURL "/show/linux-unplugged/650/" }}` → `{{ absURL "/show/linux-unplugged/650.json" }}`). Shows are the exception: `/show/<slug>/show.md` and `/show/<slug>/show.json`. Prefer the markdown to read a page and the JSON to look things up; JSON references between pages carry a `url`, from which both twins follow. Each HTML page also links its twins with `<link rel="alternate">`.
 

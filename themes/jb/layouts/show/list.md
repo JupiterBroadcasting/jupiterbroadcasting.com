@@ -1,3 +1,12 @@
+{{ if not .Params.show -}}
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ with .Sections }}
+## Shows
+
+{{ range . }}{{ $n := len (where .Pages "Type" "episode") }}- [{{ .Title }}]({{ partial "markdown-url.html" . }}) ({{ if .Params.active }}active{{ else }}archived{{ end }}, {{ $n }} episodes){{ with .Description }}: {{ replaceRE `\s+` " " (trim . " \t\r\n") }}{{ end }}
+{{ end }}{{ end }}{{ else -}}
 # {{ .Title }}
 
 URL: {{ .Permalink }}
@@ -33,6 +42,8 @@ URL: {{ .Permalink }}
 {{- with $summary.special }}- Special episodes (not plain numbers):
 {{ range . }}  - {{ .Params.episode }} · {{ .Date.Format "2006-01-02" }} · [{{ trim .Title " " }}]({{ partial "markdown-url.html" . }})
 {{ end }}{{ end }}
-## About
+{{/* the description already sits in the blockquote above, so About keeps only what follows it */ -}}
+{{ with trim (strings.TrimPrefix (trim $.Description " \t\r\n") (trim (replaceRE `<br\s*/?>` "" (partial "llms-body.md" .)) " \t\r\n")) " \t\r\n" }}## About
 
-{{ partial "llms-body.md" . }}
+{{ . }}
+{{ end }}{{ end }}
