@@ -31,6 +31,9 @@ RUN sed -i 's/#error_page/error_page/' /etc/nginx/conf.d/default.conf
 # episodes.json need no override: stock mime.types already serve .txt as
 # text/plain and .json as application/json.)
 RUN sed -i '/listen  /i\    location ~ \\.md$ { root /usr/share/nginx/html; default_type text/markdown; }' /etc/nginx/conf.d/default.conf
+# Keep the old membership Markdown URL working after the switch to /membership.md.
+# Relative Location preserves HTTPS when TLS terminates before nginx.
+RUN sed -i '/listen  /i\    location = /membership/index.md { absolute_redirect off; return 301 /membership.md; }' /etc/nginx/conf.d/default.conf
 # terminal clients get the ANSI home page (/terminal.txt) instead of HTML, like ysap.sh
 RUN sed -i '/listen  /i\    location = / { root /usr/share/nginx/html; if ($http_user_agent ~* "^(curl|wget|httpie|xh)/") { rewrite ^ /terminal.txt last; } index index.html; }' /etc/nginx/conf.d/default.conf
 COPY --from=indexer /site/public /usr/share/nginx/html
