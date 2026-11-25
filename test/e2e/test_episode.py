@@ -48,6 +48,7 @@ def test_episode_player(page: Page, ep: Episode):
         expect(player).to_have_attribute("src", re.compile(re.escape(ep.data["episode_guid"])))
     else:
         expect(page.locator("audio source")).not_to_have_count(0)
+        expect(page.locator("audio")).to_have_css("color-scheme", "dark")
 
 
 @mark.only_browser("chromium")

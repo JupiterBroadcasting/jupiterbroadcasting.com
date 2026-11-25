@@ -28,13 +28,15 @@ class Episode:
     number: str
     url: str
     data: dict = field(compare=False, hash=False, repr=False)
+    body: str = field(default="", compare=False, hash=False, repr=False)
 
 
 def load_episode(path: Path) -> Episode:
-    data, _ = json.JSONDecoder().raw_decode(path.read_text().lstrip())
+    text = path.read_text().lstrip()
+    data, end = json.JSONDecoder().raw_decode(text)
     show = path.parent.name
     number = str(data["episode"])
-    return Episode(show=show, number=number, url=f"/show/{show}/{str(data['slug']).lower()}/", data=data)
+    return Episode(show=show, number=number, url=f"/show/{show}/{str(data['slug']).lower()}/", data=data, body=text[end:].strip())
 
 
 def episodes_by_date(show_dir: Path) -> list[Episode]:
@@ -92,3 +94,11 @@ def sponsor_exists(shortname: str) -> bool:
 
 def sponsor_link(shortname: str) -> str:
     return re.search(r"^link: *(\S+)", sponsor_path(shortname).read_text(), re.M).group(1)
+
+
+def yaml_title(path: Path) -> str:
+    # flat YAML front matter; the test image has no YAML parser, and a few titles are double-quoted with \U escapes
+    match = re.search(r"""^title: *(?:"(.*)"|'(.*)'|(.*?))\s*$""", path.read_text(), re.M)
+    if match.group(1) is None:
+        return match.group(2) or match.group(3)
+    return re.sub(r"\\U([0-9A-Fa-f]{8})|\\u([0-9A-Fa-f]{4})", lambda m: chr(int(m.group(1) or m.group(2), 16)), match.group(1))

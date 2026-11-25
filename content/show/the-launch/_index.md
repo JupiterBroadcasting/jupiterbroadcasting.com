@@ -1,5 +1,5 @@
 +++
-outputs = ["html", "markdown", "llms", "episodes"]
+outputs = ["html", "showmd", "llms", "episodes", "show"]
 title = "The Launch 🚀"
 description = "Let’s warm up for the week together with the best stories and clips that set the stage for the rest of your week."
 date = "2025-02-10T17:09:11-08:00"

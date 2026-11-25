@@ -1,0 +1,8 @@
+{{- $picks := slice -}}
+{{- range $slug, $p := hugo.Data.picks -}}
+  {{- $picks = $picks | append (dict "slug" $slug "title" $p.title "description" $p.description "url" $p.url "license" $p.license "episodes" (partial "picks/episodes.html" $p)) -}}
+{{- end -}}
+{{- $m := dict "schema_version" 1 "type" "picks" "title" .Title "url" .Permalink "count" (len $picks) "picks" $picks -}}
+{{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{ $m | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}

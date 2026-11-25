@@ -11,9 +11,15 @@
   {{- with $s.OutputFormats.Get "llms" }}{{ $llms = .Permalink }}{{ end -}}
   {{- end -}}
   <link rel="describedby" href="{{ $llms }}">
-  {{- with .OutputFormats.Get "markdown" }}
-  <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+  {{- with partial "markdown-url.html" . }}
+  <link rel="alternate" type="text/markdown" href="{{ . }}">
   {{- end }}
+  {{- if not .IsHome }}{{ range .OutputFormats }}{{ if eq .MediaType.Type "application/json" }}
+  <link rel="alternate" type="application/json" href="{{ .Permalink }}" title="{{ if eq .Name "episodes" }}Episode list{{ else }}JSON{{ end }}">
+  {{- end }}{{ end }}{{ end }}
+  {{- if and (not .IsPage) (eq .RelPermalink (print "/" .Section "/")) }}{{ with site.Home.OutputFormats.Get (print .Section "rootjson") }}
+  <link rel="alternate" type="application/json" href="{{ .Permalink }}" title="JSON">
+  {{- end }}{{ end }}
 
   {{ $sass := resources.Get "css/main.sass" }}
   <!-- Defining options that production & development should have -->

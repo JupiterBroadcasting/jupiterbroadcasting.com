@@ -1,0 +1,6 @@
+{{- /* Fields every page/section JSON twin starts with; content is the markdown body (no front matter) when there is one */ -}}
+{{- $m := dict "schema_version" 1 "type" .Type "title" (trim .Title " ") "url" .Permalink -}}
+{{- with .Description }}{{ $m = merge $m (dict "description" .) }}{{ end -}}
+{{- with partial "markdown-url.html" . }}{{ $m = merge $m (dict "markdown_url" .) }}{{ end -}}
+{{- with trim (partial "md/body.md" .) " \n\r\t" }}{{ $m = merge $m (dict "content" .) }}{{ end -}}
+{{- return $m -}}

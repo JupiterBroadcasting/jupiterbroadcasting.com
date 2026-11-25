@@ -1,0 +1,1 @@
+{{ partial "json/page.html" . | partial "json-strip-null.html" | jsonify (dict "indent" "  " "noHTMLEscape" true) }}
