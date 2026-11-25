@@ -71,7 +71,7 @@ def get_json(api: APIRequestContext, path: str) -> dict:
 
 def json_twin(url: str) -> str:
     """
-    Path of a page's JSON twin: its URL with .json for the trailing slash (refs carry no json_url)
+    Path of a page's JSON twin: its URL with .json for the trailing slash (only episodes.json entries carry json_url)
     """
     return urlparse(url).path.rstrip("/") + ".json"
 
@@ -245,8 +245,9 @@ def test_show_json_links_resolve(api_request_context: APIRequestContext, show: S
     """
     latest = get_json(api_request_context, f"/show/{show.slug}/show.json")["latest_episode"]
     oldest = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"][-1]
+    assert "json_url" not in latest, "a ref outside episodes.json carries no json_url"
+    assert urlparse(oldest["json_url"]).path == json_twin(oldest["url"]), "episodes.json entries link their JSON twin"
     for ref in (latest, oldest):
-        assert "json_url" not in ref, "an episode's JSON is its url with .json"
         episode = get_json(api_request_context, json_twin(ref["url"]))
         assert episode["type"] == "episode"
         assert episode["episode"] == ref["episode"]
@@ -261,7 +262,7 @@ def test_every_episode_json_is_valid(api_request_context: APIRequestContext, sho
     entries = get_json(api_request_context, f"/show/{show.slug}/episodes.json")["episodes"]
     problems = []
     for entry in entries:
-        path = json_twin(entry["url"])
+        path = urlparse(entry["json_url"]).path
         response = api_request_context.get(path)
         content_type = response.headers.get("content-type", "")
         if response.status != 200 or not content_type.startswith("application/json"):

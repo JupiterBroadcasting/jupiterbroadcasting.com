@@ -7,6 +7,6 @@
   "count": {{ len $eps }},
   "episodes": [
 {{ range $i, $p := $eps.ByDate.Reverse }}{{ if $i }},
-{{ end }}    {{ partial "json-episode-ref.html" $p | jsonify (dict "noHTMLEscape" true) }}{{ end }}
+{{ end }}    {{ $ref := partial "json-episode-ref.html" $p }}{{ with $p.OutputFormats.Get "json" }}{{ $ref = merge $ref (dict "json_url" .Permalink) }}{{ end }}{{ $ref | jsonify (dict "noHTMLEscape" true) }}{{ end }}
   ]
 }
