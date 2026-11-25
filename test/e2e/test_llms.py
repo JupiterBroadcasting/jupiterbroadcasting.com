@@ -617,7 +617,6 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
 @mark.parametrize(
     "path",
     [
-        "/membership/index.md",
         "/contact/index.md",
         "/boost/index.md",
         "/community/picks/index.md",
@@ -639,6 +638,18 @@ def test_old_page_twin_urls_are_gone(api_request_context: APIRequestContext, pat
     Page markdown twins are <slug>.md like their <slug>.json; the old <url>index.md must not linger
     """
     assert api_request_context.get(path).status == 404, f"{path} should no longer exist"
+
+
+def test_legacy_membership_markdown_redirects(api_request_context: APIRequestContext):
+    """Keep old membership links working without a duplicate Markdown page."""
+    legacy = "/membership/index.md"
+    canonical = "/membership.md"
+    redirect = api_request_context.get(legacy, max_redirects=0)
+    assert redirect.status == 301
+    assert redirect.headers["location"] == canonical
+
+    through_redirect = _get(api_request_context, legacy, "text/markdown")
+    assert through_redirect.body() == _get(api_request_context, canonical, "text/markdown").body()
 
 
 @mark.parametrize("show", SHOW_PARAMS)
