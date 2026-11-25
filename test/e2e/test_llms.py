@@ -333,7 +333,8 @@ def test_show_episodes_json(api_request_context: APIRequestContext, show: Show):
 
     for ep in data["episodes"]:
         slug = ep["url"].rstrip("/").rsplit("/", 1)[-1]
-        assert set(ep) == {"episode", "title", "date", "url", "markdown_url"}, f"{slug}: {sorted(ep)} (no json_url: it is the url with .json)"
+        assert set(ep) == {"episode", "title", "date", "url", "json_url", "markdown_url"}, f"{slug}: {sorted(ep)}"
+        assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.json", ep["json_url"]), ep["json_url"]
         assert ep["title"], f"{slug}: empty title"
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}/", ep["url"]), ep["url"]
         assert re.fullmatch(rf"{HOST}/show/{show.slug}/{re.escape(slug)}\.md", ep["markdown_url"]), ep["markdown_url"]
