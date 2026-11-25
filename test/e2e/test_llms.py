@@ -617,16 +617,11 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
 @mark.parametrize(
     "path",
     [
-        "/contact/index.md",
         "/boost/index.md",
         "/community/picks/index.md",
-        "/sponsors/index.md",
-        "/hosts/index.md",
         "/guests/index.md",
         "/show/linux-unplugged/subscribe/index.md",
-        "/community/index.md",
         "/community/github/index.md",
-        "/live/index.md",
         "/archive/index.md",
         "/people/index.md",
         "/show/index.md",
@@ -635,15 +630,16 @@ def test_discovery_links(page: Page, path: str, llms: str, markdown: str):
 )
 def test_old_page_twin_urls_are_gone(api_request_context: APIRequestContext, path: str):
     """
-    Page markdown twins are <slug>.md like their <slug>.json; the old <url>index.md must not linger
+    Unlisted legacy page Markdown URLs should still return 404.
     """
     assert api_request_context.get(path).status == 404, f"{path} should no longer exist"
 
 
-def test_legacy_membership_markdown_redirects(api_request_context: APIRequestContext):
-    """Keep old membership links working without a duplicate Markdown page."""
-    legacy = "/membership/index.md"
-    canonical = "/membership.md"
+@mark.parametrize("slug", ["membership", "live", "community", "hosts", "sponsors", "contact"])
+def test_legacy_main_page_markdown_redirects(api_request_context: APIRequestContext, slug: str):
+    """Keep previously advertised main-page links working without duplicate Markdown."""
+    legacy = f"/{slug}/index.md"
+    canonical = f"/{slug}.md"
     redirect = api_request_context.get(legacy, max_redirects=0)
     assert redirect.status == 301
     assert redirect.headers["location"] == canonical
