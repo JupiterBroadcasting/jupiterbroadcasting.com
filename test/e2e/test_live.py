@@ -110,3 +110,27 @@ def test_live_fallback_clears_footer(page: Page, stream: StreamStub):
     footer = page.locator("footer").bounding_box()
     gap = footer["y"] - (card["y"] + card["height"])
     assert gap >= 24, f"episode cards end {gap}px above the footer"
+
+
+def test_nav_live_indicator(page: Page, stream: StreamStub):
+    """
+    Every page's navbar turns red (is-live) while the HLS playlist is live, and stays plain when it is off air
+    """
+    nav = page.locator("#mainnavigation")
+    page.goto("/")
+    expect(nav).not_to_have_class(re.compile(r"\bis-live\b"))
+
+    stream.live = True
+    page.goto("/")
+    expect(nav).to_have_class(re.compile(r"\bis-live\b"))
+    expect(page.locator("#livebutton")).to_have_css("background-color", "rgb(255, 0, 0)")
+
+
+def test_live_endlist_is_not_live(page: Page, stream: StreamStub):
+    """
+    A finished (VOD) playlist carries #EXT-X-ENDLIST and must not light the indicator
+    """
+    page.route(f"{VIDEO_URL}*", lambda route: route.fulfill(status=200, body=LIVE_PLAYLIST + "#EXT-X-ENDLIST\n"))
+    page.goto("/")
+    page.wait_for_load_state("networkidle")
+    expect(page.locator("#mainnavigation")).not_to_have_class(re.compile(r"\bis-live\b"))

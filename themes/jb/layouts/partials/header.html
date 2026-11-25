@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar is-fixed-top {{ if eq .Params.hashero false  }}gradient-home{{end}}" id="mainnavigation" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top {{ if eq .Params.hashero false  }}gradient-home{{end}}" id="mainnavigation" data-live-url="{{ site.Params.live.video_url }}" role="navigation" aria-label="main navigation">
       <div class="container">
           <div class="navbar-brand">
             {{ range (where .Site.Menus.main "Identifier" "home")}}

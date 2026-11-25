@@ -29,7 +29,7 @@ jobs:
             SAFE+='|content/'
             SAFE+='|themes/jb/layouts/(archive|calendar|community|contact|live|picks|sponsors|tags|taxonomy|people|show|section)/'
             SAFE+='|themes/jb/layouts/(index|404)\.html$|themes/jb/layouts/partials/(live|community|show)/'
-            SAFE+='|themes/jb/assets/js/(live|jb-live)\.js$'
+            SAFE+='|themes/jb/assets/js/live(-indicator)?\.js$'
             SAFE+='|test/|\.github/)'
             # carve-outs from SAFE that do feed episode pages
             UNSAFE='^(content/(show|people|sponsors|membership)/'
